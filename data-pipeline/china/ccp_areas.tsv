@@ -1,0 +1,28 @@
+# 中國模式：1928–1945 年中共根據地的「示意範圍」（橢圓，非實際邊界）。1945 年後改以省級控制表呈現。
+# 欄位：id	起	迄	經度	緯度	東西半徑(度)	南北半徑(度)	繁中	簡中	English	日本語
+jinggang	1928-01	1929-01	114.15	26.60	0.45	0.40	井岡山根據地	井冈山根据地	Jinggangshan base	井岡山根拠地
+central	1929-02	1930-12	116.00	25.90	1.00	0.80	中央蘇區（贛南、閩西）	中央苏区（赣南、闽西）	Central Soviet Area	中央ソビエト区
+central	1931-01	1933-12	116.10	26.10	1.50	1.10	中央蘇區（贛南、閩西）	中央苏区（赣南、闽西）	Central Soviet Area	中央ソビエト区
+central	1934-01	1934-10	116.00	25.90	0.90	0.70	中央蘇區（贛南、閩西）	中央苏区（赣南、闽西）	Central Soviet Area	中央ソビエト区
+eyuwan	1930-03	1932-10	115.20	31.30	1.00	0.70	鄂豫皖蘇區	鄂豫皖苏区	Hubei–Henan–Anhui Soviet	鄂豫皖ソビエト区
+xiangexi	1930-07	1932-09	112.50	29.90	0.90	0.60	湘鄂西蘇區	湘鄂西苏区	Western Hunan–Hubei Soviet	湘鄂西ソビエト区
+xianggan	1931-01	1934-07	114.20	27.00	0.60	0.55	湘贛蘇區	湘赣苏区	Hunan–Jiangxi Soviet	湘贛ソビエト区
+chuanshan	1933-02	1935-03	106.90	32.00	1.00	0.70	川陝蘇區	川陕苏区	Sichuan–Shaanxi Soviet	川陝ソビエト区
+shaanbei	1935-01	1937-08	108.80	36.90	1.20	1.00	陝甘根據地（陝北）	陕甘根据地（陕北）	Shaanxi–Gansu base (northern Shaanxi)	陝甘根拠地（陝北）
+shaanganning	1937-09	1947-02	107.90	36.70	1.80	1.40	陝甘寧邊區	陕甘宁边区	Shaan-Gan-Ning Border Region	陝甘寧辺区
+shaanganning	1947-03	1948-03	109.30	37.60	0.90	0.80	陝甘寧邊區	陕甘宁边区	Shaan-Gan-Ning Border Region	陝甘寧辺区
+shaanganning	1948-04	1949-04	108.50	36.80	1.80	1.40	陝甘寧邊區	陕甘宁边区	Shaan-Gan-Ning Border Region	陝甘寧辺区
+jinchaji	1938-01	1940-12	114.60	39.00	1.60	1.20	晉察冀邊區	晋察冀边区	Jin-Cha-Ji Border Region	晋察冀辺区
+jinchaji	1941-01	1943-12	114.60	39.00	1.10	0.90	晉察冀邊區	晋察冀边区	Jin-Cha-Ji Border Region	晋察冀辺区
+jinchaji	1944-01	1945-08	114.80	39.40	1.80	1.40	晉察冀邊區	晋察冀边区	Jin-Cha-Ji Border Region	晋察冀辺区
+jinjiluyu	1938-06	1940-12	113.60	36.30	1.40	1.10	晉冀魯豫邊區	晋冀鲁豫边区	Jin-Ji-Lu-Yu Border Region	晋冀魯豫辺区
+jinjiluyu	1941-01	1943-12	113.60	36.30	1.00	0.80	晉冀魯豫邊區	晋冀鲁豫边区	Jin-Ji-Lu-Yu Border Region	晋冀魯豫辺区
+jinjiluyu	1944-01	1945-08	114.00	36.00	1.70	1.30	晉冀魯豫邊區	晋冀鲁豫边区	Jin-Ji-Lu-Yu Border Region	晋冀魯豫辺区
+jinsui	1938-03	1945-08	111.40	38.80	0.90	1.00	晉綏邊區	晋绥边区	Jin-Sui Border Region	晋綏辺区
+shandong	1939-01	1940-12	118.40	35.90	1.30	0.90	山東抗日根據地	山东抗日根据地	Shandong base areas	山東抗日根拠地
+shandong	1941-01	1943-12	118.60	36.00	0.90	0.70	山東抗日根據地	山东抗日根据地	Shandong base areas	山東抗日根拠地
+shandong	1944-01	1945-08	118.60	36.10	1.80	1.20	山東抗日根據地	山东抗日根据地	Shandong base areas	山東抗日根拠地
+huazhong	1938-06	1940-12	118.80	31.90	1.00	0.70	華中抗日根據地（新四軍）	华中抗日根据地（新四军）	Central China bases (New Fourth Army)	華中抗日根拠地（新四軍）
+huazhong	1941-01	1945-08	119.60	33.00	1.50	1.00	華中抗日根據地（新四軍）	华中抗日根据地（新四军）	Central China bases (New Fourth Army)	華中抗日根拠地（新四軍）
+dongjiang	1943-12	1945-08	114.60	22.80	0.50	0.35	東江縱隊	东江纵队	East River Column	東江縦隊
+qiongya	1939-01	1950-04	109.90	19.10	0.50	0.40	瓊崖縱隊	琼崖纵队	Qiongya Column	瓊崖縦隊

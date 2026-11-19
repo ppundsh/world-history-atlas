@@ -1,0 +1,71 @@
+# 投影說明。欄位：id	常用(1/0)	語言	用途	優點	缺點	設計方式
+# 語言：zh-Hant / en / ja（zh-Hans 由 zh-Hant 轉換，只是說明文字，不是國名）
+globe	1	zh-Hant	看整體位置關係、跨洋航線、極區	沒有投影變形，方向、面積、距離都正確	一次只能看到半個地球，不便比較兩側	以 WebGL 繪製透視的三維球體，可旋轉、平移、縮放
+globe	1	en	Seeing how places relate, ocean routes, the polar regions	No projection distortion: directions, areas and distances are true	Only half the earth is visible at a time	A perspective 3D sphere drawn with WebGL; rotate, pan and zoom freely
+globe	1	ja	位置関係、大洋航路、極地の把握	投影のひずみがなく、方位・面積・距離が正しい	一度に半球しか見えない	WebGL で描く透視の立体地球。回転・移動・拡大が自由
+equirect	1	zh-Hant	歷史地圖、資料底圖、衛星影像的原始格式	經緯線是等距方格，最直觀、計算簡單；沿經線的距離正確	高緯度被橫向拉寬，兩極拉成一條線；面積與形狀都不正確	把經度、緯度直接當成 x、y 座標（Plate Carrée，柱面切於赤道）
+equirect	1	en	Historical maps, data layers, the native format of satellite mosaics	A plain lat/long grid: intuitive and simple; distances along meridians are true	High latitudes are stretched sideways and the poles become lines; neither areas nor shapes are true	Longitude and latitude used directly as x and y (Plate Carrée, cylinder tangent at the equator)
+equirect	1	ja	歴史地図、データの下図、衛星モザイクの標準形式	経緯線が等間隔の格子で直感的・計算が簡単。経線方向の距離が正しい	高緯度が横に引き伸ばされ、極は線になる。面積も形も正しくない	経度・緯度をそのまま x・y にする（プレート・カレー、赤道で接する円筒）
+mercator	1	zh-Hant	航海（等角航線是直線）、網路地圖	等角：局部形狀與方向正確，羅盤方位線是直線	面積嚴重失真，格陵蘭看起來和非洲一樣大；無法畫出兩極	圓柱投影，緯線間距隨緯度以 ln(tan(45°+φ/2)) 增加，使經緯方向的伸縮相等
+mercator	1	en	Navigation (rhumb lines are straight), web maps	Conformal: local shapes and angles are true; compass bearings are straight lines	Areas are badly inflated (Greenland looks as big as Africa); the poles cannot be shown	Cylindrical; parallels are spaced by ln(tan(45°+φ/2)) so that east-west and north-south stretching match
+mercator	1	ja	航海（等角航路が直線）、ウェブ地図	正角：局所的な形と角度が正しく、方位線が直線になる	面積が大きくゆがむ（グリーンランドがアフリカ並み）。極を描けない	円筒図法。緯線間隔を ln(tan(45°+φ/2)) で広げ、東西と南北の伸びを等しくする
+miller	0	zh-Hant	世界掛圖、地圖集	類似麥卡托的外觀，但高緯度放大較溫和，可畫出兩極	既不等角也不等積	把麥卡托的緯度公式乘以 4/5 再修正，降低高緯度的拉伸
+miller	0	en	Wall maps and atlases of the world	Looks like Mercator but with milder high-latitude inflation, and the poles can be shown	Neither conformal nor equal-area	Mercator's latitude formula scaled by 4/5 and corrected, to tame the high-latitude stretch
+miller	0	ja	世界の掛図・地図帳	メルカトルに似るが高緯度の拡大が穏やかで、極も描ける	正角でも正積でもない	メルカトルの緯度式を 4/5 倍して補正し、高緯度の伸びを抑える
+gallStereo	0	zh-Hant	英國地圖集的傳統世界圖	高緯度變形比麥卡托小，外觀均衡	沒有特定的保持性質	柱面割於南北緯 45°，以平射（光源在對蹠點）方式投影緯度
+gallStereo	0	en	Traditional world maps in British atlases	Less high-latitude distortion than Mercator, a balanced look	Preserves no particular property	Cylinder secant at 45° N and S; latitudes projected stereographically (light at the antipode)
+gallStereo	0	ja	英国の地図帳の伝統的な世界図	メルカトルより高緯度のひずみが小さく、均整がとれる	特定の性質を保たない	北緯・南緯 45° で割る円筒に、平射（光源は対蹠点）で緯度を投影
+centralCyl	0	zh-Hant	教學：說明「光源在地心」的透視圓柱投影	真正的透視投影，原理容易理解	高緯度拉伸比麥卡托還嚴重，實用性低	光源在地球中心，把地表投影到切於赤道的圓柱上，y = tan φ
+centralCyl	0	en	Teaching: the perspective cylinder with the light at the centre of the earth	A true perspective projection, easy to explain	Stretches high latitudes even more than Mercator; of little practical use	Light at the earth's centre projecting onto a cylinder tangent at the equator: y = tan φ
+centralCyl	0	ja	教育用：光源が地球中心の透視円筒図法	本当の透視図法で原理がわかりやすい	高緯度の伸びがメルカトル以上で実用性は低い	地球中心の光源で赤道に接する円筒へ投影、y = tan φ
+lambertCyl	0	zh-Hant	面積比較、主題地圖	等積：各地面積比例正確	高緯度形狀被壓扁得很嚴重	正射方向把球面投影到切於赤道的圓柱，y = sin φ
+lambertCyl	0	en	Comparing areas, thematic maps	Equal-area: relative sizes are true	Shapes at high latitudes are badly squashed	Orthographic projection of the sphere onto a cylinder tangent at the equator: y = sin φ
+lambertCyl	0	ja	面積の比較、主題図	正積：面積の比率が正しい	高緯度の形が大きくつぶれる	赤道に接する円筒へ平行光で投影、y = sin φ
+gallPeters	0	zh-Hant	強調各大洲真實面積（常用於倡議教材）	等積，修正了麥卡托讓赤道地區顯小的印象	低緯度被拉長、高緯度被壓扁，形狀失真明顯	蘭伯特等積圓柱的變形：柱面割於南北緯 45°
+gallPeters	0	en	Showing true continental sizes (popular in advocacy material)	Equal-area; corrects the Mercator impression that the tropics are small	Shapes are visibly distorted: tall near the equator, flattened near the poles	A variant of Lambert's cylindrical equal-area with the cylinder secant at 45° N and S
+gallPeters	0	ja	大陸の本当の大きさを示す（啓発資料で多用）	正積で、メルカトルによる熱帯が小さい印象を正す	低緯度は縦長、高緯度はつぶれ、形のひずみが目立つ	ランベルト正積円筒の変形で、北緯・南緯 45° で割る円筒
+robinson	1	zh-Hant	世界全圖、教科書、地圖集	整體外觀自然，各種變形都不大	沒有任何性質完全正確，兩極呈直線	不用公式而以查表定義：每隔 5° 緯度給定長度與間距，使視覺均衡
+robinson	1	en	General world maps, textbooks, atlases	Looks natural overall; no distortion is extreme	No property is exactly preserved; the poles are lines	Defined by a table rather than a formula: lengths and spacing of parallels every 5°, tuned for visual balance
+robinson	1	ja	一般の世界図、教科書、地図帳	全体に自然な見た目で、極端なひずみがない	どの性質も厳密には保たれない。極は直線	式ではなく表で定義：5° ごとの緯線の長さと間隔を見た目で調整
+naturalEarth	0	zh-Hant	世界全圖（Natural Earth 資料的預設）	類似羅賓森，邊角圓滑，視覺舒適	沒有特定的保持性質	以多項式近似羅賓森的查表，並把四角修圓
+naturalEarth	0	en	World maps (the default for Natural Earth data)	Robinson-like with rounded corners; easy on the eye	Preserves no particular property	Polynomials that approximate Robinson's table, with rounded corners
+naturalEarth	0	ja	世界図（Natural Earth データの標準）	ロビンソンに似て角が丸く、見やすい	特定の性質を保たない	ロビンソンの表を多項式で近似し、角を丸めたもの
+equalEarth	1	zh-Hant	需要等積又要好看的世界圖（新聞、氣候資料）	等積，同時保留羅賓森式的自然外觀	高緯度形狀略有壓縮	2018 年設計，以多項式讓擬圓柱投影等積且外形接近羅賓森
+equalEarth	1	en	World maps that must be equal-area yet pleasant (news, climate data)	Equal-area while keeping a Robinson-like look	Some compression of shapes at high latitudes	Designed in 2018: polynomial pseudocylindrical projection made equal-area with a Robinson-like outline
+equalEarth	1	ja	正積かつ見やすい世界図（報道、気候データ）	正積でありながらロビンソン風の自然な外観	高緯度の形がやや圧縮される	2018 年考案。多項式でロビンソン風の輪郭をもつ正積の擬円筒図法
+mollweide	1	zh-Hant	全球分布圖（人口、宇宙背景輻射等）	等積，橢圓外框美觀	邊緣地區形狀扭曲明顯	把地球畫成 2:1 橢圓，緯線為直線，間距由面積相等條件解出
+mollweide	1	en	Global distributions (population, the cosmic microwave background…)	Equal-area in a handsome ellipse	Shapes near the edges are strongly sheared	The globe as a 2:1 ellipse with straight parallels spaced so that areas are equal
+mollweide	1	ja	全球の分布図（人口、宇宙背景放射など）	正積で楕円の外形が美しい	周辺部の形が大きくゆがむ	地球を 2:1 の楕円に描き、緯線は直線で面積が等しくなる間隔
+sinusoidal	0	zh-Hant	熱帶地區、早期世界地圖	等積，赤道與中央經線上距離正確	遠離中央經線處嚴重歪斜	緯線為等距直線，長度與 cos φ 成正比，經線成正弦曲線
+sinusoidal	0	en	Tropical regions, early world maps	Equal-area; distances true along the equator and central meridian	Strong shearing far from the central meridian	Equally spaced straight parallels with lengths ∝ cos φ, so meridians are sine curves
+sinusoidal	0	ja	熱帯地域、初期の世界図	正積。赤道と中央経線上の距離が正しい	中央経線から離れると大きくゆがむ	緯線は等間隔の直線で長さは cos φ に比例、経線は正弦曲線
+eckert4	0	zh-Hant	世界分布圖、地圖集	等積，兩極畫成半長的直線，高緯度形狀比摩爾威德好	邊緣仍有扭曲	擬圓柱等積投影，外框兩側為半圓，極線長度是赤道的一半
+eckert4	0	en	World distribution maps, atlases	Equal-area; the poles are half-length lines, so high latitudes look better than in Mollweide	Edges are still sheared	Pseudocylindrical equal-area with semicircular sides; the pole lines are half the equator
+eckert4	0	ja	世界の分布図、地図帳	正積。極は赤道の半分の線で、高緯度はモルワイデより自然	周辺部はまだゆがむ	両側が半円の擬円筒正積図法。極線の長さは赤道の半分
+winkel3	1	zh-Hant	世界全圖（國家地理學會 1998 年起採用）	面積、方向、距離三種變形的總和很小	沒有任何性質完全正確，經緯線為曲線	取等距圓柱與 Aitoff 投影座標的平均（「三重」指兼顧三種變形）
+winkel3	1	en	General world maps (National Geographic since 1998)	Low total distortion of area, direction and distance	No property is exactly true; graticule lines are curved	Average of equirectangular and Aitoff coordinates ("tripel": balancing three kinds of distortion)
+winkel3	1	ja	一般の世界図（ナショナルジオグラフィック 1998 年以降）	面積・方位・距離のひずみの合計が小さい	厳密に正しい性質はなく、経緯線は曲線	正距円筒図法とエイトフ図法の座標の平均（「トリペル」は三つのひずみの均衡）
+albers	1	zh-Hant	東西延伸的中緯度國家或區域（美國、中國統計地圖）	等積，在兩條標準緯線之間形狀也不錯	離標準緯線越遠變形越大，不適合全球	圓錐割於兩條標準緯線（此處 20°、50°N），以面積相等決定緯線間距
+albers	1	en	Mid-latitude regions that run east-west (statistical maps of the US or China)	Equal-area, with good shapes between the two standard parallels	Distortion grows away from the standard parallels; unsuited to the whole world	Cone secant at two standard parallels (here 20° and 50° N), parallels spaced for equal area
+albers	1	ja	東西に長い中緯度の国や地域（米国・中国の統計地図）	正積で、二つの標準緯線の間では形も良い	標準緯線から離れるほどひずむ。全球には不向き	二本の標準緯線（ここでは北緯 20°・50°）で割る円錐、面積が等しくなる緯線間隔
+lambertConic	1	zh-Hant	航空圖、中緯度國家的地形圖與天氣圖	等角，局部形狀正確；大圓航線近似直線	面積隨遠離標準緯線而失真；無法畫出另一個極	圓錐割於兩條標準緯線（此處 30°、60°N），緯線間距使伸縮在各方向相等
+lambertConic	1	en	Aeronautical charts, topographic and weather maps of mid-latitude countries	Conformal: local shapes are true; great circles are close to straight	Areas distort away from the standard parallels; the far pole cannot be shown	Cone secant at two standard parallels (here 30° and 60° N), spacing chosen so stretching is equal in all directions
+lambertConic	1	ja	航空図、中緯度の国の地形図・天気図	正角で局所の形が正しい。大圏航路がほぼ直線	標準緯線から離れると面積がゆがむ。反対側の極は描けない	二本の標準緯線（ここでは北緯 30°・60°）で割る円錐、全方向の伸びが等しい間隔
+conicEquidistant	0	zh-Hant	中緯度區域的一般地圖（如俄羅斯、獨立國協地圖）	沿經線距離正確，變形折衷	既不等積也不等角	圓錐割於兩條標準緯線，緯線等間距排列
+conicEquidistant	0	en	General maps of mid-latitude regions (e.g. Russia)	Distances along meridians are true; a balanced compromise	Neither equal-area nor conformal	Cone secant at two standard parallels, with equally spaced parallels
+conicEquidistant	0	ja	中緯度地域の一般図（ロシアなど）	経線方向の距離が正しく、ひずみが穏やか	正積でも正角でもない	二本の標準緯線で割る円錐、緯線は等間隔
+orthographic	1	zh-Hant	呈現「從太空看地球」的樣子、插圖	看起來就像真實的地球照片	只能看到半球，邊緣嚴重壓縮	光源在無窮遠，平行光把半球投影到切面上
+orthographic	1	en	Showing the earth "as seen from space", illustrations	Looks like a photograph of the real globe	Only one hemisphere; the edges are strongly compressed	Light at infinity: parallel rays project a hemisphere onto a tangent plane
+orthographic	1	ja	「宇宙から見た地球」の表現、挿絵	本物の地球の写真のように見える	半球しか見えず、周辺は大きく圧縮される	光源は無限遠。平行光で半球を接平面に投影
+stereographic	0	zh-Hant	極區地圖、天文星圖、晶體學	等角，任何圓投影後仍是圓	遠離中心面積迅速放大	光源在切點的對蹠點，把球面投影到切面上
+stereographic	0	en	Polar maps, star charts, crystallography	Conformal, and every circle stays a circle	Areas grow quickly away from the centre	Light at the antipode of the tangent point, projecting the sphere onto the tangent plane
+stereographic	0	ja	極地図、星図、結晶学	正角で、円は投影後も円のまま	中心から離れると面積が急に大きくなる	接点の対蹠点に光源を置き、球面を接平面へ投影
+gnomonic	0	zh-Hant	規劃大圓航線（航空、航海、地震波）	所有大圓（兩點間最短路線）都是直線	形狀、面積、距離都嚴重失真；畫不到半球	光源在地球中心，把球面投影到切面上
+gnomonic	0	en	Planning great-circle routes (aviation, shipping, seismology)	Every great circle (the shortest route) is a straight line	Shapes, areas and distances are badly distorted; less than a hemisphere fits	Light at the earth's centre, projecting onto a tangent plane
+gnomonic	0	ja	大圏航路の計画（航空・航海・地震波）	すべての大圏（最短経路）が直線になる	形・面積・距離が大きくゆがむ。半球も描けない	地球中心に光源を置き、接平面へ投影
+azEquidistant	1	zh-Hant	從某地出發的距離與方位（無線電、飛行範圍、聯合國徽）	從中心到任何點的距離和方位都正確	遠離中心形狀、面積嚴重失真	以中心為準，按實際大圓距離與方位放置每一點
+azEquidistant	1	en	Distances and bearings from one place (radio, flight ranges, the UN emblem)	Distance and direction from the centre to every point are true	Shapes and areas are badly distorted far from the centre	Every point placed at its true great-circle distance and bearing from the centre
+azEquidistant	1	ja	ある地点からの距離と方位（無線、航続範囲、国連旗）	中心から各地点への距離と方位が正しい	中心から離れると形と面積が大きくゆがむ	中心からの大圏距離と方位どおりに各点を配置
+azEqualArea	0	zh-Hant	大洲或半球的面積比較、極區	等積，在中心附近形狀也良好	遠離中心形狀扭曲	以中心為準，按面積相等條件把方位圖展開到整個球面
+azEqualArea	0	en	Comparing areas of continents or hemispheres, polar regions	Equal-area, with good shapes near the centre	Shapes are distorted far from the centre	An azimuthal map around the centre, with radial spacing chosen to keep areas equal
+azEqualArea	0	ja	大陸や半球の面積比較、極地	正積で、中心付近は形も良い	中心から離れると形がゆがむ	中心まわりの方位図法で、面積が等しくなる半径方向の間隔

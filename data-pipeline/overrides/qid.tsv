@@ -1,0 +1,4 @@
+# Wikidata ID corrections for Cliopatria rows (wrong IDs make a polity match the wrong modern country).
+# 欄位：polity(Cliopatria 名稱)	Cliopatria 的 QID	正確 QID	來源
+Republic of Korea	Q423	Q884	https://www.wikidata.org/wiki/Q884 ; Q423 是朝鮮民主主義人民共和國
+Republic of Vietnam	Q172640	Q180573	https://www.wikidata.org/wiki/Q180573 ; Q172640 是越南民主共和國

@@ -1,0 +1,520 @@
+{
+ "start": "0862-01",
+ "end": "2026-12",
+ "units": "russia_units.geojson",
+ "merge": true,
+ "groups": {
+  "russia_all": [
+   "RU-AL",
+   "RU-PSK",
+   "RU-KDA",
+   "RU-KC",
+   "RU-KB",
+   "RU-SE",
+   "RU-IN",
+   "RU-CE",
+   "RU-DA",
+   "RU-KGD",
+   "RU-SMO",
+   "RU-BRY",
+   "RU-KRS",
+   "RU-BEL",
+   "RU-VOR",
+   "RU-ROS",
+   "RU-BU",
+   "RU-TY",
+   "RU-ZAB",
+   "RU-AMU",
+   "RU-YEV",
+   "RU-KHA",
+   "RU-PRI",
+   "RU-TYU",
+   "RU-KGN",
+   "RU-OMS",
+   "RU-NVS",
+   "RU-CHE",
+   "RU-ALT",
+   "RU-ORE",
+   "RU-SAR",
+   "RU-AST",
+   "RU-VGG",
+   "RU-MAG",
+   "RU-CHU",
+   "RU-YAN",
+   "RU-NEN",
+   "RU-SA",
+   "RU-SPE",
+   "RU-ARK",
+   "RU-KYA",
+   "RU-KL",
+   "RU-KAM",
+   "RU-BA",
+   "RU-SVE",
+   "RU-KHM",
+   "RU-LIP",
+   "RU-TAM",
+   "RU-TOM",
+   "RU-TA",
+   "RU-ULY",
+   "RU-PNZ",
+   "RU-KEM",
+   "RU-ORL",
+   "RU-IRK",
+   "RU-KK",
+   "RU-MO",
+   "RU-KLU",
+   "RU-KOS",
+   "RU-YAR",
+   "RU-VLA",
+   "RU-RYA",
+   "RU-IVA",
+   "RU-NIZ",
+   "RU-TUL",
+   "RU-CU",
+   "RU-VLG",
+   "RU-NGR",
+   "RU-TVE",
+   "RU-MOW",
+   "RU-MOS",
+   "RU-ME",
+   "RU-KIR",
+   "RU-UD",
+   "RU-KO",
+   "RU-PER",
+   "RU-SAM",
+   "RU-STA",
+   "RU-AD",
+   "RU-LEN",
+   "RU-KR",
+   "RU-MUR",
+   "RU-SAK",
+   "vyborg",
+   "ladoga_k",
+   "pechenga",
+   "sak_s",
+   "kur_s",
+   "kur_n"
+  ],
+  "novgorod_land": [
+   "RU-NGR",
+   "RU-LEN",
+   "RU-SPE",
+   "RU-KR",
+   "RU-ARK",
+   "RU-NEN",
+   "RU-VLG",
+   "RU-MUR",
+   "RU-KO",
+   "vyborg",
+   "ladoga_k",
+   "pechenga"
+  ],
+  "novgorod_core": [
+   "RU-NGR",
+   "RU-LEN",
+   "RU-SPE"
+  ],
+  "north": [
+   "RU-KR",
+   "RU-ARK",
+   "RU-NEN",
+   "RU-VLG",
+   "RU-MUR",
+   "RU-KO",
+   "ladoga_k",
+   "pechenga"
+  ],
+  "ingria": [
+   "RU-LEN",
+   "RU-SPE"
+  ],
+  "suzdal": [
+   "RU-VLA",
+   "RU-IVA",
+   "RU-YAR",
+   "RU-KOS",
+   "RU-MOS",
+   "RU-MOW",
+   "RU-NIZ"
+  ],
+  "moscow": [
+   "RU-MOS",
+   "RU-MOW"
+  ],
+  "ryazan_l": [
+   "RU-RYA",
+   "RU-LIP"
+  ],
+  "chernigov_l": [
+   "UA-74",
+   "RU-BRY",
+   "RU-ORL",
+   "RU-KRS",
+   "RU-KLU",
+   "RU-TUL",
+   "UA-59"
+  ],
+  "seversk": [
+   "UA-74",
+   "RU-BRY",
+   "UA-59",
+   "RU-KRS"
+  ],
+  "kiev_l": [
+   "UA-30",
+   "UA-32",
+   "UA-18",
+   "UA-71",
+   "UA-53"
+  ],
+  "galicia": [
+   "UA-46",
+   "UA-26",
+   "UA-61"
+  ],
+  "volhynia": [
+   "UA-07",
+   "UA-56"
+  ],
+  "podolia": [
+   "UA-05",
+   "UA-68"
+  ],
+  "belarus": [
+   "BY-HO",
+   "BY-BR",
+   "BY-VI",
+   "BY-HR",
+   "BY-MA",
+   "BY-MI",
+   "BY-HM"
+  ],
+  "belarus_e": [
+   "BY-VI",
+   "BY-MA",
+   "BY-HO"
+  ],
+  "belarus_c": [
+   "BY-MI",
+   "BY-HM"
+  ],
+  "belarus_w": [
+   "BY-BR",
+   "BY-HR"
+  ],
+  "crimea": [
+   "UA-43",
+   "UA-40"
+  ],
+  "donbas": [
+   "UA-14",
+   "UA-14-2014",
+   "UA-14-west",
+   "UA-09",
+   "UA-09-2014"
+  ],
+  "wildfields": [
+   "UA-12",
+   "UA-35",
+   "UA-23",
+   "UA-23-south",
+   "UA-63",
+   "UA-63-east",
+   "donbas"
+  ],
+  "pontic": [
+   "UA-65",
+   "UA-65-left",
+   "UA-48",
+   "UA-51"
+  ],
+  "ukraine": [
+   "UA-43",
+   "UA-40",
+   "UA-74",
+   "UA-07",
+   "UA-56",
+   "UA-18",
+   "UA-32",
+   "UA-21",
+   "UA-77",
+   "UA-26",
+   "UA-51",
+   "UA-05",
+   "UA-46",
+   "UA-59",
+   "UA-48",
+   "UA-53",
+   "UA-68",
+   "UA-61",
+   "UA-12",
+   "UA-71",
+   "UA-35",
+   "UA-30",
+   "UA-14-2014",
+   "UA-14-west",
+   "UA-14",
+   "UA-09-2014",
+   "UA-09",
+   "UA-65-left",
+   "UA-65",
+   "UA-23-south",
+   "UA-23",
+   "UA-63-east",
+   "UA-63"
+  ],
+  "ukraine_east": [
+   "UA-63",
+   "UA-63-east",
+   "UA-12",
+   "UA-23",
+   "UA-23-south",
+   "UA-65",
+   "UA-65-left",
+   "UA-48",
+   "UA-51",
+   "UA-35",
+   "donbas",
+   "crimea"
+  ],
+  "ukraine_core": [
+   "UA-30",
+   "UA-32",
+   "UA-18",
+   "UA-71",
+   "UA-53",
+   "UA-74",
+   "UA-59",
+   "UA-05",
+   "UA-68",
+   "volhynia"
+  ],
+  "left_bank": [
+   "UA-74",
+   "UA-53",
+   "UA-59",
+   "UA-30"
+  ],
+  "right_bank": [
+   "UA-32",
+   "UA-18",
+   "UA-05",
+   "UA-71",
+   "UA-35",
+   "UA-68"
+  ],
+  "sloboda": [
+   "UA-63",
+   "UA-63-east",
+   "RU-BEL"
+  ],
+  "don": [
+   "RU-ROS",
+   "RU-VGG"
+  ],
+  "south_ru": [
+   "RU-VOR",
+   "RU-BEL",
+   "RU-TAM",
+   "RU-LIP",
+   "RU-PNZ",
+   "RU-SAR"
+  ],
+  "ncauc": [
+   "RU-KDA",
+   "RU-AD",
+   "RU-STA",
+   "RU-KC",
+   "RU-KB",
+   "RU-SE",
+   "RU-IN",
+   "RU-CE",
+   "RU-DA"
+  ],
+  "kuban": [
+   "RU-KDA",
+   "RU-AD"
+  ],
+  "east_cauc": [
+   "RU-CE",
+   "RU-IN",
+   "RU-DA"
+  ],
+  "mid_volga": [
+   "RU-TA",
+   "RU-CU",
+   "RU-ULY",
+   "RU-SAM",
+   "RU-ME",
+   "RU-MO",
+   "RU-UD"
+  ],
+  "kazan_kh": [
+   "RU-TA",
+   "RU-CU",
+   "RU-ME",
+   "RU-UD"
+  ],
+  "low_volga": [
+   "RU-AST",
+   "RU-KL"
+  ],
+  "vyatka_perm": [
+   "RU-KIR",
+   "RU-PER"
+  ],
+  "urals": [
+   "RU-BA",
+   "RU-ORE",
+   "RU-CHE",
+   "RU-SVE",
+   "RU-KGN"
+  ],
+  "sibir_kh": [
+   "RU-TYU",
+   "RU-KGN",
+   "RU-KHM",
+   "RU-YAN",
+   "RU-OMS"
+  ],
+  "w_siberia": [
+   "RU-TOM",
+   "RU-NVS",
+   "RU-KEM",
+   "RU-ALT",
+   "RU-AL"
+  ],
+  "e_siberia": [
+   "RU-KYA",
+   "RU-KK",
+   "RU-IRK",
+   "RU-BU",
+   "RU-ZAB",
+   "RU-SA"
+  ],
+  "ne_siberia": [
+   "RU-MAG",
+   "RU-CHU",
+   "RU-KAM",
+   "RU-KHA"
+  ],
+  "amur": [
+   "RU-AMU",
+   "RU-YEV",
+   "RU-PRI"
+  ],
+  "sakhalin": [
+   "RU-SAK",
+   "sak_s"
+  ],
+  "kurils": [
+   "kur_s",
+   "kur_n"
+  ],
+  "siberia_all": [
+   "sibir_kh",
+   "w_siberia",
+   "e_siberia",
+   "ne_siberia",
+   "amur",
+   "sakhalin",
+   "kurils",
+   "RU-TY"
+  ],
+  "kazakh": [
+   "KZ-VOS",
+   "KZ-ALA",
+   "KZ-ZHA",
+   "KZ-YUZ",
+   "KZ-MAN",
+   "KZ-KZY",
+   "KZ-AKT",
+   "KZ-SEV",
+   "KZ-KUS",
+   "KZ-PAV",
+   "KZ-ZAP",
+   "KZ-ATY",
+   "KZ-AKM",
+   "KZ-KAR",
+   "KZ-ALC",
+   "KZ-AST"
+  ],
+  "kz_junior": [
+   "KZ-ZAP",
+   "KZ-ATY",
+   "KZ-AKT",
+   "KZ-MAN"
+  ],
+  "kz_middle": [
+   "KZ-KUS",
+   "KZ-SEV",
+   "KZ-AKM",
+   "KZ-AST",
+   "KZ-KAR",
+   "KZ-PAV",
+   "KZ-VOS"
+  ],
+  "kz_senior": [
+   "KZ-ALA",
+   "KZ-ALC",
+   "KZ-ZHA"
+  ],
+  "kz_south": [
+   "KZ-YUZ",
+   "KZ-KZY"
+  ],
+  "central_asia": [
+   "uzbekistan",
+   "turkmenistan",
+   "kyrgyzstan",
+   "tajikistan"
+  ],
+  "baltic": [
+   "estonia",
+   "latvia",
+   "lithuania"
+  ],
+  "scauc": [
+   "georgia",
+   "abkhazia",
+   "s_ossetia",
+   "armenia",
+   "azerbaijan",
+   "nk",
+   "nk_buffer",
+   "nakhchivan"
+  ],
+  "georgia_all": [
+   "georgia",
+   "abkhazia",
+   "s_ossetia"
+  ],
+  "azer_all": [
+   "azerbaijan",
+   "nk",
+   "nk_buffer",
+   "nakhchivan"
+  ],
+  "moldova_all": [
+   "md",
+   "md_tr"
+  ],
+  "finland_all": [
+   "finland",
+   "vyborg",
+   "ladoga_k",
+   "pechenga"
+  ],
+  "ussr_1991": [
+   "russia_all",
+   "ukraine",
+   "belarus",
+   "baltic",
+   "moldova_all",
+   "scauc",
+   "kazakh",
+   "central_asia",
+   "RU-KGD"
+  ]
+ }
+}

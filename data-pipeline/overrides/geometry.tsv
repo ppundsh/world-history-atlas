@@ -1,0 +1,10 @@
+# Geometry corrections to Cliopatria. Every line needs a source.
+# 欄位：polity(Cliopatria 名稱)	起	迄	動作	幾何	來源
+# 動作：set = 換成此幾何；add = 加上；subtract = 扣除
+# 幾何：NE:<ADM0_A3>（Natural Earth 1:50m 國家）、NE1:<admin-1 名稱>（Natural Earth 1:10m 省級）、TW:<單元>（data-pipeline/taiwan 的單元，如金門、馬祖）
+Republic of China	1950	2026	set	NE:TWN+TW:kinmen+TW:matsu	https://zh.wikipedia.org/zh-tw/中華民國政府遷臺 ; 1950 年 5 月海南、舟山撤守後，中華民國實際控制臺澎金馬
+People's Republic of China	1950	2026	add	NE1:Hainan	https://zh.wikipedia.org/zh-tw/海南島戰役 ; 1950 年 3–5 月海南島戰役後由中華人民共和國控制
+People's Republic of China	1950	2026	subtract	NE:TWN+TW:kinmen+TW:matsu	https://zh.wikipedia.org/zh-tw/古寧頭戰役 ; 金門、馬祖、臺澎由中華民國控制
+Japan	1946	1971	subtract	NE1:Okinawa	https://en.wikipedia.org/wiki/United_States_Civil_Administration_of_the_Ryukyu_Islands ; 琉球群島 1945–1972 年 5 月 15 日由美國治理
+United States of America	1946	1971	add	NE1:Okinawa	https://en.wikipedia.org/wiki/Okinawa_reversion ; 1972 年 5 月 15 日歸還日本
+United States of America	1973	1975	subtract	NE:VNM	https://en.wikipedia.org/wiki/Paris_Peace_Accords ; 1973 年巴黎和平協約後美軍撤出越南

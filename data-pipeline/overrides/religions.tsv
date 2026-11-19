@@ -1,0 +1,35 @@
+# 宗教模式：宗教代碼、顏色與名稱。欄位：代碼	大類	顏色	繁中	簡中	English	日本語
+cath	christ	#2f5fd0	天主教	天主教	Catholic Christianity	カトリック
+orth	christ	#7e57c2	東正教	东正教	Eastern Orthodox Christianity	東方正教会
+prot	christ	#4fb3e8	新教	新教	Protestant Christianity	プロテスタント
+mixed_cp	christ	#6f8fe0	天主教與新教並存	天主教与新教并存	Catholic & Protestant (mixed)	カトリック・プロテスタント混在
+arian	christ	#9fa8da	亞流派基督教	亚流派基督教	Arian Christianity	アリウス派
+miaph	christ	#3f4aa8	東方正統教會（科普特、亞美尼亞、衣索比亞等）	东方正统教会（科普特、亚美尼亚、埃塞俄比亚等）	Oriental Orthodox (Miaphysite)	非カルケドン派（東方諸教会）
+nest	christ	#5fb8b0	東方教會（景教）	东方教会（景教）	Church of the East (Nestorian)	東方教会（ネストリウス派）
+sunni	islam	#2e7d32	伊斯蘭教遜尼派	伊斯兰教逊尼派	Sunni Islam	スンナ派イスラム
+shia	islam	#66bb6a	伊斯蘭教什葉派（十二伊瑪目／宰德等）	伊斯兰教什叶派（十二伊玛目／宰德等）	Shia Islam (Twelver, Zaydi…)	シーア派イスラム
+ismaili	islam	#a5d66b	伊斯蘭教伊斯瑪儀派	伊斯兰教伊斯玛仪派	Ismaili Shia Islam	イスマーイール派
+ibadi	islam	#00897b	伊斯蘭教伊巴德派	伊斯兰教伊巴德派	Ibadi Islam	イバード派
+thera	dharma	#f6d33c	上座部佛教	上座部佛教	Theravada Buddhism	上座部仏教
+maha	dharma	#ffa726	大乘佛教	大乘佛教	Mahayana Buddhism	大乗仏教
+vajra	dharma	#d84315	藏傳佛教	藏传佛教	Tibetan (Vajrayana) Buddhism	チベット仏教
+budd	dharma	#ffcc80	早期佛教（部派佛教）	早期佛教（部派佛教）	Early (Nikaya) Buddhism	初期仏教（部派仏教）
+hindu	dharma	#d81b60	印度教（含婆羅門教）	印度教（含婆罗门教）	Hinduism (incl. Brahmanism)	ヒンドゥー教（バラモン教を含む）
+jain	dharma	#f48fb1	耆那教	耆那教	Jainism	ジャイナ教
+sikh	dharma	#ad1457	錫克教	锡克教	Sikhism	シク教
+confu	eastasia	#b71c1c	中國傳統宗教（儒、道、民間信仰）	中国传统宗教（儒、道、民间信仰）	Chinese traditional religion (Confucian, Taoist, folk)	中国の伝統宗教（儒教・道教・民間信仰）
+shinto	eastasia	#ef8a8a	神道與佛教（神佛習合）	神道与佛教（神佛习合）	Shinto & Buddhism (Japan)	神道・仏教（神仏習合）
+bon	eastasia	#8d6e63	苯教	苯教	Bon	ボン教
+zoro	iran	#c9a227	瑣羅亞斯德教（祆教）	琐罗亚斯德教（祆教）	Zoroastrianism	ゾロアスター教
+mani	iran	#795548	摩尼教	摩尼教	Manichaeism	マニ教
+jew	abraham	#1a237e	猶太教	犹太教	Judaism	ユダヤ教
+tengri	folk	#90a4ae	草原薩滿與騰格里信仰	草原萨满与腾格里信仰	Steppe shamanism & Tengrism	草原のシャーマニズム・テングリ信仰
+neareast	ancient	#bcaaa4	古代近東多神信仰	古代近东多神信仰	Ancient Near Eastern polytheism	古代オリエントの多神教
+egypt	ancient	#d7b56d	古埃及宗教	古埃及宗教	Ancient Egyptian religion	古代エジプトの宗教
+greco	ancient	#a1887f	希臘羅馬多神信仰	希腊罗马多神信仰	Greco-Roman polytheism	ギリシャ・ローマの多神教
+pagan_eu	ancient	#78909c	歐洲古代異教（日耳曼、斯拉夫、凱爾特、波羅的）	欧洲古代异教（日耳曼、斯拉夫、凯尔特、波罗的）	European paganism (Germanic, Slavic, Celtic, Baltic)	ヨーロッパの異教（ゲルマン・スラヴ・ケルト・バルト）
+meso	americas	#26c6da	中美洲宗教（馬雅、阿茲特克等）	中美洲宗教（玛雅、阿兹特克等）	Mesoamerican religion	メソアメリカの宗教
+andes	americas	#00838f	安地斯宗教（印加等）	安第斯宗教（印加等）	Andean religion	アンデスの宗教
+trad_af	folk	#8d6e63	非洲傳統宗教	非洲传统宗教	African traditional religions	アフリカの伝統宗教
+trad	folk	#b0b0b0	其他傳統／原住民信仰	其他传统／原住民信仰	Other traditional & indigenous religions	その他の伝統宗教・先住民の信仰
+atheist	secular	#424242	國家無神論（共產黨執政）	国家无神论（共产党执政）	State atheism (Communist rule)	国家無神論（共産党政権）

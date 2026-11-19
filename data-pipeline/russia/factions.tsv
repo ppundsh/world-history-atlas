@@ -1,0 +1,93 @@
+# 俄羅斯模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+rurik	#c8a2c8	留里克王朝（諾夫哥羅德）	留里克王朝（诺夫哥罗德）	Rurik's Novgorod	リューリク（ノヴゴロド）
+kievan	#9575cd	基輔羅斯	基辅罗斯	Kievan Rus'	キエフ・ルーシ
+rus	#b39ddb	羅斯諸公國	罗斯诸公国	Rus' principalities	ルーシ諸公国
+novgorod	#7986cb	諾夫哥羅德共和國	诺夫哥罗德共和国	Novgorod Republic	ノヴゴロド公国（共和国）
+pskov	#9fa8da	普斯科夫共和國	普斯科夫共和国	Pskov Republic	プスコフ共和国
+vladimir	#8e7cc3	弗拉基米爾—蘇茲達爾公國	弗拉基米尔—苏兹达尔公国	Vladimir-Suzdal	ウラジーミル・スーズダリ大公国
+tver	#a491d3	特維爾公國	特维尔公国	Principality of Tver	トヴェリ公国
+ryazan	#c5b4e3	梁贊公國	梁赞公国	Principality of Ryazan	リャザン公国
+galicia	#b0bec5	加利西亞—沃里尼亞	加利西亚—沃里尼亚	Galicia-Volhynia	ハーリチ・ヴォルィーニ大公国
+muscovy	#c62828	莫斯科大公國	莫斯科大公国	Grand Duchy of Moscow	モスクワ大公国
+tsardom	#c62828	俄羅斯沙皇國	俄罗斯沙皇国	Tsardom of Russia	ロシア・ツァーリ国
+empire_ru	#c62828	俄羅斯帝國	俄罗斯帝国	Russian Empire	ロシア帝国
+provisional	#e57373	俄羅斯共和國（臨時政府）	俄罗斯共和国（临时政府）	Russian Republic (Provisional Government)	ロシア共和国（臨時政府）
+rsfsr	#d32f2f	蘇維埃俄國	苏维埃俄国	Soviet Russia	ソビエト・ロシア
+whites	#90a4ae	白軍政權	白军政权	White movement	白軍政権
+fer	#ef9a9a	遠東共和國	远东共和国	Far Eastern Republic	極東共和国
+ussr	#b71c1c	蘇聯	苏联	Soviet Union	ソビエト連邦
+rf	#1565c0	俄羅斯聯邦	俄罗斯联邦	Russian Federation	ロシア連邦
+khazar	#d7ccc8	可薩汗國	可萨汗国	Khazar Khaganate	ハザール・カガン国
+volgabulgar	#bcaaa4	伏爾加保加爾	伏尔加保加尔	Volga Bulgaria	ヴォルガ・ブルガール
+pecheneg	#e0d4a8	佩切涅格人	佩切涅格人	Pechenegs	ペチェネグ
+cuman	#e6d690	庫曼人（欽察）	库曼人（钦察）	Cumans (Kipchaks)	クマン人（キプチャク）
+horde	#f9a825	金帳汗國	金帐汗国	Golden Horde	ジョチ・ウルス（キプチャク・ハン国）
+kazankh	#ffb300	喀山汗國	喀山汗国	Khanate of Kazan	カザン・ハン国
+astrakhankh	#ffca28	阿斯特拉罕汗國	阿斯特拉罕汗国	Khanate of Astrakhan	アストラハン・ハン国
+sibirkh	#ffd54f	西伯利亞汗國	西伯利亚汗国	Khanate of Sibir	シビル・ハン国
+crimeakh	#f57f17	克里米亞汗國	克里米亚汗国	Crimean Khanate	クリミア・ハン国
+nogai	#fbc02d	諾蓋汗國	诺盖汗国	Nogai Horde	ノガイ・オルダ
+kazakhkh	#ffe082	哈薩克汗國	哈萨克汗国	Kazakh Khanate	カザフ・ハン国
+kalmyk	#ffcc80	卡爾梅克汗國	卡尔梅克汗国	Kalmyk Khanate	カルムイク・ハン国
+lithuania	#689f38	立陶宛大公國	立陶宛大公国	Grand Duchy of Lithuania	リトアニア大公国
+plc	#8bc34a	波蘭立陶宛聯邦	波兰立陶宛联邦	Polish-Lithuanian Commonwealth	ポーランド・リトアニア共和国
+poland	#e91e63	波蘭	波兰	Poland	ポーランド
+sweden	#1e88e5	瑞典	瑞典	Sweden	スウェーデン
+order	#78909c	立窩尼亞騎士團	立窝尼亚骑士团	Livonian Order	リヴォニア騎士団
+ottoman	#2e7d32	鄂圖曼帝國	奥斯曼帝国	Ottoman Empire	オスマン帝国
+persia	#00897b	波斯	波斯	Persia	ペルシア
+georgiak	#a1887f	喬治亞諸王國	格鲁吉亚诸王国	Georgian kingdoms	ジョージアの諸王国
+caucasus	#c5e1a5	北高加索諸民族	北高加索诸民族	North Caucasian peoples	北カフカスの諸民族
+imamate	#9ccc65	高加索伊瑪目國	高加索伊玛目国	Caucasian Imamate	コーカサス・イマーム国
+centralasia	#ffe0b2	中亞諸汗國	中亚诸汗国	Central Asian khanates	中央アジアの諸ハン国
+siberia	#b2dfdb	西伯利亞諸民族	西伯利亚诸民族	Siberian peoples	シベリアの諸民族
+alaskan	#b2ebf2	阿拉斯加原住民族	阿拉斯加原住民族	Alaska Natives	アラスカ先住民
+finnic	#c8e6c9	芬蘭—烏戈爾諸部	芬兰—乌戈尔诸部	Finno-Ugric peoples	フィン・ウゴル系諸民族
+mongol	#a1887f	蒙古諸部	蒙古诸部	Mongol tribes	モンゴル諸部
+qing	#e6c229	大清帝國	大清帝国	Great Qing Empire	大清帝国
+bogd	#ffd180	大蒙古國（博克多汗國）	大蒙古国（博克多汗国）	Bogd Khanate of Mongolia	ボグド・ハーン政権
+mpr	#ef5350	蒙古人民共和國	蒙古人民共和国	Mongolian People's Republic	モンゴル人民共和国
+mongolia	#42a5f5	蒙古國	蒙古国	Mongolia	モンゴル国
+tuva	#ff8a65	唐努圖瓦人民共和國	唐努图瓦人民共和国	Tuvan People's Republic	トゥヴァ人民共和国
+austria	#fdd835	奧地利（奧匈帝國）	奥地利（奥匈帝国）	Austria (Austria-Hungary)	オーストリア（オーストリア＝ハンガリー）
+hungary	#81c784	匈牙利	匈牙利	Hungary	ハンガリー
+czechoslovakia	#4fc3f7	捷克斯洛伐克	捷克斯洛伐克	Czechoslovakia	チェコスロバキア
+romania	#ffee58	羅馬尼亞	罗马尼亚	Romania	ルーマニア
+moldavia	#fff176	摩爾達維亞公國	摩尔达维亚公国	Principality of Moldavia	モルダヴィア公国
+prussia	#455a64	普魯士（德國）	普鲁士（德国）	Prussia (Germany)	プロイセン（ドイツ）
+germany	#424242	德國（佔領）	德国（占领）	Germany (occupation)	ドイツ（占領）
+teutonic	#607d8b	條頓騎士團	条顿骑士团	Teutonic Order	ドイツ騎士団
+japan	#e57373	日本	日本	Japan	日本
+usa	#1976d2	美國	美国	United States	アメリカ合衆国
+finland	#29b6f6	芬蘭	芬兰	Finland	フィンランド
+estonia	#26c6da	愛沙尼亞	爱沙尼亚	Estonia	エストニア
+latvia	#ab47bc	拉脫維亞	拉脱维亚	Latvia	ラトビア
+lithrep	#9ccc65	立陶宛	立陶宛	Lithuania	リトアニア
+ukraine	#ffd600	烏克蘭	乌克兰	Ukraine	ウクライナ
+unr	#ffe57f	烏克蘭人民共和國	乌克兰人民共和国	Ukrainian People's Republic	ウクライナ人民共和国
+hetmanate	#fff59d	哥薩克酋長國	哥萨克酋长国	Cossack Hetmanate	ヘトマン国家
+belarus	#a5d6a7	白俄羅斯	白俄罗斯	Belarus	ベラルーシ
+moldova	#ffb74d	摩爾多瓦	摩尔多瓦	Moldova	モルドバ
+georgia	#e57373	喬治亞	格鲁吉亚	Georgia	ジョージア
+armenia	#ff7043	亞美尼亞	亚美尼亚	Armenia	アルメニア
+azerbaijan	#26a69a	亞塞拜然	阿塞拜疆	Azerbaijan	アゼルバイジャン
+kazakhstan	#4dd0e1	哈薩克	哈萨克斯坦	Kazakhstan	カザフスタン
+uzbekistan	#4db6ac	烏茲別克	乌兹别克斯坦	Uzbekistan	ウズベキスタン
+turkmenistan	#81c784	土庫曼	土库曼斯坦	Turkmenistan	トルクメニスタン
+kyrgyzstan	#e57373	吉爾吉斯	吉尔吉斯斯坦	Kyrgyzstan	キルギス
+tajikistan	#aed581	塔吉克	塔吉克斯坦	Tajikistan	タジキスタン
+turkey	#43a047	土耳其	土耳其	Turkey	トルコ
+ichkeria	#8d6e63	車臣伊奇克里亞共和國	车臣伊奇克里亚共和国	Chechen Republic of Ichkeria	チェチェン・イチケリア共和国
+pmr	#ef9a9a	德涅斯特河沿岸摩爾達維亞共和國	德涅斯特河沿岸摩尔达维亚共和国	Pridnestrovian Moldavian Republic (Transnistria)	沿ドニエストル・モルドバ共和国
+abkhazia	#a5d6a7	阿布哈茲共和國	阿布哈兹共和国	Republic of Abkhazia	アブハジア共和国
+sossetia	#c5e1a5	南奧塞提亞共和國	南奥塞梯共和国	Republic of South Ossetia	南オセチア共和国
+artsakh	#ffab91	阿爾察赫共和國	阿尔察赫共和国	Republic of Artsakh	アルツァフ共和国
+dpr	#90a4ae	頓涅茨克人民共和國	顿涅茨克人民共和国	Donetsk People's Republic	ドネツク人民共和国
+lpr	#b0bec5	盧甘斯克人民共和國	卢甘斯克人民共和国	Luhansk People's Republic	ルハンスク人民共和国
+slavs	#d1c4e9	東斯拉夫諸部	东斯拉夫诸部	East Slavic tribes	東スラヴ諸部族
+steppe	#efe5c4	草原遊牧諸部	草原游牧诸部	Steppe nomads	草原の遊牧諸部族
+scaucasus	#bcaaa4	南高加索諸國	南高加索诸国	South Caucasian states	南カフカスの諸国
+balts	#c5e1a5	波羅的與芬蘭諸部	波罗的与芬兰诸部	Baltic and Finnic tribes	バルト・フィン系諸部族
+roc	#1e40af	中華民國	中华民国	Republic of China	中華民国
+mixed	#c0ca33	日俄雜居地	日俄杂居地	Joint Japanese-Russian territory	日露雑居地
+wukr	#fff9c4	西烏克蘭人民共和國	西乌克兰人民共和国	West Ukrainian People's Republic	西ウクライナ人民共和国

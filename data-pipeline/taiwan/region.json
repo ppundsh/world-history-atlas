@@ -1,0 +1,19 @@
+{
+  "start": "1600-01",
+  "end": "2026-12",
+  "units": "taiwan_units.geojson",
+  "merge": true,
+  "groups": {
+    "taipei": ["tpe_core", "tpe_ext", "tpe_ym", "newtaipei"],
+    "hsinchu": ["hsinchu_city", "hsinchu_co"],
+    "taichung": ["taichung_city", "taichung_co"],
+    "chiayi": ["chiayi_city", "chiayi_co"],
+    "tainan": ["tainan_city", "tainan_co"],
+    "kaohsiung": ["kaohsiung_city", "kaohsiung_co"],
+    "mt_north": ["mt_wulai", "mt_fuxing", "mt_hsinchu", "mt_taian", "mt_yilan"],
+    "mt_central": ["mt_heping", "mt_nantou"],
+    "mt_south": ["mt_alishan", "mt_kaohsiung", "mt_pingtung"],
+    "mt_east": ["mt_hualien", "mt_taitung"],
+    "mountains": ["mt_north", "mt_central", "mt_south", "mt_east"]
+  }
+}

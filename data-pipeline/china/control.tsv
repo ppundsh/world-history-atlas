@@ -1,0 +1,249 @@
+# 中國模式：各省實際控制者（逐月）。
+# 欄位：年月	省（逗號分隔）	控制者[/部分地區被另一勢力控制]
+# 每一行從該月起生效，直到同一省的下一行。「/」後是同省內的第二勢力（地圖上以斜紋表示），沒寫就代表沒有。
+# 以省為單位只是近似：一省之內常有多股勢力，本表取「省會與大部分地區」的控制者，重要的分治才寫第二勢力。
+# 1949-10 起，ccp 會自動顯示為「中華人民共和國」。
+
+# ---- 1911 年 9 月：辛亥革命前
+1911-09	zhili,rehe,chahar,suiyuan,xingan,shanxi,henan,jiangsu,shanghai,zhejiang,anhui,jiangxi,hubei,hunan,fujian,guangdong,hainan,guangxi,yunnan,guizhou,sichuan,xikang,shaanxi,gansu,ningxia,qinghai,xinjiang,tibet,liaoning,jilin,heilongjiang,waimeng,tuva	qing
+1911-09	shandong	qing/germany
+1911-09	taiwan	japan
+1911-09	hongkong	britain
+1911-09	macau	portugal
+
+# ---- 辛亥革命：各省宣布獨立
+1911-10	hubei,hunan,shaanxi,jiangxi,shanxi,yunnan	rev
+1911-11	guizhou,shanghai,zhejiang,jiangsu,guangxi,anhui,fujian,guangdong,hainan,sichuan,xikang	rev
+1911-11	shandong	rev/germany
+1911-12	shandong	qing/germany
+1911-12	shanxi	qing/rev
+1911-12	waimeng	bogd
+1912-01	hubei,hunan,shaanxi,jiangxi,yunnan,guizhou,shanghai,zhejiang,jiangsu,guangxi,anhui,fujian,guangdong,hainan,sichuan,xikang	nanjing
+1912-01	xinjiang	qing/rev
+1912-01	xingan	bogd
+1912-01	tuva	tuva
+# 清帝退位（2 月 12 日），袁世凱繼任臨時大總統
+1912-02	zhili,rehe,chahar,suiyuan,henan,gansu,ningxia,qinghai,liaoning,jilin,heilongjiang	beiyang
+1912-02	shandong	beiyang/germany
+1912-02	shanxi	beiyang
+1912-02	tibet	beiyang/tibet
+1912-02	qinghai	beiyang/ma
+1912-02	xinjiang	beiyang/rev
+# 臨時政府北遷（4 月），南方各省名義上歸北京
+1912-04	hubei,hunan,shaanxi,jiangxi,shanghai,zhejiang,jiangsu,anhui,fujian,guangdong,hainan	beiyang
+1912-04	shanxi	shanxi
+1912-04	guangxi	oldgx
+1912-04	yunnan	yunnan
+1912-04	guizhou	guizhou
+1912-04	sichuan,xikang	sichuan
+1912-05	xinjiang	xinjiang
+1912-04	ningxia	ma
+1912-08	tibet	tibet
+
+# ---- 二次革命（1913 年 7–9 月）
+1913-07	jiangxi,jiangsu,anhui,guangdong,hainan,fujian,hunan,shanghai	anti1913
+1913-08	sichuan	anti1913
+1913-08	anhui,fujian,guangdong,hainan,shanghai	beiyang
+1913-09	jiangxi,jiangsu,sichuan,xikang	beiyang
+1913-10	hunan	beiyang
+1914-04	tuva	russia
+1914-11	shandong	beiyang/japan
+1915-01	qinghai	ma
+
+# ---- 洪憲帝制與護國戰爭
+1915-12	zhili,rehe,chahar,suiyuan,henan,gansu,ningxia,liaoning,jilin,heilongjiang,hubei,hunan,shaanxi,jiangxi,shanghai,zhejiang,jiangsu,anhui,fujian,guangdong,hainan,sichuan,xikang	hongxian
+1915-12	shandong	hongxian/japan
+1915-12	yunnan	huguo
+1915-11	xingan	beiyang
+1916-01	guizhou	huguo
+1916-03	guangxi	huguo
+1916-03	zhili,rehe,chahar,suiyuan,henan,gansu,ningxia,liaoning,jilin,heilongjiang,hubei,hunan,shaanxi,jiangxi,shanghai,zhejiang,jiangsu,anhui,fujian,guangdong,hainan,sichuan,xikang	beiyang
+1916-03	shandong	beiyang/japan
+1916-04	guangdong,hainan,zhejiang	huguo
+1916-04	liaoning	fengtian
+1916-05	shaanxi,sichuan,xikang,hunan	huguo
+
+# ---- 袁世凱死後：北洋分裂，軍閥割據（1916 年 7 月起）
+1916-07	zhili,jiangsu,jiangxi,hubei	zhili
+1916-07	anhui,zhejiang,shanghai,fujian,shaanxi	anhui
+1916-07	shandong	anhui/japan
+1916-07	yunnan	yunnan
+1916-07	guizhou	guizhou
+1916-07	guangxi,guangdong,hainan	oldgx
+1916-07	sichuan,xikang	sichuan/yunnan
+1916-08	hunan	hunan
+1917-07	zhili	zhili/zhangxun
+1917-07	heilongjiang	fengtian
+1917-08	zhili	zhili
+1917-09	hunan	anhui
+1917-11	hunan	hunan/oldgx
+1918-03	hunan	anhui/zhili
+1918-08	fujian	anhui/yue
+1919-07	jilin	fengtian
+1919-11	waimeng	beiyang
+1920-01	xingan	fengtian
+1920-06	hunan	hunan
+
+# ---- 直皖戰爭（1920 年 7 月）
+1920-08	anhui,shandong,henan	zhili
+1920-08	shandong	zhili/japan
+1920-09	fujian	zhili
+1920-10	guangdong,hainan	yue
+1920-11	sichuan,xikang	sichuan
+1921-02	waimeng	bogd
+1921-05	shaanxi	zhili
+1921-07	waimeng	mongolia
+1921-08	tuva	tuva
+1921-08	guangxi	yue/oldgx
+1922-05	guangxi	oldgx
+1922-12	shandong	zhili
+1923-01	guangdong,hainan	kmt/yue
+1923-03	fujian	zhili
+
+# ---- 第二次直奉戰爭與北京政變（1924 年秋）
+1924-07	guangxi	newgx/oldgx
+1924-10	zhejiang,shanghai	zhili
+1924-11	zhili	fengtian/guominjun
+1924-11	henan,chahar,suiyuan	guominjun
+1924-11	rehe	fengtian
+1925-01	jiangsu,shanghai,anhui	fengtian
+1925-04	shandong	fengtian
+1925-07	guangxi	newgx
+1925-09	gansu,ningxia	guominjun
+1925-09	shaanxi	guominjun
+1925-11	jiangsu,shanghai,anhui,zhejiang,fujian,jiangxi	suncf
+1925-11	guangdong,hainan	kmt
+1925-12	zhili	guominjun
+1926-03	henan	zhili
+1926-04	zhili	fengtian
+1926-04	shaanxi	guominjun/zhili
+1926-08	chahar	fengtian
+1926-08	suiyuan	shanxi
+
+# ---- 北伐（1926–1928）
+1926-07	hunan	kmt
+1926-10	hubei	kmt
+1926-11	jiangxi	kmt
+1926-12	fujian	kmt
+1926-12	shaanxi	guominjun
+1927-02	zhejiang	kmt
+1927-03	shanghai,jiangsu,anhui	kmt
+1927-05	henan	guominjun
+1927-11	hubei	newgx
+1929-04	hubei	kmt
+1928-05	shandong	kmt/japan
+1928-06	zhili	shanxi
+1928-06	chahar	shanxi
+1928-10	ningxia	guominjun
+1929-05	shandong	kmt
+
+# 東北易幟（1928 年 12 月）後東北名義上歸南京，實際仍由奉系控制
+1929-04	guangdong,hainan	yue
+
+# ---- 中原大戰（1930 年）
+1930-06	shandong	shanxi
+1930-09	shandong	hanfj
+1930-10	henan	kmt
+1930-10	zhili,chahar	fengtian
+1930-10	shaanxi	xibei
+1930-12	ningxia	ma
+1931-01	gansu	ma/kmt
+
+# ---- 九一八事變與滿洲國
+1931-09	liaoning,jilin	japan
+1931-11	heilongjiang	japan
+1932-03	liaoning,jilin,heilongjiang,xingan	manchukuo
+1932-08	chahar	army29
+1933-03	rehe	manchukuo
+1933-05	gansu	kmt/ma
+1933-11	fujian	fujianrev
+1933-11	xinjiang	xinjiang/etr
+1934-01	fujian	kmt
+1934-05	xinjiang	xinjiang
+1935-01	xikang	liuwh
+1935-03	sichuan	sichuan/kmt
+1935-04	guizhou	kmt
+1935-06	zhili	kmt
+1935-11	zhili	kmt/jidong
+1935-12	zhili	army29/jidong
+1936-05	chahar	army29/mengjiang
+1936-07	guangdong,hainan	kmt
+1937-02	shaanxi	kmt
+
+# ---- 全面抗戰（1937–1945）
+1937-08	zhili	japan
+1937-09	chahar	mengjiang
+1937-10	suiyuan	mengjiang/shanxi
+1937-11	shanxi	japan/shanxi
+1937-11	shanghai	japan
+1937-12	zhili	linshi
+1937-12	shanxi	linshi/shanxi
+1937-12	jiangsu	japan
+1937-12	zhejiang	kmt/japan
+1938-01	shandong	linshi/kmt
+1938-01	sichuan	kmt
+1938-03	jiangsu,shanghai	weixin
+1938-05	anhui	kmt/weixin
+1938-06	henan	kmt/linshi
+1938-10	hubei	japan/kmt
+1938-10	guangdong	kmt/japan
+1939-02	hainan	japan
+1939-03	jiangxi	kmt/japan
+1939-11	guangxi	newgx/japan
+1940-03	zhili,jiangsu,shanghai	wang
+1940-03	shanxi	wang/shanxi
+1940-03	shandong	wang/kmt
+1940-03	hubei	wang/kmt
+1940-03	anhui	kmt/wang
+1940-03	henan	kmt/wang
+1940-03	zhejiang	kmt/wang
+1940-11	guangxi	newgx
+1941-12	hongkong	japan
+1944-05	henan	japan/kmt
+1944-06	hunan	kmt/japan
+1944-09	xinjiang	kmt
+1944-10	tuva	ussr
+1944-11	xinjiang	kmt/etr
+1944-11	guangxi	japan/newgx
+1945-07	guangxi	newgx
+
+# ---- 抗戰勝利與國共內戰（1945–1949）
+1945-08	liaoning,jilin,heilongjiang,xingan	ussr
+1945-08	rehe	ussr/ccp
+1945-08	chahar	ccp/kmt
+1945-09	zhili,shandong,jiangsu,anhui,henan	kmt/ccp
+1945-09	shanghai,zhejiang,jiangxi,hunan,guangdong	kmt
+1945-09	hubei	kmt/ccp
+1945-09	shanxi	shanxi/ccp
+1945-09	suiyuan	kmt/ccp
+1945-09	hainan	kmt/ccp
+1945-09	hongkong	britain
+1945-10	taiwan	kmt
+1945-10	yunnan	kmt
+1945-11	rehe	ccp/kmt
+1946-04	liaoning	kmt/ccp
+1946-04	heilongjiang,xingan	ccp
+1946-05	jilin	ccp/kmt
+1946-07	hubei	kmt
+1946-10	chahar	kmt/ccp
+1947-03	shandong	ccp/kmt
+1948-07	shanxi	ccp/shanxi
+1948-09	shandong	ccp
+1948-10	henan	ccp/kmt
+1948-11	liaoning,jilin,rehe	ccp
+1948-12	henan	ccp
+1948-12	chahar	ccp
+1949-01	zhili	ccp
+1949-01	jiangsu,anhui	kmt/ccp
+1949-04	jiangsu,anhui,shanxi	ccp
+1949-05	shanghai,zhejiang,jiangxi,hubei,shaanxi	ccp
+1949-08	hunan,fujian,gansu	ccp
+1949-09	qinghai,ningxia,suiyuan	ccp
+1949-09	xinjiang	ccp/etr
+1949-10	guangdong	ccp
+1949-11	guizhou	ccp
+1949-12	guangxi,sichuan,yunnan,xikang	ccp
+1949-12	xinjiang	ccp
+1950-05	hainan	ccp
+1950-10	tibet	tibet/ccp
+1951-10	tibet	ccp

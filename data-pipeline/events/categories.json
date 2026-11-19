@@ -1,0 +1,9 @@
+{
+  "war":        { "color": "#c0392b", "name": ["戰爭", "战争", "War", "戦争"] },
+  "expedition": { "color": "#d35400", "name": ["遠征與干涉", "远征与干涉", "Expedition & intervention", "遠征・干渉"] },
+  "revolution": { "color": "#8e44ad", "name": ["革命與內戰", "革命与内战", "Revolution & civil war", "革命・内戦"] },
+  "independence": { "color": "#16a085", "name": ["獨立與分裂", "独立与分裂", "Independence & secession", "独立・分離"] },
+  "treaty":     { "color": "#2c3e50", "name": ["條約與領土交換", "条约与领土交换", "Treaty & territorial change", "条約・領土変更"] },
+  "migration":  { "color": "#7f8c8d", "name": ["遷徙與移民", "迁徙与移民", "Migration", "移住"] },
+  "disaster":   { "color": "#5d4037", "name": ["災害", "灾害", "Disaster", "災害"] }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kebab-case-id-YYYY",
+  "category": "war",
+  "title":   { "zh-Hant": "", "en": "", "ja": "" },
+  "summary": { "zh-Hant": "", "en": "", "ja": "" },
+  "start": "YYYY-MM-DD",
+  "end": "YYYY-MM-DD",
+  "view": { "lon": 0, "lat": 0, "k": 4 },
+  "sides": [
+    { "id": "a", "name": { "zh-Hant": "", "en": "", "ja": "" }, "color": "#1f6fb2" },
+    { "id": "b", "name": { "zh-Hant": "", "en": "", "ja": "" }, "color": "#b23a1f" }
+  ],
+  "sources": [
+    { "title": "", "url": "https://" }
+  ],
+  "keyframes": [
+    {
+      "date": "YYYY-MM-DD",
+      "caption": { "zh-Hant": "", "en": "", "ja": "" },
+      "src": [0],
+      "areas":   [ { "side": "a", "polygon": [[[0, 0], [1, 0], [1, 1], [0, 0]]] } ],
+      "fronts":  [ { "line": [[0, 0], [1, 1]] } ],
+      "arrows":  [ { "side": "a", "line": [[0, 0], [1, 1]] } ],
+      "markers": [ { "kind": "battle", "lon": 0, "lat": 0, "name": { "zh-Hant": "", "en": "", "ja": "" } } ]
+    }
+  ]
+}

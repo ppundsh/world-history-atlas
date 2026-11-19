@@ -1,0 +1,13 @@
+node_modules/
+dist/
+data-pipeline/build/
+data-pipeline/sources/
+*.log
+.DS_Store
+world.topo.bathy.*
+*.zip
+_dtm_parts/
+_preview_*.png
+CLAUDE.new.md
+__pycache__/
+*.pyc

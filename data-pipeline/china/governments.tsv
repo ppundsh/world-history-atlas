@@ -1,0 +1,47 @@
+# 中國模式：中央政府／自稱政府（地圖上以★標在首都）。
+# 欄位：id	起	迄	經度	緯度	自稱中華民國政府(1/0)	勢力id	繁中	簡中	English	日本語
+qing	1911-09	1912-02	116.40	39.90	0	qing	大清帝國（北京）	大清帝国（北京）	Great Qing Empire (Beijing)	大清（北京）
+ebei	1911-10	1911-12	114.31	30.55	1	rev	中華民國軍政府鄂軍都督府（武昌）	中华民国军政府鄂军都督府（武昌）	Hubei Military Government of the ROC (Wuchang)	中華民国軍政府鄂軍都督府（武昌）
+nanjingprov	1912-01	1912-03	118.78	32.06	1	nanjing	中華民國臨時政府（南京）	中华民国临时政府（南京）	Provisional Government of the ROC (Nanjing)	中華民国臨時政府（南京）
+beiyang1	1912-03	1915-11	116.40	39.90	1	beiyang	北京政府（袁世凱）	北京政府（袁世凯）	Beijing government (Yuan Shikai)	北京政府（袁世凱）
+hongxian	1915-12	1916-02	116.40	39.90	0	hongxian	中華帝國（洪憲，北京）	中华帝国（洪宪，北京）	Empire of China (Hongxian, Beijing)	中華帝国（洪憲・北京）
+beiyang2	1916-03	1916-06	116.40	39.90	1	beiyang	北京政府（袁世凱）	北京政府（袁世凯）	Beijing government (Yuan Shikai)	北京政府（袁世凱）
+junwuyuan	1916-05	1916-07	112.47	23.05	1	huguo	軍務院（肇慶，護國軍）	军务院（肇庆，护国军）	Military Affairs Council (Zhaoqing)	軍務院（肇慶・護国軍）
+bj_anhui	1916-07	1920-07	116.40	39.90	1	anhui	北京政府（皖系當權）	北京政府（皖系当权）	Beijing government (Anhui clique)	北京政府（安徽派）
+hufa	1917-09	1920-10	113.26	23.13	1	oldgx	護法軍政府（廣州）	护法军政府（广州）	Constitutional Protection Government (Guangzhou)	護法軍政府（広州）
+bj_zf	1920-08	1922-04	116.40	39.90	1	zhili	北京政府（直系、奉系共掌）	北京政府（直系、奉系共掌）	Beijing government (Zhili & Fengtian)	北京政府（直隷派・奉天派）
+sun1921	1921-05	1922-06	113.26	23.13	1	yue	中華民國政府（廣州，孫中山任非常大總統）	中华民国政府（广州，孙中山任非常大总统）	ROC government in Guangzhou (Sun Yat-sen)	中華民国政府（広州・孫文）
+bj_zhili	1922-05	1924-10	116.40	39.90	1	zhili	北京政府（直系當權）	北京政府（直系当权）	Beijing government (Zhili clique)	北京政府（直隷派）
+dayuanshuai	1923-03	1925-06	113.26	23.13	1	kmt	陸海軍大元帥大本營（廣州，孫中山）	陆海军大元帅大本营（广州，孙中山）	Generalissimo's Headquarters (Guangzhou, Sun Yat-sen)	陸海軍大元帥大本営（広州・孫文）
+zhizheng	1924-11	1926-04	116.40	39.90	1	guominjun	北京政府（段祺瑞臨時執政）	北京政府（段祺瑞临时执政）	Beijing government (Duan Qirui, Provisional Chief Executive)	北京政府（段祺瑞臨時執政）
+guomin_gz	1925-07	1926-12	113.26	23.13	1	kmt	國民政府（廣州）	国民政府（广州）	Nationalist Government (Guangzhou)	国民政府（広州）
+bj_late	1926-05	1927-05	116.40	39.90	1	fengtian	北京政府（奉系、直系）	北京政府（奉系、直系）	Beijing government (Fengtian & Zhili)	北京政府（奉天派・直隷派）
+wuhan	1927-01	1927-09	114.30	30.59	1	kmt	國民政府（武漢）	国民政府（武汉）	Nationalist Government (Wuhan)	国民政府（武漢）
+nanjing_ng	1927-04	1937-11	118.78	32.06	1	kmt	國民政府（南京）	国民政府（南京）	Nationalist Government (Nanjing)	国民政府（南京）
+anguo	1927-06	1928-06	116.40	39.90	1	fengtian	安國軍政府（北京，張作霖）	安国军政府（北京，张作霖）	Anguojun government (Beijing, Zhang Zuolin)	安国軍政府（北京・張作霖）
+kuoda	1930-09	1930-10	116.40	39.90	1	shanxi	國民政府（北平擴大會議，閻錫山）	国民政府（北平扩大会议，阎锡山）	Enlarged Conference government (Beiping, Yan Xishan)	国民政府（北平拡大会議・閻錫山）
+gz1931	1931-05	1931-12	113.26	23.13	1	yue	國民政府（廣州，非常會議）	国民政府（广州，非常会议）	Nationalist Government (Guangzhou, Extraordinary Conference)	国民政府（広州・非常会議）
+soviet	1931-11	1934-10	116.03	25.88	0	ccp	中華蘇維埃共和國（瑞金）	中华苏维埃共和国（瑞金）	Chinese Soviet Republic (Ruijin)	中華ソビエト共和国（瑞金）
+manchukuo	1932-03	1945-08	125.32	43.88	0	manchukuo	滿洲國（新京／長春）	满洲国（新京／长春）	Manchukuo (Hsinking / Changchun)	満洲国（新京）
+fujianrev	1933-11	1934-01	119.30	26.08	0	fujianrev	中華共和國人民革命政府（福州）	中华共和国人民革命政府（福州）	Fujian People's Government (Fuzhou)	中華共和国人民革命政府（福州）
+etr1	1933-11	1934-04	75.99	39.47	0	etr	東突厥斯坦伊斯蘭共和國（喀什）	东突厥斯坦伊斯兰共和国（喀什）	Islamic Republic of East Turkestan (Kashgar)	東トルキスタン・イスラム共和国（カシュガル）
+soviet2	1935-10	1937-08	108.77	36.82	0	ccp	中華蘇維埃共和國西北辦事處（保安、延安）	中华苏维埃共和国西北办事处（保安、延安）	Chinese Soviet Republic, Northwest Office (Bao'an, Yan'an)	中華ソビエト共和国西北弁事処（保安・延安）
+jidong	1935-11	1938-01	116.66	39.90	0	jidong	冀東防共自治政府（通州）	冀东防共自治政府（通州）	East Hebei Autonomous Council (Tongzhou)	冀東防共自治政府（通州）
+shaanganning	1937-09	1949-04	109.49	36.60	0	ccp	陝甘寧邊區政府（延安，中共）	陕甘宁边区政府（延安，中共）	Shaan-Gan-Ning Border Region (Yan'an, CCP)	陝甘寧辺区政府（延安・中共）
+mengjiang	1937-11	1945-08	114.88	40.82	0	mengjiang	蒙疆聯合委員會／蒙古聯合自治政府（張家口）	蒙疆联合委员会／蒙古联合自治政府（张家口）	Mengjiang (Kalgan)	蒙疆聯合委員会／蒙古聯合自治政府（張家口）
+chongqing_ng	1937-12	1946-04	106.55	29.56	1	kmt	國民政府（重慶，戰時首都）	国民政府（重庆，战时首都）	Nationalist Government (Chongqing, wartime capital)	国民政府（重慶・戦時首都）
+linshi	1937-12	1940-03	116.40	39.90	1	linshi	中華民國臨時政府（北平，日本扶植）	中华民国临时政府（北平，日本扶植）	Provisional Government of the ROC (Beiping, Japanese-sponsored)	中華民国臨時政府（北平・日本の傀儡）
+weixin	1938-03	1940-03	118.78	32.06	1	weixin	中華民國維新政府（南京，日本扶植）	中华民国维新政府（南京，日本扶植）	Reformed Government of the ROC (Nanjing, Japanese-sponsored)	中華民国維新政府（南京・日本の傀儡）
+wang	1940-03	1945-08	118.78	32.06	1	wang	國民政府（汪精衛，南京，日本扶植）	国民政府（汪精卫，南京，日本扶植）	Reorganized National Government (Wang Jingwei, Nanjing)	国民政府（汪兆銘・南京・日本の傀儡）
+etr	1944-11	1949-12	81.32	43.92	0	etr	東突厥斯坦共和國（伊寧）	东突厥斯坦共和国（伊宁）	East Turkestan Republic (Yining / Ghulja)	東トルキスタン共和国（グルジャ）
+nanjing2	1946-05	1949-04	118.78	32.06	1	kmt	中華民國政府（南京）	中华民国政府（南京）	ROC government (Nanjing)	中華民国政府（南京）
+guangzhou49	1949-04	1949-10	113.26	23.13	1	kmt	中華民國政府（廣州）	中华民国政府（广州）	ROC government (Guangzhou)	中華民国政府（広州）
+chongqing49	1949-10	1949-11	106.55	29.56	1	kmt	中華民國政府（重慶）	中华民国政府（重庆）	ROC government (Chongqing)	中華民国政府（重慶）
+chengdu49	1949-12	1949-12	104.07	30.67	1	kmt	中華民國政府（成都）	中华民国政府（成都）	ROC government (Chengdu)	中華民国政府（成都）
+taipei	1949-12	1951-12	121.56	25.04	1	kmt	中華民國政府（臺北）	中华民国政府（台北）	ROC government (Taipei)	中華民国政府（台北）
+prc	1949-10	1951-12	116.40	39.90	0	prc	中華人民共和國（北京）	中华人民共和国（北京）	People's Republic of China (Beijing)	中華人民共和国（北京）
+bogd	1911-12	1919-10	106.92	47.92	0	bogd	博克多汗國（庫倫）	博克多汗国（库伦）	Bogd Khanate (Urga)	ボグド・ハーン政権（フレー）
+bogd2	1921-02	1921-06	106.92	47.92	0	bogd	博克多汗國（庫倫，恩琴扶立）	博克多汗国（库伦，恩琴扶立）	Bogd Khanate restored by Ungern (Urga)	ボグド・ハーン政権（ウンゲルン復位）
+mongolia	1921-07	1951-12	106.92	47.92	0	mongolia	蒙古人民共和國（庫倫／烏蘭巴托）	蒙古人民共和国（库伦／乌兰巴托）	Mongolian People's Republic (Urga / Ulaanbaatar)	モンゴル人民共和国（ウランバートル）
+tibet	1912-08	1951-09	91.11	29.65	0	tibet	甘丹頗章（拉薩）	甘丹颇章（拉萨）	Ganden Phodrang (Lhasa)	ガンデンポタン（ラサ）
+tuvapr	1921-08	1944-09	94.45	51.72	0	tuva	唐努圖瓦人民共和國（克孜勒）	唐努图瓦人民共和国（克孜勒）	Tuvan People's Republic (Kyzyl)	トゥヴァ人民共和国（クズル）

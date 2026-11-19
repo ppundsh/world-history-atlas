@@ -1,0 +1,254 @@
+# 人工命名對照（優先於 Wikidata）。原則見 CLAUDE.md 第 2 節原則 5：以國號原文命名，不用「〇〇王朝／〇朝」。
+# 欄位：Cliopatria名稱	起年	迄年	en	zh-Hant	zh-Hans(=同繁)	ja(=同繁)	史稱(繁)	史稱(簡,=同繁)	史稱(en)
+# 起迄年留空代表全部年份；「史稱」用於說明面板，以及同一年畫面上出現同名國號時自動加註。
+Shang Dynasty			Shang	商	=	=	商朝	=	Shang dynasty
+Zhou Dynasty			Zhou	周	=	=	西周	=	Western Zhou
+Later Zhou		0	Zhou	周	=	=	東周	东周	Eastern Zhou
+Later Zhou	1		Zhou	周	=	=	後周	后周	Later Zhou
+Jin	-1000	0	Jin	晉	晋	晋
+Chu			Chu	楚	=	=
+Qin			Qin	秦	=	=
+Qi			Qi	齊	齐	斉
+Song			Song	宋	=	=
+Teng			Teng	滕	=	=
+Chen			Chen	陳	陈	陳
+Wey			Wey	衛	卫	衛
+Cao			Cao	曹	=	=
+Lu			Lu	魯	鲁	魯
+Zheng			Zheng	鄭	郑	鄭
+Cai			Cai	蔡	=	=
+Zhu			Zhu	邾	=	=
+Yan	-1000	0	Yan	燕	=	=
+Xu			Xu	徐	=	=
+Wu	-1000	0	Wu	吳	吴	呉
+Yue			Yue	越	=	=
+Zhao			Zhao	趙	赵	趙
+Wei	-1000	0	Wei	魏	=	=
+Han	-1000	0	Han	韓	韩	韓
+Zhongshan			Zhongshan	中山	=	=
+Minyue			Minyue	閩越	闽越	閩越
+Âu Lạc			Âu Lạc	甌雒	瓯雒	甌雒
+Qin Dynasty			Qin Empire	秦帝國	秦帝国	秦帝国	秦朝	=	Qin dynasty
+Western Chu			Western Chu	西楚	=	=
+Zhai			Zhai	翟	=	=
+Dai			Dai	代	=	=
+Jibei			Jibei	濟北	济北	済北
+Jiujiang			Jiujiang	九江	=	=
+Henan			Henan	河南	=	=
+Hán			Hán	韓	韩	韓
+Linjiang			Linjiang	臨江	临江	臨江
+Chang-shan			Changshan	常山	=	=
+Sai			Sai	塞	=	=
+Liaodong			Liaodong	遼東	辽东	遼東
+Jiaodong			Jiaodong	膠東	胶东	膠東
+Yong			Yong	雍	=	=
+Yin			Yin	殷	=	=
+Nanyue			Nanyue	南越	=	=
+Han Dynasty			Han Empire	漢帝國	汉帝国	漢帝国	漢朝	汉朝	Han dynasty
+Xin Dynasty			Xin	新	=	=
+Cao Cao			Cao Cao regime	曹操政權	曹操政权	曹操政権
+Eastern Wu			Wu	吳	吴	呉	孫吳	孙吴	Eastern Wu
+Shu Han			Han	漢	汉	漢	蜀漢	蜀汉	Shu Han
+Cao Wei			Wei	魏	=	=	曹魏	=	Cao Wei
+Western Jin			Jin	晉	晋	晋	西晉	西晋	Western Jin
+Cheng Han			Cheng Han	成漢	成汉	成漢
+Former Zhao			Zhao	趙	赵	趙	前趙	前赵	Former Zhao
+Former Liang			Liang	涼	凉	涼	前涼	前凉	Former Liang
+Former Yan			Yan	燕	=	=	前燕	=	Former Yan
+Later Zhao			Zhao	趙	赵	趙	後趙	后赵	Later Zhao
+Former Qin			Qin	秦	=	=	前秦	=	Former Qin
+Western Qin			Qin	秦	=	=	西秦	=	Western Qin
+Northern Wei			Wei	魏	=	=	北魏	=	Northern Wei
+Western Yan			Yan	燕	=	=	西燕	=	Western Yan
+Later Liang	300	500	Liang	涼	凉	涼	後涼	后凉	Later Liang
+Later Yan			Yan	燕	=	=	後燕	后燕	Later Yan
+Later Qin			Qin	秦	=	=	後秦	后秦	Later Qin
+Northern Liang			Liang	涼	凉	涼	北涼	北凉	Northern Liang
+Southern Liang			Liang	涼	凉	涼	南涼	南凉	Southern Liang
+Southern Yan			Yan	燕	=	=	南燕	=	Southern Yan
+Western Liang			Liang	涼	凉	涼	西涼	西凉	Western Liang
+Northern Yan			Yan	燕	=	=	北燕	=	Northern Yan
+Xia	400	450	Great Xia	大夏	=	=	胡夏	=	Hu Xia
+Liu Song Dynasty			Song	宋	=	=	劉宋	刘宋	Liu Song
+Southern Qi			Qi	齊	齐	斉	南齊	南齐	Southern Qi
+Liang Dynasty			Liang	梁	=	=	南梁	=	Liang
+Eastern Wei			Wei	魏	=	=	東魏	东魏	Eastern Wei
+Western Wei			Wei	魏	=	=	西魏	=	Western Wei
+Northern Qi			Qi	齊	齐	斉	北齊	北齐	Northern Qi
+Chen Dynasty			Chen	陳	陈	陳	南陳	南陈	Chen
+Northern Zhou			Zhou	周	=	=	北周	=	Northern Zhou
+Later Western Liang			Liang	梁	=	=	西梁	=	Western Liang
+Sui Dynasty			Great Sui Empire	大隋帝國	大隋帝国	大隋帝国	隋朝	=	Sui dynasty
+Tang Dynasty			Great Tang Empire	大唐帝國	大唐帝国	大唐帝国	唐朝	=	Tang dynasty
+Gao Kaidao			Yan	燕	=	=	高開道	高开道	Gao Kaidao
+Tibetan Empire			Tibetan Empire	吐蕃	=	=
+Yan Kingdom			Great Yan	大燕	=	=	桀燕	=	Jie Yan
+Min			Min	閩	闽	閩
+Later Jin			Jin	晉	晋	晋	後晉	后晋	Later Jin
+Former Jin			Jin	晉	晋	晋	晉（李存勗）	晋（李存勖）	Jin (Li Cunxu)
+Southern Han			Great Han	大漢	大汉	大漢	南漢	南汉	Southern Han
+Liao Dynasty			Great Liao Empire	大遼帝國	大辽帝国	大遼帝国	遼朝／契丹	辽朝／契丹	Liao (Khitan)
+Former Shu			Great Shu	大蜀	=	=	前蜀	=	Former Shu
+Later Liang Dynasty			Great Liang	大梁	=	=	後梁	后梁	Later Liang
+Wuyue			Wuyue	吳越	吴越	呉越
+Southern Chu			Chu	楚	=	=	馬楚	马楚	Ma Chu
+Southern Wu			Wu	吳	吴	呉	南吳	南吴	Southern Wu
+Qi Kingdom			Qi	岐	=	=
+Jingnan			Jingnan	荊南	荆南	荊南	南平	=	Nanping
+Later Tang			Tang	唐	=	=	後唐	后唐	Later Tang
+Later Shu			Shu	蜀	=	=	後蜀	后蜀	Later Shu
+Kingdom of Dali			Dali	大理	=	=
+Later Han			Han	漢	汉	漢	後漢	后汉	Later Han
+Southern Tang			Tang	唐	=	=	南唐	=	Southern Tang
+Northern Han			Han	漢	汉	漢	北漢	北汉	Northern Han
+Northern Song			Great Song Empire	大宋帝國	大宋帝国	大宋帝国	北宋	=	Northern Song
+Western Xia			Great Xia	大夏	=	=	西夏	=	Western Xia
+Kara-Khitans			Great Liao	大遼	大辽	大遼	西遼	西辽	Western Liao (Qara Khitai)
+Great Jin			Great Jin Empire	大金帝國	大金帝国	大金帝国	金朝	=	Jin (Jurchen)
+Southern Song			Great Song Empire	大宋帝國	大宋帝国	大宋帝国	南宋	=	Southern Song
+Mongol Empire			Great Mongol State	大蒙古國	大蒙古国	大モンゴル国	蒙古帝國	蒙古帝国	Mongol Empire
+Yuan Dynasty			Great Yuan Empire	大元帝國	大元帝国	大元帝国	元朝	=	Yuan dynasty
+Great Yuan			Great Yuan Empire	大元帝國	大元帝国	大元帝国	元朝	=	Yuan dynasty
+Northern Yuan			Great Yuan Empire	大元帝國	大元帝国	大元帝国	北元	=	Northern Yuan
+Ming Dynasty			Great Ming Empire	大明帝國	大明帝国	大明帝国	明朝	=	Ming dynasty
+Southern Ming			Great Ming Empire	大明帝國	大明帝国	大明帝国	南明	=	Southern Ming
+Later Jin Dynasty			Great Jin	大金	=	=	後金	后金	Later Jin
+Li Zicheng			Great Shun	大順	大顺	大順	李自成政權	李自成政权	Li Zicheng regime
+Qing Dynasty			Great Qing Empire	大清帝國	大清帝国	大清帝国	清朝	=	Qing dynasty
+Taiping Heavenly Kingdom			Taiping Heavenly Kingdom	太平天國	太平天国	太平天国
+Empire of China			Empire of China	中華帝國	中华帝国	中華帝国	洪憲帝制	洪宪帝制	Hongxian monarchy
+Republic of China			Republic of China	中華民國	中华民国	中華民国
+Kuomintang			Republic of China (Guangzhou)	中華民國（廣州政府）	中华民国（广州政府）	中華民国（広州政府）
+Chinese Communists			Chinese Communist areas	中國共產黨控制區	中国共产党控制区	中国共産党支配地域
+Communist Party of China			Chinese Communist areas	中國共產黨控制區	中国共产党控制区	中国共産党支配地域
+Anti-Kuomintang Coalition			Anti-Chiang coalition	反蔣聯軍	反蒋联军	反蔣連合
+People's Republic of China			People's Republic of China	中華人民共和國	中华人民共和国	中華人民共和国
+East Turkestan Republic			East Turkestan Republic	東突厥斯坦共和國	东突厥斯坦共和国	東トルキスタン共和国
+East Turkestan			East Turkestan	東突厥斯坦	东突厥斯坦	東トルキスタン
+Tibet			Tibet	西藏	=	チベット
+Great Mongol State			Great Mongol State	大蒙古國	大蒙古国	大モンゴル国	博克多汗國	博克多汗国	Bogd Khanate
+Mongolian People's Republic			Mongolian People's Republic	蒙古人民共和國	蒙古人民共和国	モンゴル人民共和国
+Mongolia			Mongolia	蒙古國	蒙古国	モンゴル国
+Republic of Uryankhay			Uryankhay Republic	烏梁海共和國	乌梁海共和国	ウリャンハイ共和国
+Gojoseon			Joseon	朝鮮	朝鲜	朝鮮	古朝鮮	古朝鲜	Gojoseon
+Korean Jin			Jin	辰國	辰国	辰国
+Joseon			Joseon	朝鮮	朝鲜	朝鮮
+Korean Empire			Korean Empire	大韓帝國	大韩帝国	大韓帝国
+Goryeo			Goryeo	高麗	高丽	高麗
+Silla			Silla	新羅	新罗	新羅
+Unified Silla			Silla	新羅	新罗	新羅	統一新羅	统一新罗	Unified Silla
+Baekje			Baekje	百濟	百济	百済
+Hubaekje			Baekje	百濟	百济	百済	後百濟	后百济	Later Baekje
+Taebong			Taebong	泰封	=	=	後高句麗	后高句丽	Later Goguryeo
+Goguryeo			Goguryeo	高句麗	高句丽	高句麗
+Balhae			Balhae	渤海	=	=
+Tamna			Tamna	耽羅	耽罗	耽羅
+Republic of Korea			Republic of Korea	大韓民國	大韩民国	大韓民国
+Democratic People's Republic of Korea			Democratic People's Republic of Korea	朝鮮民主主義人民共和國	朝鲜民主主义人民共和国	朝鮮民主主義人民共和国
+Ngô Dynasty		967	Ngô	吳	吴	呉	吳氏政權	吴氏政权	Ngô dynasty
+Ngô Dynasty	968	1053	Đại Cồ Việt	大瞿越	=	=
+Ngô Dynasty	1054	1399	Đại Việt	大越	=	=
+Ngô Dynasty	1400		Đại Ngu	大虞	=	=
+Lê Dynasty			Đại Việt	大越	=	=	後黎	后黎	Later Lê
+Early Lý Dynasty			Vạn Xuân	萬春	万春	萬春	前李	=	Early Lý
+Trịnh lords			Trịnh lords	鄭主	郑主	鄭主
+# 自稱：大和（ヤマト）；701 年大寶律令後對外稱「日本」。「倭」是中國史書的他稱，不用作國名（實際控制觀點用政權自稱）。
+Asuka Japan	540	700	Yamato	大和	=	大和（ヤマト）	飛鳥時代	飞鸟时代	Asuka period
+Asuka Japan	701	709	Japan	日本	=	日本	飛鳥時代	飞鸟时代	Asuka period
+Nara Japan			Japan	日本	=	=
+Heian Japan			Japan	日本	=	=
+Kamakura Shogunate			Japan	日本	=	=	鎌倉幕府	镰仓幕府	Kamakura shogunate
+Empire of Japan			Empire of Japan	大日本帝國	大日本帝国	大日本帝国
+Japan			Japan	日本	=	=
+Shunten Dynasty			Ryukyu	琉球	=	=
+Chüzan			Chūzan	中山	=	=
+Nanzan			Nanzan	山南	=	=
+Hokuzan			Hokuzan	山北	=	=
+Ryukyu Kingdom			Ryukyu	琉球	=	=
+Kingdom of Great Britain		1800	Kingdom of Great Britain	大不列顛王國	大不列颠王国	グレートブリテン王国			
+Kingdom of Great Britain	1801		United Kingdom	英國	英国	イギリス	大不列顛及愛爾蘭聯合王國	大不列颠及爱尔兰联合王国	United Kingdom of Great Britain and Ireland
+Mujahideen		1999	Afghan mujahideen	阿富汗聖戰者	阿富汗圣战者	アフガニスタンのムジャーヒディーン			
+Mujahideen	2000		Syrian opposition areas	敘利亞反對派控制區	叙利亚反对派控制区	シリア反体制派支配地域			
+Gaza/Hamas			Gaza (Hamas)	加薩（哈瑪斯控制）	加沙（哈马斯控制）	ガザ（ハマース支配）			
+Russian-occupied territories			Russian-backed breakaway areas	俄羅斯支持的分離地區	俄罗斯支持的分离地区	ロシアが支援する分離地域			
+Turkish Republic of Northern Cyprus			Northern Cyprus	北賽普勒斯	北塞浦路斯	北キプロス			
+# --- Wikidata 連結錯誤的條目（Cliopatria 的 Wikidata 編號指到戰爭、人物、行政區等）---
+Athenian Coalition			Athenian alliance	雅典同盟	=	アテナイ同盟			
+Bali			Balinese kingdoms	峇里諸王國	巴厘诸王国	バリ諸王国			
+Banate of Bosnia			Banate of Bosnia	波士尼亞巴納特	波斯尼亚巴纳特	ボスニア・バン国			
+British Africa			British Africa	英屬非洲	英属非洲	イギリス領アフリカ			
+Chauhan Dynasty			Chahamanas	查哈瑪納王國	查哈玛纳王国	チャーハマーナ朝			
+Cuban Nationalists			Cuban independence forces	古巴獨立軍控制區	古巴独立军控制区	キューバ独立派支配地域			
+Cuman-Kipchak Confederation			Cuman–Kipchak confederation	欽察－庫曼聯盟	钦察－库曼联盟	クマン・キプチャク連合			
+Domain of Rhodes			Rhodes	羅得島領地	罗得岛领地	ロドス領			
+Duchies of Poland			Duchies of Poland	波蘭諸公國	波兰诸公国	ポーランド諸公国			
+Duchy of Łęczyca			Duchy of Łęczyca	文奇察公國	文奇察公国	ウェンチツァ公国			
+Francoist Spain			Spanish State (Franco)	西班牙國（佛朗哥政權）	西班牙国（佛朗哥政权）	スペイン国（フランコ体制）			
+Guayaquil Junta			Guayaquil junta	瓜亞基爾執政團	瓜亚基尔执政团	グアヤキル評議会			
+Imamate of Yemen			Imamate of Yemen	葉門伊瑪目國	也门伊玛目国	イエメン・イマーム国			
+Italian Nationalists			Italian insurgents	義大利起義者控制區	意大利起义者控制区	イタリア蜂起派支配地域			
+Judea			Hasmonean Judea	猶太（哈斯蒙尼王國）	犹太（哈斯蒙尼王国）	ハスモン朝ユダヤ			
+Kedah-Perlis District			Kedah–Perlis	吉打－玻璃市	吉打－玻璃市	クダ・プルリス			
+Maderistas			Maderistas	馬德羅派控制區	马德罗派控制区	マデロ派支配地域			
+Mexican Monarchists			Mexican monarchists	墨西哥保皇派控制區	墨西哥保皇派控制区	メキシコ君主派支配地域			
+Nalyvaiko Uprising			Nalyvaiko uprising	納利瓦伊科起義軍控制區	纳利瓦伊科起义军控制区	ナルィヴァーイコ蜂起軍支配地域			
+Napoleonic Batavia Republic			Batavian Cape Colony	巴達維亞共和國開普殖民地	巴达维亚共和国开普殖民地	バタヴィア共和国領ケープ			
+Norman England			Norman England	諾曼英格蘭	诺曼英格兰	ノルマン朝イングランド			
+Omani Slave Coast			Omani East Africa	阿曼屬東非海岸	阿曼属东非海岸	オマーン領東アフリカ沿岸			
+Polish Armed Forces			Polish military administration	波蘭軍控制區	波兰军控制区	ポーランド軍支配地域			
+Principality of Chernigov			Principality of Chernigov	切爾尼戈夫公國	切尔尼戈夫公国	チェルニーヒウ公国			
+Pro-Swedish Poland			Pro-Swedish Poland	親瑞典波蘭	亲瑞典波兰	親スウェーデン派ポーランド			
+Qarlugs			Karluks	葛邏祿	葛逻禄	カルルク			
+Río de la Plata			United Provinces of the Río de la Plata	拉普拉塔聯合省	拉普拉塔联合省	リオ・デ・ラ・プラタ連合州			
+Scandinavian minor kingdoms			Scandinavian petty kingdoms	斯堪地那維亞諸小王國	斯堪的纳维亚诸小王国	スカンディナヴィア小王国群			
+Spanish Nationalists			Nationalist Spain	西班牙國民派控制區	西班牙国民派控制区	スペイン国民派支配地域			
+Yugoslav Partisans			Yugoslav Partisan areas	南斯拉夫游擊隊控制區	南斯拉夫游击队控制区	ユーゴスラビア・パルチザン支配地域			
+Yugoslavia			Kingdom of Yugoslavia	南斯拉夫王國	南斯拉夫王国	ユーゴスラビア王国			
+Saint Kitts			Saint Kitts and Nevis	聖克里斯多福及尼維斯	圣基茨和尼维斯	セントクリストファー・ネイビス			
+Serbs			Serbia	塞爾維亞	塞尔维亚	セルビア			
+Poles			Polish insurgent government	波蘭起義政府	波兰起义政府	ポーランド蜂起政府			
+Roman Empire			Roman Empire	羅馬帝國	罗马帝国	ローマ帝国			
+Sasanian Empire			Sasanian Empire	薩珊帝國	萨珊帝国	サーサーン朝			
+Buyid Dynasty			Buyid dynasty	布韋希王朝	布韦希王朝	ブワイフ朝			
+Abbasid Caliphate/Buyid Dynasty			Abbasid Caliphate (Buyid)	阿拔斯王朝（布韋希控制）	阿拔斯王朝（布韦希控制）	アッバース朝（ブワイフ朝支配）			
+Old Kingdom of Norway			Kingdom of Norway	挪威王國	挪威王国	ノルウェー王国			
+Kingdom of France			Kingdom of France	法蘭西王國	法兰西王国	フランス王国			
+Mamluk Dynasty			Mamluk dynasty (Delhi)	德里奴隸王朝	德里奴隶王朝	奴隷王朝			
+Turks			Second Turkic Khaganate	後突厥汗國	后突厥汗国	突厥第二可汗国			
+Ceylon			Sinhalese kingdoms	錫蘭諸王國	锡兰诸王国	シンハラ王国			
+Kingdom of Lysimachus			Kingdom of Lysimachus	利西馬科斯王國	利西马科斯王国	リュシマコス王国			
+Kingdom of Numidia			Numidia	努米底亞王國	努米底亚王国	ヌミディア王国			
+Byzantine Empire			Byzantine Empire	拜占庭帝國	拜占庭帝国	東ローマ帝国			
+Eastern Roman Empire			Eastern Roman Empire	東羅馬帝國	东罗马帝国	東ローマ帝国			
+French Africa			French Africa	法屬非洲	法属非洲	フランス領アフリカ			
+Mongol Khanate			Mongols (Northern Yuan)	蒙古（北元）	蒙古（北元）	モンゴル（北元）			
+White Huns			Hephthalites	嚈噠	嚈哒	エフタル			
+Median Kingdom			Median kingdom	米底王國	米底王国	メディア王国			
+Habsburg Monarchy			Habsburg Monarchy	哈布斯堡君主國	哈布斯堡君主国	ハプスブルク君主国			
+First Toungoo Empire			Toungoo Empire	東吁王朝	东吁王朝	タウングー王朝			
+Chola Empire			Chola Empire	朱羅帝國	朱罗帝国	チョーラ朝			
+Muhammad Ali dynasty			Egypt (Muhammad Ali dynasty)	埃及（穆罕默德·阿里王朝）	埃及（穆罕默德·阿里王朝）	ムハンマド・アリー朝			
+Gothia			Gothic lands	哥德人領地	哥特人领地	ゴート族の地			
+Zand Dynasty			Zand dynasty	贊德王朝	赞德王朝	ザンド朝			
+German Africa			German Africa	德屬非洲	德属非洲	ドイツ領アフリカ			
+Lohara Dynasty			Lohara dynasty	洛哈拉王朝	洛哈拉王朝	ローハラ朝			
+Assyrian Egypt			Assyrian Egypt	亞述統治下的埃及	亚述统治下的埃及	アッシリア支配下のエジプト			
+Kashmiri Sultanate			Sultanate of Kashmir	喀什米爾蘇丹國	克什米尔苏丹国	カシミール・スルターン朝			
+Kingdom of Lunda			Lunda Kingdom	隆達王國	隆达王国	ルンダ王国			
+Mahan			Mahan	馬韓	马韩	馬韓			
+Early Pandyas			Early Pandyas	早期潘地亞	早期潘地亚	初期パーンディヤ朝			
+Muzaffarids			Muzaffarids	穆札法爾王朝	穆扎法尔王朝	ムザッファル朝			
+Jaunpur Sultanate			Jaunpur Sultanate	江普爾蘇丹國	江普尔苏丹国	ジャウンプル・スルターン朝			
+Dongye			Dongye	東濊	东濊	東濊			
+Principality of Minsk			Principality of Minsk	明斯克公國	明斯克公国	ミンスク公国			
+Kalinga			Kalinga	羯陵伽	羯陵伽	カリンガ			
+Thracian Kingdom			Thracian kingdom	色雷斯王國	色雷斯王国	トラキア王国			
+Holy Roman Empire Minor States			Holy Roman Empire minor states	神聖羅馬帝國諸邦	神圣罗马帝国诸邦	神聖ローマ帝国の諸邦			
+Tibetans			Tibetan polities	吐蕃諸部	吐蕃诸部	チベット諸勢力			
+Qasimids			Qasimid Yemen	葉門卡西姆王朝	也门卡西姆王朝	カースィム朝			
+Livonian Conference			Livonian Confederation	立窩尼亞聯盟	立窝尼亚联盟	リヴォニア連盟			
+Magadha - Shaishunaga dynasty			Magadha (Shishunaga)	摩揭陀（幼龍王朝）	摩揭陀（幼龙王朝）	マガダ（シシュナーガ朝）			
+Magadha - Haryanka dynasty			Magadha (Haryanka)	摩揭陀（訶黎王朝）	摩揭陀（诃黎王朝）	マガダ（ハリヤンカ朝）			
+Dungan Revolt (Xinjiang)			Dungan Revolt regimes (Xinjiang)	新疆回民起事政權	新疆回民起事政权	新疆の回民蜂起政権	同治新疆之亂	同治新疆之乱	Dungan Revolt
+Yettishar			Yettishar	哲德沙爾	哲德沙尔	ヤクブ・ベク政権	洪福汗國	洪福汗国	Kashgaria
+Republic of Vietnam			Republic of Vietnam	越南共和國	越南共和国	ベトナム共和国

@@ -1,0 +1,202 @@
+# 俄羅斯模式：行政區劃（由 gen.py 產生，勿手改）。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	未設省（公國、汗國等）	未设省（公国、汗国等）	No governorate (principalities, khanates…)	県なし（公国・ハン国など）
+foreign	#e6e6e6	（俄國以外）	（俄国以外）	(outside Russia)	（ロシア以外）
+g08_moscow	#c8e8af	莫斯科省	莫斯科省	Moscow Governorate (1708)	モスクワ県（1708）
+g08_ingria	#9ed0b0	英格里亞省（聖彼得堡）	英格里亚省（圣彼得堡）	Ingermanland (St Petersburg) Governorate (1708)	インゲルマンランド（サンクトペテルブルク）県（1708）
+g08_kiev	#a6d5dd	基輔省	基辅省	Kiev Governorate (1708)	キエフ県（1708）
+g08_smolensk	#afb4e8	斯摩稜斯克省	斯摩棱斯克省	Smolensk Governorate (1708)	スモレンスク県（1708）
+g08_arch	#c19ed0	阿爾漢格爾斯克省	阿尔汉格尔斯克省	Archangelgorod Governorate (1708)	アルハンゲリスク県（1708）
+g08_kazan	#dda6c2	喀山省	喀山省	Kazan Governorate (1708)	カザン県（1708）
+g08_azov	#e8beaf	亞速省	亚速省	Azov Governorate (1708)	アゾフ県（1708）
+g08_siberia	#ced09e	西伯利亞省	西伯利亚省	Siberia Governorate (1708)	シベリア県（1708）
+g08_riga	#afdda6	里加省	里加省	Riga Governorate (1708)	リガ県（1708）
+g08_astrakhan	#afe8d2	阿斯特拉罕省	阿斯特拉罕省	Astrakhan Governorate (1708)	アストラハン県（1708）
+g14_moscow	#9ebcd0	莫斯科省	莫斯科省	Moscow Governorate	モスクワ県
+g14_spb	#b0a6dd	聖彼得堡省	圣彼得堡省	St Petersburg Governorate	サンクトペテルブルク県
+g14_novgorod	#e6afe8	諾夫哥羅德省	诺夫哥罗德省	Novgorod Governorate	ノヴゴロド県
+g14_pskov	#d09eab	普斯科夫省	普斯科夫省	Pskov Governorate	プスコフ県
+g14_tver	#ddc3a6	特維爾省	特维尔省	Tver Governorate	トヴェリ県
+g14_smolensk	#d6e8af	斯摩稜斯克省	斯摩棱斯克省	Smolensk Governorate	スモレンスク県
+g14_vladimir	#9ed0a3	弗拉基米爾省	弗拉基米尔省	Vladimir Governorate	ウラジーミル県
+g14_yaroslavl	#a6ddd6	雅羅斯拉夫爾省	雅罗斯拉夫尔省	Yaroslavl Governorate	ヤロスラヴリ県
+g14_kostroma	#afc2e8	科斯特羅馬省	科斯特罗马省	Kostroma Governorate	コストロマ県
+g14_nizhny	#b59ed0	下諾夫哥羅德省	下诺夫哥罗德省	Nizhny Novgorod Governorate	ニジニ・ノヴゴロド県
+g14_vyatka	#dda6d0	維亞特卡省	维亚特卡省	Vyatka Governorate	ヴャトカ県
+g14_perm	#e8b0af	彼爾姆省	彼尔姆省	Perm Governorate	ペルミ県
+g14_kaluga	#d0c69e	卡盧加省	卡卢加省	Kaluga Governorate	カルーガ県
+g14_tula	#bddda6	圖拉省	图拉省	Tula Governorate	トゥーラ県
+g14_ryazan	#afe8c4	梁贊省	梁赞省	Ryazan Governorate	リャザン県
+g14_oryol	#9ec9d0	奧廖爾省	奥廖尔省	Oryol Governorate	オリョール県
+g14_kursk	#a6a9dd	庫爾斯克省	库尔斯克省	Kursk Governorate	クルスク県
+g14_tambov	#d8afe8	坦波夫省	坦波夫省	Tambov Governorate	タンボフ県
+g14_voronezh	#d09eb7	沃羅涅日省	沃罗涅日省	Voronezh Governorate	ヴォロネジ県
+g14_penza	#ddb5a6	奔薩省	奔萨省	Penza Governorate	ペンザ県
+g14_simbirsk	#e4e8af	辛比爾斯克省	辛比尔斯克省	Simbirsk Governorate	シンビルスク県
+g14_kazan	#a6d09e	喀山省	喀山省	Kazan Governorate	カザン県
+g14_samara	#a6ddc9	薩馬拉省	萨马拉省	Samara Governorate	サマーラ県
+g14_saratov	#afd0e8	薩拉托夫省	萨拉托夫省	Saratov Governorate	サラトフ県
+g14_astrakhan	#a89ed0	阿斯特拉罕省	阿斯特拉罕省	Astrakhan Governorate	アストラハン県
+g14_don	#dca6dd	頓河軍區	顿河军区	Don Host Oblast	ドン・コサック軍州
+g14_kuban	#e8afbd	庫班州	库班州	Kuban Oblast	クバン州
+g14_stavropol	#d0ba9e	斯塔夫羅波爾省	斯塔夫罗波尔省	Stavropol Governorate	スタヴロポリ県
+g14_terek	#cadda6	捷列克州	捷列克州	Terek Oblast	テレク州
+g14_dagestan	#afe8b6	達吉斯坦州	达吉斯坦州	Dagestan Oblast	ダゲスタン州
+g14_ufa	#9ed0cb	烏法省	乌法省	Ufa Governorate	ウファ県
+g14_orenburg	#a6b7dd	奧倫堡省	奥伦堡省	Orenburg Governorate	オレンブルク県
+g14_tobolsk	#caafe8	托博爾斯克省	托博尔斯克省	Tobolsk Governorate	トボリスク県
+g14_tomsk	#d09ec4	托木斯克省	托木斯克省	Tomsk Governorate	トムスク県
+g14_yeniseysk	#dda8a6	葉尼塞省	叶尼塞省	Yeniseysk Governorate	エニセイスク県
+g14_irkutsk	#e8ddaf	伊爾庫次克省	伊尔库次克省	Irkutsk Governorate	イルクーツク県
+g14_transbaikal	#b2d09e	外貝加爾州	外贝加尔州	Transbaikal Oblast	ザバイカル州
+g14_yakutsk	#a6ddbb	雅庫茨克州	雅库茨克州	Yakutsk Oblast	ヤクーツク州
+g14_amur	#afdee8	阿穆爾州	阿穆尔州	Amur Oblast	アムール州
+g14_primorye	#9ea1d0	濱海州	滨海州	Primorskaya Oblast	沿海州
+g14_kamchatka	#cea6dd	堪察加州	堪察加州	Kamchatka Oblast	カムチャツカ州
+g14_sakhalin	#e8afcb	薩哈林州	萨哈林州	Sakhalin Oblast	サハリン州
+g14_arkh	#d0ad9e	阿爾漢格爾斯克省	阿尔汉格尔斯克省	Arkhangelsk Governorate	アルハンゲリスク県
+g14_vologda	#d8dda6	沃洛格達省	沃洛格达省	Vologda Governorate	ヴォログダ県
+g14_olonets	#b7e8af	奧洛涅茨省	奥洛涅茨省	Olonets Governorate	オロネツ県
+g14_estland	#9ed0bf	愛斯特蘭省	爱斯特兰省	Estland Governorate	エストラント県
+g14_livland	#a6c5dd	利夫蘭與庫爾蘭省	利夫兰与库尔兰省	Livland and Courland Governorate	リヴラント・クールラント県
+g14_kovno	#bcafe8	科夫諾與維爾納省	科夫诺与维尔纳省	Kovno and Vilna Governorate	コヴノ・ヴィリナ県
+g14_grodno	#d09ed0	格羅德諾省	格罗德诺省	Grodno Governorate	グロドノ県
+g14_vitebsk	#dda6b2	維捷布斯克省	维捷布斯克省	Vitebsk Governorate	ヴィテプスク県
+g14_minsk	#e8cfaf	明斯克省	明斯克省	Minsk Governorate	ミンスク県
+g14_mogilev	#bfd09e	莫吉廖夫省	莫吉廖夫省	Mogilev Governorate	モギリョフ県
+g14_volhynia	#a6ddad	沃里尼亞省	沃里尼亚省	Volhynia Governorate	ヴォルィーニ県
+g14_kiev	#afe8e3	基輔省	基辅省	Kiev Governorate	キエフ県
+g14_podolia	#9eadd0	波多里亞省	波多里亚省	Podolia Governorate	ポジーリャ県
+g14_chernigov	#c0a6dd	切爾尼戈夫省	切尔尼戈夫省	Chernigov Governorate	チェルニーゴフ県
+g14_kharkov	#e8afd9	哈爾科夫省	哈尔科夫省	Kharkov Governorate	ハリコフ県
+g14_poltava	#d0a19e	波爾塔瓦省	波尔塔瓦省	Poltava Governorate	ポルタヴァ県
+g14_yekaterinoslav	#ddd4a6	葉卡捷琳諾斯拉夫省	叶卡捷琳诺斯拉夫省	Yekaterinoslav Governorate	エカテリノスラフ県
+g14_taurida	#c5e8af	塔夫利達省	塔夫利达省	Taurida Governorate	タヴリーダ県
+g14_kherson	#9ed0b2	赫爾松省	赫尔松省	Kherson Governorate	ヘルソン県
+g14_bessarabia	#a6d3dd	比薩拉比亞省	比萨拉比亚省	Bessarabia Governorate	ベッサラビア県
+g14_vistula	#afb1e8	維斯瓦邊區（波蘭王國）	维斯瓦边区（波兰王国）	Vistula Land (Kingdom of Poland)	ヴィスワ地方（ポーランド王国）
+g14_finland	#c49ed0	芬蘭大公國	芬兰大公国	Grand Duchy of Finland	フィンランド大公国
+g14_tiflis	#dda6bf	提弗利斯與庫塔伊西省	提弗利斯与库塔伊西省	Tiflis and Kutais Governorate	ティフリス・クタイシ県
+g14_erivan	#e8c1af	埃里溫省	埃里温省	Erivan Governorate	エレヴァン県
+g14_baku	#cbd09e	巴庫與伊麗莎白波爾省	巴库与伊丽莎白波尔省	Baku and Elisavetpol Governorate	バクー・エリザヴェトポリ県
+g14_kars	#acdda6	卡爾斯州	卡尔斯州	Kars Oblast	カルス州
+g14_uralsk	#afe8d5	烏拉爾斯克州	乌拉尔斯克州	Uralsk Oblast	ウラリスク州
+g14_turgay	#9ebad0	圖爾蓋州	图尔盖州	Turgay Oblast	トゥルガイ州
+g14_akmolinsk	#b3a6dd	阿克莫林斯克州	阿克莫林斯克州	Akmolinsk Oblast	アクモリンスク州
+g14_semipalatinsk	#e8afe7	塞米巴拉金斯克州	塞米巴拉金斯克州	Semipalatinsk Oblast	セミパラチンスク州
+g14_semirechye	#d09ea8	七河州	七河州	Semirechye Oblast	セミレチエ州
+g14_syrdarya	#ddc6a6	錫爾河州	锡尔河州	Syr-Darya Oblast	シルダリヤ州
+g14_transcaspia	#d3e8af	外裏海州	外里海州	Transcaspian Oblast	ザカスピ州
+g14_turkestan	#9ed0a6	突厥斯坦（撒馬爾罕、費爾干納、布哈拉與希瓦保護國）	突厥斯坦（撒马尔罕、费尔干纳、布哈拉与希瓦保护国）	Turkestan (Samarkand, Fergana; Bukhara and Khiva protectorates)	トルキスタン（サマルカンド・フェルガナ、ブハラ・ヒヴァ保護国）
+s_rsfsr	#d0a69e	俄羅斯蘇維埃聯邦社會主義共和國	俄罗斯苏维埃联邦社会主义共和国	Russian SFSR	ロシア・ソビエト連邦社会主義共和国
+s_ukrssr	#dddaa6	烏克蘭蘇維埃社會主義共和國	乌克兰苏维埃社会主义共和国	Ukrainian SSR	ウクライナ・ソビエト社会主義共和国
+s_byssr	#bee8af	白俄羅斯蘇維埃社會主義共和國	白俄罗斯苏维埃社会主义共和国	Byelorussian SSR	白ロシア・ソビエト社会主義共和国
+s_zsfsr	#9ed0b8	外高加索蘇維埃聯邦社會主義共和國	外高加索苏维埃联邦社会主义共和国	Transcaucasian SFSR	ザカフカース・ソビエト連邦社会主義共和国
+s_uzssr	#a6ccdd	烏茲別克蘇維埃社會主義共和國	乌兹别克苏维埃社会主义共和国	Uzbek SSR	ウズベク・ソビエト社会主義共和国
+s_tmssr	#b4afe8	土庫曼蘇維埃社會主義共和國	土库曼苏维埃社会主义共和国	Turkmen SSR	トルクメン・ソビエト社会主義共和国
+s_tjssr	#c99ed0	塔吉克蘇維埃社會主義共和國	塔吉克苏维埃社会主义共和国	Tajik SSR	タジク・ソビエト社会主義共和国
+s_kzssr	#dda6b9	哈薩克蘇維埃社會主義共和國	哈萨克苏维埃社会主义共和国	Kazakh SSR	カザフ・ソビエト社会主義共和国
+s_kgssr	#e8c8af	吉爾吉斯蘇維埃社會主義共和國	吉尔吉斯苏维埃社会主义共和国	Kirghiz SSR	キルギス・ソビエト社会主義共和国
+s_gessr	#c5d09e	喬治亞蘇維埃社會主義共和國	乔治亚苏维埃社会主义共和国	Georgian SSR	グルジア・ソビエト社会主義共和国
+s_amssr	#a6dda6	亞美尼亞蘇維埃社會主義共和國	亚美尼亚苏维埃社会主义共和国	Armenian SSR	アルメニア・ソビエト社会主義共和国
+s_azssr	#afe8db	亞塞拜然蘇維埃社會主義共和國	亚塞拜然苏维埃社会主义共和国	Azerbaijan SSR	アゼルバイジャン・ソビエト社会主義共和国
+s_kfssr	#9eb4d0	卡累利阿—芬蘭蘇維埃社會主義共和國	卡累利阿—芬兰苏维埃社会主义共和国	Karelo-Finnish SSR	カレロ＝フィン・ソビエト社会主義共和国
+s_mdssr	#b9a6dd	摩爾達維亞蘇維埃社會主義共和國	摩尔达维亚苏维埃社会主义共和国	Moldavian SSR	モルダビア・ソビエト社会主義共和国
+s_eessr	#e8afe0	愛沙尼亞蘇維埃社會主義共和國	爱沙尼亚苏维埃社会主义共和国	Estonian SSR	エストニア・ソビエト社会主義共和国
+s_lvssr	#d09ea2	拉脫維亞蘇維埃社會主義共和國	拉脱维亚苏维埃社会主义共和国	Latvian SSR	ラトビア・ソビエト社会主義共和国
+s_ltssr	#ddcca6	立陶宛蘇維埃社會主義共和國	立陶宛苏维埃社会主义共和国	Lithuanian SSR	リトアニア・ソビエト社会主義共和国
+f_RU-AL	#ab9ed0	阿爾泰共和國	阿尔泰共和国	Altai Republic	アルタイ共和国
+f_RU-PSK	#dda6db	普斯科夫州	普斯科夫州	Pskov	プスコフ州
+f_RU-KDA	#e8afba	克拉斯諾達爾邊疆區	克拉斯诺达尔边疆区	Krasnodar Krai	クラスノダール地方
+f_RU-KC	#d0bc9e	卡拉恰伊-切爾克斯共和國	卡拉恰伊-切尔克斯共和国	Karachay-Cherkess Republic	カラチャイ・チェルケス共和国
+f_RU-KB	#c8dda6	卡巴爾達-巴爾卡爾共和國	卡巴尔达-巴尔卡尔共和国	Kabardino-Balkaria	カバルダ・バルカル共和国
+f_RU-SE	#afe8b9	北奧塞梯-阿蘭共和國	北奥塞梯-阿兰共和国	Republic of North Ossetia-Alania	北オセチア共和国
+f_RU-IN	#9ed0ce	印古什共和國	印古什共和国	Republic of Ingushetia	イングーシ共和国
+f_RU-CE	#a6b4dd	車臣共和國	车臣共和国	Chechen Republic	チェチェン共和国
+f_RU-DA	#ccafe8	達吉斯坦共和國	达吉斯坦共和国	Republic of Dagestan	ダゲスタン共和国
+f_RU-MUR	#d09ec1	摩爾曼斯克州	摩尔曼斯克州	Murmansk	ムルマンスク州
+f_RU-KR	#ddaaa6	卡累利阿共和國	卡累利阿共和国	Karelia	カレリア共和国
+f_RU-LEN	#e8e0af	列寧格勒州	列宁格勒州	Leningrad	レニングラード州
+f_RU-KGD	#b0d09e	加里寧格勒州	加里宁格勒州	Kaliningrad	カリーニングラード州
+f_RU-SMO	#a6ddbe	斯摩稜斯克州	斯摩棱斯克州	Smolensk	スモレンスク州
+f_RU-BRY	#afdbe8	布良斯克州	布良斯克州	Bryansk	ブリャンスク州
+f_RU-KRS	#9e9ed0	庫爾斯克州	库尔斯克州	Kursk	クルスク州
+f_RU-BEL	#d1a6dd	別爾哥羅德州	别尔哥罗德州	Belgorod	ベルゴロド州
+f_RU-VOR	#e8afc8	沃羅涅日州	沃罗涅日州	Voronezh	ヴォロネジ州
+f_RU-ROS	#d0b09e	羅斯托夫州	罗斯托夫州	Rostov	ロストフ州
+f_RU-BU	#d5dda6	布里亞特共和國	布里亚特共和国	Republic of Buryatia	ブリヤート共和国
+f_RU-TY	#b4e8af	圖瓦共和國	图瓦共和国	Tuva Republic	トゥヴァ共和国
+f_RU-ZAB	#9ed0c1	外貝加爾邊疆區	外贝加尔边疆区	Zabaykalsky Krai	ザバイカリエ地方
+f_RU-AMU	#a6c2dd	阿穆爾州	阿穆尔州	Amur	アムール州
+f_RU-YEV	#beafe8	猶太自治州	犹太自治州	Jewish	ユダヤ自治州
+f_RU-KHA	#d09ece	哈巴羅夫斯克邊疆區	哈巴罗夫斯克边疆区	Khabarovsk Krai	ハバロフスク地方
+f_RU-PRI	#dda6af	濱海邊疆區	滨海边疆区	Primorsky Krai	沿海地方
+f_RU-TYU	#e8d2af	秋明州	秋明州	Tyumen	チュメニ州
+f_RU-KGN	#bcd09e	庫爾幹州	库尔干州	Kurgan	クルガン州
+f_RU-OMS	#a6ddb0	鄂木斯克州	鄂木斯克州	Omsk	オムスク州
+f_RU-NVS	#afe8e6	新西伯利亞州	新西伯利亚州	Novosibirsk	ノヴォシビルスク州
+f_RU-CHE	#9eabd0	車里雅賓斯克州	车里雅宾斯克州	Chelyabinsk	チェリャビンスク州
+f_RU-ALT	#c3a6dd	阿爾泰共和國	阿尔泰共和国	Altai Republic	アルタイ共和国
+f_RU-ORE	#e8afd6	奧倫堡州	奥伦堡州	Orenburg	オレンブルク州
+f_RU-SAR	#d0a39e	薩拉托夫州	萨拉托夫州	Saratov	サラトフ州
+f_RU-AST	#ddd6a6	阿斯特拉罕州	阿斯特拉罕州	Astrakhan	アストラハン州
+f_RU-VGG	#c2e8af	伏爾加格勒州	伏尔加格勒州	Volgograd	ヴォルゴグラード州
+f_RU-MAG	#9ed0b5	馬加丹州	马加丹州	Magadan	マガダン州
+f_RU-SAK	#a6d0dd	薩哈林州	萨哈林州	Sakhalin	サハリン州
+f_RU-CHU	#b0afe8	楚科奇自治區	楚科奇自治区	Chukotka Autonomous Okrug	チュクチ自治管区
+f_RU-YAN	#c69ed0	亞馬爾-涅涅茨自治區	亚马尔-涅涅茨自治区	Yamalo-Nenets Autonomous Okrug	ヤマロ・ネネツ自治管区
+f_RU-NEN	#dda6bd	涅涅茨自治區	涅涅茨自治区	Nenets Autonomous Okrug	ネネツ自治管区
+f_RU-SA	#e8c4af	薩哈共和國	萨哈共和国	Sakha Republic	サハ共和国
+f_RU-SPE	#c9d09e	聖彼得堡	圣彼得堡	Saint Petersburg	サンクトペテルブルク
+f_RU-ARK	#a9dda6	阿爾漢格爾斯克州	阿尔汉格尔斯克州	Arkhangelsk	アルハンゲリスク州
+f_RU-KYA	#afe8d8	克拉斯諾亞爾斯克邊疆區	克拉斯诺亚尔斯克边疆区	Krasnoyarsk Krai	クラスノヤルスク地方
+f_RU-KL	#9eb7d0	卡爾梅克共和國	卡尔梅克共和国	Republic of Kalmykia	カルムイク共和国
+f_RU-KAM	#b5a6dd	堪察加邊疆區	堪察加边疆区	Kamchatka Krai	カムチャツカ地方
+f_RU-BA	#e8afe4	巴什科爾托斯坦共和國	巴什科尔托斯坦共和国	Bashkortostan	バシコルトスタン共和国
+f_RU-SVE	#d09ea6	斯維爾德洛夫斯克州	斯维尔德洛夫斯克州	Sverdlovsk	スヴェルドロフスク州
+f_RU-KHM	#ddc9a6	漢特-曼西自治區	汉特-曼西自治区	Khanty-Mansi Autonomous Okrug	ハンティ・マンシ自治管区・ユグラ
+f_RU-LIP	#d0e8af	利佩茨克州	利佩茨克州	Lipetsk	リペツク州
+f_RU-TAM	#9ed0a8	坦波夫州	坦波夫州	Tambov	タンボフ州
+f_RU-TOM	#a6dddc	托木斯克州	托木斯克州	Tomsk	トムスク州
+f_RU-TA	#afbde8	韃靼斯坦共和國	鞑靼斯坦共和国	Republic of Tatarstan	タタールスタン共和国
+f_RU-ULY	#ba9ed0	烏里揚諾夫斯克州	乌里扬诺夫斯克州	Ulyanovsk	ウリヤノフスク州
+f_RU-PNZ	#dda6ca	奔薩州	奔萨州	Penza	ペンザ州
+f_RU-KEM	#e8b6af	科麥羅沃州	科麦罗沃州	Kemerovo	ケメロヴォ州
+f_RU-ORL	#d0cb9e	奧廖爾州	奥廖尔州	Oryol	オリョール州
+f_RU-IRK	#b7dda6	伊爾庫茨克州	伊尔库茨克州	Irkutsk	イルクーツク州
+f_RU-KK	#afe8ca	哈卡斯共和國	哈卡斯共和国	Republic of Khakassia	ハカス共和国
+f_RU-MO	#9ec4d0	莫爾多瓦共和國	莫尔多瓦共和国	Republic of Mordovia	モルドヴィア共和国
+f_RU-KLU	#a8a6dd	卡盧加州	卡卢加州	Kaluga	カルーガ州
+f_RU-KOS	#ddafe8	科斯特羅馬州	科斯特罗马州	Kostroma	コストロマ州
+f_RU-YAR	#d09eb2	雅羅斯拉夫爾州	雅罗斯拉夫尔州	Yaroslavl	ヤロスラヴリ州
+f_RU-VLA	#ddbba6	弗拉基米爾州	弗拉基米尔州	Vladimir	ヴラジーミル州
+f_RU-RYA	#dee8af	梁贊州	梁赞州	Ryazan	リャザン州
+f_RU-IVA	#a1d09e	伊萬諾沃州	伊万诺沃州	Ivanovo	イヴァノヴォ州
+f_RU-NIZ	#a6ddce	下諾夫哥羅德州	下诺夫哥罗德州	Nizhny Novgorod	ニジニ・ノヴゴロド州
+f_RU-TUL	#afcbe8	圖拉州	图拉州	Tula	トゥーラ州
+f_RU-CU	#ad9ed0	楚瓦什共和國	楚瓦什共和国	Chuvash Republic	チュヴァシ共和国
+f_RU-VLG	#dda6d8	沃洛格達州	沃洛格达州	Vologda	ヴォログダ州
+f_RU-NGR	#e8afb7	諾夫哥羅德州	诺夫哥罗德州	Novgorod	ノヴゴロド州
+f_RU-TVE	#d0bf9e	特維爾州	特维尔州	Tver	トヴェリ州
+f_RU-MOW	#c5dda6	莫斯科州	莫斯科州	Moscow	モスクワ州
+f_RU-MOS	#afe8bc	莫斯科	莫斯科	Moscow	モスクワ
+f_RU-ME	#9ed0d0	馬裡埃爾共和國	马里埃尔共和国	Mari El Republic	マリ・エル共和国
+f_RU-KIR	#a6b2dd	基洛夫州	基洛夫州	Kirov	キーロフ州
+f_RU-UD	#cfafe8	烏德穆爾特共和國	乌德穆尔特共和国	Udmurt Republic	ウドムルト共和国
+f_RU-KO	#d09ebf	科米共和國	科米共和国	Komi Republic	コミ共和国
+f_RU-PER	#ddada6	彼爾姆邊疆區	彼尔姆边疆区	Perm Krai	ペルミ地方
+f_RU-SAM	#e8e3af	薩馬拉州	萨马拉州	Samara	サマラ州
+f_RU-STA	#add09e	斯塔夫羅波爾邊疆區	斯塔夫罗波尔边疆区	Stavropol Krai	スタヴロポリ地方
+f_RU-AD	#a6ddc0	阿迪格共和國	阿迪格共和国	Republic of Adygea	アディゲ共和国
+f_crimea	#afd9e8	克里米亞共和國（俄羅斯實際控制）	克里米亚共和国（俄罗斯实际控制）	Republic of Crimea (Russian-held)	クリミア共和国（ロシア実効支配）
+f_sevastopol	#a19ed0	塞瓦斯托波爾（俄羅斯實際控制）	塞瓦斯托波尔（俄罗斯实际控制）	Sevastopol (Russian-held)	セヴァストポリ（ロシア実効支配）
+f_dpr	#d4a6dd	頓涅茨克（俄羅斯實際控制）	顿涅茨克（俄罗斯实际控制）	Donetsk (Russian-held)	ドネツク（ロシア実効支配）
+f_lpr	#e8afc5	盧甘斯克（俄羅斯實際控制）	卢甘斯克（俄罗斯实际控制）	Luhansk (Russian-held)	ルハンスク（ロシア実効支配）
+f_zap	#d0b29e	札波羅熱（俄羅斯實際控制）	札波罗热（俄罗斯实际控制）	Zaporizhzhia (Russian-held)	ザポリージャ（ロシア実効支配）
+f_khe	#d3dda6	赫爾松（俄羅斯實際控制）	赫尔松（俄罗斯实际控制）	Kherson (Russian-held)	ヘルソン（ロシア実効支配）
+c_ukraine	#b1e8af	烏克蘭	乌克兰	Ukraine	ウクライナ
+c_belarus	#9ed0c4	白俄羅斯	白俄罗斯	Belarus	ベラルーシ
+c_kazakhstan	#a6bfdd	哈薩克	哈萨克	Kazakhstan	カザフスタン
+c_baltic	#c1afe8	波羅的海三國	波罗的海三国	Baltic states	バルト三国
+c_caucasus	#d09ecb	南高加索諸國	南高加索诸国	South Caucasus states	南カフカス諸国
+c_centralasia	#dda6ac	中亞四國	中亚四国	Central Asian states	中央アジア諸国
+c_moldova	#e8d5af	摩爾多瓦	摩尔多瓦	Moldova	モルドバ

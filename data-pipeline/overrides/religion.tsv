@@ -1,0 +1,793 @@
+# 宗教模式：各政權的官方或主流宗教（依大宗派細分）。人工標註，涵蓋地圖上「面積×年數」最大的約 600 個政權。
+# 其餘政權由 build.py 依名稱與地理位置推定（資訊面板會標示「推定」），推不出來的顯示為「未標註」。
+# 原則：國教或統治者奉行的宗教；殖民地依當地人口多數；官方推行無神論的共產政權標為 atheist。
+# 欄位：政權 key（Cliopatria 名稱或 NE:國碼）	起年	迄年	宗教代碼（代碼說明見 religions.tsv）
+Russian Empire			orth
+Qing Dynasty			confu
+Spanish Empire			cath
+Roman Empire		379	greco
+Roman Empire	380		cath
+Mongol Empire			tengri
+NE:RUS		1991	atheist
+NE:RUS	1992		orth
+Tsardom of Russia			orth
+Han Dynasty			confu
+Ottoman Empire			sunni
+Abbasid Caliphate			sunni
+Sasanian Empire			zoro
+Ming Dynasty			confu
+Tang Dynasty			confu
+Yuan Dynasty			vajra
+Great Yuan			vajra
+British Colonial Empire			prot
+Achaemenid Empire			zoro
+Parthian Empire			zoro
+Xiongnu			tengri
+United States of America			prot
+Kimek-Kipchak confederation			tengri
+Golden Horde		1312	tengri
+Golden Horde	1313		sunni
+NE:CAN		1979	prot
+NE:CAN	1980		cath
+NE:USA			prot
+Kazakh Khanate			sunni
+Tibetans			vajra
+Umayyad Caliphate			sunni
+People's Republic of China			atheist
+NE:BRA			cath
+Tibet			vajra
+Portuguese Empire			cath
+Tibetan Empire		778	bon
+Tibetan Empire	779		vajra
+French Africa			sunni
+NE:AUS			prot
+Rouran Khaganate			tengri
+Xianbei			tengri
+British Africa			trad_af
+Mughal Empire			sunni
+Empire of Brazil			cath
+Safavid Dynasty			shia
+Union of Soviet Socialist Republics			atheist
+Khanate of Sibir			sunni
+Eastern Roman Empire			orth
+Byzantine Empire			orth
+Northern Song			confu
+Kingdom of Kush		329	egypt
+Kingdom of Kush	330		trad_af
+Western Jin			confu
+Timurid Empire			sunni
+Indus Valley Civilization			trad
+Mongol Khanate		1577	tengri
+Mongol Khanate	1578		vajra
+British Raj			hindu
+Great Seljuk Empire			sunni
+New Kingdom of Egypt			egypt
+Mamluk Sultanate			sunni
+Kievan Rus'		987	pagan_eu
+Kievan Rus'	988		orth
+Liao Dynasty			maha
+Khmer Empire		1180	hindu
+Khmer Empire	1181	1295	maha
+Khmer Empire	1296		thera
+Maurya Empire		-269	hindu
+Maurya Empire	-268		budd
+Gupta Empire			hindu
+Seleucid Empire			greco
+Brazilian Republic			cath
+Scythia			tengri
+Novgorod Republic			orth
+Chagatai Khanate		1325	tengri
+Chagatai Khanate	1326		sunni
+Uyghur Khaganate		761	tengri
+Uyghur Khaganate	762		mani
+Kushan Empire			maha
+Commonwealth of Australia			prot
+Satavahana Dynasty			hindu
+Mayan City-States			meso
+Srivijaya			maha
+Yuezhi			trad
+Ethiopian Empire			miaph
+Fatimid Caliphate			ismaili
+Ghaznavid Empire			sunni
+Southern Song			confu
+Mali Empire			sunni
+Samanid Empire			sunni
+NE:DZA			sunni
+NE:IND			hindu
+Yenisei Kyrgyz			tengri
+Holy Roman Empire			cath
+Khazaria		739	tengri
+Khazaria	740		jew
+Western Göktürks			tengri
+White Huns			trad
+Kingdom of Spain			cath
+Kingdom of the Franks		495	pagan_eu
+Kingdom of the Franks	496		cath
+NE:ARG			cath
+Indo-Scythians			budd
+Qajar Dynasty			shia
+Türgesh			tengri
+Kingdom of France			cath
+Protectorate of the Western Regions			confu
+Chu			confu
+Argentine Confederation			cath
+Ptolemaic Kingdom			egypt
+Western Satraps			hindu
+Roman Republic			greco
+Funj Sultanate			sunni
+Kara-Khitans			maha
+Great Jin			confu
+Göktürk Khaganate			tengri
+Rashtrakuta Dynasty			hindu
+Grand Principality of Moscow			orth
+NE:COD			cath
+Neo-Assyrian Empire			neareast
+Rashidun Caliphate			sunni
+Ilkhanate		1294	tengri
+Ilkhanate	1295		sunni
+Holy Roman Empire Minor States		1529	cath
+Holy Roman Empire Minor States	1530		mixed_cp
+British Empire			prot
+NE:DNK			prot
+Bolivia			cath
+Qocho Kingdom		999	mani
+Qocho Kingdom	1000		maha
+Denmark-Norway		1535	cath
+Denmark-Norway	1536		prot
+Old Kingdom of Norway		994	pagan_eu
+Old Kingdom of Norway	995		cath
+Makuria		569	trad_af
+Makuria	570		miaph
+Makuria Kingdom			miaph
+Northern Yuan			tengri
+Dzungar Khanate			vajra
+Zhou Dynasty			confu
+Later Zhou			confu
+Kingdom of Hungary			cath
+NE:SDN			sunni
+Scandinavian minor kingdoms			pagan_eu
+Swedish Empire			prot
+Kingdom of Sweden		1099	pagan_eu
+Kingdom of Sweden	1100	1526	cath
+Kingdom of Sweden	1527		prot
+Polish-Lithuanian Commonwealth			cath
+NE:MEX			cath
+Vakataka Kingdom			hindu
+Republic of China			confu
+Assyria			neareast
+NE:IDN			sunni
+Republic of Peru			cath
+Goguryeo		371	trad
+Goguryeo	372		maha
+Dutch East Indies			sunni
+NE:SAU			sunni
+Tuyuhun			tengri
+Eastern Moghulistan			sunni
+Western Moghulistan			sunni
+Moghulistan			sunni
+Himyarite Kingdom		379	neareast
+Himyarite Kingdom	380	524	jew
+Himyarite Kingdom	525		miaph
+Four Oirats			tengri
+Oirat Confederation			vajra
+Almoravid Dynasty			sunni
+Majapahit			hindu
+Kingdom of Armenia		300	zoro
+Kingdom of Armenia	301		miaph
+Funan			hindu
+Ayutthaya Kingdom			thera
+Alodia		579	trad_af
+Alodia	580		miaph
+Median Kingdom			zoro
+Mexico			cath
+Visigothic Kingdom		586	arian
+Visigothic Kingdom	587		cath
+Tümed		1577	tengri
+Tümed	1578		vajra
+Liu Song Dynasty			confu
+NE:ZAF			prot
+Canada			prot
+Oghuz Turks		959	tengri
+Oghuz Turks	960		sunni
+Kalmar Union			cath
+Kara-Khanids			sunni
+Eastern Kara-Khanids			sunni
+Western Karakhanid Khanate			sunni
+NE:AGO			cath
+NE:IRN			shia
+Western Chalukya Empire			hindu
+Belgian Congo			cath
+Kingdom of Great Britain			prot
+First Toungoo Empire			thera
+Ayyubid Sultanate			sunni
+Lan Xang			thera
+Elam			neareast
+Kingdom of England		1533	cath
+Kingdom of England	1534		prot
+Gurjara-Pratihara Dynasty			hindu
+Babylonia			neareast
+Chámpa			hindu
+Chalukya Dynasty			hindu
+Habsburg Monarchy			cath
+Durrani Empire			sunni
+Eastern Göktürks			tengri
+Kingdom of Axum		329	trad_af
+Kingdom of Axum	330		miaph
+Unitary State of Brazil			cath
+Sui Dynasty			confu
+NE:LBY			sunni
+Avar Khaganate			tengri
+Kingdom of Portugal			cath
+Northern Wei			confu
+Bornu Empire			sunni
+Western Roman Empire			cath
+Pala Empire			maha
+Almohad Caliphate			sunni
+Joseon			confu
+Korean Empire			confu
+Kingdom of Dali			maha
+Nanzhao			maha
+Shunga Empire			hindu
+Hamdanid Emirates			shia
+Liang Dynasty			confu
+Pagan Kingdom			thera
+House of Jagiellon			cath
+Kamarupa Kingdom			hindu
+Khanate of Bukhara			sunni
+Emirate of Bukhara			sunni
+Inca Empire			andes
+Pyu City-States			thera
+NE:PER			cath
+Khanate of Khiva			sunni
+Middle Kingdom of Egypt			egypt
+Venezuela			cath
+Later Mayan City-States			meso
+Mongolian People's Republic			atheist
+Crown of Castile			cath
+Vijayanagara Empire			hindu
+NE:ETH			miaph
+Anurādhapura			thera
+Greco-Bactrian Kingdom			greco
+Macedonian Empire			greco
+Heian Japan			shinto
+Republic of Colombia			cath
+First Bulgarian Empire		863	tengri
+First Bulgarian Empire	864		orth
+Qin			confu
+NE:COL			cath
+Morocco			sunni
+Shang Dynasty			confu
+NE:KAZ			sunni
+Tokugawa Shogunate			shinto
+Western Xia			maha
+Mamluk Dynasty			sunni
+Chola Empire			hindu
+Muhammad Ali dynasty			sunni
+Federated Republic of Mexico			cath
+Grand Duchy of Lithuania		1386	pagan_eu
+Grand Duchy of Lithuania	1387		cath
+Hadhramaut			neareast
+NE:BOL			cath
+Cao Wei			confu
+Empire of Japan			shinto
+Lakhmid Kingdom		579	neareast
+Lakhmid Kingdom	580		nest
+Greek City-States			greco
+Xin Dynasty			confu
+Rasulid Dynasty			sunni
+NE:TCD			sunni
+NE:MLI			sunni
+Ghana Empire			trad_af
+Buyid Dynasty			shia
+Abbasid Caliphate/Buyid Dynasty			shia
+Gothia		340	pagan_eu
+Gothia	341		arian
+Maratha Empire			hindu
+Tughlaq Dynasty			sunni
+Eastern Wu			confu
+Haripuñjaya			thera
+Balhae			maha
+Rattanakosin Kingdom			thera
+NE:EGY			sunni
+Songhai Empire			sunni
+Sultanate of Darfur			sunni
+Shan States			thera
+Kuomintang			confu
+Turk Shahis			budd
+Huns			tengri
+Hunnic Empire			tengri
+NE:NGA			sunni
+Sind-Habbari Dynasty			sunni
+NE:NER			sunni
+Wadai Empire			sunni
+Sumerian City-States			neareast
+Khwarezmid Empire			sunni
+Khwarezmid Dynasty			sunni
+NE:VEN			cath
+Akkadian Empire			neareast
+Hittites			neareast
+Italian Africa			sunni
+Lavo Kingdom			thera
+Emirate of Córdoba			sunni
+Caliphate of Córdoba			sunni
+Sokoto Caliphate			sunni
+NE:PAK			sunni
+Indo-Sasanian Empire			zoro
+Halych-Volhynia occupation			orth
+United Kingdoms of Sweden and Norway			prot
+Kashmir			hindu
+Blue Horde			sunni
+White Horde			sunni
+Southern Qi			confu
+Hafsid Dynasty			sunni
+Republic of Chile			cath
+NE:MRT			sunni
+Aq Qoyunlu			sunni
+Qara Qoyunlu			shia
+Nogai Horde			sunni
+Small Horde			sunni
+Kingdom of Poland		965	pagan_eu
+Kingdom of Poland	966		cath
+NE:CHL			cath
+Carthage			neareast
+Kingdom of Italy		649	arian
+Kingdom of Italy	650		cath
+Chaulukya Dynasty			hindu
+Yadava Dynasty			hindu
+Ottoman Tripolitania			sunni
+Eastern Kushans			maha
+Western Kushans			maha
+Kidarites			budd
+Rustamid dynasty			ibadi
+Ghurid Dynasty			sunni
+Emirate of Afghanistan			sunni
+Kingdom of Afghanistan			sunni
+NE:TUR			sunni
+Republic of Turkey			sunni
+Minyue			confu
+West Franks			cath
+East Franks			cath
+Zand Dynasty			shia
+German Africa			trad_af
+Bahmani Sultanate			sunni
+Russian Republic			orth
+Sultanate of Bengal			sunni
+NE:TZA			cath
+Sultanate of Johor			sunni
+French Indochina			maha
+Marinid Sultanate			sunni
+Magadha - Shaishunaga dynasty			hindu
+Magadha - Haryanka dynasty			hindu
+Qi			confu
+Saffarid Dynasty			sunni
+Lohara Dynasty			hindu
+Mongolia			vajra
+Wu			confu
+NE:MMR			thera
+Goryeo			maha
+Zapotec Civilization			meso
+British Gold Coast			prot
+Twenty-sixth Dynasty of Egypt			egypt
+Thirtieth Dynasty of Egypt			egypt
+Twenty-second Dynasty of Egypt			egypt
+British Cape Colony			prot
+Turks			tengri
+Emirate of Nejd			sunni
+Emirate of Diriyah			sunni
+Emirate of Jabal Shammar			sunni
+Kingdom of Hejaz and Nejd			sunni
+Kingdom of Saudi Arabia			sunni
+Paramara Dynasty			hindu
+Eastern Ganga Kingdom			hindu
+Saadi Sultanate			sunni
+Wattasid dynasty			sunni
+Afsharid Iran			shia
+Kingdom of Georgia			orth
+Georgia			orth
+Wusun			tengri
+Sukhothai Kingdom			thera
+Maitraka Dynasty			hindu
+Jin	-1000	0	confu
+Ngô Dynasty			maha
+Chenla			hindu
+Water Chenla			hindu
+Land Chenla			hindu
+Assyrian Egypt			neareast
+Early Dynastic Period of Egypt			egypt
+Old Kingdom of Egypt			egypt
+Lower Egypt			egypt
+Neo-Babylonian Empire			neareast
+Iberian Union			cath
+Kamakura Shogunate			shinto
+Ashikaga Shogunate			shinto
+Warring States Japan			shinto
+Asuka Japan			shinto
+Nara Japan			shinto
+Japan			shinto
+Sunda Kingdom			hindu
+Nobatia		542	trad_af
+Nobatia	543		miaph
+Nanyue			confu
+Dutch Republic			prot
+Estado Novo			cath
+Kanva Dynasty			hindu
+Late Pallava Empire			hindu
+Argentine Republic			cath
+NE:ZMB			prot
+French Third Republic			cath
+Second French Empire			cath
+Bourbon Kingdom of France			cath
+French Fifth Republic			cath
+Ziyadid dynasty			sunni
+Khedivate of Egypt			sunni
+Kingdom of Egypt			sunni
+NE:AFG			sunni
+Indo-Parthians			zoro
+Gran Colombia			cath
+Republics of the Soviet Union			atheist
+Crown of Aragon			cath
+Kingdom of Pontus			greco
+Sultanate of Brunei			sunni
+NE:THA			thera
+Sena Dynasty			hindu
+Ganzhou Kingdom			maha
+Konbaung Dynasty			thera
+Burma			thera
+NE:MDG			prot
+Jesuit Reducciones			cath
+NE:CAF			prot
+Kakatiya Dynasty			hindu
+Kadamba Empire			hindu
+Kingdom of Denmark		964	pagan_eu
+Kingdom of Denmark	965		cath
+Austrian Empire			cath
+Austria-Hungary			cath
+Chauhan Dynasty			hindu
+Haudenosaunee			trad
+NE:MOZ			cath
+Mitanni			neareast
+Principality of Rostov-Suzdal			orth
+Principality of Vladimir-Suzdal			orth
+Principality of Chernigov			orth
+Principality of Kiev			orth
+Principality of Smolensk			orth
+Principality of Pereyaslavl			orth
+Principality of Volhynia			orth
+Principality of Minsk			orth
+Bijapur Sultanate			shia
+Golconda Sultanate			shia
+Ahmadnagar Sultanate			shia
+German Empire			prot
+Kingdom of Prussia			prot
+Nazi Germany			prot
+German Confederation			mixed_cp
+Sabaeans			neareast
+Minaeans			neareast
+NE:PNG			prot
+Principality of Moldavia			orth
+Principality of Wallachia			orth
+Khalji Dynasty			sunni
+Kingdom of Numidia			trad
+Mauretania			trad
+Zayyanid dynasty			sunni
+NE:KEN			prot
+Kashmiri Sultanate			sunni
+NE:SOM			sunni
+Icelandic Commonwealth		999	pagan_eu
+Icelandic Commonwealth	1000		cath
+Harsha's Empire			hindu
+NE:SWE			prot
+Sultanate of Rum			sunni
+Kingdom of Khotan			maha
+Kingdom of Bohemia		1419	cath
+Kingdom of Bohemia	1420	1528	prot
+Karkota Dynasty			hindu
+Indo-Greeks			budd
+Unified Silla			maha
+Silla		527	trad
+Silla	528		maha
+Baekje		383	trad
+Baekje	384		maha
+NE:BWA			prot
+Southern Ming			confu
+Republic of New Granada			cath
+Hyksos			neareast
+Merina Kingdom		1868	trad_af
+Merina Kingdom	1869		prot
+Shu Han			confu
+Tulunids			sunni
+Crimean Khanate			sunni
+NE:NOR			prot
+Kingdom of Norway			prot
+Pahlavi Dynasty			shia
+Kalabhra Dynasty			jain
+Idrisids			sunni
+Portuguese Republic			cath
+Qasimids			shia
+NE:PRY			cath
+Paraguay			cath
+Northern Zhou			confu
+Former Qin			confu
+Kingdom of Castile			cath
+Kingdom of León			cath
+Kingdom of Asturias			cath
+Papal States			cath
+NE:IRQ			shia
+Khoshut Khanate			vajra
+Chen Dynasty			confu
+NE:CMR			cath
+Khanate of Kokand			sunni
+Francoist Spain			cath
+NE:NAM			prot
+Zengid dynasty			sunni
+Río de la Plata			cath
+Greenland			prot
+Maukhari Dynasty			hindu
+Kingdom of Kongo		1490	trad_af
+Kingdom of Kongo	1491		cath
+Caucasian Albania		312	zoro
+Caucasian Albania	313		miaph
+Astrakhan Khanate			sunni
+Ghassanids			miaph
+Brythons			cath
+Jalayirid Sultanate			sunni
+Republic of Ecuador			cath
+Regency of Algiers			sunni
+Yan	-1000	0	confu
+South Africa			prot
+Gorkha Kingdom			hindu
+Nepal			hindu
+Teutonic Order			cath
+Saxons			pagan_eu
+Kingdom of Luang Phrabang			thera
+NE:MAR			sunni
+Chandela Kingdom			hindu
+NE:PHL			cath
+Aghlabid Dynasty			sunni
+Sultanate of Palembang			sunni
+Yue			confu
+Ava Kingdom			thera
+NE:FIN			prot
+Nabataeans			neareast
+Kingdom of Mrauk U			thera
+Kingdom of Scotland		1559	cath
+Kingdom of Scotland	1560		prot
+Second Bulgarian Empire			orth
+Republic of Venice			cath
+Lydia			neareast
+Ashanti Empire			trad_af
+Mahdids			sunni
+NE:ESP			cath
+Sur Empire			sunni
+Pandya Dynasty			hindu
+Pandya Empire			hindu
+Early Pandyas			hindu
+Gahadavala Dynasty			hindu
+House of Habsburg			cath
+Burgundian Kingdom		516	arian
+Burgundian Kingdom	517		cath
+Burgundians			arian
+Aquitaine			cath
+Duchy of Aquitaine			cath
+Magyars			tengri
+Viking settlements		999	pagan_eu
+Viking settlements	1000		cath
+Ostrogothic Kingdom			arian
+Lodi Dynasty			sunni
+Adal Sultanate			sunni
+Ifat Sultanate			sunni
+Volga Bulgaria		921	tengri
+Volga Bulgaria	922		sunni
+NE:YEM			sunni
+NE:ZWE			prot
+Hotaki Dynasty			sunni
+Etruscans			greco
+Vandal Kingdom			arian
+NE:NZL			prot
+NE:ITA			cath
+Nguyễn dynasty			confu
+Nguyễn lords			confu
+Trịnh lords			confu
+Lê Dynasty			confu
+Early Lý Dynasty			maha
+Principality of Hungary		971	tengri
+Principality of Hungary	972		cath
+Qarlugs			tengri
+Mahdist State			sunni
+NE:POL			cath
+Later Jin Dynasty			confu
+Duchy of Bavaria			cath
+Bavarians		699	pagan_eu
+Bavarians	700		cath
+NE:DEU			mixed_cp
+NE:COG			cath
+Mycenaean Greece			greco
+Greek Dark Ages			greco
+Kannauj-Varman Dynasty			hindu
+Western Wei			confu
+Eastern Wei			confu
+Hoysala Kingdom			hindu
+Kalmyk Khanate			vajra
+Shirvan		860	zoro
+Shirvan	861		sunni
+Nanda Empire			hindu
+Sind-Samma Dynasty			sunni
+NE:MYS			sunni
+Kingdom of Germany			cath
+Kingdom of Alba			cath
+Dál Riata			cath
+Former Yan			confu
+British East Africa			prot
+Mahan			trad
+Jinhan			trad
+Korean Jin			trad
+Dongye			trad
+Gojoseon			trad
+Tahirid Sultanate			sunni
+Sultanate of Malacca			sunni
+Cao Cao			confu
+NE:ECU			cath
+Oriental Republic of Uruguay			cath
+NE:CIV			sunni
+Atropatene			zoro
+Sarbadars			shia
+Kingdom of Urartu			neareast
+Kingdom of Cappadocia			greco
+Later Shu			confu
+Vientiane			thera
+Kartids			sunni
+Southern Chu			confu
+Caucasian Iberia		326	zoro
+Caucasian Iberia	327		orth
+Swiss Confederation		1528	cath
+Swiss Confederation	1529		mixed_cp
+Kingdom of Lunda			trad_af
+New France			cath
+Southern Han			confu
+NE:OMN			ibadi
+Sultanate of Oman			ibadi
+Yarubid dynasty			ibadi
+NE:UKR			orth
+Communist Party of China			atheist
+Chinese Communists			atheist
+Southern Wu			confu
+Najahid Dynasty			sunni
+Hanthawaddy Kingdom			thera
+Early Cholas			hindu
+Early Cheras			hindu
+Cimmerian Bosporus			greco
+Sultanate of Aceh			sunni
+Angevin Empire			cath
+Khanate of Kazan			sunni
+Former Zhao			confu
+NE:ROU			orth
+Bahrani Dynasty			shia
+Netherlands Antilles			cath
+Great Mongol State			vajra
+Kingdom of the Suebi		559	arian
+Kingdom of the Suebi	560		cath
+Duchy of Brittany			cath
+Cheng Han			confu
+Sultanate of Banten			sunni
+Kingdom of Arles			cath
+Goths			pagan_eu
+NE:BFA			sunni
+Qin Dynasty			confu
+NE:VNM			atheist
+Seljuk Dynasty			sunni
+NE:GAB			cath
+Centralist Mexico			cath
+Northern Qi			confu
+Norman England			cath
+Nawabs of Bengal			shia
+NE:GHA			prot
+Former Liang			confu
+Ceylon			thera
+Kingdom of Polonnaruwa			thera
+Livonian Conference		1529	cath
+Livonian Conference	1530		prot
+NE:TKM			sunni
+NE:LAO			thera
+Mataram Kingdom			hindu
+Lu			confu
+Yaudheya Republic			hindu
+Lan Na Kingdom			thera
+Gallic Empire			greco
+Later Tang			confu
+Wei	-1000	0	confu
+Southern Tang			confu
+Beylik of Karaman			sunni
+Germiyanids			sunni
+Muzaffarids			sunni
+NE:GUY			prot
+Beylik of Tunis			sunni
+Kingdom of Mercia		654	pagan_eu
+Kingdom of Mercia	655		cath
+Kingdom of Wessex		634	pagan_eu
+Kingdom of Wessex	635		cath
+Kingdom of Northumbria		626	pagan_eu
+Kingdom of Northumbria	627		cath
+NE:URY			cath
+Takrur		1029	trad_af
+Takrur	1030		sunni
+Kingdom of Sicily			cath
+Kingdom of Naples			cath
+Kingdom of Sardinia			cath
+NE:UZB			sunni
+NE:SUR			prot
+Shaybanids			sunni
+Lazica		522	trad
+Lazica	523		orth
+Jaunpur Sultanate			sunni
+NE:SYR			sunni
+NE:UGA			cath
+Kingdom of Mysore			hindu
+Talpur Dynasty			shia
+Kingdom of Croatia			cath
+NE:SEN			sunni
+Sultanate of Sulu			sunni
+Gutian Dynasty			neareast
+Sultanate of Banjar			sunni
+Kingdom of Osroene			neareast
+NE:KHM		1974	thera
+NE:KHM	1975	1978	atheist
+NE:KHM	1979		thera
+Phrygia			neareast
+Zaporozhian Cossacks			orth
+Republic of Nicaragua			cath
+East Turkestan			sunni
+Peru-Bolivian Confederation			cath
+Principality of Transylvania			prot
+Chimu Empire			andes
+Kingdom of Bhutan			vajra
+Kingdom of Pergamon			greco
+Song	-1000	0	confu
+Phoenicia			neareast
+Kalinga			jain
+Galatia			pagan_eu
+Honduras			cath
+Uyunid Emirate			sunni
+NE:NPL			hindu
+Chandra Dynasty			maha
+Thracian Kingdom			pagan_eu
+Second French Empire			cath
+Later Liang Dynasty			confu
+Odrysian Kingdom			pagan_eu
+English Colonial Empire			prot
+Kingdom of Lysimachus			greco
+Kingdom of Serbia			orth
+Guatemala			cath
+Old Great Bulgaria			tengri
+Socialist Federal Republic of Yugoslavia			orth
+Puebloans - Chaco Regional System			trad
+Puebloans - Aztec Regional System			trad
+North Yemen			shia
+Republic of Genoa			cath
+Armenian Kingdom of Cilicia			miaph
+Nicaean Empire			orth
+Great Moravia			cath
+NE:NIC			cath
+NE:TUN			sunni
+South African Republic			prot
+Hammadid Dynasty			sunni
+Oyo Empire			trad_af
+Later Zhao			confu
+Republic of Korea			maha
+Democratic People's Republic of Korea			atheist
+Ryukyu Kingdom			trad
+NE:CUB		1961	cath
+NE:CUB	1962	1991	atheist
+NE:CUB	1992		cath
+NE:ALB		1966	sunni
+NE:ALB	1967	1990	atheist
+NE:ALB	1991		sunni
+NE:ISR			jew
+Kingdom of Judah			jew
+Judea			jew
+Hyderabad State			sunni
+Empire of China			confu
+NE:GIN			sunni
+Sikh Empire			sikh
+Sikhs			sikh
+Yettishar			sunni
+Dungan Revolt (Xinjiang)			sunni

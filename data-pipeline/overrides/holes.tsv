@@ -1,0 +1,5 @@
+# Land that Cliopatria leaves empty in some years, filled with the polity that actually held it.
+# Only the uncovered land inside the box (lon0,lat0,lon1,lat1) is filled. Every line needs a source.
+# 欄位：key	起	迄	box	en	zh-Hant	zh-Hans	ja	Wikidata	來源
+Dungan Revolt (Xinjiang)	1864	1864	73,34,97,50	Dungan Revolt regimes (Xinjiang)	新疆回民起事政權	新疆回民起事政权	新疆の回民蜂起政権	Q1270626	https://zh.wikipedia.org/zh-tw/同治新疆之亂
+Yettishar	1865	1876	73,34,97,50	Yettishar (Kashgaria)	哲德沙爾（洪福汗國）	哲德沙尔（洪福汗国）	ヤクブ・ベク政権（カシュガル）	Q1155817	https://zh.wikipedia.org/zh-tw/哲德沙爾

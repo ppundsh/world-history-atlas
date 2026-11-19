@@ -1,0 +1,49 @@
+# 中國模式：勢力（派系／政權）表。欄位：id	顏色	繁中	簡中	English	日本語
+qing	#e6c229	大清帝國	大清帝国	Great Qing Empire	大清帝国
+zhangxun	#d9b21f	宣統復辟（張勳）	宣统复辟（张勋）	Manchu Restoration (Zhang Xun)	張勲復辟
+rev	#e8553e	革命軍政府（各省都督府）	革命军政府（各省都督府）	Revolutionary military governments	革命軍政府（各省都督府）
+nanjing	#f07850	中華民國臨時政府（南京）	中华民国临时政府（南京）	Provisional Government (Nanjing)	中華民国臨時政府（南京）
+beiyang	#6f8fca	北洋政府	北洋政府	Beiyang government	北洋政府
+hongxian	#7a4fb0	中華帝國（洪憲帝制）	中华帝国（洪宪帝制）	Empire of China (Hongxian)	中華帝国（洪憲帝制）
+anti1913	#f39c6b	討袁軍（二次革命）	讨袁军（二次革命）	Second Revolution (anti-Yuan forces)	第二革命（討袁軍）
+huguo	#f5b041	護國軍	护国军	National Protection Army	護国軍
+anhui	#4caf50	皖系（段祺瑞）	皖系（段祺瑞）	Anhui clique (Duan Qirui)	安徽派（段祺瑞）
+zhili	#26a69a	直系（馮國璋、曹錕、吳佩孚）	直系（冯国璋、曹锟、吴佩孚）	Zhili clique (Feng Guozhang, Cao Kun, Wu Peifu)	直隷派（馮国璋・曹錕・呉佩孚）
+fengtian	#3949ab	奉系（張作霖、張學良）	奉系（张作霖、张学良）	Fengtian clique (Zhang Zuolin, Zhang Xueliang)	奉天派（張作霖・張学良）
+guominjun	#9ccc65	國民軍（馮玉祥）	国民军（冯玉祥）	Guominjun (Feng Yuxiang)	国民軍（馮玉祥）
+suncf	#4dd0e1	五省聯軍（孫傳芳）	五省联军（孙传芳）	Five Provinces Alliance (Sun Chuanfang)	五省聯軍（孫伝芳）
+shanxi	#8d6e63	晉系（閻錫山）	晋系（阎锡山）	Shanxi clique (Yan Xishan)	山西派（閻錫山）
+yunnan	#ff9800	滇系（唐繼堯、龍雲）	滇系（唐继尧、龙云）	Yunnan clique (Tang Jiyao, Long Yun)	雲南派（唐継尭・竜雲）
+guizhou	#ffcc80	黔系	黔系	Guizhou clique	貴州派
+sichuan	#d4a373	川系（四川各軍）	川系（四川各军）	Sichuan warlords	四川軍閥
+liuwh	#bf9e6e	劉文輝（西康）	刘文辉（西康）	Liu Wenhui (Xikang)	劉文輝（西康）
+oldgx	#9c27b0	舊桂系（陸榮廷）	旧桂系（陆荣廷）	Old Guangxi clique (Lu Rongting)	旧広西派（陸栄廷）
+newgx	#ba68c8	新桂系（李宗仁、白崇禧）	新桂系（李宗仁、白崇禧）	New Guangxi clique (Li Zongren, Bai Chongxi)	新広西派（李宗仁・白崇禧）
+yue	#ec407a	粵系（陳炯明、陳濟棠）	粤系（陈炯明、陈济棠）	Guangdong clique (Chen Jiongming, Chen Jitang)	広東派（陳炯明・陳済棠）
+hunan	#f48fb1	湘系（湖南自治）	湘系（湖南自治）	Hunan clique	湖南派
+hanfj	#8bc34a	韓復榘（山東）	韩复榘（山东）	Han Fuju (Shandong)	韓復榘（山東）
+xibei	#aed581	西北軍（楊虎城）	西北军（杨虎城）	Northwest Army (Yang Hucheng)	西北軍（楊虎城）
+army29	#7cb342	第二十九軍（宋哲元）	第二十九军（宋哲元）	29th Army (Song Zheyuan)	第29軍（宋哲元）
+kmt	#1e40af	國民政府（國民黨）	国民政府（国民党）	Nationalist Government (Kuomintang)	国民政府（国民党）
+ma	#a1887f	馬家軍	马家军	Ma clique	馬家軍
+xinjiang	#bcaaa4	新疆督軍（楊增新、金樹仁、盛世才）	新疆督军（杨增新、金树仁、盛世才）	Xinjiang governors (Yang Zengxin, Jin Shuren, Sheng Shicai)	新疆督軍（楊増新・金樹仁・盛世才）
+etr	#29b6f6	東突厥斯坦共和國	东突厥斯坦共和国	East Turkestan Republic	東トルキスタン共和国
+tibet	#b39ddb	西藏（甘丹頗章）	西藏（甘丹颇章）	Tibet (Ganden Phodrang)	チベット（ガンデンポタン）
+bogd	#90caf9	博克多汗國	博克多汗国	Bogd Khanate of Mongolia	ボグド・ハーン政権
+mongolia	#ef5350	蒙古人民共和國	蒙古人民共和国	Mongolian People's Republic	モンゴル人民共和国
+tuva	#ce93d8	唐努烏梁海／唐努圖瓦	唐努乌梁海／唐努图瓦	Tannu Uriankhai / Tannu Tuva	タンヌ・ウリャンハイ／トゥヴァ
+russia	#78909c	俄國保護	俄国保护	Russian protectorate	ロシア保護領
+ussr	#8d2b2b	蘇聯（佔領／併入）	苏联（占领／并入）	Soviet Union (occupation / annexation)	ソ連（占領・併合）
+fujianrev	#ff7043	中華共和國（閩變）	中华共和国（闽变）	Fujian People's Government	中華共和国（福建事変）
+japan	#f5a3a3	日本（殖民地／佔領區）	日本（殖民地／占领区）	Japan (colony / occupied)	日本（植民地・占領地）
+germany	#b0bec5	德國膠州灣租借地	德国胶州湾租借地	German Kiautschou leasehold	ドイツ膠州湾租借地
+manchukuo	#e3c76b	滿洲國	满洲国	Manchukuo	満洲国
+mengjiang	#c5e1a5	蒙疆（德王）	蒙疆（德王）	Mengjiang (Prince De)	蒙疆（徳王）
+jidong	#d7ccc8	冀東防共自治政府	冀东防共自治政府	East Hebei Autonomous Council	冀東防共自治政府
+linshi	#cfa977	中華民國臨時政府（北平，日本扶植）	中华民国临时政府（北平，日本扶植）	Provisional Government of the ROC (Japanese-sponsored)	中華民国臨時政府（北平・日本の傀儡）
+weixin	#d9b48f	中華民國維新政府（日本扶植）	中华民国维新政府（日本扶植）	Reformed Government of the ROC (Japanese-sponsored)	中華民国維新政府（日本の傀儡）
+wang	#ffe082	國民政府（汪精衛，日本扶植）	国民政府（汪精卫，日本扶植）	Wang Jingwei regime (Japanese-sponsored)	汪兆銘政権（日本の傀儡）
+ccp	#d32f2f	中國共產黨	中国共产党	Chinese Communist Party	中国共産党
+prc	#b71c1c	中華人民共和國	中华人民共和国	People's Republic of China	中華人民共和国
+britain	#90a4ae	英國	英国	United Kingdom	イギリス
+portugal	#a5d6a7	葡萄牙	葡萄牙	Portugal	ポルトガル

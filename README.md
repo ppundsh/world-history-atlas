@@ -1,0 +1,159 @@
+# 世界國家演變 · How the World's Countries Changed
+
+[English](README.en.md) · **繁體中文**
+
+這是一個靜態網頁，用動畫呈現從西元前 3400 年到 2026 年的世界政治地圖。可以直接部署到 GitHub Pages，執行時只讀取自己資料夾裡的檔案，不連外部圖磚、字型或 CDN。
+
+## 功能
+
+- **模式**
+  - **世界**：歷代政權，並顯示每年的主權國家數（2026 年為 196 國）。
+  - **宗教**：依各政權的官方或主要宗教著色，主要宗派再細分（遜尼、什葉、伊巴德、上座部、大乘等）。標籤可在「顯示」選單切換為宗教名稱、國名，或兩者並列；點圖例中的宗教可看介紹與維基百科連結。
+  - **中國（1911–1951）**：以省為單位、逐月顯示。包含各派軍閥、各個自稱中華民國的政府，以及共產黨根據地。
+  - **台灣（1600–2026）**：逐月顯示，有兩個可切換的圖層：
+    - 統治範圍（原住民族、荷蘭東印度公司、西班牙、鄭氏、清、日本、中華民國等）；
+    - 各時期的行政區劃（由內政部鄉鎮界組成，隨年份變動，例如 1920 年五州二廳、1950 年 16 縣、2010 年後的直轄市）。兩個圖層可同時勾選：以統治範圍著色，行政區以虛線與小字疊加。
+  - **日本（701–2026）**：逐月顯示，同樣有統治範圍與行政區劃兩個圖層，另可開關**海外領土**（臺灣、朝鮮、樺太、關東州、南洋、滿洲國）。
+    - 統治範圍：律令國家與蝦夷、隼人的邊界、奧州藤原氏、南北朝、戰國主要大名（1560–1590，以「國」為單位概略標示）、江戶幕府、琉球王國、蝦夷地、戊辰戰爭、大日本帝國、盟軍佔領與沖繩等地的美國統治、北方四島。
+    - 行政區劃：令制國（701 年起的分合）、1871 年廢藩置縣到 1888 年的府縣統合、今日都道府縣。單元由國土數值情報的市區町村組成，各市町村屬於哪一國依日文維基百科各郡條目的「郡域」整理。
+  - **俄羅斯（862–2026）**：逐月顯示，統治範圍＋行政區劃。從留里克、基輔羅斯、羅斯諸公國、金帳汗國、莫斯科大公國、沙皇國、帝國、內戰、蘇聯到俄羅斯聯邦；包括波羅的海、高加索、中亞、阿拉斯加、二次大戰東線（以州為單位概略標示）、2014 年與 2022 年後的實際控制區。行政區劃：1708 年八省、1914 年各省與州、蘇聯加盟共和國、今日聯邦主體。
+- **地圖**
+  - 23 種投影，可依性質（等積／等距／等角／折衷）、光源（心射／平射／正射）或投影面（圓柱／圓錐／方位）分組。常用投影前面有 ★；滑鼠停在選單項目上會顯示它的用途、優缺點與設計方式，下方的六角圖比較面積、形狀、距離、覆蓋、邊緣變形與折衷程度（依 Tissot 變形橢圓計算），其他投影以灰線同時列出。摩爾威德等擬圓柱、圓錐投影可往任何方向旋轉（Shift 或右鍵拖曳可轉動）。
+  - MapLibre 3D 地球，可選擇上方朝北、東、南或西（右鍵拖曳可自由旋轉、傾斜）。
+  - 操作方式比照 Google Maps：拖曳、滾輪、雙指縮放、雙擊、鍵盤。
+- **底圖**：簡潔向量、自然地理、古地圖風、衛星影像（NASA Blue Marble；東亞與台灣有高解析度圖層）。
+- **過渡動畫**：疆域改變時，新的領土像黏菌一樣從原本的領土蔓延過去；直接跳到別的年代時，舊的先消退、新的再長出來。平面地圖與 3D 地球都有。
+- **「顯示」選單**：國名、國界、河流（放大後改用 1:10m 河流，台灣另有 OpenStreetMap 主要河川）、經緯線、**現代國界**（虛線疊在歷史地圖上）、**小國也標名**（最小字體鎖定）、過渡動畫、**重要事件**（一戰、二戰等標在時間軸上，播放時顯示在年份下方，點一下可看說明）。
+- **說明面板**：點國家可看存續年代、當年面積、最大疆域、前身與後繼（可點擊跳轉）、維基百科連結與資料出處；中國、台灣模式點單元可看該勢力的說明與維基百科連結。
+- **效能**：幾何形狀投影一次後快取為 Path2D，縮放與平移交給 GPU 做矩陣轉換；3D 地球把整個時代的資料一次放進 GPU，換年份只改篩選條件。
+- **爭議地區**：以斜線標示，可在 11 種觀點之間切換（依 Natural Earth 的各國觀點檔）。
+- **實際控制原則**：例如克里米亞自 2014 年起顯示為俄羅斯控制。
+- **語言**：繁體中文（臺灣）、简体中文、English、日本語。各語言的國名分別維護，不是逐字轉換。
+- **播放**：可拖曳的時間軸、播放速度（¼× 到 8×），以及 7 首原創背景音樂（CC0，可在時間軸右側選曲）。
+
+## 在本機查看
+
+**Windows：** 雙擊 `本地預覽.bat`，它會自動打開瀏覽器。
+
+- 有安裝 Node.js：第一次會先執行 `npm install`，接著在 http://localhost:5173/ 開啟開發模式。修改檔案後畫面會自動更新。
+- 沒有 Node.js、但有 Python：直接用已建置好的 `dist\`，在 http://localhost:8000/ 開啟。
+
+不能直接雙擊 `index.html`，因為瀏覽器會擋掉網頁從 `file://` 讀取資料檔。
+
+網址列的 `#` 後面記錄目前的狀態，可以複製連結分享特定畫面，例如：
+`#m=taiwan&t=3540&L=admin&p=globe&l=zh-Hant`
+
+## 開發
+
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm run build      # 輸出到 dist/
+npm run preview    # 預覽 dist/
+```
+
+## 部署到 GitHub Pages
+
+1. 把 repo 推到 GitHub。
+2. 到 **Settings → Pages → Source**，選 **GitHub Actions**。
+
+之後每次推到 `main`，`.github/workflows/pages.yml` 都會自動建置並發布。`vite.config.js` 使用 `base: './'`，所以不管 repo 叫什麼名字都能正常運作。
+
+## 重建資料（選用）
+
+`public/data/` 已經建置好。只有在你修改了原始資料或人工修正表時，才需要這個步驟。
+
+先下載：
+
+- Seshat Cliopatria v0.21（`cliopatria_polities_only_v021.geojson`）
+- natural-earth-vector（其中的 `geojson/` 資料夾）
+
+然後執行：
+
+```bash
+pip install shapely numpy
+CLIO=路徑/cliopatria_polities_only_v021.geojson NE=路徑/natural-earth-vector/geojson npm run data
+```
+
+人工維護的表格：
+
+| 路徑 | 內容 |
+|---|---|
+| `data-pipeline/overrides/names.tsv` | 國號，以及四種語言的國名修正 |
+| `data-pipeline/overrides/religion*.tsv` | 各政權的宗教，以及各宗教的顏色 |
+| `data-pipeline/china/*.tsv` | 中國模式：勢力、逐月控制、政府、大事記 |
+| `data-pipeline/taiwan/*.tsv` | 台灣模式：統治範圍、行政區劃、統治中心、大事記 |
+| `data-pipeline/projinfo.tsv` | 投影說明（用途、優缺點、設計方式）；改完執行 `node data-pipeline/build_projinfo.mjs` |
+| `data-pipeline/china/info.tsv`、`taiwan/info.tsv` | 各勢力的說明與維基百科條目 |
+| `data-pipeline/names_review.tsv` | 約 450 筆待複核的譯名（取自 Wikidata 或自動轉換） |
+
+只改了中國或台灣模式的表格時，執行 `node data-pipeline/build_region.mjs china`（或 `taiwan`）就夠了。
+
+## 衛星底圖
+
+專案已內附衛星底圖（`public/basemap/`，約 19 MB），會跟著推上 GitHub，所以 GitHub Pages 上也能使用。
+
+- **來源**：NASA Earth Observatory「Blue Marble: Next Generation w/ Topography and Bathymetry」，2004 年 7 月，作者 Reto Stöckli。
+- **授權**：NASA 影像屬於公有領域。NASA 要求使用時標註「NASA Earth Observatory」；選用衛星底圖時，左下角會顯示這段標註，「關於」視窗裡也有。
+- **圖層**：
+
+| 圖層 | 來源 | 解析度 | 檔案 |
+|---|---|---|---|
+| 全球 | 5400×2700 全球圖 | 每像素約 8 公里 | `bluemarble.jpg`（平面投影用）、`sat/{z}/{x}/{y}.jpg`（3D 地球，層級 0–5） |
+| 東亞 | 21600×21600 的 D1 分幅，裁 95–145°E、10–50°N 並縮小一半 | 每像素約 1 公里 | `ea.jpg`、`ea/{z}/{x}/{y}.webp`（層級 6–7） |
+| 台灣 | D1 分幅，裁 117.5–123.5°E、21–27°N | 每像素約 500 公尺 | `tw.jpg`、`tw/{z}/{x}/{y}.webp`（層級 8–9） |
+
+平面地圖放大到約 2.5 倍以上時會自動改用區域高解析度圖；3D 地球依縮放層級切換。
+
+**重新產生或換別的月份**（需要 Python、Pillow、numpy）：
+
+1. 到 https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-topography-bathymetry ，選一個月份，下載 **5400x2700** 的 **JPEG**，以及「Bathymetry」那列的 **D1** JPEG（東亞，21600×21600）。
+2. 全球圖層：
+
+```bash
+python3 data-pipeline/make_satellite.py world.topo.bathy.200407.3x5400x2700.jpg
+```
+
+3. 區域圖層：先從 D1 裁出範圍（D1 涵蓋 90–180°E、0–90°N，每度 240 像素），再執行：
+
+```bash
+python3 data-pipeline/make_satellite.py --region ea ea.jpg 95 145 10 50 6 7
+python3 data-pipeline/make_satellite.py --region tw tw.jpg 117.5 123.5 21 27 8 9
+```
+
+下載的原始 JPG 不需要放進 repo（`.gitignore` 已排除 `world.topo.bathy.*`）。
+
+## 音樂
+
+`music/` 裡是曲譜（Python）和合成程式。7 首曲子都是原創的，以 CC0 釋出；樂器音色取自 FluidR3_GM（CC BY 3.0）。
+
+| 曲目 | 風格 |
+|---|---|
+| 編年 Chronicle | D 小調薩拉邦德，弦樂 |
+| 絲路 Silk Road | 五聲音階，箏、尺八 |
+| 帝國行進 March of Empires | D 大調進行曲，法國號、小號、定音鼓 |
+| 吟遊 Troubadour | D 多利安調式三拍子舞曲，直笛、豎琴 |
+| 沙漠商隊 Caravan | E 希賈茲音階，雙簧管、揚琴、鼓 |
+| 大航海 Voyage | G 小調帕薩卡利亞，大鍵琴、弦樂 |
+| 黎明 Dawn | C 大調慢板，合唱、弦樂、豎琴 |
+
+重新合成：下載 gleitz/midi-js-soundfonts 的 FluidR3_GM 音色後執行 `python3 music/render.py <FluidR3_GM 資料夾> music/scores/march.py public/audio/march`。
+
+## 資料查核
+
+- 每次建置會執行 `data-pipeline/qa.py`，逐年檢查空白、閃爍、主權重疊，報告在 `data-pipeline/qa_report.md`。
+- 所有手動修正都寫在 `data-pipeline/overrides/` 的表格裡，每一行附來源網址。
+- 流程見 [docs/查核方案.md](docs/查核方案.md)。
+
+## 事件系統（尚未開啟）
+
+用現有的地圖與時間軸逐格呈現事件過程（控制區、戰線、進軍箭頭、地點），事件依主類別分類。網址加 `?events` 可預覽範例「八國聯軍」。新增事件的格式與標準流程見 [docs/事件系統.md](docs/事件系統.md)。
+
+## 已知限制
+
+- 歷史邊界來自 Cliopatria，是近似範圍。大約西元 1500 年以前，歐亞大陸以外的資料較少。
+- 2022 年後俄軍占領的烏克蘭南部，只畫出 2014 年頓內茨克、盧甘斯克的範圍。約旦河西岸與加薩沒有單獨繪出。
+- 中國與台灣模式使用近似單元：今日的省，或把今日的縣市切成平原與山區。部分界線是示意，包括山區界線、埔里、恆春、馬祖。斜紋表示只控制部分地區，或只是名義上設治。
+- 宗教模式顯示的是各政權的官方或主要宗教，不是人口的宗教組成。
+
+台灣河川取自 OpenStreetMap（© OpenStreetMap 貢獻者，ODbL）。資料與軟體授權請見 [ATTRIBUTION.md](ATTRIBUTION.md)。

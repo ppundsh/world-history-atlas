@@ -1,0 +1,140 @@
+# 台灣模式：歷代行政區劃（逐月）。欄位：年月	單元（或 region.json 的群組）	行政區 id（見 divisions.tsv）或 =parent
+# 單元由今日鄉鎮市區組成（units.py），歷代行政區是這些單元的聯集。
+# 日治時期的蕃地、戰後的山地鄉都屬於所在的縣／廳／州，不是獨立行政區：山區單元自 1895 年起用 =parent（跟隨所屬平地單元）。
+# 主要來源：
+#   https://zh.wikipedia.org/zh-tw/臺灣行政區劃沿革
+#   https://zh.wikipedia.org/zh-tw/臺灣清治時期行政區劃
+#   https://zh.wikipedia.org/zh-tw/臺灣日治時期行政區劃
+#   https://zh.wikipedia.org/zh-tw/臺灣省行政區劃
+#   https://zh.wikipedia.org/zh-tw/陽明山管理局
+1600-01	keelung,taipei,yilan,taoyuan,hsinchu,miaoli,taichung,changhua,nantou,puli,yunlin,chiayi,tainan,kaohsiung,pingtung,hengchun,hualien,taitung,mt_north,mt_central,mt_south,mt_east	none
+1600-01	penghu	m_penghu
+1600-01	kinmen	m_tongan
+1600-01	matsu	m_lianjiang
+1624-08	tainan	d_tayouan
+1626-05	keelung	s_sv
+1628-01	taipei	s_sd
+1636-01	kaohsiung,pingtung	d_south
+1641-01	chiayi,yunlin	d_north
+1642-08	keelung,taipei	d_tamsui
+1644-01	taitung	d_pimaba
+1646-10	matsu	q_lianjiang
+1661-06	tainan	z_chengtian
+1661-06	chiayi,yunlin,changhua,taichung,miaoli,hsinchu,taoyuan,taipei,keelung	z_tianxing
+1661-06	kaohsiung,pingtung	z_wannian
+1661-06	penghu	z_penghu
+1661-12	taitung	none
+1663-11	kinmen	q_tongan
+1684-05	tainan,penghu	q_taiwan
+1684-05	kaohsiung,pingtung	q_fengshan
+1684-05	chiayi,yunlin,changhua,taichung,nantou,miaoli,hsinchu,taoyuan,taipei,keelung	q_zhuluo
+1684-05	mt_north,mt_central,mt_south,mt_east,yilan,puli,hengchun,hualien,taitung	banjie
+1723-01	changhua,taichung,nantou	q_changhua
+1723-01	miaoli,hsinchu,taoyuan,taipei,keelung	q_tamsui
+1727-01	penghu	q_penghu
+1787-11	chiayi,yunlin	q_chiayi
+1812-10	yilan	q_kavalan
+1875-12	taipei	q_tamsui_county
+1875-12	keelung	q_keelung
+1875-12	taoyuan,hsinchu,miaoli	q_hsinchu
+1875-12	yilan	q_yilan
+1875-12	hengchun	q_hengchun
+1875-12	puli	q_puli
+1875-12	taitung,hualien	q_beinan
+1887-09	taichung,nantou	q_taiwan_c
+1887-09	tainan	q_anping
+1887-09	yunlin	q_yunlin
+1887-09	miaoli	q_miaoli
+1887-09	taitung,hualien	q_taitung
+1895-06	taipei,keelung,yilan,taoyuan,hsinchu,miaoli	j_taipei
+1895-06	taichung,changhua,nantou,puli,yunlin	j_taiwan
+1895-06	chiayi,tainan,kaohsiung,pingtung,hengchun,taitung,hualien	j_tainan
+1895-06	penghu	j_penghu
+1897-06	taipei,keelung,taoyuan	j_taipei
+1897-06	hsinchu,miaoli	j_hsinchu
+1897-06	taichung,changhua,nantou,puli	j_taichung
+1897-06	yunlin,chiayi	j_chiayi
+1897-06	tainan	j_tainan
+1897-06	kaohsiung,pingtung,hengchun	j_fengshan
+1897-06	yilan	j_yilan
+1897-06	taitung,hualien	j_taitung
+1898-06	taipei,keelung,taoyuan,hsinchu	j_taipei
+1898-06	miaoli,taichung,changhua,nantou,puli,yunlin	j_taichung
+1898-06	chiayi,tainan,kaohsiung,pingtung,hengchun	j_tainan
+1901-11	taipei	j20_taipei
+1901-11	keelung	j20_keelung
+1901-11	taoyuan	j20_taoyuan
+1901-11	hsinchu	j20_hsinchu
+1901-11	miaoli	j20_miaoli
+1901-11	taichung	j20_taichung
+1901-11	changhua	j20_changhua
+1901-11	nantou,puli	j20_nantou
+1901-11	yunlin	j20_douliu
+1901-11	chiayi	j20_chiayi
+1901-11	tainan	j20_tainan
+1901-11	kaohsiung	j20_fengshan
+1901-11	pingtung	j20_ako
+1901-11	hengchun	j20_hengchun
+1909-10	taipei,keelung	j20_taipei
+1909-10	hsinchu,miaoli	j20_hsinchu
+1909-10	taichung,changhua	j20_taichung
+1909-10	yunlin,chiayi	j20_chiayi
+1909-10	tainan,kaohsiung	j20_tainan
+1909-10	pingtung,hengchun	j20_ako
+1909-10	hualien	j20_hualien
+1920-10	taipei,keelung,yilan	s_taipei
+1920-10	taoyuan,hsinchu,miaoli	s_hsinchu
+1920-10	taichung,changhua,nantou,puli	s_taichung
+1920-10	yunlin,chiayi,tainan	s_tainan
+1920-10	kaohsiung,pingtung,hengchun,penghu	s_kaohsiung
+1926-07	penghu	j_penghu
+1915-01	kinmen	r_kinmen
+1912-01	matsu	r_lianjiang
+
+1895-06	mountains	=parent
+1600-01	lanyu	none
+1895-06	lanyu	j_tainan
+1897-06	lanyu	j_taitung
+# ---- 中華民國：1945 年 8 縣 9 省轄市
+1945-12	newtaipei,tpe_ext,tpe_ym,yilan	r45_taipei
+1945-12	tpe_core	r_tpe_c
+1945-12	keelung	r_keelung_c
+1945-12	taoyuan,hsinchu_co,miaoli	r45_hsinchu
+1945-12	hsinchu_city	r_hsinchu_c
+1945-12	taichung_co,changhua,nantou,puli	r45_taichung
+1945-12	taichung_city	r_taichung_c
+1945-12	yunlin,chiayi_co,tainan_co	r45_tainan
+1945-12	chiayi_city	r_chiayi_c
+1945-12	tainan_city	r_tainan_c
+1945-12	kaohsiung_co,pingtung,hengchun	r45_kaohsiung
+1945-12	kaohsiung_city	r_kaohsiung_c
+1945-12	hualien	r_hualien
+1945-12	taitung,lanyu	r_taitung
+1945-12	penghu	r_penghu
+# 草山管理局（1949-08），1950 年改名陽明山管理局，1974 年撤銷（士林、北投 1968 年已併入臺北市）
+1949-08	tpe_ym	r_yms
+# ---- 1950 年 10 月：16 縣 5 省轄市
+1950-10	newtaipei,tpe_ext	r_taipei_co
+1950-10	yilan	r_yilan
+1950-10	taoyuan	r_taoyuan_co
+1950-10	hsinchu_co,hsinchu_city	r_hsinchu_co
+1950-10	miaoli	r_miaoli
+1950-10	taichung_co	r_taichung_co
+1950-10	changhua	r_changhua
+1950-10	nantou,puli	r_nantou
+1950-10	yunlin	r_yunlin
+1950-10	chiayi_co,chiayi_city	r_chiayi_co
+1950-10	tainan_co	r_tainan_co
+1950-10	kaohsiung_co	r_kaohsiung_co
+1950-10	pingtung,hengchun	r_pingtung
+# ---- 直轄市與省轄市的調整
+1967-07	tpe_core	r_tpe_d
+1968-07	tpe_ext,tpe_ym	r_tpe_d
+1979-07	kaohsiung_city	r_kaohsiung_d
+1982-07	hsinchu_city	r_hsinchu_c
+1982-07	chiayi_city	r_chiayi_c
+2010-12	newtaipei	r_newtaipei
+2010-12	taichung_city,taichung_co	r_taichung_d
+2010-12	tainan_city,tainan_co	r_tainan_d
+2010-12	kaohsiung_co	r_kaohsiung_d
+2014-12	taoyuan	r_taoyuan_d

@@ -1,0 +1,15 @@
+# 台灣模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為當時統治台灣本島主要地區的政權(1/0)	勢力id	繁中	簡中	English	日本語
+middag	1600-01	1731-12	120.58	24.18	0	middag	大肚王國（甘仔轄・阿拉米）	大肚王国（甘仔辖・阿拉米）	Kingdom of Middag	大肚王国
+puyuma	1600-01	1874-12	121.12	22.77	0	puyuma	卑南社	卑南社	Puyuma (Pimaba)	卑南社
+zeelandia	1624-08	1662-01	120.16	23.00	1	dutch	熱蘭遮城（荷蘭臺灣長官）	热兰遮城（荷兰台湾长官）	Fort Zeelandia (Dutch Governor of Formosa)	ゼーランディア城（オランダ台湾長官）
+sansalvador	1626-05	1642-08	121.77	25.15	0	spain	聖薩爾瓦多城（雞籠）	圣萨尔瓦多城（鸡笼）	Fort San Salvador (Keelung)	サン・サルバドル城（鶏籠）
+tungning	1661-05	1683-09	120.20	22.99	1	zheng	承天府・東寧（鄭氏）	承天府・东宁（郑氏）	Chengtian / Tungning (Zheng)	承天府・東寧（鄭氏）
+qing_fu	1684-05	1887-08	120.20	22.99	1	qing	臺灣府（清）	台湾府（清）	Taiwan Prefecture (Qing)	台湾府（清）
+qing_prov	1887-09	1895-05	121.51	25.04	1	qing	福建臺灣省（巡撫，臺北）	福建台湾省（巡抚，台北）	Fujian-Taiwan Province (Governor, Taipei)	福建台湾省（巡撫・台北）
+formosa_n	1895-05	1895-06	121.51	25.04	1	formosa	臺灣民主國（臺北）	台湾民主国（台北）	Republic of Formosa (Taipei)	台湾民主国（台北）
+formosa_s	1895-06	1895-10	120.20	22.99	1	formosa	臺灣民主國（臺南）	台湾民主国（台南）	Republic of Formosa (Tainan)	台湾民主国（台南）
+sotokufu	1895-06	1945-10	121.51	25.04	1	japan	臺灣總督府	台湾总督府	Government-General of Taiwan	台湾総督府
+chief_exec	1945-10	1947-04	121.51	25.04	1	roc	臺灣省行政長官公署	台湾省行政长官公署	Taiwan Provincial Administrative Executive Office	台湾省行政長官公署
+prov_gov	1947-05	1956-12	121.51	25.04	0	roc	臺灣省政府（臺北）	台湾省政府（台北）	Taiwan Provincial Government (Taipei)	台湾省政府（台北）
+prov_gov2	1957-01	1998-12	120.69	23.96	0	roc	臺灣省政府（中興新村）	台湾省政府（中兴新村）	Taiwan Provincial Government (Zhongxing New Village)	台湾省政府（中興新村）
+roc_central	1949-12	2026-12	121.52	25.04	1	roc	中華民國中央政府（臺北）	中华民国中央政府（台北）	Central Government of the ROC (Taipei)	中華民国中央政府（台北）

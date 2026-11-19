@@ -1,0 +1,107 @@
+# 台灣模式：歷代行政區（行政區劃層）。欄位：id	顏色	繁中	簡中	English	日本語
+none	#cfd8cf	未設治（原住民族各社）	未设治（原住民族各社）	No administration (indigenous villages)	未設治（先住民族の集落）
+banjie	#b7c7b0	番界外（未設治）	番界外（未设治）	Beyond the frontier (no administration)	番界外（未設治）
+m_penghu	#d4a017	澎湖（明，泉州府）	澎湖（明，泉州府）	Penghu (Ming, Quanzhou)	澎湖（明・泉州府）
+m_tongan	#c9a227	泉州府同安縣	泉州府同安县	Tong'an County, Quanzhou	泉州府同安県
+m_lianjiang	#b8962e	福州府連江縣	福州府连江县	Lianjiang County, Fuzhou	福州府連江県
+d_tayouan	#f57c00	大員（熱蘭遮城）	大员（热兰遮城）	Tayouan (Fort Zeelandia)	大員（ゼーランディア城）
+d_south	#fb8c00	南路集會區	南路集会区	Southern Assembly District	南路集会区
+d_north	#ffa726	北路集會區	北路集会区	Northern Assembly District	北路集会区
+d_tamsui	#ffb74d	淡水集會區	淡水集会区	Tamsui Assembly District	淡水集会区
+d_pimaba	#ffcc80	卑南集會區	卑南集会区	Pimaba Assembly District	卑南集会区
+s_sv	#c62828	聖薩爾瓦多（雞籠）	圣萨尔瓦多（鸡笼）	San Salvador (Keelung)	サン・サルバドル（鶏籠）
+s_sd	#e53935	聖多明哥（淡水）	圣多明哥（淡水）	Santo Domingo (Tamsui)	サント・ドミンゴ（淡水）
+z_chengtian	#8e44ad	承天府	承天府	Chengtian Prefecture	承天府
+z_tianxing	#9b59b6	天興縣／天興州	天兴县／天兴州	Tianxing County / Department	天興県／天興州
+z_wannian	#a569bd	萬年縣／萬年州	万年县／万年州	Wannian County / Department	万年県／万年州
+z_penghu	#7d3c98	澎湖安撫司	澎湖安抚司	Penghu Pacification Office	澎湖安撫司
+q_taiwan	#e6c229	臺灣縣	台湾县	Taiwan County	台湾県
+q_fengshan	#f1c40f	鳳山縣	凤山县	Fengshan County	鳳山県
+q_zhuluo	#d4ac0d	諸羅縣	诸罗县	Zhuluo County	諸羅県
+q_chiayi	#d4ac0d	嘉義縣	嘉义县	Chiayi County	嘉義県
+q_changhua	#b7950b	彰化縣	彰化县	Changhua County	彰化県
+q_tamsui	#f4d03f	淡水廳	淡水厅	Tamsui Subprefecture	淡水庁
+q_penghu	#c9a227	澎湖廳	澎湖厅	Penghu Subprefecture	澎湖庁
+q_kavalan	#f7dc6f	噶瑪蘭廳	噶玛兰厅	Kavalan Subprefecture	噶瑪蘭庁
+q_tamsui_county	#f4d03f	淡水縣（臺北府）	淡水县（台北府）	Tamsui County (Taipei Prefecture)	淡水県（台北府）
+q_keelung	#e9c46a	基隆廳	基隆厅	Keelung Subprefecture	基隆庁
+q_hsinchu	#e1b12c	新竹縣	新竹县	Hsinchu County	新竹県
+q_yilan	#f7dc6f	宜蘭縣	宜兰县	Yilan County	宜蘭県
+q_hengchun	#e67e22	恆春縣	恒春县	Hengchun County	恒春県
+q_puli	#d68910	埔里社廳	埔里社厅	Puli Subprefecture	埔里社庁
+q_beinan	#ca6f1e	卑南廳	卑南厅	Beinan Subprefecture	卑南庁
+q_taitung	#ca6f1e	臺東直隸州	台东直隶州	Taitung Independent Department	台東直隷州
+q_taiwan_c	#e6c229	臺灣縣（臺中，臺灣府）	台湾县（台中，台湾府）	Taiwan County (Taichung)	台湾県（台中）
+q_anping	#f39c12	安平縣（臺南府）	安平县（台南府）	Anping County (Tainan Prefecture)	安平県（台南府）
+q_yunlin	#c29d0b	雲林縣	云林县	Yunlin County	雲林県
+q_miaoli	#d4ac0d	苗栗縣	苗栗县	Miaoli County	苗栗県
+q_tongan	#c9a227	泉州府同安縣	泉州府同安县	Tong'an County, Quanzhou	泉州府同安県
+q_lianjiang	#b8962e	福州府連江縣	福州府连江县	Lianjiang County, Fuzhou	福州府連江県
+j_taipei	#e57373	臺北縣	台北县	Taihoku Prefecture	台北県
+j_taiwan	#ef9a9a	臺灣縣（臺中）	台湾县（台中）	Taiwan Prefecture (Taichū)	台湾県（台中）
+j_tainan	#f48fb1	臺南縣	台南县	Tainan Prefecture	台南県
+j_penghu	#ce93d8	澎湖島廳／澎湖廳	澎湖岛厅／澎湖厅	Hōko (Penghu) Office	澎湖島庁／澎湖庁
+j_hsinchu	#e57373	新竹縣	新竹县	Shinchiku Prefecture	新竹県
+j_taichung	#ef9a9a	臺中縣	台中县	Taichū Prefecture	台中県
+j_chiayi	#f8bbd0	嘉義縣	嘉义县	Kagi Prefecture	嘉義県
+j_fengshan	#f06292	鳳山縣	凤山县	Hōzan Prefecture	鳳山県
+j_yilan	#ba68c8	宜蘭廳	宜兰厅	Giran Office	宜蘭庁
+j_taitung	#9575cd	臺東廳	台东厅	Taitō Office	台東庁
+j20_taipei	#e57373	臺北廳	台北厅	Taihoku Office	台北庁
+j20_keelung	#ef5350	基隆廳	基隆厅	Kīrun Office	基隆庁
+j20_taoyuan	#f06292	桃仔園廳／桃園廳	桃仔园厅／桃园厅	Tōen Office	桃仔園庁／桃園庁
+j20_hsinchu	#ec407a	新竹廳	新竹厅	Shinchiku Office	新竹庁
+j20_miaoli	#f48fb1	苗栗廳	苗栗厅	Byōritsu Office	苗栗庁
+j20_taichung	#ef9a9a	臺中廳	台中厅	Taichū Office	台中庁
+j20_changhua	#e91e63	彰化廳	彰化厅	Shōka Office	彰化庁
+j20_nantou	#f8bbd0	南投廳	南投厅	Nantō Office	南投庁
+j20_douliu	#ad1457	斗六廳	斗六厅	Toroku Office	斗六庁
+j20_chiayi	#d81b60	嘉義廳	嘉义厅	Kagi Office	嘉義庁
+j20_tainan	#c2185b	臺南廳	台南厅	Tainan Office	台南庁
+j20_fengshan	#e57373	鳳山廳	凤山厅	Hōzan Office	鳳山庁
+j20_ako	#ff8a80	阿緱廳	阿缑厅	Akō Office	阿緱庁
+j20_hengchun	#ff5252	恆春廳	恒春厅	Kōshun Office	恒春庁
+j20_hualien	#b39ddb	花蓮港廳	花莲港厅	Karenkō Office	花蓮港庁
+s_taipei	#e57373	臺北州	台北州	Taihoku Province	台北州
+s_hsinchu	#ec407a	新竹州	新竹州	Shinchiku Province	新竹州
+s_taichung	#ef9a9a	臺中州	台中州	Taichū Province	台中州
+s_tainan	#d81b60	臺南州	台南州	Tainan Province	台南州
+s_kaohsiung	#f06292	高雄州	高雄州	Takao Province	高雄州
+r_kinmen	#3949ab	福建省金門縣	福建省金门县	Kinmen County, Fujian Province	福建省金門県
+r_lianjiang	#5c6bc0	福建省連江縣	福建省连江县	Lienchiang County, Fujian Province	福建省連江県
+
+r45_taipei	#7fb3d5	臺北縣（含宜蘭）	台北县（含宜兰）	Taipei County (with Yilan)	台北県（宜蘭を含む）
+r45_hsinchu	#a9dfbf	新竹縣（含桃園、苗栗）	新竹县（含桃园、苗栗）	Hsinchu County (with Taoyuan, Miaoli)	新竹県
+r45_taichung	#f9e79f	臺中縣（含彰化、南投）	台中县（含彰化、南投）	Taichung County (with Changhua, Nantou)	台中県
+r45_tainan	#f5b7b1	臺南縣（含雲林、嘉義）	台南县（含云林、嘉义）	Tainan County (with Yunlin, Chiayi)	台南県
+r45_kaohsiung	#d2b4de	高雄縣（含屏東）	高雄县（含屏东）	Kaohsiung County (with Pingtung)	高雄県
+r_tpe_c	#1f618d	臺北市（省轄市）	台北市（省辖市）	Taipei City (provincial city)	台北市（省轄市）
+r_tpe_d	#154360	臺北市（直轄市）	台北市（直辖市）	Taipei City (special municipality)	台北市（直轄市）
+r_yms	#76d7c4	陽明山管理局	阳明山管理局	Yangmingshan Administration	陽明山管理局
+r_keelung_c	#2e86c1	基隆市	基隆市	Keelung City	基隆市
+r_hsinchu_c	#239b56	新竹市	新竹市	Hsinchu City	新竹市
+r_taichung_c	#b7950b	臺中市（省轄市）	台中市（省辖市）	Taichung City (provincial city)	台中市（省轄市）
+r_chiayi_c	#cb4335	嘉義市	嘉义市	Chiayi City	嘉義市
+r_tainan_c	#a93226	臺南市（省轄市）	台南市（省辖市）	Tainan City (provincial city)	台南市（省轄市）
+r_kaohsiung_c	#7d3c98	高雄市（省轄市）	高雄市（省辖市）	Kaohsiung City (provincial city)	高雄市（省轄市）
+r_kaohsiung_d	#5b2c6f	高雄市（直轄市）	高雄市（直辖市）	Kaohsiung City (special municipality)	高雄市（直轄市）
+r_taipei_co	#aed6f1	臺北縣	台北县	Taipei County	台北県
+r_newtaipei	#5dade2	新北市	新北市	New Taipei City	新北市
+r_yilan	#a3e4d7	宜蘭縣	宜兰县	Yilan County	宜蘭県
+r_taoyuan_co	#f8c471	桃園縣	桃园县	Taoyuan County	桃園県
+r_taoyuan_d	#eb984e	桃園市（直轄市）	桃园市（直辖市）	Taoyuan City (special municipality)	桃園市（直轄市）
+r_hsinchu_co	#abebc6	新竹縣	新竹县	Hsinchu County	新竹県
+r_miaoli	#f9e79f	苗栗縣	苗栗县	Miaoli County	苗栗県
+r_taichung_co	#fad7a0	臺中縣	台中县	Taichung County	台中県
+r_taichung_d	#f4d03f	臺中市（直轄市）	台中市（直辖市）	Taichung City (special municipality)	台中市（直轄市）
+r_changhua	#d7bde2	彰化縣	彰化县	Changhua County	彰化県
+r_nantou	#f5cba7	南投縣	南投县	Nantou County	南投県
+r_yunlin	#d5f5e3	雲林縣	云林县	Yunlin County	雲林県
+r_chiayi_co	#a2d9ce	嘉義縣	嘉义县	Chiayi County	嘉義県
+r_tainan_co	#f5b7b1	臺南縣	台南县	Tainan County	台南県
+r_tainan_d	#ec7063	臺南市（直轄市）	台南市（直辖市）	Tainan City (special municipality)	台南市（直轄市）
+r_kaohsiung_co	#d2b4de	高雄縣	高雄县	Kaohsiung County	高雄県
+r_pingtung	#f9e79f	屏東縣	屏东县	Pingtung County	屏東県
+r_hualien	#a9cce3	花蓮縣	花莲县	Hualien County	花蓮県
+r_taitung	#fadbd8	臺東縣	台东县	Taitung County	台東県
+r_penghu	#d6eaf8	澎湖縣	澎湖县	Penghu County	澎湖県

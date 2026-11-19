@@ -1,0 +1,17 @@
+# 俄羅斯模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為當時俄國中央政權(1/0)	勢力id	繁中	簡中	English	日本語
+novgorod862	0862-01	0882-12	31.27	58.52	1	rurik	諾夫哥羅德	诺夫哥罗德	Novgorod	ノヴゴロド
+kiev	0882-01	1240-12	30.52	50.45	1	kievan	基輔	基辅	Kiev	キエフ
+novgorod	1136-05	1478-01	31.27	58.52	0	novgorod	諾夫哥羅德	诺夫哥罗德	Novgorod	ノヴゴロド
+vladimir	1157-01	1328-01	40.41	56.13	0	vladimir	弗拉基米爾	弗拉基米尔	Vladimir	ウラジーミル
+sarai	1242-01	1502-06	45.65	47.24	0	horde	薩萊（金帳汗國）	萨莱（金帐汗国）	Sarai (Golden Horde)	サライ（ジョチ・ウルス）
+vilnius	1323-01	1569-07	25.28	54.69	0	lithuania	維爾紐斯	维尔纽斯	Vilnius	ヴィリニュス
+moscow1	1328-01	1712-12	37.62	55.75	1	muscovy	莫斯科	莫斯科	Moscow	モスクワ
+kazan	1438-01	1552-10	49.11	55.80	0	kazankh	喀山	喀山	Kazan	カザン
+bakhchisaray	1532-01	1783-04	33.86	44.75	0	crimeakh	巴赫奇薩賴（克里米亞汗國）	巴赫奇萨赖（克里米亚汗国）	Bakhchysarai (Crimean Khanate)	バフチサライ（クリミア・ハン国）
+baturyn	1669-01	1708-11	32.88	51.34	0	hetmanate	巴圖林（哥薩克酋長國）	巴图林（哥萨克酋长国）	Baturyn (Hetmanate)	バトゥリン（ヘトマン国家）
+spb	1712-12	1918-03	30.31	59.94	1	empire_ru	聖彼得堡	圣彼得堡	St Petersburg	サンクトペテルブルク
+moscow2	1918-03	2026-12	37.62	55.75	1	rsfsr	莫斯科	莫斯科	Moscow	モスクワ
+omsk	1918-11	1919-11	73.37	54.98	0	whites	鄂木斯克（高爾察克）	鄂木斯克（高尔察克）	Omsk (Kolchak)	オムスク（コルチャーク）
+chita	1920-10	1922-11	113.50	52.03	0	fer	赤塔（遠東共和國）	赤塔（远东共和国）	Chita (Far Eastern Republic)	チタ（極東共和国）
+kyiv1917	1917-11	1920-11	30.52	50.45	0	unr	基輔（烏克蘭人民共和國）	基辅（乌克兰人民共和国）	Kyiv (Ukrainian People's Republic)	キーウ（ウクライナ人民共和国）
+kyiv	1991-12	2026-12	30.52	50.45	0	ukraine	基輔	基辅	Kyiv	キーウ

@@ -1,0 +1,187 @@
+# 日本模式：行政區劃（由 gen.py 產生，勿手改）。欄位：id	顏色	繁中	簡中	English	日本語
+p_山城	#cf959b	山城國	山城国	Yamashiro Province	山城国
+p_大和	#e8b2af	大和國	大和国	Yamato Province	大和国
+p_河内	#dfb2a7	河内國	河内国	Kawachi Province	河内国
+p_和泉	#d4b3a1	和泉國	和泉国	Izumi Province	和泉国
+p_摂津	#ddb287	攝津國	摄津国	Settsu Province	摂津国
+p_伊賀	#cfaa95	伊賀國	伊賀国	Iga Province	伊賀国
+p_伊勢	#e8ccaf	伊勢國	伊勢国	Ise Province	伊勢国
+p_志摩	#dfcca7	志摩國	志摩国	Shima Province	志摩国
+p_尾張	#d4cba1	尾張國	尾張国	Owari Province	尾張国
+p_三河	#ddda87	三河國	三河国	Mikawa Province	三河国
+p_遠江	#e3c5b4	遠江國	遠江国	Tōtōmi Province	遠江国
+p_駿河	#dac4ac	駿河國	駿河国	Suruga Province	駿河国
+p_伊豆	#e1c794	伊豆國	伊豆国	Izu Province	伊豆国
+p_甲斐	#d6c98e	甲斐國	甲斐国	Kai Province	甲斐国
+p_相模	#dfdeb8	相模國	相模国	Sagami Province	相模国
+p_武蔵	#e4baa2	武藏國	武藏国	Musashi Province	武蔵国
+p_安房	#dabc9b	安房國	安房国	Awa Province	安房国
+p_上総	#cfbc95	上總國	上总国	Kazusa Province	上総国
+p_下総	#e8deaf	下總國	下总国	Shimōsa Province	下総国
+p_常陸	#dfdda7	常陸國	常陆国	Hitachi Province	常陸国
+p_近江	#bfcf95	近江國	近江国	Ōmi Province	近江国
+p_美濃	#cfe8af	美濃國	美濃国	Mino Province	美濃国
+p_飛騨	#bedfa7	飛驒國	飛驒国	Hida Province	飛騨国
+p_信濃	#aed4a1	信濃國	信濃国	Shinano Province	信濃国
+p_上野	#91dd87	上野國	上野国	Kōzuke Province	上野国
+p_下野	#d6e3b4	下野國	下野国	Shimotsuke Province	下野国
+p_陸奥	#c6daac	陸奧國	陆奥国	Mutsu Province	陸奥国
+p_出羽	#b4e194	出羽國	出羽国	Dewa Province	出羽国
+p_磐城	#a1d68e	磐城國	磐城国	Iwaki Province	磐城国
+p_岩代	#bddfb8	岩代國	岩代国	Iwashiro Province	岩代国
+p_陸前	#d1e4a2	陸前國	陆前国	Rikuzen Province	陸前国
+p_陸中	#bfda9b	陸中國	陆中国	Rikuchū Province	陸中国
+p_羽前	#adcf95	羽前國	羽前国	Uzen Province	羽前国
+p_羽後	#bee8af	羽後國	羽後国	Ugo Province	羽後国
+p_石城	#aedfa7	石城國	石城国	Iwaki Province	石城国
+p_石背	#c6d4a1	石背國	石背国	Iwase Province	石背国
+p_若狭	#95cfbe	若狹國	若狭国	Wakasa Province	若狭国
+p_越前	#afe8df	越前國	越前国	Echizen Province	越前国
+p_加賀	#a7dfdf	加賀國	加賀国	Kaga Province	加賀国
+p_能登	#a1cdd4	能登國	能登国	Noto Province	能登国
+p_越中	#87c3dd	越中國	越中国	Etchū Province	越中国
+p_越後	#b4e3d5	越後國	越後国	Echigo Province	越後国
+p_佐渡	#acdad3	佐渡國	佐渡国	Sado Province	佐渡国
+p_丹波	#95c3cf	丹波國	丹波国	Tanba Province	丹波国
+p_丹後	#afd4e8	丹後國	丹後国	Tango Province	丹後国
+p_但馬	#a7c3df	但馬國	但马国	Tajima Province	但馬国
+p_因幡	#a1b3d4	因幡國	因幡国	Inaba Province	因幡国
+p_伯耆	#8798dd	伯耆國	伯耆国	Hōki Province	伯耆国
+p_出雲	#b4dae3	出雲國	出雲国	Izumo Province	出雲国
+p_石見	#accada	石見國	石見国	Iwami Province	石見国
+p_隠岐	#94bae1	隱岐國	隐岐国	Oki Province	隠岐国
+p_播磨	#9795cf	播磨國	播磨国	Harima Province	播磨国
+p_美作	#b9afe8	美作國	美作国	Mimasaka Province	美作国
+p_備前	#baa7df	備前國	備前国	Bizen Province	備前国
+p_備中	#baa1d4	備中國	備中国	Bitchū Province	備中国
+p_備後	#bd87dd	備後國	備後国	Bingo Province	備後国
+p_安芸	#b5b4e3	安藝國	安艺国	Aki Province	安芸国
+p_周防	#b5acda	周防國	周防国	Suō Province	周防国
+p_長門	#ae94e1	長門國	长门国	Nagato Province	長門国
+p_紀伊	#be95cf	紀伊國	紀伊国	Kii Province	紀伊国
+p_淡路	#dfafe8	淡路國	淡路国	Awaji Province	淡路国
+p_阿波	#dfa7df	阿波國	阿波国	Awa Province	阿波国
+p_讃岐	#d4a1cd	讃岐國	讃岐国	Sanuki Province	讃岐国
+p_伊予	#dd87c3	伊豫國	伊予国	Iyo Province	伊予国
+p_土佐	#d5b4e3	土佐國	土佐国	Tosa Province	土佐国
+p_筑前	#cf95bf	筑前國	筑前国	Chikuzen Province	筑前国
+p_筑後	#e8afcf	筑後國	筑後国	Chikugo Province	筑後国
+p_豊前	#dfa7be	豐前國	丰前国	Buzen Province	豊前国
+p_豊後	#d4a1ae	豐後國	丰後国	Bungo Province	豊後国
+p_肥前	#dd8791	肥前國	肥前国	Hizen Province	肥前国
+p_肥後	#e3b4d6	肥後國	肥後国	Higo Province	肥後国
+p_日向	#daacc6	日向國	日向国	Hyūga Province	日向国
+p_大隅	#e194b4	大隅國	大隅国	Ōsumi Province	大隅国
+p_薩摩	#d68ea1	薩摩國	薩摩国	Satsuma Province	薩摩国
+p_壱岐	#dfb8bd	壹岐國	壹岐国	Iki Province	壱岐国
+p_対馬	#e4a2d1	對馬國	对马国	Tsushima Province	対馬国
+p_多禰	#da9bbf	多禰國	多禰国	Tane Province	多禰国
+p_渡島	#95cfa1	渡島國	渡岛国	Oshima Province	渡島国
+p_後志	#afe8c3	後志國	後志国	Shiribeshi Province	後志国
+p_石狩	#a7dfc3	石狩國	石狩国	Ishikari Province	石狩国
+p_天塩	#a1d4c2	天鹽國	天盐国	Teshio Province	天塩国
+p_北見	#87ddcc	北見國	北見国	Kitami Province	北見国
+p_胆振	#b4e3bd	膽振國	胆振国	Iburi Province	胆振国
+p_日高	#acdabc	日高國	日高国	Hidaka Province	日高国
+p_十勝	#94e1bb	十勝國	十勝国	Tokachi Province	十勝国
+p_釧路	#8ed6bd	釧路國	釧路国	Kushiro Province	釧路国
+p_根室	#b8dfd7	根室國	根室国	Nemuro Province	根室国
+p_千島	#a2e4af	千島國	千岛国	Chishima Province	千島国
+izumigen	#e8b48f	和泉監	和泉监	Izumi-gen (Izumi district office)	和泉監
+none	#d8d4cc	未設國郡（蝦夷之地）	未设国郡（虾夷之地）	No province (Emishi lands)	国郡未設置（蝦夷の地）
+ezochi	#cfd8d0	蝦夷地（愛努）	虾夷地（阿伊努）	Ezochi (Ainu lands)	蝦夷地（アイヌ）
+wajinchi	#e3c08f	和人地（松前藩）	和人地（松前藩）	Wajinchi (Matsumae domain)	和人地（松前藩）
+ryukyu_k	#d7a6c9	琉球王國（間切）	琉球王国（间切）	Ryūkyū Kingdom (magiri districts)	琉球王国（間切）
+ryukyu_pre	#e6cfe0	琉球諸按司	琉球诸按司	Ryūkyū chiefdoms (aji)	琉球の按司
+foreign	#dddddd	（日本以外）	（日本以外）	(outside Japan)	（日本以外）
+empty	#eeeeee	無人島	无人岛	Uninhabited	無人島
+k_東京府	#cf9795	東京府	东京府	Tōkyō-fu	東京府
+k_京都府	#e7e8af	京都府	京都府	Kyōto-fu	京都府
+k_大阪府	#a7dfa7	大阪府	大阪府	Ōsaka-fu	大阪府
+k_神奈川県	#a1d4d3	神奈川縣	神奈川县	Kanagawa Prefecture	神奈川県
+k_埼玉県	#878add	埼玉縣	埼玉县	Saitama Prefecture	埼玉県
+k_千葉県	#bdb4e3	千葉縣	千葉县	Chiba Prefecture	千葉県
+k_茨城県	#daacd1	茨城縣	茨城县	Ibaraki Prefecture	茨城県
+k_栃木県	#e1ae94	栃木縣	栃木县	Tochigi Prefecture	栃木県
+k_群馬県	#bfd68e	群馬縣	群马县	Gunma Prefecture	群馬県
+k_長野県	#b8dfc4	長野縣	长野县	Nagano Prefecture	長野県
+k_筑摩県	#a2e4c5	筑摩縣	筑摩县	Chikuma Prefecture	筑摩県
+k_新潟県	#9bb9da	新潟縣	新潟县	Niigata Prefecture	新潟県
+k_相川県	#b295cf	相川縣	相川县	Aikawa Prefecture	相川県
+k_新川県	#e8afcc	新川縣	新川县	Niikawa Prefecture	新川県
+k_富山県	#dfcaa7	富山縣	富山县	Toyama Prefecture	富山県
+k_七尾県	#d4cda1	七尾縣	七尾县	Nanao Prefecture	七尾県
+k_石川県	#94dd87	石川縣	石川县	Ishikawa Prefecture	石川県
+k_足羽県	#b4e3db	足羽縣	足羽县	Asuwa Prefecture	足羽県
+k_敦賀県	#acb5da	敦賀縣	敦賀县	Tsuruga Prefecture	敦賀県
+k_福井県	#d194e1	福井縣	福井县	Fukui Prefecture	福井県
+k_山梨県	#d68ed4	山梨縣	山梨县	Yamanashi Prefecture	山梨県
+k_静岡県	#dfbfb8	静岡縣	静岡县	Shizuoka Prefecture	静岡県
+k_浜松県	#d9e4a2	濱松縣	滨松县	Hamamatsu Prefecture	浜松県
+k_足柄県	#9bdaa4	足柄縣	足柄县	Ashigara Prefecture	足柄県
+k_額田県	#95c7cf	額田縣	額田县	Nukata Prefecture	額田県
+k_愛知県	#afd3e8	愛知縣	愛知县	Aichi Prefecture	愛知県
+k_岐阜県	#bba7df	岐阜縣	岐阜县	Gifu Prefecture	岐阜県
+k_三重県	#d4a1c3	三重縣	三重县	Mie Prefecture	三重県
+k_度会県	#ddb187	度会縣	度会县	Watarai Prefecture	度会県
+k_滋賀県	#cde3b4	滋賀縣	滋賀县	Shiga Prefecture	滋賀県
+k_豊岡県	#badaac	豐岡縣	丰岡县	Toyooka Prefecture	豊岡県
+k_堺県	#94e1c8	堺縣	堺县	Sakai Prefecture	堺県
+k_奈良県	#8ea6d6	奈良縣	奈良县	Nara Prefecture	奈良県
+k_兵庫県	#d1b8df	兵庫縣	兵庫县	Hyōgo Prefecture	兵庫県
+k_飾磨県	#e4a2ba	飾磨縣	飾磨县	Shikama Prefecture	飾磨県
+k_和歌山県	#da9d9b	和歌山縣	和歌山县	Wakayama Prefecture	和歌山県
+k_鳥取県	#cecf95	鳥取縣	鳥取县	Tottori Prefecture	鳥取県
+k_島根県	#afe8af	島根縣	岛根县	Shimane Prefecture	島根県
+k_浜田県	#a7dfde	濱田縣	滨田县	Hamada Prefecture	浜田県
+k_北条県	#a1a2d4	北条縣	北条县	Hōjō Prefecture	北条県
+k_岡山県	#9887dd	岡山縣	岡山县	Okayama Prefecture	岡山県
+k_小田県	#e3b4db	小田縣	小田县	Oda Prefecture	小田県
+k_広島県	#dabbac	廣島縣	广岛县	Hiroshima Prefecture	広島県
+k_山口県	#c8e194	山口縣	山口县	Yamaguchi Prefecture	山口県
+k_名東県	#8ed6a4	名東縣	名东县	Myōdō Prefecture	名東県
+k_徳島県	#b8dfcd	徳島縣	徳岛县	Tokushima Prefecture	徳島県
+k_香川県	#a2c2e4	香川縣	香川县	Kagawa Prefecture	香川県
+k_石鉄県	#ba9bda	石鐵縣	石铁县	Sekitetsu Prefecture	石鉄県
+k_愛媛県	#cf95b3	愛媛縣	愛媛县	Ehime Prefecture	愛媛県
+k_高知県	#e8d3af	高知縣	高知县	Kōchi Prefecture	高知県
+k_福岡県	#dfd8a7	福岡縣	福岡县	Fukuoka Prefecture	福岡県
+k_三潴県	#a8d4a1	三潴縣	三潴县	Mizuma Prefecture	三潴県
+k_小倉県	#87ddcf	小倉縣	小倉县	Kokura Prefecture	小倉県
+k_大分県	#b4bce3	大分縣	大分县	Ōita Prefecture	大分県
+k_佐賀県	#d1acda	佐賀縣	佐賀县	Saga Prefecture	佐賀県
+k_長崎県	#e194de	長崎縣	长崎县	Nagasaki Prefecture	長崎県
+k_熊本県	#d69b8e	熊本縣	熊本县	Kumamoto Prefecture	熊本県
+k_宮崎県	#d8dfb8	宮崎縣	宮崎县	Miyazaki Prefecture	宮崎県
+k_鹿児島県	#a2e4ac	鹿兒島縣	鹿儿岛县	Kagoshima Prefecture	鹿児島県
+k_青森県	#9bd2da	青森縣	青森县	Aomori Prefecture	青森県
+k_岩手県	#95bacf	岩手縣	岩手县	Iwate Prefecture	岩手県
+k_磐井県	#c3afe8	磐井縣	磐井县	Iwai Prefecture	磐井県
+k_宮城県	#dfa7cc	宮城縣	宮城县	Miyagi Prefecture	宮城県
+k_磐前県	#d4baa1	磐前縣	磐前县	Iwasaki Prefecture	磐前県
+k_福島県	#b5dd87	福島縣	福岛县	Fukushima Prefecture	福島県
+k_若松県	#c2e3b4	若松縣	若松县	Wakamatsu Prefecture	若松県
+k_秋田県	#acdacb	秋田縣	秋田县	Akita Prefecture	秋田県
+k_山形県	#94aee1	山形縣	山形县	Yamagata Prefecture	山形県
+k_置賜県	#bd8ed6	置賜縣	置賜县	Okitama Prefecture	置賜県
+k_鶴岡県	#dfb8c6	鶴岡縣	鶴岡县	Tsuruoka Prefecture	鶴岡県
+k_開拓使	#e4a4a2	開拓使	開拓使	Kaitakushi (Hokkaidō Development Commission)	開拓使
+k_函館県	#d9da9b	函館縣	函館县	Hakodate Prefecture	函館県
+k_札幌県	#95cf95	札幌縣	札幌县	Sapporo Prefecture	札幌県
+k_根室県	#afe8e7	根室縣	根室县	Nemuro Prefecture	根室県
+k_北海道庁	#a7a9df	北海道廳	北海道厅	Hokkaidō-chō	北海道庁
+k_北海道	#aba1d4	北海道	北海道	Hokkaidō Prefecture	北海道
+k_琉球藩	#dd87cd	琉球藩	琉球藩	Ryūkyū Domain	琉球藩
+k_沖縄県	#e3c4b4	沖繩縣	沖绳县	Okinawa Prefecture	沖縄県
+k_東京都	#cbdaac	東京都	东京都	Tōkyō-to (Metropolis)	東京都
+k_小笠原（内務省）	#94e1ab	小笠原（内務省）	小笠原（内務省）	Ogasawara (Home Ministry)	小笠原（内務省）
+k_樺太庁	#8ed6b4	樺太廳	樺太厅	Karafuto-chō	樺太庁
+k_台湾総督府	#b8cbdf	台湾總督府	台湾总督府	Government-General of Taiwan	台湾総督府
+k_朝鮮総督府	#c3a2e4	朝鮮總督府	朝鮮总督府	Government-General of Korea	朝鮮総督府
+k_関東州	#da9bbc	關東州	关东州	Kwantung Leased Territory	関東州
+k_南洋庁	#cfba95	南洋廳	南洋厅	South Seas Mandate (Nan'yō-chō)	南洋庁
+k_満洲国	#e8e0af	滿洲國	滿洲國	Manchukuo Prefecture	満洲国
+k_琉球列島米国民政府	#afdfa7	琉球列島米國民政府	琉球列岛米国民政府	USCAR (US Civil Administration of the Ryūkyū Islands)	琉球列島米国民政府
+k_臨時北部南西諸島政庁	#a1d4cc	臨時北部南西諸島政廳	臨時北部南西諸岛政厅	Provisional Northern Ryūkyū Government (Amami)	臨時北部南西諸島政庁
+k_小笠原（米海軍）	#8797dd	小笠原（米海軍）	小笠原（米海軍）	Ogasawara (US Navy)	小笠原（米海軍）
+k_ソ連・ロシア	#dab4e3	蘇聯・俄羅斯	蘇聯・俄羅斯	Soviet Union / Russia	ソ連・ロシア

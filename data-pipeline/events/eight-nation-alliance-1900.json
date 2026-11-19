@@ -1,0 +1,76 @@
+{
+  "id": "eight-nation-alliance-1900",
+  "category": "expedition",
+  "title":   { "zh-Hant": "八國聯軍", "en": "Eight-Nation Alliance intervention", "ja": "八カ国連合軍の出兵" },
+  "summary": { "zh-Hant": "義和團圍攻北京使館區後，英、美、法、德、俄、日、意、奧八國出兵華北，攻陷大沽、天津與北京，最後以《辛丑和約》結束。",
+               "en": "After the Boxers besieged the Beijing legations, eight powers sent troops into north China, took Dagu, Tianjin and Beijing, and ended the conflict with the Boxer Protocol.",
+               "ja": "義和団が北京の公使館区域を包囲したのち、八カ国が華北に出兵して大沽・天津・北京を占領し、辛丑条約で終結した。" },
+  "start": "1900-06-10",
+  "end": "1901-09-07",
+  "view": { "lon": 117.0, "lat": 39.4, "k": 14 },
+  "sides": [
+    { "id": "allies", "name": { "zh-Hant": "八國聯軍", "en": "Allied forces", "ja": "連合軍" }, "color": "#1f6fb2" },
+    { "id": "qing", "name": { "zh-Hant": "清軍與義和團", "en": "Qing army and Boxers", "ja": "清軍・義和団" }, "color": "#c9a227" }
+  ],
+  "sources": [
+    { "title": "Eight-Nation Alliance — Wikipedia", "url": "https://en.wikipedia.org/wiki/Eight-Nation_Alliance" },
+    { "title": "Seymour expedition — Wikipedia", "url": "https://en.wikipedia.org/wiki/Seymour_expedition" },
+    { "title": "Battle of the Taku Forts (1900) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Battle_of_the_Taku_Forts_(1900)" },
+    { "title": "Battle of Tientsin — Wikipedia", "url": "https://en.wikipedia.org/wiki/Battle_of_Tientsin" },
+    { "title": "Gaselee expedition — Wikipedia", "url": "https://en.wikipedia.org/wiki/Gaselee_expedition" },
+    { "title": "Boxer Protocol — Wikipedia", "url": "https://en.wikipedia.org/wiki/Boxer_Protocol" }
+  ],
+  "keyframes": [
+    {
+      "date": "1900-06-10",
+      "caption": { "zh-Hant": "西摩爾率兩千餘名聯軍自天津沿鐵路出發，欲救援北京使館。", "en": "Admiral Seymour leaves Tianjin along the railway with some 2,000 men to relieve the Beijing legations.", "ja": "シーモア提督が約2千人を率い、北京の公使館救援のため鉄道沿いに天津を出発。" },
+      "src": [1],
+      "arrows": [ { "side": "allies", "line": [[117.20, 39.13], [116.95, 39.30], [116.70, 39.52]] } ],
+      "markers": [ { "kind": "siege", "lon": 116.40, "lat": 39.90, "name": { "zh-Hant": "北京使館區", "en": "Beijing legations", "ja": "北京公使館区域" } } ]
+    },
+    {
+      "date": "1900-06-17",
+      "caption": { "zh-Hant": "聯軍艦隊攻佔大沽口砲台；西摩爾部在廊坊一帶受阻。", "en": "Allied ships take the Dagu (Taku) Forts; Seymour's column is stopped around Langfang.", "ja": "連合軍艦隊が大沽砲台を占領。シーモア隊は廊坊付近で阻まれる。" },
+      "src": [1, 2],
+      "markers": [
+        { "kind": "battle", "lon": 117.71, "lat": 38.97, "name": { "zh-Hant": "大沽口砲台", "en": "Dagu Forts", "ja": "大沽砲台" } },
+        { "kind": "battle", "lon": 116.70, "lat": 39.52, "name": { "zh-Hant": "廊坊", "en": "Langfang", "ja": "廊坊" } },
+        { "kind": "siege", "lon": 116.40, "lat": 39.90, "name": { "zh-Hant": "北京使館區", "en": "Beijing legations", "ja": "北京公使館区域" } }
+      ]
+    },
+    {
+      "date": "1900-06-26",
+      "caption": { "zh-Hant": "西摩爾部撤回天津。", "en": "Seymour's column falls back to Tianjin.", "ja": "シーモア隊が天津に撤退。" },
+      "src": [1],
+      "arrows": [ { "side": "allies", "line": [[116.70, 39.52], [116.95, 39.30], [117.20, 39.13]] } ],
+      "markers": [ { "kind": "siege", "lon": 116.40, "lat": 39.90, "name": { "zh-Hant": "北京使館區", "en": "Beijing legations", "ja": "北京公使館区域" } } ]
+    },
+    {
+      "date": "1900-07-14",
+      "caption": { "zh-Hant": "聯軍攻陷天津城。", "en": "The allies take the walled city of Tianjin.", "ja": "連合軍が天津城を占領。" },
+      "src": [3],
+      "markers": [
+        { "kind": "battle", "lon": 117.20, "lat": 39.13, "name": { "zh-Hant": "天津", "en": "Tianjin", "ja": "天津" } },
+        { "kind": "siege", "lon": 116.40, "lat": 39.90, "name": { "zh-Hant": "北京使館區", "en": "Beijing legations", "ja": "北京公使館区域" } }
+      ]
+    },
+    {
+      "date": "1900-08-04",
+      "caption": { "zh-Hant": "約兩萬聯軍自天津向北京進軍。", "en": "About 20,000 allied troops march from Tianjin towards Beijing.", "ja": "約2万の連合軍が天津から北京へ進軍。" },
+      "src": [4],
+      "arrows": [ { "side": "allies", "line": [[117.20, 39.13], [116.98, 39.40], [116.66, 39.91], [116.40, 39.90]] } ]
+    },
+    {
+      "date": "1900-08-14",
+      "caption": { "zh-Hant": "聯軍攻入北京，解除使館之圍；慈禧太后隨後西逃。", "en": "The allies enter Beijing and lift the siege of the legations; the Empress Dowager flees west.", "ja": "連合軍が北京に入城し公使館の包囲を解く。西太后は西へ逃れる。" },
+      "src": [0, 4],
+      "markers": [ { "kind": "capture", "lon": 116.40, "lat": 39.90, "name": { "zh-Hant": "北京", "en": "Beijing", "ja": "北京" } } ]
+    },
+    {
+      "date": "1901-09-07",
+      "caption": { "zh-Hant": "簽訂《辛丑和約》（《北京議定書》）。", "en": "The Boxer Protocol is signed.", "ja": "辛丑条約（北京議定書）が調印される。" },
+      "src": [5],
+      "markers": [ { "kind": "treaty", "lon": 116.40, "lat": 39.90, "name": { "zh-Hant": "北京", "en": "Beijing", "ja": "北京" } } ]
+    }
+  ]
+}

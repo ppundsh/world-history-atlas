@@ -1,0 +1,1 @@
+{"maxzoom": 5, "regions": [{"id": "ea", "bounds": [95.0, 10.0, 145.0, 50.0], "minzoom": 6, "maxzoom": 7, "image": "ea.jpg"}, {"id": "tw", "bounds": [117.5, 21.0, 123.5, 27.0], "minzoom": 8, "maxzoom": 9, "image": "tw.jpg"}]}

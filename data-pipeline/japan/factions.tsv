@@ -1,0 +1,87 @@
+# 日本模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+# 名稱一律用該政權（或其時通行）的自稱；「日本」國號自 7 世紀末起使用。
+ritsuryo	#e57373	日本（朝廷）	日本（朝廷）	Japan (imperial court)	日本（朝廷）
+kamakura	#ef6c6c	日本（鎌倉幕府）	日本（镰仓幕府）	Japan (Kamakura shogunate)	日本（鎌倉幕府）
+kenmu	#e35d6a	日本（建武政權）	日本（建武政权）	Japan (Kenmu government)	日本（建武政権）
+muromachi	#d9534f	日本（室町幕府）	日本（室町幕府）	Japan (Muromachi shogunate)	日本（室町幕府）
+nancho	#a1887f	南朝	南朝	Southern Court	南朝
+sengoku	#c9b8a6	戰國諸勢力	战国诸势力	Sengoku warlords (various)	戦国諸勢力
+oda	#f9a825	織田氏	织田氏	Oda	織田氏
+tokugawa	#7cb342	德川氏（松平氏）	德川氏（松平氏）	Tokugawa (Matsudaira)	徳川氏（松平氏）
+imagawa	#8d6e63	今川氏	今川氏	Imagawa	今川氏
+takeda	#c62828	武田氏	武田氏	Takeda	武田氏
+hojo	#5c6bc0	後北條氏	后北条氏	Later Hōjō	後北条氏
+uesugi	#3949ab	上杉氏（長尾氏）	上杉氏（长尾氏）	Uesugi (Nagao)	上杉氏（長尾氏）
+satomi	#80cbc4	里見氏	里见氏	Satomi	里見氏
+satake	#4db6ac	佐竹氏	佐竹氏	Satake	佐竹氏
+mori	#1e88e5	毛利氏	毛利氏	Mōri	毛利氏
+amago	#90caf9	尼子氏	尼子氏	Amago	尼子氏
+otomo	#ab47bc	大友氏	大友氏	Ōtomo	大友氏
+ryuzoji	#ce93d8	龍造寺氏	龙造寺氏	Ryūzōji	龍造寺氏
+shimazu	#6d4c41	島津氏	岛津氏	Shimazu	島津氏
+chosokabe	#26a69a	長宗我部氏	长宗我部氏	Chōsokabe	長宗我部氏
+miyoshi	#9e9d24	三好氏	三好氏	Miyoshi	三好氏
+asakura	#78909c	朝倉氏	朝仓氏	Asakura	朝倉氏
+honganji	#bcaaa4	本願寺（一向一揆）	本愿寺（一向一揆）	Honganji (Ikkō-ikki)	本願寺（一向一揆）
+azai	#a5d6a7	淺井氏	浅井氏	Azai	浅井氏
+rokkaku	#c5e1a5	六角氏	六角氏	Rokkaku	六角氏
+saito	#ffcc80	齋藤氏	斋藤氏	Saitō	斎藤氏
+date	#283593	伊達氏	伊达氏	Date	伊達氏
+ashina	#9fa8da	蘆名氏	芦名氏	Ashina	蘆名氏
+mogami	#b39ddb	最上氏	最上氏	Mogami	最上氏
+nanbu	#7986cb	南部氏	南部氏	Nanbu	南部氏
+ukita	#ffab91	宇喜多氏	宇喜多氏	Ukita	宇喜多氏
+toyotomi	#f57f17	日本（豐臣政權）	日本（丰臣政权）	Japan (Toyotomi regime)	日本（豊臣政権）
+edo	#e53935	日本（江戶幕府）	日本（江户幕府）	Japan (Tokugawa shogunate)	日本（江戸幕府）
+ouetsu	#5e35b1	奧羽越列藩同盟	奥羽越列藩同盟	Northern Alliance (Ōuetsu Reppan Dōmei)	奥羽越列藩同盟
+ezorep	#4527a0	蝦夷共和國	虾夷共和国	Republic of Ezo	蝦夷共和国
+meiji	#e57373	日本（明治政府）	日本（明治政府）	Japan (Meiji government)	日本（明治政府）
+empire	#e57373	大日本帝國	大日本帝国	Empire of Japan	大日本帝国
+occupied	#ef9a9a	日本（盟軍佔領下）	日本（盟军占领下）	Japan (Allied occupation)	日本（連合国軍占領下）
+japan	#e57373	日本國	日本国	Japan (State of Japan)	日本国
+emishi	#81c784	蝦夷（エミシ）	虾夷（エミシ）	Emishi	蝦夷（えみし）
+hayato	#aed581	隼人	隼人	Hayato	隼人
+oshu	#43a047	奧州藤原氏	奥州藤原氏	Northern Fujiwara (Ōshū Fujiwara)	奥州藤原氏
+ainu	#66bb6a	愛努（蝦夷地）	阿伊努（虾夷地）	Ainu (Ezochi)	アイヌ（蝦夷地）
+nansei	#ba68c8	南島諸社	南岛诸社	Southern islands' communities	南島の諸集団
+anji	#ce93d8	琉球諸按司	琉球诸按司	Ryūkyū chiefdoms (aji)	琉球の按司
+hokuzan	#ab47bc	北山（山北）	北山（山北）	Hokuzan	北山（山北）
+chuzan	#8e24aa	中山	中山	Chūzan	中山
+nanzan	#ce93d8	南山（山南）	南山（山南）	Nanzan	南山（山南）
+miyako	#e1bee7	宮古諸豪族	宫古诸豪族	Miyako chiefdoms	宮古の諸豪族
+yaeyama	#f3e5f5	八重山諸豪族	八重山诸豪族	Yaeyama chiefdoms	八重山の諸豪族
+ryukyu	#8e24aa	琉球王國	琉球王国	Ryūkyū Kingdom	琉球王国
+ryukyuhan	#9c27b0	琉球藩	琉球藩	Ryūkyū Domain	琉球藩
+bonin	#90a4ae	小笠原移民（無主）	小笠原移民（无主）	Bonin settlers (no state)	小笠原の移住者（無主地）
+empty	#eceff1	無人島	无人岛	Uninhabited	無人島
+usa	#1565c0	美國	美国	United States	アメリカ合衆国
+russia	#2e7d32	俄羅斯帝國	俄罗斯帝国	Russian Empire	ロシア帝国
+ussr	#b71c1c	蘇聯	苏联	Soviet Union	ソビエト連邦
+rf	#1b5e20	俄羅斯聯邦	俄罗斯联邦	Russian Federation	ロシア連邦
+sakhalin	#9ccc65	樺太諸民族（愛努、尼夫赫等）	桦太诸民族（阿伊努、尼夫赫等）	Sakhalin peoples (Ainu, Nivkh)	樺太の諸民族（アイヌ・ニヴフなど）
+mixed	#c0ca33	日俄雜居地	日俄杂居地	Joint Japanese-Russian territory	日露雑居地
+# ---- 海外領土圖層
+tw_indig	#5d9b53	臺灣原住民族各社	台湾原住民族各社	Taiwanese indigenous peoples	台湾原住民族
+dutch	#f57c00	荷蘭東印度公司	荷兰东印度公司	Dutch East India Company	オランダ東インド会社
+zheng	#8e44ad	鄭氏政權（東寧）	郑氏政权（东宁）	Zheng regime (Tungning)	鄭氏政権（東寧）
+silla	#ffb74d	新羅	新罗	Silla	新羅
+balhae	#a1887f	渤海	渤海	Balhae	渤海
+goryeo	#ffa726	高麗	高丽	Goryeo	高麗
+joseon	#fb8c00	朝鮮王朝	朝鲜王朝	Joseon	朝鮮王朝
+daehan	#ef6c00	大韓帝國	大韩帝国	Korean Empire	大韓帝国
+liao	#bcaaa4	遼	辽	Liao	遼
+jin	#d7ccc8	大金帝國	大金帝国	Great Jin Empire	大金帝国
+yuan	#8d6e63	大元帝國	大元帝国	Great Yuan Empire	大元帝国
+ming	#d4a017	大明帝國	大明帝国	Great Ming Empire	大明帝国
+jurchen	#c5b358	女真諸部（後金）	女真诸部（后金）	Jurchen tribes (Later Jin)	女真諸部（後金）
+qing	#e6c229	大清帝國	大清帝国	Great Qing Empire	大清帝国
+roc	#1e40af	中華民國	中华民国	Republic of China	中華民国
+manchukuo	#f48fb1	滿洲國	满洲国	Manchukuo	満洲国
+prc	#d32f2f	中華人民共和國	中华人民共和国	People's Republic of China	中華人民共和国
+rok	#1976d2	大韓民國	大韩民国	Republic of Korea	大韓民国
+dprk	#c62828	朝鮮民主主義人民共和國	朝鲜民主主义人民共和国	Democratic People's Republic of Korea	朝鮮民主主義人民共和国
+spain	#c62828	西班牙	西班牙	Spain	スペイン
+germany	#455a64	德意志帝國	德意志帝国	German Empire	ドイツ帝国
+micronesia	#4fc3f7	帛琉・密克羅尼西亞・馬紹爾群島等	帕劳・密克罗尼西亚・马绍尔群岛等	Palau, Micronesia, Marshall Islands, etc.	パラオ・ミクロネシア・マーシャル諸島など
+oceania	#b0bec5	密克羅尼西亞各島民	密克罗尼西亚各岛民	Micronesian islanders	ミクロネシアの島民
+ccp	#e53935	中國共產黨（東北解放區）	中国共产党（东北解放区）	Chinese Communists (Northeast)	中国共産党（東北解放区）
