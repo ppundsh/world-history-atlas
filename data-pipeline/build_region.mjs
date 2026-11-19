@@ -13,6 +13,8 @@
 //   governments.tsv    id, from, to, lon, lat, highlight(1/0), faction, zh-Hant, zh-Hans, en, ja
 //   events.tsv         YYYY-MM, zh-Hant, en, ja
 //   ccp_areas.tsv      (optional) id, from, to, lon, lat, rx, ry, zh-Hant, zh-Hans, en, ja
+//   seats.tsv          (optional) administrative seats shown with the division layer:
+//                      id, from, to, lon, lat, division id ('' = any), zh-Hant, en, ja, Wikipedia [zh, en, ja] titles, note zh-Hant, note en, note ja
 //   divisions.tsv + admin.tsv (optional) administrative divisions, same format as factions / control;
 //                      in admin.tsv the value "=parent" makes a unit follow its parent unit's division from then on
 import fs from 'node:fs';
@@ -82,6 +84,17 @@ if (exists('divisions.tsv')) {
   const divisions = table('divisions.tsv');
   data.divisions = divisions.list;
   data.admin = timeline('admin.tsv', divisions).out;
+  //   local.tsv (optional) feuds and local powers, each with its own toggle:
+//   kind (feud|power), id, from, to, lon, lat, zh-Hant, en, ja, note zh-Hant, note en, note ja, zh Wikipedia title
+if (exists('local.tsv')) data.local = rows('local.tsv').map(([kind, id, a, b, lon, lat, hant, en, ja, dh, de, dj, wzh]) => {
+  if (!['feud', 'power'].includes(kind)) throw new Error(`local.tsv ${id}: kind must be feud or power`);
+  return { kind, id, a: month(a), b: month(b), lon: +lon, lat: +lat, n: [en, hant, toHans(hant), ja], note: [de, dh, toHans(dh), dj], w: [wzh, '', ''] };
+});
+if (exists('seats.tsv')) data.seats = rows('seats.tsv').map(([id, a, b, lon, lat, div, hant, en, ja, wzh, wen, wja, dh = '', de = '', dj = '']) => {
+    if (div && !(div in divisions.index)) throw new Error(`seats.tsv ${id}: unknown division "${div}"`);
+    return { id, a: month(a), b: month(b), lon: +lon, lat: +lat, d: div ? divisions.index[div] : -1,
+      n: [en, hant, toHans(hant), ja], w: [wzh, wen, wja], note: [de, dh, toHans(dh), dj] };
+  });
 }
 // optional descriptions + Wikipedia articles per faction: w = [zh, en, ja] article titles, d = [en, hant, hans, ja]
 if (exists('info.tsv')) {

@@ -1,0 +1,26 @@
+# 台灣模式：行政中心（◆，與行政區劃圖層一起顯示，可點選）。
+# 欄位：id	起	迄	經度	緯度	行政區 id（divisions.tsv；空白＝不限）	繁中	English	日本語	維基中文	English Wikipedia	日本語版	說明（繁中）	說明（English）	說明（日本語）
+# 來源：各條目的維基百科頁面（連結見欄位），州廳建築的位置依現存建築。
+fengshan1	1684-05	1788-03	120.2950	22.6820	q_fengshan	鳳山縣舊城（左營）	Fengshan county seat (Zuoying)	鳳山県旧城（左営）	鳳山縣舊城	Old City of Fengshan	鳳山県旧城	鳳山縣最初的縣治，林爽文事件後遷往新城。	The first seat of Fengshan County, moved after the Lin Shuangwen rising.	鳳山県の最初の県城。林爽文事件ののち新城へ移った。
+fengshan2	1788-03	1895-06	120.3570	22.6270	q_fengshan	鳳山縣新城	Fengshan county seat (new city)	鳳山県新城	鳳山縣城	Fengshan County	鳳山県	1788 年後鳳山縣治所在。	The seat of Fengshan County after 1788.	1788 年以後の鳳山県の県城。
+zhuluo	1704-01	1895-06	120.4490	23.4800	q_zhuluo	諸羅縣城（嘉義）	Zhuluo county seat (Chiayi)	諸羅県城（嘉義）	諸羅縣	Zhuluo County	諸羅県	1787 年改名嘉義縣。	Renamed Chiayi County in 1787.	1787 年に嘉義県と改称。
+changhua	1723-09	1895-06	120.5400	24.0800	q_changhua	彰化縣城	Changhua county seat	彰化県城	彰化縣 (清朝)	Changhua County	彰化県 (清朝)	1723 年由諸羅縣北部分設。	Split from northern Zhuluo County in 1723.	1723 年に諸羅県北部から分立。
+tamsui	1756-01	1875-12	120.9680	24.8040	q_tamsui	淡水廳城（竹塹）	Tamsui sub-prefecture seat (Teckcham)	淡水庁城（竹塹）	淡水廳	Tamsui Subprefecture	淡水庁	淡水廳的廳治設在竹塹（今新竹）。	The seat of Tamsui Sub-prefecture was at Teckcham (Hsinchu).	淡水庁の庁治は竹塹（今の新竹）に置かれた。
+kavalan	1812-08	1875-12	121.7530	24.7570	q_kavalan	噶瑪蘭廳城（宜蘭）	Kavalan sub-prefecture seat (Yilan)	噶瑪蘭庁城（宜蘭）	噶瑪蘭廳	Kavalan Subprefecture	噶瑪蘭庁	1812 年設，1875 年改為宜蘭縣。	Created in 1812, became Yilan County in 1875.	1812 年設置、1875 年に宜蘭県となった。
+taipeifu	1879-01	1895-06	121.5090	25.0460	q_tamsui_county	臺北府城	Taipei Prefecture city	台北府城	臺北府城	Taipei City Wall	台北府城	1875 年設臺北府，1879 年起築城，1885 年起為臺灣省會所在。	Taipei Prefecture was created in 1875 and walled from 1879; seat of Taiwan Province from 1885.	1875 年に台北府を設置、1879 年から築城。1885 年から台湾省の省会。
+hengchun	1875-12	1895-06	120.7450	22.0020	q_hengchun	恆春縣城	Hengchun county seat	恒春県城	恆春縣城	Hengchun Old Town	恒春県城	牡丹社事件後設恆春縣。	Created after the Mudan incident.	牡丹社事件ののち設置された。
+s_taipei	1920-10	1945-10	121.5170	25.0440	s_taipei	臺北州廳	Taihoku Prefecture Hall	台北州庁	臺北州廳	Taihoku Prefecture Hall	台北州庁	今監察院。	Today the Control Yuan building.	現在の監察院。
+s_hsinchu	1920-10	1945-10	120.9690	24.8060	s_hsinchu	新竹州廳	Shinchiku Prefecture Hall	新竹州庁	新竹州廳	Hsinchu Prefecture Hall	新竹州庁	今新竹市政府。	Today Hsinchu City Hall.	現在の新竹市役所。
+s_taichung	1920-10	1945-10	120.6780	24.1390	s_taichung	臺中州廳	Taichū Prefecture Hall	台中州庁	臺中州廳	Taichung Prefecture Hall	台中州庁	1913 年落成的州廳建築，為臺中州的行政中心。	The prefectural hall completed in 1913, seat of Taichū Prefecture.	1913 年竣工の州庁舎。台中州の行政中心。
+s_tainan	1920-10	1945-10	120.2040	22.9920	s_tainan	臺南州廳	Tainan Prefecture Hall	台南州庁	臺南州廳	Tainan Prefecture Hall	台南州庁	今國立臺灣文學館。	Today the National Museum of Taiwan Literature.	現在の国立台湾文学館。
+s_kaohsiung	1920-10	1945-10	120.2850	22.6240	s_kaohsiung	高雄州廳	Takao Prefecture Hall	高雄州庁	高雄州	Takao Prefecture	高雄州	高雄州的行政中心（州廳建築已不存）。	Seat of Takao Prefecture (the hall no longer stands).	高雄州の行政中心（庁舎は現存しない）。
+s_hualien	1920-10	1945-10	121.6070	23.9760	j20_hualien	花蓮港廳	Karenkō Prefecture office	花蓮港庁	花蓮港廳	Karenkō Prefecture	花蓮港庁		Seat of Karenkō Prefecture.	花蓮港庁の庁舎所在地。
+s_taitung	1920-10	1945-10	121.1500	22.7550	j_taitung	臺東廳	Taitō Prefecture office	台東庁	臺東廳	Taitō Prefecture	台東庁		Seat of Taitō Prefecture.	台東庁の庁舎所在地。
+s_penghu	1920-10	1945-10	119.5660	23.5670	j_penghu	澎湖廳	Hōko Prefecture office	澎湖庁	澎湖廳	Hōko Prefecture	澎湖庁	1926 年由高雄州分出為廳。	Separated from Takao Prefecture in 1926.	1926 年に高雄州から分立。
+fujian	1949-12	2018-12	118.3170	24.4330		福建省政府（金門）	Fujian Provincial Government (Kinmen)	福建省政府（金門）	福建省政府	Fujian Provincial Government (Republic of China)	福建省政府 (中華民国)	中華民國福建省政府，1996 年遷至金門。	The ROC's Fujian provincial government, moved to Kinmen in 1996.	中華民国の福建省政府。1996 年に金門へ移った。
+tpe_d	1967-07	2026-12	121.5645	25.0375	r_tpe_d	臺北市政府	Taipei City Government	台北市政府	臺北市政府	Taipei City Government	台北市政府	1967 年臺北市改制直轄市。	Taipei became a special municipality in 1967.	1967 年に台北市が直轄市となった。
+khh_d	1979-07	2026-12	120.3010	22.6210	r_kaohsiung_c	高雄市政府	Kaohsiung City Government	高雄市政府	高雄市政府	Kaohsiung City Government	高雄市政府	1979 年改制直轄市，2010 年與高雄縣合併。	Special municipality from 1979, merged with Kaohsiung County in 2010.	1979 年に直轄市、2010 年に高雄県と合併。
+ntpc	2010-12	2026-12	121.4650	25.0120	r_newtaipei	新北市政府	New Taipei City Government	新北市政府	新北市政府	New Taipei City Government	新北市政府	2010 年臺北縣升格為新北市。	Taipei County became New Taipei City in 2010.	2010 年に台北県が新北市に昇格。
+txg	2010-12	2026-12	120.6470	24.1620	r_taichung_d	臺中市政府	Taichung City Government	台中市政府	臺中市政府	Taichung City Government	台中市政府	2010 年臺中縣市合併升格。	Taichung County and City merged in 2010.	2010 年に台中県市が合併し直轄市に。
+tnn	2010-12	2026-12	120.1850	22.9920	r_tainan_d	臺南市政府	Tainan City Government	台南市政府	臺南市政府	Tainan City Government	台南市政府	2010 年臺南縣市合併升格。	Tainan County and City merged in 2010.	2010 年に台南県市が合併し直轄市に。
+tyc	2014-12	2026-12	121.3010	24.9930	r_taoyuan_d	桃園市政府	Taoyuan City Government	桃園市政府	桃園市政府	Taoyuan City Government	桃園市政府	2014 年桃園縣升格。	Taoyuan County became a special municipality in 2014.	2014 年に桃園県が直轄市に昇格。

@@ -193,9 +193,21 @@ export function frame(st) {
       context: contextFor(c, st.year),                // the rest of the world, drawn in grey
       color: id => P.color(id),
       overlays: s.areas.map(a => a.feature),
-      markers: s.govs.map(g => ({ lon: g.lon, lat: g.lat, text: g.n, color: P.color(c.offset + g.f), roc: g.roc })),
+      markers: [
+        // administrative seats, with the division layer
+        ...(layered && (st.layer === 'admin' || both) ? (c.seats || []).filter(x => x.a <= st.cm && st.cm <= x.b)
+          .map(x => ({ kind: 'seat', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: x.d >= 0 ? c.divisions[x.d].color : '#555' })) : []),
+        // Taiwan: feuds (⚔) and local powers (◉), each with its own switch
+        ...(c.local || []).slice().sort((x, y) => (x.kind === 'feud') - (y.kind === 'feud')).filter(x => (x.kind === 'feud' ? st.feuds : st.powers) && x.a <= st.cm && st.cm <= x.b)
+          .map(x => ({ kind: x.kind, id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: x.kind === 'feud' ? '#b91c1c' : '#6b21a8' })),
+        // governments last, so the ★ sits on top of a seat at the same place
+        ...s.govs.map(g => ({ kind: 'gov', id: g.id, lon: g.lon, lat: g.lat, text: g.n, color: P.color(c.offset + g.f), roc: g.roc })),
+      ],
       govs: s.govs, event: s.event, units: s.units, border: s.border || null,
       adminLines: adm?.inner || null, adminFeats: adm?.feats || null,
+      // both layers (as on printed historical maps): divisions are the fill, control areas a coloured ribbon
+      // along the inside of their borders, with the control names as the main labels
+      fillFeats: adm?.feats || null, fillUnits: adm?.units || null, ribbons: adm ? s.feats : null,
       rocOutline: c.region === 'china' ? rocOutline(c, s.feats, s.govs) : null,
       disputed: false,
     };

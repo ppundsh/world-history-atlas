@@ -200,3 +200,38 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 @media (max-width: 1500px) { .layerbox .chk { font-size: 12px; } .layerbox { gap: 4px; } }
 
 #reliefCredit { position: absolute; left: 14px; bottom: 38px; z-index: 3; font-size: 11px; color: #fff; background: rgba(0, 0, 0, 0.45); padding: 2px 8px; border-radius: 10px; pointer-events: none; }
+
+.toworld { margin-left: 6px; padding: 3px 9px; border-radius: 6px; border: 1px solid #f2c14e; background: rgba(242,193,78,.15); color: #f2c14e; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.toworld:hover { background: rgba(242,193,78,.3); }
+#info p.src { color: var(--muted); font-size: 11px; }
+
+/* history event table */
+#evTable { position: absolute; right: 64px; top: 14px; width: min(330px, calc(100% - 100px)); max-height: calc(100% - 190px); display: flex; flex-direction: column;
+  background: rgba(255, 255, 255, 0.94); color: #1d1d1f; border-radius: 12px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3); z-index: 3; overflow: hidden; }
+#evTable[hidden] { display: none; }
+#evTable .evhead { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px 6px 14px; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,.08); }
+#evTable .x { border: none; background: none; font-size: 20px; color: #888; padding: 0 4px; }
+#evTable ol { list-style: none; margin: 0; padding: 4px 0; overflow: auto; }
+#evTable li { display: grid; grid-template-columns: 118px 1fr; gap: 8px; padding: 5px 14px; font-size: 12.5px; cursor: pointer; line-height: 1.35; }
+#evTable li:hover { background: rgba(0, 122, 255, 0.08); }
+#evTable li .w { color: #6e6e73; font-variant-numeric: tabular-nums; }
+#evTable li.past .n { color: #555; }
+#evTable li.cur { background: rgba(0, 122, 255, 0.14); }
+#evTable li.cur .n { font-weight: 700; color: #0a3d91; }
+
+/* transport controls, iOS style: glyphs on a translucent material capsule, white round play button */
+.buttons.ios { display: flex; align-items: center; gap: 2px; padding: 4px 6px; border-radius: 26px;
+  background: rgba(120, 120, 128, 0.24); -webkit-backdrop-filter: blur(20px) saturate(180%); backdrop-filter: blur(20px) saturate(180%); }
+.buttons.ios .icon { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border-radius: 50%; color: #fff;
+  transition: transform 0.18s cubic-bezier(0.3, 1.5, 0.6, 1), background-color 0.15s; -webkit-tap-highlight-color: transparent; }
+.buttons.ios .icon svg { width: 22px; height: 22px; fill: currentColor; display: block; }
+.buttons.ios .tbtn:hover { background: rgba(255, 255, 255, 0.12); }
+.buttons.ios .icon:active { transform: scale(0.86); }
+.buttons.ios .play { width: 46px; height: 46px; background: #fff !important; color: #000; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); }
+.buttons.ios .play svg { width: 24px; height: 24px; }
+.buttons.ios .play .i-play svg { transform: translateX(1px); }
+.buttons.ios .play:hover { background: #f2f2f7 !important; }
+.buttons.ios .play .i-play, .buttons.ios .play .i-pause { display: grid; place-items: center; }
+.buttons.ios .play .i-pause { display: none; }
+.buttons.ios .play.on .i-play { display: none; }
+.buttons.ios .play.on .i-pause { display: grid; }

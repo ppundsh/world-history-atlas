@@ -1,3 +1,5 @@
+import { DistortionMask } from './distortion.js';
+import { reliefFor } from './relief.js';
 // Flat-map renderer: d3-geo projections drawn on a Canvas, with Google-Maps-style navigation
 // (drag to pan, wheel/pinch to zoom at the cursor, double-click to zoom in, arrow keys, +/-).
 import { geoPath, geoGraticule, geoGraticule10, geoContains, geoDistance } from 'd3-geo';
@@ -14,20 +16,32 @@ const GRAT = geoGraticule10();
 const MAX_K = 60;
 
 // ★ at the government seat; the name is nudged down to avoid other names, and dropped if it can't fit
-export function drawMarker(ctx, x, y, m, col, S, placed) {
-  ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
-  ctx.font = `20px ${S.label.font}`; ctx.lineWidth = 3; ctx.strokeStyle = '#fff';
-  ctx.strokeText('★', x - 9, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText('★', x - 9, y);
+// a government seat (★) or administrative seat (◆): symbol with a dark outline and the name in a framed label.
+// Pushes its clickable box to `hits` ({x0, y0, x1, y1, m}).
+export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
+  const seat = m.kind !== 'gov' && m.kind != null;          // seats, feuds, local powers: smaller
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.font = `${seat ? 15 : 22}px ${S.label.font}`;
+  ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(20,20,30,0.85)'; ctx.lineJoin = 'round';
+  const sym = { seat: '◆', feud: '⚔', power: '◉' }[m.kind] || '★';
+  ctx.strokeText(sym, x, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText(sym, x, y);
+  ctx.lineWidth = 1.2; ctx.strokeStyle = '#fff'; ctx.strokeText(sym, x, y);
   const text = m.text[col] || m.text[0];
-  ctx.font = `${m.roc ? 700 : 500} 12px ${S.label.font}`;
-  const w = ctx.measureText(text).width;
+  ctx.font = `${m.roc || !seat ? 700 : 600} ${seat ? 11 : 12}px ${S.label.font}`;
+  const w = ctx.measureText(text).width + 10, h = seat ? 16 : 18, x0 = x + (seat ? 9 : 13);
   let ty = y;
-  const hit = yy => placed.some(b => b[0] < x + 11 + w && b[2] > x + 11 && b[1] < yy + 7 && b[3] > yy - 7);
-  while (hit(ty) && ty - y < 45) ty += 14;
-  if (hit(ty)) return;
-  placed.push([x + 11, ty - 7, x + 11 + w, ty + 7]);
-  if (ty !== y) { ctx.beginPath(); ctx.moveTo(x + 2, y); ctx.lineTo(x + 10, ty); ctx.strokeStyle = 'rgba(0,0,0,0.4)'; ctx.lineWidth = 1; ctx.stroke(); ctx.lineWidth = 3; ctx.strokeStyle = '#fff'; }
-  ctx.strokeText(text, x + 11, ty); ctx.fillStyle = m.roc ? '#0b2a7a' : '#222'; ctx.fillText(text, x + 11, ty);
+  const over = yy => placed.some(b => b[0] < x0 + w && b[2] > x0 && b[1] < yy + h / 2 && b[3] > yy - h / 2);
+  while (over(ty) && ty - y < 54) ty += h + 2;
+  hits?.push({ x0: x - 11, y0: y - 11, x1: x + 11, y1: y + 11, m });
+  if (over(ty)) return;
+  placed.push([x0, ty - h / 2, x0 + w, ty + h / 2]);
+  if (ty !== y) { ctx.beginPath(); ctx.moveTo(x + 4, y); ctx.lineTo(x0, ty); ctx.strokeStyle = 'rgba(0,0,0,0.45)'; ctx.lineWidth = 1; ctx.stroke(); }
+  ctx.beginPath(); ctx.roundRect(x0, ty - h / 2, w, h, 4);
+  ctx.fillStyle = 'rgba(255,255,255,0.93)'; ctx.fill();
+  ctx.lineWidth = m.roc ? 2.2 : 1.6; ctx.strokeStyle = m.roc ? '#1e40af' : m.color; ctx.stroke();
+  ctx.fillStyle = m.roc ? '#0b2a7a' : '#1d1d24'; ctx.textAlign = 'left';
+  ctx.fillText(text, x0 + 5, ty + 0.5);
+  hits?.push({ x0, y0: ty - h / 2, x1: x0 + w, y1: ty + h / 2, m });
 }
 
 export class FlatMap {
@@ -52,17 +66,37 @@ export class FlatMap {
   // Such maps are locked to their standard movement by default; unlocking (this.free) allows turning them freely.
   get freeCapable() { return !!this.def && !this.def.lat && ['cylindrical', 'pseudocylindrical', 'conic', 'other'].includes(this.def.surface); }
   get oblique() { return this.freeCapable && !!this.free; }
-  get rotating() { return this.azimuthal || this.oblique; }
-  // lock / unlock free movement; locking straightens the map again (north up, normal aspect) but keeps the longitude
+  get rotating() { return this.azimuthal || this.oblique || !!this.aspect; }
+  // lock / unlock free movement. Locking keeps the map exactly as it is (any oblique aspect included) and only
+  // brings back the standard movement: dragging sideways scrolls the map along its own horizontal, dragging up
+  // and down slides it, nothing tilts any more. "North up" (or reset) returns to the normal aspect.
   setFree(on) {
-    this.free = !!on;
-    if (!on) { this.view.roll = 0; this.gKey = null; }
+    const v = this.view;
+    if (on) {
+      if (this.aspect) { const r = this.aspect; this.aspect = null; Object.assign(v, { lon: -r[0], lat: -r[1], roll: r[2], ty: 0 }); }
+      this.free = true;
+    } else {
+      this.free = false;
+      if (Math.abs(v.lat) > 0.01 || Math.abs(v.roll || 0) > 0.01) { this.aspect = [-v.lon, -v.lat, v.roll || 0]; v.ty = 0; }
+    }
+    this.gKey = null;
     this.apply(); this.request(); this.app.onViewChange?.();
+  }
+  // a sideways scroll in the map's own frame: rotate about the map's pole after the current rotation,
+  // re-expressed as d3's [λ, φ, γ] (M = Gx(γ)·Py(φ)·Lz(λ); new = Lz(δ)·M)
+  static scrollRotation([l, f, g], d) {
+    const R = Math.PI / 180, cl = Math.cos(l * R), sl = Math.sin(l * R), cf = Math.cos(f * R), sf = Math.sin(f * R), cg = Math.cos(g * R), sg = Math.sin(g * R);
+    const Lz = [[cl, -sl, 0], [sl, cl, 0], [0, 0, 1]], Py = [[cf, 0, -sf], [0, 1, 0], [sf, 0, cf]], Gx = [[1, 0, 0], [0, cg, -sg], [0, sg, cg]];
+    const mul = (A, B) => A.map((r, i) => B[0].map((_, j) => r[0] * B[0][j] + r[1] * B[1][j] + r[2] * B[2][j]));
+    const cd = Math.cos(d * R), sd = Math.sin(d * R);
+    const N = mul([[cd, -sd, 0], [sd, cd, 0], [0, 0, 1]], mul(Gx, mul(Py, Lz)));
+    return [Math.atan2(-N[0][1], N[0][0]) / R, Math.asin(Math.max(-1, Math.min(1, -N[0][2]))) / R, Math.atan2(-N[1][2], N[2][2]) / R];
   }
   get clipRad() { return (this.def.clip || 180) * Math.PI / 180; }
 
   setProjection(name) {
     this.projName = name;
+    this.aspect = null;
     this.def = PROJ[name];
     this.proj = this.def.make();
     if (this.def.clip) this.proj.clipAngle(this.def.clip);
@@ -110,6 +144,16 @@ export class FlatMap {
     const p = this.proj, v = this.view;
     v.k = Math.max(1, Math.min(MAX_K, v.k));
     v.lon = ((v.lon + 540) % 360) - 180;
+    if (this.aspect) {                             // locked in an oblique aspect: scroll and slide only
+      p.rotate(this.aspect).scale(this.baseScale * v.k).translate([0, 0]);
+      const [[x0, top], [x1, bot]] = geoPath(p).bounds(SPHERE);
+      const room = Math.max(0, (bot - top - this.H) / 2);
+      v.ty = Math.max(-room, Math.min(room, v.ty || 0));
+      p.translate([this.W / 2 - (x0 + x1) / 2, this.H / 2 - (top + bot) / 2 + v.ty]);
+      const c = p.invert([this.W / 2, this.H / 2]);
+      if (c && isFinite(c[0])) { v.lon = c[0]; v.lat = c[1]; }
+      return;
+    }
     if (this.rotating) {
       v.lat = Math.max(-90, Math.min(90, v.lat));
       p.rotate([-v.lon, -v.lat, v.roll || 0]).scale(this.baseScale * v.k).translate([this.W / 2, this.H / 2]);
@@ -130,7 +174,9 @@ export class FlatMap {
   // ---- navigation ------------------------------------------------------------------------------
   panBy(dx, dy, roll = false) {
     const p = this.proj, v = this.view;
-    if (roll && this.rotating) {
+    if (this.aspect) {
+      if (!roll) { this.aspect = FlatMap.scrollRotation(this.aspect, dx * 180 / Math.PI / p.scale()); v.ty = (v.ty || 0) + dy; }
+    } else if (roll && this.rotating) {
       v.roll = ((v.roll || 0) + dx * 0.4 + 540) % 360 - 180;
     } else if (this.rotating) {
       const deg = 180 / Math.PI / p.scale();
@@ -183,9 +229,9 @@ export class FlatMap {
     requestAnimationFrame(step);
   }
 
-  reset() { this.view = { lon: 60, lat: this.oblique ? 0 : 25, k: 1, roll: 0 }; this.apply(); this.request(); this.app.onViewChange?.(); }
+  reset() { this.aspect = null; this.view = { lon: 60, lat: this.oblique ? 0 : 25, k: 1, roll: 0 }; this.apply(); this.request(); this.app.onViewChange?.(); }
   // back to the normal aspect: north up, and (for oblique-capable maps) the equator straight
-  northUp() { this.view.roll = 0; if (this.oblique && this.view.k < 1.5) this.view.lat = 0; this.apply(); this.request(); this.app.onViewChange?.(); }
+  northUp() { if (this.aspect) { this.view.lat = 0; this.aspect = null; } this.view.roll = 0; if (this.oblique && this.view.k < 1.5) this.view.lat = 0; this.apply(); this.request(); this.app.onViewChange?.(); }
 
   bindEvents() {
     const c = this.canvas;
@@ -193,13 +239,22 @@ export class FlatMap {
     let moved = 0, last = null, pinch = null;
     c.addEventListener('pointerdown', e => {
       c.setPointerCapture(e.pointerId);
+      const cmp = this.app.compare, ll = this.proj.invert([e.offsetX, e.offsetY]);
+      if (cmp?.on && ll && cmp.contains(ll)) { this.cmpDrag = { grab: ll, c0: [...cmp.center] }; moved = 10; return; }
       this.pointers.set(e.pointerId, [e.offsetX, e.offsetY]);
       moved = 0; last = [e.offsetX, e.offsetY];
       if (this.pointers.size === 2) pinch = this.pinchState();
       c.classList.add('grabbing');
     });
     c.addEventListener('pointermove', e => {
-      if (!this.pointers.has(e.pointerId)) { this.app.onHover?.(this.hit(e.offsetX, e.offsetY), e); return; }
+      if (this.cmpDrag) {
+        const ll = this.proj.invert([e.offsetX, e.offsetY]), d = this.cmpDrag;
+        if (ll && isFinite(ll[0])) { let dl = ll[0] - d.grab[0]; if (dl > 180) dl -= 360; if (dl < -180) dl += 360; this.app.compare.center = [d.c0[0] + dl, Math.max(-80, Math.min(80, d.c0[1] + ll[1] - d.grab[1]))]; this.request(); }
+        return;
+      }
+      if (!this.pointers.has(e.pointerId)) {
+        const cl = this.app.compare?.on && this.proj.invert([e.offsetX, e.offsetY]);
+        c.style.cursor = cl && this.app.compare.contains(cl) ? 'move' : ''; this.app.onHover?.(this.hit(e.offsetX, e.offsetY), e); return; }
       this.pointers.set(e.pointerId, [e.offsetX, e.offsetY]);
       if (this.pointers.size === 2 && pinch) {
         const s = this.pinchState();
@@ -214,6 +269,7 @@ export class FlatMap {
       this.panBy(dx, dy, e.shiftKey || (e.buttons & 2) === 2);      // Shift- or right-drag: turn around the centre
     });
     const end = e => {
+      if (this.cmpDrag) { this.cmpDrag = null; return; }
       this.pointers.delete(e.pointerId);
       if (this.pointers.size < 2) pinch = null;
       if (this.pointers.size === 1) last = [...this.pointers.values()][0];
@@ -245,6 +301,8 @@ export class FlatMap {
 
   // what is under the cursor: a disputed area first, then the top-most polity
   hit(x, y) {
+    const mk = (this.markerHits || []).find(b => x >= b.x0 && x <= b.x1 && y >= b.y0 && y <= b.y1);
+    if (mk) return { marker: mk.m };
     const ll = this.proj.invert([x, y]);
     if (!ll || !isFinite(ll[0])) return null;
     if (this.azimuthal && geoDistance(ll, [this.view.lon, this.view.lat]) > this.clipRad) return null;
@@ -442,7 +500,7 @@ export class FlatMap {
           ctx.fillStyle = S.ice; ctx.fill(this.P2(store.physical.ice));
         }
       });
-      if (st.basemap === 'physical' && this.relief) this.drawRelief();
+      if (st.basemap === 'physical' && st.relief && this.relief) { this.relief.only = reliefFor(st.mode, this.relief.regions); this.drawRelief(); }
       else if (this.reliefShown?.length) { this.reliefShown = []; this.app.updateReliefCredit?.([]); }
     }
 
@@ -454,16 +512,14 @@ export class FlatMap {
       this.each(ctx, a => {
         ctx.save();
         if (this.base?.land) ctx.clip(this.P2(this.base.land));   // coarse world shapes: keep them off the sea
-        ctx.globalAlpha = 0.55; ctx.fillStyle = '#d9d4c7';
+        ctx.globalAlpha = 0.45; ctx.fillStyle = '#d9d4c7';    // one quiet tone, no outlines
         for (const f of F.context) ctx.fill(this.P2(f));
-        ctx.strokeStyle = 'rgba(80,80,80,0.5)'; ctx.lineWidth = lw(0.5, a);
-        for (const f of F.context) ctx.stroke(this.P2(f));
         ctx.globalAlpha = 1; ctx.restore();
       });
     }
-    const fillB = this.layer('B');
-    this.drawFills(fillB.getContext('2d'), feats, F);
-    this.updateTransition(feats, F, fillB);
+    const fillB = this.layer('B'), fillFeats = F.fillFeats || feats;
+    this.drawFills(fillB.getContext('2d'), fillFeats, F);
+    this.updateTransition(fillFeats, F, fillB);
     const prog = this.composite(fillB);
     const alpha = Math.min(1, S.polityAlpha * st.density / 0.85);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -501,7 +557,16 @@ export class FlatMap {
         for (const f of feats) ctx.stroke(this.P2(f));
         ctx.globalAlpha = 1;
       }
-      // Taiwan with both layers: administrative boundaries over the control areas
+      // both layers: control areas as a ribbon inside their edge (clip to the area, stroke twice the width)
+      if (F.ribbons) {
+        for (const f of F.ribbons) {
+          const p = this.P2(f);
+          ctx.save(); ctx.clip(p);
+          ctx.globalAlpha = 0.8; ctx.strokeStyle = F.color(f.properties.p); ctx.lineWidth = lw(10, a); ctx.stroke(p);
+          ctx.restore();
+        }
+      }
+      // divisions' boundaries
       if (F.adminLines) {
         ctx.setLineDash([5 / a, 3 / a]); ctx.lineWidth = lw(1.3, a);
         ctx.strokeStyle = 'rgba(40,40,70,0.85)'; ctx.stroke(this.P2(F.adminLines)); ctx.setLineDash([]);
@@ -524,7 +589,7 @@ export class FlatMap {
         } else { ctx.strokeStyle = S.river; ctx.lineWidth = lw(0.8, a); }
         for (const p of rv) ctx.stroke(p);
       }
-      if (st.modern && store.modern) {
+      if (st.modern && store.modern && !REGIONS.includes(st.mode)) {
         ctx.setLineDash([4 / a, 2 / a]); ctx.lineWidth = lw(0.9, a);
         ctx.strokeStyle = S.modern || 'rgba(120,0,90,0.85)'; ctx.stroke(this.P2(store.modern));
         ctx.setLineDash([]);
@@ -538,9 +603,14 @@ export class FlatMap {
     // outline of the sphere
     if (!this.cyl) { ctx.beginPath(); live(this.outline); ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 1; ctx.stroke(); }
 
+    if (st.distort && this.def.prop !== 'perspective' || st.distort && this.def.light === 'gnomonic') this.drawDistortion();
     if (st.labels) this.drawLabels(feats, S, F);
     if (st.selected != null) this.drawSelection(feats, st.selected);
     this.drawMarkers(F, S);
+    if (this.app.compare?.on) {
+      const center = [this.view.lon, this.view.lat];
+      this.app.drawCompare(ctx, ll => (this.azimuthal && geoDistance(ll, center) > this.clipRad - 0.02) ? null : this.proj(ll), ll => this.featureAt(ll));
+    }
     this.app.eventLayer?.draw(ctx, proj => this.proj(proj), st.langInfo.col);
   }
 
@@ -571,11 +641,12 @@ export class FlatMap {
       ctx.strokeText(name, p[0], p[1]); ctx.fillStyle = '#8b0000'; ctx.fillText(name, p[0], p[1]);
     }
     ctx.textAlign = 'left';
-    const placed = [];
+    const placed = [], hits = this.markerHits = [];
     for (const m of F.markers) {
       if (!visible([m.lon, m.lat])) continue;
       const p = proj([m.lon, m.lat]); if (!p) continue;
-      drawMarker(ctx, p[0], p[1], m, col, S, placed);
+      if (m.kind && m.kind !== 'gov') { const q = proj([m.lon + 0.5, m.lat]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) < 30) continue; }   // seats only once zoomed in
+      drawMarker(ctx, p[0], p[1], m, col, S, placed, hits);
     }
   }
 
@@ -602,7 +673,7 @@ export class FlatMap {
   // regional terrain shading (relief.js), multiplied over the physical base map; coarse while moving
   drawRelief() {
     const { ctx, W, H } = this;
-    const key = [this.projName, this.view.lon.toFixed(3), this.view.lat.toFixed(3), this.view.k.toFixed(3), this.view.roll || 0, W, H].join();
+    const key = [this.relief.only, this.projName, this.view.lon.toFixed(3), this.view.lat.toFixed(3), this.view.k.toFixed(3), this.view.roll || 0, W, H].join();
     const c = this.reliefCache;
     if (!c || c.key !== key || c.stale) {
       const fine = c?.settledKey === key;
@@ -620,6 +691,26 @@ export class FlatMap {
     ctx.save(); ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
     ctx.globalCompositeOperation = 'multiply'; ctx.globalAlpha = 0.75; ctx.imageSmoothingEnabled = true;
     ctx.drawImage(r.canvas, 0, 0, W, H);
+    ctx.restore();
+  }
+  // distortion hint mask (distortion.js): coarse while moving, finer once the view settles
+  drawDistortion() {
+    const { ctx, W, H } = this, st = this.app.state;
+    const strength = this.app.distortStrength?.(this.projName) ?? 0.55;
+    const key = [this.projName, this.view.lon.toFixed(3), this.view.lat.toFixed(3), this.view.k.toFixed(3), this.view.roll || 0, String(this.aspect), W, H].join();
+    const c = this.distCache;
+    if (!c || c.key !== key || c.strength !== strength || c.stale) {
+      const fine = c?.settledKey === key;
+      this.distMask ||= new DistortionMask();
+      const r = this.distMask.render(this, strength, fine);
+      this.distCache = { key, strength, r, settledKey: fine ? key : null };
+      clearTimeout(this.distTimer);
+      if (!fine) this.distTimer = setTimeout(() => { this.distCache.settledKey = key; this.distCache.stale = true; this.request(); }, 220);
+    }
+    const r = this.distCache.r; if (!r) return;
+    ctx.save(); ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    ctx.imageSmoothingEnabled = true;
+    ctx.drawImage(r.canvas, -r.step / 2, -r.step / 2, r.canvas.width * r.step, r.canvas.height * r.step);
     ctx.restore();
   }
   setRelief(relief) { this.relief = relief; this.reliefCache = null; if (this.proj) this.request(); }
@@ -678,7 +769,7 @@ export class FlatMap {
     const st = this.app.state, center = [this.view.lon, this.view.lat];
     const lim = Math.min(this.clipRad, 2.6) - 0.05;
     const items = labelItems(feats, st, proj.scale(), Math.min(34, W / 18),
-      lp => (this.azimuthal && geoDistance(lp, center) > lim) ? null : proj(lp), F?.adminFeats);
+      lp => (this.azimuthal && geoDistance(lp, center) > lim) ? null : proj(lp), F?.adminFeats, W, H);
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     placeLabels(ctx, items, W, H, S.label);
   }
@@ -698,6 +789,7 @@ export class FlatMap {
 
   getCenter() { return { lon: this.view.lon, lat: this.view.lat, k: this.view.k, roll: this.view.roll || 0 }; }
   setCenter({ lon, lat, k, roll }) {
+    this.aspect = null;
     // a whole-world view keeps the normal aspect when switching into an oblique-capable projection
     if (this.oblique && k < 1.5 && roll == null) lat = 0;
     Object.assign(this.view, { lon, lat, k, roll: roll || 0 }); this.apply(); this.request();

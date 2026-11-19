@@ -59,4 +59,6 @@ python3 data-pipeline/russia/units.py "$NE" data-pipeline/build/russia_units.geo
 NE="$NE" python3 data-pipeline/russia/gen.py
 $MS -i data-pipeline/build/russia_units.geojson -simplify 8% keep-shapes -o format=topojson quantization=100000 $OUT/russia_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs russia
+# label anchors (modern countries are named in their home part, not their biggest piece)
+NE="$NE" python3 data-pipeline/anchors.py
 du -sh $OUT

@@ -12,7 +12,8 @@ de-facto-control and naming rules (see CLAUDE.md §2), and writes:
 
 Usage:  python3 build.py <cliopatria.geojson> <natural-earth geojson dir>
 """
-import json, sys, os, re, hashlib, colorsys
+import json
+import numpy as np, sys, os, re, hashlib, colorsys
 from collections import defaultdict
 from shapely.geometry import shape, mapping, Point, box as shapely_box
 from shapely.ops import unary_union
@@ -247,6 +248,9 @@ for i, r in enumerate(rows):
         by_qid.setdefault(mutual[i], []).append((r['from'], r['to'], r['qid']))
 def claimed(a3, r):     # is this country already represented by a different state in these years?
     return any(a <= r['to'] and b >= r['from'] and q != r.get('qid') for a, b, q in by_qid.get(a3, []))
+from shapely.ops import transform as _tf
+def _ea(g):     # area on a cylindrical equal-area plane (x = lon, y = sin lat)
+    return _tf(lambda x, y, z=None: (x, np.sin(np.radians(y))), g).area if not g.is_empty else 0.0
 # 2) otherwise by overlap (predecessor names, untagged fragments)
 for i, r in enumerate(rows):
     if i in mutual or r['to'] < MODERN_FROM or r['name'] in overrides or r.get('unrecognized'):
@@ -256,7 +260,10 @@ for i, r in enumerate(rows):
         if not g.intersects(r['g'].envelope):
             continue
         a = g.intersection(r['g']).area
-        if a >= 0.5 * ra and a >= 0.5 * g.area and not claimed(home(p['ADM0_A3']), r):
+        # the row must essentially BE that country (≥80% of its true area inside): an empire or union whose biggest
+        # piece is a later state keeps its own name (Estado Novo is not "Angola", the USSR not "Russia",
+        # Czechoslovakia not "Czech Republic"). Areas in lon/sin(lat) — equal-area — so northern land isn't overweighted.
+        if a >= 0.5 * ra and a >= 0.5 * g.area and _ea(g.intersection(r['g'])) >= 0.8 * _ea(r['g']) and not claimed(home(p['ADM0_A3']), r):
             mutual[i] = home(p['ADM0_A3']); break
         if ra < 0.1 * g.area and a >= 0.5 * ra and not (r.get('qid') and claimed(home(p['ADM0_A3']), r)):
             fragment[i] = home(p['ADM0_A3'])

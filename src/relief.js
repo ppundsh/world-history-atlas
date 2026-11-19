@@ -14,6 +14,12 @@ export const RELIEF_REGIONS = [
     credit: { 'zh-Hant': '地形陰影：內政部 20 公尺 DTM 加工製作', 'zh-Hans': '地形阴影：内政部 20 米 DTM 加工制作', en: 'Hillshade: made from Taiwan MOI 20 m DTM', ja: '陰影：台湾内政部 20 m DTM を加工して作成' } },
 ];
 
+// which regions a mode may load: Taiwan mode never fetches Japan's tiles and the other way round
+export function reliefFor(mode, regions) {
+  const own = { taiwan: ['tw'], japan: ['jp'] }[mode];
+  return own ? regions.filter(r => own.includes(r.id)).map(r => r.id) : regions.map(r => r.id);
+}
+
 // local regions are used only when their tiles exist
 export async function availableRelief() {
   const out = [];
@@ -84,7 +90,7 @@ export class Relief {
       if (!ll || !isFinite(ll[0]) || !isFinite(ll[1])) continue;
       bb = [Math.min(bb[0], ll[0]), Math.min(bb[1], ll[1]), Math.max(bb[2], ll[0]), Math.max(bb[3], ll[1])];
     }
-    const regions = this.regions.filter(r => overlap(r.bounds, bb));
+    const regions = this.regions.filter(r => (!this.only || this.only.includes(r.id)) && overlap(r.bounds, bb));
     if (!regions.length) return null;
     const ppd = W / Math.max(0.01, bb[2] - bb[0]);
     const ms = regions.map(r => ({ r, m: this.mosaic(r, bb, ppd * (scale < 1 ? 1 : 1)) })).filter(x => x.m);

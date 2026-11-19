@@ -19,6 +19,8 @@ export async function loadCore() {
   store.coarse = { land: feature(base110, base110.objects[o.find(k => /land/.test(k))]), lakes: { type: 'FeatureCollection', features: [] }, rivers: { type: 'FeatureCollection', features: [] } };
   store.meta = meta;
   store.polities = polities;
+  // modern countries' own label points (anchors.py): label a polity in its home part, not its biggest piece
+  store.anchors = await json('anchors.json').catch(() => ({}));
   store.base = {
     land: feature(base, base.objects.ne_50m_land),
     lakes: feature(base, base.objects.ne_50m_lakes),
@@ -100,7 +102,9 @@ export function countFor(year) {
   return m.counts[Math.max(0, Math.min(m.counts.length - 1, year - m.from))];
 }
 
-// Label anchor: pole of inaccessibility of the largest ring (planar lon/lat is good enough for placement)
+// Label anchor: pole of inaccessibility of the home ring — the one containing (or nearest to) the polity's
+// anchor when it has one (modern countries, see anchors.py), otherwise the largest ring
+// (planar lon/lat is good enough for placement)
 function labelPoint(f) {
   const g = f.geometry;
   if (!g) return null;
@@ -111,11 +115,31 @@ function labelPoint(f) {
     const a = Math.abs(ringArea(p[0]));
     if (a > bestA) { bestA = a; best = p; }
   }
+  const an = store.anchors?.[f.properties.p];
+  if (an && polys.length > 1) {
+    let home = polys.find(p => inRing(an, p[0]));
+    if (!home) {                                   // nearest sizeable ring within ~6°
+      let d0 = 36;
+      for (const p of polys) {
+        if (Math.abs(ringArea(p[0])) < bestA * 0.02) continue;
+        for (const c of p[0]) { const d = (c[0] - an[0]) ** 2 + (c[1] - an[1]) ** 2; if (d < d0) { d0 = d; home = p; } }
+      }
+    }
+    if (home && Math.abs(ringArea(home[0])) > bestA * 0.02) best = home;
+  }
   // rings that cross the antimeridian: fall back to the spherical centroid
   const xs = best[0].map(c => c[0]);
   if (Math.max(...xs) - Math.min(...xs) > 300) return geoCentroid(f);
   const pt = polylabel(best, 0.05);
   return [pt[0], pt[1]];
+}
+function inRing([x, y], r) {
+  let inside = false;
+  for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+    const [xi, yi] = r[i], [xj, yj] = r[j];
+    if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
 }
 
 function ringArea(r) {

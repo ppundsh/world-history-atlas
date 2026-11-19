@@ -1,3 +1,4 @@
+import { reliefFor } from './relief.js';
 // 3D globe: MapLibre GL JS in globe projection. Every source is local (GeoJSON built from our own
 // data, optional raster tiles under /basemap); no tile server, no remote style, no remote glyphs —
 // labels are drawn on a 2D canvas overlay with system fonts.
@@ -49,7 +50,20 @@ export class GlobeMap {
     this.ready = true;
     this.map.on('render', () => this.drawOverlay());
     this.map.on('move', () => this.app.onViewChange?.());
-    this.map.on('click', e => this.app.onSelect?.(this.hit(e.point), e.originalEvent));
+    // floating Taiwan: drag it instead of the globe
+    this.map.on('mousedown', e => {
+      const cmp = this.app.compare, ll = [e.lngLat.lng, e.lngLat.lat];
+      if (!cmp?.contains(ll)) return;
+      this.cmpDrag = { grab: ll, c0: [...cmp.center] }; this.map.dragPan.disable();
+    });
+    this.map.on('mousemove', e => {
+      if (!this.cmpDrag) return;
+      const d = this.cmpDrag, cmp = this.app.compare;
+      cmp.center = [d.c0[0] + e.lngLat.lng - d.grab[0], Math.max(-80, Math.min(80, d.c0[1] + e.lngLat.lat - d.grab[1]))];
+      this.map.triggerRepaint();
+    });
+    this.map.on('mouseup', () => { if (this.cmpDrag) { this.cmpDrag = null; this.map.dragPan.enable(); this.cmpJustDragged = true; setTimeout(() => { this.cmpJustDragged = false; }, 50); } });
+    this.map.on('click', e => { if (this.cmpJustDragged) return; this.app.onSelect?.(this.hit(e.point), e.originalEvent); });
     this.map.on('mousemove', e => this.app.onHover?.(this.hit(e.point), e.originalEvent));
     new ResizeObserver(() => this.resizeOverlay()).observe(this.container);
     this.resizeOverlay();
@@ -72,6 +86,7 @@ export class GlobeMap {
         roc: { type: 'geojson', data: EMPTY },
         rborder: { type: 'geojson', data: EMPTY },
         aborder: { type: 'geojson', data: EMPTY },
+        ribbon: { type: 'geojson', data: EMPTY },
         context: { type: 'geojson', data: EMPTY, promoteId: 'k' },
         overlay: { type: 'geojson', data: EMPTY },
         disputed: { type: 'geojson', data: EMPTY },
@@ -95,8 +110,8 @@ export class GlobeMap {
         { id: 'regions', type: 'fill', source: 'regions', paint: { 'fill-color': ['match', ['get', 'k'], 'Desert', '#eadba6', 'Range/mtn', '#cbb994', 'Plateau', '#d8cba8', 'Tundra', '#dfe3d8', S.land] } },
         { id: 'ice', type: 'fill', source: 'ice', paint: { 'fill-color': '#f6f9fc' } },
         ...(this.app.reliefRegions || []).map(r => ({ id: 'relief-' + r.id, type: 'raster', source: 'relief-' + r.id, minzoom: Math.max(0, r.minzoom - 1), layout: { visibility: 'none' }, paint: { 'raster-opacity': 0.45, 'raster-fade-duration': 0 } })),
-        { id: 'context-fill', type: 'fill', source: 'context', paint: { 'fill-color': '#d9d4c7', 'fill-opacity': ON(0.55) } },
-        { id: 'context-line', type: 'line', source: 'context', paint: { 'line-color': 'rgba(80,80,80,0.5)', 'line-width': 0.5, 'line-opacity': ON(1) } },
+        { id: 'context-fill', type: 'fill', source: 'context', paint: { 'fill-color': '#d9d4c7', 'fill-opacity': ON(0.45) } },
+        { id: 'context-line', type: 'line', source: 'context', paint: { 'line-color': 'rgba(80,80,80,0.5)', 'line-width': 0.5, 'line-opacity': 0 } },
         ...['', '2'].map(x => ({ id: 'polity-fill' + x, type: 'fill', source: 'polities' + x, paint: { 'fill-color': ['coalesce', ['feature-state', 'c'], ['get', 'c']], 'fill-opacity': SHOWN(S.polityAlpha) } })),
         { id: 'polity-stripe', type: 'fill', source: 'stripes', paint: { 'fill-pattern': ['concat', 'stripe-', ['get', 'sc']], 'fill-opacity': S.polityAlpha } },
         { id: 'overlay-fill', type: 'fill', source: 'overlay', paint: { 'fill-color': '#d32f2f', 'fill-opacity': 0.35 } },
@@ -115,6 +130,7 @@ export class GlobeMap {
         { id: 'riversLocal', type: 'line', source: 'riversLocal', minzoom: 4, paint: { 'line-color': 'rgba(30,100,190,0.95)', 'line-width': 1.3 } },
         { id: 'modern', type: 'line', source: 'modern', layout: { visibility: 'none' }, paint: { 'line-color': S.modern || 'rgba(120,0,90,0.85)', 'line-width': 0.9, 'line-dasharray': [4, 2] } },
         { id: 'rborder', type: 'line', source: 'rborder', paint: { 'line-color': S.border, 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.6, 6, 1.6] } },
+        { id: 'ribbon', type: 'line', source: 'ribbon', paint: { 'line-color': ['get', 'c'], 'line-opacity': 0.75, 'line-width': ['interpolate', ['linear'], ['zoom'], 2, 3, 7, 9] } },
         { id: 'aborder', type: 'line', source: 'aborder', paint: { 'line-color': 'rgba(40,40,70,0.85)', 'line-dasharray': [3, 2], 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.7, 6, 1.5] } },
         { id: 'roc-case', type: 'line', source: 'roc', paint: { 'line-color': 'rgba(255,255,255,0.85)', 'line-width': 4.2 } },
         { id: 'roc-line', type: 'line', source: 'roc', paint: { 'line-color': ROC_COLOR, 'line-width': 2.4 } },
@@ -177,7 +193,7 @@ export class GlobeMap {
     }
     // 2) per-feature state: alive, colour, ROC outline, selection
     const want = new Map();
-    for (const f of regional ? F.units : feats) {
+    for (const f of regional ? (F.fillUnits || F.units) : feats) {
       const k = regional ? f.properties.prov.id : f.properties.fi;
       want.set(k, { on: true, c: F.color(f.properties.p), sel: st.selected != null && f.properties.p === st.selected });
     }
@@ -223,7 +239,7 @@ export class GlobeMap {
       });
     }
     if (st.modern && store.modern && !this.modernSet) { m.getSource('modern').setData(store.modern); this.modernSet = true; }
-    m.setLayoutProperty('modern', 'visibility', st.modern ? 'visible' : 'none');
+    m.setLayoutProperty('modern', 'visibility', st.modern && !REGIONS.includes(st.mode) ? 'visible' : 'none');
     m.setLayoutProperty('rivers', 'visibility', st.rivers ? 'visible' : 'none');
     // merged regional modes (Taiwan): unit fills come from feature-state, borders only between areas
     if ((F.border || null) !== this.borderSet) { this.borderSet = F.border || null; m.getSource('rborder').setData(this.borderSet || EMPTY); }
@@ -231,6 +247,10 @@ export class GlobeMap {
     m.setLayoutProperty('rborder', 'visibility', st.borders && F.border ? 'visible' : 'none');
     // merged regional units: no anti-aliased seams between neighbouring units of the same colour
     if (!!F.border !== this.seamless) { this.seamless = !!F.border; for (const x of ['', '2']) m.setPaintProperty('polity-fill' + x, 'fill-antialias', !this.seamless); }
+    if ((F.ribbons || null) !== this.ribbonSet) {
+      this.ribbonSet = F.ribbons || null;
+      m.getSource('ribbon').setData(this.ribbonSet ? { type: 'FeatureCollection', features: this.ribbonSet.map(f => ({ type: 'Feature', geometry: f.geometry, properties: { c: F.color(f.properties.p) } })) } : EMPTY);
+    }
     if ((F.adminLines || null) !== this.adminSet) { this.adminSet = F.adminLines || null; m.getSource('aborder').setData(this.adminSet || EMPTY); }
     if ((F.rocOutline || null) !== this.rocSet) { this.rocSet = F.rocOutline || null; m.getSource('roc').setData(this.rocSet || EMPTY); }
     if (store.detail && !this.detailSet) { m.getSource('rivers10').setData(store.detail.rivers); m.getSource('lakes10').setData(store.detail.lakes); if (store.detail.local) m.getSource('riversLocal').setData(store.detail.local); this.detailSet = true; }
@@ -378,8 +398,10 @@ export class GlobeMap {
       m.getSource('ice').setData(ph.ice);
     }
     for (const id of ['bathy', 'regions', 'ice']) m.setLayoutProperty(id, 'visibility', phys ? 'visible' : 'none');
-    for (const r of this.app.reliefRegions || []) m.setLayoutProperty('relief-' + r.id, 'visibility', phys ? 'visible' : 'none');
-    this.app.updateReliefCredit?.(phys ? (this.app.reliefRegions || []).map(r => r.id) : []);
+    // high-resolution hillshade: opt-in, and only the current mode's region
+    const rel = phys && st.relief ? reliefFor(st.mode, this.app.reliefRegions || []) : [];
+    for (const r of this.app.reliefRegions || []) m.setLayoutProperty('relief-' + r.id, 'visibility', rel.includes(r.id) ? 'visible' : 'none');
+    this.app.updateReliefCredit?.(rel);
     const sat = st.basemap === 'satellite' && !!this.app.satTiles;
     if (m.getLayer('sat')) m.setLayoutProperty('sat', 'visibility', sat ? 'visible' : 'none');
     for (const r of this.app.satRegions || []) m.setLayoutProperty('sat-' + r.id, 'visibility', sat ? 'visible' : 'none');
@@ -388,6 +410,8 @@ export class GlobeMap {
   }
 
   hit(point) {
+    const mk = (this.markerHits || []).find(b => point.x >= b.x0 && point.x <= b.x1 && point.y >= b.y0 && point.y <= b.y1);
+    if (mk) return { marker: mk.m };
     const st = this.app.state;
     const d = this.map.queryRenderedFeatures(point, { layers: ['disputed-hatch'] })[0];
     const f = this.map.queryRenderedFeatures(point, { layers: [this.src === 'polities2' ? 'polity-fill2' : 'polity-fill'] }).filter(x => x.state?.on);
@@ -407,6 +431,10 @@ export class GlobeMap {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, W, H);
     const st = this.app.state;
+    if (this.app.compare?.on) {
+      const m = this.map, cc = m.getCenter(), ctr = [cc.lng, cc.lat];
+      this.app.drawCompare(ctx, ll => geoDistance(ll, ctr) > 1.5 ? null : (p => [p.x, p.y])(m.project(ll)), ll => this.featureAtLL?.(ll));
+    }
     if (!st.labels) return;
     const S = BASEMAPS[st.basemap];
     const m = this.map;
@@ -416,7 +444,7 @@ export class GlobeMap {
     const p0 = m.project([c.lng, c.lat]), p1 = m.project([c.lng + 1, c.lat]);
     const scale = Math.hypot(p1.x - p0.x, p1.y - p0.y) * 180 / Math.PI / Math.max(0.2, Math.cos(c.lat * Math.PI / 180));
     const items = labelItems(this.feats, st, scale, Math.min(34, this.W / 18),
-      lp => geoDistance(lp, center) > 1.35 ? null : (p => [p.x, p.y])(m.project(lp)), this.F?.adminFeats);
+      lp => geoDistance(lp, center) > 1.35 ? null : (p => [p.x, p.y])(m.project(lp)), this.F?.adminFeats, W, H);
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     placeLabels(ctx, items, W, H, S.label);
     this.drawMarkers(ctx, center, S);
@@ -434,11 +462,12 @@ export class GlobeMap {
       ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.strokeText(name, p.x, p.y);
       ctx.fillStyle = '#8b0000'; ctx.fillText(name, p.x, p.y);
     }
-    const placed = [];
+    const placed = [], hits = this.markerHits = [];
     for (const g of F.markers) {
       if (geoDistance([g.lon, g.lat], center) > 1.4) continue;
       const p = m.project([g.lon, g.lat]);
-      drawMarker(ctx, p.x, p.y, g, col, S, placed);
+      if (g.kind && g.kind !== 'gov') { const q = m.project([g.lon + 0.5, g.lat]); if (Math.hypot(q.x - p.x, q.y - p.y) < 30) continue; }
+      drawMarker(ctx, p.x, p.y, g, col, S, placed, hits);
     }
   }
 

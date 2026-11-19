@@ -4,6 +4,8 @@ import { PROJ_INFO } from './projinfo.gen.js';
 import { PROJ_METRICS } from './projmetrics.gen.js';
 import { EventLayer, eventsEnabled } from './eventlayer.js';
 import { Relief, availableRelief } from './relief.js';
+import { TaiwanCompare } from './compare.js';
+import { BASEMAPS } from './styles.js';
 import { WORLD_EVENTS } from './worldEvents.gen.js';
 import { LANGS, t, formatYear, detectLang, safeGet, safeSet } from './i18n.js';
 import { FlatMap } from './flat.js';
@@ -44,7 +46,7 @@ const app = {
     projBy: safeGet('projBy') || 'surface', density: +(safeGet('density') || 0.85),
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
-    minFont: safeGet('minFont') === '1', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
+    minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', powers: safeGet('powers') === '1', distort: safeGet('distort') === '1', labelsIn: safeGet('labelsIn') !== '0', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
   legendCollapsed: window.innerWidth < 700,          // keep the map visible on phones
@@ -75,6 +77,21 @@ app.flat = new FlatMap($('#flat'), app);
 app.reliefRegions = await availableRelief();
 app.flat.setRelief(new Relief(app.reliefRegions, () => app.flat.reliefChanged()));
 app.updateReliefCredit = ids => { app.reliefIds = ids; projTags(); };
+// distortion mask strength, kept per projection (each projection's mask measures something different)
+app.compare = new TaiwanCompare(app);
+// floating Taiwan: what is under it (cached per position and date), then drawn by compare.js
+app.drawCompare = (ctx, project) => {
+  const cmp = app.compare; if (!cmp.shape || !cmp.center) return;
+  const key = [cmp.center.join(), st.mode, st.year, st.cm].join('|');
+  if (cmp.infoKey !== key) {
+    cmp.infoKey = key;
+    cmp.info = cmp.summary(ll => app.flat.featureAt(ll), st.lang);
+    if (cmp.info.kind === 'area') cmp.info.name = P.name(cmp.info.id, st.langInfo.col);
+  }
+  const s = t(st.lang);
+  cmp.draw(ctx, project, cmp.info, st.lang, { ...s, font: BASEMAPS[st.basemap].label.font });
+};
+app.distortStrength = name => { const v = +safeGet('distort:' + name); return v > 0 ? v : 0.55; };
 buildUI();
 applyLang();
 await setProjection(st.projection);
@@ -123,6 +140,7 @@ async function setProjection(name) {
   $('#north').hidden = !(isGlobe || app.flat?.rotating);
   $('#lockBtn').hidden = true;
   $('#bearingBox').hidden = !isGlobe;
+  if ($('#distortBox')) syncDistort();
   if (isGlobe) {
     if (!app.globe) {
       const { GlobeMap } = await import('./globe.js');     // MapLibre is only downloaded when the globe is opened
@@ -191,6 +209,7 @@ function setPos(pos) {
 function step(d) { pause(); st.transition = 'grow'; return isChina() ? setMonth(st.cm + d) : setYear(st.year + d); }
 
 function renderYear() {
+  syncEvTable();
   const s = t(st.lang);
   const F = frame(st);
   if (isChina()) {
@@ -267,10 +286,10 @@ async function setMode(mode) {
   $('#relLabelsBox').hidden = mode !== 'religion';
   $('#l-labels').textContent = mode === 'religion' ? t(st.lang).labelsRel : t(st.lang).labels;
   if (mode === 'religion') await loadReligions();
-  $('#layerBox').hidden = !LAYERED.includes(mode); $('#overseasBox').hidden = mode !== 'japan';
+  $('#layerBox').hidden = !LAYERED.includes(mode); $('#overseasBox').hidden = mode !== 'japan'; $('#localBox').hidden = mode !== 'taiwan'; $('#toWorld').hidden = !REGIONS.includes(mode);
   if (REGIONS.includes(mode)) {
     $('#busy').hidden = false; await loadRegion(mode); $('#busy').hidden = true;
-    st.cm = st.cmBy[mode] ?? monthOf(reg(), ...REGION_FIRST[mode].split('-').map(Number));
+    st.cm = st.cmBy[mode] ?? (REGION_FIRST[mode] ? monthOf(reg(), ...REGION_FIRST[mode].split('-').map(Number)) : 0);
     if (prev !== mode) {
       const v = { ...REGION_VIEW[mode] };
       if (st.projection === 'globe') { v.k *= mode === 'taiwan' ? 0.5 : 0.7; app.globe?.setCenter(v); } else app.flat.setCenter(v);
@@ -288,6 +307,8 @@ async function setMode(mode) {
     buildTicks(); drawSpark();
     await setYear(st.year);
   }
+  if (st.relief) app.globe?.applyBasemap();
+  buildEvTable();
   app.globe?.update(true);
   writeHash();
 }
@@ -325,6 +346,12 @@ function play() {
   $('#play').classList.add('on'); $('#play').title = t(st.lang).pause;
   music.play();
   rafId = requestAnimationFrame(tick);
+}
+function syncDistort() {
+  const box = $('#distortBox');
+  box.hidden = !st.distort || st.projection === 'globe';
+  $('#distortStr').value = String(app.distortStrength(st.projection));
+  $('#t-distort').closest('label').title = t(st.lang).distortTip;
 }
 // free-movement lock for maps that can be turned in every direction
 function syncLayers() { $('#ly-control').checked = st.layers.control; $('#ly-admin').checked = st.layers.admin; $('#ov-japan').checked = !!st.overseas; }
@@ -383,11 +410,18 @@ function buildUI() {
     projTags(); redraw(); writeHash();
   };
   $('#pov').onchange = e => { st.pov = e.target.value; redraw(); writeHash(); };
-  for (const k of ['labels', 'borders', 'rivers', 'graticule', 'modern', 'minFont', 'animate', 'events']) {
+  for (const k of ['labels', 'labelsIn', 'borders', 'rivers', 'graticule', 'modern', 'distort', 'relief', 'twCompare', 'evTable', 'minFont', 'animate', 'events']) {
     const el = $('#t-' + k); el.checked = st[k];
     el.onchange = async () => {
       st[k] = el.checked;
-      if (['modern', 'minFont', 'animate', 'events'].includes(k)) safeSet(k, el.checked ? '1' : '0');
+      if (['modern', 'minFont', 'animate', 'events', 'relief', 'labelsIn', 'distort', 'evTable'].includes(k)) safeSet(k, el.checked ? '1' : '0');
+      if (k === 'distort') syncDistort();
+      if (k === 'evTable') buildEvTable();
+      if (k === 'twCompare') {
+        await app.compare.load(); app.compare.on = st.twCompare;
+        if (st.twCompare) { const v = currentView(); app.compare.center = [v.lon, Math.max(-60, Math.min(60, v.lat))]; app.compare.infoKey = null; }
+      }
+      if (k === 'relief') { app.flat.reliefChanged(); await app.globe?.applyBasemap(); }
       if (k === 'modern' && st.modern) await loadModern();
       if (k === 'rivers' && st.rivers && currentView().k >= 4) await loadDetail();
       if (k === 'events') { buildEventMarks(); renderYear(); }
@@ -395,6 +429,8 @@ function buildUI() {
       redraw();
     };
   }
+  $('#distortStr').oninput = e => { safeSet('distort:' + st.projection, e.target.value); redraw(); };
+  syncDistort();
   $('#speed').innerHTML = SPEEDS.map(s => `<option value="${s}">${s}×</option>`).join('');
   $('#speed').value = String(st.speed);
   $('#speed').onchange = e => { st.speed = +e.target.value; safeSet('speed', e.target.value); };
@@ -405,8 +441,14 @@ function buildUI() {
   $('#slider').oninput = e => { st.transition = 'grow'; setPos(e.target.value / 10000); };
   $('#yearInput').onchange = e => { pause(); st.transition = 'jump'; isChina() ? setMonth(monthOf(reg(), +e.target.value)) : setYear(+e.target.value); };
   $('#mode').onchange = e => setMode(e.target.value);
+  // regional modes: one click back to world history at the same year
+  $('#toWorld').onclick = () => { $('#mode').value = 'world'; setMode('world'); };
   // Japan: overseas territories on / off
   $('#ov-japan').onchange = e => { st.overseas = e.target.checked; st.transition = 'jump'; st.selected = null; hideInfo(); app.globe?.update(true); renderYear(); writeHash(); };
+  for (const [el, k] of [['#lc-feud', 'feuds'], ['#lc-power', 'powers']]) {
+    $(el).checked = !!st[k];
+    $(el).onchange = e => { st[k] = e.target.checked; safeSet(k, st[k] ? '1' : '0'); app.globe?.update(true); redraw(); };
+  }
   // Taiwan layers: control areas and/or administrative divisions (at least one stays on)
   for (const k of ['control', 'admin']) $('#ly-' + k).onchange = e => {
     st.layers[k] = e.target.checked;
@@ -446,6 +488,7 @@ function buildUI() {
     if (e.key === 'Escape') { st.selected = null; hideInfo(); redraw(); }
   });
   app.onSelect = hit => {
+    if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
     app.selectedProv = null;
     if (!hit) { st.selected = null; hideInfo(); redraw(); return; }
     if (hit.prov) { st.selected = hit.polity; app.selectedProv = hit.prov; showProvince(hit.prov); }
@@ -457,6 +500,14 @@ function buildUI() {
   app.onHover = (hit, e) => {
     const now = performance.now(); if (now - hoverT < 60) return; hoverT = now;
     const tip = $('#tooltip');
+    $('#stage').style.cursor = hit?.marker ? 'pointer' : '';
+    if (hit?.marker) {
+      tip.textContent = (hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + ' · ' + t(st.lang).clickInfo;
+      tip.hidden = false;
+      const r = $('#stage').getBoundingClientRect();
+      tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
+      return;
+    }
     if (!hit || hit.polity == null) { tip.hidden = true; return; }
     const col = st.langInfo.col;
     let text = P.name(hit.polity, col);
@@ -480,7 +531,7 @@ function applyLang() {
   $('#title').textContent = s.title;
   $('#subtitle').textContent = s.subtitle;
   for (const [id, key] of [['#l-lang', 'language'], ['#l-proj', 'projection'], ['#l-base', 'basemap'], ['#l-pov', 'pov'], ['#l-labels', 'labels'], ['#l-borders', 'borders'], ['#l-rivers', 'rivers'], ['#l-graticule', 'graticule'], ['#l-speed', 'speed'],
-    ['#l-modern', 'modern'], ['#l-minFont', 'minFont'], ['#l-animate', 'animate'], ['#l-events', 'events'], ['#l-bearing', 'bearing'], ['#l-relLabels', 'relLabels'], ['#showBtn', 'show']]) $(id).textContent = s[key];
+    ['#l-modern', 'modern'], ['#l-relief', 'reliefOpt'], ['#l-distort', 'distort'], ['#l-twCompare', 'twCompare'], ['#l-evTable', 'evTable'], ['#l-distortStr', 'distortStr'], ['#l-labelsIn', 'labelsIn'], ['#l-minFont', 'minFont'], ['#l-animate', 'animate'], ['#l-events', 'events'], ['#l-bearing', 'bearing'], ['#l-relLabels', 'relLabels'], ['#showBtn', 'show']]) $(id).textContent = s[key];
   $('#showBtn').textContent = s.show + ' ▾';
   $('#relLabels').innerHTML = ['religion', 'both', 'country'].map(k => `<option value="${k}">${s.relLabelOpts[k]}</option>`).join('');
   $('#relLabels').value = st.relLabels;
@@ -495,7 +546,7 @@ function applyLang() {
   $('#pov').closest('label').hidden = isChina();
   $('#l-ly-control').textContent = s.layers.control; $('#l-ly-admin').textContent = s.layers.admin;
   $('#l-layer').textContent = s.layer;
-  $('#layerBox').hidden = !LAYERED.includes(st.mode); $('#overseasBox').hidden = st.mode !== 'japan';
+  $('#layerBox').hidden = !LAYERED.includes(st.mode); $('#overseasBox').hidden = st.mode !== 'japan'; $('#localBox').hidden = st.mode !== 'taiwan'; $('#l-lc-feud').textContent = s.local.feud; $('#l-lc-power').textContent = s.local.power; $('#toWorld').hidden = !REGIONS.includes(st.mode); $('#toWorld').textContent = s.toWorld; $('#toWorld').title = s.toWorldTip;
   $('#l-overseas').textContent = s.overseas;
   syncLayers();
   $('#projBy').innerHTML = ['surface', 'prop', 'light'].map(k => `<option value="${k}">${s.cls[k]}</option>`).join('');
@@ -651,6 +702,43 @@ function showReligion(code) {
   box.querySelector('.x').onclick = () => hideInfo();
 }
 // a key event on the timeline: when, what, and where to read more
+// history event table (Show menu): the events of the current mode, the latest one so far highlighted;
+// clicking a row jumps there. Built on mode / language change, highlighted on every frame (cheap).
+let evRows = [];
+function buildEvTable() {
+  const box = $('#evTable'); if (!box) return;
+  box.hidden = !st.evTable;
+  if (!st.evTable) return;
+  const s = t(st.lang), col = st.langInfo.col;
+  if (isChina() && !reg()) return;
+  box.dataset.mode = st.mode + st.lang;
+  if (isChina()) {
+    const c = reg();
+    evRows = (c.events || []).map(e => { const [y, mo] = regionYearMonth(c, e.m); return { key: e.m, when: s.ym(y, mo), name: e.n[col] || e.n[0], go: () => { pause(); st.transition = 'jump'; setMonth(e.m); showEvent({ n: e.n, when: s.ym(y, mo), regional: true }); } }; });
+  } else {
+    evRows = EVENTS.map(e => ({ key: e.y, when: formatYear(st.lang, e.y), name: e.n[col] || e.n[0],
+      go: () => { pause(); st.transition = 'jump'; setYear(e.y); showEvent({ ...e, when: formatYear(st.lang, e.y) + (e.e ? ' – ' + formatYear(st.lang, e.e) : '') }); } }));
+  }
+  box.innerHTML = `<div class="evhead"><b>${s.evTable}</b><button class="x" aria-label="close">×</button></div><ol>${evRows.map((r, i) =>
+    `<li data-i="${i}"><span class="w">${esc(r.when)}</span><span class="n">${esc(r.name)}</span></li>`).join('')}</ol>`;
+  box.querySelector('.x').onclick = () => { st.evTable = false; $('#t-evTable').checked = false; safeSet('evTable', '0'); box.hidden = true; };
+  box.querySelector('ol').onclick = e => { const li = e.target.closest('li'); if (li) evRows[+li.dataset.i].go(); };
+  box.dataset.cur = '';
+  syncEvTable();
+}
+function syncEvTable() {
+  const box = $('#evTable'); if (!box || !st.evTable) return;
+  if (box.dataset.mode !== st.mode + st.lang) return buildEvTable();
+  if (!evRows.length) return;
+  const now = isChina() ? st.cm : st.year;
+  let cur = -1; for (let i = 0; i < evRows.length; i++) if (evRows[i].key <= now) cur = i;
+  if (box.dataset.cur === String(cur)) return;
+  box.dataset.cur = String(cur);
+  box.querySelectorAll('li.cur, li.past').forEach(li => li.classList.remove('cur', 'past'));
+  const lis = box.querySelectorAll('li');
+  for (let i = 0; i < cur; i++) lis[i].classList.add('past');
+  if (cur >= 0) { lis[cur].classList.add('cur'); lis[cur].scrollIntoView({ block: 'nearest' }); }
+}
 function showEvent(ev) {
   const s = t(st.lang), col = st.langInfo.col, box = $('#info');
   const li = { 'zh-Hant': 0, 'zh-Hans': 0, en: 1, ja: 2 }[st.lang];
@@ -662,7 +750,7 @@ function showEvent(ev) {
     <h2>${esc(name)}</h2><p class="when">${esc(ev.when)}</p>
     ${ev.d ? `<p class="desc">${esc(ev.d[col] || ev.d[0])}</p>` : ''}
     <p class="links">${s.links}：<a href="${wikiLink(null, title)}" target="_blank" rel="noopener">${s.wiki}「${esc(title)}」</a></p>
-    <p class="src">${ev.d ? s.eventSrc : ''}</p>`;
+    <p class="src">${ev.d ? s.eventSrc : ev.regional ? s.regionEventSrc : ''}</p>`;
   box.hidden = false;
   box.querySelector('.x').onclick = () => hideInfo();
 }
@@ -733,6 +821,30 @@ function showGov(id) {
       <tr><th>${s.controller}</th><td><i class="sw" style="background:${P.color(fid)}"></i> ${esc(P.name(fid, col))}</td></tr></table>
     ${factionHtml(fid)}
     <p class="links"><a href="${wikiLink(null, name.split(/[（(]/)[0])}" target="_blank" rel="noopener">${s.wiki}：${esc(name.split(/[（(]/)[0])}</a></p>`;
+  box.hidden = false;
+  box.querySelector('.x').onclick = () => hideInfo();
+}
+// an administrative seat (◆): period, division, note, Wikipedia articles in all three languages
+function showSeat(id, kind = 'seat') {
+  const c = reg(), s = t(st.lang), col = st.langInfo.col;
+  const x = (kind === 'seat' ? c.seats || [] : c.local || []).find(q => q.id === id); if (!x) return;
+  if (kind !== 'seat') x.d ??= -1;
+  const [y0, m0] = regionYearMonth(c, x.a), [y1, m1] = regionYearMonth(c, x.b);
+  const end = x.b >= c.months - 1 ? '' : s.ym(y1, m1);
+  const name = x.n[col] || x.n[0], note = x.note[col] || x.note[0];
+  const div = x.d >= 0 ? c.divisions[x.d] : null;
+  const L = [['zh', 'zh-Hant'], ['en', 'en'], ['ja', 'ja']];
+  const links = L.map(([k, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
+  const box = $('#info');
+  delete box.dataset.disputed; box.dataset.sticky = '1';
+  box.innerHTML = `<button class="x" aria-label="close">×</button>
+    <h2><span class="star" style="color:${kind === 'feud' ? '#b91c1c' : kind === 'power' ? '#6b21a8' : div ? div.color : '#555'}">${{ seat: '◆', feud: '⚔', power: '◉' }[kind]}</span>${esc(name)}</h2>
+    ${kind !== 'seat' ? `<p class="kind">${s.local[kind]}</p>` : ''}
+    <table class="facts"><tr><th>${s.span}</th><td>${s.ym(y0, m0)} – ${end}</td></tr>
+      ${div ? `<tr><th>${s.seatOf}</th><td><i class="sw" style="background:${div.color}"></i> ${esc(div.n?.[col] || div.name?.[col] || div.n?.[0] || '')}</td></tr>` : ''}</table>
+    ${note ? `<p class="desc">${esc(note)}</p>` : ''}
+    <p class="links">${s.links}：${links}</p>
+    <p class="src">${kind === 'seat' ? s.seatSrc : s.localSrc}</p>`;
   box.hidden = false;
   box.querySelector('.x').onclick = () => hideInfo();
 }
