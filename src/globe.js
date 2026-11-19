@@ -433,7 +433,7 @@ export class GlobeMap {
     const st = this.app.state;
     if (this.app.compare?.on) {
       const m = this.map, cc = m.getCenter(), ctr = [cc.lng, cc.lat];
-      this.app.drawCompare(ctx, ll => geoDistance(ll, ctr) > 1.5 ? null : (p => [p.x, p.y])(m.project(ll)), ll => this.featureAtLL?.(ll));
+      this.app.drawCompare(ctx, ll => geoDistance(ll, ctr) > 1.5 ? null : (p => [p.x, p.y])(m.project(ll)), xy => { const l = m.unproject(xy); return [l.lng, l.lat]; });
     }
     if (!st.labels) return;
     const S = BASEMAPS[st.basemap];
@@ -466,7 +466,7 @@ export class GlobeMap {
     for (const g of F.markers) {
       if (geoDistance([g.lon, g.lat], center) > 1.4) continue;
       const p = m.project([g.lon, g.lat]);
-      if (g.kind && g.kind !== 'gov') { const q = m.project([g.lon + 0.5, g.lat]); if (Math.hypot(q.x - p.x, q.y - p.y) < 30) continue; }
+      if (g.kind && g.kind !== 'gov' && g.kind !== 'art') { const q = m.project([g.lon + 0.5, g.lat]); if (Math.hypot(q.x - p.x, q.y - p.y) < 30) continue; }
       drawMarker(ctx, p.x, p.y, g, col, S, placed, hits);
     }
   }

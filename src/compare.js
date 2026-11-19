@@ -8,6 +8,7 @@ import { geoArea, geoCentroid, geoContains, geoDistance, geoRotation } from 'd3-
 
 const R = 6371.0088;
 const BASE = import.meta.env.BASE_URL + 'data/';
+export const CIRCLE = 16;                 // detection circle radius, px
 const PAIRS = [['基隆', '鵝鑾鼻'], ['台北', '高雄'], ['台中', '花蓮'], ['台南', '台東']];
 
 export class TaiwanCompare {
@@ -35,10 +36,15 @@ export class TaiwanCompare {
   }
   contains(ll) { return this.on && this.center && geoContains(this.moved().feature, ll); }
 
-  // what lies under it: one polity → area comparison; several → city distances
-  summary(featureAt, lang) {
-    const m = this.moved();
-    const pts = [geoCentroid(m.feature), ...m.cities.map(c => c.p), ...m.feature.geometry.coordinates[0].filter((_, i) => i % 6 === 0)];
+  // what lies under the detection circle (a fixed-size ring at the centre, so small countries can be
+  // picked): one polity → area comparison; several → city distances. invert(xy) → lon/lat
+  summary(featureAt, project, invert) {
+    const c = project(this.center); if (!c) return { kind: 'none' };
+    const pts = [this.center];
+    for (const r of [CIRCLE * 0.5, CIRCLE]) for (let i = 0; i < 12; i++) {
+      const a = i / 12 * 2 * Math.PI, ll = invert([c[0] + r * Math.cos(a), c[1] + r * Math.sin(a)]);
+      if (ll && isFinite(ll[0])) pts.push(ll);
+    }
     const ids = new Map();
     for (const p of pts) { const f = featureAt(p); if (f) ids.set(f.properties.p, f); }
     if (ids.size === 1) {
@@ -66,6 +72,14 @@ export class TaiwanCompare {
     ctx.closePath();
     ctx.fillStyle = 'rgba(30,64,175,0.30)'; ctx.fill();
     ctx.setLineDash([]); ctx.lineWidth = 2; ctx.strokeStyle = '#1e40af'; ctx.stroke();
+    // detection circle at the centre
+    const cc = project(this.center);
+    if (cc) {
+      ctx.beginPath(); ctx.arc(cc[0], cc[1], CIRCLE, 0, 2 * Math.PI);
+      ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.fill();
+      ctx.setLineDash([4, 3]); ctx.lineWidth = 2; ctx.strokeStyle = '#0b2a7a'; ctx.stroke(); ctx.setLineDash([]);
+      ctx.beginPath(); ctx.arc(cc[0], cc[1], 2.5, 0, 2 * Math.PI); ctx.fillStyle = '#0b2a7a'; ctx.fill();
+    }
     const c = project(geoCentroid(m.feature));
     let text = t.twCompareDrag;
     if (info.kind === 'area') text = t.twTimes(info.name, info.ratio);

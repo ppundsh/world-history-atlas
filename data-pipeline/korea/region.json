@@ -1,0 +1,163 @@
+{
+ "start": "0001-01",
+ "end": "2026-12",
+ "units": "korea_units.geojson",
+ "merge": true,
+ "groups": {
+  "south_all": [
+   "KR-11",
+   "KR-26",
+   "KR-27",
+   "KR-28",
+   "KR-29",
+   "KR-30",
+   "KR-31",
+   "KR-41",
+   "KR-42",
+   "KR-43",
+   "KR-44",
+   "KR-45",
+   "KR-46",
+   "KR-47",
+   "KR-48",
+   "KR-49",
+   "KR-50",
+   "gn_e",
+   "gw38n"
+  ],
+  "north_all": [
+   "KP-01",
+   "KP-02",
+   "KP-03",
+   "KP-04",
+   "KP-05",
+   "KP-06",
+   "KP-07",
+   "KP-08",
+   "KP-09",
+   "KP-10",
+   "KP-13",
+   "hw38s",
+   "kaesong",
+   "hgs_s"
+  ],
+  "manchuria": [
+   "liao_e",
+   "liao_w",
+   "CN-JL",
+   "hlj_s"
+  ],
+  "silla_core": [
+   "KR-47",
+   "KR-27",
+   "KR-31",
+   "KR-26",
+   "gn_e"
+  ],
+  "baekje_l": [
+   "KR-44",
+   "KR-30",
+   "KR-50",
+   "KR-45",
+   "KR-46",
+   "KR-29"
+  ],
+  "han_basin": [
+   "KR-11",
+   "KR-41",
+   "KR-28",
+   "KR-43"
+  ],
+  "gangwon_s": [
+   "KR-42",
+   "gw38n"
+  ],
+  "hwanghae": [
+   "KP-05",
+   "KP-06",
+   "hw38s",
+   "kaesong"
+  ],
+  "pyongan": [
+   "KP-01",
+   "KP-02",
+   "KP-03"
+  ],
+  "far_north": [
+   "KP-09",
+   "KP-10",
+   "KP-13"
+  ],
+  "hamgyong": [
+   "KP-08",
+   "hgs_s",
+   "KP-09",
+   "KP-10",
+   "KP-13"
+  ],
+  "korea_all": [
+   "KR-11",
+   "KR-26",
+   "KR-27",
+   "KR-28",
+   "KR-29",
+   "KR-30",
+   "KR-31",
+   "KR-41",
+   "KR-42",
+   "KR-43",
+   "KR-44",
+   "KR-45",
+   "KR-46",
+   "KR-47",
+   "KR-48",
+   "KR-49",
+   "KR-50",
+   "gn_e",
+   "gw38n",
+   "KP-01",
+   "KP-02",
+   "KP-03",
+   "KP-04",
+   "KP-05",
+   "KP-06",
+   "KP-07",
+   "KP-08",
+   "KP-09",
+   "KP-10",
+   "KP-13",
+   "hw38s",
+   "kaesong",
+   "hgs_s"
+  ],
+  "goryeo_l": [
+   "KR-11",
+   "KR-26",
+   "KR-27",
+   "KR-28",
+   "KR-29",
+   "KR-30",
+   "KR-31",
+   "KR-41",
+   "KR-42",
+   "KR-43",
+   "KR-44",
+   "KR-45",
+   "KR-46",
+   "KR-47",
+   "KR-48",
+   "KR-49",
+   "KR-50",
+   "gn_e",
+   "gw38n",
+   "KP-01",
+   "KP-02",
+   "KP-03",
+   "KP-05",
+   "KP-06",
+   "KP-07",
+   "hw38s",
+   "kaesong"
+  ]
+ }
+}

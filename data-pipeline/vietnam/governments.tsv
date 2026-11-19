@@ -1,0 +1,33 @@
+# 越南模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為越南主體政權(1/0)	勢力id	繁中	簡中	English	日本語
+luylau	0001-01	0544-01	106.04	21.04	0	china	交趾郡治（羸𨻻、龍編）	交趾郡治（羸𨻻、龙编）	Jiaozhi commandery seat (Luy Lâu, Long Biên)	交趾郡治（羸𨻻・竜編）
+melinh	0040-03	0043-05	105.72	21.18	1	trung	麊泠（二徵）	麊泠（二征）	Mê Linh (Trưng Sisters)	麊泠（徴姉妹）
+longbien	0544-02	0602-04	105.95	21.04	1	vanxuan	龍編（萬春國）	龙编（万春国）	Long Biên (Vạn Xuân)	竜編（万春国）
+songping	0607-01	0938-12	105.85	21.03	0	china	宋平、大羅城（安南都護府）	宋平、大罗城（安南都护府）	Tống Bình / Đại La (Protectorate of Annam)	宋平・大羅城（安南都護府）
+coloa	0939-01	0965-12	105.87	21.12	1	ngo	古螺（吳朝）	古螺（吴朝）	Cổ Loa (Ngô)	古螺（呉朝）
+hoalu	0968-01	1009-12	105.91	20.29	1	dinh	華閭（丁朝、前黎朝）	华闾（丁朝、前黎朝）	Hoa Lư (Đinh, Early Lê)	華閭（丁朝・前黎朝）
+thanglong	1010-07	1400-03	105.85	21.03	1	ly	昇龍（李朝、陳朝）	升龙（李朝、陈朝）	Thăng Long (Lý, Trần)	昇竜（李朝・陳朝）
+taydo	1400-03	1407-06	105.6	20.08	1	ho	西都（胡朝）	西都（胡朝）	Tây Đô (Hồ)	西都（胡朝）
+dongquan	1407-06	1427-12	105.85	21.03	0	ming	東關（明交趾布政使司）	东关（明交趾布政使司）	Đông Quan (Ming Jiaozhi)	東関（明の交趾）
+dongkinh	1428-01	1527-06	105.85	21.03	1	le	東京（後黎朝）	东京（后黎朝）	Đông Kinh (Later Lê)	東京（後黎朝）
+mac_tl	1527-06	1592-12	105.85	21.03	1	mac	昇龍（莫朝）	升龙（莫朝）	Thăng Long (Mạc)	昇竜（莫朝）
+le_south	1533-01	1592-12	105.6	20.08	1	le	清化（黎朝南朝）	清化（黎朝南朝）	Thanh Hóa (Lê southern court)	清化（黎朝南朝）
+caobang	1593-01	1677-08	106.25	22.67	0	mac	高平（莫朝殘餘）	高平（莫朝残余）	Cao Bằng (Mạc remnant)	高平（莫朝残存勢力）
+le_trinh	1593-01	1786-08	105.85	21.03	1	trinh	昇龍（黎朝、鄭主）	升龙（黎朝、郑主）	Thăng Long (Lê emperors, Trịnh lords)	昇竜（黎朝・鄭主）
+phuxuan_n	1600-06	1774-12	107.58	16.46	0	nguyen_l	富春（阮主）	富春（阮主）	Phú Xuân (Nguyễn lords)	富春（阮主）
+quynhon	1778-01	1793-12	109.03	13.89	0	tayson	歸仁（西山，阮岳）	归仁（西山，阮岳）	Quy Nhơn (Tây Sơn, Nguyễn Nhạc)	帰仁（西山・阮岳）
+phuxuan_t	1788-12	1801-06	107.58	16.46	1	tayson	富春（西山，光中帝）	富春（西山，光中帝）	Phú Xuân (Tây Sơn, Quang Trung)	富春（西山・光中帝）
+giadinh	1788-09	1801-06	106.7	10.78	0	nguyen	嘉定（阮福映）	嘉定（阮福映）	Gia Định (Nguyễn Ánh)	嘉定（阮福映）
+hue	1802-06	1945-08	107.58	16.46	1	nguyen	順化（阮朝）	顺化（阮朝）	Huế (Nguyễn dynasty)	フエ（阮朝）
+saigon_fr	1862-06	1902-12	106.7	10.78	0	france	西貢（法屬交趾支那）	西贡（法属交趾支那）	Saigon (French Cochinchina)	サイゴン（仏領コーチシナ）
+hanoi_fr	1902-01	1945-03	105.85	21.03	0	france	河內（法屬印度支那總督府）	河内（法属印度支那总督府）	Hanoi (Governor-General of French Indochina)	ハノイ（仏領インドシナ総督府）
+hanoi_drv	1945-09	1946-12	105.85	21.03	1	drv	河內（越南民主共和國）	河内（越南民主共和国）	Hanoi (DRV)	ハノイ（ベトナム民主共和国）
+vietbac	1946-12	1954-10	105.63	21.9	1	drv	越北根據地（越南民主共和國）	越北根据地（越南民主共和国）	Việt Bắc base (DRV)	越北根拠地（ベトナム民主共和国）
+hanoi_drv2	1954-10	1976-07	105.85	21.03	1	drv	河內（越南民主共和國）	河内（越南民主共和国）	Hanoi (DRV)	ハノイ（ベトナム民主共和国）
+saigon_rvn	1949-07	1975-04	106.7	10.78	1	rvn	西貢（越南國、越南共和國）	西贡（越南国、越南共和国）	Saigon (State of Vietnam, Republic of Vietnam)	サイゴン（ベトナム国・ベトナム共和国）
+locninh	1973-01	1975-04	106.58	11.84	0	prg	祿寧（臨時革命政府）	禄宁（临时革命政府）	Lộc Ninh (Provisional Revolutionary Government)	ロクニン（臨時革命政府）
+saigon_prg	1975-05	1976-07	106.7	10.78	0	prg	西貢（臨時革命政府）	西贡（临时革命政府）	Saigon (Provisional Revolutionary Government)	サイゴン（臨時革命政府）
+hanoi_srv	1976-07	2026-12	105.85	21.03	1	srv	河內（越南社會主義共和國）	河内（越南社会主义共和国）	Hanoi (Socialist Republic of Vietnam)	ハノイ（ベトナム社会主義共和国）
+simhapura	0192-01	1000-12	108.23	15.83	0	champa	獅子城（占婆，茶蕎）	狮子城（占婆，茶荞）	Simhapura (Champa, Trà Kiệu)	シンハプラ（チャンパ）
+vijaya_c	1000-01	1471-03	109.06	13.9	0	champa	毘闍耶（占婆，闍槃）	毗阇耶（占婆，阇槃）	Vijaya (Champa)	ヴィジャヤ（チャンパ）
+panduranga_c	1471-03	1832-01	108.99	11.56	0	champa	賓童龍（占婆）	宾童龙（占婆）	Panduranga (Champa)	パーンドゥランガ（チャンパ）
+angkor	0802-01	1431-12	103.87	13.41	0	khmer	吳哥（高棉帝國）	吴哥（高棉帝国）	Angkor (Khmer Empire)	アンコール（クメール王朝）

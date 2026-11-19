@@ -106,7 +106,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 
 /* about */
 #about { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.55); display: grid; place-items: center; z-index: 20; }
-#about .card { background: #fff; color: #222; max-width: 560px; margin: 16px; padding: 20px 22px; border-radius: 12px; }
+#about .card { background: #fff; color: #222; max-width: 760px; margin: 16px; padding: 20px 22px; border-radius: 12px; }
 #about .small { font-size: 12px; color: #666; }
 #about button { margin-top: 8px; padding: 6px 16px; border: 1px solid #ccc; background: #f6f6f6; border-radius: 6px; color: #222; }
 
@@ -235,3 +235,17 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 .buttons.ios .play .i-pause { display: none; }
 .buttons.ios .play.on .i-play { display: none; }
 .buttons.ios .play.on .i-pause { display: grid; }
+
+#legend i.mstripe { background: repeating-linear-gradient(135deg, transparent 0 3px, #d6af28 3px 6px) #f4f1ea; }
+#legend i.mstripe.h1 { background: repeating-linear-gradient(135deg, transparent 0 4px, rgba(214,175,40,.55) 4px 5.5px) #f4f1ea; }
+
+#about .card { max-height: calc(100vh - 60px); overflow: auto; }
+#credits h3 { font-size: 14px; margin: 14px 0 4px; }
+#credits table.credits { width: 100%; border-collapse: collapse; font-size: 12px; }
+#credits table.credits td { padding: 4px 6px; border-top: 1px solid rgba(0,0,0,.08); vertical-align: top; }
+#credits table.credits td:last-child { width: 34%; color: #555; }
+#credits small { color: #6e6e73; }
+
+#about .card { position: relative; }
+#about .card #aboutX { position: sticky; top: 0; float: right; margin: -8px -8px 0 8px; width: 34px; height: 34px; border-radius: 50%; border: none; background: rgba(0,0,0,.06); font-size: 22px; line-height: 1; color: #444; cursor: pointer; z-index: 1; }
+#about .card #aboutX:hover { background: rgba(0,0,0,.12); }

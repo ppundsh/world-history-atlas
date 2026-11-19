@@ -1,0 +1,69 @@
+# 韓國模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（未設州道）	（未设州道）	(no provinces drawn)	（州・道なし）
+foreign	#e6e6e6	（半島以外）	（半岛以外）	(outside Korea)	（半島外）
+s9_sangju	#e9c46a	尚州	尚州	Sangju	尚州
+s9_yangju	#f4a261	良州	良州	Yangju	良州
+s9_gangju	#e76f51	康州	康州	Gangju	康州
+s9_hanju	#8ab17d	漢州	汉州	Hanju	漢州
+s9_sakju	#2a9d8f	朔州	朔州	Sakju	朔州
+s9_myeongju	#6fb3c7	溟州	溟州	Myeongju	溟州
+s9_ungju	#b5a7d8	熊州	熊州	Ungju	熊州
+s9_jeonju	#d8a7b1	全州	全州	Jeonju	全州
+s9_muju	#c9b79c	武州	武州	Muju	武州
+gr_gyeonggi	#e9c46a	京畿	京畿	Gyeonggi (capital region)	京畿
+gr_yanggwang	#8ab17d	楊廣道	杨广道	Yanggwang-do	楊広道
+gr_gyeongsang	#f4a261	慶尚道	庆尚道	Gyeongsang-do	慶尚道
+gr_jeolla	#d8a7b1	全羅道	全罗道	Jeolla-do	全羅道
+gr_gyoju	#2a9d8f	交州道	交州道	Gyoju-do	交州道
+gr_seohae	#b5a7d8	西海道	西海道	Seohae-do	西海道
+gr_bukgye	#c9b79c	北界	北界	Bukgye (northern frontier)	北界
+gr_donggye	#6fb3c7	東界	东界	Donggye (eastern frontier)	東界
+j8_gyeonggi	#e9c46a	京畿道	京畿道	Gyeonggi-do	京畿道
+j8_chungcheong	#b5a7d8	忠清道	忠清道	Chungcheong-do	忠清道
+j8_jeolla	#d8a7b1	全羅道	全罗道	Jeolla-do	全羅道
+j8_gyeongsang	#f4a261	慶尚道	庆尚道	Gyeongsang-do	慶尚道
+j8_gangwon	#2a9d8f	江原道	江原道	Gangwon-do	江原道
+j8_hwanghae	#8ab17d	黃海道	黄海道	Hwanghae-do	黄海道
+j8_pyeongan	#c9b79c	平安道	平安道	Pyeongan-do	平安道
+j8_hamgyeong	#6fb3c7	咸鏡道	咸镜道	Hamgyeong-do	咸鏡道
+p13_gyeonggi	#e9c46a	京畿道	京畿道	Gyeonggi-do	京畿道
+p13_chungbuk	#c3b6e0	忠清北道	忠清北道	North Chungcheong	忠清北道
+p13_chungnam	#a594cf	忠清南道	忠清南道	South Chungcheong	忠清南道
+p13_jeonbuk	#e3b9c1	全羅北道	全罗北道	North Jeolla	全羅北道
+p13_jeonnam	#cc94a0	全羅南道	全罗南道	South Jeolla	全羅南道
+p13_gyeongbuk	#f6b98a	慶尚北道	庆尚北道	North Gyeongsang	慶尚北道
+p13_gyeongnam	#ef9358	慶尚南道	庆尚南道	South Gyeongsang	慶尚南道
+p13_gangwon	#2a9d8f	江原道	江原道	Gangwon-do	江原道
+p13_hwanghae	#8ab17d	黃海道	黄海道	Hwanghae-do	黄海道
+p13_pyongnam	#d6c8b0	平安南道	平安南道	South Pyeongan	平安南道
+p13_pyongbuk	#b8a585	平安北道	平安北道	North Pyeongan	平安北道
+p13_hamnam	#8cc5d6	咸鏡南道	咸镜南道	South Hamgyeong	咸鏡南道
+p13_hambuk	#5aa3b8	咸鏡北道	咸镜北道	North Hamgyeong	咸鏡北道
+m_KR-42	#e9c46a	江原道	江原道	Gangwon	江原道
+m_KP-07	#f4a261	江原道	江原道	Kangwon	江原道
+m_KR-41	#e76f51	京畿道	京畿道	Gyeonggi	京畿道
+m_KP-06	#8ab17d	黃海北道	黄海北道	North Hwanghae	黄海北道
+m_KP-09	#2a9d8f	咸鏡北道	咸镜北道	North Hamgyong	咸鏡北道
+m_KP-13	#6fb3c7	羅先市	罗先市	Rason	羅先特別市
+m_KP-10	#b5a7d8	兩江道	两江道	Ryanggang	両江道
+m_KP-04	#d8a7b1	慈江道	慈江道	Chagang	慈江道
+m_KP-03	#c9b79c	平安北道	平安北道	North Pyongan	平安北道
+m_KR-44	#f6b98a	忠清南道	忠清南道	South Chungcheong	忠清南道
+m_KP-02	#a594cf	平安南道	平安南道	South Pyongan	平安南道
+m_KP-05	#cc94a0	黃海南道	黄海南道	South Hwanghae	黄海南道
+m_KR-28	#d6c8b0	仁川廣域市	仁川广域市	Incheon	仁川広域市
+m_KR-45	#8cc5d6	全羅北道	全罗北道	North Jeolla	全羅北道
+m_KR-46	#e9c46a	全羅南道	全罗南道	South Jeolla	全羅南道
+m_KR-48	#f4a261	慶尚南道	庆尚南道	South Gyeongsang	慶尚南道
+m_KR-26	#e76f51	釜山	釜山	Busan	釜山広域市
+m_KR-31	#8ab17d	蔚山廣域市	蔚山广域市	Ulsan	蔚山広域市
+m_KR-47	#2a9d8f	慶尚北道	庆尚北道	North Gyeongsang	慶尚北道
+m_KP-08	#6fb3c7	咸鏡南道	咸镜南道	South Hamgyong	咸鏡南道
+m_KR-49	#b5a7d8	濟州特別自治道	济州特别自治道	Jeju	済州特別自治道
+m_KR-11	#d8a7b1	首爾	首尔	Seoul	ソウル特別市
+m_KR-30	#c9b79c	大田廣域市	大田广域市	Daejeon	大田広域市
+m_KR-50	#f6b98a	世宗特別自治市	世宗特别自治市	Sejong	世宗特別自治市
+m_KR-43	#a594cf	忠清北道	忠清北道	North Chungcheong	忠清北道
+m_KR-29	#cc94a0	光州廣域市	光州广域市	Gwangju	光州広域市
+m_KR-27	#d6c8b0	大邱	大邱	Daegu	大邱広域市
+m_KP-01	#8cc5d6	平壤	平壤	Pyongyang	平壌

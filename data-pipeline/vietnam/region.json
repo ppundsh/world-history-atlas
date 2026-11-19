@@ -1,0 +1,121 @@
+{
+ "start": "0001-01",
+ "end": "2026-12",
+ "units": "vietnam_units.geojson",
+ "merge": true,
+ "groups": {
+  "north": [
+   "delta",
+   "ne",
+   "nw",
+   "thanh",
+   "nghe"
+  ],
+  "dv1069": [
+   "delta",
+   "ne",
+   "nw",
+   "thanh",
+   "nghe",
+   "qb_n",
+   "qb_s",
+   "qt"
+  ],
+  "dv1306": [
+   "delta",
+   "ne",
+   "nw",
+   "thanh",
+   "nghe",
+   "qb_n",
+   "qb_s",
+   "qt",
+   "hue"
+  ],
+  "dv1471": [
+   "delta",
+   "ne",
+   "nw",
+   "thanh",
+   "nghe",
+   "qb_n",
+   "qb_s",
+   "qt",
+   "hue",
+   "quangnam",
+   "vijaya"
+  ],
+  "trinh_l": [
+   "delta",
+   "nw",
+   "thanh",
+   "nghe",
+   "qb_n"
+  ],
+  "nguyen_c": [
+   "qb_s",
+   "qt",
+   "hue",
+   "quangnam",
+   "vijaya"
+  ],
+  "south17": [
+   "qt",
+   "hue",
+   "quangnam",
+   "vijaya",
+   "kauthara",
+   "panduranga",
+   "highlands",
+   "saigon",
+   "mekong",
+   "hatien"
+  ],
+  "north17": [
+   "delta",
+   "ne",
+   "nw",
+   "thanh",
+   "nghe",
+   "qb_n",
+   "qb_s"
+  ],
+  "south": [
+   "saigon",
+   "mekong",
+   "hatien"
+  ],
+  "center": [
+   "qt",
+   "hue",
+   "quangnam",
+   "vijaya",
+   "kauthara",
+   "panduranga"
+  ],
+  "china_s": [
+   "CN-GD",
+   "CN-GX",
+   "CN-HI"
+  ],
+  "vn_all": [
+   "delta",
+   "ne",
+   "nw",
+   "thanh",
+   "nghe",
+   "qb_n",
+   "qb_s",
+   "qt",
+   "hue",
+   "quangnam",
+   "vijaya",
+   "kauthara",
+   "panduranga",
+   "highlands",
+   "saigon",
+   "mekong",
+   "hatien"
+  ]
+ }
+}

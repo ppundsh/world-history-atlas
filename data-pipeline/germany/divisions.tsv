@@ -1,0 +1,42 @@
+# 德國模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在德國或未劃分）	（不在德国或未划分）	(outside Germany / not drawn)	（ドイツ外・区分なし）
+e_ostpr	#e9c46a	東普魯士省	东普鲁士省	East Prussia (province)	東プロイセン州
+e_westpr	#f4a261	西普魯士省	西普鲁士省	West Prussia (province)	西プロイセン州
+e_posen	#e76f51	波森省	波森省	Posen (province)	ポーゼン州
+e_pommern	#8ab17d	波美拉尼亞省	波美拉尼亚省	Pomerania (province)	ポンメルン州
+e_brandenburg	#2a9d8f	布蘭登堡省（含柏林）	勃兰登堡省（含柏林）	Brandenburg (province, with Berlin)	ブランデンブルク州（ベルリン含む）
+e_schlesien	#6fb3c7	西里西亞省	西里西亚省	Silesia (province)	シュレージエン州
+e_psachsen	#b5a7d8	薩克森省	萨克森省	Saxony (Prussian province)	ザクセン州（プロイセン）
+e_sh	#d8a7b1	石勒蘇益格—荷爾斯泰因省	石勒苏益格—荷尔斯泰因省	Schleswig-Holstein (province)	シュレースヴィヒ＝ホルシュタイン州
+e_hannover	#c9b79c	漢諾威省	汉诺威省	Hanover (province)	ハノーファー州
+e_westfalen	#f6b98a	西發里亞省	西发里亚省	Westphalia (province)	ヴェストファーレン州
+e_rhein	#a594cf	萊茵省	莱茵省	Rhine Province	ライン州
+e_hessen_nassau	#cc94a0	黑森—拿騷省	黑森—拿骚省	Hesse-Nassau (province)	ヘッセン＝ナッサウ州
+e_bayern	#d6c8b0	巴伐利亞王國	巴伐利亚王国	Kingdom of Bavaria	バイエルン王国
+e_sachsen	#8cc5d6	薩克森王國	萨克森王国	Kingdom of Saxony	ザクセン王国
+e_wue	#a3c4a8	符騰堡王國	符腾堡王国	Kingdom of Württemberg	ヴュルテンベルク王国
+e_baden	#e3c9a8	巴登大公國	巴登大公国	Grand Duchy of Baden	バーデン大公国
+e_hessen	#b8c4e0	黑森大公國	黑森大公国	Grand Duchy of Hesse	ヘッセン大公国
+e_meck	#e0b8c4	梅克倫堡	梅克伦堡	Mecklenburg	メクレンブルク
+e_oldenburg	#e9c46a	奧爾登堡大公國	奥尔登堡大公国	Grand Duchy of Oldenburg	オルデンブルク大公国
+e_braunschweig	#f4a261	布倫瑞克公國	布伦瑞克公国	Duchy of Brunswick	ブラウンシュヴァイク公国
+e_thueringen	#e76f51	圖林根諸邦	图林根诸邦	Thuringian states	テューリンゲン諸邦
+e_elsass	#8ab17d	亞爾薩斯—洛林帝國領地	阿尔萨斯—洛林帝国领地	Reichsland Alsace-Lorraine	エルザス＝ロートリンゲン帝国直轄州
+l_sh	#e9c46a	什列斯威—好斯敦	石勒苏益格—荷尔斯泰因	Schleswig-Holstein	シュレースヴィヒ＝ホルシュタイン州
+l_hh	#f4a261	漢堡	汉堡	Hamburg	ハンブルク
+l_hb	#e76f51	不來梅	不来梅	Bremen	ブレーメン
+l_ni	#8ab17d	下薩克森	下萨克森	Lower Saxony	ニーダーザクセン州
+l_nw	#2a9d8f	北萊茵—西發里亞	北莱茵—威斯特法伦	North Rhine-Westphalia	ノルトライン＝ヴェストファーレン州
+l_he	#6fb3c7	黑森	黑森	Hesse	ヘッセン州
+l_rp	#b5a7d8	萊茵蘭—普法爾茨	莱茵兰—普法尔茨	Rhineland-Palatinate	ラインラント＝プファルツ州
+l_sl	#d8a7b1	薩爾	萨尔	Saarland	ザールラント州
+l_bw	#c9b79c	巴登—符騰堡	巴登—符腾堡	Baden-Württemberg	バーデン＝ヴュルテンベルク州
+l_by	#f6b98a	巴伐利亞	巴伐利亚	Bavaria	バイエルン州
+l_mv	#a594cf	梅克倫堡—前波美拉尼亞	梅克伦堡—前波美拉尼亚	Mecklenburg-Vorpommern	メクレンブルク＝フォアポンメルン州
+l_bb	#cc94a0	布蘭登堡	勃兰登堡	Brandenburg	ブランデンブルク州
+l_be	#d6c8b0	柏林	柏林	Berlin	ベルリン
+l_st	#8cc5d6	薩克森—安哈特	萨克森—安哈尔特	Saxony-Anhalt	ザクセン＝アンハルト州
+l_th	#a3c4a8	圖林根	图林根	Thuringia	テューリンゲン州
+l_sn	#e3c9a8	薩克森	萨克森	Saxony	ザクセン州
+gdr_bez	#e4b5b5	東德（1952 年起改設各專區，未繪）	东德（1952 年起改设各专区，未绘）	East Germany (districts from 1952, not drawn)	東ドイツ（1952 年から県、未描画）
+bw3	#cfd8a8	巴登—符騰堡三邦（1952 年合併前）	巴登—符腾堡三邦（1952 年合并前）	The three south-western states (before the 1952 merger)	南西部三州（1952 年合併前）

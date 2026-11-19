@@ -1,0 +1,36 @@
+# 韓國模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+lelang	#b0a184	漢四郡（樂浪、帶方）	汉四郡（乐浪、带方）	Han commanderies (Lelang, Daifang)	漢四郡（楽浪・帯方）
+china	#d9b38c	中原王朝	中原王朝	Chinese dynasties	中原王朝
+goguryeo	#e57373	高句麗	高句丽	Goguryeo	高句麗
+buyeo	#a1887f	夫餘	夫余	Buyeo	夫余
+okjeo	#bcaaa4	沃沮、東濊	沃沮、东濊	Okjeo and Dongye	沃沮・東濊
+mohe	#9e9d89	挹婁、靺鞨	挹娄、靺鞨	Yilou / Mohe	挹婁・靺鞨
+mahan	#c5e1a5	馬韓	马韩	Mahan	馬韓
+jinhan	#ffe082	辰韓	辰韩	Jinhan	辰韓
+byeonhan	#ffcc80	弁韓	弁韩	Byeonhan	弁韓
+baekje	#81c784	百濟	百济	Baekje	百済
+silla	#ffb300	新羅	新罗	Silla	新羅
+gaya	#ff8a65	伽倻	伽倻	Gaya confederacy	加耶
+tamna	#80cbc4	耽羅	耽罗	Tamna	耽羅
+tang	#d7a86e	唐	唐	Tang	唐
+balhae	#ba68c8	渤海	渤海	Balhae	渤海
+hubaekje	#66bb6a	後百濟	后百济	Later Baekje	後百済
+taebong	#7986cb	泰封（後高句麗）	泰封（后高句丽）	Taebong (Later Goguryeo)	泰封（後高句麗）
+goryeo	#4fc3f7	高麗	高丽	Goryeo	高麗
+liao	#90a4ae	遼（契丹）	辽（契丹）	Liao (Khitan)	遼（契丹）
+jurchen	#a5d6a7	女真諸部	女真诸部	Jurchen tribes	女真諸部
+jin	#8d6e63	金（女真）	金（女真）	Jin (Jurchen)	金（女真）
+yuan	#78909c	蒙古、元	蒙古、元	Mongols, Yuan	モンゴル・元
+nyuan	#607d8b	北元	北元	Northern Yuan	北元
+ming	#e0c068	明	明	Ming	明
+joseon	#26a69a	朝鮮王朝	朝鲜王朝	Joseon	朝鮮王朝
+japan	#ef5350	日本	日本	Japan	日本
+qing	#d4a017	後金、清	后金、清	Later Jin, Qing	後金・清
+russia	#9575cd	俄羅斯、蘇聯	俄罗斯、苏联	Russia, Soviet Union	ロシア・ソ連
+daehan	#00897b	大韓帝國	大韩帝国	Korean Empire	大韓帝国
+roc	#1e40af	中華民國	中华民国	Republic of China	中華民国
+manchukuo	#f9a825	滿洲國	满洲国	Manchukuo	満洲国
+usa	#5c6bc0	駐韓美軍政廳	驻朝美军政厅	US Army Military Government	在朝鮮アメリカ陸軍司令部軍政庁
+prc	#d32f2f	中國共產黨、中華人民共和國	中国共产党、中华人民共和国	CCP, People's Republic of China	中国共産党・中華人民共和国
+rok	#1565c0	大韓民國	大韩民国	Republic of Korea	大韓民国
+dprk	#c62828	朝鮮民主主義人民共和國	朝鲜民主主义人民共和国	DPRK (North Korea)	朝鮮民主主義人民共和国

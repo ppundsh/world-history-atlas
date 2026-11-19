@@ -20,6 +20,11 @@
     - 統治範圍：律令國家與蝦夷、隼人的邊界、奧州藤原氏、南北朝、戰國主要大名（1560–1590，以「國」為單位概略標示）、江戶幕府、琉球王國、蝦夷地、戊辰戰爭、大日本帝國、盟軍佔領與沖繩等地的美國統治、北方四島。
     - 行政區劃：令制國（701 年起的分合）、1871 年廢藩置縣到 1888 年的府縣統合、今日都道府縣。單元由國土數值情報的市區町村組成，各市町村屬於哪一國依日文維基百科各郡條目的「郡域」整理。
   - **俄羅斯（862–2026）**：逐月顯示，統治範圍＋行政區劃。從留里克、基輔羅斯、羅斯諸公國、金帳汗國、莫斯科大公國、沙皇國、帝國、內戰、蘇聯到俄羅斯聯邦；包括波羅的海、高加索、中亞、阿拉斯加、二次大戰東線（以州為單位概略標示）、2014 年與 2022 年後的實際控制區。行政區劃：1708 年八省、1914 年各省與州、蘇聯加盟共和國、今日聯邦主體。
+  - **政體**：依 V-Dem「世界政體」把各國分為封閉式專制、選舉式專制、選舉民主、自由民主（1900 年起；1789–1899 依同規則推算，1789 年前依國號推定），金色斜線表示君主（粗線掌實權、細線無實權）。
+  - **藝術史**：81 個藝術運動、流派與藝術中心（✦，從古埃及到當代），依傳統著色，點選看說明與維基百科。
+  - **韓國（1–2026）**：三國、伽倻、渤海、後三國、高麗、元干涉期、朝鮮、壬辰倭亂、大韓帝國、日治、三八線、韓戰；行政區劃為新羅九州、高麗五道兩界、朝鮮八道、十三道、今日行政區。
+  - **越南（1–2026）**：北屬時期、林邑與占婆、扶南與高棉、歷代王朝與南進、鄭阮紛爭、西山、阮朝、法屬印度支那、南北越與越戰。
+  - **德國（1648–2026）**：西發里亞和約後的諸邦、普魯士崛起、瓜分波蘭、拿破崙時期、德意志邦聯、統一、威瑪、納粹、分區佔領、東西德與統一；行政區劃為帝國各邦與普魯士各省、戰後各邦。
 - **地圖**
   - 23 種投影，可依性質（等積／等距／等角／折衷）、光源（心射／平射／正射）或投影面（圓柱／圓錐／方位）分組。常用投影前面有 ★；滑鼠停在選單項目上會顯示它的用途、優缺點與設計方式，下方的六角圖比較面積、形狀、距離、覆蓋、邊緣變形與折衷程度（依 Tissot 變形橢圓計算），其他投影以灰線同時列出。摩爾威德等擬圓柱、圓錐投影解鎖（🔓）後可往任何方向旋轉（Shift 或右鍵拖曳可轉動）；重新鎖定時保留目前的樣子，只恢復標準的移動方式（左右捲動、上下平移），按「上方朝北」才回到正軸。切換模式時自動移到該地區。
   - MapLibre 3D 地球，可選擇上方朝北、東、南或西（右鍵拖曳可自由旋轉、傾斜）。
@@ -91,6 +96,32 @@ CLIO=路徑/cliopatria_polities_only_v021.geojson NE=路徑/natural-earth-vector
 | `data-pipeline/names_review.tsv` | 約 450 筆待複核的譯名（取自 Wikidata 或自動轉換） |
 
 只改了中國或台灣模式的表格時，執行 `node data-pipeline/build_region.mjs china`（或 `taiwan`）就夠了。
+其他地區模式同理：`node data-pipeline/build_region.mjs japan`（或 `russia`、`korea`、`vietnam`、`germany`）。各模式的單元由 `data-pipeline/<模式>/units.py` 從 Natural Earth 產生，`npm run data` 會一併重建。
+
+### 政體模式（V-Dem）
+
+`public/data/regimes.json` 已經建好。V-Dem 每年春天發布新版，要更新時才需要這一步。`npm run data` 不會執行它，因為 V-Dem 檔案約 34 MB，不放進 repo。
+
+1. 下載 V-Dem 資料檔 `vdem.RData`，二選一：
+   - 從 GitHub 的 vdemdata 套件取得（不需註冊）：
+     ```bash
+     git clone --depth 1 --filter=blob:none --no-checkout https://github.com/vdeminstitute/vdemdata.git
+     cd vdemdata && git checkout HEAD -- data/vdem.RData
+     ```
+   - 或到 https://www.v-dem.net/data/the-v-dem-dataset/ 下載 Country-Year: V-Dem Full+Others 的 CSV（指令的第一個參數改成 CSV 路徑即可）。
+2. 確認 Natural Earth 的 `geojson/` 資料夾裡有 `ne_50m_populated_places.geojson`（完整的 natural-earth-vector 有；只抓部分檔案的話要補這個，它用來把每個國家放到首都位置）。
+3. 安裝讀取工具並執行：
+   ```bash
+   pip install pandas pyreadr        # pyreadr 只在讀 .RData 時需要；用 CSV 則不必
+   python3 data-pipeline/regime/build_regime.py 路徑/vdemdata/data/vdem.RData 路徑/natural-earth-vector/geojson
+   ```
+   完成時會印出「regimes: 202 countries, … runs」。若出現「no position for XXX」，表示 V-Dem 有新國家代碼找不到首都：把它的經緯度加進 `build_regime.py` 裡的 `HIST` 表再跑一次。
+4. 重新建置網站（`npm run build`）。
+
+### 藝術史、資料來源
+
+- 藝術史：改 `data-pipeline/art/movements.tsv` 後執行 `node data-pipeline/art/build.mjs`。
+- 資料來源與授權：改 `data-pipeline/credits.mjs` 後執行 `node data-pipeline/credits.mjs`，會同時更新網站「關於」視窗（`src/credits.gen.js`）與 `ATTRIBUTION.md`。新增任何外部資料都要在這裡登記。
 
 ## 衛星底圖
 

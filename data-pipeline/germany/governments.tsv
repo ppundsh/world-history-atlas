@@ -1,0 +1,27 @@
+# 德國模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為全德機構或全國政府(1/0)	勢力id	繁中	簡中	English	日本語
+vienna	1648-10	1918-11	16.37	48.21	0	habsburg	維也納（哈布斯堡、神聖羅馬皇帝）	维也纳（哈布斯堡、神圣罗马皇帝）	Vienna (Habsburgs, Holy Roman Emperor)	ウィーン（ハプスブルク・神聖ローマ皇帝）
+regensburg	1663-01	1806-08	12.1	49.02	1	small	雷根斯堡（帝國議會）	雷根斯堡（帝国议会）	Regensburg (Perpetual Diet)	レーゲンスブルク（永久帝国議会）
+berlin_p	1648-10	1871-01	13.4	52.52	0	prussia	柏林（布蘭登堡—普魯士）	柏林（布兰登堡—普鲁士）	Berlin (Brandenburg-Prussia)	ベルリン（ブランデンブルク＝プロイセン）
+dresden	1648-10	1871-01	13.74	51.05	0	saxony	德勒斯登（薩克森）	德累斯顿（萨克森）	Dresden (Saxony)	ドレスデン（ザクセン）
+munich	1648-10	1871-01	11.58	48.14	0	bavaria	慕尼黑（巴伐利亞）	慕尼黑（巴伐利亚）	Munich (Bavaria)	ミュンヘン（バイエルン）
+mannheim	1648-10	1777-12	8.47	49.49	0	palatinate	海德堡、曼海姆（普法爾茨）	海德堡、曼海姆（普法尔茨）	Heidelberg / Mannheim (Palatinate)	ハイデルベルク・マンハイム（プファルツ）
+stuttgart	1648-10	1871-01	9.18	48.78	0	wuerttemberg	斯圖加特（符騰堡）	斯图加特（符腾堡）	Stuttgart (Württemberg)	シュトゥットガルト（ヴュルテンベルク）
+karlsruhe	1715-06	1871-01	8.4	49.01	0	baden	卡爾斯魯厄（巴登）	卡尔斯鲁厄（巴登）	Karlsruhe (Baden)	カールスルーエ（バーデン）
+kassel	1648-10	1866-08	9.48	51.31	0	hesse_k	卡塞爾（黑森—卡塞爾）	卡塞尔（黑森—卡塞尔）	Kassel (Hesse-Kassel)	カッセル（ヘッセン＝カッセル）
+kassel_w	1807-08	1813-10	9.48	51.31	0	rhine_sat	卡塞爾（西發里亞王國）	卡塞尔（西发里亚王国）	Kassel (Kingdom of Westphalia)	カッセル（ヴェストファーレン王国）
+hanover	1648-10	1866-08	9.73	52.37	0	hanover	漢諾威	汉诺威	Hanover	ハノーファー
+mainz	1648-10	1797-10	8.27	50.0	0	church	美因茨（選帝侯大主教）	美因茨（选帝侯大主教）	Mainz (Elector-Archbishop)	マインツ（選帝侯大司教）
+bonn	1648-10	1794-10	7.1	50.73	0	church	波昂（科隆選帝侯）	波恩（科隆选帝侯）	Bonn (Elector of Cologne)	ボン（ケルン選帝侯）
+warsaw	1807-07	1815-06	21.01	52.23	0	warsaw	華沙（華沙公國）	华沙（华沙公国）	Warsaw (Duchy of Warsaw)	ワルシャワ（ワルシャワ公国）
+frankfurt	1815-06	1866-08	8.68	50.11	1	small	法蘭克福（德意志邦聯議會）	法兰克福（德意志邦联议会）	Frankfurt (Federal Diet of the German Confederation)	フランクフルト（ドイツ連邦議会）
+berlin_r	1871-01	1919-02	13.4	52.52	1	reich	柏林（德意志帝國）	柏林（德意志帝国）	Berlin (German Empire)	ベルリン（ドイツ帝国）
+weimar	1919-02	1919-08	11.33	50.98	1	weimar	威瑪（國民議會）	魏玛（国民议会）	Weimar (National Assembly)	ヴァイマル（国民議会）
+berlin_w	1919-09	1933-01	13.4	52.52	1	weimar	柏林（威瑪共和國）	柏林（魏玛共和国）	Berlin (Weimar Republic)	ベルリン（ヴァイマル共和国）
+berlin_n	1933-01	1945-04	13.4	52.52	1	nazi	柏林（納粹德國）	柏林（纳粹德国）	Berlin (Nazi Germany)	ベルリン（ナチス・ドイツ）
+flensburg	1945-05	1945-05	9.43	54.79	1	nazi	弗倫斯堡（鄧尼茲政府）	弗伦斯堡（邓尼茨政府）	Flensburg (Dönitz government)	フレンスブルク（デーニッツ政府）
+saarbruecken	1920-01	1956-12	6.99	49.24	0	saar	薩爾布呂肯（薩爾）	萨尔布吕肯（萨尔）	Saarbrücken (Saar)	ザールブリュッケン（ザール）
+prague	1918-11	2026-12	14.42	50.08	0	czsl	布拉格（捷克斯洛伐克、捷克）	布拉格（捷克斯洛伐克、捷克）	Prague (Czechoslovakia, Czech Republic)	プラハ（チェコスロバキア・チェコ）
+vienna_r	1918-11	2026-12	16.37	48.21	0	austria_r	維也納（奧地利共和國）	维也纳（奥地利共和国）	Vienna (Republic of Austria)	ウィーン（オーストリア共和国）
+bonn_frg	1949-05	1990-10	7.1	50.73	1	frg	波昂（西德）	波恩（西德）	Bonn (West Germany)	ボン（西ドイツ）
+eberlin	1949-10	1990-10	13.41	52.52	1	gdr	東柏林（東德）	东柏林（东德）	East Berlin (East Germany)	東ベルリン（東ドイツ）
+berlin_frg	1990-10	2026-12	13.4	52.52	1	frg	柏林（德國）	柏林（德国）	Berlin (Germany)	ベルリン（ドイツ）

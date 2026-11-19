@@ -32,6 +32,7 @@
         <label class="chk"><input type="checkbox" id="t-labels" /><span id="l-labels"></span></label>
         <label id="relLabelsBox" class="sel" hidden><span id="l-relLabels"></span><select id="relLabels"></select></label>
         <label class="chk"><input type="checkbox" id="t-labelsIn" /><span id="l-labelsIn"></span></label>
+        <label class="chk"><input type="checkbox" id="t-capitals" /><span id="l-capitals"></span></label>
         <label class="chk"><input type="checkbox" id="t-borders" /><span id="l-borders"></span></label>
         <label class="chk"><input type="checkbox" id="t-rivers" /><span id="l-rivers"></span></label>
         <label class="chk"><input type="checkbox" id="t-graticule" /><span id="l-graticule"></span></label>
@@ -105,9 +106,10 @@
 
   <div id="about" hidden>
     <div class="card">
+      <button id="aboutX" class="x" aria-label="close">×</button>
       <p id="aboutText"></p>
       <p id="countNote"></p>
-      <p class="small">Cliopatria © Seshat Global History Databank, CC BY 4.0 · Natural Earth (public domain) · NASA Earth Observatory Blue Marble (public domain) · Wikidata (CC0) · © OpenStreetMap contributors (ODbL, Taiwan rivers) · MapLibre GL JS (BSD-3) · d3-geo (ISC)</p>
+      <div id="credits"></div>
       <button id="aboutClose"></button>
     </div>
   </div>

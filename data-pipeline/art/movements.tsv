@@ -1,0 +1,84 @@
+# 藝術史模式：藝術運動、流派與藝術中心（✦，點選可看說明與維基百科）。
+# 欄位：id	起年	迄年	經度	緯度	傳統(west|eastasia|southasia|islam|americas|africa|oceania|ancient)	繁中	English	日本語	維基中文	English Wikipedia	日本語版	說明（繁中）	說明（English）
+# 年代與地點取各條目所載的主要時期與代表性中心；許多流派跨越多地，此處只標一處。日文說明暫缺時顯示英文。
+egypt_ok	-2686	-2181	31.25	29.85	ancient	古王國時期藝術	Old Kingdom art	古王国時代の美術	埃及古王國	Art of ancient Egypt	古代エジプト美術	金字塔與宮廷雕刻確立了埃及藝術的正面律與比例規範。	The pyramids and court sculpture fixed the frontal poses and proportions of Egyptian art.
+sumer	-2900	-2000	46.1	30.96	ancient	蘇美與阿卡德藝術	Sumerian and Akkadian art	シュメール・アッカド美術	美索不達米亞藝術	Art of Mesopotamia	メソポタミア美術	烏爾王陵、滾筒印章與勝利石碑。	The royal tombs of Ur, cylinder seals and victory steles.
+minoan	-2000	-1450	25.16	35.3	ancient	米諾斯藝術	Minoan art	ミノア美術	米諾斯文明	Minoan art	ミノア文明	克諾索斯宮殿的濕壁畫與陶器，色彩明快、題材自然。	The frescoes and pottery of Knossos, bright and drawn from nature.
+shang	-1600	-1046	114.35	36.1	eastasia	商代青銅器	Shang bronzes	殷の青銅器	商朝	Shang dynasty#Bronze working	殷	以饕餮紋為代表的禮器鑄造達到高峰。	Ritual vessels cast with taotie masks, at the height of Bronze Age casting.
+olmec	-1200	-400	-94.76	17.75	americas	奧爾梅克藝術	Olmec art	オルメカ美術	奧爾梅克文明	Olmec art	オルメカ文明	巨石頭像與玉雕，被視為中美洲藝術之源。	Colossal stone heads and jade carving, the root of Mesoamerican art.
+nok	-1000	300	8.0	9.5	africa	諾克陶塑	Nok terracottas	ノク文化のテラコッタ	諾克文化	Nok culture	ノク文化	西非最早的大型人像陶塑。	The earliest large figurative terracottas of West Africa.
+amarna	-1353	-1336	30.9	27.65	ancient	阿瑪納藝術	Amarna art	アマルナ美術	阿瑪納時期	Amarna art	アマルナ美術	埃赫那頓時期打破程式、較寫實的宮廷藝術。	The less formal, more naturalistic court art of Akhenaten's reign.
+assyria	-900	-612	43.15	36.36	ancient	亞述浮雕	Assyrian reliefs	アッシリアのレリーフ	亞述	Assyrian sculpture	アッシリア	尼尼微宮殿的獵獅與戰爭浮雕。	The lion hunts and war scenes carved for the palaces of Nineveh.
+greek_arch	-800	-480	23.73	37.98	west	古風時期希臘藝術	Archaic Greek art	アルカイク期のギリシア美術	古希臘藝術	Archaic Greek art	古代ギリシア美術	庫羅斯雕像與黑繪陶。	Kouros statues and black-figure pottery.
+etruscan	-700	-100	11.9	42.4	west	伊特拉斯坎藝術	Etruscan art	エトルリア美術	伊特拉斯坎文明	Etruscan art	エトルリア	墓室壁畫與陶塑，影響早期羅馬。	Tomb paintings and terracottas that shaped early Rome.
+greek_cl	-480	-323	23.73	37.98	west	古典時期希臘藝術	Classical Greek art	古典期のギリシア美術	古希臘藝術	Classical Greece#Art	古代ギリシア美術	帕德嫩神廟雕刻，追求理想化的人體比例。	The Parthenon sculptures and the idealised human body.
+maurya	-322	-185	85.14	25.6	southasia	孔雀王朝藝術	Mauryan art	マウリヤ朝美術	孔雀王朝	Mauryan art	マウリヤ朝	阿育王石柱與磨光砂岩雕刻。	Ashoka's pillars and polished sandstone sculpture.
+hellenistic	-323	-31	29.92	31.2	west	希臘化藝術	Hellenistic art	ヘレニズム美術	希臘化時代	Hellenistic art	ヘレニズム	亞歷山卓與帕加馬的動態、寫實風格，傳播至印度。	The dramatic, realistic style of Alexandria and Pergamon, carried as far as India.
+han	-206	220	108.94	34.34	eastasia	漢代藝術	Han art	漢代の美術	漢朝	Han dynasty#Art	漢	畫像石、陶俑與漆器。	Carved tomb reliefs, pottery figures and lacquer.
+roman	-200	400	12.48	41.9	west	古羅馬藝術	Roman art	古代ローマ美術	古羅馬藝術	Roman art	古代ローマ美術	寫實肖像、鑲嵌畫與龐貝壁畫。	Realistic portraits, mosaics and the wall paintings of Pompeii.
+gandhara	-50	500	71.57	34.0	southasia	犍陀羅藝術	Gandhara art	ガンダーラ美術	犍陀羅藝術	Greco-Buddhist art	ガンダーラ美術	希臘化風格的佛像，影響經中亞傳入中國。	Buddha images in a Hellenistic manner, whose influence reached China through Central Asia.
+moche	100	700	-79.0	-8.1	americas	莫切藝術	Moche art	モチェ文化の美術	莫切文化	Moche culture	モチェ文化	秘魯北岸的肖像陶器與金工。	Portrait vessels and metalwork of Peru's north coast.
+maya	250	900	-89.62	17.22	americas	古典期馬雅藝術	Classic Maya art	古典期マヤ美術	馬雅文明	Maya art	マヤ文明	石碑、壁畫與彩陶。	Stelae, murals and painted pottery.
+gupta	320	550	83.03	25.38	southasia	笈多藝術	Gupta art	グプタ美術	笈多王朝	Gupta art	グプタ朝	薩爾納特佛像與阿旃陀石窟壁畫，印度古典藝術的高峰。	The Sarnath Buddhas and Ajanta murals, the classic age of Indian art.
+byzantine	330	1453	28.98	41.01	west	拜占庭藝術	Byzantine art	ビザンティン美術	拜占庭藝術	Byzantine art	ビザンティン美術	金底鑲嵌畫與聖像畫。	Gold-ground mosaics and icons.
+dunhuang	366	1368	94.8	40.04	eastasia	敦煌莫高窟	Mogao Caves (Dunhuang)	敦煌莫高窟	莫高窟	Mogao Caves	莫高窟	千年間開鑿的佛教石窟壁畫與塑像。	A thousand years of Buddhist cave murals and sculpture.
+islamic	661	1258	44.4	33.3	islam	早期伊斯蘭藝術	Early Islamic art	初期イスラーム美術	伊斯蘭藝術	Islamic art	イスラーム美術	大馬士革與巴格達的書法、幾何紋與清真寺裝飾。	Calligraphy, geometric ornament and mosque decoration in Damascus and Baghdad.
+tang	618	907	108.94	34.34	eastasia	唐代藝術	Tang art	唐代の美術	唐朝	Tang dynasty art	唐	吳道子、閻立本的人物畫與唐三彩。	The figure painting of Wu Daozi and Yan Liben, and sancai glazed pottery.
+insular	600	900	-1.8	55.68	west	海島藝術	Insular art	インシュラー美術	海島藝術	Insular art	インシュラー美術	不列顛與愛爾蘭的泥金手抄本，如凱爾經。	Illuminated manuscripts of Britain and Ireland, such as the Book of Kells.
+nara	710	794	135.8	34.68	eastasia	天平文化	Tenpyō culture	天平文化	天平文化	Tenpyō	天平文化	東大寺大佛與正倉院寶物。	The Great Buddha of Tōdai-ji and the Shōsōin treasures.
+angkor	802	1431	103.87	13.41	southasia	吳哥藝術	Khmer art (Angkor)	アンコール美術	吳哥	Khmer sculpture	アンコール	吳哥窟的建築與浮雕。	The architecture and reliefs of Angkor Wat.
+chola	850	1279	79.14	10.79	southasia	朱羅銅像	Chola bronzes	チョーラ朝のブロンズ像	朱羅王朝	Chola art	チョーラ朝	舞王濕婆等失蠟法銅像。	Lost-wax bronzes such as Shiva Nataraja.
+goryeo	918	1392	126.55	37.97	eastasia	高麗青瓷	Goryeo celadon	高麗青磁	高麗青瓷	Goryeo ware	高麗青磁	翡色青瓷與鑲嵌技法。	Jade-green celadon and inlay technique.
+song	960	1279	120.16	30.25	eastasia	宋代山水畫	Song landscape painting	宋代の山水画	宋朝繪畫	Song dynasty painting	宋代の絵画	范寬、郭熙的山水與院體畫，影響東亞千年。	The landscapes of Fan Kuan and Guo Xi and the academy style, influential across East Asia.
+romanesque	1000	1200	4.66	46.43	west	仿羅馬式藝術	Romanesque art	ロマネスク美術	羅馬式藝術	Romanesque art	ロマネスク美術	修道院教堂的雕刻柱頭與壁畫。	Carved capitals and wall paintings of monastic churches.
+ife	1100	1500	4.56	7.47	africa	伊費藝術	Ife art	イフェ美術	伊費	Ife	イフェ	寫實的銅與陶製頭像。	Naturalistic heads in brass and terracotta.
+zimbabwe	1100	1450	30.93	-20.27	africa	大辛巴威	Great Zimbabwe	グレート・ジンバブエ	大辛巴威	Great Zimbabwe	グレート・ジンバブエ	石砌城牆與皂石鳥雕。	Dry-stone walls and soapstone bird carvings.
+gothic	1140	1500	2.36	48.94	west	哥德藝術	Gothic art	ゴシック美術	哥德藝術	Gothic art	ゴシック美術	大教堂、彩繪玻璃與國際哥德風格。	Cathedrals, stained glass and the International Gothic.
+persian_min	1300	1700	62.2	34.35	islam	波斯細密畫	Persian miniature	ペルシア細密画	波斯細密畫	Persian miniature	ペルシア細密画	赫拉特、大不里士的手抄本插畫。	Manuscript painting in Herat and Tabriz.
+benin	1300	1897	5.62	6.34	africa	貝南青銅	Benin Bronzes	ベニン・ブロンズ	貝南青銅器	Benin Bronzes	ベニン・ブロンズ	貝南王國宮廷的銅牌與頭像，1897 年遭英軍掠走。	Court plaques and heads of the Kingdom of Benin, looted by British troops in 1897.
+aztec	1325	1521	-99.13	19.43	americas	阿茲特克藝術	Aztec art	アステカ美術	阿茲特克	Aztec art	アステカ	太陽石與神廟雕刻。	The Sun Stone and temple sculpture.
+ren_it	1400	1600	11.25	43.77	west	義大利文藝復興	Italian Renaissance	イタリア・ルネサンス	文藝復興	Italian Renaissance painting	イタリア・ルネサンス	透視法與古典復興：達文西、米開朗基羅、拉斐爾。	Perspective and the classical revival: Leonardo, Michelangelo, Raphael.
+ren_north	1430	1580	3.22	51.21	west	北方文藝復興	Northern Renaissance	北方ルネサンス	北方文藝復興	Northern Renaissance	北方ルネサンス	范艾克的油畫、杜勒的版畫。	The oil painting of van Eyck and the prints of Dürer.
+inca	1438	1533	-71.97	-13.53	americas	印加藝術	Inca art	インカ美術	印加帝國	Inca art	インカ帝国	精確的石砌建築與織品。	Precise stone masonry and textiles.
+wu_school	1450	1644	120.62	31.3	eastasia	吳門畫派	Wu School	呉派	吳門畫派	Wu School	呉派	沈周、文徵明等蘇州文人畫。	The literati painting of Suzhou: Shen Zhou and Wen Zhengming.
+ottoman	1450	1700	28.98	41.01	islam	鄂圖曼藝術	Ottoman art	オスマン美術	鄂圖曼建築	Ottoman art	オスマン建築	錫南的清真寺與伊茲尼克磁磚。	The mosques of Sinan and Iznik tiles.
+safavid	1501	1736	51.67	32.65	islam	薩法維藝術	Safavid art	サファヴィー朝美術	薩法維王朝	Safavid art	サファヴィー朝	伊斯法罕的建築、地毯與細密畫。	The architecture, carpets and miniatures of Isfahan.
+mannerism	1520	1600	12.48	41.9	west	風格主義	Mannerism	マニエリスム	風格主義	Mannerism	マニエリスム	拉長的人體與刻意的構圖。	Elongated figures and artful composition.
+mughal	1556	1857	78.0	27.18	southasia	蒙兀兒繪畫	Mughal painting	ムガル絵画	蒙兀兒繪畫	Mughal painting	ムガル絵画	融合波斯與印度傳統的宮廷繪畫。	Court painting blending Persian and Indian traditions.
+kano	1570	1868	135.77	35.01	eastasia	狩野派與桃山障壁畫	Kanō school	狩野派	狩野派	Kanō school	狩野派	金碧障壁畫，幕府御用畫派。	Gold-leaf screens; the painters to the shogunate.
+baroque	1600	1750	12.48	41.9	west	巴洛克	Baroque	バロック	巴洛克藝術	Baroque	バロック美術	卡拉瓦喬、貝尼尼、魯本斯的戲劇性光影與動態。	The drama and movement of Caravaggio, Bernini and Rubens.
+dutch	1600	1700	4.9	52.37	west	荷蘭黃金時代繪畫	Dutch Golden Age painting	オランダ黄金時代の絵画	荷蘭黃金時代繪畫	Dutch Golden Age painting	オランダ黄金時代の絵画	林布蘭、維梅爾與市民的風俗畫。	Rembrandt, Vermeer and genre painting for burghers.
+rinpa	1600	1868	135.77	35.01	eastasia	琳派	Rinpa	琳派	琳派	Rinpa school	琳派	俵屋宗達、尾形光琳的裝飾性畫風。	The decorative style of Sōtatsu and Kōrin.
+qing_court	1644	1911	116.39	39.9	eastasia	清代宮廷繪畫	Qing court painting	清朝の宮廷絵画	清朝繪畫	Qing dynasty painting	清朝	四王正統派、揚州八怪與郎世寧的中西融合。	The Orthodox school, the Eight Eccentrics of Yangzhou, and Castiglione's East–West blend.
+ukiyoe	1680	1900	139.77	35.68	eastasia	浮世繪	Ukiyo-e	浮世絵	浮世繪	Ukiyo-e	浮世絵	江戶的木版畫，北齋、廣重影響了歐洲印象派。	Woodblock prints of Edo; Hokusai and Hiroshige influenced the Impressionists.
+joseon	1700	1800	126.98	37.57	eastasia	朝鮮真景山水與風俗畫	Joseon true-view painting	朝鮮の真景山水・風俗画	鄭敾	Jeong Seon	鄭敾	鄭敾的真景山水與金弘道的風俗畫。	The true-view landscapes of Jeong Seon and genre scenes of Kim Hong-do.
+rococo	1720	1780	2.35	48.86	west	洛可可	Rococo	ロココ	洛可可	Rococo	ロココ	華鐸、布雪的輕快裝飾風格。	The light, decorative style of Watteau and Boucher.
+neoclassic	1760	1840	2.35	48.86	west	新古典主義	Neoclassicism	新古典主義	新古典主義	Neoclassicism	新古典主義	大衛、安格爾的古典秩序。	The classical order of David and Ingres.
+romanticism	1800	1850	13.74	51.05	west	浪漫主義	Romanticism	ロマン主義	浪漫主義	Romanticism	ロマン主義	弗里德里希、德拉克洛瓦、透納的情感與自然。	Feeling and nature in Friedrich, Delacroix and Turner.
+hudson	1825	1875	-73.9	41.7	americas	哈德遜河畫派	Hudson River School	ハドソン・リバー派	哈德遜河畫派	Hudson River School	ハドソン・リバー派	美國的浪漫主義風景畫。	American Romantic landscape painting.
+realism	1840	1880	2.35	48.86	west	寫實主義	Realism	写実主義	寫實主義 (藝術)	Realism (arts)	写実主義	庫爾貝、米勒描繪勞動與日常。	Courbet and Millet painting work and everyday life.
+shanghai	1850	1950	121.47	31.23	eastasia	海上畫派	Shanghai School	海上派	海上畫派	Shanghai School	海上派	任伯年、吳昌碩，面向城市市場的新文人畫。	Ren Bonian and Wu Changshuo: literati painting for a city market.
+impressionism	1867	1886	2.35	48.86	west	印象派	Impressionism	印象派	印象派	Impressionism	印象派	莫內、雷諾瓦的戶外光色。	The open-air light and colour of Monet and Renoir.
+postimp	1886	1905	4.63	43.68	west	後印象派	Post-Impressionism	ポスト印象派	後印象派	Post-Impressionism	ポスト印象派	梵谷、塞尚、高更走向各自的表現。	Van Gogh, Cézanne and Gauguin each go their own way.
+nouveau	1890	1910	4.35	50.85	west	新藝術運動	Art Nouveau	アール・ヌーヴォー	新藝術運動	Art Nouveau	アール・ヌーヴォー	有機曲線的建築與工藝，慕夏、奧塔。	Organic curves in architecture and design: Mucha, Horta.
+secession	1897	1918	16.37	48.21	west	維也納分離派	Vienna Secession	ウィーン分離派	維也納分離派	Vienna Secession	ウィーン分離派	克林姆與分離派展覽館。	Klimt and the Secession Building.
+fauvism	1904	1908	2.35	48.86	west	野獸派	Fauvism	フォーヴィスム	野獸派	Fauvism	フォーヴィスム	馬諦斯的強烈純色。	Matisse's bold pure colour.
+expressionism	1905	1925	13.74	51.05	west	表現主義	Expressionism	表現主義	表現主義	Expressionism	表現主義	橋社、藍騎士：以變形表達情感。	Die Brücke and Der Blaue Reiter: distortion for feeling.
+cubism	1907	1922	2.35	48.86	west	立體派	Cubism	キュビスム	立體主義	Cubism	キュビスム	畢卡索、布拉克把物體拆解為多重視點。	Picasso and Braque break objects into many viewpoints.
+futurism	1909	1916	9.19	45.46	west	未來主義	Futurism	未来派	未來主義	Futurism	未来派	讚頌速度與機械。	Celebrating speed and machines.
+avantgarde	1913	1932	37.62	55.75	west	俄國前衛藝術、構成主義	Russian avant-garde, Constructivism	ロシア・アヴァンギャルド	俄羅斯前衛藝術	Russian avant-garde	ロシア・アヴァンギャルド	馬列維奇、塔特林、羅琴科。	Malevich, Tatlin and Rodchenko.
+dada	1916	1924	8.54	47.37	west	達達主義	Dada	ダダイスム	達達主義	Dada	ダダイスム	一戰中蘇黎世興起的反藝術運動。	The anti-art movement born in wartime Zurich.
+bauhaus	1919	1933	12.24	51.83	west	包浩斯	Bauhaus	バウハウス	包浩斯	Bauhaus	バウハウス	結合藝術、工藝與工業的設計學校。	The school that joined art, craft and industry.
+mexican	1920	1970	-99.13	19.43	americas	墨西哥壁畫運動	Mexican muralism	メキシコ壁画運動	墨西哥壁畫運動	Mexican muralism	メキシコ壁画運動	里維拉、西凱羅斯的公共壁畫。	The public murals of Rivera and Siqueiros.
+harlem	1918	1937	-73.94	40.81	americas	哈林文藝復興	Harlem Renaissance	ハーレム・ルネサンス	哈林文藝復興	Harlem Renaissance	ハーレム・ルネサンス	非裔美國人的文學、音樂與視覺藝術。	African American literature, music and visual art.
+surrealism	1924	1966	2.35	48.86	west	超現實主義	Surrealism	シュルレアリスム	超現實主義	Surrealism	シュルレアリスム	達利、馬格利特探索夢與潛意識。	Dalí and Magritte explore dreams and the unconscious.
+taiten	1927	1943	121.51	25.04	eastasia	臺展與府展（臺灣美術展覽會）	Taiwan Art Exhibition (Taiten)	台湾美術展覧会（台展・府展）	臺灣美術展覽會	Taiwan Art Exhibition	台湾美術展覧会	日治時期官辦美展，陳澄波、郭雪湖等臺灣畫家由此出頭。	The official salon of Japanese-era Taiwan, where Chen Cheng-po and Kuo Hsueh-hu made their names.
+socrealism	1932	1989	37.62	55.75	west	社會主義寫實主義	Socialist realism	社会主義リアリズム	社會主義現實主義	Socialist realism	社会主義リアリズム	蘇聯及社會主義國家的官方藝術路線。	The official art of the Soviet Union and other socialist states.
+abex	1943	1965	-74.0	40.73	americas	抽象表現主義	Abstract Expressionism	抽象表現主義	抽象表現主義	Abstract expressionism	抽象表現主義	帕洛克、羅斯科，紐約取代巴黎成為藝術中心。	Pollock and Rothko; New York replaces Paris as the art capital.
+gutai	1954	1972	135.5	34.69	eastasia	具體派	Gutai	具体美術協会	具體美術協會	Gutai group	具体美術協会	大阪的行動與材料實驗。	Action and material experiments in Osaka.
+fifth_moon	1956	1970	121.51	25.04	eastasia	五月畫會與東方畫會	Fifth Moon and Ton-Fan groups	五月画会・東方画会	五月畫會	Fifth Moon Group	五月画会	戰後臺灣的現代抽象繪畫運動。	Taiwan's post-war modern abstract painting movement.
+pop	1955	1975	-74.0	40.73	americas	普普藝術	Pop Art	ポップアート	普普藝術	Pop art	ポップアート	沃荷、李奇登斯坦取材大眾文化。	Warhol and Lichtenstein draw on mass culture.
+minimalism	1960	1975	-74.0	40.73	americas	極簡主義	Minimalism	ミニマリズム	極簡主義	Minimalism	ミニマル・アート	賈德、弗萊文的幾何與工業材料。	Judd and Flavin: geometry and industrial materials.
+papunya	1971	2026	132.0	-23.2	oceania	澳洲原住民西部沙漠繪畫	Western Desert painting (Papunya Tula)	西部砂漠絵画（パプーニャ・トゥーラ）	澳洲原住民藝術	Papunya Tula	アボリジナル・アート	把夢創時代的圖像畫上畫布。	Dreaming designs carried onto canvas.
+graffiti	1970	2026	-73.95	40.8	americas	塗鴉與街頭藝術	Graffiti and street art	グラフィティ・ストリートアート	街頭藝術	Street art	ストリートアート	從紐約地鐵到全球城市牆面。	From the New York subway to city walls worldwide.
+newwave85	1985	1989	116.39	39.9	eastasia	八五美術新潮	’85 New Wave	八五美術運動	八五美術運動	’85 New Wave	八五美術運動	中國改革開放後的前衛藝術浪潮。	China's avant-garde wave after reform and opening.

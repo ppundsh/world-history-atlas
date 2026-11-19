@@ -20,9 +20,9 @@ export async function loadReligions() {
 }
 
 // Regional modes (China 1911–1951, Taiwan 1600–2026): hand-made unit maps with month-by-month control
-const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json' };
+const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json', korea: 'korea_units.json', vietnam: 'vietnam_units.json', germany: 'germany_units.json' };
 // regional modes that have an administrative-division layer next to the control layer
-export const LAYERED = ['taiwan', 'japan', 'russia'];
+export const LAYERED = ['taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany'];
 const OVERSEAS_GOVS = new Set(['taihoku', 'keijo', 'toyohara', 'ryojun', 'koror', 'shinkyo']);
 export const REGIONS = Object.keys(UNIT_FILES);
 export async function loadRegion(name) {
@@ -195,13 +195,13 @@ export function frame(st) {
       overlays: s.areas.map(a => a.feature),
       markers: [
         // administrative seats, with the division layer
-        ...(layered && (st.layer === 'admin' || both) ? (c.seats || []).filter(x => x.a <= st.cm && st.cm <= x.b)
+        ...(st.capitals !== false && layered && (st.layer === 'admin' || both) ? (c.seats || []).filter(x => x.a <= st.cm && st.cm <= x.b)
           .map(x => ({ kind: 'seat', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: x.d >= 0 ? c.divisions[x.d].color : '#555' })) : []),
         // Taiwan: feuds (⚔) and local powers (◉), each with its own switch
         ...(c.local || []).slice().sort((x, y) => (x.kind === 'feud') - (y.kind === 'feud')).filter(x => (x.kind === 'feud' ? st.feuds : st.powers) && x.a <= st.cm && st.cm <= x.b)
           .map(x => ({ kind: x.kind, id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: x.kind === 'feud' ? '#b91c1c' : '#6b21a8' })),
         // governments last, so the ★ sits on top of a seat at the same place
-        ...s.govs.map(g => ({ kind: 'gov', id: g.id, lon: g.lon, lat: g.lat, text: g.n, color: P.color(c.offset + g.f), roc: g.roc })),
+        ...(st.capitals === false ? [] : s.govs).map(g => ({ kind: 'gov', id: g.id, lon: g.lon, lat: g.lat, text: g.n, color: P.color(c.offset + g.f), roc: g.roc })),
       ],
       govs: s.govs, event: s.event, units: s.units, border: s.border || null,
       adminLines: adm?.inner || null, adminFeats: adm?.feats || null,
@@ -212,6 +212,8 @@ export function frame(st) {
       disputed: false,
     };
   }
+  if (st.mode === 'regime' && store.regimes) return regimeFrame(st);
+  if (st.mode === 'art' && store.art) return artFrame(st);
   const feats = featuresFor(st.year) || [];
   if (st.mode === 'religion' && store.religions) {
     return { feats, color: id => religionColor(id, st.year), overlays: [], markers: [], disputed: true };
@@ -244,4 +246,95 @@ export function religionShares(feats, year) {
     sum.set(code, (sum.get(code) || 0) + f.properties.area); tot += f.properties.area;
   }
   return [...sum.entries()].sort((a, b) => b[1] - a[1]).map(([code, a]) => ({ code, share: a / tot }));
+}
+
+// ---- regime-type mode (V-Dem "Regimes of the World"; see data-pipeline/regime/build_regime.py) ----------
+// Each V-Dem country-year is placed on the map at its capital; the polity holding that point gets its
+// regime (several countries in one polity — empires and their colonies — go to the one nearest the
+// polity's own label point). Polities V-Dem doesn't cover (most before 1789) are classified from their name
+// as monarchy / republic-oligarchy / tribal, and marked as inferred.
+export const REGIME_COLORS = { 0: '#c0392b', 1: '#ee8a3c', 2: '#86b7de', 3: '#2c5fa8', M: '#a98b74', O: '#5fb3a8', T: '#c9cfd4', U: '#e6e6e6' };
+export const MONARCH_STRIPE = { 1: 'rgba(214,175,40,0.38)', 2: 'rgba(214,175,40,0.72)' };
+export async function loadRegimes() {
+  if (store.regimes) return store.regimes;
+  store.regimes = await fetch(import.meta.env.BASE_URL + 'data/regimes.json').then(r => r.json());
+  return store.regimes;
+}
+function bboxOf(f) {
+  if (f.properties.bb) return f.properties.bb;
+  let b = [180, 90, -180, -90];
+  const walk = c => { if (typeof c[0] === 'number') { if (c[0] < b[0]) b[0] = c[0]; if (c[1] < b[1]) b[1] = c[1]; if (c[0] > b[2]) b[2] = c[0]; if (c[1] > b[3]) b[3] = c[1]; } else c.forEach(walk); };
+  if (f.geometry) walk(f.geometry.coordinates);
+  return (f.properties.bb = b);
+}
+let regimeCache = { key: null, map: null };
+const OFFS = [[0, 0], [0.25, 0], [-0.25, 0], [0, 0.25], [0, -0.25], [0.5, 0.5], [-0.5, 0.5], [0.5, -0.5], [-0.5, -0.5], [1, 0], [-1, 0], [0, 1], [0, -1]];
+export function regimeAssign(year, feats) {
+  const key = year + ':' + feats.length;
+  if (regimeCache.key === key) return regimeCache.map;
+  const map = new Map();
+  for (const c of store.regimes?.countries || []) {
+    const run = c.runs.find(r => r[0] <= year && year <= r[1]); if (!run) continue;
+    // capitals on the coast can fall just outside the simplified shapes: try a few nearby points too
+    let f = null, x, y;
+    for (const [dx, dy] of OFFS) {
+      x = c.p[0] + dx; y = c.p[1] + dy;
+      f = feats.find(f => { const b = bboxOf(f); return x >= b[0] && x <= b[2] && y >= b[1] && y <= b[3] && geoContains(f, [x, y]); });
+      if (f) break;
+    }
+    if (!f) continue;
+    const pid = f.properties.p, lp = f.properties.lp || c.p, d = (lp[0] - x) ** 2 + (lp[1] - y) ** 2;
+    const old = map.get(pid);
+    if (old && old.d <= d) continue;
+    const [R, H, S] = run[2].split('|');
+    map.set(pid, { R: +R, H: +H, S: S.replace('~', ''), approx: S.includes('~'), country: c.n, d });
+  }
+  regimeCache = { key, map };
+  return map;
+}
+const RX = { O: /republic|commonwealth|confedera|league|venice|genoa|novgorod|united provinces|city[- ]state|polis|athens|carthage|swiss/i,
+  T: /tribe|tribal|peoples|clans|chiefdom|confederacy|nomad|hunter|culture|horde/i,
+  M: /yuan|ming|qing|song|tang|joseon|goryeo|dai viet|ayutthaya|vijayanagara|bahmani|delhi|aztec|inca|mali|songhai|ethiopia|abyssinia|muscovy|grand duchy|union|tibet|poland|hungary|bohemia|france|england|scotland|castile|aragon|portugal|navarre|denmark|sweden|norway|lithuania|kingdom|empire|sultanate|khanate|khaganate|caliphate|emirate|principality|duchy|dynasty|tsardom|shogunate|realm|raj|imamate|kingdoms|monarchy|mughal|ottoman|pharaoh|achaemenid|sasanian|parthian|maurya|gupta|seleucid|ptolemaic|abbasid|umayyad|fatimid|ayyubid|mamluk|safavid|qajar|timurid|kushan|dynastic|regency|crown|tsar|shah|king|empress|emperor/i };
+export function regimeOf(id, year, feats) {
+  const a = regimeAssign(year, feats).get(id);
+  if (a) return a;
+  const r = P.row(id), name = (r[0] || '') + ' ' + (r[6] || '');
+  for (const k of ['O', 'T', 'M']) if (RX[k].test(name)) return { R: k, H: k === 'M' ? 2 : 0, S: '', inferred: true };
+  return { R: 'U', H: 0, S: '', inferred: true };
+}
+// features with a monarchy stripe: stable wrappers (so cached paths survive), s = 'H1' / 'H2'
+const wrapCache = new WeakMap();
+export function regimeFrame(st) {
+  const feats = featuresFor(st.year) || [];
+  const out = feats.map(f => {
+    const g = regimeOf(f.properties.p, st.year, feats);
+    if (!g.H || g.R === 'M') return f;
+    let w = wrapCache.get(f); if (!w) wrapCache.set(f, w = {});
+    return w[g.H] ||= { ...f, properties: { ...f.properties, s: 'H' + g.H } };
+  });
+  return { feats: out, color: id => typeof id === 'string' ? MONARCH_STRIPE[id[1]] : REGIME_COLORS[regimeOf(id, st.year, feats).R], overlays: [], markers: [], disputed: true };
+}
+export function regimeShares(feats, year) {
+  const sum = new Map(); let tot = 0;
+  for (const f of feats) { const g = regimeOf(f.properties.p, year, feats); const k = String(g.R); sum.set(k, (sum.get(k) || 0) + f.properties.area); tot += f.properties.area; }
+  return [...sum].map(([k, a]) => ({ k, share: a / (tot || 1) })).sort((a, b) => b.share - a.share);
+}
+
+// ---- art-history mode (data-pipeline/art/movements.tsv): the political map in pale tones, with the art
+// movements, schools and centres active in the year as clickable ✦ markers coloured by tradition
+export const ART_COLORS = { west: '#3f51b5', eastasia: '#c62828', southasia: '#ef6c00', islam: '#00897b', americas: '#558b2f', africa: '#b8860b', oceania: '#8e24aa', ancient: '#6d4c41' };
+export async function loadArt() {
+  if (store.art) return store.art;
+  store.art = await fetch(import.meta.env.BASE_URL + 'data/art.json').then(r => r.json());
+  return store.art;
+}
+function pale(hex) {
+  const n = parseInt(hex.slice(1), 16), m = (v) => Math.round(v + (245 - v) * 0.72);
+  return `rgb(${m(n >> 16)},${m((n >> 8) & 255)},${m(n & 255)})`;
+}
+export function artActive(year) { return (store.art || []).filter(x => x.a <= year && year <= x.b); }
+function artFrame(st) {
+  const feats = featuresFor(st.year) || [];
+  return { feats, color: id => pale(P.color(id)), overlays: [], disputed: true,
+    markers: artActive(st.year).map(x => ({ kind: 'art', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t] })) };
 }

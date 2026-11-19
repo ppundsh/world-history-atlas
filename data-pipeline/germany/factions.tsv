@@ -1,0 +1,36 @@
+# 德國模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+habsburg	#e8c547	哈布斯堡君主國、奧地利帝國、奧匈帝國	哈布斯堡君主国、奥地利帝国、奥匈帝国	Habsburg Monarchy, Austrian Empire, Austria-Hungary	ハプスブルク君主国・オーストリア帝国・オーストリア＝ハンガリー
+prussia	#5c6bc0	布蘭登堡—普魯士、普魯士王國	布兰登堡—普鲁士、普鲁士王国	Brandenburg-Prussia, Kingdom of Prussia	ブランデンブルク＝プロイセン・プロイセン王国
+saxony	#81c784	薩克森	萨克森	Saxony	ザクセン
+bavaria	#4fc3f7	巴伐利亞	巴伐利亚	Bavaria	バイエルン
+palatinate	#9575cd	普法爾茨選侯國	普法尔茨选侯国	Electoral Palatinate	プファルツ選帝侯領
+wuerttemberg	#ef9a9a	符騰堡	符腾堡	Württemberg	ヴュルテンベルク
+baden	#ffcc80	巴登	巴登	Baden	バーデン
+hesse_k	#a1887f	黑森—卡塞爾	黑森—卡塞尔	Hesse-Kassel	ヘッセン＝カッセル
+hesse_d	#bcaaa4	黑森—達姆施塔特	黑森—达姆施塔特	Hesse-Darmstadt	ヘッセン＝ダルムシュタット
+hanover	#f06292	布倫瑞克—呂訥堡、漢諾威	布伦瑞克—吕讷堡、汉诺威	Brunswick-Lüneburg, Hanover	ブラウンシュヴァイク＝リューネブルク・ハノーファー
+brunswick	#f8bbd0	布倫瑞克—沃爾芬比特爾	布伦瑞克—沃尔芬比特尔	Brunswick-Wolfenbüttel	ブラウンシュヴァイク＝ヴォルフェンビュッテル
+mecklenburg	#4db6ac	梅克倫堡	梅克伦堡	Mecklenburg	メクレンブルク
+oldenburg	#aed581	奧爾登堡	奥尔登堡	Oldenburg	オルデンブルク
+church	#ce93d8	教會諸侯國（科隆、美因茨、特里爾、明斯特、維爾茨堡等）	教会诸侯国（科隆、美因茨、特里尔、明斯特、维尔茨堡等）	Prince-bishoprics (Cologne, Mainz, Trier, Münster, Würzburg …)	聖界諸侯領（ケルン・マインツ・トリーア・ミュンスター・ヴュルツブルクなど）
+small	#d7ccc8	諸小邦與帝國城市	诸小邦与帝国城市	Small states and imperial cities	諸小邦・帝国都市
+sweden	#64b5f6	瑞典	瑞典	Sweden	スウェーデン
+denmark	#e57373	丹麥	丹麦	Denmark	デンマーク
+france	#7986cb	法國	法国	France	フランス
+poland	#ff8a65	波蘭立陶宛聯邦、波蘭	波兰立陶宛联邦、波兰	Polish–Lithuanian Commonwealth, Poland	ポーランド・リトアニア共和国・ポーランド
+rhine_sat	#b39ddb	拿破崙衛星國（西發里亞王國、貝格大公國）	拿破仑卫星国（西发里亚王国、贝格大公国）	Napoleonic client states (Westphalia, Berg)	ナポレオンの衛星国（ヴェストファーレン王国・ベルク大公国）
+warsaw	#ffab91	華沙公國	华沙公国	Duchy of Warsaw	ワルシャワ公国
+russia	#9e9e9e	俄羅斯帝國、蘇聯、俄羅斯	俄罗斯帝国、苏联、俄罗斯	Russian Empire, Soviet Union, Russia	ロシア帝国・ソ連・ロシア
+lux	#80cbc4	盧森堡	卢森堡	Luxembourg	ルクセンブルク
+reich	#546e7a	德意志帝國	德意志帝国	German Empire	ドイツ帝国
+weimar	#78909c	威瑪共和國	魏玛共和国	Weimar Republic	ヴァイマル共和国
+saar	#90caf9	薩爾（國際聯盟託管、法國保護領）	萨尔（国际联盟托管、法国保护领）	Saar (League of Nations, French protectorate)	ザール（国際連盟管理・フランス保護領）
+nazi	#6d4c41	納粹德國	纳粹德国	Nazi Germany	ナチス・ドイツ
+czsl	#4dd0e1	捷克斯洛伐克、捷克	捷克斯洛伐克、捷克	Czechoslovakia, Czech Republic	チェコスロバキア・チェコ
+austria_r	#ffd54f	奧地利共和國	奥地利共和国	Republic of Austria	オーストリア共和国
+us_z	#42a5f5	美國佔領區	美国占领区	US zone	アメリカ占領地区
+uk_z	#ef5350	英國佔領區	英国占领区	British zone	イギリス占領地区
+fr_z	#7e57c2	法國佔領區	法国占领区	French zone	フランス占領地区
+soviet_z	#c62828	蘇聯佔領區	苏联占领区	Soviet zone	ソ連占領地区
+frg	#1565c0	德意志聯邦共和國（西德、統一後德國）	德意志联邦共和国（西德、统一后德国）	Federal Republic of Germany	ドイツ連邦共和国
+gdr	#d32f2f	德意志民主共和國（東德）	德意志民主共和国（东德）	German Democratic Republic	ドイツ民主共和国

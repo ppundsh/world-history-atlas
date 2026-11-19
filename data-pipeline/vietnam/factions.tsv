@@ -1,0 +1,29 @@
+# 越南模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+china	#d9b38c	中國歷代王朝（漢、六朝、隋、唐、南漢、宋、元、明、清）	中国历代王朝（汉、六朝、隋、唐、南汉、宋、元、明、清）	Chinese dynasties	中国歴代王朝
+trung	#f48fb1	二徵夫人	二征夫人	Trưng Sisters	徴姉妹
+vanxuan	#ce93d8	萬春國（李賁）	万春国（李贲）	Vạn Xuân (Lý Bí)	万春国（李賁）
+champa	#ffb74d	占婆（林邑、環王）	占婆（林邑、环王）	Champa (Lâm Ấp)	チャンパ（林邑・環王）
+khmer	#a1887f	扶南、真臘、高棉	扶南、真腊、高棉	Funan, Chenla, Khmer	扶南・真臘・クメール
+tribes	#c9cfb8	高原與山地諸族	高原与山地诸族	Highland peoples	高原の諸民族
+laos	#9ccc65	瀾滄王國、寮國	澜沧王国、老挝	Lan Xang, Laos	ラーンサーン王国・ラオス
+ngo	#80deea	吳朝	吴朝	Ngô dynasty	呉朝
+dinh	#4dd0e1	丁朝（大瞿越）	丁朝（大瞿越）	Đinh dynasty (Đại Cồ Việt)	丁朝（大瞿越）
+early_le	#26c6da	前黎朝	前黎朝	Early Lê dynasty	前黎朝
+ly	#29b6f6	李朝（大越）	李朝（大越）	Lý dynasty (Đại Việt)	李朝（大越）
+tran	#42a5f5	陳朝	陈朝	Trần dynasty	陳朝
+ho	#5c6bc0	胡朝（大虞）	胡朝（大虞）	Hồ dynasty	胡朝
+ming	#e0c068	明（交趾布政使司）	明（交趾布政使司）	Ming (Jiaozhi)	明（交趾布政使司）
+le	#26a69a	後黎朝	后黎朝	Later Lê dynasty	後黎朝
+mac	#8d6e63	莫朝	莫朝	Mạc dynasty	莫朝
+trinh	#66bb6a	黎朝（鄭主）	黎朝（郑主）	Lê court under the Trịnh lords	黎朝（鄭主）
+nguyen_l	#ffca28	廣南國（阮主）	广南国（阮主）	Nguyễn lords (Đàng Trong)	広南国（阮主）
+tayson	#ef5350	西山朝	西山朝	Tây Sơn	西山朝
+nguyen	#ffa000	阮朝（越南、大南）	阮朝（越南、大南）	Nguyễn dynasty	阮朝
+france	#5c6bc0	法國（交趾支那、法屬印度支那）	法国（交趾支那、法属印度支那）	France (Cochinchina, French Indochina)	フランス（コーチシナ・仏領インドシナ）
+japan	#e57373	日本	日本	Japan	日本
+drv	#d32f2f	越南民主共和國（北越）	越南民主共和国（北越）	Democratic Republic of Vietnam	ベトナム民主共和国
+rvn	#fdd835	越南國、越南共和國（南越）	越南国、越南共和国（南越）	State of Vietnam, Republic of Vietnam	ベトナム国・ベトナム共和国
+prg	#ff7043	越南南方共和臨時革命政府	越南南方共和临时革命政府	Provisional Revolutionary Government (South)	南ベトナム共和国臨時革命政府
+srv	#c62828	越南社會主義共和國	越南社会主义共和国	Socialist Republic of Vietnam	ベトナム社会主義共和国
+roc	#1e40af	中華民國	中华民国	Republic of China	中華民国
+prc	#b71c1c	中華人民共和國	中华人民共和国	People's Republic of China	中華人民共和国

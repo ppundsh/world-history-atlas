@@ -23,7 +23,7 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
   ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   ctx.font = `${seat ? 15 : 22}px ${S.label.font}`;
   ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(20,20,30,0.85)'; ctx.lineJoin = 'round';
-  const sym = { seat: '◆', feud: '⚔', power: '◉' }[m.kind] || '★';
+  const sym = { seat: '◆', feud: '⚔', power: '◉', art: '✦' }[m.kind] || '★';
   ctx.strokeText(sym, x, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText(sym, x, y);
   ctx.lineWidth = 1.2; ctx.strokeStyle = '#fff'; ctx.strokeText(sym, x, y);
   const text = m.text[col] || m.text[0];
@@ -315,7 +315,7 @@ export class FlatMap {
       }
     }
     const f = this.featureAt(ll);
-    return f ? { polity: f.properties.p, sec: f.properties.s, prov: f.properties.prov } : null;
+    return f ? { polity: f.properties.p, sec: typeof f.properties.s === 'number' ? f.properties.s : null, prov: f.properties.prov } : null;
   }
 
   polityAt(ll) { return this.featureAt(ll)?.properties.p ?? null; }
@@ -416,6 +416,7 @@ export class FlatMap {
     const fkey = feats.map(f => f.properties.p).join();
     const vkey = this.viewKey();
     const cell = 3, w = Math.ceil(this.W / cell), h = Math.ceil(this.H / cell);
+    if (!w || !h) return;                         // not laid out yet (e.g. a phone before its first layout)
     const T = this.trans;
     const sameView = this.lastVKey === vkey;
     const changed = this.lastFKey != null && fkey !== this.lastFKey;
@@ -473,6 +474,7 @@ export class FlatMap {
 
   draw() {
     const { ctx, proj, W, H, dpr } = this;
+    if (!W || !H) return;                         // nothing to draw before the first layout
     const app = this.app, st = app.state;
     const S = BASEMAPS[st.basemap];
     this.geoState();
@@ -609,7 +611,7 @@ export class FlatMap {
     this.drawMarkers(F, S);
     if (this.app.compare?.on) {
       const center = [this.view.lon, this.view.lat];
-      this.app.drawCompare(ctx, ll => (this.azimuthal && geoDistance(ll, center) > this.clipRad - 0.02) ? null : this.proj(ll), ll => this.featureAt(ll));
+      this.app.drawCompare(ctx, ll => (this.azimuthal && geoDistance(ll, center) > this.clipRad - 0.02) ? null : this.proj(ll), xy => this.proj.invert(xy));
     }
     this.app.eventLayer?.draw(ctx, proj => this.proj(proj), st.langInfo.col);
   }
@@ -645,7 +647,7 @@ export class FlatMap {
     for (const m of F.markers) {
       if (!visible([m.lon, m.lat])) continue;
       const p = proj([m.lon, m.lat]); if (!p) continue;
-      if (m.kind && m.kind !== 'gov') { const q = proj([m.lon + 0.5, m.lat]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) < 30) continue; }   // seats only once zoomed in
+      if (m.kind && m.kind !== 'gov' && m.kind !== 'art') { const q = proj([m.lon + 0.5, m.lat]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) < 30) continue; }   // seats only once zoomed in
       drawMarker(ctx, p[0], p[1], m, col, S, placed, hits);
     }
   }

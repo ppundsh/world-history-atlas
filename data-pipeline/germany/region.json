@@ -1,0 +1,153 @@
+{
+ "start": "1648-10",
+ "end": "2026-12",
+ "units": "germany_units.geojson",
+ "merge": true,
+ "groups": {
+  "de_west": [
+   "sh",
+   "hh",
+   "hb",
+   "ni_west",
+   "ni_bs",
+   "ni_han",
+   "nrw_rhine",
+   "nrw_westf",
+   "he_n",
+   "he_s",
+   "rp_n",
+   "rp_pfalz",
+   "saar",
+   "bw_baden",
+   "bw_wue",
+   "by_franconia",
+   "by_opf",
+   "by_swabia",
+   "by_old"
+  ],
+  "de_east": [
+   "mv_w",
+   "mv_e",
+   "bb",
+   "berlin_e",
+   "berlin_w",
+   "st_n",
+   "st_s",
+   "th",
+   "sn"
+  ],
+  "de_lost": [
+   "pl_wpom",
+   "pl_lub",
+   "pl_lsil",
+   "pl_opo",
+   "pl_sil",
+   "pl_wlkp",
+   "pl_kuj",
+   "pl_pom",
+   "pl_wm",
+   "kgd"
+  ],
+  "bavaria_l": [
+   "by_franconia",
+   "by_opf",
+   "by_swabia",
+   "by_old"
+  ],
+  "oder_neisse": [
+   "pl_wpom",
+   "pl_lub",
+   "pl_lsil",
+   "pl_opo",
+   "pl_wm"
+  ],
+  "silesia": [
+   "pl_lsil",
+   "pl_opo",
+   "pl_sil"
+  ],
+  "leftbank": [
+   "rp_n",
+   "rp_pfalz",
+   "saar",
+   "nrw_rhine"
+  ],
+  "uk_zone": [
+   "sh",
+   "hh",
+   "ni_west",
+   "ni_bs",
+   "ni_han",
+   "nrw_rhine",
+   "nrw_westf"
+  ],
+  "us_zone": [
+   "by_franconia",
+   "by_opf",
+   "by_swabia",
+   "by_old",
+   "he_n",
+   "he_s",
+   "hb",
+   "bw_wue"
+  ],
+  "fr_zone": [
+   "rp_n",
+   "rp_pfalz",
+   "bw_baden"
+  ],
+  "soviet_zone": [
+   "mv_w",
+   "mv_e",
+   "bb",
+   "st_n",
+   "st_s",
+   "sn",
+   "th",
+   "berlin_e"
+  ],
+  "reich_1871": [
+   "sh",
+   "hh",
+   "hb",
+   "ni_west",
+   "ni_bs",
+   "ni_han",
+   "nrw_rhine",
+   "nrw_westf",
+   "he_n",
+   "he_s",
+   "rp_n",
+   "rp_pfalz",
+   "saar",
+   "bw_baden",
+   "bw_wue",
+   "by_franconia",
+   "by_opf",
+   "by_swabia",
+   "by_old",
+   "mv_w",
+   "mv_e",
+   "bb",
+   "berlin_e",
+   "berlin_w",
+   "st_n",
+   "st_s",
+   "th",
+   "sn",
+   "pl_wpom",
+   "pl_lub",
+   "pl_lsil",
+   "pl_opo",
+   "pl_sil",
+   "pl_wlkp",
+   "pl_kuj",
+   "pl_pom",
+   "pl_wm",
+   "kgd",
+   "alsace",
+   "lorraine",
+   "n_schleswig"
+  ]
+ }
+}

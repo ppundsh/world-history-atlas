@@ -1,0 +1,55 @@
+# 越南模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（未劃分或不詳）	（未划分或不详）	(not drawn / unknown)	（区分なし・不詳）
+foreign	#e6e6e6	（越南以外）	（越南以外）	(outside Vietnam)	（ベトナム以外）
+h_giaochi	#e9c46a	交趾郡	交趾郡	Jiaozhi (Giao Chỉ) commandery	交趾郡
+h_cuuchan	#f4a261	九真郡	九真郡	Jiuzhen (Cửu Chân) commandery	九真郡
+h_nhatnam	#e76f51	日南郡	日南郡	Rinan (Nhật Nam) commandery	日南郡
+t_annam	#e9c46a	安南都護府	安南都护府	Protectorate of Annam	安南都護府
+l_delta	#e9c46a	京師與紅河平原四承宣（山南、京北、海陽、山西）	京师与红河平原四承宣（山南、京北、海阳、山西）	Capital and the four delta provinces (Sơn Nam, Kinh Bắc, Hải Dương, Sơn Tây)	京師と紅河デルタ四承宣
+l_north	#f4a261	太原、諒山、宣光、安邦	太原、谅山、宣光、安邦	Thái Nguyên, Lạng Sơn, Tuyên Quang, An Bang	太原・諒山・宣光・安邦
+l_hunghoa	#e76f51	興化	兴化	Hưng Hóa	興化
+l_thanh	#8ab17d	清華	清华	Thanh Hoa	清華
+l_nghe	#2a9d8f	乂安	乂安	Nghệ An	乂安
+l_thuan	#6fb3c7	順化	顺化	Thuận Hóa	順化
+l_quang	#b5a7d8	廣南	广南	Quảng Nam	広南
+n_kauthara	#d8a7b1	平康、延慶（阮主）	平康、延庆（阮主）	Bình Khang, Diên Khánh (Nguyễn lords)	平康・延慶（阮主）
+n_binhthuan	#c9b79c	平順（阮主）	平顺（阮主）	Bình Thuận (Nguyễn lords)	平順（阮主）
+n_giadinh	#f6b98a	嘉定府	嘉定府	Gia Định	嘉定府
+n_hatien	#a594cf	河仙鎮	河仙镇	Hà Tiên	河仙鎮
+g_bacthanh	#e9c46a	北城	北城	Bắc Thành	北城
+g_thanh	#f4a261	清化	清化	Thanh Hóa	清化
+g_nghe	#e76f51	乂安	乂安	Nghệ An	乂安
+g_kinh	#8ab17d	京畿、廣平、廣治（直隸）	京畿、广平、广治（直隶）	Capital region, Quảng Bình, Quảng Trị	京畿・広平・広治
+g_central	#2a9d8f	廣南、廣義、平定	广南、广义、平定	Quảng Nam, Quảng Ngãi, Bình Định	広南・広義・平定
+g_south_c	#6fb3c7	富安、平和、平順	富安、平和、平顺	Phú Yên, Bình Hòa, Bình Thuận	富安・平和・平順
+g_giadinh	#b5a7d8	嘉定城	嘉定城	Gia Định Thành	嘉定城
+m_hanoi	#e9c46a	河內、南定、海陽、北寧、山西等省	河内、南定、海阳、北宁、山西等省	Hà Nội, Nam Định, Hải Dương, Bắc Ninh, Sơn Tây …	ハノイ・南定・海陽・北寧・山西など
+m_north	#f4a261	太原、諒山、高平、宣光、廣安	太原、谅山、高平、宣光、广安	Thái Nguyên, Lạng Sơn, Cao Bằng, Tuyên Quang, Quảng Yên	太原・諒山・高平・宣光・広安
+m_hunghoa	#e76f51	興化省	兴化省	Hưng Hóa	興化省
+m_thanh	#8ab17d	清化省	清化省	Thanh Hóa	清化省
+m_nghe	#2a9d8f	乂安省、河靜省	乂安省、河静省	Nghệ An, Hà Tĩnh	乂安省・河静省
+m_qb	#6fb3c7	廣平省	广平省	Quảng Bình	広平省
+m_qt	#b5a7d8	廣治省	广治省	Quảng Trị	広治省
+m_hue	#d8a7b1	承天府	承天府	Thừa Thiên	承天府
+m_quang	#c9b79c	廣南省、廣義省	广南省、广义省	Quảng Nam, Quảng Ngãi	広南省・広義省
+m_binhdinh	#f6b98a	平定省	平定省	Bình Định	平定省
+m_phuyen	#a594cf	富安省、慶和省	富安省、庆和省	Phú Yên, Khánh Hòa	富安省・慶和省
+m_binhthuan	#cc94a0	平順省	平顺省	Bình Thuận	平順省
+m_gd	#d6c8b0	嘉定省、邊和省	嘉定省、边和省	Gia Định, Biên Hòa	嘉定省・辺和省
+m_mekong	#8cc5d6	定祥、永隆、安江	定祥、永隆、安江	Định Tường, Vĩnh Long, An Giang	定祥・永隆・安江
+m_hatien	#a3c4a8	河仙省	河仙省	Hà Tiên	河仙省
+f_cochin	#e76f51	交趾支那（南圻）	交趾支那（南圻）	Cochinchina (Nam Kỳ)	コーチシナ（南圻）
+f_tonkin	#e9c46a	東京（北圻）	东京（北圻）	Tonkin (Bắc Kỳ)	トンキン（北圻）
+f_annam	#f4a261	安南（中圻）	安南（中圻）	Annam (Trung Kỳ)	アンナン（中圻）
+f_laos	#cc94a0	寮國保護國	老挝保护国	Laos protectorate	ラオス保護国
+f_camb	#d6c8b0	柬埔寨保護國	柬埔寨保护国	Cambodia protectorate	カンボジア保護国
+p_north	#8cc5d6	越南民主共和國各省（未分繪）	越南民主共和国各省（未分绘）	Provinces of North Vietnam (not drawn)	北ベトナムの各省（未描画）
+p_south	#a3c4a8	越南共和國各省（未分繪）	越南共和国各省（未分绘）	Provinces of South Vietnam (not drawn)	南ベトナムの各省（未描画）
+r_dongbac	#e9c46a	東北部（今日地理分區）	东北部（今日地理分区）	North East (today's region)	東北部（現在の地方区分）
+r_taybac	#f4a261	西北部（今日地理分區）	西北部（今日地理分区）	North West (today's region)	西北部（現在の地方区分）
+r_hong	#e76f51	紅河平原（今日地理分區）	红河平原（今日地理分区）	Red River Delta (today's region)	紅河デルタ（現在の地方区分）
+r_bactrung	#8ab17d	北中部（今日地理分區）	北中部（今日地理分区）	North Central Coast (today's region)	北中部（現在の地方区分）
+r_namtrung	#2a9d8f	南中部沿海（今日地理分區）	南中部沿海（今日地理分区）	South Central Coast (today's region)	南中部沿岸（現在の地方区分）
+r_taynguyen	#6fb3c7	西原（今日地理分區）	西原（今日地理分区）	Central Highlands (today's region)	中部高原（現在の地方区分）
+r_dongnam	#b5a7d8	東南部（今日地理分區）	东南部（今日地理分区）	South East (today's region)	東南部（現在の地方区分）
+r_cuulong	#d8a7b1	九龍江平原（湄公河三角洲）（今日地理分區）	九龙江平原（湄公河三角洲）（今日地理分区）	Mekong Delta (today's region)	メコンデルタ（現在の地方区分）
