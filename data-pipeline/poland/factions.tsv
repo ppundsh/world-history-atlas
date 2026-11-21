@@ -1,0 +1,32 @@
+# 波蘭模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+piast	#e57373	皮雅斯特王朝波蘭	皮雅斯特王朝波兰	Piast Poland	ピャスト朝ポーランド
+piast_div	#ef9a9a	分裂時期的皮雅斯特諸公國	分裂时期的皮雅斯特诸公国	Piast duchies (fragmentation)	分裂期のピャスト諸公国
+bohemia	#ffb74d	波希米亞王冠	波希米亚王冠	Crown of Bohemia	ボヘミア王冠
+pomerania	#4fc3f7	波美拉尼亞公國	波美拉尼亚公国	Duchy of Pomerania	ポンメルン公国
+baltic	#c5d6a4	波羅的諸部族（普魯士人、立陶宛人等）	波罗的诸部族（普鲁士人、立陶宛人等）	Baltic peoples (Prussians, Lithuanians …)	バルト諸部族（プルーセン人・リトアニア人など）
+rus	#a1887f	基輔羅斯及羅斯諸公國	基辅罗斯及罗斯诸公国	Kievan Rus' and the Rus' principalities	キエフ・ルーシとルーシ諸公国
+golden_horde	#8d6e63	金帳汗國	金帐汗国	Golden Horde	ジョチ・ウルス
+teutonic	#90a4ae	條頓騎士團國	条顿骑士团国	State of the Teutonic Order	ドイツ騎士団国
+livonian	#b0bec5	立窩尼亞騎士團	立窝尼亚骑士团	Livonian Order	リヴォニア騎士団
+lithuania	#66bb6a	立陶宛大公國	立陶宛大公国	Grand Duchy of Lithuania	リトアニア大公国
+poland	#d32f2f	波蘭王國（1569 年起為波蘭立陶宛聯邦的王冠領地）	波兰王国（1569 年起为波兰立陶宛联邦的王冠领地）	Kingdom of Poland (the Crown of the Commonwealth from 1569)	ポーランド王国（1569 年からポーランド・リトアニア共和国の王冠領）
+courland	#80cbc4	庫爾蘭公國	库尔兰公国	Duchy of Courland	クールラント公国
+prussia	#5c6bc0	布蘭登堡、普魯士公國、普魯士王國	勃兰登堡、普鲁士公国、普鲁士王国	Brandenburg, Duchy of Prussia, Kingdom of Prussia	ブランデンブルク・プロイセン公国・プロイセン王国
+sweden	#64b5f6	瑞典	瑞典	Sweden	スウェーデン
+russia	#9e9e9e	莫斯科公國、俄羅斯帝國、俄羅斯	莫斯科公国、俄罗斯帝国、俄罗斯	Muscovy, Russian Empire, Russia	モスクワ大公国・ロシア帝国・ロシア
+cossack	#ffd54f	哥薩克酋長國	哥萨克酋长国	Cossack Hetmanate	ヘーチマン国家
+ottoman	#4db6ac	鄂圖曼帝國	奥斯曼帝国	Ottoman Empire	オスマン帝国
+austria	#e8c547	哈布斯堡君主國、奧地利帝國、奧匈帝國	哈布斯堡君主国、奥地利帝国、奥匈帝国	Habsburg Monarchy, Austria, Austria-Hungary	ハプスブルク君主国・オーストリア
+warsaw	#f48fb1	華沙公國	华沙公国	Duchy of Warsaw	ワルシャワ公国
+congress	#ce93d8	波蘭王國（會議王國，俄屬）	波兰王国（会议王国，俄属）	Congress Kingdom of Poland (under Russia)	ポーランド立憲王国（ロシア領）
+krakow	#f8bbd0	克拉科夫自由市	克拉科夫自由市	Free City of Kraków	クラクフ自由市
+germany	#546e7a	德意志帝國、威瑪共和國	德意志帝国、魏玛共和国	German Empire, Weimar Republic	ドイツ帝国・ヴァイマル共和国
+poland2	#c62828	波蘭第二共和國	波兰第二共和国	Second Polish Republic	ポーランド第二共和国
+lithuania_r	#43a047	立陶宛共和國	立陶宛共和国	Republic of Lithuania	リトアニア共和国
+latvia	#8e24aa	拉脫維亞	拉脱维亚	Latvia	ラトビア
+ukraine	#fdd835	烏克蘭	乌克兰	Ukraine	ウクライナ
+belarus	#a5d6a7	白俄羅斯	白俄罗斯	Belarus	ベラルーシ
+ussr	#b71c1c	蘇聯	苏联	Soviet Union	ソ連
+nazi	#6d4c41	納粹德國	纳粹德国	Nazi Germany	ナチス・ドイツ
+prl	#e53935	波蘭人民共和國	波兰人民共和国	Polish People's Republic	ポーランド人民共和国
+poland3	#f44336	波蘭共和國（第三共和國）	波兰共和国（第三共和国）	Republic of Poland (Third Republic)	ポーランド共和国（第三共和国）

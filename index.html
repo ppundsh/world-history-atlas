@@ -18,7 +18,7 @@
     <button id="menuBtn" class="icon" aria-label="menu">☰</button>
     <div id="controls">
       <label class="modesel"><span id="l-mode"></span><select id="mode"></select></label><button id="toWorld" class="toworld" hidden></button>
-      <div id="layerBox" class="layerbox" hidden><span id="l-layer"></span><label class="chk"><input type="checkbox" id="ly-control" /><span id="l-ly-control"></span></label><label class="chk"><input type="checkbox" id="ly-admin" /><span id="l-ly-admin"></span></label><label class="chk" id="overseasBox" hidden><input type="checkbox" id="ov-japan" /><span id="l-overseas"></span></label><span id="localBox" hidden><label class="chk"><input type="checkbox" id="lc-feud" /><span id="l-lc-feud"></span></label><label class="chk"><input type="checkbox" id="lc-power" /><span id="l-lc-power"></span></label></span></div>
+      <div id="layerBox" class="layerbox" hidden><span id="l-layer"></span><label class="chk"><input type="checkbox" id="ly-control" /><span id="l-ly-control"></span></label><label class="chk"><input type="checkbox" id="ly-admin" /><span id="l-ly-admin"></span></label><label class="chk" id="partyBox" hidden><input type="checkbox" id="ly-party" /><span id="l-ly-party"></span></label><label class="chk" id="overseasBox" hidden><input type="checkbox" id="ov-japan" /><span id="l-overseas"></span></label></div>
       <label><span id="l-lang"></span><select id="lang"></select></label>
       <label><span id="l-projBy"></span><select id="projBy"></select></label>
       <div class="projpick"><span id="l-proj"></span><button id="projBtn" type="button" aria-haspopup="listbox"></button>
@@ -27,26 +27,46 @@
       <label><span id="l-base"></span><select id="base"></select></label>
       <label><span id="l-pov"></span><select id="pov"></select></label>
       <label><span id="l-density"></span><input id="density" type="range" min="0.1" max="1" step="0.05" /></label>
+      <div class="showpick markpick"><button id="markBtn" type="button" class="text"></button>
+      <div class="toggles marks" id="markMenu" hidden>
+        <h5 id="l-markGeneral"></h5>
+        <label class="switch" id="capSwitch"><input type="checkbox" id="t-capitals" /><i></i><span id="l-capitals"></span></label>
+        <label class="switch" id="dotSwitch"><input type="checkbox" id="t-evDots" /><i></i><span id="l-evDots"></span></label>
+        <label class="switch" id="evSwitch"><input type="checkbox" id="t-evTable" /><i></i><span id="l-evTable"></span></label>
+        <label class="switch"><input type="checkbox" id="t-events" /><i></i><span id="l-events"></span></label>
+        <label class="picsize"><span id="l-picSize"></span><input id="picSize" type="range" min="30" max="140" step="2" /></label>
+        <div id="modeMarks">
+          <h5 id="l-markMode"></h5>
+          <label class="switch" data-modes="art fgo finance"><input type="checkbox" id="t-artPics" /><i></i><span id="l-artPics"></span></label>
+          <label class="switch" data-modes="language finance internet"><input type="checkbox" id="t-thAreas" /><i></i><span id="l-thAreas"></span></label>
+          <label class="switch" data-modes="language finance internet"><input type="checkbox" id="t-thFlows" /><i></i><span id="l-thFlows"></span></label>
+          <label class="switch" data-modes="language finance internet"><input type="checkbox" id="t-thPoints" /><i></i><span id="l-thPoints"></span></label>
+          <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india"><input type="checkbox" id="t-warFlows" /><i></i><span id="l-warFlows"></span></label>
+          <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india"><input type="checkbox" id="lc-feud" /><i></i><span id="l-lc-feud"></span></label>
+          <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india"><input type="checkbox" id="lc-power" /><i></i><span id="l-lc-power"></span></label>
+          <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india"><input type="checkbox" id="lc-us" /><i></i><span id="l-lc-us"></span></label>
+          <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india"><input type="checkbox" id="lc-works" /><i></i><span id="l-lc-works"></span></label>
+          <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india"><input type="checkbox" id="lc-network" /><i></i><span id="l-lc-network"></span></label>
+        </div>
+      </div></div>
       <div class="showpick"><button id="showBtn" type="button" class="text"></button>
       <div class="toggles" id="showMenu" hidden>
         <label class="chk"><input type="checkbox" id="t-labels" /><span id="l-labels"></span></label>
         <label id="relLabelsBox" class="sel" hidden><span id="l-relLabels"></span><select id="relLabels"></select></label>
         <label class="chk"><input type="checkbox" id="t-labelsIn" /><span id="l-labelsIn"></span></label>
-        <label class="chk"><input type="checkbox" id="t-capitals" /><span id="l-capitals"></span></label>
         <label class="chk"><input type="checkbox" id="t-borders" /><span id="l-borders"></span></label>
         <label class="chk"><input type="checkbox" id="t-rivers" /><span id="l-rivers"></span></label>
         <label class="chk"><input type="checkbox" id="t-graticule" /><span id="l-graticule"></span></label>
         <label class="chk"><input type="checkbox" id="t-modern" /><span id="l-modern"></span></label>
         <label class="chk"><input type="checkbox" id="t-distort" /><span id="l-distort"></span></label>
         <label id="distortBox" class="sel" hidden><span id="l-distortStr"></span><input id="distortStr" type="range" min="0.1" max="1" step="0.05" /></label>
-        <label class="chk"><input type="checkbox" id="t-evTable" /><span id="l-evTable"></span></label>
         <label class="chk"><input type="checkbox" id="t-twCompare" /><span id="l-twCompare"></span></label>
         <label class="chk"><input type="checkbox" id="t-relief" /><span id="l-relief"></span></label>
         <label class="chk"><input type="checkbox" id="t-minFont" /><span id="l-minFont"></span></label>
         <label class="chk"><input type="checkbox" id="t-animate" /><span id="l-animate"></span></label>
-        <label class="chk"><input type="checkbox" id="t-events" /><span id="l-events"></span></label>
       </div></div>
       <button id="aboutBtn" class="text"></button>
+      <div id="musicFold" hidden><button id="musicToggle" type="button"></button><div id="musicSlot" hidden></div></div>
     </div>
   </header>
 
@@ -70,8 +90,15 @@
       <button id="north" hidden>⬆</button>
       <button id="reset">⟲</button>
       <button id="full">⛶</button>
+      <button id="shotBtn">📷</button>
+      <button id="recBtn"><span class="dot"></span></button>
     </div>
+    <div id="evPop" hidden></div>
+    <div id="recMenu" hidden><label class="chk"><input type="checkbox" id="recMusic" /><span id="l-recMusic"></span></label><button id="recGo"></button></div>
+    <div id="recBar" hidden><span class="dot"></span><span id="recTime">0:00</span><button id="recStop"></button></div>
 
+    <aside id="pinInfo" hidden></aside>
+    <div id="evHover" hidden></div>
     <aside id="info" hidden></aside>
     <aside id="legend" hidden></aside>
     <div id="tooltip" hidden></div>
@@ -105,12 +132,14 @@
   </footer>
 
   <div id="about" hidden>
-    <div class="card">
-      <button id="aboutX" class="x" aria-label="close">×</button>
-      <p id="aboutText"></p>
-      <p id="countNote"></p>
-      <div id="credits"></div>
-      <button id="aboutClose"></button>
+    <div class="card" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+      <header><h2 id="aboutTitle"></h2><button id="aboutX" class="xbtn" aria-label="close">×</button></header>
+      <div class="body">
+        <p id="aboutText"></p>
+        <p id="countNote"></p>
+        <div id="credits"></div>
+      </div>
+      <footer><button id="aboutClose"></button></footer>
     </div>
   </div>
 

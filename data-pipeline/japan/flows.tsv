@@ -1,0 +1,51 @@
+# japan：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
+tamuramaro	797-11	802-04	#334155	2	135.76,35.01 139.9,37.0 141.0,38.3 141.12,39.13	坂上田村麻呂東征	Sakanoue no Tamuramaro's campaigns	坂上田村麻呂の東征
+genpei	1184-02	1185-04	#334155	3	135.76,35.01 135.1,34.65 134.1,34.35 130.96,33.96	源平合戰：一之谷→屋島→壇之浦	Genpei War: Ichi-no-Tani, Yashima, Dan-no-ura	源平合戦：一ノ谷→屋島→壇ノ浦
+mongol1274	1274-10	1274-11	#7f1d1d	3	128.57,35.2 129.3,34.4 129.7,33.8 130.4,33.6	文永之役：元軍渡海攻博多	First Mongol invasion to Hakata	文永の役
+mongol1281	1281-05	1281-07	#7f1d1d	3	128.57,35.2 129.3,34.4 130.0,33.4 130.4,33.6	弘安之役	Second Mongol invasion	弘安の役
+imjin	1592-04	1592-07	#334155	3	129.87,33.53 129.04,35.1 127.93,36.99 126.98,37.57 125.75,39.02	豐臣秀吉出兵朝鮮	Hideyoshi's invasion of Korea	文禄の役
+boshin	1868-01	1869-06	#b91c1c	3	135.76,35.01 139.77,35.68 139.93,37.49 140.9,38.27 140.73,41.77	戊辰戰爭：鳥羽伏見→江戶→會津→箱館	Boshin War: Toba–Fushimi, Edo, Aizu, Hakodate	戊辰戦争：鳥羽・伏見→江戸→会津→箱館
+satsuma	1877-02	1877-09	#334155	2	130.56,31.6 130.71,32.8 131.4,32.5 130.56,31.6	西南戰爭	Satsuma Rebellion	西南戦争
+us1944	1944-06	1945-04	#1d4ed8	3	145.75,15.2 141.32,24.78 127.68,26.21	美軍跳島：塞班→硫磺島→沖繩	US island-hopping: Saipan, Iwo Jima, Okinawa	米軍の島伝い：サイパン→硫黄島→沖縄
+kentoshi	0702-06	0838-07	#0e7490	2	130.4,33.6 129.3,33.2 126.5,30.5 121.5,31.2	遣唐使：博多經東海至長江口（南路）	Envoys to Tang: from Hakata across the East China Sea	遣唐使（南路）：博多から長江河口へ
+emishi774	0774-07	0811-12	#7c2d12	2	140.87,38.27 141.0,38.6 141.12,39.14 141.15,39.7	三十八年戰爭：朝廷軍北進陸奧	The Thirty-Eight Years' War: imperial armies push north	三十八年戦争：朝廷軍の北進
+masakado	0939-12	0940-02	#7c2d12	2	139.9,36.1 139.88,36.37 139.95,36.25	平將門之亂：攻佔常陸、下野國府	Taira no Masakado seizes the Hitachi and Shimotsuke offices	平将門の乱：常陸・下野国府を攻略
+sumitomo	0939-12	0941-06	#7c2d12	2	132.55,33.55 133.2,34.1 130.4,33.6	藤原純友之亂：瀨戶內海至大宰府	Fujiwara no Sumitomo's revolt across the Inland Sea to Dazaifu	藤原純友の乱：瀬戸内海から大宰府へ
+zenkunen	1051-01	1062-09	#7c2d12	2	140.87,38.27 141.1,39.3 141.12,39.7	前九年之役：源賴義北征安倍氏	The Former Nine Years' War: Minamoto no Yoriyoshi against the Abe	前九年の役：源頼義の安倍氏攻め
+yoshinaka	1183-05	1183-07	#7c2d12	2	138.18,36.65 136.83,36.68 136.6,36.46 135.76,35.01	源義仲：俱利伽羅峠之戰後進京	Minamoto no Yoshinaka marches on Kyoto after Kurikara	源義仲：倶利伽羅峠から入京
+yoritomo1180	1180-08	1180-10	#1e3a8a	2	139.06,35.05 139.88,35.0 140.12,35.6 139.55,35.32	源賴朝舉兵：石橋山敗走→房總→鎌倉	Yoritomo rises: from Ishibashiyama via Bōsō to Kamakura	源頼朝の挙兵：石橋山→房総→鎌倉
+oshu1189	1189-07	1189-09	#1e3a8a	3	139.55,35.32 140.0,36.6 140.47,37.75 141.12,38.99	奧州合戰：源賴朝滅奧州藤原氏	The Ōshū campaign: Yoritomo destroys the Northern Fujiwara	奥州合戦：頼朝が奥州藤原氏を滅ぼす
+jokyu	1221-05	1221-06	#1e3a8a	3	139.55,35.32 138.4,34.97 136.9,35.15 135.76,35.01	承久之亂：幕府軍分東海、東山、北陸三路上洛	The Jōkyū War: shogunate armies march on Kyoto	承久の乱：幕府軍の上洛
+takauji1336	1336-02	1336-06	#4c1d95	3	130.4,33.6 132.45,34.39 134.86,34.62 135.13,34.7 135.76,35.01	足利尊氏：自九州東上，湊川之戰後入京	Ashikaga Takauji returns from Kyushu; after Minatogawa he takes Kyoto	足利尊氏：九州から東上、湊川の戦いを経て入京
+nitta1333	1333-05	1333-07	#4c1d95	2	139.35,36.3 139.45,35.75 139.55,35.32	新田義貞攻陷鎌倉	Nitta Yoshisada takes Kamakura	新田義貞の鎌倉攻め
+okehazama	1560-06	1560-06	#b45309	2	138.38,34.97 137.25,35.08 136.99,35.06	桶狹間之戰：今川義元西進	Okehazama: Imagawa Yoshimoto's march west	桶狭間の戦い：今川義元の西上
+nobunaga1568	1568-09	1568-10	#b45309	3	136.76,35.42 136.2,35.1 135.76,35.01	織田信長擁足利義昭上洛	Oda Nobunaga marches on Kyoto with Ashikaga Yoshiaki	織田信長の上洛
+shingen1572	1572-10	1573-04	#991b1b	2	138.57,35.66 137.9,35.1 137.68,34.78 137.3,34.96	武田信玄西上作戰：三方原之戰	Takeda Shingen's western campaign: Mikatagahara	武田信玄の西上作戦：三方ヶ原
+ogaeshi1582	1582-06	1582-07	#b45309	3	133.89,34.66 134.69,34.83 135.4,34.9 135.71,34.9	中國大返：羽柴秀吉自備中高松回師，山崎之戰討明智光秀	The Great Return: Hideyoshi races back from Takamatsu to defeat Akechi at Yamazaki	中国大返し：秀吉が備中高松から山崎へ
+kyushu1587	1587-03	1587-06	#b45309	3	135.5,34.69 133.0,33.95 130.9,33.9 130.7,32.8 130.56,31.6	九州征伐：豐臣秀吉降島津	Hideyoshi's Kyushu campaign against the Shimazu	九州征伐：豊臣秀吉が島津を降す
+odawara1590	1590-03	1590-08	#b45309	3	135.5,34.69 136.9,35.15 138.4,34.97 139.15,35.25	小田原征伐：豐臣秀吉滅後北條氏	The siege of Odawara: Hideyoshi ends the Later Hōjō	小田原征伐：後北条氏の滅亡
+sekigahara_e	1600-08	1600-10	#065f46	3	139.69,35.69 138.4,34.97 136.9,35.15 136.47,35.37	關原之戰：德川家康主力循東海道西進	Sekigahara: Tokugawa Ieyasu's main army west along the Tōkaidō	関ヶ原の戦い：家康本隊が東海道を西進
+sekigahara_n	1600-08	1600-10	#065f46	2	139.88,36.55 138.25,36.2 137.4,35.7 136.47,35.37	德川秀忠循中山道西進（受阻上田城，遲到關原）	Tokugawa Hidetada via the Nakasendō, delayed at Ueda	秀忠が中山道を西進（上田城で遅参）
+osaka1614	1614-11	1615-06	#065f46	3	138.38,34.97 136.9,35.15 135.76,35.01 135.53,34.69	大坂之陣：德川軍圍攻大坂城	The sieges of Osaka	大坂の陣：徳川軍の大坂城攻め
+shimabara	1637-12	1638-04	#065f46	2	130.7,32.8 130.3,32.63 130.25,32.63	島原之亂：幕府軍圍原城	Shimabara: the shogunate besieges Hara Castle	島原の乱：幕府軍が原城を包囲
+satsuma1609	1609-03	1609-05	#b45309	3	130.56,31.6 129.5,28.4 128.0,26.8 127.68,26.21	薩摩藩出兵琉球，攻陷首里	Satsuma invades Ryukyu and takes Shuri	薩摩藩の琉球侵攻、首里を攻略
+perry1853	1853-05	1853-07	#1d4ed8	3	127.68,26.21 135.0,30.0 139.72,35.23	培里艦隊：自那霸駛抵浦賀	Perry's squadron sails from Naha to Uraga	ペリー艦隊：那覇から浦賀へ
+choshu1864	1864-08	1864-09	#1d4ed8	2	133.0,34.0 131.5,34.2 130.95,33.95	四國艦隊下關砲擊	The Shimonoseki bombardment by the four-power fleet	四国艦隊下関砲撃
+ikedaya_kinmon	1864-07	1864-08	#7c2d12	2	131.47,34.18 132.5,34.4 135.76,35.01	禁門之變：長州軍進京	The Kinmon incident: Chōshū troops march on Kyoto	禁門の変：長州軍の上京
+ezo1868	1868-10	1869-06	#991b1b	2	139.72,35.65 141.0,38.4 141.0,41.0 140.73,41.77	榎本武揚舊幕府艦隊北走箱館	Enomoto's fleet sails north to Hakodate	榎本艦隊の箱館への北走
+tondenhei	1875-05	1904-12	#d97706	2	140.73,41.77 141.35,43.06 142.36,43.77 143.2,43.9	屯田兵與移民開拓北海道	Tondenhei and settlers open up Hokkaido	屯田兵と移民による北海道開拓
+seinan_kuma	1877-02	1877-04	#7c2d12	2	130.56,31.6 130.65,32.2 130.71,32.81	西南戰爭：薩軍北上圍熊本城	Satsuma Rebellion: Saigō's army besieges Kumamoto Castle	西南戦争：薩軍が熊本城を包囲
+taiwan1874	1874-04	1874-06	#111827	2	129.87,32.75 127.68,26.21 120.8,22.1	出兵臺灣（牡丹社事件）	The Taiwan Expedition of 1874	台湾出兵
+ujina1894	1894-08	1894-10	#111827	3	132.46,34.35 130.4,33.6 129.0,35.1 126.6,37.45	甲午戰爭：自廣島宇品港出兵朝鮮	First Sino-Japanese War: troops sail from Ujina, Hiroshima, for Korea	日清戦争：広島・宇品港から朝鮮へ出兵
+ryojun1904	1904-05	1905-01	#111827	3	129.72,33.16 125.0,36.5 121.25,38.8	日俄戰爭：自佐世保出兵，圍攻旅順	Russo-Japanese War: from Sasebo to the siege of Port Arthur	日露戦争：佐世保から旅順攻囲へ
+baltic1905	1905-01	1905-05	#7f1d1d	3	106.0,10.5 115.0,18.0 124.0,27.0 129.0,33.8	俄國波羅的海艦隊北上，對馬海戰覆滅	The Russian Baltic Fleet steams north and is destroyed at Tsushima	バルチック艦隊の北上、日本海海戦
+hitokappu1941	1941-11	1941-12	#111827	3	147.7,45.1 165.0,40.0 -170.0,30.0 -157.95,21.35	機動部隊自擇捉島單冠灣出擊珍珠港	The carrier fleet sails from Hitokappu Bay to Pearl Harbor	機動部隊が単冠湾から真珠湾へ
+midway1942	1942-05	1942-06	#111827	3	132.6,33.9 150.0,30.0 -177.37,28.2	中途島海戰	The Battle of Midway	ミッドウェー海戦
+doolittle1942	1942-04	1942-04	#1d4ed8	2	153.0,35.5 139.7,35.7 136.9,35.15 135.5,34.69 119.0,29.0	杜立德空襲東京、名古屋、大阪	The Doolittle Raid on Tokyo, Nagoya and Osaka	ドーリットル空襲
+b29_1944	1944-11	1945-08	#1d4ed8	3	145.73,15.18 142.0,24.8 139.7,35.7	B-29 自塞班、天寧島出擊轟炸日本本土	B-29s from Saipan and Tinian bomb the home islands	B-29 がサイパン・テニアンから本土空襲
+hiroshima1945	1945-08	1945-08	#1d4ed8	2	145.63,15.0 138.0,25.0 132.46,34.39	艾諾拉·蓋號自天寧島飛往廣島	Enola Gay flies from Tinian to Hiroshima	エノラ・ゲイがテニアンから広島へ
+nagasaki1945	1945-08	1945-08	#1d4ed8	2	145.63,15.0 135.0,25.0 130.87,33.88 129.87,32.75	博克斯卡號：原定小倉，改投長崎	Bockscar: Kokura was the target; Nagasaki was bombed	ボックスカー：小倉から長崎へ
+soviet_karafuto	1945-08	1945-08	#b91c1c	3	142.0,50.5 142.4,48.5 142.73,46.95	蘇軍南下攻佔南樺太	Soviet forces sweep south through Karafuto	ソ連軍の南樺太侵攻
+soviet_kuril	1945-08	1945-09	#b91c1c	3	156.0,50.8 152.0,47.5 148.5,45.5 146.0,43.8	蘇軍攻佔千島群島及北方四島（占守島之戰起）	Soviet forces take the Kurils and the four northern islands, from Shumshu	ソ連軍の千島列島・北方四島占領（占守島の戦いから）
+macarthur1945	1945-08	1945-09	#1d4ed8	2	120.98,14.6 127.8,26.3 139.45,35.45 139.76,35.68	麥克阿瑟自馬尼拉經沖繩抵厚木，進駐東京	MacArthur flies from Manila via Okinawa to Atsugi and Tokyo	マッカーサーがマニラから沖縄経由で厚木へ、東京に進駐
+repatriation	1945-10	1950-12	#6b7280	2	125.3,43.9 128.5,41.5 132.0,38.5 135.38,35.47	戰後引揚：從滿洲、朝鮮經舞鶴、博多等港返日	Postwar repatriation from Manchuria and Korea through Maizuru and Hakata	戦後の引揚げ：満洲・朝鮮から舞鶴・博多などへ

@@ -1,0 +1,91 @@
+{
+ "start": "0711-01",
+ "end": "2026-12",
+ "units": "spain_units.geojson",
+ "merge": true,
+ "groups": {
+  "portugal_l": [
+   "pt_norte",
+   "pt_centro",
+   "pt_lisboa",
+   "pt_alentejo",
+   "pt_algarve"
+  ],
+  "andalucia": [
+   "sevilla",
+   "cordoba",
+   "jaen",
+   "granada"
+  ],
+  "leon_l": [
+   "asturias",
+   "galicia",
+   "leon",
+   "salamanca"
+  ],
+  "aragon_crown": [
+   "aragon",
+   "cat_old",
+   "cat_new",
+   "valencia",
+   "baleares"
+  ],
+  "spain_l": [
+   "asturias",
+   "cantabria",
+   "galicia",
+   "leon",
+   "salamanca",
+   "castilla_n",
+   "basque",
+   "navarra",
+   "rioja",
+   "aragon",
+   "cat_old",
+   "cat_new",
+   "valencia",
+   "murcia",
+   "madrid",
+   "castilla_s",
+   "extremadura",
+   "cordoba",
+   "jaen",
+   "sevilla",
+   "granada",
+   "baleares",
+   "canarias",
+   "ceuta"
+  ],
+  "iberia": [
+   "asturias",
+   "cantabria",
+   "galicia",
+   "leon",
+   "salamanca",
+   "castilla_n",
+   "basque",
+   "navarra",
+   "rioja",
+   "aragon",
+   "cat_old",
+   "cat_new",
+   "valencia",
+   "murcia",
+   "madrid",
+   "castilla_s",
+   "extremadura",
+   "cordoba",
+   "jaen",
+   "sevilla",
+   "granada",
+   "baleares",
+   "canarias",
+   "ceuta",
+   "pt_norte",
+   "pt_centro",
+   "pt_lisboa",
+   "pt_alentejo",
+   "pt_algarve"
+  ]
+ }
+}

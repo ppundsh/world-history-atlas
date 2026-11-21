@@ -1,0 +1,40 @@
+# italy：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
+charles8	1494-09	1495-02	#1e3a8a	3	8.2,44.9 10.4,43.7 11.26,43.77 12.49,41.89 14.25,40.85	查理八世入侵義大利	Charles VIII marches through Italy	シャルル 8 世のイタリア遠征
+napoleon96	1796-04	1797-02	#1e3a8a	3	7.26,43.7 8.2,44.4 9.5,45.31 9.19,45.46 10.79,45.16	拿破崙義大利戰役	Napoleon's Italian campaign	ナポレオンのイタリア遠征
+thousand	1860-05	1860-10	#b91c1c	3	9.0,44.4 12.44,37.8 13.36,38.12 15.55,38.19 14.25,40.85 14.2,41.1	加里波底千人遠征	Garibaldi's Expedition of the Thousand	ガリバルディの千人隊
+sardinia60	1860-09	1860-10	#1e40af	2	12.9,43.9 13.55,43.46 14.0,41.3	薩丁尼亞軍南下會師	Sardinian troops march south to meet Garibaldi	サルデーニャ軍の南下
+marchrome	1922-10	1922-10	#111827	2	12.39,43.11 12.49,41.89	向羅馬進軍	March on Rome	ローマ進軍
+allies43	1943-07	1945-04	#1d4ed8	3	14.25,37.07 15.55,38.19 14.77,40.68 13.81,41.49 12.49,41.89 11.26,43.77 11.34,44.49 9.19,45.46	盟軍北上：西西里→薩萊諾→卡西諾→羅馬→米蘭	The Allies north: Sicily, Salerno, Cassino, Rome, Milan	連合軍の北上
+anzio	1944-01	1944-06	#1d4ed8	2	12.62,41.45 12.49,41.89	安濟奧登陸	Anzio landing	アンツィオ上陸
+otranto1480	1480-07	1480-08	#7f1d1d	2	19.45,41.3 18.9,40.6 18.49,40.15	奧斯曼艦隊自發羅那渡海攻奧特朗托	The Ottoman fleet crosses from Vlorë to Otranto	オスマン艦隊がヴロラからオトラントへ
+louis1499	1499-08	1499-09	#1d4ed8	2	6.0,45.5 7.69,45.07 8.62,45.07 9.19,45.46	路易十二攻佔米蘭	Louis XII takes Milan	ルイ12世のミラノ占領
+cordoba1503	1503-04	1503-12	#ca8a04	2	16.0,38.9 15.6,40.8 16.0,41.3 14.25,40.85 13.75,41.25	貢薩洛·德·科爾多瓦征服那不勒斯	Gonzalo de Córdoba conquers Naples	ゴンサロ・デ・コルドバのナポリ征服
+cambrai1509	1509-04	1509-05	#1d4ed8	2	9.19,45.46 9.7,45.5 9.65,45.42	法軍攻威尼斯（阿尼亞德洛之戰）	French attack Venice at Agnadello	フランス軍のアニャデッロの戦い
+francis1515	1515-08	1515-09	#1d4ed8	2	6.0,44.5 7.0,44.4 7.69,45.07 9.32,45.37	法蘭索瓦一世越阿爾卑斯至馬里尼亞諾	Francis I crosses the Alps to Marignano	フランソワ1世のアルプス越え
+pavia1525	1524-10	1525-02	#1d4ed8	2	7.69,45.07 9.19,45.46 9.16,45.18	法軍圍攻帕維亞	French besiege Pavia	フランス軍のパヴィア包囲
+sack1527	1527-02	1527-05	#ca8a04	3	9.19,45.46 10.33,44.8 11.34,44.49 11.9,43.46 12.47,41.9	帝國軍南下羅馬之劫	Imperial troops march south to sack Rome	皇帝軍のローマ劫掠
+florence1529	1529-09	1530-08	#ca8a04	2	12.4,43.1 11.88,43.46 11.26,43.77	帝國軍圍攻佛羅倫斯	The imperial siege of Florence	皇帝軍のフィレンツェ包囲
+lepanto1571	1571-09	1571-10	#ca8a04	2	15.55,38.19 17.0,38.5 20.5,38.3 21.1,38.2	神聖同盟艦隊自墨西拿出發至勒班陀	The Holy League fleet sails from Messina to Lepanto	神聖同盟艦隊がメッシーナからレパントへ
+turin1706	1706-08	1706-09	#7c3aed	2	11.0,45.4 10.0,45.0 8.6,44.9 7.69,45.07	歐根親王馳援杜林	Prince Eugene marches to relieve Turin	オイゲン公のトリノ救援
+alps1800	1800-05	1800-06	#1d4ed8	2	7.16,46.1 7.17,45.87 7.32,45.74 8.62,45.07 8.68,44.89	拿破崙翻越大聖伯納德山口至馬倫戈	Napoleon over the Great St Bernard to Marengo	ナポレオンの大サン・ベルナール越え
+murat1815	1815-03	1815-05	#1d4ed8	2	14.25,40.85 12.47,41.9 12.6,43.6 11.34,44.49 12.6,43.3 13.65,43.2	繆拉的拿破崙戰爭（托倫蒂諾敗退）	Murat's Neapolitan War and defeat at Tolentino	ミュラのナポリ戦争
+austria1821	1821-02	1821-03	#ca8a04	2	11.34,44.49 12.47,41.9 13.6,41.7 14.25,40.85	奧地利出兵鎮壓那不勒斯革命	Austria crushes the Neapolitan revolution	オーストリア軍のナポリ革命鎮圧
+radetzky1848	1848-03	1848-07	#ca8a04	2	9.19,45.46 10.0,45.4 10.99,45.44 10.73,45.37	拉德茨基撤至四角要塞再於庫斯托札反擊	Radetzky falls back on the Quadrilateral, then wins at Custoza	ラデツキーの撤退とクストーツァの勝利
+france1849	1849-04	1849-07	#1d4ed8	2	11.78,42.09 12.2,42.0 12.47,41.9	法軍自奇維塔韋基亞進攻羅馬共和國	The French march from Civitavecchia on the Roman Republic	フランス軍のローマ共和国攻撃
+garibaldi1849	1849-07	1849-08	#16a34a	2	12.47,41.9 12.1,42.4 12.2,43.9 12.2,44.4	加里波底撤離羅馬	Garibaldi's retreat from Rome	ガリバルディのローマ撤退
+napoleon3_1859	1859-05	1859-06	#1d4ed8	2	6.0,45.0 7.69,45.07 8.75,45.45 9.19,45.46 10.55,45.39	法撒聯軍：馬真塔→米蘭→索爾費里諾	French and Sardinians: Magenta, Milan, Solferino	仏・サルデーニャ連合軍：マジェンタからソルフェリーノへ
+garibaldi1866	1866-06	1866-07	#16a34a	2	9.67,45.7 10.5,45.8 10.85,45.85	加里波底的阿爾卑斯獵兵進攻特倫蒂諾	Garibaldi's volunteers advance into Trentino	ガリバルディ義勇兵のトレンティーノ進撃
+mentana1867	1867-10	1867-11	#16a34a	2	12.6,42.4 12.67,42.0 12.64,42.03	加里波底進軍羅馬，敗於門塔納	Garibaldi marches on Rome and is beaten at Mentana	ガリバルディのローマ進軍、メンターナで敗北
+porta_pia	1870-09	1870-09	#1e3a8a	2	12.1,42.42 12.4,42.1 12.5,41.91	義大利軍攻破庇亞門	Italian troops break in at Porta Pia	イタリア軍のピア門突破
+libya1911	1911-10	1911-10	#1e3a8a	2	15.55,38.19 14.0,35.0 13.19,32.89	義軍渡海登陸的黎波里	Italian troops land at Tripoli	イタリア軍のトリポリ上陸
+caporetto	1917-10	1917-11	#ca8a04	3	13.73,46.25 13.3,46.1 12.65,45.95 12.3,45.85	卡波雷托之敗，撤至皮亞韋河	Caporetto: retreat to the Piave	カポレットの敗走、ピアーヴェ川へ
+vittorio1918	1918-10	1918-11	#1e3a8a	2	12.3,45.75 12.3,45.98 12.6,46.3 11.12,46.07	義軍渡皮亞韋河反攻	Italians cross the Piave and advance	イタリア軍のピアーヴェ渡河攻勢
+fiume1919	1919-09	1919-09	#b45309	2	12.0,45.8 13.3,45.7 14.44,45.33	鄧南遮自龍基進軍阜姆	D'Annunzio marches from Ronchi to Fiume	ダンヌンツィオのフィウメ進軍
+ethiopia1935	1935-10	1936-05	#1e3a8a	2	39.47,15.6 38.9,14.17 39.47,13.5 38.74,9.03	義軍自厄利垂亞南下阿迪斯阿貝巴	Italians advance from Eritrea to Addis Ababa	イタリア軍がエリトリアからアディスアベバへ
+greece1940	1940-10	1941-04	#1e3a8a	2	19.82,41.33 20.4,40.1 20.7,39.67	義軍自阿爾巴尼亞攻希臘受挫	Italy attacks Greece from Albania and is thrown back	イタリア軍のギリシャ侵攻
+salerno1943	1943-09	1943-10	#16a34a	2	14.9,40.5 14.77,40.68 14.25,40.85	盟軍登陸薩萊諾，攻佔那不勒斯	Allies land at Salerno and take Naples	連合軍のサレルノ上陸
+gothic1944	1944-08	1945-04	#16a34a	2	12.9,43.9 12.2,44.4 11.34,44.49 10.92,44.65 9.19,45.46	盟軍突破哥德防線至波河平原	Allies break the Gothic Line into the Po valley	連合軍のゴシック線突破
+dongo1945	1945-04	1945-04	#b45309	2	9.19,45.46 9.08,45.81 9.28,46.13	墨索里尼北逃，於棟戈被游擊隊截獲	Mussolini flees north and is caught at Dongo	ムッソリーニの逃亡、ドンゴで捕縛
+istria1947	1945-05	1956-12	#475569	2	13.85,44.87 13.75,45.1 13.77,45.65 12.33,45.44	伊斯特里亞—達爾馬提亞大出走	Istrian–Dalmatian exodus	イストリア・ダルマチアからの大移住
+southnorth	1951-01	1971-12	#a16207	2	15.6,38.1 16.25,39.3 15.8,40.65 14.25,40.85 11.3,44.5 9.19,45.46 7.69,45.07	南方移民北上杜林、米蘭工廠	Southerners migrate north to the factories of Turin and Milan	南部から北部工業都市への移住
+lampedusa	2011-02	2016-12	#475569	2	13.19,32.89 12.6,35.5 12.6,37.0 15.08,37.5	地中海中部移民船抵達蘭佩杜薩與西西里	Migrant boats across the central Mediterranean to Lampedusa and Sicily	地中海中部の移民船、ランペドゥーザ・シチリアへ

@@ -1,0 +1,21 @@
+# 網際網路：交換中心、資料中心、登陸站（放大後顯示）。欄位：id	類別	起年	迄年	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	維基中文	English Wikipedia
+porthcurno	telegraph	1870	1970	-5.66	50.04	波斯科諾電報站	Porthcurno telegraph station	ポースカーノ電信局	大英帝國海纜網的樞紐，最多時有 14 條海纜登陸。	The hub of the British Empire's cable network, with up to 14 cables.	波斯科諾	Porthcurno
+hearts_content	telegraph	1866	1965	-53.37	47.88	紐芬蘭心滿意足港電報站	Heart's Content cable station	ハーツ・コンテント電信局	跨大西洋電纜的北美登陸點。	The North American landing of the transatlantic cables.		Heart's Content Cable Station
+ucla	network	1969	2026	-118.44	34.07	UCLA（ARPANET 第一個節點）	UCLA (ARPANET's first node)	UCLA（ARPANET最初のノード）	1969 年 10 月從這裡送出第一則訊息「LO」。	The first message, "LO", was sent from here in October 1969.	阿帕网	ARPANET
+cern	network	1989	2026	6.05	46.23	歐洲核子研究組織（全球資訊網誕生地）	CERN (birthplace of the Web)	CERN（WWW誕生の地）	提姆·柏納-李在此發明全球資訊網。	Tim Berners-Lee invented the World Wide Web here.	全球資訊網	World Wide Web
+mae_east	ixp	1992	2009	-77.21	38.96	MAE-East	MAE-East	MAE-East	早期網際網路流量的主要交換點。	A main exchange point of the early Internet.	MAE-East	MAE-East
+linx	ixp	1994	2026	-0.0	51.51	倫敦網際網路交換中心（LINX）	London Internet Exchange (LINX)	LINX	英國最大交換中心。	The UK's largest exchange.	倫敦網際網路交換中心	London Internet Exchange
+decix	ixp	1995	2026	8.68	50.11	DE-CIX 法蘭克福	DE-CIX Frankfurt	DE-CIX フランクフルト	全球流量最大的交換中心之一。	One of the world's busiest exchanges.	DE-CIX	DE-CIX
+amsix	ixp	1997	2026	4.9	52.37	阿姆斯特丹網際網路交換中心（AMS-IX）	Amsterdam Internet Exchange	AMS-IX	歐洲網路的中心之一。	One of the hubs of Europe's Internet.	阿姆斯特丹網際網路交換中心	Amsterdam Internet Exchange
+jpix	ixp	1997	2026	139.75	35.67	JPIX 東京	JPIX Tokyo	JPIX 東京	日本主要交換中心。	A main exchange in Japan.		Japan Internet Exchange
+hkix	ixp	1995	2026	114.2	22.42	香港網際網路交換中心	Hong Kong Internet Exchange	HKIX	亞洲主要交換中心。	A main exchange in Asia.	香港互聯網交換中心	Hong Kong Internet Exchange
+equinix_sg	ixp	2010	2026	103.85	1.29	新加坡資料與交換中心群	Singapore exchange and data-centre cluster	シンガポールの接続拠点	東南亞海纜與資料中心的樞紐。	The South-East Asian hub of cables and data centres.	新加坡	Singapore
+marseille	ixp	2010	2026	5.37	43.3	馬賽海纜樞紐	Marseille cable hub	マルセイユのケーブル拠点	歐亞非海纜的交會點。	Where cables from Asia, Africa and Europe meet.	馬賽	Marseille
+fortaleza	ixp	2010	2026	-38.54	-3.72	福塔雷薩海纜樞紐	Fortaleza cable hub	フォルタレザのケーブル拠点	南美的海纜門戶。	South America's cable gateway.	福塔雷薩	Fortaleza
+ashburn	datacenter	2005	2026	-77.49	39.04	阿什本「資料中心巷」	Ashburn "Data Center Alley"	アッシュバーン	全球最大的資料中心聚落。	The world's densest cluster of data centres.	勞登縣 (維吉尼亞州)	Data Center Alley
+dalles	datacenter	2006	2026	-121.18	45.6	谷歌達勒斯資料中心	Google's The Dalles data centre	GoogleのザダレスDC	谷歌第一座自建大型資料中心。	Google's first large self-built data centre.	谷歌	Google data centers
+lulea	datacenter	2013	2026	22.15	65.58	臉書呂勒奧資料中心	Facebook's Luleå data centre	FacebookのルーレオDC	利用北極圈冷空氣散熱。	Cooled by Arctic air.	呂勒奧	Luleå
+guizhou	datacenter	2015	2026	106.7	26.6	貴州大數據中心群	Guizhou data-centre cluster	貴州のDC群	中國的雲端資料基地。	China's cloud data base.	貴州省	Guizhou
+toucheng	fibre	1996	2026	121.85	24.86	頭城海纜登陸站	Toucheng cable landing	頭城陸揚局	臺灣主要海纜登陸點。	Taiwan's main cable landing.	頭城鎮	Toucheng
+chikura	fibre	1989	2026	139.95	34.95	千倉海纜登陸站	Chikura cable landing	千倉陸揚局	日本太平洋海纜的主要登陸點。	Japan's main landing for Pacific cables.	千倉町	Chikura
+starlink	satellite	2019	2026	-97.15	25.99	星鏈（星艦基地）	Starlink (Starbase)	スターリンク（スターベース）	數千顆低軌衛星提供全球寬頻，在烏克蘭戰爭中扮演要角。	Thousands of low-orbit satellites giving global broadband; vital in the war in Ukraine.	星鏈	Starlink

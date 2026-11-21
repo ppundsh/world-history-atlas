@@ -1,0 +1,19 @@
+# 西班牙模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+rail	es_barcelona_mataro	1848-10		2.17,41.39 2.44,41.54	巴塞隆納—馬塔羅鐵路	Barcelona–Mataró railway	バルセロナ—マタロ鉄道	西班牙本土第一條鐵路。	The first railway in mainland Spain.	スペイン本土初の鉄道。	巴塞隆納—馬塔羅鐵路	Barcelona–Mataró railway
+rail	es_madrid_aranjuez	1851-02		-3.69,40.41 -3.6,40.03	馬德里—阿蘭胡埃斯鐵路	Madrid–Aranjuez railway	マドリード—アランフエス鉄道	首都第一條鐵路。	The capital's first railway.	首都初の鉄道。	馬德里—阿蘭胡埃斯鐵路	Madrid–Aranjuez railway
+rail	es_norte	1864-08		-3.69,40.42 -4.73,41.65 -3.7,42.34 -2.67,42.85 -1.98,43.32 -1.79,43.34	北方鐵路（馬德里—伊倫）	Northern Railway (Madrid–Irún)	北部鉄道（マドリード—イルン）	連接法國邊境。	Linking the French border.	フランス国境へ。	馬德里—亨代伊鐵路	Madrid–Hendaye railway
+canal	es_isabel2	1858-06		-3.6,40.95 -3.7,40.6 -3.7,40.42	伊莎貝拉二世運河（馬德里供水）	Canal de Isabel II (Madrid water)	イサベル2世運河	為馬德里供水的引水道。	The aqueduct that brought water to Madrid.	マドリードへの導水路。	伊莎貝拉二世運河	Canal de Isabel II
+metro	es_madrid_metro	1919-10		-3.7,40.42	馬德里地鐵	Madrid Metro	マドリード地下鉄	一號線通車。	Line 1 opened.	1号線開業。	馬德里地鐵	Madrid Metro
+dam	es_alcantara	1969-10		-6.88,39.73	阿爾坎塔拉水壩（塔霍河）	Alcántara Dam	アルカンタラ・ダム	佛朗哥時期大量興建水庫的代表。	A showpiece of Franco's dam-building programme.	フランコ時代のダム建設の代表。	阿爾坎塔拉水壩	José María de Oriol Dam
+water	es_tajo_segura	1979-06		-2.65,40.33 -2.1,39.6 -1.5,38.3	塔霍—塞古拉調水	Tagus–Segura water transfer	タホ—セグラ導水	把塔霍河水調往東南乾旱地區。	Moves Tagus water to the dry south-east.	タホ川の水を南東部へ。	塔霍—塞古拉調水	Tagus-Segura Water Transfer
+nuclear	es_zorita	1968-07	2006-04	-2.88,40.33	何塞·卡布雷拉核電廠（索里塔）	José Cabrera (Zorita) nuclear plant	ホセ・カブレラ原子力発電所	西班牙第一座核電廠。	Spain's first nuclear plant.	スペイン初の原発。	何塞·卡布雷拉核電廠	José Cabrera Nuclear Power Plant
+nuclear	es_almaraz	1981-05		-5.7,39.81	阿爾馬拉斯核電廠	Almaraz nuclear plant	アルマラス原子力発電所	預定 2027 年起停機。	Due to start closing in 2027.	2027年から停止予定。	阿爾馬拉斯核電廠	Almaraz Nuclear Power Plant
+highway	es_ap7	1976-01		3.1,42.4 2.17,41.39 0.6,40.8 -0.38,39.47 -0.48,38.35	地中海高速公路（AP-7）	Mediterranean Motorway (AP-7)	地中海高速道路（AP-7）	沿地中海岸的收費公路。	The toll road along the Mediterranean coast.	地中海沿岸の有料道路。	AP-7高速公路	Autopista AP-7
+hsr	es_ave_sev	1992-04		-3.69,40.41 -3.93,38.98 -4.78,37.88 -5.98,37.39	AVE 馬德里—塞維亞高速鐵路	AVE Madrid–Seville	AVE マドリード—セビーリャ	塞維亞世博前通車，西班牙第一條高鐵。	Spain's first high-speed line, opened for Expo '92.	セビーリャ万博前に開業。	馬德里—塞維亞高速鐵路	Madrid–Seville high-speed rail line
+hsr	es_ave_bcn	2008-02		-3.69,40.41 -2.47,41.0 -0.88,41.65 1.25,41.12 2.14,41.38	AVE 馬德里—巴塞隆納高速鐵路	AVE Madrid–Barcelona	AVE マドリード—バルセロナ	2 小時 30 分。	Two and a half hours.	2時間半。	馬德里—巴塞隆納高速鐵路	Madrid–Barcelona high-speed rail line
+hsr	es_ave_val	2010-12		-3.69,40.41 -2.1,39.86 -1.86,39.0 -0.38,39.47	AVE 馬德里—瓦倫西亞高速鐵路	AVE Madrid–Valencia	AVE マドリード—バレンシア	經昆卡。	Via Cuenca.	クエンカ経由。	馬德里—萊萬特高速鐵路	Madrid–Levante high-speed rail network
+hsr	es_ave_gal	2021-12		-4.73,41.65 -5.75,42.0 -7.86,42.34 -8.54,42.88	AVE 馬德里—加利西亞高速鐵路	AVE to Galicia	AVE ガリシア線	最後路段通車。	The last section opened.	最終区間が開業。	馬德里—加利西亞高速鐵路	Madrid–Galicia high-speed rail line
+airport	es_barajas	1931-04		-3.57,40.47	馬德里巴拉哈斯機場	Madrid–Barajas Airport	マドリード＝バラハス空港	2006 年新航廈啟用。	Its new terminal opened in 2006.	2006年に新ターミナル。	馬德里-巴拉哈斯阿道弗·蘇亞雷斯機場	Madrid–Barajas Airport
+industry	es_gugg	1997-10		-2.93,43.27	畢爾包古根漢美術館	Guggenheim Museum Bilbao	ビルバオ・グッゲンハイム美術館	帶動城市轉型的「畢爾包效應」。	Its "Bilbao effect" turned the city around.	「ビルバオ効果」。	畢爾包古根漢美術館	Guggenheim Museum Bilbao
+solar	es_ps10	2007-03		-6.25,37.44	PS10 太陽能塔電廠	PS10 solar power tower	PS10 太陽熱発電所	歐洲第一座商業太陽能塔。	Europe's first commercial solar tower.	欧州初の商用太陽熱タワー。	PS10太陽能發電站	PS10 solar power plant
+cable	es_marea	2018-02		-2.93,43.4 -40.0,40.0 -76.0,36.85	MAREA 跨大西洋海纜	MAREA transatlantic cable	MAREA 大西洋横断ケーブル	畢爾包—維吉尼亞海灘，微軟與臉書出資。	Bilbao to Virginia Beach, funded by Microsoft and Facebook.	ビルバオ—バージニアビーチ。	MAREA	MAREA

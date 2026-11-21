@@ -1,0 +1,20 @@
+# 西班牙模式：行政區劃（逐月）。欄位：年月	單元	行政區。1983 年完成設置的自治區，以今日單元概略標示；中世紀各王國即統治範圍圖層。
+# 來源：維基百科「西班牙自治區」
+0711-01	asturias,cantabria,galicia,leon,salamanca,castilla_n,basque,navarra,rioja,aragon,cat_old,cat_new,valencia,murcia,madrid,castilla_s,extremadura,cordoba,jaen,sevilla,granada,baleares,canarias,ceuta,pt_norte,pt_centro,pt_lisboa,pt_alentejo,pt_algarve,roussillon,gibraltar	none
+1983-02	galicia	a_gal
+1983-02	asturias	a_ast
+1983-02	cantabria	a_can
+1983-02	basque	a_pv
+1983-02	navarra	a_nav
+1983-02	rioja	a_rio
+1983-02	aragon	a_ara
+1983-02	cat_old,cat_new	a_cat
+1983-02	valencia	a_val
+1983-02	murcia	a_mur
+1983-02	leon,salamanca,castilla_n	a_cyl
+1983-02	madrid	a_mad
+1983-02	castilla_s	a_clm
+1983-02	extremadura	a_ext
+1983-02	sevilla,cordoba,jaen,granada	a_and
+1983-02	baleares	a_bal
+1983-02	canarias	a_cnr

@@ -1,0 +1,18 @@
+# 波蘭模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為波蘭主體政權(1/0)	勢力id	繁中	簡中	English	日本語
+gniezno	0966-01	1038-12	17.6	52.53	1	piast	格涅茲諾（皮雅斯特）	格涅兹诺（皮雅斯特）	Gniezno (Piasts)	グニェズノ（ピャスト朝）
+krakow	1039-01	1596-12	19.94	50.06	1	poland	克拉科夫	克拉科夫	Kraków	クラクフ
+warsaw	1596-01	1795-10	21.01	52.23	1	poland	華沙（波蘭立陶宛聯邦）	华沙（波兰立陶宛联邦）	Warsaw (Commonwealth)	ワルシャワ（共和国）
+vilnius	1323-01	1795-10	25.28	54.69	0	lithuania	維爾紐斯（立陶宛大公國）	维尔纽斯（立陶宛大公国）	Vilnius (Grand Duchy of Lithuania)	ヴィリニュス（リトアニア大公国）
+malbork	1309-09	1457-06	19.03	54.04	0	teutonic	馬爾堡（條頓騎士團）	马尔堡（条顿骑士团）	Marienburg (Teutonic Order)	マリーエンブルク（ドイツ騎士団）
+koenigsberg	1457-06	1701-01	20.51	54.71	0	prussia	柯尼斯堡（騎士團、普魯士公國）	柯尼斯堡（骑士团、普鲁士公国）	Königsberg (the Order, Duchy of Prussia)	ケーニヒスベルク（騎士団・プロイセン公国）
+chyhyryn	1648-05	1676-09	32.66	49.08	0	cossack	奇吉林（哥薩克酋長國）	奇吉林（哥萨克酋长国）	Chyhyryn (Cossack Hetmanate)	チヒリン（ヘーチマン国家）
+warsaw_d	1807-07	1815-06	21.01	52.23	1	warsaw	華沙（華沙公國）	华沙（华沙公国）	Warsaw (Duchy of Warsaw)	ワルシャワ（ワルシャワ公国）
+warsaw_c	1815-06	1915-08	21.01	52.23	0	congress	華沙（會議王國）	华沙（会议王国）	Warsaw (Congress Kingdom)	ワルシャワ（立憲王国）
+krakow_f	1815-06	1846-11	19.94	50.06	0	krakow	克拉科夫自由市	克拉科夫自由市	Free City of Kraków	クラクフ自由市
+warsaw2	1918-11	1939-09	21.01	52.23	1	poland2	華沙（第二共和國）	华沙（第二共和国）	Warsaw (Second Republic)	ワルシャワ（第二共和国）
+angers	1939-09	1940-06	-0.55	47.47	1	poland2	昂熱（流亡政府）	昂热（流亡政府）	Angers (government-in-exile)	アンジェ（亡命政府）
+london	1940-06	1990-12	-0.13	51.5	1	poland2	倫敦（波蘭流亡政府）	伦敦（波兰流亡政府）	London (Polish government-in-exile)	ロンドン（ポーランド亡命政府）
+krakow_gg	1939-10	1945-01	19.94	50.06	0	nazi	克拉科夫（總督府）	克拉科夫（总督府）	Kraków (General Government)	クラクフ（総督府）
+lublin	1944-07	1945-01	22.57	51.25	0	prl	盧布林（波蘭民族解放委員會）	卢布林（波兰民族解放委员会）	Lublin (Polish Committee of National Liberation)	ルブリン（ポーランド国民解放委員会）
+warsaw_prl	1945-01	1989-12	21.01	52.23	1	prl	華沙（波蘭人民共和國）	华沙（波兰人民共和国）	Warsaw (People's Republic)	ワルシャワ（人民共和国）
+warsaw3	1989-12	2026-12	21.01	52.23	1	poland3	華沙（波蘭共和國）	华沙（波兰共和国）	Warsaw (Republic of Poland)	ワルシャワ（ポーランド共和国）

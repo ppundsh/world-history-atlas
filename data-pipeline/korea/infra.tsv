@@ -1,0 +1,25 @@
+# 韓國模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+rail	kr_gyeongin	1899-09		126.71,37.47 126.85,37.52 126.97,37.55	京仁線（濟物浦—鷺梁津）	Gyeongin line	京仁線	朝鮮第一條鐵路。	Korea's first railway.	朝鮮初の鉄道。	京仁線	Gyeongin Line
+rail	kr_gyeongbu	1905-01		126.97,37.55 127.0,37.27 127.15,36.81 127.43,36.33 128.12,36.13 128.6,35.88 129.04,35.12	京釜線全線通車	Gyeongbu line completed	京釜線全通	日本為控制朝鮮修建，漢城至釜山。	Built by Japan to control Korea, Seoul to Busan.	京城—釜山間。	京釜線	Gyeongbu Line
+rail	kr_gyeongui	1906-04		126.97,37.55 126.78,37.76 126.55,37.97 125.75,39.02 125.4,40.1 124.4,40.1	京義線（京城—新義州）	Gyeongui line (Seoul–Sinuiju)	京義線（京城—新義州）	日俄戰爭軍用鐵路，連接滿洲。	A Russo-Japanese War military line toward Manchuria.	日露戦争の軍用鉄道。	京義線	Gyeongui Line
+rail	kr_honam	1914-01		127.43,36.33 127.15,35.82 126.85,35.15 126.39,34.79	湖南線（大田—木浦）	Honam line (Daejeon–Mokpo)	湖南線	穀倉地帶的鐵路。	The railway of the rice-growing south-west.	穀倉地帯の鉄道。	湖南線	Honam Line
+rail	kr_gyeongwon	1914-08		126.97,37.55 127.07,38.0 127.2,38.4 127.44,39.15	京元線（京城—元山）	Gyeongwon line (Seoul–Wonsan)	京元線	連接東海岸元山。	Linking the east-coast port of Wonsan.	元山と結ぶ。	京元線	Gyeongwon Line
+hydro	kr_supung	1941-08		124.97,40.46	水豐水力發電廠	Sup'ung Dam	水豊ダム	鴨綠江上當時東亞最大的水壩。	On the Yalu, then the largest dam in East Asia.	当時東アジア最大のダム。	水豐水電站	Sup'ung Dam
+highway	kr_gyeongbu_ex	1970-07		127.03,37.48 127.15,36.81 127.43,36.35 128.6,35.9 129.06,35.25	京釜高速公路	Gyeongbu Expressway	京釜高速道路	朴正熙時期的象徵工程，兩年半完工。	A signature project of Park Chung-hee, built in two and a half years.	朴正熙政権の象徴的事業。	京釜高速公路	Gyeongbu Expressway
+industry	kr_posco	1973-07		129.38,35.99	浦項綜合製鐵	POSCO Pohang steelworks	浦項総合製鉄	以對日請求權資金興建的一貫鋼廠。	An integrated steelworks built with Japanese settlement funds.	対日請求権資金で建設。	浦項製鐵	POSCO
+industry	kr_ulsan	1972-03		129.38,35.51	蔚山現代造船廠	Hyundai shipyard, Ulsan	蔚山の現代造船所	後成為世界最大造船廠。	Later the world's largest shipyard.	のち世界最大の造船所。	現代重工業	HD Hyundai Heavy Industries
+metro	kr_seoulmetro	1974-08		126.98,37.57	首爾地鐵 1 號線	Seoul Subway Line 1	ソウル地下鉄1号線	首爾第一條地鐵。	Seoul's first subway line.	ソウル初の地下鉄。	首爾地鐵1號線	Seoul Subway Line 1
+dam	kr_soyang	1973-10		127.81,37.95	昭陽江水壩	Soyang Dam	昭陽江ダム	韓國最大的水壩，首都圈水源。	Korea's largest dam, water for the capital region.	韓国最大のダム。	昭陽江水壩	Soyang Dam
+nuclear	kr_kori	1978-04	2017-06	129.3,35.32	古里核電廠 1 號機	Kori-1 nuclear plant	古里原発1号機	韓國第一座核電廠，2017 年永久停機。	Korea's first nuclear reactor, shut down in 2017.	韓国初の原発、2017年に永久停止。	古里核電廠	Kori Nuclear Power Plant
+nuclear	kp_yongbyon	1986-01		125.75,39.8	寧邊核設施（北韓）	Yongbyon nuclear complex (North Korea)	寧辺核施設（北朝鮮）	北韓核武計畫的核心設施。	The heart of North Korea's nuclear weapons programme.	北朝鮮の核開発の中心施設。	寧邊核設施	Nyongbyon Nuclear Scientific Research Center
+highway	kr_yeongdong	1975-10		127.03,37.27 127.6,37.35 128.4,37.6 128.9,37.75	嶺東高速公路	Yeongdong Expressway	嶺東高速道路	首都圈連接江陵。	Linking the capital region to Gangneung.	首都圏と江陵を結ぶ。	嶺東高速公路	Yeongdong Expressway
+stadium	kr_olympic	1988-09		127.07,37.52	首爾奧運主場館	Seoul Olympic Stadium	ソウル五輪スタジアム	1988 年首爾奧運。	The 1988 Seoul Olympics.	1988年ソウル五輪。	首爾奧林匹克體育場	Seoul Olympic Stadium
+airport	kr_incheon	2001-03		126.44,37.46	仁川國際機場	Incheon International Airport	仁川国際空港	填海興建的東北亞樞紐機場。	A North-East Asian hub on reclaimed land.	北東アジアのハブ空港。	仁川國際機場	Incheon International Airport
+hsr	kr_ktx1	2004-04		126.97,37.55 127.1,37.0 127.32,36.62 127.43,36.33 128.12,36.13 128.63,35.88	KTX 京釜高鐵第一階段（首爾—東大邱）	KTX phase one (Seoul–Dongdaegu)	KTX 京釜高速線第1段階	採法國 TGV 技術。	Built with French TGV technology.	フランスTGV技術。	韓國高速鐵道	Korea Train Express
+hsr	kr_ktx2	2010-11		128.63,35.88 129.21,35.8 129.04,35.12	KTX 京釜高鐵第二階段（東大邱—釜山）	KTX phase two (Dongdaegu–Busan)	KTX 京釜高速線第2段階	經慶州至釜山。	Via Gyeongju to Busan.	慶州経由で釜山へ。	京釜高速線	Gyeongbu high-speed railway
+hsr	kr_honam_hsr	2015-04		127.32,36.62 127.12,35.97 126.79,35.14	湖南高鐵	Honam high-speed line	湖南高速線	五松—光州松汀。	Osong to Gwangju-Songjeong.	五松—光州松汀。	湖南高速線	Honam high-speed railway
+bridge	kr_incheonbr	2009-10		126.55,37.41	仁川大橋	Incheon Bridge	仁川大橋	連接松島與機場的 21 公里跨海大橋。	A 21 km sea bridge from Songdo to the airport.	松島と空港を結ぶ海上橋。	仁川大橋	Incheon Bridge
+water	kr_saemangeum	2010-04		126.52,35.8	新萬金防潮堤	Saemangeum Seawall	セマングム防潮堤	世界最長防潮堤，圍海造地爭議不斷。	The world's longest seawall; the reclamation remains contested.	世界最長の防潮堤。	新萬金防潮堤	Saemangeum Seawall
+space	kr_naro	2013-01		127.53,34.43	羅老號火箭發射成功	Naro rocket launch succeeds	羅老号打ち上げ成功	羅老宇宙中心。	From the Naro Space Center.	羅老宇宙センター。	羅老宇宙中心	Naro Space Center
+cable	kr_kjcn	2002-03		129.04,35.12 130.4,33.6	韓日光纜（KJCN）	Korea–Japan Cable Network	韓日光ケーブル（KJCN）	釜山—福岡。	Busan to Fukuoka.	釜山—福岡。		
+fiber	kr_kornet	1999-06		126.97,37.55 127.43,36.35 128.6,35.88 129.04,35.12 126.85,35.15 127.43,36.35	超高速網際網路（ADSL）普及	Broadband rollout (ADSL)	超高速インターネット普及	韓國成為寬頻普及率最高的國家之一。	Korea became one of the most connected countries.	ブロードバンド普及率世界トップ級に。	韓國網際網路	Internet in South Korea

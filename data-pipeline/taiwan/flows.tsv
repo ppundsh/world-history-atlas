@@ -1,0 +1,66 @@
+# taiwan：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
+koxinga	1661-04	1662-02	#7c2d12	3	118.32,24.44 119.58,23.57 120.12,23.04 120.16,23.0	鄭成功攻台：金門→澎湖→鹿耳門→熱蘭遮城	Koxinga's expedition: Kinmen, Penghu, Lakjemuyse, Zeelandia	鄭成功の台湾攻略
+shilang	1683-07	1683-09	#6b21a8	3	117.5,23.7 119.58,23.57 120.2,22.99	施琅攻澎湖、取台灣	Shi Lang takes Penghu and Taiwan	施琅の澎湖・台湾攻略
+linshuangwen	1787-11	1788-02	#6b21a8	2	120.43,24.06 120.68,24.1 120.45,23.48	福康安平林爽文：鹿港→大里杙→諸羅	Fuk'anggan against Lin Shuangwen: Lukang, Dali, Zhuluo	福康安の林爽文討伐
+yiwei1895	1895-05	1895-10	#111827	3	121.92,25.05 121.74,25.13 121.51,25.04 120.97,24.8 120.82,24.56 120.54,24.08 120.45,23.48 120.2,22.99	乙未戰爭：日軍從澳底登陸南下台南	The 1895 invasion: from Aodi south to Tainan	乙未戦争：澳底上陸から台南へ
+yiwei_south	1895-10	1895-10	#111827	2	120.6,22.37 120.3,22.62 120.2,22.99	日軍枋寮登陸北上台南	Landing at Fangliao and north to Tainan	枋寮上陸から台南へ
+taroko	1914-05	1914-08	#111827	2	121.6,23.98 121.55,24.17 121.35,24.18	太魯閣戰役	The Truku War	タロコ戦争
+musha	1930-10	1930-12	#111827	2	120.97,23.96 121.13,24.03	霧社事件鎮壓	Suppression of the Musha Incident	霧社事件の鎮圧
+228	1947-03	1947-03	#1d4ed8	2	121.74,25.13 121.51,25.04	二二八事件：國軍整編二十一師基隆登陸	The 21st Division lands at Keelung	二・二八事件、第 21 師の基隆上陸
+guningtou	1949-10	1949-10	#dc2626	2	118.1,24.48 118.3,24.48	古寧頭戰役	Battle of Guningtou	古寧頭戦役
+823	1958-08	1958-10	#dc2626	2	118.1,24.45 118.37,24.45	八二三砲戰	The August 23 bombardment of Kinmen	金門砲戦
+voc1604	1604-07	1604-08	#ea580c	2	100.26,6.87 108.0,10.5 113.0,19.5 117.5,22.7 119.58,23.57	荷蘭東印度公司韋麻郎：自北大年航向澎湖	Van Waerwijck (VOC) sails from Patani to Penghu	オランダ東インド会社のファン・ワールウェイク：パタニから澎湖へ
+voc1604out	1604-11	1604-12	#b91c1c	2	118.1,24.45 119.0,24.0 119.58,23.57	明將沈有容率艦赴澎湖，勸退荷蘭人	Ming admiral Shen Yourong sails to Penghu and talks the Dutch out	明の沈有容が澎湖へ出航しオランダを退去させる
+voc1622	1622-04	1622-07	#ea580c	3	106.83,-6.12 108.5,2.0 111.0,10.0 113.55,22.18 116.5,22.6 119.58,23.57	荷蘭艦隊雷爾生：自巴達維亞攻澳門失利，轉佔澎湖	Reijersen's Dutch fleet: from Batavia, repulsed at Macau, then occupies Penghu	レイエルセンの艦隊：バタヴィアからマカオ攻撃に失敗し澎湖を占領
+ming1624	1624-02	1624-08	#b91c1c	3	118.1,24.45 118.9,23.9 119.56,23.55	明軍渡海圍攻澎湖紅木埕荷蘭城堡	Ming forces cross and besiege the Dutch fort on Penghu	明軍が渡海し澎湖のオランダ城塞を包囲
+voc1624	1624-08	1624-09	#ea580c	3	119.58,23.57 119.9,23.3 120.16,23.0	荷蘭人撤出澎湖，轉往大員	The Dutch leave Penghu for Tayouan	オランダが澎湖から大員へ移る
+voc1635	1635-11	1636-01	#ea580c	2	120.16,23.0 120.22,23.1 120.25,23.18	荷蘭征伐麻豆社	The Dutch campaign against Mattau	オランダの麻豆社討伐
+voc1636s	1636-01	1636-02	#ea580c	2	120.16,23.0 120.3,22.75 120.45,22.55	荷蘭南征小琉球、放索等社	The Dutch campaign south to Lamey and Pangsoya	オランダの南部遠征
+spain1626	1626-02	1626-05	#ca8a04	3	120.97,14.6 120.6,16.0 121.2,18.6 121.9,21.5 122.1,24.0 121.98,25.01 121.74,25.16	西班牙艦隊：自馬尼拉沿東海岸北上，經三貂角佔領雞籠	The Spanish fleet: from Manila up the east coast, round Santiago Cape, to Keelung	スペイン艦隊：マニラから東海岸を北上し三貂角を経て鶏籠を占領
+spain1629	1628-08	1629-07	#ca8a04	2	121.74,25.16 121.6,25.3 121.43,25.17	西班牙擴張至滬尾（淡水）	Spain expands to Tamsui	スペインが滬尾（淡水）へ拡大
+spain1632	1632-03	1632-06	#ca8a04	2	121.74,25.16 121.92,25.0 121.82,24.75	西班牙勢力進入噶瑪蘭（宜蘭）	Spanish expeditions into Kavalan (Yilan)	スペインが噶瑪蘭（宜蘭）へ進出
+voc1642	1642-08	1642-08	#ea580c	3	120.16,23.0 120.05,23.6 120.4,24.5 121.1,25.15 121.74,25.16	荷蘭北征雞籠，逐出西班牙人	The Dutch sail north to Keelung and drive out the Spanish	オランダが北上し鶏籠からスペインを駆逐
+voc1642n	1642-09	1645-04	#ea580c	2	121.43,25.17 121.0,24.8 120.6,24.25	荷蘭征服北部及大肚王國諸社	The Dutch subdue the north and the Middag villages	オランダが北部と大肚王国の諸社を制圧
+guo1652	1652-09	1652-09	#7c2d12	2	120.25,22.95 120.2,23.0	郭懷一率漢人起事攻赤崁	Guo Huaiyi's rising marches on Saccam	郭懐一の乱が赤崁へ
+zheng1661s	1661-05	1661-09	#7c2d12	2	120.2,22.99 120.3,22.75 120.36,22.62	鄭軍分兵屯墾南路（萬年縣）	Zheng troops settle the south (Wannian)	鄭軍が南路（万年県）に屯田
+zheng1661n	1661-05	1661-09	#7c2d12	2	120.2,22.99 120.3,23.2 120.45,23.48	鄭軍分兵屯墾北路（天興縣）	Zheng troops settle the north (Tianxing)	鄭軍が北路（天興県）に屯田
+zheng1670n	1670-08	1670-12	#7c2d12	2	120.45,23.48 120.55,24.0 120.6,24.25	鄭軍北上征討大肚王國沙轆社	Zheng troops march north against the Middag village of Salach	鄭軍が北上し大肚王国の沙轆社を攻撃
+zheng1664	1664-03	1664-04	#7c2d12	3	118.1,24.45 119.58,23.57 120.2,23.0	鄭經棄守廈門、金門，退守臺灣	Zheng Jing abandons Xiamen and Kinmen for Taiwan	鄭経が廈門・金門を放棄し台湾へ撤退
+dutch1664	1664-08	1664-09	#ea580c	2	106.83,-6.12 113.0,12.0 119.5,21.5 122.0,24.0 121.74,25.16	荷蘭重返雞籠（至 1668 年）	The Dutch return to Keelung (until 1668)	オランダが鶏籠へ再進出（1668 年まで）
+zheng1674	1674-05	1676-10	#7c2d12	3	120.2,23.0 119.58,23.57 118.1,24.45 118.6,24.9 119.3,26.08	鄭經西征：響應三藩之亂，攻佔泉州、漳州	Zheng Jing's western campaign during the Revolt of the Three Feudatories	鄭経の西征：三藩の乱に呼応し泉州・漳州を攻略
+zheng1680	1680-02	1680-03	#7c2d12	3	118.1,24.45 119.58,23.57 120.2,23.0	鄭經兵敗，自大陸沿海撤回臺灣	Defeated, Zheng Jing pulls back to Taiwan	鄭経が敗れて台湾へ撤収
+qing1723	1721-08	1731-12	#6b21a8	2	120.2,23.0 120.45,23.48 120.54,24.08 120.97,24.8 121.44,25.17	清治北移：設彰化縣、淡水廳	Qing rule moves north: Changhua County and Tamsui subprefecture	清の統治が北へ：彰化県・淡水庁
+zhuyigui	1721-04	1721-05	#7c2d12	2	120.36,22.75 120.3,22.9 120.2,23.0	朱一貴起事，自岡山攻陷府城	Zhu Yigui's rising takes the prefectural city from Gangshan	朱一貴が岡山から府城を攻略
+lantingzhen	1721-06	1721-07	#6b21a8	3	118.1,24.45 119.58,23.57 120.16,23.04	藍廷珍、施世驃率清軍渡海平朱一貴	Lan Tingzhen and Shi Shibiao cross the strait against Zhu Yigui	藍廷珍・施世驃が渡海し朱一貴を鎮圧
+migration_q	1700-01	1790-12	#d97706	2	118.6,24.9 119.5,24.5 120.43,24.06	唐山過台灣：泉州移民渡海至鹿港	Migrants from Quanzhou cross to Lukang	泉州からの移民が鹿港へ
+migration_z	1700-01	1790-12	#d97706	2	117.65,24.5 119.0,23.6 120.16,23.04	唐山過台灣：漳州移民渡海至府城	Migrants from Zhangzhou cross to Tainan	漳州からの移民が府城へ
+migration_h	1700-01	1790-12	#d97706	2	116.12,24.29 116.7,23.4 119.0,22.8 120.3,22.62	客家移民自嘉應、潮州渡海至南部	Hakka migrants from Jiaying and Chaozhou to the south	客家移民が嘉応・潮州から南部へ
+migration_n	1740-01	1800-12	#d97706	2	118.6,24.9 120.0,25.2 121.44,25.17 121.5,25.04	移民入墾臺北盆地（艋舺）	Settlers move into the Taipei basin (Bangka)	移民が台北盆地（艋舺）へ
+wusha1796	1796-09	1797-12	#d97706	2	121.92,25.01 121.85,24.9 121.77,24.75	吳沙率眾入墾噶瑪蘭	Wu Sha leads settlers into Kavalan	呉沙が噶瑪蘭に入植
+lin1786	1786-12	1787-06	#7c2d12	2	120.68,24.1 120.54,24.08 120.45,23.48	林爽文起事：大里杙→彰化→圍諸羅	Lin Shuangwen's rising: Dali, Changhua, the siege of Zhuluo	林爽文の乱：大里杙→彰化→諸羅包囲
+zhuang1786	1786-12	1787-04	#7c2d12	2	120.5,22.75 120.36,22.62 120.25,22.9	莊大田在南路響應，攻鳳山、府城	Zhuang Datian rises in the south against Fengshan and the city	荘大田が南路で呼応し鳳山・府城を攻撃
+dai1862	1862-04	1863-12	#7c2d12	2	120.62,24.12 120.54,24.08 120.45,23.48	戴潮春事件：攻佔彰化，圍嘉義	Dai Chaochun's rising takes Changhua and besieges Chiayi	戴潮春の乱：彰化を攻略し嘉義を包囲
+mudan1874	1874-04	1874-06	#111827	3	129.87,32.75 127.68,26.21 121.0,22.5 120.73,22.05 120.8,22.12	牡丹社事件：日軍自長崎經琉球，於社寮登陸攻牡丹社	Mudan Incident: Japanese troops from Nagasaki via Ryukyu land at Sialiao and attack Mudan	牡丹社事件：日本軍が長崎から琉球を経て社寮に上陸し牡丹社を攻撃
+shen1874	1874-06	1874-07	#6b21a8	2	119.3,26.08 119.8,24.5 120.16,23.0	沈葆楨率清軍自福州來臺	Shen Baozhen brings Qing troops from Fuzhou	沈葆楨が福州から清軍を率いて来台
+road1875	1874-08	1875-12	#6b21a8	2	120.75,22.0 120.9,22.4 121.15,22.75	開山撫番：南路開路至卑南	"Opening the mountains": roads east to Puyuma	開山撫番：南路を卑南まで開削
+road1875n	1874-08	1875-12	#6b21a8	2	121.85,24.6 121.75,24.3 121.6,23.98	開山撫番：北路蘇澳至花蓮港（蘇花古道）	"Opening the mountains": the northern road from Suao to Hualien	開山撫番：北路の蘇澳—花蓮港
+french1884	1884-08	1884-10	#1e40af	3	119.45,26.0 120.8,25.6 121.74,25.16	清法戰爭：法國艦隊自馬尾北上砲擊基隆	Sino-French War: the French fleet from Mawei bombards Keelung	清仏戦争：フランス艦隊が馬尾から基隆を砲撃
+french1884t	1884-10	1884-10	#1e40af	2	121.74,25.16 121.6,25.3 121.43,25.17	法軍攻滬尾，於滬尾之役敗退	The French attack Tamsui and are beaten back	フランス軍が滬尾を攻撃し撃退される
+french1885	1885-03	1885-03	#1e40af	3	121.74,25.16 121.1,25.0 119.9,24.2 119.58,23.57	法軍南下攻佔澎湖	The French sail south and take Penghu	フランス軍が南下し澎湖を占領
+japan1895p	1895-03	1895-03	#111827	3	129.7,33.15 125.0,28.0 119.58,23.57	澎湖之役：日軍佔領澎湖	Pescadores campaign: Japan takes Penghu	澎湖諸島の戦い：日本軍が澎湖を占領
+japan1895s	1895-05	1895-05	#111827	3	127.8,26.25 124.0,25.6 121.92,25.05	日軍近衛師團自中城灣航向澳底	The Imperial Guard Division sails from Nakagusuku Bay to Aodi	近衛師団が中城湾から澳底へ
+budai1895	1895-10	1895-10	#111827	2	120.17,23.38 120.2,23.2 120.2,22.99	日軍布袋嘴登陸南下	Japanese troops land at Budai and march south	日本軍が布袋嘴に上陸し南下
+liu1895	1895-10	1895-10	#dc2626	2	120.16,23.0 119.4,23.8 118.1,24.45	劉永福棄臺南，乘船逃往廈門	Liu Yongfu abandons Tainan and escapes to Xiamen	劉永福が台南を捨て廈門へ脱出
+tapani1915	1915-07	1915-08	#111827	2	120.2,23.0 120.35,23.1 120.47,23.16	西來庵事件：日軍鎮壓噍吧哖	Tapani Incident: Japanese suppression at Tapani	西来庵事件：噍吧哖の鎮圧
+roc1945	1945-10	1945-10	#1d4ed8	3	121.55,29.87 122.3,27.5 121.74,25.16 121.51,25.04	國軍第七十軍自寧波渡海，基隆登陸進駐臺北	The ROC 70th Army sails from Ningbo, lands at Keelung and enters Taipei	国府軍第 70 軍が寧波から渡海し基隆上陸、台北へ
+chenyi1945	1945-10	1945-10	#1d4ed8	2	121.47,31.23 121.8,28.0 121.51,25.04	陳儀自上海飛抵臺北受降	Chen Yi flies from Shanghai to Taipei to accept the surrender	陳儀が上海から台北へ飛び降伏を受理
+roc1945s	1945-11	1945-12	#1d4ed8	3	106.68,20.86 110.0,18.5 116.0,20.5 120.27,22.62	國軍第六十二軍渡海於高雄登陸	The ROC 62nd Army crosses and lands at Kaohsiung	国府軍第 62 軍が渡海し高雄に上陸
+d21_1947	1947-03	1947-03	#1d4ed8	3	121.51,25.04 120.97,24.8 120.68,24.14 120.45,23.48 120.2,23.0	二二八事件：整編二十一師自臺北南下各地鎮壓	February 28 Incident: the 21st Division moves south from Taipei	二・二八事件：第 21 師が台北から南下し鎮圧
+kh1947	1947-03	1947-03	#1d4ed8	2	120.27,22.62 120.3,22.63	高雄要塞司令彭孟緝出兵鎮壓高雄	Garrison commander Peng Meng-chi suppresses Kaohsiung	高雄要塞司令の彭孟緝が高雄を鎮圧
+retreat1949	1949-04	1949-12	#1d4ed8	3	118.78,32.06 113.26,23.13 106.55,29.56 104.07,30.67 112.0,27.0 119.0,25.5 121.51,25.04	中華民國政府撤退：南京→廣州→重慶→成都→臺北	The ROC government retreats: Nanjing, Guangzhou, Chongqing, Chengdu, Taipei	中華民国政府の撤退：南京→広州→重慶→成都→台北
+shanghai1949	1949-04	1949-05	#1d4ed8	2	121.47,31.23 122.5,28.5 121.74,25.16	上海撤退：國軍與物資海運基隆	Evacuation of Shanghai: troops and stores shipped to Keelung	上海撤退：国府軍と物資を基隆へ海上輸送
+hainan1950	1950-04	1950-05	#1d4ed8	2	110.33,20.03 114.0,21.0 120.27,22.62	海南島撤退至高雄	Evacuation of Hainan to Kaohsiung	海南島から高雄へ撤退
+zhoushan1950	1950-05	1950-05	#1d4ed8	2	122.2,30.0 122.6,27.5 121.74,25.16	舟山撤退至基隆	Evacuation of Zhoushan to Keelung	舟山から基隆へ撤退
+tachen1955	1955-02	1955-02	#1d4ed8	2	121.9,28.45 122.3,26.5 121.74,25.16	大陳島撤退至基隆	Evacuation of the Tachen Islands to Keelung	大陳島から基隆へ撤退
+us7th1950	1950-06	1950-07	#0e7490	3	127.8,26.3 124.0,25.4 121.2,24.9 119.8,24.3	美國第七艦隊駛入臺灣海峽	The US Seventh Fleet sails into the Taiwan Strait	米第七艦隊が台湾海峡へ
+us1979	1979-02	1979-04	#0e7490	3	121.52,25.08 121.74,25.16 124.5,25.8 127.8,26.3	美軍撤離臺灣（經基隆、移往沖繩等地）	US forces leave Taiwan	在台米軍の撤退

@@ -1,0 +1,28 @@
+# 越南模式：起義與叛亂（⚔）、地方勢力（◉：割據勢力、宗教武裝）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點；年代依各維基百科條目。
+feud	trieu	0248-01	0248-12	105.7	19.9	趙氏貞起義	Lady Triệu's revolt	趙嫗の反乱	九真的女子趙氏貞起兵抗吳，傳說騎象作戰。	Triệu Thị Trinh of Cửu Chân rose against Wu, by legend riding an elephant.	九真の女性趙嫗の反乱。	趙氏貞
+feud	maithucloan	0722-01	0723-12	105.65	18.7	梅叔鸞起義	Mai Thúc Loan's revolt	梅叔鸞の反乱	驩州人梅叔鸞稱「黑帝」反唐，一度攻佔交州。	Mai Thúc Loan, the "Black Emperor", rose against Tang and took Jiaozhou for a time.	「黒帝」梅叔鸞の反唐反乱。	梅叔鸞
+feud	tayson	1771-01	1802-06	108.8	13.9	西山起義	Tây Sơn rebellion	西山党の乱	阮岳、阮惠、阮侶三兄弟起兵，先後滅阮主、鄭主與後黎。	The three Nguyễn brothers of Tây Sơn overthrew the Nguyễn lords, the Trịnh and the Lê.	西山三兄弟の挙兵。	西山朝
+feud	khoi	1833-05	1835-09	106.7	10.78	黎文𠐤之亂	Lê Văn Khôi revolt	黎文𠐤の反乱	嘉定總鎮黎文悅死後遭清算，其養子黎文𠐤據嘉定城反抗明命帝。	After Lê Văn Duyệt was posthumously disgraced, his adopted son held the Saigon citadel against Minh Mạng.	嘉定城に拠った反乱。	黎文𠐤之亂
+feud	canvuong	1885-07	1896-01	105.65	18.7	勤王運動	Cần Vương movement	勤王運動	咸宜帝出奔號召士紳抗法，潘廷逢在乂靜堅持最久。	The boy emperor Hàm Nghi fled and called the gentry to resist; Phan Đình Phùng held out longest in Nghệ Tĩnh.	咸宜帝の檄に応じた抗仏運動。	勤王運動
+feud	yenthe	1884-01	1913-02	106.2	21.5	安世起義（黃花探）	Yên Thế insurrection (Hoàng Hoa Thám)	イエンテー蜂起	黃花探在北江山區抗法近三十年。	Hoàng Hoa Thám fought the French in the hills of Bắc Giang for nearly 30 years.	ホアン・ホア・ターム（提探）の抗仏闘争。	黃花探
+feud	nghetinh	1930-09	1931-09	105.65	18.7	乂靜蘇維埃	Nghệ-Tĩnh Soviets	ゲティン・ソヴィエト	共產黨領導的農民運動建立鄉村蘇維埃，遭法軍空襲鎮壓。	Communist-led peasants set up village soviets and were bombed by the French.	共産党指導の農村ソヴィエト。	乂靜蘇維埃
+feud	buddhist1963	1963-05	1963-11	107.58	16.47	佛教危機	Buddhist crisis	仏教徒危機	順化佛誕節禁旗引發佛教徒抗爭，釋廣德自焚，吳廷琰政權垮台。	A flag ban on Vesak in Huế began Buddhist protests, Thích Quảng Đức's self-immolation, and Diệm's fall.	仏旗禁止から始まった抗議、ジエム政権崩壊。	1963年南越佛教危機
+feud	fulro	1964-09	1992-10	108.05	12.67	富爾羅（高原少數民族）	FULRO (Highland peoples)	FULRO（高原少数民族）	中部高原少數民族的自治武裝，抗爭延續到 1992 年。	An armed movement of the Central Highland peoples that lasted until 1992.	中部高原少数民族の武装組織。	
+feud	thaibinh1997	1997-05	1997-11	106.34	20.45	太平省農民抗爭	Thái Bình protests	タイビン省の農民抗議	農民抗議地方幹部貪污與土地徵收。	Farmers protested official corruption and land seizures.	汚職と土地収用への抗議。	
+power	trinh	1545-01	1786-07	105.85	21.03	鄭主（北方）	Trịnh lords (the north)	鄭主（北部）	挾黎朝皇帝實際統治北方的鄭氏家族。	The Trịnh family ruled the north in the name of the Lê emperors.	黎朝皇帝を擁して北部を支配。	鄭主
+power	nguyenlords	1558-01	1777-01	107.58	16.46	阮主（南方）	Nguyễn lords (the south)	阮主（南部）	以順化為中心的南方政權，推動向南拓殖。	The southern regime at Huế that drove the southward expansion.	フエを中心とする南部政権。	阮主
+power	mac_caobang	1592-12	1677-01	106.25	22.67	莫氏高平政權	Mạc remnants at Cao Bằng	莫氏の高平政権	莫朝被逐出昇龍後在明清支持下據守高平。	After losing Thăng Long the Mạc held Cao Bằng with Chinese backing.	昇龍を失った莫氏が高平に拠った。	
+power	hatien	1708-01	1810-01	104.48	10.38	鄚氏河仙鎮	Mạc family of Hà Tiên	鄚氏の河仙鎮	華人鄚玖建立的港口政權，名義上臣屬阮主。	A port realm founded by the Chinese Mạc Cửu, nominally under the Nguyễn.	華人鄚玖が築いた港市政権。	河仙鎮
+power	champa	0192-01	1832-01	109.0	13.9	占婆	Champa	チャンパ	中部沿海的印度化王國，逐步被越人吞併。	An Indianised kingdom on the central coast, absorbed step by step.	中部沿岸のインド化王国。	占婆
+power	caodai	1926-11	1956-02	106.13	11.3	高台教（西寧）	Cao Đài (Tây Ninh)	カオダイ教（タイニン）	新興宗教，二戰後擁有私人軍隊，1956 年被吳廷琰收編。	A new religion with its own army after 1945, brought to heel by Diệm in 1956.	私兵を持った新宗教、1956年にジエムが解体。	高台教
+power	hoahao	1939-01	1956-04	105.43	10.39	和好教	Hòa Hảo	ホアハオ教	湄公河三角洲的佛教新教派，擁有私人武裝。	A Buddhist sect of the Mekong delta with its own militia.	メコンデルタの仏教系新宗教、私兵を持つ。	和好教
+power	binhxuyen	1945-01	1955-05	106.66	10.75	平川派	Bình Xuyên	ビンスエン派	控制西貢堤岸賭場與警察的幫派武裝，被吳廷琰擊潰。	A gang army that ran Saigon's casinos and police until Diệm crushed it.	サイゴンの賭博と警察を握った武装勢力。	平川派
+us	chinese	-111-01	0938-12	106.0	21.0	中國郡縣統治（北屬時期）	Chinese rule (the "Northern domination")	中国の郡県支配（北属期）	漢至南漢在交州的統治，至吳權白藤江之戰結束。	Chinese rule in Jiaozhou from the Han to the Southern Han, ended by Ngô Quyền.	漢から南漢までの交州支配。	北屬時期
+us	ming	1407-06	1427-12	105.85	21.03	明朝交趾布政使司	Ming province of Jiaozhi	明の交趾布政使司	明朝滅胡朝後設省直轄，二十年後被黎利逐出。	Ming direct rule after the fall of the Hồ, ended by Lê Lợi twenty years later.	胡朝滅亡後の明の直轄支配。	屬明時期
+us	japanese	1940-09	1945-08	105.85	21.03	日軍進駐印度支那	Japanese troops in Indochina	日本軍の仏印進駐	日軍與維琪法國共管，1945 年 3 月推翻法國政府。	Japan shared control with Vichy France until it overthrew the French in March 1945.	ヴィシー政府と共存し、1945年3月に仏政権を打倒。	日本進駐法屬印度支那
+us	chinese1945	1945-09	1946-06	105.85	21.03	中華民國軍受降（北緯 16 度以北）	ROC troops take the surrender north of 16°N	中華民国軍の進駐（北緯16度以北）	盧漢率滇軍入越受降，1946 年依中法協定撤出。	Lu Han's Yunnan army took the Japanese surrender and left under the 1946 Sino-French accord.	盧漢の雲南軍が降伏を受理。	
+us	british1945	1945-09	1946-03	106.7	10.78	英印軍受降（北緯 16 度以南）	British-Indian troops in the south	英印軍の進駐（北緯16度以南）	英軍在南方受降並協助法國重返。	The British took the surrender in the south and helped the French back.	英軍が南部で降伏を受理し仏軍復帰を援助。	
+us	usforces	1965-03	1973-03	106.7	10.78	美軍駐越	US forces in Vietnam	在ベトナム米軍	最多達五十餘萬人，巴黎和約後撤出。	Over half a million at their peak; withdrawn after the Paris accords.	最大50万人超、パリ協定後撤退。	越戰
+us	camranh	1979-05	2002-05	109.22	11.92	蘇聯（俄國）金蘭灣基地	Soviet (Russian) base at Cam Ranh	ソ連（ロシア）のカムラン湾基地	越蘇條約後蘇聯海軍使用金蘭灣，2002 年俄國撤出。	The Soviet navy used Cam Ranh after the 1978 treaty; Russia left in 2002.	1978年条約後のソ連海軍基地、2002年撤退。	金蘭灣

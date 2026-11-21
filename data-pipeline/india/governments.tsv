@@ -1,0 +1,34 @@
+# 印度模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為次大陸主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+pataliputra	-321-01	-185-01	85.14	25.61	1	maurya	華氏城（孔雀）	华氏城（孔雀）	Pataliputra (Maurya)	パータリプトラ（マウリヤ）
+pataliputra_s	-185-01	-073-01	85.14	25.61	0	shunga	華氏城（巽伽）	华氏城（巽伽）	Pataliputra (Shunga)	パータリプトラ（シュンガ）
+pratishthana	-185-01	0225-01	75.38	19.48	0	satavahana	普臘蒂什塔納（百乘）	普腊蒂什塔纳（百乘）	Pratishthana (Satavahana)	プラティシュターナ（サータヴァーハナ）
+sagala	-185-01	-010-01	74.53	32.49	0	hellenistic	舍竭城（印度—希臘）	舍竭城（印度—希腊）	Sagala (Indo-Greeks)	サーガラ（インド＝グリーク）
+purushapura	0030-01	0375-01	71.58	34.01	1	kushan	布路沙布邏（貴霜）	布路沙布逻（贵霜）	Purushapura (Kushan)	プルシャプラ（クシャーナ）
+pataliputra_g	0320-01	0550-01	85.14	25.61	1	gupta	華氏城（笈多）	华氏城（笈多）	Pataliputra (Gupta)	パータリプトラ（グプタ）
+kanchi	0275-01	0897-01	79.70	12.83	0	pallava	建志補羅（帕拉瓦）	建志补罗（帕拉瓦）	Kanchipuram (Pallava)	カーンチープラム（パッラヴァ）
+kannauj_h	0606-01	0647-01	79.92	27.05	1	harsha	曲女城（戒日王）	曲女城（戒日王）	Kannauj (Harsha)	カナウジ（ハルシャ）
+badami	0543-01	0753-01	75.68	15.92	0	chalukya	巴達米（遮婁其）	巴达米（遮娄其）	Badami (Chalukya)	バーダーミ（チャールキヤ）
+manyakheta	0753-01	0973-01	77.13	17.20	0	rashtrakuta	曼雅凱塔（羅濕陀羅拘陀）	曼雅凯塔（罗湿陀罗拘陀）	Manyakheta (Rashtrakuta)	マーニャケータ（ラーシュトラクータ）
+kannauj_p	0816-01	1036-01	79.92	27.05	1	pratihara	曲女城（普臘蒂哈臘）	曲女城（普腊蒂哈腊）	Kannauj (Pratihara)	カナウジ（プラティハーラ）
+thanjavur	0897-01	1279-01	79.14	10.79	0	chola	坦賈武爾（朱羅）	坦贾武尔（朱罗）	Thanjavur (Chola)	タンジャーヴール（チョーラ）
+ghazni	0977-01	1186-01	68.42	33.55	0	ghaznavid	伽色尼	伽色尼	Ghazni	ガズナ
+delhi_s	1206-06	1526-04	77.21	28.61	1	delhi	德里（蘇丹國）	德里（苏丹国）	Delhi (Sultanate)	デリー（スルターン朝）
+vijayanagara	1336-01	1565-01	76.46	15.33	0	vijayanagara	毗奢耶那伽羅（亨比）	毗奢耶那伽罗（亨比）	Vijayanagara (Hampi)	ヴィジャヤナガル（ハンピ）
+bidar	1347-08	1600-01	77.52	17.91	0	bahmani	古爾伯加、比德爾（巴赫曼尼）	古尔伯加、比德尔（巴赫曼尼）	Gulbarga, Bidar (Bahmani)	グルバルガ、ビーダル（バフマニー）
+agra	1526-04	1648-01	78.01	27.18	1	mughal	阿格拉（蒙兀兒）	阿格拉（莫卧儿）	Agra (Mughal)	アーグラ（ムガル）
+delhi_m	1648-01	1858-08	77.24	28.66	1	mughal	沙賈漢納巴德（德里）	沙贾汉纳巴德（德里）	Shahjahanabad, Delhi (Mughal)	シャージャハーナーバード（デリー）
+goa	1510-11	1961-12	73.83	15.50	0	portugal	果阿	果阿	Goa	ゴア
+pune	1674-06	1818-06	73.86	18.52	0	maratha	浦那（馬拉塔）	浦那（马拉塔）	Pune (Maratha)	プネー（マラーター）
+hyderabad	1724-10	1948-09	78.47	17.36	0	hyderabad	海德拉巴	海德拉巴	Hyderabad	ハイダラーバード
+kabul	1747-10	2026-12	69.17	34.53	0	durrani	坎大哈、喀布爾	坎大哈、喀布尔	Kandahar, Kabul	カンダハール、カーブル
+lahore	1799-07	1849-03	74.32	31.58	0	sikh	拉合爾（錫克）	拉合尔（锡克）	Lahore (Sikh)	ラホール（シク）
+seringapatam	1761-01	1799-05	76.68	12.42	0	mysore	斯里蘭加帕特納（邁索爾）	斯里兰加帕特纳（迈索尔）	Srirangapatna (Mysore)	シュリーランガパトナ（マイソール）
+calcutta	1765-08	1858-08	88.36	22.57	1	eic	加爾各答（東印度公司）	加尔各答（东印度公司）	Calcutta (East India Company)	カルカッタ（東インド会社）
+calcutta_r	1858-08	1911-12	88.36	22.57	1	raj	加爾各答（英屬印度）	加尔各答（英属印度）	Calcutta (British India)	カルカッタ（英領インド）
+newdelhi_r	1911-12	1947-08	77.21	28.61	1	raj	德里、新德里（英屬印度）	德里、新德里（英属印度）	Delhi, New Delhi (British India)	デリー、ニューデリー（英領インド）
+newdelhi	1947-08	2026-12	77.21	28.61	1	india	新德里	新德里	New Delhi	ニューデリー
+karachi	1947-08	1959-10	67.01	24.86	0	pakistan	喀拉蚩（巴基斯坦）	卡拉奇（巴基斯坦）	Karachi (Pakistan)	カラチ（パキスタン）
+islamabad	1959-10	2026-12	73.05	33.68	0	pakistan	拉瓦爾品第、伊斯蘭瑪巴德	拉瓦尔品第、伊斯兰堡	Rawalpindi, Islamabad	ラーワルピンディー、イスラマバード
+dhaka	1971-12	2026-12	90.41	23.81	0	bangladesh	達卡	达卡	Dhaka	ダッカ
+kathmandu	1768-09	2026-12	85.32	27.71	0	nepal	加德滿都	加德满都	Kathmandu	カトマンズ
+colombo	1948-02	2026-12	79.86	6.93	0	srilanka	可倫坡	科伦坡	Colombo	コロンボ

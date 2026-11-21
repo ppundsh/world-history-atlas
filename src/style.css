@@ -63,25 +63,25 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 .mapctl button:last-child { border-bottom: none; }
 .mapctl button:hover { background: #f1f1f1; }
 .maplibregl-ctrl-bottom-right { bottom: 96px !important; }
-#info { position: absolute; left: 14px; top: 14px; width: min(340px, calc(100% - 80px)); max-height: calc(100% - 28px); overflow: auto; background: rgba(255, 255, 255, 0.96); color: #1d1d1d; border-radius: 10px; padding: 14px 16px; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35); z-index: 4; }
-#info h2 { margin: 0 24px 6px 0; font: 700 20px var(--serif); display: flex; align-items: center; gap: 8px; }
-#info h2 i { width: 16px; height: 16px; border-radius: 3px; flex: none; border: 1px solid rgba(0, 0, 0, 0.3); }
-#info h2 i.hatch { background: repeating-linear-gradient(45deg, #333 0 2px, transparent 2px 6px); }
-#info p { margin: 4px 0; }
-#info .note { color: #8a3b12; font-size: 12px; }
-#info .src { color: #666; font-size: 12px; }
-#info .x { position: absolute; right: 8px; top: 6px; border: none; background: none; font-size: 22px; color: #666; }
-#info ul { margin: 6px 0; padding-left: 18px; }
-#info a { color: #1a5fb4; }
-#info h3 { margin: 10px 0 2px; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-#info .desc { font-size: 13px; line-height: 1.55; color: #333; }
-#info .links { font-size: 12.5px; }
-#info table.facts { border-collapse: collapse; margin: 6px 0; font-size: 13px; width: 100%; }
-#info table.facts th { text-align: left; color: #666; font-weight: 500; padding: 2px 10px 2px 0; white-space: nowrap; vertical-align: top; }
-#info table.facts td { padding: 2px 0; }
-#info a.chip { display: inline-flex; align-items: center; gap: 4px; margin: 1px 6px 1px 0; text-decoration: none; }
-#info a.chip i { width: 10px; height: 10px; border-radius: 2px; border: 1px solid rgba(0,0,0,.3); }
-#info .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; border: 1px solid rgba(0,0,0,.3); }
+:is(#info, #pinInfo) { position: absolute; left: 14px; top: 14px; width: min(340px, calc(100% - 80px)); max-height: calc(100% - 28px); overflow: auto; background: rgba(255, 255, 255, 0.96); color: #1d1d1d; border-radius: 10px; padding: 14px 16px; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35); z-index: 4; }
+:is(#info, #pinInfo) h2 { margin: 0 24px 6px 0; font: 700 20px var(--serif); display: flex; align-items: center; gap: 8px; }
+:is(#info, #pinInfo) h2 i { width: 16px; height: 16px; border-radius: 3px; flex: none; border: 1px solid rgba(0, 0, 0, 0.3); }
+:is(#info, #pinInfo) h2 i.hatch { background: repeating-linear-gradient(45deg, #333 0 2px, transparent 2px 6px); }
+:is(#info, #pinInfo) p { margin: 4px 0; }
+:is(#info, #pinInfo) .note { color: #8a3b12; font-size: 12px; }
+:is(#info, #pinInfo) .src { color: #666; font-size: 12px; }
+:is(#info, #pinInfo) .x { position: absolute; right: 8px; top: 6px; border: none; background: none; font-size: 22px; color: #666; }
+:is(#info, #pinInfo) ul { margin: 6px 0; padding-left: 18px; }
+:is(#info, #pinInfo) a { color: #1a5fb4; }
+:is(#info, #pinInfo) h3 { margin: 10px 0 2px; font-size: 14px; display: flex; align-items: center; gap: 6px; }
+:is(#info, #pinInfo) .desc { font-size: 13px; line-height: 1.55; color: #333; }
+:is(#info, #pinInfo) .links { font-size: 12.5px; }
+:is(#info, #pinInfo) table.facts { border-collapse: collapse; margin: 6px 0; font-size: 13px; width: 100%; }
+:is(#info, #pinInfo) table.facts th { text-align: left; color: #666; font-weight: 500; padding: 2px 10px 2px 0; white-space: nowrap; vertical-align: top; }
+:is(#info, #pinInfo) table.facts td { padding: 2px 0; }
+:is(#info, #pinInfo) a.chip { display: inline-flex; align-items: center; gap: 4px; margin: 1px 6px 1px 0; text-decoration: none; }
+:is(#info, #pinInfo) a.chip i { width: 10px; height: 10px; border-radius: 2px; border: 1px solid rgba(0,0,0,.3); }
+:is(#info, #pinInfo) .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; border: 1px solid rgba(0,0,0,.3); }
 #tooltip { position: absolute; z-index: 5; pointer-events: none; background: rgba(20, 20, 20, 0.85); color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 13px; white-space: nowrap; }
 #busy { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); z-index: 6; }
 
@@ -106,9 +106,16 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 
 /* about */
 #about { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.55); display: grid; place-items: center; z-index: 20; }
-#about .card { background: #fff; color: #222; max-width: 760px; margin: 16px; padding: 20px 22px; border-radius: 12px; }
+#about .card { background: #fff; color: #222; width: min(760px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.4); }
+/* header and footer stay put; only the body scrolls, so the × is always in the corner */
+#about .card > header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 12px 10px 22px; border-bottom: 1px solid #eee; flex: none; }
+#about .card > header h2 { margin: 0; font: 700 18px var(--serif); }
+#about .card > .body { overflow: auto; padding: 4px 22px 12px; flex: 1 1 auto; -webkit-overflow-scrolling: touch; }
+#about .card > footer { flex: none; padding: 10px 22px; border-top: 1px solid #eee; text-align: right; }
+#about .xbtn { flex: none; width: 36px; height: 36px; margin: 0; padding: 0; border-radius: 50%; border: none; background: #f0f0f2; font-size: 22px; line-height: 36px; color: #444; cursor: pointer; }
+#about .xbtn:hover { background: #e4e4e8; }
 #about .small { font-size: 12px; color: #666; }
-#about button { margin-top: 8px; padding: 6px 16px; border: 1px solid #ccc; background: #f6f6f6; border-radius: 6px; color: #222; }
+#about footer button { margin: 0; padding: 6px 16px; border: 1px solid #ccc; background: #f6f6f6; border-radius: 6px; color: #222; }
 
 /* loading */
 #loading { position: fixed; inset: 0; background: var(--bg); display: grid; place-items: center; z-index: 50; }
@@ -128,7 +135,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
   #hud { right: 10px; bottom: 8px; }
   #ticker { font-size: 12px; }
   #menuBtn { display: block; }
-  #controls { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--panel); padding: 12px 14px; flex-direction: column; align-items: stretch; border-bottom: 1px solid var(--line); }
+  #controls { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #111a29; max-height: calc(100dvh - 60px); overflow: auto; box-shadow: 0 10px 24px rgba(0,0,0,.45); padding: 12px 14px; flex-direction: column; align-items: stretch; border-bottom: 1px solid var(--line); }
   body.menu-open #controls { display: flex; }
   #top { position: relative; }
   #controls > label, .showpick, .projpick { justify-content: space-between; }
@@ -136,11 +143,46 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
   #projMenu { position: fixed; left: 8px; right: 8px; top: 56px; flex-direction: column; }
   #projMenu .pdetail { width: auto; border-left: 0; border-top: 1px solid var(--line); max-height: 30vh; }
   .brand span { display: none; }
-  #timeline { grid-template-columns: 1fr; }
-  .buttons { justify-content: center; }
-  .side { justify-content: center; flex-wrap: wrap; }
-  #trackInfo { grid-column: 1; text-align: center; }
+  /* phones: a compact two-row player — transport and year on one row, the timeline below;
+     music lives in the menu, its credit in About */
+  #timeline { grid-template-columns: auto 1fr; grid-template-rows: auto auto; gap: 2px 8px; padding: 6px 10px calc(6px + env(safe-area-inset-bottom)); }
+  #timeline .buttons { grid-column: 1; grid-row: 1; justify-content: flex-start; }
+  #timeline .side { grid-column: 2; grid-row: 1; justify-content: flex-end; flex-wrap: nowrap; gap: 6px; }
+  #timeline .track { grid-column: 1 / 3; grid-row: 2; height: 40px; }
+  #ticks { top: 29px; }
+  #trackInfo { display: none; }
+  .buttons.ios { padding: 2px 4px; }
+  .buttons.ios .icon { width: 34px; height: 34px; }
+  .buttons.ios .icon svg { width: 19px; height: 19px; }
+  .buttons.ios .play { width: 40px; height: 40px; }
+  #yearInput { width: 64px; padding: 4px; font-size: 15px; }
+  .speed span { display: none; }
   #ticks span:nth-child(odd) { display: none; }
+  /* music: one line in the menu that unfolds into the player */
+  #musicFold { border-top: 1px solid var(--line); padding-top: 8px; }
+  #musicToggle { width: 100%; text-align: left; background: none; border: 0; color: inherit; font: inherit; padding: 6px 0; cursor: pointer; }
+  #musicToggle::after { content: ' ▸'; color: #8a94a6; }
+  #musicToggle.open::after { content: ' ▾'; }
+  #musicSlot #music { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; }
+  #musicSlot #music select { flex: 1; max-width: none; }
+  /* year and speed inside the transport bar */
+  #timeline { grid-template-columns: 1fr; }
+  #timeline .buttons { grid-column: 1; width: 100%; box-sizing: border-box; justify-content: space-between; gap: 2px; }
+  #timeline .side { display: none; }
+  #timeline .track { grid-column: 1; }
+  #timeline .buttons #yearInput { width: 62px; height: 32px; margin-left: 6px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); color: #fff; border-radius: 8px; text-align: center; }
+  #timeline .buttons .speed { margin: 0 2px 0 4px; }
+  #timeline .buttons .speed select { height: 32px; padding: 0 4px; }
+  /* switches: name on the left, switch on the right, like the other rows */
+  #controls .switch { justify-content: space-between; flex-direction: row-reverse; padding: 4px 0; }
+  #yearBig { font-size: 30px; }
+  #countBox { font-size: 12px; margin-top: 2px; } #countBox b { font-size: 16px; }
+  #projTags { bottom: 8px; left: 10px; max-width: 46vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* details as a bottom sheet over the player, so the place you tapped stays visible */
+  :is(#info, #pinInfo) { position: fixed; left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 52dvh; background: #fff; border-radius: 16px 16px 0 0; padding: 18px 16px calc(14px + env(safe-area-inset-bottom)); z-index: 12; box-shadow: 0 -6px 24px rgba(0,0,0,.35); }
+  :is(#info, #pinInfo)::before { content: ''; position: absolute; left: 50%; top: 6px; width: 40px; height: 4px; margin-left: -20px; border-radius: 2px; background: #ccc; }
+  :is(#info, #pinInfo) .x { top: 10px; right: 10px; font-size: 26px; }
+  #legend { bottom: 34px; }
 }
 
 #projTags { position: absolute; left: 14px; bottom: 12px; z-index: 3; font-size: 12px; color: #fff; background: rgba(0, 0, 0, 0.45); padding: 3px 9px; border-radius: 12px; pointer-events: none; }
@@ -155,9 +197,9 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 #legend li b { margin-left: auto; font-weight: 600; color: #555; }
 #legend .govs li { color: #444; } #legend .govs li.roc { color: #0b2a7a; font-weight: 700; }
 #legend p { color: #666; margin: 4px 0 0; font-size: 11px; }
-#info .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 4px; }
+:is(#info, #pinInfo) .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 4px; }
 .modesel select { font-weight: 700; border-color: var(--accent); }
-#info { z-index: 5; }
+:is(#info, #pinInfo) { z-index: 5; }
 #legend h3 { cursor: pointer; user-select: none; }
 #legend h3::after { content: ' ▾'; color: #888; }
 #legend.collapsed h3::after { content: ' ▸'; }
@@ -168,12 +210,12 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 #legend .govs li:hover { text-decoration: underline; }
 #legend .rockey { display: flex; align-items: center; gap: 6px; margin: 2px 0 4px; font-size: 11.5px; color: #444; }
 #legend .rockey i { width: 22px; height: 0; border-top: 3px solid #ffb000; box-shadow: 0 0 0 1px #fff; }
-#info .star { font-size: 20px; }
-#info .rocflag { display: inline-block; background: #fff3cc; border: 1px solid #ffb000; color: #7a4b00; border-radius: 4px; padding: 1px 8px; font-size: 12px; }
+:is(#info, #pinInfo) .star { font-size: 20px; }
+:is(#info, #pinInfo) .rocflag { display: inline-block; background: #fff3cc; border: 1px solid #ffb000; color: #7a4b00; border-radius: 4px; padding: 1px 8px; font-size: 12px; }
 
 .toggles label.sel { grid-column: 1 / -1; display: flex; gap: 8px; align-items: center; }
-#info .when { color: #666; font-size: 12.5px; margin: -2px 0 6px; }
-#info a.rel { color: #1a5fb4; }
+:is(#info, #pinInfo) .when { color: #666; font-size: 12.5px; margin: -2px 0 6px; }
+:is(#info, #pinInfo) a.rel { color: #1a5fb4; }
 #legend li[data-rel] { cursor: pointer; }
 #legend li[data-rel]:hover { text-decoration: underline; }
 
@@ -203,13 +245,13 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 
 .toworld { margin-left: 6px; padding: 3px 9px; border-radius: 6px; border: 1px solid #f2c14e; background: rgba(242,193,78,.15); color: #f2c14e; font-weight: 600; cursor: pointer; white-space: nowrap; }
 .toworld:hover { background: rgba(242,193,78,.3); }
-#info p.src { color: var(--muted); font-size: 11px; }
+:is(#info, #pinInfo) p.src { color: var(--muted); font-size: 11px; }
 
 /* history event table */
 #evTable { position: absolute; right: 64px; top: 14px; width: min(330px, calc(100% - 100px)); max-height: calc(100% - 190px); display: flex; flex-direction: column;
   background: rgba(255, 255, 255, 0.94); color: #1d1d1f; border-radius: 12px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3); z-index: 3; overflow: hidden; }
 #evTable[hidden] { display: none; }
-#evTable .evhead { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px 6px 14px; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,.08); }
+#evTable .evhead { cursor: move; touch-action: none; user-select: none; display: flex; align-items: center; justify-content: space-between; padding: 10px 12px 6px 14px; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,.08); }
 #evTable .x { border: none; background: none; font-size: 20px; color: #888; padding: 0 4px; }
 #evTable ol { list-style: none; margin: 0; padding: 4px 0; overflow: auto; }
 #evTable li { display: grid; grid-template-columns: 118px 1fr; gap: 8px; padding: 5px 14px; font-size: 12.5px; cursor: pointer; line-height: 1.35; }
@@ -239,13 +281,173 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 #legend i.mstripe { background: repeating-linear-gradient(135deg, transparent 0 3px, #d6af28 3px 6px) #f4f1ea; }
 #legend i.mstripe.h1 { background: repeating-linear-gradient(135deg, transparent 0 4px, rgba(214,175,40,.55) 4px 5.5px) #f4f1ea; }
 
-#about .card { max-height: calc(100vh - 60px); overflow: auto; }
 #credits h3 { font-size: 14px; margin: 14px 0 4px; }
 #credits table.credits { width: 100%; border-collapse: collapse; font-size: 12px; }
 #credits table.credits td { padding: 4px 6px; border-top: 1px solid rgba(0,0,0,.08); vertical-align: top; }
 #credits table.credits td:last-child { width: 34%; color: #555; }
 #credits small { color: #6e6e73; }
 
-#about .card { position: relative; }
-#about .card #aboutX { position: sticky; top: 0; float: right; margin: -8px -8px 0 8px; width: 34px; height: 34px; border-radius: 50%; border: none; background: rgba(0,0,0,.06); font-size: 22px; line-height: 1; color: #444; cursor: pointer; z-index: 1; }
-#about .card #aboutX:hover { background: rgba(0,0,0,.12); }
+
+/* art history: representative works in the info panel */
+:is(#info, #pinInfo) .worksH { font-size: 13px; margin: 12px 0 6px; }
+:is(#info, #pinInfo) .works { display: grid; gap: 8px; }
+:is(#info, #pinInfo) .work { display: grid; grid-template-columns: 84px 1fr; gap: 8px; margin: 0; font-size: 12px; line-height: 1.45; }
+:is(#info, #pinInfo) .work .pic img { width: 84px; height: 84px; object-fit: cover; border-radius: 4px; display: block; background: #eee; }
+:is(#info, #pinInfo) .work .pic.none { width: 84px; height: 84px; border-radius: 4px; background: repeating-linear-gradient(45deg,#eee 0 6px,#f6f6f6 6px 12px); font-size: 10px; color: #777; display: flex; align-items: center; text-align: center; padding: 4px; box-sizing: border-box; }
+:is(#info, #pinInfo) .work small { color: #777; }
+:is(#info, #pinInfo) .muted { color: #888; font-size: 12px; }
+
+/* visible on/off switches in the top bar (capitals, artwork pictures) */
+.switch { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; white-space: nowrap; }
+.switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.switch i { width: 30px; height: 17px; border-radius: 9px; background: #4a5568; position: relative; transition: background .15s; flex: none; }
+.switch i::after { content: ''; position: absolute; left: 2px; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.switch input:checked + i { background: #f5b301; }
+.switch input:checked + i::after { transform: translateX(13px); }
+.switch input:focus-visible + i { outline: 2px solid #9cc3ff; outline-offset: 2px; }
+
+/* screenshot / recording */
+#recBtn .dot, #recBar .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #e53935; }
+#recBtn.on .dot { border-radius: 2px; }
+#recBar { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 20; display: flex; align-items: center; gap: 8px;
+  background: rgba(17, 26, 41, 0.92); color: #fff; padding: 6px 10px; border-radius: 18px; font: 600 13px system-ui, sans-serif; }
+#recBar .dot { animation: blink 1s infinite; }
+#recBar button, #fitBar button { background: #fff; color: #111; border: 0; border-radius: 12px; padding: 3px 10px; font: inherit; cursor: pointer; }
+@keyframes blink { 50% { opacity: .25; } }
+/* the map is held on one country */
+#fitBar { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 19; display: flex; align-items: center; gap: 8px;
+  background: rgba(255, 255, 255, 0.95); color: #111; padding: 5px 6px 5px 12px; border-radius: 18px; font: 600 13px system-ui, sans-serif; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+#fitBar button { background: #111a29; color: #fff; }
+#recBar:not([hidden]) ~ #fitBar { top: 50px; }
+:is(#info, #pinInfo) .fitbtn { margin: 6px 0 2px; background: #111a29; color: #fff; border: 0; border-radius: 6px; padding: 5px 10px; cursor: pointer; font: 600 12px system-ui, sans-serif; }
+:is(#info, #pinInfo) .fitbtn.on { background: #f5b301; color: #111; }
+#recMenu { position: absolute; right: 64px; top: 300px; z-index: 21; background: #fff; color: #111; border-radius: 8px; padding: 10px 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25); display: flex; flex-direction: column; gap: 8px; font: 13px system-ui, sans-serif; }
+#recMenu button { background: #e53935; color: #fff; border: 0; border-radius: 6px; padding: 6px 12px; font: 600 13px system-ui, sans-serif; cursor: pointer; }
+
+/* event picture popping up above the timeline's current position while playing */
+#evPop { position: absolute; bottom: 10px; left: 0; z-index: 6; pointer-events: auto; cursor: pointer; width: 150px; background: #fff; border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35); text-align: left; opacity: 0; transform: translateY(8px); transition: opacity .35s, transform .35s, left .25s linear; }
+#evPop::after { content: ''; position: absolute; bottom: -6px; left: var(--arrow, 50%); margin-left: -6px; border: 6px solid transparent; border-bottom: 0; border-top-color: #fff; }
+#evPop.show { opacity: 1; transform: none; }
+#evPop.show.fade { opacity: 0; transition: opacity 1.4s, left .25s linear; }
+#evPop img { display: block; width: 100%; height: 90px; object-fit: cover; border-radius: 8px 8px 0 0; }
+#evPop .cap { padding: 5px 8px 6px; font: 600 11px system-ui, sans-serif; color: #111; }
+#evPop .cap small { display: block; font-weight: 400; color: #777; font-size: 9px; margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+:is(#info, #pinInfo) .evpic { margin: 8px 0; }
+:is(#info, #pinInfo) .evpic img { width: 100%; max-height: 220px; object-fit: cover; border-radius: 6px; display: block; }
+:is(#info, #pinInfo) .evpic figcaption { font-size: 10px; color: #777; margin-top: 3px; }
+@media (max-width: 860px) {
+  #evPop { width: 112px; bottom: 6px; } #evPop img { height: 64px; } #evPop .cap small { display: none; }
+  /* menu: everything fits the screen width */
+  #controls > * { min-width: 0; max-width: 100%; box-sizing: border-box; }
+  #controls select, #projBtn { max-width: 62vw; }
+  .showpick { flex-direction: column; align-items: stretch; gap: 6px; }
+  #showBtn { width: 100%; writing-mode: horizontal-tb; }
+  #showMenu { position: static; width: auto; grid-template-columns: 1fr 1fr; box-sizing: border-box; }
+  #showMenu label { white-space: normal; min-width: 0; }
+  /* event list: a short panel at the top, leaving the map visible */
+  #evTable { left: 8px; right: 56px; top: 8px; width: auto; max-height: 36%; font-size: 12px; }
+}
+.picsize { display: inline-flex; align-items: center; gap: 4px; }
+.picsize input { width: 80px; }
+#legend .kinds { font-size: 11px; color: #555; margin: 4px 0; }
+#projMenu .pthumb { display: block; width: 100%; max-width: 260px; height: auto; margin: 8px auto 4px; }
+#recMenu label, #recMenu span { color: #111; }
+
+/* phones held sideways (short screens): map buttons in a row, smaller year, compact player */
+@media (max-height: 520px) and (max-width: 1000px) {
+  /* sideways: the map buttons stay a column, just smaller, so they fit the short screen */
+  .mapctl { top: 6px; right: 6px; }
+  .mapctl button { width: 30px; height: 28px; font-size: 14px; }
+  #recMenu { right: 44px; }
+  #yearBig { font-size: 24px; }
+  #countBox { display: none; }
+  #timeline { padding-top: 4px; padding-bottom: 4px; }
+  .buttons.ios .play { width: 34px; height: 34px; }
+  .buttons.ios .icon { width: 30px; height: 30px; }
+  #timeline .track { height: 34px; }
+  :is(#info, #pinInfo) { max-height: 70dvh; }
+  #evTable { max-height: 70%; right: 46px; top: 8px; width: min(330px, 55vw); left: auto; }
+  #legend { max-height: 50%; }
+  #controls { max-height: calc(100dvh - 50px); }
+}
+
+/* event list: drag by the header, resize from the corner */
+#evTable .evgrip { position: absolute; right: 0; bottom: 0; width: 22px; height: 22px; cursor: nwse-resize; touch-action: none;
+  background: linear-gradient(135deg, transparent 50%, rgba(0,0,0,.25) 50%, rgba(0,0,0,.25) 58%, transparent 58%, transparent 70%, rgba(0,0,0,.25) 70%, rgba(0,0,0,.25) 78%, transparent 78%); border-radius: 0 0 12px 0; }
+#evTable ol { flex: 1; min-height: 0; }
+#legend .langfocus { margin: 2px 0 6px; background: #111a29; color: #fff; border: 0; border-radius: 6px; padding: 4px 10px; font: 600 12px system-ui, sans-serif; cursor: pointer; }
+
+/* phones held upright: the map buttons become a row along the top, leaving the map's width free */
+@media (max-width: 860px) and (orientation: portrait) {
+  .mapctl { flex-direction: row; top: 8px; right: 8px; }
+  .mapctl button { width: 36px; height: 36px; border-bottom: none; border-right: 1px solid #e3e3e3; }
+  .mapctl button:last-child { border-right: none; }
+  #recMenu { top: 52px !important; right: 8px; }
+  #evTable { top: 54px; right: 8px; left: 8px; }
+  #fitBar, #recBar { top: 54px; }
+  #evTable .evgrip { width: 34px; height: 34px; }
+}
+/* 標記 menu: grouped switches */
+#markMenu { display: flex; flex-direction: column; gap: 6px; min-width: 240px; }
+#markMenu[hidden] { display: none; }
+#markMenu h5 { margin: 4px 0 2px; font-size: 11px; color: var(--muted, #8a94a6); font-weight: 600; letter-spacing: .04em; }
+#markMenu .switch { justify-content: space-between; flex-direction: row-reverse; }
+#modeMarks { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line, rgba(255,255,255,.12)); padding-top: 6px; }
+#modeMarks[hidden], #modeMarks [hidden] { display: none; }
+#markMenu .picsize { justify-content: space-between; }
+#legend .lghead { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+#legend .focuspick { position: relative; }
+#legend .focusmenu { position: absolute; left: 0; top: 100%; z-index: 9; margin: 4px 0 0; padding: 4px 0; list-style: none; background: #fff; border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25); width: 230px; max-height: 300px; overflow: auto; }
+#legend .focusmenu[hidden] { display: none; }
+#legend .focusmenu li { padding: 6px 12px; cursor: pointer; font-size: 12px; }
+#legend .focusmenu li:hover { background: rgba(0,122,255,.1); }
+#markMenu { max-width: calc(100vw - 16px); }
+:is(#info, #pinInfo) .placepic { margin: 6px 0; }
+#evTable .evfilter { flex: 1; min-width: 60px; margin: 0 8px; padding: 3px 8px; border: 1px solid rgba(0,0,0,.15); border-radius: 6px; font: 12px system-ui, sans-serif; background: #fff; color: #111; }
+#evTable li[hidden] { display: none; }
+:is(#info, #pinInfo) .series { color: #a16207; font-weight: 600; font-size: 12px; margin: 4px 0; } #legend .series small { color: #a16207; font-size: 10px; }
+.clsicon { vertical-align: -3px; }
+#legend h4.clshead { margin: 8px 0 2px; font-size: 12px; display: flex; align-items: center; gap: 6px; }
+#legend h4.clshead small { color: #888; font-weight: 400; }
+#legend li small.works { color: #a16207; font-size: 10px; }
+
+/* pinned card: stays at the top; the card of the current selection opens below it */
+#pinInfo { border: 2px solid #c2185b; }
+:is(#info, #pinInfo) .pinbtn { position: absolute; right: 34px; top: 8px; border: 0; background: none; color: #777; padding: 2px; cursor: pointer; border-radius: 6px; line-height: 0; }
+:is(#info, #pinInfo) .pinbtn:hover { background: #f2e3ea; color: #c2185b; }
+#pinInfo .pinbtn { color: #c2185b; }
+#pinInfo .pinwhen { color: #c2185b; font-size: 12px; margin: -2px 0 6px; }
+#pinInfo { max-height: 46%; }
+#pinInfo .placepic, #pinInfo .works { display: none; }
+@media (max-width: 860px) {
+  #pinInfo { position: absolute; left: 8px; right: 8px; top: 8px; bottom: auto; width: auto; max-height: 28dvh; border-radius: 12px; padding: 10px 12px; z-index: 6; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+  #pinInfo::before { display: none; }
+  #pinInfo .x { top: 6px; right: 8px; font-size: 22px; }
+  #pinInfo .pinbtn { top: 8px; right: 36px; }
+  :is(#info) .pinbtn { top: 12px; right: 44px; }
+}
+:is(#info, #pinInfo) h2 { margin-right: 58px; }
+
+/* event preview following the mouse over the event timeline and the event marks */
+#evHover { position: fixed; z-index: 60; pointer-events: none; width: 190px; background: rgba(17,26,41,.96); color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,.45); font-size: 12.5px; }
+#evHover .pic img { display: block; width: 100%; max-height: 150px; object-fit: cover; }
+#evHover:not(.haspic) .pic { display: none; }
+#evHover .cap { padding: 6px 9px 7px; line-height: 1.4; }
+#evHover .cap small { display: block; color: #f5c451; font-size: 11px; }
+
+/* portraits of the people a card names */
+:is(#info, #pinInfo) .people h3 { margin: 10px 0 4px; font-size: 13px; }
+:is(#info, #pinInfo) .people .row { display: flex; flex-wrap: wrap; gap: 6px; }
+:is(#info, #pinInfo) .people .who { width: 62px; text-decoration: none; color: #333; font-size: 11px; text-align: center; line-height: 1.25; }
+:is(#info, #pinInfo) .people .ph { display: block; width: 62px; height: 62px; border-radius: 6px; overflow: hidden; background: #eee center/40% no-repeat; margin-bottom: 2px; }
+:is(#info, #pinInfo) .people .ph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
+:is(#info, #pinInfo) .people .src { font-size: 10.5px; }
+@media (max-width: 860px) and (orientation: portrait) { #pinInfo { top: 58px; max-height: 24dvh; } }
+@media (max-height: 520px) and (max-width: 1000px) { #pinInfo { right: 64px; max-height: 40dvh; } }
+/* every picture follows the size slider (標記 ▸ 縮圖大小) */
+#evPop { width: clamp(110px, calc(150px * var(--picscale, 1)), 260px); } #evPop img { height: clamp(66px, calc(90px * var(--picscale, 1)), 156px); }
+#evHover { width: clamp(150px, calc(190px * var(--picscale, 1)), 300px); } #evHover .pic img { max-height: calc(150px * var(--picscale, 1)); }
+@media (max-width: 860px) { #evPop { width: clamp(90px, calc(112px * var(--picscale, 1)), 170px); } #evPop img { height: clamp(50px, calc(64px * var(--picscale, 1)), 100px); } }

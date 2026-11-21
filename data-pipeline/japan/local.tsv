@@ -1,0 +1,61 @@
+# 日本模式：一揆・騷動（⚔）、戰國大名與藩（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點（事件中心、居城或基地）；年代依各維基百科條目。
+feud	shocho	1428-09	1428-12	135.8	34.97	正長土一揆	Shōchō uprising	正長の土一揆	近江馬借起事，波及畿內，要求德政（免除債務），為日本最早的大規模農民起事之一。	Begun by packhorse drivers in Ōmi, it spread through the capital region demanding debt cancellation.	近江の馬借が蜂起し畿内に広がり、徳政を要求した。	正長土一揆
+feud	kakitsu	1441-09	1441-10	135.76	35.0	嘉吉土一揆	Kakitsu uprising	嘉吉の土一揆	將軍足利義教遇刺後，數萬人包圍京都，迫使幕府頒布德政令。	After Shogun Yoshinori's murder, tens of thousands besieged Kyoto and forced a debt-relief edict.	足利義教暗殺後、数万人が京都を包囲し徳政令を出させた。	嘉吉之亂
+feud	yamashiro	1485-12	1493-09	135.8	34.85	山城國一揆	Yamashiro uprising	山城国一揆	南山城的國人與農民逐出畠山兩軍，自治八年。	Local warriors and farmers of southern Yamashiro expelled both Hatakeyama armies and governed themselves for eight years.	南山城の国人と農民が畠山両軍を追い出し、8 年間自治した。	山城國一揆
+feud	kaga	1488-06	1580-11	136.65	36.56	加賀一向一揆	Ikkō-ikki of Kaga	加賀一向一揆	一向宗門徒推翻守護富樫政親，加賀成為「百姓所持之國」近百年。	Ikkō followers overthrew the governor Togashi Masachika; Kaga was "a province held by peasants" for nearly a century.	一向宗門徒が守護富樫政親を倒し、約百年「百姓の持ちたる国」となった。	加賀一向一揆
+feud	mikawa	1563-10	1564-03	137.15	34.95	三河一向一揆	Ikkō-ikki of Mikawa	三河一向一揆	三河一向宗門徒與部分家臣反抗德川家康。	Ikkō followers and some of his own retainers rose against Tokugawa Ieyasu.	三河の一向宗門徒と一部家臣が徳川家康に反抗した。	三河一向一揆
+feud	nagashima	1570-11	1574-09	136.7	35.08	長島一向一揆	Ikkō-ikki of Nagashima	長島一向一揆	伊勢長島的一向宗門徒抗拒織田信長，最終遭屠滅。	The Ikkō stronghold at Nagashima held out against Oda Nobunaga until it was massacred.	長島の一向宗門徒が織田信長に抵抗し、最後は殲滅された。	長島一向一揆
+feud	ishiyama	1570-09	1580-08	135.52	34.68	石山合戰	Ishiyama Hongan-ji war	石山合戦	本願寺與織田信長的十年戰爭，以本願寺退出石山告終。	The ten-year war between Hongan-ji and Oda Nobunaga, ending with the temple leaving Ishiyama.	本願寺と織田信長の十年戦争。本願寺の石山退去で終結。	石山合戰
+feud	shimabara	1637-12	1638-04	130.25	32.63	島原之亂	Shimabara Rebellion	島原の乱	島原、天草的農民與天主教徒起事，固守原城，遭幕府軍鎮壓。	Peasants and Christians of Shimabara and Amakusa held Hara Castle until crushed by the shogunate.	島原・天草の農民とキリシタンが原城に籠城し、幕府軍に鎮圧された。	島原之亂
+feud	gujo	1754-08	1758-12	136.96	35.75	郡上一揆	Gujō uprising	郡上一揆	郡上藩農民反抗增稅，直訴幕府，導致藩主改易。	Gujō farmers fought a tax increase and petitioned the shogunate directly; the lord lost his domain.	郡上藩の農民が増税に反対し直訴、藩主は改易された。	郡上一揆
+feud	tenmei	1787-05	1787-07	139.75	35.68	天明大打毀	Tenmei riots	天明の打ちこわし	天明饑荒米價暴漲，江戶、大坂等地群眾搗毀米商。	Rice prices soared in the Tenmei famine and crowds smashed rice merchants in Edo and Osaka.	天明の飢饉で米価が高騰し、江戸・大坂などで打ちこわしが起きた。	天明大饑荒
+feud	oshio	1837-03	1837-03	135.5	34.69	大鹽平八郎之亂	Ōshio Heihachirō's revolt	大塩平八郎の乱	前大坂町奉行所與力大鹽平八郎為救濟饑民起兵，大坂市街遭火。	A former Osaka official rose to help the starving; much of Osaka burned.	元大坂町奉行所与力が窮民救済のため挙兵し、大坂の町が焼けた。	大鹽平八郎之亂
+feud	bushu	1866-06	1866-06	139.3	35.95	武州世直一揆	Bushū "world-renewal" uprising	武州世直し一揆	開港後物價暴漲，武藏國十數萬農民搗毀富商與村吏。	Prices soared after the ports opened; well over a hundred thousand farmers in Musashi attacked rich merchants.	開港後の物価高騰で武蔵国の農民十数万が豪農・商人を打ちこわした。	武州世直一揆
+feud	saga	1874-02	1874-04	130.3	33.25	佐賀之亂	Saga Rebellion	佐賀の乱	江藤新平率不平士族起兵，遭政府軍鎮壓。	Etō Shinpei led discontented samurai in revolt and was crushed.	江藤新平らの不平士族の反乱。	佐賀之亂
+feud	shinpuren	1876-10	1876-10	130.71	32.8	神風連之亂	Shinpūren Rebellion	神風連の乱	熊本敬神黨反對廢刀令起事。	Kumamoto's Keishintō rose against the ban on swords.	熊本の敬神党が廃刀令に反対して蜂起。	神風連之亂
+feud	hagi	1876-10	1876-11	131.4	34.41	萩之亂	Hagi Rebellion	萩の乱	前原一誠率長州士族起兵。	Maebara Issei led Chōshū samurai in revolt.	前原一誠ら長州士族の反乱。	萩之亂
+feud	chichibu	1884-10	1884-11	139.08	35.99	秩父事件	Chichibu Incident	秩父事件	秩父困民黨數千農民起事，要求減免債務，遭軍隊鎮壓。	Thousands of indebted farmers of the Chichibu Konmintō rose and were put down by the army.	秩父困民党の農民数千人が蜂起し、軍隊に鎮圧された。	秩父事件
+feud	kawamata	1900-02	1900-02	139.45	36.63	川俣事件（足尾礦毒）	Kawamata incident (Ashio copper mine)	川俣事件（足尾鉱毒事件）	足尾銅山礦毒受害農民赴東京請願，於川俣遭警察鎮壓。	Farmers poisoned by the Ashio copper mine marched to petition Tokyo and were beaten back at Kawamata.	足尾鉱毒の被害農民が請願に向かい、川俣で警官隊に阻止された。	足尾礦毒事件
+feud	kome	1918-07	1918-09	137.4	36.8	米騷動	Rice riots	米騒動	富山縣魚津漁婦抗議米價，蔓延全國，寺內內閣下台。	Fishermen's wives in Uozu, Toyama protested rice prices; riots spread nationwide and the cabinet fell.	富山県魚津の主婦らの抗議が全国に広がり、寺内内閣が倒れた。	米騷動
+feud	miike	1959-12	1960-11	130.45	33.03	三池爭議	Miike dispute	三池争議	三井三池煤礦大規模裁員引發的長期勞資鬥爭。	A long labour struggle over mass layoffs at the Mitsui Miike coal mines.	三井三池炭鉱の大量解雇をめぐる労働争議。	三池鬥爭
+feud	sanrizuka	1966-07	1978-05	140.39	35.77	三里塚鬥爭	Sanrizuka struggle	三里塚闘争	農民與學生反對興建成田機場的長期抗爭。	Farmers and students fought the building of Narita airport for years.	成田空港建設に反対する農民と学生の長期闘争。	三里塚鬥爭
+feud	yasuda	1969-01	1969-01	139.76	35.71	東大安田講堂事件	Siege of Yasuda Auditorium	東大安田講堂事件	全共鬥學生佔據東京大學安田講堂，遭警方強制排除。	Zenkyōtō students occupied the University of Tokyo's Yasuda Auditorium until police cleared it.	全共闘の学生が安田講堂を占拠し、機動隊に排除された。	東大安田講堂事件
+feud	koza	1970-12	1970-12	127.8	26.33	胡差暴動	Koza riot	コザ暴動	美軍統治下的沖繩民眾不滿美軍事故處理，焚燒美軍車輛。	Okinawans under US rule, angry at how a US accident was handled, burned American vehicles.	米軍統治下の沖縄で、米兵の事故処理に怒った住民が米軍車両を焼いた。	胡差暴動
+power	oshufujiwara	1087-12	1189-09	141.12	38.99	奧州藤原氏（平泉）	Northern Fujiwara (Hiraizumi)	奥州藤原氏（平泉）	以平泉為中心統治東北近百年，建中尊寺金色堂。	Ruled the north from Hiraizumi for about a century and built the Konjikidō of Chūson-ji.	平泉を拠点に約百年東北を支配し、中尊寺金色堂を建てた。	奧州藤原氏
+power	yoshino	1336-12	1392-11	135.86	34.37	南朝（吉野）	Southern Court (Yoshino)	南朝（吉野）	後醍醐天皇在吉野建立的朝廷，與北朝對立五十餘年。	The court Emperor Go-Daigo set up at Yoshino, rival to the Northern Court for over fifty years.	後醍醐天皇が吉野に開いた朝廷。北朝と 50 年余り対立。	南朝
+power	kamakurakubo	1349-09	1455-06	139.55	35.32	鎌倉公方	Kamakura kubō	鎌倉公方	室町幕府在關東的分支，常與京都對立。	The Muromachi shogunate's branch in the Kantō, often at odds with Kyoto.	室町幕府の関東の出先機関。しばしば京都と対立した。	鎌倉公方
+power	ouchi	1350-01	1551-09	131.47	34.18	大內氏（山口）	Ōuchi clan (Yamaguchi)	大内氏（山口）	以山口為據點，掌控對明、朝鮮貿易，西國最大大名。	From Yamaguchi it controlled trade with Ming and Korea; the greatest lord of the west.	山口を拠点に対明・朝鮮貿易を握った西国最大の大名。	大內氏
+power	asakura	1471-05	1573-08	136.3	36.03	朝倉氏（一乘谷）	Asakura clan (Ichijōdani)	朝倉氏（一乗谷）	越前戰國大名，遭織田信長所滅。	Sengoku lords of Echizen, destroyed by Oda Nobunaga.	越前の戦国大名。織田信長に滅ぼされた。	朝倉氏
+power	gohojo	1495-01	1590-08	139.15	35.25	後北條氏（小田原）	Later Hōjō (Odawara)	後北条氏（小田原）	以小田原為據點統治關東五代，遭豐臣秀吉所滅。	Ruled the Kantō from Odawara for five generations until Hideyoshi.	小田原を拠点に関東を五代支配、豊臣秀吉に滅ぼされた。	後北條氏
+power	imagawa	1500-01	1569-05	138.38	34.97	今川氏（駿府）	Imagawa clan (Sunpu)	今川氏（駿府）	駿河、遠江大名，義元於桶狹間戰死。	Lords of Suruga and Tōtōmi; Yoshimoto fell at Okehazama.	駿河・遠江の大名。義元は桶狭間で戦死。	今川氏
+power	kakizaki	1514-01	1868-11	140.1	41.43	蠣崎（松前）氏	Kakizaki / Matsumae clan	蠣崎（松前）氏	統治蝦夷地南端，掌控與愛努人的交易。	Ruled southern Ezo and controlled trade with the Ainu.	蝦夷地南端を支配し、アイヌとの交易を独占した。	松前藩
+power	hongwanji	1532-08	1580-08	135.52	34.68	石山本願寺	Ishiyama Hongan-ji	石山本願寺	一向宗本山，兼具城塞與勢力。	Headquarters of the Ikkō sect, as much a fortress and power as a temple.	一向宗の本山。城塞を兼ねた一大勢力。	石山本願寺
+power	takeda	1541-07	1582-04	138.57	35.66	武田氏（甲斐）	Takeda clan (Kai)	武田氏（甲斐）	武田信玄統治甲斐、信濃，勝賴時為織田、德川所滅。	Takeda Shingen ruled Kai and Shinano; under Katsuyori it fell to Oda and Tokugawa.	武田信玄が甲斐・信濃を支配。勝頼の代に滅亡。	武田氏
+power	uesugi	1550-01	1598-01	138.25	37.17	上杉氏（越後春日山）	Uesugi clan (Kasugayama, Echigo)	上杉氏（越後春日山）	上杉謙信統治越後，與武田信玄多次交戰於川中島。	Uesugi Kenshin ruled Echigo and fought Takeda Shingen at Kawanakajima.	上杉謙信が越後を支配し、川中島で武田信玄と争った。	上杉氏
+power	mori	1555-10	1600-10	132.88	34.66	毛利氏（吉田郡山）	Mōri clan (Yoshida-Kōriyama)	毛利氏（吉田郡山）	毛利元就統一中國地方，雄踞西日本。	Mōri Motonari united the Chūgoku region.	毛利元就が中国地方を統一した。	毛利氏
+power	shimazu	1550-01	1600-10	130.56	31.6	島津氏（薩摩）	Shimazu clan (Satsuma)	島津氏（薩摩）	一度幾乎統一九州，降於豐臣秀吉。	Nearly united Kyushu before submitting to Hideyoshi.	九州をほぼ統一したが豊臣秀吉に降った。	島津氏
+power	otomo	1550-01	1593-05	131.61	33.24	大友氏（豐後府內）	Ōtomo clan (Funai, Bungo)	大友氏（豊後府内）	大友宗麟信奉天主教，曾稱霸北九州。	Ōtomo Sōrin, a Christian lord, dominated northern Kyushu.	キリシタン大名大友宗麟が北九州に覇を唱えた。	大友氏
+power	chosokabe	1560-06	1600-10	133.53	33.56	長宗我部氏（土佐）	Chōsokabe clan (Tosa)	長宗我部氏（土佐）	長宗我部元親幾乎統一四國。	Chōsokabe Motochika nearly united Shikoku.	長宗我部元親が四国をほぼ統一した。	長宗我部氏
+power	date	1584-10	1871-07	140.87	38.27	伊達氏（仙台藩）	Date clan (Sendai)	伊達氏（仙台藩）	伊達政宗稱霸奧羽，江戶時代為仙台藩六十二萬石。	Date Masamune dominated the north; in the Edo period, the 620,000-koku Sendai domain.	伊達政宗が奥羽に覇を唱え、江戸時代は仙台藩 62 万石。	伊達氏
+power	kaga_han	1600-10	1871-07	136.65	36.56	加賀藩（前田氏）	Kaga domain (Maeda)	加賀藩（前田氏）	百萬石，江戶時代最大的藩。	The million-koku domain, largest of the Edo period.	百万石、江戸時代最大の藩。	加賀藩
+power	satsuma_han	1600-10	1871-07	130.56	31.6	薩摩藩（島津氏）	Satsuma domain (Shimazu)	薩摩藩（島津氏）	控制琉球，幕末與長州推翻幕府。	Controlled Ryukyu; with Chōshū it overthrew the shogunate.	琉球を支配し、幕末に長州とともに倒幕。	薩摩藩
+power	choshu_han	1600-10	1871-07	131.4	34.41	長州藩（毛利氏）	Chōshū domain (Mōri)	長州藩（毛利氏）	幕末尊王攘夷運動中心，倒幕主力。	Centre of the "revere the emperor" movement and a leader of the overthrow.	幕末の尊王攘夷運動の中心で倒幕の主力。	長州藩
+power	tosa_han	1601-01	1871-07	133.53	33.56	土佐藩（山內氏）	Tosa domain (Yamauchi)	土佐藩（山内氏）	提出大政奉還建議，出身者有坂本龍馬等。	Proposed the return of power to the emperor; home of Sakamoto Ryōma.	大政奉還を建白。坂本龍馬らを輩出。	土佐藩
+power	aizu_han	1643-08	1868-11	139.93	37.49	會津藩（松平氏）	Aizu domain (Matsudaira)	会津藩（松平氏）	幕府親藩，戊辰戰爭中遭新政府軍圍攻若松城。	A loyal shogunate house; besieged at Wakamatsu in the Boshin War.	幕府の親藩。戊辰戦争で若松城を包囲された。	會津藩
+us	yokohama_garrison	1863-06	1875-03	139.64	35.44	英法橫濱駐屯軍	British and French garrisons in Yokohama	英仏横浜駐屯軍	生麥事件後英法兩國以保護居留民為由在橫濱山手駐軍，至 1875 年撤離。	After the Namamugi incident Britain and France stationed troops on Yokohama's Bluff until 1875.	生麦事件後、英仏が居留民保護を理由に山手に駐屯、1875 年撤退。	英法駐軍橫濱
+us	ghq	1945-09	1952-04	139.76	35.68	盟軍總司令部（GHQ）	General Headquarters of the Allied occupation (GHQ)	連合国軍総司令部（GHQ）	麥克阿瑟主導的佔領當局，設於東京第一生命館，主導戰後改革。	MacArthur's occupation authority in the Dai-ichi Seimei Building, which drove the postwar reforms.	マッカーサー率いる占領当局。第一生命館に置かれ戦後改革を主導。	駐日盟軍總司令
+us	bcof	1946-02	1952-04	132.55	34.24	英聯邦佔領軍（吳）	British Commonwealth Occupation Force (Kure)	英連邦占領軍（呉）	英、澳、紐、印軍負責中國、四國地方佔領，總部設於吳。	British, Australian, New Zealand and Indian troops occupied Chūgoku and Shikoku from Kure.	英・豪・NZ・印軍が中国・四国地方を占領、本部は呉。	英聯邦佔領軍
+us	yokosuka	1945-08	2026-12	139.67	35.29	美國海軍橫須賀基地	US Fleet Activities Yokosuka	米海軍横須賀基地	美國第七艦隊母港。	Home port of the US Seventh Fleet.	米第七艦隊の母港。	橫須賀海軍設施
+us	yokota	1945-09	2026-12	139.35	35.75	橫田空軍基地	Yokota Air Base	横田基地	駐日美軍司令部所在地。	Headquarters of US Forces Japan.	在日米軍司令部の所在地。	橫田空軍基地
+us	zama	1945-09	2026-12	139.4	35.51	座間營區	Camp Zama	キャンプ座間	駐日美國陸軍司令部。	Headquarters of US Army Japan.	在日米陸軍司令部。	座間營區
+us	misawa	1945-09	2026-12	141.37	40.7	三澤空軍基地	Misawa Air Base	三沢飛行場	美日共用的空軍基地。	An air base shared by the US and Japan.	日米共用の航空基地。	三澤空軍基地
+us	iwakuni	1945-09	2026-12	132.24	34.15	岩國航空站	MCAS Iwakuni	岩国飛行場	美國海軍陸戰隊航空站（戰後初期由英聯邦軍使用）。	A US Marine Corps air station (used by Commonwealth forces right after the war).	米海兵隊航空基地（戦後初期は英連邦軍が使用）。	岩國航空站
+us	sasebo	1945-09	2026-12	129.72	33.16	佐世保美國海軍基地	US Fleet Activities Sasebo	米海軍佐世保基地	韓戰時的重要出擊港。	A key port for the Korean War.	朝鮮戦争の重要な出撃港。	佐世保基地
+us	kadena	1945-04	2026-12	127.77	26.35	嘉手納空軍基地	Kadena Air Base	嘉手納基地	沖繩戰中佔領，為美軍在遠東最大的空軍基地。	Taken in the Battle of Okinawa; the largest US air base in the Far East.	沖縄戦で占領され、極東最大の米空軍基地となった。	嘉手納空軍基地
+us	futenma	1945-06	2026-12	127.76	26.27	普天間飛行場	MCAS Futenma	普天間飛行場	位於宜野灣市區中央，遷移問題長年爭議。	In the middle of Ginowan city; its relocation has been disputed for decades.	宜野湾市の中心にあり、移設問題が長年の争点。	普天間飛行場
+us	uscar	1950-12	1972-05	127.68	26.21	琉球列島美國民政府（USCAR）	US Civil Administration of the Ryukyu Islands	琉球列島米国民政府	美國統治沖繩的機構，至 1972 年沖繩歸還。	The US authority that governed Okinawa until its reversion in 1972.	沖縄を統治した米国の機関。1972 年の沖縄返還まで。	琉球列島美國民政府
+us	bonin_navy	1945-09	1968-06	142.19	27.09	美國海軍統治小笠原群島	US Navy rule of the Bonin Islands	米海軍の小笠原統治	戰後由美國海軍統治，1968 年歸還日本。	Ruled by the US Navy after the war and returned to Japan in 1968.	戦後は米海軍が統治し、1968 年に返還。	小笠原群島
+us	amami_us	1946-02	1953-12	129.5	28.38	美軍統治奄美群島	US rule of the Amami Islands	米軍の奄美統治	1946 年與日本本土分離，1953 年歸還。	Separated from Japan in 1946 and returned in 1953.	1946 年に本土から分離され、1953 年に返還。	奄美群島
+us	kuril_soviet	1945-09	2026-12	147.9	45.0	蘇聯／俄羅斯駐軍（北方四島）	Soviet / Russian forces on the four northern islands	ソ連・ロシア軍（北方四島）	1945 年蘇軍佔領擇捉、國後、色丹、齒舞，日本居民遭遣返，至今主權爭議。	Soviet troops occupied Etorofu, Kunashiri, Shikotan and the Habomais in 1945; the Japanese residents were sent away and sovereignty is still disputed.	1945 年にソ連軍が択捉・国後・色丹・歯舞を占領、住民は送還され、今も領有権を争う。	南千島群島主權爭議

@@ -1,0 +1,15 @@
+# 越南模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+rail	vn_saigon_mytho	1885-07		106.7,10.78 106.36,10.36	西貢—美萩鐵路	Saigon–Mỹ Tho railway	サイゴン—ミトー鉄道	印度支那第一條鐵路。	The first railway in Indochina.	インドシナ初の鉄道。	西貢—美萩鐵路	Saigon–Mỹ Tho railway
+bridge	vn_longbien	1902-02		105.86,21.04	龍編橋（杜美橋）	Long Biên (Paul Doumer) Bridge	ロンビエン橋	跨紅河的鋼橋，越戰時屢遭轟炸。	A steel bridge over the Red River, bombed repeatedly in the war.	紅河の鉄橋、戦時に爆撃。	龍編橋	Long Biên Bridge
+rail	vn_yunnan	1910-04		106.68,20.86 105.85,21.03 104.0,22.5 103.95,22.5 103.0,24.0 102.7,25.04	滇越鐵路（海防—昆明）	Yunnan–Vietnam railway (Haiphong–Kunming)	滇越鉄道（ハイフォン—昆明）	法國修築，深入雲南。	Built by France deep into Yunnan.	フランスが雲南まで建設。	滇越鐵路	Kunming–Haiphong railway
+rail	vn_transindochina	1936-10		105.85,21.03 105.78,19.81 105.68,18.67 107.58,16.46 108.22,16.07 109.19,13.77 109.2,12.25 108.1,10.93 106.7,10.78	南北統一鐵路（河內—西貢）全通	Trans-Indochinese railway (Hanoi–Saigon) completed	南北統一鉄道全通	全長 1,726 公里。	1,726 km long.	全長1726キロ。	南北鐵路 (越南)	North–South railway (Vietnam)
+road	vn_hcm_trail	1959-05	1975-04	105.6,18.6 106.0,17.0 106.6,16.0 107.0,14.5 107.4,12.6 106.6,11.5	胡志明小道	Ho Chi Minh Trail	ホーチミン・ルート	經寮國、柬埔寨向南方運補的路網。	The supply network south through Laos and Cambodia.	ラオス・カンボジア経由の補給路網。	胡志明小道	Ho Chi Minh trail
+hydro	vn_hoabinh	1994-12		105.32,20.81	和平水電站	Hòa Bình dam	ホアビン水力発電所	蘇聯協助興建，長期為東南亞最大水電站。	Built with Soviet help; long South-East Asia's largest hydro plant.	ソ連の協力で建設。	和平水電站	Hòa Bình Dam
+grid	vn_500kv	1994-05		105.32,20.81 105.68,18.67 108.22,16.07 108.05,12.67 106.7,10.78	500 千伏南北輸電線	500 kV North–South power line	500kV南北送電線	把北方水電送往南方。	Took northern hydropower to the south.	北部の水力を南部へ送電。	500千伏南北輸電線	North–South 500 kV transmission line
+hydro	vn_sonla	2012-12		103.97,21.47	山羅水電站	Sơn La dam	ソンラ水力発電所	東南亞最大水電站。	South-East Asia's largest hydro plant.	東南アジア最大の水力。	山羅水電站	Sơn La Dam
+tunnel	vn_haivan	2005-06		108.12,16.2	海雲隧道	Hải Vân Tunnel	ハイヴァン・トンネル	穿越海雲嶺，順化與峴港間不再翻山。	Under the Hải Vân pass, sparing the climb between Huế and Đà Nẵng.	ハイヴァン峠を貫く。	海雲隧道	Hải Vân Tunnel
+industry	vn_formosa	2016-04		106.4,18.08	台塑河靜鋼廠	Formosa Hà Tĩnh steelworks	フォルモサ・ハティン製鉄所	投產即發生海洋污染事件。	A toxic spill followed its start-up.	稼働直後に海洋汚染事件。	台塑河靜鋼鐵	Formosa Ha Tinh Steel
+metro	vn_hanoi_metro	2021-11		105.82,21.0	河內地鐵吉靈—河東線	Hanoi Metro Cát Linh–Hà Đông line	ハノイ・メトロ2A号線	中國承建，越南第一條地鐵。	Built by a Chinese contractor; Vietnam's first metro.	ベトナム初の都市鉄道。	河內地鐵	Hanoi Metro
+metro	vn_hcmc_metro	2024-12		106.7,10.78	胡志明市地鐵 1 號線	Ho Chi Minh City Metro Line 1	ホーチミン市メトロ1号線	日本援助興建，延宕多年通車。	Built with Japanese aid; opened years late.	日本の援助で建設。	胡志明市地鐵	Ho Chi Minh City Metro
+highway	vn_expressway	2023-04		105.85,21.03 105.9,20.25 105.78,19.81 105.68,18.67 106.6,17.47	北南高速公路東線（北段）	North–South Expressway East (northern sections)	南北高速道路東線（北部）	陸續通車。	Opened section by section.	順次開通。	北南高速公路東線	North–South Expressway East
+cable	vn_aag	2009-11		107.08,10.35 114.0,8.0 125.0,10.0 144.7,13.45	亞美海纜（AAG）	Asia–America Gateway cable	AAGケーブル	越南主要對外海纜，屢次斷線。	Vietnam's main outside link, often broken.	頻繁に切断される主要ケーブル。	亞美海底電纜	Asia-America Gateway

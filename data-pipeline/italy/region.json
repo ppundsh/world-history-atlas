@@ -1,0 +1,98 @@
+{
+ "start": "1454-04",
+ "end": "2026-12",
+ "units": "italy_units.geojson",
+ "merge": true,
+ "groups": {
+  "south": [
+   "abruzzo",
+   "campania",
+   "puglia",
+   "basilicata",
+   "calabria"
+  ],
+  "savoy_l": [
+   "piemonte",
+   "aosta",
+   "savoy",
+   "nice"
+  ],
+  "papal_l": [
+   "lazio",
+   "umbria",
+   "marche",
+   "romagna"
+  ],
+  "lv": [
+   "milano",
+   "mantova",
+   "venlomb",
+   "veneto",
+   "friuli",
+   "valtellina"
+  ],
+  "north43": [
+   "piemonte",
+   "aosta",
+   "liguria",
+   "milano",
+   "venlomb",
+   "mantova",
+   "valtellina",
+   "veneto",
+   "friuli",
+   "gorizia",
+   "trento",
+   "sudtirol",
+   "istria",
+   "fiume",
+   "parma",
+   "modena",
+   "ferrara",
+   "romagna",
+   "toscana",
+   "lucca",
+   "siena",
+   "umbria",
+   "marche",
+   "lazio",
+   "abruzzo"
+  ],
+  "italy_now": [
+   "aosta",
+   "piemonte",
+   "liguria",
+   "milano",
+   "valtellina",
+   "venlomb",
+   "mantova",
+   "trento",
+   "sudtirol",
+   "veneto",
+   "friuli",
+   "gorizia",
+   "parma",
+   "modena",
+   "ferrara",
+   "romagna",
+   "lucca",
+   "toscana",
+   "siena",
+   "umbria",
+   "marche",
+   "lazio",
+   "abruzzo",
+   "campania",
+   "puglia",
+   "basilicata",
+   "calabria",
+   "sicilia",
+   "sardegna"
+  ],
+  "croatia_l": [
+   "istria",
+   "fiume",
+   "dalmatia"
+  ]
+ }
+}

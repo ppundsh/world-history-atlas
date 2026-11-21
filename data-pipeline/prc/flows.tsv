@@ -1,0 +1,24 @@
+# 中華人民共和國模式：進軍、戰事與人口移動。欄位：id	起	迄	顏色	粗細	路徑	繁中	English	日本語
+gz1949	1949-09	1949-10	#d6302f	3	115.9,28.68 114.6,25.8 113.6,24.8 113.26,23.13	解放軍南下廣州	The PLA drives south to Guangzhou	人民解放軍の広州進撃
+sw1949	1949-11	1949-12	#d6302f	3	110.0,29.0 108.6,29.6 106.55,29.56 104.07,30.67	解放軍進軍西南：重慶、成都	The PLA into the south-west: Chongqing, Chengdu	西南進軍：重慶・成都
+gx1949	1949-11	1949-12	#d6302f	2	112.98,28.2 111.3,26.3 110.29,25.27 108.37,22.82	衡寶戰役後進入廣西	After Hengbao, into Guangxi	衡宝戦役後、広西へ
+roc_retreat	1949-10	1949-12	#1f4ea3	3	113.26,23.13 106.55,29.56 104.07,30.67 121.52,25.04	中華民國政府撤退：廣州→重慶→成都→臺北	ROC government retreats: Guangzhou, Chongqing, Chengdu, Taipei	国民政府の撤退
+kinmen1949	1949-10	1949-10	#d6302f	2	118.08,24.48 118.25,24.47 118.32,24.45	古寧頭登陸	Landing at Guningtou	古寧頭上陸
+hainan1950	1950-04	1950-05	#d6302f	3	110.15,20.6 110.2,20.3 110.33,20.03	渡海攻海南島	Crossing to Hainan	海南島上陸
+tibet1950	1950-10	1951-10	#d6302f	2	104.07,30.67 101.96,30.05 98.6,31.2 97.17,31.14 94.36,29.65 91.12,29.65	昌都戰役與進軍拉薩	Chamdo campaign and the march on Lhasa	チャムド戦役とラサ進駐
+korea1950	1950-10	1951-01	#d6302f	3	124.38,40.13 125.75,39.02 126.98,37.55	志願軍渡鴨綠江南下	The Volunteers cross the Yalu and drive south	志願軍の鴨緑江渡河と南進
+dachen1955	1955-02	1955-02	#1f4ea3	2	121.9,28.45 121.75,25.15	大陳島軍民撤往臺灣	Dachen islanders evacuated to Taiwan	大陳島住民の台湾撤退
+dalai1959	1959-03	1959-03	#c99b3c	2	91.12,29.65 91.5,28.5 91.86,27.6 92.0,27.4	達賴喇嘛出走印度	The Dalai Lama's flight to India	ダライ・ラマのインド亡命
+india1962	1962-10	1962-11	#d6302f	2	92.0,28.2 91.86,27.6 92.3,27.3	中印戰爭東段（達旺）	Sino-Indian War, eastern front (Tawang)	中印戦争東部（タワン）
+ili1962	1962-04	1962-05	#475569	2	81.3,43.9 80.3,44.2 77.0,43.25	伊塔事件邊民出走蘇聯	Ili–Tacheng exodus to the USSR	イリ・タルバガタイ住民の国外流出
+sentdown	1968-12	1978-12	#a16207	2	121.47,31.23 104.0,35.0 87.62,43.83	知青上山下鄉（上海→新疆）	Sent-down youth: Shanghai to Xinjiang	下放青年：上海から新疆へ
+sentdown2	1968-12	1978-12	#a16207	2	116.39,39.91 123.5,45.5 126.6,47.5	知青上山下鄉（北京→北大荒）	Sent-down youth: Beijing to the Great Northern Wilderness	下放青年：北京から北大荒へ
+sentdown3	1968-12	1978-12	#a16207	2	121.47,31.23 112.98,28.2 102.7,25.04 100.8,22.0	知青上山下鄉（上海→雲南）	Sent-down youth: Shanghai to Yunnan	下放青年：上海から雲南へ
+thirdfront	1964-09	1980-12	#7c3aed	2	121.47,31.23 114.3,30.6 106.55,29.56 104.07,30.67 106.7,26.6	三線建設：沿海工廠內遷西南	The Third Front: coastal industry moved inland	三線建設：沿海工場の内陸移転
+vietnam1979	1979-02	1979-03	#d6302f	3	106.76,21.85 106.5,22.0 106.25,22.67 105.8,22.0 103.97,22.5	中越戰爭：攻諒山、高平、老街	Sino-Vietnamese War: Lạng Sơn, Cao Bằng, Lào Cai	中越戦争：ランソン、カオバン、ラオカイ
+migrant	1992-01	2015-12	#a16207	3	104.07,30.67 106.55,29.56 112.98,28.2 113.26,23.13 114.06,22.54	農民工南下珠三角	Migrant workers flock to the Pearl River Delta	出稼ぎ労働者の珠江デルタ流入
+migrant2	1992-01	2015-12	#a16207	2	117.27,31.86 118.78,32.06 121.47,31.23	農民工東進長三角	Migrant workers head to the Yangtze Delta	出稼ぎ労働者の長江デルタ流入
+spring	2000-01	2020-01	#ea580c	2	114.06,22.54 113.26,23.13 112.98,28.2 114.3,30.6 113.62,34.75	春運返鄉潮	The Spring Festival homeward rush	春運の帰省ラッシュ
+bri_rail	2011-03	2025-12	#7c3aed	2	106.55,29.56 108.95,34.27 87.62,43.83 76.9,43.25 51.4,51.5 37.62,55.75 13.4,52.5 8.68,50.11	中歐班列（渝新歐）	China–Europe freight trains (Chongqing–Duisburg)	中欧班列（渝新欧）
+covid	2020-01	2020-03	#991b1b	2	114.3,30.6 116.39,39.91 121.47,31.23	新冠疫情自武漢擴散	COVID-19 spreads from Wuhan	新型コロナの武漢からの拡散
+taiwan2022	2022-08	2022-08	#d6302f	2	119.5,25.8 121.0,26.0 122.5,25.0 122.5,23.0 121.0,21.5 119.0,22.5 119.5,25.8	環臺軍演封鎖區	Live-fire drill zones around Taiwan	台湾周辺の演習区域

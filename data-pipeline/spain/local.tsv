@@ -1,0 +1,29 @@
+# 西班牙模式：起義與叛亂（⚔）、地方勢力（◉：泰法王國、權貴、自治政體）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點；年代依各維基百科條目。
+feud	comuneros	1520-05	1521-04	-4.73	41.65	卡斯提亞公社起義	Revolt of the Comuneros	コムネロスの反乱	卡斯提亞城市反抗查理五世的外國顧問與稅收，於比利亞拉爾戰敗。	Castilian towns rose against Charles V's foreign advisers and taxes and were beaten at Villalar.	カルロス1世に反発したカスティーリャ諸都市の反乱。	卡斯提亞公社起義
+feud	germanias	1519-01	1523-12	-0.38	39.47	瓦倫西亞兄弟會起義	Revolt of the Brotherhoods (Germanías)	ジェルマニアの反乱	瓦倫西亞與馬約卡的手工業行會反抗貴族。	Guilds in Valencia and Majorca rose against the nobility.	バレンシア・マヨルカのギルドの反乱。	
+feud	alpujarras	1568-12	1571-03	-3.3	36.95	阿爾普哈拉斯起義	Revolt of the Alpujarras	アルプハラスの反乱	格拉納達摩里斯科人反抗禁止阿拉伯語與服飾的法令。	Granada's Moriscos rose against the ban on Arabic and their dress.	アラビア語禁止に反発したモリスコの反乱。	阿爾普哈拉斯起義
+feud	reapers	1640-06	1652-10	2.17	41.39	收割者戰爭	Reapers' War	収穫人戦争	加泰隆尼亞農民殺死總督，加泰隆尼亞一度投向法國。	Catalan peasants killed the viceroy and Catalonia turned to France for a time.	カタルーニャがフランスに帰属した反乱。	收割者戰爭
+feud	esquilache	1766-03	1766-04	-3.7	40.42	埃斯基拉切暴動	Esquilache Riots	エスキラーチェ暴動	馬德里市民反對禁止長斗篷與寬邊帽及糧價上漲。	Madrid rioted over a ban on long capes and wide hats and over bread prices.	マントと帽子の禁止令と物価高への暴動。	
+feud	dosdemayo	1808-05	1808-05	-3.7	40.42	五月二日起義	Dos de Mayo uprising	5月2日蜂起	馬德里市民起義反抗法軍，次日遭集體槍決，戈雅畫下此景。	Madrid rose against the French and was shot en masse the next day, as Goya painted.	マドリード市民の対仏蜂起、翌日の銃殺はゴヤが描いた。	五月二日起義
+feud	carlists	1833-10	1876-02	-1.64	42.82	卡洛斯派戰爭	Carlist Wars	カルリスタ戦争	支持唐·卡洛斯及其後裔的傳統派，以納瓦拉、巴斯克為根據地發動三次內戰。	Traditionalists backing Don Carlos's line fought three civil wars from Navarre and the Basque Country.	ドン・カルロス派がナバラ・バスクを拠点に3度の内戦。	卡洛斯戰爭
+feud	cantonal	1873-07	1874-01	-0.99	37.6	卡塔赫納州起義	Cantonal rebellion (Cartagena)	カントン反乱（カルタヘナ）	第一共和國時期聯邦主義者宣布自治州，卡塔赫納堅守半年。	Federalists proclaimed cantons in the First Republic; Cartagena held out for six months.	第一共和政期の連邦主義者の反乱。	
+feud	tragicweek	1909-07	1909-08	2.17	41.39	悲劇週	Tragic Week	悲劇の一週間	巴塞隆納工人反對徵召預備役赴摩洛哥，焚燒教會建築。	Barcelona workers rose against call-ups for Morocco and burned churches.	モロッコ派兵に反対したバルセロナの暴動。	悲劇週
+feud	asturias1934	1934-10	1934-10	-5.85	43.36	阿斯圖里亞斯礦工起義	Asturian miners' revolution	アストゥリアス蜂起	礦工武裝起義兩週，佛朗哥指揮非洲軍鎮壓。	Miners held the region for two weeks until Franco's African troops crushed them.	炭鉱労働者の蜂起、フランコが鎮圧。	阿斯圖里亞斯礦工起義
+feud	maquis	1939-04	1952-12	-6.6	42.55	反佛朗哥游擊隊	Anti-Franco maquis	反フランコ・ゲリラ	內戰後共和派游擊隊在萊昂、加利西亞、阿拉貢山區持續作戰。	Republican guerrillas fought on in the mountains of León, Galicia and Aragon after the war.	内戦後も山岳地帯で戦った共和派ゲリラ。	
+feud	eta	1968-06	2011-10	-2.93	43.26	埃塔武裝活動	ETA's armed campaign	ETAの武装闘争	巴斯克分離主義組織，造成八百餘人死亡，2011 年宣布停止武裝。	The Basque separatist group killed over 800 people and ended its campaign in 2011.	バスク分離主義組織、2011年に武装闘争停止。	埃塔
+feud	procés	2017-10	2017-10	2.17	41.39	加泰隆尼亞獨立公投	Catalan independence referendum	カタルーニャ独立住民投票	未經允許的獨立公投遭警察強力阻止，議會宣布獨立後自治被暫停。	Police broke up an unauthorised referendum; after a declaration of independence home rule was suspended.	違法とされた住民投票と自治停止。	2017年加泰隆尼亞獨立公投
+power	taifa_sevilla	1023-01	1091-09	-5.98	37.39	塞維亞泰法王國	Taifa of Seville	セビーリャ・ターイファ	阿巴德王朝統治的最強泰法王國，後被穆拉比特吞併。	The strongest taifa, under the Abbadids, swallowed by the Almoravids.	アッバード朝が治めた最強のターイファ。	塞維亞泰法王國
+power	taifa_toledo	1035-01	1085-05	-4.02	39.86	托雷多泰法王國	Taifa of Toledo	トレド・ターイファ	1085 年被卡斯提亞阿方索六世攻佔。	Taken by Alfonso VI of Castile in 1085.	1085年カスティーリャに征服。	托雷多泰法王國
+power	taifa_zaragoza	1018-01	1118-12	-0.88	41.65	薩拉戈薩泰法王國	Taifa of Zaragoza	サラゴサ・ターイファ	胡德王朝的泰法王國，阿爾哈費里亞宮所在。	The Banu Hud's taifa, with the Aljafería palace.	フード朝のターイファ、アルハフェリア宮殿。	
+power	barcelona_c	0878-01	1137-08	2.17	41.39	巴塞隆納伯國	County of Barcelona	バルセロナ伯領	加泰隆尼亞諸伯國之首，與亞拉岡聯姻組成亞拉岡王冠。	Chief of the Catalan counties; it joined Aragon by marriage.	カタルーニャ諸伯領の筆頭。	巴塞隆納伯國
+power	medinasidonia	1445-01	1641-09	-6.03	36.47	梅迪納—西多尼亞公爵家	House of Medina Sidonia	メディナ・シドニア公家	安達魯西亞最富有的貴族世家，1641 年密謀獨立失敗。	Andalusia's richest noble house; its 1641 plot for independence failed.	アンダルシアの最有力貴族。	
+power	navarre_k	0824-01	1512-07	-1.64	42.82	納瓦拉王國	Kingdom of Navarre	ナバラ王国	庇里牛斯山兩側的王國，上納瓦拉 1512 年被卡斯提亞吞併，保有自治法。	A kingdom astride the Pyrenees; Upper Navarre was annexed by Castile in 1512 and kept its fueros.	ピレネー両側の王国、1512年に上ナバラ併合。	納瓦拉王國
+power	fueros	1512-07	1876-07	-2.67	42.85	巴斯克與納瓦拉自治法（fueros）	Basque and Navarrese fueros	バスク・ナバラのフエロス	巴斯克各省與納瓦拉保有獨立稅制與議會，卡洛斯戰爭後被廢除（經濟協約保留）。	The Basque provinces and Navarre kept their own taxes and assemblies until after the Carlist Wars.	独自の税制と議会、カルリスタ戦争後廃止。	
+power	andorra	1278-09	2026-12	1.52	42.51	安道爾	Andorra	アンドラ	烏赫爾主教與富瓦伯爵（後為法國元首）共治的公國。	A co-principality of the Bishop of Urgell and the Count of Foix (later France's head of state).	ウルヘル司教とフランス元首の共同統治。	安道爾
+power	generalitat	1931-04	1939-02	2.17	41.39	第二共和國加泰隆尼亞自治政府	Generalitat of the Second Republic	第二共和政のジャナラリタット	1931 年恢復的加泰隆尼亞自治政府，1934 年宣布「加泰隆尼亞國」被捕，內戰後廢除。	Catalan home rule restored in 1931; its 1934 "Catalan State" was crushed; abolished after the war.	1931年に復活したカタルーニャ自治政府。	
+us	british_gib	1704-08	2026-12	-5.35	36.14	英國駐直布羅陀	British Gibraltar	英領ジブラルタル	西班牙王位繼承戰爭中英軍攻佔，烏得勒支和約割讓，至今仍為英國領土。	Taken by the British in 1704 and ceded at Utrecht; still British.	1704年に英軍が占領、ユトレヒト条約で割譲。	直布羅陀
+us	french1808	1808-02	1814-04	-3.7	40.42	拿破崙軍佔領	Napoleonic occupation	ナポレオン軍の占領	拿破崙立其兄約瑟夫為西班牙國王，半島戰爭中被英、西、葡聯軍逐出。	Napoleon made his brother Joseph king; British, Spanish and Portuguese forces drove the French out.	兄ジョゼフを王に据えたが半島戦争で駆逐。	
+us	condor	1936-11	1939-05	-2.68	43.0	德國禿鷹軍團與義大利志願軍	German Condor Legion and Italian CTV	ドイツのコンドル軍団とイタリア義勇軍	支援佛朗哥的德義部隊，轟炸格爾尼卡。	German and Italian forces backing Franco; they bombed Guernica.	フランコを支援した独伊部隊、ゲルニカを爆撃。	禿鷹軍團
+us	usbases	1953-09	2026-12	-6.35	36.64	美軍基地（羅塔、托雷洪等）	US bases (Rota, Torrejón and others)	米軍基地（ロタ、トレホンなど）	1953 年馬德里協定後設立，部分基地於 1990 年代歸還。	Set up under the 1953 Pact of Madrid; some were handed back in the 1990s.	1953年のマドリード協定による米軍基地。	

@@ -1,0 +1,42 @@
+# poland：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
+grunwald	1410-06	1410-07	#b91c1c	2	21.0,52.2 20.4,53.0 20.09,53.49	波蘭立陶宛聯軍進軍格倫瓦德	March to Grunwald	グルンヴァルトへの進軍
+deluge	1655-07	1655-10	#1e40af	3	15.0,53.4 17.0,52.4 21.01,52.23 19.94,50.06	大洪水：瑞典入侵	The Deluge: the Swedish invasion	大洪水：スウェーデンの侵攻
+soviet1920	1920-07	1920-08	#dc2626	3	27.56,53.9 23.16,53.13 21.3,52.3	蘇軍進逼華沙	The Red Army nears Warsaw	赤軍のワルシャワ進撃
+miracle1920	1920-08	1920-09	#b91c1c	3	22.6,51.3 22.5,52.3 23.16,53.13	維斯瓦河奇蹟：波軍反攻	Miracle on the Vistula: the Polish counter-attack	ヴィスワの奇跡
+ger1939	1939-09	1939-10	#111827	3	14.5,52.5 17.0,52.4 21.01,52.23	德軍入侵	The German invasion	ドイツ軍の侵攻
+sov1939	1939-09	1939-10	#dc2626	3	27.0,53.0 23.7,52.1 24.03,49.84	蘇軍從東方入侵	The Soviet invasion from the east	ソ連軍の侵攻
+sov1945	1944-07	1945-02	#dc2626	3	24.0,52.0 21.01,52.23 16.93,52.41 14.6,52.35	蘇軍推進至奧得河	The Soviet advance to the Oder	ソ連軍がオーデル川へ
+kiev1018	1018-07	1018-08	#b91c1c	2	17.6,52.54 21.0,51.0 24.0,50.6 30.52,50.45	波列斯瓦夫一世東征基輔	Bolesław I marches on Kiev	ボレスワフ1世のキエフ遠征
+bretislav	1038-01	1039-01	#475569	2	14.42,50.09 17.03,51.11 17.6,52.54 18.6,52.4	波希米亞布熱季斯拉夫一世劫掠波蘭	Bretislav of Bohemia raids Poland	ボヘミアのブジェチスラフ1世の侵攻
+henry1109	1109-08	1109-09	#475569	2	13.4,51.0 15.5,51.6 17.03,51.11	亨利五世入侵西里西亞	Henry V invades Silesia	ハインリヒ5世のシレジア侵攻
+mongol1241	1241-02	1241-04	#7f1d1d	3	24.0,50.5 21.25,50.66 19.94,50.06 18.0,50.3 16.16,51.2	蒙古入侵：桑多梅日→克拉科夫→萊格尼察	Mongol invasion: Sandomierz, Kraków, Legnica	モンゴル侵攻：サンドミェシュからレグニツァへ
+mongol1259	1259-11	1260-02	#7f1d1d	2	24.0,50.5 21.75,50.68 19.94,50.06	蒙古第二次入侵	Second Mongol invasion	第二次モンゴル侵攻
+teutonic1308	1308-09	1308-11	#475569	2	19.0,54.04 18.8,54.2 18.65,54.35	條頓騎士團奪取但澤	The Teutonic Knights seize Gdańsk	ドイツ騎士団のグダニスク奪取
+teutonic1331	1331-07	1331-09	#475569	2	18.6,53.0 18.6,52.7 19.0,52.1	騎士團入侵庫亞維	The Knights invade Kuyavia	騎士団のクヤヴィ侵攻
+jagiello1410	1410-06	1410-07	#1e40af	2	25.28,54.68 24.0,53.4 21.8,53.3 20.09,53.49	立陶宛軍自維爾紐斯南下會師	Lithuanian army joins from Vilnius	リトアニア軍がヴィリニュスから合流
+malbork1410	1410-07	1410-09	#b91c1c	2	20.09,53.49 19.5,53.8 19.03,54.04	聯軍圍攻馬爾堡	Allies besiege Malbork	連合軍のマルボルク包囲
+varna1444	1444-09	1444-11	#b91c1c	2	19.94,50.06 21.2,45.75 25.0,44.0 27.92,43.21	瓦迪斯瓦夫三世遠征瓦爾納	Władysław III's crusade to Varna	ヴワディスワフ3世のヴァルナ十字軍
+moscow1610	1610-06	1610-09	#b91c1c	2	21.0,52.2 32.05,54.78 35.0,55.6 37.62,55.75	若乙克夫斯基東征，克盧希諾後入莫斯科	Żółkiewski marches east; after Klushino into Moscow	ジュウキェフスキの東征
+chmielnicki	1648-04	1648-10	#b45309	2	35.1,47.85 33.6,48.3 32.9,49.3 25.3,50.0 23.33,50.72	赫梅利尼茨基哥薩克西進：黃水→科爾孫→皮瓦夫採→札莫希奇	Khmelnytsky's Cossacks west: Zhovti Vody, Korsun, Pyliavtsi, Zamość	フメリニツキーの西進
+swedes1655	1655-07	1655-10	#475569	3	14.6,53.4 16.93,52.41 21.01,52.23 19.94,50.06	瑞典入侵：波茲南→華沙→克拉科夫	The Swedes invade: Poznań, Warsaw, Kraków	スウェーデン侵攻：ポズナンからクラクフへ
+russia1654	1654-07	1655-08	#7f1d1d	2	34.0,54.8 32.05,54.78 27.57,53.9 25.28,54.68	俄軍入侵立陶宛，攻佔斯摩稜斯克、維爾紐斯	Russia invades Lithuania: Smolensk, Vilnius	ロシア軍のリトアニア侵攻
+czarniecki	1656-01	1656-07	#b91c1c	2	23.0,50.0 21.6,51.0 21.01,52.23	查爾涅茨基游擊反攻華沙	Czarniecki's partisan counter-attack on Warsaw	チャルニェツキの反攻
+vienna1683	1683-08	1683-09	#b91c1c	3	19.94,50.06 18.0,49.8 16.6,48.5 16.37,48.21	揚三世·索別斯基率軍馳援維也納	Jan III Sobieski marches to relieve Vienna	ヤン3世ソビェスキのウィーン救援
+partition1772r	1772-04	1772-08	#7f1d1d	2	30.3,55.2 28.0,55.0 30.0,53.5	第一次瓜分：俄國取得白俄羅斯東部	First Partition: Russia takes eastern Belarus	第一次分割：ロシア
+partition1772p	1772-04	1772-08	#1f2937	2	20.5,54.7 19.0,54.04 18.6,53.0	第一次瓜分：普魯士取得王室普魯士	First Partition: Prussia takes Royal Prussia	第一次分割：プロイセン
+partition1772a	1772-04	1772-08	#ca8a04	2	16.37,48.21 19.0,49.8 24.03,49.84	第一次瓜分：奧地利取得加利西亞	First Partition: Austria takes Galicia	第一次分割：オーストリア
+kosciuszko	1794-03	1794-11	#b91c1c	2	19.94,50.06 20.1,50.7 21.01,52.23	柯斯丘什科自克拉科夫北上，拉茨瓦維采戰後守華沙	Kościuszko from Kraków via Racławice to Warsaw	コシチュシュコの進路
+suvorov1794	1794-09	1794-11	#7f1d1d	2	23.7,52.1 22.6,52.1 21.04,52.25	蘇沃洛夫攻陷普拉加	Suvorov storms Praga	スヴォーロフのプラガ攻略
+napoleon1806	1806-11	1807-06	#1d4ed8	2	13.4,52.5 16.93,52.41 21.01,52.23 20.5,54.5 21.0,54.7	拿破崙進軍波蘭與東普魯士	Napoleon advances into Poland and East Prussia	ナポレオンのポーランド・東プロイセン進軍
+november1831	1831-02	1831-09	#7f1d1d	2	23.7,52.1 22.0,52.2 21.1,52.25 21.01,52.23	俄軍鎮壓十一月起義，攻陷華沙	Russia crushes the November Uprising and takes Warsaw	ロシア軍の十一月蜂起鎮圧
+emigration1831	1831-10	1832-06	#475569	2	21.01,52.23 16.93,52.41 13.4,52.5 7.0,49.0 2.35,48.86	大流亡：起義者經德意志流亡巴黎	The Great Emigration through Germany to Paris	大亡命：ドイツを経てパリへ
+haller1919	1919-04	1919-06	#b91c1c	2	2.35,48.86 8.0,50.0 13.4,52.0 16.93,52.41 24.03,49.84	哈勒的藍軍自法國返國	Haller's Blue Army comes home from France	ハレル将軍の青軍が帰国
+kiev1920	1920-04	1920-05	#b91c1c	2	24.03,49.84 28.6,50.25 30.52,50.45	波軍進攻基輔	The Polish offensive to Kiev	ポーランド軍のキエフ攻勢
+budyonny1920	1920-06	1920-08	#7f1d1d	2	30.52,50.45 28.6,50.25 25.3,50.6 24.03,49.84	布瓊尼騎兵軍進逼利沃夫	Budyonny's cavalry drives on Lwów	ブジョンヌイ騎兵軍のリヴィウ進撃
+zeligowski	1920-10	1920-10	#b91c1c	2	25.4,54.0 25.3,54.4 25.28,54.68	熱利戈夫斯基「叛變」奪取維爾諾	Żeligowski's "mutiny" seizes Wilno	ジェリゴフスキの「反乱」とヴィリニュス占拠
+anders1942	1942-03	1944-05	#b91c1c	2	55.0,53.5 60.0,41.5 51.4,35.7 44.4,33.3 35.5,33.9 31.2,30.0 15.0,40.8 13.81,41.49	安德斯軍團：蘇聯→伊朗→中東→義大利	Anders' Army: the USSR, Iran, the Middle East, Italy	アンデルス軍：ソ連からイランを経てイタリアへ
+expulsion45	1945-06	1947-12	#475569	2	17.03,51.11 15.0,51.2 13.4,51.0	德國人被驅逐出新西部領土	Germans expelled from the new western lands	ドイツ人の追放
+repatriation45	1944-10	1946-10	#a16207	2	24.03,49.84 21.0,50.5 18.5,51.0 17.03,51.11	波蘭人自利沃夫等東部遷往弗羅茨瓦夫等西部	Poles moved from Lwów and the east to Wrocław and the west	ポーランド人がリヴィウ等東部からヴロツワフ等西部へ
+vistula47	1947-04	1947-07	#7f1d1d	2	22.5,49.5 18.0,53.0 20.5,54.0	維斯瓦行動：烏克蘭人被遷往北部與西部	Operation Vistula: Ukrainians moved to the north and west	ヴィスワ作戦
+pact1968	1968-08	1968-08	#7f1d1d	2	18.68,50.3 18.3,49.8 17.25,49.6	波蘭軍參與華約入侵捷克斯洛伐克	Polish troops join the Warsaw Pact invasion of Czechoslovakia	ワルシャワ条約軍のチェコスロバキア侵攻に参加
+refugees2022	2022-02	2022-06	#1d4ed8	2	30.52,50.45 24.03,49.84 23.0,50.2 21.01,52.23	烏克蘭難民湧入波蘭	Ukrainian refugees pour into Poland	ウクライナ難民がポーランドへ

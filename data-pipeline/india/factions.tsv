@@ -1,0 +1,49 @@
+# 印度模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+local	#d7ccc8	地方諸王國與部族	地方诸王国与部族	Local kingdoms and peoples	地方の諸王国・部族
+hellenistic	#90caf9	塞琉古帝國、希臘—大夏、印度—希臘諸王國	塞琉古帝国、希腊—大夏、印度—希腊诸王国	Seleucids, Greco-Bactrians, Indo-Greeks	セレウコス朝・グレコ＝バクトリア・インド＝グリーク
+maurya	#e57373	孔雀帝國	孔雀帝国	Maurya Empire	マウリヤ朝
+tamil	#ffb74d	泰米爾三王國（朱羅、哲羅、潘地亞）	泰米尔三王国（朱罗、哲罗、潘地亚）	Tamil kingdoms (Chola, Chera, Pandya)	タミル三王国（チョーラ・チェーラ・パーンディヤ）
+lanka	#a5d6a7	錫蘭諸王國	锡兰诸王国	Kingdoms of Sri Lanka	スリランカの諸王国
+shunga	#ef9a9a	巽伽王朝	巽伽王朝	Shunga dynasty	シュンガ朝
+satavahana	#ce93d8	百乘王朝（娑多婆訶那）	百乘王朝（娑多婆诃那）	Satavahana dynasty	サータヴァーハナ朝
+kushan	#a1887f	貴霜帝國	贵霜帝国	Kushan Empire	クシャーナ朝
+sakas	#bcaaa4	西方總督（塞種）	西方总督（塞种）	Western Satraps (Sakas)	西クシャトラパ
+gupta	#ff7043	笈多帝國	笈多帝国	Gupta Empire	グプタ朝
+pallava	#9ccc65	帕拉瓦王朝	帕拉瓦王朝	Pallava dynasty	パッラヴァ朝
+hephthalites	#8d6e63	嚈噠（白匈奴）	嚈哒（白匈奴）	Hephthalites (Huna)	エフタル
+harsha	#f06292	戒日王帝國	戒日王帝国	Harsha's empire	ヴァルダナ朝
+chalukya	#ba68c8	遮婁其王朝	遮娄其王朝	Chalukya dynasty	チャールキヤ朝
+caliphate	#2e7d32	伍麥亞、阿拔斯哈里發國	倭马亚、阿拔斯哈里发国	Umayyad and Abbasid caliphates	ウマイヤ朝・アッバース朝
+rashtrakuta	#7e57c2	羅濕陀羅拘陀王朝	罗湿陀罗拘陀王朝	Rashtrakuta dynasty	ラーシュトラクータ朝
+pala	#4db6ac	波羅王朝	波罗王朝	Pala Empire	パーラ朝
+pratihara	#ffa726	瞿折羅—普臘蒂哈臘王朝	瞿折罗—普腊蒂哈腊王朝	Gurjara-Pratihara dynasty	プラティハーラ朝
+chola	#ffca28	朱羅王朝	朱罗王朝	Chola Empire	チョーラ朝
+ghaznavid	#26a69a	伽色尼王朝	伽色尼王朝	Ghaznavids	ガズナ朝
+ghurid	#00897b	古爾王朝	古尔王朝	Ghurids	ゴール朝
+delhi	#388e3c	德里蘇丹國	德里苏丹国	Delhi Sultanate	デリー・スルターン朝
+rajput	#f48fb1	拉吉普諸國	拉吉普诸国	Rajput states	ラージプート諸国
+rsult	#80cbc4	地區蘇丹國（孟加拉、古吉拉特、馬爾瓦、江布爾等）	地区苏丹国（孟加拉、古吉拉特、马尔瓦、江布尔等）	Regional sultanates (Bengal, Gujarat, Malwa, Jaunpur …)	地方のスルターン国（ベンガル・グジャラート・マールワーなど）
+vijayanagara	#ffb300	毗奢耶那伽羅帝國	毗奢耶那伽罗帝国	Vijayanagara Empire	ヴィジャヤナガル王国
+bahmani	#4caf50	巴赫曼尼蘇丹國、德干諸蘇丹國	巴赫曼尼苏丹国、德干诸苏丹国	Bahmani and Deccan sultanates	バフマニー朝・デカン諸スルターン国
+ahom	#c5e1a5	阿洪王國	阿洪王国	Ahom kingdom	アホーム王国
+mughal	#43a047	蒙兀兒帝國	莫卧儿帝国	Mughal Empire	ムガル帝国
+suri	#689f38	蘇爾王朝	苏尔王朝	Sur Empire	スール朝
+portugal	#1e88e5	葡萄牙（葡屬印度）	葡萄牙（葡属印度）	Portugal (Portuguese India)	ポルトガル（ポルトガル領インド）
+maratha	#ff8f00	馬拉塔帝國	马拉塔帝国	Maratha Confederacy	マラーター同盟
+hyderabad	#ffd54f	海德拉巴（尼札姆）	海德拉巴（尼扎姆）	Hyderabad (the Nizams)	ハイダラーバード藩王国（ニザーム）
+bengal	#80deea	孟加拉納瓦布	孟加拉纳瓦布	Nawabs of Bengal	ベンガル太守
+durrani	#5d4037	杜蘭尼帝國、阿富汗	杜兰尼帝国、阿富汗	Durrani Empire, Afghanistan	ドゥッラーニー朝・アフガニスタン
+mysore	#ec407a	邁索爾王國	迈索尔王国	Kingdom of Mysore	マイソール王国
+sikh	#f9a825	錫克帝國	锡克帝国	Sikh Empire	シク王国
+eic	#c62828	英國東印度公司	英国东印度公司	East India Company	イギリス東インド会社
+raj	#b71c1c	英屬印度（直轄省）	英属印度（直辖省）	British India (provinces)	イギリス領インド（直轄州）
+princely	#f8bbd0	土邦（英國宗主權下）	土邦（英国宗主权下）	Princely states (under British paramountcy)	藩王国（イギリスの宗主権下）
+uk	#9575cd	英國直轄殖民地（錫蘭、緬甸）	英国直辖殖民地（锡兰、缅甸）	British crown colonies (Ceylon, Burma)	イギリス直轄植民地（セイロン・ビルマ）
+burma	#8bc34a	緬甸諸王朝、緬甸	缅甸诸王朝、缅甸	Burmese kingdoms, Myanmar	ビルマの諸王朝・ミャンマー
+nepal	#7986cb	尼泊爾	尼泊尔	Nepal	ネパール
+bhutan	#ffcc80	不丹	不丹	Bhutan	ブータン
+sikkim	#b39ddb	錫金	锡金	Sikkim	シッキム
+india	#ff9800	印度共和國	印度共和国	Republic of India	インド
+pakistan	#2e7d32	巴基斯坦	巴基斯坦	Pakistan	パキスタン
+bangladesh	#00695c	孟加拉	孟加拉	Bangladesh	バングラデシュ
+srilanka	#66bb6a	斯里蘭卡	斯里兰卡	Sri Lanka	スリランカ

@@ -11,7 +11,7 @@
 //   factions.tsv       id, colour, zh-Hant, zh-Hans, en, ja
 //   control.tsv        YYYY-MM, units, faction[/secondary]
 //   governments.tsv    id, from, to, lon, lat, highlight(1/0), faction, zh-Hant, zh-Hans, en, ja
-//   events.tsv         YYYY-MM, zh-Hant, en, ja
+//   events.tsv         YYYY-MM, zh-Hant, en, ja[, lon, lat]
 //   ccp_areas.tsv      (optional) id, from, to, lon, lat, rx, ry, zh-Hant, zh-Hans, en, ja
 //   seats.tsv          (optional) administrative seats shown with the division layer:
 //                      id, from, to, lon, lat, division id ('' = any), zh-Hant, en, ja, Wikipedia [zh, en, ja] titles, note zh-Hant, note en, note ja
@@ -26,8 +26,8 @@ const here = path.join(path.dirname(new URL(import.meta.url).pathname), region);
 const OUT = path.join(here, '..', '..', 'public', 'data', region + '.json');
 const toHans = OpenCC.Converter({ from: 'tw', to: 'cn' });     // only for prose (event notes, descriptions), never for names
 const cfg = JSON.parse(fs.readFileSync(path.join(here, 'region.json'), 'utf8'));
-const START = cfg.start.split('-').map(Number);
-const month = s => { const [y, m] = s.split('-').map(Number); return (y - START[0]) * 12 + (m - START[1]); };
+const START = (s => { const neg = s.startsWith('-'); const [y, m] = (neg ? s.slice(1) : s).split('-').map(Number); return [neg ? -y : y, m]; })(cfg.start);
+const month = s => { const neg = s.startsWith('-'); const [y, m] = (neg ? s.slice(1) : s).split('-').map(Number); return ((neg ? -y : y) - START[0]) * 12 + (m - START[1]); };
 const exists = f => fs.existsSync(path.join(here, f));
 const rows = f => fs.readFileSync(path.join(here, f), 'utf8').split('\n')
   .filter(l => l.trim() && !l.startsWith('#')).map(l => l.split('\t'));
@@ -76,20 +76,53 @@ const governments = rows('governments.tsv').map(([id, a, b, lon, lat, roc, f, ha
   ({ id, a: month(a), b: month(b), lon: +lon, lat: +lat, roc: roc === '1', f: control.fid(f, 'governments ' + id), n: [en, hant, hans, ja] }));
 const areas = exists('ccp_areas.tsv') ? rows('ccp_areas.tsv').map(([id, a, b, lon, lat, rx, ry, hant, hans, en, ja]) =>
   ({ id, a: month(a), b: month(b), lon: +lon, lat: +lat, rx: +rx, ry: +ry, n: [en, hant, hans, ja] })) : [];
-const events = rows('events.tsv').map(([m, hant, en, ja]) => ({ m: month(m), n: [en, hant, toHans(hant), ja] }));
+let events = rows('events.tsv').map(([m, hant, en, ja, lon, lat]) => Object.assign({ m: month(m), n: [en, hant, toHans(hant), ja] },
+  lon && lat ? { lon: +lon, lat: +lat } : {})).sort((a, b) => a.m - b.m);      // optional place: marked on the map when the timeline passes it
 
-const data = { region, merge: !!cfg.merge, start: START, months: month(cfg.end) + 1, factions: factions.list, control: control.out, governments, areas, events };
+// flows.tsv (optional): marches, fronts and migrations, drawn as arrows that advance along their path
+const flows = exists('flows.tsv') ? rows('flows.tsv').map(([id, a, b, color, wt, path, hant, en, ja]) => ({
+  id, a: month(a), b: month(b), color, wt: +wt, path: path.trim().split(/\s+/).map(p => p.split(',').map(Number)), n: [en, hant, toHans(hant), ja] })) : [];
+// infra.tsv (optional): major works. Points (dams, power plants, ports, bridges …) get an icon; lines (railways,
+// high-speed lines, motorways, roads, canals) are drawn segment by segment as they open, then stay as a faint network.
+// kind, id, opened (YYYY-MM), closed (YYYY-MM or blank), geometry ("lon,lat" or "lon,lat lon,lat …"),
+// zh-Hant, en, ja, note zh-Hant, note en, note ja, zh Wikipedia title[, en title]. Each work is also an event.
+const WORK_POINTS = ['dam', 'hydro', 'power', 'nuclear', 'wind', 'solar', 'bridge', 'port', 'airport', 'tunnel', 'space', 'industry', 'metro', 'water', 'stadium', 'datacenter', 'ixp'];
+const WORK_LINES = ['rail', 'hsr', 'highway', 'road', 'canal', 'pipeline', 'fiber', 'cable', 'grid'];
+const works = exists('infra.tsv') ? rows('infra.tsv').map(([kind, id, a, b, geom, hant, en, ja, dh = '', de = '', dj = '', wzh = '', wen = '']) => {
+  if (!WORK_POINTS.includes(kind) && !WORK_LINES.includes(kind)) throw new Error(`infra.tsv ${id}: unknown kind "${kind}"`);
+  const pts = geom.trim().split(/\s+/).map(p => p.split(',').map(Number));
+  if (pts.some(p => p.length !== 2 || p.some(v => !isFinite(v)))) throw new Error(`infra.tsv ${id}: bad geometry`);
+  const line = WORK_LINES.includes(kind);
+  if (line && pts.length < 2) throw new Error(`infra.tsv ${id}: a ${kind} needs at least two points`);
+  const w = { kind, id, a: month(a), b: b ? month(b) : month(cfg.end), n: [en, hant, toHans(hant), ja], note: [de, dh, toHans(dh), dj], w: [wzh, wen, ''] };
+  return line ? { ...w, path: pts } : { ...w, lon: pts[0][0], lat: pts[0][1] };
+}) : [];
+for (const x of works) {
+  const mid = x.path ? x.path[Math.floor(x.path.length / 2)] : [x.lon, x.lat];
+  events.push({ m: x.a, n: x.n, lon: mid[0], lat: mid[1], k: x.kind, work: x.id, ...(x.w[0] || x.w[1] ? { w: x.w } : {}) });
+}
+events.sort((a, b) => a.m - b.m);
+const data = { region, merge: !!cfg.merge, start: START, months: month(cfg.end) + 1, factions: factions.list, control: control.out, governments, areas, events, flows, works };
 if (cfg.prc) Object.assign(data, { prc: month(cfg.prc), ccp: factions.index.ccp, prcFaction: factions.index.prc });
 if (exists('divisions.tsv')) {
   const divisions = table('divisions.tsv');
   data.divisions = divisions.list;
   data.admin = timeline('admin.tsv', divisions).out;
-  //   local.tsv (optional) feuds and local powers, each with its own toggle:
-//   kind (feud|power), id, from, to, lon, lat, zh-Hant, en, ja, note zh-Hant, note en, note ja, zh Wikipedia title
+  //   local.tsv (optional) feuds, local powers and US forces, each with its own toggle:
+//   kind (feud|power|us), id, from, to, lon, lat, zh-Hant, en, ja, note zh-Hant, note en, note ja, zh Wikipedia title
 if (exists('local.tsv')) data.local = rows('local.tsv').map(([kind, id, a, b, lon, lat, hant, en, ja, dh, de, dj, wzh]) => {
-  if (!['feud', 'power'].includes(kind)) throw new Error(`local.tsv ${id}: kind must be feud or power`);
+  if (!['feud', 'power', 'us'].includes(kind)) throw new Error(`local.tsv ${id}: kind must be feud, power or us`);
   return { kind, id, a: month(a), b: month(b), lon: +lon, lat: +lat, n: [en, hant, toHans(hant), ja], note: [de, dh, toHans(dh), dj], w: [wzh, '', ''] };
 });
+//   party.tsv (optional) the party of each division's head: division id, from (year-month), party code
+if (exists('party.tsv')) {
+  data.party = {};
+  for (const [div, from, code] of rows('party.tsv')) {
+    if (!(div in divisions.index)) throw new Error(`party.tsv: unknown division "${div}"`);
+    (data.party[divisions.index[div]] ||= []).push([month(from), code]);
+  }
+  for (const k in data.party) data.party[k].sort((a, b) => a[0] - b[0]);
+}
 if (exists('seats.tsv')) data.seats = rows('seats.tsv').map(([id, a, b, lon, lat, div, hant, en, ja, wzh, wen, wja, dh = '', de = '', dj = '']) => {
     if (div && !(div in divisions.index)) throw new Error(`seats.tsv ${id}: unknown division "${div}"`);
     return { id, a: month(a), b: month(b), lon: +lon, lat: +lat, d: div ? divisions.index[div] : -1,

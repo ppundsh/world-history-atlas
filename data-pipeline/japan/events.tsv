@@ -1,56 +1,135 @@
-# 日本模式：大事記。欄位：年月	繁中	English	日本語
-0701-08	大寶律令制定，律令國家成立	The Taihō Code is completed: the ritsuryō state	大宝律令が完成
-0710-03	遷都平城京	The capital moves to Heijō-kyō (Nara)	平城京に遷都
-0712-10	設置出羽國	Dewa Province is created	出羽国を設置
-0720-03	隼人之亂（至翌年平定）	Hayato rebellion (put down the next year)	隼人の反乱（翌年鎮圧）
-0724-01	築多賀城	Taga Castle is built	多賀城を築く
-0794-10	遷都平安京	The capital moves to Heian-kyō (Kyōto)	平安京に遷都
-0802-01	坂上田村麻呂築膽澤城，阿弖流為投降	Sakanoue no Tamuramaro builds Isawa Castle; Aterui surrenders	坂上田村麻呂が胆沢城を築き、阿弖流為が降伏
-0823-03	越前國分出加賀國	Kaga Province is split from Echizen	越前国から加賀国を分立
-0939-12	承平天慶之亂（平將門、藤原純友）	Taira no Masakado and Fujiwara no Sumitomo rebellions	承平天慶の乱
-1051-01	前九年之役	Former Nine Years' War in Mutsu	前九年の役
-1083-09	後三年之役	Later Three Years' War	後三年の役
-1185-04	壇之浦之戰，平氏滅亡	Battle of Dan-no-ura: the Taira are destroyed	壇ノ浦の戦い、平氏滅亡
-1189-09	源賴朝滅奧州藤原氏	Minamoto no Yoritomo destroys the Northern Fujiwara	源頼朝が奥州藤原氏を滅ぼす
-1221-06	承久之亂	Jōkyū War	承久の乱
-1274-11	文永之役（元日聯軍來襲）	First Mongol invasion (Bun'ei)	文永の役
-1281-06	弘安之役	Second Mongol invasion (Kōan)	弘安の役
-1333-06	鎌倉幕府滅亡，建武新政	Fall of the Kamakura shogunate; Kenmu Restoration	鎌倉幕府滅亡、建武の新政
-1336-12	南北朝分立	The Northern and Southern Courts	南北朝の分立
-1392-11	南北朝合一	The two courts are reunited	南北朝合一
-1429-01	尚巴志統一琉球	Shō Hashi unifies Ryūkyū	尚巴志が琉球を統一
-1467-05	應仁之亂，戰國時代開始	Ōnin War: the Sengoku period begins	応仁の乱、戦国時代へ
-1543-09	鐵砲傳入種子島	Firearms reach Tanegashima	種子島に鉄砲伝来
-1560-06	桶狹間之戰	Battle of Okehazama	桶狭間の戦い
-1573-07	室町幕府滅亡	End of the Muromachi shogunate	室町幕府滅亡
-1575-06	長篠之戰	Battle of Nagashino	長篠の戦い
-1582-06	本能寺之變	Honnō-ji Incident	本能寺の変
-1590-08	豐臣秀吉統一日本	Toyotomi Hideyoshi unifies Japan	豊臣秀吉の天下統一
-1592-05	文祿之役（出兵朝鮮）	Invasion of Korea (Bunroku)	文禄の役
-1600-10	關原之戰	Battle of Sekigahara	関ヶ原の戦い
-1603-03	德川家康開江戶幕府	Tokugawa Ieyasu opens the Edo shogunate	徳川家康が江戸幕府を開く
-1609-05	薩摩藩侵攻琉球	Satsuma invades Ryūkyū	薩摩藩の琉球侵攻
-1615-06	大坂夏之陣，豐臣氏滅亡	Siege of Osaka: the Toyotomi fall	大坂夏の陣、豊臣氏滅亡
-1639-08	鎖國體制完成	The sakoku seclusion policy is complete	鎖国体制の完成
-1669-07	沙牟奢允之戰	Shakushain's revolt	シャクシャインの戦い
-1789-05	國後目梨之戰	Menashi-Kunashir rebellion	クナシリ・メナシの戦い
-1853-07	培里艦隊來航	Commodore Perry arrives	黒船来航
-1855-02	日俄和親條約（擇捉以南屬日本，樺太雜居）	Treaty of Shimoda: Etorofu and south to Japan, Sakhalin shared	日露和親条約
-1868-01	王政復古，戊辰戰爭	Meiji Restoration and the Boshin War	王政復古、戊辰戦争
-1869-06	箱館戰爭結束，蝦夷地改稱北海道	The Hakodate War ends; Ezochi becomes Hokkaidō	箱館戦争終結、蝦夷地を北海道と改称
-1871-08	廢藩置縣	Domains abolished, prefectures created	廃藩置県
-1875-05	樺太千島交換條約	Treaty of Saint Petersburg: Sakhalin for the Kurils	樺太・千島交換条約
-1879-04	琉球處分，設置沖繩縣	Ryūkyū annexed as Okinawa Prefecture	琉球処分、沖縄県設置
-1889-02	大日本帝國憲法公布	The Meiji Constitution is promulgated	大日本帝国憲法発布
-1895-04	馬關條約，取得臺灣	Treaty of Shimonoseki: Japan takes Taiwan	下関条約、台湾領有
-1905-09	樸茨茅斯條約，取得南樺太與關東州租借權	Treaty of Portsmouth: southern Sakhalin and Kwantung	ポーツマス条約
-1910-08	日韓合併	Annexation of Korea	韓国併合
-1932-03	滿洲國成立	Manchukuo is proclaimed	満洲国建国
-1937-07	盧溝橋事變，中日全面戰爭	Marco Polo Bridge incident: war with China	盧溝橋事件、日中戦争
-1941-12	太平洋戰爭爆發	The Pacific War begins	太平洋戦争開戦
-1945-08	日本投降	Japan surrenders	終戦（ポツダム宣言受諾）
-1947-05	日本國憲法施行	The postwar constitution takes effect	日本国憲法施行
-1952-04	舊金山和約生效，恢復主權	The San Francisco treaty takes effect: sovereignty restored	サンフランシスコ平和条約発効
-1953-12	奄美群島歸還	The Amami Islands return to Japan	奄美群島返還
-1968-06	小笠原群島歸還	The Ogasawara Islands return to Japan	小笠原諸島返還
-1972-05	沖繩歸還	Okinawa returns to Japan	沖縄返還
+# 日本模式：大事記。欄位：年月	繁中	English	日本語	[經度	緯度]（選填：事件地點，播放經過時在地圖上標出）
+0701-08	大寶律令制定，律令國家成立	The Taihō Code is completed: the ritsuryō state	大宝律令が完成	135.8	34.5
+0710-03	遷都平城京	The capital moves to Heijō-kyō (Nara)	平城京に遷都	135.79	34.69
+0712-10	設置出羽國	Dewa Province is created	出羽国を設置	140.1	38.9
+0720-03	隼人之亂（至翌年平定）	Hayato rebellion (put down the next year)	隼人の反乱（翌年鎮圧）	130.55	31.6
+0724-01	築多賀城	Taga Castle is built	多賀城を築く	140.99	38.31
+0743-06	墾田永年私財法	Law permitting permanent private ownership of newly cleared land	墾田永年私財法	135.8	34.68
+0752-05	東大寺大佛開眼	Eye-opening ceremony of the Great Buddha at Tōdai-ji	東大寺大仏開眼	135.84	34.69
+0794-10	遷都平安京	The capital moves to Heian-kyō (Kyōto)	平安京に遷都	135.76	35.01
+0802-01	坂上田村麻呂築膽澤城，阿弖流為投降	Sakanoue no Tamuramaro builds Isawa Castle; Aterui surrenders	坂上田村麻呂が胆沢城を築き、阿弖流為が降伏	141.12	39.13
+0806-10	空海自唐歸國，傳入真言宗	Kūkai returns from Tang and brings Shingon Buddhism	空海が唐から帰国、真言宗を伝える	130.4	33.6
+0823-03	越前國分出加賀國	Kaga Province is split from Echizen	越前国から加賀国を分立	136.65	36.56
+0894-09	菅原道真建議停止遣唐使	Sugawara no Michizane proposes ending the missions to Tang	菅原道真が遣唐使の停止を建議	135.76	35.01
+0939-12	承平天慶之亂（平將門、藤原純友）	Taira no Masakado and Fujiwara no Sumitomo rebellions	承平天慶の乱	139.9	36.1
+1016-01	藤原道長任攝政，攝關政治全盛	Fujiwara no Michinaga becomes regent: the regency at its height	藤原道長が摂政に、摂関政治の全盛	135.76	35.01
+1051-01	前九年之役	Former Nine Years' War in Mutsu	前九年の役	141.1	39.1
+1083-09	後三年之役	Later Three Years' War	後三年の役	140.5	39.3
+1086-12	白河上皇開始院政	Retired Emperor Shirakawa begins cloistered rule	白河上皇の院政開始	135.76	35.01
+1156-07	保元之亂	Hōgen Rebellion	保元の乱	135.76	35.01
+1160-01	平治之亂，平清盛掌權	Heiji Rebellion; Taira no Kiyomori takes power	平治の乱、平清盛が実権を握る	135.76	35.01
+1185-04	壇之浦之戰，平氏滅亡	Battle of Dan-no-ura: the Taira are destroyed	壇ノ浦の戦い、平氏滅亡	130.96	33.96
+1189-09	源賴朝滅奧州藤原氏	Minamoto no Yoritomo destroys the Northern Fujiwara	源頼朝が奥州藤原氏を滅ぼす	141.12	38.99
+1192-08	源賴朝任征夷大將軍	Minamoto no Yoritomo becomes shogun	源頼朝が征夷大将軍に	139.55	35.32
+1221-06	承久之亂	Jōkyū War	承久の乱	135.76	35.01
+1232-08	御成敗式目制定	The Goseibai Shikimoku law code	御成敗式目の制定	139.55	35.32
+1274-11	文永之役（元日聯軍來襲）	First Mongol invasion (Bun'ei)	文永の役	130.4	33.6
+1281-06	弘安之役	Second Mongol invasion (Kōan)	弘安の役	130.4	33.6
+1297-03	永仁德政令	The Einin debt-relief edict	永仁の徳政令	139.55	35.32
+1333-06	鎌倉幕府滅亡，建武新政	Fall of the Kamakura shogunate; Kenmu Restoration	鎌倉幕府滅亡、建武の新政	139.55	35.32
+1336-12	南北朝分立	The Northern and Southern Courts	南北朝の分立	135.83	34.39
+1392-11	南北朝合一	The two courts are reunited	南北朝合一	135.76	35.01
+1404-05	日明勘合貿易開始	Tally trade with Ming China begins	日明勘合貿易の開始	135.18	34.68
+1428-09	正長土一揆	Shōchō uprising	正長の土一揆	135.76	35.01
+1429-01	尚巴志統一琉球	Shō Hashi unifies Ryūkyū	尚巴志が琉球を統一	127.72	26.22
+1467-05	應仁之亂，戰國時代開始	Ōnin War: the Sengoku period begins	応仁の乱、戦国時代へ	135.76	35.01
+1488-06	加賀一向一揆	Kaga Ikkō-ikki	加賀一向一揆	136.65	36.56
+1543-09	鐵砲傳入種子島	Firearms reach Tanegashima	種子島に鉄砲伝来	130.98	30.4
+1549-08	沙勿略抵達鹿兒島，天主教傳入	Francis Xavier lands at Kagoshima: Christianity arrives	ザビエルが鹿児島に上陸、キリスト教伝来	130.56	31.6
+1560-06	桶狹間之戰	Battle of Okehazama	桶狭間の戦い	136.98	35.06
+1571-04	長崎開港	The port of Nagasaki opens	長崎開港	129.87	32.75
+1573-07	室町幕府滅亡	End of the Muromachi shogunate	室町幕府滅亡	135.76	35.01
+1575-06	長篠之戰	Battle of Nagashino	長篠の戦い	137.56	34.91
+1576-02	織田信長築安土城	Oda Nobunaga builds Azuchi Castle	織田信長が安土城を築く	136.14	35.15
+1582-06	本能寺之變	Honnō-ji Incident	本能寺の変	135.76	35.01
+1588-08	豐臣秀吉頒布刀狩令	Hideyoshi's sword hunt edict	豊臣秀吉の刀狩令	135.76	35.01
+1590-08	豐臣秀吉統一日本	Toyotomi Hideyoshi unifies Japan	豊臣秀吉の天下統一	139.12	35.26
+1592-05	文祿之役（出兵朝鮮）	Invasion of Korea (Bunroku)	文禄の役	129.04	35.1
+1600-10	關原之戰	Battle of Sekigahara	関ヶ原の戦い	136.46	35.37
+1603-03	德川家康開江戶幕府	Tokugawa Ieyasu opens the Edo shogunate	徳川家康が江戸幕府を開く	139.77	35.68
+1609-05	薩摩藩侵攻琉球	Satsuma invades Ryūkyū	薩摩藩の琉球侵攻	127.72	26.22
+1615-06	大坂夏之陣，豐臣氏滅亡	Siege of Osaka: the Toyotomi fall	大坂夏の陣、豊臣氏滅亡	135.53	34.69
+1635-06	參勤交代制度化（武家諸法度寬永令）	Alternate attendance made compulsory	参勤交代の制度化（寛永令）	139.75	35.68
+1637-12	島原之亂	Shimabara Rebellion	島原の乱	130.26	32.63
+1639-08	鎖國體制完成	The sakoku seclusion policy is complete	鎖国体制の完成	129.87	32.74
+1641-06	荷蘭商館遷至長崎出島	The Dutch trading post moves to Dejima, Nagasaki	オランダ商館が出島へ移転	129.87	32.74
+1657-03	明曆大火	Great Fire of Meireki	明暦の大火	139.77	35.68
+1669-07	沙牟奢允之戰	Shakushain's revolt	シャクシャインの戦い	142.3	42.5
+1707-12	寶永大噴發（富士山）	Hōei eruption of Mount Fuji	宝永大噴火	138.73	35.36
+1716-08	享保改革	Kyōhō Reforms	享保の改革	139.75	35.68
+1732-07	享保大饑荒	Great Kyōhō famine	享保の大飢饉	131.0	33.5
+1782-07	天明大饑荒	Great Tenmei famine	天明の大飢饉	140.7	40.6
+1783-08	淺間山大噴發，天明大饑荒	Asama eruption and the Tenmei famine	浅間山大噴火・天明の大飢饉	138.52	36.4
+1787-06	寬政改革	Kansei Reforms	寛政の改革	139.75	35.68
+1789-05	國後目梨之戰	Menashi-Kunashir rebellion	クナシリ・メナシの戦い	145.4	43.6
+1837-03	大鹽平八郎之亂	Ōshio Heihachirō rebellion	大塩平八郎の乱	135.5	34.69
+1841-05	天保改革	Tenpō Reforms	天保の改革	139.75	35.68
+1853-07	培里艦隊來航	Commodore Perry arrives	黒船来航	139.71	35.25
+1855-02	日俄和親條約（擇捉以南屬日本，樺太雜居）	Treaty of Shimoda: Etorofu and south to Japan, Sakhalin shared	日露和親条約	138.95	34.68
+1858-07	日美修好通商條約	Treaty of Amity and Commerce with the United States	日米修好通商条約	139.75	35.68
+1860-03	櫻田門外之變	Sakuradamon Incident	桜田門外の変	139.75	35.68
+1863-08	薩英戰爭	Anglo-Satsuma War	薩英戦争	130.56	31.6
+1866-03	薩長同盟	Satsuma–Chōshū Alliance	薩長同盟	135.76	35.01
+1867-11	大政奉還	Return of power to the emperor	大政奉還	135.75	35.01
+1868-01	王政復古，戊辰戰爭	Meiji Restoration and the Boshin War	王政復古、戊辰戦争	135.76	35.01
+1869-06	箱館戰爭結束，蝦夷地改稱北海道	The Hakodate War ends; Ezochi becomes Hokkaidō	箱館戦争終結、蝦夷地を北海道と改称	140.73	41.77
+1871-08	廢藩置縣	Domains abolished, prefectures created	廃藩置県	139.77	35.68
+1873-01	徵兵令、地租改正	Conscription law and land-tax reform	徴兵令・地租改正	139.75	35.68
+1874-01	民選議院設立建白書，自由民權運動興起	Petition for an elected assembly: the Freedom and People's Rights Movement	民撰議院設立建白書、自由民権運動の始まり	139.75	35.68
+1874-02	佐賀之亂	Saga Rebellion	佐賀の乱	130.3	33.25
+1875-05	樺太千島交換條約	Treaty of Saint Petersburg: Sakhalin for the Kurils	樺太・千島交換条約	30.31	59.94
+1877-02	西南戰爭	Satsuma Rebellion	西南戦争	130.56	31.6
+1879-04	琉球處分，設置沖繩縣	Ryūkyū annexed as Okinawa Prefecture	琉球処分、沖縄県設置	127.68	26.21
+1889-02	大日本帝國憲法公布	The Meiji Constitution is promulgated	大日本帝国憲法発布	139.77	35.68
+1889-07	東海道本線全線通車	The Tokaido Main Line opens end to end	東海道本線全通	137.0	35.0
+1890-11	第一回帝國議會	The first Imperial Diet convenes	第一回帝国議会	139.74	35.68
+1891-05	大津事件	Ōtsu incident	大津事件	135.87	35.0
+1894-08	甲午戰爭（日清戰爭）開戰	First Sino-Japanese War begins	日清戦争開戦	126.0	37.5
+1895-04	馬關條約，取得臺灣	Treaty of Shimonoseki: Japan takes Taiwan	下関条約、台湾領有	130.94	33.96
+1901-11	八幡製鐵所開始作業	Yawata Steel Works begins operation	官営八幡製鐵所が操業開始	130.81	33.87
+1904-02	日俄戰爭開戰	Russo-Japanese War begins	日露戦争開戦	121.25	38.8
+1905-09	樸茨茅斯條約，取得南樺太與關東州租借權	Treaty of Portsmouth: southern Sakhalin and Kwantung	ポーツマス条約	-70.76	43.07
+1910-08	日韓合併	Annexation of Korea	韓国併合	126.98	37.57
+1918-08	米騷動	Rice riots	米騒動	137.3	36.8
+1923-09	關東大地震	Great Kantō earthquake	関東大震災	139.6	35.4
+1925-04	治安維持法	Peace Preservation Law	治安維持法	139.75	35.68
+1925-05	普通選舉法施行	Universal male suffrage law	普通選挙法	139.74	35.68
+1932-03	滿洲國成立	Manchukuo is proclaimed	満洲国建国	125.32	43.82
+1932-05	五一五事件	May 15 Incident	五・一五事件	139.74	35.68
+1936-02	二二六事件	February 26 Incident	二・二六事件	139.74	35.68
+1937-07	盧溝橋事變，中日全面戰爭	Marco Polo Bridge incident: war with China	盧溝橋事件、日中戦争	116.21	39.85
+1940-10	大政翼贊會成立	The Imperial Rule Assistance Association is formed	大政翼賛会の発足	139.75	35.68
+1941-12	太平洋戰爭爆發	The Pacific War begins	太平洋戦争開戦	-157.95	21.36
+1945-03	東京大空襲	Bombing of Tokyo	東京大空襲	139.8	35.7
+1945-04	沖繩戰	Battle of Okinawa	沖縄戦	127.75	26.2
+1945-08	日本投降	Japan surrenders	終戦（ポツダム宣言受諾）	139.77	35.68
+1945-08	廣島、長崎原子彈爆炸	Atomic bombings of Hiroshima and Nagasaki	広島・長崎への原爆投下	132.45	34.39
+1947-05	日本國憲法施行	The postwar constitution takes effect	日本国憲法施行	139.75	35.68
+1950-08	警察預備隊成立（自衛隊前身）	The National Police Reserve (forerunner of the Self-Defense Forces)	警察予備隊の発足	139.75	35.68
+1952-04	舊金山和約生效，恢復主權	The San Francisco treaty takes effect: sovereignty restored	サンフランシスコ平和条約発効	-122.42	37.78
+1953-12	奄美群島歸還	The Amami Islands return to Japan	奄美群島返還	129.49	28.38
+1955-11	自由民主黨成立，五五年體制	The Liberal Democratic Party is formed: the 1955 system	自由民主党結党、55 年体制	139.74	35.68
+1956-05	水俁病公式確認	Minamata disease officially recognized	水俣病の公式確認	130.4	32.21
+1956-10	日蘇共同宣言，恢復邦交	Soviet–Japanese Joint Declaration restores relations	日ソ共同宣言、国交回復	139.75	35.68
+1956-12	日本加入聯合國	Japan joins the United Nations	日本が国際連合に加盟	139.74	35.68
+1959-09	伊勢灣颱風	Typhoon Vera (Isewan Typhoon)	伊勢湾台風	136.9	35.1
+1960-06	安保鬥爭	Anpo protests	安保闘争	139.74	35.68
+1964-10	東京奧運	Tokyo Olympics	東京オリンピック	139.77	35.68
+1968-06	小笠原群島歸還	The Ogasawara Islands return to Japan	小笠原諸島返還	142.19	27.09
+1970-03	大阪萬國博覽會	Expo '70 in Osaka	日本万国博覧会（大阪万博）	135.53	34.81
+1972-05	沖繩歸還	Okinawa returns to Japan	沖縄返還	127.68	26.21
+1973-10	第一次石油危機	1973 oil crisis	第一次オイルショック	139.75	35.68
+1985-08	日本航空 123 號班機空難	Japan Air Lines Flight 123 crash	日本航空 123 便墜落事故	138.7	36.0
+1985-09	廣場協議，日圓升值	Plaza Accord: the yen soars	プラザ合意、円高	139.75	35.68
+1987-04	日本國有鐵道分割民營化（JR 成立）	Japanese National Railways privatized into the JR companies	国鉄分割民営化（JR 発足）	139.75	35.68
+1989-01	昭和天皇駕崩，改元平成	Emperor Shōwa dies: the Heisei era begins	昭和天皇崩御、平成に改元	139.75	35.68
+1991-03	泡沫經濟破裂	The bubble economy collapses	バブル崩壊	139.75	35.68
+1993-08	細川內閣成立，自民黨首度下野	Hosokawa cabinet: the LDP loses power for the first time	細川内閣発足、自民党が初めて下野	139.74	35.68
+1995-01	阪神大地震	Great Hanshin earthquake	阪神・淡路大震災	135.1	34.6
+1995-03	東京地下鐵沙林毒氣事件	Tokyo subway sarin attack	地下鉄サリン事件	139.75	35.68
+2009-09	民主黨政權成立	Democratic Party of Japan takes power	民主党政権が発足	139.74	35.68
+2011-03	東日本大地震	Tōhoku earthquake and tsunami	東日本大震災	142.37	38.3
+2011-03	福島第一核電廠事故	Fukushima Daiichi nuclear disaster	福島第一原子力発電所事故	141.03	37.42
+2019-05	改元令和	The Reiwa era begins	令和に改元	139.75	35.68
+2021-07	東京奧運（延期一年舉行）	Tokyo Olympics, held a year late	東京オリンピック（1 年延期で開催）	139.71	35.68
+2024-01	能登半島地震	Noto earthquake	能登半島地震	137.27	37.5

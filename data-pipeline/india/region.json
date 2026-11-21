@@ -1,0 +1,99 @@
+{
+ "start": "-321-01",
+ "end": "2026-12",
+ "units": "india_units.geojson",
+ "merge": true,
+ "groups": {
+  "ganga": [
+   "IN-UP",
+   "IN-BR",
+   "IN-JH",
+   "IN-WB",
+   "IN-DL",
+   "IN-HR",
+   "IN-UT",
+   "IN-PB"
+  ],
+  "magadha": [
+   "IN-BR",
+   "IN-JH",
+   "IN-UP",
+   "IN-WB"
+  ],
+  "northwest": [
+   "PK-PB",
+   "PK-KP",
+   "PK-SD",
+   "PK-BA",
+   "afg_e",
+   "afg_s"
+  ],
+  "deccan": [
+   "IN-MH",
+   "IN-TG",
+   "IN-AP",
+   "IN-KA"
+  ],
+  "west": [
+   "IN-RJ",
+   "IN-GJ",
+   "IN-MP"
+  ],
+  "south": [
+   "IN-TN",
+   "IN-KL"
+  ],
+  "kashmir": [
+   "IN-JK",
+   "IN-LA",
+   "PK-JK",
+   "PK-GB"
+  ],
+  "afg": [
+   "afg_e",
+   "afg_s",
+   "afg_n"
+  ],
+  "pak_w": [
+   "PK-PB",
+   "PK-SD",
+   "PK-KP",
+   "PK-BA"
+  ],
+  "punjab": [
+   "IN-PB",
+   "PK-PB",
+   "IN-HR",
+   "IN-DL"
+  ],
+  "india_now": [
+   "IN-AP",
+   "IN-AS",
+   "IN-BR",
+   "IN-CT",
+   "IN-DL",
+   "IN-GA",
+   "IN-GJ",
+   "IN-HP",
+   "IN-HR",
+   "IN-JH",
+   "IN-JK",
+   "IN-KA",
+   "IN-KL",
+   "IN-LA",
+   "IN-MH",
+   "IN-MP",
+   "IN-OR",
+   "IN-PB",
+   "IN-RJ",
+   "IN-SK",
+   "IN-TG",
+   "IN-TN",
+   "IN-UP",
+   "IN-UT",
+   "IN-WB",
+   "ne_india",
+   "andaman"
+  ]
+ }
+}

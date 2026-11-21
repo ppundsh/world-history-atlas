@@ -1,0 +1,21 @@
+# 義大利模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在義大利或未劃分）	（不在意大利或未划分）	(outside Italy / not drawn)	（イタリア外・区分なし）
+r_vda	#e9c46a	瓦萊達奧斯塔	瓦莱达奥斯塔	Aosta Valley	ヴァッレ・ダオスタ州
+r_pie	#f4a261	皮埃蒙特	皮埃蒙特	Piedmont	ピエモンテ州
+r_lig	#e76f51	利古里亞	利古里亚	Liguria	リグーリア州
+r_lom	#8ab17d	倫巴底	伦巴第	Lombardy	ロンバルディア州
+r_taa	#2a9d8f	特倫蒂諾—上阿迪傑	特伦蒂诺—上阿迪杰	Trentino-South Tyrol	トレンティーノ＝アルト・アディジェ州
+r_ven	#6fb3c7	威尼托	威尼托	Veneto	ヴェネト州
+r_fvg	#b5a7d8	弗留利—威尼斯朱利亞	弗留利—威尼斯朱利亚	Friuli-Venezia Giulia	フリウリ＝ヴェネツィア・ジュリア州
+r_emr	#d8a7b1	艾米利亞—羅馬涅	艾米利亚—罗马涅	Emilia-Romagna	エミリア＝ロマーニャ州
+r_tos	#c9b79c	托斯卡尼	托斯卡纳	Tuscany	トスカーナ州
+r_umb	#f6b98a	翁布里亞	翁布里亚	Umbria	ウンブリア州
+r_mar	#a594cf	馬爾凱	马尔凯	Marche	マルケ州
+r_laz	#cc94a0	拉齊奧	拉齐奥	Lazio	ラツィオ州
+r_abm	#d6c8b0	阿布魯佐、莫利塞	阿布鲁佐、莫利塞	Abruzzo, Molise	アブルッツォ州・モリーゼ州
+r_cam	#8cc5d6	坎帕尼亞	坎帕尼亚	Campania	カンパニア州
+r_pug	#a3c4a8	普利亞	普利亚	Apulia	プッリャ州
+r_bas	#e3c9a8	巴西利卡塔	巴西利卡塔	Basilicata	バジリカータ州
+r_cal	#b8c4e0	卡拉布里亞	卡拉布里亚	Calabria	カラブリア州
+r_sic	#cfd8a8	西西里	西西里	Sicily	シチリア州
+r_sar	#e0b8c4	薩丁尼亞	萨丁尼亚	Sardinia	サルデーニャ州

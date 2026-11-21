@@ -1,0 +1,32 @@
+# 義大利模式：起義與動亂（⚔）、地方勢力（◉：城邦、家族、黑手黨）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點；年代依各維基百科條目。
+feud	masaniello	1647-07	1648-04	14.25	40.85	馬薩尼耶洛起義	Masaniello's revolt	マサニエッロの反乱	那不勒斯漁販馬薩尼耶洛領導反抗西班牙稅收，一度建立那不勒斯共和國。	The Neapolitan fishmonger Masaniello led a revolt against Spanish taxes that briefly made a Neapolitan Republic.	ナポリの漁師マサニエッロのスペイン課税への反乱。	馬薩尼耶洛
+feud	messina1674	1674-07	1678-03	15.55	38.19	墨西拿起義	Messina revolt	メッシーナの反乱	墨西拿反抗西班牙，在法國支援下堅持四年。	Messina rose against Spain and held out four years with French help.	フランスの支援を受けたメッシーナの反西反乱。	
+feud	sanfedisti	1799-02	1799-06	16.6	38.9	聖信軍（反革命農民軍）	Sanfedisti	サンフェディスティ	魯福樞機率卡拉布里亞農民北上推翻帕德諾佩共和國。	Cardinal Ruffo's Calabrian peasant army marched north and destroyed the Parthenopean Republic.	ルッフォ枢機卿の農民軍がパルテノペア共和国を倒す。	聖信軍
+feud	palermo1848	1848-01	1849-05	13.36	38.12	巴勒莫起義	Palermo uprising	パレルモ蜂起	1848 年歐洲革命的第一場起義，西西里一度獨立。	The first of the 1848 revolutions; Sicily was briefly independent.	1848年革命の最初の蜂起。	西西里革命 (1848年)
+feud	milan1848	1848-03	1848-03	9.19	45.46	米蘭五日	Five Days of Milan	ミラノの五日間	米蘭市民巷戰五日逐出奧軍。	Milanese street fighting drove out the Austrians in five days.	市街戦でオーストリア軍を追放。	米蘭五日
+feud	brigandage	1861-01	1870-12	15.3	41.0	南方「盜匪」戰爭	Brigandage in the South	南部の山賊戦争	統一後南方農民與親波旁游擊隊反抗新國家，軍隊嚴厲鎮壓。	After unification southern peasants and Bourbon loyalists fought the new state; the army repressed them harshly.	統一後の南部の反乱と軍の鎮圧。	南義大利盜匪
+feud	fasci1893	1891-05	1894-01	13.36	38.12	西西里勞工聯盟	Fasci Siciliani	シチリア労働者ファッシ	西西里農民與礦工的社會主義運動，被克里斯皮政府戒嚴鎮壓。	A socialist movement of Sicilian peasants and miners crushed under martial law by Crispi.	シチリアの農民・鉱夫の社会主義運動。	
+feud	red_week	1914-06	1914-06	13.51	43.62	紅色週	Red Week	赤い一週間	安科納開槍事件引發馬爾凱、羅馬涅的起義與罷工。	A shooting in Ancona set off risings and strikes in the Marche and Romagna.	アンコーナの発砲事件に始まる蜂起。	
+feud	biennio	1919-06	1920-09	7.69	45.07	紅色兩年（佔領工廠）	Biennio Rosso (factory occupations)	赤い二年間（工場占拠）	北方工人佔領工廠、南方農民佔地，隨後法西斯崛起。	Workers occupied northern factories and peasants seized land; Fascism rose in reaction.	北部の工場占拠と南部の土地占拠。	紅色兩年
+feud	resistance	1943-09	1945-04	9.19	45.46	抵抗運動	Italian Resistance	レジスタンス	游擊隊在德軍佔領的北方作戰，1945 年 4 月總起義解放城市。	Partisans fought in the German-occupied north and freed the cities in the April 1945 rising.	ドイツ占領下の北部でのパルチザン戦。	義大利抵抗運動
+feud	lead_years	1969-12	1982-12	11.34	44.49	鉛色年代	Years of Lead	鉛の時代	左右翼恐怖主義與國家內部勢力造成的爆炸、暗殺。	Bombings and assassinations by far-left and far-right terrorists and elements of the state.	極左・極右のテロが続いた時代。	鉛色年代
+feud	reggio1970	1970-07	1971-02	15.65	38.11	雷焦卡拉布里亞起義	Reggio Calabria revolt	レッジョ・カラブリアの反乱	首府落於卡坦札羅引發的長期暴動，軍隊出動坦克。	A months-long revolt over the choice of Catanzaro as regional capital; tanks were sent.	州都の決定に反発した長期暴動。	
+power	venice	1454-04	1797-10	12.33	45.44	威尼斯共和國	Republic of Venice	ヴェネツィア共和国	貴族共和國，掌控亞得里亞海與東地中海貿易，被拿破崙滅亡。	An aristocratic republic ruling the Adriatic trade, ended by Napoleon.	アドリア海交易を支配した貴族共和国。	威尼斯共和國
+power	genoa	1454-04	1797-06	8.95	44.4	熱那亞共和國	Republic of Genoa	ジェノヴァ共和国	銀行家共和國，十六世紀為西班牙王室的主要債主。	A bankers' republic, chief lender to the Spanish crown in the 16th century.	スペイン王室の主要な金融者となった共和国。	熱那亞共和國
+power	medici	1434-01	1737-07	11.26	43.77	麥地奇家族	Medici family	メディチ家	銀行家族，統治佛羅倫斯與托斯卡尼並出了四位教宗。	A banking family that ruled Florence and Tuscany and produced four popes.	フィレンツェとトスカーナを支配した銀行家一族。	麥地奇家族
+power	sforza	1450-03	1535-11	9.19	45.46	斯福爾扎家族（米蘭）	Sforza of Milan	スフォルツァ家（ミラノ）	傭兵隊長出身的米蘭公爵家族，最終米蘭歸於西班牙。	Condottieri turned dukes of Milan; Milan then passed to Spain.	傭兵隊長出身のミラノ公家。	斯福爾扎家族
+power	este	1454-04	1598-01	11.62	44.84	埃斯特家族（費拉拉）	Este of Ferrara	エステ家（フェラーラ）	費拉拉的宮廷文化中心，1598 年費拉拉被教宗收回。	A court culture centre; the Pope took back Ferrara in 1598.	フェラーラの宮廷文化、1598年に教皇領へ。	埃斯特家族
+power	gonzaga	1454-04	1708-06	10.79	45.16	貢扎加家族（曼托瓦）	Gonzaga of Mantua	ゴンザーガ家（マントヴァ）	曼托瓦的統治家族，絕嗣後領地歸奧地利。	Rulers of Mantua whose lands went to Austria.	マントヴァの領主。	貢扎加家族
+power	montefeltro	1444-01	1631-04	12.64	43.73	烏爾比諾公國	Duchy of Urbino	ウルビーノ公国	蒙特費爾特羅與德拉羅韋雷家族統治的文藝復興宮廷。	A Renaissance court under the Montefeltro and della Rovere.	モンテフェルトロ家のルネサンス宮廷。	烏爾比諾公國
+power	lucca	1454-04	1847-10	10.5	43.84	盧卡共和國	Republic of Lucca	ルッカ共和国	長期獨立的小共和國，後為公國併入托斯卡尼。	A small republic, later a duchy, joined to Tuscany in 1847.	長く独立した小共和国。	盧卡共和國
+power	sanmarino	1454-04	2026-12	12.45	43.94	聖馬利諾	San Marino	サンマリノ	世界最古老的共和國之一，至今仍獨立。	One of the oldest republics in the world, still independent.	世界最古の共和国の一つ。	聖馬利諾
+power	mafia	1860-01	2026-12	13.36	38.12	西西里黑手黨（科薩諾斯特拉）	Sicilian Mafia (Cosa Nostra)	シチリア・マフィア	統一後興起的犯罪組織，與政治勾結；1986 年大審判後勢力受挫。	A criminal organisation entwined with politics; weakened after the 1986 Maxi Trial.	政治と結びついた犯罪組織。	西西里黑手黨
+power	camorra	1820-01	2026-12	14.25	40.85	克莫拉	Camorra	カモッラ	那不勒斯的犯罪組織網絡。	The Naples crime networks.	ナポリの犯罪組織。	克莫拉
+power	ndrangheta	1890-01	2026-12	16.0	38.2	光榮會（卡拉布里亞）	'Ndrangheta (Calabria)	ンドランゲタ	以家族為核心的卡拉布里亞黑手黨，主導歐洲古柯鹼貿易。	The family-based Calabrian mafia, dominant in Europe's cocaine trade.	カラブリアの家族型マフィア。	光榮會
+us	spain_milan	1535-11	1706-09	9.19	45.46	西班牙駐米蘭總督	Spanish governors of Milan	スペインのミラノ総督	米蘭公國歸西班牙統治近兩百年，為西班牙之路的樞紐。	Spain ruled Milan for nearly two centuries as the hub of the Spanish Road.	スペイン道の要衝としてのミラノ統治。	米蘭公國
+us	austria_lv	1815-06	1866-10	10.99	45.44	奧地利四角要塞	Austrian Quadrilateral	オーストリアの四角要塞	維洛納、曼托瓦、佩斯基耶拉、萊尼亞戈四座要塞是奧地利控制北義的核心。	Verona, Mantua, Peschiera and Legnago, the core of Austrian power in Italy.	北イタリア支配の中核の四要塞。	
+us	french_rome	1849-07	1870-08	12.47	41.9	法國駐軍保護教宗國	French garrison protecting the Pope	教皇を守るフランス駐屯軍	法軍駐羅馬保護教宗，普法戰爭爆發後撤離，義軍隨即入城。	French troops guarded the Pope until the Franco-Prussian War; the Italians then entered Rome.	普仏戦争で撤退した後、イタリア軍が入城。	
+us	german43	1943-09	1945-04	9.19	45.46	德軍佔領北義	German occupation of the north	ドイツ軍の北イタリア占領	停戰後德軍佔領北部與中部，扶植薩羅共和國。	After the armistice Germany occupied the north and centre and set up the Salò Republic.	休戦後のドイツ占領とサロ共和国。	
+us	usbases	1951-01	2026-12	12.6	46.03	美軍與北約基地（阿維亞諾等）	US and NATO bases (Aviano and others)	米軍・NATO基地（アヴィアーノなど）	冷戰起美軍駐阿維亞諾、維琴察、那不勒斯、西戈內拉等地。	US forces at Aviano, Vicenza, Naples, Sigonella and elsewhere since the Cold War.	冷戦以来の在伊米軍基地。	

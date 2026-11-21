@@ -1,0 +1,8 @@
+# 網際網路：類別與顏色。欄位：id	顏色	繁中	English	日本語
+telegraph	#8d6e63	電報海纜	Telegraph cables	電信ケーブル
+coax	#ef6c00	電話（同軸）海纜	Telephone (coaxial) cables	電話（同軸）ケーブル
+fibre	#00838f	光纖海纜	Fibre-optic cables	光海底ケーブル
+network	#7b1fa2	國家與學術骨幹網	National and research backbones	国家・学術基幹網
+ixp	#c2185b	網際網路交換中心	Internet exchanges	インターネット相互接続点
+datacenter	#3949ab	資料中心與雲端	Data centres and cloud	データセンター・クラウド
+satellite	#f9a825	衛星網路	Satellite networks	衛星通信網

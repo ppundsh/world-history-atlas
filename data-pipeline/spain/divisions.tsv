@@ -1,0 +1,19 @@
+# 西班牙模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在西班牙或未劃分）	（不在西班牙或未划分）	(outside Spain / not drawn)	（スペイン外・区分なし）
+a_gal	#e9c46a	加利西亞	加利西亚	Galicia	ガリシア州
+a_ast	#f4a261	阿斯圖里亞斯	阿斯图里亚斯	Asturias	アストゥリアス州
+a_can	#e76f51	坎塔布里亞	坎塔布里亚	Cantabria	カンタブリア州
+a_pv	#8ab17d	巴斯克	巴斯克	Basque Country	バスク州
+a_nav	#2a9d8f	納瓦拉	纳瓦拉	Navarre	ナバラ州
+a_rio	#6fb3c7	拉里奧哈	拉里奥哈	La Rioja	ラ・リオハ州
+a_ara	#b5a7d8	亞拉岡	阿拉贡	Aragon	アラゴン州
+a_cat	#d8a7b1	加泰隆尼亞	加泰罗尼亚	Catalonia	カタルーニャ州
+a_val	#c9b79c	瓦倫西亞	巴伦西亚	Valencia	バレンシア州
+a_mur	#f6b98a	穆爾西亞	穆尔西亚	Murcia	ムルシア州
+a_cyl	#a594cf	卡斯提亞—萊昂	卡斯蒂利亚—莱昂	Castile and León	カスティーリャ・イ・レオン州
+a_mad	#cc94a0	馬德里	马德里	Madrid	マドリード州
+a_clm	#d6c8b0	卡斯提亞—拉曼查	卡斯蒂利亚—拉曼恰	Castile-La Mancha	カスティーリャ＝ラ・マンチャ州
+a_ext	#8cc5d6	埃斯特雷馬杜拉	埃斯特雷马杜拉	Extremadura	エストレマドゥーラ州
+a_and	#a3c4a8	安達魯西亞	安达卢西亚	Andalusia	アンダルシア州
+a_bal	#e3c9a8	巴利阿里群島	巴利阿里群岛	Balearic Islands	バレアレス諸島州
+a_cnr	#b8c4e0	加那利群島	加那利群岛	Canary Islands	カナリア諸島州

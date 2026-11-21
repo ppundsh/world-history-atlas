@@ -1,0 +1,26 @@
+# 俄羅斯模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+canal	ru_volga_baltic	1709-01		30.3,59.94 31.3,58.5 34.1,57.8 35.9,56.86	維什尼沃洛喬克水道（伏爾加—波羅的海）	Vyshny Volochyok waterway (Volga–Baltic)	ヴィシニー・ヴォロチョーク水路	彼得一世開鑿，連接伏爾加河與新首都。	Dug under Peter I to link the Volga to the new capital.	ピョートル1世が開削。	維什尼沃洛喬克水道	Vyshny Volochyok Waterway
+rail	ru_tsarskoye	1837-10		30.3,59.92 30.4,59.72	皇村鐵路	Tsarskoye Selo Railway	ツァールスコエ・セロー鉄道	俄國第一條公共鐵路。	Russia's first public railway.	ロシア初の鉄道。	皇村鐵路	Tsarskoye Selo Railway
+rail	ru_nikolaev	1851-11		30.36,59.93 31.27,58.52 34.1,57.6 35.9,56.86 37.65,55.78	尼古拉鐵路（聖彼得堡—莫斯科）	Nikolaevskaya Railway (St Petersburg–Moscow)	ニコラエフ鉄道（ペテルブルク—モスクワ）	兩大首都之間的直線鐵路。	The straight line between the two capitals.	両首都を結ぶ鉄道。	莫斯科—聖彼得堡鐵路	Moscow–Saint Petersburg Railway
+rail	ru_transsib1	1898-01		37.65,55.78 49.1,55.8 56.25,58.0 60.6,56.84 65.53,57.15 73.37,54.98 82.92,55.03	西伯利亞鐵路西段（至新西伯利亞）	Trans-Siberian, western section	シベリア鉄道西部	穿越烏拉山進入西伯利亞。	Across the Urals into Siberia.	ウラルを越えシベリアへ。	西伯利亞鐵路	Trans-Siberian Railway
+rail	ru_transsib2	1904-09		82.92,55.03 92.87,56.01 104.3,52.29 107.6,51.83 113.5,52.03	西伯利亞鐵路中段（環貝加爾線完成）	Trans-Siberian, central section (Circum-Baikal)	シベリア鉄道中部（環バイカル線）	環貝加爾線完工，全程可通行。	The Circum-Baikal line completed the route.	環バイカル線完成。	環貝加爾鐵路	Circum-Baikal Railway
+rail	ru_cer	1903-07		117.4,49.6 123.97,47.35 126.63,45.75 131.15,44.4 131.89,43.12	中東鐵路（東清鐵路）	Chinese Eastern Railway	東清鉄道	經滿洲直達海參崴的捷徑。	The shortcut across Manchuria to Vladivostok.	満洲経由の近道。	中東鐵路	Chinese Eastern Railway
+rail	ru_amur	1916-10		113.5,52.03 119.0,53.4 127.5,50.27 135.07,48.48 131.89,43.12	阿穆爾鐵路完成，西伯利亞鐵路全線在俄國境內	Amur Railway completes the all-Russian Trans-Siberian	アムール鉄道完成	不經中國的全線完成。	The route no longer needed to cross China.	中国を経由しない全線完成。	西伯利亞鐵路	Trans-Siberian Railway
+canal	ru_belomor	1933-08		34.8,62.0 34.6,63.0 34.8,64.5	白海—波羅的海運河	White Sea–Baltic Canal	白海・バルト海運河	古拉格囚犯開鑿，數萬人死亡。	Dug by Gulag prisoners; tens of thousands died.	グラーグ囚人が掘削。	白海—波羅的海運河	White Sea–Baltic Canal
+metro	ru_moscow_metro	1935-05		37.62,55.75	莫斯科地鐵	Moscow Metro	モスクワ地下鉄	以宮殿般車站著稱。	Famous for its palatial stations.	宮殿のような駅で有名。	莫斯科地鐵	Moscow Metro
+industry	ru_magnitogorsk	1932-01		58.98,53.42	馬格尼托哥爾斯克鋼鐵聯合企業	Magnitogorsk steelworks	マグニトゴルスク製鉄所	第一個五年計畫的象徵。	The symbol of the first Five-Year Plan.	第一次五ヵ年計画の象徴。	馬格尼托哥爾斯克	Magnitogorsk Iron and Steel Works
+hydro	ru_dneproges	1932-10		35.08,47.87	第聶伯水電站	DneproGES	ドニエプル水力発電所	當時歐洲最大的水電站。	Then Europe's largest hydroelectric station.	当時欧州最大の水力。	第聶伯水電站	Dnieper Hydroelectric Station
+canal	ru_moscow_canal	1937-07		37.45,56.73 37.45,56.2 37.47,55.86	莫斯科運河	Moscow Canal	モスクワ運河	讓莫斯科連通伏爾加河。	Linked Moscow to the Volga.	モスクワとヴォルガを結ぶ。	莫斯科運河	Moscow Canal
+canal	ru_volgadon	1952-07		44.55,48.52 43.6,48.6 42.0,47.65 40.0,47.5	伏爾加—頓河運河	Volga–Don Canal	ヴォルガ・ドン運河	連接裏海與黑海水系。	Joined the Caspian and Black Sea river systems.	カスピ海と黒海水系を結ぶ。	伏爾加—頓河運河	Volga–Don Canal
+nuclear	ru_obninsk	1954-06	2002-04	36.6,55.1	奧布寧斯克核電廠	Obninsk nuclear power plant	オブニンスク原子力発電所	世界第一座並網發電的核電廠。	The world's first nuclear plant to feed a grid.	世界初の送電用原発。	奧布寧斯克核電站	Obninsk Nuclear Power Plant
+space	ru_baikonur	1957-10		63.31,45.92	拜科努爾太空發射場	Baikonur Cosmodrome	バイコヌール宇宙基地	發射史普尼克與加加林。	Where Sputnik and Gagarin were launched.	スプートニクとガガーリンを打ち上げ。	拜科努爾航天發射場	Baikonur Cosmodrome
+hydro	ru_bratsk	1961-11		101.8,56.3	布拉茨克水電站	Bratsk hydroelectric station	ブラーツク水力発電所	安加拉河上的巨型水壩。	A giant dam on the Angara.	アンガラ川の巨大ダム。	布拉茨克水電站	Bratsk Hydroelectric Power Station
+hydro	ru_sayano	1978-12		91.37,52.83	薩彥—舒申斯克水電站	Sayano-Shushenskaya dam	サヤノ・シュシェンスカヤ発電所	俄國最大水電站，2009 年發生重大事故。	Russia's largest hydro plant; a major accident in 2009.	ロシア最大、2009年に大事故。	薩揚-舒申斯克水電站	Sayano–Shushenskaya Dam
+pipeline	ru_druzhba	1964-10		52.3,54.9 37.62,53.0 31.0,52.4 23.7,52.1 14.5,52.4	友誼輸油管	Druzhba oil pipeline	ドルジバ・パイプライン	世界最長輸油管，供應東歐。	The world's longest oil pipeline, supplying eastern Europe.	世界最長の石油パイプライン。	友誼輸油管道	Druzhba pipeline
+nuclear	ru_chernobyl	1977-09	2000-12	30.1,51.39	車諾比核電廠	Chernobyl nuclear plant	チェルノブイリ原子力発電所	1986 年發生史上最嚴重核災。	The site of the worst nuclear disaster, in 1986.	1986年に史上最悪の事故。	車諾比核電廠	Chernobyl Nuclear Power Plant
+rail	ru_bam	1984-09		101.8,56.3 108.1,55.95 113.6,56.85 124.7,56.65 136.9,50.55 140.2,49.05	貝阿幹線接軌	Baikal–Amur Mainline linked up	バム鉄道の接続	穿越永凍土與山脈的第二條西伯利亞鐵路。	A second Siberian railway across permafrost and mountains.	第二シベリア鉄道。	貝阿鐵路	Baikal–Amur Mainline
+pipeline	ru_urengoy	1983-12		76.6,66.1 60.0,61.0 48.0,55.0 31.0,50.5 22.0,48.6	烏連戈伊—波馬雷—烏日哥羅德天然氣管線	Urengoy–Pomary–Uzhhorod pipeline	ウレンゴイ—ウージュホロド・パイプライン	西伯利亞天然氣輸往西歐。	Siberian gas to western Europe.	シベリアのガスを西欧へ。	烏連戈伊-波馬雷-烏日哥羅德管道	Urengoy–Pomary–Uzhhorod pipeline
+hsr	ru_sapsan	2009-12		30.36,59.93 31.27,58.52 35.9,56.86 37.65,55.78	遊隼號高速列車（莫斯科—聖彼得堡）	Sapsan high-speed service	サプサン高速列車	最快 3 小時 40 分。	As little as 3 h 40 min.	最速3時間40分。	遊隼號	Sapsan
+bridge	ru_crimean	2018-05		36.5,45.3	克里米亞大橋	Crimean Bridge	クリミア大橋	兼併克里米亞後興建，2022 年遭襲擊。	Built after the annexation; attacked in 2022.	併合後に建設、2022年に攻撃される。	克里米亞大橋	Crimean Bridge
+pipeline	ru_pos	2019-12		113.0,62.0 124.0,55.0 127.5,50.27	西伯利亞力量天然氣管線	Power of Siberia pipeline	シベリアの力パイプライン	向中國輸氣。	Gas to China.	中国へ送ガス。	西伯利亞力量	Power of Siberia
+space	ru_vostochny	2016-04		128.33,51.88	東方航天發射場	Vostochny Cosmodrome	ボストチヌイ宇宙基地	取代拜科努爾的境內發射場。	A launch site on Russian soil to replace Baikonur.	バイコヌールに代わる国内基地。	東方航天發射場	Vostochny Cosmodrome

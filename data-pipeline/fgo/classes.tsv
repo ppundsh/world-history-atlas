@@ -1,0 +1,9 @@
+# 隱藏模式：英靈的職階與顏色。欄位：id	顏色	繁中	English	日本語
+saber	#1d4ed8	劍兵（Saber）	Saber	セイバー
+archer	#b91c1c	弓兵（Archer）	Archer	アーチャー
+lancer	#0f766e	槍兵（Lancer）	Lancer	ランサー
+rider	#a16207	騎兵（Rider）	Rider	ライダー
+caster	#7c3aed	術士（Caster）	Caster	キャスター
+assassin	#374151	暗殺者（Assassin）	Assassin	アサシン
+berserker	#9f1239	狂戰士（Berserker）	Berserker	バーサーカー
+extra	#0e7490	特殊職階（Ruler、Avenger、Foreigner 等）	Extra classes (Ruler, Avenger, Foreigner …)	エクストラクラス

@@ -9,6 +9,5 @@ world.topo.bathy.*
 _dtm_parts/
 _preview_*.png
 CLAUDE.new.md
-__pycache__/
-*.pyc
-_upd*
+# offline thumbnails: the single files are a local cache; the site uses public/offline/sheets
+public/offline/img/

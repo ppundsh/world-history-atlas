@@ -1,0 +1,39 @@
+# 波蘭模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在波蘭或未劃分）	（不在波兰或未划分）	(outside Poland / not drawn)	（ポーランド外・区分なし）
+c_wlkp	#e9c46a	大波蘭省（王冠）	大波兰省（王冠）	Greater Poland Province (Crown)	大ポーランド州（王冠領）
+c_mlp	#f4a261	小波蘭省（王冠）	小波兰省（王冠）	Lesser Poland Province (Crown)	小ポーランド州（王冠領）
+c_roy	#e76f51	王室普魯士	王室普鲁士	Royal Prussia	王領プロイセン
+c_gdl	#8ab17d	立陶宛大公國	立陶宛大公国	Grand Duchy of Lithuania	リトアニア大公国
+c_infl	#2a9d8f	立窩尼亞（因夫蘭特）	立窝尼亚（因夫兰特）	Livonia (Inflanty)	リヴォニア（インフランティ）
+i_warszawa	#e9c46a	華沙省	华沙省	Warsaw Voivodeship	ワルシャワ県
+i_lodz	#f4a261	羅茲省	罗兹省	Łódź Voivodeship	ウッチ県
+i_poznan	#e76f51	波茲南省	波兹南省	Poznań Voivodeship	ポズナン県
+i_pomorze	#8ab17d	波美拉尼亞省	波美拉尼亚省	Pomeranian Voivodeship	ポモージェ県
+i_kielce	#2a9d8f	凱爾采省	凯尔采省	Kielce Voivodeship	キェルツェ県
+i_krakow	#6fb3c7	克拉科夫省	克拉科夫省	Kraków Voivodeship	クラクフ県
+i_lublin	#b5a7d8	盧布林省	卢布林省	Lublin Voivodeship	ルブリン県
+i_lwow	#d8a7b1	利沃夫省	利沃夫省	Lwów Voivodeship	ルヴフ県
+i_tarnopol	#c9b79c	塔爾諾波爾省	塔尔诺波尔省	Tarnopol Voivodeship	タルノポル県
+i_stanislawow	#f6b98a	斯坦尼斯瓦烏夫省	斯坦尼斯瓦乌夫省	Stanisławów Voivodeship	スタニスワヴフ県
+i_wolyn	#a594cf	沃里尼亞省	沃里尼亚省	Volhynian Voivodeship	ヴォルィーニ県
+i_bialystok	#cc94a0	比亞維斯托克省	比亚维斯托克省	Białystok Voivodeship	ビャウィストク県
+i_nowogrodek	#d6c8b0	新格魯多克省	新格鲁多克省	Nowogródek Voivodeship	ノヴォグルデク県
+i_polesie	#8cc5d6	波萊謝省	波莱谢省	Polesie Voivodeship	ポレシェ県
+i_wilno	#a3c4a8	維爾諾省	维尔诺省	Wilno Voivodeship	ヴィルノ県
+i_slask	#e3c9a8	西里西亞省（自治）	西里西亚省（自治）	Silesian Voivodeship (autonomous)	シロンスク県（自治）
+m_PL-DS	#e9c46a	下西里西亞省	下西里西亚省	Lower Silesian	下シロンスク県
+m_PL-KP	#f4a261	庫亞維—波美拉尼亞省	库亚维—波美拉尼亚省	Kuyavian-Pomeranian	クヤヴィ・ポモージェ県
+m_PL-LB	#e76f51	盧布斯卡省	卢布斯卡省	Lubusz	ルブシュ県
+m_PL-LD	#8ab17d	羅茲省	罗兹省	Łódź	ウッチ県
+m_PL-LU	#2a9d8f	盧布林省	卢布林省	Lublin	ルブリン県
+m_PL-MA	#6fb3c7	小波蘭省	小波兰省	Lesser Poland	マウォポルスカ県
+m_PL-MZ	#b5a7d8	馬佐夫舍省	马佐夫舍省	Masovian	マゾフシェ県
+m_PL-OP	#d8a7b1	奧波萊省	奥波莱省	Opole	オポーレ県
+m_PL-PD	#c9b79c	波德拉謝省	波德拉谢省	Podlaskie	ポドラシェ県
+m_PL-PK	#f6b98a	喀爾巴阡山省	喀尔巴阡山省	Subcarpathian	ポトカルパチェ県
+m_PL-PM	#a594cf	波美拉尼亞省	波美拉尼亚省	Pomeranian	ポモージェ県
+m_PL-SK	#cc94a0	聖十字省	圣十字省	Świętokrzyskie	シフィエントクシシュ県
+m_PL-SL	#d6c8b0	西里西亞省	西里西亚省	Silesian	シロンスク県
+m_PL-WN	#8cc5d6	瓦爾米亞—馬祖里省	瓦尔米亚—马祖里省	Warmian-Masurian	ヴァルミア・マズールィ県
+m_PL-WP	#a3c4a8	大波蘭省	大波兰省	Greater Poland	ヴィエルコポルスカ県
+m_PL-ZP	#e3c9a8	西波美拉尼亞省	西波美拉尼亚省	West Pomeranian	西ポモージェ県

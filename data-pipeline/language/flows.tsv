@@ -1,0 +1,76 @@
+# 語言的發展：遷徙與傳播（箭頭，在起迄年之間從起點長到終點，之後保留一段時間再淡出）。欄位：id	語系	起年	迄年	起點經度	起點緯度	終點經度	終點緯度	粗細(1–3)	繁中	English	日本語
+f_dapenkeng	formosan	-3400	-3150	119.6	25.3	120.5	24.0	3	大坌坑文化渡海來台	Dapenkeng potters cross to Taiwan	大坌坑文化が台湾へ
+f_luzon	austronesian	-2300	-2100	121.0	22.0	121.4	16.5	3	出台灣：南下巴丹、呂宋	Out of Taiwan: south to Batanes and Luzon	台湾から南へ：バタン・ルソン
+f_borneo	austronesian	-2100	-1900	122.5	10.0	118.5	2.0	2	菲律賓 → 婆羅洲、蘇拉威西	Philippines → Borneo, Sulawesi	フィリピン → ボルネオ・スラウェシ
+f_marianas	austronesian	-1600	-1450	123.0	15.0	145.5	15.2	2	橫渡大洋到馬里亞納	Across the ocean to the Marianas	マリアナ諸島へ
+f_java	austronesian	-1700	-1400	119.0	-2.5	106.5	-6.0	2	蘇拉威西 → 爪哇、蘇門答臘	Sulawesi → Java, Sumatra	スラウェシ → ジャワ・スマトラ
+f_bismarck	austronesian	-1550	-1350	126.0	0.0	150.0	-4.5	2	向東到俾斯麥群島（拉皮塔）	East to the Bismarcks (Lapita)	ビスマルク諸島へ（ラピタ）
+f_remote	austronesian	-1150	-1000	152.0	-5.5	168.0	-16.0	2	進入遠大洋洲	Into Remote Oceania	リモート・オセアニアへ
+f_tonga	austronesian	-950	-850	178.0	-18.0	-175.0	-17.0	2	斐濟 → 東加、薩摩亞	Fiji → Tonga, Samoa	フィジー → トンガ・サモア
+f_cham	austronesian	-600	-450	113.0	3.0	108.8	12.5	1	婆羅洲 → 占婆	Borneo → Champa	ボルネオ → チャンパー
+f_madagascar	austronesian	300	550	112.0	-2.5	47.5	-19.0	3	橫越印度洋到馬達加斯加	Across the Indian Ocean to Madagascar	インド洋を越えてマダガスカルへ
+f_tahiti	austronesian	850	1000	-172.0	-14.0	-149.5	-17.5	2	向東到社會群島	East to the Society Islands	ソシエテ諸島へ
+f_hawaii	austronesian	950	1050	-149.5	-16.5	-157.0	20.0	2	北上夏威夷	North to Hawaiʻi	ハワイへ
+f_rapanui	austronesian	1050	1180	-148.0	-18.5	-109.4	-27.1	2	東抵拉帕努伊	East to Rapa Nui	ラパ・ヌイへ
+f_nz	austronesian	1180	1280	-159.8	-21.2	174.0	-39.0	2	南下奧特亞羅瓦（紐西蘭）	South to Aotearoa (New Zealand)	アオテアロアへ
+f_tao	austronesian	1000	1150	121.9	20.4	121.55	22.05	1	巴丹 → 蘭嶼（達悟）	Batanes → Orchid Island (Tao)	バタン → 蘭嶼（タオ）
+f_minyue	min	-111	-90	120.3	30.2	119.0	26.2	2	漢滅閩越，江東漢語入閩	Han conquers Minyue: Jiangdong Chinese enters Fujian	漢が閩越を滅ぼし、江東の中国語が閩へ
+f_yongjia	min	311	340	113.5	34.6	118.8	26.3	3	永嘉之亂，衣冠南渡入閩	Disaster of Yongjia: northern gentry flee south into Fujian	永嘉の乱、北方の士族が閩へ
+f_zhangzhou	min	669	686	114.9	32.1	117.65	24.5	2	陳元光開漳	Chen Yuanguang settles Zhangzhou	陳元光が漳州を開く
+f_wang	min	885	909	115.65	32.17	119.3	26.08	3	王潮、王審知率光州固始軍民入閩	Wang Chao and Wang Shenzhi bring Guangzhou-Gushi troops into Fujian	王潮・王審知が光州固始の軍民を率いて閩へ
+f_chaoshan	min	1000	1150	118.0	24.5	116.7	23.4	2	閩南 → 潮汕	Southern Min → Chaoshan	閩南 → 潮汕
+f_hainan	min	1100	1300	116.6	23.3	110.3	20.0	2	閩南 → 雷州、海南	Southern Min → Leizhou, Hainan	閩南 → 雷州・海南
+f_hakka	hakka	1127	1250	114.5	33.5	115.9	25.0	3	北方移民南遷，客家形成	Northern migrants move south: the Hakka form	北方移民の南遷、客家の形成
+f_taiwan_q	min	1630	1720	118.6	24.9	120.25	23.2	3	泉州人渡台	Quanzhou settlers cross to Taiwan	泉州人の渡台
+f_taiwan_z	min	1650	1760	117.65	24.5	120.6	24.1	3	漳州人渡台	Zhangzhou settlers cross to Taiwan	漳州人の渡台
+f_hakka_s	hakka	1680	1720	116.1	24.3	120.55	22.75	2	客家人渡台（六堆）	Hakka cross to Taiwan (Liudui)	客家人の渡台（六堆）
+f_hakka_n	hakka	1720	1790	115.7	23.9	120.95	24.65	2	客家人渡台（桃竹苗）	Hakka cross to Taiwan (Taoyuan–Hsinchu–Miaoli)	客家人の渡台（桃竹苗）
+f_kavalan	min	1796	1812	121.5	25.1	121.8	24.85	1	吳沙入墾噶瑪蘭	Wu Sha leads settlers into Kavalan	呉沙が噶瑪蘭に入植
+f_pingpu	formosan	1820	1850	120.7	24.25	120.97	23.97	1	平埔族遷入埔里盆地	Plains peoples move into the Puli Basin	平埔族が埔里盆地へ
+f_manila	min	1570	1650	118.1	24.4	120.98	14.6	2	閩南人下南洋：馬尼拉	Hokkien emigrants to Manila	閩南人がマニラへ
+f_batavia	min	1620	1740	118.1	24.4	106.8	-6.2	2	閩南人下南洋：巴達維亞	Hokkien emigrants to Batavia	閩南人がバタヴィアへ
+f_straits	min	1786	1860	118.1	24.4	100.3	5.4	2	閩南人下南洋：檳城、新加坡	Hokkien emigrants to Penang and Singapore	閩南人がペナン・シンガポールへ
+f_bangkok	min	1767	1850	116.7	23.35	100.5	13.75	1	潮州人到暹羅	Teochew emigrants to Siam	潮州人がシャムへ
+f_dutch	indoeuropean	1624	1662	106.8	-6.2	120.17	23.0	1	荷蘭東印度公司在大員	The Dutch East India Company at Tayouan	オランダ東インド会社が大員に
+f_spanish_tw	indoeuropean	1626	1642	120.98	14.6	121.75	25.15	1	西班牙人到雞籠	The Spanish at Keelung	スペイン人が鶏籠に
+f_japanese_tw	japonic	1895	1945	139.7	35.7	121.5	25.05	2	日語成為台灣的「國語」	Japanese becomes Taiwan's "national language"	日本語が台湾の「国語」に
+f_mandarin_tw	sinitic	1945	1950	118.8	32.05	121.5	25.05	3	國民政府遷台，推行國語	The ROC government moves to Taiwan and promotes Mandarin	国民政府の台湾移転、国語の推進
+f_ie_europe	indoeuropean	-3000	-2500	45.0	48.0	15.0	51.0	3	印歐語進入歐洲	Indo-European spreads into Europe	印欧語がヨーロッパへ
+f_ie_india	indoeuropean	-2000	-1500	62.0	44.0	77.0	28.0	3	印度—伊朗語南下	Indo-Iranian moves south	インド・イラン語派の南下
+f_bantu1	nigercongo	-1000	200	11.0	4.0	28.0	-6.0	3	班圖擴張（東向）	Bantu expansion (east)	バントゥー拡散（東へ）
+f_bantu2	nigercongo	0	500	20.0	-6.0	30.0	-25.0	3	班圖擴張（南向）	Bantu expansion (south)	バントゥー拡散（南へ）
+f_arabic	afroasiatic	632	750	39.8	21.4	-5.0	34.0	3	阿拉伯語隨伊斯蘭擴張西傳	Arabic spreads west with Islam	アラビア語がイスラームとともに西へ
+f_turkic	turkic	1000	1100	72.0	42.0	33.0	39.0	2	突厥語西遷安納托利亞	Turkic moves west into Anatolia	テュルク語がアナトリアへ
+f_magyar	uralic	862	895	55.0	55.0	19.3	47.2	2	馬札爾人進入匈牙利	The Magyars enter Hungary	マジャル人がハンガリーへ
+f_yayoi	japonic	-900	-300	127.5	35.5	131.0	33.5	2	彌生稻作移民進入九州	Yayoi rice farmers reach Kyushu	弥生の稲作民が九州へ
+f_thai	kradai	1100	1250	104.0	23.0	100.5	15.0	2	台語族群南下湄南河	Tai speakers move south to the Chao Phraya	タイ系民族が南下
+f_spanish	indoeuropean	1492	1550	-6.0	37.0	-75.0	12.0	3	西班牙語到美洲	Spanish reaches the Americas	スペイン語がアメリカ大陸へ
+f_portuguese	indoeuropean	1500	1600	-9.1	38.7	-43.0	-22.0	2	葡萄牙語到巴西	Portuguese reaches Brazil	ポルトガル語がブラジルへ
+f_english_na	indoeuropean	1607	1700	-1.0	51.0	-76.0	37.0	3	英語到北美	English reaches North America	英語が北米へ
+f_english_au	indoeuropean	1788	1800	-1.0	51.0	151.0	-33.8	2	英語到澳洲	English reaches Australia	英語がオーストラリアへ
+f_russian	indoeuropean	1582	1650	37.6	55.75	130.0	62.0	3	俄語越過烏拉山東進	Russian moves east across the Urals	ロシア語がウラルを越えて東へ
+f_ryukyu	japonic	1879	1900	139.7	35.7	127.68	26.21	2	琉球處分後推行標準日語	Standard Japanese imposed after the annexation of Ryukyu	琉球処分後の標準語推進
+f_korea_jp	japonic	1910	1938	139.7	35.7	126.98	37.57	2	日語進入朝鮮	Japanese imposed in Korea	朝鮮への日本語強制
+f_ireland	indoeuropean	1550	1650	-1.0	51.0	-7.0	53.2	2	英語取代愛爾蘭語	English replaces Irish	英語がアイルランド語に取って代わる
+f_ph_us	indoeuropean	1898	1935	-77.0	38.9	121.0	14.6	2	美國統治下的英語教育	English education under US rule	米国統治下の英語教育
+f_russify_ua	indoeuropean	1863	1905	37.6	55.75	30.52	50.45	2	俄羅斯化：限制烏克蘭語出版	Russification: Ukrainian printing restricted	ロシア化：ウクライナ語出版の制限
+f_russify_baltic	indoeuropean	1885	1905	37.6	55.75	24.1	56.95	2	俄羅斯化：波羅的海地區	Russification of the Baltic provinces	ロシア化：バルト地方
+f_franco	indoeuropean	1939	1975	-3.7	40.42	2.17	41.39	1	佛朗哥時期壓抑加泰隆尼亞語	Catalan suppressed under Franco	フランコ時代のカタルーニャ語抑圧
+f_hebrew	afroasiatic	1881	1920	30.5	50.4	34.78	32.08	2	猶太移民與希伯來語復興	Jewish immigration and the revival of Hebrew	ユダヤ移民とヘブライ語の復興
+f_quebec	indoeuropean	1608	1700	-1.6	47.2	-71.2	46.8	2	法語到新法蘭西	French reaches New France	フランス語がヌーヴェル・フランスへ
+f_rk_japonic	japonic	900	1100	130.5	31.5	127.8	26.4	2	日琉語族南下琉球	Japonic speakers move south into the Ryukyus	日琉語族が琉球へ南下
+f_rk_satsuma	japonic	1609	1610	130.56	31.6	127.72	26.22	2	薩摩入侵琉球	Satsuma invades Ryukyu	薩摩の琉球侵攻
+f_rk_kume	min	1392	1400	119.3	26.08	127.67	26.22	2	閩人三十六姓移居久米村	The 36 Min families settle at Kume	閩人三十六姓が久米村へ
+f_rk_us	indoeuropean	1945	1950	145.75	15.2	127.77	26.33	2	美軍佔領沖繩	US occupation of Okinawa	米軍の沖縄占領
+f_ml_tamil	dravidian	1830	1930	80.27	13.08	100.33	5.41	3	泰米爾契約工到馬來亞	Tamil labourers to Malaya	タミル人労働者がマラヤへ
+f_ml_canton	sinitic	1850	1930	113.26	23.13	101.69	3.14	2	廣府人到吉隆坡錫礦	Cantonese to the Kuala Lumpur tin fields	広東人がクアラルンプールの錫鉱へ
+f_ml_hakka	hakka	1850	1930	116.1	24.3	101.08	4.6	2	客家礦工到霹靂	Hakka miners to Perak	客家の鉱夫がペラへ
+f_ml_teochew	min	1840	1930	116.7	23.35	103.75	1.55	2	潮州人到柔佛、新加坡	Teochew to Johor and Singapore	潮州人がジョホール・シンガポールへ
+f_ml_malacca	austronesian	1400	1450	104.4	0.9	102.25	2.2	2	馬六甲蘇丹國建立	The Malacca Sultanate is founded	マラッカ王国の成立
+f_ph_islam	austronesian	1380	1450	114.9	4.9	121.0	6.0	2	伊斯蘭經婆羅洲傳入蘇祿	Islam reaches Sulu via Borneo	イスラームがボルネオ経由でスールーへ
+f_ph_spain	indoeuropean	1565	1571	-99.88	16.85	123.9	10.3	3	西班牙人抵達宿霧（黎牙實比）	Legazpi's Spaniards reach Cebu	レガスピのスペイン人がセブへ
+f_ph_zamboanga	indoeuropean	1635	1650	123.9	10.3	122.07	6.92	1	西班牙建三寶顏要塞	The Spanish fort at Zamboanga	スペインのサンボアンガ要塞
+f_ie_viking	indoeuropean	795	841	5.3	60.4	-6.26	53.35	2	維京人到愛爾蘭	The Vikings come to Ireland	ヴァイキングがアイルランドへ
+f_ie_norman	indoeuropean	1169	1172	-4.9	51.7	-6.46	52.33	2	諾曼人入侵愛爾蘭	The Norman invasion of Ireland	ノルマン人のアイルランド侵攻
+f_ie_ulster	indoeuropean	1609	1640	-4.25	55.86	-6.5	54.6	2	阿爾斯特殖民：蘇格蘭移民	Plantation of Ulster: Scottish settlers	アルスター植民：スコットランド移民
+f_ie_famine	indoeuropean	1845	1855	-8.5	53.3	-71.06	42.36	3	大饑荒移民潮	Famine emigration	大飢饉による移民

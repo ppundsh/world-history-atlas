@@ -1,0 +1,29 @@
+# 美國模式：起義、暴動與抗爭（⚔）、原住民與地方勢力（◉）、外國駐軍（✪）。格式見 taiwan/local.tsv。
+feud	bacon	1676-07	1676-10	-76.78	37.21	培根叛亂	Bacon's Rebellion	ベーコンの反乱	邊疆移民反抗維吉尼亞總督，焚燒詹姆斯鎮。	Frontier settlers rose against Virginia's governor and burned Jamestown.	辺境入植者の総督への反乱。	培根起義
+feud	shays	1786-08	1787-02	-72.59	42.1	謝司起義	Shays' Rebellion	シェイズの反乱	麻州農民反抗債務與稅收，促成制憲。	Massachusetts farmers rose against debts and taxes, spurring the Constitution.	マサチューセッツ農民の反乱。	謝斯起義
+feud	whiskey	1791-07	1794-11	-80.0	40.2	威士忌叛亂	Whiskey Rebellion	ウィスキー反乱	賓州西部反抗酒稅，華盛頓親率民兵鎮壓。	Western Pennsylvania resisted the whiskey tax; Washington led the militia against it.	ウィスキー税への反乱。	威士忌叛亂
+feud	turner	1831-08	1831-10	-77.07	36.68	納特·透納起義	Nat Turner's rebellion	ナット・ターナーの反乱	維吉尼亞奴隸起義，之後南方奴隸法更嚴苛。	A slave rising in Virginia, followed by harsher slave codes.	バージニアの奴隷反乱。	納特·特納起義
+feud	bleeding_kansas	1854-05	1861-01	-95.24	38.97	血腥堪薩斯	Bleeding Kansas	流血のカンザス	支持與反對奴隸制的移民在堪薩斯武裝衝突。	Pro- and anti-slavery settlers fought over Kansas.	奴隷制を巡る武力衝突。	血腥堪薩斯
+feud	draft_riots	1863-07	1863-07	-73.99	40.73	紐約徵兵暴動	New York draft riots	ニューヨーク徴兵暴動	反徵兵暴動演變成針對黑人的暴力。	Riots against the draft turned on Black New Yorkers.	徴兵反対暴動。	紐約徵兵暴動
+feud	pullman	1894-05	1894-07	-87.61	41.69	普爾曼大罷工	Pullman Strike	プルマン・ストライキ	全國鐵路大罷工，聯邦軍介入。	A national railway strike broken by federal troops.	全国鉄道ストライキ。	普爾曼大罷工
+feud	tulsa	1921-05	1921-06	-95.99	36.16	土爾沙種族屠殺	Tulsa race massacre	タルサ人種虐殺	白人暴徒摧毀黑人社區格林伍德。	White mobs destroyed the Black Greenwood district.	グリーンウッド地区の破壊。	1921年塔尔萨种族屠杀
+feud	blair	1921-08	1921-09	-81.83	37.87	布萊爾山之戰	Battle of Blair Mountain	ブレア山の戦い	礦工武裝起事，美國史上最大勞工暴動。	An armed miners' rising, the largest labour uprising in US history.	最大の労働者武装蜂起。	布萊爾山之戰
+feud	watts	1965-08	1965-08	-118.24	33.94	瓦茨騷亂	Watts riots	ワッツ暴動	洛杉磯黑人社區暴動。	Riots in a Black district of Los Angeles.	ロサンゼルスの暴動。	瓦茨騷亂
+feud	stonewall	1969-06	1969-06	-74.0	40.73	石牆暴動	Stonewall riots	ストーンウォールの反乱	同志運動的起點。	The start of the modern gay rights movement.	同性愛者権利運動の起点。	石牆暴動
+feud	wounded_knee73	1973-02	1973-05	-102.2	43.14	傷膝河事件（1973）	Wounded Knee incident (1973)	ウンデッド・ニー占拠事件	美洲印第安人運動佔領傷膝河 71 天。	The American Indian Movement held Wounded Knee for 71 days.	AIMの71日間の占拠。	傷膝河事件
+feud	la1992	1992-04	1992-05	-118.24	34.05	洛杉磯暴動	Los Angeles riots	ロサンゼルス暴動	羅德尼·金案判決後爆發。	After the verdict in the Rodney King case.	ロドニー・キング事件判決後の暴動。	1992年洛杉磯暴動
+feud	jan6	2021-01	2021-01	-77.01	38.89	國會大廈遭衝擊	January 6 Capitol attack	議会議事堂襲撃事件	川普支持者衝入國會阻止選舉認證。	Trump supporters stormed Congress to stop the count.	議事堂への乱入。	2021年美國國會大廈遭衝擊事件
+power	iroquois	1607-01	1783-09	-76.0	42.9	易洛魁聯盟	Iroquois Confederacy	イロコイ連邦	五（六）族聯盟，在英法之間舉足輕重。	The Five (later Six) Nations, a power between Britain and France.	英仏の間で重きをなした連合。	易洛魁聯盟
+power	powhatan	1607-01	1646-10	-77.0	37.5	波瓦坦聯盟	Powhatan Confederacy	ポウハタン連合	詹姆斯鎮周邊的原住民聯盟。	The Native confederacy around Jamestown.	ジェームズタウン周辺の先住民連合。	波瓦坦聯盟
+power	comanche	1706-01	1875-06	-101.0	34.0	科曼奇帝國（科曼切利亞）	Comanche empire (Comancheria)	コマンチ帝国	稱霸南方大平原的騎馬民族。	The horse people who dominated the southern Plains.	南部大平原を支配した騎馬民族。	科曼奇族	Comanche
+power	cherokee	1794-01	1838-12	-84.9	34.5	切羅基族（新埃喬塔）	Cherokee Nation (New Echota)	チェロキー・ネイション	制定憲法與文字的原住民國家，被迫西遷。	A Native nation with a constitution and script, later driven west.	憲法と文字を持つ先住民国家。	切羅基族
+power	lakota	1800-01	1890-12	-102.5	44.0	拉科塔蘇族	Lakota Sioux	ラコタ・スー族	北方大平原的強權，曾擊敗卡斯特。	A power of the northern Plains that defeated Custer.	北部大平原の強国。	拉科塔人
+power	deseret	1849-03	1850-09	-111.89	40.76	德瑟雷特州（摩門）	State of Deseret (Mormon)	デゼレト州	摩門教徒自行宣布的州，後改組為猶他領地。	The Mormons' self-declared state, later Utah Territory.	モルモンが宣言した州。	德瑟雷特州
+power	cherokee_ok	1839-09	2026-12	-94.97	35.92	切羅基族（塔勒闊）	Cherokee Nation (Tahlequah)	チェロキー・ネイション（タレクア）	西遷後在奧克拉荷馬重建。	Rebuilt in Oklahoma after the removal.	移住後にオクラホマで再建。	切羅基族
+power	navajo	1868-06	2026-12	-109.05	35.68	納瓦荷族自治區	Navajo Nation	ナバホ・ネイション	美國最大的原住民保留區。	The largest Native reservation in the US.	最大の先住民居留地。	納瓦荷族自治區
+power	tammany	1854-01	1932-12	-74.0	40.71	坦慕尼協會	Tammany Hall	タマニー・ホール	長期控制紐約市政治的民主黨機器。	The Democratic machine that ran New York City politics.	ニューヨーク市政を支配した民主党組織。	坦慕尼協會
+us	british_forts	1783-09	1796-07	-83.05	42.33	英軍據守西北要塞（底特律等）	British forts in the Northwest (Detroit and others)	英軍の北西部砦の保持	和約後英軍仍留駐至傑伊條約生效。	British troops stayed until Jay's Treaty took effect.	ジェイ条約まで英軍が駐留。	傑伊條約
+us	french_yorktown	1780-07	1783-09	-71.31	41.49	法國羅尚博遠征軍	Rochambeau's French expeditionary force	ロシャンボーのフランス遠征軍	在羅德島登陸，參與約克鎮圍城。	Landed in Rhode Island and fought at Yorktown.	ロードアイランドに上陸、ヨークタウンで戦う。	羅尚博
+us	hessians	1776-08	1783-09	-74.0	40.7	黑森傭兵	Hessian troops	ヘッセン傭兵	英國雇用的德意志士兵約三萬人。	About 30,000 German soldiers hired by Britain.	英国が雇ったドイツ兵。	黑森傭兵
+us	fort_ross	1812-03	1841-12	-123.24	38.51	俄國羅斯堡	Russian Fort Ross	ロシアのロス砦	俄美公司在加州的據點。	The Russian-American Company's outpost in California.	カリフォルニアのロシア拠点。	羅斯堡	Fort Ross
+us	japan_aleutian	1942-06	1943-08	177.5	52.0	日軍佔領阿圖島、基斯卡島	Japanese occupation of Attu and Kiska	日本軍のアッツ島・キスカ島占領	二戰唯一被敵軍佔領的美國本土領土。	The only US soil occupied by an enemy in the Second World War.	第二次大戦で唯一占領された米本土。	阿留申群島戰役

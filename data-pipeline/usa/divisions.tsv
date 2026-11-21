@@ -1,0 +1,55 @@
+# 美國模式：殖民地、州與領地。欄位：id	顏色	繁中	簡中	English	日本語
+none	#e8e4da	（未設行政區）	（未设行政区）	(no division)	（区画なし）
+terr	#d9d9d9	準州（領地）	准州（领地）	Territory	準州
+AK	#e9c46a	阿拉斯加	阿拉斯加	Alaska	アラスカ
+AL	#f4a261	阿拉巴馬	阿拉巴马	Alabama	アラバマ
+AR	#e76f51	阿肯色	阿肯色	Arkansas	アーカンソー
+AZ	#2a9d8f	亞利桑那	亚利桑那	Arizona	アリゾナ
+CA	#8ab17d	加利福尼亞	加利福尼亚	California	カリフォルニア
+CO	#b5838d	科羅拉多	科罗拉多	Colorado	コロラド
+CT	#e5989b	康乃狄克	康涅狄格	Connecticut	コネチカット
+DC	#ffb4a2	哥倫比亞特區	哥伦比亚特区	District of Columbia	コロンビア特別区
+DE	#a8dadc	德拉瓦	特拉华	Delaware	デラウェア
+FL	#457b9d	佛羅里達	佛罗里达	Florida	フロリダ
+GA	#cdb4db	喬治亞	佐治亚	Georgia	ジョージア
+HI	#ffc8dd	夏威夷	夏威夷	Hawaii	ハワイ
+IA	#bde0fe	愛荷華	艾奥瓦	Iowa	アイオワ
+ID	#a2d2ff	愛達荷	爱达荷	Idaho	アイダホ
+IL	#fcbf49	伊利諾	伊利诺伊	Illinois	イリノイ
+IN	#90be6d	印第安納	印第安纳	Indiana	インディアナ
+KS	#43aa8b	堪薩斯	堪萨斯	Kansas	カンザス
+KY	#f9844a	肯塔基	肯塔基	Kentucky	ケンタッキー
+LA	#f8961e	路易斯安那	路易斯安那	Louisiana	ルイジアナ
+MA	#577590	麻薩諸塞	马萨诸塞	Massachusetts	マサチューセッツ
+MD	#c9ada7	馬里蘭	马里兰	Maryland	メリーランド
+ME	#9a8c98	緬因	缅因	Maine	メイン
+MI	#d4a373	密西根	密歇根	Michigan	ミシガン
+MN	#ccd5ae	明尼蘇達	明尼苏达	Minnesota	ミネソタ
+MO	#ddbea9	密蘇里	密苏里	Missouri	ミズーリ
+MS	#cb997e	密西西比	密西西比	Mississippi	ミシシッピ
+MT	#b7b7a4	蒙大拿	蒙大拿	Montana	モンタナ
+NC	#e9c46a	北卡羅來納	北卡罗来纳	North Carolina	ノースカロライナ
+ND	#f4a261	北達科他	北达科他	North Dakota	ノースダコタ
+NE	#e76f51	內布拉斯加	内布拉斯加	Nebraska	ネブラスカ
+NH	#2a9d8f	新罕布夏	新罕布什尔	New Hampshire	ニューハンプシャー
+NJ	#8ab17d	紐澤西	新泽西	New Jersey	ニュージャージー
+NM	#b5838d	新墨西哥	新墨西哥	New Mexico	ニューメキシコ
+NV	#e5989b	內華達	内华达	Nevada	ネバダ
+NY	#ffb4a2	紐約	纽约	New York	ニューヨーク
+OH	#a8dadc	俄亥俄	俄亥俄	Ohio	オハイオ
+OK	#457b9d	奧克拉荷馬	俄克拉何马	Oklahoma	オクラホマ
+OR	#cdb4db	奧勒岡	俄勒冈	Oregon	オレゴン
+PA	#ffc8dd	賓夕法尼亞	宾夕法尼亚	Pennsylvania	ペンシルベニア
+PR	#bde0fe	波多黎各	波多黎各	Puerto Rico	プエルトリコ
+RI	#a2d2ff	羅德島	罗得岛	Rhode Island	ロードアイランド
+SC	#fcbf49	南卡羅來納	南卡罗来纳	South Carolina	サウスカロライナ
+SD	#90be6d	南達科他	南达科他	South Dakota	サウスダコタ
+TN	#43aa8b	田納西	田纳西	Tennessee	テネシー
+TX	#f9844a	德克薩斯	得克萨斯	Texas	テキサス
+UT	#f8961e	猶他	犹他	Utah	ユタ
+VA	#577590	維吉尼亞	弗吉尼亚	Virginia	バージニア
+VT	#c9ada7	佛蒙特	佛蒙特	Vermont	バーモント
+WA	#9a8c98	華盛頓	华盛顿	Washington	ワシントン
+WI	#d4a373	威斯康辛	威斯康星	Wisconsin	ウィスコンシン
+WV	#ccd5ae	西維吉尼亞	西弗吉尼亚	West Virginia	ウェストバージニア
+WY	#ddbea9	懷俄明	怀俄明	Wyoming	ワイオミング

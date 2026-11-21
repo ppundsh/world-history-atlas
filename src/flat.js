@@ -2,6 +2,9 @@ import { DistortionMask } from './distortion.js';
 import { reliefFor } from './relief.js';
 // Flat-map renderer: d3-geo projections drawn on a Canvas, with Google-Maps-style navigation
 // (drag to pan, wheel/pinch to zoom at the cursor, double-click to zoom in, arrow keys, +/-).
+import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
+import { drawLang } from './langlayer.js';
+import { drawClassIcon } from './classicon.js';
 import { geoPath, geoGraticule, geoGraticule10, geoContains, geoDistance } from 'd3-geo';
 import { PROJ } from './projections.js';
 import { store, P } from './data.js';
@@ -18,14 +21,89 @@ const MAX_K = 60;
 // ★ at the government seat; the name is nudged down to avoid other names, and dropped if it can't fit
 // a government seat (★) or administrative seat (◆): symbol with a dark outline and the name in a framed label.
 // Pushes its clickable box to `hits` ({x0, y0, x1, y1, m}).
+// Thumbnails keep clear of each other and of labels: the first spot around the marker (nearest first, then
+// further rings) where at most a fifth of the picture would be covered; a leader line links it to its marker.
+export const MAX_COVER = 0.2;
+export function placePicture(x, y, s, placed) {
+  const cover = (x0, y0) => {
+    let sum = 0;
+    for (const b of placed) {
+      const w = Math.min(x0 + s, b[2]) - Math.max(x0, b[0]), h = Math.min(y0 + s, b[3]) - Math.max(y0, b[1]);
+      if (w > 0 && h > 0) sum += (w * h) / (s * s);
+    }
+    return sum;
+  };
+  const dirs = [[0, -1], [0.8, -0.8], [-0.8, -0.8], [1, 0], [-1, 0], [0.8, 0.8], [-0.8, 0.8], [0, 1]];
+  let best = null;
+  for (const ring of [1, 1.6, 2.3, 3.1, 4, 5]) for (const [dx, dy] of dirs) {
+    const cx = x + dx * (s * 0.62 + 12) * ring, cy = y + dy * (s * 0.62 + 12) * ring, x0 = cx - s / 2, y0 = cy - s / 2;
+    const c = cover(x0, y0);
+    if (c <= MAX_COVER) return [x0, y0];
+    if (!best || c < best[2]) best = [x0, y0, c];
+  }
+  return [best[0], best[1]];
+}
+// Pictures glide to a new place instead of jumping: the offset from its marker eases toward the target, so
+// panning moves the picture with its marker at once and only the change of place is animated.
+const slides = new Map();
+let sliding = false;
+export function slideTo(key, x, y, tx, ty) {
+  const now = performance.now(), want = [tx - x, ty - y];
+  let e = slides.get(key);
+  if (!e || now - e.seen > 1500) e = { off: want, t: now };          // new (or long unseen): appear in place
+  const k = Math.min(1, (now - e.t) / 180);                           // about a fifth of a second to settle
+  e.off = [e.off[0] + (want[0] - e.off[0]) * k, e.off[1] + (want[1] - e.off[1]) * k];
+  if (Math.abs(want[0] - e.off[0]) > 0.5 || Math.abs(want[1] - e.off[1]) > 0.5) sliding = true; else e.off = want;
+  e.t = e.seen = now; slides.set(key, e);
+  return [x + e.off[0], y + e.off[1]];
+}
+// true (once) when a picture is still on its way: the renderer then draws another frame
+export function takeSliding() { const s = sliding; sliding = false; if (slides.size > 400) for (const [k, e] of slides) if (performance.now() - e.seen > 5000) slides.delete(k); return s; }
+export function leader(ctx, x, y, x0, y0, s, color) {
+  const cx = Math.max(x0, Math.min(x0 + s, x)), cy = Math.max(y0, Math.min(y0 + s, y));       // nearest point of the frame
+  if (Math.hypot(cx - x, cy - y) < 8) return;
+  ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(cx, cy);
+  ctx.lineWidth = 2.5; ctx.strokeStyle = 'rgba(255,255,255,0.85)'; ctx.stroke();
+  ctx.lineWidth = 1.2; ctx.strokeStyle = color; ctx.stroke();
+}
+function drawPicture(ctx, x, y, m, placed, hits) {
+  const img = m.pic, s = m.picSize || 54;
+  const [tx, ty] = placePicture(x, y, s, placed);
+  placed.push([tx - 2, ty - 2, tx + s + 2, ty + s + 2]);
+  const [x0, y0] = slideTo('m:' + m.kind + ':' + m.id + ':' + (m.cap || ''), x, y, tx, ty);
+  const r = Math.max(s / img.naturalWidth, s / img.naturalHeight), w = s / r, h = s / r;
+  ctx.save();
+  leader(ctx, x, y, x0 - 3, y0 - 3, s + 6, m.color);
+  ctx.shadowColor = 'rgba(0,0,0,0.35)'; ctx.shadowBlur = 6; ctx.fillStyle = '#fff';
+  ctx.fillRect(x0 - 3, y0 - 3, s + 6, s + 6); ctx.shadowBlur = 0;
+  ctx.drawImage(img, (img.naturalWidth - w) / 2, (img.naturalHeight - h) / 2, w, h, x0, y0, s, s);
+  ctx.lineWidth = 2; ctx.strokeStyle = m.color; ctx.strokeRect(x0 - 3, y0 - 3, s + 6, s + 6);
+  if (m.cls) drawClassIcon(ctx, m.cls, x0 + 4, y0 + s - 4, Math.max(16, s * 0.34), m.color);     // class badge, lower-left corner
+  ctx.restore();
+  hits?.push({ x0, y0, x1: x0 + s, y1: y0 + s, m });
+}
 export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
   const seat = m.kind !== 'gov' && m.kind != null;          // seats, feuds, local powers: smaller
   ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   ctx.font = `${seat ? 15 : 22}px ${S.label.font}`;
   ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(20,20,30,0.85)'; ctx.lineJoin = 'round';
-  const sym = { seat: '◆', feud: '⚔', power: '◉', art: '✦' }[m.kind] || '★';
-  ctx.strokeText(sym, x, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText(sym, x, y);
-  ctx.lineWidth = 1.2; ctx.strokeStyle = '#fff'; ctx.strokeText(sym, x, y);
+  if (m.hi) {                                   // emphasised (the hidden mode's main cast): a gold halo
+    ctx.beginPath(); ctx.arc(x, y, 14, 0, Math.PI * 2); ctx.fillStyle = 'rgba(245,179,1,0.35)'; ctx.fill();
+    ctx.lineWidth = 2; ctx.strokeStyle = '#f5b301'; ctx.stroke();
+  }
+  if (m.pic) drawPicture(ctx, x, y, m, placed, hits);
+  if (m.cls) drawClassIcon(ctx, m.cls, x, y, 18, m.color);          // the hidden mode: class badge as the symbol
+  else if (m.icon) {                                // major works: the kind's icon on a round badge
+    ctx.beginPath(); ctx.arc(x, y, 10, 0, Math.PI * 2); ctx.fillStyle = 'rgba(255,255,255,0.95)'; ctx.fill();
+    ctx.lineWidth = 2; ctx.strokeStyle = m.color; ctx.stroke();
+    ctx.font = `12px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",${S.label.font}`; ctx.fillStyle = m.color; ctx.fillText(m.icon, x, y + 0.5);
+    ctx.font = `15px ${S.label.font}`;
+    if (m.quiet) { hits?.push({ x0: x - 11, y0: y - 11, x1: x + 11, y1: y + 11, m }); return; }   // older works: the icon only
+  } else {
+    const sym = m.sym || { seat: '◆', feud: '⚔', power: '◉', us: '✪', art: '✦' }[m.kind] || '★';
+    ctx.strokeText(sym, x, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText(sym, x, y);
+    ctx.lineWidth = 1.2; ctx.strokeStyle = '#fff'; ctx.strokeText(sym, x, y);
+  }
   const text = m.text[col] || m.text[0];
   ctx.font = `${m.roc || !seat ? 700 : 600} ${seat ? 11 : 12}px ${S.label.font}`;
   const w = ctx.measureText(text).width + 10, h = seat ? 16 : 18, x0 = x + (seat ? 9 : 13);
@@ -141,6 +219,18 @@ export class FlatMap {
   }
 
   apply() {
+    // "which way is up": a screen rotation of the whole projected map about the centre of the view
+    if (!this.proj) return;
+    this.proj.angle(0);
+    this.apply0();
+    const a = this.angle || 0;
+    if (a) {
+      const p = this.proj, [tx, ty] = p.translate(), cx = this.W / 2, cy = this.H / 2, r = -a * Math.PI / 180;
+      const dx = tx - cx, dy = ty - cy;
+      p.angle(a).translate([cx + dx * Math.cos(r) - dy * Math.sin(r), cy + dx * Math.sin(r) + dy * Math.cos(r)]);
+    }
+  }
+  apply0() {
     const p = this.proj, v = this.view;
     v.k = Math.max(1, Math.min(MAX_K, v.k));
     v.lon = ((v.lon + 540) % 360) - 180;
@@ -161,19 +251,26 @@ export class FlatMap {
     }
     p.rotate([-v.lon, 0]).scale(this.baseScale * v.k).translate([0, 0]);
     // keep the map from scrolling past its top/bottom edge, like Google Maps
+    // (turned sideways, the map's own top/bottom runs along the screen's width)
+    const Hm = Math.abs(this.angle || 0) === 90 ? this.W : this.H;
     const [[, top], [, bot]] = geoPath(p).bounds(this.outline);
     let cy = p([v.lon, v.lat])[1];
-    const half = this.H / 2;
-    if (bot - top <= this.H) cy = (top + bot) / 2;
+    const half = Hm / 2;
+    if (bot - top <= Hm) cy = (top + bot) / 2;
     else cy = Math.max(top + half, Math.min(bot - half, cy));
-    p.translate([this.W / 2, half - cy]);
-    const inv = p.invert([this.W / 2, half]);
-    if (inv) v.lat = inv[1];
+    p.translate([this.W / 2, this.H / 2 + half - cy - Hm / 2]);
+    const inv = p.invert([this.W / 2, this.H / 2]);
+    if (inv && isFinite(inv[1])) v.lat = inv[1];
   }
 
   // ---- navigation ------------------------------------------------------------------------------
   panBy(dx, dy, roll = false) {
+    if (this.locked) return;
     const p = this.proj, v = this.view;
+    if (this.angle && !roll && (this.aspect || this.rotating)) {        // screen drag → the map's own axes
+      const r = this.angle * Math.PI / 180, x = dx, y = dy;
+      dx = x * Math.cos(r) - y * Math.sin(r); dy = x * Math.sin(r) + y * Math.cos(r);
+    }
     if (this.aspect) {
       if (!roll) { this.aspect = FlatMap.scrollRotation(this.aspect, dx * 180 / Math.PI / p.scale()); v.ty = (v.ty || 0) + dy; }
     } else if (roll && this.rotating) {
@@ -202,6 +299,7 @@ export class FlatMap {
   }
 
   zoomAt(factor, mx = this.W / 2, my = this.H / 2) {
+    if (this.locked) return;
     const p = this.proj, v = this.view;
     const before = p.invert([mx, my]);
     const k0 = v.k;
@@ -229,8 +327,9 @@ export class FlatMap {
     requestAnimationFrame(step);
   }
 
-  reset() { this.aspect = null; this.view = { lon: 60, lat: this.oblique ? 0 : 25, k: 1, roll: 0 }; this.apply(); this.request(); this.app.onViewChange?.(); }
+  reset() { this.aspect = null; this.view = { lon: 60, lat: this.oblique ? 0 : 25, k: this.fillK(), roll: 0 }; this.apply(); this.request(); this.app.onViewChange?.(); }
   // back to the normal aspect: north up, and (for oblique-capable maps) the equator straight
+  // back to the normal aspect; which way is up (the "Up" setting) is kept
   northUp() { if (this.aspect) { this.view.lat = 0; this.aspect = null; } this.view.roll = 0; if (this.oblique && this.view.k < 1.5) this.view.lat = 0; this.apply(); this.request(); this.app.onViewChange?.(); }
 
   bindEvents() {
@@ -301,6 +400,7 @@ export class FlatMap {
 
   // what is under the cursor: a disputed area first, then the top-most polity
   hit(x, y) {
+    const pu = pulseAt(x, y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => x >= b.x0 && x <= b.x1 && y >= b.y0 && y <= b.y1);
     if (mk) return { marker: mk.m };
     const ll = this.proj.invert([x, y]);
@@ -333,15 +433,15 @@ export class FlatMap {
   // paths of every polity that did not change.
   geoState() {
     const s = this.proj.scale(), r = 2 ** Math.round(Math.log2(s));
-    const cyl = this.def.surface === 'cylindrical' && !this.rotating;
+    const cyl = this.def.surface === 'cylindrical' && !this.rotating && !this.angle;
     const rot = cyl ? [0, 0, 0] : this.proj.rotate();
-    const key = [this.projName, r, cyl ? '' : rot.map(v => v.toFixed(5)).join()].join('|');
+    const key = [this.projName, r, cyl ? '' : rot.map(v => v.toFixed(5)).join(), this.angle || 0].join('|');
     if (this.gKey === key) return;
     // while dragging a projection whose shape changes with the view, use coarse land to stay fluid
     this.coarse = !cyl && !!this.moving && !!this.gKey && this.gKey.split('|')[0] === this.projName;
     this.gKey = key; this.cyl = cyl; this.refScale = r;
     const p = this.def.make(); if (this.def.clip) p.clipAngle(this.def.clip);
-    p.rotate(rot).scale(r).translate([0, 0]);
+    p.rotate(rot).scale(r).translate([0, 0]).angle(this.angle || 0);
     this.refProj = p; this.refPath = geoPath(p);
     this.pcache = new WeakMap();
     if (cyl) this.worldW = p([180 - 1e-7, 0])[0] - p([-180 + 1e-7, 0])[0];
@@ -473,6 +573,7 @@ export class FlatMap {
   }
 
   draw() {
+    if (!this.proj) return;                    // a redraw asked for before the first projection is set
     const { ctx, proj, W, H, dpr } = this;
     if (!W || !H) return;                         // nothing to draw before the first layout
     const app = this.app, st = app.state;
@@ -562,9 +663,11 @@ export class FlatMap {
       // both layers: control areas as a ribbon inside their edge (clip to the area, stroke twice the width)
       if (F.ribbons) {
         for (const f of F.ribbons) {
+          // stroke the shared border lines rather than the area's own outline: merged areas can carry
+          // zero-width seams and spikes that would show up as dots and bars inside the area
           const p = this.P2(f);
           ctx.save(); ctx.clip(p);
-          ctx.globalAlpha = 0.8; ctx.strokeStyle = F.color(f.properties.p); ctx.lineWidth = lw(10, a); ctx.stroke(p);
+          ctx.globalAlpha = 0.8; ctx.strokeStyle = F.color(f.properties.p); ctx.lineWidth = lw(10, a); ctx.stroke(F.ribbonLines ? this.P2(F.ribbonLines) : p);
           ctx.restore();
         }
       }
@@ -606,7 +709,8 @@ export class FlatMap {
     if (!this.cyl) { ctx.beginPath(); live(this.outline); ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 1; ctx.stroke(); }
 
     if (st.distort && this.def.prop !== 'perspective' || st.distort && this.def.light === 'gnomonic') this.drawDistortion();
-    if (st.labels) this.drawLabels(feats, S, F);
+    if (st.labels && !F.noLabels) this.drawLabels(feats, S, F);   // the language mode names languages, not states
+    if (this.app.pin) this.drawPinned(this.app.pin.feats);
     if (st.selected != null) this.drawSelection(feats, st.selected);
     this.drawMarkers(F, S);
     if (this.app.compare?.on) {
@@ -643,13 +747,25 @@ export class FlatMap {
       ctx.strokeText(name, p[0], p[1]); ctx.fillStyle = '#8b0000'; ctx.fillText(name, p[0], p[1]);
     }
     ctx.textAlign = 'left';
+    if (F.lang) { const gp = geoPath(proj, ctx); drawLang(ctx, F.lang, g => gp(g), ll => (visible(ll) ? proj(ll) : null), S.label.font, this.view.k); }
     const placed = [], hits = this.markerHits = [];
-    for (const m of F.markers) {
+    const marks = this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers;
+    // every marker's own symbol is reserved first, so no picture lands on another marker
+    for (const m of marks) { if (!m.pic || !visible([m.lon, m.lat])) continue; const p = proj([m.lon, m.lat]); if (p) placed.push([p[0] - 9, p[1] - 9, p[0] + 9, p[1] + 9]); }
+    const pproj = ll => (visible(ll) ? proj(ll) : null);
+    reservePulses(pproj, placed);
+    for (const m of marks) {
       if (!visible([m.lon, m.lat])) continue;
       const p = proj([m.lon, m.lat]); if (!p) continue;
-      if (m.kind && m.kind !== 'gov' && m.kind !== 'art') { const q = proj([m.lon + 0.5, m.lat]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) < 30) continue; }   // seats only once zoomed in
+      if (m.kind && !['gov', 'art', 'langArea', 'feud', 'power', 'us', 'work'].includes(m.kind) && !(m.kind === 'cap' && (m.pin || m.big && (this.W >= 600 || m.rank < 10)))) {
+        // capitals: once the country is big enough on screen; other seats only once zoomed in
+        if (m.kind === 'cap') { const q = proj([m.lon, Math.min(89, m.lat + 0.5)]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) * 114.6 * (m.size || 0) < 44) continue; }
+        else { const q = proj([m.lon + 0.5, m.lat]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) < 30) continue; }
+      }
       drawMarker(ctx, p[0], p[1], m, col, S, placed, hits);
     }
+    drawPulses(ctx, S.label.font);
+    if (takeSliding()) this.request();
   }
 
   drawPaper() {
@@ -715,6 +831,7 @@ export class FlatMap {
     ctx.drawImage(r.canvas, -r.step / 2, -r.step / 2, r.canvas.width * r.step, r.canvas.height * r.step);
     ctx.restore();
   }
+  setAngle(deg) { this.angle = deg || 0; this.gKey = null; if (!this.proj) return; this.apply(); this.request(); this.app.onViewChange?.(); }
   setRelief(relief) { this.relief = relief; this.reliefCache = null; if (this.proj) this.request(); }
   reliefChanged() { if (this.reliefCache) this.reliefCache.stale = true; if (this.proj) this.request(); }
 
@@ -770,12 +887,26 @@ export class FlatMap {
     const { ctx, proj, W, H } = this;
     const st = this.app.state, center = [this.view.lon, this.view.lat];
     const lim = Math.min(this.clipRad, 2.6) - 0.05;
+    if (F?.labelOk) feats = feats.filter(f => F.labelOk(f.properties.p));
     const items = labelItems(feats, st, proj.scale(), Math.min(34, W / 18),
       lp => (this.azimuthal && geoDistance(lp, center) > lim) ? null : proj(lp), F?.adminFeats, W, H);
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     placeLabels(ctx, items, W, H, S.label);
   }
 
+  // a pinned country's borders, kept from the year it was pinned (dashed, over the later map)
+  drawPinned(feats) {
+    const { ctx } = this;
+    ctx.save();
+    this.each(ctx, a => {
+      for (const f of feats) {
+        const p = this.P2(f);
+        ctx.setLineDash([]); ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = 4.5 / a; ctx.stroke(p);
+        ctx.setLineDash([7 / a, 4 / a]); ctx.strokeStyle = '#c2185b'; ctx.lineWidth = 2.2 / a; ctx.stroke(p);
+      }
+    });
+    ctx.restore();
+  }
   drawSelection(feats, id) {
     const { ctx } = this;
     ctx.save();
@@ -790,8 +921,19 @@ export class FlatMap {
   }
 
   getCenter() { return { lon: this.view.lon, lat: this.view.lat, k: this.view.k, roll: this.view.roll || 0 }; }
+  // phones held upright: a whole-world view is zoomed so the map fills the height instead of a thin band
+  fillK() {
+    if (this.W >= 860 || this.H <= this.W || this.azimuthal) return 1;
+    const p = this.proj, r0 = p.rotate(), s0 = p.scale(), t0 = p.translate(), a0 = p.angle();
+    p.angle(0).rotate([0, 0, 0]).scale(this.baseScale).translate([0, 0]);
+    const [[, y0], [, y1]] = geoPath(p).bounds(this.outline || SPHERE);
+    p.rotate(r0).scale(s0).translate(t0).angle(a0);
+    const h = y1 - y0;
+    return h > 0 && h < this.H * 0.85 ? Math.min(4, this.H / h) : 1;
+  }
   setCenter({ lon, lat, k, roll }) {
     this.aspect = null;
+    if (k <= 1.01) k = Math.max(k, this.fillK());
     // a whole-world view keeps the normal aspect when switching into an oblique-capable projection
     if (this.oblique && k < 1.5 && roll == null) lat = 0;
     Object.assign(this.view, { lon, lat, k, roll: roll || 0 }); this.apply(); this.request();

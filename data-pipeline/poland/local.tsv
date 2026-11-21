@@ -1,0 +1,32 @@
+# 波蘭模式：起義與叛亂（⚔）、地方勢力（◉：公國、權貴、自由城市）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點；年代依各維基百科條目。
+feud	zebrzydowski	1606-08	1609-06	21.7	51.4	澤布日多夫斯基叛亂	Zebrzydowski rebellion	ゼブジドフスキの反乱	貴族反抗國王齊格蒙特三世擴張王權，於古佐夫戰敗但保住特權。	Nobles resisted Sigismund III's attempt to strengthen the crown; beaten at Guzów, they kept their privileges.	国王権強化に反対した貴族の反乱。	
+feud	chmielnicki	1648-04	1657-08	32.05	49.4	赫梅利尼茨基起義	Khmelnytsky uprising	フメリニツキーの乱	第聶伯河哥薩克與農民反抗波蘭貴族，最終投向俄國。	Dnieper Cossacks and peasants rose against the Polish lords and in the end turned to Russia.	ドニプロ・コサックと農民の反乱、のちロシアへ。	赫梅利尼茨基起義
+feud	lubomirski	1665-01	1666-12	21.24	51.75	盧博米爾斯基叛亂	Lubomirski's rebellion	ルボミルスキの反乱	大貴族盧博米爾斯基反對選王改革，於蒙特維之戰擊敗王軍。	The magnate Lubomirski opposed election reform and defeated the king at Mątwy.	大貴族ルボミルスキの反乱。	
+feud	koliivshchyna	1768-05	1768-07	30.27	48.75	柯利伊夫希納起義	Koliivshchyna	コリーイウシチナ	右岸烏克蘭農民與哥薩克起義，烏曼屠殺波蘭人與猶太人。	A Cossack-peasant rising in right-bank Ukraine with the Uman massacre.	右岸ウクライナの農民蜂起、ウマニの虐殺。	
+feud	bar	1768-02	1772-08	27.68	49.07	巴爾聯盟	Bar Confederation	バール連盟	貴族反抗俄國干預與國王，戰爭導致第一次瓜分。	Nobles rose against Russia and the king; the war led to the First Partition.	ロシアの干渉に反対した貴族の連盟。	巴爾聯盟
+feud	november	1830-11	1831-10	21.01	52.23	十一月起義	November Uprising	十一月蜂起	華沙士官生起義反抗俄國，波蘭軍與俄軍交戰近一年失敗。	Cadets in Warsaw rose against Russia; the Polish army fought for nearly a year.	ワルシャワ士官候補生の蜂起。	十一月起義
+feud	krakow1846	1846-02	1846-03	19.94	50.06	克拉科夫起義	Kraków uprising	クラクフ蜂起	自由市克拉科夫起義失敗，同時加利西亞農民屠殺貴族。	A rising in the Free City failed while Galician peasants massacred the gentry.	クラクフ自由市の蜂起とガリツィアの農民反乱。	克拉科夫起義
+feud	january	1863-01	1864-10	22.0	51.0	一月起義	January Uprising	一月蜂起	反抗俄國徵兵的游擊戰，延續近兩年，失敗後俄屬波蘭全面俄化。	A guerrilla war against Russian conscription lasting nearly two years; Russification followed.	ロシアの徴兵に反発したゲリラ戦。	一月起義
+feud	lodz1905	1905-06	1905-06	19.46	51.76	羅茲起義	Łódź insurrection	ウッチ蜂起	紡織工人築街壘反抗俄軍，數百人死亡。	Textile workers barricaded the streets against Russian troops; hundreds died.	繊維労働者のバリケード蜂起。	
+feud	silesian	1919-08	1921-07	18.68	50.3	西里西亞起義	Silesian Uprisings	シレジア蜂起	三次起義要求上西里西亞歸屬波蘭，最終上西里西亞被分割。	Three risings to join Upper Silesia to Poland; the region was divided.	上シレジアのポーランド帰属を求めた3度の蜂起。	西里西亞起義
+feud	warsaw1944	1944-08	1944-10	21.01	52.23	華沙起義	Warsaw Uprising	ワルシャワ蜂起	國家軍起義 63 天，蘇軍停於維斯瓦河對岸，城市被德軍夷平。	The Home Army fought for 63 days while the Soviets waited across the Vistula; the city was razed.	国内軍の63日間の蜂起。	華沙起義
+feud	poznan1956	1956-06	1956-06	16.93	52.41	波茲南事件	Poznań protests	ポズナン暴動	工人要求「麵包與自由」，軍隊開槍。	Workers demanded "bread and freedom" and were fired on.	「パンと自由」を求めた暴動。	波茲南事件
+feud	coast1970	1970-12	1970-12	18.53	54.52	沿海工人抗爭	Coastal strikes	沿岸暴動	格但斯克、格丁尼亞工人抗議漲價遭槍擊，哥慕爾卡下台。	Shipyard workers in Gdańsk and Gdynia were shot; Gomułka fell.	グダニスク・グディニャの労働者に発砲。	1970年波蘭抗議
+feud	solidarity	1980-08	1989-06	18.65	54.36	團結工聯	Solidarity	連帯	列寧造船廠罷工產生的獨立工會，戒嚴後轉入地下，1989 年談判終結共產統治。	The free union born in the Lenin Shipyard went underground under martial law and negotiated the end of communism.	レーニン造船所のストから生まれた独立自主管理労組。	團結工聯
+power	silesia	1138-01	1335-08	17.03	51.11	西里西亞諸公國	Silesian duchies	シレジア諸公国	皮亞斯特支系統治的公國群，十四世紀歸屬波希米亞。	Duchies of a Piast branch that passed to Bohemia in the 14th century.	ピャスト分家の公国群、14世紀にボヘミアへ。	西里西亞公國
+power	mazovia	1138-01	1526-09	21.01	52.23	馬佐夫舍公國	Duchy of Masovia	マゾフシェ公国	長期自立的公國，1526 年末代公爵去世後併入王國。	A long-autonomous duchy joined to the kingdom when its last duke died in 1526.	長く自立した公国、1526年に王国へ編入。	馬佐夫舍公國
+power	gdansk	1457-05	1793-03	18.65	54.35	但澤（格但斯克）特權城市	Free city of Gdańsk	グダニスク（ダンツィヒ）	王國內享有高度自治的漢薩城市，掌握維斯瓦河穀物出口。	A self-governing Hanseatic city under the crown that controlled the Vistula grain trade.	王国内で高度な自治を持つハンザ都市。	格但斯克
+power	radziwill	1547-01	1795-10	26.68	53.46	拉齊維烏家族（涅斯維日）	Radziwiłł family (Nesvizh)	ラジヴィウ家（ネスヴィジ）	立陶宛最有權勢的權貴，擁有私人軍隊與城堡。	The most powerful Lithuanian magnates, with their own army and castles.	リトアニア最大の大貴族、私兵を持つ。	拉濟維烏家族
+power	zamoyski	1580-01	1795-10	23.25	50.72	扎莫伊斯基家族（札莫希奇）	Zamoyski estate (Zamość)	ザモイスキ家（ザモシチ）	揚·扎莫伊斯基建立的「理想城市」與世襲領地。	Jan Zamoyski's "ideal town" and entailed estate.	ヤン・ザモイスキが築いた理想都市と世襲領。	扎莫希奇
+power	wisniowiecki	1600-01	1744-01	33.0	50.2	維什涅維茨基家族（第聶伯左岸）	Wiśniowiecki lands (left-bank Dnieper)	ヴィシニョヴィェツキ家領	掌控第聶伯河東岸大片土地的權貴，與哥薩克激烈衝突。	Magnates with vast holdings east of the Dnieper, bitter foes of the Cossacks.	ドニプロ東岸の大領地を持つ大貴族。	
+power	potocki	1650-01	1795-10	28.47	48.9	波托茨基家族（圖利欽）	Potocki family (Tulchyn)	ポトツキ家（トゥリチン）	烏克蘭與加利西亞的大權貴，十八世紀主導塔戈維查聯盟。	Great magnates of Ukraine and Galicia who led the Targowica Confederation.	タルゴヴィツァ連盟を主導した大貴族。	波托茨基家族
+power	cossacks	1572-01	1775-08	34.45	47.6	扎波羅熱哥薩克（謝奇）	Zaporozhian Cossacks (the Sich)	ザポロージャ・コサック（シーチ）	第聶伯河險灘下的自治軍事社群，名義上為聯邦登記哥薩克。	A self-governing military community below the Dnieper rapids, nominally registered by the Commonwealth.	ドニプロ早瀬下流の自治軍事共同体。	扎波羅熱哥薩克
+power	krakowfree	1815-06	1846-11	19.94	50.06	克拉科夫自由市	Free City of Kraków	クラクフ自由市	維也納會議設立的小共和國，起義後被奧地利吞併。	A small republic created at Vienna, annexed by Austria after the rising.	ウィーン会議で設けられた小共和国。	克拉科夫自由市
+power	danzig	1920-11	1939-09	18.65	54.35	但澤自由市	Free City of Danzig	ダンツィヒ自由市	國際聯盟保護下的自由市，波蘭享有港口與關稅權利。	A League of Nations free city where Poland had port and customs rights.	国際連盟保護下の自由市。	但澤自由市
+us	teutonic	1226-01	1525-04	19.03	54.04	條頓騎士團國	Teutonic Order's state	ドイツ騎士団国	受邀入普魯士後建立的修會國家，奪取波美拉尼亞，與波蘭長期交戰。	The crusading order invited into Prussia built its own state and fought Poland for two centuries.	プロイセンに招かれた騎士団の修道会国家。	條頓騎士團國
+us	russian1717	1717-02	1795-10	21.01	52.23	俄國駐軍與大使監護	Russian troops and the ambassador's tutelage	ロシア軍と大使の後見	沉默議會後俄軍駐留，俄國大使實際操控國王選舉與議會。	After the Silent Sejm Russian troops stayed and the ambassador managed elections and the Sejm.	沈黙議会後、ロシア大使が国政を左右。	
+us	germans1939	1939-09	1945-01	19.94	50.06	德國總督府	German General Government	ドイツ総督府	德國佔領下的總督府，首府克拉科夫，實施滅絕與奴役政策。	The German-run General Government, seated in Kraków, of extermination and forced labour.	クラクフに置かれたドイツの占領行政府。	波蘭總督府
+us	soviet1945	1945-01	1993-09	16.16	51.2	蘇聯北方軍團（萊格尼察）	Soviet Northern Group of Forces (Legnica)	ソ連北方軍集団（レグニツァ）	戰後蘇軍司令部駐萊格尼察，1993 年最後部隊撤離。	The Soviet command sat in Legnica; the last troops left in 1993.	戦後のソ連軍司令部、1993年に撤退。	北方集團軍
+us	nato2017	2017-04	2026-12	22.3	53.95	北約前沿部署（奧日什）	NATO forward presence (Orzysz)	NATO前方展開（オジシュ）	克里米亞危機後北約在波蘭東北部部署多國營，美軍並設常駐司令部。	After Crimea NATO stationed a multinational battlegroup in north-east Poland; the US set up a permanent HQ.	NATO多国籍大隊と米軍常駐司令部。	

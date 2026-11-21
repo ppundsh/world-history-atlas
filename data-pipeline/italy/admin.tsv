@@ -1,0 +1,22 @@
+# 義大利模式：行政區劃（逐月）。欄位：年月	單元	行政區。1948 年憲法設立的大區（莫利塞 1963 年自阿布魯佐分出，此處合併），以今日單元概略標示；統一前各邦即統治範圍圖層。
+# 來源：維基百科「義大利大區」
+1454-04	aosta,piemonte,liguria,milano,valtellina,venlomb,mantova,trento,sudtirol,veneto,friuli,gorizia,parma,modena,ferrara,romagna,lucca,toscana,siena,umbria,marche,lazio,abruzzo,campania,puglia,basilicata,calabria,sicilia,sardegna,savoy,nice,corsica,istria,fiume,dalmatia,malta	none
+1948-01	aosta	r_vda
+1948-01	piemonte	r_pie
+1948-01	liguria	r_lig
+1948-01	milano,valtellina,venlomb,mantova	r_lom
+1948-01	trento,sudtirol	r_taa
+1948-01	veneto	r_ven
+1948-01	friuli,gorizia	r_fvg
+1948-01	parma,modena,ferrara,romagna	r_emr
+1948-01	toscana,siena,lucca	r_tos
+1948-01	umbria	r_umb
+1948-01	marche	r_mar
+1948-01	lazio	r_laz
+1948-01	abruzzo	r_abm
+1948-01	campania	r_cam
+1948-01	puglia	r_pug
+1948-01	basilicata	r_bas
+1948-01	calabria	r_cal
+1948-01	sicilia	r_sic
+1948-01	sardegna	r_sar

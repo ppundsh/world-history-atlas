@@ -1,0 +1,54 @@
+# russia：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
+mongol1237	1237-12	1240-12	#7f1d1d	3	50.0,54.0 39.74,54.63 40.41,56.13 37.62,55.75 30.52,50.45	蒙古西征：梁贊→弗拉基米爾→基輔	Mongol invasion: Ryazan, Vladimir, Kiev	モンゴルのルーシ侵攻
+yermak	1581-09	1582-10	#7c2d12	2	56.25,58.0 60.0,58.4 68.3,58.2	葉爾馬克遠征西伯利亞	Yermak's campaign into Siberia	イェルマークのシベリア遠征
+napoleon	1812-06	1812-09	#1d4ed8	3	23.9,54.9 25.28,54.69 30.2,55.19 32.04,54.78 35.82,55.52 37.62,55.75	拿破崙入侵俄國	Napoleon invades Russia	ナポレオンのロシア遠征
+retreat1812	1812-10	1812-12	#64748b	3	37.62,55.75 32.04,54.78 28.5,54.3 25.28,54.69	拿破崙撤退	Napoleon's retreat	ナポレオンの退却
+barbarossa_c	1941-06	1941-12	#111827	3	23.7,52.1 27.56,53.9 32.04,54.78 35.0,55.0 37.3,55.9	巴巴羅薩行動（中路→莫斯科）	Operation Barbarossa: centre to Moscow	バルバロッサ作戦（中央）
+barbarossa_n	1941-06	1941-09	#111827	3	21.0,55.0 24.1,56.95 28.3,57.8 30.3,59.9	巴巴羅薩行動（北路→列寧格勒）	Barbarossa: north to Leningrad	バルバロッサ作戦（北方）
+barbarossa_s	1941-06	1941-11	#111827	3	24.0,49.84 30.52,50.45 36.23,49.99 39.7,47.2	巴巴羅薩行動（南路→基輔、羅斯托夫）	Barbarossa: south to Kiev and Rostov	バルバロッサ作戦（南方）
+blue1942	1942-06	1942-09	#111827	3	36.23,49.99 39.2,51.7 44.5,48.7	藍色方案→史達林格勒	Case Blue to Stalingrad	ブラウ作戦→スターリングラード
+soviet4345	1943-02	1945-05	#dc2626	3	44.5,48.7 36.19,51.73 30.52,50.45 27.56,53.9 21.0,52.23 13.4,52.52	蘇軍反攻至柏林	The Soviet advance to Berlin	ソ連軍の反攻、ベルリンへ
+ukr2022k	2022-02	2022-03	#111827	3	29.2,51.6 30.2,50.9 30.52,50.45	俄軍從白俄羅斯攻基輔	Russia attacks Kyiv from Belarus	ベラルーシからキーウへ
+ukr2022s	2022-02	2022-03	#111827	3	34.1,44.95 33.4,46.1 32.61,46.64	俄軍從克里米亞北上赫爾松	North from Crimea to Kherson	クリミアからヘルソンへ
+ukr2022c	2022-09	2022-11	#1d4ed8	3	36.23,49.99 37.6,49.2 32.61,46.64	烏軍反攻（哈爾科夫、赫爾松）	Ukraine's counter-offensives (Kharkiv, Kherson)	ウクライナの反攻
+varangian	0860-01	0882-01	#475569	2	29.0,60.0 31.27,58.52 31.0,55.0 30.52,50.45	瓦良格人「從瓦良格到希臘之路」南下	Varangians south on the road "from the Varangians to the Greeks"	ヴァリャーグからギリシアへの道を南下
+oleg907	0907-01	0907-09	#475569	2	30.52,50.45 31.5,46.6 30.7,45.0 28.9,41.0	奧列格遠征君士坦丁堡	Oleg's raid on Constantinople	オレグのコンスタンティノープル遠征
+sviat965	0964-01	0965-12	#1e3a8a	2	30.52,50.45 36.0,53.0 49.1,55.8 48.03,46.35 40.0,47.5	斯維亞托斯拉夫東征伏爾加保加爾與可薩	Sviatoslav campaigns against Volga Bulgaria and the Khazars	スヴャトスラフのヴォルガ・ブルガール、ハザール遠征
+kalka1223	1223-04	1223-05	#7f1d1d	2	44.0,43.0 41.0,46.0 37.6,47.6	蒙古速不台、哲別西進至卡爾卡河	Subutai and Jebe ride west to the Kalka	スブタイとジェベがカルカ河へ
+neva1240	1240-06	1240-07	#1e3a8a	2	31.27,58.52 30.9,59.4 30.75,59.86	亞歷山大自諾夫哥羅德迎擊瑞典	Alexander marches from Novgorod against the Swedes	アレクサンドルがノヴゴロドから出撃
+ice1242	1242-03	1242-04	#1e3a8a	2	31.27,58.52 28.33,57.82 27.6,58.4	亞歷山大進軍冰湖迎擊條頓騎士	Alexander moves to Lake Peipus against the Teutonic knights	アレクサンドルが氷上の戦いへ
+kulikovo	1380-08	1380-09	#1e3a8a	3	37.62,55.75 38.3,54.9 38.66,53.67	德米特里自莫斯科南下庫利科沃	Dmitry marches south from Moscow to Kulikovo	ドミトリーがモスクワからクリコヴォへ
+mamai	1380-08	1380-09	#7f1d1d	2	39.7,47.23 39.0,51.0 38.66,53.67	馬麥汗北上	Mamai's horde comes north	ママイ軍が北上
+tokhtamysh	1382-08	1382-08	#7f1d1d	2	44.0,48.7 40.0,52.5 37.62,55.75	脫脫迷失焚莫斯科	Tokhtamysh burns Moscow	トクタミシュがモスクワを焼く
+ugra1480	1480-09	1480-11	#7f1d1d	2	44.0,48.7 39.0,52.6 35.9,54.4	阿合馬汗進至烏格拉河後退兵	Akhmat Khan advances to the Ugra, then withdraws	アフマド・ハンがウグラ河まで進出して撤退
+kazan1552	1552-06	1552-10	#1e3a8a	3	37.62,55.75 44.0,56.33 49.11,55.8	伊凡四世東征喀山	Ivan IV marches east on Kazan	イヴァン4世のカザン遠征
+astrakhan1556	1556-04	1556-08	#1e3a8a	2	49.11,55.8 46.0,51.53 48.03,46.35	順伏爾加河南下取阿斯特拉罕	Down the Volga to Astrakhan	ヴォルガを下りアストラハンへ
+crimea1571	1571-04	1571-05	#7f1d1d	2	34.1,44.95 36.5,50.6 37.62,55.75	克里米亞汗德夫萊特·格來北上焚莫斯科	Devlet Giray rides north and burns Moscow	デヴレト・ギレイがモスクワを焼く
+polish1610	1610-06	1610-09	#9a3412	2	23.0,52.2 32.05,54.78 35.0,55.6 37.62,55.75	波蘭軍東進，克盧希諾戰後入莫斯科	The Poles march east; after Klushino they enter Moscow	ポーランド軍が東進しモスクワへ
+minin1612	1612-03	1612-11	#1e3a8a	2	44.0,56.33 39.9,57.63 37.62,55.75	米寧與波扎爾斯基民軍自下諾夫哥羅德出發	Minin and Pozharsky's militia set out from Nizhny Novgorod	ミーニンとポジャルスキーがニジニ・ノヴゴロドから出発
+siberia1	1586-01	1632-01	#c2410c	2	68.3,58.2 73.37,54.98 84.95,56.5 92.87,56.0 104.3,52.3 129.73,62.03	哥薩克東進西伯利亞：托博爾斯克→托木斯克→葉尼塞斯克→雅庫茨克	Cossacks push east: Tobolsk, Tomsk, Yeniseysk, Yakutsk	コサックのシベリア東進：トボリスクからヤクーツクへ
+okhotsk1639	1638-01	1639-01	#c2410c	2	129.73,62.03 137.0,61.0 143.3,59.38	莫斯克維金自雅庫茨克抵達鄂霍次克海	Moskvitin from Yakutsk to the Sea of Okhotsk	モスクヴィチンがヤクーツクからオホーツク海へ
+dezhnev	1648-06	1649-01	#c2410c	2	152.0,68.6 170.0,69.7 179.9,66.2 177.5,64.73	傑日尼奧夫沿北冰洋繞過亞洲東端	Dezhnev sails round the eastern tip of Asia	デジニョフがアジア東端を回航
+khabarov	1649-01	1651-06	#c2410c	2	129.73,62.03 124.0,56.0 124.0,53.3 127.5,50.27	哈巴羅夫遠征黑龍江	Khabarov's expedition to the Amur	ハバロフのアムール遠征
+charles1708	1708-01	1709-07	#9a3412	3	21.0,52.2 25.0,53.9 30.0,53.9 33.5,51.5 34.55,49.59	卡爾十二世入侵，止於波爾塔瓦	Charles XII invades and is stopped at Poltava	カール12世の侵攻、ポルタヴァで敗れる
+peter_azov	1695-06	1696-07	#1e3a8a	2	37.62,55.75 39.0,52.0 39.42,47.1	彼得一世遠征亞速	Peter I's Azov campaigns	ピョートル1世のアゾフ遠征
+pugachev	1773-09	1774-08	#b45309	2	51.37,51.23 55.1,51.77 56.25,58.0 49.11,55.8 46.0,51.53 44.5,48.7	普加喬夫起義軍進軍路線	Pugachev's rebels: Yaik, Orenburg, the Urals, Kazan, the Volga	プガチョフ軍の進路
+suvorov99	1799-04	1799-10	#1e3a8a	2	30.5,50.4 16.4,48.2 9.19,45.46 8.6,46.6 9.0,47.1	蘇沃洛夫遠征義大利與翻越阿爾卑斯	Suvorov's Italian campaign and crossing of the Alps	スヴォーロフのイタリア遠征とアルプス越え
+russia1813	1813-01	1814-03	#1e3a8a	3	24.0,54.6 21.0,52.2 13.4,52.5 12.37,51.34 6.0,49.0 2.35,48.86	俄軍追擊拿破崙直至巴黎	The Russian army pursues Napoleon to Paris	ロシア軍がナポレオンを追ってパリへ
+crimea1854	1854-09	1855-09	#9a3412	2	28.0,43.2 31.0,44.0 33.6,44.9 33.52,44.6	英法聯軍登陸克里米亞，圍攻塞瓦斯托波爾	British and French land in Crimea and besiege Sevastopol	英仏軍がクリミアに上陸しセヴァストポリを包囲
+turkestan	1853-07	1876-02	#c2410c	2	61.0,50.0 65.5,44.85 69.24,41.3 66.96,39.65 60.6,41.55 70.9,40.5	征服中亞：阿克梅切特→塔什干→撒馬爾罕→希瓦→浩罕	Conquest of Central Asia: Ak-Mechet, Tashkent, Samarkand, Khiva, Kokand	中央アジア征服
+baltic1904	1904-10	1905-05	#1e3a8a	2	21.0,57.4 -5.0,48.0 18.0,-34.0 50.0,-15.0 105.0,-5.0 129.6,34.5	波羅的海艦隊遠航對馬	The Baltic Fleet's voyage to Tsushima	バルチック艦隊の大航海
+brusilov	1916-06	1916-09	#1e3a8a	2	27.5,50.7 25.3,50.4 24.0,48.9	布魯西洛夫攻勢	Brusilov offensive	ブルシーロフ攻勢
+kolchak	1919-03	1919-11	#b91c1c	2	73.37,54.98 65.5,57.15 56.25,58.0 55.95,54.73 52.5,53.3	高爾察克白軍西進後潰退	Kolchak's Whites advance west, then fall back	コルチャーク白軍の西進と潰走
+denikin	1919-05	1919-10	#b91c1c	2	39.7,47.23 36.23,50.0 36.08,52.97 36.19,51.73	鄧尼金白軍北上奧廖爾	Denikin's Whites march north to Oryol	デニーキン白軍がオリョールへ北上
+legion1918	1918-05	1920-09	#475569	2	45.0,53.2 61.0,55.2 73.37,54.98 104.3,52.3 131.89,43.12	捷克軍團沿西伯利亞鐵路東撤	The Czechoslovak Legion along the Trans-Siberian	チェコ軍団がシベリア鉄道で東へ
+winter1939	1939-11	1940-03	#1e3a8a	2	30.3,59.94 29.5,60.5 28.73,60.71	蘇軍攻芬蘭（曼納海姆防線）	Soviet attack on Finland (the Mannerheim Line)	ソ連軍のフィンランド侵攻
+kursk1943	1943-07	1943-08	#7f1d1d	2	36.5,52.4 36.19,51.73 36.6,50.6 36.6,51.0	德軍夾擊庫爾斯克突出部	German pincers on the Kursk salient	ドイツ軍のクルスク突出部挟撃
+bagration	1944-06	1944-08	#1e3a8a	3	31.0,54.8 27.57,53.9 25.3,54.7 21.0,52.2	巴格拉基昂攻勢	Operation Bagration	バグラチオン作戦
+manchuria45	1945-08	1945-08	#1e3a8a	3	117.5,49.6 120.0,47.0 123.4,41.8 125.3,43.9 126.6,45.75 131.89,43.12	蘇軍三路攻入滿洲	The Soviet three-pronged invasion of Manchuria	ソ連軍の満州侵攻
+kurils45	1945-08	1945-09	#1e3a8a	2	158.65,53.02 156.3,50.65 148.0,45.5 145.5,43.7	蘇軍佔領千島群島	Soviet troops take the Kuril Islands	ソ連軍の千島占領
+afghan79	1979-12	1980-01	#7f1d1d	2	65.0,37.5 66.9,36.7 69.17,34.53	蘇軍經泰爾梅茲進入阿富汗	Soviet troops enter Afghanistan via Termez	ソ連軍がテルメズからアフガニスタンへ
+chechnya94	1994-12	1995-01	#7f1d1d	2	44.67,43.02 45.2,43.4 45.69,43.32	俄軍進攻格羅茲尼	Russian forces storm Grozny	ロシア軍のグロズヌイ攻撃
+georgia2008	2008-08	2008-08	#7f1d1d	2	44.2,42.7 43.96,42.23 44.11,41.98	俄軍經羅基隧道入南奧塞梯	Russian troops through the Roki Tunnel into South Ossetia	ロシア軍がロキ・トンネルから南オセチアへ
+wagner23	2023-06	2023-06	#b45309	2	39.7,47.23 39.2,51.66 38.5,53.5	瓦格納兵變：自羅斯托夫北上	Wagner mutiny: north from Rostov toward Moscow	ワグネルの反乱：ロストフから北上
+kursk2024	2024-08	2024-09	#1d4ed8	2	35.0,50.9 35.3,51.3 35.05,51.43	烏軍攻入庫爾斯克州	Ukraine's incursion into Kursk Oblast	ウクライナ軍のクルスク州侵攻

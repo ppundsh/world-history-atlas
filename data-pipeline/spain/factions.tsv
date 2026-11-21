@@ -1,0 +1,27 @@
+# 西班牙模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+visigoths	#a1887f	西哥德王國	西哥特王国	Visigothic Kingdom	西ゴート王国
+umayyad	#2e7d32	伍麥亞哈里發國	倭马亚哈里发国	Umayyad Caliphate	ウマイヤ朝
+andalus	#43a047	哥多華酋長國、哥多華哈里發國	科尔多瓦酋长国、科尔多瓦哈里发国	Emirate and Caliphate of Córdoba	後ウマイヤ朝
+taifas	#81c784	泰法諸王國	泰法诸王国	Taifa kingdoms	タイファ諸王国
+almoravids	#00897b	穆拉比特王朝	穆拉比特王朝	Almoravids	ムラービト朝
+almohads	#00695c	穆瓦希德王朝	穆瓦希德王朝	Almohads	ムワッヒド朝
+nasrid	#4db6ac	格拉納達奈斯爾王朝	格拉纳达奈斯尔王朝	Nasrid Emirate of Granada	ナスル朝グラナダ王国
+franks	#9575cd	法蘭克王國（西班牙邊區）	法兰克王国（西班牙边区）	Franks (Marca Hispanica)	フランク王国（スペイン辺境領）
+asturias	#ffb74d	阿斯圖里亞斯王國	阿斯图里亚斯王国	Kingdom of Asturias	アストゥリアス王国
+leon	#ffa726	萊昂王國	莱昂王国	Kingdom of León	レオン王国
+castile	#e53935	卡斯提亞王國	卡斯蒂利亚王国	Kingdom of Castile	カスティーリャ王国
+navarre	#ec407a	潘普洛納、納瓦拉王國	潘普洛纳、纳瓦拉王国	Pamplona, Kingdom of Navarre	パンプローナ・ナバラ王国
+aragon	#fdd835	亞拉岡王國、亞拉岡王冠	阿拉贡王国、阿拉贡王冠	Kingdom and Crown of Aragon	アラゴン王国・アラゴン連合王国
+barcelona	#fff176	巴塞隆納伯國	巴塞罗那伯国	County of Barcelona	バルセロナ伯領
+portugal	#1e88e5	葡萄牙	葡萄牙	Portugal	ポルトガル
+guanches	#d7ccc8	加那利原住民（關切人）	加那利原住民（关切人）	Guanches (Canary natives)	グアンチェ族
+spain	#c62828	西班牙王國	西班牙王国	Monarchy of Spain	スペイン王国
+austria	#e8c547	哈布斯堡（卡洛斯大公）	哈布斯堡（卡洛斯大公）	Habsburgs (Archduke Charles)	ハプスブルク家（カール大公）
+uk	#9575cd	英國	英国	United Kingdom	イギリス
+france	#7986cb	法國	法国	France	フランス
+republic1	#ef9a9a	西班牙第一共和國	西班牙第一共和国	First Spanish Republic	スペイン第一共和政
+republic2	#d81b60	西班牙第二共和國（共和派）	西班牙第二共和国（共和派）	Second Spanish Republic (Republicans)	スペイン第二共和政（共和派）
+nationalist	#5d4037	國民軍（民族主義派）	国民军（民族主义派）	Nationalists	国民戦線（反乱軍）
+franco	#6d4c41	佛朗哥政權	佛朗哥政权	Francoist Spain	フランコ体制
+spain_d	#e53935	西班牙王國（民主化後）	西班牙王国（民主化后）	Kingdom of Spain (democracy)	スペイン王国（民主化後）
+morocco	#26a69a	摩洛哥	摩洛哥	Morocco	モロッコ

@@ -1,0 +1,21 @@
+# 金融史：貴金屬與資本流動、危機蔓延（箭頭）。欄位：id	類別	起年	迄年	起點經度	起點緯度	終點經度	終點緯度	粗細(1–3)	繁中	English	日本語
+silk_gold	trade	-100	200	108.9	34.3	12.5	41.9	2	絲綢西去、羅馬金銀東流	Silk goes west, Roman gold and silver east	絹は西へ、ローマの金銀は東へ
+rome_india	trade	0	200	12.5	41.9	76.2	10.2	2	羅馬金幣流向印度（香料貿易）	Roman gold to India (the spice trade)	ローマ金貨がインドへ
+dirham_baltic	trade	800	1000	44.4	33.3	18.3	57.6	2	伊斯蘭銀幣北傳波羅的海	Islamic silver dirhams reach the Baltic	イスラームの銀貨がバルト海へ
+potosi	trade	1545	1650	-65.75	-19.58	-6.0	37.39	3	波托西白銀運往塞維亞	Potosí silver to Seville	ポトシ銀がセビリャへ
+genoa	trade	1557	1640	-6.0	37.39	8.93	44.41	2	西班牙白銀流向熱那亞銀行家	Spanish silver to the Genoese bankers	スペイン銀がジェノヴァ銀行家へ
+galleon	trade	1565	1815	-99.88	16.85	120.98	14.6	3	馬尼拉大帆船：美洲白銀橫越太平洋	Manila galleons: American silver across the Pacific	マニラ・ガレオン：アメリカ銀が太平洋を渡る
+manila_china	trade	1571	1800	120.98	14.6	118.1	24.5	3	白銀流入中國（月港、廈門）	Silver flows into China (Yuegang, Xiamen)	銀が中国へ（月港・厦門）
+iwami	trade	1530	1640	132.43	35.1	118.1	24.5	2	石見銀山的日本白銀流向中國	Japanese silver from Iwami to China	石見銀山の銀が中国へ
+voc_asia	trade	1610	1790	4.9	52.37	106.8	-6.2	2	荷蘭東印度公司的資本與白銀東來	VOC capital and silver to Asia	VOC の資本と銀がアジアへ
+opium_silver	trade	1800	1840	113.26	23.13	88.36	22.57	2	鴉片貿易：中國白銀外流	The opium trade: silver drains out of China	アヘン貿易：中国から銀が流出
+gold_rush	trade	1849	1860	-121.0	38.6	-74.0	40.7	2	加州淘金熱的黃金東運	California gold flows east	カリフォルニアの金が東へ
+london_world	trade	1870	1914	-0.09	51.51	-58.4	-34.6	2	倫敦資本投向阿根廷等新興市場	London capital flows to Argentina and other new markets	ロンドン資本がアルゼンチンなどへ
+marshall	trade	1948	1952	-77.0	38.9	8.0	50.0	3	馬歇爾計畫	The Marshall Plan	マーシャル・プラン
+us_aid_tw	trade	1951	1965	-77.0	38.9	121.5	25.04	2	美援台灣	US aid to Taiwan	アメリカの台湾援助
+petrodollar	trade	1973	1981	46.7	24.7	-74.0	40.7	3	石油美元回流華爾街	Petrodollars recycled to Wall Street	オイルダラーがウォール街へ
+crash29	crisis	1929	1932	-74.01	40.71	13.4	52.5	3	大蕭條從紐約蔓延到歐洲	The Great Depression spreads from New York to Europe	大恐慌がニューヨークから欧州へ
+asia97a	crisis	1997	1998	100.5	13.75	106.8	-6.2	3	亞洲金融風暴：泰銖崩跌蔓延印尼	Asian crisis: from the baht to Indonesia	アジア通貨危機：タイからインドネシアへ
+asia97b	crisis	1997	1998	100.5	13.75	126.98	37.57	3	亞洲金融風暴蔓延韓國	The Asian crisis reaches Korea	アジア通貨危機が韓国へ
+gfc_eu	crisis	2008	2010	-74.01	40.71	-0.09	51.51	3	全球金融危機蔓延歐洲	The global financial crisis spreads to Europe	世界金融危機が欧州へ
+gfc_greece	crisis	2009	2012	8.68	50.11	23.73	37.98	2	歐債危機（希臘）	The euro debt crisis (Greece)	欧州債務危機（ギリシャ）

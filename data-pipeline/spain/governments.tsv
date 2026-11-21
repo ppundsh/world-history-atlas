@@ -1,0 +1,25 @@
+# 西班牙模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為西班牙主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+toledo_v	0711-01	0712-06	-4.02	39.86	1	visigoths	托雷多（西哥德）	托莱多（西哥特）	Toledo (Visigoths)	トレド（西ゴート）
+cordoba	0716-01	1031-11	-4.78	37.88	0	andalus	哥多華	科尔多瓦	Córdoba	コルドバ
+oviedo	0791-01	0910-01	-5.85	43.36	0	asturias	奧維耶多（阿斯圖里亞斯）	奥维耶多（阿斯图里亚斯）	Oviedo (Asturias)	オビエド（アストゥリアス）
+leon	0910-01	1230-11	-5.57	42.6	0	leon	萊昂	莱昂	León	レオン
+pamplona	0824-01	1512-07	-1.64	42.81	0	navarre	潘普洛納（納瓦拉）	潘普洛纳（纳瓦拉）	Pamplona (Navarre)	パンプローナ（ナバラ）
+barcelona	0988-01	1137-08	2.17	41.39	0	barcelona	巴塞隆納（伯國）	巴塞罗那（伯国）	Barcelona (County)	バルセロナ（伯領）
+zaragoza	1118-12	1479-01	-0.88	41.65	0	aragon	薩拉戈薩（亞拉岡）	萨拉戈萨（阿拉贡）	Zaragoza (Aragon)	サラゴサ（アラゴン）
+burgos	1065-01	1230-11	-3.7	42.34	0	castile	布哥斯（卡斯提亞）	布尔戈斯（卡斯蒂利亚）	Burgos (Castile)	ブルゴス（カスティーリャ）
+toledo_c	1230-11	1479-01	-4.02	39.86	0	castile	托雷多（卡斯提亞）	托莱多（卡斯蒂利亚）	Toledo (Castile)	トレド（カスティーリャ）
+sevilla_a	1147-10	1248-11	-5.99	37.39	0	almohads	塞維亞（穆瓦希德在伊比利的首府）	塞维利亚（穆瓦希德在伊比利亚的首府）	Seville (Almohad capital in Iberia)	セビリア（ムワッヒド朝のイベリア拠点）
+granada	1238-01	1492-01	-3.59	37.18	0	nasrid	格拉納達（阿爾罕布拉宮）	格拉纳达（阿尔罕布拉宫）	Granada (Alhambra)	グラナダ（アルハンブラ宮殿）
+coimbra	1131-01	1255-12	-8.43	40.21	0	portugal	科英布拉（葡萄牙）	科英布拉（葡萄牙）	Coimbra (Portugal)	コインブラ（ポルトガル）
+lisbon	1256-01	2026-12	-9.14	38.72	0	portugal	里斯本（葡萄牙）	里斯本（葡萄牙）	Lisbon (Portugal)	リスボン（ポルトガル）
+toledo_s	1479-01	1561-05	-4.02	39.86	1	spain	托雷多（西班牙宮廷）	托莱多（西班牙宫廷）	Toledo (Spanish court)	トレド（スペイン宮廷）
+madrid	1561-06	1601-01	-3.7	40.42	1	spain	馬德里	马德里	Madrid	マドリード
+valladolid	1601-01	1606-02	-4.72	41.65	1	spain	瓦拉杜利德	巴利亚多利德	Valladolid	バリャドリッド
+madrid2	1606-03	1808-05	-3.7	40.42	1	spain	馬德里	马德里	Madrid	マドリード
+cadiz	1810-02	1813-09	-6.29	36.53	1	spain	加地斯（攝政會議、議會）	加的斯（摄政会议、议会）	Cádiz (Regency and Cortes)	カディス（摂政会議・議会）
+madrid_j	1808-07	1813-06	-3.7	40.42	0	france	馬德里（約瑟夫·波拿巴）	马德里（约瑟夫·波拿巴）	Madrid (Joseph Bonaparte)	マドリード（ジョゼフ・ボナパルト）
+madrid3	1814-05	1936-11	-3.7	40.42	1	spain	馬德里	马德里	Madrid	マドリード
+valencia_r	1936-11	1937-10	-0.38	39.47	1	republic2	瓦倫西亞（共和國政府）	巴伦西亚（共和国政府）	Valencia (Republican government)	バレンシア（共和国政府）
+barcelona_r	1937-10	1939-01	2.17	41.39	1	republic2	巴塞隆納（共和國政府）	巴塞罗那（共和国政府）	Barcelona (Republican government)	バルセロナ（共和国政府）
+burgos_n	1936-10	1939-04	-3.7	42.34	0	nationalist	布哥斯（國民軍政府）	布尔戈斯（国民军政府）	Burgos (Nationalist government)	ブルゴス（反乱軍政府）
+madrid4	1939-04	2026-12	-3.7	40.42	1	franco	馬德里	马德里	Madrid	マドリード

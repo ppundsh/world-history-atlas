@@ -1,0 +1,35 @@
+# 印度模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（未劃分或以前的省份）	（未划分或以前的省份）	(not drawn / earlier provinces)	（区分なし・旧州）
+d_IN-AP	#e9c46a	安得拉邦	安得拉邦	Andhra Pradesh	アーンドラ・プラデーシュ州
+d_IN-TG	#f4a261	特倫甘納邦	特伦甘纳邦	Telangana	テランガーナ州
+d_IN-KA	#e76f51	卡納塔克邦	卡纳塔克邦	Karnataka	カルナータカ州
+d_IN-KL	#8ab17d	喀拉拉邦	喀拉拉邦	Kerala	ケーララ州
+d_IN-TN	#2a9d8f	泰米爾納德邦	泰米尔纳德邦	Tamil Nadu	タミル・ナードゥ州
+d_IN-MH	#90be6d	馬哈拉施特拉邦	马哈拉施特拉邦	Maharashtra	マハーラーシュトラ州
+d_IN-GJ	#f9c74f	古吉拉特邦	古吉拉特邦	Gujarat	グジャラート州
+d_IN-GA	#f8961e	果阿邦	果阿邦	Goa	ゴア州
+d_IN-RJ	#577590	拉賈斯坦邦	拉贾斯坦邦	Rajasthan	ラージャスターン州
+d_IN-MP	#43aa8b	中央邦	中央邦	Madhya Pradesh	マディヤ・プラデーシュ州
+d_IN-CT	#f94144	恰蒂斯加爾邦	恰蒂斯加尔邦	Chhattisgarh	チャッティースガル州
+d_IN-UP	#b5838d	北方邦	北方邦	Uttar Pradesh	ウッタル・プラデーシュ州
+d_IN-UT	#6d597a	北阿坎德邦	北阿坎德邦	Uttarakhand	ウッタラーカンド州
+d_IN-BR	#ffb4a2	比哈爾邦	比哈尔邦	Bihar	ビハール州
+d_IN-JH	#a3c4f3	賈坎德邦	贾坎德邦	Jharkhand	ジャールカンド州
+d_IN-WB	#cdb4db	西孟加拉邦	西孟加拉邦	West Bengal	西ベンガル州
+d_IN-OR	#ffc8dd	奧里薩邦	奥里萨邦	Odisha	オディシャ州
+d_IN-PB	#bde0fe	旁遮普邦	旁遮普邦	Punjab	パンジャーブ州
+d_IN-HR	#d4a373	哈里亞納邦	哈里亚纳邦	Haryana	ハリヤーナー州
+d_IN-HP	#ccd5ae	喜馬偕爾邦	喜马偕尔邦	Himachal Pradesh	ヒマーチャル・プラデーシュ州
+d_IN-DL	#e9c46a	德里	德里	Delhi	デリー
+d_IN-JK	#f4a261	查謨和喀什米爾	查谟和喀什米尔	Jammu and Kashmir	ジャンムー・カシミール
+d_IN-LA	#e76f51	拉達克	拉达克	Ladakh	ラダック
+d_IN-AS	#8ab17d	阿薩姆邦	阿萨姆邦	Assam	アッサム州
+d_ne_india	#2a9d8f	東北各邦	东北各邦	North-eastern states	北東部諸州
+d_IN-SK	#90be6d	錫金邦	锡金邦	Sikkim	シッキム州
+d_andaman	#f9c74f	安達曼－尼科巴群島	安达曼－尼科巴群岛	Andaman and Nicobar	アンダマン・ニコバル諸島
+d_PK-PB	#f8961e	旁遮普省	旁遮普省	Punjab (Pakistan)	パンジャーブ州（パキスタン）
+d_PK-SD	#577590	信德省	信德省	Sindh	シンド州
+d_PK-KP	#43aa8b	開伯爾－普什圖省	开伯尔－普什图省	Khyber Pakhtunkhwa	カイバル・パフトゥンクワ州
+d_PK-BA	#f94144	俾路支省	俾路支省	Balochistan	バローチスターン州
+d_PK-GB	#b5838d	吉爾吉特－巴爾蒂斯坦	吉尔吉特－巴尔蒂斯坦	Gilgit-Baltistan	ギルギット・バルティスタン
+d_PK-JK	#6d597a	自由喀什米爾	自由喀什米尔	Azad Kashmir	アーザード・カシミール

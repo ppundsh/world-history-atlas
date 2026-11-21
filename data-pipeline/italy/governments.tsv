@@ -1,0 +1,31 @@
+# 義大利模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為全義大利政府(1/0)	勢力id	繁中	簡中	English	日本語
+chambery	1454-04	1563-01	5.92	45.57	0	savoy	尚貝里（薩伏依）	尚贝里（萨伏依）	Chambéry (Savoy)	シャンベリ（サヴォイア）
+turin	1563-02	1798-12	7.69	45.07	0	savoy	杜林（薩伏依、薩丁尼亞王國）	都灵（萨伏依、萨丁尼亚王国）	Turin (Savoy, Kingdom of Sardinia)	トリノ（サヴォイア・サルデーニャ王国）
+turin_i	1861-03	1865-05	7.69	45.07	1	italy	杜林（義大利王國）	都灵（意大利王国）	Turin (Kingdom of Italy)	トリノ（イタリア王国）
+florence_i	1865-06	1871-06	11.25	43.77	1	italy	佛羅倫斯（義大利王國）	佛罗伦萨（意大利王国）	Florence (Kingdom of Italy)	フィレンツェ（イタリア王国）
+rome_i	1871-07	1943-09	12.48	41.9	1	italy	羅馬（義大利王國）	罗马（意大利王国）	Rome (Kingdom of Italy)	ローマ（イタリア王国）
+brindisi	1943-09	1944-02	17.94	40.63	1	italy	布林迪西（南方王國）	布林迪西（南方王国）	Brindisi (Kingdom of the South)	ブリンディジ（南王国）
+salerno	1944-02	1944-07	14.77	40.68	1	italy	薩萊諾（南方王國）	萨莱诺（南方王国）	Salerno (Kingdom of the South)	サレルノ（南王国）
+salo	1943-09	1945-04	10.52	45.61	0	rsi	薩羅（義大利社會共和國）	萨罗（意大利社会共和国）	Salò (Italian Social Republic)	サロ（イタリア社会共和国）
+rome_i2	1944-07	1946-06	12.48	41.9	1	italy	羅馬（義大利王國）	罗马（意大利王国）	Rome (Kingdom of Italy)	ローマ（イタリア王国）
+rome_r	1946-06	2026-12	12.48	41.9	1	italy_r	羅馬（義大利共和國）	罗马（意大利共和国）	Rome (Italian Republic)	ローマ（イタリア共和国）
+milan	1454-04	1535-11	9.19	45.46	0	milan	米蘭（米蘭公國）	米兰（米兰公国）	Milan (Duchy of Milan)	ミラノ（ミラノ公国）
+milan_n	1805-05	1814-04	9.19	45.46	0	napoleon	米蘭（義大利王國，拿破崙）	米兰（意大利王国，拿破仑）	Milan (Napoleonic Kingdom of Italy)	ミラノ（ナポレオンのイタリア王国）
+venice	1454-04	1797-05	12.34	45.43	0	venice	威尼斯	威尼斯	Venice	ヴェネツィア
+genoa	1454-04	1797-06	8.93	44.41	0	genoa	熱那亞	热那亚	Genoa	ジェノヴァ
+florence	1454-04	1801-03	11.25	43.77	0	florence	佛羅倫斯（托斯卡尼）	佛罗伦萨（托斯卡纳）	Florence (Tuscany)	フィレンツェ（トスカーナ）
+siena	1454-04	1555-04	11.33	43.32	0	siena	西恩納	锡耶纳	Siena	シエナ
+rome_p	1454-04	1798-02	12.45	41.9	0	papal	羅馬（教宗國）	罗马（教宗国）	Rome (Papal States)	ローマ（教皇領）
+naples	1454-04	1861-02	14.25	40.85	0	naples	那不勒斯	那不勒斯	Naples	ナポリ
+palermo	1454-04	1735-01	13.36	38.12	0	spain	巴勒莫（西西里總督）	巴勒莫（西西里总督）	Palermo (viceroys of Sicily)	パレルモ（シチリア副王）
+ferrara	1454-04	1598-01	11.62	44.84	0	este	費拉拉（埃斯特家族）	费拉拉（埃斯特家族）	Ferrara (Este)	フェラーラ（エステ家）
+modena	1598-01	1796-10	10.93	44.65	0	este	摩德納（埃斯特家族）	摩德纳（埃斯特家族）	Modena (Este)	モデナ（エステ家）
+mantua	1454-04	1708-07	10.79	45.16	0	mantua	曼托瓦（貢扎加家族）	曼托瓦（贡扎加家族）	Mantua (Gonzaga)	マントヴァ（ゴンザーガ家）
+parma	1545-08	1802-10	10.33	44.8	0	parma	帕爾馬	帕尔马	Parma	パルマ
+valletta	1571-01	1798-06	14.51	35.9	0	hospitallers	瓦萊塔（醫院騎士團）	瓦莱塔（医院骑士团）	Valletta (Knights Hospitaller)	バレッタ（聖ヨハネ騎士団）
+rome_p2	1799-09	1809-05	12.45	41.9	0	papal	羅馬（教宗國）	罗马（教宗国）	Rome (Papal States)	ローマ（教皇領）
+rome_p3	1814-05	1870-09	12.45	41.9	0	papal	羅馬（教宗國）	罗马（教宗国）	Rome (Papal States)	ローマ（教皇領）
+modena2	1814-04	1859-06	10.93	44.65	0	este	摩德納（奧地利—埃斯特）	摩德纳（奥地利—埃斯特）	Modena (Austria-Este)	モデナ（オーストリア＝エステ家）
+parma2	1814-04	1859-06	10.33	44.8	0	parma	帕爾馬	帕尔马	Parma	パルマ
+cagliari	1798-12	1814-05	9.11	39.22	0	savoy	卡利亞里（薩丁尼亞王國流亡宮廷）	卡利亚里（萨丁尼亚王国流亡宫廷）	Cagliari (Sardinian court in exile)	カリャリ（サルデーニャ王国の亡命宮廷）
+turin2	1814-05	1861-02	7.69	45.07	0	savoy	杜林（薩丁尼亞王國）	都灵（萨丁尼亚王国）	Turin (Kingdom of Sardinia)	トリノ（サルデーニャ王国）

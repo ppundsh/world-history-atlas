@@ -1,0 +1,49 @@
+# korea：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
+sui612	612-03	612-07	#7f1d1d	3	123.0,41.5 124.6,40.0 125.6,39.6	隋煬帝伐高句麗（薩水之戰）	Sui invasion of Goguryeo (the Salsu)	隋の高句麗遠征（薩水）
+tang660	660-07	660-08	#7f1d1d	3	122.0,37.4 126.1,36.4 126.91,36.28	唐軍渡海攻百濟	Tang crosses the sea against Baekje	唐軍が百済へ
+silla660	660-07	660-08	#a16207	2	129.21,35.84 127.9,36.1 126.91,36.28	新羅軍攻百濟	Silla attacks Baekje	新羅が百済へ
+mongol1231	1231-08	1232-07	#7f1d1d	3	124.53,40.2 125.7,39.0 126.55,37.97	蒙古入侵高麗	Mongol invasion of Goryeo	モンゴルの高麗侵攻
+imjin_k	1592-05	1592-07	#111827	3	129.04,35.1 128.6,35.87 127.93,36.99 126.98,37.57 125.75,39.02	壬辰倭亂：日軍北上	Imjin War: Japan advances north	壬辰倭乱：日本軍の北上
+ming1593	1593-01	1593-02	#b91c1c	2	124.53,40.2 125.75,39.02 126.98,37.57	明軍援朝，收復平壤	Ming relief army retakes Pyongyang	明軍の援軍、平壌奪回
+kw_north	1950-06	1950-08	#dc2626	3	126.98,38.0 126.98,37.57 127.38,36.35 128.4,35.9	韓戰：北韓軍南下至洛東江	Korean War: the North drives to the Naktong	朝鮮戦争：北朝鮮軍が洛東江まで南下
+kw_un	1950-09	1950-11	#1d4ed8	3	126.6,37.45 126.98,37.57 125.75,39.02 124.6,40.0	仁川登陸，聯軍北進	Incheon landing and the UN drive north	仁川上陸、国連軍の北進
+kw_china	1950-10	1951-01	#b91c1c	3	124.4,40.1 125.75,39.02 126.98,37.57 127.2,37.2	志願軍參戰南下	Chinese intervention and advance south	中国人民志願軍の参戦
+gwanggaeto396	0396-01	0396-12	#7c2d12	3	126.18,41.13 125.75,39.02 126.6,38.0 127.1,37.52	廣開土王南征百濟，攻至漢城	Gwanggaeto marches south against Baekje to Hanseong	広開土王の百済遠征
+gwanggaeto400	0400-01	0400-12	#7c2d12	2	125.75,39.02 127.5,37.0 129.22,35.84 128.88,35.23	廣開土王出兵救新羅，追擊倭軍至任那加羅	Gwanggaeto sends troops to rescue Silla and pursues the Wa to Gaya	広開土王の新羅救援、倭を任那加羅まで追撃
+jangsu475	0475-09	0475-09	#7c2d12	3	125.75,39.02 126.6,38.0 127.1,37.52	長壽王攻陷百濟漢城	King Jangsu takes Baekje's Hanseong	長寿王が百済の漢城を攻略
+baekje475	0475-10	0475-12	#1d4ed8	2	127.1,37.52 127.1,37.0 127.12,36.46	百濟南遷熊津	Baekje moves south to Ungjin	百済が熊津へ南遷
+jinheung	0553-07	0568-12	#b45309	3	129.22,35.84 128.2,36.4 127.1,37.52 127.6,38.4 128.6,40.0	新羅真興王拓境：取漢江流域，北至黃草嶺	King Jinheung expands Silla to the Han River and north to Hwangchoryeong	新羅真興王の拓境：漢江流域から黄草嶺へ
+li_ji668	0668-07	0668-10	#991b1b	3	122.9,40.6 124.4,40.1 125.75,39.02	唐將李勣攻陷平壤，高句麗亡	Tang general Li Ji takes Pyongyang: the end of Goguryeo	唐の李勣が平壌を攻略、高句麗滅亡
+balhae698	0696-05	0698-12	#4c1d95	2	120.45,41.57 124.0,42.5 128.6,43.3	大祚榮率眾東走，建震國（渤海）	Dae Joyeong leads his people east and founds Balhae	大祚栄が東走し震国（渤海）を建国
+wanggeon936	0936-09	0936-09	#1e40af	3	126.55,37.97 127.15,36.81 128.3,36.2 127.15,35.82	王建統一後三國：一利川之戰後收後百濟	Wang Geon unites the Later Three Kingdoms after Illicheon	王建の後三国統一：一利川の戦いを経て後百済を併合
+khitan993	0993-10	0993-12	#065f46	2	124.4,40.1 125.0,39.9 125.7,39.8	契丹第一次入侵，徐熙談判	First Khitan invasion; Seo Hui negotiates	第一次契丹侵入、徐熙の談判
+khitan1018	1018-12	1019-02	#065f46	3	124.4,40.1 125.7,39.6 126.55,37.97 125.25,39.95	契丹第三次入侵，姜邯贊龜州大捷	Third Khitan invasion; Gang Gam-chan wins at Kwiju	第三次契丹侵入、姜邯賛の亀州大捷
+yungwan1107	1107-12	1108-04	#1e40af	2	127.53,39.92 128.5,40.6	尹瓘出兵東北，築九城	Yun Gwan campaigns in the northeast and builds nine forts	尹瓘の東北遠征と九城
+sambyeolcho	1270-06	1273-04	#7c2d12	3	126.48,37.75 126.26,34.48 126.53,33.5	三別抄抗蒙：江華→珍島→濟州	The Sambyeolcho resist the Mongols: Ganghwa, Jindo, Jeju	三別抄の抗戦：江華→珍島→済州
+yuan1274	1274-10	1274-11	#065f46	3	128.68,35.13 129.3,34.3 130.4,33.6	元麗聯軍自合浦出征日本	The Mongol–Goryeo fleet sails from Happo against Japan	元・高麗連合軍が合浦から日本へ出征
+wihwa1388	1388-05	1388-06	#1e3a8a	3	124.4,40.05 125.75,39.02 126.55,37.97	李成桂威化島回軍，進入開京	Yi Seong-gye turns back at Wihwa Island and enters Kaegyong	李成桂の威化島回軍と開京入城
+hwangsan1380	1380-08	1380-09	#1e3a8a	2	127.15,35.82 127.6,35.4	荒山大捷：李成桂擊破倭寇	Battle of Hwangsan: Yi Seong-gye defeats the pirates	荒山大捷：李成桂が倭寇を撃破
+tsushima1419	1419-06	1419-07	#1e3a8a	2	128.6,34.85 129.3,34.3	己亥東征：自巨濟出兵對馬	The expedition to Tsushima from Geoje	己亥東征：巨済から対馬へ
+kato1592	1592-05	1592-08	#111827	3	129.04,35.1 129.22,35.84 128.6,35.87 127.98,36.98 126.98,37.57 127.4,39.9 129.7,41.8	壬辰倭亂：加藤清正第二軍北上至咸鏡道	Katō Kiyomasa's 2nd Division marches north to Hamgyong	加藤清正の第二軍が咸鏡道まで北上
+konishi1592	1592-05	1592-07	#111827	3	129.04,35.1 128.6,35.87 128.16,36.41 127.93,36.99 126.98,37.57 126.55,37.97 125.75,39.02	壬辰倭亂：小西行長第一軍北上攻陷平壤	Konishi Yukinaga's 1st Division takes Pyongyang	小西行長の第一軍が平壌を攻略
+yisunsin1592	1592-06	1592-08	#1e3a8a	3	127.73,34.74 128.07,34.7 128.3,34.85 128.45,34.78	李舜臣艦隊：自麗水出擊，玉浦、閑山島大捷	Yi Sun-sin's fleet sails from Yeosu: Okpo and Hansan Island	李舜臣艦隊：麗水から玉浦・閑山島へ
+seonjo1592	1592-06	1592-07	#1e3a8a	2	126.98,37.57 126.55,37.97 125.75,39.02 124.4,40.1	宣祖北逃至義州	King Seonjo flees north to Uiju	宣祖の義州への避難
+qing1636	1636-12	1637-01	#991b1b	3	124.4,40.1 125.75,39.02 126.98,37.57 127.18,37.48	丙子胡亂：清軍直撲漢城，圍南漢山城	The Manchu army drives on Hanseong and besieges Namhansanseong	丙子胡乱：清軍が漢城へ、南漢山城を包囲
+injo1636	1636-12	1636-12	#1e3a8a	2	126.98,37.57 127.18,37.48	仁祖退守南漢山城	King Injo withdraws to Namhansanseong	仁祖が南漢山城に籠城
+france1866	1866-10	1866-11	#1e40af	2	121.4,37.5 124.5,37.6 126.48,37.75	丙寅洋擾：法國艦隊自芝罘攻江華島	The French fleet sails from Chefoo against Ganghwa	丙寅洋擾：フランス艦隊が芝罘から江華島へ
+us1871	1871-05	1871-06	#1e40af	2	129.87,32.75 126.0,35.0 126.52,37.67	辛未洋擾：美國艦隊自長崎攻江華島	The US fleet sails from Nagasaki against Ganghwa	辛未洋擾：米艦隊が長崎から江華島へ
+donghak1894	1894-02	1894-11	#7c2d12	3	126.88,35.73 127.15,35.82 127.1,36.46	東學農民軍：古阜起事，攻佔全州，北上至公州牛禁峙敗退	The Donghak army rises at Gobu, takes Jeonju and is beaten at Ugeumchi	東学農民軍：古阜から全州、公州牛禁峠で敗北
+japan1894	1894-06	1894-09	#111827	3	126.63,37.47 126.98,37.57 126.55,37.97 125.75,39.02	甲午戰爭：日軍仁川登陸，北上攻平壤	First Sino-Japanese War: Japanese troops land at Incheon and take Pyongyang	日清戦争：日本軍が仁川に上陸し平壌へ
+japan1904	1904-02	1904-05	#111827	3	126.63,37.47 126.98,37.57 125.75,39.02 124.4,40.1	日俄戰爭：日軍仁川登陸，北進鴨綠江	Russo-Japanese War: from Incheon to the Yalu	日露戦争：仁川上陸から鴨緑江へ
+uibyeong1908	1907-12	1908-01	#7c2d12	2	127.95,37.34 127.6,37.5 127.2,37.6	十三道倡義軍進攻漢城	The Righteous Armies of the Thirteen Provinces march on Seoul	十三道倡義軍の漢城進攻
+kpg1919	1919-04	1940-09	#1d4ed8	2	121.47,31.23 120.16,30.27 119.45,32.2 112.98,28.2 113.26,23.13 109.4,24.3 106.66,29.03 106.55,29.56	大韓民國臨時政府輾轉遷移：上海→杭州→鎮江→長沙→廣州→柳州→綦江→重慶	The Provisional Government's wanderings: Shanghai to Chongqing	大韓民国臨時政府の移転：上海から重慶へ
+soviet1945	1945-08	1945-08	#b91c1c	3	130.4,42.3 129.77,41.8 127.53,39.92 125.75,39.02	蘇軍進入朝鮮北部：雄基→清津→咸興→平壤	Soviet troops enter northern Korea: Unggi, Chongjin, Hamhung, Pyongyang	ソ連軍の北朝鮮進駐：雄基→清津→咸興→平壌
+us1945	1945-09	1945-09	#1d4ed8	3	127.0,34.0 126.63,37.47 126.98,37.57	美軍第二十四軍仁川登陸，進駐漢城	The US XXIV Corps lands at Incheon and enters Seoul	米第 24 軍団が仁川に上陸し京城へ進駐
+kw_east	1950-06	1950-08	#b91c1c	2	128.6,38.4 129.0,37.4 129.36,36.03	韓戰：北韓軍沿東海岸南下至浦項	Korean War: the KPA drives down the east coast to Pohang	朝鮮戦争：北朝鮮軍が東海岸を南下し浦項へ
+kw_changjin	1950-11	1950-12	#b91c1c	3	126.9,41.0 127.25,40.4 127.5,39.9	長津湖戰役：志願軍南下包圍	Chosin Reservoir: Chinese forces close in	長津湖の戦い：中国軍の南下包囲
+kw_hungnam	1950-12	1950-12	#1d4ed8	3	127.62,39.83 128.6,38.0 129.04,35.1	興南撤退：聯軍與難民海運至釜山	The Hungnam evacuation of troops and refugees to Busan	興南撤収：国連軍と避難民を釜山へ海上輸送
+kw_jan4	1951-01	1951-01	#b91c1c	3	126.98,38.3 126.98,37.57 127.2,37.0	一四後退：志願軍再陷漢城	January Fourth Retreat: Chinese forces take Seoul again	1・4 後退：中国軍がソウルを再占領
+kw_ripper	1951-02	1951-04	#1d4ed8	3	127.2,37.0 126.98,37.57 127.0,38.1	撕裂者作戰：聯軍收復漢城，推至三八線	Operation Ripper: UN forces retake Seoul and reach the 38th parallel	リッパー作戦：国連軍がソウル奪還、38 度線へ
+bluehouse1968	1968-01	1968-01	#b91c1c	2	126.9,38.0 126.97,37.59	北韓特種部隊滲透青瓦台	North Korean commandos infiltrate toward the Blue House	北朝鮮特殊部隊の青瓦台襲撃
+gwangju1980	1980-05	1980-05	#111827	3	126.98,37.57 127.15,36.35 126.85,35.15	五一八：戒嚴軍空降旅開入光州	May 18: martial-law paratroopers are sent to Gwangju	5・18：戒厳軍空挺部隊が光州へ
+vietnam1965	1965-10	1973-03	#1e3a8a	2	129.04,35.1 121.0,22.0 109.2,13.78	韓國派兵越南（猛虎、白馬部隊）	South Korean troops go to Vietnam	韓国軍のベトナム派兵

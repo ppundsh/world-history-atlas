@@ -1,35 +1,109 @@
-# 德國模式：大事記。欄位：年月	繁中	English	日本語
-1648-10	西發里亞和約，三十年戰爭結束	Peace of Westphalia ends the Thirty Years' War	ヴェストファーレン条約、三十年戦争終結
-1663-01	雷根斯堡帝國議會開始常設	The Perpetual Diet opens at Regensburg	レーゲンスブルクで永久帝国議会が始まる
-1701-01	普魯士王國成立	The Kingdom of Prussia is proclaimed	プロイセン王国成立
-1740-12	腓特烈大帝入侵西里西亞	Frederick the Great invades Silesia	フリードリヒ大王のシュレージエン侵攻
-1772-08	第一次瓜分波蘭	First Partition of Poland	第一次ポーランド分割
-1795-10	第三次瓜分波蘭	Third Partition of Poland	第三次ポーランド分割
-1803-02	帝國代表重要決議，教會領地世俗化	The Reichsdeputationshauptschluss secularises the church states	帝国代表者会議主要決議、聖界領の世俗化
-1806-08	神聖羅馬帝國解體，萊茵邦聯成立	The Holy Roman Empire is dissolved; Confederation of the Rhine	神聖ローマ帝国解体、ライン同盟
-1807-07	提爾西特和約，普魯士割地	Treaties of Tilsit: Prussia loses half its land	ティルジットの和約、プロイセンが領土を失う
-1815-06	維也納會議，德意志邦聯成立	Congress of Vienna: the German Confederation	ウィーン会議、ドイツ連邦成立
-1834-01	德意志關稅同盟生效	The Zollverein comes into force	ドイツ関税同盟発足
-1848-05	法蘭克福國民議會	Frankfurt Parliament	フランクフルト国民議会
-1864-02	第二次石勒蘇益格戰爭	Second Schleswig War	第二次シュレースヴィヒ＝ホルシュタイン戦争
-1866-07	普奧戰爭，北德意志邦聯成立	Austro-Prussian War; the North German Confederation	普墺戦争、北ドイツ連邦
-1871-01	德意志帝國在凡爾賽宣布成立	The German Empire is proclaimed at Versailles	ヴェルサイユでドイツ帝国成立
-1914-08	第一次世界大戰	First World War	第一次世界大戦
-1918-11	十一月革命，帝制結束	November Revolution: the monarchy ends	ドイツ革命、帝政の終焉
-1919-06	凡爾賽條約	Treaty of Versailles	ヴェルサイユ条約
-1923-01	法比佔領魯爾區	France and Belgium occupy the Ruhr	ルール占領
-1933-01	希特勒出任總理	Hitler becomes chancellor	ヒトラーが首相に就任
-1935-01	薩爾公投回歸德國	The Saar votes to rejoin Germany	ザール住民投票
-1938-03	德奧合併	Anschluss of Austria	オーストリア併合
-1938-09	慕尼黑協定，蘇台德地區割讓	Munich Agreement: the Sudetenland ceded	ミュンヘン会談、ズデーテン割譲
-1939-09	德國入侵波蘭，第二次世界大戰爆發	Germany invades Poland: the Second World War	ドイツのポーランド侵攻、第二次世界大戦
-1945-05	德國投降，分區佔領	Germany surrenders and is divided into zones	ドイツ降伏、分割占領
-1945-08	波茨坦會議，奧得—尼斯河以東劃歸波蘭與蘇聯	Potsdam: the lands east of the Oder–Neisse go to Poland and the USSR	ポツダム会談、オーデル・ナイセ線以東をポーランド・ソ連へ
-1948-06	柏林封鎖	Berlin Blockade	ベルリン封鎖
-1949-05	德意志聯邦共和國成立	The Federal Republic of Germany is founded	ドイツ連邦共和国成立
-1949-10	德意志民主共和國成立	The German Democratic Republic is founded	ドイツ民主共和国成立
-1953-06	東德六一七起義	Uprising of 17 June in East Germany	東ドイツ 6 月 17 日蜂起
-1961-08	柏林圍牆興建	The Berlin Wall is built	ベルリンの壁建設
-1972-12	兩德基礎條約	Basic Treaty between the two German states	東西ドイツ基本条約
-1989-11	柏林圍牆倒塌	The Berlin Wall falls	ベルリンの壁崩壊
-1990-10	兩德統一	German reunification	ドイツ再統一
+# 德國模式：大事記。欄位：年月	繁中	English	日本語	[經度	緯度]（選填：事件地點，播放經過時在地圖上標出）
+1648-10	西發里亞和約，三十年戰爭結束	Peace of Westphalia ends the Thirty Years' War	ヴェストファーレン条約、三十年戦争終結	7.63	51.96
+1663-01	雷根斯堡帝國議會開始常設	The Perpetual Diet opens at Regensburg	レーゲンスブルクで永久帝国議会が始まる	12.1	49.02
+1685-10	波茨坦敕令，普魯士接納胡格諾派難民	Edict of Potsdam: Brandenburg takes in Huguenot refugees	ポツダム勅令、ユグノー難民を受け入れ	13.06	52.4
+1701-01	普魯士王國成立	The Kingdom of Prussia is proclaimed	プロイセン王国成立	20.51	54.71
+1740-12	腓特烈大帝入侵西里西亞	Frederick the Great invades Silesia	フリードリヒ大王のシュレージエン侵攻	17.03	51.11
+1740-12	腓特烈二世入侵西里西亞	Frederick II invades Silesia	フリードリヒ 2 世のシュレージエン侵攻	17.03	51.11
+1756-08	七年戰爭：普魯士入侵薩克森	Seven Years' War: Prussia invades Saxony	七年戦争：プロイセンのザクセン侵攻	13.74	51.05
+1757-11	羅斯巴赫戰役	Battle of Rossbach	ロスバッハの戦い	11.93	51.25
+1763-02	胡貝圖斯堡和約，普魯士保有西里西亞	Treaty of Hubertusburg: Prussia keeps Silesia	フベルトゥスブルク条約、プロイセンがシュレージエンを保持	12.96	51.33
+1772-08	第一次瓜分波蘭	First Partition of Poland	第一次ポーランド分割	18.6	54.0
+1795-10	第三次瓜分波蘭	Third Partition of Poland	第三次ポーランド分割	21.01	52.23
+1803-02	帝國代表重要決議，教會領地世俗化	The Reichsdeputationshauptschluss secularises the church states	帝国代表者会議主要決議、聖界領の世俗化	12.1	49.02
+1806-08	神聖羅馬帝國解體，萊茵邦聯成立	The Holy Roman Empire is dissolved; Confederation of the Rhine	神聖ローマ帝国解体、ライン同盟	16.37	48.21
+1806-10	耶拿—奧爾施泰特會戰，普魯士大敗	Battles of Jena and Auerstedt: Prussia crushed	イエナ・アウエルシュテットの戦い	11.59	50.93
+1807-07	提爾西特和約，普魯士割地	Treaties of Tilsit: Prussia loses half its land	ティルジットの和約、プロイセンが領土を失う	21.87	55.08
+1810-10	柏林大學（洪堡大學）創立	The University of Berlin (Humboldt University) is founded	ベルリン大学（フンボルト大学）創立	13.39	52.52
+1813-10	萊比錫戰役	Battle of Leipzig	ライプツィヒの戦い	12.37	51.34
+1815-06	維也納會議，德意志邦聯成立	Congress of Vienna: the German Confederation	ウィーン会議、ドイツ連邦成立	16.37	48.21
+1817-10	瓦爾特堡節	Wartburg Festival	ヴァルトブルク祭	10.32	50.97
+1819-09	卡爾斯巴德決議，壓制自由主義	The Carlsbad Decrees curb liberalism	カールスバート決議	12.87	50.23
+1832-05	漢巴赫節	Hambach Festival	ハンバッハ祭	8.13	49.33
+1834-01	德意志關稅同盟生效	The Zollverein comes into force	ドイツ関税同盟発足	13.4	52.52
+1848-03	柏林三月革命	March Revolution in Berlin	ベルリン三月革命	13.4	52.52
+1848-05	法蘭克福國民議會	Frankfurt Parliament	フランクフルト国民議会	8.68	50.11
+1862-09	俾斯麥出任普魯士首相，「鐵血演說」	Bismarck becomes minister-president: the "blood and iron" speech	ビスマルクがプロイセン首相に、鉄血演説	13.39	52.52
+1864-02	第二次石勒蘇益格戰爭	Second Schleswig War	第二次シュレースヴィヒ＝ホルシュタイン戦争	9.55	54.9
+1866-07	普奧戰爭，北德意志邦聯成立	Austro-Prussian War; the North German Confederation	普墺戦争、北ドイツ連邦	15.83	50.21
+1867-07	北德意志邦聯成立	The North German Confederation is formed	北ドイツ連邦の成立	13.39	52.52
+1870-07	普法戰爭	Franco-Prussian War	普仏戦争	7.0	49.2
+1871-01	德意志帝國在凡爾賽宣布成立	The German Empire is proclaimed at Versailles	ヴェルサイユでドイツ帝国成立	2.12	48.8
+1878-10	反社會主義者法	Anti-Socialist Laws	社会主義者鎮圧法	13.39	52.52
+1883-06	俾斯麥社會保險立法	Bismarck's social insurance laws	ビスマルクの社会保険立法	13.39	52.52
+1884-11	柏林會議（瓜分非洲）	Berlin Conference on Africa	ベルリン会議（アフリカ分割）	13.38	52.51
+1888-06	三帝之年，威廉二世即位	Year of the Three Emperors: Wilhelm II takes the throne	三皇帝の年、ヴィルヘルム 2 世即位	13.39	52.52
+1890-03	俾斯麥下台	Bismarck is dismissed	ビスマルク辞任	13.39	52.52
+1900-01	《德國民法典》施行	The German Civil Code takes effect	ドイツ民法典の施行	13.39	52.52
+1914-08	第一次世界大戰	First World War	第一次世界大戦	13.4	52.52
+1918-11	十一月革命，帝制結束	November Revolution: the monarchy ends	ドイツ革命、帝政の終焉	13.4	52.52
+1918-11	基爾水兵起義	Kiel mutiny	キール軍港の水兵反乱	10.13	54.32
+1919-06	凡爾賽條約	Treaty of Versailles	ヴェルサイユ条約	2.12	48.8
+1919-08	威瑪憲法	Weimar Constitution	ヴァイマル憲法	11.33	50.98
+1920-03	卡普政變	Kapp Putsch	カップ一揆	13.38	52.52
+1922-06	外長拉特瑙遇刺	Foreign Minister Walther Rathenau assassinated	ラーテナウ外相暗殺	13.29	52.49
+1923-01	法比佔領魯爾區	France and Belgium occupy the Ruhr	ルール占領	7.0	51.45
+1923-11	啤酒館政變	Beer Hall Putsch	ミュンヘン一揆	11.58	48.14
+1923-11	惡性通貨膨脹，發行地租馬克	Hyperinflation; the Rentenmark is introduced	ハイパーインフレ、レンテンマルク発行	13.39	52.52
+1925-12	羅加諾公約	Locarno Treaties	ロカルノ条約	8.79	46.17
+1933-01	希特勒出任總理	Hitler becomes chancellor	ヒトラーが首相に就任	13.38	52.51
+1933-02	國會縱火案	Reichstag fire	国会議事堂放火事件	13.38	52.52
+1933-03	授權法	Enabling Act	全権委任法	13.38	52.52
+1934-06	長刀之夜	Night of the Long Knives	長いナイフの夜	11.58	48.14
+1935-01	薩爾公投回歸德國	The Saar votes to rejoin Germany	ザール住民投票	7.0	49.23
+1935-09	紐倫堡法案	Nuremberg Laws	ニュルンベルク法	11.08	49.45
+1936-03	德軍進駐萊茵蘭	Remilitarization of the Rhineland	ラインラント進駐	6.96	50.94
+1936-08	柏林奧運	Berlin Olympics	ベルリンオリンピック	13.24	52.51
+1938-03	德奧合併	Anschluss of Austria	オーストリア併合	16.37	48.21
+1938-09	慕尼黑協定，蘇台德地區割讓	Munich Agreement: the Sudetenland ceded	ミュンヘン会談、ズデーテン割譲	11.58	48.14
+1938-11	水晶之夜	Kristallnacht	水晶の夜	13.4	52.52
+1939-09	德國入侵波蘭，第二次世界大戰爆發	Germany invades Poland: the Second World War	ドイツのポーランド侵攻、第二次世界大戦	18.67	54.41
+1942-01	萬湖會議	Wannsee Conference	ヴァンゼー会議	13.16	52.43
+1943-07	漢堡大轟炸	Bombing of Hamburg	ハンブルク空襲	10.0	53.55
+1944-07	七二〇刺殺希特勒事件	20 July plot	ヒトラー暗殺未遂事件	13.37	52.51
+1945-02	德勒斯登轟炸	Bombing of Dresden	ドレスデン爆撃	13.74	51.05
+1945-04	柏林戰役	Battle of Berlin	ベルリンの戦い	13.4	52.52
+1945-04	易北河會師（托爾高）	Elbe Day at Torgau	エルベの誓い（トルガウ）	13.0	51.56
+1945-05	德國投降，分區佔領	Germany surrenders and is divided into zones	ドイツ降伏、分割占領	13.38	52.51
+1945-08	波茨坦會議，奧得—尼斯河以東劃歸波蘭與蘇聯	Potsdam: the lands east of the Oder–Neisse go to Poland and the USSR	ポツダム会談、オーデル・ナイセ線以東をポーランド・ソ連へ	13.06	52.39
+1945-11	紐倫堡審判	Nuremberg trials	ニュルンベルク裁判	11.05	49.45
+1948-06	柏林封鎖	Berlin Blockade	ベルリン封鎖	13.4	52.52
+1948-06	西部佔領區貨幣改革，德國馬克	Currency reform in the west: the Deutsche Mark	西側占領地区の通貨改革（ドイツマルク）	8.68	50.11
+1949-05	德意志聯邦共和國成立	The Federal Republic of Germany is founded	ドイツ連邦共和国成立	7.1	50.73
+1949-05	柏林空運結束	The Berlin Airlift ends	ベルリン大空輸の終了	13.4	52.47
+1949-10	德意志民主共和國成立	The German Democratic Republic is founded	ドイツ民主共和国成立	13.4	52.52
+1951-04	歐洲煤鋼共同體	European Coal and Steel Community	欧州石炭鉄鋼共同体	6.13	49.61
+1953-06	東德六一七起義	Uprising of 17 June in East Germany	東ドイツ 6 月 17 日蜂起	13.4	52.52
+1955-05	西德加入北約	West Germany joins NATO	西ドイツが NATO に加盟	7.1	50.73
+1957-01	薩爾併入聯邦德國	The Saarland joins West Germany	ザールラントが西ドイツに編入	7.0	49.23
+1957-02	西德首座研究用核反應爐（加興）運轉	West Germany's first research reactor, Garching, starts	ガルヒング研究炉が運転開始	11.65	48.27
+1961-08	柏林圍牆興建	The Berlin Wall is built	ベルリンの壁建設	13.38	52.51
+1961-10	西德與土耳其簽訂客籍勞工協議	West Germany signs its guest-worker agreement with Turkey	西ドイツとトルコが外国人労働者協定	7.1	50.73
+1963-01	《愛麗舍條約》德法和解	Élysée Treaty: French–German reconciliation	エリゼ条約	2.32	48.87
+1963-06	甘迺迪柏林演說「我是柏林人」	Kennedy's "Ich bin ein Berliner" speech	ケネディの「私はベルリン市民だ」演説	13.34	52.48
+1967-06	歐內索格之死，學運激化	Death of Benno Ohnesorg sparks the student movement	オーネゾルク射殺事件	13.31	52.5
+1968-04	西德學生運動	West German student movement	ドイツ学生運動	13.39	52.52
+1970-12	布蘭特華沙之跪	Brandt's Warsaw Genuflection	ワルシャワでのブラントの跪き	21.0	52.25
+1972-09	慕尼黑奧運恐怖攻擊	Munich Olympics massacre	ミュンヘンオリンピック事件	11.55	48.17
+1972-12	兩德基礎條約	Basic Treaty between the two German states	東西ドイツ基本条約	13.4	52.52
+1974-05	紀堯姆間諜案，布蘭特辭職	The Guillaume spy affair: Brandt resigns	ギヨーム事件、ブラント辞任	7.1	50.73
+1977-09	德意志之秋（紅軍派）	German Autumn (Red Army Faction)	ドイツの秋（赤軍派）	6.96	50.94
+1983-10	反部署潘興飛彈示威	Protests against Pershing II missiles	パーシング II 配備反対デモ	9.8	48.8
+1989-09	匈牙利開放邊境；布拉格使館東德難民	Hungary opens its border; East Germans in the Prague embassy	ハンガリー国境開放、プラハ大使館の東独難民	14.4	50.09
+1989-10	萊比錫週一示威	Monday demonstrations in Leipzig	ライプツィヒの月曜デモ	12.37	51.34
+1989-11	柏林圍牆倒塌	The Berlin Wall falls	ベルリンの壁崩壊	13.38	52.51
+1990-07	兩德貨幣、經濟與社會聯盟	Monetary, economic and social union of the two Germanies	両独の通貨・経済・社会同盟	13.39	52.52
+1990-10	兩德統一	German reunification	ドイツ再統一	13.38	52.51
+1994-09	盟軍與俄軍撤出柏林	Allied and Russian troops leave Berlin	連合軍とロシア軍がベルリンから撤退	13.4	52.52
+1998-10	施若德與紅綠聯合政府	Schröder's red–green coalition	シュレーダーの赤緑連立	13.38	52.52
+1999-04	聯邦議院遷回柏林國會大廈	The Bundestag moves into the Reichstag in Berlin	連邦議会がベルリンの帝国議会議事堂へ移転	13.38	52.52
+2002-01	歐元流通	The euro enters circulation	ユーロ紙幣・硬貨の流通開始	8.68	50.11
+2005-11	梅克爾出任總理	Angela Merkel becomes chancellor	メルケルが首相に就任	13.38	52.52
+2006-06	德國世界盃足球賽	2006 FIFA World Cup in Germany	ドイツ・ワールドカップ	13.24	52.51
+2011-06	決議 2022 年前廢核	Decision to leave nuclear power by 2022	2022 年までの脱原発を決定	13.38	52.52
+2015-09	難民危機，德國開放邊境	Refugee crisis: Germany opens its border	難民危機、ドイツが国境を開放	11.58	48.14
+2020-10	柏林布蘭登堡機場啟用	Berlin Brandenburg Airport opens	ベルリン・ブランデンブルク空港開港	13.5	52.37
+2021-12	蕭茲出任總理	Olaf Scholz becomes chancellor	ショルツが首相に就任	13.38	52.52
+2022-02	「時代轉折」演說，重整國防	The "Zeitenwende" speech	「時代の転換点」演説	13.38	52.52
+2023-04	最後三座核電廠停機	The last three nuclear plants shut down	最後の原発 3 基が停止	9.41	53.85
+2025-05	梅爾茨出任總理	Friedrich Merz becomes chancellor	メルツが首相に就任	13.38	52.52

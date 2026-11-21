@@ -1,42 +1,136 @@
-# 俄羅斯模式：大事記。欄位：年月	繁中	English	日本語
-0862-01	留里克在諾夫哥羅德建立統治	Rurik begins to rule in Novgorod	リューリクがノヴゴロドで支配を始める
-0882-01	奧列格佔領基輔，建立基輔羅斯	Oleg takes Kiev: Kievan Rus'	オレグがキエフを占領、キエフ・ルーシ成立
-0965-01	斯維亞托斯拉夫擊潰可薩汗國	Sviatoslav destroys the Khazar Khaganate	スヴャトスラフがハザールを撃破
-0988-01	弗拉基米爾一世受洗	Vladimir I adopts Christianity	ウラジーミル1世の受洗
-1132-04	基輔羅斯分裂為諸公國	Kievan Rus' breaks into principalities	キエフ・ルーシの分裂
-1240-12	蒙古攻陷基輔	The Mongols sack Kiev	モンゴルがキエフを陥落させる
-1242-04	冰湖之戰	Battle on the Ice	氷上の戦い
-1380-09	庫利科沃戰役	Battle of Kulikovo	クリコヴォの戦い
-1480-11	烏格拉河對峙，擺脫蒙古統治	Great Stand on the Ugra: end of Horde rule	ウグラ河畔の対峙、タタールのくびき終わる
-1547-01	伊凡四世加冕為沙皇	Ivan IV crowned tsar	イヴァン4世がツァーリに戴冠
-1552-10	攻陷喀山	Conquest of Kazan	カザン征服
-1582-10	葉爾馬克遠征西伯利亞汗國	Yermak's campaign against Sibir	イェルマークのシビル遠征
-1613-02	羅曼諾夫王朝建立	The Romanov dynasty begins	ロマノフ朝の成立
-1654-01	佩列亞斯拉夫協議	Pereiaslav Agreement with the Cossack Hetmanate	ペレヤスラフ協定
-1689-08	尼布楚條約	Treaty of Nerchinsk	ネルチンスク条約
-1721-11	彼得一世稱帝，建立俄羅斯帝國	Peter I proclaims the Russian Empire	ピョートル1世が皇帝を称し、ロシア帝国成立
-1783-04	兼併克里米亞汗國	Annexation of the Crimean Khanate	クリミア・ハン国を併合
-1795-10	第三次瓜分波蘭	Third Partition of Poland	第三次ポーランド分割
-1812-09	拿破崙入侵莫斯科	Napoleon reaches Moscow	ナポレオンのモスクワ侵攻
-1858-05	璦琿條約	Treaty of Aigun	アイグン条約
-1860-11	北京條約，取得濱海地區	Convention of Peking: Primorye	北京条約、沿海州獲得
-1867-10	出售阿拉斯加	Sale of Alaska	アラスカ売却
-1905-09	日俄戰爭結束，南樺太割讓日本	End of the Russo-Japanese War: southern Sakhalin to Japan	日露戦争終結、南樺太を日本に割譲
-1917-03	二月革命，帝制結束	February Revolution: end of the monarchy	二月革命、帝政崩壊
-1917-11	十月革命	October Revolution	十月革命
-1918-03	布列斯特—立陶夫斯克條約	Treaty of Brest-Litovsk	ブレスト＝リトフスク条約
-1922-12	蘇聯成立	The Soviet Union is founded	ソビエト連邦成立
-1939-09	蘇聯入侵波蘭	Soviet invasion of Poland	ソ連のポーランド侵攻
-1941-06	德國入侵蘇聯	Germany invades the Soviet Union	独ソ戦開始
-1943-02	史達林格勒戰役結束	Battle of Stalingrad ends	スターリングラード攻防戦終結
-1945-05	歐戰結束	Victory in Europe	ヨーロッパでの終戦
-1954-02	克里米亞移交烏克蘭	Crimea transferred to the Ukrainian SSR	クリミアをウクライナ共和国に移管
-1991-12	蘇聯解體	Dissolution of the Soviet Union	ソ連崩壊
-1994-12	第一次車臣戰爭	First Chechen War	第一次チェチェン紛争
-1999-10	第二次車臣戰爭	Second Chechen War	第二次チェチェン紛争
-2008-08	俄喬戰爭	Russo-Georgian War	ロシア・ジョージア戦争
-2014-03	俄羅斯兼併克里米亞	Russia annexes Crimea	ロシアがクリミアを併合
-2014-04	頓巴斯戰爭爆發	War in Donbas begins	ドンバス戦争勃発
-2022-02	俄羅斯全面入侵烏克蘭	Russia invades Ukraine	ロシアのウクライナ全面侵攻
-2022-09	烏克蘭哈爾科夫反攻	Ukraine's Kharkiv counter-offensive	ウクライナのハルキウ反攻
-2022-11	烏克蘭收復赫爾松	Ukraine retakes Kherson	ウクライナがヘルソンを奪還
+# 俄羅斯模式：大事記。欄位：年月	繁中	English	日本語	[經度	緯度]（選填：事件地點，播放經過時在地圖上標出）
+0862-01	留里克在諾夫哥羅德建立統治	Rurik begins to rule in Novgorod	リューリクがノヴゴロドで支配を始める	31.27	58.52
+0882-01	奧列格佔領基輔，建立基輔羅斯	Oleg takes Kiev: Kievan Rus'	オレグがキエフを占領、キエフ・ルーシ成立	30.52	50.45
+0965-01	斯維亞托斯拉夫擊潰可薩汗國	Sviatoslav destroys the Khazar Khaganate	スヴャトスラフがハザールを撃破	47.5	46.6
+0988-01	弗拉基米爾一世受洗	Vladimir I adopts Christianity	ウラジーミル1世の受洗	30.52	50.45
+1132-04	基輔羅斯分裂為諸公國	Kievan Rus' breaks into principalities	キエフ・ルーシの分裂	30.52	50.45
+1240-12	蒙古攻陷基輔	The Mongols sack Kiev	モンゴルがキエフを陥落させる	30.52	50.45
+1242-04	冰湖之戰	Battle on the Ice	氷上の戦い	27.6	58.7
+1380-09	庫利科沃戰役	Battle of Kulikovo	クリコヴォの戦い	38.66	53.66
+1480-11	烏格拉河對峙，擺脫蒙古統治	Great Stand on the Ugra: end of Horde rule	ウグラ河畔の対峙、タタールのくびき終わる	35.8	54.4
+1547-01	伊凡四世加冕為沙皇	Ivan IV crowned tsar	イヴァン4世がツァーリに戴冠	37.62	55.75
+1552-10	攻陷喀山	Conquest of Kazan	カザン征服	49.11	55.79
+1582-10	葉爾馬克遠征西伯利亞汗國	Yermak's campaign against Sibir	イェルマークのシビル遠征	68.3	58.2
+1613-02	羅曼諾夫王朝建立	The Romanov dynasty begins	ロマノフ朝の成立	37.62	55.75
+1654-01	佩列亞斯拉夫協議	Pereiaslav Agreement with the Cossack Hetmanate	ペレヤスラフ協定	31.45	50.07
+1670-04	拉辛起義	Stenka Razin rebellion	ステンカ・ラージンの乱	44.5	48.7
+1689-08	尼布楚條約	Treaty of Nerchinsk	ネルチンスク条約	116.52	51.98
+1703-05	彼得一世建聖彼得堡	Peter I founds Saint Petersburg	ピョートル 1 世がサンクトペテルブルクを建設	30.31	59.94
+1721-11	彼得一世稱帝，建立俄羅斯帝國	Peter I proclaims the Russian Empire	ピョートル1世が皇帝を称し、ロシア帝国成立	30.31	59.94
+1755-05	莫斯科大學創立	Moscow University founded	モスクワ大学創立	37.62	55.75
+1773-09	普加喬夫起義	Pugachev's Rebellion	プガチョフの乱	51.37	51.23
+1783-04	兼併克里米亞汗國	Annexation of the Crimean Khanate	クリミア・ハン国を併合	34.1	44.95
+1795-10	第三次瓜分波蘭	Third Partition of Poland	第三次ポーランド分割	21.01	52.23
+1812-09	拿破崙入侵莫斯科	Napoleon reaches Moscow	ナポレオンのモスクワ侵攻	37.62	55.75
+1825-12	十二月黨人起義	Decembrist revolt	デカブリストの乱	30.3	59.93
+1858-05	璦琿條約	Treaty of Aigun	アイグン条約	127.48	50.25
+1860-11	北京條約，取得濱海地區	Convention of Peking: Primorye	北京条約、沿海州獲得	116.39	39.9
+1861-03	廢除農奴制	Emancipation of the serfs	農奴解放令	30.31	59.94
+1867-10	出售阿拉斯加	Sale of Alaska	アラスカ売却	-135.34	57.05
+1881-03	亞歷山大二世遇刺	Alexander II assassinated	アレクサンドル 2 世暗殺	30.33	59.94
+1891-05	西伯利亞鐵路動工	Construction of the Trans-Siberian Railway begins	シベリア鉄道着工	131.89	43.12
+1905-01	血腥星期日	Bloody Sunday	血の日曜日事件	30.31	59.94
+1905-09	日俄戰爭結束，南樺太割讓日本	End of the Russo-Japanese War: southern Sakhalin to Japan	日露戦争終結、南樺太を日本に割譲	-70.76	43.07
+1917-03	二月革命，帝制結束	February Revolution: end of the monarchy	二月革命、帝政崩壊	30.31	59.94
+1917-11	十月革命	October Revolution	十月革命	30.31	59.94
+1918-03	布列斯特—立陶夫斯克條約	Treaty of Brest-Litovsk	ブレスト＝リトフスク条約	23.69	52.1
+1921-03	喀琅施塔得起義	Kronstadt rebellion	クロンシュタットの反乱	29.77	59.99
+1922-12	蘇聯成立	The Soviet Union is founded	ソビエト連邦成立	37.62	55.75
+1928-10	第一個五年計畫	First Five-Year Plan	第一次五か年計画	37.62	55.75
+1932-11	烏克蘭大饑荒	Holodomor	ホロドモール	36.23	49.99
+1937-08	大清洗高峰	Height of the Great Purge	大粛清の最盛期	37.62	55.75
+1939-09	蘇聯入侵波蘭	Soviet invasion of Poland	ソ連のポーランド侵攻	23.7	52.1
+1941-06	德國入侵蘇聯	Germany invades the Soviet Union	独ソ戦開始	23.7	52.1
+1941-09	列寧格勒圍城	Siege of Leningrad	レニングラード包囲戦	30.31	59.94
+1943-02	史達林格勒戰役結束	Battle of Stalingrad ends	スターリングラード攻防戦終結	44.5	48.7
+1945-05	歐戰結束	Victory in Europe	ヨーロッパでの終戦	13.38	52.51
+1954-02	克里米亞移交烏克蘭	Crimea transferred to the Ukrainian SSR	クリミアをウクライナ共和国に移管	34.1	44.95
+1956-02	赫魯雪夫秘密報告	Khrushchev's Secret Speech	フルシチョフの秘密報告	37.62	55.75
+1957-10	史普尼克一號發射	Sputnik 1 launched	スプートニク 1 号打ち上げ	63.31	45.92
+1961-04	加加林首次載人太空飛行	Gagarin's first human spaceflight	ガガーリンの人類初の宇宙飛行	63.31	45.92
+1962-10	古巴飛彈危機	Cuban Missile Crisis	キューバ危機	37.62	55.75
+1974-07	貝阿鐵路（貝加爾—阿穆爾幹線）動工	Construction of the Baikal–Amur Mainline begins	バイカル・アムール鉄道着工	121.0	56.0
+1985-03	戈巴契夫上台，推動改革重建	Gorbachev comes to power: perestroika	ゴルバチョフ就任、ペレストロイカ	37.62	55.75
+1986-04	車諾比核災	Chernobyl disaster	チェルノブイリ原子力発電所事故	30.1	51.39
+1991-08	八一九政變	August Coup	8 月クーデター	37.62	55.75
+1991-12	蘇聯解體	Dissolution of the Soviet Union	ソ連崩壊	37.62	55.75
+1993-10	憲政危機（白宮砲擊）	Constitutional crisis: shelling of the White House	ロシア憲法危機（ホワイトハウス砲撃）	37.57	55.75
+1994-12	第一次車臣戰爭	First Chechen War	第一次チェチェン紛争	45.69	43.32
+1998-08	俄羅斯金融危機	Russian financial crisis	ロシア財政危機	37.62	55.75
+1999-10	第二次車臣戰爭	Second Chechen War	第二次チェチェン紛争	45.69	43.32
+2000-05	普丁首度就任總統	Putin first takes office as president	プーチンが初めて大統領に就任	37.62	55.75
+2004-09	別斯蘭人質事件	Beslan school siege	ベスラン学校占拠事件	44.53	43.19
+2008-08	俄喬戰爭	Russo-Georgian War	ロシア・ジョージア戦争	43.97	42.23
+2014-03	俄羅斯兼併克里米亞	Russia annexes Crimea	ロシアがクリミアを併合	34.1	44.95
+2014-04	頓巴斯戰爭爆發	War in Donbas begins	ドンバス戦争勃発	37.8	48.0
+2022-02	俄羅斯全面入侵烏克蘭	Russia invades Ukraine	ロシアのウクライナ全面侵攻	30.52	50.45
+2022-09	烏克蘭哈爾科夫反攻	Ukraine's Kharkiv counter-offensive	ウクライナのハルキウ反攻	36.23	49.99
+2022-11	烏克蘭收復赫爾松	Ukraine retakes Kherson	ウクライナがヘルソンを奪還	32.61	46.64
+1147-04	莫斯科首見於史書記載	Moscow first mentioned in the chronicles	モスクワが年代記に初めて登場	37.62	55.75
+1169-03	弗拉基米爾大公安德烈洗劫基輔	Andrey Bogolyubsky of Vladimir sacks Kiev	ウラジーミル大公アンドレイがキエフを略奪	30.52	50.45
+1223-05	卡爾卡河之戰，羅斯諸公初敗於蒙古	Battle of the Kalka: the Rus' princes' first defeat by the Mongols	カルカ河畔の戦い、ルーシ諸公がモンゴルに初めて敗れる	37.6	47.6
+1240-07	涅瓦河之戰，亞歷山大擊退瑞典	Battle of the Neva: Alexander defeats the Swedes	ネヴァ河畔の戦い、アレクサンドルがスウェーデン軍を破る	30.75	59.86
+1325-08	都主教彼得移駐莫斯科	Metropolitan Peter moves his see to Moscow	府主教ピョートルがモスクワへ移る	37.62	55.75
+1478-01	伊凡三世吞併諾夫哥羅德共和國	Ivan III annexes the Novgorod Republic	イヴァン3世がノヴゴロド共和国を併合	31.27	58.52
+1510-01	莫斯科吞併普斯科夫	Moscow annexes Pskov	モスクワがプスコフを併合	28.33	57.82
+1556-08	攻佔阿斯特拉罕汗國	Astrakhan Khanate conquered	アストラハン・ハン国を征服	48.03	46.35
+1565-01	伊凡四世實行特轄制	Ivan IV sets up the oprichnina	イヴァン4世がオプリーチニナを開始	38.71	56.39
+1571-05	克里米亞汗國焚燒莫斯科	The Crimean Khanate burns Moscow	クリミア・ハン国がモスクワを焼く	37.62	55.75
+1598-01	留里克王朝絕嗣，混亂時代開始	The Rurikid line ends; the Time of Troubles begins	リューリク朝が断絶、動乱時代が始まる	37.62	55.75
+1610-09	波蘭軍進駐莫斯科	Polish troops occupy Moscow	ポーランド軍がモスクワを占領	37.62	55.75
+1612-11	米寧與波扎爾斯基率民軍解放莫斯科	Minin and Pozharsky's militia free Moscow	ミーニンとポジャルスキーの国民軍がモスクワを解放	37.62	55.75
+1639-01	哥薩克抵達鄂霍次克海	Cossacks reach the Sea of Okhotsk	コサックがオホーツク海に到達	143.3	59.38
+1649-01	建立阿納德爾堡	Anadyr fort founded	アナディリ砦を建設	177.5	64.73
+1653-01	尼康宗教改革，舊禮儀派分裂	Nikon's church reforms; the Old Believers split	ニーコンの典礼改革、古儀式派が分離	37.62	55.75
+1700-11	納爾瓦戰役，北方戰爭初敗	Battle of Narva: early defeat in the Great Northern War	ナルヴァの戦い、大北方戦争で敗北	28.19	59.37
+1709-07	波爾塔瓦戰役，擊敗瑞典	Battle of Poltava: Sweden defeated	ポルタヴァの戦い、スウェーデンを破る	34.55	49.59
+1724-02	聖彼得堡科學院創立	St Petersburg Academy of Sciences founded	ペテルブルク科学アカデミー創設	30.3	59.94
+1740-10	建立彼得羅巴甫洛夫斯克港	Petropavlovsk founded on Kamchatka	ペトロパブロフスク建設	158.65	53.02
+1762-07	葉卡捷琳娜二世政變即位	Catherine II seizes the throne	エカチェリーナ2世がクーデターで即位	30.3	59.94
+1774-07	庫楚克開納吉和約，取得黑海出海口	Treaty of Küçük Kaynarca: access to the Black Sea	キュチュク・カイナルジャ条約、黒海へ進出	27.5	44.05
+1812-09	博羅季諾戰役	Battle of Borodino	ボロジノの戦い	35.82	55.52
+1854-10	克里米亞戰爭：塞瓦斯托波爾圍城	Crimean War: siege of Sevastopol	クリミア戦争：セヴァストポリ包囲戦	33.52	44.6
+1860-07	建立海參崴（符拉迪沃斯托克）	Vladivostok founded	ウラジオストク建設	131.89	43.12
+1864-05	高加索戰爭結束，切爾克斯人遭驅逐	Caucasian War ends; the Circassians expelled	カフカース戦争終結、チェルケス人追放	40.0	43.68
+1865-06	攻佔塔什干	Tashkent taken	タシケント占領	69.24	41.3
+1877-12	俄土戰爭：普列文圍城結束	Russo-Turkish War: Plevna falls	露土戦争：プレヴェン陥落	24.62	43.42
+1896-05	霍登卡廣場踩踏事件	Khodynka tragedy at the coronation	ホドゥインカの惨事	37.55	55.78
+1898-03	租借旅順、大連	Port Arthur and Dalny leased	旅順・大連を租借	121.25	38.8
+1904-02	日俄戰爭爆發（旅順）	Russo-Japanese War begins at Port Arthur	日露戦争勃発（旅順）	121.25	38.8
+1905-05	對馬海戰，波羅的海艦隊覆滅	Battle of Tsushima: the Baltic Fleet destroyed	日本海海戦、バルチック艦隊壊滅	129.6	34.5
+1905-10	十月宣言，承諾設立國會	The October Manifesto promises a parliament	十月詔書、議会設置を約束	30.3	59.94
+1906-05	第一屆國家杜馬召開	The first State Duma meets	第1国会（ドゥーマ）開会	30.3	59.94
+1912-04	勒拿金礦屠殺	Lena goldfields massacre	レナ金鉱虐殺事件	114.2	57.85
+1914-08	坦能堡戰役	Battle of Tannenberg	タンネンベルクの戦い	20.1	53.5
+1918-07	沙皇一家在葉卡捷琳堡遇害	The tsar's family killed in Yekaterinburg	皇帝一家がエカテリンブルクで殺害	60.6	56.84
+1920-11	弗蘭格爾白軍撤離克里米亞，內戰近尾聲	Wrangel's Whites leave Crimea; the Civil War nears its end	ヴランゲリの白軍がクリミアを撤退	34.1	44.95
+1921-03	新經濟政策	New Economic Policy	新経済政策（ネップ）	37.62	55.75
+1924-01	列寧去世	Lenin dies	レーニン死去	37.62	55.75
+1930-01	全面農業集體化與富農清算	Forced collectivisation and dekulakisation	農業集団化と富農撲滅	37.62	55.75
+1931-12	救世主基督大教堂被炸毀	Cathedral of Christ the Saviour blown up	救世主ハリストス大聖堂を爆破	37.6	55.74
+1934-12	基洛夫遇刺	Kirov assassinated	キーロフ暗殺	30.3	59.94
+1939-11	蘇芬冬季戰爭	Winter War with Finland	冬戦争（ソ・フィン戦争）	29.5	60.5
+1940-06	併吞波羅的海三國	The Baltic states annexed	バルト三国を併合	24.1	56.95
+1941-12	莫斯科保衛戰，蘇軍反攻	Battle of Moscow: the Soviet counter-attack	モスクワの戦い、ソ連軍反攻	37.62	55.75
+1943-07	庫爾斯克戰役	Battle of Kursk	クルスクの戦い	36.19	51.73
+1944-01	列寧格勒解圍	Siege of Leningrad lifted	レニングラード包囲解除	30.3	59.94
+1945-08	蘇聯對日參戰，取得南庫頁島與千島	The USSR enters the war on Japan; takes South Sakhalin and the Kurils	ソ連の対日参戦、南樺太・千島を占領	142.7	46.95
+1949-08	首次原子彈試爆（塞米巴拉金斯克）	First Soviet atomic bomb test (Semipalatinsk)	初の原爆実験（セミパラチンスク）	78.0	50.4
+1953-03	史達林去世	Stalin dies	スターリン死去	37.62	55.75
+1954-03	處女地開墾運動	Virgin Lands campaign	処女地開拓	69.0	51.2
+1957-09	克什特姆核災	Kyshtym nuclear disaster	キシュテム事故	60.8	55.7
+1962-06	新切爾卡斯克屠殺	Novocherkassk massacre	ノヴォチェルカッスク事件	40.1	47.42
+1964-10	赫魯雪夫下台，布里茲涅夫掌權	Khrushchev ousted; Brezhnev takes over	フルシチョフ失脚、ブレジネフが実権	37.62	55.75
+1979-12	蘇聯入侵阿富汗	Soviet invasion of Afghanistan	ソ連のアフガニスタン侵攻	69.17	34.53
+1980-07	莫斯科奧運	Moscow Olympics	モスクワ五輪	37.55	55.72
+1989-02	蘇軍撤出阿富汗	Soviet troops leave Afghanistan	ソ連軍がアフガニスタンから撤退	69.17	34.53
+1990-06	俄羅斯聯邦主權宣言	Russia declares its sovereignty	ロシア共和国が主権宣言	37.62	55.75
+1991-06	葉爾欽當選俄羅斯首任總統	Yeltsin elected Russia's first president	エリツィンがロシア初代大統領に当選	37.62	55.75
+2000-08	庫爾斯克號核潛艇沉沒	The submarine Kursk sinks	原潜クルスク沈没	37.6	69.6
+2002-10	莫斯科劇院人質事件	Moscow theatre hostage crisis	モスクワ劇場占拠事件	37.67	55.73
+2014-02	索契冬季奧運	Sochi Winter Olympics	ソチ冬季五輪	39.95	43.4
+2019-12	西伯利亞力量天然氣管道向中國送氣	Power of Siberia pipeline starts supplying China	シベリアの力パイプラインが中国へ送ガス開始	127.5	50.27
+2023-06	瓦格納集團兵變	Wagner Group mutiny	ワグネルの反乱	39.7	47.23
+2024-02	納瓦尼死於北極圈監獄	Navalny dies in an Arctic prison	ナワリヌイが北極圏の刑務所で死亡	66.6	66.65
+2024-03	克羅庫斯音樂廳恐怖攻擊	Crocus City Hall attack	クロッカス・シティ・ホール襲撃事件	37.39	55.82
+2024-08	烏克蘭軍攻入庫爾斯克州	Ukraine pushes into Kursk Oblast	ウクライナ軍がクルスク州に侵攻	35.2	51.3

@@ -1,3 +1,6 @@
+import { drawLang, pathFromProject } from './langlayer.js';
+import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
+import { takeSliding } from './flat.js';
 import { reliefFor } from './relief.js';
 // 3D globe: MapLibre GL JS in globe projection. Every source is local (GeoJSON built from our own
 // data, optional raster tiles under /basemap); no tile server, no remote style, no remote glyphs —
@@ -44,6 +47,7 @@ export class GlobeMap {
       maxPitch: 70,
       renderWorldCopies: false,
       fadeDuration: 0,
+      canvasContextAttributes: { preserveDrawingBuffer: true },   // lets screenshots and recordings read the globe
     });
     await new Promise(r => this.map.once('load', r));
     this.map.addImage('hatch', hatchImage());
@@ -83,6 +87,7 @@ export class GlobeMap {
         polities: { type: 'geojson', data: EMPTY, promoteId: 'k' },
         polities2: { type: 'geojson', data: EMPTY, promoteId: 'k' },
         stripes: { type: 'geojson', data: EMPTY },
+        pinned: { type: 'geojson', data: EMPTY },
         roc: { type: 'geojson', data: EMPTY },
         rborder: { type: 'geojson', data: EMPTY },
         aborder: { type: 'geojson', data: EMPTY },
@@ -121,6 +126,9 @@ export class GlobeMap {
         { id: 'disputed-line', type: 'line', source: 'disputed', paint: { 'line-color': 'rgba(20,20,20,0.85)', 'line-width': 1, 'line-dasharray': [3, 2] } },
         ...['', '2'].map(x => ({ id: 'polity-line' + x, type: 'line', source: 'polities' + x, paint: { 'line-color': S.border, 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.5, 6, 1.6], 'line-opacity': SHOWN(1) } })),
         ...['', '2'].map(x => ({ id: 'selected' + x, type: 'line', source: 'polities' + x, paint: { 'line-color': '#d12', 'line-width': 2.2, 'line-opacity': ['case', ['all', ['boolean', ['feature-state', 'on'], false], ['boolean', ['feature-state', 'sel'], false]], 1, 0] } })),
+        // a pinned country's borders, kept from the year it was pinned
+        { id: 'pinned-case', type: 'line', source: 'pinned', paint: { 'line-color': 'rgba(255,255,255,0.9)', 'line-width': 4.5 } },
+        { id: 'pinned', type: 'line', source: 'pinned', paint: { 'line-color': '#c2185b', 'line-width': 2.2, 'line-dasharray': [3, 1.6] } },
         { id: 'lakes', type: 'fill', source: 'lakes', paint: { 'fill-color': S.lake } },
         { id: 'lakes10', type: 'fill', source: 'lakes10', minzoom: 4, paint: { 'fill-color': S.lake } },
         { id: 'rivers', type: 'line', source: 'rivers', maxzoom: 4, paint: { 'line-color': S.river, 'line-width': 0.8 } },
@@ -202,6 +210,9 @@ export class GlobeMap {
       const old = this.state.get(k) || {};
       if (old.on !== w.on || old.c !== w.c || old.sel !== w.sel) { m.setFeatureState({ source: this.src, id: k }, w); this.state.set(k, w); }
     }
+    // the pinned country's borders (from the year it was pinned)
+    const pin = this.app.pin, pk = pin ? pin.key : '';
+    if (pk !== this.pinKey) { this.pinKey = pk; m.getSource('pinned').setData({ type: 'FeatureCollection', features: pin ? pin.feats.map(f => ({ type: 'Feature', geometry: f.geometry, properties: {} })) : [] }); }
     // stripes (secondary controller) — a small separate layer, re-uploaded only when it changes
     const striped = feats.filter(f => f.properties.s != null);
     const sKey = striped.map(f => (f.properties.prov?.id ?? f.properties.fi) + ':' + f.properties.s).join();
@@ -410,6 +421,7 @@ export class GlobeMap {
   }
 
   hit(point) {
+    const pu = pulseAt(point.x, point.y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => point.x >= b.x0 && point.x <= b.x1 && point.y >= b.y0 && point.y <= b.y1);
     if (mk) return { marker: mk.m };
     const st = this.app.state;
@@ -443,7 +455,8 @@ export class GlobeMap {
     // pixels per radian at the centre of the view ≈ globe radius on screen
     const p0 = m.project([c.lng, c.lat]), p1 = m.project([c.lng + 1, c.lat]);
     const scale = Math.hypot(p1.x - p0.x, p1.y - p0.y) * 180 / Math.PI / Math.max(0.2, Math.cos(c.lat * Math.PI / 180));
-    const items = labelItems(this.feats, st, scale, Math.min(34, this.W / 18),
+    const lf = this.F?.labelOk ? this.feats.filter(f => this.F.labelOk(f.properties.p)) : this.feats;
+    const items = labelItems(lf, st, scale, Math.min(34, this.W / 18),
       lp => geoDistance(lp, center) > 1.35 ? null : (p => [p.x, p.y])(m.project(lp)), this.F?.adminFeats, W, H);
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     placeLabels(ctx, items, W, H, S.label);
@@ -462,13 +475,24 @@ export class GlobeMap {
       ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.strokeText(name, p.x, p.y);
       ctx.fillStyle = '#8b0000'; ctx.fillText(name, p.x, p.y);
     }
+    if (F.lang) {
+      const pr = ll => { if (geoDistance(ll, center) > 1.45) return null; const q = m.project(ll); return [q.x, q.y]; };
+      drawLang(ctx, F.lang, pathFromProject(ctx, pr), pr, S.label.font, Math.pow(2, m.getZoom() - 1));
+    }
     const placed = [], hits = this.markerHits = [];
-    for (const g of F.markers) {
+    const pproj = ll => { if (geoDistance(ll, center) > 1.4) return null; const q = m.project(ll); return [q.x, q.y]; };
+    reservePulses(pproj, placed);
+    for (const g of this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers) {
       if (geoDistance([g.lon, g.lat], center) > 1.4) continue;
       const p = m.project([g.lon, g.lat]);
-      if (g.kind && g.kind !== 'gov' && g.kind !== 'art') { const q = m.project([g.lon + 0.5, g.lat]); if (Math.hypot(q.x - p.x, q.y - p.y) < 30) continue; }
+      if (g.kind && !['gov', 'art', 'langArea', 'feud', 'power', 'us', 'work'].includes(g.kind) && !(g.kind === 'cap' && (g.pin || g.big && (this.map.getContainer().clientWidth >= 600 || g.rank < 10)))) {
+        if (g.kind === 'cap') { const q = m.project([g.lon, Math.min(89, g.lat + 0.5)]); if (Math.hypot(q.x - p.x, q.y - p.y) * 114.6 * (g.size || 0) < 44) continue; }
+        else { const q = m.project([g.lon + 0.5, g.lat]); if (Math.hypot(q.x - p.x, q.y - p.y) < 30) continue; }
+      }
       drawMarker(ctx, p.x, p.y, g, col, S, placed, hits);
     }
+    drawPulses(ctx, S.label.font);
+    if (takeSliding()) m.triggerRepaint();
   }
 
   getCenter() {
@@ -478,7 +502,7 @@ export class GlobeMap {
   setCenter({ lon, lat, k }) { this.map?.jumpTo({ center: [lon, lat], zoom: fitZoom(this.container) + Math.log2(k || 1) }); }
   zoomBy(f) { this.map.easeTo({ zoom: this.map.getZoom() + Math.log2(f), duration: 250 }); }
   setBearing(b) { if (b != null) this.map?.easeTo({ bearing: b, duration: 600 }); }
-  northUp() { this.map.easeTo({ bearing: 0, pitch: 0, duration: 400 }); }
+  northUp() { this.map.easeTo({ bearing: this.app.upBearing?.() ?? 0, pitch: 0, duration: 400 }); }   // keeps the chosen "Up"
   reset() { this.map.flyTo({ center: [60, 25], zoom: fitZoom(this.container), bearing: 0, pitch: 0, duration: 800 }); }
 }
 

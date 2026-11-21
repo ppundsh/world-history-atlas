@@ -1,0 +1,30 @@
+# 美國模式：進軍、探險與人口移動。欄位：id	起	迄	顏色	粗細	路徑	繁中	English	日本語
+mayflower	1620-09	1620-11	#c0392b	2	-4.14,50.37 -30.0,47.0 -60.0,43.0 -70.66,41.96	五月花號橫渡大西洋	The Mayflower crosses the Atlantic	メイフラワー号の大西洋横断
+lasalle	1682-02	1682-04	#2b59c3	2	-87.63,41.88 -89.0,39.0 -90.2,38.63 -91.0,35.0 -91.1,32.3 -90.07,29.95 -89.4,29.2	拉薩爾順密西西比河而下	La Salle down the Mississippi	ラ・サールのミシシッピ下り
+braddock	1755-06	1755-07	#c0392b	2	-78.76,39.65 -79.5,40.0 -79.86,40.4	布雷多克遠征杜肯堡	Braddock's expedition to Fort Duquesne	ブラドック遠征
+paul_revere	1775-04	1775-04	#3c5a99	2	-71.06,42.36 -71.23,42.45 -71.35,42.46	保羅·列維爾夜騎；英軍進軍康科德	Paul Revere's ride; the British march on Concord	ポール・リビアの騎行
+washington_crossing	1776-12	1777-01	#3c5a99	2	-74.86,40.29 -74.77,40.22 -74.66,40.35	華盛頓橫渡德拉瓦河，突襲特倫頓	Washington crosses the Delaware to Trenton	デラウェア川渡河とトレントン奇襲
+burgoyne	1777-06	1777-10	#c0392b	2	-73.56,45.5 -73.39,43.82 -73.43,43.37 -73.64,43.0	伯戈因南下，敗於薩拉托加	Burgoyne marches south and surrenders at Saratoga	バーゴイン軍の南下とサラトガ降伏
+yorktown	1781-08	1781-10	#3c5a99	3	-74.0,40.7 -75.15,39.95 -76.6,39.3 -76.51,37.24	大陸軍與法軍南下約克鎮	Continental and French armies march to Yorktown	大陸軍・仏軍のヨークタウン進軍
+lewis_clark	1804-05	1806-09	#7c3aed	2	-90.2,38.63 -94.6,39.1 -96.0,41.3 -100.78,46.8 -104.0,48.0 -111.3,47.5 -114.0,46.9 -116.5,46.4 -120.0,45.7 -123.92,46.13	路易斯與克拉克遠征	Lewis and Clark expedition	ルイス・クラーク探検
+british1814	1814-08	1814-09	#c0392b	2	-76.6,38.3 -76.7,38.8 -77.01,38.89 -76.58,39.27	英軍登陸焚燒華盛頓，轉攻巴爾的摩	The British land, burn Washington and attack Baltimore	英軍のワシントン焼き討ちとボルティモア攻撃
+tears	1838-05	1839-03	#7f1d1d	3	-85.0,35.0 -86.78,36.16 -89.0,37.3 -91.0,36.2 -94.4,35.4 -94.97,35.92	血淚之路：切羅基人被迫西遷	Trail of Tears: the Cherokee driven west	涙の道：チェロキーの強制移住
+oregon_trail	1843-05	1869-05	#a16207	2	-94.42,39.09 -98.0,40.7 -103.0,41.8 -108.8,42.3 -112.5,43.0 -116.2,43.6 -118.8,45.7 -122.6,45.5	奧勒岡小道	Oregon Trail	オレゴン・トレイル
+mormon	1846-02	1847-07	#a16207	2	-91.39,40.55 -95.86,41.26 -102.0,41.1 -107.0,42.0 -111.89,40.76	摩門教徒西遷鹽湖城	The Mormon trek to Salt Lake	モルモン教徒のソルトレイク移住
+mexwar	1846-05	1847-09	#3c5a99	2	-97.4,25.9 -100.3,25.67 -101.0,25.42 -96.13,19.2 -99.13,19.43	美墨戰爭：泰勒與史考特進軍墨西哥城	Mexican War: Taylor and Scott toward Mexico City	米墨戦争の進軍
+kearny	1846-06	1846-12	#3c5a99	2	-94.92,39.32 -103.0,37.8 -105.94,35.69 -110.0,32.8 -117.16,32.72	卡尼西部軍團取新墨西哥與加州	Kearny's Army of the West takes New Mexico and California	カーニー西部軍の進軍
+goldrush	1848-01	1855-12	#ca8a04	2	-74.0,40.7 -79.5,9.0 -100.0,15.0 -122.42,37.77	淘金熱：經巴拿馬地峽前往舊金山	Gold Rush: via the Isthmus of Panama to San Francisco	ゴールドラッシュ：パナマ経由で西海岸へ
+grant_vicksburg	1863-03	1863-07	#3c5a99	2	-89.6,35.1 -90.9,33.5 -91.0,32.2 -90.88,32.35	格蘭特圍攻維克斯堡	Grant's Vicksburg campaign	グラントのヴィックスバーグ作戦
+lee_gettysburg	1863-06	1863-07	#8c8c8c	3	-77.44,37.54 -78.0,38.6 -77.7,39.5 -77.23,39.82	李將軍北侵賓夕法尼亞	Lee invades Pennsylvania	リー将軍の北部侵攻
+sherman	1864-05	1865-04	#3c5a99	3	-85.31,35.05 -84.39,33.75 -83.0,33.0 -81.09,32.08 -81.03,34.0 -78.64,35.78	薛曼：亞特蘭大戰役與向海洋進軍	Sherman: Atlanta and the March to the Sea	シャーマンのアトランタ攻略と海への進軍
+grant_richmond	1864-05	1865-04	#3c5a99	2	-77.85,38.3 -77.4,37.6 -77.4,37.23 -78.8,37.38	格蘭特陸路戰役與阿波馬托克斯	Grant's Overland Campaign to Appomattox	グラントのオーバーランド作戦
+cattle	1866-01	1886-12	#a16207	2	-98.49,29.43 -97.33,32.75 -97.5,35.5 -97.4,37.7 -97.21,38.92	奇澤姆牛道	Chisholm Trail cattle drives	チザム・トレイル
+nez_perce	1877-06	1877-10	#7f1d1d	2	-116.5,45.8 -114.5,46.5 -110.5,44.8 -109.0,46.5 -109.2,48.4	內茲珀斯人逃亡	Nez Perce flight	ネズ・パース族の逃避行
+great_migration	1916-01	1970-12	#ea580c	3	-90.18,32.3 -89.0,36.0 -87.63,41.88 -83.05,42.33	大遷徙：南方黑人北移芝加哥、底特律	Great Migration: Black southerners move to Chicago and Detroit	大移動：南部黒人の北部移住
+great_migration2	1916-01	1970-12	#ea580c	2	-84.39,33.75 -78.64,35.78 -77.04,38.89 -74.0,40.7	大遷徙：沿東岸北上紐約	Great Migration: up the east coast to New York	大移動：東海岸を北上
+dustbowl	1935-01	1940-12	#a16207	2	-97.52,35.47 -101.83,35.22 -106.65,35.08 -112.07,33.45 -119.0,35.4	沙塵暴難民（「奧克仔」）西遷加州	Dust Bowl migrants ("Okies") head to California	ダストボウル難民のカリフォルニア移住
+pearl	1941-11	1941-12	#7f1d1d	2	146.0,44.0 170.0,35.0 -158.0,22.5 -157.95,21.36	日本機動部隊奇襲珍珠港	Japan's carrier force strikes Pearl Harbor	日本機動部隊の真珠湾攻撃
+internment	1942-03	1942-10	#7f1d1d	2	-118.24,34.05 -118.17,36.72 -114.0,37.0 -112.6,39.3	日裔美國人被送往拘禁營	Japanese Americans sent to the camps	日系人の強制収容所への移送
+selma	1965-03	1965-03	#3c5a99	2	-87.02,32.41 -86.6,32.3 -86.3,32.38	塞爾瑪至蒙哥馬利遊行	Selma to Montgomery march	セルマからモンゴメリーへの行進
+sunbelt	1970-01	2020-12	#ea580c	2	-87.63,41.88 -84.39,33.75 -81.38,28.54 -80.19,25.76	陽光地帶南遷	Moves to the Sun Belt	サンベルトへの移住
+sunbelt2	1970-01	2020-12	#ea580c	2	-74.0,40.7 -96.8,32.78 -112.07,33.45 -115.14,36.17	向南方與西南遷移	Moves south and south-west	南部・南西部への移住

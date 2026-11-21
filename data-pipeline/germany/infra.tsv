@@ -1,0 +1,23 @@
+# 德國模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+rail	de_ludwig	1835-12		11.08,49.45 10.99,49.48	路德維希鐵路（紐倫堡—菲爾特）	Ludwig Railway (Nuremberg–Fürth)	ルートヴィヒ鉄道	德意志第一條蒸汽鐵路。	The first steam railway in Germany.	ドイツ初の蒸気鉄道。	路德維希鐵路	Bavarian Ludwig Railway
+rail	de_leipzig	1839-04		12.37,51.34 12.9,51.2 13.74,51.05	萊比錫—德勒斯登鐵路	Leipzig–Dresden railway	ライプツィヒ—ドレスデン鉄道	第一條長途鐵路。	The first long-distance line.	初の長距離鉄道。	萊比錫—德勒斯登鐵路	Leipzig–Dresden railway
+rail	de_berlin_hh	1846-12		13.37,52.53 12.27,52.89 11.6,53.33 10.0,53.55	柏林—漢堡鐵路	Berlin–Hamburg railway	ベルリン—ハンブルク鉄道	連接兩大城市。	Linking the two largest cities.	二大都市を結ぶ。	柏林—漢堡鐵路	Berlin–Hamburg Railway
+rail	de_cologne	1847-10		6.96,50.94 7.47,51.51 8.02,52.27 9.73,52.37 10.52,52.27 11.63,52.13 12.24,51.84 13.37,52.53	科隆—明登—柏林幹線	Cologne–Minden–Berlin main line	ケルン—ミンデン—ベルリン幹線	魯爾區與首都的連結。	Joining the Ruhr to the capital.	ルール地方と首都を結ぶ。	科隆—明登鐵路	Cologne-Minden trunk line
+canal	de_kiel	1895-06		9.15,53.89 9.5,54.12 9.98,54.32 10.15,54.37	基爾運河	Kiel Canal	キール運河	連接北海與波羅的海，世界最繁忙的人工水道之一。	Joins the North Sea and the Baltic; one of the busiest artificial waterways.	北海とバルト海を結ぶ。	基爾運河	Kiel Canal
+industry	de_krupp	1811-11		7.0,51.45	克虜伯鋼廠（埃森）	Krupp works (Essen)	クルップ工場（エッセン）	魯爾工業化的象徵與軍火巨頭。	Symbol of Ruhr industry and an arms giant.	ルール工業化の象徴。	克虜伯	Krupp
+highway	de_ab_bonn	1932-08		6.96,50.94 7.1,50.73	科隆—波昂高速公路	Cologne–Bonn motorway	ケルン—ボン高速道路	德國第一條交叉路口立體化的高速公路。	Germany's first true motorway.	ドイツ初の高速道路。	德國高速公路	Autobahn
+highway	de_ab_ffm	1935-05		8.68,50.11 8.47,49.87 8.47,49.49	法蘭克福—達姆施塔特帝國高速公路	Frankfurt–Darmstadt Reichsautobahn	フランクフルト—ダルムシュタット間アウトバーン	納粹政權大力宣傳的第一段帝國高速公路。	The first Reichsautobahn section, heavily used in Nazi propaganda.	ナチス宣伝の第一区間。	德國高速公路	Reichsautobahn
+industry	de_vw	1938-05		10.79,52.42	福斯汽車廠（沃爾夫斯堡）	Volkswagen works (Wolfsburg)	フォルクスワーゲン工場	納粹「國民車」工廠，戰後成為經濟奇蹟象徵。	The Nazi "people's car" plant, later a symbol of the economic miracle.	戦後は経済の奇跡の象徴。	福斯汽車	Volkswagen
+space	de_peenemuende	1937-05	1945-05	13.79,54.14	佩內明德火箭研究中心	Peenemünde Army Research Center	ペーネミュンデ陸軍兵器実験場	V-2 火箭的研發地，使用強迫勞工。	Where the V-2 was developed, using forced labour.	V2ロケット開発地。	佩內明德陸軍研究中心	Peenemünde Army Research Center
+airport	de_tempelhof	1923-10	2008-10	13.4,52.47	滕珀爾霍夫機場	Tempelhof Airport	テンペルホーフ空港	柏林空運的主要機場，2008 年關閉成公園。	The Berlin Airlift's main airport; closed in 2008 and turned into a park.	ベルリン大空輸の拠点、2008年閉鎖。	滕珀爾霍夫機場	Berlin Tempelhof Airport
+nuclear	de_kahl	1961-06	1985-11	9.0,50.06	卡爾核電廠	Kahl nuclear plant	カール原子力発電所	德國第一座核電廠。	Germany's first nuclear plant.	ドイツ初の原発。	卡爾核電廠	Kahl Nuclear Power Plant
+nuclear	de_biblis	1974-07	2011-03	8.42,49.71	比布利斯核電廠	Biblis nuclear plant	ビブリス原子力発電所	福島核災後立即停機。	Shut down immediately after Fukushima.	福島事故後に停止。	比布利斯核電廠	Biblis Nuclear Power Plant
+nuclear	de_isar	1988-04	2023-04	12.29,48.6	伊薩爾核電廠 2 號機	Isar 2 nuclear plant	イザール原子力発電所2号機	2023 年 4 月德國最後三座核電廠之一停機。	One of the last three German reactors, shut in April 2023.	2023年4月に停止した最後の原発の一つ。	伊薩爾核電廠	Isar Nuclear Power Plant
+power	de_jaenschwalde	1981-01		14.46,51.83	揚施瓦爾德褐煤電廠	Jänschwalde lignite plant	イェンシュヴァルデ褐炭発電所	東德最大的褐煤電廠。	East Germany's largest lignite plant.	東独最大の褐炭火力。	揚施瓦爾德電廠	Jänschwalde Power Station
+wind	de_alphaventus	2010-04		6.6,54.0	阿爾法文圖斯離岸風場	Alpha Ventus offshore wind farm	アルファ・ヴェントゥス洋上風力	德國第一座離岸風場，能源轉型的起點之一。	Germany's first offshore wind farm.	ドイツ初の洋上風力。	阿爾法文圖斯海上風電場	Alpha Ventus Offshore Wind Farm
+hsr	de_ice_hw	1991-06		9.73,52.37 9.93,51.54 9.66,50.55 9.93,49.79	ICE 漢諾威—維爾茨堡高速新線	Hanover–Würzburg high-speed line	ハノーファー—ヴュルツブルク高速新線	ICE 開始營運。	ICE service began.	ICE営業開始。	漢諾威—維爾茨堡高速鐵路	Hanover–Würzburg high-speed railway
+hsr	de_ice_kf	2002-08		6.96,50.94 7.26,50.6 8.26,50.03 8.57,50.05	科隆—法蘭克福高速鐵路	Cologne–Frankfurt high-speed line	ケルン—フランクフルト高速線	時速 300 公里。	300 km/h.	最高時速300キロ。	科隆—法蘭克福高速鐵路	Cologne–Frankfurt high-speed rail line
+hsr	de_ice_eb	2017-12		11.08,49.45 11.03,50.0 11.03,50.98 12.37,51.34 13.37,52.53	VDE 8 柏林—慕尼黑高速線（紐倫堡—埃爾福特）	Berlin–Munich line (VDE 8)	ドイツ統一交通計画8号	德國統一交通計畫，柏林到慕尼黑 4 小時。	A German Unity project: Berlin to Munich in four hours.	ベルリン—ミュンヘン4時間に。	德國統一交通計畫	German Unity Transport Projects
+airport	de_ber	2020-10		13.5,52.37	柏林布蘭登堡機場	Berlin Brandenburg Airport	ベルリン・ブランデンブルク国際空港	延宕九年才開航。	Opened nine years late.	9年遅れで開港。	柏林布蘭登堡機場	Berlin Brandenburg Airport
+ixp	de_cix	1995-01		8.68,50.11	DE-CIX 法蘭克福網際網路交換中心	DE-CIX Frankfurt Internet exchange	DE-CIX フランクフルト	後成為全球流量最大的交換中心之一。	Later one of the world's busiest Internet exchanges.	世界最大級のIX。	DE-CIX	DE-CIX
+pipeline	de_nordstream	2011-11	2022-09	13.65,54.15 18.0,55.5 22.0,58.5 28.1,60.55	北溪天然氣管線	Nord Stream gas pipeline	ノルドストリーム	俄國天然氣直送德國，2022 年遭破壞。	Russian gas straight to Germany; sabotaged in 2022.	2022年に破壊。	北溪管道	Nord Stream

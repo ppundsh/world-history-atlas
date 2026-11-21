@@ -1,0 +1,43 @@
+# 德國模式：起義與騷亂（⚔）、帝國城市與教會邦國（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點；年代依各維基百科條目。
+feud	weavers	1844-06	1844-06	16.2	50.75	西里西亞紡織工人起義	Silesian weavers' uprising	シュレージエンの織工一揆	紡織工因工資低落搗毀廠商住宅，遭普魯士軍鎮壓。	Weavers whose pay had collapsed wrecked the merchants' houses and were put down by Prussian troops.	賃金暴落に苦しむ織工が商人宅を襲い、プロイセン軍に鎮圧された。	西里西亞紡織工人起義
+feud	march1848	1848-03	1848-03	13.39	52.52	柏林三月革命巷戰	Berlin March Revolution street fighting	ベルリン三月革命の市街戦	柏林市民與軍隊巷戰，國王被迫讓步。	Berliners fought the army in the streets and the king gave way.	ベルリン市民と軍が市街戦を行い、国王が譲歩した。	1848年德意志革命
+feud	dresden1849	1849-05	1849-05	13.74	51.05	德勒斯登五月起義	Dresden May Uprising	ドレスデン五月蜂起	要求實施帝國憲法的起義，華格納、巴枯寧參與。	A rising for the imperial constitution, joined by Wagner and Bakunin.	帝国憲法の実施を求める蜂起。ワーグナーやバクーニンも参加。	德勒斯登五月起義
+feud	spartacus	1919-01	1919-01	13.39	52.52	斯巴達克斯起義	Spartacist uprising	スパルタクス団蜂起	共產黨人在柏林起事，盧森堡、李卜克內西遇害。	A communist rising in Berlin; Rosa Luxemburg and Karl Liebknecht were murdered.	ベルリンの共産主義者の蜂起。ルクセンブルクとリープクネヒトが殺害された。	斯巴達克斯起義
+feud	bavsoviet	1919-04	1919-05	11.58	48.14	巴伐利亞蘇維埃共和國	Bavarian Soviet Republic	バイエルン・レーテ共和国	慕尼黑短命的蘇維埃政權，遭自由軍團血腥鎮壓。	A short-lived Munich soviet, bloodily crushed by the Freikorps.	ミュンヘンの短命なレーテ政権。義勇軍に鎮圧された。	巴伐利亞蘇維埃共和國
+feud	ruhr1920	1920-03	1920-04	7.0	51.45	魯爾起義	Ruhr uprising	ルール蜂起	卡普政變後魯爾工人組成紅軍，遭國防軍鎮壓。	After the Kapp Putsch Ruhr workers formed a Red Army, crushed by the Reichswehr.	カップ一揆後にルールの労働者が赤軍を組織し、国防軍に鎮圧された。	魯爾起義
+feud	hamburg1923	1923-10	1923-10	10.0	53.55	漢堡起義	Hamburg Uprising	ハンブルク蜂起	共產黨在漢堡發動的武裝起義。	An armed communist rising in Hamburg.	ハンブルクでの共産党の武装蜂起。	漢堡起義
+feud	beerhall	1923-11	1923-11	11.59	48.13	啤酒館政變	Beer Hall Putsch	ミュンヘン一揆	希特勒在慕尼黑發動的失敗政變。	Hitler's failed coup in Munich.	ヒトラーがミュンヘンで起こした失敗したクーデター。	啤酒館政變
+feud	june1953f	1953-06	1953-06	13.4	52.52	東德六一七起義	East German uprising of 1953	東ドイツ六月蜂起	工人抗議提高勞動定額，蔓延全國，遭蘇軍坦克鎮壓。	Workers' protests against higher quotas spread across the GDR and were crushed by Soviet tanks.	ノルマ引き上げへの抗議が全国に広がり、ソ連軍戦車に鎮圧された。	1953年東德起義
+feud	student1968	1968-04	1968-05	13.31	52.5	西德學生運動	West German student movement	西独学生運動	杜契克遇刺後學生示威與衝突擴大。	Protests grew after Rudi Dutschke was shot.	ドゥチュケ銃撃事件後に学生デモが拡大した。	德國學生運動
+feud	wackersdorf	1985-12	1989-05	12.2	49.32	瓦克斯多夫反核抗爭	Wackersdorf protests	ヴァッカースドルフ闘争	反對興建核廢料再處理廠的長期抗爭，計畫終告放棄。	Long protests against a nuclear reprocessing plant, which was finally abandoned.	核燃料再処理工場の建設反対闘争。計画は断念された。	瓦克斯多夫
+feud	leipzig89	1989-09	1989-11	12.37	51.34	萊比錫週一示威	Leipzig Monday demonstrations	ライプツィヒ月曜デモ	和平示威人數逐週增加，促成東德政權崩潰。	Peaceful marches grew week by week and brought the GDR regime down.	平和的なデモが週ごとに拡大し、東独体制の崩壊を促した。	萊比錫週一示威
+feud	rostock	1992-08	1992-08	12.05	54.15	羅斯托克—利希滕哈根排外暴亂	Rostock-Lichtenhagen riots	ロストック・リヒテンハーゲン暴動	極右群眾圍攻難民收容所與越南工人宿舍。	Far-right crowds attacked a refugee centre and a Vietnamese workers' hostel.	極右の群衆が難民収容施設とベトナム人労働者の宿舎を襲撃した。	罗斯托克-利希滕哈根骚乱
+power	hamburg_free	1648-10	1806-08	10.0	53.55	帝國自由城市漢堡	Free Imperial City of Hamburg	帝国自由都市ハンブルク	漢薩同盟要港，自治城市共和國。	A leading Hanseatic port and self-governing city republic.	ハンザの主要港で自治都市共和国。	漢堡
+power	lubeck_free	1648-10	1806-08	10.69	53.87	帝國自由城市呂貝克	Free Imperial City of Lübeck	帝国自由都市リューベック	漢薩同盟之首。	The head of the Hanseatic League.	ハンザ同盟の盟主。	呂貝克
+power	bremen_free	1648-10	1806-08	8.8	53.08	帝國自由城市不來梅	Free Imperial City of Bremen	帝国自由都市ブレーメン	漢薩同盟城市，今日仍為獨立的邦。	A Hanseatic city, still a state of its own today.	ハンザ都市。現在も独立した州。	不來梅
+power	frankfurt_free	1648-10	1806-08	8.68	50.11	帝國自由城市法蘭克福	Free Imperial City of Frankfurt	帝国自由都市フランクフルト	神聖羅馬皇帝選舉與加冕之地。	Where the Holy Roman Emperors were elected and crowned.	神聖ローマ皇帝の選挙と戴冠の地。	法蘭克福
+power	nuremberg_free	1648-10	1806-08	11.08	49.45	帝國自由城市紐倫堡	Free Imperial City of Nuremberg	帝国自由都市ニュルンベルク	帝國議會常開之地，工商業重鎮。	A frequent seat of imperial diets and a centre of trade and crafts.	帝国議会がしばしば開かれた商工業都市。	紐倫堡
+power	augsburg_free	1648-10	1806-08	10.9	48.37	帝國自由城市奧格斯堡	Free Imperial City of Augsburg	帝国自由都市アウクスブルク	富格爾家族的金融中心。	Financial centre of the Fuggers.	フッガー家の金融の中心。	奧格斯堡
+power	mainz_el	1648-10	1803-02	8.27	50.0	美因茨選侯國（大主教）	Electorate of Mainz (archbishopric)	マインツ選帝侯領（大司教）	帝國首席選侯、帝國首相。	First of the electors and arch-chancellor of the Empire.	帝国筆頭選帝侯で帝国大書記長。	美因茨選侯國
+power	cologne_el	1648-10	1803-02	7.1	50.73	科隆選侯國（波昂）	Electorate of Cologne (Bonn)	ケルン選帝侯領（ボン）	以波昂為駐地的大主教選侯國。	An archiepiscopal electorate ruled from Bonn.	ボンを居所とした大司教選帝侯領。	科隆選侯國
+power	trier_el	1648-10	1803-02	6.64	49.75	特里爾選侯國	Electorate of Trier	トリーア選帝侯領	萊茵河沿岸的大主教選侯國。	An archiepiscopal electorate on the Moselle and Rhine.	モーゼル・ライン沿いの大司教選帝侯領。	特里爾選侯國
+power	wurzburg_pb	1648-10	1803-02	9.93	49.79	維爾茨堡主教侯國	Prince-Bishopric of Würzburg	ヴュルツブルク司教領	法蘭克尼亞的主教侯國，主教宮為世界遺產。	A Franconian prince-bishopric whose Residenz is a World Heritage site.	フランケンの司教領。司教館は世界遺産。	維爾茨堡主教區
+power	munster_pb	1648-10	1803-02	7.63	51.96	明斯特主教侯國	Prince-Bishopric of Münster	ミュンスター司教領	西發里亞和約簽約地之一。	One of the places where the Peace of Westphalia was signed.	ヴェストファーレン条約の締結地の一つ。	明斯特主教區
+us	swedish_pom	1648-10	1815-10	13.08	54.31	瑞典波美拉尼亞（施特拉爾松）	Swedish Pomerania (Stralsund)	スウェーデン領ポメラニア（シュトラールズント）	西發里亞和約割予瑞典，駐有瑞典軍。	Given to Sweden at Westphalia and garrisoned by Swedish troops.	ヴェストファーレン条約でスウェーデン領となり、スウェーデン軍が駐留。	瑞屬波美拉尼亞
+us	french_rhine	1794-10	1814-01	8.27	50.0	法國佔領萊茵左岸（美因茨）	French rule of the left bank of the Rhine (Mainz)	フランスのライン左岸支配（マインツ）	法國革命軍佔領後併入法國。	Occupied by revolutionary France and annexed.	革命フランス軍が占領し併合した。	萊茵左岸
+us	rhine_brit	1918-12	1926-01	6.96	50.94	英軍佔領科隆	British occupation of Cologne	英軍のケルン占領	一戰後協約國佔領萊茵蘭，英軍駐科隆。	After the First World War the Allies occupied the Rhineland; the British held Cologne.	第一次大戦後の連合国のラインラント占領。英軍はケルンに駐留。	萊茵蘭佔領
+us	rhine_us	1918-12	1923-01	7.6	50.35	美軍佔領科布倫茨	American occupation of Koblenz	米軍のコブレンツ占領	美國第三軍駐科布倫茨。	The US Third Army held Koblenz.	米第三軍がコブレンツに駐留。	萊茵蘭佔領
+us	rhine_fr	1918-12	1930-06	8.27	50.0	法軍佔領美因茨	French occupation of Mainz	仏軍のマインツ占領	法軍最後於 1930 年撤離萊茵蘭。	French troops were the last to leave the Rhineland, in 1930.	仏軍は 1930 年に最後にラインラントから撤退した。	萊茵蘭佔領
+us	ruhr_fr	1923-01	1925-08	7.0	51.45	法比佔領魯爾（埃森）	French–Belgian occupation of the Ruhr (Essen)	仏・ベルギーのルール占領（エッセン）	因賠款拖欠佔領魯爾工業區。	Occupied over missed reparations.	賠償不履行を理由にルール工業地帯を占領。	魯爾佔領
+us	us_zone	1945-07	1949-09	8.65	50.12	美國佔領區總部（法蘭克福）	US zone headquarters (Frankfurt)	米占領地区本部（フランクフルト）	設於 IG 法本大樓。	In the IG Farben Building.	IG ファルベン・ビルに置かれた。	盟軍佔領下的德國
+us	brit_zone	1945-07	1949-09	8.8	52.2	英國佔領區總部（巴特恩豪森）	British zone headquarters (Bad Oeynhausen)	英占領地区本部（バート・エーンハウゼン）	英國萊茵軍團與軍政府所在地。	Seat of the British army and military government.	英ライン軍と軍政府の所在地。	盟軍佔領下的德國
+us	fr_zone	1945-07	1949-09	8.24	48.76	法國佔領區總部（巴登—巴登）	French zone headquarters (Baden-Baden)	仏占領地区本部（バーデン・バーデン）	法國在德佔領軍總部。	Headquarters of the French forces in Germany.	在独フランス軍の本部。	盟軍佔領下的德國
+us	soviet_zone	1945-06	1949-10	13.53	52.49	蘇聯駐德軍事管理委員會（卡爾斯霍斯特）	Soviet Military Administration (Karlshorst)	在独ソ連軍政本部（カールスホルスト）	蘇聯佔領區的統治機構。	The authority governing the Soviet zone.	ソ連占領地区の統治機関。	駐德蘇聯軍事管理委員會
+us	berlin_allied	1945-07	1994-09	13.29	52.45	西柏林盟軍駐軍	Allied garrisons in West Berlin	西ベルリンの連合国軍	美、英、法軍駐守西柏林至 1994 年。	American, British and French troops held West Berlin until 1994.	米英仏軍が 1994 年まで西ベルリンに駐留した。	柏林駐軍
+us	wgt	1945-06	1994-08	13.47	52.18	蘇聯／俄羅斯西部軍群（溫斯多夫）	Soviet / Russian Western Group of Forces (Wünsdorf)	ソ連・ロシア西部軍集団（ヴュンスドルフ）	駐東德蘇軍最多時約五十萬人，1994 年撤出。	At its peak some half a million Soviet troops were in East Germany; they left in 1994.	最盛期は約 50 万人。1994 年に撤退した。	駐德蘇軍集群
+us	usareur	1952-03	2026-12	8.68	49.4	美國駐歐陸軍（海德堡→威斯巴登）	US Army Europe (Heidelberg, later Wiesbaden)	在欧米陸軍（ハイデルベルク→ヴィースバーデン）	冷戰時美軍在歐洲的陸軍總部，2013 年遷威斯巴登。	The US Army's European headquarters, moved to Wiesbaden in 2013.	冷戦期の在欧米陸軍司令部。2013 年にヴィースバーデンへ移転。	美國陸軍歐洲司令部
+us	ramstein	1953-01	2026-12	7.6	49.44	拉姆施泰因空軍基地	Ramstein Air Base	ラムシュタイン空軍基地	美國空軍在歐洲的主要基地。	The main US Air Force base in Europe.	在欧米空軍の主要基地。	拉姆施泰因空軍基地
+us	baor	1945-08	2019-12	6.38	51.17	英國萊茵軍團（門興格拉德巴赫）	British Army of the Rhine (Mönchengladbach)	英ライン軍団（メンヒェングラートバッハ）	冷戰期英軍駐德主力，2019 年撤離。	The main British force in Germany in the Cold War; it left in 2019.	冷戦期の在独英軍の主力。2019 年に撤退。	英國萊茵軍團
+us	grafenwoehr	1945-04	2026-12	11.9	49.7	格拉芬沃爾訓練場	Grafenwöhr Training Area	グラーフェンヴェーア演習場	美軍在歐洲最大的訓練場。	The largest US training area in Europe.	在欧米軍最大の演習場。	格拉芬沃爾

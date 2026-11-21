@@ -33,7 +33,9 @@ export class Music {
 
   pause() { this.el.pause(); }
 
-  next() { if (this.tracks.length) this.select((this.i + 1) % this.tracks.length); }
+  // tracks that belong to one mode ("mode" in tracks.json) are only offered in that mode
+  usable(mode) { return this.tracks.map((t, i) => i).filter(i => !this.tracks[i].mode || this.tracks[i].mode === mode); }
+  next(mode) { const u = this.usable(mode); if (u.length) this.select(u[(u.indexOf(this.i) + 1) % u.length]); }
 
   // switch track; keeps playing if music was already playing
   select(i) {

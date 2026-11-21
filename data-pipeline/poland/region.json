@@ -1,0 +1,115 @@
+{
+ "start": "0966-01",
+ "end": "2026-12",
+ "units": "poland_units.geojson",
+ "merge": true,
+ "groups": {
+  "core": [
+   "PL-WP",
+   "PL-KP",
+   "PL-LD",
+   "PL-MZ"
+  ],
+  "lesser": [
+   "PL-MA",
+   "PL-SK",
+   "PL-PK",
+   "PL-LU"
+  ],
+  "silesia": [
+   "PL-DS",
+   "PL-OP",
+   "PL-SL"
+  ],
+  "oprussia": [
+   "warmia",
+   "masuria",
+   "kgd"
+  ],
+  "lithuania_l": [
+   "lt_vilnius",
+   "lt_kaunas",
+   "lt_samogitia",
+   "memel"
+  ],
+  "lt_core": [
+   "lt_vilnius",
+   "lt_kaunas",
+   "lt_samogitia"
+  ],
+  "belarus_l": [
+   "BY-BR",
+   "BY-HO",
+   "BY-HR",
+   "BY-MA",
+   "BY-MI",
+   "BY-VI"
+  ],
+  "galicia_e": [
+   "UA-46",
+   "UA-61",
+   "UA-26"
+  ],
+  "volhynia": [
+   "UA-07",
+   "UA-56"
+  ],
+  "rightbank": [
+   "UA-18",
+   "UA-68",
+   "UA-05",
+   "UA-32",
+   "UA-71"
+  ],
+  "leftbank": [
+   "UA-74",
+   "UA-53"
+  ],
+  "latvia_l": [
+   "courland",
+   "livonia",
+   "latgale"
+  ],
+  "west1945": [
+   "PL-ZP",
+   "PL-LB",
+   "PL-DS",
+   "PL-OP",
+   "warmia",
+   "masuria"
+  ],
+  "ukraine_l": [
+   "UA-46",
+   "UA-61",
+   "UA-26",
+   "UA-07",
+   "UA-56",
+   "UA-18",
+   "UA-68",
+   "UA-05",
+   "UA-32",
+   "UA-71",
+   "UA-74",
+   "UA-53"
+  ],
+  "pl_all": [
+   "PL-DS",
+   "PL-KP",
+   "PL-LB",
+   "PL-LD",
+   "PL-LU",
+   "PL-MA",
+   "PL-MZ",
+   "PL-OP",
+   "PL-PD",
+   "PL-PK",
+   "PL-PM",
+   "PL-SK",
+   "PL-SL",
+   "PL-WP",
+   "PL-ZP",
+   "warmia",
+   "masuria"
+  ]
+ }
+}

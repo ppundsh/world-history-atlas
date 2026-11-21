@@ -1,0 +1,12 @@
+# 中國（1911–1951）模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+rail	cn_jinghan	1906-04		116.4,39.9 115.47,38.87 114.5,36.6 114.3,34.8 114.04,32.13 114.3,30.6	京漢鐵路（盧漢鐵路）	Beijing–Hankou railway	京漢鉄道	北京至漢口。	Beijing to Hankou.	北京—漢口。	京漢鐵路	Beijing–Hankou railway
+rail	cn_jingzhang	1909-09		116.4,39.9 116.0,40.35 115.5,40.5 114.88,40.82	京張鐵路	Beijing–Zhangjiakou railway	京張鉄道	詹天佑主持，中國自建的第一條幹線鐵路。	Led by Zhan Tianyou, China's first trunk line built by Chinese engineers.	詹天佑が建設した中国自前の初の幹線。	京張鐵路	Imperial Peking–Kalgan Railway
+rail	cn_jinpu	1912-12		117.2,39.13 116.99,36.67 117.18,34.26 117.38,32.92 118.72,32.08	津浦鐵路	Tianjin–Pukou railway	津浦鉄道	天津至浦口（南京對岸）。	Tianjin to Pukou, across from Nanjing.	天津—浦口。	津浦鐵路	Tianjin–Pukou railway
+rail	cn_longhai	1935-01		119.22,34.6 117.18,34.26 114.3,34.8 112.45,34.62 108.95,34.27 107.13,34.36	隴海鐵路（連雲港—寶雞）	Longhai railway (to Baoji)	隴海鉄道	東西向幹線延伸至寶雞。	The east–west trunk reached Baoji.	東西幹線が宝鶏まで。	隴海鐵路	Longhai railway
+rail	cn_yuehan	1936-04		114.3,30.6 113.1,29.37 112.98,28.2 112.57,26.9 113.04,25.8 113.26,23.13	粵漢鐵路全線通車	Canton–Hankou railway completed	粤漢鉄道全通	京漢—粵漢連成南北大動脈。	With the Beijing–Hankou line it made a north–south artery.	南北の大動脈が完成。	粵漢鐵路	Guangzhou–Hankou railway
+bridge	cn_qiantang	1937-09		120.14,30.2	錢塘江大橋	Qiantang River Bridge	銭塘江大橋	茅以昇設計，通車三個月後為阻日軍自行炸毀。	Designed by Mao Yisheng; blown up by the Chinese three months later to stop the Japanese.	茅以昇設計、開通3ヵ月後に自ら爆破。	錢塘江大橋	Qiantang River Bridge
+road	cn_burma	1938-08		102.7,25.04 100.2,25.6 98.6,24.43 97.9,24.0 96.08,21.97	滇緬公路	Burma Road	ビルマ公路	抗戰物資的生命線，數十萬民工修築。	The wartime supply lifeline, built by hundreds of thousands of labourers.	抗戦物資の生命線。	滇緬公路	Burma Road
+road	cn_ledo	1945-01		95.5,27.3 97.0,26.0 97.5,24.7 98.6,24.43	中印公路（雷多公路／史迪威公路）	Ledo (Stilwell) Road	レド公路	由印度雷多接通滇緬公路。	From Ledo in India to the Burma Road.	インドのレドからビルマ公路へ。	中印公路	Ledo Road
+hydro	cn_fengman	1943-03		126.68,43.73	豐滿水電站	Fengman dam	豊満ダム	日本在滿洲興建的大型水電站。	A large hydro plant built by Japan in Manchuria.	満洲国期に日本が建設。	豐滿水電站	Fengman Dam
+industry	cn_anshan	1919-04		122.99,41.11	鞍山製鐵所	Anshan ironworks	鞍山製鉄所	滿鐵經營，後為鞍鋼。	Run by the South Manchuria Railway; later Angang.	満鉄経営、のちの鞍鋼。	鞍山鋼鐵	Ansteel Group
+airport	cn_hump	1942-05	1945-11	102.74,24.99	駝峰航線	The Hump airlift	ハンプ越え空輸	由印度阿薩姆飛越喜馬拉雅運補昆明。	Flights from Assam over the Himalayas to Kunming.	アッサムから昆明への空輸。	駝峰航線	The Hump

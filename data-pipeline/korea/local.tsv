@@ -1,0 +1,47 @@
+# 韓國模式：民亂與起義（⚔）、地方勢力（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+# 位置為約略地點；年代依各維基百科條目。
+feud	myocheong	1135-01	1136-02	125.75	39.02	妙清之亂	Myocheong's rebellion	妙清の乱	僧人妙清主張遷都西京（平壤）並稱帝，於西京起兵，遭金富軾平定。	The monk Myocheong urged a move of the capital to Pyongyang and rebelled there; Kim Bu-sik crushed him.	僧妙清が西京遷都を唱えて挙兵し、金富軾に鎮圧された。	妙清之亂
+feud	mangi	1176-01	1177-07	127.12	36.2	亡伊・亡所伊之亂	Mangi and Mangsoi uprising	亡伊・亡所伊の乱	公州鳴鶴所的賤民反抗差別待遇。	Low-caste people of Myeonghak-so near Gongju rose against discrimination.	公州鳴鶴所の賤民が差別に反抗した。	亡伊、亡所伊之亂
+feud	manjeok	1198-05	1198-05	126.55	37.97	萬積之亂（未遂）	Manjeok's planned revolt	萬積の乱（未遂）	私奴萬積密謀奴婢起事，事洩被殺，為高麗奴婢解放運動的象徵。	The slave Manjeok plotted a slave rising, was betrayed and killed.	私奴の萬積が奴婢の蜂起を謀ったが露見した。	萬積之亂
+feud	sambyeolcho_f	1270-06	1273-04	126.26	34.48	三別抄抗爭	Sambyeolcho rebellion	三別抄の乱	武臣政權親衛軍拒絕投降蒙古，轉戰珍島、濟州。	The military regime's guards refused to submit to the Mongols and fought on from Jindo and Jeju.	武臣政権の親衛軍がモンゴルへの降伏を拒み、珍島・済州で抗戦した。	三別抄抗蒙
+feud	isiae	1467-05	1467-08	129.4	40.8	李施愛之亂	Yi Si-ae's rebellion	李施愛の乱	咸鏡道豪族李施愛反抗中央集權。	A Hamgyong magnate rebelled against central control.	咸鏡道の豪族李施愛が中央集権に反発して挙兵。	李施愛之亂
+feud	samporan	1510-04	1510-04	128.68	35.13	三浦倭亂	Three Ports Revolt	三浦の乱	居留三浦的日本人與對馬兵起事。	Japanese residents of the three ports and Tsushima troops rose in revolt.	三浦の居留日本人と対馬兵の蜂起。	三浦倭亂
+feud	imkkeokjeong	1559-01	1562-01	126.5	38.3	林巨正之亂	Im Kkeok-jeong's band	林巨正の乱	白丁林巨正率眾在黃海道劫富濟貧三年。	The butcher Im Kkeok-jeong led a band in Hwanghae robbing the rich for three years.	白丁の林巨正が黄海道で義賊として活動した。	林巨正
+feud	igwal	1624-01	1624-02	125.8	39.8	李适之亂	Yi Gwal's rebellion	李适の乱	平安兵使李适起兵攻佔漢城，仁祖出逃公州。	A northern commander seized Hanseong; King Injo fled to Gongju.	李适が挙兵して漢城を占領し、仁祖は公州へ避難。	李适之亂
+feud	honggyeongnae	1811-12	1812-04	125.4	39.6	洪景來之亂	Hong Gyeong-nae's rebellion	洪景来の乱	平安道受歧視的民眾起事，固守定州城。	People of discriminated-against Pyongan rose and held Jeongju.	差別された平安道の民衆が蜂起し定州城に籠城。	洪景來之亂
+feud	jinju	1862-02	1862-05	128.08	35.18	晉州民亂（壬戌民亂）	Jinju uprising (Imsul rebellions)	晋州民乱（壬戌民乱）	官吏苛斂引發晉州農民起事，蔓延三南七十餘郡。	Exactions by officials set off a rising in Jinju that spread to some seventy counties.	官吏の苛斂誅求で晋州の農民が蜂起し、三南の七十余郡に広がった。	壬戌民亂
+feud	donghak_f	1894-01	1895-01	126.88	35.73	東學農民戰爭	Donghak Peasant Revolution	甲午農民戦争	全琫準領導農民起事，佔全州、設執綱所，二次起事於牛禁峙遭日軍擊敗。	Jeon Bong-jun's peasants took Jeonju and ran local offices before Japanese troops beat them at Ugeumchi.	全琫準らが全州を占領し執綱所を設けたが、牛禁峠で日本軍に敗れた。	東學黨起義
+feud	uibyeong	1907-08	1910-12	127.95	37.34	丁未義兵	Righteous Armies of 1907	丁未義兵	韓國軍隊解散後，義兵在各地武裝抗日。	After the Korean army was disbanded, Righteous Armies fought the Japanese across the country.	韓国軍解散後、義兵が各地で抗日闘争を行った。	朝鮮義兵運動
+feud	daegu1946	1946-10	1946-11	128.6	35.87	大邱十月事件	Daegu October incident	大邱十月事件	美軍政下糧荒與左翼罷工引發的大規模衝突。	Food shortages and left-wing strikes under US military rule led to widespread clashes.	米軍政下の食糧難と左派のストが大規模な衝突に発展。	大邱十月事件
+feud	jeju43	1948-04	1954-09	126.53	33.38	濟州四三事件	Jeju uprising (April 3 incident)	済州四・三事件	南勞黨起事及其後鎮壓，數萬島民罹難。	A Workers' Party rising and its suppression, in which tens of thousands of islanders died.	南労党の蜂起とその鎮圧で数万人の島民が犠牲になった。	濟州四三事件
+feud	yeosu	1948-10	1948-11	127.66	34.76	麗水順天事件	Yeosu–Suncheon rebellion	麗水・順天事件	國軍第十四團拒絕出兵濟州而叛變。	The 14th Regiment mutinied rather than be sent to Jeju.	国軍第 14 連隊が済州出動を拒んで反乱。	麗水順天事件
+feud	april19	1960-04	1960-04	126.98	37.57	四一九革命	April Revolution	四・一九革命	學生抗議三一五選舉舞弊，李承晚下台。	Students protested the rigged March election; Syngman Rhee resigned.	不正選挙に抗議する学生運動で李承晩が退陣。	四一九革命
+feud	buma	1979-10	1979-10	129.04	35.1	釜馬民主抗爭	Bu-Ma Democratic Protests	釜馬民主抗争	釜山、馬山反對維新體制的抗爭。	Protests against the Yushin regime in Busan and Masan.	釜山・馬山の維新体制反対闘争。	釜馬民主抗爭
+feud	gwangju	1980-05	1980-05	126.85	35.15	光州民主化運動	Gwangju Uprising	光州事件	光州市民反抗全斗煥新軍部，遭戒嚴軍血腥鎮壓。	Gwangju's citizens rose against Chun Doo-hwan's junta and were bloodily suppressed.	光州市民が全斗煥の新軍部に抵抗し、戒厳軍に鎮圧された。	光州事件
+feud	june1987	1987-06	1987-06	126.98	37.57	六月民主抗爭	June Democratic Struggle	六月民主抗争	全國大規模示威，迫使政府接受總統直選。	Nationwide protests forced the government to accept direct presidential elections.	全国的なデモで大統領直接選挙制を勝ち取った。	六月民主運動
+power	cheonghae	0828-04	0851-02	126.75	34.33	清海鎮（張保皐）	Cheonghae garrison (Jang Bogo)	清海鎮（張保皐）	張保皐掌控黃海、東海貿易的海上勢力。	Jang Bogo's maritime power controlled trade across the Yellow and East seas.	張保皐が黄海・東シナ海の交易を握った海上勢力。	張保皐
+power	tamna	0001-01	1105-12	126.53	33.5	耽羅國	Tamna	耽羅国	濟州島上的古國，1105 年併入高麗為郡。	The old kingdom of Jeju, made a Goryeo county in 1105.	済州島の古国。1105 年に高麗の郡となった。	耽羅國
+power	gungye	0901-01	0918-07	127.2	38.25	弓裔（泰封，鐵原）	Gung Ye (Taebong, Cheorwon)	弓裔（泰封・鉄原）	後三國之一，國號後高句麗、摩震、泰封。	One of the Later Three Kingdoms: Later Goguryeo, Majin, then Taebong.	後三国の一つ。国号は後高句麗・摩震・泰封。	泰封
+power	gyeonhwon	0900-01	0936-09	127.15	35.82	甄萱（後百濟，完山）	Gyeon Hwon (Later Baekje, Wansan)	甄萱（後百済・完山）	以完山州（全州）為都的後百濟。	Later Baekje, with its capital at Wansan (Jeonju).	完山州（全州）を都とした後百済。	後百濟
+power	choe	1196-04	1258-03	126.55	37.97	崔氏武臣政權	Choe military regime	崔氏政権	崔忠獻家族四代掌控高麗朝政六十餘年。	Four generations of the Choe family ruled Goryeo for over sixty years.	崔忠献一族が四代 60 年余り政権を握った。	崔氏政權
+power	andongkim	1800-07	1863-12	126.98	37.57	安東金氏勢道政治	Andong Kim in-law government	安東金氏の勢道政治	外戚安東金氏把持朝政，賣官鬻爵盛行。	The Andong Kim in-laws controlled the court; offices were sold.	外戚の安東金氏が朝政を握り、売官が横行した。	勢道政治
+power	jipgangso	1894-06	1894-11	127.15	35.82	東學農民軍執綱所	Donghak local offices (jipgangso)	東学農民軍の執綱所	全州和約後農民軍在全羅道各郡設立的自治機構。	Self-governing offices the peasant army set up across Jeolla after the Jeonju truce.	全州和約後、農民軍が全羅道各郡に置いた自治機関。	東學黨起義
+us	lelang	0001-01	0313-10	125.75	39.0	樂浪郡（漢）	Lelang Commandery (Han)	楽浪郡（漢）	漢武帝滅衛滿朝鮮後設置，至 313 年為高句麗所滅。	Set up by Han after the fall of Wiman Joseon; destroyed by Goguryeo in 313.	漢が衛氏朝鮮を滅ぼして設置、313 年に高句麗に滅ぼされた。	樂浪郡
+us	ungjin	0660-09	0676-11	127.12	36.46	熊津都督府（唐）	Ungjin Protectorate (Tang)	熊津都督府（唐）	唐滅百濟後在其故地設置的統治機構。	Tang's administration in former Baekje.	唐が百済の故地に置いた統治機関。	熊津都督府
+us	andong	0668-10	0676-11	125.75	39.02	安東都護府（唐）	Protectorate General to Pacify the East (Tang)	安東都護府（唐）	唐滅高句麗後設於平壤，676 年遷往遼東。	Set up at Pyongyang after Goguryeo fell; moved to Liaodong in 676.	高句麗滅亡後に平壌に置かれ、676 年に遼東へ移った。	安東都護府
+us	ssangseong	1258-12	1356-07	127.5	39.9	雙城總管府（元）	Ssangseong Prefecture (Yuan)	双城総管府（元）	蒙古在和州設置的直轄地，恭愍王時收復。	A Mongol-ruled territory at Hwaju, retaken under King Gongmin.	モンゴルが和州に置いた直轄地。恭愍王が奪回。	雙城總管府
+us	dongnyeong	1270-01	1290-12	125.75	39.02	東寧府（元）	Dongnyeong Prefecture (Yuan)	東寧府（元）	元在西京（平壤）設置的直轄地。	Yuan-ruled territory at Pyongyang.	元が西京（平壌）に置いた直轄地。	東寧府
+us	tamna_yuan	1273-04	1294-12	126.53	33.5	耽羅總管府（元）	Tamna Prefecture (Yuan)	耽羅総管府（元）	三別抄平定後元在濟州設置牧場與總管府。	After the Sambyeolcho fell, Yuan ran Jeju as a horse-breeding prefecture.	三別抄平定後、元が済州に置いた総管府と牧場。	耽羅總管府
+us	ming_army	1593-01	1600-09	126.98	37.57	明軍援朝	Ming army in Korea	明の援軍	壬辰、丁酉倭亂期間駐朝鮮的明軍。	Ming troops stationed in Korea during the Imjin War.	壬辰・丁酉倭乱の間に駐留した明軍。	萬曆朝鮮之役
+us	wajo	1593-05	1598-12	129.04	35.1	倭城（日軍據點）	Japanese castles (wajō) on the south coast	倭城（日本軍の拠点）	日軍在朝鮮南部沿岸築城固守。	Japanese forces built and held castles along the south coast.	日本軍が朝鮮南岸に城を築いて籠った。	倭城
+us	qing_army	1882-08	1885-07	126.98	37.57	清軍駐漢城（吳長慶）	Qing troops in Seoul (Wu Changqing)	清軍の漢城駐留（呉長慶）	壬午軍亂後清軍進駐漢城，袁世凱亦隨行。	Qing troops occupied Seoul after the Imo incident, with Yuan Shikai among them.	壬午軍乱後に清軍が漢城に駐留、袁世凱も同行。	壬午軍亂
+us	japan_army	1904-03	1945-09	126.98	37.53	日本朝鮮駐箚軍・朝鮮軍（龍山）	Japanese Korea Garrison Army / Korea Army (Yongsan)	韓国駐箚軍・朝鮮軍（龍山）	日俄戰爭時進駐，後改稱朝鮮軍，總部設於龍山。	Arrived in the Russo-Japanese War; later the Korea Army, headquartered at Yongsan.	日露戦争時に進駐、のち朝鮮軍と改称、司令部は龍山。	朝鮮軍 (日本)
+us	nanam	1919-01	1945-08	129.75	41.75	日軍第十九師團（羅南）	Japanese 19th Division (Nanam)	第 19 師団（羅南）	駐守朝鮮北部、防備滿洲與蘇聯。	Guarded northern Korea against Manchuria and the Soviet Union.	朝鮮北部に駐屯し満洲・ソ連に備えた。	第19師團
+us	soviet25	1945-08	1948-12	125.75	39.02	蘇聯第二十五軍（平壤）	Soviet 25th Army (Pyongyang)	ソ連第 25 軍（平壌）	佔領北緯三十八度以北，扶植金日成政權。	Occupied the north of the 38th parallel and installed Kim Il Sung.	38 度線以北を占領し金日成政権を樹立した。	蘇聯民政局
+us	usfk	1945-09	2026-12	126.98	37.53	駐韓美軍（龍山）	US Forces Korea (Yongsan)	在韓米軍（龍山）	1945 年進駐，1949 年一度撤出，韓戰後長期駐紮；司令部 2018 年遷至平澤。	Arrived in 1945, left in 1949, returned with the Korean War and stayed; headquarters moved to Pyeongtaek in 2018.	1945 年進駐、1949 年に一旦撤退、朝鮮戦争後に長期駐留。司令部は 2018 年に平沢へ移転。	駐韓美軍
+us	humphreys	2017-07	2026-12	127.03	36.96	漢弗里斯營（平澤）	Camp Humphreys (Pyeongtaek)	キャンプ・ハンフリーズ（平沢）	駐韓美軍司令部所在地。	Headquarters of US Forces Korea.	在韓米軍司令部の所在地。	漢弗萊斯營
+us	osan	1952-12	2026-12	127.03	37.09	烏山空軍基地	Osan Air Base	烏山空軍基地	韓戰時興建的美國空軍基地。	A US air base built during the Korean War.	朝鮮戦争中に建設された米空軍基地。	烏山空軍基地
+us	kunsan	1951-01	2026-12	126.62	35.9	群山空軍基地	Kunsan Air Base	群山空軍基地	美國空軍在韓國西南的基地。	A US air base in the southwest.	韓国南西部の米空軍基地。	群山空軍基地
+us	cpv	1950-10	1958-10	125.75	39.02	中國人民志願軍	Chinese People's Volunteers	中国人民志願軍	韓戰參戰，停戰後續駐北韓至 1958 年。	Fought in the Korean War and stayed in the North until 1958.	朝鮮戦争に参戦し、停戦後も 1958 年まで駐留。	中國人民志願軍
+us	unc	1950-07	2026-12	126.68	37.96	聯合國軍司令部（板門店共同警備區）	United Nations Command (Panmunjom JSA)	国連軍司令部（板門店共同警備区域）	韓戰時成立，至今負責停戰協定的執行。	Set up in the Korean War; still oversees the armistice.	朝鮮戦争中に設置され、今も休戦協定の履行を担う。	聯合國軍司令部

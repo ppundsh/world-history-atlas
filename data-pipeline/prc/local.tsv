@@ -1,0 +1,21 @@
+# 中華人民共和國模式：抗爭與衝突（⚔）、特殊體制（◉）、外國駐軍（✪）。格式見 taiwan/local.tsv。
+feud	tibet1959	1959-03	1959-04	91.12	29.65	1959 年西藏起事	1959 Tibetan uprising	1959年チベット蜂起	拉薩民眾反抗解放軍，事後達賴喇嘛流亡，數萬人死亡或被捕。	Lhasa rose against the PLA; the Dalai Lama fled and tens of thousands were killed or arrested.	ラサの蜂起、ダライ・ラマ亡命。	1959年藏區騷亂
+feud	guangxi1968	1967-01	1968-12	108.37	22.82	廣西文革大屠殺	Guangxi Massacre	広西虐殺	文革武鬥與屠殺，死亡人數以萬計。	Cultural Revolution killings with tens of thousands dead.	文革期の大量虐殺。	廣西文革屠殺
+feud	inner_mongolia	1968-01	1969-05	111.65	40.82	內人黨案	Inner Mongolian People's Party purge	内人党事件	文革中對蒙古族的大規模迫害。	A mass persecution of Mongols in the Cultural Revolution.	文革中のモンゴル人迫害。	內人黨案
+feud	shadian	1975-07	1975-08	103.36	23.6	沙甸事件	Shadian incident	沙甸事件	解放軍鎮壓雲南回民村莊，近千人死亡。	The PLA crushed a Hui village in Yunnan; about a thousand died.	雲南の回族村への軍の鎮圧。	沙甸事件
+feud	tiananmen	1989-04	1989-06	116.39	39.9	八九民運	1989 democracy movement	天安門事件（八九民運）	學生與市民在天安門廣場聚集要求改革，6 月 4 日遭軍隊鎮壓。	Students and citizens filled Tiananmen Square; the army crushed them on 4 June.	天安門広場の民主化運動と6月4日の鎮圧。	六四事件
+feud	baren	1990-04	1990-04	75.98	39.47	巴仁鄉事件	Barin uprising	バレン郷事件	新疆維吾爾族武裝起事。	An armed Uyghur rising in Xinjiang.	新疆ウイグル族の武装蜂起。	巴仁乡事件
+feud	urumqi	2009-07	2009-07	87.62	43.83	烏魯木齊七五事件	Ürümqi riots	ウルムチ騒乱	維漢衝突，近 200 人死亡。	Uyghur–Han violence; nearly 200 dead.	ウイグル族と漢族の衝突。	七五事件
+feud	wukan	2011-09	2012-03	115.88	22.82	烏坎事件	Wukan protests	烏坎事件	村民抗議土地被賣，一度選出自己的村委會。	Villagers protesting land sales briefly elected their own committee.	土地売却への抗議と村民選挙。	烏坎事件
+feud	hk2019	2019-06	2020-06	114.16	22.28	香港反修例運動	Hong Kong protests	香港民主化デモ	百萬人上街，國安法實施後運動被壓制。	Up to a million marched; the national security law crushed the movement.	国安法で鎮圧。	反對逃犯條例修訂草案運動
+feud	whitepaper	2022-11	2022-12	121.44	31.22	白紙運動	White Paper protests	白紙運動	烏魯木齊火災後各地舉白紙抗議清零政策。	After the Ürümqi fire, blank-paper protests against zero-COVID spread.	ゼロコロナに抗議する白紙運動。	白紙運動
+power	bingtuan	1954-10	2026-12	86.05	44.3	新疆生產建設兵團	Xinjiang Production and Construction Corps	新疆生産建設兵団	屯墾戍邊的準軍事組織，擁有自己的城市與法院。	A paramilitary colonisation corps with its own towns and courts.	屯田の準軍事組織。	新疆生產建設兵團
+power	sez_sz	1980-08	2026-12	114.06	22.54	深圳經濟特區	Shenzhen Special Economic Zone	深圳経済特区	改革開放的試驗場，漁村變為千萬人口城市。	The test bed of reform; a fishing town became a city of millions.	改革開放の実験場。	深圳經濟特區
+power	hk_sar	1997-07	2026-12	114.16	22.28	香港特別行政區（一國兩制）	Hong Kong SAR (one country, two systems)	香港特別行政区（一国二制度）	回歸後保有自己的法律、貨幣與關稅。	Kept its own law, currency and customs after the handover.	独自の法・通貨・関税。	香港特別行政區
+power	mo_sar	1999-12	2026-12	113.54	22.19	澳門特別行政區	Macau SAR	マカオ特別行政区	博彩業支柱的特區。	A SAR built on casinos.	カジノ産業の特区。	澳門特別行政區
+power	pudong	1990-04	2026-12	121.5	31.24	上海浦東新區	Pudong New Area	上海浦東新区	從農田變為金融中心。	Farmland turned financial centre.	農地から金融センターへ。	浦東新區
+power	xiongan	2017-04	2026-12	115.95	39.0	雄安新區	Xiong'an New Area	雄安新区	承接北京非首都功能的新城。	A new city to take functions out of Beijing.	北京の非首都機能を移す新都市。	雄安新區
+us	soviet_pa	1949-10	1955-05	121.25	38.8	蘇聯駐旅順海軍基地	Soviet naval base at Port Arthur	ソ連の旅順海軍基地	依中蘇條約駐留，1955 年撤出。	Stationed under the Sino-Soviet treaty until 1955.	1955年に撤退。	旅順口
+us	seventh_fleet	1950-06	1979-01	120.0	24.5	美國第七艦隊協防臺灣	US Seventh Fleet in the Taiwan Strait	第七艦隊の台湾海峡防衛	韓戰爆發後美國宣布臺海中立化。	After the Korean War began the US "neutralised" the Strait.	朝鮮戦争後の台湾海峡中立化。	第七艦隊
+us	uk_hk	1949-10	1997-06	114.16	22.28	英軍駐港	British garrison in Hong Kong	英国駐留軍（香港）	回歸時由解放軍駐港部隊接替。	Replaced by the PLA garrison at the handover.	返還時に解放軍と交代。	駐港英軍
+us	soviet_border	1966-01	1989-05	111.6	47.4	蘇聯陳兵中蒙邊境	Soviet troops on the Chinese border	中ソ国境のソ連軍	中蘇對峙期間蘇聯在蒙古與遠東部署重兵。	During the split the USSR massed troops in Mongolia and the Far East.	中ソ対立期の大軍配備。	中蘇交惡

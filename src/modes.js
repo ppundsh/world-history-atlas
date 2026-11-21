@@ -1,3 +1,6 @@
+import { pictureFor, ART_WORKS, registerWorks } from './artworks.js';
+import { capitalOf } from './capitals.js';
+import { pagePicture } from './pageimage.js';
 // What to draw for the current mode and time. Renderers (flat.js, globe.js) only ask for a frame():
 //   world    — polities of the year, coloured per polity
 //   religion — same polities, coloured by their official / dominant religion
@@ -20,9 +23,9 @@ export async function loadReligions() {
 }
 
 // Regional modes (China 1911–1951, Taiwan 1600–2026): hand-made unit maps with month-by-month control
-const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json', korea: 'korea_units.json', vietnam: 'vietnam_units.json', germany: 'germany_units.json' };
+const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json', korea: 'korea_units.json', vietnam: 'vietnam_units.json', germany: 'germany_units.json', poland: 'poland_units.json', italy: 'italy_units.json', spain: 'spain_units.json', india: 'india_units.json', prc: 'prc_units.json', usa: 'usa_units.json' };
 // regional modes that have an administrative-division layer next to the control layer
-export const LAYERED = ['taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany'];
+export const LAYERED = ['taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa'];
 const OVERSEAS_GOVS = new Set(['taihoku', 'keijo', 'toyohara', 'ryojun', 'koror', 'shinkyo']);
 export const REGIONS = Object.keys(UNIT_FILES);
 export async function loadRegion(name) {
@@ -184,22 +187,29 @@ export function frame(st) {
     // Taiwan: control areas and/or administrative divisions. With both, control is the fill and the
     // divisions are drawn on top as dashed boundaries with smaller names.
     const layered = LAYERED.includes(st.mode);
-    const both = layered && st.layers?.control && st.layers?.admin;
+    const party = !!(c.party && st.party);             // Taiwan: counties and cities coloured by the party in office
+    const both = layered && st.layers?.control && st.layers?.admin && !party;
     const hide = st.mode === 'japan' && !st.overseas ? /^o_/ : null;
-    const s = regionState(c, st.cm, layered ? (both ? 'control' : st.layer) : 'control', hide);
+    const s = regionState(c, st.cm, party ? 'admin' : layered ? (both ? 'control' : st.layer) : 'control', hide);
     const adm = both ? regionState(c, st.cm, 'admin', hide) : null;
     return {
       feats: s.feats,
       context: contextFor(c, st.year),                // the rest of the world, drawn in grey
-      color: id => P.color(id),
+      color: party ? id => PARTY_COLOR[partyAt(c, id - c.divOffset, st.cm)] || '#e6e6e6' : id => P.color(id),
+      party,
+      // party view: no names on areas without a party (outside the country, not drawn)
+      labelOk: party ? id => !!c.party[id - c.divOffset] : null,
       overlays: s.areas.map(a => a.feature),
       markers: [
         // administrative seats, with the division layer
         ...(st.capitals !== false && layered && (st.layer === 'admin' || both) ? (c.seats || []).filter(x => x.a <= st.cm && st.cm <= x.b)
           .map(x => ({ kind: 'seat', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: x.d >= 0 ? c.divisions[x.d].color : '#555' })) : []),
         // Taiwan: feuds (⚔) and local powers (◉), each with its own switch
-        ...(c.local || []).slice().sort((x, y) => (x.kind === 'feud') - (y.kind === 'feud')).filter(x => (x.kind === 'feud' ? st.feuds : st.powers) && x.a <= st.cm && st.cm <= x.b)
-          .map(x => ({ kind: x.kind, id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: x.kind === 'feud' ? '#b91c1c' : '#6b21a8' })),
+        ...(c.local || []).slice().sort((x, y) => (x.kind === 'feud') - (y.kind === 'feud')).filter(x => ({ feud: st.feuds, power: st.powers, us: st.usForces }[x.kind]) && x.a <= st.cm && st.cm <= x.b)
+          .map(x => ({ kind: x.kind, id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: LOCAL_COLOR[x.kind] })),
+        // major works with a place (dams, power plants, ports …): an icon, while in service
+        ...(st.works === false ? [] : (c.works || []).filter(w => !w.path && w.a <= st.cm && st.cm <= w.b)
+          .map(w => ({ kind: 'work', id: w.id, lon: w.lon, lat: w.lat, text: w.n, color: WORK_COLOR[w.kind], icon: WORK_ICON[w.kind], quiet: st.cm - w.a > 36 }))),
         // governments last, so the ★ sits on top of a seat at the same place
         ...(st.capitals === false ? [] : s.govs).map(g => ({ kind: 'gov', id: g.id, lon: g.lon, lat: g.lat, text: g.n, color: P.color(c.offset + g.f), roc: g.roc })),
       ],
@@ -207,18 +217,20 @@ export function frame(st) {
       adminLines: adm?.inner || null, adminFeats: adm?.feats || null,
       // both layers (as on printed historical maps): divisions are the fill, control areas a coloured ribbon
       // along the inside of their borders, with the control names as the main labels
-      fillFeats: adm?.feats || null, fillUnits: adm?.units || null, ribbons: adm ? s.feats : null,
+      fillFeats: adm?.feats || null, fillUnits: adm?.units || null, ribbons: adm ? s.feats : null, ribbonLines: adm ? s.border : null,
       rocOutline: c.region === 'china' ? rocOutline(c, s.feats, s.govs) : null,
+      lang: { areas: [], flows: st.warFlows === false ? [] : regionFlows(c, st.cm, st.langInfo.col, st.mps), works: regionWorks(c, st.cm, st.langInfo.col, st.mps, st) },
       disputed: false,
     };
   }
   if (st.mode === 'regime' && store.regimes) return regimeFrame(st);
   if (st.mode === 'art' && store.art) return artFrame(st);
+  if (THEMES.includes(st.mode) && themeOf(st.mode)) return themeFrame(st);
   const feats = featuresFor(st.year) || [];
   if (st.mode === 'religion' && store.religions) {
-    return { feats, color: id => religionColor(id, st.year), overlays: [], markers: [], disputed: true };
+    return { feats, color: id => religionColor(id, st.year), overlays: [], markers: worldCapitals(st, feats), disputed: true };
   }
-  return { feats, color: id => P.color(id), overlays: [], markers: [], disputed: true };
+  return { feats, color: id => P.color(id), overlays: [], markers: worldCapitals(st, feats), disputed: true };
 }
 
 export function religionOf(id, year) {
@@ -322,10 +334,12 @@ export function regimeShares(feats, year) {
 
 // ---- art-history mode (data-pipeline/art/movements.tsv): the political map in pale tones, with the art
 // movements, schools and centres active in the year as clickable ✦ markers coloured by tradition
+export const ART_SYM = { arch: '⌂', person: '❖' };
 export const ART_COLORS = { west: '#3f51b5', eastasia: '#c62828', southasia: '#ef6c00', islam: '#00897b', americas: '#558b2f', africa: '#b8860b', oceania: '#8e24aa', ancient: '#6d4c41' };
 export async function loadArt() {
   if (store.art) return store.art;
   store.art = await fetch(import.meta.env.BASE_URL + 'data/art.json').then(r => r.json());
+  for (const x of store.art) if (x.q) ART_WORKS[x.id] = x.q;      // buildings and figures carry their own Wikidata ids
   return store.art;
 }
 function pale(hex) {
@@ -336,5 +350,129 @@ export function artActive(year) { return (store.art || []).filter(x => x.a <= ye
 function artFrame(st) {
   const feats = featuresFor(st.year) || [];
   return { feats, color: id => pale(P.color(id)), overlays: [], disputed: true,
-    markers: artActive(st.year).map(x => ({ kind: 'art', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t] })) };
+    markers: artActive(st.year).map(x => ({ kind: 'art', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t], sym: ART_SYM[x.k], picSize: st.picSize, pic: st.artPics !== false ? pictureFor(x.id) : null })) };
+}
+
+// major works (infra.tsv): an icon per kind; lines are drawn as they open, then stay as a faint network
+export const WORK_ICON = { dam: '🌊', hydro: '💧', power: '🏭', nuclear: '☢️', wind: '🌬️', solar: '☀️', bridge: '🌉', port: '⚓', airport: '✈️', tunnel: '⛰️', space: '🚀', industry: '🏗️', metro: '🚇', water: '🚰', stadium: '🏟️', rail: '🚂', hsr: '🚄', highway: '🛣️', road: '🚌', canal: '🛳️', pipeline: '🛢️', fiber: '🌐', cable: '🔌', datacenter: '🖥️', ixp: '🔀', grid: '⚡' };
+export const WORK_COLOR = { dam: '#0277bd', hydro: '#0288d1', power: '#6d4c41', nuclear: '#e6a100', wind: '#26a69a', solar: '#f9a825', bridge: '#546e7a', port: '#1565c0', airport: '#5e35b1', tunnel: '#795548', space: '#283593', industry: '#455a64', metro: '#00897b', water: '#039be5', stadium: '#8e24aa', rail: '#37474f', hsr: '#d32f2f', highway: '#ef6c00', road: '#8d6e63', canal: '#1976d2', pipeline: '#616161', fiber: '#7b1fa2', cable: '#00838f', datacenter: '#3949ab', ixp: '#7b1fa2', grid: '#f9a825' };
+export const workName = (e, col) => (e.k ? WORK_ICON[e.k] + ' ' : '') + (e.n[col] || e.n[0]);
+function regionWorks(c, m, col, mps, st) {
+  mps = mps || 2;
+  const lines = [], net = [];
+  for (const w of c.works || []) {
+    if (!w.path || m < w.a || m > w.b) continue;
+    // timed like the war arrows: drawn over at least 2.5 s, highlighted at least 6 s, the highlight fading over its last third
+    const grow = 2.5 * mps, end = w.a + grow, linger = 6 * mps, p = Math.min(1, (m - w.a + 1) / grow);
+    const hi = m <= end + linger * 0.66 ? 1 : Math.max(0, 1 - (m - end - linger * 0.66) / (linger * 0.34));
+    if (st.works !== false && hi > 0) lines.push({ kind: w.kind, path: w.path, p, alpha: hi, color: WORK_COLOR[w.kind], label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]) });
+    if (st.network !== false && p >= 1) net.push({ kind: w.kind, path: w.path, color: WORK_COLOR[w.kind], alpha: 1 - hi * (st.works !== false ? 1 : 0) });
+  }
+  return { lines, net };
+}
+
+// marches, fronts and migrations of a regional mode: each advances along its path during its months,
+// then stays a while and fades
+function regionFlows(c, m, col, mps = 6) {
+  // timed in seconds of playback, not months, so a route stays readable at any speed: it takes at least
+  // 2.5 s to draw, stays at least 6 s, and fades over the last third of that
+  const out = [];
+  for (const f of c.flows || []) {
+    const grow = Math.max(f.b - f.a + 1, 2.5 * mps), end = f.a + grow;
+    const linger = Math.max((f.b - f.a) * 0.6, 6 * mps);
+    if (m < f.a || m > end + linger) continue;
+    const p = Math.min(1, (m - f.a + 1) / grow);
+    const fadeFrom = end + linger * 0.66;
+    out.push({ ...f, p, alpha: m <= fadeFrom ? 1 : Math.max(0, 1 - (m - fadeFrom) / (linger * 0.34)), label: f.n[col] || f.n[0] });
+  }
+  return out;
+}
+
+// an image supplied with the data (one the site has the right to use), loaded once
+const own = new Map();
+function ownPicture(url) {
+  let e = own.get(url);
+  if (!e) { e = { img: null }; own.set(url, e); const im = new Image(); im.onload = () => { e.img = im; ownListener?.(); }; im.src = url.startsWith('http') ? url : import.meta.env.BASE_URL + url; }
+  return e.img;
+}
+let ownListener = null;
+export function setOwnPictureListener(fn) { ownListener = fn; }
+
+// ---------------------------------------------------------------- capitals in the world modes (Wikidata, see capitals.js)
+// one ★ per polity in view; the largest polities' capitals show at every zoom, the rest once zoomed in
+// parties of Taiwan's county and city heads (party.tsv)
+export const PARTY_COLOR = { us_d: '#2f5fc4', us_r: '#d42d2d', us_dr: '#3a9b5c', us_f: '#e38b2c', us_w: '#e6c229', us_nr: '#b5893a', us_gw: '#8d6e63', us_sd: '#14306b', us_third: '#8e44ad', none: '#e0e0e0', inc: '#19aaed', bjp: '#ff9933', in_janata: '#0b8f3c', in_left: '#cc0000', aitc: '#20c646', sp: '#e11d48', bsp: '#22409a', tdp: '#f6e000', ysr: '#1569c7', brs: '#e05297', dmk: '#8b0000', admk: '#2c7a3a', tvk: '#f2b705', agp: '#00bfff', bjd: '#00843d', sad: '#0f204a', ss: '#f26f21', jknc: '#cc0033', pdp: '#00965e', jmm: '#1f7a1f', mgp: '#d4145a', sdf: '#ffd400', skm: '#e4002b', aap: '#0066a4', in_other: '#9ca3af', pres: '#5b5b5b', pl_sld: '#d7191c', pl_aws: '#1b5e20', pl_popis: '#4a6fa5', pl_lpr: '#5d4037', pl_po: '#f68b1f', pl_pis: '#263a7a', pl_psl: '#2bb24c', it_dc: '#6fa8dc', it_left: '#c62828', it_csx: '#ef6c4a', it_cdx: '#1e40af', it_other: '#2e9d3b', aut: '#a16207', psoe: '#e30613', pp: '#1d84ce', ciu: '#00a5a5', erc: '#f5a623', pnv: '#2e7d32', cc: '#f2d200', cds: '#7fb800', upn: '#6a1b9a', par: '#b45309', prc: '#c2185b', fac: '#00897b', gb: '#e65100', kr_cons: '#e61e2b', kr_lib: '#1a5fb4', kr_uld: '#2e9d5b', kr_third: '#2e9d5b', cdu: '#3a3a3a', csu: '#0080c8', spd: '#e3000f', fdp: '#f5c800', grn: '#46962b', linke: '#be3075', dp: '#b08d00', sed: '#8b0000', cvp: '#6b8e23', mixed: '#bdbdbd', ldp: '#3ca324', cdp: '#1c4e9c', dpj: '#d7263d', nfp: '#6a3d9a', komei: '#f55881', jcp: '#8b0000', sdp: '#1ca9e9', dpfp: '#f5c400', kibo: '#18a06a', reiwa: '#ed008c', chudo: '#7f4fc9', sanseito: '#d85d0f', liberal: '#ff9900', sakigake: '#8fbc3f', jishin: '#b8c600', tie: '#bdbdbd', mmd: '#e4e4e4', other: '#9e9e9e', cons: '#2b5fad', prog: '#d62728', ishin: '#b8c600', opp: '#e67e22', kmt: '#1f4ea3', dpp: '#1b9e3e', tpp: '#28c8c8', pfp: '#f28c28', np: '#f2d40b', cdsp: '#8e5aa8', ycp: '#b5651d', ind: '#7d7d7d', appt: '#cfcfcf', mil: '#a89f88' };
+export function partyAt(c, div, m) {
+  let r = null;
+  for (const [a, code] of c.party?.[div] || []) { if (a <= m) r = code; else break; }
+  return r;
+}
+export const LOCAL_COLOR = { feud: '#b91c1c', power: '#6b21a8', us: '#1d4ed8' };
+export function worldCapitals(st, feats) {
+  if (st.capitals === false) return [];
+  const area = new Map();
+  for (const f of feats) area.set(f.properties.p, (area.get(f.properties.p) || 0) + (f.properties.area || 0));
+  const ranked = [...area.entries()].sort((a, b) => b[1] - a[1]);
+  const out = [];
+  ranked.forEach(([p, ar], i) => {
+    const q = P.row(p)?.[10]; if (!q) return;
+    const c = capitalOf(q, st.year); if (!c) return;
+    out.push({ kind: 'cap', id: p, cap: c.c, img: c.img, lon: c.ll[0], lat: c.ll[1], text: c.n, color: P.color(p), big: i < 24, rank: i, size: Math.sqrt(ar) });
+  });
+  return out;
+}
+
+// ---------------------------------------------------------------- thematic world modes (languages, finance)
+// Areas (ellipses), points (shown once zoomed in) and flows (arrows that grow from source to destination during
+// their years, then stay a while and fade). Each mode may bring its own timeline of events.
+export const THEMES = ['language', 'finance', 'fgo', 'internet'];
+export async function loadTheme(mode) {
+  store.theme ||= {};
+  if (store.theme[mode]) return store.theme[mode];
+  const T = await fetch(import.meta.env.BASE_URL + 'data/' + mode + '.json').then(r => r.json());
+  T.fam = Object.fromEntries(T.families.map(f => [f.id, f]));
+  for (const a of T.areas) a.geometry = ellipse(a.lon, a.lat, a.rx, a.ry);
+  // portraits of the points' originals (Wikidata → Commons), fetched like the art-history works
+  if (T.pictures) registerWorks(mode, Object.fromEntries(T.points.filter(p => p.q).map(p => [p.id, [p.q]])), 'works.' + mode + '.v1');
+  store.theme[mode] = T;
+  return T;
+}
+export const themeOf = mode => store.theme?.[mode] || null;
+export const themeColor = (mode, f) => themeOf(mode)?.fam[f]?.color || '#888';
+export function themeActive(mode, year) {
+  const T = themeOf(mode); if (!T) return { areas: [], points: [], flows: [] };
+  const flows = [];
+  for (const f of T.flows) {
+    // cables (g: years to lay): drawn over g years, in service until retired, gone a few years later
+    const linger = f.g != null ? 3 : Math.max(80, (f.b - f.a) * 1.5), grow = f.g ?? (f.b - f.a);
+    if (year < f.a || year > f.b + linger) continue;
+    const p = grow > 0 ? Math.min(1, (year - f.a + (f.g != null ? 1 : 0)) / grow) : 1;
+    flows.push({ ...f, p, alpha: year <= f.b ? 1 : Math.max(0, 1 - (year - f.b) / linger), color: themeColor(mode, f.f), noHead: f.g != null });
+  }
+  return {
+    // areas fade in over their first decades and out over their last ones
+    areas: T.areas.filter(a => a.a <= year && year <= a.b).map(a => ({ ...a, color: themeColor(mode, a.f),
+      fresh: Math.max(0, 1 - (year - a.a) / 60), fading: a.b < 2026 ? Math.max(0, 1 - (a.b - year) / 60) : 0 })),
+    points: T.points.filter(p => p.a <= year && year <= p.b),
+    flows,
+  };
+}
+function themeFrame(st) {
+  const T = themeOf(st.mode);
+  const feats = featuresFor(st.year) || [], act = themeActive(st.mode, st.year);
+  if (st.thAreas === false) act.areas = [];
+  if (st.thFlows === false) act.flows = [];
+  if (st.thPoints === false) act.points = [];
+  // small areas first, so their labels win over the large ones around them
+  const areas = act.areas.slice().sort((a, b) => b.rx * b.ry - a.rx * a.ry);
+  return { feats, color: () => '#ece8df', overlays: [], disputed: false, noLabels: true,
+    lang: { areas, flows: act.flows.map(f => ({ ...f, label: f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })) },
+    markers: [
+      ...areas.slice().reverse().map(a => ({ kind: 'langArea', id: a.id, lon: a.lon, lat: a.lat, text: a.n, color: a.color, sym: '●',
+        // finance: a picture of the bank, exchange or coin (Wikipedia's lead picture, Commons only)
+        ...(T.areaPictures && st.artPics !== false ? { pic: pagePicture(a.w[1]), picSize: Math.min(st.picSize || 54, 60) } : {}) })),
+      ...act.points.map(p => ({ kind: T.pointsAlways ? 'langArea' : 'lang', id: p.id, lon: p.lon, lat: p.lat, text: p.n, color: themeColor(st.mode, p.f), sym: '●',
+        ...(T.pictures && st.artPics !== false ? { pic: p.img ? ownPicture(p.img.url) : pictureFor(p.id), picSize: st.picSize } : {}),
+        ...(p.series ? { hi: true } : {}), ...(T.pointsAlways ? { cls: p.f } : {}) })),
+    ] };
 }

@@ -1,0 +1,136 @@
+# 隱藏模式：Fate/Grand Order 英靈的歷史、神話原型。只收錄有明確地點的人物與傳說；說明是原型人物的史實與傳說，以本專案文字撰寫。
+# 欄位：id	職階	起年	迄年	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	English Wikipedia（原型人物，用於 Wikidata 公有領域肖像）	Wikidata（原型人物）
+artoria	saber	470	540	-4.75	50.66	阿爾托莉亞・潘德拉剛	Artoria Pendragon	アルトリア・ペンドラゴン	原型為傳說中的不列顛之王亞瑟，以石中劍與圓桌騎士聞名。	Based on King Arthur of British legend, of the sword in the stone and the Round Table.	King Arthur	Q45792
+nero	saber	37	68	12.49	41.89	尼祿・克勞狄烏斯	Nero Claudius	ネロ・クラウディウス	羅馬帝國第五任皇帝，熱愛藝術與表演。	Fifth Roman emperor, devoted to the arts and the stage.	Nero	Q1413
+siegfried	saber	400	500	6.95	50.94	齊格飛	Siegfried	ジークフリート	《尼伯龍根之歌》的屠龍英雄。	The dragon-slaying hero of the Nibelungenlied.	Siegfried	Q3483397
+caesar	saber	-100	-44	12.49	41.89	蓋烏斯・尤利烏斯・凱撒	Gaius Julius Caesar	ガイウス・ユリウス・カエサル	征服高盧、終結羅馬共和的政治家與將軍。	The general who conquered Gaul and ended the Roman Republic.	Julius Caesar	Q1048
+attila	saber	406	453	19.0	47.5	阿提拉	Altera (Attila)	アルテラ	匈人帝國的君主，被稱為「上帝之鞭」。	Ruler of the Huns, called the "Scourge of God".	Attila	Q36724
+deon	saber	1728	1810	3.97	47.86	謝瓦利埃・德・艾昂	Chevalier d'Eon	シュヴァリエ・デオン	法國外交官與間諜，後半生以女裝生活。	French diplomat and spy who lived the second half of life as a woman.	Chevalier d'Éon	Q715027
+okita	saber	1842	1868	139.7	35.68	沖田總司	Okita Souji	沖田総司	新選組一番隊隊長，以劍術聞名，早逝於肺結核。	Captain of the Shinsengumi's first unit, a famed swordsman who died young of tuberculosis.	Okita Sōji	Q267549
+fergus	saber	-100	0	-6.6	54.35	弗格斯・馬克・羅伊	Fergus mac Róich	フェルグス・マック・ロイ	愛爾蘭阿爾斯特傳說中的前任國王與勇士。	Former king and warrior of Ireland's Ulster Cycle.	Fergus mac Róich	Q387800
+mordred	saber	480	540	-2.7	51.1	莫德雷德	Mordred	モードレッド	亞瑟王傳說中背叛國王、在卡姆蘭之戰與其同歸於盡的騎士。	The knight of Arthurian legend who rebelled and fell with the king at Camlann.	Mordred	Q81109
+rama	saber	-1200	-1000	82.2	26.8	羅摩	Rama	ラーマ	印度史詩《羅摩衍那》的主角，阿約提亞的王子。	Hero of the Ramayana, prince of Ayodhya.	Rama	Q160213
+gawain	saber	480	540	-3.0	52.0	高文	Gawain	ガウェイン	圓桌騎士之一，《高文爵士與綠騎士》的主角。	Knight of the Round Table, hero of Sir Gawain and the Green Knight.	Gawain	Q831685
+bedivere	saber	480	540	-3.2	51.5	貝德維爾	Bedivere	ベディヴィエール	亞瑟王最後的隨侍，將聖劍歸還湖中。	The last companion of Arthur, who returned the sword to the lake.	Bedivere	Q202529
+musashi	saber	1584	1645	130.71	32.8	宮本武藏	Miyamoto Musashi	宮本武蔵	二天一流的開創者，《五輪書》的作者。	Founder of the Niten Ichi-ryū and author of The Book of Five Rings.	Miyamoto Musashi	Q193344
+suzuka	saber	780	810	136.4	34.9	鈴鹿御前	Suzuka Gozen	鈴鹿御前	鈴鹿山傳說中的天女或鬼女，與坂上田村麻呂相關。	A celestial or demon woman of the Suzuka mountains linked to Sakanoue no Tamuramaro.	Suzuka Gozen	Q11649495
+lanling	saber	541	573	114.4	36.1	蘭陵王	Prince of Lan Ling	蘭陵王	北齊名將高長恭，傳說以面具遮掩俊美容貌上陣。	Gao Changgong of Northern Qi, said to fight in a mask to hide his beauty.	Gao Changgong	Q710336
+munenori	saber	1571	1646	139.75	35.69	柳生但馬守宗矩	Yagyu Munenori	柳生但馬守宗矩	柳生新陰流劍術家，德川將軍家的劍術指南役。	Swordsman of the Yagyū Shinkage-ryū and sword instructor to the Tokugawa shoguns.	Yagyū Munenori	Q631099
+charlemagne	saber	768	814	6.08	50.78	查理曼	Charlemagne	シャルルマーニュ	法蘭克國王，800 年加冕為皇帝。	King of the Franks, crowned emperor in 800.	Charlemagne	Q3044
+sigurd	saber	400	500	10.0	60.0	西格德	Sigurd	シグルド	北歐傳說中屠殺巨龍法夫納的英雄。	The Norse hero who slew the dragon Fafnir.	Sigurd	Q537554
+gilgamesh	archer	-2700	-2600	45.64	31.32	吉爾伽美什	Gilgamesh	ギルガメッシュ	烏魯克之王，世界最古老史詩的主角。	King of Uruk, hero of the world's oldest epic.	Gilgamesh	Q159709
+robinhood	archer	1200	1300	-1.07	53.2	羅賓漢	Robin Hood	ロビンフッド	英格蘭舍伍德森林的傳說義賊。	The legendary outlaw of Sherwood Forest.	Robin Hood	Q122634
+atalanta	archer	-1300	-1200	22.4	37.6	阿塔蘭塔	Atalante	アタランテ	希臘神話中的女獵人，參與卡呂冬野豬狩獵。	Huntress of Greek myth, at the Calydonian boar hunt.	Atalanta	Q190323
+arash	archer	-1000	-800	52.0	36.0	阿拉什	Arash	アーラシュ	波斯傳說中射出一箭定下國界的弓手。	The Persian archer whose single arrow set the border.	Arash	Q626393
+david	archer	-1040	-970	35.23	31.78	大衛	David	ダビデ	以色列國王，以投石擊倒巨人歌利亞。	King of Israel who felled Goliath with a sling.	David	Q41370
+tesla	archer	1856	1943	-73.99	40.75	尼古拉・特斯拉	Nikola Tesla	ニコラ・テスラ	交流電系統的發明家。	Inventor of the alternating-current system.	Nikola Tesla	Q9036
+arjuna	archer	-1000	-900	76.85	29.97	阿周那	Arjuna	アルジュナ	《摩訶婆羅多》中般度五子之一的弓手。	The archer among the Pandavas of the Mahabharata.	Arjuna	Q185790
+tristan	archer	480	540	-4.5	50.4	崔斯坦	Tristan	トリスタン	圓桌騎士，與伊索德的悲戀傳說。	Knight of the Round Table, of the tragic love with Isolde.	Tristan	Q954012
+nobunaga	archer	1534	1582	136.29	35.16	織田信長	Oda Nobunaga	織田信長	戰國大名，推動日本統一，死於本能寺之變。	Sengoku warlord who drove Japan's unification and died at Honnō-ji.	Oda Nobunaga	Q171411
+billy	archer	1859	1881	-104.6	33.4	比利小子	Billy the Kid	ビリー・ザ・キッド	美國西部的槍手。	Gunfighter of the American West.	Billy the Kid	Q44200
+tawara	archer	900	960	136.0	35.0	俵藤太	Tawara Touta	俵藤太	藤原秀鄉，傳說中射殺大蜈蚣的武將。	Fujiwara no Hidesato, said to have shot the giant centipede of Mount Mikami.	Fujiwara no Hidesato	Q1136623
+napoleon	archer	1769	1821	2.35	48.85	拿破崙	Napoleon	ナポレオン	法國皇帝，改寫了歐洲版圖與法律。	Emperor of the French who redrew Europe's map and laws.	Napoleon	Q517
+chiron	archer	-1300	-1200	22.95	39.4	凱隆	Chiron	ケイローン	希臘神話中教導眾英雄的半人馬賢者。	The wise centaur who taught the heroes of Greek myth.	Chiron	Q183417
+paris	archer	-1250	-1180	26.24	39.96	帕里斯	Paris	パリス	特洛伊王子，誘走海倫引發特洛伊戰爭。	Prince of Troy whose taking of Helen began the Trojan War.	Paris (mythology)	Q167646
+ashwatthama	archer	-1000	-900	77.0	29.0	馬嘶	Ashwatthama	アシュヴァッターマン	《摩訶婆羅多》中德羅納之子。	Son of Drona in the Mahabharata.	Ashwatthama	Q2044550
+tomoe	archer	1157	1247	138.0	36.0	巴御前	Tomoe Gozen	巴御前	源義仲麾下的女武將。	A woman warrior who fought for Minamoto no Yoshinaka.	Tomoe Gozen	Q450780
+zenobia	archer	240	274	38.27	34.55	芝諾比婭	Zenobia	ゼノビア	帕米拉女王，曾挑戰羅馬帝國。	Queen of Palmyra who challenged Rome.	Zenobia	Q189705
+cuchulainn	lancer	-100	0	-6.6	54.35	庫・丘林	Cu Chulainn	クー・フーリン	愛爾蘭阿爾斯特傳說的大英雄。	The great hero of Ireland's Ulster Cycle.	Cú Chulainn	Q211955
+elisabeth	lancer	1560	1614	17.67	48.71	伊莉莎白・巴托里	Elisabeth Báthory	エリザベート・バートリー	匈牙利伯爵夫人，被控殘殺大量少女。	Hungarian countess accused of killing many young women.	Elizabeth Báthory	Q170846
+benkei	lancer	1155	1189	141.1	38.99	武藏坊弁慶	Musashibou Benkei	武蔵坊弁慶	源義經的僧兵家臣，傳說立地而死。	Warrior monk who served Minamoto no Yoshitsune and was said to die standing.	Benkei	Q316898
+leonidas	lancer	-540	-480	22.4	37.08	列奧尼達一世	Leonidas I	レオニダス一世	斯巴達國王，戰死於溫泉關。	King of Sparta who fell at Thermopylae.	Leonidas I	Q44228
+romulus	lancer	-771	-717	12.49	41.89	羅穆盧斯	Romulus	ロムルス	傳說中羅馬的建城者。	Legendary founder of Rome.	Romulus and Remus	Q2197
+hektor	lancer	-1250	-1180	26.24	39.96	赫克托爾	Hektor	ヘクトール	特洛伊的守護者與王子。	Prince and defender of Troy.	Hector	Q159666
+brynhild	lancer	400	500	10.0	60.0	布倫希爾德	Brynhildr	ブリュンヒルデ	北歐傳說中的女武神。	The valkyrie of Norse legend.	Brynhildr	Q850506
+scathach	lancer	-100	0	-6.2	57.2	斯卡哈	Scathach	スカサハ	影之國的女王，庫・丘林的師父，傳說位於天空島。	Queen of the Land of Shadows and teacher of Cú Chulainn, placed on Skye.	Scáthach	Q930509
+karna	lancer	-1000	-900	86.0	25.0	迦爾納	Karna	カルナ	《摩訶婆羅多》中太陽神之子、鴦伽國王。	Son of the sun god and king of Anga in the Mahabharata.	Karna	Q2727397
+fionn	lancer	200	300	-7.5	53.0	芬恩・麥克庫爾	Fionn mac Cumhaill	フィン・マックール	愛爾蘭芬尼亞傳說的戰士團首領。	Leader of the Fianna in Irish legend.	Fionn mac Cumhaill	Q382610
+diarmuid	lancer	200	300	-8.0	53.5	迪盧木多・奧迪那	Diarmuid Ua Duibhne	ディルムッド・オディナ	芬尼亞騎士團的戰士，與格蘭妮私奔。	Warrior of the Fianna who eloped with Gráinne.	Diarmuid Ua Duibhne	Q1209163
+lishuwen	lancer	1864	1934	117.0	38.3	李書文	Li Shuwen	李書文	八極拳名家，人稱「神槍」。	Master of Bajiquan, known as the "divine spear".	Li Shuwen	Q697515
+vlad	lancer	1431	1476	25.0	45.0	弗拉德三世	Vlad III	ヴラド三世	瓦拉幾亞大公，「穿刺公」，德古拉傳說的原型。	Prince of Wallachia, "the Impaler", source of the Dracula legend.	Vlad the Impaler	Q43715
+enkidu	lancer	-2700	-2600	45.64	31.32	恩奇都	Enkidu	エルキドゥ	吉爾伽美什的摯友，由眾神以泥土造成。	Gilgamesh's friend, made of clay by the gods.	Enkidu	Q463220
+qinliangyu	lancer	1574	1648	108.2	30.3	秦良玉	Qin Liangyu	秦良玉	明末女將，率白杆兵抗清。	Late-Ming woman general who led the White Staff troops against the Qing.	Qin Liangyu	Q1049034
+bradamante	lancer	780	800	11.3	44.5	布拉達曼特	Bradamante	ブラダマンテ	《瘋狂奧蘭多》中查理曼麾下的女騎士。	Woman knight of Charlemagne's paladins in Orlando Furioso.	Bradamante	Q1163427
+caenis	lancer	-1300	-1200	22.4	39.6	凱妮斯	Caenis	カイニス	希臘神話中變為不死戰士凱紐斯的人物。	Figure of Greek myth who became the invulnerable warrior Caeneus.	Caeneus	Q1132772
+medusa	rider	-1300	-1200	22.0	36.5	美杜莎	Medusa	メドゥーサ	希臘神話中蛇髮的戈爾貢。	The snake-haired Gorgon of Greek myth.	Medusa	Q160730
+george	rider	275	303	34.89	31.95	聖喬治	Saint George	ゲオルギウス	殉教聖人，屠龍傳說的主角。	Martyr saint of the dragon-slaying legend.	Saint George	Q48438
+teach	rider	1680	1718	-76.0	35.1	愛德華・蒂奇	Edward Teach	エドワード・ティーチ	人稱「黑鬍子」的海盜。	The pirate known as Blackbeard.	Blackbeard	Q213518
+boudica	rider	30	61	1.0	52.6	布狄卡	Boudica	ブーディカ	愛西尼人女王，起兵反抗羅馬。	Queen of the Iceni who rose against Rome.	Boudica	Q184634
+ushiwaka	rider	1159	1189	135.76	35.01	牛若丸	Ushiwakamaru	牛若丸	源義經幼名，壇之浦擊敗平家。	Minamoto no Yoshitsune, who defeated the Taira at Dan-no-ura.	Minamoto no Yoshitsune	Q310445
+alexander	rider	-356	-323	22.52	40.75	亞歷山大	Alexander	アレキサンダー	馬其頓國王，東征至印度。	King of Macedon who campaigned to India.	Alexander the Great	Q8409
+marie	rider	1755	1793	2.12	48.8	瑪麗・安托瓦內特	Marie Antoinette	マリー・アントワネット	法國王后，死於法國大革命。	Queen of France, executed in the Revolution.	Marie Antoinette	Q47365
+martha	rider	1	70	4.63	43.8	瑪爾大	Saint Martha	マルタ	聖經人物，傳說在普羅旺斯降伏惡龍塔拉斯克。	Biblical figure said to have tamed the Tarasque in Provence.	Martha	Q232453
+drake	rider	1540	1596	-4.14	50.37	法蘭西斯・德瑞克	Francis Drake	フランシス・ドレイク	完成環球航行的英國航海家，擊敗西班牙無敵艦隊。	English navigator who sailed round the world and fought the Armada.	Francis Drake	Q36517
+annemary	rider	1700	1721	-77.3	25.05	安妮・伯妮與瑪麗・里德	Anne Bonny & Mary Read	アン・ボニー＆メアリー・リード	加勒比海的女海盜。	Women pirates of the Caribbean.	Anne Bonny	Q231549
+ozymandias	rider	-1303	-1213	31.25	25.73	奧茲曼迪亞斯	Ozymandias	オジマンディアス	埃及法老拉美西斯二世。	The Egyptian pharaoh Ramesses II.	Ramesses II	Q1523
+ivan	rider	1530	1584	37.62	55.75	伊凡雷帝	Ivan the Terrible	イヴァン雷帝	俄羅斯第一位沙皇伊凡四世。	Ivan IV, the first tsar of Russia.	Ivan the Terrible	Q7996
+quetzalcoatl	rider	900	1100	-98.84	19.69	克察爾科亞特爾	Quetzalcoatl	ケツァルコアトル	中美洲的羽蛇神。	The feathered serpent god of Mesoamerica.	Quetzalcoatl	Q179818
+achilles	rider	-1250	-1180	26.24	39.96	阿基里斯	Achilles	アキレウス	特洛伊戰爭中希臘方的最強英雄。	The greatest Greek hero of the Trojan War.	Achilles	Q41746
+astolfo	rider	780	800	-1.5	43.0	阿斯托爾福	Astolfo	アストルフォ	查理曼十二聖騎士之一，騎鷹馬上月球。	One of Charlemagne's paladins, who rode the hippogriff to the Moon.	Astolfo	Q1263627
+ryoma	rider	1836	1867	133.53	33.56	坂本龍馬	Sakamoto Ryouma	坂本龍馬	幕末志士，促成薩長同盟。	Bakumatsu activist who brokered the Satsuma–Chōshū Alliance.	Sakamoto Ryōma	Q378450
+medea	caster	-1300	-1200	41.67	42.27	美狄亞	Medea	メディア	科爾基斯公主與魔女，幫助伊阿宋取得金羊毛。	Princess and sorceress of Colchis who helped Jason win the Golden Fleece.	Medea	Q174278
+gilles	caster	1405	1440	-1.55	47.22	吉爾・德・雷	Gilles de Rais	ジル・ド・レェ	曾與聖女貞德並肩作戰的法國元帥。	French marshal who fought beside Joan of Arc.	Gilles de Rais	Q311634
+andersen	caster	1805	1875	12.57	55.68	漢斯・克里斯汀・安徒生	Hans Christian Andersen	ハンス・クリスチャン・アンデルセン	丹麥童話作家。	Danish writer of fairy tales.	Hans Christian Andersen	Q5673
+shakespeare	caster	1564	1616	-1.71	52.19	威廉・莎士比亞	William Shakespeare	ウィリアム・シェイクスピア	英國劇作家。	English playwright.	William Shakespeare	Q692
+mephisto	caster	1480	1540	8.4	49.0	梅菲斯特	Mephistopheles	メフィストフェレス	浮士德傳說中的惡魔。	The devil of the Faust legend.	Mephistopheles	Q272805
+mozart	caster	1756	1791	16.37	48.21	沃夫岡・阿瑪迪斯・莫札特	Wolfgang Amadeus Mozart	ヴォルフガング・アマデウス・モーツァルト	古典樂派作曲家。	Composer of the Classical era.	Wolfgang Amadeus Mozart	Q254
+zhuge	caster	181	234	106.6	33.1	諸葛孔明	Zhuge Liang	諸葛孔明	三國蜀漢丞相，被視為智者的典型。	Chancellor of Shu Han, the archetype of the wise strategist.	Zhuge Liang	Q198211
+paracelsus	caster	1493	1541	13.04	47.8	帕拉塞爾蘇斯	Paracelsus	パラケルスス	瑞士醫生與鍊金術士。	Swiss physician and alchemist.	Paracelsus	Q83428
+babbage	caster	1791	1871	-0.13	51.51	查爾斯・巴貝奇	Charles Babbage	チャールズ・バベッジ	設計分析機的英國數學家，電腦的先驅。	English mathematician who designed the Analytical Engine.	Charles Babbage	Q46633
+edison	caster	1847	1931	-74.37	40.56	湯瑪斯・愛迪生	Thomas Edison	トーマス・エジソン	美國發明家。	American inventor.	Thomas Edison	Q8743
+blavatsky	caster	1831	1891	-74.0	40.7	海倫娜・布拉瓦茨基	Helena Blavatsky	エレナ・ブラヴァツキー	神智學會的創立者。	Founder of the Theosophical Society.	Helena Blavatsky	Q189454
+davinci	caster	1452	1519	10.92	43.79	李奧納多・達文西	Leonardo da Vinci	レオナルド・ダ・ヴィンチ	文藝復興的畫家、發明家。	Renaissance painter and inventor.	Leonardo da Vinci	Q762
+solomon	caster	-990	-931	35.23	31.78	所羅門	Solomon	ソロモン	以色列國王，以智慧聞名。	King of Israel, famed for wisdom.	Solomon	Q37085
+tamamo	caster	1100	1160	140.0	37.1	玉藻前	Tamamo no Mae	玉藻の前	傳說中化為美女的九尾狐，被封印為殺生石。	The nine-tailed fox of legend, sealed into the Sesshō-seki.	Tamamo-no-Mae	Q1327792
+nitocris	caster	-2200	-2180	31.25	29.85	尼托克莉絲	Nitocris	ニトクリス	傳說中的古埃及女法老。	A legendary woman pharaoh of Egypt.	Nitocris	Q230774
+avicebron	caster	1021	1058	-0.89	41.65	阿維斯布朗	Avicebron	アヴィケブロン	猶太哲學家所羅門・伊本・蓋比魯勒。	The Jewish philosopher Solomon ibn Gabirol.	Solomon ibn Gabirol	Q239355
+xuanzang	caster	602	664	108.94	34.22	玄奘三藏	Xuanzang	玄奘三蔵	唐代高僧，西行求法。	Tang monk who travelled west for scriptures.	Xuanzang	Q42063
+scheherazade	caster	800	900	44.37	33.31	山魯佐德	Scheherazade	シェヘラザード	《一千零一夜》的說故事者。	The storyteller of the Thousand and One Nights.	Scheherazade	Q216445
+circe	caster	-1200	-1150	13.05	41.23	喀耳刻	Circe	キルケー	希臘神話中將人變為豬的魔女。	The witch of Greek myth who turned men into pigs.	Circe	Q187602
+sasaki	assassin	1570	1612	130.94	33.92	佐佐木小次郎	Sasaki Kojirou	佐々木小次郎	傳說中與宮本武藏決鬥於巖流島的劍客。	The swordsman said to have duelled Musashi on Ganryū-jima.	Sasaki Kojirō	Q549737
+hassan	assassin	1050	1124	50.53	36.43	哈桑・薩巴赫	Hassan-i Sabbah	ハサン・サッバーハ	阿拉穆特的尼查里派領袖，「山中老人」。	Nizari leader of Alamut, the "Old Man of the Mountain".	Hassan-i Sabbah	
+jingke	assassin	-260	-227	115.47	39.36	荊軻	Jing Ke	荊軻	刺殺秦王未遂的刺客。	The assassin who failed to kill the King of Qin.	Jing Ke	Q532410
+sanson	assassin	1739	1806	2.35	48.86	夏爾-亨利・桑松	Charles-Henri Sanson	シャルル＝アンリ・サンソン	法國大革命時期的巴黎劊子手。	Paris executioner during the French Revolution.	Charles-Henri Sanson	Q950418
+matahari	assassin	1876	1917	5.8	53.2	瑪塔・哈里	Mata Hari	マタ・ハリ	荷蘭舞者，一戰時被控為間諜而處決。	Dutch dancer executed as a spy in the First World War.	Mata Hari	Q82180
+carmilla	assassin	1560	1614	17.67	48.71	卡蜜拉	Carmilla	カーミラ	以巴托里伯爵夫人為原型之一的吸血鬼傳說。	A vampire legend drawing on Countess Báthory.	Elizabeth Báthory	Q170846
+jack	assassin	1888	1888	-0.07	51.52	開膛手傑克	Jack the Ripper	ジャック・ザ・リッパー	1888 年倫敦白教堂區的連續殺人犯。	The 1888 Whitechapel murderer.	Jack the Ripper	Q43963
+fuuma	assassin	1550	1603	139.15	35.25	風魔小太郎	Fuuma Kotarou	風魔小太郎	後北條氏的忍者首領。	Ninja leader serving the Later Hōjō.	Fūma Kotarō	Q1368291
+yanqing	assassin	1100	1130	116.4	35.6	燕青	Yan Qing	燕青	《水滸傳》梁山好漢之一。	One of the Liangshan heroes of the Water Margin.	Yan Qing	Q836134
+wuzetian	assassin	624	705	112.45	34.62	武則天	Wu Zetian	武則天	中國唯一的正統女皇帝。	China's only empress regnant.	Wu Zetian	Q9738
+cleopatra	assassin	-69	-30	29.92	31.2	克麗奧佩脫拉	Cleopatra	クレオパトラ	托勒密王朝最後的女王。	The last queen of Ptolemaic Egypt.	Cleopatra	Q635
+semiramis	assassin	-811	-792	43.15	36.36	塞彌拉彌斯	Semiramis	セミラミス	亞述傳說中的女王。	The legendary queen of Assyria.	Semiramis	Q103960
+okada	assassin	1838	1865	133.53	33.56	岡田以藏	Okada Izou	岡田以蔵	幕末土佐的劍客，人稱「人斬以藏」。	Tosa swordsman of the Bakumatsu, "Izō the Killer".	Okada Izō	Q3058220
+katodanzo	assassin	1500	1569	138.2	36.6	加藤段藏	Katou Danzo	加藤段蔵	戰國時代傳說中的忍者。	A legendary ninja of the Sengoku period.	Katō Danzō	Q6378605
+heracles	berserker	-1300	-1200	22.72	37.73	海克力斯	Heracles	ヘラクレス	完成十二項偉業的希臘英雄。	The Greek hero of the Twelve Labours.	Heracles	Q122248
+lancelot	berserker	480	540	-1.0	47.5	蘭斯洛特	Lancelot	ランスロット	圓桌騎士中最強的騎士。	The greatest of the Knights of the Round Table.	Lancelot	Q215681
+lubu	berserker	161	199	118.18	34.27	呂布奉先	Lu Bu	呂布奉先	東漢末年的猛將。	A fearsome general of the late Han.	Lü Bu	Q317846
+spartacus	berserker	-111	-71	14.25	41.07	斯巴達克斯	Spartacus	スパルタクス	領導奴隸起義的色雷斯角鬥士。	Thracian gladiator who led a slave revolt.	Spartacus	Q83406
+kintoki	berserker	956	1012	138.98	35.26	坂田金時	Sakata Kintoki	坂田金時	源賴光四天王之一，金太郎傳說的原型。	One of Minamoto no Raikō's Four Kings, the original of Kintarō.	Sakata no Kintoki	Q1047529
+asterios	berserker	-1400	-1350	25.16	35.3	阿斯忒里俄斯	Asterios	アステリオス	克里特迷宮中的牛頭人彌諾陶洛斯。	The Minotaur of the Cretan labyrinth.	Minotaur	Q129866
+caligula	berserker	12	41	12.49	41.89	卡利古拉	Caligula	カリギュラ	以暴政聞名的羅馬皇帝。	Roman emperor known for tyranny.	Caligula	Q1409
+darius	berserker	-380	-330	52.89	29.93	大流士三世	Darius III	ダレイオス三世	阿契美尼德王朝的末代君主。	The last Achaemenid king.	Darius III	Q102865
+kiyohime	berserker	928	928	135.27	33.81	清姬	Kiyohime	清姫	道成寺傳說中化為大蛇的女子。	The woman of the Dōjō-ji legend who became a serpent.	Kiyohime	Q1207544
+eric	berserker	885	954	-1.08	53.96	血斧埃里克	Eric Bloodaxe	血斧王エイリーク	挪威國王與約克統治者。	King of Norway and ruler of York.	Eric Bloodaxe	Q213791
+nightingale	berserker	1820	1910	29.02	41.0	弗蘿倫絲・南丁格爾	Florence Nightingale	ナイチンゲール	克里米亞戰爭中的護士，近代護理之母。	Nurse of the Crimean War, founder of modern nursing.	Florence Nightingale	Q37103
+beowulf	berserker	500	550	12.0	56.0	貝奧武夫	Beowulf	ベオウルフ	古英語史詩中斬殺格倫德爾的英雄。	Hero of the Old English epic who slew Grendel.	Beowulf	Q48328
+raikou	berserker	948	1021	135.76	35.01	源賴光	Minamoto no Raikou	源頼光	平安時代討伐酒吞童子的武將。	Heian warrior who defeated Shuten-dōji.	Minamoto no Yorimitsu	Q590523
+penthesilea	berserker	-1250	-1180	36.0	41.0	彭忒西勒亞	Penthesilea	ペンテシレイア	特洛伊戰爭中的亞馬遜女王。	Amazon queen of the Trojan War.	Penthesilea	Q379828
+bunyan	berserker	1850	1900	-90.0	46.0	保羅・班揚	Paul Bunyan	ポール・バニヤン	北美伐木工的巨人傳說。	The giant of North American lumberjack lore.	Paul Bunyan	Q150519
+hijikata	berserker	1835	1869	140.73	41.77	土方歲三	Hijikata Toshizou	土方歳三	新選組副長，戰死於箱館。	Vice-commander of the Shinsengumi, killed at Hakodate.	Hijikata Toshizō	Q701182
+chacha	berserker	1569	1615	135.53	34.69	茶茶	Chacha	茶々	淀殿，豐臣秀吉的側室，死於大坂之陣。	Yodo-dono, consort of Hideyoshi, who died at the Siege of Osaka.	Yodo-dono	Q247408
+xiangyu	berserker	-232	-202	118.3	33.1	項羽	Xiang Yu	項羽	西楚霸王，楚漢相爭中敗於劉邦。	Hegemon-King of Western Chu, defeated by Liu Bang.	Xiang Yu	Q182266
+jeanne	extra	1412	1431	1.9	49.44	貞德（Ruler）	Jeanne d'Arc (Ruler)	ジャンヌ・ダルク	百年戰爭中解救奧爾良的少女，被處以火刑。	The young woman who relieved Orléans and was burned at the stake.	Joan of Arc	Q7226
+amakusa	extra	1621	1638	130.26	32.63	天草四郎時貞（Ruler）	Amakusa Shirou Tokisada (Ruler)	天草四郎時貞	島原之亂的領袖。	Leader of the Shimabara Rebellion.	Amakusa Shirō	Q452628
+qinshihuang	extra	-259	-210	108.7	34.38	始皇帝（Ruler）	Qin Shi Huang (Ruler)	始皇帝	秦始皇，統一中國的第一位皇帝。	The first emperor to unify China.	Qin Shi Huang	Q7192
+himiko	extra	170	248	130.5	33.5	卑彌呼（Ruler）	Himiko (Ruler)	卑弥呼	邪馬台國的女王。	Queen of Yamatai.	Himiko	Q234451
+salieri	extra	1750	1825	16.37	48.21	安東尼奧・薩列里（Avenger）	Antonio Salieri (Avenger)	アントニオ・サリエリ	維也納宮廷樂長。	Court Kapellmeister in Vienna.	Antonio Salieri	Q51088
+lobo	extra	1890	1894	-104.5	36.8	狼王羅伯（Avenger）	Hessian Lobo (Avenger)	ヘシアン・ロボ	西頓《動物記》中的新墨西哥狼王。	The wolf king of New Mexico from Seton's stories.	Lobo, the King of Currumpaw	Q3271910
+kagekiyo	extra	1150	1196	130.96	33.96	平景清（Avenger）	Taira no Kagekiyo (Avenger)	平景清	平家武將，壇之浦後仍伺機復仇的傳說。	A Taira warrior said to have sought revenge after Dan-no-ura.	Taira no Kagekiyo	Q7676361
+abigail	extra	1680	1692	-70.9	42.52	阿比蓋爾・威廉斯（Foreigner）	Abigail Williams (Foreigner)	アビゲイル・ウィリアムズ	塞勒姆審巫案的指控者之一。	One of the accusers in the Salem witch trials.	Abigail Williams	Q289694
+hokusai	extra	1760	1849	139.8	35.7	葛飾北齋（Foreigner）	Katsushika Hokusai (Foreigner)	葛飾北斎	《富嶽三十六景》的浮世繪畫家。	Ukiyo-e artist of the Thirty-six Views of Mount Fuji.	Hokusai	Q5586
+yangguifei	extra	719	756	108.94	34.26	楊貴妃（Foreigner）	Yang Guifei (Foreigner)	楊貴妃	唐玄宗的寵妃。	Favoured consort of Emperor Xuanzong of Tang.	Yang Guifei	Q298046
+vangogh	extra	1853	1890	2.17	49.07	梵谷（Foreigner）	Van Gogh (Foreigner)	ゴッホ	後印象派畫家。	Post-Impressionist painter.	Vincent van Gogh	Q5582
+doman	extra	950	1010	135.0	34.9	蘆屋道滿（Alter Ego）	Ashiya Doman (Alter Ego)	蘆屋道満	與安倍晴明對立的陰陽師傳說。	The legendary onmyōji rival of Abe no Seimei.	Ashiya Dōman	Q11641735
+iskandar	rider	-356	-323	22.52	40.75	伊斯坎達爾（征服王）	Iskandar	イスカンダル	亞歷山大大帝，馬其頓國王，東征至印度河。	Alexander the Great, king of Macedon, who campaigned as far as the Indus.	Alexander the Great	Q8409
+angra	extra	-1000	-500	53.0	32.0	安哥拉・曼紐（Avenger）	Angra Mainyu (Avenger)	アンリマユ	瑣羅亞斯德教中的惡之本源。	The destructive spirit of Zoroastrianism.	Angra Mainyu	Q489858
+

@@ -1,0 +1,20 @@
+# 義大利模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+rail	it_napoli	1839-10		14.25,40.85 14.37,40.75	那不勒斯—波蒂奇鐵路	Naples–Portici railway	ナポリ—ポルティチ鉄道	義大利半島第一條鐵路。	The first railway in the Italian peninsula.	イタリア半島初の鉄道。	那不勒斯—波蒂奇鐵路	Naples–Portici railway
+tunnel	it_frejus	1871-09		6.69,45.13	弗雷瑞斯（塞尼山）鐵路隧道	Fréjus (Mont Cenis) rail tunnel	フレジュス鉄道トンネル	第一條穿越阿爾卑斯的長隧道。	The first long tunnel through the Alps.	アルプスを貫く初の長大トンネル。	弗雷瑞斯鐵路隧道	Fréjus Rail Tunnel
+tunnel	it_gotthard	1882-05		8.6,46.6	聖哥達鐵路隧道	Gotthard rail tunnel	ゴッタルド鉄道トンネル	連接米蘭與瑞士、德國。	Linked Milan with Switzerland and Germany.	ミラノとスイスを結ぶ。	聖哥達鐵路隧道	Gotthard Rail Tunnel
+tunnel	it_simplon	1906-05		8.13,46.25	辛普倫隧道	Simplon Tunnel	シンプロン・トンネル	當時世界最長的鐵路隧道。	Then the longest railway tunnel in the world.	当時世界最長の鉄道トンネル。	辛普倫隧道	Simplon Tunnel
+rail	it_adriatica	1872-01		11.34,44.49 12.57,44.06 13.51,43.62 14.21,42.46 15.55,41.46 16.87,41.12	亞得里亞鐵路（波隆那—巴里）	Adriatic railway (Bologna–Bari)	アドリア線（ボローニャ—バーリ）	沿亞得里亞海岸南下。	South along the Adriatic coast.	アドリア海沿いに南下。	亞得里亞鐵路	Adriatic railway
+highway	it_laghi	1924-09		9.19,45.48 8.95,45.62 8.82,45.82	湖區高速公路（米蘭—瓦雷澤）	Autostrada dei Laghi (Milan–Varese)	湖水地方高速道路	世界第一條收費高速公路。	The world's first toll motorway.	世界初の有料高速道路。	湖區高速公路	Autostrada dei Laghi
+water	it_pontine	1932-12		13.0,41.4	彭甸沼地排乾與新城	Draining of the Pontine Marshes	ポンティーノ湿地干拓	法西斯政權的墾殖工程，建立拉丁納等新城。	A Fascist reclamation project that founded Latina and other towns.	ファシスト政権の干拓、ラティーナなど建設。	彭甸沼地	Pontine Marshes
+highway	it_a1	1964-10		9.19,45.48 10.33,44.8 11.34,44.49 11.25,43.77 11.88,43.46 12.47,41.9 13.6,41.5 14.25,40.85	太陽高速公路（A1，米蘭—那不勒斯）	Autostrada del Sole (A1, Milan–Naples)	太陽の高速道路（A1）	經濟奇蹟的象徵，貫穿半島。	A symbol of the economic miracle, running down the peninsula.	経済の奇跡の象徴。	太陽高速公路	Autostrada del Sole
+dam	it_vajont	1960-09	1963-10	12.33,46.27	瓦依昂水壩	Vajont Dam	バイオント・ダム	1963 年山崩引發巨浪，近 2000 人罹難。	A landslide in 1963 sent a wave over it, killing nearly 2,000.	1963年の地滑りで約2000人死亡。	瓦依昂水壩	Vajont Dam
+nuclear	it_latina	1963-05	1987-12	12.85,41.43	拉丁納核電廠	Latina nuclear plant	ラティーナ原子力発電所	1987 年公投後義大利全面廢核。	Italy gave up nuclear power after the 1987 referendum.	1987年国民投票で脱原発。	拉丁納核電廠	Latina Nuclear Power Plant
+industry	it_taranto	1964-10		17.2,40.5	塔蘭托鋼鐵廠（Italsider/Ilva）	Taranto steelworks (Italsider/Ilva)	ターラント製鉄所	歐洲最大鋼廠之一，污染爭議巨大。	One of Europe's largest steelworks, deeply contested over pollution.	欧州最大級の製鉄所。	伊爾瓦	Acciaierie d'Italia
+tunnel	it_montblanc	1965-07		6.89,45.88	白朗峰隧道	Mont Blanc Tunnel	モンブラン・トンネル	公路隧道連接法國。	A road tunnel to France.	フランスへの道路トンネル。	白朗峰隧道	Mont Blanc Tunnel
+hsr	it_direttissima	1977-02		12.47,41.9 12.3,42.4 12.0,43.0 11.25,43.77	羅馬—佛羅倫斯直通線	Rome–Florence Direttissima	ローマ—フィレンツェ直通線	歐洲第一條高速鐵路（首段）。	Europe's first high-speed line (first section).	欧州初の高速線。	羅馬—佛羅倫斯高速鐵路	Florence–Rome high-speed railway
+hsr	it_tav	2009-12		9.19,45.48 10.33,44.8 11.34,44.49 11.25,43.77	米蘭—波隆那—佛羅倫斯高速鐵路	Milan–Bologna–Florence high-speed line	ミラノ—ボローニャ—フィレンツェ高速線	米蘭到羅馬 3 小時。	Milan to Rome in three hours.	ミラノ—ローマ3時間。	米蘭—波隆那高速鐵路	Milan–Bologna high-speed railway
+hsr	it_tav_south	2005-12		12.47,41.9 13.6,41.5 14.25,40.85	羅馬—那不勒斯高速鐵路	Rome–Naples high-speed line	ローマ—ナポリ高速線	南段。	The southern section.	南区間。	羅馬—那不勒斯高速鐵路	Rome–Naples high-speed railway
+water	it_mose	2020-10		12.33,45.44	威尼斯摩西防洪閘門	MOSE flood barrier, Venice	MOSE（ヴェネツィア高潮対策）	首次升起阻擋高潮。	Raised for the first time against a high tide.	初めて高潮を阻止。	摩西計畫	MOSE
+bridge	it_genoa	2020-08		8.89,44.43	熱那亞聖喬治大橋	Genoa San Giorgio Bridge	ジェノヴァ・サン・ジョルジョ橋	取代倒塌的莫蘭迪橋。	Replaced the collapsed Morandi bridge.	崩落したモランディ橋の後継。	熱那亞聖喬治橋	Genoa-Saint George Bridge
+cable	it_atlantic	1999-01		12.5,37.5 2.0,38.0 -5.6,36.0	（地中海）SEA-ME-WE 3 海纜經西西里	SEA-ME-WE 3 via Sicily	SEA-ME-WE 3（シチリア経由）	歐亞海纜在馬札拉登陸。	The Europe–Asia cable landing at Mazara.	欧亜ケーブルがマザーラに陸揚げ。	SEA-ME-WE 3	SEA-ME-WE 3
+ixp	it_mix	2000-01		9.19,45.46	MIX 米蘭網際網路交換中心	MIX Milan Internet exchange	MIX ミラノIX	義大利最大交換中心。	Italy's largest exchange.	イタリア最大のIX。		MIX (Milan Internet eXchange)
