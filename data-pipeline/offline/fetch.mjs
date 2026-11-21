@@ -103,6 +103,7 @@ const failed = new Set();
 async function byTitles(wl, variant, titles) {               // title → row (batches of 20, the extracts limit)
   const out = new Map();
   for (let i = 0; i < titles.length; i += 20) {
+    process.stdout.write(`\r先批次查詢條目 ${Math.min(i + 20, titles.length)}/${titles.length}…      `);
     const part = titles.slice(i, i + 20);
     const j = await api(wl, { ...PROPS, titles: part.join('|'), ...(variant ? { variant } : {}) });
     if (!j?.query) { part.forEach(t => failed.add(t)); continue; }   // not reached: try again next run
