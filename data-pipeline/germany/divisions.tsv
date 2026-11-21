@@ -40,3 +40,15 @@ l_th	#a3c4a8	圖林根	图林根	Thuringia	テューリンゲン州
 l_sn	#e3c9a8	薩克森	萨克森	Saxony	ザクセン州
 gdr_bez	#e4b5b5	東德（1952 年起改設各專區，未繪）	东德（1952 年起改设各专区，未绘）	East Germany (districts from 1952, not drawn)	東ドイツ（1952 年から県、未描画）
 bw3	#cfd8a8	巴登—符騰堡三邦（1952 年合併前）	巴登—符腾堡三邦（1952 年合并前）	The three south-western states (before the 1952 merger)	南西部三州（1952 年合併前）
+z_us	#6fb3c7	美國占領區	美国占领区	American zone	アメリカ占領地区
+z_uk	#e76f51	英國占領區	英国占领区	British zone	イギリス占領地区
+z_fr	#b5a7d8	法國占領區（薩爾另為保護地）	法国占领区（萨尔另为保护地）	French zone (the Saar a protectorate)	フランス占領地区
+z_su	#cc94a0	蘇聯占領區	苏联占领区	Soviet zone	ソ連占領地区
+z_be	#d6c8b0	柏林（四國共管）	柏林（四国共管）	Berlin (four-power)	ベルリン（四か国管理）
+b_mvw	#b5a7d8	什未林專區	什未林专区	Schwerin district	シュヴェリーン県
+b_mve	#d8a7b1	羅斯托克、新布蘭登堡專區	罗斯托克、新布兰登堡专区	Rostock, Neubrandenburg districts	ロストック・ノイブランデンブルク県
+b_bb	#c9b79c	波茨坦、奧得河畔法蘭克福、科特布斯專區	波茨坦、奥得河畔法兰克福、科特布斯专区	Potsdam, Frankfurt (Oder), Cottbus districts	ポツダム・フランクフルト（オーダー）・コットブス県
+b_stn	#f6b98a	馬德堡專區	马德堡专区	Magdeburg district	マクデブルク県
+b_sts	#a594cf	哈勒專區	哈勒专区	Halle district	ハレ県
+b_th	#cc94a0	愛爾福特、格拉、蘇爾專區	爱尔福特、格拉、苏尔专区	Erfurt, Gera, Suhl districts	エアフルト・ゲーラ・ズール県
+b_sn	#d6c8b0	德勒斯登、萊比錫、卡爾馬克思城專區	德勒斯登、莱比锡、卡尔马克思城专区	Dresden, Leipzig, Karl-Marx-Stadt districts	ドレスデン・ライプツィヒ・カール＝マルクス＝シュタット県

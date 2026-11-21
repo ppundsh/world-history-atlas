@@ -90,12 +90,14 @@ const WORK_POINTS = ['dam', 'hydro', 'power', 'nuclear', 'wind', 'solar', 'bridg
 const WORK_LINES = ['rail', 'hsr', 'highway', 'road', 'canal', 'pipeline', 'fiber', 'cable', 'grid'];
 const works = exists('infra.tsv') ? rows('infra.tsv').map(([kind, id, a, b, geom, hant, en, ja, dh = '', de = '', dj = '', wzh = '', wen = '']) => {
   if (!WORK_POINTS.includes(kind) && !WORK_LINES.includes(kind)) throw new Error(`infra.tsv ${id}: unknown kind "${kind}"`);
-  const pts = geom.trim().split(/\s+/).map(p => p.split(',').map(Number));
-  if (pts.some(p => p.length !== 2 || p.some(v => !isFinite(v)))) throw new Error(`infra.tsv ${id}: bad geometry`);
+  // a line may have several parts separated by ";" (branches to landing points); the longest is its main path
+  const parts = geom.split(';').map(g => g.trim()).filter(Boolean).map(g => g.split(/\s+/).map(p => p.split(',').map(Number)));
+  if (!parts.length || parts.some(pts => pts.some(p => p.length !== 2 || p.some(v => !isFinite(v))))) throw new Error(`infra.tsv ${id}: bad geometry`);
   const line = WORK_LINES.includes(kind);
-  if (line && pts.length < 2) throw new Error(`infra.tsv ${id}: a ${kind} needs at least two points`);
+  if (line && parts.some(pts => pts.length < 2)) throw new Error(`infra.tsv ${id}: a ${kind} needs at least two points`);
+  const pts = parts.reduce((x, y) => (y.length > x.length ? y : x));
   const w = { kind, id, a: month(a), b: b ? month(b) : month(cfg.end), n: [en, hant, toHans(hant), ja], note: [de, dh, toHans(dh), dj], w: [wzh, wen, ''] };
-  return line ? { ...w, path: pts } : { ...w, lon: pts[0][0], lat: pts[0][1] };
+  return line ? { ...w, path: pts, ...(parts.length > 1 ? { parts } : {}) } : { ...w, lon: pts[0][0], lat: pts[0][1] };
 }) : [];
 for (const x of works) {
   const mid = x.path ? x.path[Math.floor(x.path.length / 2)] : [x.lon, x.lat];

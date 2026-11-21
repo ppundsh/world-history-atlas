@@ -61,13 +61,13 @@ const { WORLD_EVENTS } = await import(new URL('src/worldEvents.gen.js', ROOT));
 const EVENTS = WORLD_EVENTS.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]] }));        // [en, zh-Hant, zh-Hans, ja]
 const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa'];
 const THEMES = ['language', 'finance', 'fgo', 'internet'];
-const events = [...EVENTS];
+const events = EVENTS.map(e => ({ ...e, ctx: 'world', t: e.y }));
 const pageReq = new Map();                                     // "wl:title" → [wl, title]
 const addPage = (wl, title) => { title = (title || '').trim(); if (title) pageReq.set(wl + ':' + title, [wl, title]); };
 const cut = s => (s || '').split(/[（(、,]/)[0].trim();
 for (const r of REGIONS) {
   let c; try { c = data(r + '.json'); } catch { continue; }
-  events.push(...(c.events || []));
+  events.push(...(c.events || []).map(e => ({ ...e, ctx: r, t: c.start[0] + (e.m + c.start[1] - 1) / 12 })));
   for (const g of c.governments || []) for (const [lang, L] of Object.entries(LANGS)) addPage(L.wl, cut(g.n[L.col] || g.n[0]));
   for (const x of [...(c.seats || []), ...(c.local || [])]) {
     if (x.w?.[0]) addPage('zh', x.w[0]);
@@ -77,7 +77,7 @@ for (const r of REGIONS) {
 const workIds = new Set();
 for (const t of THEMES) {
   let T; try { T = data(t + '.json'); } catch { continue; }
-  events.push(...(T.events || []));
+  events.push(...(T.events || []).map(e => ({ ...e, ctx: t, t: e.y })));
   for (const x of [...(T.points || []), ...(T.areas || [])]) {
     if (x.q) workIds.add(x.q);
     if (!T.pictures && (x.w?.[1] || x.w?.[0])) addPage(x.w[1] ? 'en' : 'zh', x.w[1] || x.w[0]);
@@ -154,6 +154,41 @@ for (let i = 0; i < qids.length; i += 100) {
   }
 }
 for (const lang in evOut) { for (const k in evOut[lang]) if (Array.isArray(evOut[lang][k])) evOut[lang][k] = evOut[lang][k].slice(0, 5); write(`ev/${lang}.json`, evOut[lang]); }
+
+// ---------------------------------------------------------------- the same picture for events close in time
+// Two events of one mode that are close in time and share a picture (the same article, or a flag) would show the
+// same thumbnail side by side: the later one takes another picture from its own article (one request per article,
+// remembered in the bundle), or none if the article has no other usable picture.
+const normF = f => (f || '').replace(/_/g, ' ');
+const NOT_PHOTO = /flag|coat of arms|emblem|logo|icon|symbol|seal of|commons|wikiquote|wiktionary|portal|ambox|question|edit-|disambig|padlock|loudspeaker|speaker icon|\.svg$|\.ogv$|\.webm$|\.ogg$|\.oga$|\.mid$|\.pdf$|\.tif$|\.djvu$/i;
+const imagesOf = new Map();                                    // "wl:title" → [files]
+let dupDone = 0, dupTodo = 0;
+for (const lang of Object.keys(evOut)) {
+  const L = LANGS[lang], groups = {};
+  for (const e of events) { const r = evOut[lang][eventKey(e, lang)]; if (Array.isArray(r) && r[3]) (groups[e.ctx] ||= []).push({ e, r }); }
+  for (const [ctx, list] of Object.entries(groups)) {
+    const win = REGIONS.includes(ctx) ? 5 : 30;                // years
+    list.sort((a, b) => a.e.t - b.e.t);
+    for (let i = 0; i < list.length; i++) {
+      const { e, r } = list[i];
+      const near = list.filter((x, j) => j !== i && Math.abs(x.e.t - e.t) <= win);
+      if (!list.slice(0, i).some(x => e.t - x.e.t <= win && normF(x.r[3]) === normF(r[3]))) continue;
+      dupTodo++;
+      const key = L.wl + ':' + r[0];
+      if (!imagesOf.has(key)) {
+        const j = await api(L.wl, { prop: 'images', imlimit: '50', titles: r[0] });
+        imagesOf.set(key, Object.values(j?.query?.pages || {}).flatMap(p => (p.images || []).map(x => x.title.replace(/^[^:]+:/, ''))).filter(f => !NOT_PHOTO.test(f)));
+      }
+      const used = new Set(near.map(x => normF(x.r[3])));
+      const alt = imagesOf.get(key).find(f => !used.has(normF(f)));
+      r[3] = alt || null;
+      if (alt) wantFile(alt, W_EVENT);
+      progress('[1/4] 替換相近時間的重複縮圖', ++dupDone, dupDone);
+    }
+  }
+  write(`ev/${lang}.json`, evOut[lang]);
+}
+if (dupTodo) process.stdout.write('\n');
 
 // ---------------------------------------------------------------- page pictures
 const pages = REFRESH ? {} : read('pages.json', {});

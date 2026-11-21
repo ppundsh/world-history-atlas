@@ -1,4 +1,4 @@
-# 波蘭模式：行政區劃（逐月）。欄位：年月	單元	行政區。聯邦時期的王冠兩省與立陶宛、兩次大戰間的省、1999 年後的 16 省，皆以今日單元概略標示；1795–1921 與 1939–1998 未劃分。
+# 波蘭模式：行政區劃（逐月）。欄位：年月	單元	行政區。聯邦時期的王冠兩省與立陶宛、兩次大戰間的省、1999 年後的 16 省，皆以今日單元概略標示；1945–1998 依當時各省概略標示（1975–98 的 49 小省以今日範圍分組），1795–1921 與 1939–1945 未劃分，地圖改以統治勢力著色。
 # 來源：維基百科「波蘭立陶宛聯邦行政區劃」「波蘭第二共和國行政區劃」「波蘭行政區劃」
 0966-01	PL-DS,PL-KP,PL-LB,PL-LD,PL-LU,PL-MA,PL-MZ,PL-OP,PL-PD,PL-PK,PL-PM,PL-SK,PL-SL,PL-WP,PL-ZP,warmia,masuria,memel,lt_vilnius,lt_samogitia,lt_kaunas,BY-BR,BY-HO,BY-HR,BY-MA,BY-VI,BY-MI,UA-05,UA-07,UA-18,UA-26,UA-46,UA-53,UA-56,UA-61,UA-68,UA-71,UA-74,UA-32,courland,latgale,livonia,smolensk,kgd	none
 1569-07	PL-DS,PL-KP,PL-LB,PL-LD,PL-LU,PL-MA,PL-MZ,PL-OP,PL-PD,PL-PK,PL-PM,PL-SK,PL-SL,PL-WP,PL-ZP,warmia,masuria,memel,lt_vilnius,lt_samogitia,lt_kaunas,BY-BR,BY-HO,BY-HR,BY-MA,BY-VI,BY-MI,UA-05,UA-07,UA-18,UA-26,UA-46,UA-53,UA-56,UA-61,UA-68,UA-71,UA-74,UA-32,courland,latgale,livonia,smolensk,kgd	none
@@ -43,3 +43,50 @@
 1999-01	warmia,masuria	m_PL-WN
 1999-01	PL-WP	m_PL-WP
 1999-01	PL-ZP	m_PL-ZP
+# 補上先前未劃分的時期（1945-07 起）：以現有單元概略標示
+1945-07	PL-DS	p46_wro
+1945-07	PL-SL,PL-OP	p46_sla
+1945-07	PL-KP	p46_pom
+1945-07	PL-WP,PL-LB	p46_poz
+1945-07	PL-LD	p46_lod
+1945-07	PL-LU	p46_lub
+1945-07	PL-MA	p46_kra
+1945-07	PL-MZ	p46_war
+1945-07	PL-PD	p46_bia
+1945-07	PL-PK	p46_rze
+1945-07	PL-PM	p46_gda
+1945-07	PL-SK	p46_kie
+1945-07	PL-ZP	p46_szc
+1945-07	warmia,masuria	p46_ols
+1950-07	PL-DS	p50_wro
+1950-07	PL-SL	p50_kat
+1950-07	PL-OP	p50_opo
+1950-07	PL-KP	p50_byd
+1950-07	PL-WP	p50_poz
+1950-07	PL-LB	p50_zgo
+1950-07	PL-LD	p50_lod
+1950-07	PL-LU	p50_lub
+1950-07	PL-MA	p50_kra
+1950-07	PL-MZ	p50_war
+1950-07	PL-PD	p50_bia
+1950-07	PL-PK	p50_rze
+1950-07	PL-PM	p50_gda
+1950-07	PL-SK	p50_kie
+1950-07	PL-ZP	p50_szc
+1950-07	warmia,masuria	p50_ols
+1975-06	PL-DS	p75_ds
+1975-06	PL-KP	p75_kp
+1975-06	PL-LB	p75_lb
+1975-06	PL-LD	p75_ld
+1975-06	PL-LU	p75_lu
+1975-06	PL-MA	p75_ma
+1975-06	PL-MZ	p75_mz
+1975-06	PL-OP	p75_op
+1975-06	PL-PD	p75_pd
+1975-06	PL-PK	p75_pk
+1975-06	PL-PM	p75_pm
+1975-06	PL-SK	p75_sk
+1975-06	PL-SL	p75_sl
+1975-06	warmia,masuria	p75_wn
+1975-06	PL-WP	p75_wp
+1975-06	PL-ZP	p75_zp

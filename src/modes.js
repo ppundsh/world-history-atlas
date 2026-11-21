@@ -83,7 +83,11 @@ function regionState(c, m, layer, hide = null) {
     let [, fac, sec] = at(c.control[id], m);
     if (c.prc != null && m >= c.prc) { if (fac === c.ccp) fac = c.prcFaction; if (sec === c.ccp) sec = c.prcFaction; }
     const props = { area: unit.properties.area, lp: unit.properties.lp, prov: unit.properties, ctl: c.offset + fac, ctl2: sec >= 0 ? c.offset + sec : null };
-    if (layer === 'admin' && c.admin) Object.assign(props, { p: c.divOffset + at(c.admin[id], m)[1], s: null });
+    // a unit with no division at the time (before the country's divisions, or outside the country) shows who ruled
+    // it instead, so the division layer never turns into one big "not divided" area
+    const dv = layer === 'admin' && c.admin ? at(c.admin[id], m)[1] : -1;
+    if (dv > 0) Object.assign(props, { p: c.divOffset + dv, s: null });
+    else if (dv === 0) Object.assign(props, { p: props.ctl, s: props.ctl2, fb: true });
     else Object.assign(props, { p: props.ctl, s: props.ctl2 });
     feats.push({ type: 'Feature', geometry: unit.geometry, properties: props });
   }
@@ -350,7 +354,7 @@ export function artActive(year) { return (store.art || []).filter(x => x.a <= ye
 function artFrame(st) {
   const feats = featuresFor(st.year) || [];
   return { feats, color: id => pale(P.color(id)), overlays: [], disputed: true,
-    markers: artActive(st.year).map(x => ({ kind: 'art', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t], sym: ART_SYM[x.k], picSize: st.picSize, pic: st.artPics !== false ? pictureFor(x.id) : null })) };
+    markers: artActive(st.year).map(x => ({ kind: 'art', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t], sym: ART_SYM[x.k], picSize: st.picSize, pic: st.artPics !== false && st.pics !== false ? pictureFor(x.id) : null })) };
 }
 
 // major works (infra.tsv): an icon per kind; lines are drawn as they open, then stay as a faint network
@@ -365,8 +369,8 @@ function regionWorks(c, m, col, mps, st) {
     // timed like the war arrows: drawn over at least 2.5 s, highlighted at least 6 s, the highlight fading over its last third
     const grow = 2.5 * mps, end = w.a + grow, linger = 6 * mps, p = Math.min(1, (m - w.a + 1) / grow);
     const hi = m <= end + linger * 0.66 ? 1 : Math.max(0, 1 - (m - end - linger * 0.66) / (linger * 0.34));
-    if (st.works !== false && hi > 0) lines.push({ kind: w.kind, path: w.path, p, alpha: hi, color: WORK_COLOR[w.kind], label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]) });
-    if (st.network !== false && p >= 1) net.push({ kind: w.kind, path: w.path, color: WORK_COLOR[w.kind], alpha: 1 - hi * (st.works !== false ? 1 : 0) });
+    if (st.works !== false && hi > 0) lines.push({ id: w.id, kind: w.kind, path: w.path, parts: w.parts, p, alpha: hi, color: WORK_COLOR[w.kind], label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]) });
+    if (st.network !== false && p >= 1) net.push({ id: w.id, kind: w.kind, path: w.path, parts: w.parts, label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]), color: WORK_COLOR[w.kind], alpha: 1 - hi * (st.works !== false ? 1 : 0) });
   }
   return { lines, net };
 }
@@ -466,13 +470,13 @@ function themeFrame(st) {
   // small areas first, so their labels win over the large ones around them
   const areas = act.areas.slice().sort((a, b) => b.rx * b.ry - a.rx * a.ry);
   return { feats, color: () => '#ece8df', overlays: [], disputed: false, noLabels: true,
-    lang: { areas, flows: act.flows.map(f => ({ ...f, label: f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })) },
+    lang: { areas, flows: act.flows.map(f => ({ ...f, name: f.n[st.langInfo.col] || f.n[0], label: f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })) },
     markers: [
       ...areas.slice().reverse().map(a => ({ kind: 'langArea', id: a.id, lon: a.lon, lat: a.lat, text: a.n, color: a.color, sym: '●',
         // finance: a picture of the bank, exchange or coin (Wikipedia's lead picture, Commons only)
-        ...(T.areaPictures && st.artPics !== false ? { pic: pagePicture(a.w[1]), picSize: Math.min(st.picSize || 54, 60) } : {}) })),
+        ...(T.areaPictures && st.artPics !== false && st.pics !== false ? { pic: pagePicture(a.w[1]), picSize: Math.min(st.picSize || 54, 60) } : {}) })),
       ...act.points.map(p => ({ kind: T.pointsAlways ? 'langArea' : 'lang', id: p.id, lon: p.lon, lat: p.lat, text: p.n, color: themeColor(st.mode, p.f), sym: '●',
-        ...(T.pictures && st.artPics !== false ? { pic: p.img ? ownPicture(p.img.url) : pictureFor(p.id), picSize: st.picSize } : {}),
+        ...(T.pictures && st.artPics !== false && st.pics !== false ? { pic: p.img ? ownPicture(p.img.url) : pictureFor(p.id), picSize: st.picSize } : {}),
         ...(p.series ? { hi: true } : {}), ...(T.pointsAlways ? { cls: p.f } : {}) })),
     ] };
 }

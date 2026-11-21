@@ -1,4 +1,4 @@
-import { drawLang, pathFromProject } from './langlayer.js';
+import { drawLang, pathFromProject, lineAt } from './langlayer.js';
 import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
 import { takeSliding } from './flat.js';
 import { reliefFor } from './relief.js';
@@ -424,6 +424,7 @@ export class GlobeMap {
     const pu = pulseAt(point.x, point.y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => point.x >= b.x0 && point.x <= b.x1 && point.y >= b.y0 && point.y <= b.y1);
     if (mk) return { marker: mk.m };
+    const ln = lineAt(this.lineHits, point.x, point.y); if (ln) return { line: ln };
     const st = this.app.state;
     const d = this.map.queryRenderedFeatures(point, { layers: ['disputed-hatch'] })[0];
     const f = this.map.queryRenderedFeatures(point, { layers: [this.src === 'polities2' ? 'polity-fill2' : 'polity-fill'] }).filter(x => x.state?.on);
@@ -475,9 +476,10 @@ export class GlobeMap {
       ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.strokeText(name, p.x, p.y);
       ctx.fillStyle = '#8b0000'; ctx.fillText(name, p.x, p.y);
     }
+    this.lineHits = [];
     if (F.lang) {
       const pr = ll => { if (geoDistance(ll, center) > 1.45) return null; const q = m.project(ll); return [q.x, q.y]; };
-      drawLang(ctx, F.lang, pathFromProject(ctx, pr), pr, S.label.font, Math.pow(2, m.getZoom() - 1));
+      this.lineHits = drawLang(ctx, F.lang, pathFromProject(ctx, pr), pr, S.label.font, Math.pow(2, m.getZoom() - 1));
     }
     const placed = [], hits = this.markerHits = [];
     const pproj = ll => { if (geoDistance(ll, center) > 1.4) return null; const q = m.project(ll); return [q.x, q.y]; };

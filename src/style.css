@@ -91,6 +91,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 .play { width: 42px; height: 42px; border-radius: 50% !important; background: var(--accent) !important; color: #222; font-size: 16px; }
 .play .i-pause { display: none; } .play.on .i-play { display: none; } .play.on .i-pause { display: inline; }
 .track { position: relative; height: 46px; }
+.track::before { content: ''; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
 #spark { position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 26px; pointer-events: none; }
 #slider { position: absolute; left: 0; right: 0; top: 18px; width: 100%; margin: 0; accent-color: var(--accent); }
 #ticks { position: absolute; left: 0; right: 0; top: 34px; height: 12px; }
@@ -118,7 +119,6 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 #about footer button { margin: 0; padding: 6px 16px; border: 1px solid #ccc; background: #f6f6f6; border-radius: 6px; color: #222; }
 
 /* loading */
-#loading { position: fixed; inset: 0; background: var(--bg); display: grid; place-items: center; z-index: 50; }
 .spinner { width: 42px; height: 42px; border: 4px solid rgba(255, 255, 255, 0.15); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.9s linear infinite; }
 .spinner.small { width: 22px; height: 22px; border-width: 3px; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -432,7 +432,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 :is(#info, #pinInfo) h2 { margin-right: 58px; }
 
 /* event preview following the mouse over the event timeline and the event marks */
-#evHover { position: fixed; z-index: 60; pointer-events: none; width: 190px; background: rgba(17,26,41,.96); color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,.45); font-size: 12.5px; }
+#evHover { position: fixed; z-index: 60; pointer-events: none; width: 190px; background: rgba(17,26,41,.96); color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,.45); font-size: 11.5px; }
 #evHover .pic img { display: block; width: 100%; max-height: 150px; object-fit: cover; }
 #evHover:not(.haspic) .pic { display: none; }
 #evHover .cap { padding: 6px 9px 7px; line-height: 1.4; }
@@ -448,6 +448,12 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 @media (max-width: 860px) and (orientation: portrait) { #pinInfo { top: 58px; max-height: 24dvh; } }
 @media (max-height: 520px) and (max-width: 1000px) { #pinInfo { right: 64px; max-height: 40dvh; } }
 /* every picture follows the size slider (標記 ▸ 縮圖大小) */
-#evPop { width: clamp(110px, calc(150px * var(--picscale, 1)), 260px); } #evPop img { height: clamp(66px, calc(90px * var(--picscale, 1)), 156px); }
-#evHover { width: clamp(150px, calc(190px * var(--picscale, 1)), 300px); } #evHover .pic img { max-height: calc(150px * var(--picscale, 1)); }
-@media (max-width: 860px) { #evPop { width: clamp(90px, calc(112px * var(--picscale, 1)), 170px); } #evPop img { height: clamp(50px, calc(64px * var(--picscale, 1)), 100px); } }
+#evPop { width: clamp(84px, calc(108px * var(--picscale, 1)), 190px); } #evPop img { height: clamp(46px, calc(62px * var(--picscale, 1)), 110px); }
+#evHover { width: clamp(120px, calc(150px * var(--picscale, 1)), 230px); } #evHover .pic img { max-height: calc(96px * var(--picscale, 1)); }
+@media (max-width: 860px) { #evPop { width: clamp(74px, calc(90px * var(--picscale, 1)), 140px); } #evPop img { height: clamp(40px, calc(50px * var(--picscale, 1)), 80px); } }
+
+/* pictures switched off (General ▸ Pictures): no picture anywhere */
+.nopics :is(#info, #pinInfo) :is(.people, .placepic, .evpic, .works img, figure), .nopics #evHover .pic, .nopics #evPop { display: none !important; }
+
+#legend .fbnote { font-size: 11px; color: #777; margin: 6px 0 2px; line-height: 1.4; }
+#legend ul.fb li { opacity: .8; }

@@ -10,9 +10,18 @@ function along(path) {
   return t => { let d = t * total; for (let i = 0; i < legs.length; i++) { if (d <= len[i] || i === legs.length - 1) return legs[i](len[i] ? Math.min(1, d / len[i]) : 1); d -= len[i]; } return path[path.length - 1]; };
 }
 
-// path(geometry) adds the geometry to the context's current path; project([lon, lat]) → [x, y] or null
+// screen polylines of what was drawn, for clicking a cable or a work: [{ kind, id, label, pts: [[x, y] …] }]
+function screenLine(project, coords) {
+  const out = [];
+  for (const c of coords) { const q = project(c); out.push(q ? [q[0], q[1]] : null); }
+  return out;
+}
+
+// path(geometry) adds the geometry to the context's current path; project([lon, lat]) → [x, y] or null.
+// Returns the drawn cables and works as screen polylines, for hit-testing.
 export function drawLang(ctx, L, path, project, font, zoom = 1) {
-  if (!L) return;
+  const hits = [];
+  if (!L) return hits;
   ctx.save();
   for (const a of L.areas) {
     ctx.beginPath(); path(a.geometry);
@@ -21,17 +30,20 @@ export function drawLang(ctx, L, path, project, font, zoom = 1) {
     ctx.globalAlpha = 0.9 * fade; ctx.lineWidth = 1.4 + 1.6 * a.fresh; ctx.strokeStyle = a.color; ctx.setLineDash([5, 3]); ctx.stroke(); ctx.setLineDash([]);
   }
   ctx.globalAlpha = 1;
-  if (L.works) drawWorks(ctx, L.works, path, project, font);
+  if (L.works) drawWorks(ctx, L.works, path, project, font, hits);
   for (const f of L.flows) {
-    if (f.p <= 0) continue;
+    if (f.p <= 0 || f.alpha <= 0.02) continue;
     const interp = f.path ? along(f.path) : geoInterpolate(f.from, f.to), n = f.path ? 20 * f.path.length : 40, pts = [];
     for (let i = 0; i <= n; i++) pts.push(interp(f.p * i / n));
     const w = 1.6 + f.wt * 1.1;
+    // branches to other landing points grow together with the main route
+    const extra = (f.parts || []).filter(q => q !== f.path && q.length > 1).map(q => { const ip = along(q), m = 8 * q.length, o = []; for (let i = 0; i <= m; i++) o.push(ip(f.p * i / m)); return o; });
     ctx.globalAlpha = f.alpha;
     ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-    ctx.beginPath(); path({ type: 'LineString', coordinates: pts });
+    ctx.beginPath(); path({ type: 'LineString', coordinates: pts }); for (const o of extra) path({ type: 'LineString', coordinates: o });
     ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = w + 3; ctx.stroke();
     ctx.strokeStyle = f.color; ctx.lineWidth = w; ctx.stroke();
+    if (f.g != null && f.id) for (const c of [pts, ...extra]) hits.push({ kind: 'cable', id: f.id, name: f.name || f.label, pts: screenLine(project, c) });
     // arrowhead at the moving tip
     const tip = project(pts[n]), back = project(interp(Math.max(0, f.p - Math.max(0.04, 0.6 / Math.max(1, zoom)) * 0.25)));
     if (tip && back && !f.noHead) {
@@ -52,6 +64,23 @@ export function drawLang(ctx, L, path, project, font, zoom = 1) {
     }
   }
   ctx.restore();
+  return hits;
+}
+
+// the nearest drawn line within tol pixels of (x, y)
+export function lineAt(hits, x, y, tol = 7) {
+  let best = null, bd = tol * tol;
+  for (const h of hits || []) {
+    const p = h.pts;
+    for (let i = 1; i < p.length; i++) {
+      const a = p[i - 1], b = p[i]; if (!a || !b) continue;
+      const dx = b[0] - a[0], dy = b[1] - a[1], L2 = dx * dx + dy * dy;
+      const t = L2 ? Math.max(0, Math.min(1, ((x - a[0]) * dx + (y - a[1]) * dy) / L2)) : 0;
+      const ex = a[0] + t * dx - x, ey = a[1] + t * dy - y, d = ex * ex + ey * ey;
+      if (d < bd) { bd = d; best = h; }
+    }
+  }
+  return best;
 }
 
 // a minimal path drawer from a point projection (for the globe overlay): breaks lines where a point is hidden
@@ -66,24 +95,26 @@ export function pathFromProject(ctx, project) {
 // major works (railways, motorways, canals …): the network built so far, faint, and each new section drawn
 // along its route as it opens, highlighted for a while with its name
 const WORK_STYLE = { rail: { w: 2.2, dash: [5, 4] }, hsr: { w: 2.6, dash: [7, 4] }, highway: { w: 2.6 }, road: { w: 1.8 }, canal: { w: 2.2, dash: [2, 3] }, pipeline: { w: 1.6, dash: [6, 3] }, fiber: { w: 1.8, dash: [2, 2] }, cable: { w: 1.8, dash: [8, 3] }, grid: { w: 1.6, dash: [10, 2, 2, 2] } };
-function drawWorks(ctx, W, path, project, font) {
+function drawWorks(ctx, W, path, project, font, hits) {
   ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   for (const n of W.net) {
     if (n.alpha <= 0.02) continue;
     const st = WORK_STYLE[n.kind] || { w: 1.6 };
     ctx.globalAlpha = 0.55 * n.alpha;
-    ctx.beginPath(); path({ type: 'LineString', coordinates: n.path });
+    ctx.beginPath(); for (const q of n.parts || [n.path]) path({ type: 'LineString', coordinates: q });
     ctx.strokeStyle = n.color; ctx.lineWidth = Math.max(1, st.w * 0.55); ctx.stroke();
+    if (hits && n.id) for (const q of n.parts || [n.path]) hits.push({ kind: 'work', id: n.id, name: n.label, pts: screenLine(project, q) });
   }
   for (const l of W.lines) {
     if (l.p <= 0) continue;
-    const st = WORK_STYLE[l.kind] || { w: 2 }, interp = along(l.path), n = 20 * l.path.length, pts = [];
-    for (let i = 0; i <= n; i++) pts.push(interp(l.p * i / n));
+    const st = WORK_STYLE[l.kind] || { w: 2 }, interp = along(l.path), drawn = [];
+    for (const q of l.parts || [l.path]) { const ip = q === l.path ? interp : along(q), m = 20 * q.length, o = []; for (let i = 0; i <= m; i++) o.push(ip(l.p * i / m)); drawn.push(o); }
     ctx.globalAlpha = l.alpha;
-    ctx.beginPath(); path({ type: 'LineString', coordinates: pts });
+    ctx.beginPath(); for (const o of drawn) path({ type: 'LineString', coordinates: o });
     ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = st.w + 4; ctx.stroke();
     ctx.strokeStyle = l.color; ctx.lineWidth = st.w + 1.2; ctx.stroke();
     if (st.dash) { ctx.setLineDash(st.dash); ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = Math.max(1, st.w * 0.45); ctx.stroke(); ctx.setLineDash([]); }
+    if (hits && l.id) for (const o of drawn) hits.push({ kind: 'work', id: l.id, name: l.label, pts: screenLine(project, o) });
     const mid = project(interp(l.p / 2));
     if (mid && l.p > 0.25 && l.label) {
       ctx.font = `600 11px ${font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';

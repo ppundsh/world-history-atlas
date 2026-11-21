@@ -20,9 +20,17 @@ const points = rows('points.tsv', 13).map(([id, f, a, b, lon, lat, hant, en, ja,
   id, f: check(f, id), a: +a, b: +b, lon: +lon, lat: +lat, n: [en, hant, toHans(hant), ja], d: [de, dh, toHans(dh), de], w: [wzh, wen, ''] }));
 // an optional 13th column gives a route (lon,lat lon,lat …); in the Internet mode a flow is a cable: drawn over
 // a year (g), in service until it is retired (b), then gone
-const flows = rows('flows.tsv', 12, 13).map(([id, f, a, b, x0, y0, x1, y1, wt, hant, en, ja, route = '']) => ({
-  id, f: check(f, id), a: +a, b: +b, from: [+x0, +y0], to: [+x1, +y1], wt: +wt, n: [en, hant, toHans(hant), ja],
-  ...(route.trim() ? { path: route.trim().split(/\s+/).map(p => p.split(',').map(Number)) } : {}), ...(mode === 'internet' ? { g: 1 } : {}) }));
+// the route may hold several parts separated by ";" (branches to landing points); the longest is the main path.
+// Columns 14–16 (optional): length, operators, landing points, shown on the cable's card.
+const parsePts = s => s.trim().split(/\s+/).map(p => p.split(',').map(Number));
+const flows = rows('flows.tsv', 12, 16).map(([id, f, a, b, x0, y0, x1, y1, wt, hant, en, ja, route = '', len = '', own = '', land = '']) => {
+  const parts = route.trim() ? route.split(';').map(s => s.trim()).filter(Boolean).map(parsePts) : [];
+  if (parts.some(p => p.length < 2 || p.some(q => q.length !== 2 || q.some(v => !isFinite(v))))) throw new Error(`flows.tsv ${id}: bad route`);
+  const main = parts.length ? parts.reduce((x, y) => (y.length > x.length ? y : x)) : null;
+  return { id, f: check(f, id), a: +a, b: +b, from: [+x0, +y0], to: [+x1, +y1], wt: +wt, n: [en, hant, toHans(hant), ja],
+    ...(main ? { path: main } : {}), ...(parts.length > 1 ? { parts } : {}), ...(mode === 'internet' ? { g: 1 } : {}),
+    ...(len || own || land ? { info: { len, own: own ? own.split('/') : [], land: land ? land.split('/') : [] } } : {}) };
+});
 // the mode's own timeline (otherwise the world events are used): year, place, names, note, Wikipedia
 const events = fs.existsSync(path.join(here, 'events.tsv')) ? rows('events.tsv', 10).map(([y, lon, lat, hant, en, ja, dh, de, wzh, wen]) => ({
   y: +y, lon: +lon, lat: +lat, n: [en, hant, toHans(hant), ja], d: [de, dh, toHans(dh), de], w: [wzh, wen, ''] })).sort((a, b) => a.y - b.y) : null;

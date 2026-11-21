@@ -3,7 +3,7 @@ import { reliefFor } from './relief.js';
 // Flat-map renderer: d3-geo projections drawn on a Canvas, with Google-Maps-style navigation
 // (drag to pan, wheel/pinch to zoom at the cursor, double-click to zoom in, arrow keys, +/-).
 import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
-import { drawLang } from './langlayer.js';
+import { drawLang, lineAt } from './langlayer.js';
 import { drawClassIcon } from './classicon.js';
 import { geoPath, geoGraticule, geoGraticule10, geoContains, geoDistance } from 'd3-geo';
 import { PROJ } from './projections.js';
@@ -148,14 +148,30 @@ export class FlatMap {
   // lock / unlock free movement. Locking keeps the map exactly as it is (any oblique aspect included) and only
   // brings back the standard movement: dragging sideways scrolls the map along its own horizontal, dragging up
   // and down slides it, nothing tilts any more. "North up" (or reset) returns to the normal aspect.
+  // Neither switch changes the picture: unlocking keeps the current rotation and the map's position on screen
+  // (this.off, the rotation centre's offset from the screen centre, in units of the map's scale), and only
+  // lets dragging turn the globe from there on; locking keeps the turned map and only stops it turning.
   setFree(on) {
-    const v = this.view;
+    const v = this.view, p = this.proj;
+    if (!p) { this.free = !!on; return; }
+    p.angle(0); this.apply0();
+    const T = p.translate(), R = p.rotate(), S = p.scale();
     if (on) {
-      if (this.aspect) { const r = this.aspect; this.aspect = null; Object.assign(v, { lon: -r[0], lat: -r[1], roll: r[2], ty: 0 }); }
-      this.free = true;
+      this.aspect = null; this.free = true;
+      Object.assign(v, { lon: -R[0], lat: -R[1], roll: R[2] || 0, ty: 0 });
+      this.off = [(T[0] - this.W / 2) / S, (T[1] - this.H / 2) / S];
     } else {
-      this.free = false;
-      if (Math.abs(v.lat) > 0.01 || Math.abs(v.roll || 0) > 0.01) { this.aspect = [-v.lon, -v.lat, v.roll || 0]; v.ty = 0; }
+      this.free = false; this.off = null;
+      if (Math.abs(R[1]) > 0.01 || Math.abs(R[2] || 0) > 0.01) {
+        this.aspect = [R[0], R[1], R[2] || 0];
+        p.rotate(this.aspect).translate([0, 0]);
+        const [[, top], [, bot]] = geoPath(p).bounds(SPHERE);
+        v.ty = T[1] - (this.H / 2 - (top + bot) / 2);
+      } else {
+        p.rotate(R).translate(T);
+        const c = p.invert([this.W / 2, this.H / 2]);
+        Object.assign(v, { lon: -R[0], lat: c && isFinite(c[1]) ? c[1] : 0, roll: 0 });
+      }
     }
     this.gKey = null;
     this.apply(); this.request(); this.app.onViewChange?.();
@@ -174,7 +190,7 @@ export class FlatMap {
 
   setProjection(name) {
     this.projName = name;
-    this.aspect = null;
+    this.aspect = null; this.off = null;
     this.def = PROJ[name];
     this.proj = this.def.make();
     if (this.def.clip) this.proj.clipAngle(this.def.clip);
@@ -246,7 +262,8 @@ export class FlatMap {
     }
     if (this.rotating) {
       v.lat = Math.max(-90, Math.min(90, v.lat));
-      p.rotate([-v.lon, -v.lat, v.roll || 0]).scale(this.baseScale * v.k).translate([this.W / 2, this.H / 2]);
+      const sc = this.baseScale * v.k, o = this.oblique && this.off ? this.off : [0, 0];
+      p.rotate([-v.lon, -v.lat, v.roll || 0]).scale(sc).translate([this.W / 2 + o[0] * sc, this.H / 2 + o[1] * sc]);
       return;
     }
     p.rotate([-v.lon, 0]).scale(this.baseScale * v.k).translate([0, 0]);
@@ -327,10 +344,37 @@ export class FlatMap {
     requestAnimationFrame(step);
   }
 
-  reset() { this.aspect = null; this.view = { lon: 60, lat: this.oblique ? 0 : 25, k: this.fillK(), roll: 0 }; this.apply(); this.request(); this.app.onViewChange?.(); }
+  reset() { this.aspect = null; this.off = null; this.view = { lon: 60, lat: this.oblique ? 0 : 25, k: this.fillK(), roll: 0 }; this.apply(); this.request(); this.app.onViewChange?.(); }
   // back to the normal aspect: north up, and (for oblique-capable maps) the equator straight
   // back to the normal aspect; which way is up (the "Up" setting) is kept
-  northUp() { if (this.aspect) { this.view.lat = 0; this.aspect = null; } this.view.roll = 0; if (this.oblique && this.view.k < 1.5) this.view.lat = 0; this.apply(); this.request(); this.app.onViewChange?.(); }
+  // "Normal aspect": undo only the turning the standard movement would not allow — the tilt (turning about the
+  // map's own horizontal axis) and the roll — and keep the turning along the map's horizontal (longitude) and the
+  // place at the centre of the screen. "The map's horizontal" follows the chosen Up, since the whole map is turned
+  // with it. Zoom stays; "Reset view" restores everything.
+  northUp() {
+    const v = this.view, p = this.proj;
+    if (!p) return;
+    if (this.azimuthal) { v.roll = 0; this.off = null; this.apply(); this.request(); this.app.onViewChange?.(); return; }
+    p.angle(0); this.apply0();
+    const c = p.invert([this.W / 2, this.H / 2]), lon = c && isFinite(c[0]) ? c[0] : v.lon, lat = c && isFinite(c[1]) ? c[1] : 0;
+    this.aspect = null; this.off = null;
+    Object.assign(v, { lon, roll: 0, ty: 0 });
+    if (this.oblique) {
+      // unlocked: still free to turn, but from the normal aspect, shifted so the same place stays in the middle
+      v.lat = 0;
+      p.rotate([-lon, 0, 0]).scale(1).translate([0, 0]);
+      const q = p([lon, lat]);
+      let oy = q && isFinite(q[1]) ? -q[1] : 0;
+      // like the locked map, the map may not leave a gap at its top or bottom: a map shorter than the screen is
+      // centred, a taller one is pulled back until its edge meets the screen's edge
+      const [[, top], [, bot]] = geoPath(p).bounds(SPHERE), S = this.baseScale * v.k, half = this.H / 2 / S;
+      if (bot - top <= 2 * half) oy = -(top + bot) / 2;
+      else oy = Math.max(half - bot, Math.min(-half - top, oy));
+      this.off = [0, oy];
+    } else v.lat = lat;
+    this.gKey = null;
+    this.apply(); this.request(); this.app.onViewChange?.();
+  }
 
   bindEvents() {
     const c = this.canvas;
@@ -403,6 +447,7 @@ export class FlatMap {
     const pu = pulseAt(x, y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => x >= b.x0 && x <= b.x1 && y >= b.y0 && y <= b.y1);
     if (mk) return { marker: mk.m };
+    const ln = lineAt(this.lineHits, x, y); if (ln) return { line: ln };
     const ll = this.proj.invert([x, y]);
     if (!ll || !isFinite(ll[0])) return null;
     if (this.azimuthal && geoDistance(ll, [this.view.lon, this.view.lat]) > this.clipRad) return null;
@@ -747,7 +792,7 @@ export class FlatMap {
       ctx.strokeText(name, p[0], p[1]); ctx.fillStyle = '#8b0000'; ctx.fillText(name, p[0], p[1]);
     }
     ctx.textAlign = 'left';
-    if (F.lang) { const gp = geoPath(proj, ctx); drawLang(ctx, F.lang, g => gp(g), ll => (visible(ll) ? proj(ll) : null), S.label.font, this.view.k); }
+    this.lineHits = []; if (F.lang) { const gp = geoPath(proj, ctx); this.lineHits = drawLang(ctx, F.lang, g => gp(g), ll => (visible(ll) ? proj(ll) : null), S.label.font, this.view.k); }
     const placed = [], hits = this.markerHits = [];
     const marks = this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers;
     // every marker's own symbol is reserved first, so no picture lands on another marker
@@ -932,7 +977,7 @@ export class FlatMap {
     return h > 0 && h < this.H * 0.85 ? Math.min(4, this.H / h) : 1;
   }
   setCenter({ lon, lat, k, roll }) {
-    this.aspect = null;
+    this.aspect = null; this.off = null;
     if (k <= 1.01) k = Math.max(k, this.fillK());
     // a whole-world view keeps the normal aspect when switching into an oblique-capable projection
     if (this.oblique && k < 1.5 && roll == null) lat = 0;

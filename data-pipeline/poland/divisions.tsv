@@ -37,3 +37,49 @@ m_PL-SL	#d6c8b0	西里西亞省	西里西亚省	Silesian	シロンスク県
 m_PL-WN	#8cc5d6	瓦爾米亞—馬祖里省	瓦尔米亚—马祖里省	Warmian-Masurian	ヴァルミア・マズールィ県
 m_PL-WP	#a3c4a8	大波蘭省	大波兰省	Greater Poland	ヴィエルコポルスカ県
 m_PL-ZP	#e3c9a8	西波美拉尼亞省	西波美拉尼亚省	West Pomeranian	西ポモージェ県
+p46_wro	#e9c46a	弗羅茨瓦夫省	弗罗茨瓦夫省	Wrocław Voivodeship	ヴロツワフ県
+p46_sla	#f4a261	西里西亞省（卡托維治，含奧波萊）	西里西亚省（卡托维治，含奥波莱）	Silesian Voivodeship (Katowice, incl. Opole)	シロンスク県（カトヴィツェ、オポーレ含む）
+p46_pom	#e76f51	波美拉尼亞省（比得哥什）	波美拉尼亚省（比得哥什）	Pomeranian Voivodeship (Bydgoszcz)	ポモージェ県（ビドゴシュチュ）
+p46_poz	#8ab17d	波茲南省	波兹南省	Poznań Voivodeship	ポズナン県
+p46_lod	#2a9d8f	羅茲省	罗兹省	Łódź Voivodeship	ウッチ県
+p46_lub	#6fb3c7	盧布林省	卢布林省	Lublin Voivodeship	ルブリン県
+p46_kra	#b5a7d8	克拉科夫省	克拉科夫省	Kraków Voivodeship	クラクフ県
+p46_war	#d8a7b1	華沙省	华沙省	Warsaw Voivodeship	ワルシャワ県
+p46_bia	#c9b79c	比亞維斯托克省	比亚维斯托克省	Białystok Voivodeship	ビャウィストク県
+p46_rze	#f6b98a	熱舒夫省	热舒夫省	Rzeszów Voivodeship	ジェシュフ県
+p46_gda	#a594cf	格但斯克省	格但斯克省	Gdańsk Voivodeship	グダニスク県
+p46_kie	#cc94a0	凱爾采省	凯尔采省	Kielce Voivodeship	キェルツェ県
+p46_szc	#d6c8b0	什切青省	什切青省	Szczecin Voivodeship	シュチェチン県
+p46_ols	#8cc5d6	奧爾什丁省（馬祖里區）	奥尔什丁省（马祖里区）	Olsztyn Voivodeship (Masurian District)	オルシュティン県（マズールィ地区）
+p50_wro	#e9c46a	弗羅茨瓦夫省	弗罗茨瓦夫省	Wrocław Voivodeship	ヴロツワフ県
+p50_kat	#f4a261	卡托維治省（1953–56 稱史達林諾格勒省）	卡托维治省（1953–56 称史达林诺格勒省）	Katowice Voivodeship (Stalinogród 1953–56)	カトヴィツェ県
+p50_opo	#e76f51	奧波萊省	奥波莱省	Opole Voivodeship	オポーレ県
+p50_byd	#8ab17d	比得哥什省	比得哥什省	Bydgoszcz Voivodeship	ビドゴシュチュ県
+p50_poz	#2a9d8f	波茲南省	波兹南省	Poznań Voivodeship	ポズナン県
+p50_zgo	#6fb3c7	綠山省	绿山省	Zielona Góra Voivodeship	ジェロナ・グラ県
+p50_lod	#b5a7d8	羅茲省	罗兹省	Łódź Voivodeship	ウッチ県
+p50_lub	#d8a7b1	盧布林省	卢布林省	Lublin Voivodeship	ルブリン県
+p50_kra	#c9b79c	克拉科夫省	克拉科夫省	Kraków Voivodeship	クラクフ県
+p50_war	#f6b98a	華沙省	华沙省	Warsaw Voivodeship	ワルシャワ県
+p50_bia	#a594cf	比亞維斯托克省	比亚维斯托克省	Białystok Voivodeship	ビャウィストク県
+p50_rze	#cc94a0	熱舒夫省	热舒夫省	Rzeszów Voivodeship	ジェシュフ県
+p50_gda	#d6c8b0	格但斯克省	格但斯克省	Gdańsk Voivodeship	グダニスク県
+p50_kie	#8cc5d6	凱爾采省	凯尔采省	Kielce Voivodeship	キェルツェ県
+p50_szc	#a3c4a8	什切青省、科沙林省	什切青省、科沙林省	Szczecin and Koszalin Voivodeships	シュチェチン県・コシャリン県
+p50_ols	#e3c9a8	奧爾什丁省	奥尔什丁省	Olsztyn Voivodeship	オルシュティン県
+p75_ds	#e9c46a	弗羅茨瓦夫、萊格尼察、瓦烏布日赫、耶萊尼亞古拉省	弗罗茨瓦夫、莱格尼察、瓦乌布日赫、耶莱尼亚古拉省	Wrocław, Legnica, Wałbrzych, Jelenia Góra (part of the 49 voivodeships of 1975–98)	ヴロツワフ・レグニツァ・ヴァウブジフ・イェレニャ・グラ県（1975–98年の49県の一部）
+p75_kp	#f4a261	比得哥什、托倫、弗沃茨瓦韋克省	比得哥什、托伦、弗沃茨瓦韦克省	Bydgoszcz, Toruń, Włocławek (part of the 49 voivodeships of 1975–98)	ビドゴシュチュ・トルン・ヴウォツワヴェク県（1975–98年の49県の一部）
+p75_lb	#e76f51	綠山、大波蘭地區戈茹夫省	绿山、大波兰地区戈茹夫省	Zielona Góra, Gorzów (part of the 49 voivodeships of 1975–98)	ジェロナ・グラ・ゴジュフ県（1975–98年の49県の一部）
+p75_ld	#8ab17d	羅茲、彼得庫夫、謝拉茲、斯凱爾涅維采省	罗兹、彼得库夫、谢拉兹、斯凯尔涅维采省	Łódź, Piotrków, Sieradz, Skierniewice (part of the 49 voivodeships of 1975–98)	ウッチ・ピョトルクフ・シェラツ・スキェルニェヴィツェ県（1975–98年の49県の一部）
+p75_lu	#2a9d8f	盧布林、比亞瓦波德拉斯卡、海烏姆、扎莫希奇省	卢布林、比亚瓦波德拉斯卡、海乌姆、扎莫希奇省	Lublin, Biała Podlaska, Chełm, Zamość (part of the 49 voivodeships of 1975–98)	ルブリン・ビャワ・ポドラスカ・ヘウム・ザモシチ県（1975–98年の49県の一部）
+p75_ma	#6fb3c7	克拉科夫、新松奇、塔爾努夫省	克拉科夫、新松奇、塔尔努夫省	Kraków, Nowy Sącz, Tarnów (part of the 49 voivodeships of 1975–98)	クラクフ・ノヴィ・ソンチ・タルヌフ県（1975–98年の49県の一部）
+p75_mz	#b5a7d8	華沙首都、切哈努夫、奧斯特羅文卡、普沃茨克、拉多姆、謝德爾采省	华沙首都、切哈努夫、奥斯特罗文卡、普沃茨克、拉多姆、谢德尔采省	Warsaw (capital), Ciechanów, Ostrołęka, Płock, Radom, Siedlce (part of the 49 voivodeships of 1975–98)	ワルシャワ首都・チェハヌフ・オストロウェンカ・プウォツク・ラドム・シェドルツェ県（1975–98年の49県の一部）
+p75_op	#d8a7b1	奧波萊省	奥波莱省	Opole (part of the 49 voivodeships of 1975–98)	オポーレ県（1975–98年の49県の一部）
+p75_pd	#c9b79c	比亞維斯托克、沃姆扎、蘇瓦烏基省	比亚维斯托克、沃姆扎、苏瓦乌基省	Białystok, Łomża, Suwałki (part of the 49 voivodeships of 1975–98)	ビャウィストク・ウォムジャ・スヴァウキ県（1975–98年の49県の一部）
+p75_pk	#f6b98a	熱舒夫、克羅斯諾、普熱梅希爾、塔爾諾布熱格省	热舒夫、克罗斯诺、普热梅希尔、塔尔诺布热格省	Rzeszów, Krosno, Przemyśl, Tarnobrzeg (part of the 49 voivodeships of 1975–98)	ジェシュフ・クロスノ・プシェミシル・タルノブジェク県（1975–98年の49県の一部）
+p75_pm	#a594cf	格但斯克、斯武普斯克省	格但斯克、斯武普斯克省	Gdańsk, Słupsk (part of the 49 voivodeships of 1975–98)	グダニスク・スウプスク県（1975–98年の49県の一部）
+p75_sk	#cc94a0	凱爾采省	凯尔采省	Kielce (part of the 49 voivodeships of 1975–98)	キェルツェ県（1975–98年の49県の一部）
+p75_sl	#d6c8b0	卡托維治、別爾斯科、琴斯托霍瓦省	卡托维治、别尔斯科、琴斯托霍瓦省	Katowice, Bielsko-Biała, Częstochowa (part of the 49 voivodeships of 1975–98)	カトヴィツェ・ビェルスコ＝ビャワ・チェンストホヴァ県（1975–98年の49県の一部）
+p75_wn	#8cc5d6	奧爾什丁、埃爾布隆格省	奥尔什丁、埃尔布隆格省	Olsztyn, Elbląg (part of the 49 voivodeships of 1975–98)	オルシュティン・エルブロンク県（1975–98年の49県の一部）
+p75_wp	#a3c4a8	波茲南、卡利什、科寧、萊什諾、皮瓦省	波兹南、卡利什、科宁、莱什诺、皮瓦省	Poznań, Kalisz, Konin, Leszno, Piła (part of the 49 voivodeships of 1975–98)	ポズナン・カリシュ・コニン・レシュノ・ピワ県（1975–98年の49県の一部）
+p75_zp	#e3c9a8	什切青、科沙林省	什切青、科沙林省	Szczecin, Koszalin (part of the 49 voivodeships of 1975–98)	シュチェチン・コシャリン県（1975–98年の49県の一部）

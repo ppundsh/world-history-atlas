@@ -77,8 +77,8 @@ const app = {
     projBy: safeGet('projBy') || 'surface', density: +(safeGet('density') || 0.85),
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
-    minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') !== '0', works: safeGet('works') !== '0', network: safeGet('network') !== '0', evDots: safeGet('evDots') !== '0', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
-    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') !== '0', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') !== '0', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', picSize: +(safeGet('picSize') || 54), modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
+    minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
+    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
   legendCollapsed: window.innerWidth < 700,          // keep the map visible on phones
@@ -90,16 +90,27 @@ const music = new Music();
 let hashT = 0, lastT = 0, rafId = 0, busy = false;   // declared before the top-level awaits below
 
 // ---------------------------------------------------------------- bootstrap
+// the loading screen (styled inline in index.html): a progress bar and what is being loaded
+const BOOT_MSG = { 'zh-Hant': ['讀取國家資料', '讀取這個年代的疆域', '讀取地圖底圖', '讀取模式資料', '準備地圖'], 'zh-Hans': ['读取国家资料', '读取这个年代的疆域', '读取地图底图', '读取模式资料', '准备地图'], en: ['Loading countries', 'Loading borders for this period', 'Loading the base map', 'Loading this mode', 'Preparing the map'], ja: ['国のデータを読み込み中', 'この時代の国境を読み込み中', '基図を読み込み中', 'モードのデータを読み込み中', '地図を準備中'] };
+const boot = (i, frac) => {
+  const m = BOOT_MSG[st.lang] || BOOT_MSG.en, el = document.getElementById('loadMsg'), bar = document.getElementById('loadBar');
+  if (el) el.textContent = m[i] + '…';
+  if (bar) bar.style.width = Math.round(frac * 100) + '%';
+};
 readHash();
+boot(0, 0.08);
 await loadCore();
+boot(1, 0.3);
 SEG[0][0] = store.meta.from;
 SEG[SEG.length - 1][0] = maxYear();
 st.year = Math.max(store.meta.from, Math.min(maxYear(), st.year));
 st.pos = yearToPos(st.year);
 await loadChunk(chunkFor(st.year));
+boot(2, 0.5);
 if (st.basemap === 'physical') await loadPhysical();
 if (st.modern) await loadModern();
 await detectSatellite();
+boot(3, 0.62);
 if (st.mode === 'religion') await loadReligions();
 if (st.mode === 'regime') await loadRegimes();
 if (st.mode === 'art') { await loadArt(); loadWorks().then(() => redraw()); }
@@ -108,6 +119,7 @@ ensureCapitals();
 if (REGIONS.includes(st.mode) && !app.initialView) { const v = { ...REGION_VIEW[st.mode] }; if (st.projection === 'globe') v.k *= st.mode === 'taiwan' ? 0.5 : 0.7; app.initialView = v; }
 if (REGIONS.includes(st.mode)) { await loadRegion(st.mode); st.year = regionYearMonth(reg(), st.cm)[0]; await loadChunk(chunkFor(st.year)); st.pos = st.cm / (reg().months - 1); }
 
+boot(4, 0.8);
 app.flat = new FlatMap($('#flat'), app);
 // regional terrain shading on the physical base map (Japan: GSI tiles; Taiwan: tiles from the MOI DTM, when built)
 app.reliefRegions = await availableRelief();
@@ -135,7 +147,10 @@ await setProjection(st.projection);
 music.load().then(ok => { $('#music').hidden = !ok; refreshMusic(); });
 drawSpark();
 renderYear();
-$('#loading').remove();
+boot(4, 1);
+document.documentElement.classList.add('ready');
+$('#loading').classList.add('done');
+setTimeout(() => $('#loading')?.remove(), 500);
 
 // ---------------------------------------------------------------- satellite availability
 async function detectSatellite() {
@@ -403,9 +418,14 @@ function renderLegend(F) {
     }
     const facs = [...area.entries()].sort((a, b) => b[1] - a[1]);
     const govs = F.govs.slice().sort((a, b) => b.roc - a.roc);
-    const title = LAYERED.includes(st.mode) && st.layer === 'admin' ? s.adminNow : s.factionsNow;
-    box.innerHTML = `<h3>${title}</h3><ul>` + facs.map(([id]) => `<li><i style="background:${P.color(id)}"></i>${P.name(id, col)}</li>`).join('') +
-      `</ul><h3>${s.govs}</h3>` + (st.mode === 'china' ? `<p class="rockey"><i></i>${s.rocKey}</p>` : '') +
+    const adminView = LAYERED.includes(st.mode) && st.layer === 'admin' && !F.party;
+    const title = adminView ? s.adminNow : s.factionsNow;
+    // divisions first; areas without a division at the time are shown by who ruled them, listed apart
+    const rc = reg(), isFb = id => adminView && (id < rc.divOffset || id >= rc.divOffset + rc.divisions.length);
+    const divs = facs.filter(([id]) => !isFb(id)), fbs = facs.filter(([id]) => isFb(id));
+    const li = ([id]) => `<li><i style="background:${P.color(id)}"></i>${P.name(id, col)}</li>`;
+    box.innerHTML = `<h3>${title}</h3>` + (divs.length ? `<ul>` + divs.map(li).join('') + `</ul>` : '') +
+      (fbs.length ? `<p class="fbnote">${s.adminFallback}</p><ul class="fb">` + fbs.map(li).join('') + `</ul>` : '') + `<h3>${s.govs}</h3>` + (st.mode === 'china' ? `<p class="rockey"><i></i>${s.rocKey}</p>` : '') +
       `<ul class="govs">` + govs.map(g => `<li class="${g.roc ? 'roc' : ''}" data-gid="${g.id}" title="${esc(s.clickInfo)}">★ ${g.n[col] || g.n[0]}</li>`).join('') + `</ul>`;
     box.hidden = false;
     bindLegendToggle(box);
@@ -496,7 +516,7 @@ function buildEventMarks() {
   const track = box.parentElement;
   track.onpointermove = e => {
     if (e.pointerType !== 'mouse' || e.buttons) return hoverEvent(null);
-    const r = box.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, tol = 6 / r.width;
+    const r = box.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, tol = 14 / r.width;
     let best = null, bd = tol;
     for (const m of app.eventMarks) { const d = x < m.a ? m.a - x : x > m.b ? x - m.b : 0; if (d <= bd) { bd = d; best = m; } }
     hoverEvent(best, best?.when, e, true);
@@ -513,7 +533,7 @@ function hoverEvent(ev, when, e, above) {
     card.innerHTML = `<div class="pic"></div><div class="cap"><small>${esc(when || '')}</small>${esc(workName(ev, col))}</div>`;
     card.classList.remove('haspic');
     eventInfo(ev, st.lang, col).then(info => {
-      if (app.hoverKey !== key || !info?.thumb) return;
+      if (app.hoverKey !== key || !info?.thumb || !st.pics) return;
       const img = new Image(); img.alt = '';
       img.onload = () => { if (app.hoverKey !== key) return; card.querySelector('.pic').append(img); card.classList.add('haspic'); place(); };
       img.src = info.thumb;
@@ -561,7 +581,7 @@ function capitalPictures(F) {
   const prev = app.capPrev, mode = app.capMode; app.capPrev = now; app.capMode = st.mode;
   if (!prev || mode !== st.mode) return;
   for (const k of prev.keys()) if (!now.has(k)) removePulse('cap:' + k);
-  if (!st.capitals || !st.evDots) return;
+  if (!st.capitals || !st.evDots || !st.pics) return;
   // only capital cities get a picture: a seat of government (★ in the regional modes) is named after the
   // government, whose Wikipedia picture is an emblem or flag rather than the place
   const fresh = [...now.entries()].filter(([k, m]) => !prev.has(k) && m.kind === 'cap');
@@ -570,8 +590,9 @@ function capitalPictures(F) {
   for (const [k, m] of fresh.slice(0, 3)) {
     const key = 'cap:' + k, name = (m.text[col] || m.text[0] || '').split(/[（(]/)[0];
     addPulse({ key, cap: true, lon: m.lon, lat: m.lat, name: '', polity: m.id }); dotLoop();
-    if (m.img) cityThumb(m.img).then(t => t && setPulseThumb(key, t.url, redraw, t.credit));
-    else eventInfo({ n: [name, name, name, name] }, st.lang, col).then(i => i?.thumb && setPulseThumb(key, i.thumb, redraw, [i.author, i.lic].filter(Boolean).join(' · ')));
+    if (!st.pics) { /* pictures off */ }
+    else if (m.img) cityThumb(m.img).then(t => t && st.pics && setPulseThumb(key, t.url, redraw, t.credit));
+    else eventInfo({ n: [name, name, name, name] }, st.lang, col).then(i => i?.thumb && st.pics && setPulseThumb(key, i.thumb, redraw, [i.author, i.lic].filter(Boolean).join(' · ')));
   }
 }
 function syncMarkMenu() {
@@ -726,6 +747,17 @@ function buildUI() {
   $('#picSize').value = st.picSize;
   $('#picSize').oninput = e => { st.picSize = +e.target.value; safeSet('picSize', e.target.value); setPulseSize(st.picSize); syncPicSize(); redraw(); };
   setPulseSize(st.picSize); syncPicSize();
+  // one switch for every picture: on the map, above the timeline, in the previews and in the cards
+  $('#t-pics').checked = st.pics;
+  document.documentElement.classList.toggle('nopics', !st.pics);
+  $('#t-pics').onchange = e => {
+    st.pics = e.target.checked; safeSet('pics', st.pics ? '1' : '0');
+    document.documentElement.classList.toggle('nopics', !st.pics);
+    $('#picSize').closest('label').hidden = !st.pics;
+    if (!st.pics) { clearPulses(); holdPulse(null); $('#evPop').hidden = true; $('#evPop').classList.remove('show'); app.popKey = null; hoverEvent(null); }
+    app.globe?.update(true); redraw();
+  };
+  $('#picSize').closest('label').hidden = !st.pics;
   // screenshot and recording (with the music)
   app.capture = new Capture({ stage: $('#stage'), music, info: () => {
     const s = t(st.lang);
@@ -783,6 +815,7 @@ function buildUI() {
   });
   app.onSelect = hit => {
     if (hit?.pulse) { openPulse(hit.pulse); return; }
+    if (hit?.line) { hit.line.kind === 'work' ? showWork(hit.line.id) : showCable(hit.line.id); return; }
     if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : hit.marker.kind === 'art' ? showArt(hit.marker.id) : hit.marker.kind === 'lang' || hit.marker.kind === 'langArea' ? showLang(hit.marker.id) : hit.marker.kind === 'cap' ? (st.selected = hit.marker.id, showPolity(hit.marker.id), redraw()) : hit.marker.kind === 'work' ? showWork(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
     app.selectedProv = null;
     if (!hit) { st.selected = null; hideInfo(); redraw(); return; }
@@ -797,9 +830,9 @@ function buildUI() {
     holdPulse(hit?.pulse || null);
     const now = performance.now(); if (now - hoverT < 60) return; hoverT = now;
     const tip = $('#tooltip');
-    $('#stage').style.cursor = hit?.marker || hit?.pulse ? 'pointer' : '';
-    if (hit?.marker || hit?.pulse) {
-      tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + ' · ' + t(st.lang).clickInfo;
+    $('#stage').style.cursor = hit?.marker || hit?.pulse || hit?.line ? 'pointer' : '';
+    if (hit?.marker || hit?.pulse || hit?.line) {
+      tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.line ? hit.line.name || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + ' · ' + t(st.lang).clickInfo;
       tip.hidden = false;
       const r = $('#stage').getBoundingClientRect();
       tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
@@ -865,7 +898,7 @@ function applyLang() {
   $('#zin').title = s.zoomIn; $('#zout').title = s.zoomOut; $('#reset').title = s.reset; $('#north').title = s.north; if (st.projection !== 'globe') syncLock(); $('#full').title = s.fullscreen;
   $('#t-twCompare').closest('label').title = s.twInspired;
   $('#capSwitch').title = s.capitalsTip; $('#t-artPics').closest('label').title = s.artPicsTip;
-  $('#markBtn').textContent = s.marks + ' ▾'; $('#l-markGeneral').textContent = s.markGeneral; $('#l-picSize').textContent = s.picSize;
+  $('#markBtn').textContent = s.marks + ' ▾'; $('#l-markGeneral').textContent = s.markGeneral; $('#l-picSize').textContent = s.picSize; $('#l-pics').textContent = s.picsL;
   syncMarkMenu();
   $('#dotSwitch').title = s.evDotsTip; $('#shotBtn').title = s.capShot; $('#recBtn').title = s.capRec;
   if (app.pin) renderPin();
@@ -1147,7 +1180,7 @@ function showEvent(ev) {
   eventInfo(ev, st.lang, col).then(info => {
     const slot = box.querySelector('.evinfo'); if (!info || !slot || box.dataset.ev !== key) return;
     const a = (href, text) => `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>`;
-    slot.innerHTML = (info.thumb ? `<figure class="evpic"><a href="${esc(info.page)}" target="_blank" rel="noopener"><img src="${esc(info.thumb)}" alt=""></a>
+    slot.innerHTML = (info.thumb && st.pics ? `<figure class="evpic"><a href="${esc(info.page)}" target="_blank" rel="noopener"><img src="${esc(info.thumb)}" alt=""></a>
         <figcaption>${s.artPhoto}：${esc(info.author || '—')} · ${esc(info.lic || '')} · ${a(info.page, 'Wikimedia Commons')}</figcaption></figure>` : '')
       + (!ev.d && info.extract ? `<p class="desc">${esc(info.extract)}</p><p class="src">${s.wikiExcerpt(a(info.url, info.title))}</p>` : '');
   });
@@ -1158,7 +1191,7 @@ function popEvent(ev) {
   const key = eventKey(ev, st.lang), col = st.langInfo.col, box = $('#evPop');
   app.popKey = key;
   eventInfo(ev, st.lang, col).then(info => {
-    if (app.popKey !== key || !info?.thumb) return;
+    if (app.popKey !== key || !info?.thumb || !st.pics) return;
     const img = new Image();
     img.onload = () => {
       if (app.popKey !== key) return;
@@ -1213,7 +1246,7 @@ function pulseEvent(e) {
       const ll = info.ll || (info.qid ? await wikidataPlace(info.qid) : null);
       if (!place(ll)) return;
     }
-    setPulseThumb(key, info.thumb, redraw);
+    if (st.pics) setPulseThumb(key, info.thumb, redraw);
   });
 }
 function removeCapitalPulses() { removePulses(p => p.cap); }
@@ -1338,6 +1371,7 @@ function peopleIn(text) {
   return out.slice(0, 8);
 }
 async function addPeople(box) {
+  if (!st.pics) { box.querySelector(':scope > .people')?.remove(); return; }
   await loadPeople();
   const text = [...box.childNodes].filter(n => !(n.classList?.contains('people'))).map(n => n.textContent).join(' ');
   const who = peopleIn(text), key = who.map(p => p.w).join('|');
@@ -1366,6 +1400,7 @@ for (const id of ['#info', '#pinInfo']) {
 
 // a picture of the place, building, bank or currency an info panel is about (Wikipedia's lead picture, Commons only)
 function addPlacePic(box, title, wl, label) {
+  if (!st.pics) return;
   const tag = box.dataset.pic = Math.random().toString(36).slice(2);
   pageImage(title, wl).then(i => {
     if (!i || box.dataset.pic !== tag || box.hidden) return;
@@ -1383,7 +1418,7 @@ function showPolity(id) {
   bindChips(box);
   box.hidden = false;
   const cap = P.row(id)?.[10] && capitalOf(P.row(id)[10], st.year);       // the capital in this year, pictured
-  if (cap?.img) { const tag = box.dataset.pic = id + ':' + cap.c; cityThumb(cap.img).then(tn => {
+  if (cap?.img && st.pics) { const tag = box.dataset.pic = id + ':' + cap.c; cityThumb(cap.img).then(tn => {
     if (!tn || box.dataset.pic !== tag || box.hidden) return;
     const name = cap.n[st.langInfo.col] || cap.n[0];
     box.querySelector('.placepic')?.remove();
@@ -1504,6 +1539,25 @@ function showLang(id) {
   box.querySelector('.x').onclick = () => hideInfo();
   if (!L.pictures && (x.w[1] || x.w[0])) addPlacePic(box, x.w[1] || x.w[0], x.w[1] ? 'en' : 'zh');
 }
+// a cable of the Internet mode: years, length, operators and landing points (TeleGeography), or a terrestrial line
+function showCable(id) {
+  const s = t(st.lang), col = st.langInfo.col, L = themeOf(st.mode); if (!L) return;
+  const x = (L.flows || []).find(q => q.id === id); if (!x) return;
+  const fam = L.fam[x.f], I = x.info || {}, T = s.theme[st.mode] || {};
+  const sep = st.lang === 'en' ? ', ' : '、', more = (list, n) => list.join(sep) + (list.length >= n ? s.cableMore : '');
+  const box = $('#info');
+  delete box.dataset.disputed; box.dataset.sticky = '1';
+  box.innerHTML = `<button class="x" aria-label="close">×</button>
+    <h2><span class="star" style="color:${fam.color}">━</span>${esc(x.n[col] || x.n[0])}</h2>
+    <table class="facts"><tr><th>${s.span}</th><td>${formatYear(st.lang, x.a)} – ${x.b >= 2026 ? s.cableInUse : formatYear(st.lang, x.b)}</td></tr>
+      <tr><th>${T.families || ''}</th><td><i class="sw" style="background:${fam.color}"></i> ${esc(fam.n[col] || fam.n[0])}</td></tr>
+      ${I.len ? `<tr><th>${s.cableLen}</th><td>${esc(I.len)}</td></tr>` : ''}
+      ${I.own?.length ? `<tr><th>${s.cableOwn}</th><td>${esc(more(I.own, 5))}</td></tr>` : ''}
+      ${I.land?.length ? `<tr><th>${s.cableLand}</th><td>${esc(more(I.land, 8))}</td></tr>` : ''}</table>
+    <p class="src">${I.len || I.own?.length ? s.cableSrcTG : T.src || ''}</p>`;
+  box.hidden = false;
+  box.querySelector('.x').onclick = () => hideInfo();
+}
 function showSeat(id, kind = 'seat') {
   const c = reg(), s = t(st.lang), col = st.langInfo.col;
   const x = (kind === 'seat' ? c.seats || [] : c.local || []).find(q => q.id === id); if (!x) return;
@@ -1544,7 +1598,7 @@ function showWork(id) {
     <table class="facts"><tr><th>${s.workSpan}</th><td>${s.ym(y0, m0)} – ${end}</td></tr></table>
     ${note ? `<p class="desc">${esc(note)}</p>` : ''}
     ${links ? `<p class="links">${s.links}：${links}</p>` : ''}
-    <p class="src">${s.workSrc}</p>`;
+    <p class="src">${s.workSrc}${x.kind === 'cable' && st.mode === 'taiwan' && x.id !== 'cb_tpc5' && x.id !== 'cb_tpkm' ? '<br>' + s.cableSrcSMC : ''}</p>`;
   box.hidden = false;
   box.querySelector('.x').onclick = () => hideInfo();
   addPlacePic(box, x.w[0] || name.split(/[（(、,]/)[0], x.w[0] ? 'zh' : wikiLang());
@@ -1553,8 +1607,8 @@ function showProvince(prov) {
   const s = t(st.lang), col = st.langInfo.col;
   const f = frame(st).feats.find(x => x.properties.prov?.id === prov.id);
   if (!f) { hideInfo(); return; }
-  const { p, ctl, ctl2 } = f.properties;
-  const admin = LAYERED.includes(st.mode) && st.layer === 'admin';
+  const { p, ctl, ctl2, fb } = f.properties;
+  const admin = LAYERED.includes(st.mode) && st.layer === 'admin' && !fb;
   const c = reg();
   const govs = frame(st).govs.filter(g => c.offset + g.f === ctl);
   const box = $('#info');
