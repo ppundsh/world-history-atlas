@@ -10,7 +10,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url';
 import { geoDistance, geoBounds, geoMercator, geoPath } from 'd3-geo';
 import { store, P, loadPhysical, chunkFor } from './data.js';
-import { planTransition, ease, decodeIds, pieceKey } from './transition.js';
+import { planTransition, ease, decodeIds, pieceKey, idColor, readbackOk } from './transition.js';
 import { frame, region as reg, REGIONS } from './modes.js';
 import { drawMarker } from './flat.js';
 import { BASEMAPS } from './styles.js';
@@ -280,6 +280,7 @@ export class GlobeMap {
     const added = feats.filter(f => !before.has(keyOf(f))), removed = prevFeats.filter(f => !after.has(keyOf(f)));
     if (!added.length && !removed.length) return;
     this.endTransition();
+    if (!(this.readOk ??= readbackOk())) return;     // canvas reads scrambled (anti-fingerprinting): no animation
     // bounds of everything that changed
     let [x0, y0, x1, y1] = [180, 85, -180, -85];
     for (const f of [...added, ...removed]) {
@@ -304,12 +305,14 @@ export class GlobeMap {
       c.width = w; c.height = h;
       const g = c.getContext('2d', { willReadFrequently: true });
       const path = geoPath(proj, g);
+      const idx = new Map(), out = [];
+      for (const f of list) if (!idx.has(f.properties.p) && out.length < 4095) { idx.set(f.properties.p, out.length); out.push(f.properties.p); }
       for (const f of list) {
-        const v = f.properties.p + 1;
-        g.fillStyle = `rgb(${(v >> 16) & 255},${(v >> 8) & 255},${v & 255})`;
+        if (!idx.has(f.properties.p)) continue;
+        g.fillStyle = idColor(idx.get(f.properties.p));
         g.beginPath(); path(f); g.fill();
       }
-      return decodeIds(g.getImageData(0, 0, w, h).data, w, h, new Set(list.map(f => f.properties.p)));
+      return decodeIds(g.getImageData(0, 0, w, h).data, w, h, out);
     };
     const idA = ids(prevFeats), idB = ids(feats);
     const plan = planTransition(w, h, idA, idB, st.transition === 'jump' ? 'jump' : 'grow');
@@ -483,7 +486,7 @@ export class GlobeMap {
     }
     const placed = [], hits = this.markerHits = [];
     const pproj = ll => { if (geoDistance(ll, center) > 1.4) return null; const q = m.project(ll); return [q.x, q.y]; };
-    reservePulses(pproj, placed);
+    reservePulses(pproj, placed, S.label.font);
     for (const g of this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers) {
       if (geoDistance([g.lon, g.lat], center) > 1.4) continue;
       const p = m.project([g.lon, g.lat]);
@@ -491,7 +494,8 @@ export class GlobeMap {
         if (g.kind === 'cap') { const q = m.project([g.lon, Math.min(89, g.lat + 0.5)]); if (Math.hypot(q.x - p.x, q.y - p.y) * 114.6 * (g.size || 0) < 44) continue; }
         else { const q = m.project([g.lon + 0.5, g.lat]); if (Math.hypot(q.x - p.x, q.y - p.y) < 30) continue; }
       }
-      drawMarker(ctx, p.x, p.y, g, col, S, placed, hits);
+      if (g.alpha != null && g.alpha < 1) { ctx.save(); ctx.globalAlpha = g.alpha; drawMarker(ctx, p.x, p.y, g, col, S, placed, hits); ctx.restore(); }   // leaving: fading out
+      else drawMarker(ctx, p.x, p.y, g, col, S, placed, hits);
     }
     drawPulses(ctx, S.label.font);
     if (takeSliding()) m.triggerRepaint();

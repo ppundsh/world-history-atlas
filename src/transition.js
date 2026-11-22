@@ -159,7 +159,11 @@ export function planTransition(w, h, idA, idB, mode) {
       tv[k] = 0.04 + 0.92 * e; ta[k] = 2;
     }
   }
-  return { w, h, idA, idB, list, tv, ta, mode };
+  // the changed cells' bounding box (with a cell of margin), so the compositing can stay inside it
+  let x0 = w, y0 = h, x1 = -1, y1 = -1;
+  for (const i of changed) { const x = i % w, y = (i / w) | 0; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+  const box = [Math.max(0, x0 - 1), Math.max(0, y0 - 1), Math.min(w, x1 + 2), Math.min(h, y1 + 2)];
+  return { w, h, idA, idB, list, tv, ta, mode, box };
 }
 
 // owner of every cell at time t (to chain a new transition onto a running one)
@@ -192,19 +196,35 @@ export function fillMasks(plan, t, maskA, maskB, init) {
 
 // Decode an id raster drawn with rgb(id+1) fills. Anti-aliased edge pixels blend two colours and can
 // decode to an unrelated polity; those take the value of a neighbour instead.
-export function decodeIds(data, w, h, valid) {
-  const out = new Int32Array(w * h);
+// Ids are drawn as colours 17 apart in each channel (4 bits per channel, 4095 pieces per frame) and read back
+// by rounding, so small changes to the pixels (anti-aliasing, or browsers that add noise to canvas reads against
+// fingerprinting) do not turn into wrong ids. `ids` maps the drawn index back to the polity id.
+export const idColor = i => { const v = i + 1; return `rgb(${((v >> 8) & 15) * 17},${((v >> 4) & 15) * 17},${(v & 15) * 17})`; };
+export function decodeIds(data, w, h, ids) {
+  const out = new Int32Array(w * h), q = x => Math.round(x / 17);
   for (let i = 0; i < out.length; i++) {
     const a = data[i * 4 + 3];
     if (a < 128) { out[i] = -1; continue; }
-    const v = ((data[i * 4] << 16) | (data[i * 4 + 1] << 8) | data[i * 4 + 2]) - 1;
-    out[i] = a === 255 && valid.has(v) ? v : -2;
+    const v = ((q(data[i * 4]) << 8) | (q(data[i * 4 + 1]) << 4) | q(data[i * 4 + 2])) - 1;
+    out[i] = a > 240 && v >= 0 && v < ids.length ? ids[v] : -2;
   }
   for (let i = 0; i < out.length; i++) if (out[i] === -2) {
     const x = i % w;
     out[i] = x > 0 && out[i - 1] >= -1 ? out[i - 1] : i >= w && out[i - w] >= -1 ? out[i - w] : -1;
   }
   return out;
+}
+// whether this browser reads canvas pixels back faithfully enough for the territory animation
+export function readbackOk() {
+  try {
+    const c = document.createElement('canvas'); c.width = 16; c.height = 4;
+    const g = c.getContext('2d', { willReadFrequently: true });
+    for (let i = 0; i < 16; i++) { g.fillStyle = idColor(i * 97 % 4000); g.fillRect(i, 0, 1, 4); }
+    const d = g.getImageData(0, 0, 16, 4).data, ids = Array.from({ length: 4096 }, (_, i) => i);
+    const out = decodeIds(d, 16, 4, ids);
+    let bad = 0; for (let i = 0; i < 64; i++) if (out[i] !== (i % 16) * 97 % 4000) bad++;
+    return bad <= 2;
+  } catch { return false; }
 }
 
 // stable identity of a drawn polity piece across era chunks (chunks hold separate copies of geometry)

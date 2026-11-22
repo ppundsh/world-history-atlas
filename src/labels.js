@@ -148,7 +148,7 @@ export function placeLabels(ctx, items, W, H, style) {
     ctx.font = `${it.minor ? 500 : style.weight} ${it.size}px ${fontFamily}`;
     ctx.lineWidth = Math.max(2, it.size / 5);
     ctx.strokeStyle = style.halo; ctx.strokeText(it.text, it.x, y1);
-    ctx.fillStyle = it.minor ? '#3a3f55' : style.text; ctx.fillText(it.text, it.x, y1);
+    ctx.fillStyle = it.minor ? style.minor || '#3a3f55' : style.text; ctx.fillText(it.text, it.x, y1);
     if (it.sub) {
       const y2 = y1 + it.size / 2 + subSize / 2 + 2;
       ctx.font = `500 ${subSize}px ${fontFamily}`;

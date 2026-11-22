@@ -12,7 +12,7 @@ import { frame, region, REGIONS } from './modes.js';
 export const ROC_COLOR = '#ffb000';
 import { BASEMAPS } from './styles.js';
 import { labelItems, placeLabels, hatchPattern } from './labels.js';
-import { planTransition, idsAt, fillMasks, ease, decodeIds } from './transition.js';
+import { planTransition, idsAt, fillMasks, ease, decodeIds, idColor, readbackOk } from './transition.js';
 
 const SPHERE = { type: 'Sphere' };
 const GRAT = geoGraticule10();
@@ -23,25 +23,65 @@ const MAX_K = 60;
 // Pushes its clickable box to `hits` ({x0, y0, x1, y1, m}).
 // Thumbnails keep clear of each other and of labels: the first spot around the marker (nearest first, then
 // further rings) where at most a fifth of the picture would be covered; a leader line links it to its marker.
+// A thumbnail is a card: the picture with its name in a strip underneath, so the name belongs to the picture.
+// Names (boxes flagged hard: [x0, y0, x1, y1, true]) are never covered by a later picture when there is room.
 export const MAX_COVER = 0.2;
-export function placePicture(x, y, s, placed) {
+export function placePicture(x, y, s, placed, cw = s, ch = s) {
   const cover = (x0, y0) => {
     let sum = 0;
     for (const b of placed) {
-      const w = Math.min(x0 + s, b[2]) - Math.max(x0, b[0]), h = Math.min(y0 + s, b[3]) - Math.max(y0, b[1]);
-      if (w > 0 && h > 0) sum += (w * h) / (s * s);
+      const w = Math.min(x0 + cw, b[2]) - Math.max(x0, b[0]), h = Math.min(y0 + ch, b[3]) - Math.max(y0, b[1]);
+      if (w > 0 && h > 0) sum += b[4] ? 1 + (w * h) / (cw * ch) : (w * h) / (cw * ch);
     }
     return sum;
   };
   const dirs = [[0, -1], [0.8, -0.8], [-0.8, -0.8], [1, 0], [-1, 0], [0.8, 0.8], [-0.8, 0.8], [0, 1]];
+  const rx = cw * 0.5 + s * 0.12 + 12, ry = ch * 0.5 + s * 0.12 + 12;
   let best = null;
   for (const ring of [1, 1.6, 2.3, 3.1, 4, 5]) for (const [dx, dy] of dirs) {
-    const cx = x + dx * (s * 0.62 + 12) * ring, cy = y + dy * (s * 0.62 + 12) * ring, x0 = cx - s / 2, y0 = cy - s / 2;
+    const cx = x + dx * rx * ring, cy = y + dy * ry * ring, x0 = cx - cw / 2, y0 = cy - ch / 2;
     const c = cover(x0, y0);
     if (c <= MAX_COVER) return [x0, y0];
     if (!best || c < best[2]) best = [x0, y0, c];
   }
   return [best[0], best[1]];
+}
+// size of a picture card: [width, height, height of the name strip, the name as it fits]
+const measure = document.createElement('canvas').getContext('2d');
+export const CARD_FONT = f => `600 11px ${f}`;
+export function cardDims(s, name, font, aspect = 1) {
+  if (!name) return [s * aspect + 6, s + 6, 0, ''];
+  measure.font = CARD_FONT(font);
+  const maxW = Math.max(s * aspect + 6, 150);
+  let text = name, tw = measure.measureText(text).width + 12;
+  while (tw > maxW && text.length > 2) { text = text.slice(0, -2) + '…'; tw = measure.measureText(text).width + 12; }
+  return [Math.max(s * aspect + 6, tw), s + 6 + 16, 16, text];
+}
+// reserve a placed card: the picture may be partly covered by a later one, its name may not
+export function reserveCard(placed, bx, by, d) {
+  placed.push([bx - 2, by - 2, bx + d[0] + 2, by + d[1] - d[2]]);
+  if (d[2]) placed.push([bx - 2, by + d[1] - d[2], bx + d[0] + 2, by + d[1] + 2, true]);
+}
+// draw a card at (bx, by): white frame, the picture (cropped square), the name underneath; returns the picture's corner
+export function drawCard(ctx, bx, by, d, s, img, color, font, lineW = 2, aspect = 1) {
+  const sw = s * aspect, ix = bx + (d[0] - sw) / 2, iy = by + 3;
+  ctx.shadowColor = 'rgba(0,0,0,0.25)'; ctx.shadowBlur = 5; ctx.fillStyle = 'rgba(255,255,255,0.78)';
+  const R = 6;
+  ctx.beginPath(); ctx.roundRect(bx, by, d[0], d[1], R); ctx.fill(); ctx.shadowBlur = 0;
+  const nw = img.naturalWidth || img.width, nh = img.naturalHeight || img.height;
+  const r = Math.max(sw / nw, s / nh), w = sw / r, h = s / r;
+  ctx.save(); ctx.beginPath(); ctx.roundRect(ix, iy, sw, s, Math.max(2, R - 3)); ctx.clip();
+  ctx.drawImage(img, (nw - w) / 2, (nh - h) / 2, w, h, ix, iy, sw, s);
+  ctx.restore();
+  if (d[2]) {
+    // the frame is see-through, so the name carries its own white outline
+    const tx = bx + d[0] / 2, ty = by + s + 6 + d[2] / 2;
+    ctx.font = CARD_FONT(font); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+    ctx.lineWidth = 3.5; ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.strokeText(d[3], tx, ty);
+    ctx.fillStyle = '#1d1d24'; ctx.fillText(d[3], tx, ty);
+  }
+  ctx.lineWidth = lineW; ctx.strokeStyle = color; ctx.beginPath(); ctx.roundRect(bx, by, d[0], d[1], R); ctx.stroke();
+  return [ix, iy];
 }
 // Pictures glide to a new place instead of jumping: the offset from its marker eases toward the target, so
 // panning moves the picture with its marker at once and only the change of place is animated.
@@ -59,28 +99,35 @@ export function slideTo(key, x, y, tx, ty) {
 }
 // true (once) when a picture is still on its way: the renderer then draws another frame
 export function takeSliding() { const s = sliding; sliding = false; if (slides.size > 400) for (const [k, e] of slides) if (performance.now() - e.seen > 5000) slides.delete(k); return s; }
-export function leader(ctx, x, y, x0, y0, s, color) {
-  const cx = Math.max(x0, Math.min(x0 + s, x)), cy = Math.max(y0, Math.min(y0 + s, y));       // nearest point of the frame
-  if (Math.hypot(cx - x, cy - y) < 8) return;
-  ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(cx, cy);
-  ctx.lineWidth = 2.5; ctx.strokeStyle = 'rgba(255,255,255,0.85)'; ctx.stroke();
-  ctx.lineWidth = 1.2; ctx.strokeStyle = color; ctx.stroke();
-}
-function drawPicture(ctx, x, y, m, placed, hits) {
-  const img = m.pic, s = m.picSize || 54;
-  const [tx, ty] = placePicture(x, y, s, placed);
-  placed.push([tx - 2, ty - 2, tx + s + 2, ty + s + 2]);
-  const [x0, y0] = slideTo('m:' + m.kind + ':' + m.id + ':' + (m.cap || ''), x, y, tx, ty);
-  const r = Math.max(s / img.naturalWidth, s / img.naturalHeight), w = s / r, h = s / r;
+// the pointer from a card to its marker: a slim triangle like a speech bubble's tail, wide at the card and
+// tapering to the marker, so the eye follows it to the place
+export function leader(ctx, x, y, x0, y0, s, color, sh = s) {
+  const cx = Math.max(x0, Math.min(x0 + s, x)), cy = Math.max(y0, Math.min(y0 + sh, y));       // nearest point of the frame
+  const len = Math.hypot(cx - x, cy - y);
+  if (len < 6) return;
+  // the base, across the pointer's direction, starts a little inside the card (drawn over it); the tip stops short
+  // of the marker
+  const ux = (x - cx) / len, uy = (y - cy) / len, half = Math.min(8, 3.5 + len * 0.07);
+  const ex = -uy, ey = ux;
+  const bx = cx - ux * 6, by = cy - uy * 6, tx = x - ux * 4, ty = y - uy * 4;
   ctx.save();
-  leader(ctx, x, y, x0 - 3, y0 - 3, s + 6, m.color);
-  ctx.shadowColor = 'rgba(0,0,0,0.35)'; ctx.shadowBlur = 6; ctx.fillStyle = '#fff';
-  ctx.fillRect(x0 - 3, y0 - 3, s + 6, s + 6); ctx.shadowBlur = 0;
-  ctx.drawImage(img, (img.naturalWidth - w) / 2, (img.naturalHeight - h) / 2, w, h, x0, y0, s, s);
-  ctx.lineWidth = 2; ctx.strokeStyle = m.color; ctx.strokeRect(x0 - 3, y0 - 3, s + 6, s + 6);
-  if (m.cls) drawClassIcon(ctx, m.cls, x0 + 4, y0 + s - 4, Math.max(16, s * 0.34), m.color);     // class badge, lower-left corner
+  ctx.beginPath(); ctx.moveTo(bx - ex * half, by - ey * half); ctx.lineTo(tx, ty); ctx.lineTo(bx + ex * half, by + ey * half); ctx.closePath();
+  ctx.globalAlpha *= 0.6;
+  ctx.lineJoin = 'round'; ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.stroke();
+  ctx.fillStyle = color; ctx.fill();
   ctx.restore();
-  hits?.push({ x0, y0, x1: x0 + s, y1: y0 + s, m });
+}
+function drawPicture(ctx, x, y, m, placed, hits, name, font) {
+  const img = m.pic, s = m.picSize || 54, ar = m.picAspect || 1, d = cardDims(s, name, font, ar);
+  const [tx, ty] = placePicture(x, y, s, placed, d[0], d[1]);
+  reserveCard(placed, tx, ty, d);
+  const [bx, by] = slideTo('m:' + m.kind + ':' + m.id + ':' + (m.cap || ''), x, y, tx, ty);
+  ctx.save();
+  leader(ctx, x, y, bx, by, d[0], m.color, d[1]);
+  const [ix, iy] = drawCard(ctx, bx, by, d, s, img, m.color, font, 2, ar);
+  if (m.cls) { const bs = Math.max(16, s * 0.34); drawClassIcon(ctx, m.cls, ix + bs / 2 + 2, iy + s - bs / 2 - 2, bs, m.color); }   // class badge inside the picture's lower-left corner, clear of the name
+  ctx.restore();
+  hits?.push({ x0: bx, y0: by, x1: bx + d[0], y1: by + d[1], m });
 }
 export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
   const seat = m.kind !== 'gov' && m.kind != null;          // seats, feuds, local powers: smaller
@@ -91,7 +138,8 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
     ctx.beginPath(); ctx.arc(x, y, 14, 0, Math.PI * 2); ctx.fillStyle = 'rgba(245,179,1,0.35)'; ctx.fill();
     ctx.lineWidth = 2; ctx.strokeStyle = '#f5b301'; ctx.stroke();
   }
-  if (m.pic) drawPicture(ctx, x, y, m, placed, hits);
+  const text = m.text[col] || m.text[0];
+  if (m.pic) drawPicture(ctx, x, y, m, placed, hits, text, S.label.font);
   if (m.cls) drawClassIcon(ctx, m.cls, x, y, 18, m.color);          // the hidden mode: class badge as the symbol
   else if (m.icon) {                                // major works: the kind's icon on a round badge
     ctx.beginPath(); ctx.arc(x, y, 10, 0, Math.PI * 2); ctx.fillStyle = 'rgba(255,255,255,0.95)'; ctx.fill();
@@ -104,7 +152,7 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
     ctx.strokeText(sym, x, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText(sym, x, y);
     ctx.lineWidth = 1.2; ctx.strokeStyle = '#fff'; ctx.strokeText(sym, x, y);
   }
-  const text = m.text[col] || m.text[0];
+  if (m.pic) { hits?.push({ x0: x - 11, y0: y - 11, x1: x + 11, y1: y + 11, m }); return; }   // the name is on the picture's card
   ctx.font = `${m.roc || !seat ? 700 : 600} ${seat ? 11 : 12}px ${S.label.font}`;
   const w = ctx.measureText(text).width + 10, h = seat ? 16 : 18, x0 = x + (seat ? 9 : 13);
   let ty = y;
@@ -112,7 +160,7 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
   while (over(ty) && ty - y < 54) ty += h + 2;
   hits?.push({ x0: x - 11, y0: y - 11, x1: x + 11, y1: y + 11, m });
   if (over(ty)) return;
-  placed.push([x0, ty - h / 2, x0 + w, ty + h / 2]);
+  placed.push([x0, ty - h / 2, x0 + w, ty + h / 2, true]);
   if (ty !== y) { ctx.beginPath(); ctx.moveTo(x + 4, y); ctx.lineTo(x0, ty); ctx.strokeStyle = 'rgba(0,0,0,0.45)'; ctx.lineWidth = 1; ctx.stroke(); }
   ctx.beginPath(); ctx.roundRect(x0, ty - h / 2, w, h, 4);
   ctx.fillStyle = 'rgba(255,255,255,0.93)'; ctx.fill();
@@ -521,9 +569,14 @@ export class FlatMap {
 
   viewKey() { return [this.projName, this.view.lon, this.view.lat, this.view.k, this.W, this.H].join(); }
 
+  // Fill layers are drawn at the screen's resolution when still, and at one pixel per CSS pixel during playback,
+  // when they are redrawn and blended every frame (on high-density screens that is 2–4 times fewer pixels;
+  // the borders and labels on top stay sharp).
+  get fs() { return this.app.state.playing ? Math.min(1, this.dpr) : this.dpr; }
   layer(name) {
     const c = (this.layers ||= {})[name] ||= document.createElement('canvas');
-    if (c.width !== this.canvas.width || c.height !== this.canvas.height) { c.width = this.canvas.width; c.height = this.canvas.height; }
+    const w = Math.round(this.W * this.fs), h = Math.round(this.H * this.fs);
+    if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
     return c;
   }
 
@@ -536,7 +589,7 @@ export class FlatMap {
         g.fillStyle = F.color(f.properties.p); g.fill(p);
         if (f.properties.s != null) { g.fillStyle = this.stripes(F.color(f.properties.s)); g.fill(p); }
       }
-    });
+    }, g.canvas.width / this.W);
   }
 
   // owner raster on the transition grid
@@ -545,14 +598,17 @@ export class FlatMap {
     if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
     const g = c.getContext('2d', { willReadFrequently: true });
     g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, w, h);
+    // one colour per polity (not per piece), so pieces of one polity read back as one
+    const idx = new Map(), ids = [];
+    for (const f of feats) if (!idx.has(f.properties.p) && ids.length < 4095) { idx.set(f.properties.p, ids.length); ids.push(f.properties.p); }
     this.each(g, () => {
       for (const f of feats) {
-        const v = f.properties.p + 1;
-        g.fillStyle = `rgb(${(v >> 16) & 255},${(v >> 8) & 255},${v & 255})`;
+        if (!idx.has(f.properties.p)) continue;
+        g.fillStyle = idColor(idx.get(f.properties.p));
         g.fill(this.P2(f));
       }
     }, 1 / cell);
-    return decodeIds(g.getImageData(0, 0, w, h).data, w, h, new Set(feats.map(f => f.properties.p)));
+    return decodeIds(g.getImageData(0, 0, w, h).data, w, h, ids);
   }
 
   // start / continue a territory transition when the set of polities changed under a still view
@@ -566,8 +622,11 @@ export class FlatMap {
     const sameView = this.lastVKey === vkey;
     const changed = this.lastFKey != null && fkey !== this.lastFKey;
     this.lastVKey = vkey;
-    if (!sameView || !st.animate) { this.trans = null; this.lastIds = null; }
-    if (changed && sameView && st.animate) {
+    // browsers that scramble canvas reads (anti-fingerprinting) cannot run the animation: changes then just appear
+    this.readOk ??= readbackOk();
+    const anim = st.animate && this.readOk;
+    if (!sameView || !anim) { this.trans = null; this.lastIds = null; }
+    if (changed && sameView && anim) {
       const idB = this.idRaster(feats, w, h, cell);
       let idA = this.lastIds;
       if (T && T.plan) idA = idsAt(T.plan, ease(Math.min(1, (now - T.t0) / T.dur)));
@@ -577,7 +636,8 @@ export class FlatMap {
         if (plan) {
           const layerA = this.layer(T ? 'swap' : 'A');
           const g = layerA.getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, layerA.width, layerA.height);
-          g.drawImage(this.layers.shown || fillB, 0, 0);
+          // the picture on screen until now: the running transition's, or the previous frame's fills
+          g.drawImage(T ? this.layers.shown : this.prevFill?.width === fillB.width ? this.prevFill : fillB, 0, 0);
           if (T) { this.layers.swap = this.layers.A; this.layers.A = layerA; }
           const mk = () => new ImageData(w, h);
           this.trans = { plan, t0: now, dur: mode === 'jump' ? 750 : st.playing ? Math.max(220, Math.min(450, 450 / st.speed)) : 400,
@@ -586,35 +646,43 @@ export class FlatMap {
       }
       this.lastIds = idB;
     } else if (!this.lastIds || this.lastIds.length !== w * h || !sameView) {
-      this.lastIds = st.animate ? this.idRaster(feats, w, h, cell) : null;
+      this.lastIds = anim ? this.idRaster(feats, w, h, cell) : null;
     }
     this.lastFKey = fkey;
   }
 
-  // composite the fill layer(s) for this frame into `shown`; returns transition progress or null
+  // the fill picture for this frame: the new fills as they are, or, while a transition runs, the old and new
+  // fills blended through the masks. Only the box around the changed cells is composited; elsewhere the old
+  // and new pictures are the same. Returns [canvas, progress or null].
   composite(fillB) {
-    const T = this.trans, shown = this.layer('shown'), g = shown.getContext('2d');
-    g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = 'source-over'; g.clearRect(0, 0, shown.width, shown.height);
-    if (!T) { g.drawImage(fillB, 0, 0); return null; }
+    const T = this.trans;
+    if (!T) return [fillB, null];
     const t = Math.min(1, (performance.now() - T.t0) / T.dur), e = ease(t);
-    if (t >= 1) { this.trans = null; g.drawImage(fillB, 0, 0); return null; }
+    if (t >= 1 || T.layerA.width !== fillB.width) { this.trans = null; return [fillB, null]; }   // done, or the resolution changed
+    const shown = this.layer('shown'), g = shown.getContext('2d');
+    g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = 'source-over'; g.clearRect(0, 0, shown.width, shown.height);
+    g.drawImage(fillB, 0, 0);
     fillMasks(T.plan, e, T.maskA, T.maskB, T.init); T.init = false;
     const m = this.maskCanvas ||= document.createElement('canvas');
     if (m.width !== T.w || m.height !== T.h) { m.width = T.w; m.height = T.h; }
     const mg = m.getContext('2d');
     const tmp = this.layer('tmp'), tg = tmp.getContext('2d');
     g.imageSmoothingEnabled = tg.imageSmoothingEnabled = true;
+    const [bx0, by0, bx1, by1] = T.plan.box, k = T.cell * shown.width / this.W;
+    const px = Math.floor(bx0 * k), py = Math.floor(by0 * k), pw = Math.min(shown.width, Math.ceil(bx1 * k)) - px, ph = Math.min(shown.height, Math.ceil(by1 * k)) - py;
+    if (pw <= 0 || ph <= 0) { this.request(); return [shown, e]; }
+    g.clearRect(px, py, pw, ph);
     for (const [src, mask] of [[T.layerA, T.maskA], [fillB, T.maskB]]) {
-      mg.putImageData(mask, 0, 0);
+      mg.putImageData(mask, 0, 0, bx0, by0, bx1 - bx0, by1 - by0);
       tg.setTransform(1, 0, 0, 1, 0, 0); tg.globalCompositeOperation = 'source-over';
-      tg.clearRect(0, 0, tmp.width, tmp.height); tg.drawImage(src, 0, 0);
+      tg.clearRect(px, py, pw, ph); tg.drawImage(src, px, py, pw, ph, px, py, pw, ph);
       tg.globalCompositeOperation = 'destination-in';
-      tg.drawImage(m, 0, 0, T.w * T.cell * this.dpr, T.h * T.cell * this.dpr);
+      tg.drawImage(m, px / k, py / k, pw / k, ph / k, px, py, pw, ph);
       tg.globalCompositeOperation = 'source-over';
-      g.drawImage(tmp, 0, 0);
+      g.drawImage(tmp, px, py, pw, ph, px, py, pw, ph);
     }
     this.request();                                  // keep animating
-    return e;
+    return [shown, e];
   }
 
   draw() {
@@ -665,13 +733,16 @@ export class FlatMap {
         ctx.globalAlpha = 1; ctx.restore();
       });
     }
-    const fillB = this.layer('B'), fillFeats = F.fillFeats || feats;
+    // fills alternate between two layers, so the previous frame's picture is still there when a transition starts
+    this.fillFlip = !this.fillFlip;
+    const fillB = this.layer(this.fillFlip ? 'B' : 'B2'), fillFeats = F.fillFeats || feats;
+    this.prevFill = this.layers[this.fillFlip ? 'B2' : 'B'] || null;
     this.drawFills(fillB.getContext('2d'), fillFeats, F);
     this.updateTransition(fillFeats, F, fillB);
-    const prog = this.composite(fillB);
+    const [pic, prog] = this.composite(fillB);
     const alpha = Math.min(1, S.polityAlpha * st.density / 0.85);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.globalAlpha = alpha; ctx.drawImage(this.layers.shown, 0, 0); ctx.globalAlpha = 1;
+    ctx.globalAlpha = alpha; ctx.drawImage(pic, 0, 0, this.canvas.width, this.canvas.height); ctx.globalAlpha = 1;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     // disputed areas: owner colour under the chosen point of view, always hatched
@@ -798,7 +869,7 @@ export class FlatMap {
     // every marker's own symbol is reserved first, so no picture lands on another marker
     for (const m of marks) { if (!m.pic || !visible([m.lon, m.lat])) continue; const p = proj([m.lon, m.lat]); if (p) placed.push([p[0] - 9, p[1] - 9, p[0] + 9, p[1] + 9]); }
     const pproj = ll => (visible(ll) ? proj(ll) : null);
-    reservePulses(pproj, placed);
+    reservePulses(pproj, placed, S.label.font);
     for (const m of marks) {
       if (!visible([m.lon, m.lat])) continue;
       const p = proj([m.lon, m.lat]); if (!p) continue;
@@ -807,7 +878,8 @@ export class FlatMap {
         if (m.kind === 'cap') { const q = proj([m.lon, Math.min(89, m.lat + 0.5)]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) * 114.6 * (m.size || 0) < 44) continue; }
         else { const q = proj([m.lon + 0.5, m.lat]); if (!q || Math.hypot(q[0] - p[0], q[1] - p[1]) < 30) continue; }
       }
-      drawMarker(ctx, p[0], p[1], m, col, S, placed, hits);
+      if (m.alpha != null && m.alpha < 1) { ctx.save(); ctx.globalAlpha = m.alpha; drawMarker(ctx, p[0], p[1], m, col, S, placed, hits); ctx.restore(); }   // leaving: fading out
+      else drawMarker(ctx, p[0], p[1], m, col, S, placed, hits);
     }
     drawPulses(ctx, S.label.font);
     if (takeSliding()) this.request();

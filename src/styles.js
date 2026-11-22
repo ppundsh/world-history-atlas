@@ -24,7 +24,7 @@ export const BASEMAPS = {
   satellite: {
     ocean: '#0b2a4a', land: '#2f3d2a', lake: '#0b2a4a', river: 'rgba(120,170,220,0.4)',
     polityAlpha: 0.5, border: 'rgba(255,255,255,0.7)', borderW: 0.7, graticule: 'rgba(255,255,255,0.25)',
-    label: { text: '#ffffff', halo: 'rgba(0,0,0,0.7)', font: SANS, weight: 600 },
+    label: { text: '#ffffff', minor: '#eef2fa', halo: 'rgba(0,0,0,0.85)', font: SANS, weight: 600 },
     raster: true,
   },
 };

@@ -350,11 +350,26 @@ function pale(hex) {
   const n = parseInt(hex.slice(1), 16), m = (v) => Math.round(v + (245 - v) * 0.72);
   return `rgb(${m(n >> 16)},${m((n >> 8) & 255)},${m(n & 255)})`;
 }
-export function artActive(year) { return (store.art || []).filter(x => x.a <= year && year <= x.b); }
+export function artActive(year, st = null) { return lingering(store.art || [], year, st); }
+// People and movements with a picture stay on the map at least MIN_SECONDS of playback, then fade out over
+// FADE_SECONDS — short lives would otherwise flash by at full speed (decades pass in a second in antiquity).
+// st.yps: years per second of playback at the current year and speed (set by main.js). Without st: exact dates.
+const MIN_SECONDS = 6, FADE_SECONDS = 1.6;
+function lingering(list, year, st) {
+  if (!st) return list.filter(x => x.a <= year && year <= x.b);
+  const yps = st.yps || 10, min = MIN_SECONDS * yps, fade = FADE_SECONDS * yps, out = [];
+  for (const x of list) {
+    if (year < x.a) continue;
+    const end = Math.max(x.b, x.a + min);
+    if (year > end + fade) continue;
+    out.push(year <= end ? x : { ...x, alpha: Math.max(0, 1 - (year - end) / fade) });
+  }
+  return out;
+}
 function artFrame(st) {
   const feats = featuresFor(st.year) || [];
   return { feats, color: id => pale(P.color(id)), overlays: [], disputed: true,
-    markers: artActive(st.year).map(x => ({ kind: 'art', id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t], sym: ART_SYM[x.k], picSize: st.picSize, pic: st.artPics !== false && st.pics !== false ? pictureFor(x.id) : null })) };
+    markers: artActive(st.year, st).map(x => ({ kind: 'art', alpha: x.alpha, id: x.id, lon: x.lon, lat: x.lat, text: x.n, color: ART_COLORS[x.t], sym: ART_SYM[x.k], picSize: st.picSize, pic: st.artPics !== false && st.pics !== false ? pictureFor(x.id) : null })) };
 }
 
 // major works (infra.tsv): an icon per kind; lines are drawn as they open, then stay as a faint network
@@ -401,6 +416,26 @@ function ownPicture(url) {
 }
 let ownListener = null;
 export function setOwnPictureListener(fn) { ownListener = fn; }
+// the hidden mode's optional custom pictures (public/fgo/custom): the original's portrait and the custom picture
+// side by side on one card, or the custom picture alone while the portrait is missing
+const pairs = new Map();
+function pairPicture(id, list) {
+  const key = id + '|' + list.map(im => im.src).join('|');
+  if (pairs.has(key)) return pairs.get(key);
+  const S = 160, c = document.createElement('canvas'); c.width = list.length * S; c.height = S;
+  const g = c.getContext('2d');
+  list.forEach((im, i) => { const r = Math.max(S / im.naturalWidth, S / im.naturalHeight), w = S / r, h = S / r; g.drawImage(im, (im.naturalWidth - w) / 2, (im.naturalHeight - h) / 2, w, h, i * S, 0, S, S); });
+  g.fillStyle = '#fff'; for (let i = 1; i < list.length; i++) g.fillRect(i * S - 1.5, 0, 3, S);
+  pairs.set(key, c);
+  return c;
+}
+function themePicture(p, st) {
+  const base = p.img ? ownPicture(p.img.url) : pictureFor(p.id);
+  const mine = p.custom && st.fgoCustom !== false ? p.custom.map(c => ownPicture(c.url)).filter(Boolean) : [];
+  const list = [base, ...mine].filter(Boolean);
+  if (list.length > 1) return { pic: pairPicture(p.id, list), picSize: st.picSize, picAspect: list.length };
+  return { pic: list[0] || null, picSize: st.picSize };
+}
 
 // ---------------------------------------------------------------- capitals in the world modes (Wikidata, see capitals.js)
 // one ★ per polity in view; the largest polities' capitals show at every zoom, the rest once zoomed in
@@ -438,12 +473,19 @@ export async function loadTheme(mode) {
   for (const a of T.areas) a.geometry = ellipse(a.lon, a.lat, a.rx, a.ry);
   // portraits of the points' originals (Wikidata → Commons), fetched like the art-history works
   if (T.pictures) registerWorks(mode, Object.fromEntries(T.points.filter(p => p.q).map(p => [p.id, [p.q]])), 'works.' + mode + '.v1');
+  // the hidden mode's custom pictures live only on the maintainer's computer (public/fgo/custom is not committed):
+  // their list, public/fgo/custom/index.json, is read when it is there and ignored otherwise
+  if (mode === 'fgo') {
+    const C = await fetch(import.meta.env.BASE_URL + 'fgo/custom/index.json').then(r => (r.ok ? r.json() : null)).catch(() => null);
+    // a point of two Servants (one original) can have a picture for each
+    if (C) for (const p of T.points) { const list = (p.ids || [p.id]).filter(i => C[i]).map(i => ({ ...C[i], id: i, n: p.sub?.find(x => x.id === i)?.n || p.n })); if (list.length) p.custom = list; }
+  }
   store.theme[mode] = T;
   return T;
 }
 export const themeOf = mode => store.theme?.[mode] || null;
 export const themeColor = (mode, f) => themeOf(mode)?.fam[f]?.color || '#888';
-export function themeActive(mode, year) {
+export function themeActive(mode, year, st = null) {
   const T = themeOf(mode); if (!T) return { areas: [], points: [], flows: [] };
   const flows = [];
   for (const f of T.flows) {
@@ -457,13 +499,13 @@ export function themeActive(mode, year) {
     // areas fade in over their first decades and out over their last ones
     areas: T.areas.filter(a => a.a <= year && year <= a.b).map(a => ({ ...a, color: themeColor(mode, a.f),
       fresh: Math.max(0, 1 - (year - a.a) / 60), fading: a.b < 2026 ? Math.max(0, 1 - (a.b - year) / 60) : 0 })),
-    points: T.points.filter(p => p.a <= year && year <= p.b),
+    points: lingering(T.points, year, st),
     flows,
   };
 }
 function themeFrame(st) {
   const T = themeOf(st.mode);
-  const feats = featuresFor(st.year) || [], act = themeActive(st.mode, st.year);
+  const feats = featuresFor(st.year) || [], act = themeActive(st.mode, st.year, st);
   if (st.thAreas === false) act.areas = [];
   if (st.thFlows === false) act.flows = [];
   if (st.thPoints === false) act.points = [];
@@ -475,8 +517,8 @@ function themeFrame(st) {
       ...areas.slice().reverse().map(a => ({ kind: 'langArea', id: a.id, lon: a.lon, lat: a.lat, text: a.n, color: a.color, sym: '●',
         // finance: a picture of the bank, exchange or coin (Wikipedia's lead picture, Commons only)
         ...(T.areaPictures && st.artPics !== false && st.pics !== false ? { pic: pagePicture(a.w[1]), picSize: Math.min(st.picSize || 54, 60) } : {}) })),
-      ...act.points.map(p => ({ kind: T.pointsAlways ? 'langArea' : 'lang', id: p.id, lon: p.lon, lat: p.lat, text: p.n, color: themeColor(st.mode, p.f), sym: '●',
-        ...(T.pictures && st.artPics !== false && st.pics !== false ? { pic: p.img ? ownPicture(p.img.url) : pictureFor(p.id), picSize: st.picSize } : {}),
+      ...act.points.map(p => ({ kind: T.pointsAlways ? 'langArea' : 'lang', alpha: p.alpha, id: p.id, lon: p.lon, lat: p.lat, text: p.n, color: themeColor(st.mode, p.f), sym: '●',
+        ...(T.pictures && st.artPics !== false && st.pics !== false ? themePicture(p, st) : {}),
         ...(p.series ? { hi: true } : {}), ...(T.pointsAlways ? { cls: p.f } : {}) })),
     ] };
 }

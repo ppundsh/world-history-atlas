@@ -35,6 +35,11 @@ const yearToPos = y => { for (let i = 1; i < SEG.length; i++) if (y <= SEG[i][0]
 // the regime mode ends with V-Dem's last year; the other world modes run to the map data's last year
 const REGIME_LAST = 2025;
 function maxYear() { return st.mode === 'regime' ? REGIME_LAST : store.meta.to; }
+// years of history per second of playback at a year (world and thematic modes), at the current speed
+function yearsPerSec(y) {
+  for (let i = 1; i < SEG.length; i++) if (y <= SEG[i][0]) { const [y0, p0] = SEG[i - 1], [y1, p1] = SEG[i]; return (y1 - y0) / ((p1 - p0) * FULL_RUN) * (st.speed || 1); }
+  return 1;
+}
 const posToYear = p => { for (let i = 1; i < SEG.length; i++) if (p <= SEG[i][1]) { const [y0, p0] = SEG[i - 1], [y1, p1] = SEG[i]; return Math.round(y0 + (p - p0) / (p1 - p0) * (y1 - y0)); } return SEG.at(-1)[0]; };
 const TICKS = [-3000, -2000, -1000, 0, 500, 1000, 1500, 1700, 1800, 1900, 1950, 2000];
 const REGION_TICKS = {
@@ -78,7 +83,7 @@ const app = {
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
     minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
-    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
+    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
   legendCollapsed: window.innerWidth < 700,          // keep the map visible on phones
@@ -273,6 +278,7 @@ function setPos(pos) {
 function step(d) { pause(); st.transition = 'grow'; return isChina() ? setMonth(st.cm + d) : setYear(st.year + d); }
 
 function renderYear() {
+  st.yps = yearsPerSec(st.year);
   syncEvTable();
   const s = t(st.lang);
   const F = frame(st);
@@ -726,7 +732,7 @@ function buildUI() {
   $('#toWorld').onclick = () => { $('#mode').value = 'world'; setMode('world'); };
   // Japan: overseas territories on / off
   $('#ov-japan').onchange = e => { st.overseas = e.target.checked; st.transition = 'jump'; st.selected = null; hideInfo(); app.globe?.update(true); renderYear(); writeHash(); };
-  for (const [el, k] of [['#lc-feud', 'feuds'], ['#lc-power', 'powers'], ['#lc-us', 'usForces'], ['#lc-works', 'works'], ['#lc-network', 'network']]) {
+  for (const [el, k] of [['#lc-feud', 'feuds'], ['#lc-power', 'powers'], ['#lc-us', 'usForces'], ['#lc-works', 'works'], ['#lc-network', 'network'], ['#lc-fgoCustom', 'fgoCustom']]) {
     $(el).checked = !!st[k];
     $(el).onchange = e => { st[k] = e.target.checked; safeSet(k, st[k] ? '1' : '0'); app.globe?.update(true); redraw(); };
   }
@@ -909,6 +915,7 @@ function applyLang() {
       `<tr><td><a href="${i.url}" target="_blank" rel="noopener">${esc(i.n[c])}</a>${i.u[c] ? `<br><small>${esc(i.u[c])}</small>` : ''}</td>` +
       `<td>${i.licUrl ? `<a href="${i.licUrl}" target="_blank" rel="noopener">${esc(i.lic[c])}</a>` : esc(i.lic[c])}</td></tr>`).join('') + '</table>').join(''); }
   $('#aboutText').textContent = s.aboutText;
+  $('#aboutHint').textContent = s.aboutHint;
   $('#countNote').textContent = s.countNote;
   $('#countBox').title = s.countNote;
   $('#trackInfo').textContent = music.current() ? `♪ ${music.current().title}` : '';
@@ -1098,7 +1105,7 @@ function buildEvTable() {
   box.innerHTML = `<div class="evhead"><b>${s.evTable}</b><input class="evfilter" type="search" placeholder="${esc(s.evFilter)}" value="${esc(app.evFilter || '')}"><button class="x" aria-label="close">×</button></div><ol>${evRows.map((r, i) =>
     `<li data-i="${i}"><span class="w">${esc(r.when)}</span><span class="n">${esc(r.name)}</span></li>`).join('')}</ol>`;
   box.querySelector('.x').onclick = () => { st.evTable = false; $('#t-evTable').checked = false; safeSet('evTable', '0'); box.hidden = true; };
-  // filter as you type; "fgo" + Enter opens the hidden mode
+  // filter as you type; "fgo" (or 英靈) + Enter opens the Heroic Spirits mode
   const fi = box.querySelector('.evfilter');
   const filter = () => {
     const q = fi.value.trim().toLowerCase(); app.evFilter = fi.value;
@@ -1107,7 +1114,8 @@ function buildEvTable() {
   fi.oninput = filter;
   fi.onkeydown = e => {
     e.stopPropagation();
-    if (e.key === 'Enter' && fi.value.trim().toLowerCase() === 'fgo') {
+    // the Heroic Spirits mode: its three letters, or the word for Heroic Spirit in any of the site's languages
+    if (e.key === 'Enter' && ['fgo', '英靈', '英灵', '英霊', 'servant', 'servants', 'heroic spirit', 'heroic spirits'].includes(fi.value.trim().toLowerCase())) {
       fi.value = ''; app.evFilter = ''; app.fgoOn = true; applyLang(); $('#mode').value = 'fgo'; setMode('fgo');
     }
   };
@@ -1257,6 +1265,7 @@ function syncLocalLabels() {
   for (const k of ['feud', 'power', 'us']) { $('#l-lc-' + k).textContent = localLabel(k); $('#lc-' + k).closest('label').hidden = !(c?.local || []).some(x => x.kind === k); }
   $('#l-lc-works').textContent = t(st.lang).worksL; $('#lc-works').closest('label').hidden = !(c?.works || []).length;
   $('#l-lc-network').textContent = t(st.lang).networkL; $('#lc-network').closest('label').hidden = !(c?.works || []).some(w => w.path);
+  $('#l-lc-fgoCustom').textContent = s.fgoCustomL; $('#lc-fgoCustom').closest('label').hidden = !themeOf('fgo')?.points?.some(p => p.custom);
   $('#l-ly-party').textContent = s.partyBy?.[st.mode]?.layer || s.partyLayer;
   $('#partyBox').hidden = !c?.party;
 }
@@ -1519,6 +1528,16 @@ function worksHtml(id) {
       <br><small>${w.thumb ? `${s.artPhoto}：${esc(w.author || '—')} · ${esc(w.lic)} · ${a(w.page, 'Commons')} · ` : ''}${a('https://www.wikidata.org/wiki/' + w.id, 'Wikidata')}</small></figcaption></figure>`;
   }).join('');
 }
+// the hidden mode's custom picture beside the original's portrait (public/fgo/custom)
+function customPair(x, s) {
+  if (!x.custom || st.fgoCustom === false) return '';
+  const url = u => esc(u.startsWith('http') ? u : import.meta.env.BASE_URL + u);
+  const w = x.img ? null : worksFor(x.id).find(a => a.thumb);
+  const orig = x.img ? `<figure><img src="${url(x.img.url)}" alt=""><figcaption>${s.fgoOriginal} · ${esc(x.img.credit)}</figcaption></figure>`
+    : w ? `<figure><img src="${esc(w.thumb)}" alt=""><figcaption>${s.fgoOriginal} · ${esc(w.author || '')} · ${esc(w.lic || '')}</figcaption></figure>` : '';
+  const col = st.langInfo.col, mine = x.custom.map(c => `<figure><img src="${url(c.url)}" alt=""><figcaption>${s.fgoCustomPic}${x.custom.length > 1 ? ' · ' + esc(c.n[col] || c.n[0]) : ''}${c.credit ? ' · ' + esc(c.credit) : ''}</figcaption></figure>`).join('');
+  return `<div class="pairpics" style="grid-template-columns:repeat(${(orig ? 1 : 0) + x.custom.length},1fr)">${orig}${mine}</div><p class="src">${s.fgoCustomNote}</p>`;
+}
 function showLang(id) {
   const s = t(st.lang), col = st.langInfo.col, L = themeOf(st.mode); if (!L) return;
   const x = L.areas.find(q => q.id === id) || L.points.find(q => q.id === id); if (!x) return;
@@ -1531,7 +1550,8 @@ function showLang(id) {
       <tr><th>${s.theme[st.mode].families}</th><td>${L.pointsAlways ? classIconSvg(x.f, fam.color, 18) : `<i class="sw" style="background:${fam.color}"></i>`} ${esc(fam.n[col] || fam.n[0])}</td></tr></table>
     <p class="desc">${esc(x.d[col] || x.d[0])}</p>
     ${x.series ? `<p class="series">◎ ${x.series.map(w => s.theme[st.mode].works[w]).join(' · ')}</p>` : ''}
-    ${x.img ? `<figure class="evpic"><img src="${esc(x.img.url.startsWith('http') ? x.img.url : import.meta.env.BASE_URL + x.img.url)}" alt=""><figcaption>${s.imgSource}：${esc(x.img.credit)}</figcaption></figure>` : ''}
+    ${customPair(x, s)}
+    ${x.img && !(x.custom && st.fgoCustom !== false) ? `<figure class="evpic"><img src="${esc(x.img.url.startsWith('http') ? x.img.url : import.meta.env.BASE_URL + x.img.url)}" alt=""><figcaption>${s.imgSource}：${esc(x.img.credit)}</figcaption></figure>` : ''}
     ${L.pictures ? `<div class="works">${worksHtml(id)}</div><p class="src">${s.imgSource}：${x.img ? esc(x.img.credit) + '；' : ''}${s.theme[st.mode].imgNote}</p>` : ''}
     <p class="links">${s.links}：${links}</p>
     <p class="src">${s.theme[st.mode].src}</p>`;

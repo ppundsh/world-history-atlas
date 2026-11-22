@@ -11,3 +11,7 @@ _preview_*.png
 CLAUDE.new.md
 # offline thumbnails: the single files are a local cache; the site uses public/offline/sheets
 public/offline/img/
+
+# FGO custom pictures stay on this computer only (see data-pipeline/fgo/CUSTOM_IMAGES.md)
+public/fgo/custom/*
+!public/fgo/custom/.gitkeep
