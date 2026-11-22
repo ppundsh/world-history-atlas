@@ -1,0 +1,34 @@
+{
+ "start": "1536-02",
+ "end": "2026-12",
+ "units": "argentina_units.geojson",
+ "merge": true,
+ "groups": {
+  "argentina": [
+   "buenos_aires",
+   "litoral",
+   "mesopotamia",
+   "chaco",
+   "cordoba",
+   "cuyo",
+   "northwest",
+   "pampa",
+   "patagonia_n",
+   "patagonia_s"
+  ],
+  "core": [
+   "buenos_aires",
+   "litoral",
+   "mesopotamia",
+   "cordoba",
+   "cuyo",
+   "northwest"
+  ],
+  "frontier": [
+   "chaco",
+   "pampa",
+   "patagonia_n",
+   "patagonia_s"
+  ]
+ }
+}

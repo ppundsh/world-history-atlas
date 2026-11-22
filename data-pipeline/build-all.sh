@@ -56,6 +56,8 @@ python3 data-pipeline/taiwan/rivers_tw.py data-pipeline/build/rivers_tw.geojson
 $MS -i data-pipeline/build/rivers_tw.geojson name=rivers -filter-fields -o format=topojson quantization=100000 $OUT/rivers_tw.json >/dev/null 2>&1
 node data-pipeline/finalize.mjs
 node data-pipeline/build_region.mjs china
+# railway and road routes of the regional modes, laid on Natural Earth 1:10m railroads / roads (routes.json)
+if [ -f "$NE/ne_10m_railroads.geojson" ]; then python3 data-pipeline/snap_routes.py "$NE"; fi
 node data-pipeline/build_region.mjs taiwan
 node data-pipeline/build_region.mjs japan
 python3 data-pipeline/russia/units.py "$NE" data-pipeline/build/russia_units.geojson
@@ -93,6 +95,39 @@ du -sh $OUT
 python3 data-pipeline/prc/units.py "$NE" data-pipeline/build/prc_units.geojson
 $MS -i data-pipeline/build/prc_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 15% keep-shapes -o format=topojson quantization=100000 $OUT/prc_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs prc
+python3 data-pipeline/france/units.py "$NE" data-pipeline/build/france_units.geojson
+$MS -i data-pipeline/build/france_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 8% keep-shapes -o format=topojson quantization=100000 $OUT/france_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs france
+python3 data-pipeline/egypt/units.py "$NE" data-pipeline/build/egypt_units.geojson
+$MS -i data-pipeline/build/egypt_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 8% keep-shapes -o format=topojson quantization=100000 $OUT/egypt_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs egypt
+python3 data-pipeline/iran/units.py "$NE" data-pipeline/build/iran_units.geojson
+$MS -i data-pipeline/build/iran_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 8% keep-shapes -o format=topojson quantization=100000 $OUT/iran_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs iran
+python3 data-pipeline/turkey/units.py "$NE" data-pipeline/build/turkey_units.geojson
+$MS -i data-pipeline/build/turkey_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 8% keep-shapes -o format=topojson quantization=100000 $OUT/turkey_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs turkey
+python3 data-pipeline/uk/units.py "$NE" data-pipeline/build/uk_units.geojson
+$MS -i data-pipeline/build/uk_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/uk_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs uk
+python3 data-pipeline/mexico/units.py "$NE" data-pipeline/build/mexico_units.geojson
+$MS -i data-pipeline/build/mexico_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 8% keep-shapes -o format=topojson quantization=100000 $OUT/mexico_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs mexico
+python3 data-pipeline/morocco/units.py "$NE" data-pipeline/build/morocco_units.geojson
+$MS -i data-pipeline/build/morocco_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/morocco_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs morocco
+python3 data-pipeline/brazil/units.py "$NE" data-pipeline/build/brazil_units.geojson
+$MS -i data-pipeline/build/brazil_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 5% keep-shapes -o format=topojson quantization=100000 $OUT/brazil_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs brazil
+python3 data-pipeline/argentina/units.py "$NE" data-pipeline/build/argentina_units.geojson
+$MS -i data-pipeline/build/argentina_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 5% keep-shapes -o format=topojson quantization=100000 $OUT/argentina_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs argentina
+python3 data-pipeline/thailand/units.py "$NE" data-pipeline/build/thailand_units.geojson
+$MS -i data-pipeline/build/thailand_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/thailand_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs thailand
+python3 data-pipeline/indonesia/units.py "$NE" data-pipeline/build/indonesia_units.geojson
+$MS -i data-pipeline/build/indonesia_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 5% keep-shapes -o format=topojson quantization=100000 $OUT/indonesia_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs indonesia
 python3 data-pipeline/usa/units.py "$NE" data-pipeline/build/usa_units.geojson
 $MS -i data-pipeline/build/usa_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/usa_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs usa

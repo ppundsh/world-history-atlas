@@ -1,0 +1,33 @@
+# 土耳其模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在土耳其或未劃分）	（不在土耳其或未划分）	(outside Turkey / not drawn)	（トルコ外・区分なし）
+e_rumeli	#e9c46a	魯米利亞（巴爾幹）州	鲁米利亚（巴尔干）州	Rumelia Eyalet	ルメリ州
+e_anadolu	#f4a261	安納托利亞州	安纳托利亚州	Anatolia Eyalet	アナドル州
+e_karaman	#e76f51	卡拉曼州	卡拉曼州	Karaman Eyalet	カラマン州
+e_rum	#8ab17d	魯姆（錫瓦斯）州	鲁姆（锡瓦斯）州	Rûm (Sivas) Eyalet	ルーム州
+e_trabzon	#2a9d8f	特拉比松州	特拉比松州	Trebizond Eyalet	トラブゾン州
+e_erzurum	#6fb3c7	埃爾祖魯姆州	埃尔祖鲁姆州	Erzurum Eyalet	エルズルム州
+e_van	#b5a7d8	凡城州	凡城州	Van Eyalet	ヴァン州
+e_diyarbekir	#d8a7b1	迪亞巴克爾州	迪亚巴克尔州	Diyarbekir Eyalet	ディヤルバクル州
+e_adana	#c9b79c	阿達納州	阿达纳州	Adana Eyalet	アダナ州
+e_aleppo	#f6b98a	阿勒坡州	阿勒坡州	Aleppo Eyalet	アレッポ州
+e_cyprus	#a594cf	賽普勒斯州	赛普勒斯州	Cyprus Eyalet	キプロス州
+p_thrace	#6fb3c7	東色雷斯（3 省）	东色雷斯（3 省）	Eastern Thrace (3 provinces)	Eastern Thrace（県）
+p_istanbul	#b5a7d8	伊斯坦堡省	伊斯坦堡省	Istanbul province	Istanbul（県）
+p_bithynia	#d8a7b1	馬爾馬拉東部（5 省）	马尔马拉东部（5 省）	Eastern Marmara (5 provinces)	Eastern Marmara（県）
+p_mysia	#c9b79c	馬爾馬拉南部（2 省）	马尔马拉南部（2 省）	Southern Marmara (2 provinces)	Southern Marmara（県）
+p_ionia	#f6b98a	伊茲密爾一帶（2 省）	伊兹密尔一带（2 省）	Izmir area (2 provinces)	Izmir area（県）
+p_caria	#a594cf	愛琴海南部（3 省）	爱琴海南部（3 省）	Southern Aegean (3 provinces)	Southern Aegean（県）
+p_phrygia	#cc94a0	內愛琴海與湖區（6 省）	内爱琴海与湖区（6 省）	Inner Aegean and Lakes (6 provinces)	Inner Aegean and Lakes（県）
+p_antalya	#d6c8b0	安塔利亞省	安塔利亚省	Antalya province	Antalya（県）
+p_cilicia	#8cc5d6	阿達納一帶（3 省）	阿达纳一带（3 省）	Adana area (3 provinces)	Adana area（県）
+p_hatay	#a3c4a8	哈塔伊省	哈塔伊省	Hatay province	Hatay（県）
+p_konya	#e3c9a8	科尼亞一帶（5 省）	科尼亚一带（5 省）	Konya area (5 provinces)	Konya area（県）
+p_ankara	#b8c4e0	安卡拉一帶（4 省）	安卡拉一带（4 省）	Ankara area (4 provinces)	Ankara area（県）
+p_cappadocia	#e0b8c4	開塞利與錫瓦斯（3 省）	开塞利与锡瓦斯（3 省）	Kayseri and Sivas (3 provinces)	Kayseri and Sivas（県）
+p_paphlagonia	#c5d6a3	黑海西部（7 省）	黑海西部（7 省）	Western Black Sea (7 provinces)	Western Black Sea（県）
+p_pontus	#d4b8e0	黑海中部（5 省）	黑海中部（5 省）	Central Black Sea (5 provinces)	Central Black Sea（県）
+p_trebizond	#e9c46a	黑海東部（6 省）	黑海东部（6 省）	Eastern Black Sea (6 provinces)	Eastern Black Sea（県）
+p_erzurum	#f4a261	東北部（6 省）	东北部（6 省）	North-east (6 provinces)	North-east（県）
+p_van	#e76f51	凡湖一帶（4 省）	凡湖一带（4 省）	Lake Van area (4 provinces)	Lake Van area（県）
+p_diyarbakir	#8ab17d	東南部（9 省）	东南部（9 省）	South-east (9 provinces)	South-east（県）
+p_urfa	#2a9d8f	烏爾法與加濟安泰普（5 省）	乌尔法与加济安泰普（5 省）	Urfa and Gaziantep (5 provinces)	Urfa and Gaziantep（県）

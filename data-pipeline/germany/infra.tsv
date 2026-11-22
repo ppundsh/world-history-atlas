@@ -1,4 +1,4 @@
-# 德國模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 德國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	de_ludwig	1835-12		11.08,49.45 10.99,49.48	路德維希鐵路（紐倫堡—菲爾特）	Ludwig Railway (Nuremberg–Fürth)	ルートヴィヒ鉄道	德意志第一條蒸汽鐵路。	The first steam railway in Germany.	ドイツ初の蒸気鉄道。	路德維希鐵路	Bavarian Ludwig Railway
 rail	de_leipzig	1839-04		12.37,51.34 12.9,51.2 13.74,51.05	萊比錫—德勒斯登鐵路	Leipzig–Dresden railway	ライプツィヒ—ドレスデン鉄道	第一條長途鐵路。	The first long-distance line.	初の長距離鉄道。	萊比錫—德勒斯登鐵路	Leipzig–Dresden railway
 rail	de_berlin_hh	1846-12		13.37,52.53 12.27,52.89 11.6,53.33 10.0,53.55	柏林—漢堡鐵路	Berlin–Hamburg railway	ベルリン—ハンブルク鉄道	連接兩大城市。	Linking the two largest cities.	二大都市を結ぶ。	柏林—漢堡鐵路	Berlin–Hamburg Railway
@@ -21,3 +21,11 @@ hsr	de_ice_eb	2017-12		11.08,49.45 11.03,50.0 11.03,50.98 12.37,51.34 13.37,52.5
 airport	de_ber	2020-10		13.5,52.37	柏林布蘭登堡機場	Berlin Brandenburg Airport	ベルリン・ブランデンブルク国際空港	延宕九年才開航。	Opened nine years late.	9年遅れで開港。	柏林布蘭登堡機場	Berlin Brandenburg Airport
 ixp	de_cix	1995-01		8.68,50.11	DE-CIX 法蘭克福網際網路交換中心	DE-CIX Frankfurt Internet exchange	DE-CIX フランクフルト	後成為全球流量最大的交換中心之一。	Later one of the world's busiest Internet exchanges.	世界最大級のIX。	DE-CIX	DE-CIX
 pipeline	de_nordstream	2011-11	2022-09	13.65,54.15 18.0,55.5 22.0,58.5 28.1,60.55	北溪天然氣管線	Nord Stream gas pipeline	ノルドストリーム	俄國天然氣直送德國，2022 年遭破壞。	Russian gas straight to Germany; sabotaged in 2022.	2022年に破壊。	北溪管道	Nord Stream
+highway	de_avus	1921-09		13.27,52.5 13.21,52.43	AVUS（柏林）	AVUS	AVUS	世界最早的汽車專用道路之一。	One of the first roads for cars only.	世界最初期の自動車専用道路。		AVUS
+highway	de_ab_berlin_munich	1938-12		13.2,52.3 12.37,51.34 11.6,50.9 11.58,50.32 11.08,49.45 11.42,48.76 11.58,48.14	帝國高速公路柏林—慕尼黑（今 A9）	Reichsautobahn Berlin–Munich (A9)	帝国アウトバーン ベルリン—ミュンヘン	今 A9 高速公路。	Today's A9.	現在のA9。	9号高速公路 (德国)	Bundesautobahn 9
+bridge	de_koehlbrand	1974-09		9.935,53.528	克爾布蘭德大橋	Köhlbrand Bridge	ケールブラント橋	漢堡港的斜張橋。	The cable-stayed bridge of Hamburg harbour.	ハンブルク港の斜張橋。		Köhlbrand Bridge
+bridge	de_hohenzollern	1911-05		6.966,50.941	霍亨索倫橋（科隆）	Hohenzollern Bridge	ホーエンツォレルン橋	科隆大教堂旁的萊茵河鐵橋。	The Rhine bridge beside Cologne Cathedral.	ケルンのライン橋。	霍亨索伦桥	Hohenzollern Bridge
+port	de_hamburg_port	1648-01		9.97,53.54	漢堡港	Port of Hamburg	ハンブルク港	德國最大的海港。	Germany's largest seaport.	ドイツ最大の港。	汉堡港	Port of Hamburg
+port	de_bremerhaven	1830-09		8.57,53.55	不來梅港	Bremerhaven	ブレーマーハーフェン	移民前往美洲的主要港口。	The main port of emigrants to America.	移民の港。	不来梅港	Bremerhaven
+airport	de_fra	1936-07		8.57,50.03	法蘭克福機場	Frankfurt Airport	フランクフルト空港	德國最大的航空樞紐。	Germany's largest air hub.	ドイツ最大の空港。	法兰克福机场	Frankfurt Airport
+airport	de_muc	1992-05		11.79,48.35	慕尼黑機場	Munich Airport	ミュンヘン空港	南德的國際機場。	The international airport of southern Germany.	南ドイツの国際空港。	慕尼黑机场	Munich Airport

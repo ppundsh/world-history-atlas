@@ -1,0 +1,30 @@
+# 墨西哥模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在墨西哥或未劃分）	（不在墨西哥或未划分）	(outside Mexico / not drawn)	（メキシコ外・区分なし）
+i_mexico	#e9c46a	墨西哥監政區	墨西哥监政区	Intendancy of Mexico	メキシコ州
+i_puebla	#f4a261	普埃布拉監政區	普埃布拉监政区	Intendancy of Puebla	プエブラ州
+i_veracruz	#e76f51	韋拉克魯斯監政區	韦拉克鲁斯监政区	Intendancy of Veracruz	ベラクルス州
+i_oaxaca	#8ab17d	瓦哈卡監政區	瓦哈卡监政区	Intendancy of Oaxaca	オアハカ州
+i_valladolid	#2a9d8f	瓦拉多利德（米卻肯）監政區	瓦拉多利德（米却肯）监政区	Intendancy of Valladolid (Michoacán)	バリャドリッド州
+i_guadalajara	#6fb3c7	瓜達拉哈拉監政區	瓜达拉哈拉监政区	Intendancy of Guadalajara	グアダラハラ州
+i_guanajuato	#b5a7d8	瓜納華托監政區	瓜纳华托监政区	Intendancy of Guanajuato	グアナフアト州
+i_slp	#d8a7b1	聖路易斯波托西、薩卡特卡斯監政區	圣路易斯波托西、萨卡特卡斯监政区	Intendancies of San Luis Potosí and Zacatecas	サン・ルイス・ポトシ、サカテカス州
+i_durango	#c9b79c	杜蘭戈、阿里斯佩監政區	杜兰戈、阿里斯佩监政区	Intendancies of Durango and Arizpe	ドゥランゴ、アリスペ州
+i_merida	#f6b98a	梅里達監政區	梅里达监政区	Intendancy of Mérida	メリダ州
+i_frontier	#a594cf	邊疆省份（德克薩斯、新墨西哥、加利福尼亞）	边疆省份（德克萨斯、新墨西哥、加利福尼亚）	Frontier provinces (Texas, New Mexico, the Californias)	辺境州
+i_guatemala	#cc94a0	瓜地馬拉都督府	瓜地马拉都督府	Captaincy General of Guatemala	グアテマラ総督領
+s_valle	#b5a7d8	墨西哥城、墨西哥州、莫雷洛斯、伊達爾戈（4 州）	墨西哥城、墨西哥州、莫雷洛斯、伊达尔戈（4 州）	Mexico City, México, Morelos, Hidalgo (4 states)	Mexico City, México, Morelos, Hidalgo（州）
+s_tlaxcala	#d8a7b1	特拉斯卡拉州	特拉斯卡拉州	Tlaxcala state	Tlaxcala（州）
+s_puebla	#c9b79c	普埃布拉州	普埃布拉州	Puebla state	Puebla（州）
+s_veracruz	#f6b98a	韋拉克魯斯州	韦拉克鲁斯州	Veracruz state	Veracruz（州）
+s_oaxaca	#a594cf	瓦哈卡州	瓦哈卡州	Oaxaca state	Oaxaca（州）
+s_guerrero	#cc94a0	格雷羅州	格雷罗州	Guerrero state	Guerrero（州）
+s_michoacan	#d6c8b0	米卻肯州	米却肯州	Michoacán state	Michoacán（州）
+s_jalisco	#8cc5d6	哈利斯科、科利馬、納亞里特、阿瓜斯卡連特斯（4 州）	哈利斯科、科利马、纳亚里特、阿瓜斯卡连特斯（4 州）	Jalisco, Colima, Nayarit, Aguascalientes (4 states)	Jalisco, Colima, Nayarit, Aguascalientes（州）
+s_bajio	#a3c4a8	瓜納華托、克雷塔羅（2 州）	瓜纳华托、克雷塔罗（2 州）	Guanajuato, Querétaro (2 states)	Guanajuato, Querétaro（州）
+s_zacatecas	#e3c9a8	聖路易斯波托西、薩卡特卡斯（2 州）	圣路易斯波托西、萨卡特卡斯（2 州）	San Luis Potosí, Zacatecas (2 states)	San Luis Potosí, Zacatecas（州）
+s_north_e	#b8c4e0	新萊昂、塔毛利帕斯、科阿韋拉（3 州）	新莱昂、塔毛利帕斯、科阿韦拉（3 州）	Nuevo León, Tamaulipas, Coahuila (3 states)	Nuevo León, Tamaulipas, Coahuila（州）
+s_north_w	#e0b8c4	奇瓦瓦、杜蘭戈、錫那羅亞、索諾拉（4 州）	奇瓦瓦、杜兰戈、锡那罗亚、索诺拉（4 州）	Chihuahua, Durango, Sinaloa, Sonora (4 states)	Chihuahua, Durango, Sinaloa, Sonora（州）
+s_baja	#e9c46a	南北下加利福尼亞（2 州）	南北下加利福尼亚（2 州）	Baja California and Baja California Sur (2 states)	Baja California and Baja California Sur（州）
+s_tabasco	#f4a261	塔巴斯科、坎佩切（2 州）	塔巴斯科、坎佩切（2 州）	Tabasco, Campeche (2 states)	Tabasco, Campeche（州）
+s_yucatan	#e76f51	猶加敦、金塔納羅奧（2 州）	犹加敦、金塔纳罗奥（2 州）	Yucatán, Quintana Roo (2 states)	Yucatán, Quintana Roo（州）
+s_chiapas	#8ab17d	恰帕斯州	恰帕斯州	Chiapas state	Chiapas（州）

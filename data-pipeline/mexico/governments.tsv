@@ -1,0 +1,12 @@
+# 墨西哥模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+tenochtitlan	1428-01	1521-08	-99.13	19.43	1	aztec	特諾奇提特蘭（阿茲特克）	特诺奇提特兰（阿兹特克）	Tenochtitlan (Aztecs)	テノチティトラン（アステカ）
+tzintzuntzan	1428-01	1530-01	-101.58	19.63	0	purepecha	欽贊贊（普雷佩查）	钦赞赞（普雷佩查）	Tzintzuntzan (Purépecha)	ツィンツンツァン（タラスコ）
+mexico_city	1521-08	1821-09	-99.13	19.43	1	spain	墨西哥城（新西班牙總督）	墨西哥城（新西班牙总督）	Mexico City (Viceroy of New Spain)	メキシコシティ（ヌエバ・エスパーニャ副王）
+mexico_city2	1821-09	1863-06	-99.13	19.43	1	mexico	墨西哥城（墨西哥）	墨西哥城（墨西哥）	Mexico City (Mexico)	メキシコシティ（メキシコ）
+veracruz_g	1858-05	1861-01	-96.13	19.2	0	mexico	韋拉克魯斯（華雷斯政府）	韦拉克鲁斯（华雷斯政府）	Veracruz (Juárez government)	ベラクルス（フアレス政府）
+maximilian	1863-06	1867-06	-99.13	19.43	0	empire2	墨西哥城（馬克西米連皇帝）	墨西哥城（马克西米连皇帝）	Mexico City (Emperor Maximilian)	メキシコシティ（マクシミリアン）
+pasodelnorte	1865-08	1866-06	-106.48	31.73	1	mexico	北方帕索（華雷斯）	北方帕索（华雷斯）	Paso del Norte (Juárez)	パソ・デル・ノルテ（フアレス）
+mexico_city3	1867-07	2026-12	-99.13	19.43	1	mexico	墨西哥城（墨西哥）	墨西哥城（墨西哥）	Mexico City (Mexico)	メキシコシティ（メキシコ）
+austin	1839-10	1845-12	-97.74	30.27	0	texas	奧斯汀（德克薩斯共和國）	奥斯汀（德克萨斯共和国）	Austin (Republic of Texas)	オースティン（テキサス共和国）
+merida	1841-10	1848-08	-89.62	20.97	0	yucatan_r	梅里達（猶加敦）	梅里达（犹加敦）	Mérida (Yucatán)	メリダ（ユカタン）
+guatemala_c	1823-07	2026-12	-90.51	14.63	0	centam	瓜地馬拉市	瓜地马拉市	Guatemala City	グアテマラシティ

@@ -1,7 +1,7 @@
 # 台灣模式：重大建設。點狀（水庫、電廠、港口、機場…）以圖示標示；線狀（鐵路、高鐵、高速公路、公路、網路骨幹、海纜）依通車路段逐段畫出，之後留作淡色路網。
 # 欄位：種類	id	啟用(年-月)	停用(年-月，可空)	座標（點：經,緯；線：經,緯 經,緯 …）	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目
 # 海纜路線取自「台灣海纜動態地圖」smc.peering.tw（seadog007、TWDS），裁切至臺灣周邊並簡化；多段以「;」分隔
-# 路線為沿主要車站的簡化示意。年代依各維基百科條目。
+# 鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；年代依各維基百科條目。
 rail	tr_klg_tpe	1891-10		121.74,25.13 121.68,25.08 121.62,25.06 121.52,25.05	基隆—臺北鐵路（劉銘傳）	Keelung–Taipei railway (Liu Mingchuan)	基隆—台北間鉄道（劉銘伝）	清代臺灣巡撫劉銘傳主持興建，臺灣第一條鐵路。	Built under governor Liu Mingchuan, Taiwan's first railway.	巡撫劉銘伝が建設した台湾初の鉄道。	臺灣鐵路 (清治時期)	
 rail	tr_tpe_hsc	1893-11		121.52,25.05 121.43,25.03 121.3,24.99 121.21,24.95 121.02,24.82 120.97,24.80	臺北—新竹鐵路	Taipei–Hsinchu railway	台北—新竹間鉄道	清代鐵路延伸至新竹，劉銘傳去職後停建。	The Qing line reached Hsinchu and stopped there.	清代の鉄道が新竹まで延伸。	臺灣鐵路 (清治時期)	
 rail	tr_wcl	1908-04		120.97,24.80 120.92,24.69 120.82,24.56 120.82,24.44 120.72,24.24 120.68,24.14 120.54,24.08 120.45,23.70 120.44,23.48 120.32,23.30 120.21,23.0 120.27,22.69 120.28,22.62	縱貫線全線通車（新竹—打狗）	West Coast line completed (Hsinchu–Takao)	縦貫線全通（新竹—打狗）	總督府鐵道部完成基隆至打狗的西部縱貫鐵路，旅程由數日縮短為一天。	The colonial railway bureau completed Keelung to Takao; the journey shrank from days to one day.	基隆から打狗まで全通し、移動は1日に。	縱貫線 (鐵路)	Western Trunk line
@@ -67,3 +67,6 @@ cable	cb_plcn	2022-01		121.80,24.86 122.17,24.79 122.85,24.53 124.15,23.55	太�
 cable	cb_apricot	2025-01		121.83,24.85 121.99,24.73 122.44,24.58 122.57,24.44 122.67,24.42 122.84,24.22 123.25,23.94 123.58,23.88 124.15,23.47 124.70,23.28	Apricot 海纜	Apricot	Apricot	頭城登陸，連接日本、關島、菲律賓、印尼與新加坡。	Lands at Toucheng, linking Japan, Guam, the Philippines, Indonesia and Singapore.	頭城に陸揚げ。		
 cable	cb_sjc2	2025-01		121.41,25.19 121.39,25.25 121.55,25.46 122.20,25.17 122.34,25.19 122.63,25.11 122.88,24.87 123.24,24.79 123.37,24.83 123.34,24.92 123.42,25.02 123.89,25.21 124.06,25.33 124.77,25.41 ; 121.30,20.57 121.17,20.75 121.14,21.18 120.91,21.35 120.58,21.83 120.56,22.02 120.65,22.27	東南亞—日本二號海纜（SJC2）	Southeast Asia–Japan Cable 2 (SJC2)	SJC2	淡水與枋山登陸。	Lands at Tamsui and Fangshan.	淡水・枋山に陸揚げ。		
 cable	cb_tpu	2026-01		120.91,22.37 121.40,21.97 121.50,21.93 121.54,21.84 121.69,21.81 121.92,21.54 121.97,21.37 122.12,21.26 122.32,21.29 122.77,21.48 123.01,21.46 123.19,21.49	TPU 海纜（臺灣—菲律賓—美國）	TPU (Taiwan–Philippines–US)	TPU（台湾—フィリピン—米国）	谷歌的海纜，在臺東大武登陸。	A Google cable landing at Dawu, Taitung.	台東・大武に陸揚げするGoogleのケーブル。		
+bridge	br_guandu	1983-07		121.462,25.118	關渡大橋	Guandu Bridge	関渡大橋	淡水河口的紅色拱橋。	The red arch bridge at the mouth of the Tamsui River.	淡水河口のアーチ橋。	關渡大橋	Guandu Bridge
+highway	hw_n6	2009-03		120.62,24.12 120.75,24.03 120.97,23.97	水沙連高速公路（國道 6 號）	Freeway 6	国道6号	由霧峰通往埔里的山區高速公路。	A mountain freeway from Wufeng to Puli.	霧峰と埔里を結ぶ。	國道六號	Freeway 6 (Taiwan)
+airport	ap_kaohsiung	1965-01		120.35,22.58	高雄國際機場	Kaohsiung International Airport	高雄国際空港	南臺灣的國際機場。	The international airport of southern Taiwan.	台湾南部の国際空港。	高雄國際機場	Kaohsiung International Airport

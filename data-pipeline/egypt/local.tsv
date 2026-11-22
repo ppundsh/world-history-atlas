@@ -1,0 +1,12 @@
+# 埃及模式：起義與叛亂（⚔）、地方勢力（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+feud	bashmurian	0831-01	0832-12	31.4	31.4	巴什穆爾起義	Bashmurian revolt	バシュムール人の反乱	三角洲沼澤的科普特人反抗阿拔斯的重稅。	Copts of the Delta marshes rose against Abbasid taxes.	デルタのコプト教徒の反乱。	
+feud	urabi	1881-09	1882-09	31.24	30.04	奧拉比起義	Urabi revolt	オラービー革命	軍官奧拉比反抗外國控制，英國藉機占領埃及。	Colonel Urabi rose against foreign control; Britain used it to occupy Egypt.	外国支配への反乱。	奥拉比起义
+feud	rev1919	1919-03	1919-04	31.24	30.04	1919 年革命	1919 Revolution	1919年革命	扎格盧勒被放逐引發全國反英起義。	The exile of Saad Zaghlul set off a nationwide rising against Britain.	反英蜂起。	1919年埃及革命
+feud	bread1977	1977-01	1977-01	31.24	30.04	麵包暴動	Bread riots	パン暴動	取消麵包補貼引起全國暴動。	Cutting bread subsidies set off riots across the country.	パン補助金削減への暴動。	
+feud	tahrir	2011-01	2011-02	31.24	30.04	解放廣場示威	Tahrir Square protests	タハリール広場のデモ	十八天的抗議推翻穆巴拉克。	Eighteen days of protest brought down Mubarak.	ムバーラク退陣のデモ。	2011年埃及革命
+power	thebes_priest	-1080-01	-945-01	32.66	25.72	阿蒙大祭司（底比斯）	High Priests of Amun at Thebes	アメン大司祭（テーベ）	第三中間期在南方實質統治的祭司政權。	The priest-rulers who held the south in the Third Intermediate Period.	第三中間期の南の神官政権。	阿蒙大祭司
+power	nubia_x	0350-01	1504-01	30.47	18.22	努比亞諸王國（諾巴底亞、馬庫里亞、阿洛迪亞）	Christian Nubian kingdoms	ヌビアのキリスト教諸王国	基督教努比亞王國，與伊斯蘭埃及以「巴克特條約」相處數百年。	Christian Nubian kingdoms that lived beside Islamic Egypt for centuries under the Baqt treaty.	バクト条約のヌビア王国。	马库里亚
+us	britain_canal	1882-09	1956-06	32.3	30.6	英軍駐守蘇伊士運河區	British forces in the Suez Canal Zone	スエズ運河地帯の英軍	英軍自占領起駐紮運河區，1956 年撤出。	British forces held the Canal Zone from 1882 until 1956.	1956年まで駐留。	苏伊士运河区
+us	unef	1957-03	1967-05	34.3	31.3	聯合國緊急部隊	UN Emergency Force	国連緊急軍	蘇伊士危機後駐守西奈的聯合國維和部隊。	UN peacekeepers in Sinai after the Suez Crisis.	国連平和維持部隊。	联合国紧急部队
+us	mfo	1982-04	2026-12	34.08	27.86	多國部隊與觀察員團	Multinational Force and Observers	多国籍軍・監視団	依和約監督西奈非軍事化的部隊。	The force that watches over Sinai under the peace treaty.	シナイ半島の監視。	多国部队与观察员

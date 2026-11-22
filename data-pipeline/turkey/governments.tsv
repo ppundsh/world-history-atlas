@@ -1,0 +1,14 @@
+# 土耳其模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+isfahan_s	1071-08	1077-01	51.67	32.65	0	seljuk	伊斯法罕（大塞爾柱）	伊斯法罕（大塞尔柱）	Isfahan (Great Seljuks)	イスファハーン（大セルジューク朝）
+constantinople	1071-08	1204-04	28.98	41.01	0	byzantium	君士坦丁堡（拜占庭）	君士坦丁堡（拜占庭）	Constantinople (Byzantium)	コンスタンティノープル（ビザンツ）
+nicaea_r	1077-01	1097-06	29.72	40.43	1	rum	尼西亞（羅姆）	尼西亚（罗姆）	Nicaea (Rum)	ニカイア（ルーム）
+konya	1097-06	1308-01	32.49	37.87	1	rum	科尼亞（羅姆蘇丹國）	科尼亚（罗姆苏丹国）	Konya (Sultanate of Rum)	コンヤ（ルーム・セルジューク朝）
+nicaea_e	1204-04	1261-07	29.72	40.43	0	nicaea	尼西亞（尼西亞帝國）	尼西亚（尼西亚帝国）	Nicaea (Empire of Nicaea)	ニカイア（ニカイア帝国）
+constantinople2	1261-07	1453-05	28.98	41.01	0	byzantium	君士坦丁堡（拜占庭）	君士坦丁堡（拜占庭）	Constantinople (Byzantium)	コンスタンティノープル（ビザンツ）
+sogut	1299-01	1326-04	30.18	40.02	1	ottoman	瑟於特（鄂圖曼）	瑟于特（鄂图曼）	Söğüt (Ottomans)	ソユト（オスマン）
+bursa	1326-04	1365-01	29.06	40.18	1	ottoman	布爾薩（鄂圖曼）	布尔萨（鄂图曼）	Bursa (Ottomans)	ブルサ（オスマン）
+edirne	1365-01	1453-05	26.56	41.68	1	ottoman	埃迪爾內（鄂圖曼）	埃迪尔内（鄂图曼）	Edirne (Ottomans)	エディルネ（オスマン）
+istanbul	1453-05	1923-10	28.98	41.01	1	ottoman	伊斯坦堡（鄂圖曼）	伊斯坦堡（鄂图曼）	Istanbul (Ottomans)	イスタンブール（オスマン）
+trebizond_g	1204-04	1461-08	39.72	41.0	0	trebizond	特拉比松	特拉比松	Trebizond	トレビゾンド
+ankara	1920-04	2026-12	32.85	39.93	1	turkey	安卡拉（大國民議會、共和國）	安卡拉（大国民议会、共和国）	Ankara (Grand National Assembly, Republic)	アンカラ（大国民議会、共和国）
+athens	1834-12	2026-12	23.73	37.98	0	greece	雅典（希臘）	雅典（希腊）	Athens (Greece)	アテネ（ギリシャ）

@@ -1,0 +1,12 @@
+# 印度尼西亞模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+palembang	0683-01	1025-01	104.75	-2.99	1	srivijaya	巨港（室利佛逝）	巨港（室利佛逝）	Palembang (Srivijaya)	パレンバン（シュリーヴィジャヤ）
+trowulan	1293-11	1478-01	112.38	-7.56	1	majapahit	特洛烏蘭（滿者伯夷）	特洛乌兰（满者伯夷）	Trowulan (Majapahit)	トロウラン（マジャパヒト）
+banda_aceh	1496-01	1904-01	95.32	5.55	0	aceh_s	班達亞齊	班达亚齐	Banda Aceh	バンダ・アチェ
+demak	1475-01	1554-01	110.64	-6.89	1	demak	淡目	淡目	Demak	ドゥマク
+kotagede	1587-01	1755-02	110.4	-7.83	1	mataram2	哥打格德（馬打蘭）	哥打格德（马打兰）	Kotagede (Mataram)	コタグデ（マタラム）
+yogyakarta	1755-02	2026-12	110.36	-7.8	0	mataram2	日惹蘇丹王宮	日惹苏丹王宫	Yogyakarta Sultanate	ジョグジャカルタ王宮
+batavia	1619-05	1942-03	106.81	-6.13	1	voc	巴達維亞	巴达维亚	Batavia	バタヴィア
+jakarta	1942-03	2026-12	106.83	-6.18	1	republic	雅加達	雅加达	Jakarta	ジャカルタ
+yogya_cap	1946-01	1949-12	110.36	-7.8	0	republic	日惹（共和國臨時首都）	日惹（共和国临时首都）	Yogyakarta (Republic's wartime capital)	ジョグジャカルタ（臨時首都）
+makassar	1600-01	1669-06	119.42	-5.13	0	gowa	望加錫	望加锡	Makassar	マカッサル
+dili	1769-01	2026-12	125.57	-8.56	0	timor	帝力	帝力	Dili	ディリ

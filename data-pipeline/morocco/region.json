@@ -1,0 +1,48 @@
+{
+ "start": "0788-01",
+ "end": "2026-12",
+ "units": "morocco_units.geojson",
+ "merge": true,
+ "groups": {
+  "morocco": [
+   "tangier",
+   "rif",
+   "fes",
+   "rabat",
+   "casablanca",
+   "marrakech",
+   "souss",
+   "sahara_n"
+  ],
+  "morocco_n": [
+   "tangier",
+   "rif",
+   "fes",
+   "rabat",
+   "casablanca",
+   "marrakech",
+   "souss"
+  ],
+  "algeria": [
+   "oran",
+   "algiers",
+   "constantine",
+   "sahara_dz"
+  ],
+  "maghreb": [
+   "tangier",
+   "rif",
+   "fes",
+   "rabat",
+   "casablanca",
+   "marrakech",
+   "souss",
+   "sahara_n",
+   "oran",
+   "algiers",
+   "constantine",
+   "sahara_dz",
+   "ifriqiya"
+  ]
+ }
+}

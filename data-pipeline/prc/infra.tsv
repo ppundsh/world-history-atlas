@@ -1,4 +1,4 @@
-# 中華人民共和國模式：重大建設（格式見 taiwan/infra.tsv）。路線為沿主要車站的簡化示意；年代依各維基百科條目。
+# 中華人民共和國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	cn_chengyu	1952-07		104.07,30.67 105.06,29.58 106.55,29.56	成渝鐵路	Chengdu–Chongqing railway	成渝鉄道	新中國第一條自建鐵路。	The first railway built by the new state.	新中国初の自力建設鉄道。	成渝鐵路	Chengdu–Chongqing railway
 rail	cn_baocheng	1958-01		107.13,34.36 106.9,33.2 105.84,32.43 104.73,31.47 104.07,30.67	寶成鐵路	Baoji–Chengdu railway	宝成鉄道	第一條穿越秦嶺、連接西南與西北的鐵路。	The first line across the Qinling, joining the south-west and north-west.	秦嶺を越えて西南と西北を結ぶ。	寶成鐵路	Baoji–Chengdu railway
 rail	cn_lanxin	1962-12		103.83,36.06 101.78,36.62 100.45,38.93 98.5,39.73 95.78,40.52 93.5,42.82 89.18,42.95 87.62,43.83	蘭新鐵路通至烏魯木齊	Lanzhou–Xinjiang railway reaches Ürümqi	蘭新鉄道ウルムチ開通	河西走廊進入新疆。	Through the Hexi Corridor into Xinjiang.	河西回廊から新疆へ。	蘭新鐵路	Lanzhou–Xinjiang railway
@@ -51,3 +51,12 @@ fiber	cn_chinanet	1996-01		116.39,39.91 121.47,31.23 113.26,23.13 104.07,30.67 1
 datacenter	cn_gfw	2003-01		116.39,39.91	防火長城（金盾工程）	Great Firewall (Golden Shield)	グレート・ファイアウォール（金盾）	國家級網路審查與封鎖系統。	The national system of Internet censorship and blocking.	国家規模のネット検閲。	防火長城	Great Firewall
 cable	cn_cuc	1993-12		121.85,31.0 128.0,32.0 140.0,34.5	中美海底電纜（經日本）	China–US cable (via Japan)	中米海底ケーブル	崇明登陸。	Landing at Chongming.	崇明に陸揚げ。	中美海底光纜	China-US Cable Network
 datacenter	cn_guizhou	2015-02		106.7,26.6	貴州大數據中心群	Guizhou data-centre cluster	貴州のデータセンター群	蘋果 iCloud 中國資料存放地。	Where Apple's Chinese iCloud data is kept.	Apple iCloud中国データの保管地。	貴州省	Guizhou
+road	cn_qinghai_tibet_rd	1954-12		94.9,36.4 93.9,35.7 92.4,34.2 92.05,32.5 91.1,29.65	青藏公路	Qinghai–Tibet Highway	青蔵公路	由格爾木到拉薩，與川藏公路同年通車。	From Golmud to Lhasa, opened the same year as the Sichuan–Tibet road.	ゴルムドからラサへ。	青藏公路	China National Highway 109
+highway	cn_jingzhu	2004-12		116.4,39.9 114.48,38.03 113.65,34.76 114.3,30.59 112.94,28.23 113.26,23.13 114.1,22.55	京珠高速公路全線	Beijing–Zhuhai Expressway	京珠高速道路	南北縱貫的主幹高速公路（今京港澳高速）。	The north–south trunk expressway (today's G4).	南北縦貫の幹線。	京港澳高速公路	G4 Beijing–Hong Kong and Macau Expressway
+bridge	cn_hzbay	2008-05		121.15,30.5	杭州灣跨海大橋	Hangzhou Bay Bridge	杭州湾海上大橋	長 36 公里的跨海大橋。	A 36-kilometre bridge across the bay.	全長36kmの海上橋。	杭州湾跨海大桥	Hangzhou Bay Bridge
+bridge	cn_sutong	2008-05		120.99,31.78	蘇通長江大橋	Sutong Yangtze River Bridge	蘇通長江大橋	曾為世界跨徑最大的斜張橋。	Once the world's longest-span cable-stayed bridge.	かつて世界最長の斜張橋。	苏通长江公路大桥	Sutong Yangtze River Bridge
+port	cn_yangshan	2005-12		122.06,30.63	上海洋山深水港	Yangshan Deep-Water Port	洋山深水港	世界最大貨櫃港的主力港區。	The heart of the world's busiest container port.	世界最大のコンテナ港。	洋山深水港	Yangshan Port
+port	cn_shenzhen_port	1980-08		113.88,22.5	深圳港（鹽田、蛇口）	Port of Shenzhen	深圳港	經濟特區帶動的大港。	A great port grown with the special economic zone.	経済特区とともに成長。	深圳港	Port of Shenzhen
+port	cn_ningbo	1979-01		121.85,29.93	寧波舟山港（北侖）	Ningbo-Zhoushan Port	寧波舟山港	貨物吞吐量世界第一的港口。	The world's largest port by cargo tonnage.	貨物取扱量世界一。	宁波舟山港	Port of Ningbo-Zhoushan
+airport	cn_capital	1958-03		116.6,40.08	北京首都國際機場	Beijing Capital International Airport	北京首都国際空港	新中國的首都門戶。	The capital's main gateway since 1958.	首都の空の玄関。	北京首都国际机场	Beijing Capital International Airport
+airport	cn_can	2004-08		113.3,23.39	廣州白雲國際機場	Guangzhou Baiyun International Airport	広州白雲国際空港	華南最大的航空樞紐。	South China's largest air hub.	華南最大の空港。	广州白云国际机场	Guangzhou Baiyun International Airport

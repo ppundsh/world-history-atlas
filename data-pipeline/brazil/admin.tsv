@@ -1,0 +1,27 @@
+# 巴西模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
+# 約 1750 年的都督轄區與共和國各州。
+1500-04	bahia,pernambuco,ceara,maranhao,para,amazonas,acre,rondonia,mato_grosso,goias,minas,rio,sao_paulo,parana,rio_grande,uruguay	none
+1750-01	bahia	c_bahia
+1750-01	pernambuco,ceara	c_pernambuco
+1750-01	para,maranhao,amazonas	c_graopara
+1750-01	rio	c_rio
+1750-01	sao_paulo,parana	c_sp
+1750-01	minas	c_minas
+1750-01	goias	c_goias
+1750-01	mato_grosso,rondonia	c_mt
+1750-01	rio_grande	c_rs
+1889-11	bahia	s_bahia
+1889-11	pernambuco	s_pernambuco
+1889-11	ceara	s_ceara
+1889-11	maranhao	s_maranhao
+1889-11	para	s_para
+1889-11	amazonas	s_amazonas
+1889-11	rondonia	s_rondonia
+1889-11	mato_grosso	s_mato_grosso
+1889-11	goias	s_goias
+1889-11	minas	s_minas
+1889-11	rio	s_rio
+1889-11	sao_paulo	s_sao_paulo
+1889-11	parana	s_parana
+1889-11	rio_grande	s_rio_grande
+1903-11	acre	s_acre

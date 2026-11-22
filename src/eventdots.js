@@ -2,7 +2,7 @@
 // (when Wikipedia has a free one) and name, for several seconds before it fades. Pointing at the picture keeps
 // it; clicking opens the event (or the country, for a capital). Drawn by both renderers.
 
-import { placePicture, leader, slideTo, cardDims, reserveCard, drawCard } from './flat.js';
+import { placePicture, leader, slideTo, cardDims, reserveCard, drawCard, cardOffsets } from './flat.js';
 const LIFE = 11000, FADE = 3000, MAX = 4;
 // when newer events push a picture out (more than MAX at once), it still stays at least MIN_SHOW, then fades
 // over OUT_FADE instead of vanishing; at most HARD pictures are on the map, fading ones included
@@ -49,6 +49,11 @@ export function pulsesActive(now = clock()) {
 export function removePulses(test) { for (let i = pulses.length - 1; i >= 0; i--) if (test(pulses[i])) { if (pulses[i] === held) held = null; pulses.splice(i, 1); } }
 export function clearPulses() { pulses.length = 0; held = null; }
 // which picture (or dot) is under the pointer, from the last drawing
+// an event's picture card under the pointer (for dragging it)
+export function pulseCardAt(x, y) {
+  for (let i = pulses.length - 1; i >= 0; i--) { const c = pulses[i].card, b = pulses[i].box; if (c && b && x >= b[0] && x <= b[2] && y >= b[1] && y <= b[3]) { held = pulses[i]; return c; } }
+  return null;
+}
 export function pulseAt(x, y) {
   for (let i = pulses.length - 1; i >= 0; i--) { const b = pulses[i].box; if (b && x >= b[0] && x <= b[2] && y >= b[1] && y <= b[3]) return pulses[i]; }
   return null;
@@ -61,7 +66,8 @@ export function reservePulses(project, placed, font = 'sans-serif') {
     p.xy = project([p.lon, p.lat]); p.at = null;
     if (!p.xy || !p.img) continue;
     p.dims = cardDims(S, p.name, font);
-    const [tx, ty] = placePicture(p.xy[0], p.xy[1], S, placed, p.dims[0], p.dims[1]);
+    const mo = cardOffsets.get('p:' + p.key);
+    const [tx, ty] = mo ? [p.xy[0] + mo[0], p.xy[1] + mo[1]] : placePicture(p.xy[0], p.xy[1], S, placed, p.dims[0], p.dims[1]);
     reserveCard(placed, tx, ty, p.dims);
     p.at = [tx, ty];
   }
@@ -71,7 +77,7 @@ export function drawPulses(ctx, font) {
   const now = clock(), wall = performance.now();
   if (!pulsesActive(now)) return;
   for (const p of pulses) {
-    p.box = null;
+    p.box = null; p.card = null;
     if (!p.xy) continue;
     const [x, y] = p.xy, age = Math.max(0, now - p.t0);
     let alpha = age < LIFE - FADE ? 1 : Math.max(0, (LIFE - age) / FADE);
@@ -87,11 +93,11 @@ export function drawPulses(ctx, font) {
     p.box = [x - 10, y - 10, x + 10, y + 10];
     if (p.img && p.at) {
       // the name is part of the picture's card
-      const s = S, d = p.dims || cardDims(s, p.name, font), [bx, by] = slideTo('p:' + p.key, x, y, p.at[0], p.at[1]);
+      const s = S, d = p.dims || cardDims(s, p.name, font), [bx, by] = cardOffsets.has('p:' + p.key) ? p.at : slideTo('p:' + p.key, x, y, p.at[0], p.at[1]);
       leader(ctx, x, y, bx, by, d[0], solid, d[1]);
       drawCard(ctx, bx, by, d, s, p.img, solid, font, p === held ? 3.5 : 2);
       if (p.credit) { ctx.font = `9px ${font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'top'; ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.strokeText(p.credit, bx + d[0] / 2, by + d[1] + 3); ctx.fillStyle = '#444'; ctx.fillText(p.credit, bx + d[0] / 2, by + d[1] + 3); }
-      p.box = [bx, by, bx + d[0], by + d[1]];
+      p.box = [bx, by, bx + d[0], by + d[1]]; p.card = { key: 'p:' + p.key, x0: bx, y0: by, ax: x, ay: y };
     } else {
       ctx.font = `700 12px ${font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
       ctx.lineJoin = 'round'; ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(255,255,255,0.95)';

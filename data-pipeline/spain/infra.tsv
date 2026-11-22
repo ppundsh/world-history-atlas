@@ -1,4 +1,4 @@
-# 西班牙模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 西班牙模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	es_barcelona_mataro	1848-10		2.17,41.39 2.44,41.54	巴塞隆納—馬塔羅鐵路	Barcelona–Mataró railway	バルセロナ—マタロ鉄道	西班牙本土第一條鐵路。	The first railway in mainland Spain.	スペイン本土初の鉄道。	巴塞隆納—馬塔羅鐵路	Barcelona–Mataró railway
 rail	es_madrid_aranjuez	1851-02		-3.69,40.41 -3.6,40.03	馬德里—阿蘭胡埃斯鐵路	Madrid–Aranjuez railway	マドリード—アランフエス鉄道	首都第一條鐵路。	The capital's first railway.	首都初の鉄道。	馬德里—阿蘭胡埃斯鐵路	Madrid–Aranjuez railway
 rail	es_norte	1864-08		-3.69,40.42 -4.73,41.65 -3.7,42.34 -2.67,42.85 -1.98,43.32 -1.79,43.34	北方鐵路（馬德里—伊倫）	Northern Railway (Madrid–Irún)	北部鉄道（マドリード—イルン）	連接法國邊境。	Linking the French border.	フランス国境へ。	馬德里—亨代伊鐵路	Madrid–Hendaye railway
@@ -17,3 +17,12 @@ airport	es_barajas	1931-04		-3.57,40.47	馬德里巴拉哈斯機場	Madrid–Bar
 industry	es_gugg	1997-10		-2.93,43.27	畢爾包古根漢美術館	Guggenheim Museum Bilbao	ビルバオ・グッゲンハイム美術館	帶動城市轉型的「畢爾包效應」。	Its "Bilbao effect" turned the city around.	「ビルバオ効果」。	畢爾包古根漢美術館	Guggenheim Museum Bilbao
 solar	es_ps10	2007-03		-6.25,37.44	PS10 太陽能塔電廠	PS10 solar power tower	PS10 太陽熱発電所	歐洲第一座商業太陽能塔。	Europe's first commercial solar tower.	欧州初の商用太陽熱タワー。	PS10太陽能發電站	PS10 solar power plant
 cable	es_marea	2018-02		-2.93,43.4 -40.0,40.0 -76.0,36.85	MAREA 跨大西洋海纜	MAREA transatlantic cable	MAREA 大西洋横断ケーブル	畢爾包—維吉尼亞海灘，微軟與臉書出資。	Bilbao to Virginia Beach, funded by Microsoft and Facebook.	ビルバオ—バージニアビーチ。	MAREA	MAREA
+road	es_radial	1761-06		-3.7,40.42 -4.72,41.65 -5.57,42.6 -6.57,42.55 -8.41,43.36;-3.7,40.42 -3.7,41.3 -3.7,42.34 -2.67,42.85 -1.79,43.34;-3.7,40.42 -2.17,41.0 -0.88,41.65 2.17,41.39;-3.7,40.42 -2.13,39.5 -0.38,39.47;-3.7,40.42 -3.6,38.98 -4.78,37.88 -5.98,37.39 -6.29,36.53;-3.7,40.42 -5.0,39.95 -6.37,39.47 -6.97,38.88	卡洛斯三世的放射狀王家道路	Charles III's radial royal roads	カルロス3世の放射状道路	由馬德里放射到各海岸的六條幹道，今國道一至六號前身。	Six trunk roads radiating from Madrid, forerunners of today's N-I to N-VI.	マドリードから放射する6本の幹線。		
+bridge	es_bizkaia	1893-07		-3.017,43.323	比斯開橋	Vizcaya Bridge	ビスカヤ橋	世界最早的運渡橋，世界遺產。	The world's first transporter bridge, a World Heritage Site.	世界初の運搬橋。	比斯开桥	Vizcaya Bridge
+bridge	es_alamillo	1992-03		-5.99,37.405	阿拉米略橋	Puente del Alamillo	アラミーリョ橋	塞維亞世博會的斜張橋。	Seville Expo's cable-stayed bridge.	セビリア万博の斜張橋。		Puente del Alamillo
+highway	es_a4	1992-04		-3.7,40.42 -3.6,38.98 -3.79,38.1 -4.78,37.88 -5.98,37.39	南方高速公路（A-4，馬德里—塞維亞）	Autovía del Sur (A-4)	南高速道路（A-4）	塞維亞世博前完工的南北幹線。	The north–south trunk finished before the Seville Expo.	セビリア万博前に完成。		Autovía A-4
+port	es_seville_port	1503-01		-6.0,37.38	塞維亞港（西印度貿易所）	Port of Seville (Casa de Contratación)	セビリア港（通商院）	壟斷美洲貿易的港口。	The port with the monopoly of American trade.	新大陸貿易の独占港。	塞维利亚	Casa de Contratación
+port	es_cadiz_port	1717-05		-6.29,36.53	加的斯港	Port of Cádiz	カディス港	接替塞維亞成為美洲貿易中心。	Took over the American trade from Seville.	セビリアに代わる新大陸貿易港。	加的斯	Cádiz
+port	es_algeciras	1906-01		-5.43,36.13	阿爾赫西拉斯港	Port of Algeciras	アルヘシラス港	直布羅陀海峽的大型貨櫃港。	A great container port on the Strait of Gibraltar.	ジブラルタル海峡の港。	阿尔赫西拉斯港	Port of Algeciras
+port	es_valencia_port	1792-01		-0.32,39.44	瓦倫西亞港	Port of Valencia	バレンシア港	西班牙最大的貨櫃港。	Spain's busiest container port.	スペイン最大のコンテナ港。	巴伦西亚港	Port of Valencia
+airport	es_bcn	1918-01		2.08,41.3	巴塞隆納機場	Barcelona–El Prat Airport	バルセロナ＝エル・プラット空港	西班牙第二大機場。	Spain's second airport.	スペイン第2の空港。	巴塞罗那-埃尔普拉特机场	Josep Tarradellas Barcelona–El Prat Airport

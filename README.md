@@ -56,17 +56,9 @@
 - **投影介紹**：投影選單的說明欄附上該投影的向量縮圖（海洋、經緯線、陸地）。
 - **錄影選項**：按 ⏺ 後可選是否錄進背景音樂。
 
-### 英靈模式（隱藏）
+### 隱藏模式
 
-在「事件時間軸」的篩選框輸入 `fgo`（打完三個字母就會開啟），會進入英靈模式（選單名稱「英靈列傳」）：Fate/Grand Order 133 位英靈依其歷史或神話原型標在故鄉與年代（同一原型的伊莉莎白・巴托里／卡蜜拉、亞歷山大／伊斯坎達爾各合併為一個點，共 131 個點）。「關於」裡有進入方式的提示。這是非官方的愛好者介紹，與 TYPE-MOON、Aniplex、Lasengle 無關；公開網站不使用任何遊戲美術，圖片是原型人物在 Wikimedia Commons 的公有領域或自由授權肖像，說明是原型的史實與傳說，以本專案文字撰寫。每位英靈的原型年代會出現在事件時間軸上；Fate/stay night、Fate/Zero、Fate/hollow ataraxia 登場英靈以金色光環標示，圖例另列一區。職階以本專案自繪的簡單圖示（劍、弓、槍、馬蹄鐵、法杖與星、匕首、閃電、王冠）標在人物縮圖左下角。此模式的世界大事仍保留，並自動切換為專用原創曲〈英靈之詩〉（CC0），離開時恢復原本的曲目。
-
-**自訂圖片（只在本機顯示）**：把圖片放進 `public/fgo/custom/` 就會顯示，不需要其他步驟；地圖頭像與說明欄會變成「原型肖像｜自訂圖片」並列。
-
-- 檔名：依 [`data-pipeline/fgo/servant-ids.csv`](data-pipeline/fgo/servant-ids.csv) 的「id」欄命名（每位英靈一列，可用 Excel 開啟），例如 `artoria.webp`、`iskandar.webp`。
-- 規格：正方形，建議 400×400 像素，WebP（也可用 PNG、JPG）。
-- 圖片說明（選填）：同一資料夾放 `credits.tsv`，每行「id<Tab>說明」。
-- 這個資料夾的內容已列在 `.gitignore`，不會被提交，也不會出現在公開網站；用 `npm run dev`（或雙擊 `本地預覽.bat`）在本機看時才會顯示。
-- 完整說明與對照表：[`data-pipeline/fgo/CUSTOM_IMAGES.md`](data-pipeline/fgo/CUSTOM_IMAGES.md)。
+在「事件時間軸」的篩選框輸入 `fgo` 並按 Enter，會開啟「英靈列傳」：Fate/Grand Order 英靈依其歷史或神話原型標在故鄉與年代（131 位）。這是非官方的愛好者介紹，與 TYPE-MOON、Aniplex、Lasengle 無關；不使用任何遊戲美術，圖片是原型人物在 Wikimedia Commons 的公有領域或自由授權肖像，說明是原型的史實與傳說，以本專案文字撰寫。每位英靈的原型年代會出現在事件時間軸上；Fate/stay night、Fate/Zero、Fate/hollow ataraxia 登場英靈以金色光環標示，圖例另列一區。若取得角色形象圖的使用權，可在 `data-pipeline/fgo/images.tsv` 填入圖片位置與來源說明，縮圖與說明欄會改用該圖並顯示來源。職階以本專案自繪的簡單圖示（劍、弓、槍、馬蹄鐵、法杖與星、匕首、閃電、王冠）標在人物縮圖左下角。此模式的世界大事仍保留，並自動切換為專用原創曲〈英靈之詩〉（CC0），離開時恢復原本的曲目。
 
 ## 在本機查看
 
@@ -146,6 +138,13 @@ CLIO=路徑/cliopatria_polities_only_v021.geojson NE=路徑/natural-earth-vector
    ```
    完成時會印出「regimes: 202 countries, … runs」。若出現「no position for XXX」，表示 V-Dem 有新國家代碼找不到首都：把它的經緯度加進 `build_regime.py` 裡的 `HIST` 表再跑一次。
 4. 重新建置網站（`npm run build`）。
+
+### 鐵路與道路的路線
+
+各地區模式的 `infra.tsv` 只記錄路線經過的城市。`python3 data-pipeline/snap_routes.py <Natural Earth geojson 資料夾>` 會在 Natural Earth 1:10m 鐵路（`ne_10m_railroads.geojson`）與道路（`ne_10m_roads.geojson`）路網上，求出相鄰兩城市間的最短路徑，結果寫入各模式的 `routes.json`，建置時取代原本的直線。
+- 路徑必須合理才採用：兩端離路網 25 公里以內、長度不超過直線距離的 1.6 倍、不偏離原路線走廊；否則該段保留直線。
+- 每條路線記錄來源：全段依圖資（`ne`）、部分依圖資（`mixed`）、圖資中沒有（`sketch`）。網站點選路線時，說明欄會標示路線來源與 Natural Earth 連結。
+- Natural Earth 1:10m 是約千萬分之一比例尺的圖資，位置誤差約數百公尺到 1–2 公里；高鐵若與傳統鐵路並行，圖資中常只有一條線。古道依今日沿線道路繪製，說明欄會註明。
 
 ### 藝術史、資料來源
 

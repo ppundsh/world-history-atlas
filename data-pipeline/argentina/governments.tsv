@@ -1,0 +1,9 @@
+# 阿根廷模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+asuncion	1537-08	1580-06	-57.63	-25.28	1	spain	亞松森（拉布拉他總督府）	亚松森（拉布拉他总督府）	Asunción (Governorate of the Río de la Plata)	アスンシオン
+ba1	1580-06	1776-08	-58.38	-34.6	1	spain	布宜諾斯艾利斯（總督府）	布宜诺斯艾利斯（总督府）	Buenos Aires (governorate)	ブエノスアイレス（総督府）
+ba2	1776-08	1810-05	-58.38	-34.6	1	spain	布宜諾斯艾利斯（拉布拉他總督）	布宜诺斯艾利斯（拉布拉他总督）	Buenos Aires (Viceroy of the Río de la Plata)	ブエノスアイレス（副王）
+ba3	1810-05	2026-12	-58.38	-34.6	1	united	布宜諾斯艾利斯	布宜诺斯艾利斯	Buenos Aires	ブエノスアイレス
+parana	1853-05	1861-12	-60.53	-31.73	0	republic	巴拉那（阿根廷聯邦首都）	巴拉那（阿根廷联邦首都）	Paraná (Confederation capital)	パラナ（連邦首都）
+montevideo	1828-08	2026-12	-56.16	-34.9	0	uruguay	蒙特維多	蒙特维多	Montevideo	モンテビデオ
+asuncion2	1811-05	2026-12	-57.63	-25.28	0	paraguay	亞松森	亚松森	Asunción	アスンシオン
+stanley	1845-01	2026-12	-57.85	-51.7	0	britain	史丹利港	史丹利港	Stanley	スタンリー

@@ -2,7 +2,7 @@ import { DistortionMask } from './distortion.js';
 import { reliefFor } from './relief.js';
 // Flat-map renderer: d3-geo projections drawn on a Canvas, with Google-Maps-style navigation
 // (drag to pan, wheel/pinch to zoom at the cursor, double-click to zoom in, arrow keys, +/-).
-import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
+import { drawPulses, reservePulses, pulseAt, pulseCardAt } from './eventdots.js';
 import { drawLang, lineAt } from './langlayer.js';
 import { drawClassIcon } from './classicon.js';
 import { geoPath, geoGraticule, geoGraticule10, geoContains, geoDistance } from 'd3-geo';
@@ -83,6 +83,16 @@ export function drawCard(ctx, bx, by, d, s, img, color, font, lineW = 2, aspect 
   ctx.lineWidth = lineW; ctx.strokeStyle = color; ctx.beginPath(); ctx.roundRect(bx, by, d[0], d[1], R); ctx.stroke();
   return [ix, iy];
 }
+// Cards moved by hand: key → offset of the card's corner from its marker, in screen pixels. A moved card stays
+// where it was put relative to its marker (it follows when the map is panned) until the mode changes.
+export const cardOffsets = new Map();
+export function cardUnder(hits, x, y) {
+  const pu = pulseCardAt(x, y); if (pu) return pu;
+  for (let i = (hits || []).length - 1; i >= 0; i--) { const h = hits[i]; if (h.card && x >= h.x0 && x <= h.x1 && y >= h.y0 && y <= h.y1) return { key: h.card, x0: h.x0, y0: h.y0, ax: h.ax, ay: h.ay }; }
+  return null;
+}
+// a card being dragged: given the pointer, move the card (both renderers)
+export function dragCard(d, px, py) { cardOffsets.set(d.key, [px - d.gx - d.ax, py - d.gy - d.ay]); }
 // Pictures glide to a new place instead of jumping: the offset from its marker eases toward the target, so
 // panning moves the picture with its marker at once and only the change of place is animated.
 const slides = new Map();
@@ -119,15 +129,16 @@ export function leader(ctx, x, y, x0, y0, s, color, sh = s) {
 }
 function drawPicture(ctx, x, y, m, placed, hits, name, font) {
   const img = m.pic, s = m.picSize || 54, ar = m.picAspect || 1, d = cardDims(s, name, font, ar);
-  const [tx, ty] = placePicture(x, y, s, placed, d[0], d[1]);
+  const key = 'm:' + m.kind + ':' + m.id + ':' + (m.cap || ''), mo = cardOffsets.get(key);
+  const [tx, ty] = mo ? [x + mo[0], y + mo[1]] : placePicture(x, y, s, placed, d[0], d[1]);
   reserveCard(placed, tx, ty, d);
-  const [bx, by] = slideTo('m:' + m.kind + ':' + m.id + ':' + (m.cap || ''), x, y, tx, ty);
+  const [bx, by] = mo ? [tx, ty] : slideTo(key, x, y, tx, ty);
   ctx.save();
   leader(ctx, x, y, bx, by, d[0], m.color, d[1]);
   const [ix, iy] = drawCard(ctx, bx, by, d, s, img, m.color, font, 2, ar);
   if (m.cls) { const bs = Math.max(16, s * 0.34); drawClassIcon(ctx, m.cls, ix + bs / 2 + 2, iy + s - bs / 2 - 2, bs, m.color); }   // class badge inside the picture's lower-left corner, clear of the name
   ctx.restore();
-  hits?.push({ x0: bx, y0: by, x1: bx + d[0], y1: by + d[1], m });
+  hits?.push({ x0: bx, y0: by, x1: bx + d[0], y1: by + d[1], m, card: key, ax: x, ay: y });
 }
 export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
   const seat = m.kind !== 'gov' && m.kind != null;          // seats, feuds, local powers: smaller
@@ -432,12 +443,20 @@ export class FlatMap {
       c.setPointerCapture(e.pointerId);
       const cmp = this.app.compare, ll = this.proj.invert([e.offsetX, e.offsetY]);
       if (cmp?.on && ll && cmp.contains(ll)) { this.cmpDrag = { grab: ll, c0: [...cmp.center] }; moved = 10; return; }
+      // a picture card: drag it instead of the map
+      const card = this.pointers.size ? null : this.cardAt(e.offsetX, e.offsetY);
+      if (card) { this.cardDrag = { ...card, gx: e.offsetX - card.x0, gy: e.offsetY - card.y0, sx: e.offsetX, sy: e.offsetY, moved: 0 }; c.classList.add('grabbing'); return; }
       this.pointers.set(e.pointerId, [e.offsetX, e.offsetY]);
       moved = 0; last = [e.offsetX, e.offsetY];
       if (this.pointers.size === 2) pinch = this.pinchState();
       c.classList.add('grabbing');
     });
     c.addEventListener('pointermove', e => {
+      if (this.cardDrag) {
+        const d = this.cardDrag; d.moved = Math.max(d.moved, Math.abs(e.offsetX - d.sx) + Math.abs(e.offsetY - d.sy));
+        if (d.moved >= 4) { dragCard(d, e.offsetX, e.offsetY); this.request(); }
+        return;
+      }
       if (this.cmpDrag) {
         const ll = this.proj.invert([e.offsetX, e.offsetY]), d = this.cmpDrag;
         if (ll && isFinite(ll[0])) { let dl = ll[0] - d.grab[0]; if (dl > 180) dl -= 360; if (dl < -180) dl += 360; this.app.compare.center = [d.c0[0] + dl, Math.max(-80, Math.min(80, d.c0[1] + ll[1] - d.grab[1]))]; this.request(); }
@@ -460,6 +479,11 @@ export class FlatMap {
       this.panBy(dx, dy, e.shiftKey || (e.buttons & 2) === 2);      // Shift- or right-drag: turn around the centre
     });
     const end = e => {
+      if (this.cardDrag) {
+        const d = this.cardDrag; this.cardDrag = null; c.classList.remove('grabbing');
+        if (e.type === 'pointerup' && d.moved < 4) this.app.onSelect?.(this.hit(e.offsetX, e.offsetY), e);   // a click
+        return;
+      }
       if (this.cmpDrag) { this.cmpDrag = null; return; }
       this.pointers.delete(e.pointerId);
       if (this.pointers.size < 2) pinch = null;
@@ -511,6 +535,8 @@ export class FlatMap {
     return f ? { polity: f.properties.p, sec: typeof f.properties.s === 'number' ? f.properties.s : null, prov: f.properties.prov } : null;
   }
 
+  // the picture card under (x, y): a marker's or an event's, with its key and its marker's place
+  cardAt(x, y) { return cardUnder(this.markerHits, x, y); }
   polityAt(ll) { return this.featureAt(ll)?.properties.p ?? null; }
   featureAt(ll) {
     const feats = frame(this.app.state).feats;
@@ -572,7 +598,7 @@ export class FlatMap {
   // Fill layers are drawn at the screen's resolution when still, and at one pixel per CSS pixel during playback,
   // when they are redrawn and blended every frame (on high-density screens that is 2–4 times fewer pixels;
   // the borders and labels on top stay sharp).
-  get fs() { return this.app.state.playing ? Math.min(1, this.dpr) : this.dpr; }
+  get fs() { return this.app.state.playing || this.app.state.dragging ? Math.min(1, this.dpr) : this.dpr; }
   layer(name) {
     const c = (this.layers ||= {})[name] ||= document.createElement('canvas');
     const w = Math.round(this.W * this.fs), h = Math.round(this.H * this.fs);
@@ -624,7 +650,7 @@ export class FlatMap {
     this.lastVKey = vkey;
     // browsers that scramble canvas reads (anti-fingerprinting) cannot run the animation: changes then just appear
     this.readOk ??= readbackOk();
-    const anim = st.animate && this.readOk;
+    const anim = st.animate && this.readOk && !st.dragging;   // dragging the timeline: changes just appear
     if (!sameView || !anim) { this.trans = null; this.lastIds = null; }
     if (changed && sameView && anim) {
       const idB = this.idRaster(feats, w, h, cell);
@@ -977,24 +1003,63 @@ export class FlatMap {
     const g = out.getContext('2d'); const img = g.createImageData(w, h); const o = img.data;
     const inv = this.proj.invert, s = 1 / scale, center = [this.view.lon, this.view.lat];
     const hi = (this.hiresData || []).filter(r => this.view.k >= r.minK);
-    for (let y = 0; y < h; y++) {
-      for (let x = 0; x < w; x++) {
-        const ll = inv([x * s, y * s]);
-        if (!ll || !isFinite(ll[0]) || Math.abs(ll[1]) > 90) continue;
-        if (this.azimuthal && geoDistance(ll, center) > this.clipRad) continue;
-        let S = src, sx, sy;
-        const lon = ((ll[0] + 540) % 360) - 180;
-        for (const r of hi) if (lon >= r.b[0] && lon < r.b[2] && ll[1] >= r.b[1] && ll[1] < r.b[3]) { S = r; break; }
-        if (S === src) {
-          sx = Math.min(src.w - 1, Math.max(0, Math.floor((lon + 180) / 360 * src.w)));
-          sy = Math.min(src.h - 1, Math.max(0, Math.floor((90 - ll[1]) / 180 * src.h)));
-        } else {
-          sx = Math.min(S.w - 1, Math.floor((lon - S.b[0]) / (S.b[2] - S.b[0]) * S.w));
-          sy = Math.min(S.h - 1, Math.floor((S.b[3] - ll[1]) / (S.b[3] - S.b[1]) * S.h));
-        }
-        const si = (sy * S.w + sx) * 4, oi = (y * w + x) * 4;
-        o[oi] = S.d[si]; o[oi + 1] = S.d[si + 1]; o[oi + 2] = S.d[si + 2]; o[oi + 3] = 255;
+    const az = this.azimuthal, clipRad = this.clipRad;
+    // the exact inverse projection only on a coarse grid; pixels inside a cell are interpolated from its
+    // corners when the cell is whole (all corners on the map, no seam), otherwise worked out one by one
+    // angular distance test without geoDistance (which streams a line each time): cos of the distance
+    const R = Math.PI / 180, sc = Math.sin(center[1] * R), cc = Math.cos(center[1] * R), cosClip = Math.cos(Math.min(Math.PI, clipRad));
+    const exact = (x, y) => {
+      const ll = inv([x * s, y * s]);
+      if (!ll || !isFinite(ll[0]) || !isFinite(ll[1]) || Math.abs(ll[1]) > 90) return null;
+      if (az && sc * Math.sin(ll[1] * R) + cc * Math.cos(ll[1] * R) * Math.cos((ll[0] - center[0]) * R) <= cosClip + 1e-6) return null;   // points beyond the disc come back clamped onto its edge
+      return ll;
+    };
+    const put = (oi, lonRaw, lat) => {
+      const lon = ((lonRaw + 540) % 360) - 180;
+      let S = src, sx, sy;
+      for (const r of hi) if (lon >= r.b[0] && lon < r.b[2] && lat >= r.b[1] && lat < r.b[3]) { S = r; break; }
+      if (S === src) {
+        sx = Math.min(src.w - 1, Math.max(0, Math.floor((lon + 180) / 360 * src.w)));
+        sy = Math.min(src.h - 1, Math.max(0, Math.floor((90 - lat) / 180 * src.h)));
+      } else {
+        sx = Math.min(S.w - 1, Math.floor((lon - S.b[0]) / (S.b[2] - S.b[0]) * S.w));
+        sy = Math.min(S.h - 1, Math.floor((S.b[3] - lat) / (S.b[3] - S.b[1]) * S.h));
       }
+      const si = (sy * S.w + sx) * 4;
+      o[oi] = S.d[si]; o[oi + 1] = S.d[si + 1]; o[oi + 2] = S.d[si + 2]; o[oi + 3] = 255;
+    };
+    const G = 6, gw = Math.ceil(w / G) + 1, gh = Math.ceil(h / G) + 1;
+    const gl = new Float64Array(gw * gh * 2), gok = new Uint8Array(gw * gh);
+    for (let gy = 0; gy < gh; gy++) for (let gx = 0; gx < gw; gx++) {
+      const ll = exact(gx * G, gy * G), k = gy * gw + gx;
+      if (ll) { gok[k] = 1; gl[k * 2] = ll[0]; gl[k * 2 + 1] = ll[1]; }
+    }
+    for (let gy = 0; gy < gh - 1; gy++) for (let gx = 0; gx < gw - 1; gx++) {
+      const a = gy * gw + gx, b = a + 1, c = a + gw, d = c + 1;
+      const x0 = gx * G, y0 = gy * G, x1 = Math.min(w, x0 + G), y1 = Math.min(h, y0 + G);
+      if (x0 >= w || y0 >= h) continue;
+      let whole = gok[a] && gok[b] && gok[c] && gok[d];
+      if (whole) {
+        const l0 = gl[a * 2], l1 = gl[b * 2], l2 = gl[c * 2], l3 = gl[d * 2];
+        const t0 = gl[a * 2 + 1], t1 = gl[b * 2 + 1], t2 = gl[c * 2 + 1], t3 = gl[d * 2 + 1];
+        // a seam (the antimeridian) or a pole inside the cell: no interpolation there
+        whole = Math.max(l0, l1, l2, l3) - Math.min(l0, l1, l2, l3) < 30 && Math.max(Math.abs(t0), Math.abs(t1), Math.abs(t2), Math.abs(t3)) < 88;
+        if (whole) {
+          for (let y = y0; y < y1; y++) {
+            const v = (y - y0) / G;
+            const la = l0 + (l2 - l0) * v, lb = l1 + (l3 - l1) * v, ta = t0 + (t2 - t0) * v, tb = t1 + (t3 - t1) * v;
+            for (let x = x0; x < x1; x++) { const u = (x - x0) / G; put((y * w + x) * 4, la + (lb - la) * u, ta + (tb - ta) * u); }
+          }
+          continue;
+        }
+      }
+      if (!gok[a] && !gok[b] && !gok[c] && !gok[d]) {
+        // off the map, unless the edge of the map could cut into the cell from a neighbouring grid point
+        let near = false;
+        for (let yy = Math.max(0, gy - 1); yy <= Math.min(gh - 1, gy + 2) && !near; yy++) for (let xx = Math.max(0, gx - 1); xx <= Math.min(gw - 1, gx + 2); xx++) if (gok[yy * gw + xx]) { near = true; break; }
+        if (!near) continue;
+      }
+      for (let y = y0; y < y1; y++) for (let x = x0; x < x1; x++) { const ll = exact(x, y); if (ll) put((y * w + x) * 4, ll[0], ll[1]); }
     }
     g.putImageData(img, 0, 0);
     return out;

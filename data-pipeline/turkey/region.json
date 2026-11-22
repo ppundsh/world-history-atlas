@@ -1,0 +1,57 @@
+{
+ "start": "1071-08",
+ "end": "2026-12",
+ "units": "turkey_units.geojson",
+ "merge": true,
+ "groups": {
+  "anatolia": [
+   "thrace",
+   "istanbul",
+   "bithynia",
+   "mysia",
+   "ionia",
+   "caria",
+   "phrygia",
+   "antalya",
+   "cilicia",
+   "hatay",
+   "konya",
+   "ankara",
+   "cappadocia",
+   "paphlagonia",
+   "pontus",
+   "trebizond",
+   "erzurum",
+   "van",
+   "diyarbakir",
+   "urfa"
+  ],
+  "west": [
+   "thrace",
+   "istanbul",
+   "bithynia",
+   "mysia",
+   "ionia",
+   "caria",
+   "phrygia",
+   "antalya"
+  ],
+  "centre": [
+   "konya",
+   "ankara",
+   "cappadocia",
+   "paphlagonia"
+  ],
+  "east": [
+   "erzurum",
+   "van",
+   "diyarbakir",
+   "urfa"
+  ],
+  "aegean": [
+   "mysia",
+   "ionia",
+   "caria"
+  ]
+ }
+}

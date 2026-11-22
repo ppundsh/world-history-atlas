@@ -1,0 +1,20 @@
+# 埃及模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為埃及主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+memphis1	-3100-01	-2181-01	31.25	29.85	1	egypt	孟斐斯（古王國）	孟斐斯（古王国）	Memphis (Old Kingdom)	メンフィス（古王国）
+herakleopolis	-2181-01	-2040-01	30.94	29.09	1	lower	赫拉克來奧波利斯	赫拉克利奥波利斯	Herakleopolis	ヘラクレオポリス
+thebes1	-2134-01	-1991-01	32.64	25.7	1	upper	底比斯（中王國的興起）	底比斯（中王国的兴起）	Thebes (rise of the Middle Kingdom)	テーベ（中王国の興隆）
+itjtawy	-1991-01	-1650-01	31.22	29.57	1	egypt	伊悌－塔威（中王國）	伊悌－塔威（中王国）	Itjtawy (Middle Kingdom)	イチタウィ（中王国）
+avaris	-1650-01	-1550-01	31.82	30.79	0	hyksos	阿瓦利斯（喜克索斯）	阿瓦利斯（喜克索斯）	Avaris (Hyksos)	アヴァリス（ヒクソス）
+thebes2	-1650-01	-1352-01	32.64	25.7	1	egypt	底比斯（新王國）	底比斯（新王国）	Thebes (New Kingdom)	テーベ（新王国）
+amarna	-1346-01	-1332-01	30.9	27.65	1	egypt	阿瑪納（埃赫那頓）	阿玛纳（埃赫那顿）	Amarna (Akhenaten)	アマルナ（アクエンアテン）
+memphis2	-1332-01	-1279-01	31.25	29.85	1	egypt	孟斐斯（第十八王朝末）	孟斐斯（第十八王朝末）	Memphis (late 18th Dynasty)	メンフィス
+piramesses	-1279-01	-1070-01	31.82	30.8	1	egypt	培爾－拉美西斯（拉美西斯二世）	培尔－拉美西斯（拉美西斯二世）	Pi-Ramesses (Ramesses II)	ペル・ラメセス
+tanis	-1070-01	-727-01	31.88	30.98	1	lower	塔尼斯	塔尼斯	Tanis	タニス
+napata	-1000-01	-591-01	31.83	18.53	0	kush	納帕塔（庫施）	纳帕塔（库施）	Napata (Kush)	ナパタ（クシュ）
+meroe	-591-01	0350-01	33.75	16.94	0	kush	麥羅埃（庫施）	麦罗埃（库施）	Meroë (Kush)	メロエ（クシュ）
+sais	-664-01	-525-05	30.77	30.96	1	egypt	塞易斯（第二十六王朝）	塞易斯（第二十六王朝）	Sais (26th Dynasty)	サイス（第26王朝）
+alexandria1	-331-04	0641-09	29.92	31.2	1	ptolemaic	亞歷山卓（托勒密、羅馬、拜占庭）	亚历山大港（托勒密、罗马、拜占庭）	Alexandria (Ptolemies, Rome, Byzantium)	アレクサンドリア
+fustat	0641-09	0969-07	31.23	30.01	1	caliphate	福斯塔特	福斯塔特	Fustat	フスタート
+cairo	0969-07	2026-12	31.24	30.04	1	fatimid	開羅	开罗	Cairo	カイロ
+jerusalem_k	1099-07	1187-10	35.23	31.78	0	crusaders	耶路撒冷（耶路撒冷王國）	耶路撒冷（耶路撒冷王国）	Jerusalem (Crusader kingdom)	エルサレム（エルサレム王国）
+omdurman	1885-01	1898-09	32.48	15.64	0	mahdist	恩圖曼（馬赫迪國）	恩图曼（马赫迪国）	Omdurman (Mahdists)	オムドゥルマン（マフディー国家）
+khartoum	1956-01	2026-12	32.53	15.6	0	sudan	喀土穆（蘇丹）	喀土穆（苏丹）	Khartoum (Sudan)	ハルツーム（スーダン）

@@ -59,7 +59,7 @@ const api = (wl, params) => get(`https://${wl}.wikipedia.org/w/api.php?` + new U
 // ---------------------------------------------------------------- what the site shows
 const { WORLD_EVENTS } = await import(new URL('src/worldEvents.gen.js', ROOT));
 const EVENTS = WORLD_EVENTS.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]] }));        // [en, zh-Hant, zh-Hans, ja]
-const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa'];
+const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
 const THEMES = ['language', 'finance', 'fgo', 'internet'];
 const events = EVENTS.map(e => ({ ...e, ctx: 'world', t: e.y }));
 const pageReq = new Map();                                     // "wl:title" → [wl, title]

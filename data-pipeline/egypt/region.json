@@ -1,0 +1,53 @@
+{
+ "start": "-3100-01",
+ "end": "2026-12",
+ "units": "egypt_units.geojson",
+ "merge": true,
+ "groups": {
+  "egypt": [
+   "alex",
+   "delta_w",
+   "delta_e",
+   "memphis",
+   "canal",
+   "fayyum",
+   "middle",
+   "thebes",
+   "aswan",
+   "redsea",
+   "oases",
+   "marmarica",
+   "sinai"
+  ],
+  "lower": [
+   "alex",
+   "delta_w",
+   "delta_e",
+   "memphis",
+   "canal"
+  ],
+  "upper": [
+   "fayyum",
+   "middle",
+   "thebes",
+   "aswan",
+   "oases",
+   "redsea"
+  ],
+  "nile": [
+   "alex",
+   "delta_w",
+   "delta_e",
+   "memphis",
+   "canal",
+   "fayyum",
+   "middle",
+   "thebes",
+   "aswan"
+  ],
+  "sudan": [
+   "nubia",
+   "sennar"
+  ]
+ }
+}

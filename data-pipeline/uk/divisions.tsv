@@ -1,0 +1,18 @@
+# 英國模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在英國或未劃分）	（不在英国或未划分）	(outside the UK / not drawn)	（英国外・区分なし）
+r_north_east	#e9c46a	東北英格蘭	东北英格兰	North East England	北東イングランド
+r_north_west	#f4a261	西北英格蘭	西北英格兰	North West England	北西イングランド
+r_yorkshire	#e76f51	約克郡—亨伯	约克郡—亨伯	Yorkshire and the Humber	ヨークシャー・アンド・ハンバー
+r_east_midlands	#8ab17d	東密德蘭	东密德兰	East Midlands	イースト・ミッドランズ
+r_west_midlands	#2a9d8f	西密德蘭	西密德兰	West Midlands	ウェスト・ミッドランズ
+r_east	#6fb3c7	東英格蘭	东英格兰	East of England	イースト・オブ・イングランド
+r_london	#b5a7d8	大倫敦	大伦敦	Greater London	グレーター・ロンドン
+r_south_east	#d8a7b1	東南英格蘭	东南英格兰	South East England	南東イングランド
+r_south_west	#c9b79c	西南英格蘭	西南英格兰	South West England	南西イングランド
+r_wales	#f6b98a	威爾斯（議會）	威尔斯（议会）	Wales (Senedd)	ウェールズ（議会）
+r_scotland	#a594cf	蘇格蘭（議會）	苏格兰（议会）	Scotland (Scottish Parliament)	スコットランド（議会）
+r_n_ireland	#cc94a0	北愛爾蘭（議會）	北爱尔兰（议会）	Northern Ireland (Assembly)	北アイルランド（議会）
+h_england	#d6c8b0	英格蘭	英格兰	England	イングランド
+h_wales	#8cc5d6	威爾斯	威尔斯	Wales	ウェールズ
+h_scotland	#a3c4a8	蘇格蘭	苏格兰	Scotland	スコットランド
+h_ireland	#e3c9a8	愛爾蘭	爱尔兰	Ireland	アイルランド

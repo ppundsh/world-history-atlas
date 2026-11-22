@@ -1,4 +1,4 @@
-# 日本模式：重大建設（格式見 taiwan/infra.tsv）。路線為沿主要車站的簡化示意；年代依各維基百科條目。
+# 日本模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	jr_shimbashi	1872-10		139.76,35.67 139.64,35.46	新橋—橫濱鐵道開業	Japan's first railway, Shimbashi–Yokohama	新橋—横浜間鉄道開業	日本第一條鐵路，英國技術協助興建。	Japan's first railway, built with British help.	日本初の鉄道。	日本鐵道史	Shimbashi Station (1872–1914)
 rail	jr_tokaido	1889-07		139.76,35.67 139.62,35.47 139.15,35.25 138.39,34.97 137.73,34.70 136.88,35.17 136.25,35.31 135.86,35.0 135.76,34.99 135.50,34.70 135.19,34.68	東海道本線全線通車	Tokaido Main Line completed	東海道本線全通	東京至神戶全線開通。	Tokyo to Kobe completed.	新橋—神戸間が全通。	東海道本線	Tōkaidō Main Line
 rail	jr_tohoku	1891-09		139.78,35.71 139.9,36.56 140.47,37.75 140.88,38.26 141.15,39.70 141.49,40.51 140.74,40.83	日本鐵道上野—青森全通（東北本線）	Ueno–Aomori line completed (Tohoku Main Line)	上野—青森間全通（東北本線）	民營日本鐵道完成。	Completed by the private Nippon Railway.	私鉄日本鉄道が全通。	東北本線	Tōhoku Main Line
@@ -42,3 +42,11 @@ cable	cb_nagasaki	1871-08		129.87,32.75 125.0,31.8 121.5,31.2	長崎—上海海
 cable	cb_tpc1	1964-06	1990-12	139.95,34.98 144.7,13.45	第一太平洋橫斷電話海纜（TPC-1）	TPC-1 trans-Pacific telephone cable	第一太平洋横断ケーブル（TPC-1）	經關島、夏威夷連接美國，東京奧運轉播用。	Via Guam and Hawaii to the US; used for the Tokyo Olympics.	グアム・ハワイ経由、東京五輪の中継に。	太平洋橫斷電話電纜	TPC-1
 fiber	net_wide	1988-04		139.68,35.66 136.9,35.15 135.5,34.7 132.46,34.40 130.4,33.6	WIDE 計畫網路骨幹	WIDE Project backbone	WIDEプロジェクト基幹網	村井純等人建立的研究用網際網路，日本網際網路的起點。	The research Internet built by Jun Murai and others: the start of Japan's Internet.	村井純らの研究用インターネット。	WIDE計畫	WIDE Project
 cable	cb_unity	2010-04		138.95,34.6 160.0,38.0 179.9,40.0	Unity 跨太平洋海纜	Unity trans-Pacific cable	Unity 太平洋横断ケーブル	谷歌等出資，連接千倉與美國。	Funded by Google and others, linking Chikura and the US.	Googleなどが出資。	Unity海底電纜	Unity (cable system)
+road	jp_tokaido_rd	1601-01		139.77,35.68 139.64,35.45 139.15,35.25 139.03,35.19 138.38,34.97 137.73,34.71 137.39,34.77 136.9,35.08 136.6,34.88 136.27,34.86 135.96,35.02 135.77,35.0	東海道	Tōkaidō	東海道	江戶時代五街道之首，江戶到京都的五十三次。	The first of the Five Routes: the 53 stations from Edo to Kyoto.	五街道の筆頭。	東海道	Tōkaidō (road)
+road	jp_nakasendo	1602-01		139.77,35.68 139.48,36.0 139.06,36.32 138.6,36.35 138.08,36.07 137.6,35.8 137.0,35.42 136.28,35.37 135.96,35.02 135.77,35.0	中山道	Nakasendō	中山道	經過木曾山中連接江戶與京都的街道。	The inland route from Edo to Kyoto through the Kiso valley.	木曽路を通る街道。	中山道	Nakasendō
+bridge	jp_rainbow	1993-08		139.763,35.637	彩虹大橋	Rainbow Bridge	レインボーブリッジ	東京灣台場的懸索橋。	The suspension bridge to Odaiba in Tokyo Bay.	お台場へ渡る吊橋。	彩虹大桥 (东京)	Rainbow Bridge (Tokyo)
+bridge	jp_aqualine	1997-12		139.86,35.47	東京灣跨海公路	Tokyo Bay Aqua-Line	東京湾アクアライン	以海底隧道與橋梁橫越東京灣。	A tunnel and bridge across Tokyo Bay.	東京湾を横断する道路。	东京湾跨海公路	Tokyo Bay Aqua-Line
+port	jp_yokohama	1859-07		139.64,35.45	橫濱港	Port of Yokohama	横浜港	安政條約開港，日本對外貿易的門戶。	Opened under the Ansei treaties; Japan's gateway for trade.	安政の開港。	横滨港	Port of Yokohama
+port	jp_kobe	1868-01		135.2,34.68	神戶港	Port of Kobe	神戸港	關西的國際貿易港。	The international port of the Kansai.	関西の国際貿易港。	神户港	Port of Kobe
+port	jp_dejima	1641-06	1859-07	129.87,32.74	長崎出島	Dejima, Nagasaki	長崎・出島	鎖國時期唯一對荷蘭開放的貿易點。	The one Dutch trading post of the sakoku years.	鎖国期の唯一のオランダ商館。	出岛	Dejima
+airport	jp_itami	1939-01		135.44,34.79	大阪國際機場（伊丹）	Osaka International Airport (Itami)	大阪国際空港（伊丹）	關西的國內線樞紐。	The Kansai's domestic hub.	関西の国内線拠点。	大阪国际机场	Osaka International Airport

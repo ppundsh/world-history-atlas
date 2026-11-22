@@ -1,0 +1,17 @@
+# 巴西模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+road	br_estrada_real	1700-01		-43.17,-22.91 -43.5,-20.39 -43.6,-18.24	皇家道路（黃金之路）	Estrada Real (the gold road)	王の道	米納斯金礦運往里約的道路。	The road that carried Minas gold to Rio.	金を運んだ道。		
+rail	br_maua	1854-04		-43.2,-22.7 -43.25,-22.55	茅阿鐵路	Mauá Railway	マウア鉄道	巴西第一條鐵路。	Brazil's first railway.	ブラジル初の鉄道。		
+rail	br_madeira	1912-08		-63.9,-8.76 -65.33,-10.78	馬德拉—馬莫雷鐵路	Madeira-Mamoré Railway	マデイラ・マモレ鉄道	阿克里條約換來的叢林鐵路。	The jungle railway promised for Acre.	アクレ取得の見返りの鉄道。		
+road	br_belem_brasilia	1960-01		-47.88,-15.79 -48.0,-10.0 -48.0,-5.0 -48.5,-1.46	貝倫—巴西利亞公路	Belém–Brasília highway	ベレン・ブラジリア街道	打開亞馬遜的公路。	The road that opened up the Amazon.	アマゾンを開いた道。		
+highway	br_transamazonica	1972-08		-34.88,-7.12 -42.8,-5.09 -49.1,-5.37 -55.5,-4.28 -63.0,-7.7	橫貫亞馬遜公路	Trans-Amazonian Highway	アマゾン横断道路	軍政時期的大型公路計畫。	A great road scheme of the military years.	軍政期の道路計画。	泛亚马孙公路	Trans-Amazonian Highway
+dam	br_itaipu	1984-05		-54.59,-25.41	伊泰普水壩	Itaipu Dam	イタイプ・ダム	巴西與巴拉圭共建的巨型水壩。	The giant dam shared with Paraguay.	パラグアイと共同の巨大ダム。	伊泰普水坝	Itaipu Dam
+nuclear	br_angra	1985-01		-44.46,-23.01	安格拉核電廠	Angra Nuclear Power Plant	アングラ原子力発電所	巴西唯一的核電廠。	Brazil's only nuclear plant.	ブラジル唯一の原発。		
+dam	br_belomonte	2016-05		-51.77,-3.13	美麗山水壩	Belo Monte Dam	ベロモンテ・ダム	欣古河上爭議性的水壩。	A controversial dam on the Xingu.	議論を呼んだダム。	美丽山水电站	Belo Monte Dam
+highway	br_dutra	1951-01		-46.63,-23.55 -45.9,-23.18 -45.07,-22.81 -44.1,-22.52 -43.17,-22.91	杜特拉公路（聖保羅—里約）	Via Dutra (São Paulo–Rio)	ドゥトラ街道	兩大城市間的幹線公路。	The trunk road between the two great cities.	両都市を結ぶ幹線道路。		Rodovia Presidente Dutra
+bridge	br_rionit	1974-03		-43.15,-22.87	里約—尼泰羅伊大橋	Rio–Niterói Bridge	リオ・ニテロイ橋	橫越瓜納巴拉灣的長橋。	The long bridge across Guanabara Bay.	グアナバラ湾を横断。	里约-尼泰罗伊大桥	Rio–Niterói Bridge
+highway	br_imigrantes	1976-06		-46.63,-23.6 -46.55,-23.85 -46.33,-23.96	移民公路（聖保羅—桑托斯）	Rodovia dos Imigrantes	イミグランテス街道	翻越海岸山脈連接聖保羅與桑托斯港。	Crosses the coastal range from São Paulo to the port of Santos.	サンパウロとサントス港を結ぶ。		Rodovia dos Imigrantes
+port	br_santos	1892-02		-46.3,-23.97	桑托斯港	Port of Santos	サントス港	咖啡出口港，今南美最大港。	The coffee port, now South America's largest.	南米最大の港。	桑托斯港	Port of Santos
+port	br_rio_port	1565-03		-43.18,-22.89	里約熱內盧港	Port of Rio de Janeiro	リオデジャネイロ港	黃金與帝國時期的主要港口。	The main port of the gold and imperial years.	金と帝国期の主要港。	里约热内卢港	Port of Rio de Janeiro
+port	br_salvador_port	1549-03		-38.51,-12.97	薩爾瓦多港	Port of Salvador	サルヴァドール港	殖民時期糖與奴隸貿易的中心。	Centre of the colonial sugar and slave trade.	植民地期の交易拠点。	萨尔瓦多 (巴伊亚州)	Salvador, Bahia
+airport	br_gru	1985-01		-46.47,-23.43	聖保羅瓜魯柳斯國際機場	São Paulo/Guarulhos International Airport	グアルーリョス国際空港	南美最繁忙的機場。	South America's busiest airport.	南米最大の空港。	圣保罗-瓜鲁柳斯国际机场	São Paulo/Guarulhos International Airport
+airport	br_galeao	1952-02		-43.25,-22.81	里約加利昂國際機場	Rio de Janeiro/Galeão International Airport	ガレオン国際空港	里約的國際門戶。	Rio's international gateway.	リオの国際空港。	里约热内卢-加利昂国际机场	Rio de Janeiro/Galeão International Airport

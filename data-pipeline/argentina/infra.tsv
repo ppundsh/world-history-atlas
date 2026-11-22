@@ -1,0 +1,15 @@
+# 阿根廷模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+rail	ar_ferrocarril_oeste	1857-08		-58.38,-34.6 -58.47,-34.63	西部鐵路（阿根廷第一條鐵路）	Ferrocarril Oeste (Argentina's first railway)	西部鉄道	由布宜諾斯艾利斯西行的第一條鐵路。	The first line, running west from Buenos Aires.	アルゼンチン初の鉄道。		
+rail	ar_central	1870-05		-60.64,-32.95 -62.0,-32.4 -64.18,-31.42	中央阿根廷鐵路（羅薩里奧—哥多華）	Central Argentine Railway (Rosario–Córdoba)	中央アルゼンチン鉄道	英資興建的幹線。	A British-financed trunk line.	英国資本の幹線。		
+port	ar_madero	1897-01		-58.36,-34.61	馬德羅港	Puerto Madero	プエルト・マデロ	布宜諾斯艾利斯的港區。	The Buenos Aires docks.	ブエノスアイレスの港湾。	马德罗港	Puerto Madero
+rail	ar_subte	1913-12		-58.37,-34.61 -58.39,-34.61 -58.42,-34.61	布宜諾斯艾利斯地鐵	Buenos Aires Underground	ブエノスアイレス地下鉄	南美洲第一條地鐵。	South America's first subway.	南米初の地下鉄。	布宜诺斯艾利斯地铁	Buenos Aires Underground
+nuclear	ar_atucha	1974-06		-59.2,-33.97	阿圖查核電廠	Atucha Nuclear Power Plant	アトゥチャ原子力発電所	拉丁美洲第一座核電廠。	Latin America's first nuclear plant.	中南米初の原発。		
+dam	ar_yacyreta	1994-09		-56.75,-27.48	亞西雷塔水壩	Yacyretá Dam	ヤシレタ・ダム	與巴拉圭共建的水壩。	A dam shared with Paraguay.	パラグアイと共同。	亚西雷塔水坝	Yacyretá Dam
+industry	ar_vacamuerta	2013-07		-69.1,-38.4	死牛頁岩油田	Vaca Muerta	バカ・ムエルタ	巨大的頁岩油氣田。	A huge shale oil and gas play.	巨大シェール層。		
+road	ar_camino_real	1600-01		-58.38,-34.6 -60.64,-32.95 -64.18,-31.42 -64.26,-27.8 -65.2,-26.83 -65.41,-24.79 -65.3,-24.19 -65.6,-22.1	通往秘魯的王家道路	Camino Real to Peru	ペルーへの王の道	布宜諾斯艾利斯經哥多華、圖庫曼到上秘魯的殖民道路。	The colonial road from Buenos Aires via Córdoba and Tucumán to Upper Peru.	植民地時代の幹線道路。		
+road	ar_ruta40	1935-01		-65.6,-22.1 -66.5,-25.0 -67.0,-28.5 -68.84,-32.89 -69.1,-36.0 -70.1,-38.9 -71.3,-41.13 -71.0,-46.0 -72.27,-50.34 -69.2,-51.6	40 號國道	National Route 40	国道40号線	沿安地斯山麓縱貫全國的公路。	The road that runs the length of the country along the Andes.	アンデス沿いの縦貫道路。	阿根廷40号国道	National Route 40 (Argentina)
+bridge	ar_zarate	1977-12		-59.0,-34.05	薩拉特—布拉索拉戈大橋	Zárate–Brazo Largo Bridge	サラテ・ブラソ・ラルゴ橋	跨越巴拉那河連接美索不達米亞地區。	Crosses the Paraná to Mesopotamia.	パラナ川を渡る橋。		Zárate–Brazo Largo Bridge
+port	ar_rosario	1852-01		-60.63,-32.94	羅薩里奧港	Port of Rosario	ロサリオ港	巴拉那河上的穀物出口大港。	The great grain port on the Paraná.	穀物積出港。	罗萨里奥	Rosario, Santa Fe
+port	ar_bahiablanca	1885-01		-62.27,-38.79	布蘭卡港	Port of Bahía Blanca	バイア・ブランカ港	南部的深水港。	The deep-water port of the south.	南部の深水港。	布兰卡港	Bahía Blanca
+airport	ar_eze	1949-04		-58.54,-34.82	埃塞薩國際機場	Ezeiza International Airport	エセイサ国際空港	阿根廷的國際門戶。	Argentina's international gateway.	アルゼンチンの国際空港。	埃塞萨国际机场	Ministro Pistarini International Airport
+airport	ar_aep	1947-01		-58.42,-34.56	豪爾赫・紐貝里機場（城市機場）	Jorge Newbery Airfield	ホルヘ・ニューベリー空港	布宜諾斯艾利斯市區的國內線機場。	Buenos Aires' city airport for domestic flights.	市内の国内線空港。	豪尔赫·纽贝里机场	Aeroparque Jorge Newbery

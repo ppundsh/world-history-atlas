@@ -1,0 +1,14 @@
+# 阿根廷模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+indigenous	#cdb891	原住民族（瓜拉尼、馬普切、特維爾切等）	原住民族（瓜拉尼、马普切、特维尔切等）	Indigenous peoples (Guarani, Mapuche, Tehuelche …)	先住民（グアラニー、マプチェなど）
+inca	#b8860b	印加帝國	印加帝国	Inca Empire	インカ帝国
+spain	#c9a227	西班牙（秘魯總督轄區、拉布拉他總督轄區）	西班牙（秘鲁总督辖区、拉布拉他总督辖区）	Spain (Viceroyalties of Peru and Río de la Plata)	スペイン（ペルー副王領、ラ・プラタ副王領）
+portugal	#1b7a3a	葡萄牙、巴西	葡萄牙、巴西	Portugal and Brazil	ポルトガル、ブラジル
+united	#75aadb	拉布拉他聯合省	拉布拉他联合省	United Provinces of the Río de la Plata	ラ・プラタ連合州
+federal	#c0392b	阿根廷聯邦（羅薩斯）	阿根廷联邦（罗萨斯）	Argentine Confederation (Rosas)	アルゼンチン連邦（ロサス）
+ba_state	#5d8ac2	布宜諾斯艾利斯國	布宜诺斯艾利斯国	State of Buenos Aires	ブエノスアイレス国
+republic	#2b7bc0	阿根廷共和國	阿根廷共和国	Argentine Republic	アルゼンチン共和国
+military	#556b2f	阿根廷軍政府	阿根廷军政府	Argentine military juntas	アルゼンチン軍事政権
+uruguay	#0038a8	烏拉圭	乌拉圭	Uruguay	ウルグアイ
+paraguay	#d52b1e	巴拉圭	巴拉圭	Paraguay	パラグアイ
+britain	#c8102e	英國	英国	United Kingdom	イギリス
+jesuit	#8d6e63	耶穌會瓜拉尼傳教區	耶稣会瓜拉尼传教区	Jesuit Guarani missions	イエズス会布教区

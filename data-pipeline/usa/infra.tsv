@@ -1,4 +1,4 @@
-# 美國模式：重大建設（格式見 taiwan/infra.tsv）。路線為沿主要城市的簡化示意；年代依各維基百科條目。
+# 美國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 road	us_national_road	1818-08		-76.6,39.3 -78.76,39.65 -80.72,40.06	國道（坎伯蘭路）通至惠靈	National Road (Cumberland Road) reaches Wheeling	国道（カンバーランド道路）	聯邦政府興建的第一條公路。	The first federally built highway.	連邦初の幹線道路。	國家公路	National Road
 canal	us_erie	1825-10		-73.75,42.65 -75.23,43.1 -76.15,43.05 -77.61,43.16 -78.88,42.89	伊利運河	Erie Canal	エリー運河	五大湖與哈德遜河相連，紐約崛起為最大港。	Joined the Great Lakes to the Hudson; New York became the great port.	五大湖とハドソン川を結ぶ。	伊利運河	Erie Canal
 rail	us_bo	1830-05		-76.62,39.29 -76.8,39.27	巴爾的摩—俄亥俄鐵路首段	Baltimore and Ohio Railroad, first section	ボルチモア・アンド・オハイオ鉄道	美國第一條公共鐵路。	The first common-carrier railroad in the US.	米国初の公共鉄道。	巴爾的摩—俄亥俄鐵路	Baltimore and Ohio Railroad
@@ -37,3 +37,13 @@ cable	us_tat1	1956-09	1978-12	-55.6,49.5 -30.0,54.0 -5.5,55.95	TAT-1 第一條�
 cable	us_tat8	1988-12	2002-12	-74.07,39.95 -40.0,46.0 -5.0,50.0	TAT-8 第一條跨大西洋光纖海纜	TAT-8, the first transatlantic fibre-optic cable	TAT-8 初の大西洋横断光ケーブル	紐澤西—英國、法國。	New Jersey to Britain and France.	ニュージャージー—英仏。	TAT-8	TAT-8
 datacenter	us_ashburn	2005-01		-77.49,39.04	阿什本「資料中心巷」	Ashburn "Data Center Alley"	アッシュバーン「データセンター通り」	全球最大的資料中心聚落。	The world's densest cluster of data centres.	世界最大のデータセンター集積地。	勞登縣 (維吉尼亞州)	Data Center Alley
 cable	us_marea	2018-02		-75.98,36.85 -40.0,40.0 -2.93,43.4	MAREA 海纜（維吉尼亞海灘—畢爾包）	MAREA cable (Virginia Beach–Bilbao)	MAREA ケーブル	當時容量最大的跨大西洋海纜。	Then the highest-capacity transatlantic cable.	当時最大容量の大西洋ケーブル。	MAREA	MAREA
+bridge	us_sfoakland	1936-11		-122.37,37.8	舊金山—奧克蘭海灣大橋	San Francisco–Oakland Bay Bridge	サンフランシスコ・オークランド・ベイブリッジ	連接舊金山與東灣的雙層大橋。	The double-deck bridge joining San Francisco to the East Bay.	サンフランシスコと東湾を結ぶ。	舊金山-奧克蘭海灣大橋	San Francisco–Oakland Bay Bridge
+highway	us_pa_turnpike	1940-10		-77.19,40.2 -77.95,40.05 -78.9,40.02 -79.7,40.33	賓夕法尼亞收費高速公路	Pennsylvania Turnpike	ペンシルベニア・ターンパイク	美國第一條長距離高速公路。	America's first long-distance superhighway.	米国初の長距離高速道路。	賓夕法尼亞收費高速公路	Pennsylvania Turnpike
+bridge	us_mackinac	1957-11		-84.73,45.82	麥基諾大橋	Mackinac Bridge	マキナック橋	連接密西根上下半島的懸索橋。	Joins Michigan's two peninsulas.	ミシガン州の両半島を結ぶ。	麥基諾大橋	Mackinac Bridge
+bridge	us_verrazzano	1964-11		-74.045,40.606	韋拉札諾海峽大橋	Verrazzano-Narrows Bridge	ヴェラザノ・ナローズ・ブリッジ	紐約港口的大型懸索橋。	The great suspension bridge at the mouth of New York harbour.	ニューヨーク港口の吊橋。	韋拉札諾海峽大橋	Verrazzano-Narrows Bridge
+highway	us_i5	1979-05		-117.03,32.54 -118.24,34.05 -119.0,35.3 -121.49,38.58 -122.39,40.59 -123.03,44.94 -122.68,45.52 -122.33,47.61 -122.75,49.0	5 號州際公路全線	Interstate 5	州間高速道路5号線	西岸由墨西哥到加拿大的主幹。	The West Coast trunk from Mexico to Canada.	西海岸の幹線。	5號州際公路	Interstate 5
+port	us_nyport	1825-10		-74.02,40.68	紐約港	Port of New York	ニューヨーク港	伊利運河開通後成為全國最大港口。	The nation's greatest port after the Erie Canal opened.	米国最大の港。	纽约新泽西港	Port of New York and New Jersey
+port	us_la_lb	1911-01		-118.22,33.74	洛杉磯—長堤港	Port of Los Angeles and Long Beach	ロサンゼルス港・ロングビーチ港	美國最大的貨櫃港區。	America's busiest container port complex.	米国最大のコンテナ港。	洛杉矶港	Port of Los Angeles
+airport	us_ohare	1955-10		-87.9,41.98	芝加哥奧黑爾國際機場	O'Hare International Airport	オヘア国際空港	長年為世界最繁忙的機場。	For years the world's busiest airport.	長年世界一の発着数。	奥黑尔国际机场	O'Hare International Airport
+airport	us_jfk	1948-07		-73.78,40.64	紐約甘迺迪國際機場（原艾德懷德）	John F. Kennedy International Airport	ジョン・F・ケネディ国際空港	美國的國際門戶。	America's international gateway.	米国の国際玄関口。	约翰·肯尼迪国际机场	John F. Kennedy International Airport
+airport	us_atl	1926-04		-84.43,33.64	亞特蘭大機場（哈茨菲爾德—傑克遜）	Hartsfield–Jackson Atlanta International Airport	ハーツフィールド・ジャクソン・アトランタ国際空港	今日世界旅客量最大的機場。	Today the world's busiest airport by passengers.	旅客数世界一。	哈兹菲尔德-杰克逊亚特兰大国际机场	Hartsfield–Jackson Atlanta International Airport

@@ -1,0 +1,17 @@
+# 摩洛哥模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+volubilis	0788-01	0808-01	-5.56	34.07	1	idrisid	瓦盧比利斯（伊德里斯一世）	瓦卢比利斯（伊德里斯一世）	Volubilis (Idris I)	ヴォルビリス（イドリース1世）
+fes1	0808-01	0974-01	-4.98	34.06	1	idrisid	非斯（伊德里斯王朝）	非斯（伊德里斯王朝）	Fez (Idrisids)	フェス（イドリース朝）
+kairouan	0800-07	0909-03	10.1	35.68	0	aghlabid	凱魯萬（阿格拉布王朝）	凯鲁万（阿格拉布王朝）	Kairouan (Aghlabids)	カイラワーン（アグラブ朝）
+mahdia	0921-01	0973-01	11.06	35.5	0	fatimid	馬赫迪耶（法蒂瑪王朝）	马赫迪耶（法蒂玛王朝）	Mahdia (Fatimids)	マフディーヤ（ファーティマ朝）
+cordoba	0788-01	1031-11	-4.78	37.88	0	umayyad	哥多華	哥多华	Córdoba	コルドバ
+marrakech1	1070-01	1269-09	-7.99	31.63	1	almoravid	馬拉喀什（穆拉比特、穆瓦希德）	马拉喀什（穆拉比特、穆瓦希德）	Marrakesh (Almoravids, Almohads)	マラケシュ（ムラービト朝、ムワッヒド朝）
+fes2	1269-09	1554-01	-4.98	34.06	1	marinid	非斯（馬林、瓦塔斯王朝）	非斯（马林、瓦塔斯王朝）	Fez (Marinids, Wattasids)	フェス（マリーン朝、ワッタース朝）
+tlemcen	1236-01	1556-01	-1.32	34.88	0	zayyanid	特萊姆森（齊亞尼德）	特莱姆森（齐亚尼德）	Tlemcen (Zayyanids)	トレムセン（ザイヤーン朝）
+tunis1	1229-01	1574-09	10.17	36.8	0	hafsid	突尼斯（哈夫斯）	突尼斯（哈夫斯）	Tunis (Hafsids)	チュニス（ハフス朝）
+granada	1238-01	1492-01	-3.59	37.18	0	nasrid	格拉納達	格拉纳达	Granada	グラナダ
+marrakech2	1554-01	1659-01	-7.99	31.63	1	saadi	馬拉喀什（薩阿德王朝）	马拉喀什（萨阿德王朝）	Marrakesh (Saadis)	マラケシュ（サアド朝）
+meknes	1672-01	1727-03	-5.55	33.89	1	alaouite	梅克內斯（伊斯瑪儀蘇丹）	梅克内斯（伊斯玛仪苏丹）	Meknes (Moulay Ismail)	メクネス（ムーレイ・イスマーイール）
+fes3	1727-03	1912-03	-4.98	34.06	1	alaouite	非斯、馬拉喀什（阿拉維王朝）	非斯、马拉喀什（阿拉维王朝）	Fez and Marrakesh (Alaouites)	フェス、マラケシュ（アラウィー朝）
+algiers	1529-05	2026-12	3.06	36.75	0	ottoman	阿爾及爾	阿尔及尔	Algiers	アルジェ
+rabat	1912-03	2026-12	-6.84	34.02	1	morocco	拉巴特（保護國、王國）	拉巴特（保护国、王国）	Rabat (protectorate, kingdom)	ラバト（保護国、王国）
+tunis2	1574-09	2026-12	10.17	36.8	0	ottoman	突尼斯	突尼斯	Tunis	チュニス

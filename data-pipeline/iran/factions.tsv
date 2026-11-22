@@ -1,0 +1,43 @@
+# 伊朗模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+media	#8d6e63	米底王國	米底王国	Median Kingdom	メディア王国
+babylon	#7e57c2	新巴比倫	新巴比伦	Neo-Babylonian Empire	新バビロニア
+achaemenid	#2a9d8f	阿契美尼德帝國	阿契美尼德帝国	Achaemenid Empire	アケメネス朝
+macedon	#1f6fb2	亞歷山大帝國	亚历山大帝国	Empire of Alexander	アレクサンドロス帝国
+seleucid	#5c8fcf	塞琉古王國	塞琉古王国	Seleucid Empire	セレウコス朝
+bactria	#90a4ae	希臘—巴克特里亞	希腊—巴克特里亚	Greco-Bactrian Kingdom	グレコ・バクトリア王国
+parthia	#b8860b	安息帝國（帕提亞）	安息帝国（帕提亚）	Parthian Empire	アルサケス朝パルティア
+kushan	#a0522d	貴霜與中亞遊牧政權	贵霜与中亚游牧政权	Kushans and Central Asian nomads	クシャーナ朝と中央アジアの遊牧国家
+armenia	#c0392b	亞美尼亞王國	亚美尼亚王国	Kingdom of Armenia	アルメニア王国
+rome	#b03a2e	羅馬、拜占庭	罗马、拜占庭	Rome and Byzantium	ローマ、ビザンツ
+sasanian	#16a085	薩珊帝國	萨珊帝国	Sasanian Empire	サーサーン朝
+hephthalite	#795548	嚈噠與突厥	嚈哒与突厥	Hephthalites and Turks	エフタルと突厥
+caliphate	#2e7d32	哈里發國（正統、伍麥亞、阿拔斯）	哈里发国（正统、倭马亚、阿拔斯）	The Caliphate (Rashidun, Umayyad, Abbasid)	カリフ国
+tahirid	#9ccc65	塔希爾、薩法爾王朝	塔希尔、萨法尔王朝	Tahirids and Saffarids	ターヒル朝、サッファール朝
+samanid	#43a047	薩曼王朝	萨曼王朝	Samanid Empire	サーマーン朝
+buyid	#00897b	白益王朝	白益王朝	Buyid dynasty	ブワイフ朝
+ziyarid	#80cbc4	里海沿岸諸王朝（齊亞爾等）	里海沿岸诸王朝（齐亚尔等）	Caspian dynasties (Ziyarids and others)	カスピ海沿岸の諸王朝
+ghaznavid	#6d4c41	伽色尼王朝	伽色尼王朝	Ghaznavid Empire	ガズナ朝
+qarakhanid	#a1887f	喀喇汗國	喀喇汗国	Kara-Khanid Khanate	カラハン朝
+seljuk	#5e35b1	塞爾柱帝國	塞尔柱帝国	Seljuk Empire	セルジューク朝
+khwarazm	#3949ab	花剌子模	花剌子模	Khwarazmian Empire	ホラズム・シャー朝
+mongol	#455a64	蒙古帝國	蒙古帝国	Mongol Empire	モンゴル帝国
+ilkhanate	#607d8b	伊兒汗國	伊儿汗国	Ilkhanate	イルハン朝
+chagatai	#78909c	察合台汗國	察合台汗国	Chagatai Khanate	チャガタイ・ハン国
+fragment	#bcaaa4	伊兒汗國分裂後的諸政權	伊儿汗国分裂后的诸政权	Successor states of the Ilkhanate	イルハン朝崩壊後の諸政権
+timurid	#00695c	帖木兒帝國	帖木儿帝国	Timurid Empire	ティムール朝
+turkmen	#8e24aa	黑羊、白羊王朝	黑羊、白羊王朝	Qara Qoyunlu and Aq Qoyunlu	黒羊朝、白羊朝
+safavid	#1b5e20	薩法維王朝	萨法维王朝	Safavid dynasty	サファヴィー朝
+uzbek	#bf8f00	烏茲別克諸汗國	乌兹别克诸汗国	Uzbek khanates	ウズベク諸ハン国
+mughal	#d4ac0d	蒙兀兒帝國	莫卧儿帝国	Mughal Empire	ムガル帝国
+ottoman	#a52a2a	鄂圖曼帝國	奥斯曼帝国	Ottoman Empire	オスマン帝国
+afghan	#e67e22	阿富汗（霍塔克、杜蘭尼王朝起）	阿富汗（霍塔克、杜兰尼王朝起）	Afghans (Hotaki, Durrani and after)	アフガン（ホータキー朝、ドゥッラーニー朝以降）
+afsharid	#26a69a	阿夫沙爾王朝	阿夫沙尔王朝	Afsharid dynasty	アフシャール朝
+zand	#4db6ac	贊德王朝	赞德王朝	Zand dynasty	ザンド朝
+qajar	#2e86c1	卡扎爾王朝	恺加王朝	Qajar dynasty	ガージャール朝
+russia	#7a7a7a	俄羅斯帝國、蘇聯	俄罗斯帝国、苏联	Russian Empire and Soviet Union	ロシア帝国、ソ連
+britain	#c0392b	英國	英国	Britain	イギリス
+pahlavi	#1565c0	巴勒維王朝	巴列维王朝	Pahlavi dynasty	パフラヴィー朝
+islamic	#2e7d32	伊朗伊斯蘭共和國	伊朗伊斯兰共和国	Islamic Republic of Iran	イラン・イスラム共和国
+iraq	#558b2f	伊拉克	伊拉克	Iraq	イラク
+usa	#1a237e	美國主導的聯軍	美国主导的联军	US-led coalition	アメリカ主導の有志連合
+other	#cfc6b4	其他地方勢力	其他地方势力	Other local powers	その他の地方勢力

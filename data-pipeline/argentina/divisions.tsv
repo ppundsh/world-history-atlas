@@ -1,0 +1,16 @@
+# 阿根廷模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在阿根廷或未劃分）	（不在阿根廷或未划分）	(outside Argentina / not drawn)	（アルゼンチン外・区分なし）
+i_ba	#e9c46a	布宜諾斯艾利斯管區	布宜诺斯艾利斯管区	Intendancy of Buenos Aires	ブエノスアイレス監察区
+i_cordoba	#f4a261	哥多華管區	哥多华管区	Intendancy of Córdoba	コルドバ監察区
+i_salta	#e76f51	薩爾塔管區	萨尔塔管区	Intendancy of Salta	サルタ監察区
+i_paraguay	#8ab17d	巴拉圭管區	巴拉圭管区	Intendancy of Paraguay	パラグアイ監察区
+p_buenos_aires	#6fb3c7	布宜諾斯艾利斯省、首都	布宜诺斯艾利斯省、首都	Buenos Aires Province and city	Buenos Aires Province and city
+p_litoral	#b5a7d8	聖塔菲、恩特雷里奧斯	圣塔菲、恩特雷里奥斯	Santa Fe, Entre Ríos	Santa Fe, Entre Ríos
+p_mesopotamia	#d8a7b1	科連特斯、米西奧內斯	科连特斯、米西奥内斯	Corrientes, Misiones	Corrientes, Misiones
+p_chaco	#c9b79c	查科、福爾摩沙	查科、福尔摩沙	Chaco, Formosa	Chaco, Formosa
+p_cordoba	#f6b98a	哥多華	哥多华	Córdoba	Córdoba
+p_cuyo	#a594cf	庫約（門多薩、聖胡安、聖路易斯）	库约（门多萨、圣胡安、圣路易斯）	Cuyo (Mendoza, San Juan, San Luis)	Cuyo (Mendoza, San Juan, San Luis)
+p_northwest	#cc94a0	西北六省	西北六省	The six north-western provinces	The six north-western provinces
+p_pampa	#d6c8b0	拉潘帕	拉潘帕	La Pampa	La Pampa
+p_patagonia_n	#8cc5d6	內烏肯、黑河	内乌肯、黑河	Neuquén, Río Negro	Neuquén, Río Negro
+p_patagonia_s	#a3c4a8	丘布特、聖克魯斯、火地島	丘布特、圣克鲁斯、火地岛	Chubut, Santa Cruz, Tierra del Fuego	Chubut, Santa Cruz, Tierra del Fuego

@@ -1,0 +1,32 @@
+# 印度尼西亞模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
+# 荷屬時期的州與理事區（約 1926 年）與共和國的省。
+0671-01	aceh,sumatra_n,sumatra_s,banten,java_w,java_c,java_e,bali_nt,kal_w,kal_e,sulawesi_s,sulawesi_n,maluku,papua,timor_leste	none
+1926-01	java_c	d_java_c
+1926-01	java_e	d_java_e
+1926-01	java_w	d_java_w
+1926-01	banten	d_banten
+1926-01	sumatra_n	d_sumatra_n
+1926-01	sumatra_s	d_sumatra_s
+1926-01	aceh	d_aceh
+1926-01	kal_w	d_kal_w
+1926-01	kal_e	d_kal_e
+1926-01	sulawesi_s	d_sulawesi_s
+1926-01	sulawesi_n	d_sulawesi_n
+1926-01	maluku	d_maluku
+1926-01	bali_nt	d_bali_nt
+1926-01	papua	d_papua
+1942-03	aceh,sumatra_n,sumatra_s,banten,java_w,java_c,java_e,bali_nt,kal_w,kal_e,sulawesi_s,sulawesi_n,maluku,papua	none
+1950-08	aceh	p_aceh
+1950-08	sumatra_n	p_sumatra_n
+1950-08	sumatra_s	p_sumatra_s
+1950-08	banten	p_banten
+1950-08	java_w	p_java_w
+1950-08	java_c	p_java_c
+1950-08	java_e	p_java_e
+1950-08	bali_nt	p_bali_nt
+1950-08	kal_w	p_kal_w
+1950-08	kal_e	p_kal_e
+1950-08	sulawesi_s	p_sulawesi_s
+1950-08	sulawesi_n	p_sulawesi_n
+1950-08	maluku	p_maluku
+1963-05	papua	p_papua

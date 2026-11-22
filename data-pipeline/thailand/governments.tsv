@@ -1,0 +1,11 @@
+# 泰國模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+sukhothai	1238-01	1438-01	99.7	17.02	1	sukhothai	素可泰	素可泰	Sukhothai	スコータイ
+chiangmai	1296-04	2026-12	98.99	18.79	0	lanna	清邁	清迈	Chiang Mai	チェンマイ
+ayutthaya	1351-01	1767-04	100.57	14.35	1	ayutthaya	阿瑜陀耶	阿瑜陀耶	Ayutthaya	アユタヤ
+thonburi	1768-01	1782-04	100.49	13.73	1	thonburi	吞武里	吞武里	Thonburi	トンブリー
+bangkok	1782-04	2026-12	100.49	13.75	1	rattanakosin	曼谷	曼谷	Bangkok	バンコク
+angkor	1238-01	1431-01	103.87	13.41	0	khmer	吳哥	吴哥	Angkor	アンコール
+luangprabang	1353-01	1560-01	102.13	19.89	0	lanxang	龍坡邦	龙坡邦	Luang Prabang	ルアンパバーン
+vientiane	1560-01	2026-12	102.6	17.97	0	lanxang	永珍	永珍	Vientiane	ビエンチャン
+pattani	1390-01	1902-01	101.25	6.87	0	patani	北大年	北大年	Pattani	パタニ
+phnompenh	1866-01	2026-12	104.92	11.56	0	cambodia	金邊	金边	Phnom Penh	プノンペン

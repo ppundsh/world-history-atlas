@@ -1,0 +1,21 @@
+# 摩洛哥模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
+# 阿拉維王朝的傳統地區、法屬阿爾及利亞三省與 2015 年起的大區。
+0788-01	tangier,rif,fes,rabat,casablanca,marrakech,souss,sahara_n,oran,algiers,constantine,sahara_dz,ifriqiya,andalus	none
+1666-01	fes	b_fes
+1666-01	rabat	b_rabat
+1666-01	marrakech	b_marrakech
+1666-01	casablanca	b_casablanca
+1666-01	souss	b_souss
+1666-01	rif,tangier	b_rif
+1848-12	oran,algiers,constantine	f_algeria
+1912-03	tangier,rif	none
+1956-10	tangier,rif	b_rif
+1962-07	oran,algiers,constantine	none
+2015-09	tangier	r_tangier
+2015-09	rif	r_rif
+2015-09	fes	r_fes
+2015-09	rabat	r_rabat
+2015-09	casablanca	r_casablanca
+2015-09	marrakech	r_marrakech
+2015-09	souss	r_souss
+2015-09	sahara_n	r_sahara_n

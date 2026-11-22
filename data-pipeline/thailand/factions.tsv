@@ -1,0 +1,20 @@
+# 泰國模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+khmer	#8d6e63	吳哥（高棉帝國）	吴哥（高棉帝国）	Khmer Empire (Angkor)	クメール王朝（アンコール）
+sukhothai	#e6a817	素可泰王國	素可泰王国	Sukhothai Kingdom	スコータイ王朝
+lanna	#7cb342	蘭納王國	兰纳王国	Lan Na Kingdom	ラーンナー王国
+ayutthaya	#c62828	阿瑜陀耶王國	阿瑜陀耶王国	Ayutthaya Kingdom	アユタヤ王朝
+lanxang	#26a69a	瀾滄王國（寮）	澜沧王国（寮）	Lan Xang (Laos)	ラーンサーン王国
+nakhon	#bcaaa4	單馬令（洛坤）等南方城邦	单马令（洛坤）等南方城邦	Tambralinga and southern city-states	タンブラリンガなど南方諸国
+patani	#4e7d5b	北大年蘇丹國	北大年苏丹国	Patani Sultanate	パタニ王国
+malay	#6d8f3a	馬來諸蘇丹國（吉打、吉蘭丹等）	马来诸苏丹国（吉打、吉兰丹等）	Malay sultanates (Kedah, Kelantan …)	マレー諸スルタン国
+burma	#5c6bc0	緬甸（東吁、貢榜王朝）	缅甸（东吁、贡榜王朝）	Burma (Toungoo, Konbaung)	ビルマ（タウングー、コンバウン朝）
+thonburi	#e57373	吞武里王國	吞武里王国	Thonburi Kingdom	トンブリー王朝
+rattanakosin	#b71c1c	曼谷王朝（暹羅）	曼谷王朝（暹罗）	Rattanakosin Kingdom (Siam)	ラタナコーシン朝（シャム）
+france	#2f5fb3	法屬印度支那	法属印度支那	French Indochina	フランス領インドシナ
+britain	#c8102e	英屬馬來亞	英属马来亚	British Malaya	イギリス領マラヤ
+japan	#bc002d	日本（駐軍）	日本（驻军）	Japan (garrisoned)	日本（駐留）
+thailand	#2d2a4a	泰國（立憲君主制）	泰国（立宪君主制）	Thailand (constitutional monarchy)	タイ（立憲君主制）
+laos	#ce1126	寮國	寮国	Laos	ラオス
+cambodia	#032ea1	柬埔寨	柬埔寨	Cambodia	カンボジア
+malaysia	#cc0001	馬來西亞	马来西亚	Malaysia	マレーシア
+other	#cfc6b4	其他地方勢力	其他地方势力	Other local powers	その他の地方勢力

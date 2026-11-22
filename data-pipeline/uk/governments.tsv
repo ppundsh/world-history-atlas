@@ -1,0 +1,16 @@
+# 英國模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+winchester	0871-04	0927-07	-1.31	51.06	1	wessex	溫徹斯特（威塞克斯）	温彻斯特（威塞克斯）	Winchester (Wessex)	ウィンチェスター（ウェセックス）
+tamworth	0871-04	0918-06	-1.69	52.63	0	mercia	塔姆沃思（麥西亞）	塔姆沃思（麦西亚）	Tamworth (Mercia)	タムワース（マーシア）
+york	0875-01	0954-01	-1.08	53.96	0	danes	約克（約克王國）	约克（约克王国）	York (Viking kingdom)	ヨーク（ヨーク王国）
+winchester2	0927-07	1066-10	-1.31	51.06	1	england	溫徹斯特、倫敦（英格蘭）	温彻斯特、伦敦（英格兰）	Winchester and London (England)	ウィンチェスター、ロンドン
+westminster	1066-10	1649-01	-0.13	51.5	1	england	倫敦西敏（英格蘭）	伦敦西敏（英格兰）	Westminster, London (England)	ロンドン、ウェストミンスター
+westminster2	1649-01	1707-05	-0.13	51.5	1	england	倫敦西敏（共和國、復辟）	伦敦西敏（共和国、复辟）	Westminster (Commonwealth, Restoration)	ウェストミンスター
+westminster3	1707-05	2026-12	-0.13	51.5	1	uk	倫敦西敏（大不列顛、聯合王國）	伦敦西敏（大不列颠、联合王国）	Westminster (Great Britain, United Kingdom)	ウェストミンスター（連合王国）
+scone	0871-04	1437-02	-3.43	56.42	0	scotland	斯昆、珀斯（蘇格蘭）	斯昆、珀斯（苏格兰）	Scone and Perth (Scotland)	スクーン、パース（スコットランド）
+edinburgh	1437-02	1707-05	-3.19	55.95	0	scotland	愛丁堡（蘇格蘭）	爱丁堡（苏格兰）	Edinburgh (Scotland)	エディンバラ（スコットランド）
+edinburgh2	1999-07	2026-12	-3.17	55.95	0	uk	愛丁堡（蘇格蘭議會）	爱丁堡（苏格兰议会）	Edinburgh (Scottish Parliament)	エディンバラ（スコットランド議会）
+aberffraw	0871-04	1283-06	-4.46	53.19	0	wales	阿伯夫勞（圭內斯）	阿伯夫劳（圭内斯）	Aberffraw (Gwynedd)	アベルフラウ（グウィネズ）
+dublin_n	0871-04	1171-10	-6.26	53.35	0	norse	都柏林（諾斯王國）	都柏林（诺斯王国）	Dublin (Norse kingdom)	ダブリン（ノルド王国）
+dublin_e	1171-10	1922-12	-6.26	53.35	0	england	都柏林城堡（英格蘭、英國的愛爾蘭統治）	都柏林城堡（英格兰、英国的爱尔兰统治）	Dublin Castle (English and British rule)	ダブリン城
+dublin_i	1922-12	2026-12	-6.26	53.34	0	ireland	都柏林（愛爾蘭）	都柏林（爱尔兰）	Dublin (Ireland)	ダブリン（アイルランド）
+belfast	1921-06	2026-12	-5.93	54.6	0	uk	貝爾法斯特（北愛爾蘭）	贝尔法斯特（北爱尔兰）	Belfast (Northern Ireland)	ベルファスト（北アイルランド）

@@ -10,7 +10,7 @@ const SECTIONS = [
     { n: 'Seshat Global History Databank — Cliopatria v0.21', url: 'https://github.com/Seshat-Global-History-Databank/cliopatria', lic: 'CC BY 4.0', licUrl: 'https://creativecommons.org/licenses/by/4.0/',
       u: ['歷代政權疆界（西元前 3400 年–2024 年），本專案再加修正', 'Historical polity borders, 3400 BCE–2024, with this project\'s corrections', '歴代政権の領域（前 3400–2024 年）、本プロジェクトで修正'] },
     { n: 'Natural Earth', url: 'https://www.naturalearthdata.com/', lic: ['公有領域', 'Public domain', 'パブリックドメイン'],
-      u: ['現代國界、各國觀點與爭議地區、省級行政區、海岸、湖泊、河流、海深、自然地理區、冰川、首都位置', 'Modern borders, points of view and disputed areas, admin-1 regions, coastlines, lakes, rivers, bathymetry, physical regions, glaciers, capitals', '現在の国境、各国視点と係争地、州・県、海岸線、湖、河川、海深、自然地域、氷河、首都の位置'] },
+      u: ['現代國界、各國觀點與爭議地區、省級行政區、海岸、湖泊、河流、海深、自然地理區、冰川、首都位置；地區模式的鐵路與道路路線（1:10m railroads、roads）', 'Modern borders, points of view and disputed areas, admin-1 regions, coastlines, lakes, rivers, bathymetry, physical regions, glaciers, capitals; railway and road routes in the regional modes (1:10m railroads and roads)', '現在の国境、各国視点と係争地、州・県、海岸線、湖、河川、海深、自然地域、氷河、首都の位置；地域モードの鉄道・道路の路線（1:10m railroads、roads）'] },
     { n: 'Wikidata', url: 'https://www.wikidata.org/', lic: 'CC0 1.0', licUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
       u: ['政權的繁中、簡中、日文名稱；首都；藝術史作品的名稱、作者、年代與收藏館（事先擷取，隨網站提供）', 'Polity names in Chinese and Japanese; capitals; titles, artists, dates and collections of the artworks (fetched once and bundled with the site)', '政権の中国語・日本語名、首都、美術作品の名称・作者・年代・所蔵館（事前に取得してサイトに同梱）'] },
     { n: 'Wikimedia Commons', url: 'https://commons.wikimedia.org/', lic: ['各圖不同（公有領域、CC BY、CC BY-SA 等）', 'Varies by file (public domain, CC BY, CC BY-SA …)', 'ファイルごとに異なる（パブリックドメイン、CC BY、CC BY-SA など）'],

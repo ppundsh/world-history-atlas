@@ -1,0 +1,34 @@
+# 法國模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+wfrancia	#5b7fc7	西法蘭克王國	西法兰克王国	West Francia	西フランク王国
+france	#2f5fb3	法蘭西王國／法國	法兰西王国／法国	Kingdom of France / France	フランス王国／フランス
+middle	#c08b4e	中法蘭克王國（洛泰爾）	中法兰克王国（洛泰尔）	Middle Francia (Lothair)	中フランク王国
+hre	#9a8c3a	東法蘭克王國／神聖羅馬帝國	东法兰克王国／神圣罗马帝国	East Francia / Holy Roman Empire	東フランク王国／神聖ローマ帝国
+arles	#b99a5b	勃艮第—阿爾勒王國	勃艮第—阿尔勒王国	Kingdom of Burgundy-Arles	ブルグント（アルル）王国
+brittany	#3d3d3d	布列塔尼	布列塔尼	Brittany	ブルターニュ
+normandy	#c0392b	諾曼第公國	诺曼底公国	Duchy of Normandy	ノルマンディー公国
+england	#d1495b	英格蘭（安茹帝國、英屬加斯科涅）	英格兰（安茹帝国、英属加斯科涅）	England (Angevin Empire, English Gascony)	イングランド（アンジュー帝国、英領ガスコーニュ）
+toulouse	#e0a43a	土魯斯伯國	图卢兹伯国	County of Toulouse	トゥールーズ伯領
+champagne	#8e6bbf	香檳伯國	香槟伯国	County of Champagne	シャンパーニュ伯領
+flanders	#d4b83b	法蘭德斯伯國	佛兰德伯国	County of Flanders	フランドル伯領
+burgundy	#7b2d6b	勃艮第公國（瓦盧瓦）	勃艮第公国（瓦卢瓦）	Burgundian State (Valois Burgundy)	ブルゴーニュ公国
+habsburg	#6d6875	哈布斯堡（勃艮第尼德蘭）	哈布斯堡（勃艮第尼德兰）	Habsburgs (Burgundian Netherlands)	ハプスブルク（ブルゴーニュ領ネーデルラント）
+spain	#c9a227	西班牙（西屬尼德蘭、弗朗什—孔泰）	西班牙（西属尼德兰、弗朗什—孔泰）	Spain (Spanish Netherlands, Franche-Comté)	スペイン
+aragon	#d98c2b	亞拉岡王冠	阿拉贡王冠	Crown of Aragon	アラゴン連合王国
+provence	#e48aa5	普羅旺斯伯國	普罗旺斯伯国	County of Provence	プロヴァンス伯領
+dauphine	#7fa7c9	維埃納伯國（多菲內）	维埃纳伯国（多菲内）	Dauphiné of Viennois	ドーフィネ
+savoy	#2a9d8f	薩伏依（薩丁尼亞王國）	萨伏依（撒丁王国）	Savoy (Kingdom of Sardinia)	サヴォイア（サルデーニャ王国）
+papal	#f2d16b	教宗國（亞維農、孔塔—維內森）	教宗国（阿维尼翁、孔塔—维奈桑）	Papal States (Avignon, Comtat Venaissin)	教皇領（アヴィニョン）
+bearn	#a5673f	貝亞恩與富瓦（納瓦拉）	贝阿恩与富瓦（纳瓦拉）	Béarn and Foix (Navarre)	ベアルンとフォワ（ナバラ）
+lorraine	#4f8a5b	洛林公國	洛林公国	Duchy of Lorraine	ロレーヌ公国
+pisa	#a3c4a8	比薩共和國	比萨共和国	Republic of Pisa	ピサ共和国
+genoa	#c94f4f	熱那亞共和國	热那亚共和国	Republic of Genoa	ジェノヴァ共和国
+uk	#9b2335	英國（英屬科西嘉王國）	英国（英属科西嘉王国）	Britain (Anglo-Corsican Kingdom)	イギリス（英領コルシカ王国）
+austria	#e0c341	奧地利（奧屬尼德蘭）	奥地利（奥属尼德兰）	Austria (Austrian Netherlands)	オーストリア（オーストリア領ネーデルラント）
+netherlands	#ef8a17	尼德蘭聯合王國	尼德兰联合王国	United Kingdom of the Netherlands	ネーデルラント連合王国
+belgium	#e5c100	比利時	比利时	Belgium	ベルギー
+prussia	#4b4b4b	普魯士	普鲁士	Prussia	プロイセン
+germany	#5c5c5c	德國	德国	Germany	ドイツ
+germany_occ	#7a6a5a	德國占領區	德国占领区	German-occupied zone	ドイツ占領地域
+vichy	#8aa6c1	維琪法國（自由區）	维希法国（自由区）	Vichy France (free zone)	ヴィシー・フランス（自由地域）
+italy_occ	#4caf50	義大利占領區	意大利占领区	Italian-occupied zone	イタリア占領地域
+other	#cfc6b4	其他地方勢力	其他地方势力	Other local powers	その他の地方勢力

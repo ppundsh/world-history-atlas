@@ -9,7 +9,7 @@ import { CREDITS } from './credits.gen.js';
 import { BASEMAPS } from './styles.js';
 import { WORLD_EVENTS } from './worldEvents.gen.js';
 import { LANGS, t, formatYear, detectLang, safeGet, safeSet } from './i18n.js';
-import { FlatMap } from './flat.js';
+import { FlatMap, cardOffsets } from './flat.js';
 import { Music } from './audio.js';
 import { PROJ, grouped } from './projections.js';
 import { geoPath, geoGraticule, geoCircle, geoDistance } from 'd3-geo';
@@ -56,11 +56,28 @@ const REGION_TICKS = {
   poland: [1138, 1320, 1569, 1655, 1795, 1918, 1945, 1989],
   prc: [1950, 1958, 1966, 1978, 1989, 1997, 2008, 2020],
   usa: [1664, 1763, 1776, 1803, 1848, 1861, 1898, 1941, 1969, 2001],
+  france: [987, 1204, 1453, 1589, 1715, 1789, 1871, 1945],
+  egypt: [-2560, -1550, -332, -30, 641, 969, 1517, 1805, 1952],
+  iran: [-330, 224, 651, 1055, 1256, 1501, 1796, 1925, 1979],
+  turkey: [1071, 1299, 1453, 1566, 1699, 1839, 1923, 1980],
+  uk: [871, 1066, 1215, 1485, 1603, 1707, 1801, 1914, 1945, 1999],
+  mexico: [1428, 1521, 1810, 1846, 1867, 1910, 1929, 2000],
+  morocco: [788, 1060, 1147, 1269, 1554, 1666, 1912, 1956],
+  brazil: [1500, 1630, 1693, 1808, 1822, 1889, 1930, 1964, 1985],
+  argentina: [1536, 1580, 1776, 1810, 1853, 1880, 1946, 1976, 1983],
+  thailand: [1238, 1351, 1569, 1767, 1782, 1855, 1932, 1973],
+  indonesia: [671, 1293, 1527, 1619, 1800, 1942, 1949, 1965, 1998],
 };
-const REGION_RUN = { china: 300, taiwan: 420, japan: 900, russia: 900, korea: 900, vietnam: 900, germany: 600, india: 900, spain: 900, italy: 900, poland: 900, prc: 420, usa: 900 };        // seconds for a full run at 1×
-const REGION_VIEW = { prc: { lon: 104, lat: 35.5, k: 3.2 }, usa: { lon: -97, lat: 39, k: 3.3 }, china: { lon: 106, lat: 36, k: 3.2 }, taiwan: { lon: 120.6, lat: 23.75, k: 36 }, japan: { lon: 137.5, lat: 37.5, k: 6.5 }, russia: { lon: 80, lat: 58, k: 1.9 }, korea: { lon: 127.6, lat: 39.5, k: 9 }, vietnam: { lon: 106.5, lat: 16, k: 7 }, germany: { lon: 13, lat: 51.5, k: 8 }, india: { lon: 79, lat: 22, k: 4 }, spain: { lon: -3.8, lat: 40.2, k: 6.5 }, italy: { lon: 12.5, lat: 42.3, k: 6.5 }, poland: { lon: 23, lat: 52, k: 6 } };
+const REGION_RUN = { china: 300, taiwan: 420, japan: 900, russia: 900, korea: 900, vietnam: 900, germany: 600, india: 900, spain: 900, italy: 900, poland: 900, prc: 420, usa: 900, france: 900, egypt: 900, iran: 900, turkey: 900, uk: 900, mexico: 900, morocco: 900, brazil: 900, argentina: 900, thailand: 900, indonesia: 900 };        // seconds for a full run at 1×
+const REGION_VIEW = { prc: { lon: 104, lat: 35.5, k: 3.2 }, usa: { lon: -97, lat: 39, k: 3.3 }, china: { lon: 106, lat: 36, k: 3.2 }, taiwan: { lon: 120.6, lat: 23.75, k: 36 }, japan: { lon: 137.5, lat: 37.5, k: 6.5 }, russia: { lon: 80, lat: 58, k: 1.9 }, korea: { lon: 127.6, lat: 39.5, k: 9 }, vietnam: { lon: 106.5, lat: 16, k: 7 }, germany: { lon: 13, lat: 51.5, k: 8 }, india: { lon: 79, lat: 22, k: 4 }, spain: { lon: -3.8, lat: 40.2, k: 6.5 }, italy: { lon: 12.5, lat: 42.3, k: 6.5 }, poland: { lon: 23, lat: 52, k: 6 }, france: { lon: 2.8, lat: 46.8, k: 7 }, egypt: { lon: 31.5, lat: 26.5, k: 5 }, iran: { lon: 55, lat: 33.5, k: 4.2 } , turkey: { lon: 34, lat: 39.5, k: 6.5 }, uk: { lon: -4, lat: 54.5, k: 9 }, mexico: { lon: -99, lat: 21.5, k: 4.2 }, morocco: { lon: -4, lat: 32, k: 4.5 }, brazil: { lon: -53, lat: -15, k: 2.7 }, argentina: { lon: -62, lat: -37, k: 2.6 }, thailand: { lon: 101, lat: 14, k: 5 }, indonesia: { lon: 118, lat: -2.5, k: 2.5 } };
+// regional modes grouped in the mode menu: East Asia, South-East Asia, South and West Asia, Europe, Africa, the Americas
+const CONTINENTS = [['china', 'prc', 'taiwan', 'japan', 'korea'], ['vietnam', 'thailand', 'indonesia'], ['india', 'iran', 'turkey'],
+  ['russia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk'], ['egypt', 'morocco'], ['usa', 'mexico', 'brazil', 'argentina']];
+// a flag before each country (China 1911–1951: the Republic of China's flag); drawn with the Twemoji flag font
+const FLAG = { china: '🇹🇼', prc: '🇨🇳', taiwan: '🇹🇼', japan: '🇯🇵', korea: '🇰🇷', vietnam: '🇻🇳', thailand: '🇹🇭', indonesia: '🇮🇩', india: '🇮🇳', iran: '🇮🇷', turkey: '🇹🇷',
+  russia: '🇷🇺', germany: '🇩🇪', poland: '🇵🇱', italy: '🇮🇹', spain: '🇪🇸', france: '🇫🇷', uk: '🇬🇧', egypt: '🇪🇬', morocco: '🇲🇦', usa: '🇺🇸', mexico: '🇲🇽', brazil: '🇧🇷', argentina: '🇦🇷' };
 const REGION_FIRST = { china: '1911-10', taiwan: '1600-01' };
-const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'usa'];
+const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'thailand', 'indonesia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk', 'india', 'iran', 'turkey', 'egypt', 'morocco', 'usa', 'mexico', 'brazil', 'argentina'];
 const BEARINGS = { n: 0, e: 90, s: 180, w: -90 };          // MapLibre bearing that puts that direction on top
 // the timeline's events: the mode's own list (thematic modes that have one), otherwise the world events
 function evList() {
@@ -188,8 +205,18 @@ function loadSatImage() {
 }
 
 // ---------------------------------------------------------------- views
+// MapLibre and the globe are created once, even when the projection is picked again while they still load
+function ensureGlobe(prev) {
+  return app.globeReady ||= (async () => {
+    const { GlobeMap } = await import('./globe.js');     // MapLibre is only downloaded when the globe is opened
+    const g = new GlobeMap($('#globe'), $('#globe-labels'), app);
+    await g.init(prev); app.globe = g; app.initialView = null;
+    return g;
+  })();
+}
 async function setProjection(name) {
   const prev = currentView();
+  const ticket = app.projTicket = (app.projTicket || 0) + 1;    // a later pick wins over one still loading
   st.projection = name;
   const isGlobe = name === 'globe';
   $('#flat').hidden = isGlobe;
@@ -203,17 +230,22 @@ async function setProjection(name) {
   if (!isGlobe) app.flat.setAngle(turnable ? BEARINGS[st.bearing] ?? 0 : 0);
   if ($('#distortBox')) syncDistort();
   if (isGlobe) {
-    if (!app.globe) {
-      const { GlobeMap } = await import('./globe.js');     // MapLibre is only downloaded when the globe is opened
-      app.globe = new GlobeMap($('#globe'), $('#globe-labels'), app);
-      await app.globe.init(prev); app.initialView = null;
-    } else { app.globe.setCenter(prev); app.globe.resizeOverlay(); }
-    app.globe.applyBasemap(); app.globe.update(true);
+    const fresh = !app.globe;
+    $('#busy').hidden = !fresh;
+    const g = await ensureGlobe(prev);
+    $('#busy').hidden = true;
+    if (ticket !== app.projTicket) return;           // another projection was chosen meanwhile
+    if (!fresh) { g.setCenter(prev); g.resizeOverlay(); }
+    g.applyBasemap(); g.update(true);
   } else {
     app.flat.free = !!st.free; app.flat.setProjection(name);
     syncLock();
     app.flat.setCenter(app.initialView || prev); app.initialView = null;
-    if (st.basemap === 'satellite') { app.flat.setRaster(await loadSatImage()); if (app.flat.view.k >= 2.5) loadSatRegions(); }
+    if (st.basemap === 'satellite') {
+      const img = await loadSatImage();
+      if (ticket !== app.projTicket) return;
+      app.flat.setRaster(img); if (app.flat.view.k >= 2.5) loadSatRegions();
+    }
   }
   projTags();
   writeHash();
@@ -441,7 +473,42 @@ function renderLegend(F) {
 
 function bindLegendToggle(box) {
   box.classList.toggle('collapsed', !!app.legendCollapsed);
-  box.querySelectorAll('h3').forEach(h => { h.onclick = () => { app.legendCollapsed = !app.legendCollapsed; box.classList.toggle('collapsed', app.legendCollapsed); }; });
+  box.querySelectorAll('h3').forEach(h => { h.onclick = () => { if (app.legendDragged) return; app.legendCollapsed = !app.legendCollapsed; box.classList.toggle('collapsed', app.legendCollapsed); }; });
+  if (!box.querySelector('.lgrip')) {
+    // its own row of handles, rebuilt with the legend: drag (⠿) and fold (▾ / ▸)
+    box.insertAdjacentHTML('afterbegin', `<div class="lbar"><span class="lgrip" title="${esc(t(st.lang).legendDrag)}">⠿</span><button class="lfold" type="button" title="${esc(t(st.lang).legendFold)}">${app.legendCollapsed ? '▸' : '▾'}</button></div>`);
+    box.querySelector('.lfold').onclick = e => { e.stopPropagation(); app.legendCollapsed = !app.legendCollapsed; box.classList.toggle('collapsed', app.legendCollapsed); e.currentTarget.textContent = app.legendCollapsed ? '▸' : '▾'; };
+  }
+}
+// The legend can be moved: drag it by its handle bar or its headings (a short click on a heading still folds it).
+// Its place is kept for the visit, within the map.
+function legendDrag() {
+  const box = $('#legend'), stage = $('#stage');
+  let d = null;
+  box.addEventListener('pointerdown', e => {
+    if (!e.target.closest('.lbar, h3') || e.target.closest('.lfold') || e.button !== 0) return;
+    const r = box.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+    d = { x: e.clientX, y: e.clientY, l: r.left - sr.left, t: r.top - sr.top, moved: false };
+    app.legendDragged = false; box.setPointerCapture(e.pointerId);
+  });
+  box.addEventListener('pointermove', e => {
+    if (!d) return;
+    const dx = e.clientX - d.x, dy = e.clientY - d.y;
+    if (!d.moved && Math.abs(dx) + Math.abs(dy) < 5) return;
+    d.moved = true; app.legendDragged = true;
+    const sr = stage.getBoundingClientRect(), r = box.getBoundingClientRect();
+    const l = Math.max(0, Math.min(sr.width - r.width, d.l + dx)), tp = Math.max(0, Math.min(sr.height - 30, d.t + dy));
+    Object.assign(box.style, { left: l + 'px', top: tp + 'px', bottom: 'auto', right: 'auto' });
+    app.legendPos = [l, tp];
+  });
+  const up = () => { if (!d) return; d = null; setTimeout(() => { app.legendDragged = false; }, 0); };
+  box.addEventListener('pointerup', up); box.addEventListener('pointercancel', up);
+  // keep a moved legend inside the map when the window shrinks
+  new ResizeObserver(() => {
+    if (!app.legendPos) return;
+    const sr = stage.getBoundingClientRect(), r = box.getBoundingClientRect();
+    Object.assign(box.style, { left: Math.max(0, Math.min(sr.width - r.width, app.legendPos[0])) + 'px', top: Math.max(0, Math.min(sr.height - 30, app.legendPos[1])) + 'px' });
+  }).observe(stage);
 }
 
 async function setMode(mode) {
@@ -451,6 +518,7 @@ async function setMode(mode) {
   const prev = st.mode;
   if (isChina()) st.cmBy[prev] = st.cm;
   st.mode = mode;
+  cardOffsets.clear();                                 // cards moved by hand go back to their own places
   st.transition = 'jump';
   st.selected = null; app.selectedProv = null; hideInfo();
   if (app.pin && (REGIONS.includes(mode) || REGIONS.includes(prev))) unpin();   // regional maps don't share borders
@@ -646,10 +714,11 @@ async function tick(now) {
 
 // ---------------------------------------------------------------- UI
 function buildUI() {
+  legendDrag();
   $('#lang').innerHTML = LANGS.map(l => `<option value="${l.id}">${l.label}</option>`).join('');
   $('#lang').value = st.lang;
   $('#lang').onchange = e => { st.lang = e.target.value; st.langInfo = LANGS.find(l => l.id === st.lang); safeSet('lang', st.lang); applyLang(); renderYear(); };
-  $('#projBtn').onclick = e => { e.stopPropagation(); toggleProjMenu(); };
+  $('#projBtn').onclick = e => { e.stopPropagation(); toggleProjMenu(); import('./globe.js'); };   // start fetching MapLibre while the menu is open
   $('#showBtn').onclick = e => { e.stopPropagation(); $('#showMenu').hidden = !$('#showMenu').hidden; $('#projMenu').hidden = true; $('#markMenu').hidden = true; };
   $('#showMenu').onclick = e => e.stopPropagation();
   $('#markBtn').onclick = e => {
@@ -725,7 +794,16 @@ function buildUI() {
   $('#back').onclick = () => step(-1);
   $('#fwd').onclick = () => step(1);
   $('#start').onclick = () => { pause(); st.transition = 'jump'; setPos(0); };
-  $('#slider').oninput = e => { st.transition = 'grow'; setPos(e.target.value / 10000); };
+  // dragging fires many input events per frame: show only the latest position, once per frame
+  let slideTo = null;
+  $('#slider').addEventListener('pointerdown', () => { st.dragging = true; });
+  const endDrag = () => { if (!st.dragging) return; st.dragging = false; redraw(); };
+  addEventListener('pointerup', endDrag); addEventListener('pointercancel', endDrag);
+  $('#slider').oninput = e => {
+    st.transition = 'grow';
+    const first = slideTo == null; slideTo = e.target.value / 10000;
+    if (first) requestAnimationFrame(() => { const v = slideTo; slideTo = null; setPos(v); });
+  };
   $('#yearInput').onchange = e => { pause(); st.transition = 'jump'; isChina() ? setMonth(monthOf(reg(), +e.target.value)) : setYear(+e.target.value); };
   $('#mode').onchange = e => setMode(e.target.value);
   // regional modes: one click back to world history at the same year
@@ -878,10 +956,11 @@ function applyLang() {
   $('#bearing').value = st.bearing;
   buildEventMarks();
   // world-wide modes, then the regional ones, in two labelled groups
-  const opt = m => `<option value="${m}">${s.modes[m]}</option>`;
+  const opt = m => `<option value="${m}">${FLAG[m] ? FLAG[m] + ' ' : ''}${s.modes[m]}</option>`;
   const hidden = m => m === 'fgo' && !app.fgoOn && st.mode !== 'fgo';     // the hidden mode is listed once unlocked
   $('#mode').innerHTML = `<optgroup label="${s.modeGroups[0]}">${MODES.filter(m => !REGIONS.includes(m) && !hidden(m)).map(opt).join('')}</optgroup>`
-    + `<optgroup label="${s.modeGroups[1]}">${MODES.filter(m => REGIONS.includes(m)).map(opt).join('')}</optgroup>`;
+    // regional modes, by continent
+    + CONTINENTS.map((list, i) => `<optgroup label="${s.modeGroups[i + 1]}">${MODES.filter(m => REGIONS.includes(m) && list.includes(m)).map(opt).join('')}</optgroup>`).join('');
   $('#mode').value = st.mode;
   $('#l-mode').textContent = s.mode;
   $('#pov').closest('label').hidden = isChina();
@@ -1105,20 +1184,20 @@ function buildEvTable() {
   box.innerHTML = `<div class="evhead"><b>${s.evTable}</b><input class="evfilter" type="search" placeholder="${esc(s.evFilter)}" value="${esc(app.evFilter || '')}"><button class="x" aria-label="close">×</button></div><ol>${evRows.map((r, i) =>
     `<li data-i="${i}"><span class="w">${esc(r.when)}</span><span class="n">${esc(r.name)}</span></li>`).join('')}</ol>`;
   box.querySelector('.x').onclick = () => { st.evTable = false; $('#t-evTable').checked = false; safeSet('evTable', '0'); box.hidden = true; };
-  // filter as you type; "fgo" (or 英靈) + Enter opens the Heroic Spirits mode
+  // filter as you type; typing "fgo" opens the Heroic Spirits mode
   const fi = box.querySelector('.evfilter');
   const filter = () => {
     const q = fi.value.trim().toLowerCase(); app.evFilter = fi.value;
     box.querySelectorAll('ol li').forEach((li, i) => { const r = evRows[i]; li.hidden = !!q && !(r.name + ' ' + r.when).toLowerCase().includes(q); });
   };
-  fi.oninput = filter;
-  fi.onkeydown = e => {
-    e.stopPropagation();
-    // the Heroic Spirits mode: its three letters, or the word for Heroic Spirit in any of the site's languages
-    if (e.key === 'Enter' && ['fgo', '英靈', '英灵', '英霊', 'servant', 'servants', 'heroic spirit', 'heroic spirits'].includes(fi.value.trim().toLowerCase())) {
-      fi.value = ''; app.evFilter = ''; app.fgoOn = true; applyLang(); $('#mode').value = 'fgo'; setMode('fgo');
-    }
+  // the Heroic Spirits mode opens as soon as its three letters are typed (no Enter needed)
+  const summon = () => {
+    if (fi.value.trim().toLowerCase() !== 'fgo' || st.mode === 'fgo') return false;
+    fi.value = ''; app.evFilter = ''; app.fgoOn = true; applyLang(); $('#mode').value = 'fgo'; setMode('fgo');
+    return true;
   };
+  fi.oninput = () => { if (!summon()) filter(); };
+  fi.onkeydown = e => e.stopPropagation();
   fi.onpointerdown = e => e.stopPropagation();          // typing in the box does not drag the panel
   if (app.evFilter) filter();
   box.insertAdjacentHTML('beforeend', '<div class="evgrip" aria-hidden="true"></div>');
@@ -1602,6 +1681,14 @@ function showSeat(id, kind = 'seat') {
   box.querySelector('.x').onclick = () => hideInfo();
   addPlacePic(box, x.w[0] || name.split(/[（(、,]/)[0], x.w[0] ? 'zh' : wikiLang());
 }
+// where a work's place and route come from (shown under its description)
+function workSource(x, s, y0) {
+  if (!x.path) return s.workSrc;
+  const net = x.net === 'rail' ? s.netRail : s.netRoad;
+  const route = x.src === 'ne' ? s.workSrcNe : x.src === 'mixed' ? s.workSrcMixed : x.src === 'sketch' ? s.workSrcSketch : s.workSrcLine;
+  const old = x.kind === 'road' && x.src && x.src !== 'sketch' && y0 < 1850 ? ' ' + s.workSrcOld : '';
+  return s.workSrc + '<br>' + route.replace('{net}', net) + old + (x.src && x.src !== 'sketch' ? ` <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/" target="_blank" rel="noopener">naturalearthdata.com</a>` : '');
+}
 function showWork(id) {
   const c = reg(), s = t(st.lang), col = st.langInfo.col;
   const x = (c.works || []).find(q => q.id === id); if (!x) return;
@@ -1618,7 +1705,7 @@ function showWork(id) {
     <table class="facts"><tr><th>${s.workSpan}</th><td>${s.ym(y0, m0)} – ${end}</td></tr></table>
     ${note ? `<p class="desc">${esc(note)}</p>` : ''}
     ${links ? `<p class="links">${s.links}：${links}</p>` : ''}
-    <p class="src">${s.workSrc}${x.kind === 'cable' && st.mode === 'taiwan' && x.id !== 'cb_tpc5' && x.id !== 'cb_tpkm' ? '<br>' + s.cableSrcSMC : ''}</p>`;
+    <p class="src">${workSource(x, s, y0)}${x.kind === 'cable' && st.mode === 'taiwan' && x.id !== 'cb_tpc5' && x.id !== 'cb_tpkm' ? '<br>' + s.cableSrcSMC : ''}</p>`;
   box.hidden = false;
   box.querySelector('.x').onclick = () => hideInfo();
   addPlacePic(box, x.w[0] || name.split(/[（(、,]/)[0], x.w[0] ? 'zh' : wikiLang());

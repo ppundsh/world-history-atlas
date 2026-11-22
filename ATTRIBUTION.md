@@ -7,7 +7,7 @@
 | 名稱 | 用途 | 授權 |
 |---|---|---|
 | [Seshat Global History Databank — Cliopatria v0.21](https://github.com/Seshat-Global-History-Databank/cliopatria) | 歷代政權疆界（西元前 3400 年–2024 年），本專案再加修正 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-| [Natural Earth](https://www.naturalearthdata.com/) | 現代國界、各國觀點與爭議地區、省級行政區、海岸、湖泊、河流、海深、自然地理區、冰川、首都位置 | 公有領域 |
+| [Natural Earth](https://www.naturalearthdata.com/) | 現代國界、各國觀點與爭議地區、省級行政區、海岸、湖泊、河流、海深、自然地理區、冰川、首都位置；地區模式的鐵路與道路路線（1:10m railroads、roads） | 公有領域 |
 | [Wikidata](https://www.wikidata.org/) | 政權的繁中、簡中、日文名稱；首都；藝術史作品的名稱、作者、年代與收藏館（事先擷取，隨網站提供） | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | [Wikimedia Commons](https://commons.wikimedia.org/) | 所有縮圖（作品、事件、人物、首都、地點）：事先縮小並轉為 WebP 隨網站提供，未做其他修改；每張圖的作者、授權與原始頁面列在圖旁，完整清單見 offline/CREDITS.md | 各圖不同（公有領域、CC BY、CC BY-SA 等） |
 | [V-Dem Country-Year Dataset v15（Varieties of Democracy Institute；vdemdata）](https://www.v-dem.net/) | 政體模式：世界政體四分類與元首類型（衍生資料 public/data/regimes.json 依同授權釋出） | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
@@ -53,9 +53,3 @@
 | [d3-geo、d3-geo-projection、d3-array、d3-selection、d3-zoom](https://d3js.org/) | 投影與平面地圖 | ISC |
 | [topojson-client、polylabel、versor](https://github.com/topojson/topojson-client) | 幾何資料與標籤位置 | ISC |
 | [建置工具：Vite（MIT）、mapshaper（MPL-2.0）、opencc-js（MIT、Apache-2.0）、shapely（BSD-3-Clause）、numpy（BSD-3-Clause）、Pillow（MIT-CMU）、pyreadr（AGPL-3.0，僅用於讀取 V-Dem 資料，不隨網站發布）](undefined) |  | — |
-
-## Offline bundle (public/offline)
-Built by `fetch-offline.ps1` (runs `data-pipeline/offline/fetch.mjs` on your own computer: one request a second, Wikimedia's standard cached thumbnail sizes, and only what is missing), so visitors load nothing from Wikimedia:
-- **Pictures** — Wikimedia Commons thumbnails, resized (≤320 px for events, ≤200 px otherwise) and re-encoded as WebP; no other changes. Each picture's author, licence and file page are shown next to it on the site; the complete list is generated as `public/offline/CREDITS.md`. Files without a licence on record are not used.
-- **Descriptions** — the first sentences of Wikipedia article introductions (zh / en / ja; CC BY-SA 4.0), each shown with a link to its article.
-- **Artwork facts** — Wikidata (CC0 1.0).

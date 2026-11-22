@@ -1,0 +1,43 @@
+# 伊朗模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在伊朗或未劃分）	（不在伊朗或未划分）	(outside Iran / not drawn)	（イラン外・区分なし）
+s_azarbaijan	#e9c46a	米底（阿特羅帕特尼）總督區	米底（阿特罗帕特尼）总督区	Media (Atropatene) satrapy	メディア（アトロパテネ）州
+s_gilan	#f4a261	卡杜西人地區	卡杜西人地区	Cadusii	カドゥシオイ
+s_tabaristan	#e76f51	赫卡尼亞總督區	赫卡尼亚总督区	Hyrcania satrapy	ヒュルカニア州
+s_centre	#8ab17d	米底總督區（雷伊）	米底总督区（雷伊）	Media satrapy (Rhagae)	メディア州（ラガイ）
+s_media	#2a9d8f	米底總督區（埃克巴坦那）	米底总督区（埃克巴坦那）	Media satrapy (Ecbatana)	メディア州（エクバタナ）
+s_khuzestan	#6fb3c7	埃蘭（蘇薩）總督區	埃兰（苏萨）总督区	Elam (Susa) satrapy	エラム（スーサ）州
+s_isfahan	#b5a7d8	帕雷塔肯（伊斯法罕）	帕雷塔肯（伊斯法罕）	Paraetacene (Isfahan)	パラエタケネ
+s_fars	#d8a7b1	波斯（帕爾斯）總督區	波斯（帕尔斯）总督区	Persis satrapy	ペルシス州
+s_kerman	#c9b79c	卡爾馬尼亞總督區	卡尔马尼亚总督区	Carmania satrapy	カルマニア州
+s_sistan	#f6b98a	德蘭吉亞納總督區	德兰吉亚纳总督区	Drangiana satrapy	ドランギアナ州
+s_khorasan	#a594cf	帕提亞總督區	帕提亚总督区	Parthia satrapy	パルティア州
+s_mesopotamia	#cc94a0	巴比倫總督區	巴比伦总督区	Babylonia satrapy	バビロニア州
+s_caucasus	#d6c8b0	亞美尼亞總督區	亚美尼亚总督区	Armenia satrapy	アルメニア州
+s_transoxiana	#8cc5d6	粟特、巴克特里亞總督區	粟特、巴克特里亚总督区	Sogdia and Bactria satrapies	ソグディアナ・バクトリア州
+s_afghanistan	#a3c4a8	阿拉霍西亞、犍陀羅總督區	阿拉霍西亚、犍陀罗总督区	Arachosia and Gandhara satrapies	アラコシア・ガンダーラ州
+a_azarbaijan	#2a9d8f	亞塞拜然（傳統省份）	亚塞拜然（传统省份）	Adharbayjan (traditional province)	アーザルバーイジャーン（伝統的な州）
+a_gilan	#6fb3c7	德萊姆（傳統省份）	德莱姆（传统省份）	Daylam (traditional province)	ダイラム（伝統的な州）
+a_tabaristan	#b5a7d8	塔巴里斯坦（傳統省份）	塔巴里斯坦（传统省份）	Tabaristan (traditional province)	タバリスターン（伝統的な州）
+a_centre	#d8a7b1	吉巴勒（雷伊）（傳統省份）	吉巴勒（雷伊）（传统省份）	Jibal (Rey) (traditional province)	ジバール（レイ）（伝統的な州）
+a_media	#c9b79c	吉巴勒（傳統省份）	吉巴勒（传统省份）	Jibal (traditional province)	ジバール（伝統的な州）
+a_khuzestan	#f6b98a	胡齊斯坦（傳統省份）	胡齐斯坦（传统省份）	Khuzistan (traditional province)	フーゼスターン（伝統的な州）
+a_isfahan	#a594cf	伊斯法罕（傳統省份）	伊斯法罕（传统省份）	Isfahan (traditional province)	イスファハーン（伝統的な州）
+a_fars	#cc94a0	法爾斯（傳統省份）	法尔斯（传统省份）	Fars (traditional province)	ファールス（伝統的な州）
+a_kerman	#d6c8b0	克爾曼（傳統省份）	克尔曼（传统省份）	Kirman (traditional province)	キルマーン（伝統的な州）
+a_sistan	#8cc5d6	錫斯坦（傳統省份）	锡斯坦（传统省份）	Sistan (traditional province)	スィースターン（伝統的な州）
+a_khorasan	#a3c4a8	呼羅珊（傳統省份）	呼罗珊（传统省份）	Khurasan (traditional province)	ホラーサーン（伝統的な州）
+a_mesopotamia	#e3c9a8	伊拉克（下美索不達米亞）、賈濟拉（傳統省份）	伊拉克（下美索不达米亚）、贾济拉（传统省份）	Iraq and Jazira (traditional province)	イラク、ジャズィーラ（伝統的な州）
+a_caucasus	#e9c46a	亞美尼亞、阿蘭（傳統省份）	亚美尼亚、阿兰（传统省份）	Arminiya and Arran (traditional province)	アルミーニヤ、アッラーン（伝統的な州）
+a_transoxiana	#f4a261	河中地區（傳統省份）	河中地区（传统省份）	Transoxiana (Ma wara al-nahr) (traditional province)	マー・ワラー・アンナフル（伝統的な州）
+a_afghanistan	#e76f51	扎布利斯坦、吐火羅斯坦（傳統省份）	扎布利斯坦、吐火罗斯坦（传统省份）	Zabulistan and Tokharistan (traditional province)	ザーブリスターン、トハーリスターン（伝統的な州）
+m_azarbaijan	#c9b79c	東西亞塞拜然、阿爾達比勒、贊詹（4 省）	东西亚塞拜然、阿尔达比勒、赞詹（4 省）	East and West Azerbaijan, Ardabil, Zanjan (4 provinces)	East and West Azerbaijan, Ardabil, Zanjan（州）
+m_gilan	#f6b98a	吉蘭省	吉兰省	Gilan province	Gilan（州）
+m_tabaristan	#a594cf	馬贊德蘭、戈勒斯坦（2 省）	马赞德兰、戈勒斯坦（2 省）	Mazandaran, Golestan (2 provinces)	Mazandaran, Golestan（州）
+m_centre	#cc94a0	德黑蘭、厄爾布爾士、加茲溫、庫姆、中央、塞姆南（6 省）	德黑兰、厄尔布尔士、加兹温、库姆、中央、塞姆南（6 省）	Tehran, Alborz, Qazvin, Qom, Markazi, Semnan (6 provinces)	Tehran, Alborz, Qazvin, Qom, Markazi, Semnan（州）
+m_media	#d6c8b0	哈馬丹、克爾曼沙阿、庫德斯坦、洛雷斯坦、伊拉姆（5 省）	哈马丹、克尔曼沙阿、库德斯坦、洛雷斯坦、伊拉姆（5 省）	Hamadan, Kermanshah, Kurdistan, Lorestan, Ilam (5 provinces)	Hamadan, Kermanshah, Kurdistan, Lorestan, Ilam（州）
+m_khuzestan	#8cc5d6	胡齊斯坦省	胡齐斯坦省	Khuzestan province	Khuzestan（州）
+m_isfahan	#a3c4a8	伊斯法罕、恰哈馬哈勒—巴赫蒂亞里、科吉盧耶—博韋艾哈邁德、亞茲德（4 省）	伊斯法罕、恰哈马哈勒—巴赫蒂亚里、科吉卢耶—博韦艾哈迈德、亚兹德（4 省）	Isfahan, Chaharmahal and Bakhtiari, Kohgiluyeh, Yazd (4 provinces)	Isfahan, Chaharmahal and Bakhtiari, Kohgiluyeh, Yazd（州）
+m_fars	#e3c9a8	法爾斯、布什爾（2 省）	法尔斯、布什尔（2 省）	Fars, Bushehr (2 provinces)	Fars, Bushehr（州）
+m_kerman	#e9c46a	克爾曼、荷姆茲甘（2 省）	克尔曼、荷姆兹甘（2 省）	Kerman, Hormozgan (2 provinces)	Kerman, Hormozgan（州）
+m_sistan	#f4a261	錫斯坦—俾路支斯坦省	锡斯坦—俾路支斯坦省	Sistan and Baluchestan province	Sistan and Baluchestan（州）
+m_khorasan	#e76f51	拉扎維、北、南呼羅珊（3 省）	拉扎维、北、南呼罗珊（3 省）	Razavi, North and South Khorasan (3 provinces)	Razavi, North and South Khorasan（州）

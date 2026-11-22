@@ -1,0 +1,8 @@
+# 法國模式：行軍、戰線與遷徙。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑	繁中	English	日本語
+chevauchee	1346-07	1346-08	#d1495b	2	-1.43,49.53 0.09,49.18 1.1,49.44 1.88,50.25 1.86,50.95	克雷西戰役前的英軍騎行掠奪	Edward III's chevauchée to Crécy and Calais	クレシーへのエドワード3世の騎行
+joan	1429-05	1429-07	#2f5fb3	2	1.91,47.9 2.85,47.92 3.88,49.25 4.03,49.26	貞德解圍奧爾良後護送查理七世至蘭斯加冕	Joan of Arc: from Orléans to the coronation at Reims	ジャンヌ・ダルク、オルレアンからランスへ
+hundred100	1449-07	1453-07	#2f5fb3	3	1.1,49.44 -0.37,49.18 -1.62,49.64 -0.58,44.84 -0.04,44.85	法軍收復諾曼第與加斯科涅	France retakes Normandy and Gascony	ノルマンディーとガスコーニュの奪還
+napoleon_100	1815-03	1815-06	#1f3a93	2	7.02,43.55 5.72,45.19 4.84,45.76 2.35,48.86 4.41,50.68	拿破崙百日王朝：從胡安灣到滑鐵盧	Napoleon's Hundred Days: from Golfe-Juan to Waterloo	ナポレオンの百日天下
+german1940	1940-05	1940-06	#5c5c5c	3	6.12,49.6 4.94,49.7 2.85,49.45 2.35,48.86 0.69,47.39 -0.58,44.84	德軍突破色當，橫掃法國	The German breakthrough at Sedan sweeps across France	ドイツ軍のセダン突破とフランス侵攻
+overlord	1944-06	1944-08	#2e7d32	3	-0.6,49.35 -0.37,49.18 0.09,48.75 1.5,48.9 2.35,48.86	諾曼第登陸至巴黎解放	From the Normandy landings to Paris	ノルマンディー上陸からパリ解放へ
+dragoon	1944-08	1944-09	#2e7d32	3	6.7,43.3 5.37,43.3 4.84,45.76 5.04,47.32	普羅旺斯登陸，沿隆河北上	Operation Dragoon: up the Rhône valley	ドラグーン作戦、ローヌ渓谷を北上

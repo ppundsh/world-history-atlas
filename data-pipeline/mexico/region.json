@@ -1,0 +1,52 @@
+{
+ "start": "1428-01",
+ "end": "2026-12",
+ "units": "mexico_units.geojson",
+ "merge": true,
+ "groups": {
+  "mexico": [
+   "valle",
+   "tlaxcala",
+   "puebla",
+   "veracruz",
+   "oaxaca",
+   "guerrero",
+   "michoacan",
+   "jalisco",
+   "bajio",
+   "zacatecas",
+   "north_e",
+   "north_w",
+   "baja",
+   "tabasco",
+   "yucatan",
+   "chiapas"
+  ],
+  "north": [
+   "bajio",
+   "zacatecas",
+   "north_e",
+   "north_w",
+   "baja"
+  ],
+  "maya": [
+   "tabasco",
+   "yucatan",
+   "chiapas",
+   "guatemala"
+  ],
+  "lost": [
+   "texas",
+   "california",
+   "southwest"
+  ],
+  "core": [
+   "valle",
+   "puebla",
+   "tlaxcala",
+   "veracruz",
+   "oaxaca",
+   "guerrero"
+  ]
+ }
+}

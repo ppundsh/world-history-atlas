@@ -1,0 +1,19 @@
+# 伊朗模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+road	ir_royal_road	-500-01		52.89,29.94 48.25,32.19 44.42,32.54 43.15,36.36 38.0,37.8 27.93,38.47	御道（蘇薩—薩第斯）	Royal Road (Susa–Sardis)	王の道	大流士一世修建的驛道，貫通帝國。	Darius I's road with post stations across the empire.	ダレイオス1世の街道。	御道	Royal Road
+water	ir_shushtar	0260-01		48.85,32.05	舒什塔爾水利系統	Shushtar Historical Hydraulic System	シューシュタルの水利施設	薩珊時代的水壩、運河與水車，世界遺產。	Sasanian dams, canals and mills; a World Heritage site.	サーサーン朝の水利施設。	舒什塔尔古代水利系统	Shushtar Historical Hydraulic System
+bridge	ir_khaju	1650-01		51.68,32.64	哈朱橋（伊斯法罕）	Khaju Bridge (Isfahan)	ハージュ橋	阿拔斯二世興建的拱橋兼水壩。	A bridge and weir built under Abbas II.	アッバース2世の橋。	哈鸠桥	Khaju Bridge
+pipeline	ir_abadan	1912-01		49.29,31.94 48.3,30.36	馬斯吉德蘇萊曼—阿巴丹輸油管	Masjed Soleyman–Abadan pipeline	マスジェデ・ソレイマーン—アーバーダーン送油管	英伊石油公司的輸油管與阿巴丹煉油廠。	The Anglo-Persian Oil Company's pipeline to the Abadan refinery.	アングロ・ペルシアン石油。		
+rail	ir_trans_iranian	1938-08		53.06,36.83 52.65,36.54 51.39,35.69 50.88,34.64 48.25,32.19 48.69,31.32 49.05,30.45	伊朗縱貫鐵路	Trans-Iranian Railway	イラン縦貫鉄道	連接裏海與波斯灣的鐵路，世界遺產。	The railway from the Caspian to the Persian Gulf; a World Heritage site.	カスピ海とペルシア湾を結ぶ鉄道。	伊朗纵贯铁路	Trans-Iranian Railway
+dam	ir_karaj	1961-01		51.08,35.95	阿米爾卡比爾水壩（卡拉季）	Amir Kabir Dam (Karaj)	アミール・キャビール・ダム	供應德黑蘭用水的大型水壩。	A large dam supplying Tehran.	テヘランの水源。		
+stadium	ir_azadi_tower	1971-10		51.34,35.7	自由塔	Azadi Tower	アーザーディー・タワー	為建國 2500 年興建的德黑蘭地標。	Tehran's landmark built for the 2,500-year celebration.	建国2500年祭の記念塔。	自由纪念塔	Azadi Tower
+nuclear	ir_bushehr	2011-09		50.89,28.83	布什爾核電廠	Bushehr Nuclear Power Plant	ブーシェフル原子力発電所	伊朗第一座核電廠。	Iran's first nuclear power plant.	イラン初の原発。	布什尔核电站	Bushehr Nuclear Power Plant
+metro	ir_tehran_metro	1999-12		51.39,35.69	德黑蘭地鐵	Tehran Metro	テヘラン・メトロ	中東最大的地鐵系統之一。	One of the largest metros in the Middle East.	中東最大級の地下鉄。	德黑兰地铁	Tehran Metro
+dam	ir_karun3	2005-01		50.15,31.81	卡倫三號水壩	Karun-3 Dam	カールーン第3ダム	卡倫河上的大型水力發電壩。	A large hydroelectric dam on the Karun.	カールーン川のダム。		
+bridge	ir_33	1602-01		51.668,32.645	三十三孔橋（阿拉維爾迪汗橋）	Si-o-se-pol	スィー・オ・セ橋	伊斯法罕扎因代河上的薩法維石橋。	The Safavid stone bridge over the Zayanderud at Isfahan.	イスファハーンの石橋。	三十三孔桥	Si-o-se-pol
+road	ir_chalus	1937-01		51.43,35.8 51.33,36.2 51.42,36.65	查盧斯公路（德黑蘭—裏海）	Chalus Road	チャールース道路	翻越厄爾布爾士山通往裏海的公路。	The road over the Alborz to the Caspian.	アルボルズ山脈越えの道路。		Chalus Road
+bridge	ir_urmia	2008-11		45.38,37.75	烏爾米耶湖大橋	Lake Urmia Bridge	ウルミア湖橋	橫越烏爾米耶湖的堤道橋。	The causeway bridge across Lake Urmia.	ウルミア湖を横断する橋。		Lake Urmia Bridge
+port	ir_hormuz	1300-01	1622-05	56.46,27.06	荷姆茲島港	Hormuz	ホルムズ島	中世紀波斯灣的貿易樞紐。	The medieval trading hub of the Gulf.	中世の交易拠点。	霍尔木兹岛	Hormuz Island
+port	ir_abbas	1622-05		56.28,27.18	阿巴斯港	Bandar Abbas	バンダレ・アッバース	阿拔斯一世奪回荷姆茲後建立的港口，今伊朗最大港。	Founded by Abbas I after retaking Hormuz; Iran's largest port today.	アッバース1世が建設。	阿巴斯港	Bandar Abbas
+port	ir_kharg	1960-01		50.32,29.24	哈爾克島石油港	Kharg Island oil terminal	ハールク島石油積出港	伊朗原油出口的主要港口。	The main terminal for Iran's oil exports.	原油輸出の拠点。	哈尔克岛	Kharg Island
+airport	ir_mehrabad	1938-01		51.31,35.69	德黑蘭梅赫拉巴德機場	Mehrabad International Airport	メヘラーバード空港	德黑蘭的老機場。	Tehran's old airport.	テヘランの旧空港。	梅赫拉巴德国际机场	Mehrabad International Airport
+airport	ir_ika	2004-05		51.15,35.42	德黑蘭伊瑪目何梅尼國際機場	Imam Khomeini International Airport	イマーム・ホメイニー国際空港	伊朗的國際門戶。	Iran's international gateway.	イランの国際空港。	伊玛目霍梅尼国际机场	Imam Khomeini International Airport

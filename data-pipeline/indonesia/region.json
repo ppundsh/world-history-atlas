@@ -1,0 +1,51 @@
+{
+ "start": "0671-01",
+ "end": "2026-12",
+ "units": "indonesia_units.geojson",
+ "merge": true,
+ "groups": {
+  "indonesia": [
+   "aceh",
+   "sumatra_n",
+   "sumatra_s",
+   "banten",
+   "java_w",
+   "java_c",
+   "java_e",
+   "bali_nt",
+   "kal_w",
+   "kal_e",
+   "sulawesi_s",
+   "sulawesi_n",
+   "maluku",
+   "papua"
+  ],
+  "java": [
+   "banten",
+   "java_w",
+   "java_c",
+   "java_e"
+  ],
+  "sumatra": [
+   "aceh",
+   "sumatra_n",
+   "sumatra_s"
+  ],
+  "outer": [
+   "bali_nt",
+   "kal_w",
+   "kal_e",
+   "sulawesi_s",
+   "sulawesi_n",
+   "maluku"
+  ],
+  "borneo": [
+   "kal_w",
+   "kal_e"
+  ],
+  "sulawesi": [
+   "sulawesi_s",
+   "sulawesi_n"
+  ]
+ }
+}

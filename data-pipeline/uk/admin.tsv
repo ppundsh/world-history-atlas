@@ -1,0 +1,22 @@
+# 英國模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
+# 1707 年起的英格蘭、威爾斯、蘇格蘭、愛爾蘭，1999 年起的英格蘭各區與三地議會。
+0871-04	north_east,north_west,yorkshire,east_midlands,west_midlands,east,london,south_east,south_west,wales,scotland_e,scotland_sw,scotland_n,n_ireland,ireland	none
+1707-05	north_east,north_west,yorkshire,east_midlands,west_midlands,east,london,south_east,south_west	h_england
+1707-05	wales	h_wales
+1707-05	scotland_e,scotland_sw,scotland_n	h_scotland
+1707-05	n_ireland,ireland	h_ireland
+1801-01	n_ireland,ireland	h_ireland
+1921-06	n_ireland	r_n_ireland
+1922-12	ireland	none
+1999-07	north_east	r_north_east
+1999-07	north_west	r_north_west
+1999-07	yorkshire	r_yorkshire
+1999-07	east_midlands	r_east_midlands
+1999-07	west_midlands	r_west_midlands
+1999-07	east	r_east
+1999-07	london	r_london
+1999-07	south_east	r_south_east
+1999-07	south_west	r_south_west
+1999-07	wales	r_wales
+1999-07	scotland_e,scotland_sw,scotland_n	r_scotland
+1999-07	n_ireland	r_n_ireland

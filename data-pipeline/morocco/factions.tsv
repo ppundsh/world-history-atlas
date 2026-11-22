@@ -1,0 +1,29 @@
+# 摩洛哥模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+idrisid	#2e7d32	伊德里斯王朝	伊德里斯王朝	Idrisid dynasty	イドリース朝
+berber	#c8b88a	柏柏爾諸部族政權（巴爾加瓦塔、澤納塔等）	柏柏尔诸部族政权（巴尔加瓦塔、泽纳塔等）	Berber tribal states (Barghawata, Zenata …)	ベルベル系諸政権
+rustamid	#a5d6a7	魯斯塔姆王朝	鲁斯塔姆王朝	Rustamid dynasty	ルスタム朝
+aghlabid	#66bb6a	阿格拉布王朝	阿格拉布王朝	Aghlabid dynasty	アグラブ朝
+umayyad	#1b5e20	哥多華伍麥亞王朝	哥多华伍麦亚王朝	Umayyads of Córdoba	後ウマイヤ朝
+fatimid	#00897b	法蒂瑪王朝	法蒂玛王朝	Fatimid Caliphate	ファーティマ朝
+zirid	#4db6ac	齊里王朝、哈瑪德王朝	齐里王朝、哈玛德王朝	Zirids and Hammadids	ズィール朝、ハンマード朝
+taifas	#81c784	泰法諸王國	泰法诸王国	Taifa kingdoms	タイファ諸王国
+almoravid	#8d6e63	穆拉比特王朝	穆拉比特王朝	Almoravid dynasty	ムラービト朝
+almohad	#6d4c41	穆瓦希德王朝	穆瓦希德王朝	Almohad Caliphate	ムワッヒド朝
+marinid	#bf360c	馬林王朝	马林王朝	Marinid Sultanate	マリーン朝
+zayyanid	#ef6c00	齊亞尼德王朝（特萊姆森）	齐亚尼德王朝（特莱姆森）	Zayyanids of Tlemcen	ザイヤーン朝
+hafsid	#f9a825	哈夫斯王朝	哈夫斯王朝	Hafsid dynasty	ハフス朝
+nasrid	#ad1457	奈斯爾王朝（格拉納達）	奈斯尔王朝（格拉纳达）	Nasrid Emirate of Granada	ナスル朝
+castile	#c9a227	卡斯提亞、西班牙	卡斯提亚、西班牙	Castile and Spain	カスティーリャ、スペイン
+portugal	#1565c0	葡萄牙	葡萄牙	Portugal	ポルトガル
+wattasid	#d84315	瓦塔斯王朝	瓦塔斯王朝	Wattasid dynasty	ワッタース朝
+saadi	#c62828	薩阿德王朝	萨阿德王朝	Saadi dynasty	サアド朝
+ottoman	#a52a2a	鄂圖曼帝國（阿爾及爾、突尼斯攝政）	鄂图曼帝国（阿尔及尔、突尼斯摄政）	Ottoman Empire (Regencies of Algiers and Tunis)	オスマン帝国（アルジェ、チュニス）
+alaouite	#b71c1c	阿拉維王朝	阿拉维王朝	Alaouite dynasty	アラウィー朝
+france	#2f5fb3	法國（殖民、保護國）	法国（殖民、保护国）	France (colony, protectorate)	フランス（植民地・保護国）
+spain	#e0a800	西班牙（西屬摩洛哥、西屬撒哈拉）	西班牙（西属摩洛哥、西属撒哈拉）	Spain (Spanish Morocco, Spanish Sahara)	スペイン（スペイン領モロッコ・サハラ）
+tangier_int	#90a4ae	丹吉爾國際共管區	丹吉尔国际共管区	Tangier International Zone	タンジール国際管理地域
+morocco	#c1272d	摩洛哥王國	摩洛哥王国	Kingdom of Morocco	モロッコ王国
+algeria	#006233	阿爾及利亞	阿尔及利亚	Algeria	アルジェリア
+tunisia	#e70013	突尼西亞	突尼西亚	Tunisia	チュニジア
+sahrawi	#4a4a4a	撒哈拉阿拉伯民主共和國（西撒哈拉人民解放陣線）	撒哈拉阿拉伯民主共和国（西撒哈拉人民解放阵线）	Sahrawi Republic (Polisario Front)	サハラ・アラブ民主共和国（ポリサリオ戦線）
+other	#cfc6b4	其他地方勢力	其他地方势力	Other local powers	その他の地方勢力

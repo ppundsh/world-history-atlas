@@ -1,0 +1,16 @@
+# 法國模式：起義與叛亂（⚔）、地方勢力（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+feud	jacquerie	1358-05	1358-06	2.6	49.3	扎克雷起義	Jacquerie	ジャックリーの乱	普瓦捷戰敗後，博韋地區農民反抗貴族，遭血腥鎮壓。	After Poitiers, peasants around Beauvais rose against the nobles and were crushed.	ポワティエの敗戦後の農民反乱。	扎克雷起義
+feud	marcel	1357-01	1358-07	2.35	48.86	艾蒂安・馬塞爾的巴黎起義	Étienne Marcel's Paris revolt	エティエンヌ・マルセルの反乱	巴黎商會會長領導市民要求改革，最後被殺。	The Paris merchants' provost led the city against the Dauphin and was killed.	パリ商人頭の反乱。	艾蒂安·马塞尔
+feud	cathars	1209-07	1244-03	1.86	42.88	阿爾比十字軍與蒙特塞居	Albigensian Crusade and Montségur	アルビジョワ十字軍とモンセギュール	北方貴族南征清洗卡特里派，1244 年蒙特塞居陷落。	Northern lords crushed the Cathars; Montségur fell in 1244.	カタリ派討伐。	阿尔比十字军
+feud	fronde	1648-08	1653-07	2.35	48.86	投石黨之亂	The Fronde	フロンドの乱	高等法院與大貴族反抗馬薩林與年幼的路易十四。	The parlement and great nobles rose against Mazarin and the young Louis XIV.	フロンドの乱。	投石党运动
+feud	camisards	1702-07	1704-12	3.6	44.2	卡米撒派起義	Revolt of the Camisards	カミザールの乱	塞文山區的新教徒反抗廢除南特詔書後的迫害。	Protestants of the Cévennes rose against persecution after 1685.	セヴェンヌのプロテスタント反乱。	卡米撒派
+feud	vendee	1793-03	1796-03	-1.15	46.67	旺代戰爭	War in the Vendée	ヴァンデの反乱	西部天主教與保王派農民反抗共和國徵兵，死傷慘重。	Catholic royalist peasants of the west rose against the Republic's levy; very bloody.	ヴァンデの反乱。	旺代战争
+feud	commune	1871-03	1871-05	2.35	48.86	巴黎公社	Paris Commune	パリ・コミューン	巴黎民眾自治兩個月，在「流血週」被凡爾賽政府鎮壓。	Paris governed itself for two months until the Versailles government crushed it in the Bloody Week.	パリ・コミューン。	巴黎公社
+feud	mai68	1968-05	1968-06	2.34	48.85	五月風暴	May 1968	五月危機	學生運動與全國大罷工。	Student protests and a general strike across the country.	学生運動とゼネスト。	法国五月风暴
+feud	giletsjaunes	2018-11	2019-06	2.3	48.87	黃背心運動	Yellow vests movement	黄色いベスト運動	反燃油稅開始的全國抗議。	Nationwide protests that began over a fuel tax.	燃料税への抗議運動。	黄背心运动
+power	calais	1347-08	1558-01	1.86	50.95	英屬加萊	English Calais	イングランド領カレー	百年戰爭中英格蘭奪得的港口，直到 1558 年才被法國收回。	The port England took in 1347 and held until 1558.	1558年まで続いた英領カレー。	加莱
+power	huguenots	1562-03	1629-06	-1.15	46.16	拉羅謝爾與新教據點	La Rochelle and the Huguenot strongholds	ラ・ロシェルとユグノーの拠点	宗教戰爭中新教徒的據點，1628 年被黎塞留圍陷。	The Protestant stronghold of the Wars of Religion, taken by Richelieu in 1628.	ユグノーの拠点。	拉罗谢尔之围
+power	resistance	1943-01	1944-08	5.6	45.05	韋科爾抵抗運動基地	Vercors Resistance stronghold	ヴェルコールのレジスタンス	抵抗運動的山區基地，1944 年 7 月被德軍攻破。	A Resistance mountain base, overrun by the Germans in July 1944.	レジスタンスの拠点。	韦科尔
+us	pockets	1944-08	1945-05	-3.37	47.75	大西洋口袋（洛里昂、聖納澤爾等）	Atlantic pockets (Lorient, Saint-Nazaire …)	大西洋のポケット	德軍據守港口直到戰爭結束。	German garrisons held these ports until the end of the war.	大戦末まで残ったドイツ軍の拠点。	大西洋壁垒
+us	nato	1952-01	1967-03	2.13	48.82	北約駐法基地	NATO bases in France	在仏NATO基地	北約總部與美軍駐紮法國，1966 年戴高樂退出北約軍事組織後撤出。	NATO headquarters and US forces in France, which left after de Gaulle quit NATO's command in 1966.	ド・ゴールの軍事機構脱退まで。	北大西洋公约组织

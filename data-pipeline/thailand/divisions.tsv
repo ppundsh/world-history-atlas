@@ -1,0 +1,20 @@
+# 泰國模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在泰國或未劃分）	（不在泰国或未划分）	(outside Thailand / not drawn)	（タイ外・区分なし）
+m_phayap	#e9c46a	孟通・帕耶府（北部）	孟通・帕耶府（北部）	Monthon Phayap	パーヤップ州
+m_phitsanulok	#f4a261	孟通・彼世洛府	孟通・彼世洛府	Monthon Phitsanulok	ピッサヌローク州
+m_krungthep	#e76f51	孟通・曼谷府、大城府	孟通・曼谷府、大城府	Monthon Krung Thep, Krung Kao	クルンテープ州
+m_ratchaburi	#8ab17d	孟通・叻丕府	孟通・叻丕府	Monthon Ratchaburi	ラーチャブリー州
+m_prachinburi	#2a9d8f	孟通・巴真府、尖竹汶府	孟通・巴真府、尖竹汶府	Monthon Prachinburi, Chanthaburi	プラーチーンブリー州
+m_nakhonratchasima	#6fb3c7	孟通・呵叻府	孟通・呵叻府	Monthon Nakhon Ratchasima	ナコーンラーチャシーマー州
+m_udon	#b5a7d8	孟通・烏隆府	孟通・乌隆府	Monthon Udon	ウドーン州
+m_nakhonsi	#d8a7b1	孟通・洛坤府、春蓬府、普吉府	孟通・洛坤府、春蓬府、普吉府	Monthon Nakhon Si Thammarat, Chumphon, Phuket	ナコーンシータマラート州
+m_pattani	#c9b79c	孟通・北大年府	孟通・北大年府	Monthon Pattani	パッターニー州
+r_lanna	#f6b98a	北部各府	北部各府	Northern provinces	Northern
+r_sukhothai	#a594cf	中部北段各府	中部北段各府	Upper Central provinces	Upper Central
+r_central	#cc94a0	中部各府	中部各府	Central provinces	Central
+r_west	#d6c8b0	西部各府	西部各府	Western provinces	Western
+r_east	#8cc5d6	東部各府	东部各府	Eastern provinces	Eastern
+r_isan_s	#a3c4a8	東北部南段各府	东北部南段各府	Lower Northeast provinces	Lower Northeast
+r_isan_n	#e3c9a8	東北部北段各府	东北部北段各府	Upper Northeast provinces	Upper Northeast
+r_south	#e9c46a	南部各府	南部各府	Southern provinces	Southern
+r_patani	#f4a261	南部邊境三府各府	南部边境三府各府	Deep South provinces	Deep South

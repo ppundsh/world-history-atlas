@@ -1,0 +1,32 @@
+# 土耳其模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+byzantium	#8e44ad	拜占庭帝國	拜占庭帝国	Byzantine Empire	ビザンツ帝国
+seljuk	#5e35b1	大塞爾柱帝國	大塞尔柱帝国	Great Seljuk Empire	大セルジューク朝
+rum	#4a6fa5	羅姆蘇丹國	罗姆苏丹国	Sultanate of Rum	ルーム・セルジューク朝
+danishmend	#7e8fa8	達尼什曼德王朝	达尼什曼德王朝	Danishmendids	ダニシュメンド朝
+crusader	#c62828	十字軍國家（埃德薩伯國）	十字军国家（埃德萨伯国）	Crusader states (County of Edessa)	十字軍国家（エデッサ伯国）
+armenia_c	#e07a5f	奇里乞亞亞美尼亞王國	奇里乞亚亚美尼亚王国	Armenian Kingdom of Cilicia	キリキア・アルメニア王国
+latin	#b71c1c	拉丁帝國	拉丁帝国	Latin Empire	ラテン帝国
+nicaea	#9c64c8	尼西亞帝國	尼西亚帝国	Empire of Nicaea	ニカイア帝国
+trebizond	#6a1b9a	特拉比松帝國	特拉比松帝国	Empire of Trebizond	トレビゾンド帝国
+ilkhanate	#607d8b	伊兒汗國	伊儿汗国	Ilkhanate	イルハン朝
+beyliks	#bcaaa4	安納托利亞諸侯國	安纳托利亚诸侯国	Anatolian beyliks	アナトリア君侯国
+karaman	#a1887f	卡拉曼侯國	卡拉曼侯国	Karamanids	カラマン君侯国
+ottoman	#c0392b	鄂圖曼帝國	鄂图曼帝国	Ottoman Empire	オスマン帝国
+timurid	#00695c	帖木兒帝國	帖木儿帝国	Timurid Empire	ティムール朝
+turkmen	#8e24aa	黑羊、白羊王朝	黑羊、白羊王朝	Qara Qoyunlu and Aq Qoyunlu	黒羊朝、白羊朝
+mamluk	#e67e22	馬木留克王朝	马木留克王朝	Mamluk Sultanate	マムルーク朝
+safavid	#1b5e20	薩法維王朝	萨法维王朝	Safavid dynasty	サファヴィー朝
+bulgarian	#4caf50	保加利亞帝國	保加利亚帝国	Bulgarian Empire	ブルガリア帝国
+venice	#c9a227	威尼斯共和國	威尼斯共和国	Republic of Venice	ヴェネツィア共和国
+cyprus_k	#d1a3a4	賽普勒斯王國（呂西尼昂）	赛普勒斯王国（吕西尼昂）	Kingdom of Cyprus (Lusignan)	キプロス王国（リュジニャン家）
+greece	#1f6fb2	希臘	希腊	Greece	ギリシャ
+bulgaria	#2e7d32	保加利亞	保加利亚	Bulgaria	ブルガリア
+britain	#9b2335	英國	英国	Britain	イギリス
+france	#2f5fb3	法國（委任統治）	法国（委任统治）	France (mandate)	フランス（委任統治）
+italy	#4caf50	義大利	义大利	Italy	イタリア
+allies	#7f8c8d	協約國占領	协约国占领	Allied occupation	連合国の占領
+armenia	#d35400	亞美尼亞第一共和國	亚美尼亚第一共和国	First Republic of Armenia	アルメニア第一共和国
+turkey	#e53935	土耳其（大國民議會、共和國）	土耳其（大国民议会、共和国）	Turkey (Grand National Assembly, Republic)	トルコ（大国民議会、共和国）
+syria	#558b2f	敘利亞	叙利亚	Syria	シリア
+cyprus	#d4a017	賽普勒斯	赛普勒斯	Cyprus	キプロス
+other	#cfc6b4	其他地方勢力	其他地方势力	Other local powers	その他の地方勢力

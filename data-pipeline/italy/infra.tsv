@@ -1,4 +1,4 @@
-# 義大利模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 義大利模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	it_napoli	1839-10		14.25,40.85 14.37,40.75	那不勒斯—波蒂奇鐵路	Naples–Portici railway	ナポリ—ポルティチ鉄道	義大利半島第一條鐵路。	The first railway in the Italian peninsula.	イタリア半島初の鉄道。	那不勒斯—波蒂奇鐵路	Naples–Portici railway
 tunnel	it_frejus	1871-09		6.69,45.13	弗雷瑞斯（塞尼山）鐵路隧道	Fréjus (Mont Cenis) rail tunnel	フレジュス鉄道トンネル	第一條穿越阿爾卑斯的長隧道。	The first long tunnel through the Alps.	アルプスを貫く初の長大トンネル。	弗雷瑞斯鐵路隧道	Fréjus Rail Tunnel
 tunnel	it_gotthard	1882-05		8.6,46.6	聖哥達鐵路隧道	Gotthard rail tunnel	ゴッタルド鉄道トンネル	連接米蘭與瑞士、德國。	Linked Milan with Switzerland and Germany.	ミラノとスイスを結ぶ。	聖哥達鐵路隧道	Gotthard Rail Tunnel
@@ -18,3 +18,11 @@ water	it_mose	2020-10		12.33,45.44	威尼斯摩西防洪閘門	MOSE flood barrie
 bridge	it_genoa	2020-08		8.89,44.43	熱那亞聖喬治大橋	Genoa San Giorgio Bridge	ジェノヴァ・サン・ジョルジョ橋	取代倒塌的莫蘭迪橋。	Replaced the collapsed Morandi bridge.	崩落したモランディ橋の後継。	熱那亞聖喬治橋	Genoa-Saint George Bridge
 cable	it_atlantic	1999-01		12.5,37.5 2.0,38.0 -5.6,36.0	（地中海）SEA-ME-WE 3 海纜經西西里	SEA-ME-WE 3 via Sicily	SEA-ME-WE 3（シチリア経由）	歐亞海纜在馬札拉登陸。	The Europe–Asia cable landing at Mazara.	欧亜ケーブルがマザーラに陸揚げ。	SEA-ME-WE 3	SEA-ME-WE 3
 ixp	it_mix	2000-01		9.19,45.46	MIX 米蘭網際網路交換中心	MIX Milan Internet exchange	MIX ミラノIX	義大利最大交換中心。	Italy's largest exchange.	イタリア最大のIX。		MIX (Milan Internet eXchange)
+road	it_appia	1454-04		12.5,41.89 12.66,41.75 13.25,41.29 13.83,41.27 14.25,41.08 14.78,41.13 15.8,40.95 16.87,40.67 17.94,40.64	亞壁古道（羅馬—布林迪西）	Via Appia (Rome–Brindisi)	アッピア街道	前 312 年開闢的羅馬「道路女王」，至今仍可通行。	The Romans' "queen of roads", begun in 312 BC and still in use.	前312年に建設されたローマ街道。	亚壁古道	Appian Way
+bridge	it_rialto	1591-01		12.336,45.438	里亞托橋	Rialto Bridge	リアルト橋	威尼斯大運河上的石橋。	The stone bridge over Venice's Grand Canal.	ヴェネツィアの石橋。	里亚托桥	Rialto Bridge
+bridge	it_libertà	1933-04		12.28,45.46	自由橋（威尼斯—本土）	Ponte della Libertà	リベルタ橋	威尼斯與本土相連的公路橋。	The road bridge joining Venice to the mainland.	ヴェネツィアと本土を結ぶ。		Ponte della Libertà
+port	it_genoa_port	1454-04		8.91,44.41	熱那亞港	Port of Genoa	ジェノヴァ港	義大利最大的海港。	Italy's largest seaport.	イタリア最大の港。	热那亚港	Port of Genoa
+port	it_venice_port	1454-04		12.33,45.43	威尼斯港	Port of Venice	ヴェネツィア港	威尼斯共和國的海上帝國中心。	Heart of the Venetian maritime empire.	ヴェネツィア海洋帝国の中心。	威尼斯港	Port of Venice
+port	it_gioia	1995-09		15.9,38.45	焦亞陶羅港	Port of Gioia Tauro	ジョイア・タウロ港	地中海的大型轉運港。	A major Mediterranean transhipment hub.	地中海の大型港。	焦亚陶罗港	Port of Gioia Tauro
+airport	it_fco	1961-01		12.25,41.8	羅馬菲烏米奇諾機場（達文西）	Rome Fiumicino Airport	ローマ・フィウミチーノ空港	義大利最大的機場。	Italy's largest airport.	イタリア最大の空港。	罗马菲乌米奇诺机场	Rome Fiumicino Airport
+airport	it_mxp	1948-11		8.72,45.63	米蘭馬爾彭薩機場	Milan Malpensa Airport	ミラノ・マルペンサ空港	北義的國際機場。	The international airport of the north.	北イタリアの空港。	米兰马尔彭萨机场	Milan Malpensa Airport

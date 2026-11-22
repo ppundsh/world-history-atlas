@@ -1,0 +1,30 @@
+# 印度尼西亞模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在印尼或未劃分）	（不在印尼或未划分）	(outside Indonesia / not drawn)	（インドネシア外・区分なし）
+d_java_c	#e9c46a	日惹、梭羅侯國（王侯領）（荷屬時期）	日惹、梭罗侯国（王侯领）（荷属时期）	The princely states (Yogyakarta, Surakarta) (Dutch era)	王侯領（蘭領期）
+d_java_e	#f4a261	東爪哇省（荷屬時期）	东爪哇省（荷属时期）	East Java province (Dutch era)	東ジャワ州（蘭領期）
+d_java_w	#e76f51	西爪哇省（荷屬時期）	西爪哇省（荷属时期）	West Java province (Dutch era)	西ジャワ州（蘭領期）
+d_banten	#8ab17d	巴達維亞、萬丹（荷屬時期）	巴达维亚、万丹（荷属时期）	Batavia and Banten (Dutch era)	バタヴィア、バンテン（蘭領期）
+d_sumatra_n	#2a9d8f	蘇門答臘東海岸、西海岸（荷屬時期）	苏门答腊东海岸、西海岸（荷属时期）	Sumatra's East and West Coast (Dutch era)	スマトラ東海岸・西海岸（蘭領期）
+d_sumatra_s	#6fb3c7	巨港、楠榜（荷屬時期）	巨港、楠榜（荷属时期）	Palembang, Lampung (Dutch era)	パレンバン、ランプン（蘭領期）
+d_aceh	#b5a7d8	亞齊（荷屬時期）	亚齐（荷属时期）	Aceh (Dutch era)	アチェ（蘭領期）
+d_kal_w	#d8a7b1	婆羅洲西部（荷屬時期）	婆罗洲西部（荷属时期）	Western Borneo (Dutch era)	西ボルネオ（蘭領期）
+d_kal_e	#c9b79c	婆羅洲南部與東部（荷屬時期）	婆罗洲南部与东部（荷属时期）	Southern and Eastern Borneo (Dutch era)	南・東ボルネオ（蘭領期）
+d_sulawesi_s	#f6b98a	西里伯斯（荷屬時期）	西里伯斯（荷属时期）	Celebes (Dutch era)	セレベス（蘭領期）
+d_sulawesi_n	#a594cf	萬鴉老（荷屬時期）	万鸦老（荷属时期）	Manado (Dutch era)	マナド（蘭領期）
+d_maluku	#cc94a0	摩鹿加（荷屬時期）	摩鹿加（荷属时期）	Moluccas (Dutch era)	モルッカ（蘭領期）
+d_bali_nt	#d6c8b0	巴里與龍目、小巽他（荷屬時期）	巴里与龙目、小巽他（荷属时期）	Bali, Lombok and the Lesser Sundas (Dutch era)	バリ、小スンダ（蘭領期）
+d_papua	#8cc5d6	荷屬新幾內亞（荷屬時期）	荷属新几内亚（荷属时期）	Netherlands New Guinea (Dutch era)	オランダ領ニューギニア（蘭領期）
+p_aceh	#2a9d8f	亞齊省	亚齐省	Aceh	Aceh
+p_sumatra_n	#6fb3c7	北、西蘇門答臘、廖內省	北、西苏门答腊、廖内省	North and West Sumatra, Riau	North and West Sumatra, Riau
+p_sumatra_s	#b5a7d8	南蘇門答臘等五省省	南苏门答腊等五省省	South Sumatra and four more	South Sumatra and four more
+p_banten	#d8a7b1	萬丹、雅加達省	万丹、雅加达省	Banten, Jakarta	Banten, Jakarta
+p_java_w	#c9b79c	西爪哇省	西爪哇省	West Java	West Java
+p_java_c	#f6b98a	中爪哇、日惹省	中爪哇、日惹省	Central Java, Yogyakarta	Central Java, Yogyakarta
+p_java_e	#a594cf	東爪哇省	东爪哇省	East Java	East Java
+p_bali_nt	#cc94a0	巴里、東西努沙登加拉省	巴里、东西努沙登加拉省	Bali and Nusa Tenggara	Bali and Nusa Tenggara
+p_kal_w	#d6c8b0	西、中加里曼丹省	西、中加里曼丹省	West and Central Kalimantan	West and Central Kalimantan
+p_kal_e	#8cc5d6	南、東加里曼丹省	南、东加里曼丹省	South and East Kalimantan	South and East Kalimantan
+p_sulawesi_s	#a3c4a8	南、西、東南蘇拉威西省	南、西、东南苏拉威西省	South, West and South-East Sulawesi	South, West and South-East Sulawesi
+p_sulawesi_n	#e3c9a8	北、中蘇拉威西、哥倫打洛省	北、中苏拉威西、哥伦打洛省	North and Central Sulawesi, Gorontalo	North and Central Sulawesi, Gorontalo
+p_maluku	#e9c46a	摩鹿加、北摩鹿加省	摩鹿加、北摩鹿加省	Maluku, North Maluku	Maluku, North Maluku
+p_papua	#f4a261	巴布亞各省省	巴布亚各省省	The Papuan provinces	The Papuan provinces

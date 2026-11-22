@@ -27,7 +27,7 @@ const at = (f, y) => { f = norm(f); if (!f || y == null || !isFinite(y)) return;
 const monthYear = (start, m) => start[0] + Math.floor((m + start[1] - 1) / 12);
 const cut = s => (s || '').split(/[（(、,]/)[0].trim();
 const LANGS = { 'zh-Hant': { wl: 'zh', col: 1 }, 'zh-Hans': { wl: 'zh', col: 2 }, en: { wl: 'en', col: 0 }, ja: { wl: 'ja', col: 3 } };
-const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa'];
+const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
 const THEMES = ['language', 'finance', 'fgo', 'internet'];
 
 // events (keyed like fetch.mjs / eventinfo.js)

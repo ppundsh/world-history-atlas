@@ -1,0 +1,118 @@
+# 法國模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在法國或未劃分）	（不在法国或未划分）	(outside France / not drawn)	（フランス外・区分なし）
+p_idf	#e9c46a	法蘭西島（舊省）	法兰西岛（旧省）	Île-de-France (province)	イル＝ド＝フランス（旧州）
+p_picardie	#f4a261	皮卡第（舊省）	皮卡第（旧省）	Picardy (province)	ピカルディ（旧州）
+p_artois	#e76f51	阿圖瓦（舊省）	阿图瓦（旧省）	Artois (province)	アルトワ（旧州）
+p_flandre	#8ab17d	法屬法蘭德斯（舊省）	法属法兰德斯（旧省）	French Flanders (province)	フランドル（旧州）
+p_champagne	#2a9d8f	香檳（舊省）	香槟（旧省）	Champagne (province)	シャンパーニュ（旧州）
+p_lorraine	#6fb3c7	洛林（舊省）	洛林（旧省）	Lorraine (province)	ロレーヌ（旧州）
+p_moselle	#b5a7d8	梅斯（三主教區）（舊省）	梅斯（三主教区）（旧省）	Metz (Three Bishoprics) (province)	メス（三司教領）（旧州）
+p_alsace	#d8a7b1	亞爾薩斯（舊省）	亚尔萨斯（旧省）	Alsace (province)	アルザス（旧州）
+p_belfort	#c9b79c	貝爾福（舊省）	贝尔福（旧省）	Belfort (province)	ベルフォール（旧州）
+p_fcomte	#f6b98a	弗朗什—孔泰（舊省）	弗朗什—孔泰（旧省）	Franche-Comté (province)	フランシュ＝コンテ（旧州）
+p_bourgogne	#a594cf	勃艮第（舊省）	勃艮第（旧省）	Burgundy (province)	ブルゴーニュ（旧州）
+p_lyonnais	#cc94a0	里昂內（舊省）	里昂内（旧省）	Lyonnais (province)	リヨネ（旧州）
+p_ain	#d6c8b0	布雷斯與比熱（舊省）	布雷斯与比热（旧省）	Bresse and Bugey (province)	ブレスとビュジェ（旧州）
+p_dauphine	#8cc5d6	多菲內（舊省）	多菲内（旧省）	Dauphiné (province)	ドーフィネ（旧州）
+p_savoie	#a3c4a8	薩伏依（舊省）	萨伏依（旧省）	Savoy (province)	サヴォワ（旧州）
+p_nice	#e3c9a8	尼斯伯國（舊省）	尼斯伯国（旧省）	County of Nice (province)	ニース伯領（旧州）
+p_provence	#b8c4e0	普羅旺斯（舊省）	普罗旺斯（旧省）	Provence (province)	プロヴァンス（旧州）
+p_vaucluse	#e0b8c4	孔塔—維內森（舊省）	孔塔—维内森（旧省）	Comtat Venaissin (province)	コンタ・ヴネッサン（旧州）
+p_languedoc	#e9c46a	朗格多克（舊省）	朗格多克（旧省）	Languedoc (province)	ラングドック（旧州）
+p_auvergne	#f4a261	奧弗涅與波旁內（舊省）	奥弗涅与波旁内（旧省）	Auvergne and Bourbonnais (province)	オーヴェルニュとブルボネ（旧州）
+p_roussillon	#e76f51	魯西永（舊省）	鲁西永（旧省）	Roussillon (province)	ルシヨン（旧州）
+p_foix	#8ab17d	富瓦伯國（舊省）	富瓦伯国（旧省）	County of Foix (province)	フォワ伯領（旧州）
+p_gascogne	#2a9d8f	加斯科涅與比戈爾（舊省）	加斯科涅与比戈尔（旧省）	Gascony and Bigorre (province)	ガスコーニュとビゴール（旧州）
+p_quercy	#6fb3c7	凱爾西與魯埃格（舊省）	凯尔西与鲁埃格（旧省）	Quercy and Rouergue (province)	ケルシーとルエルグ（旧州）
+p_bearn	#b5a7d8	貝亞恩與下納瓦拉（舊省）	贝亚恩与下纳瓦拉（旧省）	Béarn and Lower Navarre (province)	ベアルンと低ナバラ（旧州）
+p_landes	#d8a7b1	朗德（舊省）	朗德（旧省）	Landes (province)	ランド（旧州）
+p_guyenne	#c9b79c	吉耶納（舊省）	吉耶纳（旧省）	Guyenne (province)	ギュイエンヌ（旧州）
+p_limousin	#f6b98a	利穆贊與馬爾凱（舊省）	利穆赞与马尔凯（旧省）	Limousin and Marche (province)	リムーザンとマルシュ（旧州）
+p_poitou	#a594cf	普瓦圖（舊省）	普瓦图（旧省）	Poitou (province)	ポワトゥー（旧州）
+p_bretagne	#cc94a0	布列塔尼（舊省）	布列塔尼（旧省）	Brittany (province)	ブルターニュ（旧州）
+p_anjou_maine	#d6c8b0	安茹與曼恩（舊省）	安茹与曼恩（旧省）	Anjou and Maine (province)	アンジューとメーヌ（旧州）
+p_touraine	#8cc5d6	都蘭（舊省）	都兰（旧省）	Touraine (province)	トゥーレーヌ（旧州）
+p_berry	#a3c4a8	貝里（舊省）	贝里（旧省）	Berry (province)	ベリー（旧州）
+p_orleanais	#e3c9a8	奧爾良內（舊省）	奥尔良内（旧省）	Orléanais (province)	オルレアネ（旧州）
+p_normandie	#b8c4e0	諾曼第（舊省）	诺曼第（旧省）	Normandy (province)	ノルマンディー（旧州）
+p_corse	#e0b8c4	科西嘉（舊省）	科西嘉（旧省）	Corsica (province)	コルシカ（旧州）
+d_idf	#6fb3c7	法蘭西島地區的 8 個省	法兰西岛地区的 8 个省	Île-de-France: 8 departments	イル＝ド＝フランス地方の8県
+d_picardie	#b5a7d8	皮卡第地區的 3 個省	皮卡第地区的 3 个省	Picardy: 3 departments	ピカルディ地方の3県
+d_artois	#d8a7b1	阿圖瓦地區的 1 個省	阿图瓦地区的 1 个省	Artois: 1 department	アルトワ地方の1県
+d_flandre	#c9b79c	法屬法蘭德斯地區的 1 個省	法属法兰德斯地区的 1 个省	French Flanders: 1 department	フランドル地方の1県
+d_champagne	#f6b98a	香檳地區的 4 個省	香槟地区的 4 个省	Champagne: 4 departments	シャンパーニュ地方の4県
+d_lorraine	#a594cf	洛林地區的 3 個省	洛林地区的 3 个省	Lorraine: 3 departments	ロレーヌ地方の3県
+d_moselle	#cc94a0	梅斯（三主教區）地區的 1 個省	梅斯（三主教区）地区的 1 个省	Metz (Three Bishoprics): 1 department	メス（三司教領）地方の1県
+d_alsace	#d6c8b0	亞爾薩斯地區的 2 個省	亚尔萨斯地区的 2 个省	Alsace: 2 departments	アルザス地方の2県
+d_belfort	#8cc5d6	貝爾福地區的 1 個省	贝尔福地区的 1 个省	Belfort: 1 department	ベルフォール地方の1県
+d_fcomte	#a3c4a8	弗朗什—孔泰地區的 3 個省	弗朗什—孔泰地区的 3 个省	Franche-Comté: 3 departments	フランシュ＝コンテ地方の3県
+d_bourgogne	#e3c9a8	勃艮第地區的 4 個省	勃艮第地区的 4 个省	Burgundy: 4 departments	ブルゴーニュ地方の4県
+d_lyonnais	#b8c4e0	里昂內地區的 2 個省	里昂内地区的 2 个省	Lyonnais: 2 departments	リヨネ地方の2県
+d_ain	#e0b8c4	布雷斯與比熱地區的 1 個省	布雷斯与比热地区的 1 个省	Bresse and Bugey: 1 department	ブレスとビュジェ地方の1県
+d_dauphine	#e9c46a	多菲內地區的 2 個省	多菲内地区的 2 个省	Dauphiné: 2 departments	ドーフィネ地方の2県
+d_hautes_alpes	#f4a261	上多菲內地區的 1 個省	上多菲内地区的 1 个省	Upper Dauphiné: 1 department	高ドーフィネ地方の1県
+d_savoie	#e76f51	薩伏依地區的 2 個省	萨伏依地区的 2 个省	Savoy: 2 departments	サヴォワ地方の2県
+d_nice	#8ab17d	尼斯伯國地區的 1 個省	尼斯伯国地区的 1 个省	County of Nice: 1 department	ニース伯領地方の1県
+d_provence	#2a9d8f	普羅旺斯地區的 3 個省	普罗旺斯地区的 3 个省	Provence: 3 departments	プロヴァンス地方の3県
+d_vaucluse	#6fb3c7	孔塔—維內森地區的 1 個省	孔塔—维内森地区的 1 个省	Comtat Venaissin: 1 department	コンタ・ヴネッサン地方の1県
+d_vivarais	#b5a7d8	維瓦賴地區的 1 個省	维瓦赖地区的 1 个省	Vivarais: 1 department	ヴィヴァレ地方の1県
+d_velay	#d8a7b1	韋萊地區的 1 個省	韦莱地区的 1 个省	Velay: 1 department	ヴレ地方の1県
+d_auvergne	#c9b79c	奧弗涅與波旁內地區的 3 個省	奥弗涅与波旁内地区的 3 个省	Auvergne and Bourbonnais: 3 departments	オーヴェルニュとブルボネ地方の3県
+d_languedoc	#f6b98a	下朗格多克地區的 4 個省	下朗格多克地区的 4 个省	Lower Languedoc: 4 departments	低ラングドック地方の4県
+d_toulouse	#a594cf	上朗格多克地區的 2 個省	上朗格多克地区的 2 个省	Upper Languedoc: 2 departments	高ラングドック地方の2県
+d_roussillon	#cc94a0	魯西永地區的 1 個省	鲁西永地区的 1 个省	Roussillon: 1 department	ルシヨン地方の1県
+d_foix	#d6c8b0	富瓦伯國地區的 1 個省	富瓦伯国地区的 1 个省	County of Foix: 1 department	フォワ伯領地方の1県
+d_gascogne	#8cc5d6	加斯科涅與比戈爾地區的 2 個省	加斯科涅与比戈尔地区的 2 个省	Gascony and Bigorre: 2 departments	ガスコーニュとビゴール地方の2県
+d_quercy	#a3c4a8	凱爾西與魯埃格地區的 3 個省	凯尔西与鲁埃格地区的 3 个省	Quercy and Rouergue: 3 departments	ケルシーとルエルグ地方の3県
+d_bearn	#e3c9a8	貝亞恩與下納瓦拉地區的 1 個省	贝亚恩与下纳瓦拉地区的 1 个省	Béarn and Lower Navarre: 1 department	ベアルンと低ナバラ地方の1県
+d_landes	#b8c4e0	朗德地區的 1 個省	朗德地区的 1 个省	Landes: 1 department	ランド地方の1県
+d_guyenne	#e0b8c4	吉耶納地區的 3 個省	吉耶纳地区的 3 个省	Guyenne: 3 departments	ギュイエンヌ地方の3県
+d_limousin	#e9c46a	利穆贊與馬爾凱地區的 3 個省	利穆赞与马尔凯地区的 3 个省	Limousin and Marche: 3 departments	リムーザンとマルシュ地方の3県
+d_poitou	#f4a261	普瓦圖、聖通日與昂古穆瓦地區的 4 個省	普瓦图、圣通日与昂古穆瓦地区的 4 个省	Poitou, Saintonge and Angoumois: 4 departments	ポワトゥー、サントンジュ、アングーモワ地方の4県
+d_vendee	#e76f51	下普瓦圖地區的 1 個省	下普瓦图地区的 1 个省	Lower Poitou: 1 department	低ポワトゥー地方の1県
+d_nantes	#8ab17d	南特地區（布列塔尼）地區的 1 個省	南特地区（布列塔尼）地区的 1 个省	Nantais (Brittany): 1 department	ナント地方（ブルターニュ）地方の1県
+d_bretagne	#2a9d8f	布列塔尼地區的 4 個省	布列塔尼地区的 4 个省	Brittany: 4 departments	ブルターニュ地方の4県
+d_anjou_maine	#6fb3c7	安茹與曼恩地區的 3 個省	安茹与曼恩地区的 3 个省	Anjou and Maine: 3 departments	アンジューとメーヌ地方の3県
+d_touraine	#b5a7d8	都蘭地區的 1 個省	都兰地区的 1 个省	Touraine: 1 department	トゥーレーヌ地方の1県
+d_berry	#d8a7b1	貝里地區的 2 個省	贝里地区的 2 个省	Berry: 2 departments	ベリー地方の2県
+d_orleanais	#c9b79c	奧爾良內地區的 3 個省	奥尔良内地区的 3 个省	Orléanais: 3 departments	オルレアネ地方の3県
+d_hnormandie	#f6b98a	上諾曼第地區的 2 個省	上诺曼第地区的 2 个省	Upper Normandy: 2 departments	高ノルマンディー地方の2県
+d_bnormandie	#a594cf	下諾曼第地區的 3 個省	下诺曼第地区的 3 个省	Lower Normandy: 3 departments	低ノルマンディー地方の3県
+d_corse	#cc94a0	科西嘉地區的 2 個省	科西嘉地区的 2 个省	Corsica: 2 departments	コルシカ地方の2県
+d_belgique	#8ab17d	比利時的 9 個省（1795–1814）	比利时的 9 个省（1795–1814）	Belgium: 9 departments (1795–1814)	ベルギーの9県（1795–1814）
+d_rhenanie	#d8a7b1	萊茵河左岸的 4 個省（1797–1814）	莱茵河左岸的 4 个省（1797–1814）	Left bank of the Rhine: 4 departments (1797–1814)	ライン左岸の4県（1797–1814）
+r_idf	#e9c46a	巴黎大區／法蘭西島大區	巴黎大区／法兰西岛大区	Paris Region / Île-de-France (region)	イル＝ド＝フランス地域圏
+r_pic	#f4a261	皮卡第大區	皮卡第大区	Picardy (region)	ピカルディ地域圏
+r_npc	#e76f51	北部—加萊海峽大區	北部—加莱海峡大区	Nord-Pas-de-Calais (region)	ノール＝パ・ド・カレー地域圏
+r_cha	#8ab17d	香檳—阿登大區	香槟—阿登大区	Champagne-Ardenne (region)	シャンパーニュ＝アルデンヌ地域圏
+r_lor	#2a9d8f	洛林大區	洛林大区	Lorraine (region)	ロレーヌ地域圏
+r_als	#6fb3c7	亞爾薩斯大區	亚尔萨斯大区	Alsace (region)	アルザス地域圏
+r_fco	#b5a7d8	弗朗什—孔泰大區	弗朗什—孔泰大区	Franche-Comté (region)	フランシュ＝コンテ地域圏
+r_bou	#d8a7b1	勃艮第大區	勃艮第大区	Burgundy (region)	ブルゴーニュ地域圏
+r_rha	#c9b79c	羅訥—阿爾卑斯大區	罗讷—阿尔卑斯大区	Rhône-Alpes (region)	ローヌ＝アルプ地域圏
+r_auv	#f6b98a	奧弗涅大區	奥弗涅大区	Auvergne (region)	オーヴェルニュ地域圏
+r_pac	#a594cf	普羅旺斯—阿爾卑斯—蔚藍海岸大區	普罗旺斯—阿尔卑斯—蔚蓝海岸大区	Provence-Alpes-Côte d'Azur (region)	プロヴァンス＝アルプ＝コート・ダジュール地域圏
+r_lro	#cc94a0	朗格多克—魯西永大區	朗格多克—鲁西永大区	Languedoc-Roussillon (region)	ラングドック＝ルシヨン地域圏
+r_mip	#d6c8b0	南部—庇里牛斯大區	南部—庇里牛斯大区	Midi-Pyrénées (region)	ミディ＝ピレネー地域圏
+r_aqu	#8cc5d6	阿基坦大區	阿基坦大区	Aquitaine (region)	アキテーヌ地域圏
+r_lim	#a3c4a8	利穆贊大區	利穆赞大区	Limousin (region)	リムーザン地域圏
+r_poc	#e3c9a8	普瓦圖—夏朗德大區	普瓦图—夏朗德大区	Poitou-Charentes (region)	ポワトゥー＝シャラント地域圏
+r_pdl	#b8c4e0	羅亞爾河地區大區	罗亚尔河地区大区	Pays de la Loire (region)	ペイ・ド・ラ・ロワール地域圏
+r_bre	#e0b8c4	布列塔尼大區	布列塔尼大区	Brittany (region)	ブルターニュ地域圏
+r_cen	#e9c46a	中央大區	中央大区	Centre (region)	サントル地域圏
+r_hno	#f4a261	上諾曼第大區	上诺曼第大区	Upper Normandy (region)	オート＝ノルマンディー地域圏
+r_bno	#e76f51	下諾曼第大區	下诺曼第大区	Lower Normandy (region)	バス＝ノルマンディー地域圏
+r_cor	#8ab17d	科西嘉大區	科西嘉大区	Corsica (region)	コルス地域圏
+n_idf	#8ab17d	法蘭西島大區	法兰西岛大区	Île-de-France (region)	イル＝ド＝フランス地域圏
+n_hdf	#2a9d8f	上法蘭西大區	上法兰西大区	Hauts-de-France (region)	オー＝ド＝フランス地域圏
+n_ge	#6fb3c7	大東部大區	大东部大区	Grand Est (region)	グラン・テスト地域圏
+n_bfc	#b5a7d8	勃艮第—弗朗什—孔泰大區	勃艮第—弗朗什—孔泰大区	Bourgogne-Franche-Comté (region)	ブルゴーニュ＝フランシュ＝コンテ地域圏
+n_ara	#d8a7b1	奧弗涅—羅訥—阿爾卑斯大區	奥弗涅—罗讷—阿尔卑斯大区	Auvergne-Rhône-Alpes (region)	オーヴェルニュ＝ローヌ＝アルプ地域圏
+n_pac	#c9b79c	普羅旺斯—阿爾卑斯—蔚藍海岸大區	普罗旺斯—阿尔卑斯—蔚蓝海岸大区	Provence-Alpes-Côte d'Azur (region)	プロヴァンス＝アルプ＝コート・ダジュール地域圏
+n_occ	#f6b98a	奧克西塔尼大區	奥克西塔尼大区	Occitanie (region)	オクシタニー地域圏
+n_naq	#a594cf	新阿基坦大區	新阿基坦大区	Nouvelle-Aquitaine (region)	ヌーヴェル＝アキテーヌ地域圏
+n_pdl	#cc94a0	羅亞爾河地區大區	罗亚尔河地区大区	Pays de la Loire (region)	ペイ・ド・ラ・ロワール地域圏
+n_bre	#d6c8b0	布列塔尼大區	布列塔尼大区	Brittany (region)	ブルターニュ地域圏
+n_cvl	#8cc5d6	中央—羅亞爾河谷大區	中央—罗亚尔河谷大区	Centre-Val de Loire (region)	サントル＝ヴァル・ド・ロワール地域圏
+n_nor	#a3c4a8	諾曼第大區	诺曼第大区	Normandy (region)	ノルマンディー地域圏
+n_cor	#e3c9a8	科西嘉大區	科西嘉大区	Corsica (region)	コルス地域圏

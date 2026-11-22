@@ -1,0 +1,34 @@
+# 墨西哥模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
+# 1786 年的新西班牙監政區與 1917 年憲法後的各州。
+1428-01	valle,tlaxcala,puebla,veracruz,oaxaca,guerrero,michoacan,jalisco,bajio,zacatecas,north_e,north_w,baja,tabasco,yucatan,chiapas,texas,california,southwest,guatemala,centam	none
+1786-12	valle,guerrero	i_mexico
+1786-12	puebla,tlaxcala	i_puebla
+1786-12	veracruz	i_veracruz
+1786-12	oaxaca	i_oaxaca
+1786-12	michoacan	i_valladolid
+1786-12	jalisco	i_guadalajara
+1786-12	bajio	i_guanajuato
+1786-12	zacatecas,north_e	i_slp
+1786-12	north_w	i_durango
+1786-12	yucatan,tabasco	i_merida
+1786-12	texas,southwest,california,baja	i_frontier
+1786-12	guatemala,centam,chiapas	i_guatemala
+1823-07	guatemala,centam	none
+1836-04	texas	none
+1848-02	california,southwest	none
+1917-02	valle	s_valle
+1917-02	tlaxcala	s_tlaxcala
+1917-02	puebla	s_puebla
+1917-02	veracruz	s_veracruz
+1917-02	oaxaca	s_oaxaca
+1917-02	guerrero	s_guerrero
+1917-02	michoacan	s_michoacan
+1917-02	jalisco	s_jalisco
+1917-02	bajio	s_bajio
+1917-02	zacatecas	s_zacatecas
+1917-02	north_e	s_north_e
+1917-02	north_w	s_north_w
+1917-02	baja	s_baja
+1917-02	tabasco	s_tabasco
+1917-02	yucatan	s_yucatan
+1917-02	chiapas	s_chiapas

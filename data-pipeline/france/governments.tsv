@@ -1,0 +1,25 @@
+# 法國模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為法國主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+laon	0843-08	0987-06	3.62	49.56	1	wfrancia	拉昂（西法蘭克）	拉昂（西法兰克）	Laon (West Francia)	ラン（西フランク）
+paris1	0987-07	1418-05	2.35	48.86	1	france	巴黎（卡佩、瓦盧瓦王朝）	巴黎（卡佩、瓦卢瓦王朝）	Paris (Capetians, Valois)	パリ（カペー朝、ヴァロワ朝）
+bourges	1418-06	1437-10	2.4	47.08	1	france	布爾日（查理七世的「布爾日王國」）	布尔日（查理七世的“布尔日王国”）	Bourges (Charles VII)	ブールジュ（シャルル7世）
+paris_lanc	1420-05	1436-04	2.35	48.86	0	england	巴黎（英格蘭的亨利六世）	巴黎（英格兰的亨利六世）	Paris (Henry VI of England)	パリ（イングランド王ヘンリー6世）
+paris2	1437-11	1682-04	2.35	48.86	1	france	巴黎（瓦盧瓦、波旁王朝）	巴黎（瓦卢瓦、波旁王朝）	Paris (Valois, Bourbons)	パリ（ヴァロワ朝、ブルボン朝）
+versailles	1682-05	1789-10	2.12	48.8	1	france	凡爾賽（路易十四至路易十六）	凡尔赛（路易十四至路易十六）	Versailles (Louis XIV–XVI)	ヴェルサイユ（ルイ14世～16世）
+paris3	1789-10	1870-09	2.35	48.86	1	france	巴黎（大革命、第一帝國、復辟、第二共和、第二帝國）	巴黎（大革命、第一帝国、复辟、第二共和、第二帝国）	Paris (Revolution to Second Empire)	パリ（革命から第二帝政まで）
+tours	1870-09	1871-02	0.69	47.39	1	france	圖爾、波爾多（國防政府）	图尔、波尔多（国防政府）	Tours and Bordeaux (Government of National Defence)	トゥール、ボルドー（国防政府）
+versailles2	1871-03	1879-11	2.12	48.8	1	france	凡爾賽（第三共和初期）	凡尔赛（第三共和初期）	Versailles (early Third Republic)	ヴェルサイユ（第三共和政初期）
+paris4	1879-11	1940-06	2.35	48.86	1	france	巴黎（第三共和）	巴黎（第三共和）	Paris (Third Republic)	パリ（第三共和政）
+vichy_g	1940-07	1944-08	3.43	46.13	1	vichy	維琪（法蘭西國）	维希（法兰西国）	Vichy (French State)	ヴィシー（フランス国）
+paris5	1944-08	2026-12	2.35	48.86	1	france	巴黎（臨時政府、第四、第五共和）	巴黎（临时政府、第四、第五共和）	Paris (Provisional Government, Fourth and Fifth Republics)	パリ（臨時政府、第四・第五共和政）
+rouen	0911-01	1204-06	1.1	49.44	0	normandy	盧昂（諾曼第公國）	鲁昂（诺曼底公国）	Rouen (Normandy)	ルーアン（ノルマンディー）
+bordeaux_e	1152-05	1453-10	-0.58	44.84	0	england	波爾多（英屬加斯科涅）	波尔多（英属加斯科涅）	Bordeaux (English Gascony)	ボルドー（英領ガスコーニュ）
+toulouse_g	0924-01	1271-08	1.44	43.6	0	toulouse	土魯斯（伯國）	图卢兹（伯国）	Toulouse (county)	トゥールーズ（伯領）
+nantes_g	0845-11	1532-08	-1.55	47.22	0	brittany	南特、雷恩（布列塔尼）	南特、雷恩（布列塔尼）	Nantes and Rennes (Brittany)	ナント、レンヌ（ブルターニュ）
+dijon	1363-09	1477-01	5.04	47.32	0	burgundy	第戎（勃艮第公國）	第戎（勃艮第公国）	Dijon (Burgundy)	ディジョン（ブルゴーニュ）
+brussels	1477-01	1795-10	4.35	50.85	0	habsburg	布魯塞爾（哈布斯堡、西班牙、奧地利尼德蘭）	布鲁塞尔（哈布斯堡、西班牙、奥地利尼德兰）	Brussels (Habsburg, Spanish, Austrian Netherlands)	ブリュッセル（ハプスブルク領ネーデルラント）
+avignon	1309-03	1377-01	4.81	43.95	0	papal	亞維農（教廷）	阿维尼翁（教廷）	Avignon (the Papacy)	アヴィニョン（教皇庁）
+nancy	1048-01	1766-02	6.18	48.69	0	lorraine	南錫（洛林公國）	南锡（洛林公国）	Nancy (Lorraine)	ナンシー（ロレーヌ）
+pau	1484-01	1620-10	-0.37	43.3	0	bearn	波城（貝亞恩、納瓦拉）	波城（贝阿恩、纳瓦拉）	Pau (Béarn, Navarre)	ポー（ベアルン、ナバラ）
+chambery	1295-01	1563-02	5.92	45.57	0	savoy	尚貝里（薩伏依）	尚贝里（萨伏依）	Chambéry (Savoy)	シャンベリ（サヴォイア）
+aix	1032-09	1481-12	5.45	43.53	0	provence	艾克斯（普羅旺斯伯國）	艾克斯（普罗旺斯伯国）	Aix (Provence)	エクス（プロヴァンス）
+brussels_b	1830-10	2026-12	4.35	50.85	0	belgium	布魯塞爾（比利時）	布鲁塞尔（比利时）	Brussels (Belgium)	ブリュッセル（ベルギー）

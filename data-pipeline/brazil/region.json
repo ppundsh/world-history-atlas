@@ -1,0 +1,44 @@
+{
+ "start": "1500-04",
+ "end": "2026-12",
+ "units": "brazil_units.geojson",
+ "merge": true,
+ "groups": {
+  "brazil": [
+   "bahia",
+   "pernambuco",
+   "ceara",
+   "maranhao",
+   "para",
+   "amazonas",
+   "acre",
+   "rondonia",
+   "mato_grosso",
+   "goias",
+   "minas",
+   "rio",
+   "sao_paulo",
+   "parana",
+   "rio_grande"
+  ],
+  "coast": [
+   "bahia",
+   "pernambuco",
+   "rio",
+   "sao_paulo"
+  ],
+  "interior": [
+   "minas",
+   "goias",
+   "mato_grosso",
+   "rondonia",
+   "amazonas",
+   "acre"
+  ],
+  "north": [
+   "para",
+   "maranhao",
+   "ceara"
+  ]
+ }
+}

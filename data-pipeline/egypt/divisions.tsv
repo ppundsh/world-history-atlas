@@ -1,0 +1,26 @@
+# 埃及模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在埃及或未劃分）	（不在埃及或未划分）	(outside Egypt / not drawn)	（エジプト外・区分なし）
+t_lower	#e9c46a	下埃及（三角洲）	下埃及（三角洲）	Lower Egypt (the Delta)	下エジプト（デルタ）
+t_upper	#e76f51	上埃及（尼羅河谷）	上埃及（尼罗河谷）	Upper Egypt (the Nile valley)	上エジプト（ナイル渓谷）
+r_aeg	#2a9d8f	埃及行省（羅馬）	埃及行省（罗马）	Aegyptus (Roman province)	アエギュプトゥス（ローマの属州）
+r_ae2	#6fb3c7	埃及行省（亞歷山卓一帶）	埃及行省（亚历山卓一带）	Aegyptus (around Alexandria)	アエギュプトゥス
+r_aug	#b5a7d8	奧古斯塔姆尼卡行省（東三角洲）	奥古斯塔姆尼卡行省（东三角洲）	Augustamnica (eastern Delta)	アウグスタムニカ
+r_arc	#d8a7b1	阿卡迪亞行省（中埃及）	阿卡迪亚行省（中埃及）	Arcadia (Middle Egypt)	アルカディア
+r_the	#c9b79c	底比斯行省（上埃及）	底比斯行省（上埃及）	Thebaid (Upper Egypt)	テーバイス
+r_lib	#f6b98a	下利比亞行省	下利比亚行省	Libya Inferior	下リビア
+a_low	#a594cf	下埃及（阿斯法勒）	下埃及（阿斯法勒）	Lower Egypt (Asfal al-Ard)	下エジプト
+a_sa	#cc94a0	上埃及（薩伊德）	上埃及（萨伊德）	Upper Egypt (al-Sa'id)	上エジプト（サイード）
+o_eya	#d6c8b0	埃及行省（鄂圖曼埃亞萊特）	埃及行省（鄂图曼埃亚莱特）	Egypt Eyalet (Ottoman)	エジプト州（オスマン）
+g_alex	#e9c46a	亞歷山卓與貝海拉（2 省）	亚历山卓与贝海拉（2 省）	Alexandria and Beheira (2 governorates)	Alexandria and Beheira（県）
+g_delta_w	#f4a261	西三角洲（加爾比亞、謝赫村、米努夫）（3 省）	西三角洲（加尔比亚、谢赫村、米努夫）（3 省）	Western Delta (3 governorates)	Western Delta（県）
+g_delta_e	#e76f51	東三角洲（達卡利亞、杜姆亞特、東部）（3 省）	东三角洲（达卡利亚、杜姆亚特、东部）（3 省）	Eastern Delta (3 governorates)	Eastern Delta（県）
+g_memphis	#8ab17d	開羅、吉薩、蓋勒尤卜（3 省）	开罗、吉萨、盖勒尤卜（3 省）	Cairo, Giza, Qalyubia (3 governorates)	Cairo, Giza, Qalyubia（県）
+g_canal	#2a9d8f	運河區（塞得港、伊斯梅利亞、蘇伊士）（3 省）	运河区（塞得港、伊斯梅利亚、苏伊士）（3 省）	Canal governorates (3 governorates)	Canal governorates（県）
+g_fayyum	#6fb3c7	法尤姆與貝尼蘇韋夫（2 省）	法尤姆与贝尼苏韦夫（2 省）	Faiyum and Beni Suef (2 governorates)	Faiyum and Beni Suef（県）
+g_middle	#b5a7d8	明亞與艾斯尤特（2 省）	明亚与艾斯尤特（2 省）	Minya and Asyut (2 governorates)	Minya and Asyut（県）
+g_thebes	#d8a7b1	索哈傑、基納、樂蜀（3 省）	索哈杰、基纳、乐蜀（3 省）	Sohag, Qena, Luxor (3 governorates)	Sohag, Qena, Luxor（県）
+g_aswan	#c9b79c	亞斯文省	亚斯文省	Aswan governorate	Aswan（県）
+g_redsea	#f6b98a	紅海省	红海省	Red Sea governorate	Red Sea（県）
+g_oases	#a594cf	新河谷省	新河谷省	New Valley governorate	New Valley（県）
+g_marmarica	#cc94a0	馬特魯省	马特鲁省	Matrouh governorate	Matrouh（県）
+g_sinai	#d6c8b0	北西奈與南西奈（2 省）	北西奈与南西奈（2 省）	North and South Sinai (2 governorates)	North and South Sinai（県）

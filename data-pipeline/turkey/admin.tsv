@@ -1,0 +1,37 @@
+# 土耳其模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
+# 鄂圖曼約 1590 年的州（埃亞萊特）與共和國各省。
+1071-08	thrace,istanbul,bithynia,mysia,ionia,caria,phrygia,antalya,cilicia,hatay,konya,ankara,cappadocia,paphlagonia,pontus,trebizond,erzurum,van,diyarbakir,urfa,greece,bulgaria,syria,cyprus	none
+1590-01	thrace,istanbul,greece,bulgaria	e_rumeli
+1590-01	bithynia,mysia,ionia,caria,phrygia,antalya,ankara,paphlagonia	e_anadolu
+1590-01	konya	e_karaman
+1590-01	cappadocia,pontus	e_rum
+1590-01	trebizond	e_trabzon
+1590-01	erzurum	e_erzurum
+1590-01	van	e_van
+1590-01	diyarbakir,urfa	e_diyarbekir
+1590-01	cilicia	e_adana
+1590-01	hatay,syria	e_aleppo
+1590-01	cyprus	e_cyprus
+1829-09	greece	none
+1878-07	bulgaria,cyprus	none
+1918-10	syria,hatay	none
+1923-10	thrace	p_thrace
+1923-10	istanbul	p_istanbul
+1923-10	bithynia	p_bithynia
+1923-10	mysia	p_mysia
+1923-10	ionia	p_ionia
+1923-10	caria	p_caria
+1923-10	phrygia	p_phrygia
+1923-10	antalya	p_antalya
+1923-10	cilicia	p_cilicia
+1923-10	hatay	p_hatay
+1923-10	konya	p_konya
+1923-10	ankara	p_ankara
+1923-10	cappadocia	p_cappadocia
+1923-10	paphlagonia	p_paphlagonia
+1923-10	pontus	p_pontus
+1923-10	trebizond	p_trebizond
+1923-10	erzurum	p_erzurum
+1923-10	van	p_van
+1923-10	diyarbakir	p_diyarbakir
+1923-10	urfa	p_urfa

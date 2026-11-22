@@ -1,0 +1,29 @@
+# 埃及模式：行政區劃（逐月）。欄位：年月	單元	行政區。上下埃及、羅馬行省、阿拉伯時期的上下埃及、鄂圖曼行省與現代各省，以今日單元概略標示。
+# 來源：維基百科「古埃及」「羅馬埃及」「埃及行政區劃」
+-3100-01	alex,delta_w,delta_e,memphis,canal,fayyum,middle,thebes,aswan,redsea,oases,marmarica,sinai,nubia,sennar,canaan,cyrenaica	none
+-3100-01	alex,delta_w,delta_e,memphis,canal	t_lower
+-3100-01	fayyum,middle,thebes,aswan	t_upper
+-30-08	alex,delta_w,delta_e,memphis,canal,fayyum,middle,thebes,aswan,oases,redsea,marmarica,sinai	r_aeg
+0381-01	alex,delta_w	r_ae2
+0381-01	delta_e,canal,sinai	r_aug
+0381-01	memphis,fayyum,middle	r_arc
+0381-01	thebes,aswan,oases,redsea	r_the
+0381-01	marmarica	r_lib
+0641-09	alex,delta_w,delta_e,memphis,canal,sinai,marmarica	a_low
+0641-09	fayyum,middle,thebes,aswan,oases,redsea	a_sa
+1517-01	alex,delta_w,delta_e,memphis,canal,sinai,marmarica,fayyum,middle,thebes,aswan,oases,redsea	o_eya
+1960-01	alex	g_alex
+1960-01	delta_w	g_delta_w
+1960-01	delta_e	g_delta_e
+1960-01	memphis	g_memphis
+1960-01	canal	g_canal
+1960-01	fayyum	g_fayyum
+1960-01	middle	g_middle
+1960-01	thebes	g_thebes
+1960-01	aswan	g_aswan
+1960-01	redsea	g_redsea
+1960-01	oases	g_oases
+1960-01	marmarica	g_marmarica
+1960-01	sinai	g_sinai
+1967-06	sinai	none
+1982-04	sinai	g_sinai

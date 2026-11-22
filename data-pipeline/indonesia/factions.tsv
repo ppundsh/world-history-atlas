@@ -1,0 +1,20 @@
+# 印度尼西亞模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+local	#cdb891	地方王國與部族	地方王国与部族	Local kingdoms and peoples	在地の王国・諸部族
+srivijaya	#bf8f3a	室利佛逝	室利佛逝	Srivijaya	シュリーヴィジャヤ
+mataram1	#8d6e63	古馬打蘭（夏連特拉、珊闍耶）	古马打兰（夏连特拉、珊阇耶）	Medang (Shailendra, Sanjaya)	古マタラム（シャイレーンドラ朝など）
+kediri	#a1887f	諫義里、新柯沙里	谏义里、新柯沙里	Kediri and Singhasari	クディリ、シンガサリ
+majapahit	#c62828	滿者伯夷	满者伯夷	Majapahit	マジャパヒト王国
+aceh_s	#1b5e20	亞齊蘇丹國	亚齐苏丹国	Aceh Sultanate	アチェ王国
+demak	#2e7d32	淡目等沿海伊斯蘭王國	淡目等沿海伊斯兰王国	Demak and the coastal sultanates	ドゥマクなど沿岸イスラーム王国
+mataram2	#00695c	馬打蘭蘇丹國	马打兰苏丹国	Mataram Sultanate	マタラム王国
+banten_s	#43a047	萬丹蘇丹國	万丹苏丹国	Banten Sultanate	バンテン王国
+gowa	#5d8a3a	哥瓦—塔洛蘇丹國（望加錫）	哥瓦—塔洛苏丹国（望加锡）	Gowa-Tallo (Makassar)	ゴワ王国（マカッサル）
+ternate	#689f38	德那第、蒂多雷	德那第、蒂多雷	Ternate and Tidore	テルナテ、ティドレ
+portugal	#1565c0	葡萄牙	葡萄牙	Portugal	ポルトガル
+voc	#ef8a17	荷蘭東印度公司	荷兰东印度公司	Dutch East India Company (VOC)	オランダ東インド会社
+dutch	#f57c00	荷屬東印度	荷属东印度	Dutch East Indies	オランダ領東インド
+britain	#c8102e	英國（萊佛士時期）	英国（莱佛士时期）	Britain (the Raffles interregnum)	イギリス（ラッフルズ期）
+japan	#bc002d	日本占領	日本占领	Japanese occupation	日本軍政
+republic	#e8112d	印度尼西亞共和國	印度尼西亚共和国	Republic of Indonesia	インドネシア共和国
+usi	#d17a7a	印尼聯邦共和國各邦	印尼联邦共和国各邦	States of the United States of Indonesia	インドネシア連邦の諸国
+timor	#000000	東帝汶	东帝汶	Timor-Leste	東ティモール

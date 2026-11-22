@@ -1,4 +1,4 @@
-# 印度模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 印度模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	in_bombay_thane	1853-04		72.83,18.94 72.97,19.19	孟買—塔那鐵路	Bombay–Thane railway	ボンベイ—ターネー鉄道	亞洲第一條客運鐵路。	The first passenger railway in Asia.	アジア初の旅客鉄道。	印度鐵路	Indian Railways
 rail	in_eir	1866-08		88.36,22.57 87.3,23.5 85.14,25.6 82.98,25.32 80.35,26.45 78.0,27.18 77.23,28.66	東印度鐵路（加爾各答—德里）	East Indian Railway (Calcutta–Delhi)	東インド鉄道（カルカッタ—デリー）	恆河平原的幹線。	The trunk line of the Gangetic plain.	ガンジス平原の幹線。	東印度鐵路公司	East Indian Railway Company
 rail	in_gip	1870-03		72.83,18.94 73.79,20.0 76.0,21.0 79.08,21.15 81.9,25.43	大印度半島鐵路接通東印度鐵路（孟買—阿拉哈巴德）	GIP Railway joins the East Indian (Bombay–Allahabad)	大インド半島鉄道（ボンベイ—アラーハーバード）	孟買與加爾各答首次以鐵路相連。	Bombay and Calcutta joined by rail for the first time.	ボンベイとカルカッタが鉄道で結ばれる。	大印度半島鐵路	Great Indian Peninsula Railway
@@ -21,3 +21,12 @@ solar	in_bhadla	2018-01		71.9,27.54	巴德拉太陽能園區	Bhadla Solar Park	�
 hsr	in_vande	2019-02		77.21,28.61 80.35,26.45 82.98,25.32	「巴拉特之星」高速列車（德里—瓦拉納西）	Vande Bharat Express (Delhi–Varanasi)	ヴァンデ・バーラト急行	國產半高速列車首航。	The first home-built semi-high-speed train.	国産準高速列車。	巴拉特之星特快	Vande Bharat Express
 cable	in_sea_me_we	1999-08		72.88,19.07 60.0,20.0 43.0,12.5	SEA-ME-WE 3 海纜（孟買登陸）	SEA-ME-WE 3 (landing in Mumbai)	SEA-ME-WE 3（ムンバイ陸揚げ）	連接歐亞的海纜。	A Europe–Asia cable.	欧亜ケーブル。	SEA-ME-WE 3	SEA-ME-WE 3
 fiber	in_bharatnet	2017-12		77.21,28.61 80.95,26.85 85.14,25.6 88.36,22.57 85.82,20.27 80.27,13.08 77.59,12.97 72.88,19.07 72.58,23.03 77.21,28.61	BharatNet 鄉村光纖網第一期	BharatNet rural fibre (phase one)	BharatNet 農村光ファイバー網	連接十萬個村議會。	Connecting 100,000 village councils.	10万の村議会を接続。	BharatNet	BharatNet
+road	in_gtroad	1540-01		88.36,22.57 86.98,23.68 84.99,24.79 82.97,25.32 81.85,25.45 80.33,26.45 78.0,27.18 77.21,28.63 76.78,30.73 74.87,31.63 74.34,31.55 73.05,33.6 71.58,34.0	大幹道（舍爾沙）	Grand Trunk Road (Sher Shah)	グランド・トランク・ロード	舍爾沙重建的孟加拉至喀布爾大道。	Sher Shah's great road from Bengal towards Kabul.	シェール・シャーの大幹道。	大干道	Grand Trunk Road
+bridge	in_howrah	1943-02		88.347,22.585	豪拉橋	Howrah Bridge	ハウラー橋	加爾各答胡格利河上的懸臂橋。	The cantilever bridge over the Hooghly at Kolkata.	コルカタの片持ち橋。	豪拉桥	Howrah Bridge
+highway	in_yamuna	2012-08		77.53,28.47 77.6,28.0 77.67,27.49 78.0,27.18	亞穆納高速公路（大諾伊達—阿格拉）	Yamuna Expressway	ヤムナー高速道路	德里通往泰姬瑪哈陵的高速公路。	The expressway from Delhi to the Taj Mahal.	デリーとアーグラを結ぶ。		Yamuna Expressway
+bridge	in_atalsetu	2024-01		72.92,18.95	阿塔爾海橋（孟買跨港大橋）	Atal Setu (Mumbai Trans Harbour Link)	アタル・セトゥ	印度最長的跨海大橋。	India's longest sea bridge.	インド最長の海上橋。		Mumbai Trans Harbour Link
+port	in_mumbai_port	1873-06		72.84,18.94	孟買港	Mumbai Port	ムンバイ港	英屬印度最大的港口。	The great port of British India.	英領インド最大の港。	孟买港	Mumbai Port
+port	in_kolkata_port	1870-10		88.32,22.55	加爾各答港	Kolkata Port	コルカタ港	印度最古老的大型港口之一。	One of India's oldest major ports.	インド最古級の港。	加尔各答港	Kolkata Port
+port	in_jnpt	1989-05		72.95,18.95	賈瓦哈拉爾・尼赫魯港	Jawaharlal Nehru Port	ジャワハルラール・ネルー港	印度最大的貨櫃港。	India's busiest container port.	インド最大のコンテナ港。	贾瓦哈拉尔·尼赫鲁港	Jawaharlal Nehru Port
+airport	in_del	1962-01		77.1,28.56	德里英迪拉・甘地國際機場	Indira Gandhi International Airport	インディラ・ガンディー国際空港	印度最繁忙的機場。	India's busiest airport.	インド最大の空港。	英迪拉·甘地国际机场	Indira Gandhi International Airport
+airport	in_bom	1942-01		72.87,19.09	孟買機場（賈特拉帕蒂・希瓦吉）	Chhatrapati Shivaji Maharaj International Airport	ムンバイ国際空港	印度第二大機場。	India's second-busiest airport.	インド第2の空港。	贾特拉帕蒂·希瓦吉国际机场	Chhatrapati Shivaji Maharaj International Airport

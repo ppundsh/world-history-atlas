@@ -1,4 +1,4 @@
-# 中國（1911–1951）模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 中國（1911–1951）模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	cn_jinghan	1906-04		116.4,39.9 115.47,38.87 114.5,36.6 114.3,34.8 114.04,32.13 114.3,30.6	京漢鐵路（盧漢鐵路）	Beijing–Hankou railway	京漢鉄道	北京至漢口。	Beijing to Hankou.	北京—漢口。	京漢鐵路	Beijing–Hankou railway
 rail	cn_jingzhang	1909-09		116.4,39.9 116.0,40.35 115.5,40.5 114.88,40.82	京張鐵路	Beijing–Zhangjiakou railway	京張鉄道	詹天佑主持，中國自建的第一條幹線鐵路。	Led by Zhan Tianyou, China's first trunk line built by Chinese engineers.	詹天佑が建設した中国自前の初の幹線。	京張鐵路	Imperial Peking–Kalgan Railway
 rail	cn_jinpu	1912-12		117.2,39.13 116.99,36.67 117.18,34.26 117.38,32.92 118.72,32.08	津浦鐵路	Tianjin–Pukou railway	津浦鉄道	天津至浦口（南京對岸）。	Tianjin to Pukou, across from Nanjing.	天津—浦口。	津浦鐵路	Tianjin–Pukou railway
@@ -10,3 +10,10 @@ road	cn_ledo	1945-01		95.5,27.3 97.0,26.0 97.5,24.7 98.6,24.43	中印公路（�
 hydro	cn_fengman	1943-03		126.68,43.73	豐滿水電站	Fengman dam	豊満ダム	日本在滿洲興建的大型水電站。	A large hydro plant built by Japan in Manchuria.	満洲国期に日本が建設。	豐滿水電站	Fengman Dam
 industry	cn_anshan	1919-04		122.99,41.11	鞍山製鐵所	Anshan ironworks	鞍山製鉄所	滿鐵經營，後為鞍鋼。	Run by the South Manchuria Railway; later Angang.	満鉄経営、のちの鞍鋼。	鞍山鋼鐵	Ansteel Group
 airport	cn_hump	1942-05	1945-11	102.74,24.99	駝峰航線	The Hump airlift	ハンプ越え空輸	由印度阿薩姆飛越喜馬拉雅運補昆明。	Flights from Assam over the Himalayas to Kunming.	アッサムから昆明への空輸。	駝峰航線	The Hump
+road	cn_xilan	1935-05		108.94,34.34 107.14,34.36 106.67,35.54 105.73,35.6 104.62,35.58 103.83,36.06	西蘭公路	Xi'an–Lanzhou highway	西蘭公路	通往西北的幹線公路，抗戰時為對蘇聯運輸線。	The road to the north-west, a supply route from the Soviet Union in the war.	西北への幹線道路。	西兰公路	
+road	cn_chuanqian	1935-06		106.71,26.58 106.92,27.73 106.82,28.55 106.55,29.56	川黔公路（重慶—貴陽）	Sichuan–Guizhou highway	川黔公路	抗戰大後方的主要公路，有著名的「二十四道拐」。	A main road of the wartime interior, with the famous 24 bends.	抗戦後方の幹線道路。	川黔公路	
+bridge	cn_luokou	1912-11		116.98,36.72	濟南濼口黃河鐵路大橋	Luokou Yellow River Bridge	濼口黄河鉄橋	津浦鐵路跨越黃河的大橋。	The Tianjin–Pukou Railway's bridge over the Yellow River.	津浦鉄道の黄河橋。	泺口黄河铁路大桥	
+port	cn_shanghai_port	1911-09		121.5,31.25	上海港（黃浦江）	Port of Shanghai	上海港	民國時期遠東最大的商港。	The Far East's greatest trading port in the Republican era.	極東最大の商港。	上海港	Port of Shanghai
+port	cn_dalian	1911-09		121.65,38.93	大連港	Port of Dalian	大連港	日本租借下的東北門戶。	Manchuria's gateway under Japanese lease.	日本租借下の港。	大连港	Port of Dalian
+airport	cn_longhua	1917-01		121.45,31.17	上海龍華機場	Longhua Airport	上海龍華空港	中國航空公司的基地。	Base of China National Aviation Corporation.	中国航空公司の拠点。	上海龙华机场	Shanghai Longhua Airport
+airport	cn_baishiyi	1938-01		106.38,29.5	重慶白市驛機場	Chongqing Baishiyi Airport	重慶白市駅飛行場	抗戰陪都的主要機場。	The main airfield of the wartime capital.	戦時首都の飛行場。	重庆白市驿机场	

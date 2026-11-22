@@ -1,0 +1,29 @@
+# 伊朗模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為伊朗主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+ecbatana	-550-01	-550-05	48.51	34.8	1	media	埃克巴坦那（米底）	埃克巴坦那（米底）	Ecbatana (Media)	エクバタナ（メディア）
+pasargadae	-550-06	-518-01	53.17	30.19	1	achaemenid	帕薩爾加德（居魯士）	帕萨尔加德（居鲁士）	Pasargadae (Cyrus)	パサルガダエ（キュロス）
+persepolis	-518-01	-330-07	52.89	29.94	1	achaemenid	波斯波利斯、蘇薩	波斯波利斯、苏萨	Persepolis and Susa	ペルセポリス、スーサ
+babylon_a	-330-07	-312-01	44.42	32.54	1	macedon	巴比倫（亞歷山大）	巴比伦（亚历山大）	Babylon (Alexander)	バビロン（アレクサンドロス）
+seleucia	-312-01	-141-07	44.52	33.1	0	seleucid	塞琉西亞	塞琉西亚	Seleucia	セレウキア
+nisa	-247-01	-141-07	58.2	37.95	1	parthia	尼薩（安息）	尼萨（安息）	Nisa (Parthia)	ニサ（パルティア）
+ctesiphon1	-141-07	0224-04	44.58	33.09	1	parthia	泰西封（安息）	泰西封（安息）	Ctesiphon (Parthia)	クテシフォン（パルティア）
+ctesiphon2	0224-04	0637-03	44.58	33.09	1	sasanian	泰西封（薩珊）	泰西封（萨珊）	Ctesiphon (Sasanians)	クテシフォン（サーサーン朝）
+baghdad	0762-07	1258-02	44.38	33.31	0	caliphate	巴格達（阿拔斯哈里發）	巴格达（阿拔斯哈里发）	Baghdad (Abbasid caliphs)	バグダード（アッバース朝）
+bukhara	0900-01	0999-01	64.42	39.77	0	samanid	布哈拉（薩曼王朝）	布哈拉（萨曼王朝）	Bukhara (Samanids)	ブハラ（サーマーン朝）
+shiraz_b	0934-01	1055-12	52.53	29.61	1	buyid	設拉子、雷伊（白益王朝）	设拉子、雷伊（白益王朝）	Shiraz and Rey (Buyids)	シーラーズ、レイ（ブワイフ朝）
+ghazni	0962-01	1186-01	68.42	33.55	0	ghaznavid	加茲尼	加兹尼	Ghazni	ガズニ
+isfahan_s	1051-01	1157-01	51.67	32.65	1	seljuk	伊斯法罕（塞爾柱）	伊斯法罕（塞尔柱）	Isfahan (Seljuks)	イスファハーン（セルジューク朝）
+urgench	1194-01	1221-01	59.15	42.33	1	khwarazm	玉龍傑赤（花剌子模）	玉龙杰赤（花剌子模）	Urgench (Khwarazm)	ウルゲンチ（ホラズム）
+tabriz_i	1265-01	1305-01	46.29	38.08	1	ilkhanate	大不里士（伊兒汗國）	大不里士（伊儿汗国）	Tabriz (Ilkhanate)	タブリーズ（イルハン朝）
+soltaniyeh	1305-01	1335-11	48.8	36.43	1	ilkhanate	蘇丹尼耶（伊兒汗國）	苏丹尼耶（伊儿汗国）	Soltaniyeh (Ilkhanate)	スルターニーエ（イルハン朝）
+samarkand	1370-04	1405-02	66.97	39.65	1	timurid	撒馬爾罕（帖木兒）	撒马尔罕（帖木儿）	Samarkand (Timur)	サマルカンド（ティムール）
+herat	1405-02	1507-01	62.2	34.35	0	timurid	赫拉特（帖木兒王朝）	赫拉特（帖木儿王朝）	Herat (Timurids)	ヘラート（ティムール朝）
+tabriz_t	1410-01	1501-07	46.29	38.08	1	turkmen	大不里士（黑羊、白羊王朝）	大不里士（黑羊、白羊王朝）	Tabriz (Turkmen dynasties)	タブリーズ（トルクメン系王朝）
+tabriz_s	1501-07	1555-01	46.29	38.08	1	safavid	大不里士（薩法維）	大不里士（萨法维）	Tabriz (Safavids)	タブリーズ（サファヴィー朝）
+qazvin	1555-01	1598-01	50.0	36.27	1	safavid	加茲溫（薩法維）	加兹温（萨法维）	Qazvin (Safavids)	ガズヴィーン（サファヴィー朝）
+isfahan_sf	1598-01	1722-10	51.67	32.65	1	safavid	伊斯法罕（阿拔斯大帝起）	伊斯法罕（阿拔斯大帝起）	Isfahan (from Abbas the Great)	イスファハーン（アッバース1世以降）
+mashhad	1736-01	1747-06	59.6	36.3	1	afsharid	馬什哈德（納迪爾沙）	马什哈德（纳迪尔沙）	Mashhad (Nader Shah)	マシュハド（ナーディル・シャー）
+shiraz_z	1751-01	1794-01	52.53	29.61	1	zand	設拉子（贊德王朝）	设拉子（赞德王朝）	Shiraz (Zands)	シーラーズ（ザンド朝）
+tehran	1786-01	2026-12	51.39	35.69	1	qajar	德黑蘭	德黑兰	Tehran	テヘラン
+kandahar	1747-06	1776-01	65.71	31.61	0	afghan	坎達哈（杜蘭尼）	坎大哈（杜兰尼）	Kandahar (Durranis)	カンダハール（ドゥッラーニー朝）
+kabul	1776-01	2026-12	69.17	34.53	0	afghan	喀布爾（阿富汗）	喀布尔（阿富汗）	Kabul (Afghanistan)	カーブル（アフガニスタン）
+baghdad_i	1932-10	2026-12	44.38	33.31	0	iraq	巴格達（伊拉克）	巴格达（伊拉克）	Baghdad (Iraq)	バグダード（イラク）

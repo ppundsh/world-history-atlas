@@ -1,0 +1,28 @@
+# 法國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+canal	fr_midi	1681-05		1.44,43.6 1.95,43.32 2.35,43.21 3.0,43.18 3.5,43.33	米迪運河	Canal du Midi	ミディ運河	連接土魯斯與地中海的運河，世界遺產。	The canal from Toulouse to the Mediterranean; a World Heritage site.	トゥールーズと地中海を結ぶ運河。	米迪运河	Canal du Midi
+rail	fr_stgermain	1837-08		2.32,48.88 2.09,48.9	巴黎—聖日耳曼昂萊鐵路	Paris–Saint-Germain railway	パリ—サン＝ジェルマン鉄道	法國第一條載客鐵路。	France's first passenger railway.	フランス初の旅客鉄道。		
+rail	fr_rouen	1843-05		2.32,48.88 1.9,49.0 1.1,49.44	巴黎—盧昂鐵路	Paris–Rouen railway	パリ—ルーアン鉄道	英國資金與工程師參與興建的早期幹線。	An early trunk line built with British money and engineers.	初期の幹線鉄道。		
+rail	fr_plm	1856-07		2.37,48.84 3.58,47.8 5.04,47.32 4.84,45.76 5.37,43.3	巴黎—里昂—地中海鐵路（PLM）	Paris–Lyon–Mediterranean railway	PLM鉄道	連接巴黎、里昂與馬賽的幹線。	The trunk line from Paris through Lyon to Marseille.	パリ・リヨン・マルセイユ幹線。		
+metro	fr_metro	1900-07		2.35,48.86	巴黎地鐵	Paris Métro	パリ・メトロ	為萬國博覽會開通的地鐵。	Opened for the World's Fair.	万博に合わせて開業。	巴黎地铁	Paris Métro
+power	fr_genissiat	1948-01		5.81,46.05	熱尼西亞水壩	Génissiat Dam	ジェニシア・ダム	隆河上的大型水力發電廠。	A large hydroelectric dam on the Rhône.	ローヌ川のダム。		
+dam	fr_serreponcon	1960-01		6.33,44.52	塞爾蓬松水壩	Serre-Ponçon Dam	セール＝ポンソン・ダム	西歐最大的人工湖之一。	One of western Europe's largest reservoirs.	西欧最大級の人造湖。		
+hydro	fr_rance	1966-11		-2.02,48.62	朗斯潮汐發電廠	Rance Tidal Power Station	ランス潮力発電所	世界第一座潮汐發電廠。	The world's first tidal power station.	世界初の潮力発電所。	朗斯潮汐发电站	Rance Tidal Power Station
+nuclear	fr_fessenheim	1977-12	2020-06	7.56,47.9	費瑟南核電廠	Fessenheim Nuclear Power Plant	フェッセンハイム原子力発電所	法國最老的核電廠，2020 年關閉。	France's oldest nuclear plant, closed in 2020.	2020年に閉鎖。		
+nuclear	fr_gravelines	1980-03		2.13,51.01	格拉夫林核電廠	Gravelines Nuclear Power Plant	グラヴリーヌ原子力発電所	西歐最大的核電廠之一。	One of western Europe's largest nuclear plants.	西欧最大級の原発。		
+airport	fr_cdg	1974-03		2.55,49.01	戴高樂機場	Charles de Gaulle Airport	シャルル・ド・ゴール空港	巴黎的主要國際機場。	Paris's main international airport.	パリの主要国際空港。	巴黎夏尔·戴高乐机场	Charles de Gaulle Airport
+space	fr_toulouse	1972-01		1.36,43.63	土魯斯航太中心（空中巴士）	Toulouse aerospace (Airbus)	トゥールーズ航空宇宙（エアバス）	空中巴士總部與法國航太中心。	Airbus headquarters and France's aerospace centre.	エアバス本社。		
+hsr	fr_lgv_se	1981-09		2.37,48.84 4.0,47.0 4.84,45.76	東南高速線（巴黎—里昂）	LGV Sud-Est (Paris–Lyon)	LGV南東線	第一條 TGV 高速鐵路。	The first TGV high-speed line.	最初のTGV路線。	东南高速铁路	LGV Sud-Est
+hsr	fr_lgv_atl	1989-09		2.32,48.84 1.5,48.0 0.69,47.39 -1.68,48.11	大西洋高速線	LGV Atlantique	LGV大西洋線	通往布列塔尼與西南部。	To Brittany and the south-west.	ブルターニュ・南西部へ。		
+hsr	fr_lgv_nord	1993-05		2.36,48.88 2.8,49.85 3.07,50.64 1.85,50.92	北方高速線	LGV Nord	LGV北線	連接里爾、海底隧道與布魯塞爾。	To Lille, the Channel Tunnel and Brussels.	リール・英仏海峡トンネルへ。		
+tunnel	fr_channel	1994-05		1.78,50.92	英法海底隧道	Channel Tunnel	英仏海峡トンネル	連接法國與英國的海底鐵路隧道。	The undersea rail tunnel to Britain.	英仏を結ぶ海底トンネル。	英法海底隧道	Channel Tunnel
+hsr	fr_lgv_med	2001-06		4.84,45.76 4.89,44.93 4.81,43.95 5.37,43.3	地中海高速線	LGV Méditerranée	LGV地中海線	高速鐵路延伸到馬賽。	High-speed rail to Marseille.	マルセイユへ。		
+bridge	fr_millau	2004-12		3.02,44.08	米約高架橋	Millau Viaduct	ミヨー橋	世界最高的橋樑之一。	One of the world's tallest bridges.	世界有数の高さの橋。	米约高架桥	Millau Viaduct
+hsr	fr_lgv_est	2007-06		2.36,48.88 4.03,49.26 6.18,48.69 7.75,48.58	東歐高速線	LGV Est	LGV東ヨーロッパ線	通往史特拉斯堡與德國。	To Strasbourg and Germany.	ストラスブールへ。		
+bridge	fr_pontneuf	1607-07		2.341,48.857	新橋（巴黎）	Pont Neuf	ポン・ヌフ	巴黎現存最古老的橋。	The oldest standing bridge in Paris.	パリ最古の橋。	新桥	Pont Neuf
+highway	fr_a6	1970-10		2.35,48.85 3.57,47.8 4.85,46.78 4.84,45.76 4.88,44.93 4.81,43.95 5.37,43.3	太陽高速公路（A6／A7，巴黎—馬賽）	Autoroute du Soleil (A6/A7)	太陽高速道路	巴黎通往地中海的高速公路。	The motorway from Paris to the Mediterranean.	パリと地中海を結ぶ。	太阳高速公路	Autoroute du Soleil
+highway	fr_periph	1973-04		2.29,48.9 2.4,48.9 2.41,48.85 2.37,48.82 2.29,48.83 2.26,48.85 2.29,48.9	巴黎環城大道	Boulevard Périphérique	ペリフェリック	環繞巴黎市區的快速道路。	The ring road around central Paris.	パリ環状道路。	巴黎环城大道	Boulevard Périphérique
+bridge	fr_normandie	1995-01		0.274,49.434	諾曼第大橋	Pont de Normandie	ノルマンディー橋	塞納河口的大跨徑斜張橋。	A record cable-stayed bridge at the mouth of the Seine.	セーヌ河口の斜張橋。	诺曼底大桥	Pont de Normandie
+port	fr_marseille_port	0843-01		5.36,43.31	馬賽港	Port of Marseille	マルセイユ港	法國最大的海港。	France's largest seaport.	フランス最大の港。	马赛港	Port of Marseille
+port	fr_lehavre	1517-10		0.11,49.48	勒阿弗爾港	Port of Le Havre	ル・アーヴル港	法蘭索瓦一世建立的大西洋門戶。	The Atlantic gateway founded by Francis I.	フランソワ1世が建設。	勒阿弗尔港	Port of Le Havre
+port	fr_brest	1631-01		-4.49,48.38	布雷斯特軍港	Brest naval base	ブレスト軍港	黎塞留建立的大西洋艦隊基地。	The Atlantic fleet base founded by Richelieu.	大西洋艦隊の基地。	布雷斯特	Brest, France
+airport	fr_le_bourget	1919-01		2.44,48.97	布爾熱機場	Paris–Le Bourget Airport	ル・ブルジェ空港	林白飛越大西洋的終點。	Where Lindbergh landed after crossing the Atlantic.	リンドバーグの着陸地。	巴黎-勒布尔热机场	Paris–Le Bourget Airport

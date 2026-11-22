@@ -1,0 +1,26 @@
+# 巴西模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在巴西或未劃分）	（不在巴西或未划分）	(outside Brazil / not drawn)	（ブラジル外・区分なし）
+c_bahia	#e9c46a	巴伊亞都督轄區	巴伊亚都督辖区	Captaincy of Bahia	バイーア長官領
+c_pernambuco	#f4a261	伯南布哥都督轄區	伯南布哥都督辖区	Captaincy of Pernambuco	ペルナンブーコ長官領
+c_graopara	#e76f51	大帕拉與馬拉尼昂	大帕拉与马拉尼昂	Grão-Pará and Maranhão	グラン・パラーとマラニョン
+c_rio	#8ab17d	里約熱內盧都督轄區	里约热内卢都督辖区	Captaincy of Rio de Janeiro	リオデジャネイロ長官領
+c_sp	#2a9d8f	聖保羅都督轄區	圣保罗都督辖区	Captaincy of São Paulo	サンパウロ長官領
+c_minas	#6fb3c7	米納斯吉拉斯都督轄區	米纳斯吉拉斯都督辖区	Captaincy of Minas Gerais	ミナス・ジェライス長官領
+c_goias	#b5a7d8	戈亞斯都督轄區	戈亚斯都督辖区	Captaincy of Goiás	ゴイアス長官領
+c_mt	#d8a7b1	馬托格羅索都督轄區	马托格罗索都督辖区	Captaincy of Mato Grosso	マット・グロッソ長官領
+c_rs	#c9b79c	聖佩德羅南里奧格蘭德	圣佩德罗南里奥格兰德	Rio Grande de São Pedro	リオ・グランデ・デ・サン・ペドロ
+s_bahia	#f6b98a	巴伊亞、塞爾希培（2 州）	巴伊亚、塞尔希培（2 州）	Bahia, Sergipe (2 states)	Bahia, Sergipe（州）
+s_pernambuco	#a594cf	伯南布哥、阿拉戈斯、帕拉伊巴、北里奧格蘭德（4 州）	伯南布哥、阿拉戈斯、帕拉伊巴、北里奥格兰德（4 州）	Pernambuco, Alagoas, Paraíba, Rio Grande do Norte (4 states)	Pernambuco, Alagoas, Paraíba, Rio Grande do Norte（州）
+s_ceara	#cc94a0	塞阿拉、皮奧伊（2 州）	塞阿拉、皮奥伊（2 州）	Ceará, Piauí (2 states)	Ceará, Piauí（州）
+s_maranhao	#d6c8b0	馬拉尼昂州	马拉尼昂州	Maranhão state	Maranhão（州）
+s_para	#8cc5d6	帕拉、阿馬帕（2 州）	帕拉、阿马帕（2 州）	Pará, Amapá (2 states)	Pará, Amapá（州）
+s_amazonas	#a3c4a8	亞馬遜、羅賴馬（2 州）	亚马逊、罗赖马（2 州）	Amazonas, Roraima (2 states)	Amazonas, Roraima（州）
+s_acre	#e3c9a8	阿克里州	阿克里州	Acre state	Acre（州）
+s_rondonia	#e9c46a	朗多尼亞州	朗多尼亚州	Rondônia state	Rondônia（州）
+s_mato_grosso	#f4a261	南北馬托格羅索（2 州）	南北马托格罗索（2 州）	Mato Grosso, Mato Grosso do Sul (2 states)	Mato Grosso, Mato Grosso do Sul（州）
+s_goias	#e76f51	戈亞斯、聯邦區、托坎廷斯（3 州）	戈亚斯、联邦区、托坎廷斯（3 州）	Goiás, Federal District, Tocantins (3 states)	Goiás, Federal District, Tocantins（州）
+s_minas	#8ab17d	米納斯吉拉斯州	米纳斯吉拉斯州	Minas Gerais state	Minas Gerais（州）
+s_rio	#2a9d8f	里約熱內盧、聖埃斯皮里圖（2 州）	里约热内卢、圣埃斯皮里图（2 州）	Rio de Janeiro, Espírito Santo (2 states)	Rio de Janeiro, Espírito Santo（州）
+s_sao_paulo	#6fb3c7	聖保羅州	圣保罗州	São Paulo state	São Paulo（州）
+s_parana	#b5a7d8	巴拉那、聖卡塔琳娜（2 州）	巴拉那、圣卡塔琳娜（2 州）	Paraná, Santa Catarina (2 states)	Paraná, Santa Catarina（州）
+s_rio_grande	#d8a7b1	南里奧格蘭德州	南里奥格兰德州	Rio Grande do Sul state	Rio Grande do Sul（州）

@@ -1,4 +1,4 @@
-# 韓國模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 韓國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	kr_gyeongin	1899-09		126.71,37.47 126.85,37.52 126.97,37.55	京仁線（濟物浦—鷺梁津）	Gyeongin line	京仁線	朝鮮第一條鐵路。	Korea's first railway.	朝鮮初の鉄道。	京仁線	Gyeongin Line
 rail	kr_gyeongbu	1905-01		126.97,37.55 127.0,37.27 127.15,36.81 127.43,36.33 128.12,36.13 128.6,35.88 129.04,35.12	京釜線全線通車	Gyeongbu line completed	京釜線全通	日本為控制朝鮮修建，漢城至釜山。	Built by Japan to control Korea, Seoul to Busan.	京城—釜山間。	京釜線	Gyeongbu Line
 rail	kr_gyeongui	1906-04		126.97,37.55 126.78,37.76 126.55,37.97 125.75,39.02 125.4,40.1 124.4,40.1	京義線（京城—新義州）	Gyeongui line (Seoul–Sinuiju)	京義線（京城—新義州）	日俄戰爭軍用鐵路，連接滿洲。	A Russo-Japanese War military line toward Manchuria.	日露戦争の軍用鉄道。	京義線	Gyeongui Line
@@ -23,3 +23,10 @@ water	kr_saemangeum	2010-04		126.52,35.8	新萬金防潮堤	Saemangeum Seawall	�
 space	kr_naro	2013-01		127.53,34.43	羅老號火箭發射成功	Naro rocket launch succeeds	羅老号打ち上げ成功	羅老宇宙中心。	From the Naro Space Center.	羅老宇宙センター。	羅老宇宙中心	Naro Space Center
 cable	kr_kjcn	2002-03		129.04,35.12 130.4,33.6	韓日光纜（KJCN）	Korea–Japan Cable Network	韓日光ケーブル（KJCN）	釜山—福岡。	Busan to Fukuoka.	釜山—福岡。		
 fiber	kr_kornet	1999-06		126.97,37.55 127.43,36.35 128.6,35.88 129.04,35.12 126.85,35.15 127.43,36.35	超高速網際網路（ADSL）普及	Broadband rollout (ADSL)	超高速インターネット普及	韓國成為寬頻普及率最高的國家之一。	Korea became one of the most connected countries.	ブロードバンド普及率世界トップ級に。	韓國網際網路	Internet in South Korea
+bridge	kr_hangang_br	1917-10		126.96,37.517	漢江人道橋	Hangang Bridge	漢江人道橋	漢城第一座跨漢江的道路橋。	Seoul's first road bridge over the Han.	ソウル最初の漢江道路橋。	漢江大橋	Hangang Bridge
+highway	kp_pyongkae	1992-01		125.75,39.03 126.0,38.6 126.55,37.97	平壤—開城高速公路	Pyongyang–Kaesong Motorway	平壌—開城高速道路	北韓南北向的主要高速公路。	North Korea's main north–south motorway.	北朝鮮の幹線道路。	平壤-开城高速公路	Pyongyang–Kaesong Motorway
+highway	kr_west_coast	2001-12		126.9,37.4 126.7,36.9 126.6,36.33 126.72,35.97 126.85,35.15 126.39,34.81	西海岸高速公路	Seohaean Expressway	西海岸高速道路	沿黃海岸由仁川到木浦。	Along the Yellow Sea from Incheon to Mokpo.	黄海沿いの高速道路。	西海岸高速公路	Seohaean Expressway
+bridge	kr_gwangan	2003-01		129.12,35.15	廣安大橋	Gwangan Bridge	広安大橋	釜山廣安里海上的雙層懸索橋。	The double-deck suspension bridge off Busan's Gwangalli beach.	釜山の海上吊橋。	广安大桥	Gwangan Bridge
+port	kr_busan_port	1876-02		129.04,35.1	釜山港	Port of Busan	釜山港	江華島條約開港，今韓國最大港。	Opened by the Treaty of Ganghwa; Korea's biggest port today.	江華島条約で開港。	釜山港	Port of Busan
+port	kr_incheon_port	1883-01		126.6,37.46	仁川港（濟物浦）	Port of Incheon (Chemulpo)	仁川港（済物浦）	漢城的海上門戶。	Seoul's gateway from the sea.	ソウルの海の玄関。	仁川港	Port of Incheon
+airport	kr_gimpo	1958-01		126.79,37.56	金浦國際機場	Gimpo International Airport	金浦国際空港	仁川機場啟用前的首都門戶。	The capital's gateway before Incheon opened.	仁川以前の玄関口。	金浦国际机场	Gimpo International Airport

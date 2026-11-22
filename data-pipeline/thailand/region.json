@@ -1,0 +1,33 @@
+{
+ "start": "1238-01",
+ "end": "2026-12",
+ "units": "thailand_units.geojson",
+ "merge": true,
+ "groups": {
+  "siam": [
+   "lanna",
+   "sukhothai",
+   "central",
+   "west",
+   "east",
+   "isan_s",
+   "isan_n",
+   "south",
+   "patani"
+  ],
+  "core": [
+   "sukhothai",
+   "central",
+   "west",
+   "east"
+  ],
+  "isan": [
+   "isan_s",
+   "isan_n"
+  ],
+  "south_all": [
+   "south",
+   "patani"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "start": "0871-04",
+ "end": "2026-12",
+ "units": "uk_units.geojson",
+ "merge": true,
+ "groups": {
+  "england": [
+   "north_east",
+   "north_west",
+   "yorkshire",
+   "east_midlands",
+   "west_midlands",
+   "east",
+   "london",
+   "south_east",
+   "south_west"
+  ],
+  "scotland": [
+   "scotland_e",
+   "scotland_sw",
+   "scotland_n"
+  ],
+  "irish": [
+   "n_ireland",
+   "ireland"
+  ],
+  "gb": [
+   "north_east",
+   "north_west",
+   "yorkshire",
+   "east_midlands",
+   "west_midlands",
+   "east",
+   "london",
+   "south_east",
+   "south_west",
+   "wales",
+   "scotland_e",
+   "scotland_sw",
+   "scotland_n"
+  ],
+  "danelaw": [
+   "east",
+   "east_midlands",
+   "yorkshire",
+   "north_east"
+  ]
+ }
+}

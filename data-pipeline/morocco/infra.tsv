@@ -1,0 +1,14 @@
+# 摩洛哥模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+rail	ma_casa_fes	1923-01		-7.59,33.57 -6.84,34.02 -5.55,33.89 -4.98,34.06	卡薩布蘭卡—非斯鐵路	Casablanca–Fez railway	カサブランカ—フェス鉄道	保護國時期興建的主幹線。	The main line built under the protectorate.	保護国期の幹線。		
+port	ma_casablanca	1913-01		-7.61,33.6	卡薩布蘭卡港	Port of Casablanca	カサブランカ港	法國將小鎮擴建為大港。	The French turned a small town into a great port.	大港湾都市へ。		
+airport	ma_cmn	1943-01		-7.59,33.37	卡薩布蘭卡穆罕默德五世機場	Mohammed V International Airport	ムハンマド5世国際空港	由美軍機場發展而成的主要國際機場。	The main international airport, grown from a US airbase.	主要国際空港。	穆罕默德五世国际机场	Mohammed V International Airport
+port	ma_tangermed	2007-07		-5.5,35.88	丹吉爾地中海港	Tanger Med	タンジェ・メッド港	地中海最大的貨櫃港之一。	One of the Mediterranean's largest container ports.	地中海最大級の港。	丹吉尔地中海港	Tanger Med
+solar	ma_noor	2016-02		-6.87,31.05	努奧太陽能電廠（瓦爾札札特）	Noor Ouarzazate Solar Complex	ヌール・ワルザザート太陽熱発電所	世界最大的聚光太陽能電廠之一。	One of the largest concentrated-solar plants.	世界最大級。	努奥太阳能发电站	Ouarzazate Solar Power Station
+hsr	ma_albouraq	2018-11		-5.8,35.77 -6.84,34.02 -7.59,33.57	布拉克高速鐵路	Al Boraq high-speed railway	アル・ボラク高速鉄道	非洲第一條高速鐵路。	Africa's first high-speed line.	アフリカ初の高速鉄道。	布拉克高速铁路	Al Boraq
+road	ma_tichka	1936-01		-7.99,31.63 -7.38,31.29 -7.13,31.0 -6.9,30.92	提什卡山口公路（馬拉喀什—瓦爾札札特）	Tizi n'Tichka road	ティシュカ峠道路	法國保護國時期翻越高亞特拉斯山的公路。	The protectorate road over the High Atlas.	アトラス山脈越えの道路。		
+highway	ma_a1	1987-07		-7.59,33.57 -7.2,33.75 -6.84,34.02	卡薩布蘭卡—拉巴特高速公路	Casablanca–Rabat motorway	カサブランカ—ラバト高速道路	摩洛哥第一條高速公路。	Morocco's first motorway.	モロッコ初の高速道路。		
+highway	dz_eastwest	2016-01		-1.32,34.88 -0.63,35.4 1.33,36.16 3.06,36.75 4.0,36.3 5.41,36.19 6.61,36.36 7.75,36.4 8.2,36.5	阿爾及利亞東西高速公路	East–West Highway (Algeria)	アルジェリア東西高速道路	橫貫阿爾及利亞北部的高速公路。	The motorway across northern Algeria.	アルジェリア北部横断。	阿尔及利亚东西高速公路	East–West Highway (Algeria)
+bridge	ma_m6	2016-07		-6.77,33.98	穆罕默德六世大橋（拉巴特）	Mohammed VI Bridge	ムハンマド6世橋	非洲最長的斜張橋之一。	One of Africa's longest cable-stayed bridges.	アフリカ最長級の斜張橋。		Mohammed VI Bridge
+port	dz_algiers_port	1529-05		3.07,36.77	阿爾及爾港	Port of Algiers	アルジェ港	海盜與鄂圖曼攝政時期的地中海要港。	The corsair and Ottoman port of the Mediterranean.	アルジェの港。	阿尔及尔	Algiers
+airport	dz_alg	1924-01		3.21,36.69	阿爾及爾胡阿里・布邁丁機場	Houari Boumediene Airport	ウアリ・ブーメディエン空港	阿爾及利亞最大的機場。	Algeria's largest airport.	アルジェリア最大の空港。	胡阿里·布迈丁机场	Houari Boumediene Airport
+airport	tn_tun	1940-01		10.23,36.85	突尼斯—迦太基機場	Tunis–Carthage Airport	チュニス・カルタゴ国際空港	突尼西亞的國際門戶。	Tunisia's international gateway.	チュニジアの空港。	突尼斯-迦太基国际机场	Tunis–Carthage International Airport

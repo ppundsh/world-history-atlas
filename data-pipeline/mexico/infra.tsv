@@ -1,0 +1,15 @@
+# 墨西哥模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+road	mx_camino	1598-01		-99.13,19.43 -101.26,21.02 -102.57,22.77 -105.67,26.93 -106.42,31.69 -105.94,35.69	皇家內陸大道（白銀之路）	Camino Real de Tierra Adentro	王の内陸道	連接墨西哥城與新墨西哥的白銀大道。	The silver road from Mexico City to New Mexico.	銀の道。	皇家内陆大道	Camino Real de Tierra Adentro
+rail	mx_veracruz	1873-01		-96.13,19.2 -97.1,18.85 -98.2,19.04 -99.13,19.45	墨西哥鐵路（韋拉克魯斯—墨西哥城）	Mexican Railway (Veracruz–Mexico City)	メキシコ鉄道	第一條幹線鐵路。	The first trunk railway.	最初の幹線鉄道。		
+rail	mx_central	1884-03		-99.13,19.45 -100.39,20.59 -101.26,21.02 -102.57,22.77 -106.09,28.64 -106.48,31.73	墨西哥中央鐵路（墨西哥城—北方帕索）	Mexican Central Railway	メキシコ中央鉄道	連接美國的南北幹線。	The north–south line to the United States.	米国と結ぶ幹線。		
+metro	mx_metro	1969-09		-99.13,19.43	墨西哥城地鐵	Mexico City Metro	メキシコシティ地下鉄	拉丁美洲最大的地鐵之一。	One of Latin America's largest metros.	中南米最大級の地下鉄。	墨西哥城地铁	Mexico City Metro
+dam	mx_chicoasen	1980-05		-93.1,16.94	奇科阿森水壩	Chicoasén Dam	チコアセン・ダム	格里哈爾瓦河上的大型水力發電壩。	A large hydroelectric dam on the Grijalva.	グリハルバ川のダム。		
+nuclear	mx_laguna	1990-07		-96.41,19.72	拉古納貝爾德核電廠	Laguna Verde Nuclear Power Station	ラグナ・ベルデ原子力発電所	墨西哥唯一的核電廠。	Mexico's only nuclear plant.	唯一の原発。		
+airport	mx_aifa	2022-03		-99.02,19.74	費利佩・安赫萊斯國際機場	Felipe Ángeles International Airport	フェリペ・アンヘレス国際空港	墨西哥城新機場。	Mexico City's new airport.	メキシコシティの新空港。		
+rail	mx_maya	2023-12		-90.53,19.85 -89.62,20.97 -88.2,20.68 -86.85,21.16 -87.47,20.21 -88.3,18.5 -91.18,17.5 -90.53,19.85	馬雅鐵路	Tren Maya	マヤ鉄道	環繞猶加敦半島的觀光鐵路。	A railway round the Yucatán peninsula.	ユカタン半島を巡る鉄道。	玛雅铁路	Tren Maya
+road	mx_acapulco	1927-11		-99.13,19.43 -99.23,18.92 -99.53,18.34 -99.5,17.55 -99.88,16.85	墨西哥城—阿卡普科公路	Mexico City–Acapulco highway	メキシコシティ—アカプルコ道路	現代墨西哥最早的幹線公路之一。	One of modern Mexico's first trunk roads.	近代メキシコ初期の幹線道路。		
+road	mx_panam	1936-07		-99.51,27.5 -100.31,25.67 -99.13,23.73 -98.79,21.26 -98.73,20.12 -99.13,19.43	泛美公路（拉雷多—墨西哥城）	Pan-American Highway (Laredo–Mexico City)	パンアメリカン・ハイウェイ	泛美公路最早完成的一段。	The first finished stretch of the Pan-American Highway.	最初に完成した区間。	泛美公路	Pan-American Highway
+bridge	mx_baluarte	2012-01		-105.78,23.78	巴盧亞特大橋	Baluarte Bridge	バルアルテ橋	曾為世界最高的斜張橋。	Once the world's highest cable-stayed bridge.	かつて世界一高い斜張橋。	巴卢亚特大桥	Baluarte Bridge
+port	mx_acapulco_port	1565-10		-99.9,16.85	阿卡普科港（馬尼拉大帆船）	Port of Acapulco (Manila galleons)	アカプルコ港（マニラ・ガレオン）	往來馬尼拉的大帆船的太平洋終點。	Pacific terminus of the Manila galleons.	ガレオン貿易の港。	阿卡普尔科	Manila galleon
+port	mx_manzanillo	1889-01		-104.3,19.07	曼薩尼約港	Port of Manzanillo	マンサニージョ港	墨西哥最大的貨櫃港。	Mexico's busiest container port.	メキシコ最大のコンテナ港。	曼萨尼约	Manzanillo, Colima
+airport	mx_mex	1931-01		-99.07,19.44	墨西哥城國際機場	Mexico City International Airport	メキシコシティ国際空港	拉丁美洲最繁忙的機場之一。	One of Latin America's busiest airports.	中南米有数の空港。	墨西哥城国际机场	Mexico City International Airport

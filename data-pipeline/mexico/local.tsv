@@ -1,0 +1,8 @@
+# 墨西哥模式：起義與叛亂（⚔）、地方勢力（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+feud	pueblo	1680-08	1692-09	-105.94	35.69	普韋布洛起義	Pueblo Revolt	プエブロの反乱	新墨西哥原住民驅逐西班牙人十二年。	Pueblo peoples drove out the Spanish for twelve years.	12年間スペイン人を追放。	普韦布洛起义
+feud	caste_war	1847-07	1901-05	-88.05	19.58	猶加敦種姓戰爭	Caste War of Yucatán	ユカタン・カースト戦争	馬雅人反抗克里奧爾統治的長期戰爭。	A long Maya war against Creole rule.	マヤ人の長期戦争。	卡斯特战争
+feud	zapata	1911-11	1919-04	-98.98	18.8	薩帕塔的南方解放軍	Zapata's Liberation Army of the South	サパタの南部解放軍	莫雷洛斯農民爭取土地的武裝。	Morelos peasants fighting for land.	土地を求めた農民軍。	埃米利亚诺·萨帕塔
+feud	cristero	1926-08	1929-06	-102.5	20.7	基督戰爭	Cristero War	クリステロ戦争	天主教徒反抗反教權法律的起義。	A Catholic rising against anticlerical laws.	カトリック教徒の反乱。	基督战争
+feud	ezln	1994-01	2026-12	-92.64	16.74	薩帕塔民族解放軍	Zapatista Army of National Liberation	サパティスタ民族解放軍	恰帕斯原住民自治運動。	An Indigenous movement for self-rule in Chiapas.	チアパスの先住民運動。	萨帕塔民族解放军
+power	comanche	1750-01	1875-06	-101.0	33.5	科曼奇帝國	Comanchería	コマンチェリア	控制南部大平原、屢次南下劫掠墨西哥北部。	The Comanche held the southern plains and raided deep into northern Mexico.	南部大平原を支配。	科曼奇人

@@ -1,0 +1,16 @@
+# 印度尼西亞模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+road	id_postweg	1809-01		105.88,-6.0 106.81,-6.13 107.6,-6.92 108.55,-6.71 110.42,-6.97 112.75,-7.25 114.37,-7.1	大郵路（安耶爾—帕納魯坎）	Great Post Road (Anyer–Panarukan)	大郵便道路	丹德爾斯以強制勞役修築的爪哇公路。	Daendels' Java road, built with forced labour.	ダーンデルスの道路。		
+rail	id_ns	1867-08		110.42,-6.97 110.6,-7.2 110.82,-7.57	三寶壟—梭羅鐵路	Semarang–Solo railway	スマラン—ソロ鉄道	荷屬東印度第一條鐵路。	The first railway in the Indies.	蘭印最初の鉄道。		
+industry	id_freeport	1972-12		137.12,-4.06	格拉斯伯格礦	Grasberg mine	グラスベルグ鉱山	世界最大金礦之一。	One of the world's largest gold mines.	世界最大級の金鉱。	格拉斯伯格矿	Grasberg mine
+bridge	id_suramadu	2009-06		112.78,-7.18	泗水—馬都拉大橋	Suramadu Bridge	スラマドゥ大橋	印尼最長的橋。	Indonesia's longest bridge.	インドネシア最長の橋。	泗水-马都拉大桥	Suramadu Bridge
+metro	id_mrt	2019-03		106.8,-6.29	雅加達捷運	Jakarta MRT	ジャカルタMRT	雅加達第一條地鐵。	Jakarta's first metro.	ジャカルタ初の地下鉄。	雅加达捷运	Jakarta MRT
+hsr	id_whoosh	2023-10		106.89,-6.24 107.4,-6.55 107.6,-6.92	雅萬高鐵	Jakarta–Bandung high-speed railway	ジャカルタ・バンドン高速鉄道	東南亞第一條高鐵。	South-East Asia's first high-speed line.	東南アジア初の高速鉄道。	雅万高速铁路	Jakarta–Bandung High-Speed Railway
+bridge	id_ampera	1965-05		104.763,-2.991	安佩拉橋（巨港）	Ampera Bridge	アンペラ橋	跨越穆西河的巨港地標。	Palembang's landmark over the Musi River.	パレンバンの橋。		Ampera Bridge
+highway	id_jagorawi	1978-03		106.85,-6.25 106.84,-6.42 106.8,-6.6	雅加達—茂物—芝安朱爾收費公路	Jagorawi Toll Road	ジャゴラウィ有料道路	印尼第一條收費高速公路。	Indonesia's first toll road.	インドネシア初の有料道路。		Jagorawi Toll Road
+bridge	id_barelang	1998-02		104.05,1.0	巴里朗大橋	Barelang Bridge	バレラン橋	連接巴淡等島的橋群。	The chain of bridges joining Batam and its islands.	バタム島などを結ぶ橋。		Barelang Bridge
+highway	id_transjava	2018-12		106.0,-5.93 106.83,-6.2 107.45,-6.4 108.55,-6.71 109.67,-6.89 110.42,-6.97 111.0,-7.5 111.9,-7.6 112.75,-7.25	爪哇橫貫收費公路	Trans-Java Toll Road	ジャワ横断有料道路	由默拉克到泗水的高速公路大致貫通。	The toll road from Merak to Surabaya, joined up.	メラクからスラバヤまで。		Trans-Java Toll Road
+port	id_tanjungpriok	1886-01		106.88,-6.1	丹戎不碌港	Tanjung Priok	タンジュンプリオク港	巴達維亞的新港，今印尼最大港。	Batavia's new port; Indonesia's busiest today.	インドネシア最大の港。	丹戎不碌港	Port of Tanjung Priok
+port	id_tanjungperak	1910-01		112.73,-7.2	泗水丹戎佩拉港	Port of Tanjung Perak	タンジュン・ペラ港	東爪哇的主要港口。	The main port of East Java.	東ジャワの港。	丹戎佩拉港	Port of Tanjung Perak
+airport	id_kemayoran	1940-07	1985-03	106.85,-6.16	雅加達克馬約蘭機場	Kemayoran Airport	クマヨラン空港	雅加達的舊國際機場。	Jakarta's old international airport.	ジャカルタの旧空港。		Kemayoran Airport
+airport	id_cgk	1985-04		106.66,-6.13	蘇加諾—哈達國際機場	Soekarno–Hatta International Airport	スカルノ・ハッタ国際空港	印尼最大的機場。	Indonesia's largest airport.	インドネシア最大の空港。	苏加诺-哈达国际机场	Soekarno–Hatta International Airport
+airport	id_dps	1931-01		115.17,-8.75	峇里島伍拉賴國際機場	Ngurah Rai International Airport	ングラ・ライ国際空港	觀光勝地峇里的門戶。	Gateway to Bali.	バリ島の玄関口。	伍拉·赖国际机场	Ngurah Rai International Airport

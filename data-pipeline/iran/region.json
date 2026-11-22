@@ -1,0 +1,41 @@
+{
+ "start": "-550-01",
+ "end": "2026-12",
+ "units": "iran_units.geojson",
+ "merge": true,
+ "groups": {
+  "iran": [
+   "azarbaijan",
+   "gilan",
+   "tabaristan",
+   "centre",
+   "media",
+   "khuzestan",
+   "isfahan",
+   "fars",
+   "kerman",
+   "sistan",
+   "khorasan"
+  ],
+  "west": [
+   "azarbaijan",
+   "media",
+   "centre",
+   "khuzestan",
+   "isfahan",
+   "fars",
+   "kerman",
+   "gilan",
+   "tabaristan"
+  ],
+  "caspian": [
+   "gilan",
+   "tabaristan"
+  ],
+  "east": [
+   "khorasan",
+   "sistan",
+   "afghanistan"
+  ]
+ }
+}

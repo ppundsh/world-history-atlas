@@ -1,4 +1,4 @@
-# 波蘭模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 波蘭模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	pl_wwr	1848-04		21.01,52.23 20.6,51.4 20.45,50.95 19.47,50.8 19.1,50.25	華沙—維也納鐵路（至邊境）	Warsaw–Vienna Railway	ワルシャワ—ウィーン鉄道	波蘭王國第一條鐵路。	The first railway in Congress Poland.	ポーランド王国初の鉄道。	華沙—維也納鐵路	Warsaw–Vienna railway
 rail	pl_upper_silesia	1846-01		17.03,51.11 17.92,50.67 18.68,50.3	上西里西亞鐵路（布雷斯勞—格利維采）	Upper Silesian Railway	上シレジア鉄道	工業區的動脈。	The artery of the industrial district.	工業地帯の動脈。	上西里西亞鐵路	Upper Silesian Railway
 rail	pl_coal	1933-03		18.9,50.3 18.3,51.0 18.0,52.5 18.5,53.4 18.53,54.52	煤炭幹線（西里西亞—格丁尼亞）	Coal Trunk Line (Silesia–Gdynia)	石炭幹線（シレジア—グディニャ）	繞過但澤，把煤直送新港格丁尼亞。	Bypassed Danzig, taking coal straight to the new port of Gdynia.	ダンツィヒを迂回して石炭を輸送。	煤炭幹線	Polish Coal Trunk-Line
@@ -15,3 +15,9 @@ highway	pl_a1	2023-12		18.53,54.4 18.6,53.0 19.46,51.8 19.1,50.8 18.68,50.3	A1 �
 hsr	pl_cmk	1977-12		20.6,51.4 19.9,50.95 19.47,50.4	中央幹線（CMK）	Central Rail Line (CMK)	中央幹線（CMK）	波蘭第一條高速鐵路，2014 年起時速 200 公里。	Poland's first high-speed line; 200 km/h since 2014.	ポーランド初の高速線。	中央鐵路幹線	Central Rail Line (Poland)
 pipeline	pl_baltic	2022-10		10.0,55.5 12.5,55.0 14.5,54.0 15.5,53.8	波羅的海天然氣管線	Baltic Pipe	バルティック・パイプ	由挪威經丹麥輸氣，擺脫對俄依賴。	Norwegian gas via Denmark, ending dependence on Russia.	ロシア依存脱却。	波羅的海管道	Baltic Pipe
 port	pl_swinoujscie	2015-12		14.27,53.91	希維諾烏伊希切液化天然氣接收站	Świnoujście LNG terminal	シフィノウイシチェLNG基地	能源多元化。	Energy diversification.	エネルギー多様化。	希維諾烏伊希切LNG接收站	Świnoujście LNG terminal
+bridge	pl_kierbedz	1864-11		21.02,52.248	基爾貝茲橋（華沙）	Kierbedź Bridge	キェルベチ橋	華沙第一座永久性的維斯瓦河鐵橋。	Warsaw's first permanent bridge over the Vistula.	ワルシャワ初の恒久橋。		Kierbedź Bridge
+bridge	pl_poniatowski	1914-12		21.04,52.235	波尼亞托夫斯基橋	Poniatowski Bridge	ポニャトフスキ橋	華沙的維斯瓦河大橋。	A grand Vistula bridge in Warsaw.	ワルシャワの大橋。		Poniatowski Bridge
+highway	pl_s7	2024-12		18.65,54.35 19.4,53.7 20.38,53.15 20.9,52.4 21.0,52.2 20.65,51.4 20.6,50.9 19.94,50.06	S7 快速道路（格但斯克—華沙—克拉科夫）	S7 expressway (Gdańsk–Warsaw–Kraków)	S7高速道路	波蘭南北縱貫的快速道路。	Poland's north–south expressway.	ポーランド南北縦貫道路。		Expressway S7 (Poland)
+port	pl_gdansk_port	0997-01		18.66,54.4	格但斯克港	Port of Gdańsk	グダニスク港	維斯瓦河口的漢薩貿易大港。	The Hanseatic trading port at the mouth of the Vistula.	ヴィスワ河口の港。	格但斯克港	Port of Gdańsk
+airport	pl_waw	1934-04		20.97,52.17	華沙蕭邦機場（奧肯切）	Warsaw Chopin Airport	ワルシャワ・ショパン空港	波蘭最大的機場。	Poland's largest airport.	ポーランド最大の空港。	华沙肖邦机场	Warsaw Chopin Airport
+airport	pl_krk	1964-01		19.78,50.08	克拉科夫機場	Kraków John Paul II International Airport	クラクフ空港	南部的國際機場。	The international airport of the south.	南部の国際空港。	克拉科夫约翰·保罗二世国际机场	Kraków John Paul II International Airport

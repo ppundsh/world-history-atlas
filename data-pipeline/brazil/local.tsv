@@ -1,0 +1,7 @@
+# 巴西模式：起義與叛亂（⚔）、地方勢力（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+feud	palmares	1605-01	1695-11	-36.0	-9.17	帕爾馬雷斯逃奴王國	Quilombo dos Palmares	キロンボ・ドス・パルマーレス	逃亡奴隸建立的聚落，存續近百年。	A settlement of escaped slaves that held out for nearly a century.	逃亡奴隷の国。	帕尔马雷斯
+feud	cabanagem	1835-01	1840-03	-48.5	-1.46	卡巴納仁起義	Cabanagem	カバナジェンの乱	帕拉的貧民與原住民起義。	A rising of the poor and Indigenous people of Pará.	パラーの民衆反乱。	
+feud	canudos	1896-11	1897-10	-39.17	-9.95	卡努杜斯戰爭	War of Canudos	カヌードスの反乱	東北內陸宗教聚落被軍隊殲滅。	A religious settlement in the backlands destroyed by the army.	奥地の宗教共同体。	卡努杜斯战争
+feud	constitutionalist	1932-07	1932-10	-46.63	-23.55	聖保羅護憲革命	Constitutionalist Revolution	護憲革命	聖保羅反抗瓦加斯政府。	São Paulo rose against Vargas.	サンパウロの反乱。	
+power	missions	1609-01	1768-01	-54.5	-28.0	耶穌會瓜拉尼傳教區	Jesuit Guarani missions	イエズス会のグアラニー布教区	耶穌會的原住民傳教村。	Jesuit mission towns of the Guarani.	グアラニーの布教村。	耶稣会传教区

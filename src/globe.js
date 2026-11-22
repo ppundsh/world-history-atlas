@@ -12,7 +12,7 @@ import { geoDistance, geoBounds, geoMercator, geoPath } from 'd3-geo';
 import { store, P, loadPhysical, chunkFor } from './data.js';
 import { planTransition, ease, decodeIds, pieceKey, idColor, readbackOk } from './transition.js';
 import { frame, region as reg, REGIONS } from './modes.js';
-import { drawMarker } from './flat.js';
+import { drawMarker, cardUnder, dragCard } from './flat.js';
 import { BASEMAPS } from './styles.js';
 import { labelItems, placeLabels } from './labels.js';
 
@@ -55,6 +55,17 @@ export class GlobeMap {
     this.map.on('render', () => this.drawOverlay());
     this.map.on('move', () => this.app.onViewChange?.());
     // floating Taiwan: drag it instead of the globe
+    // picture cards: drag them instead of the globe
+    this.map.on('mousedown', e => {
+      const card = cardUnder(this.markerHits, e.point.x, e.point.y); if (!card) return;
+      this.cardDrag = { ...card, gx: e.point.x - card.x0, gy: e.point.y - card.y0, sx: e.point.x, sy: e.point.y, moved: 0 }; this.map.dragPan.disable();
+    });
+    this.map.on('mousemove', e => {
+      const d = this.cardDrag; if (!d) return;
+      d.moved = Math.max(d.moved, Math.abs(e.point.x - d.sx) + Math.abs(e.point.y - d.sy));
+      if (d.moved >= 4) { dragCard(d, e.point.x, e.point.y); this.map.triggerRepaint(); }
+    });
+    this.map.on('mouseup', () => { const d = this.cardDrag; if (!d) return; this.cardDrag = null; this.map.dragPan.enable(); if (d.moved >= 4) { this.cmpJustDragged = true; setTimeout(() => { this.cmpJustDragged = false; }, 50); } });
     this.map.on('mousedown', e => {
       const cmp = this.app.compare, ll = [e.lngLat.lng, e.lngLat.lat];
       if (!cmp?.contains(ll)) return;

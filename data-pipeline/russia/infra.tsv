@@ -1,4 +1,4 @@
-# 俄羅斯模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 俄羅斯模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 canal	ru_volga_baltic	1709-01		30.3,59.94 31.3,58.5 34.1,57.8 35.9,56.86	維什尼沃洛喬克水道（伏爾加—波羅的海）	Vyshny Volochyok waterway (Volga–Baltic)	ヴィシニー・ヴォロチョーク水路	彼得一世開鑿，連接伏爾加河與新首都。	Dug under Peter I to link the Volga to the new capital.	ピョートル1世が開削。	維什尼沃洛喬克水道	Vyshny Volochyok Waterway
 rail	ru_tsarskoye	1837-10		30.3,59.92 30.4,59.72	皇村鐵路	Tsarskoye Selo Railway	ツァールスコエ・セロー鉄道	俄國第一條公共鐵路。	Russia's first public railway.	ロシア初の鉄道。	皇村鐵路	Tsarskoye Selo Railway
 rail	ru_nikolaev	1851-11		30.36,59.93 31.27,58.52 34.1,57.6 35.9,56.86 37.65,55.78	尼古拉鐵路（聖彼得堡—莫斯科）	Nikolaevskaya Railway (St Petersburg–Moscow)	ニコラエフ鉄道（ペテルブルク—モスクワ）	兩大首都之間的直線鐵路。	The straight line between the two capitals.	両首都を結ぶ鉄道。	莫斯科—聖彼得堡鐵路	Moscow–Saint Petersburg Railway
@@ -24,3 +24,13 @@ hsr	ru_sapsan	2009-12		30.36,59.93 31.27,58.52 35.9,56.86 37.65,55.78	遊隼號�
 bridge	ru_crimean	2018-05		36.5,45.3	克里米亞大橋	Crimean Bridge	クリミア大橋	兼併克里米亞後興建，2022 年遭襲擊。	Built after the annexation; attacked in 2022.	併合後に建設、2022年に攻撃される。	克里米亞大橋	Crimean Bridge
 pipeline	ru_pos	2019-12		113.0,62.0 124.0,55.0 127.5,50.27	西伯利亞力量天然氣管線	Power of Siberia pipeline	シベリアの力パイプライン	向中國輸氣。	Gas to China.	中国へ送ガス。	西伯利亞力量	Power of Siberia
 space	ru_vostochny	2016-04		128.33,51.88	東方航天發射場	Vostochny Cosmodrome	ボストチヌイ宇宙基地	取代拜科努爾的境內發射場。	A launch site on Russian soil to replace Baikonur.	バイコヌールに代わる国内基地。	東方航天發射場	Vostochny Cosmodrome
+road	ru_trakt	1763-01		37.62,55.75 44.0,56.33 49.1,55.79 56.25,58.0 60.6,56.84 65.53,57.15 68.27,58.2 73.37,54.98 82.92,55.03 85.0,56.5 92.87,56.01 104.28,52.29	西伯利亞大驛道	Siberian Route	シベリア街道	莫斯科經西伯利亞到伊爾庫次克的驛道。	The post road from Moscow across Siberia to Irkutsk.	シベリア横断の駅道。	西伯利亚大道	Siberian Route
+road	ru_kolyma	1953-01		150.8,59.56 150.3,60.5 148.0,62.0 143.2,62.9 134.7,62.6 129.73,62.03	科雷馬公路（白骨之路）	Kolyma Highway (Road of Bones)	コリマ街道	古拉格囚犯修築的馬加丹—雅庫次克公路。	Built by Gulag prisoners from Magadan to Yakutsk.	グラグ囚人が建設。	科雷马公路	Kolyma Highway
+bridge	ru_russky	2012-07		131.92,43.06	俄羅斯島大橋	Russky Bridge	ルースキー島連絡橋	海參崴的大跨徑斜張橋。	A record-span cable-stayed bridge at Vladivostok.	ウラジオストクの斜張橋。	俄罗斯岛大桥	Russky Bridge
+highway	ru_m11	2019-11		37.4,55.9 35.9,56.86 34.9,57.1 33.4,57.6 31.27,58.52 30.3,59.93	M11 高速公路（莫斯科—聖彼得堡）	M11 motorway (Moscow–St Petersburg)	M11高速道路	兩大首都間第一條完整高速公路。	The first full motorway between the two capitals.	両首都を結ぶ高速道路。	M11公路	M11 motorway (Russia)
+port	ru_arkhangelsk	1584-01		40.53,64.54	阿爾漢格爾斯克港	Port of Arkhangelsk	アルハンゲリスク港	彼得大帝之前俄國唯一的海港。	Russia's only seaport before Peter the Great.	ピョートル以前の唯一の海港。	阿尔汉格尔斯克	Arkhangelsk
+port	ru_spb_port	1703-05		30.22,59.88	聖彼得堡港	Port of Saint Petersburg	サンクトペテルブルク港	「通往歐洲之窗」。	The "window on Europe".	「西欧への窓」。	圣彼得堡港	Port of Saint Petersburg
+port	ru_vladivostok	1860-07		131.89,43.11	海參崴港	Port of Vladivostok	ウラジオストク港	俄國在太平洋的門戶。	Russia's gateway to the Pacific.	太平洋の玄関口。	符拉迪沃斯托克	Vladivostok
+port	ru_novorossiysk	1838-01		37.78,44.72	新羅西斯克港	Port of Novorossiysk	ノヴォロシースク港	黑海最大的港口。	The largest port on the Black Sea.	黒海最大の港。	新罗西斯克	Novorossiysk
+airport	ru_svo	1959-08		37.41,55.97	莫斯科謝列梅捷沃國際機場	Sheremetyevo International Airport	シェレメーチエヴォ国際空港	蘇聯與俄羅斯的國際門戶。	The Soviet and Russian international gateway.	ソ連・ロシアの国際空港。	谢列梅捷沃国际机场	Sheremetyevo International Airport
+airport	ru_dme	1964-05		37.91,55.41	莫斯科多莫傑多沃機場	Domodedovo International Airport	ドモジェドヴォ空港	俄羅斯的大型機場。	One of Russia's largest airports.	ロシア有数の空港。	多莫杰多沃国际机场	Domodedovo International Airport

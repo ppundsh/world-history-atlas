@@ -1,0 +1,9 @@
+# 巴西模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+salvador	1549-03	1763-01	-38.51	-12.97	1	portugal	薩爾瓦多（巴西總督）	萨尔瓦多（巴西总督）	Salvador (Governor-General of Brazil)	サルヴァドール（総督府）
+rio1	1763-01	1808-03	-43.17	-22.91	1	portugal	里約熱內盧（巴西總督）	里约热内卢（巴西总督）	Rio de Janeiro (Viceroy of Brazil)	リオデジャネイロ（副王）
+rio2	1808-03	1822-09	-43.17	-22.91	1	portugal	里約熱內盧（葡萄牙王室）	里约热内卢（葡萄牙王室）	Rio de Janeiro (the Portuguese court)	リオデジャネイロ（ポルトガル王室）
+rio3	1822-09	1960-04	-43.17	-22.91	1	empire	里約熱內盧（帝國、共和國）	里约热内卢（帝国、共和国）	Rio de Janeiro (Empire, Republic)	リオデジャネイロ（帝国・共和国）
+brasilia	1960-04	2026-12	-47.88	-15.79	1	republic	巴西利亞	巴西利亚	Brasília	ブラジリア
+recife	1630-02	1654-01	-34.88	-8.05	0	dutch	累西腓（毛里茨城）	累西腓（毛里茨城）	Recife (Mauritsstad)	レシフェ（マウリッツスタット）
+montevideo	1828-08	2026-12	-56.16	-34.9	0	uruguay	蒙特維多	蒙特维多	Montevideo	モンテビデオ
+piratini	1836-09	1845-03	-53.1	-31.45	0	riograndense	皮拉蒂尼（里奧格蘭德共和國）	皮拉蒂尼（里奥格兰德共和国）	Piratini (Riograndense Republic)	ピラチニ

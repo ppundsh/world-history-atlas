@@ -1,0 +1,34 @@
+# 埃及模式：統治勢力。欄位：id	顏色	繁中	簡中	English	日本語
+egypt	#c9a227	法老王朝（統一的埃及）	法老王朝（统一的埃及）	Pharaonic Egypt (united)	ファラオのエジプト（統一王朝）
+lower	#d9b45a	下埃及（分裂時期的北方政權）	下埃及（分裂时期的北方政权）	Lower Egypt (northern kingdoms of the divided periods)	下エジプト（分裂期の北の王朝）
+upper	#a77d2c	上埃及（底比斯政權）	上埃及（底比斯政权）	Upper Egypt (Theban kingdoms)	上エジプト（テーベの王朝）
+hyksos	#8d6e63	喜克索斯	喜克索斯	Hyksos	ヒクソス
+libyan	#b08968	利比亞人王朝	利比亚人王朝	Libyan dynasties	リビア系王朝
+kush	#3d2b1f	庫施王國	库施王国	Kingdom of Kush	クシュ王国
+assyria	#6b4c9a	亞述	亚述	Assyria	アッシリア
+babylon	#7e57c2	新巴比倫	新巴比伦	Neo-Babylonian Empire	新バビロニア
+persia	#2a9d8f	波斯（阿契美尼德）	波斯（阿契美尼德）	Persia (Achaemenid)	ペルシア（アケメネス朝）
+ptolemaic	#1f6fb2	托勒密王朝	托勒密王朝	Ptolemaic Kingdom	プトレマイオス朝
+seleucid	#5c8fcf	塞琉古王國	塞琉古王国	Seleucid Empire	セレウコス朝
+rome	#b03a2e	羅馬帝國	罗马帝国	Roman Empire	ローマ帝国
+byzantium	#8e44ad	拜占庭帝國（東羅馬）	拜占庭帝国（东罗马）	Byzantine Empire	ビザンツ帝国
+sasanian	#16a085	薩珊波斯	萨珊波斯	Sasanian Empire	サーサーン朝
+caliphate	#2e7d32	哈里發國（正統、伍麥亞、阿拔斯）	哈里发国（正统、倭马亚、阿拔斯）	The Caliphate (Rashidun, Umayyad, Abbasid)	カリフ国（正統・ウマイヤ・アッバース）
+tulunid	#66bb6a	圖倫王朝、伊赫什德王朝	图伦王朝、伊赫什德王朝	Tulunids and Ikhshidids	トゥールーン朝、イフシード朝
+fatimid	#00897b	法蒂瑪王朝	法蒂玛王朝	Fatimid Caliphate	ファーティマ朝
+crusaders	#c62828	十字軍國家	十字军国家	Crusader states	十字軍国家
+ayyubid	#f9a825	阿尤布王朝	阿尤布王朝	Ayyubid dynasty	アイユーブ朝
+mamluk	#e67e22	馬木留克王朝	马穆鲁克王朝	Mamluk Sultanate	マムルーク朝
+ottoman	#a52a2a	鄂圖曼帝國	奥斯曼帝国	Ottoman Empire	オスマン帝国
+france	#2f5fb3	法國（拿破崙遠征）	法国（拿破仑远征）	France (Napoleon's expedition)	フランス（ナポレオンの遠征）
+khedivate	#d4ac0d	穆罕默德・阿里王朝（赫迪夫國）	穆罕默德·阿里王朝（赫迪夫国）	Muhammad Ali dynasty (Khedivate)	ムハンマド・アリー朝（ヘディーヴ国）
+britain	#c0392b	英國（保護國、委任統治）	英国（保护国、委任统治）	Britain (protectorate, mandate)	イギリス（保護国・委任統治）
+kingdom	#b7950b	埃及王國	埃及王国	Kingdom of Egypt	エジプト王国
+republic	#d35400	埃及共和國	埃及共和国	Republic of Egypt	エジプト共和国
+mahdist	#4e342e	馬赫迪國	马赫迪国	Mahdist State	マフディー国家
+sudan	#5d4037	蘇丹	苏丹	Sudan	スーダン
+italy	#4caf50	義大利（利比亞殖民地）	意大利（利比亚殖民地）	Italy (Libya)	イタリア（リビア植民地）
+libya	#7cb342	利比亞	利比亚	Libya	リビア
+israel	#1565c0	以色列	以色列	Israel	イスラエル
+levant	#bcaaa4	黎凡特各地政權	黎凡特各地政权	Local states of the Levant	レバント各地の国家
+other	#cfc6b4	其他地方勢力	其他地方势力	Other local powers	その他の地方勢力

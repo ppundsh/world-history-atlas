@@ -1,0 +1,17 @@
+# 摩洛哥模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不在摩洛哥或未劃分）	（不在摩洛哥或未划分）	(outside Morocco / not drawn)	（モロッコ外・区分なし）
+r_tangier	#e9c46a	丹吉爾—得土安—胡塞馬大區	丹吉尔—得土安—胡塞马大区	Tanger-Tétouan-Al Hoceïma	タンジェ・テトゥアン・アル・ホセイマ地方
+r_rif	#f4a261	東方大區大區	东方大区大区	Oriental	オリエンタル地方
+r_fes	#e76f51	非斯—梅克內斯大區	非斯—梅克内斯大区	Fès-Meknès	フェス・メクネス地方
+r_rabat	#8ab17d	拉巴特—塞拉—蓋尼特拉大區	拉巴特—塞拉—盖尼特拉大区	Rabat-Salé-Kénitra	ラバト・サレ・ケニトラ地方
+r_casablanca	#2a9d8f	卡薩布蘭卡—塞塔特大區	卡萨布兰卡—塞塔特大区	Casablanca-Settat	カサブランカ・セタット地方
+r_marrakech	#6fb3c7	馬拉喀什—薩菲、貝尼邁拉勒—海尼夫拉大區	马拉喀什—萨菲、贝尼迈拉勒—海尼夫拉大区	Marrakesh-Safi, Béni Mellal-Khénifra	マラケシュ・サフィ地方
+r_souss	#b5a7d8	蘇斯—馬塞、蓋勒敏—努恩、德拉—塔菲拉勒特大區	苏斯—马塞、盖勒敏—努恩、德拉—塔菲拉勒特大区	Souss-Massa, Guelmim-Oued Noun, Drâa-Tafilalet	スース・マサ地方
+r_sahara_n	#d8a7b1	南部三大區（含西撒哈拉）大區	南部三大区（含西撒哈拉）大区	The three southern regions (incl. Western Sahara)	南部3地方（西サハラを含む）地方
+b_fes	#c9b79c	非斯、梅克內斯（帝都）（傳統地區）	非斯、梅克内斯（帝都）（传统地区）	Fez and Meknes (imperial cities) (traditional region)	フェス、メクネス（伝統的地域）
+b_rabat	#f6b98a	拉巴特、塞拉（傳統地區）	拉巴特、塞拉（传统地区）	Rabat and Salé (traditional region)	ラバト、サレ（伝統的地域）
+b_marrakech	#a594cf	馬拉喀什（南方首府）（傳統地區）	马拉喀什（南方首府）（传统地区）	Marrakesh (the southern capital) (traditional region)	マラケシュ（伝統的地域）
+b_casablanca	#cc94a0	沙維亞與杜卡拉（大西洋平原）（傳統地區）	沙维亚与杜卡拉（大西洋平原）（传统地区）	Chaouia and Doukkala (traditional region)	シャウィーヤ（伝統的地域）
+b_souss	#d6c8b0	蘇斯（傳統地區）	苏斯（传统地区）	Souss (traditional region)	スース（伝統的地域）
+b_rif	#8cc5d6	里夫與東部（傳統地區）	里夫与东部（传统地区）	The Rif and the east (traditional region)	リーフと東部（伝統的地域）
+f_algeria	#b8c4e0	阿爾及利亞（三省：奧蘭、阿爾及爾、君士坦丁）	阿尔及利亚（三省：奥兰、阿尔及尔、君士坦丁）	French Algeria (Oran, Algiers, Constantine departments)	フランス領アルジェリア（3県）

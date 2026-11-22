@@ -1,0 +1,23 @@
+# 英國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
+canal	uk_bridgewater	1761-07		-2.37,53.47 -2.24,53.48	布里奇沃特運河	Bridgewater Canal	ブリッジウォーター運河	工業革命的第一條運河。	The canal that began the canal age.	運河時代の幕開け。	布里奇沃特运河	Bridgewater Canal
+bridge	uk_ironbridge	1781-01		-2.49,52.63	鐵橋	The Iron Bridge	アイアンブリッジ	世界第一座鑄鐵橋。	The world's first cast-iron bridge.	世界初の鋳鉄橋。	铁桥	The Iron Bridge
+rail	uk_stockton	1825-09		-1.32,54.57 -1.56,54.52	斯托克頓—達靈頓鐵路	Stockton and Darlington Railway	ストックトン・アンド・ダーリントン鉄道	第一條公共蒸汽鐵路。	The first public steam railway.	初の公共蒸気鉄道。	斯托克顿-达灵顿铁路	Stockton and Darlington Railway
+rail	uk_lmr	1830-09		-2.98,53.41 -2.24,53.48	利物浦—曼徹斯特鐵路	Liverpool and Manchester Railway	リヴァプール・アンド・マンチェスター鉄道	第一條城際客運鐵路。	The first inter-city railway.	初の都市間鉄道。	利物浦-曼彻斯特铁路	Liverpool and Manchester Railway
+rail	uk_gwr	1841-06		-0.17,51.52 -0.98,51.45 -1.78,51.56 -2.58,51.45	大西部鐵路（倫敦—布里斯托）	Great Western Railway (London–Bristol)	グレート・ウェスタン鉄道	布魯內爾設計。	Engineered by Brunel.	ブルネルの設計。	大西部铁路	Great Western Railway
+metro	uk_tube	1863-01		-0.13,51.51	倫敦地鐵	London Underground	ロンドン地下鉄	世界第一條地鐵。	The world's first underground railway.	世界初の地下鉄。	伦敦地铁	London Underground
+bridge	uk_forth	1890-03		-3.39,56.0	福斯橋	Forth Bridge	フォース橋	蘇格蘭的懸臂鐵路橋，世界遺產。	Scotland's cantilever rail bridge; a World Heritage site.	世界遺産。	福斯桥	Forth Bridge
+nuclear	uk_calder	1956-10	2003-03	-3.49,54.42	卡德霍爾核電廠	Calder Hall	コールダーホール原子力発電所	世界第一座商用規模核電廠。	The world's first commercial-scale nuclear power station.	世界初の商用原発。		
+highway	uk_m1	1959-11		-0.3,51.6 -1.2,52.6 -1.5,53.8	M1 高速公路	M1 motorway	M1高速道路	英國第一條城際高速公路。	Britain's first inter-city motorway.	英国初の都市間高速道路。	M1高速公路	M1 motorway
+tunnel	uk_channel	1994-05		1.13,51.1	英法海底隧道	Channel Tunnel	英仏海峡トンネル	連接英國與法國。	The undersea link to France.	英仏を結ぶ。	英法海底隧道	Channel Tunnel
+hsr	uk_hs1	2007-11		-0.13,51.53 0.31,51.44 1.13,51.1	高速一號線	High Speed 1	ハイスピード1	英國第一條高速鐵路。	Britain's first high-speed line.	英国初の高速鉄道。	高速一号线	High Speed 1
+metro	uk_elizabeth	2022-05		-0.13,51.52	伊莉莎白線	Elizabeth line	エリザベス線	橫貫倫敦的新鐵路。	A new railway across London.	ロンドン横断の新線。	伊丽莎白线	Elizabeth line
+road	uk_great_north	1663-05		-0.12,51.51 -0.27,52.57 -0.65,53.07 -1.13,53.52 -1.55,54.52 -1.61,54.97 -2.0,55.77 -3.19,55.95	大北路（第一條收費公路法案）	Great North Road (first turnpike act)	グレート・ノース・ロード	倫敦到愛丁堡的驛道，1663 年首開收費公路。	The London–Edinburgh road; England's first turnpike in 1663.	ロンドンとエディンバラを結ぶ。	大北路	Great North Road (Great Britain)
+bridge	uk_tower	1894-06		-0.0754,51.5055	倫敦塔橋	Tower Bridge	タワーブリッジ	泰晤士河上的開合橋。	The bascule bridge over the Thames.	テムズ川の跳開橋。	伦敦塔桥	Tower Bridge
+bridge	uk_severn	1966-09		-2.64,51.61	塞文橋	Severn Bridge	セヴァーン橋	連接英格蘭與威爾斯的懸索橋。	The suspension bridge joining England and Wales.	イングランドとウェールズを結ぶ。	塞文桥	Severn Bridge
+bridge	uk_humber	1981-06		-0.45,53.706	亨伯橋	Humber Bridge	ハンバー橋	曾為世界跨徑最大的懸索橋。	Once the world's longest single-span suspension bridge.	かつて世界最長の吊橋。	亨伯桥	Humber Bridge
+highway	uk_m25	1986-10		-0.5,51.29 -0.52,51.42 -0.49,51.53 -0.35,51.66 -0.2,51.69 0.13,51.68 0.27,51.55 0.25,51.47 0.08,51.3 -0.28,51.27 -0.5,51.29	M25 倫敦環城高速公路	M25 motorway	M25	環繞倫敦的高速公路。	The orbital motorway around London.	ロンドン環状高速道路。	M25高速公路	M25 motorway
+port	uk_london_docks	1802-08	1980-01	-0.03,51.5	倫敦碼頭區（西印度碼頭）	London Docklands (West India Docks)	ロンドン・ドックランズ	大英帝國的貿易中心。	The trading heart of the British Empire.	大英帝国の交易拠点。	伦敦码头区	London Docklands
+port	uk_liverpool	1715-08		-3.0,53.41	利物浦港	Port of Liverpool	リヴァプール港	世界第一座濕船塢，大西洋貿易大港。	The world's first wet dock; a great Atlantic port.	世界初の湿ドック。	利物浦港	Port of Liverpool
+port	uk_felixstowe	1967-01		1.33,51.95	費利克斯托港	Port of Felixstowe	フェリクストウ港	英國最大的貨櫃港。	Britain's busiest container port.	英国最大のコンテナ港。	费利克斯托港	Port of Felixstowe
+airport	uk_lhr	1946-05		-0.45,51.47	倫敦希斯洛機場	Heathrow Airport	ヒースロー空港	歐洲最繁忙的機場之一。	One of Europe's busiest airports.	欧州有数の空港。	伦敦希思罗机场	Heathrow Airport
+airport	uk_croydon	1920-03	1959-09	-0.12,51.36	克羅伊登機場	Croydon Airport	クロイドン空港	倫敦第一座國際機場。	London's first international airport.	ロンドン初の国際空港。		Croydon Airport

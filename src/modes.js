@@ -6,7 +6,7 @@ import { pagePicture } from './pageimage.js';
 //   religion — same polities, coloured by their official / dominant religion
 //   china    — 1911–1951 provinces month by month, coloured by the controlling faction
 import { feature, mesh, merge } from 'topojson-client';
-import { geoArea, geoContains, geoCentroid } from 'd3-geo';
+import { geoArea, geoContains, geoCentroid, geoBounds } from 'd3-geo';
 import polylabel from 'polylabel';
 import { store, featuresFor, P } from './data.js';
 
@@ -23,9 +23,9 @@ export async function loadReligions() {
 }
 
 // Regional modes (China 1911–1951, Taiwan 1600–2026): hand-made unit maps with month-by-month control
-const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json', korea: 'korea_units.json', vietnam: 'vietnam_units.json', germany: 'germany_units.json', poland: 'poland_units.json', italy: 'italy_units.json', spain: 'spain_units.json', india: 'india_units.json', prc: 'prc_units.json', usa: 'usa_units.json' };
+const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json', korea: 'korea_units.json', vietnam: 'vietnam_units.json', germany: 'germany_units.json', poland: 'poland_units.json', italy: 'italy_units.json', spain: 'spain_units.json', india: 'india_units.json', prc: 'prc_units.json', usa: 'usa_units.json' , france: 'france_units.json', egypt: 'egypt_units.json', iran: 'iran_units.json', turkey: 'turkey_units.json', uk: 'uk_units.json', mexico: 'mexico_units.json', morocco: 'morocco_units.json', brazil: 'brazil_units.json', argentina: 'argentina_units.json', thailand: 'thailand_units.json', indonesia: 'indonesia_units.json' };
 // regional modes that have an administrative-division layer next to the control layer
-export const LAYERED = ['taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa'];
+export const LAYERED = ['taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
 const OVERSEAS_GOVS = new Set(['taihoku', 'keijo', 'toyohara', 'ryojun', 'koror', 'shinkyo']);
 export const REGIONS = Object.keys(UNIT_FILES);
 export async function loadRegion(name) {
@@ -117,7 +117,17 @@ function contextFor(c, year) {
   if (c.ctxYear === year) return c.ctxFeats;
   const all = featuresFor(year) || [], units = c.units || [];
   c.ctxPieces ||= new Map();               // world feature → its pieces that do not lie on the region
-  const on = p => { const [x, y] = geoCentroid(p); return units.some(u => geoContains(u, [x, y])); };
+  // each unit's lon/lat box, so most pieces are ruled out without the (slow) spherical point-in-polygon test
+  c.unitBoxes ||= units.map(u => geoBounds(u));
+  const inBox = ([[x0, y0], [x1, y1]], x, y) => y >= y0 && y <= y1 && (x0 <= x1 ? x >= x0 && x <= x1 : x >= x0 || x <= x1);
+  c.ringOn ||= new WeakMap();              // polygon rings are shared between years: test each once
+  const on = p => {
+    const key = p.coordinates[0];
+    if (c.ringOn.has(key)) return c.ringOn.get(key);
+    const [x, y] = geoCentroid(p);
+    const r = units.some((u, i) => inBox(c.unitBoxes[i], x, y) && geoContains(u, [x, y]));
+    c.ringOn.set(key, r); return r;
+  };
   const pieces = f => {
     if (!c.ctxPieces.has(f)) {
       const g = f.geometry, polys = g.type === 'MultiPolygon' ? g.coordinates : g.type === 'Polygon' ? [g.coordinates] : [];

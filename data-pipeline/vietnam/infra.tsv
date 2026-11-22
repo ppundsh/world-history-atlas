@@ -1,4 +1,4 @@
-# 越南模式：重大建設（格式見 taiwan/infra.tsv）。路線為簡化示意；年代依各維基百科條目。
+# 越南模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	vn_saigon_mytho	1885-07		106.7,10.78 106.36,10.36	西貢—美萩鐵路	Saigon–Mỹ Tho railway	サイゴン—ミトー鉄道	印度支那第一條鐵路。	The first railway in Indochina.	インドシナ初の鉄道。	西貢—美萩鐵路	Saigon–Mỹ Tho railway
 bridge	vn_longbien	1902-02		105.86,21.04	龍編橋（杜美橋）	Long Biên (Paul Doumer) Bridge	ロンビエン橋	跨紅河的鋼橋，越戰時屢遭轟炸。	A steel bridge over the Red River, bombed repeatedly in the war.	紅河の鉄橋、戦時に爆撃。	龍編橋	Long Biên Bridge
 rail	vn_yunnan	1910-04		106.68,20.86 105.85,21.03 104.0,22.5 103.95,22.5 103.0,24.0 102.7,25.04	滇越鐵路（海防—昆明）	Yunnan–Vietnam railway (Haiphong–Kunming)	滇越鉄道（ハイフォン—昆明）	法國修築，深入雲南。	Built by France deep into Yunnan.	フランスが雲南まで建設。	滇越鐵路	Kunming–Haiphong railway
@@ -13,3 +13,11 @@ metro	vn_hanoi_metro	2021-11		105.82,21.0	河內地鐵吉靈—河東線	Hanoi M
 metro	vn_hcmc_metro	2024-12		106.7,10.78	胡志明市地鐵 1 號線	Ho Chi Minh City Metro Line 1	ホーチミン市メトロ1号線	日本援助興建，延宕多年通車。	Built with Japanese aid; opened years late.	日本の援助で建設。	胡志明市地鐵	Ho Chi Minh City Metro
 highway	vn_expressway	2023-04		105.85,21.03 105.9,20.25 105.78,19.81 105.68,18.67 106.6,17.47	北南高速公路東線（北段）	North–South Expressway East (northern sections)	南北高速道路東線（北部）	陸續通車。	Opened section by section.	順次開通。	北南高速公路東線	North–South Expressway East
 cable	vn_aag	2009-11		107.08,10.35 114.0,8.0 125.0,10.0 144.7,13.45	亞美海纜（AAG）	Asia–America Gateway cable	AAGケーブル	越南主要對外海纜，屢次斷線。	Vietnam's main outside link, often broken.	頻繁に切断される主要ケーブル。	亞美海底電纜	Asia-America Gateway
+road	vn_quanlo	1802-01		105.85,21.03 105.97,20.25 105.77,19.8 105.68,18.67 106.6,17.47 107.58,16.46 108.22,16.05 108.8,15.12 109.2,13.78 109.19,12.25 108.1,10.93 106.7,10.78	官路（嘉隆時期南北驛道）	The Mandarin Road	官路（マンダリン・ロード）	阮朝連接升龍、順化與嘉定的驛道，今一號國道前身。	The Nguyễn post road joining Hanoi, Huế and Saigon, forerunner of Highway 1.	阮朝の幹線駅道。	越南1号国道	National Route 1 (Vietnam)
+bridge	vn_mythuan	2000-05		105.91,10.27	美順橋	Mỹ Thuận Bridge	ミートゥアン橋	湄公河上的第一座大橋。	The first great bridge over the Mekong.	メコン川初の大橋。	美顺桥	Mỹ Thuận Bridge
+bridge	vn_cantho	2010-04		105.75,10.03	芹苴橋	Cần Thơ Bridge	カントー橋	日本援建的後江大橋。	A Japanese-aided bridge over the Bassac.	日本の援助で建設。	芹苴大桥	Cần Thơ Bridge
+bridge	vn_nhattan	2015-01		105.79,21.12	日新橋（越日友誼橋）	Nhật Tân Bridge	ニャッタン橋	河內紅河上的斜張橋。	A cable-stayed bridge over the Red River in Hanoi.	ハノイの斜張橋。	日新桥	Nhật Tân Bridge
+port	vn_saigon_port	1860-02		106.71,10.76	西貢港	Port of Saigon	サイゴン港	法國殖民時期開放的南方大港。	The great southern port opened under French rule.	南部の大港。	西贡港	Saigon Port
+port	vn_haiphong	1874-01		106.68,20.86	海防港	Port of Haiphong	ハイフォン港	北部的主要海港。	The main seaport of the north.	北部の主要港。	海防港	Port of Haiphong
+airport	vn_tsn	1930-01		106.66,10.82	新山一國際機場	Tân Sơn Nhất International Airport	タンソンニャット国際空港	越戰時期世界最繁忙的機場之一。	One of the world's busiest airports in the war years.	戦時中は世界有数の発着数。	新山一国际机场	Tan Son Nhat International Airport
+airport	vn_noibai	1978-01		105.8,21.22	內排國際機場	Noi Bai International Airport	ノイバイ国際空港	河內的國際門戶。	Hanoi's international gateway.	ハノイの国際空港。	内排国际机场	Noi Bai International Airport
