@@ -1,8 +1,8 @@
 # 巴西模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
-road	br_estrada_real	1700-01		-43.17,-22.91 -43.5,-20.39 -43.6,-18.24	皇家道路（黃金之路）	Estrada Real (the gold road)	王の道	米納斯金礦運往里約的道路。	The road that carried Minas gold to Rio.	金を運んだ道。		
+road	br_estrada_real	1700-01		-43.17,-22.91 -43.5,-20.39 -43.6,-18.24	皇家道路（黃金之路）	Estrada Real (the gold road)	王の道	米納斯金礦運往里約的道路。	The road that carried Minas gold to Rio.	金を運んだ道。		Estrada Real
 rail	br_maua	1854-04		-43.2,-22.7 -43.25,-22.55	茅阿鐵路	Mauá Railway	マウア鉄道	巴西第一條鐵路。	Brazil's first railway.	ブラジル初の鉄道。		
-rail	br_madeira	1912-08		-63.9,-8.76 -65.33,-10.78	馬德拉—馬莫雷鐵路	Madeira-Mamoré Railway	マデイラ・マモレ鉄道	阿克里條約換來的叢林鐵路。	The jungle railway promised for Acre.	アクレ取得の見返りの鉄道。		
-road	br_belem_brasilia	1960-01		-47.88,-15.79 -48.0,-10.0 -48.0,-5.0 -48.5,-1.46	貝倫—巴西利亞公路	Belém–Brasília highway	ベレン・ブラジリア街道	打開亞馬遜的公路。	The road that opened up the Amazon.	アマゾンを開いた道。		
+rail	br_madeira	1912-08		-63.9,-8.76 -65.33,-10.78	馬德拉—馬莫雷鐵路	Madeira-Mamoré Railway	マデイラ・マモレ鉄道	阿克里條約換來的叢林鐵路。	The jungle railway promised for Acre.	アクレ取得の見返りの鉄道。		Madeira-Mamoré Railroad
+road	br_belem_brasilia	1960-01		-47.88,-15.79 -48.0,-10.0 -48.0,-5.0 -48.5,-1.46	貝倫—巴西利亞公路	Belém–Brasília highway	ベレン・ブラジリア街道	打開亞馬遜的公路。	The road that opened up the Amazon.	アマゾンを開いた道。		Belém–Brasília Highway
 highway	br_transamazonica	1972-08		-34.88,-7.12 -42.8,-5.09 -49.1,-5.37 -55.5,-4.28 -63.0,-7.7	橫貫亞馬遜公路	Trans-Amazonian Highway	アマゾン横断道路	軍政時期的大型公路計畫。	A great road scheme of the military years.	軍政期の道路計画。	泛亚马孙公路	Trans-Amazonian Highway
 dam	br_itaipu	1984-05		-54.59,-25.41	伊泰普水壩	Itaipu Dam	イタイプ・ダム	巴西與巴拉圭共建的巨型水壩。	The giant dam shared with Paraguay.	パラグアイと共同の巨大ダム。	伊泰普水坝	Itaipu Dam
 nuclear	br_angra	1985-01		-44.46,-23.01	安格拉核電廠	Angra Nuclear Power Plant	アングラ原子力発電所	巴西唯一的核電廠。	Brazil's only nuclear plant.	ブラジル唯一の原発。		

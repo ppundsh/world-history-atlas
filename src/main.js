@@ -1,4 +1,5 @@
 import './style.css';
+import { setHoverLine } from './langlayer.js';
 import { loadCore, loadChunk, chunkFor, countFor, store, P, loadPhysical, featuresFor, loadModern, loadDetail } from './data.js';
 import { PROJ_INFO } from './projinfo.gen.js';
 import { PROJ_METRICS } from './projmetrics.gen.js';
@@ -899,7 +900,7 @@ function buildUI() {
   });
   app.onSelect = hit => {
     if (hit?.pulse) { openPulse(hit.pulse); return; }
-    if (hit?.line) { hit.line.kind === 'work' ? showWork(hit.line.id) : showCable(hit.line.id); return; }
+    if (hit?.line) { if (hit.line.kind === 'work') showWork(hit.line.id); else if (hit.line.kind === 'cable') showCable(hit.line.id); return; }
     if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : hit.marker.kind === 'art' ? showArt(hit.marker.id) : hit.marker.kind === 'lang' || hit.marker.kind === 'langArea' ? showLang(hit.marker.id) : hit.marker.kind === 'cap' ? (st.selected = hit.marker.id, showPolity(hit.marker.id), redraw()) : hit.marker.kind === 'work' ? showWork(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
     app.selectedProv = null;
     if (!hit) { st.selected = null; hideInfo(); redraw(); return; }
@@ -912,11 +913,14 @@ function buildUI() {
   let hoverT = 0;
   app.onHover = (hit, e) => {
     holdPulse(hit?.pulse || null);
+    // the line under the mouse is drawn thicker
+    if (setHoverLine(hit?.line ? hit.line.kind + ':' + hit.line.id : null)) st.projection === 'globe' ? app.globe?.map?.triggerRepaint() : app.flat.request();
     const now = performance.now(); if (now - hoverT < 60) return; hoverT = now;
     const tip = $('#tooltip');
-    $('#stage').style.cursor = hit?.marker || hit?.pulse || hit?.line ? 'pointer' : '';
+    const info = hit?.line ? hit.line.kind !== 'flow' : hit?.marker || hit?.pulse;     // a war or migration arrow has no panel
+    $('#stage').style.cursor = info ? 'pointer' : '';
     if (hit?.marker || hit?.pulse || hit?.line) {
-      tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.line ? hit.line.name || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + ' · ' + t(st.lang).clickInfo;
+      tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.line ? hit.line.name || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + (info ? ' · ' + t(st.lang).clickInfo : '');
       tip.hidden = false;
       const r = $('#stage').getBoundingClientRect();
       tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
@@ -935,7 +939,7 @@ function buildUI() {
     const r = $('#stage').getBoundingClientRect();
     tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
   };
-  $('#stage').addEventListener('pointerleave', () => { $('#tooltip').hidden = true; });
+  $('#stage').addEventListener('pointerleave', () => { $('#tooltip').hidden = true; if (setHoverLine(null)) redraw(); });
   window.addEventListener('resize', drawSpark);
 }
 
@@ -981,7 +985,7 @@ function applyLang() {
   $('#play').title = st.playing ? s.pause : s.play;
   $('#back').title = s.stepBack; $('#fwd').title = s.stepFwd; $('#start').title = s.toStart;
   $('#zin').title = s.zoomIn; $('#zout').title = s.zoomOut; $('#reset').title = s.reset; $('#north').title = s.north; if (st.projection !== 'globe') syncLock(); $('#full').title = s.fullscreen;
-  $('#t-twCompare').closest('label').title = s.twInspired;
+  $('#t-twCompare').closest('label').title = s.twShapeTip + '\n' + s.twInspired;
   $('#capSwitch').title = s.capitalsTip; $('#t-artPics').closest('label').title = s.artPicsTip;
   $('#markBtn').textContent = s.marks + ' ▾'; $('#l-markGeneral').textContent = s.markGeneral; $('#l-picSize').textContent = s.picSize; $('#l-pics').textContent = s.picsL;
   syncMarkMenu();
@@ -1402,6 +1406,7 @@ function addPinButton() {
 }
 function pinCurrent() {
   const id = st.selected, box = $('#info'); if (id == null || box.hidden) return;
+  const pinName = REGIONS.includes(st.mode) ? box.querySelector('h2')?.textContent?.trim() || '' : P.name(id, st.langInfo.col);
   const F = frame(st), s = t(st.lang);
   const feats = (F.feats || []).filter(f => f.properties.p === id);
   const q = !REGIONS.includes(st.mode) && P.row(id)?.[10], c = q && capitalOf(q, st.year);
@@ -1410,6 +1415,8 @@ function pinCurrent() {
     marks: c ? [{ kind: 'cap', id, cap: c.c, img: c.img, lon: c.ll[0], lat: c.ll[1], text: c.n, color, big: true, pin: true, hi: true }] : [],
     html: box.innerHTML };
   st.selected = null; app.selectedProv = null; hideInfo();
+  // the floating outline becomes the pinned country
+  app.compare.useShape(feats, pinName);
   renderPin(); redraw();
 }
 function renderPin() {
@@ -1425,7 +1432,7 @@ function renderPin() {
   bindChips(card);
   card.hidden = false; placeInfo();
 }
-function unpin() { app.pin = null; renderPin(); redraw(); }
+function unpin() { app.pin = null; app.compare.useShape(null); renderPin(); redraw(); }
 // the current card goes below the pinned one (desktop); on phones the pinned card is a strip at the top
 function placeInfo() {
   const card = $('#pinInfo'), box = $('#info');
@@ -1685,9 +1692,13 @@ function showSeat(id, kind = 'seat') {
 function workSource(x, s, y0) {
   if (!x.path) return s.workSrc;
   const net = x.net === 'rail' ? s.netRail : s.netRoad;
-  const route = x.src === 'ne' ? s.workSrcNe : x.src === 'mixed' ? s.workSrcMixed : x.src === 'sketch' ? s.workSrcSketch : s.workSrcLine;
+  const route = { ne: s.workSrcNe, mixed: s.workSrcMixed, sketch: s.workSrcSketch, osm: s.workSrcOsm, 'osm-mixed': s.workSrcOsmMixed }[x.src] || s.workSrcLine;
   const old = x.kind === 'road' && x.src && x.src !== 'sketch' && y0 < 1850 ? ' ' + s.workSrcOld : '';
-  return s.workSrc + '<br>' + route.replace('{net}', net) + old + (x.src && x.src !== 'sketch' ? ` <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/" target="_blank" rel="noopener">naturalearthdata.com</a>` : '');
+  const a = (href, text) => ` <a href="${href}" target="_blank" rel="noopener">${text}</a>`;
+  const links = x.src?.startsWith('osm')
+    ? (x.osm || []).map((r, i) => a('https://www.openstreetmap.org/relation/' + r, s.osmRel + (x.osm.length > 1 ? ' ' + (i + 1) : ''))).join('') + a('https://www.openstreetmap.org/copyright', '© OpenStreetMap')
+    : x.src && x.src !== 'sketch' ? a('https://www.naturalearthdata.com/downloads/10m-cultural-vectors/', 'naturalearthdata.com') : '';
+  return s.workSrc + '<br>' + route.replace('{net}', net) + old + links;
 }
 function showWork(id) {
   const c = reg(), s = t(st.lang), col = st.langInfo.col;

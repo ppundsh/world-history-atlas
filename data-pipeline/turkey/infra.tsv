@@ -4,7 +4,7 @@ rail	tr_hejaz	1908-09		36.2,36.2 36.3,33.5	漢志鐵路（起點段）	Hejaz Rai
 bridge	tr_bosphorus	1973-10		29.04,41.05	博斯普魯斯大橋	Bosphorus Bridge	ボスポラス大橋	第一座連接歐亞的跨海峽大橋。	The first bridge between Europe and Asia over the strait.	初の欧亜連絡橋。	七·一五烈士大桥	Bosphorus Bridge
 dam	tr_ataturk	1992-07		38.32,37.48	阿塔圖克水壩	Atatürk Dam	アタテュルク・ダム	東南安納托利亞計畫的核心水壩。	The heart of the South-eastern Anatolia Project.	南東アナトリア計画の中核。	阿塔图尔克水坝	Atatürk Dam
 tunnel	tr_marmaray	2013-10		29.0,41.0	馬爾馬拉海底鐵路隧道	Marmaray tunnel	マルマライ	穿越博斯普魯斯海峽的海底鐵路。	The rail tunnel under the Bosphorus.	ボスポラス海峡の海底鉄道。	马尔马拉海底隧道	Marmaray
-hsr	tr_yht	2009-03		32.85,39.93 30.52,39.78 29.92,40.77 28.98,41.01	安卡拉—伊斯坦堡高速鐵路	Ankara–Istanbul high-speed railway	アンカラ—イスタンブール高速鉄道	土耳其的第一條高速鐵路。	Turkey's first high-speed line.	トルコ初の高速鉄道。		
+hsr	tr_yht	2009-03		32.85,39.93 30.52,39.78 29.92,40.77 28.98,41.01	安卡拉—伊斯坦堡高速鐵路	Ankara–Istanbul high-speed railway	アンカラ—イスタンブール高速鉄道	土耳其的第一條高速鐵路。	Turkey's first high-speed line.	トルコ初の高速鉄道。		Ankara–Istanbul high-speed railway
 airport	tr_ist	2018-10		28.73,41.26	伊斯坦堡機場	Istanbul Airport	イスタンブール空港	世界最大的機場之一。	One of the world's largest airports.	世界最大級の空港。	伊斯坦布尔机场	Istanbul Airport
 bridge	tr_canakkale	2022-03		26.62,40.35	1915 恰納卡萊大橋	1915 Çanakkale Bridge	1915年チャナッカレ橋	跨達達尼爾海峽，世界最長主跨的吊橋。	Over the Dardanelles; the longest main span of any suspension bridge.	世界最長の吊橋。	1915恰纳卡莱大桥	1915 Çanakkale Bridge
 nuclear	tr_akkuyu	2025-12		33.54,36.14	阿庫尤核電廠	Akkuyu Nuclear Power Plant	アックユ原子力発電所	土耳其第一座核電廠。	Turkey's first nuclear plant.	トルコ初の原発。		

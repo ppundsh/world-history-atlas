@@ -17,6 +17,11 @@ function screenLine(project, coords) {
   return out;
 }
 
+// the line under the mouse ('kind:id'), drawn thicker so it is clear which one the tooltip and a click mean
+let HOVER = null;
+export function setHoverLine(key) { const ch = key !== HOVER; HOVER = key; return ch; }
+const hot = (kind, id) => HOVER != null && HOVER === kind + ':' + id;
+
 // path(geometry) adds the geometry to the context's current path; project([lon, lat]) → [x, y] or null.
 // Returns the drawn cables and works as screen polylines, for hit-testing.
 export function drawLang(ctx, L, path, project, font, zoom = 1) {
@@ -35,15 +40,16 @@ export function drawLang(ctx, L, path, project, font, zoom = 1) {
     if (f.p <= 0 || f.alpha <= 0.02) continue;
     const interp = f.path ? along(f.path) : geoInterpolate(f.from, f.to), n = f.path ? 20 * f.path.length : 40, pts = [];
     for (let i = 0; i <= n; i++) pts.push(interp(f.p * i / n));
-    const w = 1.6 + f.wt * 1.1;
+    const fk = f.g != null ? 'cable' : 'flow', fid = f.id ?? f.name ?? f.label, on = fid != null && hot(fk, fid);
+    const w = (1.6 + f.wt * 1.1) * (on ? 2.2 : 1);
     // branches to other landing points grow together with the main route
     const extra = (f.parts || []).filter(q => q !== f.path && q.length > 1).map(q => { const ip = along(q), m = 8 * q.length, o = []; for (let i = 0; i <= m; i++) o.push(ip(f.p * i / m)); return o; });
-    ctx.globalAlpha = f.alpha;
+    ctx.globalAlpha = on ? 1 : f.alpha;
     ctx.lineCap = 'round'; ctx.lineJoin = 'round';
     ctx.beginPath(); path({ type: 'LineString', coordinates: pts }); for (const o of extra) path({ type: 'LineString', coordinates: o });
     ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = w + 3; ctx.stroke();
     ctx.strokeStyle = f.color; ctx.lineWidth = w; ctx.stroke();
-    if (f.g != null && f.id) for (const c of [pts, ...extra]) hits.push({ kind: 'cable', id: f.id, name: f.name || f.label, pts: screenLine(project, c) });
+    if (fid != null && (f.name || f.label)) for (const c of [pts, ...extra]) hits.push({ kind: fk, id: fid, name: f.name || f.label, pts: screenLine(project, c) });
     // arrowhead at the moving tip
     const tip = project(pts[n]), back = project(interp(Math.max(0, f.p - Math.max(0.04, 0.6 / Math.max(1, zoom)) * 0.25)));
     if (tip && back && !f.noHead) {
@@ -99,20 +105,22 @@ function drawWorks(ctx, W, path, project, font, hits) {
   ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   for (const n of W.net) {
     if (n.alpha <= 0.02) continue;
-    const st = WORK_STYLE[n.kind] || { w: 1.6 };
-    ctx.globalAlpha = 0.55 * n.alpha;
+    const st = WORK_STYLE[n.kind] || { w: 1.6 }, on = hot('work', n.id);
+    ctx.globalAlpha = on ? 1 : 0.55 * n.alpha;
     ctx.beginPath(); for (const q of n.parts || [n.path]) path({ type: 'LineString', coordinates: q });
-    ctx.strokeStyle = n.color; ctx.lineWidth = Math.max(1, st.w * 0.55); ctx.stroke();
+    if (on) { ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = st.w * 2 + 3; ctx.stroke(); }
+    ctx.strokeStyle = n.color; ctx.lineWidth = on ? st.w * 2 : Math.max(1, st.w * 0.55); ctx.stroke();
     if (hits && n.id) for (const q of n.parts || [n.path]) hits.push({ kind: 'work', id: n.id, name: n.label, pts: screenLine(project, q) });
   }
   for (const l of W.lines) {
     if (l.p <= 0) continue;
     const st = WORK_STYLE[l.kind] || { w: 2 }, interp = along(l.path), drawn = [];
     for (const q of l.parts || [l.path]) { const ip = q === l.path ? interp : along(q), m = 20 * q.length, o = []; for (let i = 0; i <= m; i++) o.push(ip(l.p * i / m)); drawn.push(o); }
-    ctx.globalAlpha = l.alpha;
+    const on = hot('work', l.id), k = on ? 2 : 1;
+    ctx.globalAlpha = on ? 1 : l.alpha;
     ctx.beginPath(); for (const o of drawn) path({ type: 'LineString', coordinates: o });
-    ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = st.w + 4; ctx.stroke();
-    ctx.strokeStyle = l.color; ctx.lineWidth = st.w + 1.2; ctx.stroke();
+    ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = (st.w + 1.2) * k + 3; ctx.stroke();
+    ctx.strokeStyle = l.color; ctx.lineWidth = (st.w + 1.2) * k; ctx.stroke();
     if (st.dash) { ctx.setLineDash(st.dash); ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = Math.max(1, st.w * 0.45); ctx.stroke(); ctx.setLineDash([]); }
     if (hits && l.id) for (const o of drawn) hits.push({ kind: 'work', id: l.id, name: l.label, pts: screenLine(project, o) });
     const mid = project(interp(l.p / 2));

@@ -146,6 +146,18 @@ CLIO=路徑/cliopatria_polities_only_v021.geojson NE=路徑/natural-earth-vector
 - 每條路線記錄來源：全段依圖資（`ne`）、部分依圖資（`mixed`）、圖資中沒有（`sketch`）。網站點選路線時，說明欄會標示路線來源與 Natural Earth 連結。
 - Natural Earth 1:10m 是約千萬分之一比例尺的圖資，位置誤差約數百公尺到 1–2 公里；高鐵若與傳統鐵路並行，圖資中常只有一條線。古道依今日沿線道路繪製，說明欄會註明。
 
+### 以 OpenStreetMap 取得精確路線
+
+Natural Earth 的精度約 1–2 公里；更精確的路線由 OpenStreetMap 取得，已整合在離線抓取裡：雙擊 `抓取離線檔案.bat`（`fetch-offline.ps1`）會在縮圖之後接著更新路線；只更新路線用 `fetch-offline.ps1 -RoutesOnly`（或 `抓取OSM路線.bat`），略過路線用 `-NoRoutes`。新增國家或在 `infra.tsv` 加了路線，再執行一次就會補上，已取得的從快取直接使用。流程：
+1. 依 `infra.tsv` 的維基百科條目查出 Wikidata 項目（每 50 條一次請求）；
+2. 透過 Overpass API 取得 OpenStreetMap 上標了該項目的路線關係（含子路線）與其路段，多條合併成一次查詢、一次只送一個請求，結果快取在 `data-pipeline/sources/osm/`；
+3. 在路段上截取 `infra.tsv` 所列城市之間的部分（一條建設常只是整條路線的某一段）；
+4.（選用，`-Corridor`）沒有路線關係、或關係到不了每個城市的路段，改取沿線的 OSM 幹線鐵路或高速公路、快速道路，在實際路網上求出路徑（高鐵優先走 `highspeed=yes` 的軌道、高速公路優先走 `motorway`）；
+5. 其餘路段沿用 Natural Earth（本身就是主要道路與鐵路的地圖）。
+只取路線本身、不下載整片路網，輸出再簡化到約 80 公尺精度，地圖用得到的程度即可。
+結果寫入 `data-pipeline/<地區>/routes_osm.json`，並直接更新 `public/data/<地區>.json`（建置時 `routes_osm.json` 優先於 `routes.json`）。沒有維基百科條目、或自動找到的路線不對時，在 `data-pipeline/osm/manual.tsv` 指定 Wikidata 項目或 OSM 路線關係編號。
+路線資料 © OpenStreetMap 貢獻者，依 ODbL 1.0 授權；`routes_osm.json` 屬於 OpenStreetMap 的衍生資料庫，同樣以 ODbL 提供。網站點選路線時會列出 OSM 路線關係連結。
+
 ### 藝術史、資料來源
 
 - 藝術史：改 `data-pipeline/art/movements.tsv` 後執行 `node data-pipeline/art/build.mjs`。

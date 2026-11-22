@@ -1,7 +1,7 @@
 # 墨西哥模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 road	mx_camino	1598-01		-99.13,19.43 -101.26,21.02 -102.57,22.77 -105.67,26.93 -106.42,31.69 -105.94,35.69	皇家內陸大道（白銀之路）	Camino Real de Tierra Adentro	王の内陸道	連接墨西哥城與新墨西哥的白銀大道。	The silver road from Mexico City to New Mexico.	銀の道。	皇家内陆大道	Camino Real de Tierra Adentro
-rail	mx_veracruz	1873-01		-96.13,19.2 -97.1,18.85 -98.2,19.04 -99.13,19.45	墨西哥鐵路（韋拉克魯斯—墨西哥城）	Mexican Railway (Veracruz–Mexico City)	メキシコ鉄道	第一條幹線鐵路。	The first trunk railway.	最初の幹線鉄道。		
-rail	mx_central	1884-03		-99.13,19.45 -100.39,20.59 -101.26,21.02 -102.57,22.77 -106.09,28.64 -106.48,31.73	墨西哥中央鐵路（墨西哥城—北方帕索）	Mexican Central Railway	メキシコ中央鉄道	連接美國的南北幹線。	The north–south line to the United States.	米国と結ぶ幹線。		
+rail	mx_veracruz	1873-01		-96.13,19.2 -97.1,18.85 -98.2,19.04 -99.13,19.45	墨西哥鐵路（韋拉克魯斯—墨西哥城）	Mexican Railway (Veracruz–Mexico City)	メキシコ鉄道	第一條幹線鐵路。	The first trunk railway.	最初の幹線鉄道。		Mexican Railway
+rail	mx_central	1884-03		-99.13,19.45 -100.39,20.59 -101.26,21.02 -102.57,22.77 -106.09,28.64 -106.48,31.73	墨西哥中央鐵路（墨西哥城—北方帕索）	Mexican Central Railway	メキシコ中央鉄道	連接美國的南北幹線。	The north–south line to the United States.	米国と結ぶ幹線。		Mexican Central Railway
 metro	mx_metro	1969-09		-99.13,19.43	墨西哥城地鐵	Mexico City Metro	メキシコシティ地下鉄	拉丁美洲最大的地鐵之一。	One of Latin America's largest metros.	中南米最大級の地下鉄。	墨西哥城地铁	Mexico City Metro
 dam	mx_chicoasen	1980-05		-93.1,16.94	奇科阿森水壩	Chicoasén Dam	チコアセン・ダム	格里哈爾瓦河上的大型水力發電壩。	A large hydroelectric dam on the Grijalva.	グリハルバ川のダム。		
 nuclear	mx_laguna	1990-07		-96.41,19.72	拉古納貝爾德核電廠	Laguna Verde Nuclear Power Station	ラグナ・ベルデ原子力発電所	墨西哥唯一的核電廠。	Mexico's only nuclear plant.	唯一の原発。		

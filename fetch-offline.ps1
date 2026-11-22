@@ -7,6 +7,11 @@
 #         -Refresh        全部重抓（預設只補缺少的）
 #         -DryRun         只列出需要抓的數量，不連線
 #         -SheetsOnly     不連線，只把已下載的縮圖依年代合併成大圖（下載進行中也可在另一個視窗執行）
+#         -RoutesOnly     只更新鐵路與道路路線（OpenStreetMap）
+#         -NoRoutes       不更新鐵路與道路路線
+#         -Corridor       路線關係找不到的路段，改下載沿線主要道路／鐵路來求路徑（資料量大、較慢；預設不做，沿用 Natural Earth）
+# 縮圖之後會接著從 OpenStreetMap 更新各地區模式的鐵路、公路路線（data-pipeline\osm\fetch-routes.mjs）：
+# 新增國家或在 infra.tsv 加了路線，再執行一次就會補上；已取得的會從快取（data-pipeline\sources\osm）直接使用。
 # 中斷（Ctrl+C、斷線、關機）後再執行一次即可從中斷處接著抓；已抓過的不會再請求。
 # 每次抓完會自動把縮圖依年代合併成大圖（public\offline\sheets），網站只下載瀏覽到的年代。
 # 完成後 commit public\offline 即可（img 資料夾是本機快取，已列入 .gitignore，不需上傳）；圖片的作者與授權清單在 public\offline\CREDITS.md。
@@ -14,7 +19,9 @@ param(
   [int]$DelayMs = 250,
   [switch]$Refresh,
   [switch]$DryRun,
-  [switch]$SheetsOnly
+  [switch]$SheetsOnly,
+  [switch]$RoutesOnly,
+  [switch]$NoRoutes
 )
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
@@ -32,6 +39,17 @@ if (-not (Test-Path -LiteralPath 'node_modules\sharp')) {
   Write-Host '安裝圖片轉檔套件 sharp（只裝在本機，不寫入 package.json）…'
   npm install --no-save sharp; if ($LASTEXITCODE) { exit $LASTEXITCODE }
 }
+
+# 鐵路與道路路線（OpenStreetMap，© OpenStreetMap 貢獻者，ODbL）
+function Update-Routes {
+  Write-Host '更新鐵路與道路路線（OpenStreetMap）：多條路線合併成一次查詢；Overpass 伺服器每次查詢需數秒到一分鐘。' 
+  $routeArgs = @('data-pipeline/osm/fetch-routes.mjs')
+  if ($Refresh) { $routeArgs += '--refresh' }
+  if ($Corridor) { $routeArgs += '--corridor' }
+  node @routeArgs
+  if ($LASTEXITCODE) { Write-Host '路線更新中途停止；再執行一次會從快取繼續。' -ForegroundColor Yellow }
+}
+if ($RoutesOnly) { Update-Routes; exit $LASTEXITCODE }
 
 if ($SheetsOnly) {
   Write-Host '把已下載的縮圖依年代合併成大圖（不連線）…'
@@ -53,5 +71,6 @@ if (-not $DryRun) {
   node data-pipeline/offline/sheets.mjs
   if ($LASTEXITCODE) { Write-Host '合併大圖失敗；可再執行 .\fetch-offline.ps1 -SheetsOnly 重試。' -ForegroundColor Yellow }
 }
+if (-not $DryRun -and -not $NoRoutes) { Update-Routes }
 $min = [math]::Round(((Get-Date) - $t0).TotalMinutes, 1)
-Write-Host "完成（$min 分鐘）。請 commit public\offline 資料夾。" -ForegroundColor Green
+Write-Host "完成（$min 分鐘）。請 commit public\offline、public\data 與 data-pipeline 資料夾。" -ForegroundColor Green

@@ -11,16 +11,31 @@ const BASE = import.meta.env.BASE_URL + 'data/';
 export const CIRCLE = 16;                 // detection circle radius, px
 const PAIRS = [['基隆', '鵝鑾鼻'], ['台北', '高雄'], ['台中', '花蓮'], ['台南', '台東']];
 
+// The floating shape is Taiwan by default; while a country is pinned it is that country (its borders in the
+// pinned year), and Taiwan again once it is unpinned. Only Taiwan has the city-distance view.
 export class TaiwanCompare {
-  constructor(app) { this.app = app; this.on = false; this.center = null; }
+  constructor(app) { this.app = app; this.on = false; this.center = null; this.custom = null; }
   async load() {
-    if (this.shape) return;
+    if (this.tw) return;
     const f = await fetch(BASE + 'taiwan_outline.json').then(r => r.json());
-    this.shape = f; this.cities = f.cities;
-    this.home = geoCentroid(f);
-    this.km2 = geoArea(f) * R * R;
+    this.tw = { shape: f, cities: f.cities, home: geoCentroid(f), km2: geoArea(f) * R * R, name: null };
+    this.apply();
   }
-  // geometry moved so that Taiwan's centre sits at this.center (rotation over the sphere: true size)
+  // feats: the pinned country's features (or null for Taiwan); name: its name
+  useShape(feats, name) {
+    const polys = (feats || []).flatMap(f => f.geometry?.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry?.type === 'MultiPolygon' ? f.geometry.coordinates : []);
+    this.custom = polys.length ? (() => {
+      const shape = { type: 'Feature', properties: {}, geometry: { type: 'MultiPolygon', coordinates: polys } };
+      return { shape, cities: null, home: geoCentroid(shape), km2: geoArea(shape) * R * R, name };
+    })() : null;
+    this.apply();
+  }
+  apply() {
+    const s = this.custom || this.tw; if (!s) return;
+    Object.assign(this, { shape: s.shape, cities: s.cities, home: s.home, km2: s.km2, baseName: s.name });
+    this.mkey = null; this.infoKey = null;
+  }
+  // geometry moved so that the shape's centre sits at this.center (rotation over the sphere: true size)
   moved() {
     const c = this.center, h = this.home;
     const key = c.join();
@@ -28,9 +43,10 @@ export class TaiwanCompare {
     const to = geoRotation([-c[0], -c[1]]).invert, from = geoRotation([-h[0], -h[1]]);
     // rotating home → (0,0) → centre keeps meridians on meridians, so north stays up
     const move = p => to(from(p));
-    const ring = this.shape.geometry.coordinates[0].map(move);
-    const cities = this.cities.map(([hant, en, ja, lon, lat]) => ({ n: { 'zh-Hant': hant, 'zh-Hans': hant, en, ja }, key: hant, home: [lon, lat], p: move([lon, lat]) }));
-    this.mcache = { feature: { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring] } }, cities };
+    const g = this.shape.geometry, polys = g.type === 'Polygon' ? [g.coordinates] : g.coordinates;
+    const coordinates = polys.map(poly => poly.map(ring => ring.map(move)));
+    const cities = (this.cities || []).map(([hant, en, ja, lon, lat]) => ({ n: { 'zh-Hant': hant, 'zh-Hans': hant, en, ja }, key: hant, home: [lon, lat], p: move([lon, lat]) }));
+    this.mcache = { feature: { type: 'Feature', geometry: { type: 'MultiPolygon', coordinates } }, cities };
     this.mkey = key;
     return this.mcache;
   }
@@ -60,17 +76,20 @@ export class TaiwanCompare {
   // draw with a projection function project(ll) → [x, y] | null, on a 2D context (CSS pixels)
   draw(ctx, project, info, lang, t) {
     const m = this.moved();
-    const pts = m.feature.geometry.coordinates[0].map(project);
+    const rings = m.feature.geometry.coordinates.flat().map(r => r.map(project));
+    const pts = rings.flat();
     ctx.save();
     ctx.beginPath();
-    let pen = false, prev = null;
-    for (const p of pts) {
-      if (!p || (prev && Math.hypot(p[0] - prev[0], p[1] - prev[1]) > 400)) { pen = false; prev = p; continue; }
-      if (!pen) { ctx.moveTo(p[0], p[1]); pen = true; } else ctx.lineTo(p[0], p[1]);
-      prev = p;
+    for (const ring of rings) {
+      let pen = false, prev = null;
+      for (const p of ring) {
+        if (!p || (prev && Math.hypot(p[0] - prev[0], p[1] - prev[1]) > 400)) { pen = false; prev = p; continue; }
+        if (!pen) { ctx.moveTo(p[0], p[1]); pen = true; } else ctx.lineTo(p[0], p[1]);
+        prev = p;
+      }
+      ctx.closePath();
     }
-    ctx.closePath();
-    ctx.fillStyle = 'rgba(30,64,175,0.30)'; ctx.fill();
+    ctx.fillStyle = 'rgba(30,64,175,0.30)'; ctx.fill('evenodd');
     ctx.setLineDash([]); ctx.lineWidth = 2; ctx.strokeStyle = '#1e40af'; ctx.stroke();
     // detection circle at the centre
     const cc = project(this.center);
@@ -80,12 +99,13 @@ export class TaiwanCompare {
       ctx.setLineDash([4, 3]); ctx.lineWidth = 2; ctx.strokeStyle = '#0b2a7a'; ctx.stroke(); ctx.setLineDash([]);
       ctx.beginPath(); ctx.arc(cc[0], cc[1], 2.5, 0, 2 * Math.PI); ctx.fillStyle = '#0b2a7a'; ctx.fill();
     }
-    const c = project(geoCentroid(m.feature));
-    let text = t.twCompareDrag;
-    if (info.kind === 'area') text = t.twTimes(info.name, info.ratio);
+    const c = project(geoCentroid(m.feature));   // label above the shape
+    const base = this.baseName || t.twBase;
+    let text = t.twCompareDrag(base);
+    if (info.kind === 'area') text = t.twTimes(info.name, info.ratio, base);
     const ys = pts.filter(Boolean).map(p => p[1]), tall = ys.length ? Math.max(...ys) - Math.min(...ys) : 0;
-    if (info.kind === 'border' && tall < 150) text = t.twBorderZoom;
-    if (info.kind === 'border' && tall >= 150) {
+    if (info.kind === 'border' && this.cities && tall < 150) text = t.twBorderZoom;
+    if (info.kind === 'border' && this.cities && tall >= 150) {
       // Taiwan's own distances, drawn on the moved island
       const at = k => m.cities.find(x => x.key === k);
       ctx.font = `600 11px ${t.font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';

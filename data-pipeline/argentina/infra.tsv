@@ -1,6 +1,6 @@
 # 阿根廷模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
-rail	ar_ferrocarril_oeste	1857-08		-58.38,-34.6 -58.47,-34.63	西部鐵路（阿根廷第一條鐵路）	Ferrocarril Oeste (Argentina's first railway)	西部鉄道	由布宜諾斯艾利斯西行的第一條鐵路。	The first line, running west from Buenos Aires.	アルゼンチン初の鉄道。		
-rail	ar_central	1870-05		-60.64,-32.95 -62.0,-32.4 -64.18,-31.42	中央阿根廷鐵路（羅薩里奧—哥多華）	Central Argentine Railway (Rosario–Córdoba)	中央アルゼンチン鉄道	英資興建的幹線。	A British-financed trunk line.	英国資本の幹線。		
+rail	ar_ferrocarril_oeste	1857-08		-58.38,-34.6 -58.47,-34.63	西部鐵路（阿根廷第一條鐵路）	Ferrocarril Oeste (Argentina's first railway)	西部鉄道	由布宜諾斯艾利斯西行的第一條鐵路。	The first line, running west from Buenos Aires.	アルゼンチン初の鉄道。		Buenos Aires Western Railway
+rail	ar_central	1870-05		-60.64,-32.95 -62.0,-32.4 -64.18,-31.42	中央阿根廷鐵路（羅薩里奧—哥多華）	Central Argentine Railway (Rosario–Córdoba)	中央アルゼンチン鉄道	英資興建的幹線。	A British-financed trunk line.	英国資本の幹線。		Central Argentine Railway
 port	ar_madero	1897-01		-58.36,-34.61	馬德羅港	Puerto Madero	プエルト・マデロ	布宜諾斯艾利斯的港區。	The Buenos Aires docks.	ブエノスアイレスの港湾。	马德罗港	Puerto Madero
 rail	ar_subte	1913-12		-58.37,-34.61 -58.39,-34.61 -58.42,-34.61	布宜諾斯艾利斯地鐵	Buenos Aires Underground	ブエノスアイレス地下鉄	南美洲第一條地鐵。	South America's first subway.	南米初の地下鉄。	布宜诺斯艾利斯地铁	Buenos Aires Underground
 nuclear	ar_atucha	1974-06		-59.2,-33.97	阿圖查核電廠	Atucha Nuclear Power Plant	アトゥチャ原子力発電所	拉丁美洲第一座核電廠。	Latin America's first nuclear plant.	中南米初の原発。		

@@ -1,5 +1,5 @@
 // Packs the bundled thumbnails (public/offline/img/*.webp, made by fetch.mjs) into larger sheets by period:
-//   public/offline/sheets/<hash>.webp   about 40 thumbnails each, ordered by the year they belong to
+//   public/offline/sheets/<hash>.webp   up to 40 thumbnails each, by the period (fixed year bins) they belong to
 //   public/offline/sheets.json          { v, sheets: [{ f, y0, y1, n }], at: { "<img name>": [sheet, x, y, w, h] } }
 // The site (public/sw.js) then fetches one sheet per period, only when a picture of that period is shown, and cuts
 // the pictures out of it in the browser: a few large requests instead of thousands of small ones, and nothing of
@@ -7,7 +7,7 @@
 // be published.
 // Works offline from what fetch.mjs has saved so far, so it can be run while a download is still going on
 // (fetch-offline.ps1 -SheetsOnly), and is run again automatically at the end of every fetch.
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlinkSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
@@ -88,13 +88,28 @@ console.log(`合併縮圖：${list.length} 張（其中 ${list.filter(p => p.yr 
 
 mkdirSync(new URL('sheets/', OUT), { recursive: true });
 const old = read('sheets.json', null), oldBy = new Map((old?.sheets || []).map(s => [s.key, s]));
+// sizes of pictures already packed last time (no need to open 7000 files again), unless a file was replaced since
+const oldAt = old?.at || {};
+let oldTime = 0; try { oldTime = statSync(new URL('sheets.json', OUT)).mtimeMs; } catch { /* first run */ }
+const imgUrl = p => new URL('img/' + p.name, OUT);
+let opened = 0;
+async function size(p) {
+  const o = oldAt[p.name.replace(/\.webp$/, '')];
+  if (o && statSync(imgUrl(p)).mtimeMs < oldTime) { p.w = o[3]; p.h = o[4]; return; }
+  const m = await sharp(fileURLToPath(imgUrl(p))).metadata(); p.w = m.width; p.h = m.height; opened++;
+}
+// fixed period bins: a new picture only changes the sheets of its own period, the others are kept as they are
+const BINS = [[-1e9, -1000, 500], [-1000, 0, 200], [0, 1000, 100], [1000, 1500, 50], [1500, 1800, 20], [1800, 1900, 10], [1900, 1e9, 5]];
+const binOf = y => { if (y == null) return 'none'; for (const [a, b, step] of BINS) if (y < b) return String(a <= -1e9 ? Math.floor(y / step) * step : a + Math.floor((y - a) / step) * step); return 'none'; };
+const bins = new Map();
+for (const p of list) { const k = binOf(p.yr); if (!bins.has(k)) bins.set(k, []); bins.get(k).push(p); }
 const sheets = [], atOut = {};
-let made = 0, kept = 0;
-for (let i = 0; i < list.length; i += PER_SHEET) {
-  const part = list.slice(i, i + PER_SHEET);
-  for (const p of part) { const m = await sharp(fileURLToPath(new URL('img/' + p.name, OUT))).metadata(); p.w = m.width; p.h = m.height; }
+let made = 0, kept = 0, done = 0;
+for (const [, group] of bins) for (let i = 0; i < group.length; i += PER_SHEET) {
+  const part = group.slice(i, i + PER_SHEET);
+  for (const p of part) await size(p);
   // shelf packing, tallest first, rows up to WIDTH px
-  const order = [...part].sort((a, b) => b.h - a.h);
+  const order = [...part].sort((a, b) => b.h - a.h || (a.name < b.name ? -1 : 1));
   let x = 0, y = 0, rowH = 0, W = 0;
   for (const p of order) { if (x + p.w > WIDTH) { y += rowH; x = 0; rowH = 0; } p.x = x; p.y = y; x += p.w; rowH = Math.max(rowH, p.h); W = Math.max(W, x); }
   const H = y + rowH, s = sheets.length;
@@ -103,14 +118,15 @@ for (let i = 0; i < list.length; i += PER_SHEET) {
   if (oldBy.has(key) && existsSync(new URL(f, OUT))) kept++;
   else {
     await sharp({ create: { width: W, height: H, channels: 3, background: '#ffffff' } })
-      .composite(order.map(p => ({ input: fileURLToPath(new URL('img/' + p.name, OUT)), left: p.x, top: p.y })))
+      .composite(order.map(p => ({ input: fileURLToPath(imgUrl(p)), left: p.x, top: p.y })))
       .webp({ quality: QUALITY, effort: 5 }).toFile(fileURLToPath(new URL(f, OUT)));
     made++;
   }
   const ys = part.map(p => p.yr).filter(v => v != null);
   sheets.push({ f, key, y0: ys.length ? Math.min(...ys) : null, y1: ys.length ? Math.max(...ys) : null, n: part.length });
   for (const p of order) atOut[p.name.replace(/\.webp$/, '')] = [s, p.x, p.y, p.w, p.h];
-  process.stdout.write(`\r合併中 ${Math.min(i + PER_SHEET, list.length)}/${list.length}（新做 ${made} 張大圖，沿用 ${kept} 張）   `);
+  done += part.length;
+  process.stdout.write(`\r合併中 ${done}/${list.length}（新做 ${made} 張大圖，沿用 ${kept} 張）   `);
 }
 process.stdout.write('\n');
 const v = createHash('sha1').update(sheets.map(s => s.key).join()).digest('hex').slice(0, 10);
@@ -119,5 +135,5 @@ writeFileSync(new URL('sheets.json', OUT), JSON.stringify({ v, sheets, at: atOut
 const used = new Set(sheets.map(s => s.f.slice(7)));
 let removed = 0;
 for (const f of readdirSync(new URL('sheets/', OUT))) if (!used.has(f)) { try { unlinkSync(new URL('sheets/' + f, OUT)); removed++; } catch { /* keep */ } }
-const size = sheets.reduce((t, s) => { try { return t + readFileSync(new URL(s.f, OUT)).length; } catch { return t; } }, 0);
-console.log(`完成：${sheets.length} 張大圖（共 ${(size / 1048576).toFixed(1)} MB），新做 ${made}、沿用 ${kept}、移除舊的 ${removed}。`);
+const bytes = sheets.reduce((t, s) => { try { return t + readFileSync(new URL(s.f, OUT)).length; } catch { return t; } }, 0);
+console.log(`完成：${sheets.length} 張大圖（共 ${(bytes / 1048576).toFixed(1)} MB），新做 ${made}、沿用 ${kept}、移除舊的 ${removed}；讀取縮圖尺寸 ${opened} 張。`);

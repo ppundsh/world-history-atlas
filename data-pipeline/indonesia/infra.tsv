@@ -1,5 +1,5 @@
 # 印度尼西亞模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
-road	id_postweg	1809-01		105.88,-6.0 106.81,-6.13 107.6,-6.92 108.55,-6.71 110.42,-6.97 112.75,-7.25 114.37,-7.1	大郵路（安耶爾—帕納魯坎）	Great Post Road (Anyer–Panarukan)	大郵便道路	丹德爾斯以強制勞役修築的爪哇公路。	Daendels' Java road, built with forced labour.	ダーンデルスの道路。		
+road	id_postweg	1809-01		105.88,-6.0 106.81,-6.13 107.6,-6.92 108.55,-6.71 110.42,-6.97 112.75,-7.25 114.37,-7.1	大郵路（安耶爾—帕納魯坎）	Great Post Road (Anyer–Panarukan)	大郵便道路	丹德爾斯以強制勞役修築的爪哇公路。	Daendels' Java road, built with forced labour.	ダーンデルスの道路。		Great Post Road
 rail	id_ns	1867-08		110.42,-6.97 110.6,-7.2 110.82,-7.57	三寶壟—梭羅鐵路	Semarang–Solo railway	スマラン—ソロ鉄道	荷屬東印度第一條鐵路。	The first railway in the Indies.	蘭印最初の鉄道。		
 industry	id_freeport	1972-12		137.12,-4.06	格拉斯伯格礦	Grasberg mine	グラスベルグ鉱山	世界最大金礦之一。	One of the world's largest gold mines.	世界最大級の金鉱。	格拉斯伯格矿	Grasberg mine
 bridge	id_suramadu	2009-06		112.78,-7.18	泗水—馬都拉大橋	Suramadu Bridge	スラマドゥ大橋	印尼最長的橋。	Indonesia's longest bridge.	インドネシア最長の橋。	泗水-马都拉大桥	Suramadu Bridge

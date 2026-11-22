@@ -20,7 +20,7 @@ const SECTIONS = [
     { n: 'NASA Earth Observatory — Blue Marble: Next Generation (Reto Stöckli)', url: 'https://earthobservatory.nasa.gov/features/BlueMarble', lic: ['公有領域（註明 NASA Earth Observatory）', 'Public domain (credit NASA Earth Observatory)', 'パブリックドメイン（NASA Earth Observatory と明記）'],
       u: ['衛星影像底圖', 'Satellite base map', '衛星画像の背景地図'] },
     { n: '© OpenStreetMap contributors', url: 'https://www.openstreetmap.org/copyright', lic: 'ODbL 1.0', licUrl: 'https://opendatacommons.org/licenses/odbl/',
-      u: ['台灣主要河川（放大時）', 'Main rivers of Taiwan (when zoomed in)', '台湾の主な河川（拡大時）'] },
+      u: ['台灣主要河川（放大時）；地區模式的鐵路與道路路線（各模式的 routes_osm.json 以 ODbL 授權提供）', 'Main rivers of Taiwan (when zoomed in); railway and road routes in the regional modes (each mode\'s routes_osm.json is available under the ODbL)', '台湾の主な河川（拡大時）；地域モードの鉄道・道路の路線（各モードの routes_osm.json は ODbL で提供）'] },
     { n: '內政部 鄉鎮市區界線（經 npm 套件 taiwan-atlas）', url: 'https://data.gov.tw/', lic: OGDL, licUrl: 'https://data.gov.tw/license',
       u: ['台灣模式的單元（由鄉鎮市區組成）', 'Taiwan-mode units (built from townships)', '台湾モードの単位（郷鎮市区から作成）'] },
     { n: '內政部地政司 2025 年版全臺灣 20 公尺網格數值地形模型 DTM 資料', url: 'https://data.gov.tw/dataset/176927', lic: OGDL, licUrl: 'https://data.gov.tw/license',

@@ -8,10 +8,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | ["Der Blick von der Alhambra auf Granada ist einfach atemberaubend". 01.jpg](https://commons.wikimedia.org/wiki/File:%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg) | Holger Uwe Schmitt | CC BY-SA 4.0 |
 | ["Eine beeindruckende Festung". 09.jpg](https://commons.wikimedia.org/wiki/File:%22Eine_beeindruckende_Festung%22._09.jpg) | Holger Uwe Schmitt | CC BY-SA 4.0 |
 | ["History of Vietnam" for template heading.png](https://commons.wikimedia.org/wiki/File:%22History_of_Vietnam%22_for_template_heading.png) | Donald Trung Quoc Don (徵國單) (Text and seal) and Goran tek-en (Chinese dragon). | CC BY-SA 4.0 |
+| ["Russian bridge" in Vladivostok.jpg](https://commons.wikimedia.org/wiki/File:%22Russian_bridge%22_in_Vladivostok.jpg) | Баяков Алексей Александрович | CC BY-SA 3.0 |
 | ["The School of Athens" by Raffaello Sanzio da Urbino.jpg](https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg) | Raphael | Public domain |
 | ['Battle of Clontarf', oil on canvas painting by Hugh Frazer, 1826.jpg](https://commons.wikimedia.org/wiki/File:'Battle_of_Clontarf'%2C_oil_on_canvas_painting_by_Hugh_Frazer%2C_1826.jpg) | Hugh Frazer | Public domain |
 | ['Jujhar Singh Bundela Kneels in Submission to Shah Jahan', painted by Bichitr, c. 1630, Chester Beatty Library (cropped2).jpg](https://commons.wikimedia.org/wiki/File:'Jujhar_Singh_Bundela_Kneels_in_Submission_to_Shah_Jahan'%2C_painted_by_Bichitr%2C_c._1630%2C_Chester_Beatty_Library_(cropped2).jpg) | Bichitr | Public domain |
 | [(Barcelona) Palau Nacional - National Museum of Art of Catalunya.jpg](https://commons.wikimedia.org/wiki/File:(Barcelona)_Palau_Nacional_-_National_Museum_of_Art_of_Catalunya.jpg) | Didier Descouens | CC BY-SA 4.0 |
+| [(CHN-Guangdong) Taxis at University of Hong Kong-Shenzhen Hospital 2024-05-24.jpg](https://commons.wikimedia.org/wiki/File:(CHN-Guangdong)_Taxis_at_University_of_Hong_Kong-Shenzhen_Hospital_2024-05-24.jpg) | S5A-0043 | CC BY 2.0 |
 | [(Ireland) Dublin Castle Up Yard.JPG](https://commons.wikimedia.org/wiki/File:(Ireland)_Dublin_Castle_Up_Yard.JPG) | Donaldytong | CC BY-SA 3.0 |
 | [(VNM-Ho Chi Minh City) HCMC Metro Line 1 Hitachi Rolling Stock L1005 @ Van Thanh Park 2025-10-06.jpg](https://commons.wikimedia.org/wiki/File:(VNM-Ho_Chi_Minh_City)_HCMC_Metro_Line_1_Hitachi_Rolling_Stock_L1005_%40_Van_Thanh_Park_2025-10-06.jpg) | S5A-0043 | CC BY 4.0 |
 | [(at).svg](https://commons.wikimedia.org/wiki/File:(at).svg) | Editor at Large | Public domain |
@@ -61,6 +63,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [12 Kokneses-pils-no-pret-kr-29sep07.jpg](https://commons.wikimedia.org/wiki/File:12_Kokneses-pils-no-pret-kr-29sep07.jpg) | Daarznieks | CC BY-SA 3.0 |
 | [120513-BER-Flugbrücken.JPG](https://commons.wikimedia.org/wiki/File:120513-BER-Flugbr%C3%BCcken.JPG) | Muns | CC BY 3.0 |
 | [1236-1242 Mongol invasions of Europe.jpg](https://commons.wikimedia.org/wiki/File:1236-1242_Mongol_invasions_of_Europe.jpg) | Qiushufang | CC BY-SA 4.0 |
+| [125 - Wladiwostok 2015 (24056935489).jpg](https://commons.wikimedia.org/wiki/File:125_-_Wladiwostok_2015_(24056935489).jpg) | Uwe Brodrecht | CC BY-SA 2.0 |
 | [13 November 2015 Paris attacks - montage.jpg](https://commons.wikimedia.org/wiki/File:13_November_2015_Paris_attacks_-_montage.jpg) | ERIC SALARD, Chris93, Maya-Anaïs Yataghène, Mstyslav Chernov, Fugitron et intervenants sur | CC BY-SA 4.0 |
 | [13 Вид на Алма-Ату с горы Кок Тюбе.jpg](https://commons.wikimedia.org/wiki/File:13_%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%90%D0%BB%D0%BC%D0%B0-%D0%90%D1%82%D1%83_%D1%81_%D0%B3%D0%BE%D1%80%D1%8B_%D0%9A%D0%BE%D0%BA_%D0%A2%D1%8E%D0%B1%D0%B5.jpg) | Marat Rysbekov | CC BY-SA 4.0 |
 | [13-09-23-Fotoflug-Nordsee-RalfR-N3S 0008.jpg](https://commons.wikimedia.org/wiki/File:13-09-23-Fotoflug-Nordsee-RalfR-N3S_0008.jpg) | Ralf Roletschek | GFDL 1.2 |
@@ -73,6 +76,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [140531 Heijo-kyo Nara Japan01bs.jpg](https://commons.wikimedia.org/wiki/File:140531_Heijo-kyo_Nara_Japan01bs.jpg) | 663highland | CC BY 2.5 |
 | [140721 Yawata Steel Works from RRH Kitakyushu Japan01s3.jpg](https://commons.wikimedia.org/wiki/File:140721_Yawata_Steel_Works_from_RRH_Kitakyushu_Japan01s3.jpg) | 663highland | CC BY 2.5 |
 | [14th Amendment Pg1of2 AC.jpg](https://commons.wikimedia.org/wiki/File:14th_Amendment_Pg1of2_AC.jpg) | National Archives of the United States | Public domain |
+| [15 Seohaean.svg](https://commons.wikimedia.org/wiki/File:15_Seohaean.svg) | Dmthoth | CC BY-SA 3.0 |
 | [15-Nouakchott-eH-R0058185.jpg](https://commons.wikimedia.org/wiki/File:15-Nouakchott-eH-R0058185.jpg) | Laminesall96 | CC BY-SA 4.0 |
 | [150124 At Yasakakamimachi Kyoto Japan02n.jpg](https://commons.wikimedia.org/wiki/File:150124_At_Yasakakamimachi_Kyoto_Japan02n.jpg) | 663highland | CC BY 2.5 |
 | [151229 Kobe Port Japan01bs.jpg](https://commons.wikimedia.org/wiki/File:151229_Kobe_Port_Japan01bs.jpg) | 663highland | CC BY 2.5 |
@@ -164,6 +168,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [19801123 183453 irpinia quake intensity.jpg](https://commons.wikimedia.org/wiki/File:19801123_183453_irpinia_quake_intensity.jpg) | USGS | Public domain |
 | [1983.trabant.P601L.arp.jpg](https://commons.wikimedia.org/wiki/File:1983.trabant.P601L.arp.jpg) | Arpingstone | Public domain |
 | [1985 Mexico Earthquake - Collapsed General Hospital.jpg](https://commons.wikimedia.org/wiki/File:1985_Mexico_Earthquake_-_Collapsed_General_Hospital.jpg) | United States Geological Survey | Public domain |
+| [199 - Buenos Aires - Aéroport international Ezeiza - Janvier 2010.jpg](https://commons.wikimedia.org/wiki/File:199_-_Buenos_Aires_-_A%C3%A9roport_international_Ezeiza_-_Janvier_2010.jpg) | Martin St-Amant (S23678) | CC BY-SA 3.0 |
 | [1991 coup attempt1.jpg](https://commons.wikimedia.org/wiki/File:1991_coup_attempt1.jpg) | Almog | Public domain |
 | [1992 Legislative Yuan Seat Composition.svg](https://commons.wikimedia.org/wiki/File:1992_Legislative_Yuan_Seat_Composition.svg) | QHMuseum | CC BY-SA 3.0 |
 | [1992 Summer Olympics logo.svg](https://commons.wikimedia.org/wiki/File:1992_Summer_Olympics_logo.svg) | — | Public domain |
@@ -212,10 +217,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [2016 Rangun, Dawny budynek Sądu Najwyższego (15).jpg](https://commons.wikimedia.org/wiki/File:2016_Rangun%2C_Dawny_budynek_S%C4%85du_Najwy%C5%BCszego_(15).jpg) | Marcin Konsek | CC BY-SA 4.0 |
 | [2016 Summer Olympics opening ceremony 1035337-olimpiadas abertura-4154.jpg](https://commons.wikimedia.org/wiki/File:2016_Summer_Olympics_opening_ceremony_1035337-olimpiadas_abertura-4154.jpg) | Agência Brasil | CC BY 3.0 br |
 | [20160807-Pavia-002.jpg](https://commons.wikimedia.org/wiki/File:20160807-Pavia-002.jpg) | Konki | CC BY-SA 4.0 |
+| [2017 06 Venezia Terminal Passeggeri Terminal Passeggeri 2860.jpg](https://commons.wikimedia.org/wiki/File:2017_06_Venezia_Terminal_Passeggeri_Terminal_Passeggeri_2860.jpg) | Mariordo (Mario Roberto Durán Ortiz) | CC BY-SA 4.0 |
 | [2017 Aerial view Hoover Dam 4774.jpg](https://commons.wikimedia.org/wiki/File:2017_Aerial_view_Hoover_Dam_4774.jpg) | Mariordo (Mario Roberto Durán Ortiz) | CC BY-SA 4.0 |
 | [2017 Catalan Independence Referendum by province.svg](https://commons.wikimedia.org/wiki/File:2017_Catalan_Independence_Referendum_by_province.svg) | Incognito melon | CC BY 4.0 |
 | [2017 MV Sewol in Mokpo New Port.jpg](https://commons.wikimedia.org/wiki/File:2017_MV_Sewol_in_Mokpo_New_Port.jpg) | Trainholic | CC BY-SA 4.0 |
 | [2017 Puebla earthquake montage.png](https://commons.wikimedia.org/wiki/File:2017_Puebla_earthquake_montage.png) | Montage created by me, JoleBruh | CC BY-SA 4.0 |
+| [2017 model dejima museum volkenkunde.jpg](https://commons.wikimedia.org/wiki/File:2017_model_dejima_museum_volkenkunde.jpg) | Ziko | CC BY-SA 4.0 |
 | [20171118 Vientiane 3220 DxO.jpg](https://commons.wikimedia.org/wiki/File:20171118_Vientiane_3220_DxO.jpg) | Jakub Hałun | CC BY-SA 4.0 |
 | [20171126 Angkor Wat 4701 DxO.jpg](https://commons.wikimedia.org/wiki/File:20171126_Angkor_Wat_4701_DxO.jpg) | Jakub Hałun | CC BY-SA 4.0 |
 | [2018 inter-Korean summit 01.jpg](https://commons.wikimedia.org/wiki/File:2018_inter-Korean_summit_01.jpg) | Cheongwadae / Blue House | KOGL Type 1 |
@@ -223,6 +230,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [2018-12-01 14-35-57 manif-GJ-Belfort.jpg](https://commons.wikimedia.org/wiki/File:2018-12-01_14-35-57_manif-GJ-Belfort.jpg) | Thomas Bresson | CC BY 4.0 |
 | [20180816 Ratusz w Sandomierzu 1652 8985 DxO.jpg](https://commons.wikimedia.org/wiki/File:20180816_Ratusz_w_Sandomierzu_1652_8985_DxO.jpg) | Jakub Hałun | CC BY-SA 4.0 |
 | [2019 - Schweriner Schloss - 1.jpg](https://commons.wikimedia.org/wiki/File:2019_-_Schweriner_Schloss_-_1.jpg) | Moahim | CC BY-SA 4.0 |
+| [2019 London, Canary Wharf 02.jpg](https://commons.wikimedia.org/wiki/File:2019_London%2C_Canary_Wharf_02.jpg) | Kleon3 | CC BY-SA 4.0 |
 | [20191015125805 zpgwv.jpg](https://commons.wikimedia.org/wiki/File:20191015125805_zpgwv.jpg) | 鄭克塽彩像（清人绘） | Public domain |
 | [2020-05-20, Sentinel-2A L1C, True color (1).jpg](https://commons.wikimedia.org/wiki/File:2020-05-20%2C_Sentinel-2A_L1C%2C_True_color_(1).jpg) | Copernicus Sentinel-2, ESA | Attribution |
 | [2020-06-13 Entrada a Alpont.jpg](https://commons.wikimedia.org/wiki/File:2020-06-13_Entrada_a_Alpont.jpg) | Pacopac | CC BY-SA 4.0 |
@@ -248,7 +256,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [2023-07-28 Cuisine of Hanoi 一般家庭ベトナム料理DSCF0706.jpg](https://commons.wikimedia.org/wiki/File:2023-07-28_Cuisine_of_Hanoi_%E4%B8%80%E8%88%AC%E5%AE%B6%E5%BA%AD%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E6%96%99%E7%90%86DSCF0706.jpg) | Matsuoka.A | CC BY-SA 4.0 |
 | [20230605 Stela for Gwanggaeto.jpg](https://commons.wikimedia.org/wiki/File:20230605_Stela_for_Gwanggaeto.jpg) | Yumeto | CC BY-SA 4.0 |
 | [2024 Logo of the Democratic Party of Korea.svg](https://commons.wikimedia.org/wiki/File:2024_Logo_of_the_Democratic_Party_of_Korea.svg) | Democratic Party of Korea | Public domain |
+| [2024-12-14-00 00 2024-12-14-23 59 Sentinel-2 L2A True color (cropped).jpg](https://commons.wikimedia.org/wiki/File:2024-12-14-00_00_2024-12-14-23_59_Sentinel-2_L2A_True_color_(cropped).jpg) | Copernicus Sentinel 2, ESA | Attribution |
 | [20240128 Qiantang River Bridge 01.jpg](https://commons.wikimedia.org/wiki/File:20240128_Qiantang_River_Bridge_01.jpg) | Windmemories | CC BY-SA 4.0 |
+| [20241207 Aerial view of Guangzhou Baiyun International Airport.jpg](https://commons.wikimedia.org/wiki/File:20241207_Aerial_view_of_Guangzhou_Baiyun_International_Airport.jpg) | Windmemories | CC BY-SA 4.0 |
 | [20241214 ROK NA Speaker Woo Won Shik signing the resolution to impeach President Yoon Suk Yeol 02.jpg](https://commons.wikimedia.org/wiki/File:20241214_ROK_NA_Speaker_Woo_Won_Shik_signing_the_resolution_to_impeach_President_Yoon_Suk_Yeol_02.jpg) | National Assembly (South Korea) | KOGL Type 1 |
 | [2024년 대한민국 계엄 반대 시위대 깃발.jpg](https://commons.wikimedia.org/wiki/File:2024%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B3%84%EC%97%84_%EB%B0%98%EB%8C%80_%EC%8B%9C%EC%9C%84%EB%8C%80_%EA%B9%83%EB%B0%9C.jpg) | Hashflu | CC BY-SA 4.0 |
 | [2025 re-arranged map of Vietnamese subdivisions.jpg](https://commons.wikimedia.org/wiki/File:2025_re-arranged_map_of_Vietnamese_subdivisions.jpg) | Government of Vietnam | Public domain |
@@ -261,6 +271,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [20251004 Nanyang Fu Yamen 01.jpg](https://commons.wikimedia.org/wiki/File:20251004_Nanyang_Fu_Yamen_01.jpg) | Windmemories | CC BY-SA 4.0 |
 | [2026 Winter Olympics logo.svg](https://commons.wikimedia.org/wiki/File:2026_Winter_Olympics_logo.svg) | Fondazione Milano-Cortina 2026 (FMC26 (Milano-Cortina 2026)) | Public domain |
 | [2026-05-02 Deutschland gegen Österreich (Eishockey-Länderspiel) by Sandro Halank–141.jpg](https://commons.wikimedia.org/wiki/File:2026-05-02_Deutschland_gegen_%C3%96sterreich_(Eishockey-L%C3%A4nderspiel)_by_Sandro_Halank%E2%80%93141.jpg) | Sandro Halank, Wikimedia Commons | CC BY-SA 4.0 |
+| [2026-09-03 - Puerta del Sol in Madrid Spain.jpg](https://commons.wikimedia.org/wiki/File:2026-09-03_-_Puerta_del_Sol_in_Madrid_Spain.jpg) | Matt Joseph | CC BY-SA 4.0 |
 | [2026-10-28 ALBA Berlin gegen Surne Bilbao (Basketball Champions League 2026-27) by Sandro Halank–148.jpg](https://commons.wikimedia.org/wiki/File:2026-10-28_ALBA_Berlin_gegen_Surne_Bilbao_(Basketball_Champions_League_2026-27)_by_Sandro_Halank%E2%80%93148.jpg) | Sandro Halank, Wikimedia Commons | CC BY-SA 4.0 |
 | [203高地.jpg](https://commons.wikimedia.org/wiki/File:203%E9%AB%98%E5%9C%B0.jpg) | Ffggss | CC BY-SA 4.0 |
 | [2064 aryabhata-crp.jpg](https://commons.wikimedia.org/wiki/File:2064_aryabhata-crp.jpg) | — | Public domain |
@@ -279,10 +290,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [28-2 Kalâa de Beni Hammad (3).jpg](https://commons.wikimedia.org/wiki/File:28-2_Kal%C3%A2a_de_Beni_Hammad_(3).jpg) | R hakka | CC BY-SA 4.0 |
 | [28mordad1332.jpg](https://commons.wikimedia.org/wiki/File:28mordad1332.jpg) | Unknown photographerUnknown photographer of United Press International | Public domain |
 | [28th G8 summit family picture.jpg](https://commons.wikimedia.org/wiki/File:28th_G8_summit_family_picture.jpg) | Presidential Press and Information Office | CC BY 4.0 |
+| [29.10.08 vôo SJC 150.jpg](https://commons.wikimedia.org/wiki/File:29.10.08_v%C3%B4o_SJC_150.jpg) | Fontela01 | CC BY-SA 3.0 |
 | [2nd peace of torun.jpg](https://commons.wikimedia.org/wiki/File:2nd_peace_of_torun.jpg) | Marian Jaroczyński (from 1873) | Public domain |
 | [2persian gate wall.JPG](https://commons.wikimedia.org/wiki/File:2persian_gate_wall.JPG) | Jona Lendering at English Wikipedia | Public domain |
 | [3015 at Calais Frethun.jpg](https://commons.wikimedia.org/wiki/File:3015_at_Calais_Frethun.jpg) | Andrewrabbott | CC BY-SA 4.0 |
 | [319008 at Sandling.jpg](https://commons.wikimedia.org/wiki/File:319008_at_Sandling.jpg) | 74009 | CC BY-SA 2.0 |
+| [33 pol esfahan.jpg](https://commons.wikimedia.org/wiki/File:33_pol_esfahan.jpg) | Wikinewis1377q | CC BY-SA 4.0 |
 | [330-ps-7147-usn-709402 16769299886 o.jpg](https://commons.wikimedia.org/wiki/File:330-ps-7147-usn-709402_16769299886_o.jpg) | — | Public domain |
 | [35 Vietnamese boat people 2.JPEG](https://commons.wikimedia.org/wiki/File:35_Vietnamese_boat_people_2.JPEG) | PH2 Phil Eggman | Public domain |
 | [375年的朝鲜三国.png](https://commons.wikimedia.org/wiki/File:375%E5%B9%B4%E7%9A%84%E6%9C%9D%E9%B2%9C%E4%B8%89%E5%9B%BD.png) | Historiographer, KEIMS | CC BY-SA 3.0 |
@@ -290,6 +303,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [4.19 혁명.jpg](https://commons.wikimedia.org/wiki/File:4.19_%ED%98%81%EB%AA%85.jpg) | Unknown authorUnknown author | Public domain |
 | [45th SW supports successful launch of Falcon 9 Starlink (5903425).jpeg](https://commons.wikimedia.org/wiki/File:45th_SW_supports_successful_launch_of_Falcon_9_Starlink_(5903425).jpeg) | U.S. Air Force photo by Senior Airman Zoe Thacker | Public domain |
 | [4Y1A1159 Bangkok (33536795515).jpg](https://commons.wikimedia.org/wiki/File:4Y1A1159_Bangkok_(33536795515).jpg) | Ninara from Helsinki, Finland | CC BY 2.0 |
+| [4am view of Nhat Tan Bridge in Hanoi.jpg](https://commons.wikimedia.org/wiki/File:4am_view_of_Nhat_Tan_Bridge_in_Hanoi.jpg) | cloud.shepherd | CC BY 2.0 |
 | [4th Dynasty of Egypt-03.png](https://commons.wikimedia.org/wiki/File:4th_Dynasty_of_Egypt-03.png) | Cattette | CC BY 4.0 |
 | [4th of July Independence Day Parade 2014 DC (14466486678).jpg](https://commons.wikimedia.org/wiki/File:4th_of_July_Independence_Day_Parade_2014_DC_(14466486678).jpg) | S Pakhrin from DC, USA | CC BY 2.0 |
 | [5.16 Coup Park Chung-hee.jpg](https://commons.wikimedia.org/wiki/File:5.16_Coup_Park_Chung-hee.jpg) | Unknown authorUnknown author | Public domain |
@@ -302,6 +316,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [600 CE Ashram Maha Rishi Hindu temple, N17 Kuk Vihear Prasat Asram Maha Rusei, Sambour Kuk Cambodia 01.jpg](https://commons.wikimedia.org/wiki/File:600_CE_Ashram_Maha_Rishi_Hindu_temple%2C_N17_Kuk_Vihear_Prasat_Asram_Maha_Rusei%2C_Sambour_Kuk_Cambodia_01.jpg) | Ms Sarah Welch | CC0 |
 | [6058-Liujiaxia-Dam.jpg](https://commons.wikimedia.org/wiki/File:6058-Liujiaxia-Dam.jpg) | Vmenkov | CC BY-SA 4.0 |
 | [6DayWarEnglish.png](https://commons.wikimedia.org/wiki/File:6DayWarEnglish.png) | Zvikorn | CC BY-SA 4.0 |
+| [6th October Bridge.png](https://commons.wikimedia.org/wiki/File:6th_October_Bridge.png) | Staeiou | CC BY-SA 3.0 |
 | [6th century Silla.png](https://commons.wikimedia.org/wiki/File:6th_century_Silla.png) | Asieon | CC0 |
 | [77shibian.png](https://commons.wikimedia.org/wiki/File:77shibian.png) | 竹围墙. User Zhuwq on zh.wikipedia | CC BY-SA 3.0 |
 | [7th Hussars, charging a body of the Mutineer's Cavalry.jpg](https://commons.wikimedia.org/wiki/File:7th_Hussars%2C_charging_a_body_of_the_Mutineer's_Cavalry.jpg) | Henry Martens | CC BY 2.5 |
@@ -312,16 +327,19 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [911-1050 duche de normandie.svg](https://commons.wikimedia.org/wiki/File:911-1050_duche_de_normandie.svg) | FlyingPC | CC BY-SA 3.0 |
 | [95Thesen.jpg](https://commons.wikimedia.org/wiki/File:95Thesen.jpg) | Wittenberg: Melchior Lotter d.J., 1522 | Public domain |
 | [990921중앙119구조본부 대만 921 대지진 출동1.jpg](https://commons.wikimedia.org/wiki/File:990921%EC%A4%91%EC%95%99119%EA%B5%AC%EC%A1%B0%EB%B3%B8%EB%B6%80_%EB%8C%80%EB%A7%8C_921_%EB%8C%80%EC%A7%80%EC%A7%84_%EC%B6%9C%EB%8F%991.jpg) | 최광모 | CC BY-SA 4.0 |
+| [A 20 bei Langsdorf.jpg](https://commons.wikimedia.org/wiki/File:A_20_bei_Langsdorf.jpg) | Darkone | CC BY-SA 2.5 |
 | [A 9 AS Triptis, Westseite (2009).jpg](https://commons.wikimedia.org/wiki/File:A_9_AS_Triptis%2C_Westseite_(2009).jpg) | Jochen Teufel | CC BY-SA 3.0 |
 | [A Barátság II. kőolajvezeték építése. Fortepan 87703.jpg](https://commons.wikimedia.org/wiki/File:A_Bar%C3%A1ts%C3%A1g_II._k%C5%91olajvezet%C3%A9k_%C3%A9p%C3%ADt%C3%A9se._Fortepan_87703.jpg) | FOTO:Fortepan — ID 87703: Adományozó/Donor: Urbán Tamás. archive copy at the Wayback Machi | CC BY-SA 3.0 |
 | [A Fight for three Days between two English East-India-Ships, & four Portugueze-Gallions & 24 Frigats (cropped).jpg](https://commons.wikimedia.org/wiki/File:A_Fight_for_three_Days_between_two_English_East-India-Ships%2C_%26_four_Portugueze-Gallions_%26_24_Frigats_(cropped).jpg) | William Rayner | Public domain |
 | [A Finnish Maxim M-32 machine gun nest during the Winter War.jpg](https://commons.wikimedia.org/wiki/File:A_Finnish_Maxim_M-32_machine_gun_nest_during_the_Winter_War.jpg) | Unknown author. | Public domain |
 | [A Hundred Steeds.jpg](https://commons.wikimedia.org/wiki/File:A_Hundred_Steeds.jpg) | Giuseppe Castiglione | Public domain |
+| [A LRT Jabodebek train at Cawang LRT Station.jpg](https://commons.wikimedia.org/wiki/File:A_LRT_Jabodebek_train_at_Cawang_LRT_Station.jpg) | Fikri RA | CC BY-SA 4.0 |
 | [A SS4 Locomotive Pair Passing Bridge of Lingguanxia, Jan 20 2024.jpg](https://commons.wikimedia.org/wiki/File:A_SS4_Locomotive_Pair_Passing_Bridge_of_Lingguanxia%2C_Jan_20_2024.jpg) | P. K. Koo | CC BY-SA 4.0 |
 | [A Sunday on La Grande Jatte, Georges Seurat, 1884.jpg](https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg) | Georges Seurat | Public domain |
 | [A TRA Puyuma Express between Yilan and Erjie 20200417.jpg](https://commons.wikimedia.org/wiki/File:A_TRA_Puyuma_Express_between_Yilan_and_Erjie_20200417.jpg) | jason199567 | CC BY-SA 2.0 |
 | [A Versailles, à Versailles 5 octobre 1789 - Restoration.jpg](https://commons.wikimedia.org/wiki/File:A_Versailles%2C_%C3%A0_Versailles_5_octobre_1789_-_Restoration.jpg) | Unknown authorUnknown author | Public domain |
 | [A barrier lake on Jiulan River after Ludian earthquake.jpg](https://commons.wikimedia.org/wiki/File:A_barrier_lake_on_Jiulan_River_after_Ludian_earthquake.jpg) | Zhangmoon618 | CC BY-SA 4.0 |
+| [A container ship barthed at Berth No. 3 of Netaji Subhas Dock, Port of Kolkata.jpg](https://commons.wikimedia.org/wiki/File:A_container_ship_barthed_at_Berth_No._3_of_Netaji_Subhas_Dock%2C_Port_of_Kolkata.jpg) | Syama Prasad Mookerjee Port, Kolkata | GODL-India |
 | [A copy of Treaty on Basic Relations between Japan and the Republic of Korea.jpg](https://commons.wikimedia.org/wiki/File:A_copy_of_Treaty_on_Basic_Relations_between_Japan_and_the_Republic_of_Korea.jpg) | Motoko C. K. | CC0 |
 | [A heavy explosion on board USS Lexington (CV-2) blows an aircraft over her side, 8 May 1942 (80-G-7413).jpg](https://commons.wikimedia.org/wiki/File:A_heavy_explosion_on_board_USS_Lexington_(CV-2)_blows_an_aircraft_over_her_side%2C_8_May_1942_(80-G-7413).jpg) | Unknown authorUnknown author | Public domain |
 | [A look at "Burma Road." - NARA - 196231.jpg](https://commons.wikimedia.org/wiki/File:A_look_at_%22Burma_Road.%22_-_NARA_-_196231.jpg) | Unknown authorUnknown author or not provided | Public domain |
@@ -334,6 +352,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [A political slogan on the wall in Longhua District, Shenzhen, Guangdong, China, picture1.jpg](https://commons.wikimedia.org/wiki/File:A_political_slogan_on_the_wall_in_Longhua_District%2C_Shenzhen%2C_Guangdong%2C_China%2C_picture1.jpg) | Huangdan2060 | CC0 |
 | [A portion of Panorama 1453 siege scene (cropped).jpg](https://commons.wikimedia.org/wiki/File:A_portion_of_Panorama_1453_siege_scene_(cropped).jpg) | Mustafa-trit20 | CC BY-SA 4.0 |
 | [A portrait of Agha Muhammad Khan, Persia, Qajar, dated 1795.jpg](https://commons.wikimedia.org/wiki/File:A_portrait_of_Agha_Muhammad_Khan%2C_Persia%2C_Qajar%2C_dated_1795.jpg) | Sotheby's | Public domain |
+| [A stitched Port of Saint Petersburg 2009 d.jpg](https://commons.wikimedia.org/wiki/File:A_stitched_Port_of_Saint_Petersburg_2009_d.jpg) | Bin im Garten | CC BY-SA 3.0 |
 | [A v Werner - Kaiserproklamation am 18 Januar 1871 (3. Fassung 1885).jpg](https://commons.wikimedia.org/wiki/File:A_v_Werner_-_Kaiserproklamation_am_18_Januar_1871_(3._Fassung_1885).jpg) | Anton von Werner | Public domain |
 | [A view of the Castle Grounds (29) - geograph.org.uk - 872537.jpg](https://commons.wikimedia.org/wiki/File:A_view_of_the_Castle_Grounds_(29)_-_geograph.org.uk_-_872537.jpg) | Chris' Buet | CC BY-SA 2.0 |
 | [A-38 C0080776.jpg](https://commons.wikimedia.org/wiki/File:A-38_C0080776.jpg) | Unknown authorUnknown author | Public domain |
@@ -349,14 +368,17 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [AIFA Logo.svg](https://commons.wikimedia.org/wiki/File:AIFA_Logo.svg) | Gobierno de México | Public domain |
 | [AKW Biblis 01.jpg](https://commons.wikimedia.org/wiki/File:AKW_Biblis_01.jpg) | Kuebi | CC BY-SA 3.0 |
 | [AMH-6831-KB View of New Amsterdam.jpg](https://commons.wikimedia.org/wiki/File:AMH-6831-KB_View_of_New_Amsterdam.jpg) | Jacob van Meurs | Public domain |
+| [ANTARA FOTO-Eric Ireng TERMINAL PETIKEMAS SURABAYA.jpg](https://commons.wikimedia.org/wiki/File:ANTARA_FOTO-Eric_Ireng_TERMINAL_PETIKEMAS_SURABAYA.jpg) | Hernawan Widhi from Banyuwangi, Indonesia | CC BY 2.0 |
 | [AP- Canal du Midi - Bram- Août 2021 (2).jpg](https://commons.wikimedia.org/wiki/File:AP-_Canal_du_Midi_-_Bram-_Ao%C3%BBt_2021_(2).jpg) | APB11 | CC BY-SA 4.0 |
 | [APEC Economic Leaders' Week.jpg](https://commons.wikimedia.org/wiki/File:APEC_Economic_Leaders'_Week.jpg) | Presidency of the Mexican Republic | CC BY 2.0 |
+| [AQUA-LINE AQUA RENRAKU EXP(CA).svg](https://commons.wikimedia.org/wiki/File:AQUA-LINE_AQUA_RENRAKU_EXP(CA).svg) | Oka21000 | CC0 |
 | [ARVN Rangers defend Saigon, Tet Offensive.jpg](https://commons.wikimedia.org/wiki/File:ARVN_Rangers_defend_Saigon%2C_Tet_Offensive.jpg) | US military personnel | Public domain |
 | [ARachir.JPG](https://commons.wikimedia.org/wiki/File:ARachir.JPG) | Yelles | CC BY-SA 3.0 |
 | [ASA-Maphilindo-ASEAN enlargement animation.gif](https://commons.wikimedia.org/wiki/File:ASA-Maphilindo-ASEAN_enlargement_animation.gif) | Kaliper1 based on Derkommander0916's map | CC BY-SA 4.0 |
 | [ASEAN Of Flag.png](https://commons.wikimedia.org/wiki/File:ASEAN_Of_Flag.png) | ASSOCIATION OF SOUTHEAST ASIAN NATIONS | CC0 |
 | [ASEAN member states.svg](https://commons.wikimedia.org/wiki/File:ASEAN_member_states.svg) | Mangwanani | Public domain |
 | [AT&THQDallas.jpg](https://commons.wikimedia.org/wiki/File:AT%26THQDallas.jpg) | FoUTASportscaster | Public domain |
+| [ATL(1) (cropped).jpg](https://commons.wikimedia.org/wiki/File:ATL(1)_(cropped).jpg) | Vmzp85 | CC BY 4.0 |
 | [ATR 72-600 - 50505204912.jpg](https://commons.wikimedia.org/wiki/File:ATR_72-600_-_50505204912.jpg) | ATR Aircraft | CC BY-SA 2.0 |
 | [Aachen Germany Imperial-Cathedral-01.jpg](https://commons.wikimedia.org/wiki/File:Aachen_Germany_Imperial-Cathedral-01.jpg) | CEphoto, Uwe Aranas | CC BY-SA 3.0 |
 | [Aachen, Rathaus -- 2016 -- 2772.jpg](https://commons.wikimedia.org/wiki/File:Aachen%2C_Rathaus_--_2016_--_2772.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
@@ -369,6 +391,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Abeché1.jpg](https://commons.wikimedia.org/wiki/File:Abech%C3%A91.jpg) | Dans | CC BY-SA 3.0 |
 | [Aberffraw - geograph.org.uk - 3923739.jpg](https://commons.wikimedia.org/wiki/File:Aberffraw_-_geograph.org.uk_-_3923739.jpg) | Chris Heaton | CC BY-SA 2.0 |
 | [Abernathy Children on front line leading the SELMA TO MONTGOMERY MARCH for the RIGHT TO VOTE.JPG](https://commons.wikimedia.org/wiki/File:Abernathy_Children_on_front_line_leading_the_SELMA_TO_MONTGOMERY_MARCH_for_the_RIGHT_TO_VOTE.JPG) | Abernathy Family | Public domain |
+| [Abertura Jogos Panamericanos 2 13072007.jpg](https://commons.wikimedia.org/wiki/File:Abertura_Jogos_Panamericanos_2_13072007.jpg) | Ricardo Stuckert/PR | CC BY 3.0 br |
 | [Abigail Williams vs. Geo Jabobs.jpg](https://commons.wikimedia.org/wiki/File:Abigail_Williams_vs._Geo_Jabobs.jpg) | — | Public domain |
 | [Abolition of the Caliphate, The Last Caliph, Le Petit Journal illustré, 16 March 1924.jpg](https://commons.wikimedia.org/wiki/File:Abolition_of_the_Caliphate%2C_The_Last_Caliph%2C_Le_Petit_Journal_illustr%C3%A9%2C_16_March_1924.jpg) | Le Petit Journal | Public domain |
 | [Above Gotham.jpg](https://commons.wikimedia.org/wiki/File:Above_Gotham.jpg) | Anthony Quintano | CC BY 2.0 |
@@ -411,7 +434,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Aerial image of Schloss Weilburg (view from the southeast).jpg](https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schloss_Weilburg_(view_from_the_southeast).jpg) | Carsten Steger | CC BY-SA 4.0 |
 | [Aerial photograph of Bratsk 02.jpg](https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Bratsk_02.jpg) | OLOXOVA | CC BY-SA 3.0 |
 | [Aerial shot of Nanking city wall 1930.jpg](https://commons.wikimedia.org/wiki/File:Aerial_shot_of_Nanking_city_wall_1930.jpg) | Unknown authorUnknown author | Public domain |
+| [Aerial view - Harbour of Genoa, Italy - DSC01156.JPG](https://commons.wikimedia.org/wiki/File:Aerial_view_-_Harbour_of_Genoa%2C_Italy_-_DSC01156.JPG) | Daderot | CC0 |
 | [Aerial view of Bajra Sandhi Monument Denpasar Bali Indonesia.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Bajra_Sandhi_Monument_Denpasar_Bali_Indonesia.jpg) | trezy humanoiz from Denpasar, indonesia | CC BY 2.0 |
+| [Aerial view of Beijing Capital International Airport (cropped).jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Beijing_Capital_International_Airport_(cropped).jpg) | Simply Aviation | CC BY 4.0 |
 | [Aerial view of Corte, Corsica, France (52723814411).jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Corte%2C_Corsica%2C_France_(52723814411).jpg) | dronepicr | CC BY 2.0 |
 | [Aerial view of Durgam cheruvu and Hitech CIty.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Durgam_cheruvu_and_Hitech_CIty.jpg) | iMahesh | CC BY-SA 4.0 |
 | [Aerial view of Ellis Island, Jersey City, New Jersey LCCN2011635626 - cropped balance.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Ellis_Island%2C_Jersey_City%2C_New_Jersey_LCCN2011635626_-_cropped_balance.jpg) | Carol M. Highsmith | CC BY-SA 4.0 |
@@ -424,10 +449,17 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Aerial view of a section of Kandahar in 2013.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_a_section_of_Kandahar_in_2013.jpg) | Karla Marshall | Public domain |
 | [Aerial view of imam reza shrine - 1976.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_imam_reza_shrine_-_1976.jpg) | photo.aqr.ir (unknown photographer) | Public domain |
 | [Aerial view of the Old Venetian Harbour in Chania, Greece.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Old_Venetian_Harbour_in_Chania%2C_Greece.jpg) | dronepicr | CC BY 2.0 |
+| [Aerial view of the Port of Felixstowe.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Port_of_Felixstowe.jpg) | John Fielding | CC BY-SA 2.0 |
 | [Aerial view, Patna (314731093).jpg](https://commons.wikimedia.org/wiki/File:Aerial_view%2C_Patna_(314731093).jpg) | Chandan Singh from India | CC BY 2.0 |
+| [AerialviewLeBourgetOctober2016 edited.jpg](https://commons.wikimedia.org/wiki/File:AerialviewLeBourgetOctober2016_edited.jpg) | Citizen59 | CC BY 3.0 |
+| [Aeroparque Jorge Newberry-Overview (by Darío Crusafón).jpg](https://commons.wikimedia.org/wiki/File:Aeroparque_Jorge_Newberry-Overview_(by_Dar%C3%ADo_Crusaf%C3%B3n).jpg) | Darío Crusafón | CC BY-SA 2.5 es |
+| [AeroportTunisCarthage.jpg](https://commons.wikimedia.org/wiki/File:AeroportTunisCarthage.jpg) | Citizen59 | CC BY-SA 3.0 |
+| [Aeroporto galeao rj ME.jpg](https://commons.wikimedia.org/wiki/File:Aeroporto_galeao_rj_ME.jpg) | Portal Brasil 2016 (Olimpíadas) /Governo Federal Brasileiro | CC BY 3.0 br |
+| [AeroportoGuarulhos Torre2.jpg](https://commons.wikimedia.org/wiki/File:AeroportoGuarulhos_Torre2.jpg) | Bruno Dantas | Public domain |
 | [Africa (orthographic projection).svg](https://commons.wikimedia.org/wiki/File:Africa_(orthographic_projection).svg) | Martin23230 | CC BY-SA 3.0 |
 | [Africa in 400 BC.jpg](https://commons.wikimedia.org/wiki/File:Africa_in_400_BC.jpg) | Kubek15 | CC BY-SA 4.0 |
 | [Africa map regions.svg](https://commons.wikimedia.org/wiki/File:Africa_map_regions.svg) | No machine-readable author provided. Mvc assumed (based on copyright claims). | Public domain |
+| [Africa relief location map.jpg](https://commons.wikimedia.org/wiki/File:Africa_relief_location_map.jpg) | Eric Gaba (Sting - fr:Sting) | CC BY-SA 3.0 |
 | [African-americans-wwii-009.jpg](https://commons.wikimedia.org/wiki/File:African-americans-wwii-009.jpg) | Unknown authorUnknown author | Public domain |
 | [AfricanAmericans1.png](https://commons.wikimedia.org/wiki/File:AfricanAmericans1.png) | David Kernow at English Wikipedia | Public domain |
 | [After Bombing of Tokyo on March 1945 19450310.jpg](https://commons.wikimedia.org/wiki/File:After_Bombing_of_Tokyo_on_March_1945_19450310.jpg) | U.S. military photography (米軍撮影) | Public domain |
@@ -443,6 +475,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [AigaiMarkthalle1.jpg](https://commons.wikimedia.org/wiki/File:AigaiMarkthalle1.jpg) | Klaus-Peter Simon | CC BY-SA 3.0 |
 | [Air Mancur Taman Bekapai Balikpapan.jpg](https://commons.wikimedia.org/wiki/File:Air_Mancur_Taman_Bekapai_Balikpapan.jpg) | Taken by Ngakan Kebo Maesa (www.pbase.com/kebo) | Public domain |
 | [Air views of Palestine. Alexandria harbour. Closer view looking along the quay LOC matpc.15927.jpg](https://commons.wikimedia.org/wiki/File:Air_views_of_Palestine._Alexandria_harbour._Closer_view_looking_along_the_quay_LOC_matpc.15927.jpg) | Matson Collection | Public domain |
+| [Airborne imagery Yokohama City (4274354758).jpg](https://commons.wikimedia.org/wiki/File:Airborne_imagery_Yokohama_City_(4274354758).jpg) | Kentaro Iemoto from Tokyo, Japan | CC BY-SA 2.0 |
 | [Airborne troops entering Masan 1979-10-20.png](https://commons.wikimedia.org/wiki/File:Airborne_troops_entering_Masan_1979-10-20.png) | Photos taken by 전민조 and hosted by the National Museum of Contemporary Korean History. | KOGL Type 1 |
 | [Airbus A300B2-101, Indian Airlines AN0133884.jpg](https://commons.wikimedia.org/wiki/File:Airbus_A300B2-101%2C_Indian_Airlines_AN0133884.jpg) | Sunil Gupta | GFDL 1.2 |
 | [Ajanta (63).jpg](https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg) | No machine-readable author provided. Soman assumed (based on copyright claims). | CC BY 2.5 |
@@ -463,6 +496,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Al-Azhar University logo.svg](https://commons.wikimedia.org/wiki/File:Al-Azhar_University_logo.svg) | خالد حسني | Public domain |
 | [Al-Masjid AL-Nabawi Door800x600x300.jpg](https://commons.wikimedia.org/wiki/File:Al-Masjid_AL-Nabawi_Door800x600x300.jpg) | بلال الدويك | CC BY-SA 3.0 |
 | [Al-Nasir I Salah al-Din Yusuf (Saladin). AH 564-589 (1169-1193 CE) Æ Dirham (30.1mm, 13.28 g, 6h). Without mint-name. Dated AH 586 (AD 1190-91). Sultan sitting facing, cross-legged, on high-backed throne (obverse).jpg](https://commons.wikimedia.org/wiki/File:Al-Nasir_I_Salah_al-Din_Yusuf_(Saladin)._AH_564-589_(1169-1193_CE)_%C3%86_Dirham_(30.1mm%2C_13.28_g%2C_6h)._Without_mint-name._Dated_AH_586_(AD_1190-91)._Sultan_sitting_facing%2C_cross-legged%2C_on_high-backed_throne_(obverse).jpg) | Classical Numismatic Group (CNG) | CC BY-SA 2.5 |
+| [Alahan 74.jpg](https://commons.wikimedia.org/wiki/File:Alahan_74.jpg) | Ana al'ain | CC BY-SA 4.0 |
 | [Alam of the Mughal Empire.svg](https://commons.wikimedia.org/wiki/File:Alam_of_the_Mughal_Empire.svg) | TRAJAN 117 | CC BY-SA 3.0 |
 | [AlamoplanF0385.jpg](https://commons.wikimedia.org/wiki/File:AlamoplanF0385.jpg) | José Juan Sánchez-Navarro | Public domain |
 | [Alaska Highway1.png](https://commons.wikimedia.org/wiki/File:Alaska_Highway1.png) | Luigi Zanasi | Public domain |
@@ -484,6 +518,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Alexandra Fyodorovna LOC 01137u.jpg](https://commons.wikimedia.org/wiki/File:Alexandra_Fyodorovna_LOC_01137u.jpg) | Boasson and Eggler St. Petersburg Nevsky 24.Bain News Service, publisher | Public domain |
 | [Alexandre Cabanel 002.jpg](https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_002.jpg) | Alexandre Cabanel | Public domain |
 | [Alexandre le Grand, vainqueur de Darius à la bataille d'Arbelles.jpg](https://commons.wikimedia.org/wiki/File:Alexandre_le_Grand%2C_vainqueur_de_Darius_%C3%A0_la_bataille_d'Arbelles.jpg) | Jacques Courtois | Public domain |
+| [Alexandria Port.jpg](https://commons.wikimedia.org/wiki/File:Alexandria_Port.jpg) | Abdelrhman 1990 | CC BY-SA 4.0 |
 | [AlexandriaSkyline.jpg](https://commons.wikimedia.org/wiki/File:AlexandriaSkyline.jpg) | ASaber91 | CC BY-SA 4.0 |
 | [Alexey Navalny 2018 (cropped).png](https://commons.wikimedia.org/wiki/File:Alexey_Navalny_2018_(cropped).png) | Navalny's Team | CC BY 3.0 |
 | [Alfonso VIII de Castilla (Ayuntamiento de León).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_VIII_de_Castilla_(Ayuntamiento_de_Le%C3%B3n).jpg) | José María Rodríguez de Losada | Public domain |
@@ -496,6 +531,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [AlgecirasConference1906.jpg](https://commons.wikimedia.org/wiki/File:AlgecirasConference1906.jpg) | Unknown authorUnknown author | Public domain |
 | [Algeria location map.svg](https://commons.wikimedia.org/wiki/File:Algeria_location_map.svg) | Eric Gaba (Sting - fr:Sting) | CC BY-SA 3.0 |
 | [Algiers Montage.png](https://commons.wikimedia.org/wiki/File:Algiers_Montage.png) | The original uploader was Dolphin Jedi at English Wikipedia.. Dolphin Jedi | CC BY-SA 3.0 |
+| [Algiers airport, logo.png](https://commons.wikimedia.org/wiki/File:Algiers_airport%2C_logo.png) | Recreated by : Riad Salih | Public domain |
 | [Alhambra detail.jpg](https://commons.wikimedia.org/wiki/File:Alhambra_detail.jpg) | Jebulon | CC0 |
 | [Ali Khamenei 2026.02.12 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Ali_Khamenei_2026.02.12_(cropped).jpg) | Khamenei.ir | CC BY 4.0 |
 | [Alihanov Kurchatov Ioffe.jpg](https://commons.wikimedia.org/wiki/File:Alihanov_Kurchatov_Ioffe.jpg) | Unknown authorUnknown author | Public domain |
@@ -533,6 +569,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [American union bank.gif](https://commons.wikimedia.org/wiki/File:American_union_bank.gif) | National Archives Photo | Public domain |
 | [Amerzeggan ⴰⵎⵔⵣⴳⴳⴰⵏ viyaedje distrût hosmint tere Hawse.jpg](https://commons.wikimedia.org/wiki/File:Amerzeggan_%E2%B4%B0%E2%B5%8E%E2%B5%94%E2%B5%A3%E2%B4%B3%E2%B4%B3%E2%B4%B0%E2%B5%8F_viyaedje_distr%C3%BBt_hosmint_tere_Hawse.jpg) | Lucyin | CC BY-SA 4.0 |
 | [Amman.jpg](https://commons.wikimedia.org/wiki/File:Amman.jpg) | David Bjorgen | CC BY-SA 3.0 |
+| [Ampera Bridge at Night, Palembang.jpg](https://commons.wikimedia.org/wiki/File:Ampera_Bridge_at_Night%2C_Palembang.jpg) | Gunawan Kartapranata | CC BY-SA 3.0 |
 | [Amphoe 1401.svg](https://commons.wikimedia.org/wiki/File:Amphoe_1401.svg) | Hdamm | CC BY-SA 3.0 |
 | [Amphoe 9401.svg](https://commons.wikimedia.org/wiki/File:Amphoe_9401.svg) | Potapt | CC BY-SA 3.0 |
 | [Amritsar-header.jpg](https://commons.wikimedia.org/wiki/File:Amritsar-header.jpg) | Traveltoindia23 | CC BY-SA 4.0 |
@@ -566,11 +603,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Angers collage.jpg](https://commons.wikimedia.org/wiki/File:Angers_collage.jpg) | User:Tango7174, etc. (see above) | CC BY-SA 3.0 |
 | [Angkor Wat Aerial View Siem Reap Cambodia 2011.jpg](https://commons.wikimedia.org/wiki/File:Angkor_Wat_Aerial_View_Siem_Reap_Cambodia_2011.jpg) | Mark Fischer | CC BY-SA 2.0 |
 | [Angkor wat temple.jpg](https://commons.wikimedia.org/wiki/File:Angkor_wat_temple.jpg) | The original uploader was Fuzheado at English Wikipedia. | CC BY-SA 2.0 |
+| [Angliyskaya Enbankment SPb.jpg](https://commons.wikimedia.org/wiki/File:Angliyskaya_Enbankment_SPb.jpg) | Lite | CC BY-SA 3.0 |
 | [Anglo-egyptian war.jpg](https://commons.wikimedia.org/wiki/File:Anglo-egyptian_war.jpg) | The Illustrated London News | Public domain |
 | [Angra dos Reis - usinas nucleares.jpg](https://commons.wikimedia.org/wiki/File:Angra_dos_Reis_-_usinas_nucleares.jpg) | Sturm | CC BY 3.0 |
 | [Angra1.jpg](https://commons.wikimedia.org/wiki/File:Angra1.jpg) | Rodrigo Soldon | CC BY 2.0 |
 | [Ani seen from Armenia.jpg](https://commons.wikimedia.org/wiki/File:Ani_seen_from_Armenia.jpg) | haigoes | CC BY-SA 3.0 |
 | [Ankara (16290014657).jpg](https://commons.wikimedia.org/wiki/File:Ankara_(16290014657).jpg) | Jorge Franganillo from Barcelona, Spain | CC BY 2.0 |
+| [Ankara Esenboga International Airport.jpg](https://commons.wikimedia.org/wiki/File:Ankara_Esenboga_International_Airport.jpg) | User:Babbsack | CC BY-SA 3.0 |
 | [Ankara asv2021-10 img15 Atakule.jpg](https://commons.wikimedia.org/wiki/File:Ankara_asv2021-10_img15_Atakule.jpg) | A.Savin | FAL |
 | [Ankara from bus station.jpg](https://commons.wikimedia.org/wiki/File:Ankara_from_bus_station.jpg) | Boubacar Amadou Cisse | CC BY-SA 4.0 |
 | [Ann Bonny, Cole 1724.jpg](https://commons.wikimedia.org/wiki/File:Ann_Bonny%2C_Cole_1724.jpg) | Engraved by Benjamin Cole[2] (1695–1766) | Public domain |
@@ -604,6 +643,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Aomori Montage.jpg](https://commons.wikimedia.org/wiki/File:Aomori_Montage.jpg) | 水だらけのプール | CC BY-SA 4.0 |
 | [Appeal of Minin.jpg](https://commons.wikimedia.org/wiki/File:Appeal_of_Minin.jpg) | Konstantin Makovsky | Public domain |
 | [Appearance of Fukushima I Nuclear Power Plant Unit 3 after the explosion 20110315.jpg](https://commons.wikimedia.org/wiki/File:Appearance_of_Fukushima_I_Nuclear_Power_Plant_Unit_3_after_the_explosion_20110315.jpg) | 資源エネルギー庁 | CC BY 4.0 |
+| [Appian Way.jpg](https://commons.wikimedia.org/wiki/File:Appian_Way.jpg) | Livioandronico2013 | CC BY-SA 4.0 |
 | [Apple logo black.svg](https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg) | Original: Rob Janoff | Public domain |
 | [Apple park cupertino 2019.jpg](https://commons.wikimedia.org/wiki/File:Apple_park_cupertino_2019.jpg) | Arne Müseler | CC BY-SA 3.0 de |
 | [Apricot and cross section.jpg](https://commons.wikimedia.org/wiki/File:Apricot_and_cross_section.jpg) | Fir0002 | GFDL 1.2 |
@@ -626,6 +666,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Argo Lawu TB.jpg](https://commons.wikimedia.org/wiki/File:Argo_Lawu_TB.jpg) | TyewongX (talk · contribs) | CC BY-SA 3.0 |
 | [Arjuna and His Charioteer Krishna Confront Karna.jpg](https://commons.wikimedia.org/wiki/File:Arjuna_and_His_Charioteer_Krishna_Confront_Karna.jpg) | Artist/maker unknown, India, Himachal Pradesh or Jammu and Kashmir | Public domain |
 | [Arjuna statue.JPG](https://commons.wikimedia.org/wiki/File:Arjuna_statue.JPG) | Ilussion | CC BY 3.0 |
+| [Arkhangelsk view from Vysotka.jpg](https://commons.wikimedia.org/wiki/File:Arkhangelsk_view_from_Vysotka.jpg) | Ларин Андрей | CC BY-SA 2.5 |
+| [Arkhangelsk. Northern Dvina River P7151363 2200.jpg](https://commons.wikimedia.org/wiki/File:Arkhangelsk._Northern_Dvina_River_P7151363_2200.jpg) | Alexxx1979 | CC BY-SA 4.0 |
 | [Armadaroute.jpg](https://commons.wikimedia.org/wiki/File:Armadaroute.jpg) | Robert Adams, Augustine Ryther | Public domain |
 | [Armata dei giusti - 26 febbraio 1936.jpg](https://commons.wikimedia.org/wiki/File:Armata_dei_giusti_-_26_febbraio_1936.jpg) | Unknown authorUnknown author | Public domain |
 | [Armed Militias of PKI.jpg](https://commons.wikimedia.org/wiki/File:Armed_Militias_of_PKI.jpg) | Yayasan Kesejahteraan Jayakarta - Kodam V Jaya; Badan Penerbit Almanak RI/B.P. Alda | Public domain |
@@ -678,6 +720,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Asuncion Montage.jpg](https://commons.wikimedia.org/wiki/File:Asuncion_Montage.jpg) | Bleff | CC BY-SA 3.0 |
 | [Asunción Paraguay.jpg](https://commons.wikimedia.org/wiki/File:Asunci%C3%B3n_Paraguay.jpg) | AnonymousUnknown author | CC BY-SA 4.0 |
 | [Aswan low dam2.JPG](https://commons.wikimedia.org/wiki/File:Aswan_low_dam2.JPG) | Rémih | CC BY-SA 3.0 |
+| [Atal Setu - Trans Harbour Link Mumbai.jpg](https://commons.wikimedia.org/wiki/File:Atal_Setu_-_Trans_Harbour_Link_Mumbai.jpg) | Amitbalani | CC0 |
 | [Atalanta Lekythos, 500-490 BC, Greek, Attic, attributed to Douris, ceramic - Cleveland Museum of Art - DSC08212.JPG](https://commons.wikimedia.org/wiki/File:Atalanta_Lekythos%2C_500-490_BC%2C_Greek%2C_Attic%2C_attributed_to_Douris%2C_ceramic_-_Cleveland_Museum_of_Art_-_DSC08212.JPG) | Daderot | CC0 |
 | [Atalanta Lepautre Louvre MR1804.jpg](https://commons.wikimedia.org/wiki/File:Atalanta_Lepautre_Louvre_MR1804.jpg) | Pierre Lepautre | CC BY 2.5 |
 | [Atalanta Vatican Inv2784.jpg](https://commons.wikimedia.org/wiki/File:Atalanta_Vatican_Inv2784.jpg) | Pasiteles | Public domain |
@@ -692,6 +735,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Athelstan.jpg](https://commons.wikimedia.org/wiki/File:Athelstan.jpg) | See description | Public domain |
 | [Athens Acropolis at Daybreak.jpg](https://commons.wikimedia.org/wiki/File:Athens_Acropolis_at_Daybreak.jpg) | Andrew Parlette | CC BY 4.0 |
 | [Athens map.png](https://commons.wikimedia.org/wiki/File:Athens_map.png) | No machine-readable author provided. Markussep assumed (based on copyright claims). | CC BY-SA 3.0 |
+| [Atlanta Airport Aerial Angle (31435634003) (2).jpg](https://commons.wikimedia.org/wiki/File:Atlanta_Airport_Aerial_Angle_(31435634003)_(2).jpg) | formulanone from Huntsville, United States | CC BY-SA 2.0 |
 | [Atlanta roundhouse ruin3.jpg](https://commons.wikimedia.org/wiki/File:Atlanta_roundhouse_ruin3.jpg) | George N. Barnard | Public domain |
 | [Atlantic Ocean-ja.png](https://commons.wikimedia.org/wiki/File:Atlantic_Ocean-ja.png) | CIA, translated by ja:利用者:Koba-chan | Public domain |
 | [Atlantic cable Map.jpg](https://commons.wikimedia.org/wiki/File:Atlantic_cable_Map.jpg) | Unknown authorUnknown author | Public domain |
@@ -746,6 +790,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Aínsa.jpg](https://commons.wikimedia.org/wiki/File:A%C3%ADnsa.jpg) | José Luis Filpo Cabana | CC BY-SA 4.0 |
 | [B-29s June 1944.jpg](https://commons.wikimedia.org/wiki/File:B-29s_June_1944.jpg) | United States Army Air Forces | Public domain |
 | [BAGARAN-KILITTAS.jpg](https://commons.wikimedia.org/wiki/File:BAGARAN-KILITTAS.jpg) | Halabian | CC BY-SA 4.0 |
+| [BCIA Aerial.jpg](https://commons.wikimedia.org/wiki/File:BCIA_Aerial.jpg) | AcidBomber at English Wikipedia | CC BY 3.0 |
+| [BCN AIRPORT FROM FLIGHT BCN-ORY A320 EC-MLE (43952944862).jpg](https://commons.wikimedia.org/wiki/File:BCN_AIRPORT_FROM_FLIGHT_BCN-ORY_A320_EC-MLE_(43952944862).jpg) | ERIC SALARD from PARIS, FRANCE | CC BY-SA 2.0 |
 | [BER June2011.jpg](https://commons.wikimedia.org/wiki/File:BER_June2011.jpg) | CellarDoor85 | CC BY-SA 3.0 |
 | [BHA Nassau, Paradise Island, Atlantis Bridge 001.jpg](https://commons.wikimedia.org/wiki/File:BHA_Nassau%2C_Paradise_Island%2C_Atlantis_Bridge_001.jpg) | Der-wuppertaler | CC BY-SA 3.0 |
 | [BLR Turau Castle Hill view to River Prypjats 1.jpg](https://commons.wikimedia.org/wiki/File:BLR_Turau_Castle_Hill_view_to_River_Prypjats_1.jpg) | Pulkassa, Flickr | CC BY-SA 2.0 |
@@ -773,6 +819,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Bahmanis in 1390.png](https://commons.wikimedia.org/wiki/File:Bahmanis_in_1390.png) | Beylarbey | CC BY-SA 4.0 |
 | [Bahrain World trade Center .jpg](https://commons.wikimedia.org/wiki/File:Bahrain_World_trade_Center_.jpg) | B.alotaby | CC BY-SA 4.0 |
 | [Bahtšisarai-Khaani palee Krimmis.jpg](https://commons.wikimedia.org/wiki/File:Baht%C5%A1isarai-Khaani_palee_Krimmis.jpg) | Aleksander Kaasik | CC BY-SA 4.0 |
+| [Bahía Blanca- cabrera.jpg](https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_Blanca-_cabrera.jpg) | Chipppy | Public domain |
 | [Baige Junction in Changping District.jpg](https://commons.wikimedia.org/wiki/File:Baige_Junction_in_Changping_District.jpg) | Charlie fong | CC BY-SA 4.0 |
 | [Baikonur Cosmodrome Soyuz launch pad.jpg](https://commons.wikimedia.org/wiki/File:Baikonur_Cosmodrome_Soyuz_launch_pad.jpg) | Bill Ingalls | Public domain |
 | [Bajang Ratu Gate Trowulan.jpg](https://commons.wikimedia.org/wiki/File:Bajang_Ratu_Gate_Trowulan.jpg) | Gunawan Kartapranata | CC BY-SA 3.0 |
@@ -795,6 +842,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Ban Gioc - Detian Falls2.jpg](https://commons.wikimedia.org/wiki/File:Ban_Gioc_-_Detian_Falls2.jpg) | jankgo | CC BY 2.0 |
 | [Banavasi Madhukeshwara temple.JPG](https://commons.wikimedia.org/wiki/File:Banavasi_Madhukeshwara_temple.JPG) | Shashidhara halady | CC BY-SA 3.0 |
 | [Banda Aceh's Grand Mosque, Indonesia.jpg](https://commons.wikimedia.org/wiki/File:Banda_Aceh's_Grand_Mosque%2C_Indonesia.jpg) | — | Public domain |
+| [Bandarabbas-sahel-2.jpg](https://commons.wikimedia.org/wiki/File:Bandarabbas-sahel-2.jpg) | Abed | GFDL |
 | [Bandeira da Inconfidência 1789 Os Inconfidentes.jpg](https://commons.wikimedia.org/wiki/File:Bandeira_da_Inconfid%C3%AAncia_1789_Os_Inconfidentes.jpg) | Carlos Oswald | Public domain |
 | [Bandeira de Alagoas.svg](https://commons.wikimedia.org/wiki/File:Bandeira_de_Alagoas.svg) | Giro720 | Public domain |
 | [Bandeira de Minas Gerais.svg](https://commons.wikimedia.org/wiki/File:Bandeira_de_Minas_Gerais.svg) | Plovisanta | Public domain |
@@ -839,6 +887,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [BaosteelTower0.jpg](https://commons.wikimedia.org/wiki/File:BaosteelTower0.jpg) | WhisperToMe | CC0 |
 | [Baramulla Public School.jpg](https://commons.wikimedia.org/wiki/File:Baramulla_Public_School.jpg) | Afferninja | CC BY-SA 4.0 |
 | [Barcelona AUGUST 1992 the Olympic Games (Juegos Olímpicos de Barcelona 1992) - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Barcelona_AUGUST_1992_the_Olympic_Games_(Juegos_Ol%C3%ADmpicos_de_Barcelona_1992)_-_panoramio.jpg) | Nikolai Karaneschev | CC BY 3.0 |
+| [Barcelona Airport (38923117160) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Barcelona_Airport_(38923117160)_(cropped).jpg) | Mike McBey | CC BY 2.0 |
 | [Barcelona La Rambla - 2011-04-23 05 - JTCurses.jpg](https://commons.wikimedia.org/wiki/File:Barcelona_La_Rambla_-_2011-04-23_05_-_JTCurses.jpg) | JT Curses | CC BY-SA 4.0 |
 | [Barcelona collage.JPG](https://commons.wikimedia.org/wiki/File:Barcelona_collage.JPG) | Frank Müller, User:Germanramos, Adrià García, User:Johannes Kern, User:Freepenguin | CC BY-SA 3.0 |
 | [Bardonecchia (TO) - portale sud del traforo ferroviario del Frejus.jpg](https://commons.wikimedia.org/wiki/File:Bardonecchia_(TO)_-_portale_sud_del_traforo_ferroviario_del_Frejus.jpg) | K.Weise | Public domain |
@@ -936,6 +985,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Battles of January Uprising in Lithuania, Belarus and Ukraine.JPG](https://commons.wikimedia.org/wiki/File:Battles_of_January_Uprising_in_Lithuania%2C_Belarus_and_Ukraine.JPG) | Stanisław Zieliński | Public domain |
 | [Batum demonstration 1917 (2).jpg](https://commons.wikimedia.org/wiki/File:Batum_demonstration_1917_(2).jpg) | Unknown authorUnknown author | Public domain |
 | [Bauhaus Chair Breuer.png](https://commons.wikimedia.org/wiki/File:Bauhaus_Chair_Breuer.png) | No machine-readable author provided. Borowski~commonswiki assumed (based on copyright clai | Public domain |
+| [Bay Bridge 2022.jpg](https://commons.wikimedia.org/wiki/File:Bay_Bridge_2022.jpg) | InvadingInvader | CC BY-SA 4.0 |
 | [Bayeux Tapestry scene1 EDWARD REX.jpg](https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene1_EDWARD_REX.jpg) | Myrabella | Public domain |
 | [Bayeux Tapestry scene51 Battle of Hastings Norman knights and archers.jpg](https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg) | Myrabella | Public domain |
 | [Bayeux Tapestry scene57 Harold death.jpg](https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene57_Harold_death.jpg) | Myrabella | Public domain |
@@ -949,9 +999,11 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Beffroi d'Arras (02).jpg](https://commons.wikimedia.org/wiki/File:Beffroi_d'Arras_(02).jpg) | JackyM59 | CC BY-SA 4.0 |
 | [Begin, Carter and Sadat at Camp David 1978.jpg](https://commons.wikimedia.org/wiki/File:Begin%2C_Carter_and_Sadat_at_Camp_David_1978.jpg) | Fitz-Patrick, Bill, photographer | Public domain |
 | [BegramMedallion.jpg](https://commons.wikimedia.org/wiki/File:BegramMedallion.jpg) | Artacoana | CC BY-SA 3.0 |
+| [Beijing Capital International Airport Aerial Photo (20240113213409).jpg](https://commons.wikimedia.org/wiki/File:Beijing_Capital_International_Airport_Aerial_Photo_(20240113213409).jpg) | Calvin411 | CC BY 4.0 |
 | [Beijing Subway System Map zh.svg](https://commons.wikimedia.org/wiki/File:Beijing_Subway_System_Map_zh.svg) | Painjet | CC BY-SA 4.0 |
 | [Beijing students protesting the Treaty of Versailles (May 4, 1919).jpg](https://commons.wikimedia.org/wiki/File:Beijing_students_protesting_the_Treaty_of_Versailles_(May_4%2C_1919).jpg) | Unknown authorUnknown author | Public domain |
 | [Beijing-1935.jpg](https://commons.wikimedia.org/wiki/File:Beijing-1935.jpg) | User Refrain on zh.wikipedia | Public domain |
+| [Beilun Port 2020-05-02.jpg](https://commons.wikimedia.org/wiki/File:Beilun_Port_2020-05-02.jpg) | Nbfreeh | CC BY-SA 4.0 |
 | [Beirutcity.jpg](https://commons.wikimedia.org/wiki/File:Beirutcity.jpg) | Yoniw | CC BY-SA 3.0 |
 | [Belchatow-elektrownia.jpg](https://commons.wikimedia.org/wiki/File:Belchatow-elektrownia.jpg) | Pibwl | CC BY-SA 3.0 |
 | [Belchite - Vista general01.JPG](https://commons.wikimedia.org/wiki/File:Belchite_-_Vista_general01.JPG) | ecelan | CC BY 2.5 |
@@ -1042,8 +1094,10 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Blason fr Vichy.svg](https://commons.wikimedia.org/wiki/File:Blason_fr_Vichy.svg) | — | CC BY-SA 3.0 |
 | [Blason ville fr Avignon (Vaucluse).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Avignon_(Vaucluse).svg) | Syryatsu | Public domain |
 | [Blason ville fr Bellegarde-sur-Valserine (Ain).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Bellegarde-sur-Valserine_(Ain).svg) | — | CC BY-SA 4.0 |
+| [Blason ville fr Brest (Finistere).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Brest_(Finistere).svg) | Syryatsu | Public domain |
 | [Blason ville fr Calais (Pas-de-Calais).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Calais_(Pas-de-Calais).svg) | — | CC BY-SA 3.0 |
 | [Blason ville fr Dijon (Côte-d'Or).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Dijon_(C%C3%B4te-d'Or).svg) | — | CC BY-SA 3.0 |
+| [Blason ville fr Le Havre (Seine-Maritime).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Le_Havre_(Seine-Maritime).svg) | Spedona | CC BY-SA 3.0 |
 | [Blason ville fr Toulouse (Haute-Garonne).svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Toulouse_(Haute-Garonne).svg) | — | CC BY-SA 3.0 |
 | [Blick vom Kaiserdom über Frankfurt zur Skyline.jpg](https://commons.wikimedia.org/wiki/File:Blick_vom_Kaiserdom_%C3%BCber_Frankfurt_zur_Skyline.jpg) | Jörg Braukmann | CC BY-SA 4.0 |
 | [Blick vom Rathausturm über Gera.jpg](https://commons.wikimedia.org/wiki/File:Blick_vom_Rathausturm_%C3%BCber_Gera.jpg) | The original uploader was Schorle at German Wikipedia. | CC BY-SA 3.0 |
@@ -1107,12 +1161,15 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Brazzaville (50637).jpg](https://commons.wikimedia.org/wiki/File:Brazzaville_(50637).jpg) | Detsed1 | CC BY-SA 4.0 |
 | [Breccia di Porta Pia Ademollo.jpg](https://commons.wikimedia.org/wiki/File:Breccia_di_Porta_Pia_Ademollo.jpg) | Carlo Ademollo | Public domain |
 | [Bremen-rathaus-dom-buergerschaft.jpg](https://commons.wikimedia.org/wiki/File:Bremen-rathaus-dom-buergerschaft.jpg) | Klaus Grünberg | CC BY-SA 3.0 |
+| [Brest - Le Château - PA00089847 - 011.JPG](https://commons.wikimedia.org/wiki/File:Brest_-_Le_Ch%C3%A2teau_-_PA00089847_-_011.JPG) | Thesupermat | CC BY-SA 3.0 |
 | [Bretagne.svg](https://commons.wikimedia.org/wiki/File:Bretagne.svg) | This image has been made by GwenofGwened and released under the licenses stated below. You | CC BY-SA 4.0 |
 | [Brian Boru, King of Munster.jpg](https://commons.wikimedia.org/wiki/File:Brian_Boru%2C_King_of_Munster.jpg) | Unknown authorUnknown author | Public domain |
 | [Bridge Crossing.jpg](https://commons.wikimedia.org/wiki/File:Bridge_Crossing.jpg) | Unknown authorUnknown author | Public domain |
 | [Bridge across the Houmen Channel.jpg](https://commons.wikimedia.org/wiki/File:Bridge_across_the_Houmen_Channel.jpg) | Wing1990hk | CC BY-SA 3.0 |
+| [Bridge of Freedom Korea 001.jpg](https://commons.wikimedia.org/wiki/File:Bridge_of_Freedom_Korea_001.jpg) | Rbtjd0201(talk / Contributions) at the Korean Wikipedia | Public domain |
 | [Bridge on the River Kwai - tourist plaza.JPG](https://commons.wikimedia.org/wiki/File:Bridge_on_the_River_Kwai_-_tourist_plaza.JPG) | PumpkinSky | CC BY-SA 4.0 |
 | [Bridge over River Kwai.jpg](https://commons.wikimedia.org/wiki/File:Bridge_over_River_Kwai.jpg) | Photo taken by User:Mjanich in mid 2004 with a Sony DSC-707. See EXIF record for details. | CC BY-SA 3.0 |
+| [Bridge to Niteroi.jpg](https://commons.wikimedia.org/wiki/File:Bridge_to_Niteroi.jpg) | beckstei | CC BY 2.0 |
 | [Bridge.Amu.Darya.Urgench.jpg](https://commons.wikimedia.org/wiki/File:Bridge.Amu.Darya.Urgench.jpg) | Mario Biondi, writer | CC BY 2.5 |
 | [Bridgetown aerial.JPG](https://commons.wikimedia.org/wiki/File:Bridgetown_aerial.JPG) | P.Lechien | CC0 |
 | [BrightLine Siemens Charger SCB-40 Locomotive + Venture Cars Miami Design District NE 39th St (51977671230) (cropped).jpg](https://commons.wikimedia.org/wiki/File:BrightLine_Siemens_Charger_SCB-40_Locomotive_%2B_Venture_Cars_Miami_Design_District_NE_39th_St_(51977671230)_(cropped).jpg) | Han Zheng | CC BY-SA 2.0 |
@@ -1120,6 +1177,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Brihadisvara Temple during Maha Shivaratri-WUS03611 (edit).jpg](https://commons.wikimedia.org/wiki/File:Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_(edit).jpg) | Original: Rainer Halama Derivative work: UnpetitproleX | CC BY-SA 4.0 |
 | [Brindisi - monumento al Marinaio d'Italia - 202109012300 3.jpeg](https://commons.wikimedia.org/wiki/File:Brindisi_-_monumento_al_Marinaio_d'Italia_-_202109012300_3.jpeg) | Stefn79 ph | CC BY-SA 4.0 |
 | [Brit IndianEmpireReligions3.jpg](https://commons.wikimedia.org/wiki/File:Brit_IndianEmpireReligions3.jpg) | John George Bartholomew | Public domain |
+| [British Airways Boeing 747-200 Silagi-1.jpg](https://commons.wikimedia.org/wiki/File:British_Airways_Boeing_747-200_Silagi-1.jpg) | Richard Silagi | GFDL |
+| [British Empire 1897.jpg](https://commons.wikimedia.org/wiki/File:British_Empire_1897.jpg) | Unknown authorUnknown author | Public domain |
 | [British Museum Kang Hou Gui Text.jpg](https://commons.wikimedia.org/wiki/File:British_Museum_Kang_Hou_Gui_Text.jpg) | BabelStone | CC0 |
 | [British Museum from NE 2.JPG](https://commons.wikimedia.org/wiki/File:British_Museum_from_NE_2.JPG) | Ham | CC BY-SA 3.0 |
 | [British Raj Red Ensign.svg](https://commons.wikimedia.org/wiki/File:British_Raj_Red_Ensign.svg) | Barryob | Public domain |
@@ -1153,6 +1212,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Bundesarchiv B 145 Bild-F042453-0011, Niedersachsen, Brandt im Wahlkampf.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F042453-0011%2C_Niedersachsen%2C_Brandt_im_Wahlkampf.jpg) | Ludwig Wegmann | CC BY-SA 3.0 de |
 | [Bundesarchiv B 145 Bild-F051866-0010, "Landshut"-Entführung, Rückkehr GSG 9.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F051866-0010%2C_%22Landshut%22-Entf%C3%BChrung%2C_R%C3%BCckkehr_GSG_9.jpg) | Ludwig Wegmann | CC BY-SA 3.0 de |
 | [Bundesarchiv B 145 Bild-F057884-0009, Willy Brandt.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F057884-0009%2C_Willy_Brandt.jpg) | Engelbert Reineke | CC BY-SA 3.0 de |
+| [Bundesarchiv B 145 Bild-P016402, Berlin, Rennen auf der Avus.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-P016402%2C_Berlin%2C_Rennen_auf_der_Avus.jpg) | Unknown authorUnknown author | CC BY-SA 3.0 de |
 | [Bundesarchiv B 145 Bild-P054320, Berlin, Brandenburger Tor und Pariser Platz.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-P054320%2C_Berlin%2C_Brandenburger_Tor_und_Pariser_Platz.jpg) | Carl Weinrother | CC BY-SA 3.0 de |
 | [Bundesarchiv Bild 101I-212-0214-08A, Russland-Nord, v. Leeb u.a. beim Kartenstudium.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-212-0214-08A%2C_Russland-Nord%2C_v._Leeb_u.a._beim_Kartenstudium.jpg) | Hansen | CC BY-SA 3.0 de |
 | [Bundesarchiv Bild 101I-646-5188-17, Flugzeuge Junkers Ju 87.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg) | Richard Opitz | CC BY-SA 3.0 de |
@@ -1193,7 +1253,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Bundesarchiv Bild 183-R29963, Bei Verdun, explodierende Granate.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R29963%2C_Bei_Verdun%2C_explodierende_Granate.jpg) | Unknown authorUnknown author | CC BY-SA 3.0 de |
 | [Bundesarchiv Bild 183-R67561, Potsdamer Konferenz, Konferenztisch.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R67561%2C_Potsdamer_Konferenz%2C_Konferenztisch.jpg) | UnknownUnknown | CC BY-SA 3.0 de |
 | [Bundesarchiv Bild 183-R68588, Otto von Bismarck.jpg](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R68588%2C_Otto_von_Bismarck.jpg) | Loescher, P. &amp; Petsch | CC BY-SA 3.0 de |
+| [Bundesautobahn 9 number.svg](https://commons.wikimedia.org/wiki/File:Bundesautobahn_9_number.svg) | Created automatically by 3247. | Public domain |
 | [Bundestag 2005.svg](https://commons.wikimedia.org/wiki/File:Bundestag_2005.svg) | Germany | Public domain |
+| [Burchardkai-Nacht-(Hamburg)-msu-2021-4873-.jpg](https://commons.wikimedia.org/wiki/File:Burchardkai-Nacht-(Hamburg)-msu-2021-4873-.jpg) | Matthias Süßen | CC BY-SA 4.0 |
 | [Burgos city view facing south east.jpg](https://commons.wikimedia.org/wiki/File:Burgos_city_view_facing_south_east.jpg) | Jardoz | CC BY-SA 3.0 |
 | [Burma Railway (I).jpg](https://commons.wikimedia.org/wiki/File:Burma_Railway_(I).jpg) | This Photo was taken by Supanut Arunoprayote. Feel free to use any of my images, but pleas | CC BY 4.0 |
 | [Burmese-Siamese war (1765-1767) map - EN - 001.jpg](https://commons.wikimedia.org/wiki/File:Burmese-Siamese_war_(1765-1767)_map_-_EN_-_001.jpg) | Aristitleism | CC0 |
@@ -1227,6 +1289,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [CAIRO METRO.jpg](https://commons.wikimedia.org/wiki/File:CAIRO_METRO.jpg) | X49 (talk) | CC BY-SA 3.0 |
 | [CANDU at Qinshan.jpg](https://commons.wikimedia.org/wiki/File:CANDU_at_Qinshan.jpg) | Atomic Energy of Canada Limited | Attribution |
 | [CBR.png](https://commons.wikimedia.org/wiki/File:CBR.png) | — | CC BY-SA 3.0 |
+| [CDMX - Paseo de la Reforma.jpg](https://commons.wikimedia.org/wiki/File:CDMX_-_Paseo_de_la_Reforma.jpg) | México en Fotos, A.C. | CC BY-SA 2.0 |
+| [CH-Hinweissignal-Autobahn.svg](https://commons.wikimedia.org/wiki/File:CH-Hinweissignal-Autobahn.svg) | Bundesamt für Strassen (ASTRA) | Public domain |
 | [CHP logo (2024, vertical red).svg](https://commons.wikimedia.org/wiki/File:CHP_logo_(2024%2C_vertical_red).svg) | Cumhuriyet Halk Partisi (CHP) | Public domain |
 | [CHUBU electric power- KAWAGOE thermal power plant.jpg](https://commons.wikimedia.org/wiki/File:CHUBU_electric_power-_KAWAGOE_thermal_power_plant.jpg) | Jihara19 | CC BY-SA 4.0 |
 | [CHUGOKU EXP(E2A).svg](https://commons.wikimedia.org/wiki/File:CHUGOKU_EXP(E2A).svg) | Oka21000 | CC0 |
@@ -1263,12 +1327,18 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Cadizplazaespana.jpg](https://commons.wikimedia.org/wiki/File:Cadizplazaespana.jpg) | — | CC BY-SA 3.0 |
 | [Cagliari collage.png](https://commons.wikimedia.org/wiki/File:Cagliari_collage.png) | Nilo1926 | CC BY-SA 4.0 |
 | [Cagliari-Molentargius-Poetto-Quartu.jpg](https://commons.wikimedia.org/wiki/File:Cagliari-Molentargius-Poetto-Quartu.jpg) | cristianocani | CC BY 2.0 |
+| [Cairo Airport Terminal 3.jpg](https://commons.wikimedia.org/wiki/File:Cairo_Airport_Terminal_3.jpg) | Alensha | CC BY-SA 4.0 |
+| [Cairo Alexandria Desert Road-day.JPG](https://commons.wikimedia.org/wiki/File:Cairo_Alexandria_Desert_Road-day.JPG) | Faris knight | CC BY-SA 4.0 |
 | [Cairo From Tower (cropped).jpg](https://commons.wikimedia.org/wiki/File:Cairo_From_Tower_(cropped).jpg) | Wael El Sisi | CC BY-SA 3.0 |
+| [Cairo Int. Airport - NASA.JPG](https://commons.wikimedia.org/wiki/File:Cairo_Int._Airport_-_NASA.JPG) | NASA | Public domain |
 | [Cairo Opera House, Al Hurriyah Park and the Nile river (14797782354).jpg](https://commons.wikimedia.org/wiki/File:Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_(14797782354).jpg) | Jorge Láscar from Melbourne, Australia | CC BY 2.0 |
 | [Cairo Skyline (2020).jpg](https://commons.wikimedia.org/wiki/File:Cairo_Skyline_(2020).jpg) | Faris El-Gwely | CC BY 4.0 |
 | [Cairo metro logo2012.svg](https://commons.wikimedia.org/wiki/File:Cairo_metro_logo2012.svg) | Peeperman | Public domain |
+| [Cairo-Hilton-Skyline.jpg](https://commons.wikimedia.org/wiki/File:Cairo-Hilton-Skyline.jpg) | — | CC BY-SA 3.0 |
 | [CairoEgMuseumTaaMaskMostlyPhotographed.jpg](https://commons.wikimedia.org/wiki/File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg) | Roland Unger | Public domain |
+| [Cairoarptnasa.jpg](https://commons.wikimedia.org/wiki/File:Cairoarptnasa.jpg) | — | Public domain |
 | [Calais - panoramio (10).jpg](https://commons.wikimedia.org/wiki/File:Calais_-_panoramio_(10).jpg) | Tanya Dedyukhina | CC BY 3.0 |
+| [Calatrava Puente del Alamillo Seville.jpg](https://commons.wikimedia.org/wiki/File:Calatrava_Puente_del_Alamillo_Seville.jpg) | Andrew Dunn | CC BY-SA 2.0 |
 | [Calcutta 1946 riot.jpg](https://commons.wikimedia.org/wiki/File:Calcutta_1946_riot.jpg) | Unknown authorUnknown author | Public domain |
 | [Calder Hall nuclear power station, after opening.jpg](https://commons.wikimedia.org/wiki/File:Calder_Hall_nuclear_power_station%2C_after_opening.jpg) | UK government agencies | OGL 3 |
 | [Califato de Córdoba - 1000-en.svg](https://commons.wikimedia.org/wiki/File:Califato_de_C%C3%B3rdoba_-_1000-en.svg) | File:Califato de Córdoba - 1000.svg: Tyk (talk · contribs) derivative work: Morningstar181 | CC BY-SA 3.0 |
@@ -1293,6 +1363,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Campaign of the Battle of Ain Jalut 1260.svg](https://commons.wikimedia.org/wiki/File:Campaign_of_the_Battle_of_Ain_Jalut_1260.svg) | MapMaster | CC BY 3.0 |
 | [Campbell's Soup Cans by Andy Warhol.jpg](https://commons.wikimedia.org/wiki/File:Campbell's_Soup_Cans_by_Andy_Warhol.jpg) | Brandon Fick | Public domain |
 | [Campo en zona arqueológica La Quemada.jpg](https://commons.wikimedia.org/wiki/File:Campo_en_zona_arqueol%C3%B3gica_La_Quemada.jpg) | ErickBasM | CC BY-SA 4.0 |
+| [CanThoBridge.jpg](https://commons.wikimedia.org/wiki/File:CanThoBridge.jpg) | Tomdoan (talk). Original uploader was Tomdoan at en.wikipedia | Public domain |
 | [Canal de Suez.jpg](https://commons.wikimedia.org/wiki/File:Canal_de_Suez.jpg) | — | CC BY 2.5 |
 | [Canals of Amsterdam 1.JPG](https://commons.wikimedia.org/wiki/File:Canals_of_Amsterdam_1.JPG) | ja:User:hide-sp | CC BY-SA 3.0 |
 | [Canberra from Mt Ainslie (5642431515).jpg](https://commons.wikimedia.org/wiki/File:Canberra_from_Mt_Ainslie_(5642431515).jpg) | Tim J Keegan from Lake Macquarie, Australia | CC BY-SA 2.0 |
@@ -1300,6 +1371,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Cangas de Onís - Palacio Pintu.jpg](https://commons.wikimedia.org/wiki/File:Cangas_de_On%C3%ADs_-_Palacio_Pintu.jpg) | Ecelan | CC BY-SA 4.0 |
 | [Cantar de mio Cid f. 1r (rep).jpg](https://commons.wikimedia.org/wiki/File:Cantar_de_mio_Cid_f._1r_(rep).jpg) | Per Abbat (copista) | Public domain |
 | [Cantar de mio Cid f74r.jpg](https://commons.wikimedia.org/wiki/File:Cantar_de_mio_Cid_f74r.jpg) | AnonymousUnknown author | Public domain |
+| [Cantarat Salla 02.jpg](https://commons.wikimedia.org/wiki/File:Cantarat_Salla_02.jpg) | عدنان حليم | CC BY-SA 4.0 |
 | [Cantigas battle.jpg](https://commons.wikimedia.org/wiki/File:Cantigas_battle.jpg) | Creator:Abdula | Public domain |
 | [Canton Mint.jpg](https://commons.wikimedia.org/wiki/File:Canton_Mint.jpg) | Unknown authorUnknown author | Public domain |
 | [Canton Tower 20220626 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Canton_Tower_20220626_(cropped).jpg) | Tim Wu | CC BY-SA 4.0 |
@@ -1308,6 +1380,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Canute and Ælfgifu cropped (Canute).jpg](https://commons.wikimedia.org/wiki/File:Canute_and_%C3%86lfgifu_cropped_(Canute).jpg) | See Description (unknown) | Public domain |
 | [Cao Cao scth.jpg](https://commons.wikimedia.org/wiki/File:Cao_Cao_scth.jpg) | Wang Qi | Public domain |
 | [Cao Kun.jpg](https://commons.wikimedia.org/wiki/File:Cao_Kun.jpg) | Unknown authorUnknown author | Public domain |
+| [Capesize bulk carrier at Suez Canal Bridge.JPG](https://commons.wikimedia.org/wiki/File:Capesize_bulk_carrier_at_Suez_Canal_Bridge.JPG) | AashayBaindur | CC BY-SA 3.0 |
 | [Capilla de Maximiliano.jpg](https://commons.wikimedia.org/wiki/File:Capilla_de_Maximiliano.jpg) | Ruiz | CC BY-SA 2.0 |
 | [Capitoline she-wolf Musei Capitolini MC1181.jpg](https://commons.wikimedia.org/wiki/File:Capitoline_she-wolf_Musei_Capitolini_MC1181.jpg) | Unknown artistUnknown artist | Public domain |
 | [Capitolio havana.jpg](https://commons.wikimedia.org/wiki/File:Capitolio_havana.jpg) | Michael Oswald | Public domain |
@@ -1329,10 +1402,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Carpatho-Rusyn sub-groups - Transcarpathian Rusyns in original goral folk-costumes from Maramureş ..jpg](https://commons.wikimedia.org/wiki/File:Carpatho-Rusyn_sub-groups_-_Transcarpathian_Rusyns_in_original_goral_folk-costumes_from_Maramure%C5%9F_..jpg) | Marek Silarski | CC BY 2.5 |
 | [Carte Lorraine 2018.png](https://commons.wikimedia.org/wiki/File:Carte_Lorraine_2018.png) | Niko67000 | CC BY-SA 4.0 |
 | [Carte lapita.png](https://commons.wikimedia.org/wiki/File:Carte_lapita.png) | Christophe cagé | CC BY-SA 3.0 |
+| [Cartel de distancias en Abra del Acay.jpg](https://commons.wikimedia.org/wiki/File:Cartel_de_distancias_en_Abra_del_Acay.jpg) | Eugenio Costa | Public domain |
 | [Casa Batllo Overview Barcelona Spain cut.jpg](https://commons.wikimedia.org/wiki/File:Casa_Batllo_Overview_Barcelona_Spain_cut.jpg) | ChristianSchd | CC BY-SA 3.0 |
 | [Casablanca - Morocco 008.jpg](https://commons.wikimedia.org/wiki/File:Casablanca_-_Morocco_008.jpg) | Karimobo | Public domain |
 | [Casablanca Mohammed V International Airport, Morocco January 2024 - Front.jpg](https://commons.wikimedia.org/wiki/File:Casablanca_Mohammed_V_International_Airport%2C_Morocco_January_2024_-_Front.jpg) | Sharon Hahn Darlin | CC BY 2.0 |
 | [Casablanca-Conference.jpg](https://commons.wikimedia.org/wiki/File:Casablanca-Conference.jpg) | Post-Work: W.Wolny | Public domain |
+| [Casablanca-Settat in Morocco (Morocco view).svg](https://commons.wikimedia.org/wiki/File:Casablanca-Settat_in_Morocco_(Morocco_view).svg) | Milenioscuro, based on image by Offnfopt using map data by OpenStreetMap contributors. | CC BY-SA 4.0 |
+| [Casco urbano fundacional de la Ciudad de La Plata.jpg](https://commons.wikimedia.org/wiki/File:Casco_urbano_fundacional_de_la_Ciudad_de_La_Plata.jpg) | Federico Pinto | CC BY-SA 3.0 |
 | [Castell Dinas Bran, Llangollen - AUOB (Dyffryn Ddyfrdwy (Dee Valley); Wales 26.jpg](https://commons.wikimedia.org/wiki/File:Castell_Dinas_Bran%2C_Llangollen_-_AUOB_(Dyffryn_Ddyfrdwy_(Dee_Valley)%3B_Wales_26.jpg) | Llywelyn2000 | CC BY-SA 4.0 |
 | [Castello Aragonese - Taranto.jpg](https://commons.wikimedia.org/wiki/File:Castello_Aragonese_-_Taranto.jpg) | ParisTaras | CC BY-SA 4.0 |
 | [Castello dall'alto.jpg](https://commons.wikimedia.org/wiki/File:Castello_dall'alto.jpg) | Nbisi | CC BY-SA 4.0 |
@@ -1387,6 +1463,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Centro Histórico, 16.9 -- 2023 -- Córdoba, España.jpg](https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico%2C_16.9_--_2023_--_C%C3%B3rdoba%2C_Espa%C3%B1a.jpg) | Jose María Ligero Loarte | CC BY-SA 4.0 |
 | [Centro historico de Tegucigalpa y Comayagüela.jpg](https://commons.wikimedia.org/wiki/File:Centro_historico_de_Tegucigalpa_y_Comayag%C3%BCela.jpg) | Luis Alfredo Romero | CC BY-SA 4.0 |
 | [Centro internacional.JPG](https://commons.wikimedia.org/wiki/File:Centro_internacional.JPG) | Felipe Restrepo Acosta | CC BY-SA 3.0 |
+| [Century square Manzhouli.jpg](https://commons.wikimedia.org/wiki/File:Century_square_Manzhouli.jpg) | Alexander V. Solomin | CC BY-SA 3.0 |
 | [Cetatea Alba Iulia din aer toamna.jpg](https://commons.wikimedia.org/wiki/File:Cetatea_Alba_Iulia_din_aer_toamna.jpg) | Kiki Vasilescu | CC BY-SA 4.0 |
 | [Chaigneau.jpg](https://commons.wikimedia.org/wiki/File:Chaigneau.jpg) | 1805 | Public domain |
 | [Challenger Photo Montage.jpg](https://commons.wikimedia.org/wiki/File:Challenger_Photo_Montage.jpg) | Galdrad | Public domain |
@@ -1434,6 +1511,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Cherchell's fountain place.jpg](https://commons.wikimedia.org/wiki/File:Cherchell's_fountain_place.jpg) | Yves Jalabert | CC BY-SA 2.0 |
 | [Chernobyl NPP Site Panorama with NSC Construction - June 2013.jpg](https://commons.wikimedia.org/wiki/File:Chernobyl_NPP_Site_Panorama_with_NSC_Construction_-_June_2013.jpg) | Ingmar Runge | CC BY-SA 3.0 |
 | [Chełmska górka1.jpg](https://commons.wikimedia.org/wiki/File:Che%C5%82mska_g%C3%B3rka1.jpg) | Loraine | CC BY-SA 3.0 |
+| [Chhatrapati Shivaji International Airport 3.jpg](https://commons.wikimedia.org/wiki/File:Chhatrapati_Shivaji_International_Airport_3.jpg) | Innocentbunny | CC BY-SA 3.0 |
 | [Chiang Kai-shek in 1933.jpg](https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_in_1933.jpg) | Unknown authorUnknown author | Public domain |
 | [Chiang Mai Train Station.jpg](https://commons.wikimedia.org/wiki/File:Chiang_Mai_Train_Station.jpg) | Manop | CC BY 3.0 |
 | [Chiang Wei-shui photo (cropped).jpg](https://commons.wikimedia.org/wiki/File:Chiang_Wei-shui_photo_(cropped).jpg) | 未知上傳者 | Public domain |
@@ -1470,6 +1548,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [China coin1.JPG](https://commons.wikimedia.org/wiki/File:China_coin1.JPG) | User 冷玉 on zh.wikipedia | CC BY-SA 3.0 |
 | [China edcp location map.svg](https://commons.wikimedia.org/wiki/File:China_edcp_location_map.svg) | Uwe Dedering | CC BY-SA 3.0 |
 | [China edcp relief location map.jpg](https://commons.wikimedia.org/wiki/File:China_edcp_relief_location_map.jpg) | Uwe Dedering | CC BY-SA 3.0 |
+| [China from the Eyes of the Flying Tigers 1944-1945 47.jpg](https://commons.wikimedia.org/wiki/File:China_from_the_Eyes_of_the_Flying_Tigers_1944-1945_47.jpg) | Allen Larsen | Public domain |
 | [China map.png](https://commons.wikimedia.org/wiki/File:China_map.png) | Nat at English Wikipedia | CC BY 3.0 |
 | [China, Vietnam, Korea and Japan in 1100 AD.svg](https://commons.wikimedia.org/wiki/File:China%2C_Vietnam%2C_Korea_and_Japan_in_1100_AD.svg) | Kanguole | CC BY-SA 3.0 |
 | [China-Laos train, going over the Mekong river north of Luang Prabang, Laos.jpg](https://commons.wikimedia.org/wiki/File:China-Laos_train%2C_going_over_the_Mekong_river_north_of_Luang_Prabang%2C_Laos.jpg) | Julia Denton-Barker | CC BY-SA 2.0 |
@@ -1514,6 +1593,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Chuo Expwy Route Sign.svg](https://commons.wikimedia.org/wiki/File:Chuo_Expwy_Route_Sign.svg) | Broad-Sky in Japan Font "GD-HighwayGothicJA" - pumpCurry in Japan | Public domain |
 | [Church of the Granite Columns 2007-10-03 02.jpg](https://commons.wikimedia.org/wiki/File:Church_of_the_Granite_Columns_2007-10-03_02.jpg) | — | CC BY 2.0 |
 | [Churubusco-convent.jpg](https://commons.wikimedia.org/wiki/File:Churubusco-convent.jpg) | — | Public domain |
+| [Château et Tour Tanguy.jpg](https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_et_Tour_Tanguy.jpg) | Aodhanbzh | CC BY-SA 4.0 |
+| [Chùa Vẽ Terminal, Port of Hải Phòng.JPG](https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_V%E1%BA%BD_Terminal%2C_Port_of_H%E1%BA%A3i_Ph%C3%B2ng.JPG) | Phó Nháy | Public domain |
 | [Cicatrices de flagellation sur un esclave.jpg](https://commons.wikimedia.org/wiki/File:Cicatrices_de_flagellation_sur_un_esclave.jpg) | Mathew Benjamin Brady | Public domain |
 | [Cidade Maravilhosa.jpg](https://commons.wikimedia.org/wiki/File:Cidade_Maravilhosa.jpg) | Rafael Rabello de Barros | CC BY-SA 3.0 |
 | [Cidade de Silves.jpg](https://commons.wikimedia.org/wiki/File:Cidade_de_Silves.jpg) | Lacobrigo | CC BY-SA 3.0 |
@@ -1522,6 +1603,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Circe Offering the Cup to Odysseus.jpg](https://commons.wikimedia.org/wiki/File:Circe_Offering_the_Cup_to_Odysseus.jpg) | John William Waterhouse | Public domain |
 | [Circe coi maiali, III-II secolo ac.jpg](https://commons.wikimedia.org/wiki/File:Circe_coi_maiali%2C_III-II_secolo_ac.jpg) | Sailko | CC BY 3.0 |
 | [Circe detail.png](https://commons.wikimedia.org/wiki/File:Circe_detail.png) | Athena Painter | Public domain |
+| [Circuit AVUS.svg](https://commons.wikimedia.org/wiki/File:Circuit_AVUS.svg) | Rumbin | Public domain |
 | [Circum-Baikal Railway.svg](https://commons.wikimedia.org/wiki/File:Circum-Baikal_Railway.svg) | Jkan997 | GFDL |
 | [Citadel (old city) of Hewlêr (Erbil).jpg](https://commons.wikimedia.org/wiki/File:Citadel_(old_city)_of_Hewl%C3%AAr_(Erbil).jpg) | Jim Gordon | CC BY 2.0 |
 | [Citadel of Ghazni, seen from Tapa Sardar.jpg](https://commons.wikimedia.org/wiki/File:Citadel_of_Ghazni%2C_seen_from_Tapa_Sardar.jpg) | US State Department (US Embassy in Kabul) a US Government organization, hence PD-USGov app | Public domain |
@@ -1556,6 +1638,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Clifton Karachi View.jpg](https://commons.wikimedia.org/wiki/File:Clifton_Karachi_View.jpg) | Ktownboy103 | CC0 |
 | [Close up of Menahem Begin, Jimmy Carter and Anwar Sadat at Camp David., 09-07-1978 - NARA - 181133.tif](https://commons.wikimedia.org/wiki/File:Close_up_of_Menahem_Begin%2C_Jimmy_Carter_and_Anwar_Sadat_at_Camp_David.%2C_09-07-1978_-_NARA_-_181133.tif) | Unknown authorUnknown author or not provided | Public domain |
 | [Closing in on trapped Rebels at Teruel - Google Art Project.jpg](https://commons.wikimedia.org/wiki/File:Closing_in_on_trapped_Rebels_at_Teruel_-_Google_Art_Project.jpg) | Unknown authorUnknown author | Public domain |
+| [Clouds over the Atlantic Ocean.jpg](https://commons.wikimedia.org/wiki/File:Clouds_over_the_Atlantic_Ocean.jpg) | Tiago Fioreze | CC BY-SA 3.0 |
 | [Cmentarz żydowski 1870 rok Kielce Pakosz Dolny 1.jpg](https://commons.wikimedia.org/wiki/File:Cmentarz_%C5%BCydowski_1870_rok_Kielce_Pakosz_Dolny_1.jpg) | Wojciech Domagała | CC BY-SA 3.0 pl |
 | [Co loa Citadel.jpg](https://commons.wikimedia.org/wiki/File:Co_loa_Citadel.jpg) | Vanminhhanoi at Vietnamese Wikipedia | Copyrighted free use |
 | [Coal anthracite.jpg](https://commons.wikimedia.org/wiki/File:Coal_anthracite.jpg) | — | Public domain |
@@ -1600,6 +1683,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Cole Thomas The Oxbow (The Connecticut River near Northampton 1836).jpg](https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Oxbow_(The_Connecticut_River_near_Northampton_1836).jpg) | Thomas Cole | Public domain |
 | [Collaegium Maius Poznan front.jpg](https://commons.wikimedia.org/wiki/File:Collaegium_Maius_Poznan_front.jpg) | — | CC BY-SA 3.0 |
 | [Collage - Guerra de Afganistán 1978-1992.jpg](https://commons.wikimedia.org/wiki/File:Collage_-_Guerra_de_Afganist%C3%A1n_1978-1992.jpg) | El Ayudante | CC BY-SA 3.0 |
+| [Collage Acapulco.jpg](https://commons.wikimedia.org/wiki/File:Collage_Acapulco.jpg) | Microstar | CC BY-SA 4.0 |
 | [Collage Belém.png](https://commons.wikimedia.org/wiki/File:Collage_Bel%C3%A9m.png) | Compilation by Heitor Carvalho Jorge | CC BY-SA 3.0 |
 | [Collage Cagliari.jpg](https://commons.wikimedia.org/wiki/File:Collage_Cagliari.jpg) | various users from flickr | CC BY-SA 3.0 |
 | [Collage Firenze.jpg](https://commons.wikimedia.org/wiki/File:Collage_Firenze.jpg) | collection by DanieleDF1995 (talk) | CC BY-SA 3.0 |
@@ -1663,6 +1747,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Constitution of Japan origin signatures 20140506.jpg](https://commons.wikimedia.org/wiki/File:Constitution_of_Japan_origin_signatures_20140506.jpg) | Ryo FUKAsawa | CC BY 2.0 |
 | [Constitution of the United States - DPLA - 9ca804144bd5965e992ae3528bc3c6a3 (page 1).jpg](https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States_-_DPLA_-_9ca804144bd5965e992ae3528bc3c6a3_(page_1).jpg) | Constitutional Convention | Public domain |
 | [Construction tools of Death Railway.JPG](https://commons.wikimedia.org/wiki/File:Construction_tools_of_Death_Railway.JPG) | Ananda | Public domain |
+| [Container ships on Saigon River 3.jpg](https://commons.wikimedia.org/wiki/File:Container_ships_on_Saigon_River_3.jpg) | Syced | CC0 |
 | [Contemporaine afb jeanne d arc.png](https://commons.wikimedia.org/wiki/File:Contemporaine_afb_jeanne_d_arc.png) | Clément de Fauquembergue | Public domain |
 | [Contemporary portrait of Humayun seated (made in Kabul in 1550-1555).jpg](https://commons.wikimedia.org/wiki/File:Contemporary_portrait_of_Humayun_seated_(made_in_Kabul_in_1550-1555).jpg) | Circa 1550-55 artist | Public domain |
 | [Contemporary portrait of Nader Shah. Artist unknown, created in ca. 1740 in Iran (cropped).jpg](https://commons.wikimedia.org/wiki/File:Contemporary_portrait_of_Nader_Shah._Artist_unknown%2C_created_in_ca._1740_in_Iran_(cropped).jpg) | Unknown authorUnknown author | Public domain |
@@ -1700,6 +1785,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Crossrail seal only.svg](https://commons.wikimedia.org/wiki/File:Crossrail_seal_only.svg) | SVG by @assanges ‧ - meta - enwp - zhwp - wmhk | Public domain |
 | [Crowd outside nyse.jpg](https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg) | US-gov | Public domain |
 | [Crowds of French patriots line the Champs Elysees-edit2.jpg](https://commons.wikimedia.org/wiki/File:Crowds_of_French_patriots_line_the_Champs_Elysees-edit2.jpg) | Jack Downey, U.S. Office of War Information | Public domain |
+| [Croydon Airport former terminal building - geograph 3044446.jpg](https://commons.wikimedia.org/wiki/File:Croydon_Airport_former_terminal_building_-_geograph_3044446.jpg) | Christopher Hilton | CC BY-SA 2.0 |
+| [Cruise Ship Costa Serena docked in Rio de Janeiro (city) - Feb. 2011.jpg](https://commons.wikimedia.org/wiki/File:Cruise_Ship_Costa_Serena_docked_in_Rio_de_Janeiro_(city)_-_Feb._2011.jpg) | Jorge Andrade from Rio de Janeiro, Brazil | CC BY 2.0 |
+| [Cruiser MikhailKutuzov1.JPG](https://commons.wikimedia.org/wiki/File:Cruiser_MikhailKutuzov1.JPG) | Николай Путин | CC BY-SA 3.0 |
 | [Crusades surprised by turks.jpg](https://commons.wikimedia.org/wiki/File:Crusades_surprised_by_turks.jpg) | — | Public domain |
 | [Crystal Palace - interior.jpg](https://commons.wikimedia.org/wiki/File:Crystal_Palace_-_interior.jpg) | J. McNeven | Public domain |
 | [Crystal rascacielos.png](https://commons.wikimedia.org/wiki/File:Crystal_rascacielos.png) | — | LGPL |
@@ -1710,6 +1798,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Cuchulain in Battle.jpg](https://commons.wikimedia.org/wiki/File:Cuchulain_in_Battle.jpg) | Joseph Christian Leyendecker (1874 - 1951) | Public domain |
 | [Cuchulainn's death, illustration by Stephen Reid 1904.jpg](https://commons.wikimedia.org/wiki/File:Cuchulainn's_death%2C_illustration_by_Stephen_Reid_1904.jpg) | Stephen Reid | Public domain |
 | [Cumbria UK locator map 2010.svg](https://commons.wikimedia.org/wiki/File:Cumbria_UK_locator_map_2010.svg) | Nilfanion | CC BY-SA 3.0 |
+| [Cumhuriyet Square.jpg](https://commons.wikimedia.org/wiki/File:Cumhuriyet_Square.jpg) | Michael ksk | CC BY-SA 3.0 |
 | [Cusco, Sacsayhuamán - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Cusco%2C_Sacsayhuam%C3%A1n_-_panoramio.jpg) | gertrudis2010 | CC BY-SA 3.0 |
 | [Cuslayshound.jpg](https://commons.wikimedia.org/wiki/File:Cuslayshound.jpg) | Stephen Reid | Public domain |
 | [Cuộc khởi-nghĩa Yên-báy, Trần-huy-Liệu.jpg](https://commons.wikimedia.org/wiki/File:Cu%E1%BB%99c_kh%E1%BB%9Fi-ngh%C4%A9a_Y%C3%AAn-b%C3%A1y%2C_Tr%E1%BA%A7n-huy-Li%E1%BB%87u.jpg) | Trần-huy-Liệu | Public domain |
@@ -1720,6 +1809,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Cách mạng tháng 8 b.jpg](https://commons.wikimedia.org/wiki/File:C%C3%A1ch_m%E1%BA%A1ng_th%C3%A1ng_8_b.jpg) | Vũ Năng An | Public domain |
 | [César Astudillo RESCATE DE REHENES CHAVÍN DE HUÁNTAR.png](https://commons.wikimedia.org/wiki/File:C%C3%A9sar_Astudillo_RESCATE_DE_REHENES_CHAV%C3%8DN_DE_HU%C3%81NTAR.png) | personal de prensa | CC BY-SA 4.0 |
 | [Cầu Long Biên (Doumer).jpg](https://commons.wikimedia.org/wiki/File:C%E1%BA%A7u_Long_Bi%C3%AAn_(Doumer).jpg) | Marki Wolf Cobain | CC BY 2.0 |
+| [Cầu Mỹ Thuận (6297673871).jpg](https://commons.wikimedia.org/wiki/File:C%E1%BA%A7u_M%E1%BB%B9_Thu%E1%BA%ADn_(6297673871).jpg) | Quang Vũ Trương from Hochiminh City, Vietnam | CC BY 2.0 |
 | [Cổng Nam.jpg](https://commons.wikimedia.org/wiki/File:C%E1%BB%95ng_Nam.jpg) | Cổng Nam Thành Nhà Hồ | CC BY-SA 3.0 |
 | [Cờ Bông Mai Trắng (Việt Tân) tại thành phố Krefeld.jpg](https://commons.wikimedia.org/wiki/File:C%E1%BB%9D_B%C3%B4ng_Mai_Tr%E1%BA%AFng_(Vi%E1%BB%87t_T%C3%A2n)_t%E1%BA%A1i_th%C3%A0nh_ph%E1%BB%91_Krefeld.jpg) | Namkhanh02 | Public domain |
 | [D Annunzio IMG.jpg](https://commons.wikimedia.org/wiki/File:D_Annunzio_IMG.jpg) | Unknown authorUnknown author | Public domain |
@@ -1750,6 +1840,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Daidairi of Heiankyo.jpg](https://commons.wikimedia.org/wiki/File:Daidairi_of_Heiankyo.jpg) | Wikiwikiyarou | Public domain |
 | [Daigo no hanami.jpg](https://commons.wikimedia.org/wiki/File:Daigo_no_hanami.jpg) | Unknown authorUnknown author | Public domain |
 | [Daily Bukittinggi.jpg](https://commons.wikimedia.org/wiki/File:Daily_Bukittinggi.jpg) | No machine-readable author provided. Hanafiannoy assumed (based on copyright claims). | Public domain |
+| [Dalian-s01.jpg](https://commons.wikimedia.org/wiki/File:Dalian-s01.jpg) | FeZn | CC BY-SA 3.0 |
 | [Damascus Hejaz railway station 7615.jpg](https://commons.wikimedia.org/wiki/File:Damascus_Hejaz_railway_station_7615.jpg) | Dosseman | CC BY-SA 4.0 |
 | [Damascus coll.jpg](https://commons.wikimedia.org/wiki/File:Damascus_coll.jpg) | See above. | CC BY-SA 3.0 |
 | [Damascus-Hejaz station.jpg](https://commons.wikimedia.org/wiki/File:Damascus-Hejaz_station.jpg) | Heretiq | CC BY-SA 3.0 |
@@ -1795,6 +1886,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Dekulakisation in the USSR V 3.jpg](https://commons.wikimedia.org/wiki/File:Dekulakisation_in_the_USSR_V_3.jpg) | Unknown. Thanks to Lewis H. Siegelbaum and Andrej K. Sokolov | GFDL |
 | [Delhi Montage.jpg](https://commons.wikimedia.org/wiki/File:Delhi_Montage.jpg) | Various photographers (see above); Photoshopped by Nikkul | CC BY-SA 2.0 |
 | [Delhi Sultanate map.png](https://commons.wikimedia.org/wiki/File:Delhi_Sultanate_map.png) | Netzach | CC BY-SA 3.0 |
+| [Delhi airport terminal 3 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Delhi_airport_terminal_3_(cropped).jpg) | Ravi Dwivedi | CC BY-SA 4.0 |
 | [Delhi districts.png](https://commons.wikimedia.org/wiki/File:Delhi_districts.png) | — | ODbL |
 | [Delhi gate - river side view.jpg](https://commons.wikimedia.org/wiki/File:Delhi_gate_-_river_side_view.jpg) | Priasai | CC BY-SA 3.0 |
 | [DelhiMetroYellowLine.JPG](https://commons.wikimedia.org/wiki/File:DelhiMetroYellowLine.JPG) | WillaMissionary | CC0 |
@@ -1873,8 +1965,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Domenico Gargiulo - The eruption of the Vesuvius in 1631.JPG](https://commons.wikimedia.org/wiki/File:Domenico_Gargiulo_-_The_eruption_of_the_Vesuvius_in_1631.JPG) | Domenico Gargiulo | Public domain |
 | [Domesday Book - Warwickshire.png](https://commons.wikimedia.org/wiki/File:Domesday_Book_-_Warwickshire.png) | Unknown authorUnknown author | Public domain |
 | [Domesday-book-1804x972.jpg](https://commons.wikimedia.org/wiki/File:Domesday-book-1804x972.jpg) | Andrews, William | Public domain |
+| [Domestic Terminal of Noi Bai International Airport 20231213.jpg](https://commons.wikimedia.org/wiki/File:Domestic_Terminal_of_Noi_Bai_International_Airport_20231213.jpg) | InterEdit88 | CC0 |
 | [Domkyrkan i Uppsalas stadsbild.jpg](https://commons.wikimedia.org/wiki/File:Domkyrkan_i_Uppsalas_stadsbild.jpg) | This image was produced by me, David Castor (user:dcastor). The pictures I submit to the W | Public domain |
+| [Domodedovo Airport by Sentinel-2, 2020-05-11 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Domodedovo_Airport_by_Sentinel-2%2C_2020-05-11_(cropped).jpg) | Copernicus Sentinel-2, ESA | CC BY-SA 3.0 igo |
+| [Domodedovo International Airport aerial view.jpg](https://commons.wikimedia.org/wiki/File:Domodedovo_International_Airport_aerial_view.jpg) | Rifleman_82 | Public domain |
+| [Domodedovo International Airport terminal building.jpg](https://commons.wikimedia.org/wiki/File:Domodedovo_International_Airport_terminal_building.jpg) | Dmitry A. Mottl | CC BY-SA 3.0 |
 | [Don Miguel Hidalgo.jpg](https://commons.wikimedia.org/wiki/File:Don_Miguel_Hidalgo.jpg) | Unknown authorUnknown author | Public domain |
+| [Don Mueang International Airport, AOT Logo.svg](https://commons.wikimedia.org/wiki/File:Don_Mueang_International_Airport%2C_AOT_Logo.svg) | Airports of Thailand | Public domain |
 | [Dongfanghong-1.jpg](https://commons.wikimedia.org/wiki/File:Dongfanghong-1.jpg) | 新华社 1970 | Public domain |
 | [Douala.JPG](https://commons.wikimedia.org/wiki/File:Douala.JPG) | Njeimosestimah | CC BY-SA 3.0 |
 | [Double crown.svg](https://commons.wikimedia.org/wiki/File:Double_crown.svg) | Jeff Dahl | CC BY-SA 4.0 |
@@ -1929,6 +2026,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [ENR logo.png](https://commons.wikimedia.org/wiki/File:ENR_logo.png) | Egyptian National Railways | Public domain |
 | [EQs 1900-2016 mexico tsum.png](https://commons.wikimedia.org/wiki/File:EQs_1900-2016_mexico_tsum.png) | USGS | Public domain |
 | [EQs 1900-2016 sumatra tsum.png](https://commons.wikimedia.org/wiki/File:EQs_1900-2016_sumatra_tsum.png) | USGS | Public domain |
+| [ESP A-4.svg](https://commons.wikimedia.org/wiki/File:ESP_A-4.svg) | Fredddie | Public domain |
 | [ET Axum asv2018-01 img34 view from hill.jpg](https://commons.wikimedia.org/wiki/File:ET_Axum_asv2018-01_img34_view_from_hill.jpg) | A.Savin | FAL |
 | [ETA BASQUE.svg](https://commons.wikimedia.org/wiki/File:ETA_BASQUE.svg) | Tpwissaa | Public domain |
 | [ETA SA Logo.svg](https://commons.wikimedia.org/wiki/File:ETA_SA_Logo.svg) | ETA SA | Public domain |
@@ -2108,6 +2206,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Exterior of Sultan Ahmed I Mosque in Istanbul, Turkey 002.jpg](https://commons.wikimedia.org/wiki/File:Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg) | Moonik | CC BY-SA 3.0 |
 | [Exterior of Terminal 1, Taoyuan Airport 20141230.jpg](https://commons.wikimedia.org/wiki/File:Exterior_of_Terminal_1%2C_Taoyuan_Airport_20141230.jpg) | KCS | CC BY-SA 4.0 |
 | [Eye Of Lahore (Minar e Pakistan) evening.jpg](https://commons.wikimedia.org/wiki/File:Eye_Of_Lahore_(Minar_e_Pakistan)_evening.jpg) | Lime.adeel | CC BY-SA 3.0 |
+| [Ezeiza International Airport satellite.jpg](https://commons.wikimedia.org/wiki/File:Ezeiza_International_Airport_satellite.jpg) | Pierre Markuse from Hamm, Germany | CC BY 2.0 |
 | [Ezhou-city-lake.jpg](https://commons.wikimedia.org/wiki/File:Ezhou-city-lake.jpg) | User:Vmenkov stitched by Marku1988 This panoramic image was created with Panorama Perfect  | CC BY-SA 3.0 |
 | [F-105Ds 34th TFS drop bombs on Vietnam.jpg](https://commons.wikimedia.org/wiki/File:F-105Ds_34th_TFS_drop_bombs_on_Vietnam.jpg) | USAF | Public domain |
 | [F.O.C. Darley and Alexander Hay Ritchie - Sherman's March to the Sea.jpg](https://commons.wikimedia.org/wiki/File:F.O.C._Darley_and_Alexander_Hay_Ritchie_-_Sherman's_March_to_the_Sea.jpg) | F. O. C. Darley / Alexander Hay Ritchie / Adam Cuerden | Public domain |
@@ -2144,6 +2243,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Farmland Ready For Paddy Cultivation.jpg](https://commons.wikimedia.org/wiki/File:Farmland_Ready_For_Paddy_Cultivation.jpg) | NepaliKeto62 Talk to me | CC BY-SA 4.0 |
 | [Fatehpur Sikri- Hamamm.jpg](https://commons.wikimedia.org/wiki/File:Fatehpur_Sikri-_Hamamm.jpg) | HibaSiddiqui | CC BY-SA 4.0 |
 | [Fatehput Sikiri Buland Darwaza gate 2010.jpg](https://commons.wikimedia.org/wiki/File:Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg) | Marcin Białek | CC BY-SA 3.0 |
+| [Fatih sultan mehmet köprüsü (cropped).jpg](https://commons.wikimedia.org/wiki/File:Fatih_sultan_mehmet_k%C3%B6pr%C3%BCs%C3%BC_(cropped).jpg) | Mehrdad85 | CC BY-SA 4.0 |
 | [Favela Vidigal.jpg](https://commons.wikimedia.org/wiki/File:Favela_Vidigal.jpg) | Jeff Belmonte | CC BY 2.0 |
 | [Fc central argentino logo.png](https://commons.wikimedia.org/wiki/File:Fc_central_argentino_logo.png) | Central Argentine Railway | Public domain |
 | [Federspiel Austrian World Music Awards 2015 Encore 06.jpg](https://commons.wikimedia.org/wiki/File:Federspiel_Austrian_World_Music_Awards_2015_Encore_06.jpg) | Manfred Werner - Tsui | CC BY-SA 3.0 |
@@ -2164,6 +2264,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Fetsui Reservoir aerial photography.jpg](https://commons.wikimedia.org/wiki/File:Fetsui_Reservoir_aerial_photography.jpg) | Chi Po-lin | Attribution |
 | [Fiat tagliero, 09.JPG](https://commons.wikimedia.org/wiki/File:Fiat_tagliero%2C_09.JPG) | sailko | CC BY-SA 3.0 |
 | [Fictional flag of the Mughal Empire.svg](https://commons.wikimedia.org/wiki/File:Fictional_flag_of_the_Mughal_Empire.svg) | Orange Tuesday (talk) | Public domain |
+| [Fidel Castro 1950s.jpg](https://commons.wikimedia.org/wiki/File:Fidel_Castro_1950s.jpg) | Unknown (Mondadori Publishers) | Public domain |
 | [Fidel Castro Montreal 1959 1.jpg](https://commons.wikimedia.org/wiki/File:Fidel_Castro_Montreal_1959_1.jpg) | Unknown authorUnknown author. (The photographer was possibly Paul-Henri Talbot (1928-2001) | Public domain |
 | [Field Marshal Keitel signs German surrender terms in Berlin 8 May 1945 - Restoration.jpg](https://commons.wikimedia.org/wiki/File:Field_Marshal_Keitel_signs_German_surrender_terms_in_Berlin_8_May_1945_-_Restoration.jpg) | Adam Cuerden | Public domain |
 | [FieldsMedalFront.jpg](https://commons.wikimedia.org/wiki/File:FieldsMedalFront.jpg) | Stefan Zachow for the International Mathematical Union; retouched by King of Hearts | Public domain |
@@ -2289,6 +2390,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Flag of North Vietnam (1955–1976).svg](https://commons.wikimedia.org/wiki/File:Flag_of_North_Vietnam_(1955%E2%80%931976).svg) | See File History below for details. | Public domain |
 | [Flag of Oklahoma.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Oklahoma.svg) | xrmap | Public domain |
 | [Flag of Omsk.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Omsk.svg) | Администрация | Public domain |
+| [Flag of Peru.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Peru.svg) | David Benbennick | Public domain |
 | [Flag of Poland (1928–1980).svg](https://commons.wikimedia.org/wiki/File:Flag_of_Poland_(1928%E2%80%931980).svg) | Arvedui89 | Public domain |
 | [Flag of Poland.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Poland.svg) | See below. | Public domain |
 | [Flag of Portugal (1830–1910).svg](https://commons.wikimedia.org/wiki/File:Flag_of_Portugal_(1830%E2%80%931910).svg) | Tonyjeff, based on ancient national symbol. | Public domain |
@@ -2315,6 +2417,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Flag of Spain.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg) | RelShot 263, Echando una mano; earlier version was Pedro A. Gracia Fajardo, escudo de Manu | Public domain |
 | [Flag of Sudan.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Sudan.svg) | See File history below for details. | Public domain |
 | [Flag of Sultanate of Rum.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Sultanate_of_Rum.svg) | Demircan Yiğit Öney | CC BY-SA 4.0 |
+| [Flag of Surabaya City.png](https://commons.wikimedia.org/wiki/File:Flag_of_Surabaya_City.png) | Surabaya City | Public domain |
 | [Flag of Syria (2025-).svg](https://commons.wikimedia.org/wiki/File:Flag_of_Syria_(2025-).svg) | Modification by AnonMoos of PD image File:Flag of Syria (1930–1958, 1961–1963).svg (previo | Public domain |
 | [Flag of Taiwan Province.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Taiwan_Province.svg) | Taiwan Provincial Government (台灣省政府) | Public domain |
 | [Flag of Texas.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg) | Paul B. Joiner | Public domain |
@@ -2456,8 +2559,11 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Franco-sino war battle.jpg](https://commons.wikimedia.org/wiki/File:Franco-sino_war_battle.jpg) | Waylon1104 | Public domain |
 | [Francois Dubois 001.jpg](https://commons.wikimedia.org/wiki/File:Francois_Dubois_001.jpg) | François Dubois | Public domain |
 | [Frankel at York, 2013.jpg](https://commons.wikimedia.org/wiki/File:Frankel_at_York%2C_2013.jpg) | Sjp22 | CC BY-SA 4.0 |
+| [Frankfurt Airport Logo 2019.svg](https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Logo_2019.svg) | Fraport AG | Public domain |
+| [Frankfurt Airport Logo.svg](https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Logo.svg) | Unknown authorUnknown author | Public domain |
 | [Frankfurt am Main, Central business district (2024).jpg](https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main%2C_Central_business_district_(2024).jpg) | Dr. Thomas Liptak | CC BY-SA 4.0 |
 | [Frankfurt am Main, Skyline von der Alten Brücke.jpg](https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main%2C_Skyline_von_der_Alten_Br%C3%BCcke.jpg) | Dr. Thomas Liptak | CC BY-SA 4.0 |
+| [Franz Josef Strauss International Airport (Munich).jpg](https://commons.wikimedia.org/wiki/File:Franz_Josef_Strauss_International_Airport_(Munich).jpg) | — | Public domain |
 | [Français 5054, fol. 229v, Bataille de Castillon 1453 - détail.jpg](https://commons.wikimedia.org/wiki/File:Fran%C3%A7ais_5054%2C_fol._229v%2C_Bataille_de_Castillon_1453_-_d%C3%A9tail.jpg) | Unknown authorUnknown author | Public domain |
 | [François Gérard - Napoleon I 001.JPG](https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard_-_Napoleon_I_001.JPG) | Workshop of François Gérard | Public domain |
 | [Fratelli Vianelli (Giuseppe e Luigi, flor. 1860-1890 ca) - VE - Umberto I di Savoia 1.jpg](https://commons.wikimedia.org/wiki/File:Fratelli_Vianelli_(Giuseppe_e_Luigi%2C_flor._1860-1890_ca)_-_VE_-_Umberto_I_di_Savoia_1.jpg) | Fratelli Vianelli | Public domain |
@@ -2486,6 +2592,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Frogfoot Fiber Vehicle in Brackenfell, Cape Town.jpg](https://commons.wikimedia.org/wiki/File:Frogfoot_Fiber_Vehicle_in_Brackenfell%2C_Cape_Town.jpg) | Husskeyy | CC BY-SA 4.0 |
 | [Frontenac receiving the envoy of Sir William Phipps demanding the surrender of Quebec, 1690.jpg](https://commons.wikimedia.org/wiki/File:Frontenac_receiving_the_envoy_of_Sir_William_Phipps_demanding_the_surrender_of_Quebec%2C_1690.jpg) | Charles William Jefferys | Public domain |
 | [Frontispice édition de Nuremberg 1477 (cropped).png](https://commons.wikimedia.org/wiki/File:Frontispice_%C3%A9dition_de_Nuremberg_1477_(cropped).png) | Unknown authorUnknown author | Public domain |
+| [Fsmatnight0074.JPG](https://commons.wikimedia.org/wiki/File:Fsmatnight0074.JPG) | Mehmet Bilgen | CC BY 2.5 |
 | [Fu Zuoyi3 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Fu_Zuoyi3_(cropped).jpg) | Unknown authorUnknown author | Public domain |
 | [Fu Zuoyi3.jpg](https://commons.wikimedia.org/wiki/File:Fu_Zuoyi3.jpg) | Unknown authorUnknown author | Public domain |
 | [Fuerther Innenstadt Mrz 2020.jpg](https://commons.wikimedia.org/wiki/File:Fuerther_Innenstadt_Mrz_2020.jpg) | Kamran Salimi | CC BY-SA 3.0 |
@@ -2505,6 +2612,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [G. Ebers (ed.), Papyros Ebers, 1875 Wellcome L0016592.jpg](https://commons.wikimedia.org/wiki/File:G._Ebers_(ed.)%2C_Papyros_Ebers%2C_1875_Wellcome_L0016592.jpg) | — | CC BY 4.0 |
 | [G.C. 18 March 1915 Gallipoli Campaign Article.jpg](https://commons.wikimedia.org/wiki/File:G.C._18_March_1915_Gallipoli_Campaign_Article.jpg) | LoudHmen | Public domain |
 | [G1 map.svg](https://commons.wikimedia.org/wiki/File:G1_map.svg) | Alan Fan Pei | Public domain |
+| [G4 map.svg](https://commons.wikimedia.org/wiki/File:G4_map.svg) | Alan Fan Pei | Public domain |
 | [GD-EG-Caire-Musée061.JPG](https://commons.wikimedia.org/wiki/File:GD-EG-Caire-Mus%C3%A9e061.JPG) | — | CC BY-SA 2.5 |
 | [GE Building by David Shankbone.JPG](https://commons.wikimedia.org/wiki/File:GE_Building_by_David_Shankbone.JPG) | David Shankbone | Public domain |
 | [GHQ building circa 1950.JPG](https://commons.wikimedia.org/wiki/File:GHQ_building_circa_1950.JPG) | Unknown authorUnknown author | Public domain |
@@ -2536,9 +2644,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Gate of All Nations, Persepolis.jpg](https://commons.wikimedia.org/wiki/File:Gate_of_All_Nations%2C_Persepolis.jpg) | Alborzagros | CC BY-SA 3.0 |
 | [Gawain and the Green Knight.jpg](https://commons.wikimedia.org/wiki/File:Gawain_and_the_Green_Knight.jpg) | Unknown authorUnknown author | Public domain |
 | [Gaznaly-seljuk Dandanaqan.jpg](https://commons.wikimedia.org/wiki/File:Gaznaly-seljuk_Dandanaqan.jpg) | — | Public domain |
+| [Gb4dot rivers England.png](https://commons.wikimedia.org/wiki/File:Gb4dot_rivers_England.png) | Gb4dot_rivers.svg: *Gb4dot_merged_mapcolors.svg: Wereon, Ilmari Karonen derivative work: C | Public domain |
+| [Gdańsk port statki 01.jpg](https://commons.wikimedia.org/wiki/File:Gda%C5%84sk_port_statki_01.jpg) | Zala | CC BY-SA 4.0 |
 | [Gdynia BCT 29.jpg](https://commons.wikimedia.org/wiki/File:Gdynia_BCT_29.jpg) | Andrzej Otrębski | CC BY-SA 4.0 |
 | [Geant logo blue.svg](https://commons.wikimedia.org/wiki/File:Geant_logo_blue.svg) | GÉANT | Public domain |
 | [Gedimino pilis by Augustas Didzgalvis.jpg](https://commons.wikimedia.org/wiki/File:Gedimino_pilis_by_Augustas_Didzgalvis.jpg) | BigHead | CC BY-SA 4.0 |
+| [Gedung Sate Oktober 2024 - Rahmatdenas.jpg](https://commons.wikimedia.org/wiki/File:Gedung_Sate_Oktober_2024_-_Rahmatdenas.jpg) | Rahmatdenas | CC BY-SA 4.0 |
 | [Gedung.Merdeka.jpg](https://commons.wikimedia.org/wiki/File:Gedung.Merdeka.jpg) | Ron4 | Public domain |
 | [Gelände des Kernkraftwerk Isar (KKI).jpg](https://commons.wikimedia.org/wiki/File:Gel%C3%A4nde_des_Kernkraftwerk_Isar_(KKI).jpg) | E.ON Kernkraft GmbH | CC BY-SA 3.0 |
 | [Gen. Robert Edward Lee; soldier, citizen, and Christian patriot (1897) (14597361849) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Gen._Robert_Edward_Lee%3B_soldier%2C_citizen%2C_and_Christian_patriot_(1897)_(14597361849)_(cropped).jpg) | Internet Archive Book Images | No restrictions |
@@ -2590,8 +2701,11 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Gilbert Stuart Williamstown Portrait of George Washington (cropped)(2).jpg](https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington_(cropped)(2).jpg) | Gilbert Stuart | Public domain |
 | [Gilbert Stuart Williamstown Portrait of George Washington.jpg](https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg) | Gilbert Stuart | Public domain |
 | [Gilbert-Stuart Williamstown Portrait of George Washington.jpg](https://commons.wikimedia.org/wiki/File:Gilbert-Stuart_Williamstown_Portrait_of_George_Washington.jpg) | Gilbert Stuart | Public domain |
+| [Gimpo International Airport (1).jpg](https://commons.wikimedia.org/wiki/File:Gimpo_International_Airport_(1).jpg) | Brit in Seoul | CC BY-SA 4.0 |
+| [Gimpo International Airport.jpg](https://commons.wikimedia.org/wiki/File:Gimpo_International_Airport.jpg) | Brücke-Osteuropa | CC0 |
 | [Gingee Fort panorama.jpg](https://commons.wikimedia.org/wiki/File:Gingee_Fort_panorama.jpg) | This Image was created by User:PlaneMad. If you are using the image under the creative com | CC BY-SA 2.5 |
 | [Ginza-Line-Series1031.jpg](https://commons.wikimedia.org/wiki/File:Ginza-Line-Series1031.jpg) | MaedaAkihiko | CC BY-SA 4.0 |
+| [Gioiatauro seaport.jpg](https://commons.wikimedia.org/wiki/File:Gioiatauro_seaport.jpg) | The original uploader was Istvánka at Hungarian Wikipedia. | CC BY-SA 3.0 |
 | [Giorgia Meloni Official 2024 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Giorgia_Meloni_Official_2024_(cropped).jpg) | Governo Italiano | CC BY 3.0 it |
 | [Giovanni Paolo II 0013.JPG](https://commons.wikimedia.org/wiki/File:Giovanni_Paolo_II_0013.JPG) | Black mamba at Italian Wikipedia | Public domain |
 | [GirolamoSavonarola.jpg](https://commons.wikimedia.org/wiki/File:GirolamoSavonarola.jpg) | Fra Bartolomeo | Public domain |
@@ -2610,6 +2724,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Goethe (Stieler 1828).jpg](https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg) | Joseph Karl Stieler | Public domain |
 | [Goguryeo-monarchs(15-20).PNG](https://commons.wikimedia.org/wiki/File:Goguryeo-monarchs(15-20).PNG) | ja:user:田英 | Public domain |
 | [Gojong of the Korean Empire 02.jpg](https://commons.wikimedia.org/wiki/File:Gojong_of_the_Korean_Empire_02.jpg) | This photo was taken in 1907. | Public domain |
+| [Gokaido Edo Five Routes Map.png](https://commons.wikimedia.org/wiki/File:Gokaido_Edo_Five_Routes_Map.png) | Artanisen | CC BY-SA 4.0 |
 | [GolGumbaz2.jpg](https://commons.wikimedia.org/wiki/File:GolGumbaz2.jpg) | Ashwatham at English Wikipedia | Public domain |
 | [Gold-210796.jpg](https://commons.wikimedia.org/wiki/File:Gold-210796.jpg) | Robert M. Lavinsky | CC BY-SA 3.0 |
 | [Golden Gate Bridge 0002.jpg](https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_0002.jpg) | RyanJWilmot | CC BY-SA 4.0 |
@@ -2656,6 +2771,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Grand Duchess Anastasia Nikolaevna.jpg](https://commons.wikimedia.org/wiki/File:Grand_Duchess_Anastasia_Nikolaevna.jpg) | Boissonnas et Eggler, St. Petersburg, Nevsky 24. – Bain News Service, publisher. | Public domain |
 | [Grand Place Bruselas 2.jpg](https://commons.wikimedia.org/wiki/File:Grand_Place_Bruselas_2.jpg) | Francisco Conde Sánchez | CC BY-SA 3.0 |
 | [Grand Royal Coat of Arms of France.svg](https://commons.wikimedia.org/wiki/File:Grand_Royal_Coat_of_Arms_of_France.svg) | — | CC BY-SA 3.0 |
+| [Grand Trunk Road Route.png](https://commons.wikimedia.org/wiki/File:Grand_Trunk_Road_Route.png) | Lucas(CA2) | CC BY-SA 4.0 |
 | [Grand'Place de Tournai vue du Beffroi.jpg](https://commons.wikimedia.org/wiki/File:Grand'Place_de_Tournai_vue_du_Beffroi.jpg) | JackyM59 | CC BY 4.0 |
 | [Grande Mosquée de Kairouan 200.jpg](https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Kairouan_200.jpg) | IssamBarhoumi | CC BY-SA 4.0 |
 | [Grande Mosquée de Tlemcen.jpg](https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Tlemcen.jpg) | Tonowari | CC BY-SA 4.0 |
@@ -2667,6 +2783,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Grave of Sultan Qutb al-Din Aibak.jpg](https://commons.wikimedia.org/wiki/File:Grave_of_Sultan_Qutb_al-Din_Aibak.jpg) | Muhammad Umair Mirza | CC BY-SA 4.0 |
 | [Grave of Yagyu Munenori.jpg](https://commons.wikimedia.org/wiki/File:Grave_of_Yagyu_Munenori.jpg) | 663highland | CC BY 2.5 |
 | [Gravure depicting the attempted assassination of Nicholas II of Russia in Ōtsu, Japan, known as the "Ōtsu incident", Paris, Le Petit Journal, 30 May 1891 issue.jpg](https://commons.wikimedia.org/wiki/File:Gravure_depicting_the_attempted_assassination_of_Nicholas_II_of_Russia_in_%C5%8Ctsu%2C_Japan%2C_known_as_the_%22%C5%8Ctsu_incident%22%2C_Paris%2C_Le_Petit_Journal%2C_30_May_1891_issue.jpg) | H. Meyer (?) [likely the initials refer to Henri Meyer], published in the 30 May 1891 issu | Public domain |
+| [Great Barrier Reef Airport.JPG](https://commons.wikimedia.org/wiki/File:Great_Barrier_Reef_Airport.JPG) | Emil Hedaya | CC BY 3.0 |
 | [Great Fire London.jpg](https://commons.wikimedia.org/wiki/File:Great_Fire_London.jpg) | Unknown artistUnknown artist | Public domain |
 | [Great Hall of the People 人民大会堂 (Tomoaki INABA) - Flickr.jpg](https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People_%E4%BA%BA%E6%B0%91%E5%A4%A7%E4%BC%9A%E5%A0%82_(Tomoaki_INABA)_-_Flickr.jpg) | Tomoaki INABA from Brussels, Belgium | CC BY-SA 2.0 |
 | [Great Indian Peninsula Railway.jpg](https://commons.wikimedia.org/wiki/File:Great_Indian_Peninsula_Railway.jpg) | RegentsPark | Public domain |
@@ -2676,6 +2793,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Great Pyramid of Giza - Pyramid of Khufu.jpg](https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg) | Douwe C. van der Zee | CC BY-SA 4.0 |
 | [Great Seal of the United States (obverse).svg](https://commons.wikimedia.org/wiki/File:Great_Seal_of_the_United_States_(obverse).svg) | U.S. Government | Public domain |
 | [Great Tenmei Famine Map Artwork.png](https://commons.wikimedia.org/wiki/File:Great_Tenmei_Famine_Map_Artwork.png) | Unknown authorUnknown author | Public domain |
+| [Great-north-road-uk.png](https://commons.wikimedia.org/wiki/File:Great-north-road-uk.png) | Kreuzschnabel | CC BY-SA 3.0 |
 | [GreatHall auditorium.jpg](https://commons.wikimedia.org/wiki/File:GreatHall_auditorium.jpg) | Original uploader was AcidBomber at en.wikipedia | CC BY 3.0 |
 | [Greater Asian Co-prosperity sphere (orthographic projection).svg](https://commons.wikimedia.org/wiki/File:Greater_Asian_Co-prosperity_sphere_(orthographic_projection).svg) | Lilauid | CC BY-SA 4.0 |
 | [Greater coat of arms of the United States.svg](https://commons.wikimedia.org/wiki/File:Greater_coat_of_arms_of_the_United_States.svg) | Ssolbergj | Public domain |
@@ -2693,8 +2811,10 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Grundgesetz.jpg](https://commons.wikimedia.org/wiki/File:Grundgesetz.jpg) | bpb.de | CC BY-SA 4.0 |
 | [Grüner Marsch Karte.png](https://commons.wikimedia.org/wiki/File:Gr%C3%BCner_Marsch_Karte.png) | Lencer | CC BY-SA 3.0 |
 | [Gu Hongzhong's Night Revels, Detail 1.jpg](https://commons.wikimedia.org/wiki/File:Gu_Hongzhong's_Night_Revels%2C_Detail_1.jpg) | Anonymous Song Chinese artist after the original by Gu Hongzhong | Public domain |
+| [Guadalquivir River Seville Spain.jpg](https://commons.wikimedia.org/wiki/File:Guadalquivir_River_Seville_Spain.jpg) | Iantomferry at English Wikipedia | CC BY-SA 3.0 |
 | [Guadeloupe on the globe (Americas centered).svg](https://commons.wikimedia.org/wiki/File:Guadeloupe_on_the_globe_(Americas_centered).svg) | TUBS | CC BY-SA 3.0 |
 | [Guancunba Station.jpg](https://commons.wikimedia.org/wiki/File:Guancunba_Station.jpg) | Nihongarden | CC BY-SA 3.0 |
+| [Guangzhou Baiyun International Airport Terminal 2.jpg](https://commons.wikimedia.org/wiki/File:Guangzhou_Baiyun_International_Airport_Terminal_2.jpg) | Jacky Cheung | CC BY-SA 4.0 |
 | [Guangzhou Shenzhen Hongkong Express Rail Link en.svg](https://commons.wikimedia.org/wiki/File:Guangzhou_Shenzhen_Hongkong_Express_Rail_Link_en.svg) | Altt311 | CC BY-SA 3.0 |
 | [Guangzhou montage.jpg](https://commons.wikimedia.org/wiki/File:Guangzhou_montage.jpg) | shujianyang (montage) | CC BY-SA 4.0 |
 | [Guanhua swapped.svg](https://commons.wikimedia.org/wiki/File:Guanhua_swapped.svg) | LiliCharlie (user name) | CC BY-SA 4.0 |
@@ -2721,6 +2841,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Gwalior Fort front.jpg](https://commons.wikimedia.org/wiki/File:Gwalior_Fort_front.jpg) | Anuppyr007 | CC BY-SA 4.0 |
 | [Gwalior fort panorama.jpg](https://commons.wikimedia.org/wiki/File:Gwalior_fort_panorama.jpg) | Pavel Suprun (Superka) | CC BY-SA 3.0 |
 | [Gwalior groups.JPG](https://commons.wikimedia.org/wiki/File:Gwalior_groups.JPG) | Adityajoardar9 | CC BY-SA 3.0 |
+| [Gwangan Bridge1.jpg](https://commons.wikimedia.org/wiki/File:Gwangan_Bridge1.jpg) | Glabb | Public domain |
 | [Gwangandaegyo Bridge in Busan, South Korea (iau2207b).tiff](https://commons.wikimedia.org/wiki/File:Gwangandaegyo_Bridge_in_Busan%2C_South_Korea_(iau2207b).tiff) | Busan Tourism Organization | CC BY 4.0 |
 | [Gwangju5.18FriedhofFotos.JPG](https://commons.wikimedia.org/wiki/File:Gwangju5.18FriedhofFotos.JPG) | Schlarpi | CC BY-SA 3.0 |
 | [GwangyangIronworks.jpg](https://commons.wikimedia.org/wiki/File:GwangyangIronworks.jpg) | 저작자 김소민의 허가를 받고 퍼블릭 도메인으로 공개함 | Copyrighted free use |
@@ -2776,7 +2897,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Handheld Maritime VHF.jpg](https://commons.wikimedia.org/wiki/File:Handheld_Maritime_VHF.jpg) | No machine-readable author provided. Ulflarsen assumed (based on copyright claims). | CC BY-SA 3.0 |
 | [Handmade Singlish "thank you" card.png](https://commons.wikimedia.org/wiki/File:Handmade_Singlish_%22thank_you%22_card.png) | Izack New | CC BY 3.0 |
 | [Handmade oil painting reproduction of Ibn Battuta in Egypt, a painting by Hippolyte Leon Benett..jpg](https://commons.wikimedia.org/wiki/File:Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg) | Léon Benett | Public domain |
+| [Hangang Bridge and Hangang Railway Bridge over Han River 002.jpeg](https://commons.wikimedia.org/wiki/File:Hangang_Bridge_and_Hangang_Railway_Bridge_over_Han_River_002.jpeg) | Nagyman (a flickr user) | CC BY-SA 2.0 |
 | [Hangugeo-Chosono.svg](https://commons.wikimedia.org/wiki/File:Hangugeo-Chosono.svg) | Great Brightstar | Public domain |
+| [Hangzhou Bay Bridge ABA 1360 AK1.jpg](https://commons.wikimedia.org/wiki/File:Hangzhou_Bay_Bridge_ABA_1360_AK1.jpg) | Jürgen Zeller | CC BY-SA 2.5 |
 | [Hankou-Dazhimen-Station-0238.jpg](https://commons.wikimedia.org/wiki/File:Hankou-Dazhimen-Station-0238.jpg) | User:Vmenkov | CC BY-SA 3.0 |
 | [Hankow city hall.jpg](https://commons.wikimedia.org/wiki/File:Hankow_city_hall.jpg) | 新浪博客「武汉一中老校友」（轉載讀者稿件） | Public domain |
 | [Hankyu-Corp-headoffice-01.jpg](https://commons.wikimedia.org/wiki/File:Hankyu-Corp-headoffice-01.jpg) | J o | CC BY-SA 3.0 |
@@ -2811,6 +2934,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Haupthandelsroute Hanse.png](https://commons.wikimedia.org/wiki/File:Haupthandelsroute_Hanse.png) | Flo Beck | Public domain |
 | [Haus der Wannsee-Konferenz 02-2014.jpg](https://commons.wikimedia.org/wiki/File:Haus_der_Wannsee-Konferenz_02-2014.jpg) | A.Savin | CC BY-SA 3.0 |
 | [Havel-Park-Lake-Babelsberg-Downtown-Potsdam-Green.jpg](https://commons.wikimedia.org/wiki/File:Havel-Park-Lake-Babelsberg-Downtown-Potsdam-Green.jpg) | Kai Vogel | CC0 |
+| [Havenwelten Überblick Bremerhaven 2013.jpg](https://commons.wikimedia.org/wiki/File:Havenwelten_%C3%9Cberblick_Bremerhaven_2013.jpg) | Tuxyso | CC BY-SA 3.0 |
 | [HawaMahal.jpg](https://commons.wikimedia.org/wiki/File:HawaMahal.jpg) | Psychocadet | CC BY-SA 3.0 |
 | [HaymarketRiot-Harpers.jpg](https://commons.wikimedia.org/wiki/File:HaymarketRiot-Harpers.jpg) | Thure de Thulstrup | Public domain |
 | [Hayreddin - Algeria Fine Art Museum.jpg](https://commons.wikimedia.org/wiki/File:Hayreddin_-_Algeria_Fine_Art_Museum.jpg) | AsiaticLion7 | CC0 |
@@ -2902,6 +3026,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Ho Chi Minh - 1946 Portrait.jpg](https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_-_1946_Portrait.jpg) | Unknown authorUnknown author | Public domain |
 | [Ho Chi Minh City, City Hall, 2020-01 CN-03.jpg](https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City%2C_City_Hall%2C_2020-01_CN-03.jpg) | Steffen Schmitz (more photos) | CC BY-SA 4.0 |
 | [HoCMT.png](https://commons.wikimedia.org/wiki/File:HoCMT.png) | HoCMT.jpg: The original uploader was RM Gillespie at English Wikipedia. derivative work: Y | Public domain |
+| [Hohenzollernbrücke Köln von oben.jpg](https://commons.wikimedia.org/wiki/File:Hohenzollernbr%C3%BCcke_K%C3%B6ln_von_oben.jpg) | Raimond Spekking | CC BY-SA 4.0 |
 | [Hoi An (I).jpg](https://commons.wikimedia.org/wiki/File:Hoi_An_(I).jpg) | This Photo was taken by Supanut Arunoprayote. Feel free to use any of my images, but pleas | CC BY 4.0 |
 | [Hokusai as an old man.jpg](https://commons.wikimedia.org/wiki/File:Hokusai_as_an_old_man.jpg) | missing name | CC0 |
 | [Hokusai portrait.jpg](https://commons.wikimedia.org/wiki/File:Hokusai_portrait.jpg) | Katsushika Hokusai | Public domain |
@@ -2924,6 +3049,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Houston montage.jpg](https://commons.wikimedia.org/wiki/File:Houston_montage.jpg) | Hequals2henry | CC BY-SA 3.0 |
 | [Howard Pyle - The Burning of Jamestown.jpg](https://commons.wikimedia.org/wiki/File:Howard_Pyle_-_The_Burning_of_Jamestown.jpg) | Howard Pyle | Public domain |
 | [Howard carter.jpg](https://commons.wikimedia.org/wiki/File:Howard_carter.jpg) | Chicago Daily News, Inc., photographer | Public domain |
+| [Howrah bridge at night.jpg](https://commons.wikimedia.org/wiki/File:Howrah_bridge_at_night.jpg) | Apoorva Karlekar | CC BY-SA 4.0 |
 | [Hoàng thành Huế.jpg](https://commons.wikimedia.org/wiki/File:Ho%C3%A0ng_th%C3%A0nh_Hu%E1%BA%BF.jpg) | Bùi Thụy Đào Nguyên | CC BY-SA 3.0 |
 | [Hsinchu Districts.PNG](https://commons.wikimedia.org/wiki/File:Hsinchu_Districts.PNG) | The original uploader was Stanleyliao5 at Chinese Wikipedia. | Public domain |
 | [Hsinchu Science Park, 30th anniversary and ROC 100th anniversary decoration 20110223.jpg](https://commons.wikimedia.org/wiki/File:Hsinchu_Science_Park%2C_30th_anniversary_and_ROC_100th_anniversary_decoration_20110223.jpg) | Milkmom0529 | CC BY-SA 3.0 |
@@ -2949,6 +3075,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Hukum Kanun Melaka (manuskrip asal) 2.jpeg](https://commons.wikimedia.org/wiki/File:Hukum_Kanun_Melaka_(manuskrip_asal)_2.jpeg) | Kerina yin at Malay Wikipedia | CC BY-SA 3.0 |
 | [HulaguAndDokuzKathun.JPG](https://commons.wikimedia.org/wiki/File:HulaguAndDokuzKathun.JPG) | Rachid Ad-Din | Public domain |
 | [Humayun and Babur (Late Shah Jahan Album) Babur detail.jpg](https://commons.wikimedia.org/wiki/File:Humayun_and_Babur_(Late_Shah_Jahan_Album)_Babur_detail.jpg) | c.1650 | Public domain |
+| [Humber Bridge2.png](https://commons.wikimedia.org/wiki/File:Humber_Bridge2.png) | — | CC BY-SA 3.0 |
+| [Humber Bréck zu Hull w.jpg](https://commons.wikimedia.org/wiki/File:Humber_Br%C3%A9ck_zu_Hull_w.jpg) | Original: Tonyharp at English Wikipedia Modifications: Cornischong at Luxembourgish Wikipe | CC BY-SA 3.0 |
 | [Hundred Flowers Campaign.jpg](https://commons.wikimedia.org/wiki/File:Hundred_Flowers_Campaign.jpg) | Unknown authorUnknown author | Public domain |
 | [Hundred Regiments Offensive 1940.jpg](https://commons.wikimedia.org/wiki/File:Hundred_Regiments_Offensive_1940.jpg) | The original uploader was Refrain at Chinese Wikipedia. | Public domain |
 | [Hundred years war collage.jpg](https://commons.wikimedia.org/wiki/File:Hundred_years_war_collage.jpg) | Blaue Max | CC BY-SA 4.0 |
@@ -2972,6 +3100,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [I (119).jpg](https://commons.wikimedia.org/wiki/File:I_(119).jpg) | Aghsawi | CC BY-SA 3.0 |
 | [I Osman.jpg](https://commons.wikimedia.org/wiki/File:I_Osman.jpg) | Ottoman miniature painting | Public domain |
 | [I-10.svg](https://commons.wikimedia.org/wiki/File:I-10.svg) | Ltljltlj | Public domain |
+| [I-5.svg](https://commons.wikimedia.org/wiki/File:I-5.svg) | Ltljltlj | Public domain |
 | [I-80.svg](https://commons.wikimedia.org/wiki/File:I-80.svg) | User:Ltljltlj | Public domain |
 | [I-95.svg](https://commons.wikimedia.org/wiki/File:I-95.svg) | — | Public domain |
 | [I-blank.svg](https://commons.wikimedia.org/wiki/File:I-blank.svg) | Ltljltlj (talk · contribs) | Public domain |
@@ -2994,6 +3123,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [IPhone 18 Pro Vector.svg](https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_Vector.svg) | Rafael Fernandez | CC BY-SA 4.0 |
 | [IPhone 6s vector.svg](https://commons.wikimedia.org/wiki/File:IPhone_6s_vector.svg) | Rafael Fernandez | CC BY-SA 4.0 |
 | [ISH WC Boston4.jpg](https://commons.wikimedia.org/wiki/File:ISH_WC_Boston4.jpg) | Ian Howard | CC BY 2.5 |
+| [ISS005-E-11900 lrg.jpg](https://commons.wikimedia.org/wiki/File:ISS005-E-11900_lrg.jpg) | Johnson Space Center | Public domain |
 | [ITŌ Hirobumi.jpg](https://commons.wikimedia.org/wiki/File:IT%C5%8C_Hirobumi.jpg) | Unknown authorUnknown author | Public domain |
 | [IUM Building.JPG](https://commons.wikimedia.org/wiki/File:IUM_Building.JPG) | CapitalSasha | CC BY 4.0 |
 | [IWM-SE-5865-tank-Surabaya-19451127.jpg](https://commons.wikimedia.org/wiki/File:IWM-SE-5865-tank-Surabaya-19451127.jpg) | Sergeant Desmond Davis, No. 9 Army Film and Photographic Unit | Public domain |
@@ -3008,6 +3138,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Ichigo plan.jpg](https://commons.wikimedia.org/wiki/File:Ichigo_plan.jpg) | U.S. Army Military History Institute | Public domain |
 | [Ichimonjimitsuboshi.svg](https://commons.wikimedia.org/wiki/File:Ichimonjimitsuboshi.svg) | 百楽兎 | CC BY-SA 3.0 |
 | [Icon of Saint George, 14th century from Constantinople, Byzantine and Christian Museum, Athens.jpg](https://commons.wikimedia.org/wiki/File:Icon_of_Saint_George%2C_14th_century_from_Constantinople%2C_Byzantine_and_Christian_Museum%2C_Athens.jpg) | Ricardo André Frantz (User:Tetraktys) | CC BY-SA 3.0 |
+| [Iconic Tower Egypt(18-6-2023)(cropped).jpg](https://commons.wikimedia.org/wiki/File:Iconic_Tower_Egypt(18-6-2023)(cropped).jpg) | Mohamed Ouda | CC BY-SA 4.0 |
 | [Idealized portrait of Babur (1483-1530) in Persian style, painted circa 1605-1615 in India (British Museum 1921,1011,0.3).jpg](https://commons.wikimedia.org/wiki/File:Idealized_portrait_of_Babur_(1483-1530)_in_Persian_style%2C_painted_circa_1605-1615_in_India_(British_Museum_1921%2C1011%2C0.3).jpg) | Probably, Aqa Riza, a Khurasani Persian migrant painter to India (The Indian heritage: cou | Public domain |
 | [Ideogram human chromosome 12.svg](https://commons.wikimedia.org/wiki/File:Ideogram_human_chromosome_12.svg) | National Center for Biotechnology Information, U.S. National Library of Medicine | Public domain |
 | [Idioma húngaro.PNG](https://commons.wikimedia.org/wiki/File:Idioma_h%C3%BAngaro.PNG) | Fobos92 | CC BY-SA 4.0 |
@@ -3022,11 +3153,14 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Igreja de Nossa Senhora do Pilar 02.JPG](https://commons.wikimedia.org/wiki/File:Igreja_de_Nossa_Senhora_do_Pilar_02.JPG) | Filipo Tardim | CC BY-SA 4.0 |
 | [Igreja e Mosteiro de São Vicente de Fora.jpg](https://commons.wikimedia.org/wiki/File:Igreja_e_Mosteiro_de_S%C3%A3o_Vicente_de_Fora.jpg) | Deensel | CC BY 2.0 |
 | [Ihs-logo.svg](https://commons.wikimedia.org/wiki/File:Ihs-logo.svg) | Moranski | Public domain |
+| [Ilha de Mocanguê by Diego Baravelli (cropped).jpg](https://commons.wikimedia.org/wiki/File:Ilha_de_Mocangu%C3%AA_by_Diego_Baravelli_(cropped).jpg) | Diego Baravelli | CC BY-SA 4.0 |
+| [Ilha de Moçambique.jpg](https://commons.wikimedia.org/wiki/File:Ilha_de_Mo%C3%A7ambique.jpg) | Unknown authorUnknown author | Public domain |
 | [Illustrerad Verldshistoria band I Ill 058.jpg](https://commons.wikimedia.org/wiki/File:Illustrerad_Verldshistoria_band_I_Ill_058.jpg) | Ernst Wallis et al | Public domain |
 | [Ilocanos in Philippines.svg](https://commons.wikimedia.org/wiki/File:Ilocanos_in_Philippines.svg) | Kikos | CC BY 4.0 |
 | [Image shows the Union and Chinese Flags together. MOD 45157410.jpg](https://commons.wikimedia.org/wiki/File:Image_shows_the_Union_and_Chinese_Flags_together._MOD_45157410.jpg) | Sergeant Paul Shaw LBIPP | OGL v1.0 |
 | [Imaginary depiction of the poet Firdausi. Folio from a Khavarannama (The Book of the East) of ibn Husam al-Din, 1476-1486 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Imaginary_depiction_of_the_poet_Firdausi._Folio_from_a_Khavarannama_(The_Book_of_the_East)_of_ibn_Husam_al-Din%2C_1476-1486_(cropped).jpg) | ca. 1476–86 artist | Public domain |
 | [Imam Khomeini in Mehrabad.jpg](https://commons.wikimedia.org/wiki/File:Imam_Khomeini_in_Mehrabad.jpg) | Also uploaded by en:User:Sa.vakilian in en.wiki and by fa:User:Mrostam in fa.Wiki | GFDL |
+| [Imam khomeini airport.png](https://commons.wikimedia.org/wiki/File:Imam_khomeini_airport.png) | fardanews | CC BY-SA 4.0 |
 | [ImjingangRailRoad.jpg](https://commons.wikimedia.org/wiki/File:ImjingangRailRoad.jpg) | Kanchi1979 from jawp | CC BY-SA 3.0 |
 | [Immerwährender Reichstag.jpg](https://commons.wikimedia.org/wiki/File:Immerw%C3%A4hrender_Reichstag.jpg) | Unknown authorUnknown author | Public domain |
 | [Imogullan1.jpg](https://commons.wikimedia.org/wiki/File:Imogullan1.jpg) | 歌川国松 | Public domain |
@@ -3035,6 +3169,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Incendie de la Plaine du Cap. Massacre des Blancs par les esclaves noirs révoltés. France militaire. Martinet et Masson.jpg](https://commons.wikimedia.org/wiki/File:Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg) | Aaron Martinet / Alphonse-Charles Masson | Public domain |
 | [Incheon Grand Bridge.jpg](https://commons.wikimedia.org/wiki/File:Incheon_Grand_Bridge.jpg) | Cameron Henderson | Public domain |
 | [Incheon bridge 20090329 001.jpg](https://commons.wikimedia.org/wiki/File:Incheon_bridge_20090329_001.jpg) | Sonata at Japanese Wikipedia | CC BY-SA 3.0 |
+| [Incheon montage 2015.PNG](https://commons.wikimedia.org/wiki/File:Incheon_montage_2015.PNG) | Foxy1219(montage), Cameron Henderson, Republic of Korea on flickr, Jordi Sanchez Terue, Si | CC BY-SA 4.0 |
 | [Inchon islands 2-ja.svg](https://commons.wikimedia.org/wiki/File:Inchon_islands_2-ja.svg) | Inchon_islands_2.svg: Amble derivative work: AmbassDeChon (talk) | CC BY-SA 3.0 |
 | [Inconnu d'après J.-M. Nattier, Portrait de Pierre Ier (musée de l’Ermitage).jpg](https://commons.wikimedia.org/wiki/File:Inconnu_d'apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_(mus%C3%A9e_de_l%E2%80%99Ermitage).jpg) | Attributed to Jean-Marc Nattier | Public domain |
 | [Incorrect picture of Lt Barrett.jpg](https://commons.wikimedia.org/wiki/File:Incorrect_picture_of_Lt_Barrett.jpg) | — | Public domain |
@@ -3068,6 +3203,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [IndoChina1867, Cochinchina.jpg](https://commons.wikimedia.org/wiki/File:IndoChina1867%2C_Cochinchina.jpg) | Adolf Bastian | Public domain |
 | [Indonesia 2002 CIA map.jpg](https://commons.wikimedia.org/wiki/File:Indonesia_2002_CIA_map.jpg) | Central Intelligence Agency, United States of America | Public domain |
 | [Indonesia Java location map.svg](https://commons.wikimedia.org/wiki/File:Indonesia_Java_location_map.svg) | NordNordWest | CC BY-SA 3.0 de |
+| [Indonesia Sumatra location map.svg](https://commons.wikimedia.org/wiki/File:Indonesia_Sumatra_location_map.svg) | NordNordWest | CC BY-SA 3.0 de |
 | [Indonesia declaration of independence 17 August 1945.jpg](https://commons.wikimedia.org/wiki/File:Indonesia_declaration_of_independence_17_August_1945.jpg) | Frans Mendur (also Frans Mendoer) (1913 – 1971) | Public domain |
 | [Indonesia nusantara oli 20240219 lrg.jpg](https://commons.wikimedia.org/wiki/File:Indonesia_nusantara_oli_20240219_lrg.jpg) | NASA Earth Observatory images by Michala Garrison, using Landsat data from the U.S. Geolog | Public domain |
 | [Indonesian National Revolution montage.jpg](https://commons.wikimedia.org/wiki/File:Indonesian_National_Revolution_montage.jpg) | Collage: AnsyahF. Individual constituent images used in the collage: First row: Joop van B | Public domain |
@@ -3095,6 +3231,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Invasion of Hainan Island by Asashi Shinbun.jpg](https://commons.wikimedia.org/wiki/File:Invasion_of_Hainan_Island_by_Asashi_Shinbun.jpg) | Asashi Shinbum reporter | Public domain |
 | [Invasion of Inchon, Korea. Four LST's unload men and equipment on beach. Three of the LST's shown are LST-611... - NARA - 520772.tif](https://commons.wikimedia.org/wiki/File:Invasion_of_Inchon%2C_Korea._Four_LST's_unload_men_and_equipment_on_beach._Three_of_the_LST's_shown_are_LST-611..._-_NARA_-_520772.tif) | Unknown authorUnknown author or not provided | Public domain |
 | [Invasionislámicaespaña.svg](https://commons.wikimedia.org/wiki/File:Invasionisl%C3%A1micaespa%C3%B1a.svg) | NACLE | CC BY-SA 4.0 |
+| [Inverted V Arches (18373617190).jpg](https://commons.wikimedia.org/wiki/File:Inverted_V_Arches_(18373617190).jpg) | Michael Coghlan from Adelaide, Australia | CC BY-SA 2.0 |
 | [Inwangjesaekdo.jpg](https://commons.wikimedia.org/wiki/File:Inwangjesaekdo.jpg) | Jeong Seon | Public domain |
 | [IoannIV reconstruction by Gerasimov02.jpg](https://commons.wikimedia.org/wiki/File:IoannIV_reconstruction_by_Gerasimov02.jpg) | Shakko | CC BY-SA 3.0 |
 | [Ipatyev house basement.jpg](https://commons.wikimedia.org/wiki/File:Ipatyev_house_basement.jpg) | AnonymousUnknown author | Public domain |
@@ -3103,6 +3240,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Iran hostage crisis - Iraninan students comes up U.S. embassy in Tehran.jpg](https://commons.wikimedia.org/wiki/File:Iran_hostage_crisis_-_Iraninan_students_comes_up_U.S._embassy_in_Tehran.jpg) | Unknown authorUnknown author | Public domain |
 | [Iran location map.svg](https://commons.wikimedia.org/wiki/File:Iran_location_map.svg) | Uwe Dedering | CC BY-SA 3.0 |
 | [Iran relief location map.jpg](https://commons.wikimedia.org/wiki/File:Iran_relief_location_map.jpg) | Uwe Dedering | CC BY-SA 3.0 |
+| [Iran's Rainbow Island.jpeg](https://commons.wikimedia.org/wiki/File:Iran's_Rainbow_Island.jpeg) | NASA Earth Observatory image by Lauren Dauphin, using Landsat data from the U.S. Geologica | Public domain |
 | [Iran-Iraq War Montage.png](https://commons.wikimedia.org/wiki/File:Iran-Iraq_War_Montage.png) | Uploader was gIre_3piCH2005 at fa.wikipedia | Public domain |
 | [Iridium Satellite.jpg](https://commons.wikimedia.org/wiki/File:Iridium_Satellite.jpg) | Cliff | CC BY 2.0 |
 | [Irish speakers in 2011.png](https://commons.wikimedia.org/wiki/File:Irish_speakers_in_2011.png) | SkateTier | CC BY-SA 3.0 |
@@ -3139,21 +3277,27 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Italy relief location map.jpg](https://commons.wikimedia.org/wiki/File:Italy_relief_location_map.jpg) | Eric Gaba (Sting - fr:Sting) and NordNordWest | CC BY-SA 3.0 |
 | [Italy srtm 2009096.jpg](https://commons.wikimedia.org/wiki/File:Italy_srtm_2009096.jpg) | NASA image created by Jesse Allen, using SRTM data provided courtesy of the University of  | Public domain |
 | [Itamar Franco Faixa Presidencial (cropped).jpg](https://commons.wikimedia.org/wiki/File:Itamar_Franco_Faixa_Presidencial_(cropped).jpg) | Getúlio Gurgel | Public domain |
+| [Itami Airport terminal.jpg](https://commons.wikimedia.org/wiki/File:Itami_Airport_terminal.jpg) | Joe Jones | CC BY-SA 2.0 |
 | [Itararé, São Vicente - SP, Brazil - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Itarar%C3%A9%2C_S%C3%A3o_Vicente_-_SP%2C_Brazil_-_panoramio.jpg) | Jacinto@lves de Souz… | CC BY-SA 3.0 |
 | [Ivan III of Russia 3.jpg](https://commons.wikimedia.org/wiki/File:Ivan_III_of_Russia_3.jpg) | — | Public domain |
 | [Ivan IV by anonim (18th c., GIM).jpg](https://commons.wikimedia.org/wiki/File:Ivan_IV_by_anonim_(18th_c.%2C_GIM).jpg) | Unknown authorUnknown author | Public domain |
 | [Ivan grozny frame.jpg](https://commons.wikimedia.org/wiki/File:Ivan_grozny_frame.jpg) | Unknown authorUnknown author | Public domain |
 | [Izmir collage-Yepyeni888.yükle.png](https://commons.wikimedia.org/wiki/File:Izmir_collage-Yepyeni888.y%C3%BCkle.png) | see above | CC BY-SA 3.0 |
 | [Izmir in Turkey.svg](https://commons.wikimedia.org/wiki/File:Izmir_in_Turkey.svg) | TUBS | CC BY-SA 3.0 |
+| [Izmir15Mayis1919.jpg](https://commons.wikimedia.org/wiki/File:Izmir15Mayis1919.jpg) | Unknown authorUnknown author | Public domain |
 | [Izmit eart6.jpg](https://commons.wikimedia.org/wiki/File:Izmit_eart6.jpg) | — | Public domain |
 | [Iznik 989a.jpg](https://commons.wikimedia.org/wiki/File:Iznik_989a.jpg) | QuartierLatin1968 | CC BY-SA 3.0 |
 | [Iznik Roman Theatre 1645.jpg](https://commons.wikimedia.org/wiki/File:Iznik_Roman_Theatre_1645.jpg) | Dosseman | CC BY-SA 4.0 |
 | [J. Beyrle p 27 telegram.jpg](https://commons.wikimedia.org/wiki/File:J._Beyrle_p_27_telegram.jpg) | Jrossesq | CC BY-SA 4.0 |
+| [J30 869 Rosario.jpg](https://commons.wikimedia.org/wiki/File:J30_869_Rosario.jpg) | Falk2 | CC BY-SA 4.0 |
+| [J79164 Yul cdg 20140624-051332.55 France.jpg](https://commons.wikimedia.org/wiki/File:J79164_Yul_cdg_20140624-051332.55_France.jpg) | Emdx | CC BY-SA 4.0 |
 | [J84682 TempleYongzuo 20140717-155800.22 TempleYongzuoPEst.jpg](https://commons.wikimedia.org/wiki/File:J84682_TempleYongzuo_20140717-155800.22_TempleYongzuoPEst.jpg) | Emdx | CC BY 3.0 |
 | [JC008 at Beiwangchang (20190926151008).jpg](https://commons.wikimedia.org/wiki/File:JC008_at_Beiwangchang_(20190926151008).jpg) | N509FZ | CC BY-SA 4.0 |
 | [JD Vance's Speech at the 61st Munich Security Conference (20250214-MSC2025-mc2931).jpg](https://commons.wikimedia.org/wiki/File:JD_Vance's_Speech_at_the_61st_Munich_Security_Conference_(20250214-MSC2025-mc2931).jpg) | MSC/Preis | CC BY-SA 4.0 |
 | [JEAN LOUIS THÉODORE GÉRICAULT - La Balsa de la Medusa (Museo del Louvre, 1818-19).jpg](https://commons.wikimedia.org/wiki/File:JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre%2C_1818-19).jpg) | Théodore Géricault | Public domain |
 | [JERAグループのロゴ.svg](https://commons.wikimedia.org/wiki/File:JERA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E3%83%AD%E3%82%B4.svg) | JERA CO., INC. | Public domain |
+| [JFK Aerial Nov 14 2018.jpg](https://commons.wikimedia.org/wiki/File:JFK_Aerial_Nov_14_2018.jpg) | User:KenzieAbraham | CC BY-SA 4.0 |
+| [JFK Airport Logo.svg](https://commons.wikimedia.org/wiki/File:JFK_Airport_Logo.svg) | Own work | Public domain |
 | [JFK Motorcade GettyImages-517330536.jpg](https://commons.wikimedia.org/wiki/File:JFK_Motorcade_GettyImages-517330536.jpg) | Walt Cisco, Dallas Morning News | Public domain |
 | [JFK limousine.png](https://commons.wikimedia.org/wiki/File:JFK_limousine.png) | Walt Cisco, Dallas Morning News | Public domain |
 | [JNR kiha185 kosyu awamaru takamatsu.jpg](https://commons.wikimedia.org/wiki/File:JNR_kiha185_kosyu_awamaru_takamatsu.jpg) | spaceaero2 | CC BY 3.0 |
@@ -3177,6 +3321,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Jacques-Louis David, The Coronation of Napoleon.jpg](https://commons.wikimedia.org/wiki/File:Jacques-Louis_David%2C_The_Coronation_of_Napoleon.jpg) | Jacques-Louis David | Public domain |
 | [Jakarta MRT trains 2.jpg](https://commons.wikimedia.org/wiki/File:Jakarta_MRT_trains_2.jpg) | VulcanSphere | CC BY 4.0 |
 | [Jakarta riot 14 May 1998.jpg](https://commons.wikimedia.org/wiki/File:Jakarta_riot_14_May_1998.jpg) | Office of the Vice President The Republic of Indonesia | Public domain |
+| [Jakarta-Bogor-Ciawi (JBC) Toll Road (Jalan Tol 2), August 2019 (7).jpg](https://commons.wikimedia.org/wiki/File:Jakarta-Bogor-Ciawi_(JBC)_Toll_Road_(Jalan_Tol_2)%2C_August_2019_(7).jpg) | Firzafp | CC BY-SA 4.0 |
 | [Jakarta.jpg](https://commons.wikimedia.org/wiki/File:Jakarta.jpg) | — | Copyrighted free use |
 | [Jalal al-Din Khwarazmshah confronts Chinggis Khan across the Indus. Rashid al-Din, Jami‘ al-tawarikh, National Library of Russia, St Petersburg, MS. Dorn 289, fols. 125v–126r (Jalal al-Din Khwarazmshah with weapons).jpg](https://commons.wikimedia.org/wiki/File:Jalal_al-Din_Khwarazmshah_confronts_Chinggis_Khan_across_the_Indus._Rashid_al-Din%2C_Jami%E2%80%98_al-tawarikh%2C_National_Library_of_Russia%2C_St_Petersburg%2C_MS._Dorn_289%2C_fols._125v%E2%80%93126r_(Jalal_al-Din_Khwarazmshah_with_weapons).jpg) | 1529 artist | Public domain |
 | [Jallianwala Bagh Bullet Marked Wall.JPG](https://commons.wikimedia.org/wiki/File:Jallianwala_Bagh_Bullet_Marked_Wall.JPG) | Dr Graham Beards | CC BY-SA 3.0 |
@@ -3198,6 +3343,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Japan China Peace Treaty 17 April 1895.jpg](https://commons.wikimedia.org/wiki/File:Japan_China_Peace_Treaty_17_April_1895.jpg) | World Imaging | CC BY-SA 3.0 |
 | [Japan Kii Peninsula topographic map.webp](https://commons.wikimedia.org/wiki/File:Japan_Kii_Peninsula_topographic_map.webp) | Soren Bradley | CC BY 4.0 |
 | [Japan Korea Treaty of Amity 26 February 1876.jpg](https://commons.wikimedia.org/wiki/File:Japan_Korea_Treaty_of_Amity_26_February_1876.jpg) | World Imaging | CC BY-SA 3.0 |
+| [Japan National Route 40 Map.png](https://commons.wikimedia.org/wiki/File:Japan_National_Route_40_Map.png) | Phiror | CC BY-SA 4.0 |
+| [Japan National Route 6 Map.png](https://commons.wikimedia.org/wiki/File:Japan_National_Route_6_Map.png) | Phiror | CC BY-SA 4.0 |
 | [Japan Population Pyramid.svg](https://commons.wikimedia.org/wiki/File:Japan_Population_Pyramid.svg) | Kaj Tallungs | CC BY-SA 4.0 |
 | [Japan Russia Treaty of Peace 5 September 1905.jpg](https://commons.wikimedia.org/wiki/File:Japan_Russia_Treaty_of_Peace_5_September_1905.jpg) | World Imaging | CC BY-SA 3.0 |
 | [Japan US Treaty of Mutual Security and Cooperation 19 January 1960.jpg](https://commons.wikimedia.org/wiki/File:Japan_US_Treaty_of_Mutual_Security_and_Cooperation_19_January_1960.jpg) | World Imaging | CC BY-SA 3.0 |
@@ -3235,6 +3382,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Java Locator.svg](https://commons.wikimedia.org/wiki/File:Java_Locator.svg) | Gunawan Kartapranata | CC BY-SA 3.0 |
 | [Javier Milei in pull-aside meeting at the United Nations Headquarters (3x4 cropped).jpg](https://commons.wikimedia.org/wiki/File:Javier_Milei_in_pull-aside_meeting_at_the_United_Nations_Headquarters_(3x4_cropped).jpg) | The White House | Public domain |
 | [Jawaharlal Nehru 1957 crop.jpg](https://commons.wikimedia.org/wiki/File:Jawaharlal_Nehru_1957_crop.jpg) | Behrens, Herbert / Anefo | CC BY-SA 3.0 nl |
+| [Jawaharlal Nehru Port (JNPT).jpg](https://commons.wikimedia.org/wiki/File:Jawaharlal_Nehru_Port_(JNPT).jpg) | Event Horizon 299792 | CC BY-SA 4.0 |
 | [Jean Cavalier chef camisard.jpg](https://commons.wikimedia.org/wiki/File:Jean_Cavalier_chef_camisard.jpg) | Pierre-Antoine Labouchère | Public domain |
 | [Jean Froissart, Chroniques, 154v, 12148 btv1b8438605hf336, crop.jpg](https://commons.wikimedia.org/wiki/File:Jean_Froissart%2C_Chroniques%2C_154v%2C_12148_btv1b8438605hf336%2C_crop.jpg) | Jean Froissart | Public domain |
 | [Jean-François Champollion, by Léon Cogniet.jpg](https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg) | Léon Cogniet | Public domain |
@@ -3244,6 +3392,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Jeju Province in South Korea.svg](https://commons.wikimedia.org/wiki/File:Jeju_Province_in_South_Korea.svg) | TUBS | CC BY-SA 3.0 |
 | [Jeju SK.png](https://commons.wikimedia.org/wiki/File:Jeju_SK.png) | ASDFGH | CC BY 3.0 |
 | [Jelgava aerial view.jpg](https://commons.wikimedia.org/wiki/File:Jelgava_aerial_view.jpg) | Igors Jefimovs | CC BY 3.0 |
+| [Jembatan Tengku Fisabilillah (jembatan I).jpg](https://commons.wikimedia.org/wiki/File:Jembatan_Tengku_Fisabilillah_(jembatan_I).jpg) | toffeespin from Singapore, Singapore | CC BY 2.0 |
 | [Jeon Bong-jun under arrest (27 February 1895).jpg](https://commons.wikimedia.org/wiki/File:Jeon_Bong-jun_under_arrest_(27_February_1895).jpg) | Murakami Tenshin (村上天眞) | Public domain |
 | [Jeong Seon-Geumgangjeondo.jpg](https://commons.wikimedia.org/wiki/File:Jeong_Seon-Geumgangjeondo.jpg) | Jeong Seon | Public domain |
 | [Jeongdong19.jpg](https://commons.wikimedia.org/wiki/File:Jeongdong19.jpg) | RYU Cheol | CC BY-SA 3.0 |
@@ -3269,6 +3418,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Johannes (Jan) Vermeer - Christ in the House of Martha and Mary - Google Art Project (cropped2).jpg](https://commons.wikimedia.org/wiki/File:Johannes_(Jan)_Vermeer_-_Christ_in_the_House_of_Martha_and_Mary_-_Google_Art_Project_(cropped2).jpg) | Johannes Vermeer | Public domain |
 | [Johannes Vermeer - Het melkmeisje - Google Art Project.jpg](https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg) | Johannes Vermeer | Public domain |
 | [Johannes der vierte König zu Portugal und Algarbe etc, ca 1650.png](https://commons.wikimedia.org/wiki/File:Johannes_der_vierte_K%C3%B6nig_zu_Portugal_und_Algarbe_etc%2C_ca_1650.png) | Unknown authorUnknown author | Public domain |
+| [John F. Kennedy Airport 2021c (cropped).jpg](https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_2021c_(cropped).jpg) | Antony-22 | CC BY-SA 4.0 |
 | [John F. Kennedy, White House color photo portrait.jpg](https://commons.wikimedia.org/wiki/File:John_F._Kennedy%2C_White_House_color_photo_portrait.jpg) | Cecil W. Stoughton | Public domain |
 | [John McCain official portrait 2009.jpg](https://commons.wikimedia.org/wiki/File:John_McCain_official_portrait_2009.jpg) | United States Congress | Public domain |
 | [John X arriving to Rome as a triumphant, crowned by Marozia, 915.jpg](https://commons.wikimedia.org/wiki/File:John_X_arriving_to_Rome_as_a_triumphant%2C_crowned_by_Marozia%2C_915.jpg) | Unknown authorUnknown author | Public domain |
@@ -3396,8 +3546,10 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Kashmir Region November 2019.jpg](https://commons.wikimedia.org/wiki/File:Kashmir_Region_November_2019.jpg) | US Central Intelligence Agency | Public domain |
 | [Kasimov view.JPG](https://commons.wikimedia.org/wiki/File:Kasimov_view.JPG) | Voropz | CC BY-SA 3.0 |
 | [Kaskaskia Island 1993 flooding.jpg](https://commons.wikimedia.org/wiki/File:Kaskaskia_Island_1993_flooding.jpg) | SSgt Paul Griffin | Public domain |
+| [Kasr Al Nile Bridge.JPG](https://commons.wikimedia.org/wiki/File:Kasr_Al_Nile_Bridge.JPG) | Mohamed Amarochan | CC BY-SA 3.0 |
 | [Kasumigaseki-Sta-A3a.JPG](https://commons.wikimedia.org/wiki/File:Kasumigaseki-Sta-A3a.JPG) | Nyao148 | CC BY 3.0 |
 | [Katastrofa w Smoleńsku.jpg](https://commons.wikimedia.org/wiki/File:Katastrofa_w_Smole%C5%84sku.jpg) | See ticket for details. | CC BY-SA 2.5 |
+| [Katherine Borchard (IMO 9246530) Liverpool 2021.jpg](https://commons.wikimedia.org/wiki/File:Katherine_Borchard_(IMO_9246530)_Liverpool_2021.jpg) | Niels Johannes | CC BY-SA 4.0 |
 | [Kathmandu Avion 01.JPG](https://commons.wikimedia.org/wiki/File:Kathmandu_Avion_01.JPG) | Royonx | CC0 |
 | [Kathmandu-Durbar Square-06-Mahavishnu-Kuh-Vishnu-Pratapamalla-Jagannath-2007-gje.jpg](https://commons.wikimedia.org/wiki/File:Kathmandu-Durbar_Square-06-Mahavishnu-Kuh-Vishnu-Pratapamalla-Jagannath-2007-gje.jpg) | Gerd Eichmann | CC BY-SA 4.0 |
 | [Katowice, Kopalnia Węgla Kamiennego Wujek - fotopolska.eu (212387).jpg](https://commons.wikimedia.org/wiki/File:Katowice%2C_Kopalnia_W%C4%99gla_Kamiennego_Wujek_-_fotopolska.eu_(212387).jpg) | Eugen | CC BY-SA 3.0 |
@@ -3420,6 +3572,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Kejiahua.svg](https://commons.wikimedia.org/wiki/File:Kejiahua.svg) | Nimpp | CC BY-SA 4.0 |
 | [KellsFol292rIncipJohn.jpg](https://commons.wikimedia.org/wiki/File:KellsFol292rIncipJohn.jpg) | Unknown authorUnknown author | Public domain |
 | [Keluarga Berencana, 75rp (1972).jpg](https://commons.wikimedia.org/wiki/File:Keluarga_Berencana%2C_75rp_(1972).jpg) | Government of Indonesia | Public domain |
+| [Kemayoran International Airport Jakarta, Indonesia.jpg](https://commons.wikimedia.org/wiki/File:Kemayoran_International_Airport_Jakarta%2C_Indonesia.jpg) | Uncredited | CC BY-SA 3.0 |
 | [Kenta Kerr, Peshawar.JPG](https://commons.wikimedia.org/wiki/File:Kenta_Kerr%2C_Peshawar.JPG) | Khalid Mahmood | CC BY-SA 3.0 |
 | [Keppler-Conkling-Mephistopheles.jpg](https://commons.wikimedia.org/wiki/File:Keppler-Conkling-Mephistopheles.jpg) | Joseph Keppler | Public domain |
 | [Keramik aus Iran.jpg](https://commons.wikimedia.org/wiki/File:Keramik_aus_Iran.jpg) | NearEMPTiness | CC BY-SA 4.0 |
@@ -3433,14 +3586,17 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Khalili Collection Islamic Art MSS 1030-731a.jpg](https://commons.wikimedia.org/wiki/File:Khalili_Collection_Islamic_Art_MSS_1030-731a.jpg) | Khalili Collections | CC BY-SA 3.0 igo |
 | [Khalili Collection Islamic Art av-1071.jpg](https://commons.wikimedia.org/wiki/File:Khalili_Collection_Islamic_Art_av-1071.jpg) | Khalili Collections | CC BY-SA 3.0 igo |
 | [Khanates of Eriwan and Nakhchivan in 1809-1817.jpg](https://commons.wikimedia.org/wiki/File:Khanates_of_Eriwan_and_Nakhchivan_in_1809-1817.jpg) | под редакцией ген.-майора Потто. Postwork by Interfase | Public domain |
+| [Kharg island.jpg](https://commons.wikimedia.org/wiki/File:Kharg_island.jpg) | NASA | Public domain |
 | [Khartoum.jpg](https://commons.wikimedia.org/wiki/File:Khartoum.jpg) | Aamirco | Public domain |
 | [Kheops-Pyramid.jpg](https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg) | Nina | CC BY 2.5 |
 | [Kherson Counteroffensive Tanks (Cropped).png](https://commons.wikimedia.org/wiki/File:Kherson_Counteroffensive_Tanks_(Cropped).png) | Defense of Ukraine | Public domain |
+| [Khezr Beach, Hormoz Island, Persian Gulf, Iran, 02-09-2008.jpg](https://commons.wikimedia.org/wiki/File:Khezr_Beach%2C_Hormoz_Island%2C_Persian_Gulf%2C_Iran%2C_02-09-2008.jpg) | Hamed Saber | CC BY-SA 2.0 |
 | [KhivaWalls.jpg](https://commons.wikimedia.org/wiki/File:KhivaWalls.jpg) | Doron | CC BY-SA 3.0 |
 | [Khorasan-Transoxiana-Khwarazm nopaths.svg](https://commons.wikimedia.org/wiki/File:Khorasan-Transoxiana-Khwarazm_nopaths.svg) | Hairy Dude | CC BY-SA 4.0 |
 | [Khu trung tâm thành phố Hồ Chí Minh, nhìn từ phía quận 2.JPG](https://commons.wikimedia.org/wiki/File:Khu_trung_t%C3%A2m_th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh%2C_nh%C3%ACn_t%E1%BB%AB_ph%C3%ADa_qu%E1%BA%ADn_2.JPG) | Tokeisan at Vietnamese Wikipedia | CC BY-SA 3.0 |
 | [Kielcanal.PNG](https://commons.wikimedia.org/wiki/File:Kielcanal.PNG) | Grunners | Public domain |
 | [Kielce planty plaque.jpg](https://commons.wikimedia.org/wiki/File:Kielce_planty_plaque.jpg) | Halibutt, Ely1 (The new version) | CC BY-SA 3.0 |
+| [Kierbedź Bridge (1900).jpg](https://commons.wikimedia.org/wiki/File:Kierbed%C5%BA_Bridge_(1900).jpg) | Detroit Publishing Co. | Public domain |
 | [Kigali2018Cropped.jpg](https://commons.wikimedia.org/wiki/File:Kigali2018Cropped.jpg) | Adrien K | CC BY 2.0 |
 | [Kilkenny-castle.jpg](https://commons.wikimedia.org/wiki/File:Kilkenny-castle.jpg) | No machine-readable author provided. Tolivero~commonswiki assumed (based on copyright clai | Public domain |
 | [Kilátás a Harangtoronyból a Waldbühne-re az 1936. nyári olimpiai játékok alatt. Fortepan 16319.jpg](https://commons.wikimedia.org/wiki/File:Kil%C3%A1t%C3%A1s_a_Harangtoronyb%C3%B3l_a_Waldb%C3%BChne-re_az_1936._ny%C3%A1ri_olimpiai_j%C3%A1t%C3%A9kok_alatt._Fortepan_16319.jpg) | FOTO:Fortepan — ID 16319: Adományozó/Donor: Vass Károly. | CC BY-SA 3.0 |
@@ -3455,6 +3611,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Kim Ok-gyun.gif](https://commons.wikimedia.org/wiki/File:Kim_Ok-gyun.gif) | Unknown authorUnknown author | Public domain |
 | [Kimberly Guilfoyle Official Portrait scaled.jpg](https://commons.wikimedia.org/wiki/File:Kimberly_Guilfoyle_Official_Portrait_scaled.jpg) | U. S. Embassy &amp; Consulate in Greece | Public domain |
 | [King Alfred (The Great).jpg](https://commons.wikimedia.org/wiki/File:King_Alfred_(The_Great).jpg) | Founder of Oriel College, after a painting in the Bodleian Library (colour engraving) by E | Public domain |
+| [King Ananda Mahidol portrait photograph.jpg](https://commons.wikimedia.org/wiki/File:King_Ananda_Mahidol_portrait_photograph.jpg) | กรมแผนที่ทหารบก (Royal Thai Army Survey Department) | Public domain |
 | [King Casmir the Great tombstone2.jpg](https://commons.wikimedia.org/wiki/File:King_Casmir_the_Great_tombstone2.jpg) | Bornholm | CC BY-SA 4.0 |
 | [King Charles I after original by van Dyck.jpg](https://commons.wikimedia.org/wiki/File:King_Charles_I_after_original_by_van_Dyck.jpg) | Workshop of Anthony van Dyck | Public domain |
 | [King Charles II by John Michael Wright or studio.jpg](https://commons.wikimedia.org/wiki/File:King_Charles_II_by_John_Michael_Wright_or_studio.jpg) | John Michael Wright | Public domain |
@@ -3494,12 +3651,16 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [KokandPalace.jpg](https://commons.wikimedia.org/wiki/File:KokandPalace.jpg) | User:Doron | CC BY-SA 3.0 |
 | [Kokbayraq flag.svg](https://commons.wikimedia.org/wiki/File:Kokbayraq_flag.svg) | User:Tarkan | Public domain |
 | [Kokon hime kagami Tomoe onna by Tsukioka Yoshitoshi.jpg](https://commons.wikimedia.org/wiki/File:Kokon_hime_kagami_Tomoe_onna_by_Tsukioka_Yoshitoshi.jpg) | Yoshitoshi | Public domain |
+| [Kokudou 109(China).svg](https://commons.wikimedia.org/wiki/File:Kokudou_109(China).svg) | Hakatanoshio117117 | Public domain |
+| [Kokudou 210(China).svg](https://commons.wikimedia.org/wiki/File:Kokudou_210(China).svg) | Hakatanoshio117117 | Public domain |
+| [Kokudou 312(China).svg](https://commons.wikimedia.org/wiki/File:Kokudou_312(China).svg) | Hakatanoshio117117 | Public domain |
 | [Kokudou 318(China).svg](https://commons.wikimedia.org/wiki/File:Kokudou_318(China).svg) | Hakatanoshio117117 | Public domain |
 | [Kolkata Imgs.jpg](https://commons.wikimedia.org/wiki/File:Kolkata_Imgs.jpg) | Various authors, see above. | CC BY-SA 4.0 |
 | [Kolkata Metro.jpg](https://commons.wikimedia.org/wiki/File:Kolkata_Metro.jpg) | Naikshweta747 | CC BY-SA 3.0 |
 | [Kolkata maidan.jpg](https://commons.wikimedia.org/wiki/File:Kolkata_maidan.jpg) | NalGup20 | CC BY-SA 4.0 |
 | [Kolman decembrists.jpg](https://commons.wikimedia.org/wiki/File:Kolman_decembrists.jpg) | Karl Kollmann | Public domain |
 | [Kolossalstatue Qantir.JPG](https://commons.wikimedia.org/wiki/File:Kolossalstatue_Qantir.JPG) | Iri-en-achti | Public domain |
+| [Kolymarivermap.png](https://commons.wikimedia.org/wiki/File:Kolymarivermap.png) | Kmusser | CC BY-SA 2.5 |
 | [Kommunistische Partei Deutschlands, Logo um 1920.svg](https://commons.wikimedia.org/wiki/File:Kommunistische_Partei_Deutschlands%2C_Logo_um_1920.svg) | R-41 | CC BY-SA 3.0 |
 | [Kona Mauka.jpg](https://commons.wikimedia.org/wiki/File:Kona_Mauka.jpg) | Travisthurston | CC BY-SA 3.0 |
 | [Kona bar at Osu Oxford street.jpg](https://commons.wikimedia.org/wiki/File:Kona_bar_at_Osu_Oxford_street.jpg) | Warmglow | CC BY-SA 4.0 |
@@ -3574,6 +3735,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Kyushu Shinkansen 800 series Shin-Minamata 20041123.jpg](https://commons.wikimedia.org/wiki/File:Kyushu_Shinkansen_800_series_Shin-Minamata_20041123.jpg) | MK Products | CC BY-SA 3.0 |
 | [Kämpfender Achilles by Teicher.jpg](https://commons.wikimedia.org/wiki/File:K%C3%A4mpfender_Achilles_by_Teicher.jpg) | avishai teicher | Public domain |
 | [Képes krónika - 128.oldal - A tatárok második betörése.jpg](https://commons.wikimedia.org/wiki/File:K%C3%A9pes_kr%C3%B3nika_-_128.oldal_-_A_tat%C3%A1rok_m%C3%A1sodik_bet%C3%B6r%C3%A9se.jpg) | Chronicon Pictum | Public domain |
+| [Köhlbrandbrücke (Hamburg).4.phb.ajb.jpg](https://commons.wikimedia.org/wiki/File:K%C3%B6hlbrandbr%C3%BCcke_(Hamburg).4.phb.ajb.jpg) | Ajepbah | CC BY-SA 3.0 de |
 | [Königsberg Castle.jpg](https://commons.wikimedia.org/wiki/File:K%C3%B6nigsberg_Castle.jpg) | Unknown authorUnknown author | Public domain |
 | [Kütahya hisar-üçler tepesinden.jpg](https://commons.wikimedia.org/wiki/File:K%C3%BCtahya_hisar-%C3%BC%C3%A7ler_tepesinden.jpg) | Omerserez | CC BY-SA 4.0 |
 | [Kłuszyn 1610.JPG](https://commons.wikimedia.org/wiki/File:K%C5%82uszyn_1610.JPG) | — | Public domain |
@@ -3581,6 +3743,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [L'Embarquement pour Cythère, by Antoine Watteau, from C2RMF retouched.jpg](https://commons.wikimedia.org/wiki/File:L'Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg) | Jean-Antoine Watteau | Public domain |
 | [L'Illustration No 2630 22 Juillet 1893 Page 61 (cropped).png](https://commons.wikimedia.org/wiki/File:L'Illustration_No_2630_22_Juillet_1893_Page_61_(cropped).png) | Michelet / After Alexandre Jean-Baptiste Brun | Public domain |
 | [LA Riots - aftermath (159598182).jpg](https://commons.wikimedia.org/wiki/File:LA_Riots_-_aftermath_(159598182).jpg) | Mick Taylor from Portland, USA | CC BY-SA 2.0 |
+| [LBCmontagebytisoy.JPG](https://commons.wikimedia.org/wiki/File:LBCmontagebytisoy.JPG) | Tisoy, Matthew Field, Clinton Steeds, Regular Daddy, Los Angeles | CC BY-SA 3.0 |
 | [LGV 1 By JM Rosier.jpg](https://commons.wikimedia.org/wiki/File:LGV_1_By_JM_Rosier.jpg) | Jean-Marc Rosier | CC BY-SA 3.0 |
 | [LGV Cruzilles Mépillat 10.jpg](https://commons.wikimedia.org/wiki/File:LGV_Cruzilles_M%C3%A9pillat_10.jpg) | Chabe01 | CC BY-SA 4.0 |
 | [LGV Est européenne.svg](https://commons.wikimedia.org/wiki/File:LGV_Est_europ%C3%A9enne.svg) | Steff | CC BY-SA 3.0 |
@@ -3611,6 +3774,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [La ronda de noche, por Rembrandt van Rijn.jpg](https://commons.wikimedia.org/wiki/File:La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg) | Rembrandt | Public domain |
 | [La salle dAkhenaton (1356-1340 av J.C.) (Musée du Caire) (2076972086).jpg](https://commons.wikimedia.org/wiki/File:La_salle_dAkhenaton_(1356-1340_av_J.C.)_(Mus%C3%A9e_du_Caire)_(2076972086).jpg) | Jean-Pierre Dalbéra from Paris, France | Public domain |
 | [La ville de Bantam.jpg](https://commons.wikimedia.org/wiki/File:La_ville_de_Bantam.jpg) | Unknown authorUnknown author | Public domain |
+| [La vue la plus spectaculaire depuis l'autoroute Est Ouest Bouira Algérie.jpg](https://commons.wikimedia.org/wiki/File:La_vue_la_plus_spectaculaire_depuis_l'autoroute_Est_Ouest_Bouira_Alg%C3%A9rie.jpg) | Bouizriphotography | CC BY-SA 4.0 |
 | [Laem Chabang.jpg](https://commons.wikimedia.org/wiki/File:Laem_Chabang.jpg) | Lokomotive74 | CC BY 2.5 |
 | [Lage von Savoien in Europa (Karte).svg](https://commons.wikimedia.org/wiki/File:Lage_von_Savoien_in_Europa_(Karte).svg) | Chumwa, using this file. | CC BY-SA 3.0 |
 | [Lagos46 kopie.jpg](https://commons.wikimedia.org/wiki/File:Lagos46_kopie.jpg) | Georges Jansoone | CC BY 2.5 |
@@ -3618,6 +3782,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Lahore Fort view from Baradari.jpg](https://commons.wikimedia.org/wiki/File:Lahore_Fort_view_from_Baradari.jpg) | Rohaan Bhatti | CC BY-SA 3.0 |
 | [Lahore collage.jpg](https://commons.wikimedia.org/wiki/File:Lahore_collage.jpg) | User:Muh.Ashar, User:Rohaan Bhatti, User:Moizee, User:Holosoft, User:Jawad.hassan89, User: | CC BY-SA 3.0 |
 | [Lake Anosy, Central Antananarivo, Capital of Madagascar, Photo by Sascha Grabow.jpg](https://commons.wikimedia.org/wiki/File:Lake_Anosy%2C_Central_Antananarivo%2C_Capital_of_Madagascar%2C_Photo_by_Sascha_Grabow.jpg) | Sascha Grabow www.saschagrabow.com | CC BY-SA 3.0 |
+| [Lake urmia 1984.jpg](https://commons.wikimedia.org/wiki/File:Lake_urmia_1984.jpg) | NASA | Public domain |
 | [Lakota portraits.jpg](https://commons.wikimedia.org/wiki/File:Lakota_portraits.jpg) | Robfergusonjr | Public domain |
 | [LakshmiVilas Palace.jpg](https://commons.wikimedia.org/wiki/File:LakshmiVilas_Palace.jpg) | Sharadsy | CC BY-SA 4.0 |
 | [Lam Son 719.png](https://commons.wikimedia.org/wiki/File:Lam_Son_719.png) | United States Army Aviation | Public domain |
@@ -3632,7 +3797,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Landing of the Atlantic Cable of 1866, Heart's Content, Newfoundland.jpg](https://commons.wikimedia.org/wiki/File:Landing_of_the_Atlantic_Cable_of_1866%2C_Heart's_Content%2C_Newfoundland.jpg) | Robert Charles Dudley | Public domain |
 | [Landsat krakatau 18may92 cropped.jpg](https://commons.wikimedia.org/wiki/File:Landsat_krakatau_18may92_cropped.jpg) | NASA | Public domain |
 | [Landscape in the inner city.jpg](https://commons.wikimedia.org/wiki/File:Landscape_in_the_inner_city.jpg) | Kerdipole | CC BY-SA 4.0 |
+| [Landungsbrücken, Hamburg.JPG](https://commons.wikimedia.org/wiki/File:Landungsbr%C3%BCcken%2C_Hamburg.JPG) | User Batintherain on en.wikipedia | Public domain |
 | [Lange-MigrantMother02.jpg](https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg) | Dorothea Lange | Public domain |
+| [Lanterna di Genova 27-09-2011.JPG](https://commons.wikimedia.org/wiki/File:Lanterna_di_Genova_27-09-2011.JPG) | Eustace Bagge | CC BY-SA 3.0 |
 | [Lanxin Railway Train 01.jpg](https://commons.wikimedia.org/wiki/File:Lanxin_Railway_Train_01.jpg) | ulftomas | CC BY 2.0 |
 | [Lanzhou-rio-amarillo-d01.jpg](https://commons.wikimedia.org/wiki/File:Lanzhou-rio-amarillo-d01.jpg) | — | CC BY-SA 2.5 es |
 | [LaoSiam1.jpg](https://commons.wikimedia.org/wiki/File:LaoSiam1.jpg) | Biggie 943 845 39 | CC BY-SA 4.0 |
@@ -3641,6 +3808,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Laredo US Post Office, Court House and Custom House.jpg](https://commons.wikimedia.org/wiki/File:Laredo_US_Post_Office%2C_Court_House_and_Custom_House.jpg) | JoshDavid Photos | CC BY-SA 4.0 |
 | [Largest Area of Balhe.jpeg](https://commons.wikimedia.org/wiki/File:Largest_Area_of_Balhe.jpeg) | wikiwikiyarou | Public domain |
 | [Largo do Toural (reabilitado).jpg](https://commons.wikimedia.org/wiki/File:Largo_do_Toural_(reabilitado).jpg) | PauloPinto65 | CC BY-SA 4.0 |
+| [Larry Page in the European Parliament, 17.06.2009 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Larry_Page_in_the_European_Parliament%2C_17.06.2009_(cropped).jpg) | Stansfield PL | CC BY-SA 3.0 |
 | [Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg](https://commons.wikimedia.org/wiki/File:Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg) | Diego Velázquez | Public domain |
 | [Latina in Italy.svg](https://commons.wikimedia.org/wiki/File:Latina_in_Italy.svg) | TUBS | CC BY-SA 3.0 |
 | [Launch of Tianhe Core Module (Cropped).jpg](https://commons.wikimedia.org/wiki/File:Launch_of_Tianhe_Core_Module_(Cropped).jpg) | China News Service | CC BY 4.0 |
@@ -3706,6 +3874,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Lietuva ir Lenkija.Lithuania and Poland 1387.png](https://commons.wikimedia.org/wiki/File:Lietuva_ir_Lenkija.Lithuania_and_Poland_1387.png) | M.K. | CC BY-SA 2.5 |
 | [Life-Line To China Re-Opened 1945212.ogv](https://commons.wikimedia.org/wiki/File:Life-Line_To_China_Re-Opened_1945212.ogv) | Universal Studios | Public domain |
 | [Lighthouse - Thiersch.png](https://commons.wikimedia.org/wiki/File:Lighthouse_-_Thiersch.png) | Prof. Hermann Thiersch (1874–1939) | Public domain |
+| [LightningVolt Mackinac Bridge.jpg](https://commons.wikimedia.org/wiki/File:LightningVolt_Mackinac_Bridge.jpg) | Lars Lentz | CC BY-SA 1.0 |
 | [Ligne Le Mans - Angers.svg](https://commons.wikimedia.org/wiki/File:Ligne_Le_Mans_-_Angers.svg) | Babskwal | Public domain |
 | [Lilongwe Area 2.jpg](https://commons.wikimedia.org/wiki/File:Lilongwe_Area_2.jpg) | Brian Dell | Public domain |
 | [Lin Biao in 1959.jpg](https://commons.wikimedia.org/wiki/File:Lin_Biao_in_1959.jpg) | Unknown authorUnknown author | Public domain |
@@ -3736,14 +3905,17 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Liu Yongfu 2.jpg](https://commons.wikimedia.org/wiki/File:Liu_Yongfu_2.jpg) | Unknown authorUnknown author | CC BY-SA 4.0 |
 | [Liu-bang.jpg](https://commons.wikimedia.org/wiki/File:Liu-bang.jpg) | Unknown authorUnknown author | Public domain |
 | [Liutaiwan.jpg](https://commons.wikimedia.org/wiki/File:Liutaiwan.jpg) | Original uploader was Orion at zh.wikipedia | Public domain |
+| [LiverpoolMontage.jpg](https://commons.wikimedia.org/wiki/File:LiverpoolMontage.jpg) | Users of Wikipedia and wiki commons. | CC BY-SA 3.0 |
 | [Lobo (The King of Currumpaw).jpg](https://commons.wikimedia.org/wiki/File:Lobo_(The_King_of_Currumpaw).jpg) | Illustrated by the author, Ernest Seton Thompson | Public domain |
 | [Localisation Duché de Bretagne.svg](https://commons.wikimedia.org/wiki/File:Localisation_Duch%C3%A9_de_Bretagne.svg) | This image has been made by GwenofGwened and released under the licenses stated below. You | CC BY-SA 4.0 |
 | [Localización de Cataluña.svg](https://commons.wikimedia.org/wiki/File:Localizaci%C3%B3n_de_Catalu%C3%B1a.svg) | Mutxamel, subido por Rastrojo (D•ES) | CC BY-SA 4.0 |
 | [Localización de Galicia.svg](https://commons.wikimedia.org/wiki/File:Localizaci%C3%B3n_de_Galicia.svg) | Mutxamel, subido por Rastrojo (D•ES) | CC BY-SA 4.0 |
 | [Locatie Straat van Kertsj.PNG](https://commons.wikimedia.org/wiki/File:Locatie_Straat_van_Kertsj.PNG) | edited by M.Minderhoud | Public domain |
+| [Location Acapulco de Juarez.png](https://commons.wikimedia.org/wiki/File:Location_Acapulco_de_Juarez.png) | No machine-readable author provided. Mixcoatl assumed (based on copyright claims). | CC BY-SA 2.5 |
 | [Location NATO Ukraine.svg](https://commons.wikimedia.org/wiki/File:Location_NATO_Ukraine.svg) | Patrickneil and Донор | CC BY 3.0 |
 | [Location TokyoJapan.jpg](https://commons.wikimedia.org/wiki/File:Location_TokyoJapan.jpg) | — | Public domain |
 | [Location UK-Crimea-RU.PNG](https://commons.wikimedia.org/wiki/File:Location_UK-Crimea-RU.PNG) | LocationCrimea.PNG: CoArms derivative work: Schwarzorange | CC BY-SA 3.0 |
+| [Location map Istanbul.png](https://commons.wikimedia.org/wiki/File:Location_map_Istanbul.png) | OpenStreetMap contributors, Dr. BlofeldOpenStreetMap contributors | CC BY-SA 2.0 |
 | [Location map Taifa of Zaragoza.svg](https://commons.wikimedia.org/wiki/File:Location_map_Taifa_of_Zaragoza.svg) | Tyk | CC BY-SA 3.0 |
 | [Location map of Kagoshima.svg](https://commons.wikimedia.org/wiki/File:Location_map_of_Kagoshima.svg) | 元ファイル作者：Lincun、改変：Sakoppi | CC BY-SA 3.0 |
 | [Location map of the United Kingdom and the European Union.svg](https://commons.wikimedia.org/wiki/File:Location_map_of_the_United_Kingdom_and_the_European_Union.svg) | Furfur | Public domain |
@@ -3775,6 +3947,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Logo-G7-France-2026.svg](https://commons.wikimedia.org/wiki/File:Logo-G7-France-2026.svg) | Gouvernement français | CC0 |
 | [Logotipo del PSOE.svg](https://commons.wikimedia.org/wiki/File:Logotipo_del_PSOE.svg) | Trademarked by PghipSOE. This file, by Rastrojo •Rastrojo | Public domain |
 | [Loi de séparation des églises et de l’État. Page 1 - Archives Nationales - AE-II-2991.jpg](https://commons.wikimedia.org/wiki/File:Loi_de_s%C3%A9paration_des_%C3%A9glises_et_de_l%E2%80%99%C3%89tat._Page_1_-_Archives_Nationales_-_AE-II-2991.jpg) | — | Public domain |
+| [London - Heathrow (LHR - EGLL) AN1572653.jpg](https://commons.wikimedia.org/wiki/File:London_-_Heathrow_(LHR_-_EGLL)_AN1572653.jpg) | Konstantin Von Wedelstaedt | GFDL 1.2 |
 | [London Skyline (125508655).jpeg](https://commons.wikimedia.org/wiki/File:London_Skyline_(125508655).jpeg) | Ilya Grigorik | CC BY-SA 3.0 |
 | [London St. Pancras Highspeed logo.svg](https://commons.wikimedia.org/wiki/File:London_St._Pancras_Highspeed_logo.svg) | HS1 Limited | Public domain |
 | [London from a hot air balloon.jpg](https://commons.wikimedia.org/wiki/File:London_from_a_hot_air_balloon.jpg) | Daniel Chapman | CC BY 2.0 |
@@ -3786,13 +3959,16 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Long yun photo.png](https://commons.wikimedia.org/wiki/File:Long_yun_photo.png) | Unknown Author | Public domain |
 | [Long-term interest rates (eurozone).png](https://commons.wikimedia.org/wiki/File:Long-term_interest_rates_(eurozone).png) | Spitzl | CC BY-SA 3.0 |
 | [Longhai line.jpg](https://commons.wikimedia.org/wiki/File:Longhai_line.jpg) | Nihongarden | CC BY-SA 4.0 |
+| [Longhua Airport Satellite Image (1966).png](https://commons.wikimedia.org/wiki/File:Longhua_Airport_Satellite_Image_(1966).png) | CIA/NRO/USGS | Public domain |
 | [Lord Clive meeting with Mir Jafar after the Battle of Plassey.jpg](https://commons.wikimedia.org/wiki/File:Lord_Clive_meeting_with_Mir_Jafar_after_the_Battle_of_Plassey.jpg) | Francis Hayman | Public domain |
 | [Lord Rama with arrows.jpg](https://commons.wikimedia.org/wiki/File:Lord_Rama_with_arrows.jpg) | Unknown authorUnknown author | Public domain |
 | [Lorenzo de Medici.jpg](https://commons.wikimedia.org/wiki/File:Lorenzo_de_Medici.jpg) | Workshop of Bronzino | Public domain |
 | [Lorenzo de' Medici-ritratto.jpg](https://commons.wikimedia.org/wiki/File:Lorenzo_de'_Medici-ritratto.jpg) | Girolamo Macchietti | Public domain |
 | [Lot-10907-1 (27288019645).jpg](https://commons.wikimedia.org/wiki/File:Lot-10907-1_(27288019645).jpg) | National Museum of the U.S. Navy | Public domain |
+| [Lotnisko Chopina w Warszawie 2018b.jpg](https://commons.wikimedia.org/wiki/File:Lotnisko_Chopina_w_Warszawie_2018b.jpg) | Adrian Grycuk | CC BY-SA 3.0 pl |
 | [Lotte World day view 2.jpg](https://commons.wikimedia.org/wiki/File:Lotte_World_day_view_2.jpg) | kallerna | CC BY-SA 4.0 |
 | [Lotus Flower Bridge and Seven Treasure Bridge at Bulguksa in Gyeongju, Korea.jpg](https://commons.wikimedia.org/wiki/File:Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju%2C_Korea.jpg) | Unknown authorUnknown author | Public domain |
+| [Lou Gehrig in 1923 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Lou_Gehrig_in_1923_(cropped).jpg) | Unknown authorUnknown author | Public domain |
 | [Loudoun County, Virginia Courthouse.jpg](https://commons.wikimedia.org/wiki/File:Loudoun_County%2C_Virginia_Courthouse.jpg) | General George Marshall | CC BY-SA 4.0 |
 | [Louis XIV of France.jpg](https://commons.wikimedia.org/wiki/File:Louis_XIV_of_France.jpg) | Hyacinthe Rigaud | Public domain |
 | [Louis XV France by Louis-Michel van Loo 002.jpg](https://commons.wikimedia.org/wiki/File:Louis_XV_France_by_Louis-Michel_van_Loo_002.jpg) | Jean-Martial Frédou / After Louis-Michel van Loo | Public domain |
@@ -3821,6 +3997,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Luisenplatz, Darmstadt.jpg](https://commons.wikimedia.org/wiki/File:Luisenplatz%2C_Darmstadt.jpg) | Heidas | CC BY-SA 3.0 |
 | [Lulea-city-festival-water.jpg](https://commons.wikimedia.org/wiki/File:Lulea-city-festival-water.jpg) | Andreas Harnemo | CC BY-SA 3.0 |
 | [Luleburgaz Battle Postcard.jpg](https://commons.wikimedia.org/wiki/File:Luleburgaz_Battle_Postcard.jpg) | Unknown authorUnknown author | Public domain |
+| [Luokou yellow river railway bridge south shore view closeup 1.jpg](https://commons.wikimedia.org/wiki/File:Luokou_yellow_river_railway_bridge_south_shore_view_closeup_1.jpg) | Rolfmueller | CC BY-SA 3.0 |
+| [Luokou yellow river railway bridge south shore view closeup 2.jpg](https://commons.wikimedia.org/wiki/File:Luokou_yellow_river_railway_bridge_south_shore_view_closeup_2.jpg) | Rolfmueller | CC BY-SA 3.0 |
 | [Lupa Capitolina, Rome.jpg](https://commons.wikimedia.org/wiki/File:Lupa_Capitolina%2C_Rome.jpg) | — | CC0 |
 | [Lushan Temple.jpg](https://commons.wikimedia.org/wiki/File:Lushan_Temple.jpg) | Zhangmoon618 | Public domain |
 | [Lutherstadt Wittenberg, Denkmalensemble Markt.jpg](https://commons.wikimedia.org/wiki/File:Lutherstadt_Wittenberg%2C_Denkmalensemble_Markt.jpg) | Rolf Kranz | CC BY-SA 4.0 |
@@ -3836,9 +4014,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [L’Indépendance de la Corée et la Paix-02.jpg](https://commons.wikimedia.org/wiki/File:L%E2%80%99Ind%C3%A9pendance_de_la_Cor%C3%A9e_et_la_Paix-02.jpg) | Bureau d'information coréen | Public domain |
 | [M-PESA.png](https://commons.wikimedia.org/wiki/File:M-PESA.png) | Vodafone | Public domain |
 | [M-pesa-logo.png](https://commons.wikimedia.org/wiki/File:M-pesa-logo.png) | Unknown authorUnknown author | Public domain |
+| [M11-Green-RUS.svg](https://commons.wikimedia.org/wiki/File:M11-Green-RUS.svg) | Miko101 | Public domain |
+| [M25 motorway (Great Britain) map.svg](https://commons.wikimedia.org/wiki/File:M25_motorway_(Great_Britain)_map.svg) | UK motorways map (thick lines).svg: User:Dr Greg and User:Nilfanion, created using Ordnanc | CC BY-SA 4.0 |
 | [MANCHURIA-U.S.S.R BOUNDARY Ct002999.jpg](https://commons.wikimedia.org/wiki/File:MANCHURIA-U.S.S.R_BOUNDARY_Ct002999.jpg) | CIA | Public domain |
 | [MAREA.png](https://commons.wikimedia.org/wiki/File:MAREA.png) | Green Zero | CC BY-SA 2.0 |
 | [MASP São Paulo (cropped).jpg](https://commons.wikimedia.org/wiki/File:MASP_S%C3%A3o_Paulo_(cropped).jpg) | Naldo Arruda | CC BY 2.0 |
+| [MATHURA11.jpg](https://commons.wikimedia.org/wiki/File:MATHURA11.jpg) | Benjamín Preciado Centro de Estudios de Asia y África de El Colegio de México | CC BY-SA 3.0 |
+| [MED-IMG-0471.jpg](https://commons.wikimedia.org/wiki/File:MED-IMG-0471.jpg) | Mochimoshi | CC BY 4.0 |
 | [MEISHIN EXP(E1)702C.svg](https://commons.wikimedia.org/wiki/File:MEISHIN_EXP(E1)702C.svg) | Oka21000 | CC0 |
 | [MIKASAPAINTING.jpg](https://commons.wikimedia.org/wiki/File:MIKASAPAINTING.jpg) | Tōjō Shōtarō | Public domain |
 | [MK29818 Wiesbaden.jpg](https://commons.wikimedia.org/wiki/File:MK29818_Wiesbaden.jpg) | Martin Kraft | CC BY-SA 3.0 |
@@ -3860,6 +4042,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Macdonald Carey Bernadette Flynn Hawkins Falls 1953.JPG](https://commons.wikimedia.org/wiki/File:Macdonald_Carey_Bernadette_Flynn_Hawkins_Falls_1953.JPG) | NBC photo by Toivo Kaitila | Public domain |
 | [MacedonEmpire.jpg](https://commons.wikimedia.org/wiki/File:MacedonEmpire.jpg) | Generic Mapping Tools | CC BY-SA 3.0 |
 | [Machu Picchu, 2023 (012).jpg](https://commons.wikimedia.org/wiki/File:Machu_Picchu%2C_2023_(012).jpg) | Draceane | CC BY-SA 4.0 |
+| [Mackinac Bridge 2022.jpg](https://commons.wikimedia.org/wiki/File:Mackinac_Bridge_2022.jpg) | WMrapids | CC0 |
 | [Macouria3.JPG](https://commons.wikimedia.org/wiki/File:Macouria3.JPG) | The original uploader was Didwin at French Wikipedia. | CC BY-SA 2.5 |
 | [Madame Chiang Kai-shek, seated portrait (cropped).jpg](https://commons.wikimedia.org/wiki/File:Madame_Chiang_Kai-shek%2C_seated_portrait_(cropped).jpg) | Los Angeles Times | CC BY 4.0 |
 | [MaddoxTonkin1.svg](https://commons.wikimedia.org/wiki/File:MaddoxTonkin1.svg) | Created by the U.S. Navy, and converted to SVG by Interiot. Interiot's modifications are a | Public domain |
@@ -3875,6 +4058,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Magna Carta (British Library Cotton MS Augustus II.106).jpg](https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg) | Original authors were the barons and King John of England. Uploaded by Earthsound. | Public domain |
 | [Magnitogorsk Iron and Steel Works logo.svg](https://commons.wikimedia.org/wiki/File:Magnitogorsk_Iron_and_Steel_Works_logo.svg) | Unknown authorUnknown author | Public domain |
 | [Magnitogorskiy Gos Tekh Universitet.JPG](https://commons.wikimedia.org/wiki/File:Magnitogorskiy_Gos_Tekh_Universitet.JPG) | Hellmaster_ru | Public domain |
+| [Magome-Juku Milestone.jpg](https://commons.wikimedia.org/wiki/File:Magome-Juku_Milestone.jpg) | SElefant | CC BY-SA 3.0 |
 | [Magritte treachery.jpg](https://commons.wikimedia.org/wiki/File:Magritte_treachery.jpg) | Caterpillar84 | Public domain |
 | [Mahabodhitemple.jpg](https://commons.wikimedia.org/wiki/File:Mahabodhitemple.jpg) | Bpilgrim | CC BY-SA 2.5 |
 | [Mahakaleshwar Temple, Ujjain.jpg](https://commons.wikimedia.org/wiki/File:Mahakaleshwar_Temple%2C_Ujjain.jpg) | Ashverse | CC BY-SA 4.0 |
@@ -3886,6 +4070,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mahmoudiyah Canal.jpg](https://commons.wikimedia.org/wiki/File:Mahmoudiyah_Canal.jpg) | Stoddard, John L. 1850-1931 | Public domain |
 | [Mai Hac De temple gate in 2014.jpg](https://commons.wikimedia.org/wiki/File:Mai_Hac_De_temple_gate_in_2014.jpg) | Vuong Tri Binh | CC BY-SA 4.0 |
 | [Mai hắc đế.png](https://commons.wikimedia.org/wiki/File:Mai_h%E1%BA%AFc_%C4%91%E1%BA%BF.png) | Bảo bảo 123456789 | CC BY-SA 4.0 |
+| [Main Route of Trans-Java Toll-Road.svg](https://commons.wikimedia.org/wiki/File:Main_Route_of_Trans-Java_Toll-Road.svg) | JHR Dailies | CC BY-SA 4.0 |
 | [Mainz Gutenbergdenkmal 2016 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Mainz_Gutenbergdenkmal_2016_(cropped).jpg) | Kenneth C. Zirkel | CC BY-SA 4.0 |
 | [Mainzer Dom Blaue Stunde (37539430014).jpg](https://commons.wikimedia.org/wiki/File:Mainzer_Dom_Blaue_Stunde_(37539430014).jpg) | salomon10 from Germany | CC BY 2.0 |
 | [MairieFréjus.JPG](https://commons.wikimedia.org/wiki/File:MairieFr%C3%A9jus.JPG) | Cyrilb1881 | CC BY-SA 3.0 |
@@ -3915,11 +4100,14 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mamoru Shigemitsu signs the Instrument of Surrender, officially ending the Second World War.jpg](https://commons.wikimedia.org/wiki/File:Mamoru_Shigemitsu_signs_the_Instrument_of_Surrender%2C_officially_ending_the_Second_World_War.jpg) | Army Signal Corps photographer LT. Stephen E. Korpanty; restored by Adam Cuerden | Public domain |
 | [Manchuria.png](https://commons.wikimedia.org/wiki/File:Manchuria.png) | CIA | Public domain |
 | [Mandalay, Moat, Myanmar.jpg](https://commons.wikimedia.org/wiki/File:Mandalay%2C_Moat%2C_Myanmar.jpg) | Vyacheslav Argenberg | CC BY 4.0 |
+| [Mando-Matsuri-2023-10.jpg](https://commons.wikimedia.org/wiki/File:Mando-Matsuri-2023-10.jpg) | Evelyn-rose | CC0 |
+| [Manhattan.jpg](https://commons.wikimedia.org/wiki/File:Manhattan.jpg) | Maureen from Buffalo, USA | CC BY 2.0 |
 | [ManifestaciónAFavorDeLaRepúblicaPetrogrado1917--russiainrevolut00jone.jpg](https://commons.wikimedia.org/wiki/File:Manifestaci%C3%B3nAFavorDeLaRep%C3%BAblicaPetrogrado1917--russiainrevolut00jone.jpg) | Jones, Stinton | Public domain |
 | [Manifesto Speech of Siamese Revolution of 1932.png](https://commons.wikimedia.org/wiki/File:Manifesto_Speech_of_Siamese_Revolution_of_1932.png) | Unknown authorUnknown author | Public domain |
 | [Mantova Skyline.jpg](https://commons.wikimedia.org/wiki/File:Mantova_Skyline.jpg) | — | CC BY-SA 3.0 |
 | [Manuscript of the Constitution of the 3rd May 1791.PNG](https://commons.wikimedia.org/wiki/File:Manuscript_of_the_Constitution_of_the_3rd_May_1791.PNG) | Ignacy Potocki (1750–1809), Hugo Kołłątaj (1750–1812), Stanisław August Poniatowski (1732– | Public domain |
 | [Manzanar Relocation Center, Manzanar, California. Street scene of barrack homes... - NARA - 538128 - restored.png](https://commons.wikimedia.org/wiki/File:Manzanar_Relocation_Center%2C_Manzanar%2C_California._Street_scene_of_barrack_homes..._-_NARA_-_538128_-_restored.png) | Dorothea Lange | Public domain |
+| [Manzanillo collage01.JPG](https://commons.wikimedia.org/wiki/File:Manzanillo_collage01.JPG) | Manzanillo_centro.JPG: Tatehuari Manzanillo_360_Panorama_-_La_Boquita.jpg: ZooFari File:At | CC BY-SA 3.0 |
 | [Mao Anqing 2.jpg](https://commons.wikimedia.org/wiki/File:Mao_Anqing_2.jpg) | unknown author | Public domain |
 | [Mao Proclaiming New China.JPG](https://commons.wikimedia.org/wiki/File:Mao_Proclaiming_New_China.JPG) | Orihara1 | Public domain |
 | [Mao Tsé-toung, portrait en buste, assis, faisant face à Nikita Khrouchtchev, pendant la visite du chef russe 1958 à Pékin.jpg](https://commons.wikimedia.org/wiki/File:Mao_Ts%C3%A9-toung%2C_portrait_en_buste%2C_assis%2C_faisant_face_%C3%A0_Nikita_Khrouchtchev%2C_pendant_la_visite_du_chef_russe_1958_%C3%A0_P%C3%A9kin.jpg) | Unknown photographerUnknown photographer at the source. Photo distributed by United Press  | Public domain |
@@ -3933,6 +4121,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Map New Guinea.PNG](https://commons.wikimedia.org/wiki/File:Map_New_Guinea.PNG) | — | CC BY-SA 3.0 |
 | [Map Offshore Windfarms in the German Bight.svg](https://commons.wikimedia.org/wiki/File:Map_Offshore_Windfarms_in_the_German_Bight.svg) | MikeTango | CC BY-SA 4.0 |
 | [Map Safavid Persia-fr.png](https://commons.wikimedia.org/wiki/File:Map_Safavid_Persia-fr.png) | — | CC BY-SA 2.5 |
+| [Map Siberian route english.jpg](https://commons.wikimedia.org/wiki/File:Map_Siberian_route_english.jpg) | Kaiserc | CC0 |
 | [Map for the Silesian and Seven Years Wars.jpg](https://commons.wikimedia.org/wiki/File:Map_for_the_Silesian_and_Seven_Years_Wars.jpg) | Frederick William LongmanCharles Colbeck (editor) | Public domain |
 | [Map korea without labels.png](https://commons.wikimedia.org/wiki/File:Map_korea_without_labels.png) | Johannes Barre (IGEL) | CC BY-SA 3.0 |
 | [Map of Assyria.png](https://commons.wikimedia.org/wiki/File:Map_of_Assyria.png) | Ningyou | Public domain |
@@ -3983,6 +4172,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mapa Imperio Occidental año 418.svg](https://commons.wikimedia.org/wiki/File:Mapa_Imperio_Occidental_a%C3%B1o_418.svg) | Paulusburg | CC BY-SA 4.0 |
 | [Mapa baltic-pipe-public-domain-PL.jpg](https://commons.wikimedia.org/wiki/File:Mapa_baltic-pipe-public-domain-PL.jpg) | Lemiel | CC BY-SA 4.0 |
 | [Mapa de EFMM - 1904 Revista Kosmos.jpg](https://commons.wikimedia.org/wiki/File:Mapa_de_EFMM_-_1904_Revista_Kosmos.jpg) | Revista Kosmos | Public domain |
+| [Mapa-rodovia-imigrantes.jpg](https://commons.wikimedia.org/wiki/File:Mapa-rodovia-imigrantes.jpg) | Renato M.E. Sabbatini | CC BY-SA 3.0 |
 | [Mappa Terremoto Val di Noto 1693.png](https://commons.wikimedia.org/wiki/File:Mappa_Terremoto_Val_di_Noto_1693.png) | Beric Dondarrion | CC BY-SA 4.0 |
 | [Mappa autostrada A8 Italia.svg](https://commons.wikimedia.org/wiki/File:Mappa_autostrada_A8_Italia.svg) | ColdShine | CC BY-SA 2.5 |
 | [Mappa terremoto 1908.jpg](https://commons.wikimedia.org/wiki/File:Mappa_terremoto_1908.jpg) | — | Public domain |
@@ -4019,6 +4209,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [MarmarayAyrılıkÇeşmesiStation.JPG](https://commons.wikimedia.org/wiki/File:MarmarayAyr%C4%B1l%C4%B1k%C3%87e%C5%9FmesiStation.JPG) | CeeGee | CC BY-SA 3.0 |
 | [Marrakech montage2.png](https://commons.wikimedia.org/wiki/File:Marrakech_montage2.png) | Penyulap using files by authors stated above. | CC BY-SA 3.0 |
 | [Marrakech, Morocco (5421595453) (5).jpg](https://commons.wikimedia.org/wiki/File:Marrakech%2C_Morocco_(5421595453)_(5).jpg) | YoTuT from United States | CC BY 2.0 |
+| [Marseille 20131005 17.jpg](https://commons.wikimedia.org/wiki/File:Marseille_20131005_17.jpg) | Georges Seguin (Okki) | CC BY-SA 3.0 |
+| [Marseille harbour mg 6383.jpg](https://commons.wikimedia.org/wiki/File:Marseille_harbour_mg_6383.jpg) | Rama | CC BY-SA 2.0 fr |
 | [Marshal Hall, Thanjavur.jpg](https://commons.wikimedia.org/wiki/File:Marshal_Hall%2C_Thanjavur.jpg) | PJeganathan | CC BY-SA 3.0 |
 | [Marshall Plan.svg](https://commons.wikimedia.org/wiki/File:Marshall_Plan.svg) | File:Blank political map of Europe EU27 iso3166-1 code.svg: Amibreton 11:46, 14 March 2009 | CC BY-SA 3.0 |
 | [Marten's Poltava.jpg](https://commons.wikimedia.org/wiki/File:Marten's_Poltava.jpg) | Pierre-Denis Martin | Public domain |
@@ -4065,6 +4257,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Medinaceli Actium reliefs 06.jpg](https://commons.wikimedia.org/wiki/File:Medinaceli_Actium_reliefs_06.jpg) | Mark Landon | CC BY 4.0 |
 | [Medinet Habu Ramses III. Tempel Nordostwand Abzeichnung 01.jpg](https://commons.wikimedia.org/wiki/File:Medinet_Habu_Ramses_III._Tempel_Nordostwand_Abzeichnung_01.jpg) | Unknown artistUnknown artist in pay of Ramesses III | Public domain |
 | [Medusa by Carvaggio.jpg](https://commons.wikimedia.org/wiki/File:Medusa_by_Carvaggio.jpg) | Caravaggio | Public domain |
+| [Mehrabad Airport Terminal 1&2.jpg](https://commons.wikimedia.org/wiki/File:Mehrabad_Airport_Terminal_1%262.jpg) | Chrisrabinson | CC BY-SA 4.0 |
+| [Mehrabad airport - 2024 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Mehrabad_airport_-_2024_(cropped).jpg) | Standardwhale | CC BY-SA 4.0 |
 | [Meiji Emperor (cropped)(b).jpg](https://commons.wikimedia.org/wiki/File:Meiji_Emperor_(cropped)(b).jpg) | Uchida Kuichi | Public domain |
 | [Meiji Emperor.jpg](https://commons.wikimedia.org/wiki/File:Meiji_Emperor.jpg) | Uchida Kuichi | Public domain |
 | [Meiji Kenpo01.jpg](https://commons.wikimedia.org/wiki/File:Meiji_Kenpo01.jpg) | Meiji Emperor | Public domain |
@@ -4090,6 +4284,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Merchant flag of Spanish Morocco.svg](https://commons.wikimedia.org/wiki/File:Merchant_flag_of_Spanish_Morocco.svg) | Xiquet | Public domain |
 | [Merchant flag of the Ryukyu Kingdom.svg](https://commons.wikimedia.org/wiki/File:Merchant_flag_of_the_Ryukyu_Kingdom.svg) | Samhanin | CC BY 3.0 |
 | [Merritt Island.jpg](https://commons.wikimedia.org/wiki/File:Merritt_Island.jpg) | NASA | Public domain |
+| [Mersin-tekneler.jpg](https://commons.wikimedia.org/wiki/File:Mersin-tekneler.jpg) | Mersin Page | CC BY-SA 3.0 |
 | [Merv City Walls (10) (44747325714).jpg](https://commons.wikimedia.org/wiki/File:Merv_City_Walls_(10)_(44747325714).jpg) | Hans Birger Nilsen | CC BY-SA 2.0 |
 | [Meshcherinov.jpg](https://commons.wikimedia.org/wiki/File:Meshcherinov.jpg) | Ivan Grigorevich Grigoriev | Public domain |
 | [MessinaStrait-EO.jpg](https://commons.wikimedia.org/wiki/File:MessinaStrait-EO.jpg) | ASTER device on board of Terra satellite (uploaded on wiki by Lukius for the article Stret | Public domain |
@@ -4115,6 +4310,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mikasa-Bridge-Painting-by-Tojo-Shotaro.png](https://commons.wikimedia.org/wiki/File:Mikasa-Bridge-Painting-by-Tojo-Shotaro.png) | Tōjō Shōtarō | Public domain |
 | [Milan CadeSass.jpg](https://commons.wikimedia.org/wiki/File:Milan_CadeSass.jpg) | Boubloub | CC0 |
 | [Milan Cathedral from Piazza del Duomo.jpg](https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg) | Jiuguang Wang | CC BY-SA 3.0 |
+| [Milan malpensa terminal airport.jpg](https://commons.wikimedia.org/wiki/File:Milan_malpensa_terminal_airport.jpg) | Arne Müseler | CC BY-SA 3.0 de |
 | [Milan.Proper.Wikipedia.Image.png](https://commons.wikimedia.org/wiki/File:Milan.Proper.Wikipedia.Image.png) | The.Anonymous.EU (Montages) | CC BY-SA 4.0 |
 | [Milano - Piazza Fontana - Banca Nazionale dell'Agricoltura.jpg](https://commons.wikimedia.org/wiki/File:Milano_-_Piazza_Fontana_-_Banca_Nazionale_dell'Agricoltura.jpg) | Piero Montesacro | CC BY-SA 4.0 |
 | [Milano Cortina 2026 Opening Ceremony.jpg](https://commons.wikimedia.org/wiki/File:Milano_Cortina_2026_Opening_Ceremony.jpg) | Unknown authorUnknown author | Public domain |
@@ -4159,6 +4355,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mohammad Mahmood Alam 1965.jpg](https://commons.wikimedia.org/wiki/File:Mohammad_Mahmood_Alam_1965.jpg) | DGPR Pakistan Air Force | Public domain |
 | [Mohammad adil-Muslim conquest of Egypt-zh.png](https://commons.wikimedia.org/wiki/File:Mohammad_adil-Muslim_conquest_of_Egypt-zh.png) | Vikarna | CC BY-SA 4.0 |
 | [Mohammad adil-Rashidun empire-slide.gif](https://commons.wikimedia.org/wiki/File:Mohammad_adil-Rashidun_empire-slide.gif) | Mohammad Adil (talk) | CC BY-SA 3.0 |
+| [Mohammed VI bridge.jpg](https://commons.wikimedia.org/wiki/File:Mohammed_VI_bridge.jpg) | Ministry of Equipment and Transport (Morocco) | CC BY 3.0 |
 | [Mokka and their house.jpg](https://commons.wikimedia.org/wiki/File:Mokka_and_their_house.jpg) | Unknown authorUnknown author | Public domain |
 | [Mold for making banliang coins.jpg](https://commons.wikimedia.org/wiki/File:Mold_for_making_banliang_coins.jpg) | Difference engine | CC BY-SA 4.0 |
 | [Mon Henrykow Slaskich (1201-1241)-es.svg](https://commons.wikimedia.org/wiki/File:Mon_Henrykow_Slaskich_(1201-1241)-es.svg) | Church in poland 12-13c.svg:Hoodinski (talk · contribs) Mon Henrykow Slaskich (1201-1241). | CC BY-SA 3.0 |
@@ -4191,7 +4388,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [MontageofNaples.jpg](https://commons.wikimedia.org/wiki/File:MontageofNaples.jpg) | Users of Wiki Commons and Wikipedia | CC BY-SA 3.0 |
 | [Montages of Valencia.jpg](https://commons.wikimedia.org/wiki/File:Montages_of_Valencia.jpg) | Foxy1219 | CC BY-SA 4.0 |
 | [Montaje CBA 9.jpg](https://commons.wikimedia.org/wiki/File:Montaje_CBA_9.jpg) | Alakasam | CC BY-SA 3.0 |
+| [Montaje Rosario 01.jpg](https://commons.wikimedia.org/wiki/File:Montaje_Rosario_01.jpg) | Bleff | CC BY-SA 3.0 |
 | [Montaje de CDMX.jpg](https://commons.wikimedia.org/wiki/File:Montaje_de_CDMX.jpg) | self. | CC BY-SA 4.0 |
+| [Montaje de Manzanillo.jpg](https://commons.wikimedia.org/wiki/File:Montaje_de_Manzanillo.jpg) | Montaje realizado por User:Wovedro. | CC BY-SA 4.0 |
 | [Montaje de la Ciudad de Buenos Aires.png](https://commons.wikimedia.org/wiki/File:Montaje_de_la_Ciudad_de_Buenos_Aires.png) | Bleff | CC BY-SA 3.0 |
 | [Monte Cassino Opactwo 1.JPG](https://commons.wikimedia.org/wiki/File:Monte_Cassino_Opactwo_1.JPG) | Radomił | CC BY-SA 3.0 |
 | [Monte Cassino.jpg](https://commons.wikimedia.org/wiki/File:Monte_Cassino.jpg) | — | Public domain |
@@ -4214,6 +4413,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Morning in September in Tours 18.jpg](https://commons.wikimedia.org/wiki/File:Morning_in_September_in_Tours_18.jpg) | Szilas | CC BY 4.0 |
 | [Moroccan Constitution of 2011.pdf](https://commons.wikimedia.org/wiki/File:Moroccan_Constitution_of_2011.pdf) | Secrétariat Général du Gouvernement, Direction de l'Imprimerie Officielle, Royaume du Maro | Public domain |
 | [Morocco - Rabat (31387775324).jpg](https://commons.wikimedia.org/wiki/File:Morocco_-_Rabat_(31387775324).jpg) | Visions of Domino | CC BY 2.0 |
+| [Morocco A1 road map.png](https://commons.wikimedia.org/wiki/File:Morocco_A1_road_map.png) | سمير تامر | CC BY-SA 4.0 |
 | [Morocco relief location map.jpg](https://commons.wikimedia.org/wiki/File:Morocco_relief_location_map.jpg) | Eric Gaba (Sting - fr:Sting) | CC BY-SA 3.0 |
 | [Moroni harbour (2).jpg](https://commons.wikimedia.org/wiki/File:Moroni_harbour_(2).jpg) | Woodlouse | CC BY-SA 2.0 |
 | [Morsetaste.jpg](https://commons.wikimedia.org/wiki/File:Morsetaste.jpg) | Hp.Baumeler | CC BY-SA 4.0 |
@@ -4224,6 +4424,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [MoshkovVI SrazhLeypcigomGRM.jpg](https://commons.wikimedia.org/wiki/File:MoshkovVI_SrazhLeypcigomGRM.jpg) | Vladimir Moshkov | Public domain |
 | [Mosque Bibi Khanum (5).JPG](https://commons.wikimedia.org/wiki/File:Mosque_Bibi_Khanum_(5).JPG) | Bobyrr | CC BY-SA 4.0 |
 | [Mosquée Al-Azhar.jpg](https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Al-Azhar.jpg) | Wildoo78 | CC BY-SA 4.0 |
+| [Most Poniatowskiego nocą.jpg](https://commons.wikimedia.org/wiki/File:Most_Poniatowskiego_noc%C4%85.jpg) | Łukasz Młodziński | CC BY-SA 3.0 pl |
 | [Motorway M1 Yorkshire 2007-08-13.jpg](https://commons.wikimedia.org/wiki/File:Motorway_M1_Yorkshire_2007-08-13.jpg) | Klaus with K | CC BY-SA 3.0 |
 | [Mount Ararat and the Yerevan skyline in spring (28mm).jpg](https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Yerevan_skyline_in_spring_(28mm).jpg) | Սէրուժ Ուրիշեան (Serouj Ourishian) | CC BY 4.0 |
 | [Mount Washington Hotel 2003.JPG](https://commons.wikimedia.org/wiki/File:Mount_Washington_Hotel_2003.JPG) | Sven Klippel | CC BY-SA 2.5 |
@@ -4233,6 +4434,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mr. Vo Nguyen Giap.jpg](https://commons.wikimedia.org/wiki/File:Mr._Vo_Nguyen_Giap.jpg) | Unknown authorUnknown author | Public domain |
 | [Mrplandreform1.jpg](https://commons.wikimedia.org/wiki/File:Mrplandreform1.jpg) | Unknown authorUnknown author | Public domain |
 | [Mtskheta-10-von Jvari-Kirche-Araqvi-Mtkvari-2019-gje.jpg](https://commons.wikimedia.org/wiki/File:Mtskheta-10-von_Jvari-Kirche-Araqvi-Mtkvari-2019-gje.jpg) | Gerd Eichmann | CC BY-SA 4.0 |
+| [Mubarak Peace Bridge.jpg](https://commons.wikimedia.org/wiki/File:Mubarak_Peace_Bridge.jpg) | U.S. Navy photo by Mass Communications Specialist 2nd Class Pedro A. Rodriguez (RELEASED) | Public domain |
 | [Mugshot of Abu Bakr al-Baghdadi, 2004.jpg](https://commons.wikimedia.org/wiki/File:Mugshot_of_Abu_Bakr_al-Baghdadi%2C_2004.jpg) | U.S Army | Public domain |
 | [Mugunghwa-ho.jpg](https://commons.wikimedia.org/wiki/File:Mugunghwa-ho.jpg) | Minseong Kim This photo was taken with Canon EOS 550D | CC BY-SA 4.0 |
 | [Muhammad I Granada cropped CSM 185 (187) 2.jpg](https://commons.wikimedia.org/wiki/File:Muhammad_I_Granada_cropped_CSM_185_(187)_2.jpg) | Attributed to Alfonso X of Castile, 13th century | Public domain |
@@ -4240,9 +4442,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Muhammad bin Tughlaq crop.jpg](https://commons.wikimedia.org/wiki/File:Muhammad_bin_Tughlaq_crop.jpg) | Unknown authorUnknown author | Public domain |
 | [Mukden 1931 japan shenyang.jpg](https://commons.wikimedia.org/wiki/File:Mukden_1931_japan_shenyang.jpg) | Unknown authorUnknown author | Public domain |
 | [Multilingual sign at Ainu Museum (Shiraoi).JPG](https://commons.wikimedia.org/wiki/File:Multilingual_sign_at_Ainu_Museum_(Shiraoi).JPG) | Abasaa | Public domain |
+| [Mumbai Airport.jpg](https://commons.wikimedia.org/wiki/File:Mumbai_Airport.jpg) | Alex Graves from Lugano, Switzerland | CC BY-SA 2.0 |
+| [Mumbai Harbour, India, Ships in Mumbai Harbour 2.jpg](https://commons.wikimedia.org/wiki/File:Mumbai_Harbour%2C_India%2C_Ships_in_Mumbai_Harbour_2.jpg) | Vyacheslav Argenberg | CC BY 4.0 |
 | [Mumtaz Mahal.jpg](https://commons.wikimedia.org/wiki/File:Mumtaz_Mahal.jpg) | — | Public domain |
 | [Munchen collage.jpg](https://commons.wikimedia.org/wiki/File:Munchen_collage.jpg) | Alphasinus | CC BY-SA 3.0 |
 | [Munich Agreement Bundesarchiv Bild 183-R69173.jpg](https://commons.wikimedia.org/wiki/File:Munich_Agreement_Bundesarchiv_Bild_183-R69173.jpg) | Unknown authorUnknown author | CC BY-SA 3.0 de |
+| [Munich Airport logo 2024.svg](https://commons.wikimedia.org/wiki/File:Munich_Airport_logo_2024.svg) | Unknown authorUnknown author | Public domain |
 | [Munich conference(1938).png](https://commons.wikimedia.org/wiki/File:Munich_conference(1938).png) | Mareček2000 | CC BY-SA 4.0 |
 | [Munich montage.png](https://commons.wikimedia.org/wiki/File:Munich_montage.png) | Foxy1219(montage) | CC BY-SA 3.0 |
 | [MunichIsraeliOlympicFront.jpg](https://commons.wikimedia.org/wiki/File:MunichIsraeliOlympicFront.jpg) | ProhibitOnions at English Wikipedia | CC BY-SA 3.0 |
@@ -4258,6 +4463,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Mwamongu water source.jpg](https://commons.wikimedia.org/wiki/File:Mwamongu_water_source.jpg) | Bob Metcalf | Public domain |
 | [My Lai massacre woman and children.jpg](https://commons.wikimedia.org/wiki/File:My_Lai_massacre_woman_and_children.jpg) | Ronald L. Haeberle | Public domain |
 | [My Lai massacre.jpg](https://commons.wikimedia.org/wiki/File:My_Lai_massacre.jpg) | Ronald L. Haeberle | Public domain |
+| [My Thuan Bridge 2.jpg](https://commons.wikimedia.org/wiki/File:My_Thuan_Bridge_2.jpg) | Jame Healy | CC BY-SA 2.0 |
 | [Mysore Palace, India (photo - Jim Ankan Deka).jpg](https://commons.wikimedia.org/wiki/File:Mysore_Palace%2C_India_(photo_-_Jim_Ankan_Deka).jpg) | Jim Ankan Deka | CC BY-SA 3.0 |
 | [MysticalMraukU.jpg](https://commons.wikimedia.org/wiki/File:MysticalMraukU.jpg) | Jmhullot | CC BY 3.0 |
 | [Münster, Historisches Rathaus -- 2014 -- 6855.jpg](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
@@ -4294,6 +4500,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Naha Shuri Castle51s3s4200.jpg](https://commons.wikimedia.org/wiki/File:Naha_Shuri_Castle51s3s4200.jpg) | 663highland | CC BY 2.5 |
 | [Nairobi, view from KICC.JPG](https://commons.wikimedia.org/wiki/File:Nairobi%2C_view_from_KICC.JPG) | Daryona | CC BY-SA 3.0 |
 | [Nakaogo, Hasami 01.jpg](https://commons.wikimedia.org/wiki/File:Nakaogo%2C_Hasami_01.jpg) | STA3816 | CC BY-SA 4.0 |
+| [Nakasendo Highway, Japan 2003.jpg](https://commons.wikimedia.org/wiki/File:Nakasendo_Highway%2C_Japan_2003.jpg) | — | Copyrighted free use |
 | [Nakijin Village Office 202408.jpg](https://commons.wikimedia.org/wiki/File:Nakijin_Village_Office_202408.jpg) | Kugel~commonswiki | CC BY-SA 4.0 |
 | [Nakijin Village Office.jpg](https://commons.wikimedia.org/wiki/File:Nakijin_Village_Office.jpg) | ja:user:Hykw-a4 | CC BY-SA 3.0 |
 | [Nalanda University India ruins.jpg](https://commons.wikimedia.org/wiki/File:Nalanda_University_India_ruins.jpg) | — | CC BY 2.0 |
@@ -4376,12 +4583,15 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [New York Draft Riots - fighting.jpg](https://commons.wikimedia.org/wiki/File:New_York_Draft_Riots_-_fighting.jpg) | — | Public domain |
 | [New York Public Library, Spencer Collection Turk. MS. 3 Siyar-i Nabî fol. 286r Jibril delivers to Muhammad a message from God telling him to leave Makka for Madina.jpg](https://commons.wikimedia.org/wiki/File:New_York_Public_Library%2C_Spencer_Collection_Turk._MS._3_Siyar-i_Nab%C3%AE_fol._286r_Jibril_delivers_to_Muhammad_a_message_from_God_telling_him_to_leave_Makka_for_Madina.jpg) | Unknown authorUnknown author | Public domain |
 | [New Zealand soldier with POWs (35839072545).png](https://commons.wikimedia.org/wiki/File:New_Zealand_soldier_with_POWs_(35839072545).png) | Cassowary Colorizations | CC BY 2.0 |
+| [New-york-bay.jpg](https://commons.wikimedia.org/wiki/File:New-york-bay.jpg) | Tysto | Public domain |
 | [NewBelfastCollage.jpg](https://commons.wikimedia.org/wiki/File:NewBelfastCollage.jpg) | Users of Wikipedia and Wikiemedia Commons | CC BY-SA 3.0 |
 | [Newly constructed gates and monuments in Ghazni - 130422-A-TB205-027.jpg](https://commons.wikimedia.org/wiki/File:Newly_constructed_gates_and_monuments_in_Ghazni_-_130422-A-TB205-027.jpg) | Staff Sgt. Jerry Griffis | Public domain |
 | [Nexco east logo.svg](https://commons.wikimedia.org/wiki/File:Nexco_east_logo.svg) | East Nippon Expressway Company Limited | CC BY 2.5 |
 | [Ngo Dinh Diem 25 November 1954.jpg](https://commons.wikimedia.org/wiki/File:Ngo_Dinh_Diem_25_November_1954.jpg) | U.S. Information Agency. Bureau of Programs. Press and Publications Service. Publications  | Public domain |
+| [Ngurah Rai Internasional Airport Welcome Sign.jpg](https://commons.wikimedia.org/wiki/File:Ngurah_Rai_Internasional_Airport_Welcome_Sign.jpg) | Softwarestatistik | CC BY-SA 4.0 |
 | [Nguyen Trai.jpg](https://commons.wikimedia.org/wiki/File:Nguyen_Trai.jpg) | Unknown authorUnknown author | Public domain |
 | [Nguyen hoang.jpg](https://commons.wikimedia.org/wiki/File:Nguyen_hoang.jpg) | Nguyễn Hoàng Quý | CC BY-SA 4.0 |
+| [Nhat Tan Bridge at night 2016.jpg](https://commons.wikimedia.org/wiki/File:Nhat_Tan_Bridge_at_night_2016.jpg) | cloud.shepherd | CC BY 2.0 |
 | [Niagara Falls, New York from Skylon Tower.jpg](https://commons.wikimedia.org/wiki/File:Niagara_Falls%2C_New_York_from_Skylon_Tower.jpg) | No machine-readable author provided. Mav assumed (based on copyright claims). | CC BY-SA 2.5 |
 | [Niamey from grand mosque theatre 2006.jpg](https://commons.wikimedia.org/wiki/File:Niamey_from_grand_mosque_theatre_2006.jpg) | Roland Huziaker | CC BY-SA 2.0 |
 | [Nicaea icon.jpg](https://commons.wikimedia.org/wiki/File:Nicaea_icon.jpg) | Unknown authorUnknown author | Public domain |
@@ -4395,11 +4605,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Niebla muralla y río Tinto.jpg](https://commons.wikimedia.org/wiki/File:Niebla_muralla_y_r%C3%ADo_Tinto.jpg) | FJavier GómezL | CC BY-SA 4.0 |
 | [Niederlegung Reichskrone Seite 1.jpg](https://commons.wikimedia.org/wiki/File:Niederlegung_Reichskrone_Seite_1.jpg) | Franz II. | Public domain |
 | [Night View of Badshahi Mosque (King’s Mosque).jpg](https://commons.wikimedia.org/wiki/File:Night_View_of_Badshahi_Mosque_(King%E2%80%99s_Mosque).jpg) | Muhammad Ashar | CC BY-SA 3.0 |
+| [Nihondaira stadium20090412a.jpg](https://commons.wikimedia.org/wiki/File:Nihondaira_stadium20090412a.jpg) | Waka77 | Public domain |
 | [Nijo Castle.jpg](https://commons.wikimedia.org/wiki/File:Nijo_Castle.jpg) | Keith Pomakis | CC BY-SA 2.5 |
 | [Nikita Pustosviat. Dispute on the Confession of Faith.jpg](https://commons.wikimedia.org/wiki/File:Nikita_Pustosviat._Dispute_on_the_Confession_of_Faith.jpg) | Vasily Perov | Public domain |
 | [Nikkei 225 Index.webp](https://commons.wikimedia.org/wiki/File:Nikkei_225_Index.webp) | Wikideas1 | CC0 |
 | [Nimrud 081119-F-5855M-033.jpg](https://commons.wikimedia.org/wiki/File:Nimrud_081119-F-5855M-033.jpg) | Staff Sgt. JoAnn Makinano | Public domain |
 | [Nineveh mashki gate from west.JPG](https://commons.wikimedia.org/wiki/File:Nineveh_mashki_gate_from_west.JPG) | Photo by Fredarch. | CC BY-SA 3.0 |
+| [Ningbo montage.jpg](https://commons.wikimedia.org/wiki/File:Ningbo_montage.jpg) | Juncture of three main rivers in Ningbo China.jpg: Jiong Sheng from Winchester, United Kin | CC BY-SA 3.0 |
 | [Nisa.jpg](https://commons.wikimedia.org/wiki/File:Nisa.jpg) | flydime | CC BY 2.0 |
 | [Nishapur Panorama at north view.jpg](https://commons.wikimedia.org/wiki/File:Nishapur_Panorama_at_north_view.jpg) | user:sonia sevilla | Public domain |
 | [Nittyousyukoujouki kanren MAP.JPG](https://commons.wikimedia.org/wiki/File:Nittyousyukoujouki_kanren_MAP.JPG) | — | Public domain |
@@ -4409,8 +4621,10 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Nizwa (7).jpg](https://commons.wikimedia.org/wiki/File:Nizwa_(7).jpg) | Andries Oudshoorn | CC BY-SA 2.0 |
 | [No Smoking.svg](https://commons.wikimedia.org/wiki/File:No_Smoking.svg) | Developed by AIGA. | Public domain |
 | [No image available.svg](https://commons.wikimedia.org/wiki/File:No_image_available.svg) | Cburnett | Public domain |
+| [Nodeulseom (14005438206).jpg](https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg) | travel oriented from Seoul, South Korea | CC BY-SA 2.0 |
 | [Nofretete Neues Museum.jpg](https://commons.wikimedia.org/wiki/File:Nofretete_Neues_Museum.jpg) | Philip Pikart | CC BY-SA 3.0 |
 | [Nogay Horde.svg](https://commons.wikimedia.org/wiki/File:Nogay_Horde.svg) | Nogaju_orda.svg: Ausis derivative work: Hoodinski (talk) | CC BY-SA 3.0 |
+| [Noi Bai International Airport Terminal 2 Night View.JPG](https://commons.wikimedia.org/wiki/File:Noi_Bai_International_Airport_Terminal_2_Night_View.JPG) | Christakis Mina | CC BY-SA 4.0 |
 | [Nokalakevi99.jpg](https://commons.wikimedia.org/wiki/File:Nokalakevi99.jpg) | Lika (ლიკა) | Public domain |
 | [Noménoë (Tenniel).png](https://commons.wikimedia.org/wiki/File:Nom%C3%A9no%C3%AB_(Tenniel).png) | John Tenniel / Joseph Swain | Public domain |
 | [Noor 1 and 2 - Ouarzazate Solar Power Station (48962353822).jpg](https://commons.wikimedia.org/wiki/File:Noor_1_and_2_-_Ouarzazate_Solar_Power_Station_(48962353822).jpg) | Richard Allaway | CC BY 2.0 |
@@ -4458,12 +4672,15 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Nyamata Memorial Site 13.jpg](https://commons.wikimedia.org/wiki/File:Nyamata_Memorial_Site_13.jpg) | Fanny Schertzer | CC BY-SA 3.0 |
 | [NyayM.jpg](https://commons.wikimedia.org/wiki/File:NyayM.jpg) | Bracknell | Public domain |
 | [O combate em Canudos entre as tropas legaes e os fanaticos de Antonio Conselheiro. Morte gloriosa do bravo capitão Salomão defendendo uma peça de artilharia.jpg](https://commons.wikimedia.org/wiki/File:O_combate_em_Canudos_entre_as_tropas_legaes_e_os_fanaticos_de_Antonio_Conselheiro._Morte_gloriosa_do_bravo_capit%C3%A3o_Salom%C3%A3o_defendendo_uma_pe%C3%A7a_de_artilharia.jpg) | Angelo Agostini | Public domain |
+| [O'Hare International Airport (Iss069e037725) (cropped).jpg](https://commons.wikimedia.org/wiki/File:O'Hare_International_Airport_(Iss069e037725)_(cropped).jpg) | NASA Johnson Space Center | Public domain |
 | [O'zbekcha.png](https://commons.wikimedia.org/wiki/File:O'zbekcha.png) | Dofraaa | CC0 |
 | [OECD Tax revenue.svg](https://commons.wikimedia.org/wiki/File:OECD_Tax_revenue.svg) | Yuasan | CC0 |
 | [OM Knyaginya Olga2.jpg](https://commons.wikimedia.org/wiki/File:OM_Knyaginya_Olga2.jpg) | Aleksey Yablonskiy | CC BY-SA 3.0 |
 | [ONCF Al Boraq at Tangier Terminus.jpg](https://commons.wikimedia.org/wiki/File:ONCF_Al_Boraq_at_Tangier_Terminus.jpg) | إيان | CC BY-SA 4.0 |
 | [ORANGE-centreville aerienne.jpg](https://commons.wikimedia.org/wiki/File:ORANGE-centreville_aerienne.jpg) | Jeanlouiszimmermann | CC BY-SA 3.0 |
+| [ORD as seen from AA1984 5-17-2023.jpg](https://commons.wikimedia.org/wiki/File:ORD_as_seen_from_AA1984_5-17-2023.jpg) | Mahargg | CC BY-SA 4.0 |
 | [Oak Ridge National Laboratory Aerial View.jpg](https://commons.wikimedia.org/wiki/File:Oak_Ridge_National_Laboratory_Aerial_View.jpg) | Oak Ridge Office of Environmental Management, U.S. Department of Energy | Public domain |
+| [Oakland Bay Bridge Western Part.jpg](https://commons.wikimedia.org/wiki/File:Oakland_Bay_Bridge_Western_Part.jpg) | ChristianSchd | CC BY-SA 3.0 |
 | [Oberschlesien 1921.png](https://commons.wikimedia.org/wiki/File:Oberschlesien_1921.png) | Ulamm | CC BY 3.0 |
 | [Obninsk 2021.jpg](https://commons.wikimedia.org/wiki/File:Obninsk_2021.jpg) | Philip Alon | CC BY-SA 4.0 |
 | [Obrona Pragi 1794.JPG](https://commons.wikimedia.org/wiki/File:Obrona_Pragi_1794.JPG) | — | Public domain |
@@ -4498,6 +4715,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Old Warren County Courthouse.jpg](https://commons.wikimedia.org/wiki/File:Old_Warren_County_Courthouse.jpg) | OzarksRazorback | CC BY-SA 4.0 |
 | [Old cathedral of Kaliningrad in Russia.jpg](https://commons.wikimedia.org/wiki/File:Old_cathedral_of_Kaliningrad_in_Russia.jpg) | Gumerov Ildar | Public domain |
 | [Old city of Maskat.jpg](https://commons.wikimedia.org/wiki/File:Old_city_of_Maskat.jpg) | Leon petrosyan | CC BY-SA 4.0 |
+| [Old severn bridge small.jpg](https://commons.wikimedia.org/wiki/File:Old_severn_bridge_small.jpg) | Sam at English Wikipedia | Public domain |
 | [Old town of dubrovnik.jpg](https://commons.wikimedia.org/wiki/File:Old_town_of_dubrovnik.jpg) | gari.baldi | CC BY-SA 2.0 |
 | [Oldhanseong-seoul.png](https://commons.wikimedia.org/wiki/File:Oldhanseong-seoul.png) | Finefir2001 | CC BY 3.0 |
 | [Oliver Cromwell by Samuel Cooper.jpg](https://commons.wikimedia.org/wiki/File:Oliver_Cromwell_by_Samuel_Cooper.jpg) | After Samuel Cooper | Public domain |
@@ -4510,6 +4728,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Omdurman2.jpg](https://commons.wikimedia.org/wiki/File:Omdurman2.jpg) | Unknown authorUnknown author | Public domain |
 | [Omsk Collage 2016.png](https://commons.wikimedia.org/wiki/File:Omsk_Collage_2016.png) | Крылов Иван, Siberiano, PetarM, LittleDrakon | CC BY-SA 4.0 |
 | [Omsk city 02.jpg](https://commons.wikimedia.org/wiki/File:Omsk_city_02.jpg) | Ninaras | CC BY 4.0 |
+| [On final approach to RWY09 at Algiers Airport.jpg](https://commons.wikimedia.org/wiki/File:On_final_approach_to_RWY09_at_Algiers_Airport.jpg) | Ercan Karakas | GFDL |
 | [One child policy.jpg](https://commons.wikimedia.org/wiki/File:One_child_policy.jpg) | Venus | CC BY 2.0 |
 | [Onin-War-1467-1477-The-Battle-of-Onin-by-Utagawa-Yoshitora.png](https://commons.wikimedia.org/wiki/File:Onin-War-1467-1477-The-Battle-of-Onin-by-Utagawa-Yoshitora.png) | Utagawa Yoshitora | Public domain |
 | [Onofrio Palumbo - Masaniello.jpg](https://commons.wikimedia.org/wiki/File:Onofrio_Palumbo_-_Masaniello.jpg) | Attributed to Onofrio Palumbo | Public domain |
@@ -4544,12 +4763,14 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Oshi no ran1.jpg](https://commons.wikimedia.org/wiki/File:Oshi_no_ran1.jpg) | Unknown authorUnknown author | Public domain |
 | [Oshio Heihachiro.jpg](https://commons.wikimedia.org/wiki/File:Oshio_Heihachiro.jpg) | Kikuchi Yōsai | Public domain |
 | [Oslo newer montage 2013.png](https://commons.wikimedia.org/wiki/File:Oslo_newer_montage_2013.png) | Jonipoon | CC BY-SA 3.0 |
+| [Osman Gazi Bridge1.JPG](https://commons.wikimedia.org/wiki/File:Osman_Gazi_Bridge1.JPG) | Glabb | CC BY-SA 3.0 |
 | [Osteraufstand - Dublin - Barrikade.jpg](https://commons.wikimedia.org/wiki/File:Osteraufstand_-_Dublin_-_Barrikade.jpg) | Unknown authorUnknown author | Public domain |
 | [Ostrowiec Solidarnosc 20100815.jpg](https://commons.wikimedia.org/wiki/File:Ostrowiec_Solidarnosc_20100815.jpg) | Krugerr | CC BY-SA 4.0 |
 | [Osumi island ja.png](https://commons.wikimedia.org/wiki/File:Osumi_island_ja.png) | Jugger90 | Public domain |
 | [Otranto dal bastione dei Pelasgi.jpg](https://commons.wikimedia.org/wiki/File:Otranto_dal_bastione_dei_Pelasgi.jpg) | Freddyballo | CC BY-SA 3.0 |
 | [Ottawa Montage 2020.jpg](https://commons.wikimedia.org/wiki/File:Ottawa_Montage_2020.jpg) | Allice Hunter | CC BY-SA 4.0 |
 | [Otto von Bismarck 1885 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Otto_von_Bismarck_1885_(cropped).jpg) | Unknown authorUnknown author | Public domain |
+| [Ottoman Istanbul - en.svg](https://commons.wikimedia.org/wiki/File:Ottoman_Istanbul_-_en.svg) | Kaidor (Russian original), Redx360 (English translation) | CC BY-SA 3.0 |
 | [Overhead view of Dazaifu metro ruin taken from Mt.Iwaya that is 281ms high located in about 3kms to the south.jpg](https://commons.wikimedia.org/wiki/File:Overhead_view_of_Dazaifu_metro_ruin_taken_from_Mt.Iwaya_that_is_281ms_high_located_in_about_3kms_to_the_south.jpg) | Heartoftheworld | CC BY-SA 3.0 |
 | [Oviedo panoramico.jpg](https://commons.wikimedia.org/wiki/File:Oviedo_panoramico.jpg) | — | CC BY-SA 3.0 |
 | [Owain Glyndŵr at Cardiff City Hall.jpg](https://commons.wikimedia.org/wiki/File:Owain_Glynd%C5%B5r_at_Cardiff_City_Hall.jpg) | Seth Whales | Public domain |
@@ -4558,6 +4779,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [P1050763 Louvre code Hammurabi face rwk.JPG](https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG) | Mbzt | CC BY 3.0 |
 | [P1130119-1.JPG](https://commons.wikimedia.org/wiki/File:P1130119-1.JPG) | Nick Grapsy | CC BY-SA 4.0 |
 | [P20260731DT-1412.jpg](https://commons.wikimedia.org/wiki/File:P20260731DT-1412.jpg) | The White House | Public domain |
+| [P504-RUS.svg](https://commons.wikimedia.org/wiki/File:P504-RUS.svg) | Miko101 | Public domain |
 | [PA120228 Pravia.jpg](https://commons.wikimedia.org/wiki/File:PA120228_Pravia.jpg) | Luis Lafuente Agudín | CC BY-SA 4.0 |
 | [PALACIO LEGISLATIVO 01.JPG](https://commons.wikimedia.org/wiki/File:PALACIO_LEGISLATIVO_01.JPG) | Eduardo Ruggieri | CC BY-SA 3.0 |
 | [PARTS OF THE SOVIET ARMY IN MAOKA.jpg](https://commons.wikimedia.org/wiki/File:PARTS_OF_THE_SOVIET_ARMY_IN_MAOKA.jpg) | Unknown authorUnknown author | Public domain |
@@ -4565,6 +4787,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [PGM-19A Jupiter missile-02.jpg](https://commons.wikimedia.org/wiki/File:PGM-19A_Jupiter_missile-02.jpg) | USAF | Public domain |
 | [PK Karachi asv2020-02 img22 Chundrigar Road.jpg](https://commons.wikimedia.org/wiki/File:PK_Karachi_asv2020-02_img22_Chundrigar_Road.jpg) | A.Savin | FAL |
 | [PK Thatta asv2020-02 img24 Makli Necropolis.jpg](https://commons.wikimedia.org/wiki/File:PK_Thatta_asv2020-02_img24_Makli_Necropolis.jpg) | A.Savin | FAL |
+| [PK-GJA Garuda Convair 990 Coronado Schiphol 1968.jpg](https://commons.wikimedia.org/wiki/File:PK-GJA_Garuda_Convair_990_Coronado_Schiphol_1968.jpg) | Jan Buisman | CC BY-SA 2.0 |
 | [PKWN manifest.jpg](https://commons.wikimedia.org/wiki/File:PKWN_manifest.jpg) | Unknown authorUnknown author | Public domain |
 | [PKiN widziany z WFC.jpg](https://commons.wikimedia.org/wiki/File:PKiN_widziany_z_WFC.jpg) | Nnb | CC BY-SA 4.0 |
 | [PLA Enters Peking.jpg](https://commons.wikimedia.org/wiki/File:PLA_Enters_Peking.jpg) | The original uploader was Aukingluntom at Chinese Wikipedia. | Public domain |
@@ -4583,6 +4806,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Pabellon de japon expo 92.jpg](https://commons.wikimedia.org/wiki/File:Pabellon_de_japon_expo_92.jpg) | Sitomon | CC BY-SA 2.0 |
 | [Pacific war tile picture.png](https://commons.wikimedia.org/wiki/File:Pacific_war_tile_picture.png) | Pacific-War---tile-picyture.png: Tompot derivative work: F l a n k e r (talk) | CC BY-SA 3.0 |
 | [Pacioli.jpg](https://commons.wikimedia.org/wiki/File:Pacioli.jpg) | Attributed to Jacopo de' Barbari | Public domain |
+| [Paesaggio dell'Appia antica.jpg](https://commons.wikimedia.org/wiki/File:Paesaggio_dell'Appia_antica.jpg) | LuisaV72 | CC BY-SA 4.0 |
 | [Painting of Guru Gobind Singh, found within the Anandpuri Hazuri Bir codex of the Dasam Granth, ca.1690's–1700's (detail).jpg](https://commons.wikimedia.org/wiki/File:Painting_of_Guru_Gobind_Singh%2C_found_within_the_Anandpuri_Hazuri_Bir_codex_of_the_Dasam_Granth%2C_ca.1690's%E2%80%931700's_(detail).jpg) | Unknown authorUnknown author | Public domain |
 | [Painting of foreign delegation in the tomb of Khnumhotep II circa 1900 BCE (Detail mentioning "Abisha the Hyksos" in hieroglyphs).jpg](https://commons.wikimedia.org/wiki/File:Painting_of_foreign_delegation_in_the_tomb_of_Khnumhotep_II_circa_1900_BCE_(Detail_mentioning_%22Abisha_the_Hyksos%22_in_hieroglyphs).jpg) | Macquarie University | Public domain |
 | [Paintings of Napoleon I on the battlefield.jpg](https://commons.wikimedia.org/wiki/File:Paintings_of_Napoleon_I_on_the_battlefield.jpg) | Angelus | Public domain |
@@ -4601,6 +4825,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Palmira al capvespre (2495033007).jpg](https://commons.wikimedia.org/wiki/File:Palmira_al_capvespre_(2495033007).jpg) | Quim Bahí from Catalunya | CC BY-SA 2.0 |
 | [Palomares H-Bomb Incident.jpg](https://commons.wikimedia.org/wiki/File:Palomares_H-Bomb_Incident.jpg) | U.S. Navy, Courtesy of the Natural Resources Defense Council | Public domain |
 | [Pamphlet dutch tulipomania 1637.jpg](https://commons.wikimedia.org/wiki/File:Pamphlet_dutch_tulipomania_1637.jpg) | — | Public domain |
+| [Pan-AmericanHighway001.jpg](https://commons.wikimedia.org/wiki/File:Pan-AmericanHighway001.jpg) | Kwb | Public domain |
+| [PanAmericanHwy.png](https://commons.wikimedia.org/wiki/File:PanAmericanHwy.png) | Created by en:User:Seaweege and released to PD | Copyrighted free use |
+| [Panama Canal Map EN.png](https://commons.wikimedia.org/wiki/File:Panama_Canal_Map_EN.png) | Thoroe | CC BY-SA 2.0 |
 | [Panama City Skyline 1.jpg](https://commons.wikimedia.org/wiki/File:Panama_City_Skyline_1.jpg) | Dr. Thomas Liptak | CC BY-SA 4.0 |
 | [Paneur grenzübergang 130609.JPG](https://commons.wikimedia.org/wiki/File:Paneur_grenz%C3%BCbergang_130609.JPG) | Cuchulainn 17:15, 20. Jun. 2009 (CEST) | Public domain |
 | [Pangang 2020A.jpg](https://commons.wikimedia.org/wiki/File:Pangang_2020A.jpg) | Zhangzj cet | CC BY-SA 4.0 |
@@ -4628,6 +4855,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Parana Montage.jpg](https://commons.wikimedia.org/wiki/File:Parana_Montage.jpg) | Paraná_17.JPG: User:Facumissing Cathedral_Paraná_Argentina.jpg: User:Emil--- [[:File:Paran | CC BY-SA 3.0 |
 | [Paris - Eiffelturm und Marsfeld2.jpg](https://commons.wikimedia.org/wiki/File:Paris_-_Eiffelturm_und_Marsfeld2.jpg) | Wladyslaw (Taxiarchos228) | CC BY 3.0 |
 | [Paris Aéroport logo.svg](https://commons.wikimedia.org/wiki/File:Paris_A%C3%A9roport_logo.svg) | agence H5 for the agence Babel | Public domain |
+| [Paris Champs Elysees westwards DSC03316.JPG](https://commons.wikimedia.org/wiki/File:Paris_Champs_Elysees_westwards_DSC03316.JPG) | David Monniaux | CC BY-SA 3.0 |
 | [Paris Peace Conference.jpg](https://commons.wikimedia.org/wiki/File:Paris_Peace_Conference.jpg) | Noël Dorville | Public domain |
 | [Paris1944.jpg](https://commons.wikimedia.org/wiki/File:Paris1944.jpg) | Jack Downey, U.S. Office of War Information | Public domain |
 | [Park Chung Hee (박정희) Presidential Portrait (cropped).jpg](https://commons.wikimedia.org/wiki/File:Park_Chung_Hee_(%EB%B0%95%EC%A0%95%ED%9D%AC)_Presidential_Portrait_(cropped).jpg) | Korea.net / Korean Culture and Information Service | CC BY-SA 2.0 |
@@ -4675,6 +4903,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Penghu County Montage.png](https://commons.wikimedia.org/wiki/File:Penghu_County_Montage.png) | Sleepingstar | CC BY-SA 3.0 |
 | [Penghu Great Bridge 20150619.jpg](https://commons.wikimedia.org/wiki/File:Penghu_Great_Bridge_20150619.jpg) | 翁維德 (Wei-Te Wong) | CC BY-SA 2.0 |
 | [Penghu Great Bridge.jpg](https://commons.wikimedia.org/wiki/File:Penghu_Great_Bridge.jpg) | Mark Yang | CC BY-SA 2.0 |
+| [Pennsylvania Turnpike logo.svg](https://commons.wikimedia.org/wiki/File:Pennsylvania_Turnpike_logo.svg) | Pennsylvania Turnpike Commission | Public domain |
+| [Pennsylvania Turnpike westbound.jpg](https://commons.wikimedia.org/wiki/File:Pennsylvania_Turnpike_westbound.jpg) | Jeffrey M. Vinocur | CC BY 2.5 |
 | [Pennukonda Fort Andhra (1).jpg](https://commons.wikimedia.org/wiki/File:Pennukonda_Fort_Andhra_(1).jpg) | Lvenkat | CC BY-SA 4.0 |
 | [Penthesilea Dubray cour Carree Louvre.jpg](https://commons.wikimedia.org/wiki/File:Penthesilea_Dubray_cour_Carree_Louvre.jpg) | — | CC BY 2.5 |
 | [Penthesilea.jpg](https://commons.wikimedia.org/wiki/File:Penthesilea.jpg) | Panegyrics of Granovetter | CC BY-SA 2.0 |
@@ -4697,6 +4927,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Phan Boi Chau.jpg](https://commons.wikimedia.org/wiki/File:Phan_Boi_Chau.jpg) | Unknown authorUnknown author | Public domain |
 | [Phan Chau Trinh.jpg](https://commons.wikimedia.org/wiki/File:Phan_Chau_Trinh.jpg) | Khánh Ký | Public domain |
 | [PhanBoiChau.jpg](https://commons.wikimedia.org/wiki/File:PhanBoiChau.jpg) | The original uploader was Huỳnh Tường Minh at Vietnamese Wikipedia. | Public domain |
+| [Phase 4 Dock of Beilun Port, 2015-04-11 01.jpg](https://commons.wikimedia.org/wiki/File:Phase_4_Dock_of_Beilun_Port%2C_2015-04-11_01.jpg) | Siyuwj | CC BY-SA 4.0 |
 | [Philadelphia Montage by Jleon 0310.jpg](https://commons.wikimedia.org/wiki/File:Philadelphia_Montage_by_Jleon_0310.jpg) | en:User:Jleon (Transfered by MSClaudiu/Original uploaded by Jleon) | CC BY-SA 3.0 |
 | [Philadelphia skyline 20240528 (cropped 2-1).jpg](https://commons.wikimedia.org/wiki/File:Philadelphia_skyline_20240528_(cropped_2-1).jpg) | 颐园居 | CC BY-SA 4.0 |
 | [Philadelphia skyline 20240528 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Philadelphia_skyline_20240528_(cropped).jpg) | 颐园居 | CC BY-SA 4.0 |
@@ -4710,6 +4941,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Photo-Hijikata-Toshizo-c1869.png](https://commons.wikimedia.org/wiki/File:Photo-Hijikata-Toshizo-c1869.png) | Tamoto Kenzō | Public domain |
 | [Photos of Rey, Iran.JPG](https://commons.wikimedia.org/wiki/File:Photos_of_Rey%2C_Iran.JPG) | Mixer:User:Alborzagros | CC BY-SA 4.0 |
 | [Phou si Luang Prabang Laos プーシーの丘 ラオス・ルアンプラバーン DSCF6777.jpg](https://commons.wikimedia.org/wiki/File:Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg) | 松岡明芳 | CC BY-SA 3.0 |
+| [Phra Phuttha Yodfa Bridge Pano.jpg](https://commons.wikimedia.org/wiki/File:Phra_Phuttha_Yodfa_Bridge_Pano.jpg) | This Photo was taken by Supanut Arunoprayote. Feel free to use any of my images, but pleas | CC BY 4.0 |
+| [Phuket International Airport, AOT Logo.svg](https://commons.wikimedia.org/wiki/File:Phuket_International_Airport%2C_AOT_Logo.svg) | Airports of Thailand | Public domain |
 | [Phật giáo Hòa Hảo.png](https://commons.wikimedia.org/wiki/File:Ph%E1%BA%ADt_gi%C3%A1o_H%C3%B2a_H%E1%BA%A3o.png) | Son Ngan Nguyen | CC BY-SA 4.0 |
 | [Piazza Garibaldi a Parma.jpg](https://commons.wikimedia.org/wiki/File:Piazza_Garibaldi_a_Parma.jpg) | — | CC BY-SA 3.0 |
 | [Piazza dei Cavalli Piacenza.JPG](https://commons.wikimedia.org/wiki/File:Piazza_dei_Cavalli_Piacenza.JPG) | Harrie Gielen | CC BY-SA 3.0 |
@@ -4745,6 +4978,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Plaza Italia station.jpg](https://commons.wikimedia.org/wiki/File:Plaza_Italia_station.jpg) | Buenos Aires Ciudad | CC BY 2.5 ar |
 | [Plaza Mayor De Madrid (215862629) edited.jpeg](https://commons.wikimedia.org/wiki/File:Plaza_Mayor_De_Madrid_(215862629)_edited.jpeg) | Francisco Anzola | CC BY 3.0 |
 | [Plaza Mayor de Lima-1.jpg](https://commons.wikimedia.org/wiki/File:Plaza_Mayor_de_Lima-1.jpg) | JulioKuLu | CC BY-SA 4.0 |
+| [Plaza de Armas, Arequipa 2006.jpg](https://commons.wikimedia.org/wiki/File:Plaza_de_Armas%2C_Arequipa_2006.jpg) | Hans Brian Brandsberg Berg | CC BY 2.0 |
 | [Plaza hotel.jpg](https://commons.wikimedia.org/wiki/File:Plaza_hotel.jpg) | — | Public domain |
 | [Plenary session during the Bandung Conference.png](https://commons.wikimedia.org/wiki/File:Plenary_session_during_the_Bandung_Conference.png) | Foreign Ministry of the Republic of Indonesia | Public domain |
 | [Plymouth Hoe.jpg](https://commons.wikimedia.org/wiki/File:Plymouth_Hoe.jpg) | Mark.murphy took this picture and this image was cropped by bsrboy. | CC BY 3.0 |
@@ -4761,7 +4995,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Polonnaruwa 02.jpg](https://commons.wikimedia.org/wiki/File:Polonnaruwa_02.jpg) | Bernard Gagnon | CC BY-SA 3.0 |
 | [Polska 992 - 1025.png](https://commons.wikimedia.org/wiki/File:Polska_992_-_1025.png) | Poznaniak, Popik | CC BY-SA 3.0 |
 | [Pondicherry Panorama 1.jpg](https://commons.wikimedia.org/wiki/File:Pondicherry_Panorama_1.jpg) | Karthik Easvur | CC BY-SA 3.0 |
+| [Pont Neuf Paris.jpg](https://commons.wikimedia.org/wiki/File:Pont_Neuf_Paris.jpg) | — | Public domain |
 | [Pont de Bir-Hakeim, may 2025.jpg](https://commons.wikimedia.org/wiki/File:Pont_de_Bir-Hakeim%2C_may_2025.jpg) | Finvd | CC BY-SA 4.0 |
+| [Pont de Normandie (1).jpg](https://commons.wikimedia.org/wiki/File:Pont_de_Normandie_(1).jpg) | Nicéphore | CC BY-SA 3.0 |
 | [Pont-canal de l'Orb004.JPG](https://commons.wikimedia.org/wiki/File:Pont-canal_de_l'Orb004.JPG) | Tournasol7 | CC BY-SA 3.0 |
 | [Ponte morandi crollato.jpg](https://commons.wikimedia.org/wiki/File:Ponte_morandi_crollato.jpg) | Salvatore1991 | Public domain |
 | [Pope Gregory VIII.jpg](https://commons.wikimedia.org/wiki/File:Pope_Gregory_VIII.jpg) | Artaud de Montor (1772–1849) | Public domain |
@@ -4773,7 +5009,14 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Port Said from air.jpg](https://commons.wikimedia.org/wiki/File:Port_Said_from_air.jpg) | Fleet Air Arm official photographer | Public domain |
 | [Port Vila aerial.jpg](https://commons.wikimedia.org/wiki/File:Port_Vila_aerial.jpg) | Phillip Capper from Wellington, New Zealand | CC BY 2.0 |
 | [Port of Futami, Chichijima, Ogasawara.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Futami%2C_Chichijima%2C_Ogasawara.jpg) | Si-take. at Japanese Wikipedia(しいたけ) | CC BY-SA 3.0 |
+| [Port of Incheon.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Incheon.jpg) | — | Public domain |
 | [Port of Keelung 20241105.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Keelung_20241105.jpg) | Heeheemalu | CC BY-SA 4.0 |
+| [Port of Kobe01s3780.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Kobe01s3780.jpg) | 663highland | CC BY 2.5 |
+| [Port of Liverpool Building Front.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Liverpool_Building_Front.jpg) | — | CC BY-SA 3.0 |
+| [Port of Los Angeles (2501768235).jpg](https://commons.wikimedia.org/wiki/File:Port_of_Los_Angeles_(2501768235).jpg) | Rennett Stowe from USA | CC BY 2.0 |
+| [Port of Shanghai, Yangshan Deep-water Harbour Zone, 02.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Shanghai%2C_Yangshan_Deep-water_Harbour_Zone%2C_02.jpg) | The original uploader was Alex Needham at English Wikipedia. | Public domain |
+| [Port of Valencia.jpg](https://commons.wikimedia.org/wiki/File:Port_of_Valencia.jpg) | Goodnighmoon | CC BY-SA 4.0 |
+| [Port said egypt (6).JPG](https://commons.wikimedia.org/wiki/File:Port_said_egypt_(6).JPG) | Mohamed kamal 1984 | CC BY-SA 3.0 |
 | [Portada Constitucion 1857.png](https://commons.wikimedia.org/wiki/File:Portada_Constitucion_1857.png) | Hpav7 | Public domain |
 | [Portada Original de la Constitucion Mexicana de 1917.png](https://commons.wikimedia.org/wiki/File:Portada_Original_de_la_Constitucion_Mexicana_de_1917.png) | Hpav7 | Public domain |
 | [Porthcurno Aerial photo TomCorser2005.jpg](https://commons.wikimedia.org/wiki/File:Porthcurno_Aerial_photo_TomCorser2005.jpg) | Tom Corser | CC BY-SA 2.0 uk |
@@ -4855,9 +5098,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Przywilej lokacyjny Krakowa.jpg](https://commons.wikimedia.org/wiki/File:Przywilej_lokacyjny_Krakowa.jpg) | Photo: Ignacy Krieger (1817-1889) | Public domain |
 | [Pskov Republic on the map.svg](https://commons.wikimedia.org/wiki/File:Pskov_Republic_on_the_map.svg) | Anonykitten | CC BY-SA 4.0 |
 | [Pskov asv07-2018 Kremlin before sunset.jpg](https://commons.wikimedia.org/wiki/File:Pskov_asv07-2018_Kremlin_before_sunset.jpg) | A.Savin | FAL |
+| [Pte ZAE1.jpg](https://commons.wikimedia.org/wiki/File:Pte_ZAE1.jpg) | Claudio Elias | Public domain |
 | [Public beheading of a communist during Shanghai massacre of 1927.jpg](https://commons.wikimedia.org/wiki/File:Public_beheading_of_a_communist_during_Shanghai_massacre_of_1927.jpg) | Unknown photographer | Public domain |
 | [Pudong Shanghai November 2017 panorama.jpg](https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg) | King of Hearts | CC BY-SA 4.0 |
+| [Puente Baluarte, carretera Durango-Mazatlán.jpg](https://commons.wikimedia.org/wiki/File:Puente_Baluarte%2C_carretera_Durango-Mazatl%C3%A1n.jpg) | 0+000 | CC BY 3.0 |
 | [Puente de la Mujer in 2026.jpg](https://commons.wikimedia.org/wiki/File:Puente_de_la_Mujer_in_2026.jpg) | Gonzabar77 | CC BY 4.0 |
+| [Puente del Alamillo.jpg](https://commons.wikimedia.org/wiki/File:Puente_del_Alamillo.jpg) | — | Public domain |
 | [Puerta de Behobia de Irun, bajo el ataque de las fuerzas Reales Irlandesas, el 17 de mayo de 1837.jpg](https://commons.wikimedia.org/wiki/File:Puerta_de_Behobia_de_Irun%2C_bajo_el_ataque_de_las_fuerzas_Reales_Irlandesas%2C_el_17_de_mayo_de_1837.jpg) | Thomas Lyde Hornbrook | Public domain |
 | [Puertadelsol2011.jpg](https://commons.wikimedia.org/wiki/File:Puertadelsol2011.jpg) | Fotograccion | CC BY-SA 3.0 |
 | [Puerto Madero, Buenos Aires (40689219792) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Puerto_Madero%2C_Buenos_Aires_(40689219792)_(cropped).jpg) | Deensel | CC BY 2.0 |
@@ -4874,9 +5120,12 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Pyeongchang 2018 Logo.svg](https://commons.wikimedia.org/wiki/File:Pyeongchang_2018_Logo.svg) | The original uploader was AxG at English Wikipedia. | Public domain |
 | [Pyongyang aerial view (15124608601).jpg](https://commons.wikimedia.org/wiki/File:Pyongyang_aerial_view_(15124608601).jpg) | Uri Tours | CC BY-SA 2.0 |
 | [Pyongyang montage.png](https://commons.wikimedia.org/wiki/File:Pyongyang_montage.png) | ASDFGHJ (talk) | CC BY-SA 2.0 |
+| [Pyongyang-Kaesong motorway.PNG](https://commons.wikimedia.org/wiki/File:Pyongyang-Kaesong_motorway.PNG) | — | CC BY-SA 3.0 |
 | [Pyotr Wrangel, portrait medium.jpg](https://commons.wikimedia.org/wiki/File:Pyotr_Wrangel%2C_portrait_medium.jpg) | — | Public domain |
 | [Pyruvate kinase protein domains.png](https://commons.wikimedia.org/wiki/File:Pyruvate_kinase_protein_domains.png) | Thomas Splettstoesser (www.scistyle.com) | CC BY-SA 3.0 |
 | [Pâris Gillet Louvre MR1863.jpg](https://commons.wikimedia.org/wiki/File:P%C3%A2ris_Gillet_Louvre_MR1863.jpg) | Marie-Lan Nguyen | Public domain |
+| [Péripherique Porte de le Muette.JPG](https://commons.wikimedia.org/wiki/File:P%C3%A9ripherique_Porte_de_le_Muette.JPG) | No machine-readable author provided. CaptainHaddock assumed (based on copyright claims). | CC BY-SA 3.0 |
+| [Périphérique, path to Le Millénaire shopping mall, Paris 2017.jpg](https://commons.wikimedia.org/wiki/File:P%C3%A9riph%C3%A9rique%2C_path_to_Le_Mill%C3%A9naire_shopping_mall%2C_Paris_2017.jpg) | Guilhem Vellut from Paris, France | CC BY 2.0 |
 | [Płock panorama.jpg](https://commons.wikimedia.org/wiki/File:P%C5%82ock_panorama.jpg) | Aquarius 24 | CC BY-SA 4.0 |
 | [Płowce 1331 Juliusz Kossak.jpeg](https://commons.wikimedia.org/wiki/File:P%C5%82owce_1331_Juliusz_Kossak.jpeg) | Juliusz Kossak | Public domain |
 | [Qadisiyyah.jpg](https://commons.wikimedia.org/wiki/File:Qadisiyyah.jpg) | Mir Sayyid Ali / Sultan Muhammad | CC BY-SA 4.0 |
@@ -4886,6 +5135,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Qing Dynasty 1820.png](https://commons.wikimedia.org/wiki/File:Qing_Dynasty_1820.png) | Pryaltonian | CC BY-SA 3.0 |
 | [Qingtuiweizhaoshu.JPG](https://commons.wikimedia.org/wiki/File:Qingtuiweizhaoshu.JPG) | 清遜帝 | Public domain |
 | [Qingzang railway Train 01.jpg](https://commons.wikimedia.org/wiki/File:Qingzang_railway_Train_01.jpg) | Jan Reurink | CC BY 2.0 |
+| [Qingzangxian.JPG](https://commons.wikimedia.org/wiki/File:Qingzangxian.JPG) | 张骐 | Public domain |
 | [Qinshihuang.jpg](https://commons.wikimedia.org/wiki/File:Qinshihuang.jpg) | Unknown artistUnknown artist | Public domain |
 | [Qinshihuangdi3.jpg](https://commons.wikimedia.org/wiki/File:Qinshihuangdi3.jpg) | — | Public domain |
 | [Qishlah Palace.jpg](https://commons.wikimedia.org/wiki/File:Qishlah_Palace.jpg) | Afas1407 | Public domain |
@@ -4908,6 +5158,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Queue at Bank to Exchange INR 500 and 1000 Notes - Salt Lake City - Kolkata 2016-11-10 02103.jpg](https://commons.wikimedia.org/wiki/File:Queue_at_Bank_to_Exchange_INR_500_and_1000_Notes_-_Salt_Lake_City_-_Kolkata_2016-11-10_02103.jpg) | Biswarup Ganguly | CC BY 3.0 |
 | [Quit india Movement Collage.png](https://commons.wikimedia.org/wiki/File:Quit_india_Movement_Collage.png) | Unknown authorUnknown author | CC0 |
 | [Quite summer evening in the port city Klaipeda.jpg](https://commons.wikimedia.org/wiki/File:Quite_summer_evening_in_the_port_city_Klaipeda.jpg) | Mantas Volungevicius | CC BY 2.0 |
+| [Quoclo1Amoi.JPG](https://commons.wikimedia.org/wiki/File:Quoclo1Amoi.JPG) | Bình Giang | Public domain |
 | [R6 noto earthquake wajima burned-out-asaichi-area 2024-02-17 10.jpg](https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_burned-out-asaichi-area_2024-02-17_10.jpg) | Hurohukidaikon | CC BY 4.0 |
 | [RAI 40-12 Sepid Dasht 1.jpg](https://commons.wikimedia.org/wiki/File:RAI_40-12_Sepid_Dasht_1.jpg) | Kabelleger / David Gubler | CC BY-SA 4.0 |
 | [RC4 vietnam.jpg](https://commons.wikimedia.org/wiki/File:RC4_vietnam.jpg) | Zósimo | CC BY-SA 3.0 |
@@ -4927,6 +5178,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [ROC Central Bank Seal.svg](https://commons.wikimedia.org/wiki/File:ROC_Central_Bank_Seal.svg) | 中華民國中央銀行, Central Bank of the Republic of China (Taiwan)／Draw by Bangardi This W3C-unspeci | Public domain |
 | [ROC Fabi.jpg](https://commons.wikimedia.org/wiki/File:ROC_Fabi.jpg) | ​中华民国中央银行 | Public domain |
 | [ROC Legislative Yuan Seal (2).svg](https://commons.wikimedia.org/wiki/File:ROC_Legislative_Yuan_Seal_(2).svg) | 立法院製作，SVG by Jack.T This W3C-unspecified vector image was created with Inkscape . | Public domain |
+| [ROC National Immigration Agency Seal.svg](https://commons.wikimedia.org/wiki/File:ROC_National_Immigration_Agency_Seal.svg) | 中華民國內政部移民署. National Immigration Agency, MOI, ROC | Public domain |
 | [ROC Quemoy.png](https://commons.wikimedia.org/wiki/File:ROC_Quemoy.png) | CIA (base map), Ran (derivative work) | CC BY-SA 3.0 |
 | [ROC Taiwan Area National Freeway Bureau Logo.svg](https://commons.wikimedia.org/wiki/File:ROC_Taiwan_Area_National_Freeway_Bureau_Logo.svg) | 由Lzmxya（討論/貢獻/維基百科用戶頁）擷取及轉換。 This W3C-unspecified vector image was created with Inkscape . | Public domain |
 | [ROC national flag and Fukien Provincial Hall main entrance (6701343053).jpg](https://commons.wikimedia.org/wiki/File:ROC_national_flag_and_Fukien_Provincial_Hall_main_entrance_(6701343053).jpg) | pedist | CC BY 2.0 |
@@ -4939,6 +5191,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Raid at elk lake.jpg](https://commons.wikimedia.org/wiki/File:Raid_at_elk_lake.jpg) | Archives of Ontario, C.H.J. Snider fonds, Reference Code F 1194 S 15000, I0015265. | Public domain |
 | [Raigad Fort-Rigad.JPG](https://commons.wikimedia.org/wiki/File:Raigad_Fort-Rigad.JPG) | Gbaadkar | CC BY-SA 3.0 |
 | [Railway network map of India - Schematic.svg](https://commons.wikimedia.org/wiki/File:Railway_network_map_of_India_-_Schematic.svg) | This Image was created by User:PlaneMad. If you are using the image under the creative com | CC BY-SA 3.0 |
+| [Rainbow Bridge (Tokyo) at night 8.jpg](https://commons.wikimedia.org/wiki/File:Rainbow_Bridge_(Tokyo)_at_night_8.jpg) | Kakidai | CC BY-SA 4.0 |
+| [Rainbow-Bridge (レインボーブリッジ) - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Rainbow-Bridge_(%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8)_-_panoramio.jpg) | yuukin | CC BY 3.0 |
 | [Raising a flag over the Reichstag - Restoration.jpg](https://commons.wikimedia.org/wiki/File:Raising_a_flag_over_the_Reichstag_-_Restoration.jpg) | Yevgeny Khaldei / Adam Cuerden | Public domain |
 | [Raising the Flag on Iwo Jima, larger - edit1.jpg](https://commons.wikimedia.org/wiki/File:Raising_the_Flag_on_Iwo_Jima%2C_larger_-_edit1.jpg) | Joe Rosenthal | Public domain |
 | [Raja Karna's Palace alias Karnasubarna at Murshidabad district in West Bengal.jpg](https://commons.wikimedia.org/wiki/File:Raja_Karna's_Palace_alias_Karnasubarna_at_Murshidabad_district_in_West_Bengal.jpg) | Amitabha Gupta | CC BY-SA 4.0 |
@@ -4950,6 +5204,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Rajiv chowk metro station 01.jpg](https://commons.wikimedia.org/wiki/File:Rajiv_chowk_metro_station_01.jpg) | Chandradhar yadav | CC BY-SA 4.0 |
 | [Rally for Gaza in Columbus, 2023-11-12 (8207).jpg](https://commons.wikimedia.org/wiki/File:Rally_for_Gaza_in_Columbus%2C_2023-11-12_(8207).jpg) | Becker1999 from Columbus, OH | CC BY 2.0 |
 | [Ram Janmbhoomi Mandir, Ayodhya Dham.jpg](https://commons.wikimedia.org/wiki/File:Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg) | Prime Minister's Office | GODL-India |
+| [Rama 8 Bridge at night 20261103.jpg](https://commons.wikimedia.org/wiki/File:Rama_8_Bridge_at_night_20261103.jpg) | DvTor8303 | CC0 |
 | [Rama in Adhyatma Ramayana.jpg](https://commons.wikimedia.org/wiki/File:Rama_in_Adhyatma_Ramayana.jpg) | Gita Press Gorakhpur | CC0 |
 | [RamessesIII-KhonsuTemple-Karnak.png](https://commons.wikimedia.org/wiki/File:RamessesIII-KhonsuTemple-Karnak.png) | Jon Bodsworth | Copyrighted free use |
 | [Ramkhamhaeng the Great (Sukhothai).jpg](https://commons.wikimedia.org/wiki/File:Ramkhamhaeng_the_Great_(Sukhothai).jpg) | ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย | Public domain |
@@ -4972,6 +5227,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Rawalpindi railway station 4.JPG](https://commons.wikimedia.org/wiki/File:Rawalpindi_railway_station_4.JPG) | Miiqbal | CC BY-SA 3.0 |
 | [Raycom InfoTech Park Building B (20250208170830).jpg](https://commons.wikimedia.org/wiki/File:Raycom_InfoTech_Park_Building_B_(20250208170830).jpg) | N509FZ | CC BY-SA 4.0 |
 | [Reading of the Manifest (Liberation of peasants) - Kustodiev, 1907.jpg](https://commons.wikimedia.org/wiki/File:Reading_of_the_Manifest_(Liberation_of_peasants)_-_Kustodiev%2C_1907.jpg) | Boris Kustodiev | Public domain |
+| [Real Alcázar de Sevilla, Sevilla (42052074324).jpg](https://commons.wikimedia.org/wiki/File:Real_Alc%C3%A1zar_de_Sevilla%2C_Sevilla_(42052074324).jpg) | FlyingCrimsonPig | CC BY 2.0 |
 | [Rebel meeting in Telangana Rebellion.jpg](https://commons.wikimedia.org/wiki/File:Rebel_meeting_in_Telangana_Rebellion.jpg) | Unknown author | Public domain |
 | [Rebelión cantonal.svg](https://commons.wikimedia.org/wiki/File:Rebeli%C3%B3n_cantonal.svg) | Conflictos en la I República Española.svg: Tyk Derivative work: Durero | CC BY-SA 3.0 |
 | [Rebelión de Las Alpujarras.png](https://commons.wikimedia.org/wiki/File:Rebeli%C3%B3n_de_Las_Alpujarras.png) | Tyk based on Image:Iberian Peninsula base map.svg created by Redtony | CC BY-SA 3.0 |
@@ -5032,6 +5288,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Rhineland Versailles treaty English.png](https://commons.wikimedia.org/wiki/File:Rhineland_Versailles_treaty_English.png) | Soerfm | CC BY-SA 4.0 |
 | [Rhineland.jpg](https://commons.wikimedia.org/wiki/File:Rhineland.jpg) | demonbug | Public domain |
 | [RhoemSpreti.jpg](https://commons.wikimedia.org/wiki/File:RhoemSpreti.jpg) | Unknown authorUnknown author | Public domain |
+| [Rialto 2025 4.jpg](https://commons.wikimedia.org/wiki/File:Rialto_2025_4.jpg) | kallerna | CC BY-SA 4.0 |
+| [Rialto bridge 2011.jpg](https://commons.wikimedia.org/wiki/File:Rialto_bridge_2011.jpg) | Chene Beck | CC BY-SA 3.0 |
 | [RibeVue.jpg](https://commons.wikimedia.org/wiki/File:RibeVue.jpg) | Hjart | CC BY-SA 4.0 |
 | [Richard Nixon presidential portrait (1).jpg](https://commons.wikimedia.org/wiki/File:Richard_Nixon_presidential_portrait_(1).jpg) | Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Ope | Public domain |
 | [Richard Nixon presidential portrait (2).jpg](https://commons.wikimedia.org/wiki/File:Richard_Nixon_presidential_portrait_(2).jpg) | Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Ope | Public domain |
@@ -5042,10 +5300,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Rikan-copiedby-Nabeta1881-kan1-16b - kiyohime.jpg](https://commons.wikimedia.org/wiki/File:Rikan-copiedby-Nabeta1881-kan1-16b_-_kiyohime.jpg) | Creator:Nabeta Gyokuei 鍋田玉英 (b. 1847 ‐ d. ?) | Public domain |
 | [Riksbankshuset April 2015.jpg](https://commons.wikimedia.org/wiki/File:Riksbankshuset_April_2015.jpg) | Arild Vågen | CC BY-SA 4.0 |
 | [Rio Collage.png](https://commons.wikimedia.org/wiki/File:Rio_Collage.png) | Heitor Carvalho Jorge | CC BY-SA 3.0 |
+| [Riodejaneiro aerea aeroportogaleao-131756(cut).jpg](https://commons.wikimedia.org/wiki/File:Riodejaneiro_aerea_aeroportogaleao-131756(cut).jpg) | Portal da Copa /Governo Federal Brasileiro / Daniel Basil | CC BY 3.0 br |
+| [Riodejaneiro aerea aeroportogaleao-131756.jpg](https://commons.wikimedia.org/wiki/File:Riodejaneiro_aerea_aeroportogaleao-131756.jpg) | Portal da Copa /Governo Federal Brasileiro / Daniel Basil | CC BY 3.0 br |
 | [Rishengzhang Piaohao (日升昌票號) - Qing Dynasty.jpg](https://commons.wikimedia.org/wiki/File:Rishengzhang_Piaohao_(%E6%97%A5%E5%8D%87%E6%98%8C%E7%A5%A8%E8%99%9F)_-_Qing_Dynasty.jpg) | Not credited. | Public domain |
 | [Ritratto di Gregorio XIII - Passarotti.jpg](https://commons.wikimedia.org/wiki/File:Ritratto_di_Gregorio_XIII_-_Passarotti.jpg) | Attributed to Bartolomeo Passarotti | Public domain |
 | [Ritratto di Papa San Gregorio VII.png](https://commons.wikimedia.org/wiki/File:Ritratto_di_Papa_San_Gregorio_VII.png) | Unidentified painter | Public domain |
 | [Riyadh Skyline.jpg](https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg) | B.alotaby | CC BY-SA 4.0 |
+| [Road 59 (Iran) 2.jpg](https://commons.wikimedia.org/wiki/File:Road_59_(Iran)_2.jpg) | Nima Farid at English Wikipedia | Public domain |
 | [Road Junction at Baitao Bridge.jpg](https://commons.wikimedia.org/wiki/File:Road_Junction_at_Baitao_Bridge.jpg) | Evian Tsai | CC BY-SA 2.0 |
 | [Robert Walter Weir - Embarkation of the Pilgrims - Google Art Project.jpg](https://commons.wikimedia.org/wiki/File:Robert_Walter_Weir_-_Embarkation_of_the_Pilgrims_-_Google_Art_Project.jpg) | Robert Walter Weir | Public domain |
 | [Robespierre crop.jpg](https://commons.wikimedia.org/wiki/File:Robespierre_crop.jpg) | Unidentified painter | Public domain |
@@ -5060,6 +5321,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Roh Moo-hyun presidential portrait.jpg](https://commons.wikimedia.org/wiki/File:Roh_Moo-hyun_presidential_portrait.jpg) | 대한민국 국가기록원 | KOGL Type 1 |
 | [Rok 1863 Polonia.JPG](https://commons.wikimedia.org/wiki/File:Rok_1863_Polonia.JPG) | Jan Matejko | Public domain |
 | [Rokosz sandomierski 1607.PNG](https://commons.wikimedia.org/wiki/File:Rokosz_sandomierski_1607.PNG) | anonymous plate | Public domain |
+| [Rom Fiumicino 2011-by-RaBoe-02.jpg](https://commons.wikimedia.org/wiki/File:Rom_Fiumicino_2011-by-RaBoe-02.jpg) | © Ra Boe / Wikipedia Create the proper attribution for your usage by clicking on this butt | CC BY-SA 3.0 de |
 | [Roma Romolo 753aC.png](https://commons.wikimedia.org/wiki/File:Roma_Romolo_753aC.png) | Cristiano64 | GFDL |
 | [Roma-fosseardeatine6 b.jpg](https://commons.wikimedia.org/wiki/File:Roma-fosseardeatine6_b.jpg) | File:Roma-fosseardeatine6.jpg: antmoose derivative work: Georgfotoart | CC BY 2.0 |
 | [Roman Republic Empire map.gif](https://commons.wikimedia.org/wiki/File:Roman_Republic_Empire_map.gif) | Roke (d) | CC BY-SA 3.0 |
@@ -5067,9 +5329,11 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Roman SPQR banner.svg](https://commons.wikimedia.org/wiki/File:Roman_SPQR_banner.svg) | Ssolbergj | CC BY 3.0 |
 | [Romance languages.png](https://commons.wikimedia.org/wiki/File:Romance_languages.png) | Servitje | CC BY-SA 4.0 |
 | [Rome Colosseum inscription 2.jpg](https://commons.wikimedia.org/wiki/File:Rome_Colosseum_inscription_2.jpg) | Wknight94 | CC BY-SA 3.0 |
+| [Rome Fiumicino Leonardo da Vinci International Airport, Aeroporto internazionale di Roma-Fiumicino "Leonardo da Vinci".jpg](https://commons.wikimedia.org/wiki/File:Rome_Fiumicino_Leonardo_da_Vinci_International_Airport%2C_Aeroporto_internazionale_di_Roma-Fiumicino_%22Leonardo_da_Vinci%22.jpg) | Apaleutos25 | CC BY-SA 4.0 |
 | [Rome Montage 2017.png](https://commons.wikimedia.org/wiki/File:Rome_Montage_2017.png) | AlexTref871, Jebulon, Diliff, Keith Yahl, Thomas Wolf, www.foto-tw.de, Jebulon | CC BY-SA 2.5 |
 | [Rome Olympics 1960 - Opening Day.jpg](https://commons.wikimedia.org/wiki/File:Rome_Olympics_1960_-_Opening_Day.jpg) | Alex Dawson | CC BY-SA 2.0 |
 | [Rome Skyline (8012016319).jpg](https://commons.wikimedia.org/wiki/File:Rome_Skyline_(8012016319).jpg) | Bert Kaufmann from Roermond, Netherlands | CC BY-SA 2.0 |
+| [Rome, Italy ESA24383157 (cropped).jpeg](https://commons.wikimedia.org/wiki/File:Rome%2C_Italy_ESA24383157_(cropped).jpeg) | European Space Agency | Attribution |
 | [Rome-Capitole-StatueConstantin.jpg](https://commons.wikimedia.org/wiki/File:Rome-Capitole-StatueConstantin.jpg) | Jean-Christophe BENOIST | CC BY 2.5 |
 | [Romulus and Remus suckling the she-wolf on a riverbank MET DP878752.jpg](https://commons.wikimedia.org/wiki/File:Romulus_and_Remus_suckling_the_she-wolf_on_a_riverbank_MET_DP878752.jpg) | After Justus van Egmont | CC0 |
 | [Ronda aerial.jpg](https://commons.wikimedia.org/wiki/File:Ronda_aerial.jpg) | kallerna | CC BY-SA 4.0 |
@@ -5089,6 +5353,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Rouhani and Salehi in Bushehr Nuclear Plant (1).jpg](https://commons.wikimedia.org/wiki/File:Rouhani_and_Salehi_in_Bushehr_Nuclear_Plant_(1).jpg) | Hossein Heidarpour | CC BY 4.0 |
 | [Roundabout in Segou 1.jpg](https://commons.wikimedia.org/wiki/File:Roundabout_in_Segou_1.jpg) | Lyfengine | CC BY-SA 4.0 |
 | [RouteDeCampagneEnFrance.JPG](https://commons.wikimedia.org/wiki/File:RouteDeCampagneEnFrance.JPG) | AlNo (discuter/talk/hablar/falar) | CC BY-SA 3.0 |
+| [Routemaster RM1 (SLT 56), LT Museum Acton depot open day, 16 March 2014 (2).jpg](https://commons.wikimedia.org/wiki/File:Routemaster_RM1_(SLT_56)%2C_LT_Museum_Acton_depot_open_day%2C_16_March_2014_(2).jpg) | Au Morandarte from London, Middlesex, England | CC BY-SA 2.0 |
 | [Royal Air Force Bomber Command, 1942-1945. CL3400 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Royal_Air_Force_Bomber_Command%2C_1942-1945._CL3400_(cropped).jpg) | Dowd J (Fg Off), Royal Air Force official photographer | Public domain |
 | [Royal Air Force Bomber Command, 1942-1945. CL3400.jpg](https://commons.wikimedia.org/wiki/File:Royal_Air_Force_Bomber_Command%2C_1942-1945._CL3400.jpg) | Dowd J (Fg Off), Royal Air Force official photographer | Public domain |
 | [Royal Banner of Aragón.svg](https://commons.wikimedia.org/wiki/File:Royal_Banner_of_Arag%C3%B3n.svg) | Heralder iThe source code of this SVG is valid. This vector image was created with Inkscap | CC BY-SA 3.0 |
@@ -5113,6 +5378,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Russian State Duma 1995-2000.svg](https://commons.wikimedia.org/wiki/File:Russian_State_Duma_1995-2000.svg) | Алэксандр | CC0 |
 | [Russian prisoners tannenberg.jpg](https://commons.wikimedia.org/wiki/File:Russian_prisoners_tannenberg.jpg) | website: Ray Mentzer (atominfo@aol.com); photographer unknown | Public domain |
 | [Russian troops on their way to Grozny, 1999.jpg](https://commons.wikimedia.org/wiki/File:Russian_troops_on_their_way_to_Grozny%2C_1999.jpg) | Uploaded by Jesse | CC BY-SA 2.0 |
+| [Russki Island Bridge, Russia1.jpg](https://commons.wikimedia.org/wiki/File:Russki_Island_Bridge%2C_Russia1.jpg) | Константин Сергеевич… | CC BY-SA 3.0 |
+| [Russky Bridge (October 2024)-0 2.jpg](https://commons.wikimedia.org/wiki/File:Russky_Bridge_(October_2024)-0_2.jpg) | Vyacheslav Bukharov | CC BY-SA 4.0 |
 | [Russo-Chinese Bank Building, Harbin.jpg](https://commons.wikimedia.org/wiki/File:Russo-Chinese_Bank_Building%2C_Harbin.jpg) | Unknown authorUnknown author | Public domain |
 | [Russo-Ottoman wars.jpg](https://commons.wikimedia.org/wiki/File:Russo-Ottoman_wars.jpg) | Siege of Ochakov 1737 - Unbekannter KünstlerSiege of Izmail 1790 - Samuil ShiflyarSiege of | CC BY-SA 4.0 |
 | [Rynek Starego Miasta We Wroclawiu (152991773).jpeg](https://commons.wikimedia.org/wiki/File:Rynek_Starego_Miasta_We_Wroclawiu_(152991773).jpeg) | Hrs Poland | CC BY-SA 3.0 |
@@ -5127,6 +5394,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Révolution de 1830 - Combat devant l'hôtel de ville - 28.07.1830.jpg](https://commons.wikimedia.org/wiki/File:R%C3%A9volution_de_1830_-_Combat_devant_l'h%C3%B4tel_de_ville_-_28.07.1830.jpg) | — | Public domain |
 | [S&P 500 index around the time of the crash.png](https://commons.wikimedia.org/wiki/File:S%26P_500_index_around_the_time_of_the_crash.png) | Mark Carlson, US Federal Reserve Board of Governors | Public domain |
 | [S. V. Ivanov. Yuri's Day. (1908).jpg](https://commons.wikimedia.org/wiki/File:S._V._Ivanov._Yuri's_Day._(1908).jpg) | Sergey Ivanov | Public domain |
+| [S7-PL.svg](https://commons.wikimedia.org/wiki/File:S7-PL.svg) | Rl91 | Public domain |
 | [SAN-IN EXP(E9).svg](https://commons.wikimedia.org/wiki/File:SAN-IN_EXP(E9).svg) | くだものだいすき | CC BY-SA 4.0 |
 | [SARS map.svg](https://commons.wikimedia.org/wiki/File:SARS_map.svg) | Maximilian Dörrbecker (Chumwa) | CC BY-SA 4.0 |
 | [SB-Rathaus.jpg](https://commons.wikimedia.org/wiki/File:SB-Rathaus.jpg) | Dirk Weishaar | CC BY-SA 3.0 |
@@ -5188,6 +5456,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Salerno- Panorama da castello di Arechi II.jpeg](https://commons.wikimedia.org/wiki/File:Salerno-_Panorama_da_castello_di_Arechi_II.jpeg) | Mattatoio5 | Public domain |
 | [SalernoCanalone.jpg](https://commons.wikimedia.org/wiki/File:SalernoCanalone.jpg) | No machine-readable author provided. Giaros assumed (based on copyright claims). | CC BY-SA 3.0 |
 | [Salon Rico 1.jpg](https://commons.wikimedia.org/wiki/File:Salon_Rico_1.jpg) | Justojosemm | GFDL |
+| [Salvador BA (cropped) 2.jpg](https://commons.wikimedia.org/wiki/File:Salvador_BA_(cropped)_2.jpg) | Fotos Gov/Ba | CC BY 2.0 |
 | [Salzburg Altstadt vom Mönchsberg.jpg](https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_vom_M%C3%B6nchsberg.jpg) | Photo: Andreas Praefcke | CC BY 3.0 |
 | [Sam Houston at San Jacinto.jpg](https://commons.wikimedia.org/wiki/File:Sam_Houston_at_San_Jacinto.jpg) | Henry Arthur McArdle | Public domain |
 | [Samalanga 1878.jpg](https://commons.wikimedia.org/wiki/File:Samalanga_1878.jpg) | Geschilderd naar Jules Garnier (Collectie Koninklijk Huisarchief in bruikleen aan museum B | Public domain |
@@ -5198,8 +5467,10 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Samuel Beckett Bridge - Dublin, Ireland - August 18, 2017.jpg](https://commons.wikimedia.org/wiki/File:Samuel_Beckett_Bridge_-_Dublin%2C_Ireland_-_August_18%2C_2017.jpg) | Giorgio Galeotti | CC BY 4.0 |
 | [Samuel Smiles by Sir George Reid.jpg](https://commons.wikimedia.org/wiki/File:Samuel_Smiles_by_Sir_George_Reid.jpg) | George Reid | Public domain |
 | [San Francisco skyline (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:San_Francisco_skyline_(Unsplash).jpg) | Sebastien Gabriel sgabriel | CC0 |
+| [San Francisco–Oakland Bay Bridge- New and Old bridges.jpg](https://commons.wikimedia.org/wiki/File:San_Francisco%E2%80%93Oakland_Bay_Bridge-_New_and_Old_bridges.jpg) | Frank Schulenburg | CC BY-SA 3.0 |
 | [San Giorgio Maggiore - Venice, Italy - panoramio.jpg](https://commons.wikimedia.org/wiki/File:San_Giorgio_Maggiore_-_Venice%2C_Italy_-_panoramio.jpg) | Sergey Ashmarin | CC BY-SA 4.0 |
 | [San Stefano Grand Plaza.JPG](https://commons.wikimedia.org/wiki/File:San_Stefano_Grand_Plaza.JPG) | TheEgyptian | CC BY-SA 3.0 |
+| [San Tomas Expressway.jpg](https://commons.wikimedia.org/wiki/File:San_Tomas_Expressway.jpg) | The original uploader was Coolcaesar at English Wikipedia. | CC BY-SA 3.0 |
 | [San'a03 flickr.jpg](https://commons.wikimedia.org/wiki/File:San'a03_flickr.jpg) | ai@ce | CC BY 2.0 |
 | [Sanantonio alamo.jpg](https://commons.wikimedia.org/wiki/File:Sanantonio_alamo.jpg) | The original uploader was 晶箭 at Chinese Wikipedia. | CC BY-SA 3.0 |
 | [Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg](https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg) | Sandro Botticelli | Public domain |
@@ -5218,6 +5489,10 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Santiago del Estero.jpg](https://commons.wikimedia.org/wiki/File:Santiago_del_Estero.jpg) | Gergas | CC BY-SA 4.0 |
 | [SantiagoMatamoros.jpg](https://commons.wikimedia.org/wiki/File:SantiagoMatamoros.jpg) | Photograph by Error | CC BY-SA 3.0 |
 | [Santo Domingo (Dominican Republic) taken atop Novocentro tower viewing the city to the southwest 2010.jpg](https://commons.wikimedia.org/wiki/File:Santo_Domingo_(Dominican_Republic)_taken_atop_Novocentro_tower_viewing_the_city_to_the_southwest_2010.jpg) | Jjc09 | Public domain |
+| [Santos Aérea (cropped).jpg](https://commons.wikimedia.org/wiki/File:Santos_A%C3%A9rea_(cropped).jpg) | Agência CNT | CC BY 2.0 |
+| [Santos Collage.png](https://commons.wikimedia.org/wiki/File:Santos_Collage.png) | Compilation by Heitor Carvalho Jorge | CC BY-SA 4.0 |
+| [Sao paulo airport terminal 3.jpg](https://commons.wikimedia.org/wiki/File:Sao_paulo_airport_terminal_3.jpg) | Arne Müseler | CC BY-SA 3.0 de |
+| [Saopaulo aerea aeroportocumbica.jpg](https://commons.wikimedia.org/wiki/File:Saopaulo_aerea_aeroportocumbica.jpg) | Portal da Copa | CC BY 3.0 br |
 | [Sarajevo City Panorama.JPG](https://commons.wikimedia.org/wiki/File:Sarajevo_City_Panorama.JPG) | Julian Nyča | CC BY-SA 4.0 |
 | [Saraqusta 4200x2100.jpg](https://commons.wikimedia.org/wiki/File:Saraqusta_4200x2100.jpg) | Zagri | CC BY-SA 4.0 |
 | [Saratoga-tower.jpg](https://commons.wikimedia.org/wiki/File:Saratoga-tower.jpg) | Americasroof | CC BY-SA 2.5 |
@@ -5308,6 +5583,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Seven Years' War Collage.jpg](https://commons.wikimedia.org/wiki/File:Seven_Years'_War_Collage.jpg) | Blaue Max | CC BY-SA 4.0 |
 | [SevenWondersOfTheWorld.jpg](https://commons.wikimedia.org/wiki/File:SevenWondersOfTheWorld.jpg) | en:User:Slof | CC BY-SA 3.0 |
 | [Seventh crusade.jpg](https://commons.wikimedia.org/wiki/File:Seventh_crusade.jpg) | Guillaume de Saint-Pathus, Vie et miracles de Saint Louis | Public domain |
+| [SevernFromCastleCB.JPG](https://commons.wikimedia.org/wiki/File:SevernFromCastleCB.JPG) | The original uploader was Chrisbayley at English Wikipedia. | CC BY-SA 2.5 |
 | [Sevilla Cathedral - Southeast.jpg](https://commons.wikimedia.org/wiki/File:Sevilla_Cathedral_-_Southeast.jpg) | Ingo Mehling | CC BY-SA 4.0 |
 | [Sevilla Luft 120308.JPG](https://commons.wikimedia.org/wiki/File:Sevilla_Luft_120308.JPG) | El-mejor | CC BY-SA 3.0 |
 | [Señor de Las Limas.jpg](https://commons.wikimedia.org/wiki/File:Se%C3%B1or_de_Las_Limas.jpg) | ProtoplasmaKid | CC BY-SA 4.0 |
@@ -5324,6 +5600,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Shanghai Pudong Airport 2024 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Shanghai_Pudong_Airport_2024_(cropped).jpg) | User:Yuezhi_Huang | CC BY-SA 4.0 |
 | [Shanghai S5 map.svg](https://commons.wikimedia.org/wiki/File:Shanghai_S5_map.svg) | Heights | CC BY-SA 3.0 |
 | [Shanghai Stock Exchange 2.jpg](https://commons.wikimedia.org/wiki/File:Shanghai_Stock_Exchange_2.jpg) | 钉钉 | CC BY-SA 4.0 |
+| [Shanghai-Yangshan-Port-Containers2013-01.JPG](https://commons.wikimedia.org/wiki/File:Shanghai-Yangshan-Port-Containers2013-01.JPG) | Bruno Corpet (Quoique) | CC BY-SA 3.0 |
 | [Shanghai1937KMT machine gun nest.jpg](https://commons.wikimedia.org/wiki/File:Shanghai1937KMT_machine_gun_nest.jpg) | Unknown authorUnknown author | Public domain |
 | [ShanghaiFinancialExchangePlaza.jpg](https://commons.wikimedia.org/wiki/File:ShanghaiFinancialExchangePlaza.jpg) | LeeeahLiu | CC BY 4.0 |
 | [Shanhaiguan.gif](https://commons.wikimedia.org/wiki/File:Shanhaiguan.gif) | — | Public domain |
@@ -5337,6 +5614,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Shenzhen Stock Exchange 2014.jpg](https://commons.wikimedia.org/wiki/File:Shenzhen_Stock_Exchange_2014.jpg) | Jay Sterling Austin | CC BY 2.0 |
 | [Shenzhou 22 CZ-2F Y22 launch 10.png](https://commons.wikimedia.org/wiki/File:Shenzhou_22_CZ-2F_Y22_launch_10.png) | 中国新闻社 | CC BY 4.0 |
 | [Sherdor madrasah 3.jpg](https://commons.wikimedia.org/wiki/File:Sherdor_madrasah_3.jpg) | Adam Harangozó | CC BY-SA 4.0 |
+| [Sheremetyevo International Airport by Sentinel-2, 2020-05-11 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Sheremetyevo_International_Airport_by_Sentinel-2%2C_2020-05-11_(cropped).jpg) | Copernicus Sentinel-2, ESA | CC BY-SA 3.0 igo |
 | [Shigeru Yoshida suit.jpg](https://commons.wikimedia.org/wiki/File:Shigeru_Yoshida_suit.jpg) | Unknown authorUnknown author | Public domain |
 | [Shih Ming-teh 20141201 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Shih_Ming-teh_20141201_(cropped).jpg) | 美國之音 張永泰 | Public domain |
 | [Shih-Ming-De-Croppedv3.png](https://commons.wikimedia.org/wiki/File:Shih-Ming-De-Croppedv3.png) | Voice of America | Public domain |
@@ -5367,6 +5645,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Shushtar Historical Hydraulic System Panorama.jpg](https://commons.wikimedia.org/wiki/File:Shushtar_Historical_Hydraulic_System_Panorama.jpg) | Iman Yari | CC BY-SA 4.0 |
 | [Shwebo Palace.jpg](https://commons.wikimedia.org/wiki/File:Shwebo_Palace.jpg) | Ninjastrikers | CC BY-SA 4.0 |
 | [Shōtoku Taishi Shōmankyō Kōsan.jpg](https://commons.wikimedia.org/wiki/File:Sh%C5%8Dtoku_Taishi_Sh%C5%8Dmanky%C5%8D_K%C5%8Dsan.jpg) | Unknown authorUnknown author | Public domain |
+| [Si-o-se Pol.jpg](https://commons.wikimedia.org/wiki/File:Si-o-se_Pol.jpg) | kamshots | CC BY 2.0 |
+| [Si-o-se-Pol.jpg](https://commons.wikimedia.org/wiki/File:Si-o-se-Pol.jpg) | Reza Haji-pour رضا حاجی‌پور | CC BY 3.0 |
 | [Siamese Siege of French Fortress in Bangkok 1688.jpg](https://commons.wikimedia.org/wiki/File:Siamese_Siege_of_French_Fortress_in_Bangkok_1688.jpg) | Title: Usages de Siam. Publication date: 1665-1700. | Public domain |
 | [Siamese Troops (Thai) Arc de Triomphe WW1 1919.jpg](https://commons.wikimedia.org/wiki/File:Siamese_Troops_(Thai)_Arc_de_Triomphe_WW1_1919.jpg) | Unknown authorUnknown author | Public domain |
 | [Siberia-FederalSubjects.svg](https://commons.wikimedia.org/wiki/File:Siberia-FederalSubjects.svg) | Hellerick (talk) | Public domain |
@@ -5430,6 +5710,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Siège UEFA Nyon (Suisse).JPG](https://commons.wikimedia.org/wiki/File:Si%C3%A8ge_UEFA_Nyon_(Suisse).JPG) | Florian Pépellin | CC BY-SA 3.0 |
 | [Skibbereen by James Mahony, 1847.JPG](https://commons.wikimedia.org/wiki/File:Skibbereen_by_James_Mahony%2C_1847.JPG) | James Mahony | Public domain |
 | [Skifa mahdia.jpg](https://commons.wikimedia.org/wiki/File:Skifa_mahdia.jpg) | The original uploader was Kassus at French Wikipedia. | CC BY-SA 2.5 |
+| [Skyline Lanzhou August 2025.jpg](https://commons.wikimedia.org/wiki/File:Skyline_Lanzhou_August_2025.jpg) | Megalizard29 | CC BY-SA 4.0 |
 | [Skyline Malang Barat.jpg](https://commons.wikimedia.org/wiki/File:Skyline_Malang_Barat.jpg) | Smg820 | CC BY-SA 3.0 |
 | [Skyline Pontianak (2026).jpg](https://commons.wikimedia.org/wiki/File:Skyline_Pontianak_(2026).jpg) | Medelam | CC BY-SA 4.0 |
 | [Skyline de Monterrey.jpg](https://commons.wikimedia.org/wiki/File:Skyline_de_Monterrey.jpg) | Daniel Escobedo | CC BY-SA 4.0 |
@@ -5440,6 +5721,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Skyline of Manhattan with smoke billowing from the Twin Towers (29385426736).jpg](https://commons.wikimedia.org/wiki/File:Skyline_of_Manhattan_with_smoke_billowing_from_the_Twin_Towers_(29385426736).jpg) | Mike Goad | Public domain |
 | [Skyline of Quy Nhon.jpg](https://commons.wikimedia.org/wiki/File:Skyline_of_Quy_Nhon.jpg) | Vũ Tuấn Quy Nhơn | CC BY 2.0 |
 | [Skyline of Shenyang 3.jpg](https://commons.wikimedia.org/wiki/File:Skyline_of_Shenyang_3.jpg) | E2568 | CC0 |
+| [Skyscrapers in Acapulco Diamante.jpg](https://commons.wikimedia.org/wiki/File:Skyscrapers_in_Acapulco_Diamante.jpg) | Mitrush | CC BY-SA 3.0 |
 | [Skyscrapers of Shinjuku 2009 January (revised).jpg](https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January_(revised).jpg) | Morio | CC BY-SA 3.0 |
 | [Skyscrapers of Shinjuku 2009 January.jpg](https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January.jpg) | Morio | CC BY-SA 3.0 |
 | [Skywater.jpg](https://commons.wikimedia.org/wiki/File:Skywater.jpg) | Ernestblinqz | CC BY-SA 4.0 |
@@ -5452,6 +5734,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Sobrevuelos CDMX HJ2A5091 (40386338731).jpg](https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_HJ2A5091_(40386338731).jpg) | Gobierno CDMX | CC0 |
 | [Sochi 2014 (Emblem).svg](https://commons.wikimedia.org/wiki/File:Sochi_2014_(Emblem).svg) | Unknown authorUnknown author | Public domain |
 | [Societas Iesvitarvm Electa Regnis Portvgalliae Lege Regia III Sept MDCCLIX - Museu de Lisboa (MC.PIN.1295).png](https://commons.wikimedia.org/wiki/File:Societas_Iesvitarvm_Electa_Regnis_Portvgalliae_Lege_Regia_III_Sept_MDCCLIX_-_Museu_de_Lisboa_(MC.PIN.1295).png) | Unknown authorUnknown author | Public domain |
+| [Soekarno-Hatta Airport aerial view.jpg](https://commons.wikimedia.org/wiki/File:Soekarno-Hatta_Airport_aerial_view.jpg) | Gunawan Kartapranata | CC BY-SA 4.0 |
 | [Soerensen Seeschlacht bei Lissa 1866 Rammstoss.jpg](https://commons.wikimedia.org/wiki/File:Soerensen_Seeschlacht_bei_Lissa_1866_Rammstoss.jpg) | Carl Frederik Sørensen | Public domain |
 | [Soissons2.jpg](https://commons.wikimedia.org/wiki/File:Soissons2.jpg) | bodoklecksel | CC BY-SA 3.0 |
 | [Sokhumi Collage.jpg](https://commons.wikimedia.org/wiki/File:Sokhumi_Collage.jpg) | Own work | CC BY-SA 4.0 |
@@ -5584,6 +5867,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Subte-logo.svg](https://commons.wikimedia.org/wiki/File:Subte-logo.svg) | Ronald Shakespear Studio (per [1]) | Public domain |
 | [Sucre Square.jpg](https://commons.wikimedia.org/wiki/File:Sucre_Square.jpg) | Parallelepiped09 | CC BY-SA 4.0 |
 | [Sudan Meroe Pyramids 2001.JPG](https://commons.wikimedia.org/wiki/File:Sudan_Meroe_Pyramids_2001.JPG) | Photographer: B N Chagny | CC BY-SA 1.0 |
+| [Suez Canal, Port Said - ISS 2.jpg](https://commons.wikimedia.org/wiki/File:Suez_Canal%2C_Port_Said_-_ISS_2.jpg) | NASA astronaut | Public domain |
 | [Suffrage, World, 2024 (cropped).svg](https://commons.wikimedia.org/wiki/File:Suffrage%2C_World%2C_2024_(cropped).svg) | Our World In Data | CC BY 4.0 |
 | [Suharto at funeral.jpg](https://commons.wikimedia.org/wiki/File:Suharto_at_funeral.jpg) | Photo's copyright information attributes to Department of Information of the Republic of I | Public domain |
 | [Sui Dynasty.png](https://commons.wikimedia.org/wiki/File:Sui_Dynasty.png) | SY | CC BY-SA 4.0 |
@@ -5614,6 +5898,8 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Surrender of General Burgoyne.jpg](https://commons.wikimedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg) | John Trumbull | Public domain |
 | [Surrender of Lord Cornwallis.jpg](https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg) | John Trumbull | Public domain |
 | [Surrender of The City of Madras 1746.jpg](https://commons.wikimedia.org/wiki/File:Surrender_of_The_City_of_Madras_1746.jpg) | Jacques Francois Joseph Swebach-Desfointaines, 1769-1823 | Public domain |
+| [Sutong Yangtze River Bridge.JPG](https://commons.wikimedia.org/wiki/File:Sutong_Yangtze_River_Bridge.JPG) | Glabb | CC BY-SA 3.0 |
+| [Sutong Yangtze River Bridge1.JPG](https://commons.wikimedia.org/wiki/File:Sutong_Yangtze_River_Bridge1.JPG) | Glabb | CC BY-SA 3.0 |
 | [Suva, Fiji 52.jpg](https://commons.wikimedia.org/wiki/File:Suva%2C_Fiji_52.jpg) | Maksym Kozlenko | CC BY-SA 4.0 |
 | [Suvarnabhumi Airport Logo.png](https://commons.wikimedia.org/wiki/File:Suvarnabhumi_Airport_Logo.png) | Airports of Thailand | Public domain |
 | [Suvorov by Schteiben.jpg](https://commons.wikimedia.org/wiki/File:Suvorov_by_Schteiben.jpg) | Charles de Steuben | Public domain |
@@ -5625,11 +5911,13 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Swedes, Germans, Russians in Åland 1918.jpg](https://commons.wikimedia.org/wiki/File:Swedes%2C_Germans%2C_Russians_in_%C3%85land_1918.jpg) | Unknown authorUnknown author | Public domain |
 | [Swiątynia Pokoju w Jaworze - 191.jpg](https://commons.wikimedia.org/wiki/File:Swi%C4%85tynia_Pokoju_w_Jaworze_-_191.jpg) | Danapass | CC BY-SA 3.0 pl |
 | [Syayambhuvithoba.jpg](https://commons.wikimedia.org/wiki/File:Syayambhuvithoba.jpg) | Balkrishna Kulkarni. | Public domain |
+| [Sydney (AU), Harbour Bridge -- 2019 -- 2179.jpg](https://commons.wikimedia.org/wiki/File:Sydney_(AU)%2C_Harbour_Bridge_--_2019_--_2179.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
 | [Symbol Keraton Kasepuhan.jpg](https://commons.wikimedia.org/wiki/File:Symbol_Keraton_Kasepuhan.jpg) | Midori | CC BY-SA 3.0 |
 | [Symbol of the New Life Movement.svg](https://commons.wikimedia.org/wiki/File:Symbol_of_the_New_Life_Movement.svg) | Victor Bing | Public domain |
 | [Székesfehérvár polgármesteri hivatal.jpg](https://commons.wikimedia.org/wiki/File:Sz%C3%A9kesfeh%C3%A9rv%C3%A1r_polg%C3%A1rmesteri_hivatal.jpg) | Teemeah | CC BY-SA 4.0 |
 | [São Borja - 11.10.2021 66.jpg](https://commons.wikimedia.org/wiki/File:S%C3%A3o_Borja_-_11.10.2021_66.jpg) | Parzeus | CC BY-SA 4.0 |
 | [Sébastien Bourdons-Karl X Gustav.jpg](https://commons.wikimedia.org/wiki/File:S%C3%A9bastien_Bourdons-Karl_X_Gustav.jpg) | Sébastien Bourdon | Public domain |
+| [Sémaphore et grues sur le port du Havre.jpg](https://commons.wikimedia.org/wiki/File:S%C3%A9maphore_et_grues_sur_le_port_du_Havre.jpg) | Philippe Alès | CC BY-SA 4.0 |
 | [Sông Đà.jpg](https://commons.wikimedia.org/wiki/File:S%C3%B4ng_%C4%90%C3%A0.jpg) | [Tycho], http://shansov.net | CC BY-SA 3.0 |
 | [SüleymaniyeMosqueIstanbul (cropped).jpg](https://commons.wikimedia.org/wiki/File:S%C3%BCleymaniyeMosqueIstanbul_(cropped).jpg) | Hunanuk | CC0 |
 | [Sơn La Dam.JPG](https://commons.wikimedia.org/wiki/File:S%C6%A1n_La_Dam.JPG) | [Tycho] talk , http://shansov.net | CC BY-SA 3.0 |
@@ -5658,6 +5946,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [TRA Taitung Line.svg](https://commons.wikimedia.org/wiki/File:TRA_Taitung_Line.svg) | ASDFGH | CC BY-SA 3.0 |
 | [TRA Taiwan Trunk Line (coast).svg](https://commons.wikimedia.org/wiki/File:TRA_Taiwan_Trunk_Line_(coast).svg) | ASDFGH | CC BY-SA 3.0 |
 | [TRA Yilan Line.svg](https://commons.wikimedia.org/wiki/File:TRA_Yilan_Line.svg) | ASDFGH | CC BY-SA 3.0 |
+| [TRÊN SÔNG SÀI GÒN - panoramio.jpg](https://commons.wikimedia.org/wiki/File:TR%C3%8AN_S%C3%94NG_S%C3%80I_G%C3%92N_-_panoramio.jpg) | VŨ HÙNG | CC BY-SA 3.0 |
 | [TUT-Ausstellung FFM 2012 47 (7117819557).jpg](https://commons.wikimedia.org/wiki/File:TUT-Ausstellung_FFM_2012_47_(7117819557).jpg) | Carsten Frenzl from Obernburg, Derutschland | CC BY 2.0 |
 | [TW PHW20 RouteMap.svg](https://commons.wikimedia.org/wiki/File:TW_PHW20_RouteMap.svg) | Black9869184 | CC BY-SA 4.0 |
 | [TW PHW8 maps.svg](https://commons.wikimedia.org/wiki/File:TW_PHW8_maps.svg) | Liaon98 | CC BY-SA 3.0 tw |
@@ -5704,6 +5993,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Taiwan ROC political division map Tainan City (2010).svg](https://commons.wikimedia.org/wiki/File:Taiwan_ROC_political_division_map_Tainan_City_(2010).svg) | ASDFGHJ | CC BY-SA 3.0 |
 | [Taiwan Railway Route English.gif](https://commons.wikimedia.org/wiki/File:Taiwan_Railway_Route_English.gif) | original author: Briston; modified by: kchan | Public domain |
 | [Taiwan Strait.png](https://commons.wikimedia.org/wiki/File:Taiwan_Strait.png) | "The following maps were produced by the U.S. Central Intelligence Agency, unless otherwis | Public domain |
+| [Taiwan Taipei KuanDu Bridge.JPG](https://commons.wikimedia.org/wiki/File:Taiwan_Taipei_KuanDu_Bridge.JPG) | Latinboy | CC BY-SA 3.0 |
 | [Taiwan USA Locator.svg](https://commons.wikimedia.org/wiki/File:Taiwan_USA_Locator.svg) | The original uploader was Bazonka at English Wikipedia. | Public domain |
 | [Taiwan strait area. LOC 2008623338.jpg](https://commons.wikimedia.org/wiki/File:Taiwan_strait_area._LOC_2008623338.jpg) | United States. Central Intelligence Agency | Public domain |
 | [TaiwanShuppei.jpg](https://commons.wikimedia.org/wiki/File:TaiwanShuppei.jpg) | Yoshitoshi Tsukioka (月岡 芳年), 1839-1892 | Public domain |
@@ -5732,17 +6022,21 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Tamil Nadu locator map.svg](https://commons.wikimedia.org/wiki/File:Tamil_Nadu_locator_map.svg) | This Image was created by User:PlaneMad. If you are using the image under the creative com | CC BY-SA 3.0 |
 | [Tamna.png](https://commons.wikimedia.org/wiki/File:Tamna.png) | 가람 | CC BY-SA 3.0 |
 | [Tamworth.jpg](https://commons.wikimedia.org/wiki/File:Tamworth.jpg) | — | CC BY-SA 2.0 |
+| [Tan Son Nhat International Airport at night (12088245464).jpg](https://commons.wikimedia.org/wiki/File:Tan_Son_Nhat_International_Airport_at_night_(12088245464).jpg) | Bem photography: | CC BY 2.0 |
+| [Tan Son Nhat ramp (08.2026).jpg](https://commons.wikimedia.org/wiki/File:Tan_Son_Nhat_ramp_(08.2026).jpg) | Hwi.padam | CC BY-SA 4.0 |
 | [Tang Jiyao 9.jpg](https://commons.wikimedia.org/wiki/File:Tang_Jiyao_9.jpg) | Unknown authorUnknown author | Public domain |
 | [Tang-Korean wars.png](https://commons.wikimedia.org/wiki/File:Tang-Korean_wars.png) | SY | CC BY-SA 4.0 |
 | [TangTaizong.jpg](https://commons.wikimedia.org/wiki/File:TangTaizong.jpg) | Unknown artistUnknown artist | Public domain |
 | [Tangier - 44699733295.jpg](https://commons.wikimedia.org/wiki/File:Tangier_-_44699733295.jpg) | Mike McBey | CC BY 2.0 |
 | [Tangshan earthquake.jpg](https://commons.wikimedia.org/wiki/File:Tangshan_earthquake.jpg) | the National Oceanic and Atmospheric Administration | Public domain |
 | [Tangyun - Chinese Dictionary Museum.JPG](https://commons.wikimedia.org/wiki/File:Tangyun_-_Chinese_Dictionary_Museum.JPG) | Underbar dk | CC BY-SA 4.0 |
+| [Tanjung priok2.jpg](https://commons.wikimedia.org/wiki/File:Tanjung_priok2.jpg) | Hullie | CC BY-SA 3.0 |
 | [Tannenberg3008.jpg](https://commons.wikimedia.org/wiki/File:Tannenberg3008.jpg) | US-Army under www.dean.usma.edu | Public domain |
 | [Taokas.jpg](https://commons.wikimedia.org/wiki/File:Taokas.jpg) | Bellenion | CC BY-SA 4.0 |
 | [Taoyuan City Montages New.png](https://commons.wikimedia.org/wiki/File:Taoyuan_City_Montages_New.png) | Foxy1219(montage), Wang0857, vegafish, Mnb, KCS, Melonfly, Pipi. | CC BY-SA 4.0 |
 | [Taoyuan International Airport.jpg](https://commons.wikimedia.org/wiki/File:Taoyuan_International_Airport.jpg) | 毛貓大少爺 | CC BY-SA 2.0 |
 | [Taoyuan logo 2023.svg](https://commons.wikimedia.org/wiki/File:Taoyuan_logo_2023.svg) | 桃園設計庫 | Public domain |
+| [Tarmac de l'aéroport du Bourget à Paris.jpg](https://commons.wikimedia.org/wiki/File:Tarmac_de_l'a%C3%A9roport_du_Bourget_%C3%A0_Paris.jpg) | T A | CC BY-SA 2.0 |
 | [TaroTokyo20110213-TokyoTower-01min.jpg](https://commons.wikimedia.org/wiki/File:TaroTokyo20110213-TokyoTower-01min.jpg) | 東京太郎 | CC BY-SA 3.0 |
 | [Tas Kopru2.JPG](https://commons.wikimedia.org/wiki/File:Tas_Kopru2.JPG) | Noumenon | CC BY-SA 3.0 |
 | [Tatan Power Plant 20190606.jpg](https://commons.wikimedia.org/wiki/File:Tatan_Power_Plant_20190606.jpg) | ​台灣電力公司 | Attribution |
@@ -5756,6 +6050,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Teheran conference-1943.jpg](https://commons.wikimedia.org/wiki/File:Teheran_conference-1943.jpg) | U.S. Signal Corps photo. | Public domain |
 | [Tehran Conference 1943.jpg](https://commons.wikimedia.org/wiki/File:Tehran_Conference_1943.jpg) | Franklin D. Roosevelt Library Public Domain Photographs | Public domain |
 | [Tehran Conference, 1943.jpg](https://commons.wikimedia.org/wiki/File:Tehran_Conference%2C_1943.jpg) | — | Public domain |
+| [Tehran IKIA at Night.jpg](https://commons.wikimedia.org/wiki/File:Tehran_IKIA_at_Night.jpg) | Princeofpersia1 | CC BY-SA 3.0 |
 | [Tehran in Iran.svg](https://commons.wikimedia.org/wiki/File:Tehran_in_Iran.svg) | TUBS | CC BY-SA 3.0 |
 | [Tehran skyline may 2007.jpg](https://commons.wikimedia.org/wiki/File:Tehran_skyline_may_2007.jpg) | Amir1140 at English Wikipedia | CC BY-SA 3.0 |
 | [Tehran subway.jpg](https://commons.wikimedia.org/wiki/File:Tehran_subway.jpg) | Behrad18n | Copyrighted free use |
@@ -5777,12 +6072,17 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Tenmei Eruption 1783 Mount Asama Drawing 1.png](https://commons.wikimedia.org/wiki/File:Tenmei_Eruption_1783_Mount_Asama_Drawing_1.png) | Unknown authorUnknown author | Public domain |
 | [TenochtitlanModel.JPG](https://commons.wikimedia.org/wiki/File:TenochtitlanModel.JPG) | Thelmadatter | Public domain |
 | [Tensor Processing Unit 3.0.jpg](https://commons.wikimedia.org/wiki/File:Tensor_Processing_Unit_3.0.jpg) | Zinskauf | CC BY-SA 4.0 |
+| [Terminal 3 of Chongqing Jiangbei Airport.jpg](https://commons.wikimedia.org/wiki/File:Terminal_3_of_Chongqing_Jiangbei_Airport.jpg) | Juukeihc at English Wikipedia | CC BY 4.0 |
+| [Terminal, Kraków Airport, 2024 (01).jpg](https://commons.wikimedia.org/wiki/File:Terminal%2C_Krak%C3%B3w_Airport%2C_2024_(01).jpg) | Bahnfrend | CC BY-SA 4.0 |
 | [Tesla circa 1890.jpeg](https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg) | Napoleon Sarony | Public domain |
 | [TetMap.jpg](https://commons.wikimedia.org/wiki/File:TetMap.jpg) | Joel D. Meyerson | Public domain |
 | [Teutonic takeover 1308 license.png](https://commons.wikimedia.org/wiki/File:Teutonic_takeover_1308_license.png) | Space Cadet | CC BY-SA 3.0 |
 | [Text-pal-Ahlmn'-ahreman.png](https://commons.wikimedia.org/wiki/File:Text-pal-Ahlmn'-ahreman.png) | ZxxZxxZ | CC BY-SA 4.0 |
 | [Thai coup soldier.jpg](https://commons.wikimedia.org/wiki/File:Thai_coup_soldier.jpg) | Taken by goshen42, uploaded in en wiki by ChrisO | CC BY-SA 2.0 |
+| [Thai-Lao Friendship Bridge (10729268664).jpg](https://commons.wikimedia.org/wiki/File:Thai-Lao_Friendship_Bridge_(10729268664).jpg) | Jim Holmes/AusAID | CC BY 2.0 |
 | [Thailand Ayutthaya locator map.svg](https://commons.wikimedia.org/wiki/File:Thailand_Ayutthaya_locator_map.svg) | NordNordWest | CC BY 3.0 |
+| [Thailand Bangkok location map.png](https://commons.wikimedia.org/wiki/File:Thailand_Bangkok_location_map.png) | Hdamm | CC BY-SA 3.0 |
+| [Thane Creek and Elephanta Island 03-2016 - img02 Mumbai Harbour.jpg](https://commons.wikimedia.org/wiki/File:Thane_Creek_and_Elephanta_Island_03-2016_-_img02_Mumbai_Harbour.jpg) | A.Savin | FAL |
 | [Thanjavur 02.jpg](https://commons.wikimedia.org/wiki/File:Thanjavur_02.jpg) | Bernard Gagnon | CC BY-SA 3.0 |
 | [Thanjavur 2.jpg](https://commons.wikimedia.org/wiki/File:Thanjavur_2.jpg) | Arun2117dts 5 | CC BY-SA 4.0 |
 | [The Acropolis of Athens from the Pnyx on March 2, 2020.jpg](https://commons.wikimedia.org/wiki/File:The_Acropolis_of_Athens_from_the_Pnyx_on_March_2%2C_2020.jpg) | George E. Koronaios | CC BY-SA 4.0 |
@@ -5861,6 +6161,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [The spiral minaret in Samarra.jpg](https://commons.wikimedia.org/wiki/File:The_spiral_minaret_in_Samarra.jpg) | Jim Gordon | CC BY 2.0 |
 | [The transfer of Crimea.jpg](https://commons.wikimedia.org/wiki/File:The_transfer_of_Crimea.jpg) | Decree of the presidium of the Supreme Council of the USSR | Public domain |
 | [The walls of the fortress and View of the old city. panorama.jpg](https://commons.wikimedia.org/wiki/File:The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg) | Zysko serhii | CC BY-SA 4.0 |
+| [The western sides of the Île de la Cité and the Pont Neuf, 14 July 2008.jpg](https://commons.wikimedia.org/wiki/File:The_western_sides_of_the_%C3%8Ele_de_la_Cit%C3%A9_and_the_Pont_Neuf%2C_14_July_2008.jpg) | Rmrfstar | CC BY-SA 3.0 |
 | [Thebes-1.jpg](https://commons.wikimedia.org/wiki/File:Thebes-1.jpg) | J. Matthew Harrington | CC BY-SA 3.0 |
 | [Theodor-Heuss-Brücke, 1902231957, ako.jpg](https://commons.wikimedia.org/wiki/File:Theodor-Heuss-Br%C3%BCcke%2C_1902231957%2C_ako.jpg) | Ansgar Koreng | CC BY-SA 3.0 de |
 | [Theosakamainichi-earthquakepictorialedition-1923-page9-crop.jpg](https://commons.wikimedia.org/wiki/File:Theosakamainichi-earthquakepictorialedition-1923-page9-crop.jpg) | Theosakamainichi-earthquakepictorialedition-1923-page9.jpg: The Osaka Mainichi derivative  | Public domain |
@@ -5910,12 +6211,14 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Tirana from South.jpg](https://commons.wikimedia.org/wiki/File:Tirana_from_South.jpg) | Albinfo | CC BY-SA 3.0 |
 | [Title page first edition Don Quijote.jpg](https://commons.wikimedia.org/wiki/File:Title_page_first_edition_Don_Quijote.jpg) | Juan de la Cuesta | Public domain |
 | [Titograd.jpg](https://commons.wikimedia.org/wiki/File:Titograd.jpg) | Milos58 | CC BY-SA 3.0 |
+| [Tizi n'Tichka.jpg](https://commons.wikimedia.org/wiki/File:Tizi_n'Tichka.jpg) | AbdelCharaf | CC BY-SA 4.0 |
 | [Tobacco Protest Fatwa issued by Mirza Mohammed Hassan Husseini Shirazi - 1890.jpg](https://commons.wikimedia.org/wiki/File:Tobacco_Protest_Fatwa_issued_by_Mirza_Mohammed_Hassan_Husseini_Shirazi_-_1890.jpg) | Mirza Shirazi | Public domain |
 | [Tobias Mayer Carte de la Pologne 1757.jpg](https://commons.wikimedia.org/wiki/File:Tobias_Mayer_Carte_de_la_Pologne_1757.jpg) | Tobias Mayer | Public domain |
 | [Tod des Spartacus by Hermann Vogel.jpg](https://commons.wikimedia.org/wiki/File:Tod_des_Spartacus_by_Hermann_Vogel.jpg) | Hermann Vogel | Public domain |
 | [Todaiji02.JPG](https://commons.wikimedia.org/wiki/File:Todaiji02.JPG) | Mass Ave 975 | CC BY-SA 3.0 |
 | [Tofuroh dazaifu.jpg](https://commons.wikimedia.org/wiki/File:Tofuroh_dazaifu.jpg) | vigorous action | CC BY-SA 3.0 |
 | [Tohoku Expwy Route Sign.svg](https://commons.wikimedia.org/wiki/File:Tohoku_Expwy_Route_Sign.svg) | Broad-Sky in Japan Font "GD-HighwayGothicJA" - pumpCurry in Japan | Public domain |
+| [Tokaido.svg](https://commons.wikimedia.org/wiki/File:Tokaido.svg) | 百楽兎 | CC BY-SA 3.0 |
 | [Tokugawa Ieyasu kao.jpg](https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu_kao.jpg) | Tokugawa Ieyasu | Public domain |
 | [Tokugawa Ieyasu2 full.JPG](https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2_full.JPG) | Kanō Tan'yū | Public domain |
 | [Tokugawa Ieyasu2.JPG](https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG) | Kanō Tan'yū | Public domain |
@@ -5930,6 +6233,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Tokyo Stock Exchange Main Building (1988).jpg](https://commons.wikimedia.org/wiki/File:Tokyo_Stock_Exchange_Main_Building_(1988).jpg) | Kakidai | CC BY-SA 4.0 |
 | [Tokyo Subway Sarin Atack 1995-03-20.jpg](https://commons.wikimedia.org/wiki/File:Tokyo_Subway_Sarin_Atack_1995-03-20.jpg) | 警察庁 | CC BY 4.0 |
 | [Tokyo Underground Railway Logomark.svg](https://commons.wikimedia.org/wiki/File:Tokyo_Underground_Railway_Logomark.svg) | ButuCC | Public domain |
+| [Tokyo Wan Aqua-Line Expwy Route Sign.svg](https://commons.wikimedia.org/wiki/File:Tokyo_Wan_Aqua-Line_Expwy_Route_Sign.svg) | Filler Broad-Sky in Japan Font "GD-HighwayGothicJA" - pumpCurry in Japan | CC BY-SA 2.1 jp |
 | [Tokyo-Metro Series1000-1008 Marunouchi-Line.jpg](https://commons.wikimedia.org/wiki/File:Tokyo-Metro_Series1000-1008_Marunouchi-Line.jpg) | MaedaAkihiko | CC BY-SA 4.0 |
 | [Toledo (37737041515).jpg](https://commons.wikimedia.org/wiki/File:Toledo_(37737041515).jpg) | Dmitry Dzhus from London | CC BY 2.0 |
 | [Toledo Reflections.jpg](https://commons.wikimedia.org/wiki/File:Toledo_Reflections.jpg) | Jocelyn Erskine-Kellie | CC BY 2.0 |
@@ -5951,12 +6255,16 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Torino 2006 Piazza Carlo Felice.jpg](https://commons.wikimedia.org/wiki/File:Torino_2006_Piazza_Carlo_Felice.jpg) | No machine-readable author provided. Fabrizio Tarizzo assumed (based on copyright claims). | CC BY-SA 3.0 |
 | [Torino Piazza Castello 11.jpg](https://commons.wikimedia.org/wiki/File:Torino_Piazza_Castello_11.jpg) | Zairon | CC BY-SA 4.0 |
 | [Tortosa - La Suda.jpg](https://commons.wikimedia.org/wiki/File:Tortosa_-_La_Suda.jpg) | Manel Zaera | CC BY-SA 2.0 |
+| [Torugartcrossing.jpg](https://commons.wikimedia.org/wiki/File:Torugartcrossing.jpg) | Alexdejoyeuse | Public domain |
 | [Toshimichi Okubo 4.jpg](https://commons.wikimedia.org/wiki/File:Toshimichi_Okubo_4.jpg) | Unknown authorUnknown author | Public domain |
 | [Toulouse - View on Saint Sernin.jpg](https://commons.wikimedia.org/wiki/File:Toulouse_-_View_on_Saint_Sernin.jpg) | Tonio94 (talk · contribs) | CC BY-SA 2.5 |
 | [Toulouse - l'ancien aérodrome de Montaudran 1.jpg](https://commons.wikimedia.org/wiki/File:Toulouse_-_l'ancien_a%C3%A9rodrome_de_Montaudran_1.jpg) | Olybrius | Public domain |
 | [Toulouse - vue du Vieux Toulouse depuis St Sernin 06.jpg](https://commons.wikimedia.org/wiki/File:Toulouse_-_vue_du_Vieux_Toulouse_depuis_St_Sernin_06.jpg) | Frédéric Neupont | CC BY-SA 4.0 |
 | [Toungoo ou taungû.jpg](https://commons.wikimedia.org/wiki/File:Toungoo_ou_taung%C3%BB.jpg) | No machine-readable author provided. Victorcouto assumed (based on copyright claims). | Public domain |
 | [Tour Eiffel Wikimedia Commons (cropped).jpg](https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg) | Benh LIEU SONG | Public domain |
+| [Tower Bridge at Dawn.jpg](https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Dawn.jpg) | Fuzzypiggy | CC BY-SA 3.0 |
+| [Tower Bridge from Pool of London River Thames London England lighter.jpg](https://commons.wikimedia.org/wiki/File:Tower_Bridge_from_Pool_of_London_River_Thames_London_England_lighter.jpg) | Acabashi | CC BY-SA 4.0 |
+| [Tower Bridge from Shad Thames.jpg](https://commons.wikimedia.org/wiki/File:Tower_Bridge_from_Shad_Thames.jpg) | Colin | CC BY-SA 4.0 |
 | [Toyotomi Hidetsugu-cropped.jpg](https://commons.wikimedia.org/wiki/File:Toyotomi_Hidetsugu-cropped.jpg) | Unknown authorUnknown author | Public domain |
 | [Toyotomi Hideyoshi Kaou.svg](https://commons.wikimedia.org/wiki/File:Toyotomi_Hideyoshi_Kaou.svg) | 百楽兎 | Public domain |
 | [Toyotomi Hideyoshi c1598 Kodai-ji Temple.png](https://commons.wikimedia.org/wiki/File:Toyotomi_Hideyoshi_c1598_Kodai-ji_Temple.png) | Kanō Mitsunobu (狩野 光信, 1565–1608) | Public domain |
@@ -6038,6 +6346,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Tulsa Aftermath.jpg](https://commons.wikimedia.org/wiki/File:Tulsa_Aftermath.jpg) | Unknown authorUnknown author | Public domain |
 | [TulsaRaceRiot-1921.png](https://commons.wikimedia.org/wiki/File:TulsaRaceRiot-1921.png) | United States Library of Congress | Public domain |
 | [Tunis - 20 mars 1956.jpg](https://commons.wikimedia.org/wiki/File:Tunis_-_20_mars_1956.jpg) | Unknown authorUnknown author | Public domain |
+| [Tunis-Carthage International Airport (Terminal 2).jpg](https://commons.wikimedia.org/wiki/File:Tunis-Carthage_International_Airport_(Terminal_2).jpg) | Mutari | Public domain |
 | [TunisAveHabibBourguiba.jpg](https://commons.wikimedia.org/wiki/File:TunisAveHabibBourguiba.jpg) | Dacoslett | CC0 |
 | [Tunisian Revolution Protest.jpg](https://commons.wikimedia.org/wiki/File:Tunisian_Revolution_Protest.jpg) | cjb | CC BY 2.0 |
 | [Tunisian people mosaic.png](https://commons.wikimedia.org/wiki/File:Tunisian_people_mosaic.png) | Asmodim | CC BY-SA 4.0 |
@@ -6108,6 +6417,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [USFK Logo.svg](https://commons.wikimedia.org/wiki/File:USFK_Logo.svg) | Unknown authorUnknown author | Public domain |
 | [USS Boston landing force, 1893 (PP-36-3-002).jpg](https://commons.wikimedia.org/wiki/File:USS_Boston_landing_force%2C_1893_(PP-36-3-002).jpg) | Unknown authorUnknown author | Public domain |
 | [USS Casablanca (CVE-55) underway at sea on 2 March 1945 (80-G-320296).jpg](https://commons.wikimedia.org/wiki/File:USS_Casablanca_(CVE-55)_underway_at_sea_on_2_March_1945_(80-G-320296).jpg) | U.S. Navy | Public domain |
+| [USS Leyte Gulf (CG 55) under the Verrazano Narrows Bridge.jpg](https://commons.wikimedia.org/wiki/File:USS_Leyte_Gulf_(CG_55)_under_the_Verrazano_Narrows_Bridge.jpg) | U.S. Navy photo by Mass Communication Specialist 3rd Class Jonathan Snyder | Public domain |
 | [USS Olympia art NH 91881-KN.jpg](https://commons.wikimedia.org/wiki/File:USS_Olympia_art_NH_91881-KN.jpg) | — | Public domain |
 | [USS San Jacinto (CVL-30) underway at sea on 23 January 1944 (80-G-212799).jpg](https://commons.wikimedia.org/wiki/File:USS_San_Jacinto_(CVL-30)_underway_at_sea_on_23_January_1944_(80-G-212799).jpg) | Unknown authorUnknown author, photographed from a Squadron ZP-14 blimp. | Public domain |
 | [USS Selfridge (DD-357) during exercises at sea in the later 1930s.jpg](https://commons.wikimedia.org/wiki/File:USS_Selfridge_(DD-357)_during_exercises_at_sea_in_the_later_1930s.jpg) | U.S. Navy. Original uploader was User: at en.wikipedia | Public domain |
@@ -6170,7 +6480,9 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [VAL256 @BR09~BR10 20260802.jpg](https://commons.wikimedia.org/wiki/File:VAL256_%40BR09~BR10_20260802.jpg) | Sinsyuan | CC BY-SA 4.0 |
 | [VL 85-022 container train.jpg](https://commons.wikimedia.org/wiki/File:VL_85-022_container_train.jpg) | Sorovas | CC BY-SA 3.0 |
 | [VOC.svg](https://commons.wikimedia.org/wiki/File:VOC.svg) | Unknown authorUnknown author (vector graphics by Greatswrd) | Public domain |
+| [VTSP Phase1.jpg](https://commons.wikimedia.org/wiki/File:VTSP_Phase1.jpg) | Infantpo | CC BY-SA 4.0 |
 | [VajontDiga.jpg](https://commons.wikimedia.org/wiki/File:VajontDiga.jpg) | Sebi1 | Public domain |
+| [Valence Port (2).jpg](https://commons.wikimedia.org/wiki/File:Valence_Port_(2).jpg) | Codex (changes by User:TravelerFromEuropeanUnion) | CC BY-SA 4.0 |
 | [Valence SNCF TGV 714 naar Marseille (13264067954).jpg](https://commons.wikimedia.org/wiki/File:Valence_SNCF_TGV_714_naar_Marseille_(13264067954).jpg) | Rob Dammers | CC BY 2.0 |
 | [Valerianus Ny Carlsberg Glyptotek IN3387.jpg](https://commons.wikimedia.org/wiki/File:Valerianus_Ny_Carlsberg_Glyptotek_IN3387.jpg) | Marie-Lan Nguyen | Public domain |
 | [Valkyries with swan skins.jpg](https://commons.wikimedia.org/wiki/File:Valkyries_with_swan_skins.jpg) | Jenny Nyström | Public domain |
@@ -6188,11 +6500,14 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Veneto in Italy.svg](https://commons.wikimedia.org/wiki/File:Veneto_in_Italy.svg) | TUBS | CC BY-SA 3.0 |
 | [Venezia aerial view.jpg](https://commons.wikimedia.org/wiki/File:Venezia_aerial_view.jpg) | kallerna | CC BY-SA 4.0 |
 | [Venezianische Kolonien.png](https://commons.wikimedia.org/wiki/File:Venezianische_Kolonien.png) | Maximilian Dörrbecker (Chumwa) | CC BY-SA 2.5 |
+| [Venise Aero Pont de la Liberté.jpg](https://commons.wikimedia.org/wiki/File:Venise_Aero_Pont_de_la_Libert%C3%A9.jpg) | Didier Descouens | CC BY-SA 4.0 |
 | [Venizi - lanscape from San Giorgio Maggiore.jpg](https://commons.wikimedia.org/wiki/File:Venizi_-_lanscape_from_San_Giorgio_Maggiore.jpg) | Pierbou | CC BY 3.0 |
 | [Veracruz in Mexico (location map scheme).svg](https://commons.wikimedia.org/wiki/File:Veracruz_in_Mexico_(location_map_scheme).svg) | TUBS | CC BY-SA 3.0 |
 | [VeracruzCityCollage.jpg](https://commons.wikimedia.org/wiki/File:VeracruzCityCollage.jpg) | Microstar | CC BY-SA 4.0 |
 | [Vercors Glandasse.jpg](https://commons.wikimedia.org/wiki/File:Vercors_Glandasse.jpg) | — | CC BY-SA 3.0 |
 | [Vernet - Bataille d'Isly - 1846.jpg](https://commons.wikimedia.org/wiki/File:Vernet_-_Bataille_d'Isly_-_1846.jpg) | Horace Vernet | Public domain |
+| [Verrazano - Narrows Bridge4.jpg](https://commons.wikimedia.org/wiki/File:Verrazano_-_Narrows_Bridge4.jpg) | Joe Mazzola | CC BY-SA 2.0 |
+| [Verrazano Bridge2.jpg](https://commons.wikimedia.org/wiki/File:Verrazano_Bridge2.jpg) | H.L.I.T. | Public domain |
 | [Versailles - Avenue de Paris.jpg](https://commons.wikimedia.org/wiki/File:Versailles_-_Avenue_de_Paris.jpg) | Ladislav Luppa | CC BY-SA 4.0 |
 | [Versailles Palace (FRA) – Equestrian Olympic Venue.jpg](https://commons.wikimedia.org/wiki/File:Versailles_Palace_(FRA)_%E2%80%93_Equestrian_Olympic_Venue.jpg) | ToucanWings | CC BY-SA 3.0 |
 | [Versailles chateau.jpg](https://commons.wikimedia.org/wiki/File:Versailles_chateau.jpg) | Marc Vassal | CC BY-SA 3.0 |
@@ -6233,6 +6548,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Vietnamese invasion of Cambodia.png](https://commons.wikimedia.org/wiki/File:Vietnamese_invasion_of_Cambodia.png) | User:BorysMapping | CC BY-SA 4.0 |
 | [Vietnamese refugees board LST 516 during Operation Passage to Freedom, October 1954 (030630-N-0000X-001).jpg](https://commons.wikimedia.org/wiki/File:Vietnamese_refugees_board_LST_516_during_Operation_Passage_to_Freedom%2C_October_1954_(030630-N-0000X-001).jpg) | U.S. Navy photo | Public domain |
 | [View from 7th floor on Crane Chambers at Kampala road - panoramio.jpg](https://commons.wikimedia.org/wiki/File:View_from_7th_floor_on_Crane_Chambers_at_Kampala_road_-_panoramio.jpg) | kousek_cz | CC BY 3.0 |
+| [View from Busan Tower in 2018 (east).jpg](https://commons.wikimedia.org/wiki/File:View_from_Busan_Tower_in_2018_(east).jpg) | Christophe95 | CC BY-SA 4.0 |
 | [View from Castle.JPG](https://commons.wikimedia.org/wiki/File:View_from_Castle.JPG) | — | CC BY-SA 3.0 |
 | [View of Assandh town from the Stupa.jpg](https://commons.wikimedia.org/wiki/File:View_of_Assandh_town_from_the_Stupa.jpg) | Anamdas | CC BY-SA 4.0 |
 | [View of Empire State Building from Rockefeller Center New York City dllu (cropped).jpg](https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_(cropped).jpg) | Dllu | CC BY-SA 4.0 |
@@ -6284,6 +6600,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Vista de la Villa Imperial de Potosí.jpg](https://commons.wikimedia.org/wiki/File:Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg) | Parallelepiped09 | CC BY-SA 4.0 |
 | [Vista lateral Iglesia de San Bartolomé (Paterna del Campo).jpg](https://commons.wikimedia.org/wiki/File:Vista_lateral_Iglesia_de_San_Bartolom%C3%A9_(Paterna_del_Campo).jpg) | Paco Garrido | CC0 |
 | [Vistageneraldeoviedo.JPG](https://commons.wikimedia.org/wiki/File:Vistageneraldeoviedo.JPG) | Frobles | CC BY-SA 4.0 |
+| [Vistas de Bahia Blanca (24).jpg](https://commons.wikimedia.org/wiki/File:Vistas_de_Bahia_Blanca_(24).jpg) | Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahí | CC BY 2.5 ar |
 | [Vistas desde la iglesia de San Pedro, Riga, Letonia, 2012-08-07, DD 12.JPG](https://commons.wikimedia.org/wiki/File:Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG) | Diego Delso | CC BY-SA 3.0 |
 | [Vivek Prasanna.png](https://commons.wikimedia.org/wiki/File:Vivek_Prasanna.png) | SFariz9043 | CC BY-SA 4.0 |
 | [Vlad Tepes 002.jpg](https://commons.wikimedia.org/wiki/File:Vlad_Tepes_002.jpg) | AnonymousUnknown author | Public domain |
@@ -6293,6 +6610,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Vladimir Putin (2026 02 23).jpg](https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2026_02_23).jpg) | Kremlin.ru | CC BY 4.0 |
 | [Vladimir Putin 22 July 2001-1.jpg](https://commons.wikimedia.org/wiki/File:Vladimir_Putin_22_July_2001-1.jpg) | Presidential Press and Information Office | CC BY 4.0 |
 | [Vladimir Putin with victims of Nord-Ost terrorism.jpg](https://commons.wikimedia.org/wiki/File:Vladimir_Putin_with_victims_of_Nord-Ost_terrorism.jpg) | Presidential Press and Information Office | CC BY 4.0 |
+| [Vladivostok harbor.jpg](https://commons.wikimedia.org/wiki/File:Vladivostok_harbor.jpg) | The original uploader was Kaspersky at English Wikipedia. | CC BY-SA 3.0 |
 | [Vladivostok. GUM Department Store P8070703 2200.jpg](https://commons.wikimedia.org/wiki/File:Vladivostok._GUM_Department_Store_P8070703_2200.jpg) | Alexxx1979 | CC BY-SA 4.0 |
 | [Vogtle NPP.jpg](https://commons.wikimedia.org/wiki/File:Vogtle_NPP.jpg) | NRC | Public domain |
 | [Volga-Don Canal -a.jpg](https://commons.wikimedia.org/wiki/File:Volga-Don_Canal_-a.jpg) | michael clarke stuff | CC BY-SA 2.0 |
@@ -6343,6 +6661,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Wang Jingwei 1940.tif](https://commons.wikimedia.org/wiki/File:Wang_Jingwei_1940.tif) | Unknown authorUnknown author | Public domain |
 | [WangGeon.jpg](https://commons.wikimedia.org/wiki/File:WangGeon.jpg) | [2] | Attribution |
 | [Wannsee-villa.jpg](https://commons.wikimedia.org/wiki/File:Wannsee-villa.jpg) | The original uploader was Mitrius at Russian Wikipedia., author en:User:Schoen | CC BY-SA 3.0 |
+| [Wappen Bremerhaven.svg](https://commons.wikimedia.org/wiki/File:Wappen_Bremerhaven.svg) | — | Public domain |
 | [Wappen Deutsches Reich (Weimarer Republik).svg](https://commons.wikimedia.org/wiki/File:Wappen_Deutsches_Reich_(Weimarer_Republik).svg) | David Liuzzo | CC BY-SA 3.0 |
 | [Wappen Kiel.svg](https://commons.wikimedia.org/wiki/File:Wappen_Kiel.svg) | unknown; PNG by N3MO, basierend auf Image:Kiel-Wappen.svg (created by Stefan-Xp, modified  | Public domain |
 | [War flag of the Imperial Japanese Army (1868–1945).svg](https://commons.wikimedia.org/wiki/File:War_flag_of_the_Imperial_Japanese_Army_(1868%E2%80%931945).svg) | FDRMRZUSA | Public domain |
@@ -6354,6 +6673,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Warsaw Metro Plac Wilsona 2.jpg](https://commons.wikimedia.org/wiki/File:Warsaw_Metro_Plac_Wilsona_2.jpg) | tomo (foTOmo) from warsaw / wroclaw, poland | CC BY 2.0 |
 | [Warsaw Metro logo.svg](https://commons.wikimedia.org/wiki/File:Warsaw_Metro_logo.svg) | Originally created by Witold Popiel in 1983; SVG version drawn in 2013 by Kubek15 | Public domain |
 | [Warsaw Uprising.png](https://commons.wikimedia.org/wiki/File:Warsaw_Uprising.png) | PattyB0YY | CC BY-SA 4.0 |
+| [Warsaw WAW Okecie Panorama may 2003.jpg](https://commons.wikimedia.org/wiki/File:Warsaw_WAW_Okecie_Panorama_may_2003.jpg) | Foma | CC BY-SA 3.0 |
 | [Warszawa Powstanie 1944-08-04.jpg](https://commons.wikimedia.org/wiki/File:Warszawa_Powstanie_1944-08-04.jpg) | Halibutt | CC BY-SA 3.0 |
 | [Wartburg demonstration 1817.jpg](https://commons.wikimedia.org/wiki/File:Wartburg_demonstration_1817.jpg) | Unknown authorUnknown author | Public domain |
 | [WashMonument WhiteHouse.jpg](https://commons.wikimedia.org/wiki/File:WashMonument_WhiteHouse.jpg) | U.S. Air Force Tech. Sgt. Andy Dunaway | Public domain |
@@ -6375,6 +6695,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Wen Jiabao - World Economic Forum Annual Meeting 2009.jpg](https://commons.wikimedia.org/wiki/File:Wen_Jiabao_-_World_Economic_Forum_Annual_Meeting_2009.jpg) | World Economic Forum from Cologny, Switzerland | CC BY-SA 2.0 |
 | [West Texas Intermediate oil prices 1950–2000 (with 1973 highlight).svg](https://commons.wikimedia.org/wiki/File:West_Texas_Intermediate_oil_prices_1950%E2%80%932000_(with_1973_highlight).svg) | Isochrone | CC BY-SA 4.0 |
 | [West and East Germans at the Brandenburg Gate in 1989.jpg](https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg) | Unknown photographer, Reproduction by Lear 21 at English Wikipedia. | CC BY-SA 3.0 |
+| [West end of the Taiwan No6 National Highway at Wufeng JCT.JPG](https://commons.wikimedia.org/wiki/File:West_end_of_the_Taiwan_No6_National_Highway_at_Wufeng_JCT.JPG) | Howard61313 | Public domain |
 | [West section of Hong Kong-Zhuhai-Macau Bridge (20180902174105).jpg](https://commons.wikimedia.org/wiki/File:West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_(20180902174105).jpg) | N509FZ | CC BY-SA 4.0 |
 | [Western Front (World War I).jpeg](https://commons.wikimedia.org/wiki/File:Western_Front_(World_War_I).jpeg) | 總共共有六張照片，由上而下，由左而右來自於：Bundesarchiv、Collection DocAnciens、Ernest Brooks、未知作者、美國戰爭部、U.S. Sig | Public domain |
 | [Western Roman Empire, AD395.png](https://commons.wikimedia.org/wiki/File:Western_Roman_Empire%2C_AD395.png) | Kaiser&amp;Augstus&amp;Imperator | CC BY-SA 4.0 |
@@ -6486,13 +6807,18 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Yamashirokokubunji Kizugawa Kyoto pref Japan02n.jpg](https://commons.wikimedia.org/wiki/File:Yamashirokokubunji_Kizugawa_Kyoto_pref_Japan02n.jpg) | 663highland | CC BY 2.5 |
 | [Yamashirokokubunji Kizugawa Kyoto pref Japan03n.jpg](https://commons.wikimedia.org/wiki/File:Yamashirokokubunji_Kizugawa_Kyoto_pref_Japan03n.jpg) | 663highland | CC BY 2.5 |
 | [Yamasina Lake Biwa Canal and Cherry Blossom Viewing (5).JPG](https://commons.wikimedia.org/wiki/File:Yamasina_Lake_Biwa_Canal_and_Cherry_Blossom_Viewing_(5).JPG) | Shigeru-a24 | CC BY-SA 3.0 |
+| [Yamuna Expressway Delhi Agra India August 2013.jpg](https://commons.wikimedia.org/wiki/File:Yamuna_Expressway_Delhi_Agra_India_August_2013.jpg) | shivvir | CC BY 2.0 |
 | [Yan Xishan.jpg](https://commons.wikimedia.org/wiki/File:Yan_Xishan.jpg) | Unknown authorUnknown author | Public domain |
 | [YanQing.PNG](https://commons.wikimedia.org/wiki/File:YanQing.PNG) | Chen Hongshou | Public domain |
 | [Yang Guifei by Uemura Shoen (Shohaku Art Museum).jpg](https://commons.wikimedia.org/wiki/File:Yang_Guifei_by_Uemura_Shoen_(Shohaku_Art_Museum).jpg) | Shoen Uemura | Public domain |
+| [Yangshan-Port-Containers.jpg](https://commons.wikimedia.org/wiki/File:Yangshan-Port-Containers.jpg) | Reb42 | CC BY 3.0 |
 | [Yaoundé view from central market (2014).JPG](https://commons.wikimedia.org/wiki/File:Yaound%C3%A9_view_from_central_market_(2014).JPG) | Bdx | CC BY-SA 4.0 |
 | [Yaroslavovo Dvorische 01.jpg](https://commons.wikimedia.org/wiki/File:Yaroslavovo_Dvorische_01.jpg) | Lite | CC BY-SA 3.0 |
 | [Yasuda Auditorium.jpg](https://commons.wikimedia.org/wiki/File:Yasuda_Auditorium.jpg) | Wiiii | CC BY-SA 3.0 |
 | [YatsushiroSeaN700.jpg](https://commons.wikimedia.org/wiki/File:YatsushiroSeaN700.jpg) | Junpei5885 | CC BY-SA 3.0 |
+| [Yavuz Sultan Selim Bridge IMG 3054.jpg](https://commons.wikimedia.org/wiki/File:Yavuz_Sultan_Selim_Bridge_IMG_3054.jpg) | VikiPicture | CC BY-SA 4.0 |
+| [Yavuz Sultan Selim Bridge1.JPG](https://commons.wikimedia.org/wiki/File:Yavuz_Sultan_Selim_Bridge1.JPG) | Glabb | CC BY-SA 3.0 |
+| [Yavuz sultan selim köprüsü (cropped).jpg](https://commons.wikimedia.org/wiki/File:Yavuz_sultan_selim_k%C3%B6pr%C3%BCs%C3%BC_(cropped).jpg) | Ezzeldin.Elbaksawy | CC BY-SA 4.0 |
 | [Yaxchilan Lintel 24.jpg](https://commons.wikimedia.org/wiki/File:Yaxchilan_Lintel_24.jpg) | — | CC BY-SA 3.0 |
 | [Yellow River Flooded Area 1938.svg](https://commons.wikimedia.org/wiki/File:Yellow_River_Flooded_Area_1938.svg) | Stevenliuyi | CC BY-SA 4.0 |
 | [Yellow flag waving.svg](https://commons.wikimedia.org/wiki/File:Yellow_flag_waving.svg) | .mw-parser-output .ubx-floatdefault[dir="ltr"],.mw-parser-output .ubx-floatopposite[dir="r | CC BY-SA 3.0 |
@@ -6537,6 +6863,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Zacatecas 045.jpg](https://commons.wikimedia.org/wiki/File:Zacatecas_045.jpg) | — | CC BY-SA 3.0 |
 | [Zafar engl simple.jpg](https://commons.wikimedia.org/wiki/File:Zafar_engl_simple.jpg) | Pyule | CC BY-SA 3.0 |
 | [Zagreb (29255640143).jpg](https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg) | Nick Savchenko from Kiev, Ukraine | CC BY-SA 2.0 |
+| [Zamalek Arial.jpg](https://commons.wikimedia.org/wiki/File:Zamalek_Arial.jpg) | Abdallah (talk) | CC BY-SA 3.0 |
 | [Zambra-moriscos.jpg](https://commons.wikimedia.org/wiki/File:Zambra-moriscos.jpg) | Arteconciencia | CC BY-SA 4.0 |
 | [Zamek Królewski na Wawelu (1).jpg](https://commons.wikimedia.org/wiki/File:Zamek_Kr%C3%B3lewski_na_Wawelu_(1).jpg) | XEvansGambitx | CC BY-SA 4.0 |
 | [Zamosc pierzeja polnocna.jpg](https://commons.wikimedia.org/wiki/File:Zamosc_pierzeja_polnocna.jpg) | Maciej Ukleja - [1] | CC BY-SA 4.0 |
@@ -6573,6 +6900,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [ZollvereinBIG 1834.png](https://commons.wikimedia.org/wiki/File:ZollvereinBIG_1834.png) | siehe Quelle. Original uploader was Pischdi at de.wikipedia. Later version(s) were uploade | CC BY-SA 3.0 |
 | [Zone urbaine (VICHY,FR03).jpg](https://commons.wikimedia.org/wiki/File:Zone_urbaine_(VICHY%2CFR03).jpg) | jean-louis Zimmermann | CC BY 2.0 |
 | [Zoser Pyramid (2347235367).jpg](https://commons.wikimedia.org/wiki/File:Zoser_Pyramid_(2347235367).jpg) | Francisco Anzola | CC BY 2.0 |
+| [Zubia jun.jpg](https://commons.wikimedia.org/wiki/File:Zubia_jun.jpg) | Javier Mediavilla Ezquibela Esta imagen tiene una licencia libre (que puedes ver abajo), p | CC BY-SA 2.0 |
 | [Zugdidi Montage by Gaeser.png](https://commons.wikimedia.org/wiki/File:Zugdidi_Montage_by_Gaeser.png) | File:Dadiani-Old.jpg by unknown auter the rest by Lika (ლიკა) derivative work: George Mel  | CC BY-SA 3.0 |
 | [Zuo Zongtang 1875.jpg](https://commons.wikimedia.org/wiki/File:Zuo_Zongtang_1875.jpg) | Boiarskii, Adolf-Nikolay Erazmovich | Public domain |
 | [Zwei-Plus-Vier-Vertrag.pdf](https://commons.wikimedia.org/wiki/File:Zwei-Plus-Vier-Vertrag.pdf) | Auswärtiges Amt | Public domain |
@@ -6626,6 +6954,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Мечеть в селе Ведено.jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D1%87%D0%B5%D1%82%D1%8C_%D0%B2_%D1%81%D0%B5%D0%BB%D0%B5_%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%BE.jpg) | Саид-Эми Кайсаров | CC BY 3.0 |
 | [Митинг на Невском проспекте (1917).jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_(1917).jpg) | unknown; photo retake by George Shuklin | Public domain |
 | [Модель подлодки Курск.JPG](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%BF%D0%BE%D0%B4%D0%BB%D0%BE%D0%B4%D0%BA%D0%B8_%D0%9A%D1%83%D1%80%D1%81%D0%BA.JPG) | Insider | CC BY-SA 3.0 |
+| [Москва. аэропорт Шереметьево.jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0._%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82_%D0%A8%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%82%D1%8C%D0%B5%D0%B2%D0%BE.jpg) | Крылов Иван | CC BY-SA 4.0 |
 | [Мінск. Сквер па плошчы Незалежнасці.jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%A1%D0%BA%D0%B2%D0%B5%D1%80_%D0%BF%D0%B0_%D0%BF%D0%BB%D0%BE%D1%88%D1%87%D1%8B_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%B0%D1%81%D1%86%D1%96.jpg) | Zedlik | CC BY-SA 3.0 |
 | [На території Батуринської фортеці Панорама.jpg](https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0_%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%91%D0%B0%D1%82%D1%83%D1%80%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%96_%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0.jpg) | Nomad0212 | CC BY-SA 3.0 |
 | [Павел Михайлов - Ново-Архангельск.jpg](https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_-_%D0%9D%D0%BE%D0%B2%D0%BE-%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA.jpg) | Михайлов, Павел Николаевич/ Pavel Mikhailov | Public domain |
@@ -6649,6 +6978,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [Фестиваль воздухоплавания в Рязани.jpg](https://commons.wikimedia.org/wiki/File:%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C_%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%BE%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D0%B2_%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D0%B8.jpg) | Ted.ns | CC BY-SA 4.0 |
 | [Фирдуси читает поэму «Шах-Наме» шаху Махмуду Газневи (1913).jpg](https://commons.wikimedia.org/wiki/File:%D0%A4%D0%B8%D1%80%D0%B4%D1%83%D1%81%D0%B8_%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82_%D0%BF%D0%BE%D1%8D%D0%BC%D1%83_%C2%AB%D0%A8%D0%B0%D1%85-%D0%9D%D0%B0%D0%BC%D0%B5%C2%BB_%D1%88%D0%B0%D1%85%D1%83_%D0%9C%D0%B0%D1%85%D0%BC%D1%83%D0%B4%D1%83_%D0%93%D0%B0%D0%B7%D0%BD%D0%B5%D0%B2%D0%B8_(1913).jpg) | Vardges Sureniants | Public domain |
 | [Фонтан «Детский хоровод».jpg](https://commons.wikimedia.org/wiki/File:%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg) | Sergey Strunnikov | Public domain |
+| [Храм Петра и Февроньи. Новороссийск.jpg](https://commons.wikimedia.org/wiki/File:%D0%A5%D1%80%D0%B0%D0%BC_%D0%9F%D0%B5%D1%82%D1%80%D0%B0_%D0%B8_%D0%A4%D0%B5%D0%B2%D1%80%D0%BE%D0%BD%D1%8C%D0%B8._%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA.jpg) | Михаил Золотарев | CC BY-SA 4.0 |
 | [Церемония соединения первого звена газопровода «Сила Сибири» (2014).jpg](https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F_%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B2%D0%B5%D0%BD%D0%B0_%D0%B3%D0%B0%D0%B7%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%B0_%C2%AB%D0%A1%D0%B8%D0%BB%D0%B0_%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D0%B8%C2%BB_(2014).jpg) | Presidential Executive Office | CC BY 4.0 |
 | [Церковь Всемилостливого Спаса (вид с вала).JPG](https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%92%D1%81%D0%B5%D0%BC%D0%B8%D0%BB%D0%BE%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B3%D0%BE_%D0%A1%D0%BF%D0%B0%D1%81%D0%B0_(%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B2%D0%B0%D0%BB%D0%B0).JPG) | Илья Ульянов | CC BY-SA 3.0 |
 | [Чернігів.Троїцький собор 03.jpg](https://commons.wikimedia.org/wiki/File:%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2.%D0%A2%D1%80%D0%BE%D1%97%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_03.jpg) | Лариса Дмитрієва | CC BY-SA 3.0 |
@@ -6692,6 +7022,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [中国宝武总部大厦.jpg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E5%AE%9D%E6%AD%A6%E6%80%BB%E9%83%A8%E5%A4%A7%E5%8E%A6.jpg) | Lhzss8 | CC BY-SA 4.0 |
 | [中国山东省滕州市界河镇鲁班圣祖坊.jpg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E5%B1%B1%E4%B8%9C%E7%9C%81%E6%BB%95%E5%B7%9E%E5%B8%82%E7%95%8C%E6%B2%B3%E9%95%87%E9%B2%81%E7%8F%AD%E5%9C%A3%E7%A5%96%E5%9D%8A.jpg) | Air7538 | CC BY-SA 4.0 |
 | [中国空间站建造“1+1=1”2.png](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E7%A9%BA%E9%97%B4%E7%AB%99%E5%BB%BA%E9%80%A0%E2%80%9C1%2B1%3D1%E2%80%9D2.png) | China News Service | CC BY 4.0 |
+| [中山道.svg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%B1%B1%E9%81%93.svg) | Lincun | CC BY-SA 3.0 |
 | [中華人民共和國國徽.svg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E5%9C%8B%E5%BE%BD.svg) | multiple people, e.g. Lin Huiyin and Liang Sicheng, see [2] | Public domain |
 | [中華民國第12、13任總統馬英九先生官方肖像照.jpg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E7%AC%AC12%E3%80%8113%E4%BB%BB%E7%B8%BD%E7%B5%B1%E9%A6%AC%E8%8B%B1%E4%B9%9D%E5%85%88%E7%94%9F%E5%AE%98%E6%96%B9%E8%82%96%E5%83%8F%E7%85%A7.jpg) | Office of the President, Republic of China | CC BY-SA 3.0 |
 | [中華蘇維埃勢力地圖.svg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E8%8F%AF%E8%98%87%E7%B6%AD%E5%9F%83%E5%8B%A2%E5%8A%9B%E5%9C%B0%E5%9C%96.svg) | Lilauid | CC BY-SA 4.0 |
@@ -6751,6 +7082,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [大日本帝國臺灣總督府之印.jpg](https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9C%8B%E8%87%BA%E7%81%A3%E7%B8%BD%E7%9D%A3%E5%BA%9C%E4%B9%8B%E5%8D%B0.jpg) | 丘崈 | CC0 |
 | [大沢橋梁 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%B2%A2%E6%A9%8B%E6%A2%81_-_panoramio.jpg) | くろふね | CC BY 3.0 |
 | [大潭發電廠.png](https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%BD%AD%E7%99%BC%E9%9B%BB%E5%BB%A0.png) | B2322858 | Public domain |
+| [大连港候船厅 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E8%BF%9E%E6%B8%AF%E5%80%99%E8%88%B9%E5%8E%85_-_panoramio.jpg) | 陈宏宇 | CC BY 3.0 |
 | [大龍峒保安宮三川殿.jpg](https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%BE%8D%E5%B3%92%E4%BF%9D%E5%AE%89%E5%AE%AE%E4%B8%89%E5%B7%9D%E6%AE%BF.jpg) | 寺人孟子 | CC BY-SA 4.0 |
 | [天保の大飢饉.jpg](https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E4%BF%9D%E3%81%AE%E5%A4%A7%E9%A3%A2%E9%A5%89.jpg) | Watanabe Kazan | Public domain |
 | [太和街道全景图.jpg](https://commons.wikimedia.org/wiki/File:%E5%A4%AA%E5%92%8C%E8%A1%97%E9%81%93%E5%85%A8%E6%99%AF%E5%9B%BE.jpg) | Kcx36 | CC BY-SA 4.0 |
@@ -6794,6 +7126,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [明人《岳飞像》轴.jpg](https://commons.wikimedia.org/wiki/File:%E6%98%8E%E4%BA%BA%E3%80%8A%E5%B2%B3%E9%A3%9E%E5%83%8F%E3%80%8B%E8%BD%B4.jpg) | Unknown authorUnknown author | Public domain |
 | [明人绘 《诸葛亮像》（南薰殿本）.jpg](https://commons.wikimedia.org/wiki/File:%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg) | Unknown authorUnknown author | Public domain |
 | [明石海峡大橋 - panoramio (1) (cropped).jpg](https://commons.wikimedia.org/wiki/File:%E6%98%8E%E7%9F%B3%E6%B5%B7%E5%B3%A1%E5%A4%A7%E6%A9%8B_-_panoramio_(1)_(cropped).jpg) | clear_and_sunny | CC BY 3.0 |
+| [明石海峡大橋 - panoramio (1).jpg](https://commons.wikimedia.org/wiki/File:%E6%98%8E%E7%9F%B3%E6%B5%B7%E5%B3%A1%E5%A4%A7%E6%A9%8B_-_panoramio_(1).jpg) | clear_and_sunny | Public domain |
 | [昔の硬貨.jpg](https://commons.wikimedia.org/wiki/File:%E6%98%94%E3%81%AE%E7%A1%AC%E8%B2%A8.jpg) | 新幹線沿線民 | CC BY-SA 4.0 |
 | [晚年唐景崧.jpg](https://commons.wikimedia.org/wiki/File:%E6%99%9A%E5%B9%B4%E5%94%90%E6%99%AF%E5%B4%A7.jpg) | Unknown author. | Public domain |
 | [普悠瑪部落少年祭.jpg](https://commons.wikimedia.org/wiki/File:%E6%99%AE%E6%82%A0%E7%91%AA%E9%83%A8%E8%90%BD%E5%B0%91%E5%B9%B4%E7%A5%AD.jpg) | SunYu14 | CC BY-SA 4.0 |
@@ -6808,6 +7141,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [李登輝總統玉照 001 cropped.jpg](https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E7%99%BB%E8%BC%9D%E7%B8%BD%E7%B5%B1%E7%8E%89%E7%85%A7_001_cropped.jpg) | 國史館 | Attribution |
 | [李總統登輝先生玉照 (cropped).jpg](https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E7%B8%BD%E7%B5%B1%E7%99%BB%E8%BC%9D%E5%85%88%E7%94%9F%E7%8E%89%E7%85%A7_(cropped).jpg) | 中華民國總統府(國史館提供) | Attribution |
 | [李自成行宫 (cropped).png](https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E8%87%AA%E6%88%90%E8%A1%8C%E5%AE%AB_(cropped).png) | Sunatnight | CC BY-SA 3.0 |
+| [杭州湾大桥上的高速岛式服务区.jpeg](https://commons.wikimedia.org/wiki/File:%E6%9D%AD%E5%B7%9E%E6%B9%BE%E5%A4%A7%E6%A1%A5%E4%B8%8A%E7%9A%84%E9%AB%98%E9%80%9F%E5%B2%9B%E5%BC%8F%E6%9C%8D%E5%8A%A1%E5%8C%BA.jpeg) | David290 | CC BY-SA 4.0 |
 | [東大寺 大仏殿（2024年）.jpg](https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E5%A4%A7%E5%AF%BA_%E5%A4%A7%E4%BB%8F%E6%AE%BF%EF%BC%882024%E5%B9%B4%EF%BC%89.jpg) | Mont Blank rich | CC0 |
 | [林義雄家書.jpg](https://commons.wikimedia.org/wiki/File:%E6%9E%97%E7%BE%A9%E9%9B%84%E5%AE%B6%E6%9B%B8.jpg) | 午後書房 | CC BY-SA 2.0 |
 | [桃園市政府警察局中壢分局.jpg](https://commons.wikimedia.org/wiki/File:%E6%A1%83%E5%9C%92%E5%B8%82%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E4%B8%AD%E5%A3%A2%E5%88%86%E5%B1%80.jpg) | 寺人孟子 | CC BY-SA 4.0 |
@@ -6821,6 +7155,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [海原大地震的MMI烈度图.jpg](https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E5%8E%9F%E5%A4%A7%E5%9C%B0%E9%9C%87%E7%9A%84MMI%E7%83%88%E5%BA%A6%E5%9B%BE.jpg) | ShakeMap/USGS | Public domain |
 | [海洋竹南離岸風力發電場.jpg](https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E6%B4%8B%E7%AB%B9%E5%8D%97%E9%9B%A2%E5%B2%B8%E9%A2%A8%E5%8A%9B%E7%99%BC%E9%9B%BB%E5%A0%B4.jpg) | 苗栗縣政府 | Attribution |
 | [淡水紅毛城.jpg](https://commons.wikimedia.org/wiki/File:%E6%B7%A1%E6%B0%B4%E7%B4%85%E6%AF%9B%E5%9F%8E.jpg) | Men1399 | CC BY-SA 3.0 |
+| [深圳赤湾货柜码头.jpg](https://commons.wikimedia.org/wiki/File:%E6%B7%B1%E5%9C%B3%E8%B5%A4%E6%B9%BE%E8%B4%A7%E6%9F%9C%E7%A0%81%E5%A4%B4.jpg) | JHH755 | CC BY-SA 3.0 |
 | [清 佚名 《清圣祖康熙皇帝朝服像》.jpg](https://commons.wikimedia.org/wiki/File:%E6%B8%85_%E4%BD%9A%E5%90%8D_%E3%80%8A%E6%B8%85%E5%9C%A3%E7%A5%96%E5%BA%B7%E7%86%99%E7%9A%87%E5%B8%9D%E6%9C%9D%E6%9C%8D%E5%83%8F%E3%80%8B.jpg) | AnonymousUnknown author Qing Dynasty Court Painter | Public domain |
 | [清 佚名 《清太祖天命皇帝朝服像》 1361x1869.jpg](https://commons.wikimedia.org/wiki/File:%E6%B8%85_%E4%BD%9A%E5%90%8D_%E3%80%8A%E6%B8%85%E5%A4%AA%E7%A5%96%E5%A4%A9%E5%91%BD%E7%9A%87%E5%B8%9D%E6%9C%9D%E6%9C%8D%E5%83%8F%E3%80%8B_1361x1869.jpg) | Unknown authorUnknown author | Public domain |
 | [清 佚名 《清太祖天命皇帝朝服像》.jpg](https://commons.wikimedia.org/wiki/File:%E6%B8%85_%E4%BD%9A%E5%90%8D_%E3%80%8A%E6%B8%85%E5%A4%AA%E7%A5%96%E5%A4%A9%E5%91%BD%E7%9A%87%E5%B8%9D%E6%9C%9D%E6%9C%8D%E5%83%8F%E3%80%8B.jpg) | Unknown authorUnknown author | Public domain |
@@ -6890,6 +7225,7 @@ Thumbnails of Wikimedia Commons files, resized and re-encoded as WebP for this s
 | [頂下郊拼示意圖.jpg](https://commons.wikimedia.org/wiki/File:%E9%A0%82%E4%B8%8B%E9%83%8A%E6%8B%BC%E7%A4%BA%E6%84%8F%E5%9C%96.jpg) | own work | CC BY-SA 3.0 |
 | [馬公風櫃尾荷蘭城堡 peiiunwu.jpg](https://commons.wikimedia.org/wiki/File:%E9%A6%AC%E5%85%AC%E9%A2%A8%E6%AB%83%E5%B0%BE%E8%8D%B7%E8%98%AD%E5%9F%8E%E5%A0%A1_peiiunwu.jpg) | 吳沛芸 | CC BY-SA 3.0 |
 | [高句丽鼎盛时期的版图.jpg](https://commons.wikimedia.org/wiki/File:%E9%AB%98%E5%8F%A5%E4%B8%BD%E9%BC%8E%E7%9B%9B%E6%97%B6%E6%9C%9F%E7%9A%84%E7%89%88%E5%9B%BE.jpg) | Historiographer， KEIM | Public domain |
+| [高雄國際機場.JPG](https://commons.wikimedia.org/wiki/File:%E9%AB%98%E9%9B%84%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4.JPG) | 龍本 | CC BY-SA 3.0 |
 | [高雄市永安區永安宮.JPG](https://commons.wikimedia.org/wiki/File:%E9%AB%98%E9%9B%84%E5%B8%82%E6%B0%B8%E5%AE%89%E5%8D%80%E6%B0%B8%E5%AE%89%E5%AE%AE.JPG) | 祥龍 This file was uploaded with Commonist. | CC BY 3.0 |
 | [高雄捷運 (15684880656).jpg](https://commons.wikimedia.org/wiki/File:%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B_(15684880656).jpg) | billy1125 from Taiwan | CC BY 2.0 |
 | [高雄鳳山縣舊城鳳儀門.jpg](https://commons.wikimedia.org/wiki/File:%E9%AB%98%E9%9B%84%E9%B3%B3%E5%B1%B1%E7%B8%A3%E8%88%8A%E5%9F%8E%E9%B3%B3%E5%84%80%E9%96%80.jpg) | Polyxyz | CC BY-SA 3.0 |
