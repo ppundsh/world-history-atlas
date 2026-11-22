@@ -29,6 +29,50 @@
    "pampa",
    "patagonia_n",
    "patagonia_s"
+  ],
+  "litoral": [
+   "ar_e",
+   "ar_s"
+  ],
+  "northwest": [
+   "ar_a",
+   "ar_y",
+   "ar_k",
+   "ar_f",
+   "ar_t",
+   "ar_g"
+  ],
+  "chaco": [
+   "ar_p",
+   "ar_h"
+  ],
+  "mesopotamia": [
+   "ar_n",
+   "ar_w"
+  ],
+  "cuyo": [
+   "ar_j",
+   "ar_m",
+   "ar_d"
+  ],
+  "patagonia_n": [
+   "ar_q",
+   "ar_r"
+  ],
+  "patagonia_s": [
+   "ar_u",
+   "ar_z",
+   "ar_v"
+  ],
+  "buenos_aires": [
+   "ar_b",
+   "ar_c"
+  ],
+  "pampa": [
+   "ar_l"
+  ],
+  "cordoba": [
+   "ar_x"
   ]
  }
 }

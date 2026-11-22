@@ -19,10 +19,11 @@
 //                      in admin.tsv the value "=parent" makes a unit follow its parent unit's division from then on
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as OpenCC from 'opencc-js';
 
 const region = process.argv[2];
-const here = path.join(path.dirname(new URL(import.meta.url).pathname), region);
+const here = path.join(path.dirname(fileURLToPath(import.meta.url)), region);
 const OUT = path.join(here, '..', '..', 'public', 'data', region + '.json');
 const toHans = OpenCC.Converter({ from: 'tw', to: 'cn' });     // only for prose (event notes, descriptions), never for names
 const cfg = JSON.parse(fs.readFileSync(path.join(here, 'region.json'), 'utf8'));
@@ -80,8 +81,14 @@ let events = rows('events.tsv').map(([m, hant, en, ja, lon, lat]) => Object.assi
   lon && lat ? { lon: +lon, lat: +lat } : {})).sort((a, b) => a.m - b.m);      // optional place: marked on the map when the timeline passes it
 
 // flows.tsv (optional): marches, fronts and migrations, drawn as arrows that advance along their path
-const flows = exists('flows.tsv') ? rows('flows.tsv').map(([id, a, b, color, wt, path, hant, en, ja]) => ({
-  id, a: month(a), b: month(b), color, wt: +wt, path: path.trim().split(/\s+/).map(p => p.split(',').map(Number)), n: [en, hant, toHans(hant), ja] })) : [];
+// A path may have several branches separated by ";" (e.g. several ports of origin): each branch becomes its own
+// arrow with the same id, so they show, hover and open together.
+const flows = exists('flows.tsv') ? rows('flows.tsv').flatMap(([id, a, b, color, wt, path, hant, en, ja]) =>
+  path.split(';').map(s => s.trim()).filter(Boolean).map(s => {
+    const pts = s.split(/\s+/).map(p => p.split(',').map(Number));
+    if (pts.some(q => q.length !== 2 || q.some(v => !Number.isFinite(v)))) throw new Error(`flows.tsv ${id}: bad point in "${s}"`);
+    return { id, a: month(a), b: month(b), color, wt: +wt, path: pts, n: [en, hant, toHans(hant), ja] };
+  })) : [];
 // infra.tsv (optional): major works. Points (dams, power plants, ports, bridges …) get an icon; lines (railways,
 // high-speed lines, motorways, roads, canals) are drawn segment by segment as they open, then stay as a faint network.
 // kind, id, opened (YYYY-MM), closed (YYYY-MM or blank), geometry ("lon,lat" or "lon,lat lon,lat …"),

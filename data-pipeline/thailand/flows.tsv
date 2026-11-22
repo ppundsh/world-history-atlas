@@ -2,3 +2,16 @@
 burma1767	1765-01	1767-04	#5c6bc0	3	96.1,19.75 98.5,16.8 99.3,16.0 100.57,14.35	緬軍進攻阿瑜陀耶	The Burmese march on Ayutthaya	ビルマ軍のアユタヤ侵攻
 taksin	1767-06	1768-01	#e57373	2	102.1,12.6 101.0,12.7 100.49,13.73 100.57,14.35	鄭信由尖竹汶反攻	Taksin strikes back from Chanthaburi	タークシンの反攻
 japan41	1941-12	1942-01	#bc002d	2	100.6,7.2 99.3,10.5 100.49,13.75 99.0,16.8 97.6,16.5	日軍經泰國南下與西進	Japanese forces cross Thailand	日本軍の進駐
+sukhothai_exp	1279-01	1298-12	#e6a817	2	99.7,17.02 100.1,15.7 100.57,14.35 99.9,13.0 99.8,11.0 99.96,8.43	蘭甘亨向南擴張	Ram Khamhaeng's expansion south	ラームカムヘーンの南方拡大
+angkor_sack	1431-01	1431-06	#c62828	3	100.57,14.35 101.5,14.0 102.8,13.7 103.87,13.41	阿瑜陀耶攻陷吳哥	Ayutthaya sacks Angkor	アユタヤのアンコール攻略
+bayinnaung	1563-11	1564-02	#5c6bc0	3	96.48,17.34 98.4,16.7 99.3,16.4 100.26,16.82 100.57,14.35	莽應龍進攻阿瑜陀耶	Bayinnaung marches on Ayutthaya	バインナウンのアユタヤ攻略
+naresuan	1592-12	1593-02	#c62828	2	100.57,14.35 100.1,14.5 100.0,14.47	納黎萱迎戰緬軍（象戰）	Naresuan rides out to the elephant duel	ナレースワンの出陣
+french_mission	1685-03	1685-09	#2f5fb3	2	-4.49,48.38 -10,42 -14,33 -19,20 -18,8 -15.0,0.0 18.0,-34.5 80.0,-5.0 100.57,13.5	法國使節團來暹	The French embassy sails to Siam	フランス使節団の来航
+nine_armies	1785-01	1786-02	#5c6bc0	3	97.6,16.5 98.4,15.2 99.5,14.04;96.1,19.75 98.99,18.79;98.6,12.0 99.3,10.5	緬甸九路大軍入侵	Burma invades with nine armies	九軍戦争の侵攻
+vientiane_sack	1827-03	1828-12	#b71c1c	2	100.49,13.75 101.4,14.5 102.1,14.97 102.8,16.4 102.6,17.97	暹羅平定昭阿努，毀永珍	Siam crushes Anouvong and razes Vientiane	ビエンチャン破壊
+paknam	1893-07	1893-07	#2f5fb3	2	101.0,12.5 100.6,13.6 100.5,13.72	法國砲艦闖入湄南河	French gunboats force the Chao Phraya	パークナム事件
+southern_rail	1903-06	1922-12	#37474f	2	100.49,13.75 99.9,13.8 99.96,12.6 99.18,10.5 99.36,8.43 100.47,7.0 101.0,6.5 101.92,6.1	南線鐵路延伸至馬來亞	The Southern Line reaches Malaya	南本線の延伸
+franco_thai	1941-01	1941-01	#2d2a4a	2	102.1,13.8 102.8,13.5 103.2,13.1	泰軍進攻法屬印度支那	Thai troops attack French Indochina	タイ軍の仏印侵攻
+burma_rail_pow	1942-06	1943-10	#7f8c8d	2	100.5,13.7 99.84,13.82 99.5,14.04 98.7,14.4 98.4,15.3	戰俘被押往泰緬鐵路	POWs are sent to the Burma Railway	捕虜の移送
+isan_migration	1960-01	2000-12	#7f8c8d	3	102.84,16.43 102.1,14.97 100.91,14.53 100.49,13.75	東北部人口移往曼谷	Isan people move to Bangkok	イサーンからの移住
+refugees_cambodia	1975-04	1992-12	#8e6c8a	2	104.9,11.56 103.87,13.41 102.62,13.66	柬埔寨難民湧入泰國邊境	Cambodian refugees flood the Thai border	カンボジア難民の流入

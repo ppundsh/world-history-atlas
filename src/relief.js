@@ -14,18 +14,32 @@ export const RELIEF_REGIONS = [
     credit: { 'zh-Hant': '地形陰影：內政部 20 公尺 DTM 加工製作', 'zh-Hans': '地形阴影：内政部 20 米 DTM 加工制作', en: 'Hillshade: made from Taiwan MOI 20 m DTM', ja: '陰影：台湾内政部 20 m DTM を加工して作成' } },
 ];
 
-// which regions a mode may load: Taiwan mode never fetches Japan's tiles and the other way round
-export function reliefFor(mode, regions) {
-  const own = { taiwan: ['tw'], japan: ['jp'] }[mode];
-  return own ? regions.filter(r => own.includes(r.id)).map(r => r.id) : regions.map(r => r.id);
+// the other regional modes: grey hill shading like Taiwan's, made from the Terrain Tiles by
+// data-pipeline/relief/make-relief.mjs into public/relief/<id> (index.json says which modes use which box)
+const TERRAIN_CREDIT = { 'zh-Hant': '地形陰影：Terrain Tiles（SRTM、GMTED2010、ETOPO1 等）加工製作', 'zh-Hans': '地形阴影：Terrain Tiles（SRTM、GMTED2010、ETOPO1 等）加工制作', en: 'Hillshade: made from Terrain Tiles (SRTM, GMTED2010, ETOPO1 …)', ja: '陰影起伏：Terrain Tiles（SRTM・GMTED2010・ETOPO1 など）を加工して作成' };
+const OWN = { taiwan: ['tw'], japan: ['jp'] };
+
+// which regions a mode shows: a country mode always its own hill shading on the physical base map (a mode never
+// fetches another country's tiles); the world modes Taiwan's and Japan's, with "detailed terrain" on
+export function reliefFor(mode, regions, detailed = true) {
+  const own = OWN[mode];
+  return regions.filter(r => own ? own.includes(r.id) : detailed && (r.id === 'tw' || r.id === 'jp')).map(r => r.id);
 }
 
+const json = async u => { try { const m = await fetch(u); if (m.ok && (m.headers.get('content-type') || '').includes('json')) return await m.json(); } catch { /* none */ } return null; };
 // local regions are used only when their tiles exist
 export async function availableRelief() {
   const out = [];
   for (const r of RELIEF_REGIONS) {
     if (!r.local) { out.push(r); continue; }
-    try { const m = await fetch(BASE + 'relief/' + r.id + '/meta.json'); if (m.ok && (m.headers.get('content-type') || '').includes('json')) out.push({ ...r, ...(await m.json()) }); } catch { /* none */ }
+    const m = await json(BASE + 'relief/' + r.id + '/meta.json'); if (m) out.push({ ...r, ...m });
+  }
+  const idx = await json(BASE + 'relief/index.json');
+  for (const [id, modes] of Object.entries(idx?.regions || {})) {
+    if (RELIEF_REGIONS.some(r => r.id === id)) continue;
+    const m = await json(BASE + 'relief/' + id + '/meta.json'); if (!m) continue;
+    out.push({ id, local: true, bounds: m.bounds, minzoom: m.minzoom, maxzoom: m.maxzoom, tiles: BASE + 'relief/' + id + '/{z}/{x}/{y}.' + (m.ext || 'png'), credit: TERRAIN_CREDIT });
+    for (const mode of modes) (OWN[mode] ||= []).push(id);
   }
   return out;
 }
@@ -80,7 +94,8 @@ export class Relief {
     (this.last ||= {})[r.id] = m;
     return m;
   }
-  // shading canvas (grey, white = no change) for the current flat view
+  // the current flat view's grey shading (white = no change, multiplied); each pixel takes the first region that
+  // covers it
   render(proj, W, H, scale, clip) {
     const w = Math.max(1, Math.round(W * scale)), h = Math.max(1, Math.round(H * scale)), s = 1 / scale;
     // visible lon/lat box (sampled)
@@ -93,27 +108,32 @@ export class Relief {
     const regions = this.regions.filter(r => (!this.only || this.only.includes(r.id)) && overlap(r.bounds, bb));
     if (!regions.length) return null;
     const ppd = W / Math.max(0.01, bb[2] - bb[0]);
-    const ms = regions.map(r => ({ r, m: this.mosaic(r, bb, ppd * (scale < 1 ? 1 : 1)) })).filter(x => x.m);
+    const ms = regions.map(r => ({ r, m: this.mosaic(r, bb, ppd) })).filter(x => x.m);
     if (!ms.length) return null;
-    const out = document.createElement('canvas'); out.width = w; out.height = h;
-    const g = out.getContext('2d'); const img = g.createImageData(w, h); const o = img.data;
-    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
-      const ll = proj.invert([x * s, y * s]);
-      if (!ll || !isFinite(ll[0]) || (clip && !clip(ll))) continue;
-      for (const { r, m } of ms) {
-        if (ll[0] < r.bounds[0] || ll[0] > r.bounds[2] || ll[1] < r.bounds[1] || ll[1] > r.bounds[3]) continue;
-        const n = 2 ** m.z;
-        const px = Math.floor(((ll[0] + 180) / 360 * n - m.x0) * 256), py = Math.floor((merc(ll[1]) * n - m.y0) * 256);
-        if (px < 0 || py < 0 || px >= m.w || py >= m.h) continue;
-        const si = (py * m.w + px) * 4;
-        if (m.d[si + 3] < 8) continue;                      // sea / no data
-        const oi = (y * w + x) * 4, v = m.d[si];
-        o[oi] = o[oi + 1] = o[oi + 2] = v; o[oi + 3] = m.d[si + 3];
-        break;
+    const layer = list => {
+      if (!list.length) return null;
+      const out = document.createElement('canvas'); out.width = w; out.height = h;
+      const g = out.getContext('2d'), img = g.createImageData(w, h), o = img.data;
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        const ll = proj.invert([x * s, y * s]);
+        if (!ll || !isFinite(ll[0]) || (clip && !clip(ll))) continue;
+        for (const { r, m } of list) {
+          if (ll[0] < r.bounds[0] || ll[0] > r.bounds[2] || ll[1] < r.bounds[1] || ll[1] > r.bounds[3]) continue;
+          const n = 2 ** m.z;
+          const px = Math.floor(((ll[0] + 180) / 360 * n - m.x0) * 256), py = Math.floor((merc(ll[1]) * n - m.y0) * 256);
+          if (px < 0 || py < 0 || px >= m.w || py >= m.h) continue;
+          const si = (py * m.w + px) * 4;
+          if (m.d[si + 3] < 8) continue;                      // sea / no data
+          const oi = (y * w + x) * 4;
+          o[oi] = o[oi + 1] = o[oi + 2] = m.d[si];
+          o[oi + 3] = m.d[si + 3];
+          break;
+        }
       }
-    }
-    g.putImageData(img, 0, 0);
-    return { canvas: out, regions: regions.map(r => r.id) };
+      g.putImageData(img, 0, 0);
+      return out;
+    };
+    return { shade: layer(ms), regions: regions.map(r => r.id) };
   }
 }
 const overlap = (a, b) => a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3];

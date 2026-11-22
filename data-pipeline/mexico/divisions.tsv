@@ -12,19 +12,35 @@ i_durango	#c9b79c	杜蘭戈、阿里斯佩監政區	杜兰戈、阿里斯佩监�
 i_merida	#f6b98a	梅里達監政區	梅里达监政区	Intendancy of Mérida	メリダ州
 i_frontier	#a594cf	邊疆省份（德克薩斯、新墨西哥、加利福尼亞）	边疆省份（德克萨斯、新墨西哥、加利福尼亚）	Frontier provinces (Texas, New Mexico, the Californias)	辺境州
 i_guatemala	#cc94a0	瓜地馬拉都督府	瓜地马拉都督府	Captaincy General of Guatemala	グアテマラ総督領
-s_valle	#b5a7d8	墨西哥城、墨西哥州、莫雷洛斯、伊達爾戈（4 州）	墨西哥城、墨西哥州、莫雷洛斯、伊达尔戈（4 州）	Mexico City, México, Morelos, Hidalgo (4 states)	Mexico City, México, Morelos, Hidalgo（州）
-s_tlaxcala	#d8a7b1	特拉斯卡拉州	特拉斯卡拉州	Tlaxcala state	Tlaxcala（州）
-s_puebla	#c9b79c	普埃布拉州	普埃布拉州	Puebla state	Puebla（州）
-s_veracruz	#f6b98a	韋拉克魯斯州	韦拉克鲁斯州	Veracruz state	Veracruz（州）
-s_oaxaca	#a594cf	瓦哈卡州	瓦哈卡州	Oaxaca state	Oaxaca（州）
-s_guerrero	#cc94a0	格雷羅州	格雷罗州	Guerrero state	Guerrero（州）
-s_michoacan	#d6c8b0	米卻肯州	米却肯州	Michoacán state	Michoacán（州）
-s_jalisco	#8cc5d6	哈利斯科、科利馬、納亞里特、阿瓜斯卡連特斯（4 州）	哈利斯科、科利马、纳亚里特、阿瓜斯卡连特斯（4 州）	Jalisco, Colima, Nayarit, Aguascalientes (4 states)	Jalisco, Colima, Nayarit, Aguascalientes（州）
-s_bajio	#a3c4a8	瓜納華托、克雷塔羅（2 州）	瓜纳华托、克雷塔罗（2 州）	Guanajuato, Querétaro (2 states)	Guanajuato, Querétaro（州）
-s_zacatecas	#e3c9a8	聖路易斯波托西、薩卡特卡斯（2 州）	圣路易斯波托西、萨卡特卡斯（2 州）	San Luis Potosí, Zacatecas (2 states)	San Luis Potosí, Zacatecas（州）
-s_north_e	#b8c4e0	新萊昂、塔毛利帕斯、科阿韋拉（3 州）	新莱昂、塔毛利帕斯、科阿韦拉（3 州）	Nuevo León, Tamaulipas, Coahuila (3 states)	Nuevo León, Tamaulipas, Coahuila（州）
-s_north_w	#e0b8c4	奇瓦瓦、杜蘭戈、錫那羅亞、索諾拉（4 州）	奇瓦瓦、杜兰戈、锡那罗亚、索诺拉（4 州）	Chihuahua, Durango, Sinaloa, Sonora (4 states)	Chihuahua, Durango, Sinaloa, Sonora（州）
-s_baja	#e9c46a	南北下加利福尼亞（2 州）	南北下加利福尼亚（2 州）	Baja California and Baja California Sur (2 states)	Baja California and Baja California Sur（州）
-s_tabasco	#f4a261	塔巴斯科、坎佩切（2 州）	塔巴斯科、坎佩切（2 州）	Tabasco, Campeche (2 states)	Tabasco, Campeche（州）
-s_yucatan	#e76f51	猶加敦、金塔納羅奧（2 州）	犹加敦、金塔纳罗奥（2 州）	Yucatán, Quintana Roo (2 states)	Yucatán, Quintana Roo（州）
-s_chiapas	#8ab17d	恰帕斯州	恰帕斯州	Chiapas state	Chiapas（州）
+a_son	#e9c46a	索諾拉州	索诺拉州	Sonora	ソノラ州
+a_bcn	#6fb3c7	下加利福尼亞州	下加利福尼亚州	Baja California	バハ・カリフォルニア州
+a_chh	#a594cf	奇瓦瓦州	奇瓦瓦州	Chihuahua	チワワ州
+a_coa	#e3c9a8	科阿韋拉州	科阿韦拉州	Coahuila	コアウイラ州
+a_tam	#2a9d8f	塔毛利帕斯州	塔毛利帕斯州	Tamaulipas	タマウリパス州
+a_nle	#f6b98a	新萊昂州	新莱昂州	Nuevo León	ヌエボ・レオン州
+a_roo	#a3c4a8	金塔納羅奧州	金塔纳罗奥州	Quintana Roo	キンタナ・ロー州
+a_cam	#8ab17d	坎佩切州	坎佩切州	Campeche	カンペチェ州
+a_tab	#c9b79c	塔巴斯科州	塔巴斯科州	Tabasco	タバスコ州
+a_chp	#8cc5d6	恰帕斯州	恰帕斯州	Chiapas	チアパス州
+a_col	#e76f51	科利馬州	科利马州	Colima	コリマ州
+a_nay	#d8a7b1	納亞里特州	纳亚里特州	Nayarit	ナヤリット州
+a_bcs	#d6c8b0	南下加利福尼亞州	南下加利福尼亚州	Baja California Sur	バハ・カリフォルニア・スル州
+a_sin	#f4a261	錫那羅亞州	锡那罗亚州	Sinaloa	シナロア州
+a_yuc	#b5a7d8	尤卡坦州	尤卡坦州	Yucatán	ユカタン州
+a_ver	#cc94a0	韋拉克魯斯州	韦拉克鲁斯州	Veracruz	ベラクルス州
+a_jal	#e9c46a	哈利斯科州	哈利斯科州	Jalisco	ハリスコ州
+a_mic	#6fb3c7	米卻肯州	米却肯州	Michoacán	ミチョアカン州
+a_gro	#a594cf	格雷羅州	格雷罗州	Guerrero	ゲレーロ州
+a_oax	#e3c9a8	瓦哈卡州	瓦哈卡州	Oaxaca	オアハカ州
+a_mex	#2a9d8f	墨西哥州	墨西哥州	State of Mexico	メヒコ州
+a_pue	#f6b98a	普埃布拉州	普埃布拉州	Puebla	プエブラ州
+a_mor	#a3c4a8	莫雷洛斯州	莫雷洛斯州	Morelos	モレロス州
+a_que	#8ab17d	克雷塔羅州	克雷塔罗州	Querétaro	ケレタロ州
+a_hid	#c9b79c	伊達爾戈州	伊达尔戈州	Hidalgo	イダルゴ州
+a_gua	#8cc5d6	瓜納華托州	瓜纳华托州	Guanajuato	グアナフアト州
+a_slp	#e76f51	聖路易斯波托西州	圣路易斯波托西州	San Luis Potosí	サン・ルイス・ポトシ州
+a_zac	#d8a7b1	薩卡特卡斯州	萨卡特卡斯州	Zacatecas	サカテカス州
+a_agu	#d6c8b0	阿瓜斯卡連特斯州	阿瓜斯卡连特斯州	Aguascalientes	アグアスカリエンテス州
+a_dur	#f4a261	杜蘭戈州	杜兰戈州	Durango	ドゥランゴ州
+a_tla	#b5a7d8	特拉斯卡拉州	特拉斯卡拉州	Tlaxcala	トラスカラ州
+a_dif	#cc94a0	墨西哥城	墨西哥城	Mexico	メキシコシティ

@@ -148,7 +148,7 @@ CLIO=路徑/cliopatria_polities_only_v021.geojson NE=路徑/natural-earth-vector
 
 ### 以 OpenStreetMap 取得精確路線
 
-Natural Earth 的精度約 1–2 公里；更精確的路線由 OpenStreetMap 取得，已整合在離線抓取裡：雙擊 `抓取離線檔案.bat`（`fetch-offline.ps1`）會在縮圖之後接著更新路線；只更新路線用 `fetch-offline.ps1 -RoutesOnly`（或 `抓取OSM路線.bat`），略過路線用 `-NoRoutes`。新增國家或在 `infra.tsv` 加了路線，再執行一次就會補上，已取得的從快取直接使用。流程：
+Natural Earth 的精度約 1–2 公里；更精確的路線由 OpenStreetMap 取得，已整合在離線抓取裡：雙擊 `抓取離線檔案.bat`（`fetch-offline.ps1`）會在縮圖之後接著更新路線；只更新路線用 `fetch-offline.ps1 -RoutesOnly`（或 `抓取OSM路線.bat`），略過路線用 `-NoRoutes`。同一流程也會從 Wikidata（CC0）更新墨西哥、阿根廷、巴西、印尼的州／省長政黨（`data-pipeline/party/fetch-party.mjs`，每國一次查詢，寫入各模式的 `party.tsv`；只更新政黨用 `-PartyOnly`）。海底電纜的路線依 `data-pipeline/cables/cables.tsv`：現役海纜取自 TeleGeography Submarine Cable Map（`fetch-offline.ps1 -CablesOnly` 下載一次，`data-pipeline/cables/build-cables.mjs` 在不穿越陸地的條件下簡化到約 2 公里，端點即實際登陸站）；TeleGeography 沒有的歷史海纜列出史料中的登陸站，站與站之間由程式在海上求路（Natural Earth 1:50m 陸地）。`node data-pipeline/cables/build-cables.mjs --check` 可檢查是否有海纜穿越陸地。土耳其的省會市長政黨直接寫在 `data-pipeline/turkey/party.tsv`（英文維基百科 1999–2024 年地方選舉）。各國模式的行政區由 `data-pipeline/_gen/admin1.py` 依 Natural Earth 一級行政區重建（regionkit 的 `U.admin1()`），舊單位 id 留作 region.json 的 groups 別名。新增國家或在 `infra.tsv` 加了路線，再執行一次就會補上，已取得的從快取直接使用。流程：
 1. 依 `infra.tsv` 的維基百科條目查出 Wikidata 項目（每 50 條一次請求）；
 2. 透過 Overpass API 取得 OpenStreetMap 上標了該項目的路線關係（含子路線）與其路段，多條合併成一次查詢、一次只送一個請求，結果快取在 `data-pipeline/sources/osm/`；
 3. 在路段上截取 `infra.tsv` 所列城市之間的部分（一條建設常只是整條路線的某一段）；
@@ -196,6 +196,24 @@ python3 data-pipeline/make_satellite.py --region tw tw.jpg 117.5 123.5 21 27 8 9
 ```
 
 下載的原始 JPG 不需要放進 repo（`.gitignore` 已排除 `world.topo.bathy.*`）。
+
+**各地區模式的地形**（自然地理底圖）：執行
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\fetch-offline.ps1 -Relief
+```
+
+從 AWS 開放資料的 Terrain Tiles（SRTM、GMTED2010、ETOPO1 等）下載高程圖磚（快取在 `data-pipeline/sources/terrain`），產生和台灣相同的灰色地形陰影 `public/relief/<id>`（範圍同 `data-pipeline/satellite/regions.tsv`）：光線以西北為主、加上西、北、西南的弱光，平地不變色，範圍邊緣淡出。國家模式切到「自然地理」底圖就會顯示；台灣沿用內政部 20 公尺 DTM 製作的山影（`relief_tw.py`），日本沿用國土地理院的陰影圖磚。
+
+已建立的地區會略過（舊版做的會自動重做），`-Refresh` 全部重做；`public/relief/index.json` 記錄哪個模式用哪一區。舊版的高程分層色塊 `public/terrain` 已不再使用，執行時會自動移除。
+
+**各地區模式的高解析圖層**：`data-pipeline/satellite/regions.tsv` 列出每個地區模式的範圍。執行
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\fetch-offline.ps1 -Satellite
+```
+
+會下載 7 月的 Blue Marble 8 張 500 公尺分幅（A1–D2，存在 `data-pipeline/sources/bmng`，不進 repo），再依範圍產生 `public/basemap/<id>/{z}/{x}/{y}.webp`（3D 地球，層級 6–8，依範圍大小自動決定）與 `public/basemap/<id>.jpg`（平面地圖），並更新 `public/basemap/sat/meta.json`。已建立的地區會略過；新增地區只要在 regions.tsv 加一行再執行一次，`-Refresh` 則全部重做。平面地圖只載入畫面中央所在地區的圖。
 
 ## 音樂
 

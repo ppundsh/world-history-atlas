@@ -8,7 +8,7 @@ import { Relief, availableRelief } from './relief.js';
 import { TaiwanCompare } from './compare.js';
 import { CREDITS } from './credits.gen.js';
 import { BASEMAPS } from './styles.js';
-import { WORLD_EVENTS } from './worldEvents.gen.js';
+import { WORLD_EVENTS, MODE_EVENTS } from './worldEvents.gen.js';
 import { LANGS, t, formatYear, detectLang, safeGet, safeSet } from './i18n.js';
 import { FlatMap, cardOffsets } from './flat.js';
 import { Music } from './audio.js';
@@ -21,7 +21,7 @@ import { loadCapitals, capitalsReady, cityThumb, capitalOf } from './capitals.js
 import { pageImage, pagePicture, figureHtml, setPageImageListener } from './pageimage.js';
 import { classIconSvg } from './classicon.js';
 import { loadWorks, worksFor, workTitle, workWiki, setPictureListener } from './artworks.js';
-import { frame, loadRegion, REGIONS, LAYERED, regionYearMonth, monthOf, loadReligions, religionOf, religionShares, loadRegimes, regimeOf, regimeShares, REGIME_COLORS, loadArt, artActive, ART_COLORS, ART_SYM, THEMES, loadTheme, themeOf, themeActive, themeColor, setOwnPictureListener, LOCAL_COLOR, WORK_ICON, WORK_COLOR, workName, PARTY_COLOR, partyAt } from './modes.js';
+import { frame, loadRegion, REGIONS, LAYERED, regionYearMonth, monthOf, loadReligions, religionOf, religionShares, loadRegimes, regimeOf, regimeShares, REGIME_COLORS, loadArt, artActive, ART_COLORS, ART_SYM, THEMES, loadTheme, themeOf, themeActive, themeColor, setOwnPictureListener, LOCAL_COLOR, WORK_ICON, WORK_COLOR, workName, PARTY_COLOR, partyAt, BACKBONE } from './modes.js';
 
 const $ = s => document.querySelector(s);
 const PROJECTIONS = Object.keys(PROJ);
@@ -31,6 +31,17 @@ const SPEEDS = [0.25, 0.5, 1, 2, 4, 8];
 // Piecewise time scale for the slider: later centuries get more room (and more playing time),
 // so recent history is easier to follow. A full run takes FULL_RUN seconds at 1×.
 const SEG = [[-3400, 0], [-1000, 0.2], [0, 0.32], [1000, 0.5], [1500, 0.63], [1800, 0.77], [1900, 0.86], [2026, 1]];
+const WORLD_SEG = SEG.map(s => [...s]);
+// a thematic mode may bring its own timeline (data/<mode>.json "seg": [[year, position] …]), so that it starts
+// where its history starts (the Internet mode: with the first signal fires) rather than in 3400 BC
+const themeSeg = () => (THEMES.includes(st.mode) && store.theme?.[st.mode]?.seg) || null;
+function applySeg() {
+  const s = themeSeg();
+  SEG.splice(0, SEG.length, ...(s || WORLD_SEG).map(x => [...x]));
+  if (!s) SEG[0][0] = store.meta.from;
+  SEG[SEG.length - 1][0] = maxYear();
+}
+function minYear() { return themeSeg()?.[0][0] ?? store.meta.from; }
 const FULL_RUN = 240;
 const yearToPos = y => { for (let i = 1; i < SEG.length; i++) if (y <= SEG[i][0]) { const [y0, p0] = SEG[i - 1], [y1, p1] = SEG[i]; return p0 + (y - y0) / (y1 - y0) * (p1 - p0); } return 1; };
 // the regime mode ends with V-Dem's last year; the other world modes run to the map data's last year
@@ -41,6 +52,7 @@ function yearsPerSec(y) {
   for (let i = 1; i < SEG.length; i++) if (y <= SEG[i][0]) { const [y0, p0] = SEG[i - 1], [y1, p1] = SEG[i]; return (y1 - y0) / ((p1 - p0) * FULL_RUN) * (st.speed || 1); }
   return 1;
 }
+const posToYearF = p => { for (let i = 1; i < SEG.length; i++) if (p <= SEG[i][1]) { const [y0, p0] = SEG[i - 1], [y1, p1] = SEG[i]; return y0 + (p - p0) / (p1 - p0) * (y1 - y0); } return SEG.at(-1)[0]; };
 const posToYear = p => { for (let i = 1; i < SEG.length; i++) if (p <= SEG[i][1]) { const [y0, p0] = SEG[i - 1], [y1, p1] = SEG[i]; return Math.round(y0 + (p - p0) / (p1 - p0) * (y1 - y0)); } return SEG.at(-1)[0]; };
 const TICKS = [-3000, -2000, -1000, 0, 500, 1000, 1500, 1700, 1800, 1900, 1950, 2000];
 const REGION_TICKS = {
@@ -81,13 +93,23 @@ const REGION_FIRST = { china: '1911-10', taiwan: '1600-01' };
 const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'thailand', 'indonesia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk', 'india', 'iran', 'turkey', 'egypt', 'morocco', 'usa', 'mexico', 'brazil', 'argentina'];
 const BEARINGS = { n: 0, e: 90, s: 180, w: -90 };          // MapLibre bearing that puts that direction on top
 // the timeline's events: the mode's own list (thematic modes that have one), otherwise the world events
+// the events of the timeline, the event table and the event places: the world mode has the world's events; the
+// other global modes have their own (if any) and, with the "world events" switch on, the world's too
+const GLOBAL_MODES = ['religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo'];
 function evList() {
-  const T = themeOf(st.mode); if (!T?.events) return EVENTS;
-  // the hidden mode keeps the world events and adds each Servant's original
-  if (T.pointsAlways) return (app.evMerged?.T === T ? app.evMerged : (app.evMerged = Object.assign([...EVENTS, ...T.events.map(e => ({ ...e, servant: true }))].sort((a, b) => a.y - b.y), { T }))).slice();
-  return T.events;
+  if (!GLOBAL_MODES.includes(st.mode)) return EVENTS;
+  const T = themeOf(st.mode), world = st.worldEv !== false;
+  const own = T?.events ? T.events.map(e => T.pointsAlways ? { ...e, servant: true } : e)     // fgo: each Servant's original
+    : MODE_EV[st.mode] || [];                            // religion, regime, art: their own events (events_<mode>.tsv)
+  if (!world) return own;
+  const from = themeSeg()?.[0][0] ?? -Infinity;       // a mode with its own timeline: none from before it starts
+  if (!own.length) return from > -Infinity ? EVENTS.filter(e => e.y >= from) : EVENTS;
+  const key = st.mode + ':' + own.length + ':' + from;
+  if (app.evMerged?.key !== key) app.evMerged = Object.assign([...EVENTS.filter(e => e.y >= from), ...own].sort((a, b) => a.y - b.y), { key });
+  return app.evMerged.slice();
 }
 const EVENTS = WORLD_EVENTS.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]], d: [e.d[2], e.d[0], e.d[1], e.d[3]] }));   // → polity column order
+const MODE_EV = Object.fromEntries(Object.entries(MODE_EVENTS).map(([m, l]) => [m, l.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]], d: [e.d[2], e.d[0], e.d[1], e.d[3]] }))]));
 
 let evRows = [];               // history event table rows (declared early: renderYear can run before buildEvTable's section)
 const WIKI = { 'zh-Hant': ['zhwiki', 'zh', '&variant=zh-tw'], 'zh-Hans': ['zhwiki', 'zh', '&variant=zh-cn'], en: ['enwiki', 'en', ''], ja: ['jawiki', 'ja', ''] };
@@ -100,8 +122,8 @@ const app = {
     projBy: safeGet('projBy') || 'surface', density: +(safeGet('density') || 0.85),
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
-    minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
-    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
+    minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', worldEv: safeGet('worldEv') !== '0', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', backbone: safeGet('backbone') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
+    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), cableW: +(safeGet('cableW') || 1), cableStyle: safeGet('cableStyle') || 'shade', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
   legendCollapsed: window.innerWidth < 700,          // keep the map visible on phones
@@ -124,7 +146,7 @@ readHash();
 boot(0, 0.08);
 await loadCore();
 boot(1, 0.3);
-SEG[0][0] = store.meta.from;
+SEG[0][0] = WORLD_SEG[0][0] = store.meta.from;
 SEG[SEG.length - 1][0] = maxYear();
 st.year = Math.max(store.meta.from, Math.min(maxYear(), st.year));
 st.pos = yearToPos(st.year);
@@ -137,10 +159,10 @@ boot(3, 0.62);
 if (st.mode === 'religion') await loadReligions();
 if (st.mode === 'regime') await loadRegimes();
 if (st.mode === 'art') { await loadArt(); loadWorks().then(() => redraw()); }
-if (THEMES.includes(st.mode)) { await loadTheme(st.mode); if (themeOf(st.mode).pictures) loadWorks(st.mode).then(() => redraw()); }
+if (THEMES.includes(st.mode)) { await loadTheme(st.mode); if (themeOf(st.mode).pictures) loadWorks(st.mode).then(() => redraw()); applySeg(); st.year = Math.max(minYear(), st.year); st.pos = yearToPos(st.year); }
 ensureCapitals();
 if (REGIONS.includes(st.mode) && !app.initialView) { const v = { ...REGION_VIEW[st.mode] }; if (st.projection === 'globe') v.k *= st.mode === 'taiwan' ? 0.5 : 0.7; app.initialView = v; }
-if (REGIONS.includes(st.mode)) { await loadRegion(st.mode); st.year = regionYearMonth(reg(), st.cm)[0]; await loadChunk(chunkFor(st.year)); st.pos = st.cm / (reg().months - 1); }
+if (REGIONS.includes(st.mode)) { await loadRegion(st.mode); if (!app.hashT) st.cm = regionStart(); st.year = regionYearMonth(reg(), st.cm)[0]; await loadChunk(chunkFor(st.year)); st.pos = st.cm / (reg().months - 1); }
 
 boot(4, 0.8);
 app.flat = new FlatMap($('#flat'), app);
@@ -170,6 +192,7 @@ await setProjection(st.projection);
 music.load().then(ok => { $('#music').hidden = !ok; refreshMusic(); });
 drawSpark();
 renderYear();
+if (isChina()) startEvents();                  // opened on a country at its start: its first events at once
 boot(4, 1);
 document.documentElement.classList.add('ready');
 $('#loading').classList.add('done');
@@ -193,12 +216,23 @@ async function detectSatellite() {
 }
 function satAvailable() { return !!(app.satTiles || app.satImageUrl); }
 // regional images are only fetched once the flat map is zoomed in far enough to use them
+// — only those covering the middle of the view (there is one for every regional mode, too many to hold at once);
+// the last few stay loaded
+const satLoaded = new Map();
 async function loadSatRegions() {
-  if (app.satRegionImgs || !app.satRegions?.length) return app.satRegionImgs;
-  const load = g => new Promise(res => { const im = new Image(); im.onload = () => res({ ...g, img: im }); im.onerror = () => res(null); im.src = g.url; });
-  app.satRegionImgs = (await Promise.all(app.satRegions.map(load))).filter(Boolean);
-  app.flat?.setHires(app.satRegionImgs);
-  return app.satRegionImgs;
+  if (!app.satRegions?.length) return [];
+  const v = currentView(), lon = ((v.lon + 540) % 360) - 180, lat = v.lat;
+  const want = app.satRegions.filter(g => lon >= g.bounds[0] && lon <= g.bounds[2] && lat >= g.bounds[1] && lat <= g.bounds[3]);
+  const key = want.map(g => g.id).join(',');
+  if (key === app.satRegionKey) return app.satRegionImgs;
+  app.satRegionKey = key;
+  const load = g => satLoaded.get(g.id) || satLoaded.set(g.id, new Promise(res => { const im = new Image(); im.onload = () => res({ ...g, img: im }); im.onerror = () => res(null); im.src = g.url; })).get(g.id);
+  const imgs = (await Promise.all(want.map(load))).filter(Boolean);
+  if (app.satRegionKey !== key) return app.satRegionImgs;        // the view moved on meanwhile
+  while (satLoaded.size > 6) { const k0 = [...satLoaded.keys()].find(k => !want.some(g => g.id === k)); if (!k0) break; satLoaded.delete(k0); }
+  app.satRegionImgs = imgs;
+  app.flat?.setHires(imgs);
+  return imgs;
 }
 function loadSatImage() {
   if (app.satImage || !app.satImageUrl) return Promise.resolve(app.satImage);
@@ -280,7 +314,7 @@ app.onViewChange = () => {
 
 // ---------------------------------------------------------------- time
 async function setYear(y, fromSlider = false) {
-  y = Math.max(store.meta.from, Math.min(maxYear(), Math.round(y)));
+  y = Math.max(minYear(), Math.min(maxYear(), Math.round(y)));
   const c = chunkFor(y), ticket = ++app.yearTicket;
   if (!fromSlider) st.pos = yearToPos(y);           // set first, so playback carries on from the new place
   if (!store.chunks.has(c.id)) { $('#busy').hidden = false; await loadChunk(c); $('#busy').hidden = true; }
@@ -542,6 +576,7 @@ async function setMode(mode) {
     $('#pov').closest('label').hidden = true;
     buildTicks(); drawSpark();
     await setMonth(st.cm);
+    startEvents();
   } else {
     $('#pov').closest('label').hidden = false;
     if (REGIONS.includes(prev)) {
@@ -549,9 +584,8 @@ async function setMode(mode) {
       const v = { lon: 60, lat: 25, k: 1 };
       if (st.projection === 'globe') app.globe?.setCenter(v); else app.flat.setCenter(v);
     }
-    SEG[SEG.length - 1][0] = maxYear();
-    st.year = Math.min(st.year, maxYear());
-    if (mode === 'internet' && st.year < 1837) st.year = 1990;      // nothing to see before the telegraph
+    applySeg();
+    st.year = Math.max(minYear(), Math.min(st.year, maxYear()));
     buildTicks(); drawSpark();
     await setYear(st.year);
   }
@@ -565,7 +599,7 @@ async function setMode(mode) {
 function buildTicks() {
   const ticks = isChina()
     ? REGION_TICKS[st.mode].map(y => ({ y, pos: monthOf(reg(), y) / (reg().months - 1) }))
-    : TICKS.map(y => ({ y, pos: yearToPos(y) }));
+    : (themeSeg() ? themeSeg().slice(0, -1).map(s => s[0]) : TICKS).map(y => ({ y, pos: yearToPos(y) }));
   $('#ticks').innerHTML = ticks.map(k => `<span style="left:${k.pos * 100}%" data-y="${k.y}" data-pos="${k.pos}"></span>`).join('');
   buildEventMarks();
 }
@@ -625,9 +659,23 @@ function hoverEvent(ev, when, e, above) {
   place();
 }
 
+// a country's first events usually fall on the very month its timeline starts, and at a country's playing speed
+// (months per second) they were gone before they could be seen: at the start the timeline first stays a moment
+// on them (their places and pictures already on the map), then moves on
+const LEAD = 3;                                       // seconds the start is held
+function regionStart() { return REGION_FIRST[st.mode] ? monthOf(reg(), ...REGION_FIRST[st.mode].split('-').map(Number)) : 0; }
+function startEvents() {
+  app.lead = 0;
+  if (!isChina() || st.cm !== regionStart()) return false;
+  if (!(reg()?.events || []).some(e => e.m <= st.cm && st.cm - e.m <= 24)) return false;
+  app.dotPrev = st.cm - 25; app.dotMode = st.mode; eventPlaces();   // their places and pictures
+  app.lead = LEAD;
+  return true;
+}
 function play() {
   if (st.playing) return;
-  if (st.pos >= 1) setPos(0);
+  if (st.pos >= 1) { setPos(0); if (isChina()) { st.cm = 0; startEvents(); } }
+  else if (isChina() && st.cm === regionStart() && !app.lead) startEvents();
   st.playing = true; lastT = performance.now();
   setPulsesPaused(false);
   if (!$('#evPop').hidden && !$('#evPop').classList.contains('fade')) { clearTimeout(app.popT); app.popT = setTimeout(() => $('#evPop').classList.add('fade'), 4500); }
@@ -690,15 +738,20 @@ function syncLock() {
 }
 function pause() {
   st.playing = false; cancelAnimationFrame(rafId);
-  setPulsesPaused(true); clearTimeout(app.popT);              // pictures stay while the timeline is paused
+  // the pictures on the map stay while paused; the event card above the timeline fades away
+  setPulsesPaused(true);
+  clearTimeout(app.popT); if (!$('#evPop').hidden) app.popT = setTimeout(() => $('#evPop').classList.add('fade'), 4500);
   $('#play').classList.remove('on'); $('#play').title = t(st.lang).play;
   music.pause();                               // music follows the timeline
+  redraw();                                    // stopped: routes show what happened around this month only
 }
 async function tick(now) {
   if (!st.playing) return;
   if (isChina()) st.mps = Math.max(0.5, reg().months / REGION_RUN[st.mode] * (st.speed || 1));   // months per second, for the arrows' timing
   const dt = Math.min(0.1, (now - lastT) / 1000); lastT = now;
-  if (!busy) {
+  if (app.lead > 0 && !(isChina() && st.cm === regionStart())) app.lead = 0;   // moved away (dragged, another mode)
+  if (app.lead > 0) app.lead -= dt;                    // held at a country's start, on its first events
+  else if (!busy) {
     st.transition = 'grow';
     st.pos = Math.min(1, st.pos + dt / (isChina() ? REGION_RUN[st.mode] : FULL_RUN) * st.speed);
     if (isChina()) {
@@ -706,9 +759,14 @@ async function tick(now) {
       if (m !== st.cm) { busy = true; await setMonth(m, true); busy = false; }
     } else {
       const y = posToYear(st.pos);
+      st.yearF = posToYearF(st.pos) + 0.5;          // exact year (posToYear rounds), for cables laid during the year
       if (y !== st.year) { busy = true; await setYear(y, true); busy = false; }
+      else if (THEMES.includes(st.mode) && themeOf(st.mode)?.flows?.some(f => f.g != null && f.a === st.year)) redraw();   // a cable is being laid
     }
-    // at the end the player stays in its playing state (and the music keeps going) until paused or moved back
+    // at the end the player stays playing (button and music) while the event pictures and the card fade away
+    if (st.pos >= 1) {
+      if (!app.atEnd) { app.atEnd = true; dotLoop(); clearTimeout(app.popT); if (!$('#evPop').hidden) app.popT = setTimeout(() => $('#evPop').classList.add('fade'), 4500); }
+    } else app.atEnd = false;
   }
   rafId = requestAnimationFrame(tick);
 }
@@ -750,11 +808,13 @@ function buildUI() {
     projTags(); redraw(); writeHash();
   };
   $('#pov').onchange = e => { st.pov = e.target.value; redraw(); writeHash(); };
-  for (const k of ['labels', 'labelsIn', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'borders', 'rivers', 'graticule', 'modern', 'distort', 'relief', 'twCompare', 'evTable', 'minFont', 'animate', 'events']) {
+  for (const k of ['labels', 'labelsIn', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'borders', 'rivers', 'graticule', 'modern', 'distort', 'relief', 'twCompare', 'evTable', 'minFont', 'animate', 'events', 'worldEv']) {
     const el = $('#t-' + k); el.checked = st[k];
     el.onchange = async () => {
       st[k] = el.checked;
-      if (['modern', 'minFont', 'animate', 'events', 'relief', 'labelsIn', 'distort', 'evTable', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints'].includes(k)) safeSet(k, el.checked ? '1' : '0');
+      if (['modern', 'minFont', 'animate', 'events', 'relief', 'labelsIn', 'distort', 'evTable', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'worldEv'].includes(k)) safeSet(k, el.checked ? '1' : '0');
+      // the world's events in a global mode: timeline marks, event table, caption and places all follow
+      if (k === 'worldEv') { clearPulses(); holdPulse(null); $('#evPop').hidden = true; app.popKey = null; buildTicks(); buildEvTable(); renderYear(); }
       if (k === 'distort') syncDistort();
       if (k === 'capitals') ensureCapitals();
       // switching event places (or capitals) off removes the pictures already on the map at once
@@ -811,7 +871,7 @@ function buildUI() {
   $('#toWorld').onclick = () => { $('#mode').value = 'world'; setMode('world'); };
   // Japan: overseas territories on / off
   $('#ov-japan').onchange = e => { st.overseas = e.target.checked; st.transition = 'jump'; st.selected = null; hideInfo(); app.globe?.update(true); renderYear(); writeHash(); };
-  for (const [el, k] of [['#lc-feud', 'feuds'], ['#lc-power', 'powers'], ['#lc-us', 'usForces'], ['#lc-works', 'works'], ['#lc-network', 'network'], ['#lc-fgoCustom', 'fgoCustom']]) {
+  for (const [el, k] of [['#lc-feud', 'feuds'], ['#lc-power', 'powers'], ['#lc-us', 'usForces'], ['#lc-works', 'works'], ['#lc-network', 'network'], ['#lc-backbone', 'backbone'], ['#lc-fgoCustom', 'fgoCustom']]) {
     $(el).checked = !!st[k];
     $(el).onchange = e => { st[k] = e.target.checked; safeSet(k, st[k] ? '1' : '0'); app.globe?.update(true); redraw(); };
   }
@@ -829,6 +889,9 @@ function buildUI() {
   $('#reset').onclick = () => (st.projection === 'globe' ? app.globe.reset() : app.flat.reset());
   $('#lockBtn').onclick = () => { st.free = !st.free; app.flat.setFree(st.free); syncLock(); };
   $('#north').onclick = () => (st.projection === 'globe' ? app.globe?.northUp() : app.flat.northUp());
+  $('#cableW').value = st.cableW; $('#cableStyle').value = st.cableStyle;
+  $('#cableW').oninput = e => { st.cableW = +e.target.value; safeSet('cableW', e.target.value); redraw(); };
+  $('#cableStyle').onchange = e => { st.cableStyle = e.target.value; safeSet('cableStyle', e.target.value); redraw(); };
   $('#picSize').value = st.picSize;
   $('#picSize').oninput = e => { st.picSize = +e.target.value; safeSet('picSize', e.target.value); setPulseSize(st.picSize); syncPicSize(); redraw(); };
   setPulseSize(st.picSize); syncPicSize();
@@ -900,7 +963,7 @@ function buildUI() {
   });
   app.onSelect = hit => {
     if (hit?.pulse) { openPulse(hit.pulse); return; }
-    if (hit?.line) { if (hit.line.kind === 'work') showWork(hit.line.id); else if (hit.line.kind === 'cable') showCable(hit.line.id); return; }
+    if (hit?.line) { if (hit.line.kind === 'work') showWork(hit.line.id); else if (hit.line.kind === 'cable') showCable(hit.line.id); else showFlow(hit.line.id); return; }
     if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : hit.marker.kind === 'art' ? showArt(hit.marker.id) : hit.marker.kind === 'lang' || hit.marker.kind === 'langArea' ? showLang(hit.marker.id) : hit.marker.kind === 'cap' ? (st.selected = hit.marker.id, showPolity(hit.marker.id), redraw()) : hit.marker.kind === 'work' ? showWork(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
     app.selectedProv = null;
     if (!hit) { st.selected = null; hideInfo(); redraw(); return; }
@@ -917,7 +980,7 @@ function buildUI() {
     if (setHoverLine(hit?.line ? hit.line.kind + ':' + hit.line.id : null)) st.projection === 'globe' ? app.globe?.map?.triggerRepaint() : app.flat.request();
     const now = performance.now(); if (now - hoverT < 60) return; hoverT = now;
     const tip = $('#tooltip');
-    const info = hit?.line ? hit.line.kind !== 'flow' : hit?.marker || hit?.pulse;     // a war or migration arrow has no panel
+    const info = hit?.line ? hit.line.kind !== 'flow' || !!flowOf(hit.line.id) : hit?.marker || hit?.pulse;     // theme arrows have no panel
     $('#stage').style.cursor = info ? 'pointer' : '';
     if (hit?.marker || hit?.pulse || hit?.line) {
       tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.line ? hit.line.name || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + (info ? ' · ' + t(st.lang).clickInfo : '');
@@ -950,7 +1013,7 @@ function applyLang() {
   $('#title').textContent = s.title;
   $('#subtitle').textContent = s.subtitle;
   for (const [id, key] of [['#l-lang', 'language'], ['#l-proj', 'projection'], ['#l-base', 'basemap'], ['#l-pov', 'pov'], ['#l-labels', 'labels'], ['#l-borders', 'borders'], ['#l-rivers', 'rivers'], ['#l-graticule', 'graticule'], ['#l-speed', 'speed'],
-    ['#l-modern', 'modern'], ['#l-relief', 'reliefOpt'], ['#l-distort', 'distort'], ['#l-twCompare', 'twCompare'], ['#l-evTable', 'evTable'], ['#l-distortStr', 'distortStr'], ['#l-labelsIn', 'labelsIn'], ['#l-capitals', 'capitals'], ['#l-artPics', 'artPics'], ['#l-evDots', 'evDots'], ['#l-warFlows', 'warFlows'], ['#recStop', 'capStop'], ['#l-recMusic', 'capMusic'], ['#recGo', 'capGo'], ['#l-minFont', 'minFont'], ['#l-animate', 'animate'], ['#l-events', 'events'], ['#l-bearing', 'bearing'], ['#l-relLabels', 'relLabels'], ['#showBtn', 'show']]) $(id).textContent = s[key];
+    ['#l-modern', 'modern'], ['#l-relief', 'reliefOpt'], ['#l-distort', 'distort'], ['#l-twCompare', 'twCompare'], ['#l-evTable', 'evTable'], ['#l-distortStr', 'distortStr'], ['#l-labelsIn', 'labelsIn'], ['#l-capitals', 'capitals'], ['#l-artPics', 'artPics'], ['#l-evDots', 'evDots'], ['#l-worldEv', 'worldEv'], ['#l-warFlows', 'warFlows'], ['#recStop', 'capStop'], ['#l-recMusic', 'capMusic'], ['#recGo', 'capGo'], ['#l-minFont', 'minFont'], ['#l-animate', 'animate'], ['#l-events', 'events'], ['#l-bearing', 'bearing'], ['#l-relLabels', 'relLabels'], ['#showBtn', 'show']]) $(id).textContent = s[key];
   $('#showBtn').textContent = s.show + ' ▾';
   $('#relLabels').innerHTML = ['religion', 'both', 'country'].map(k => `<option value="${k}">${s.relLabelOpts[k]}</option>`).join('');
   $('#relLabels').value = st.relLabels;
@@ -987,7 +1050,7 @@ function applyLang() {
   $('#zin').title = s.zoomIn; $('#zout').title = s.zoomOut; $('#reset').title = s.reset; $('#north').title = s.north; if (st.projection !== 'globe') syncLock(); $('#full').title = s.fullscreen;
   $('#t-twCompare').closest('label').title = s.twShapeTip + '\n' + s.twInspired;
   $('#capSwitch').title = s.capitalsTip; $('#t-artPics').closest('label').title = s.artPicsTip;
-  $('#markBtn').textContent = s.marks + ' ▾'; $('#l-markGeneral').textContent = s.markGeneral; $('#l-picSize').textContent = s.picSize; $('#l-pics').textContent = s.picsL;
+  $('#markBtn').textContent = s.marks + ' ▾'; $('#l-markGeneral').textContent = s.markGeneral; $('#l-picSize').textContent = s.picSize; $('#l-cableW').textContent = s.cableW; $('#l-cableStyle').textContent = s.cableStyle; [...$('#cableStyle').options].forEach(o => { o.textContent = s.cableStyles[o.value]; }); $('#l-pics').textContent = s.picsL;
   syncMarkMenu();
   $('#dotSwitch').title = s.evDotsTip; $('#shotBtn').title = s.capShot; $('#recBtn').title = s.capRec;
   if (app.pin) renderPin();
@@ -1079,7 +1142,7 @@ function projTags() {
 }
 function reliefCredit() {
   const on = st.basemap === 'physical' ? (app.reliefRegions || []).filter(r => (app.reliefIds || []).includes(r.id)) : [];
-  return on.map(r => ' ｜ ' + (r.credit[st.lang] || r.credit.en)).join('');
+  return [...new Set(on.map(r => r.credit[st.lang] || r.credit.en))].map(c => ' ｜ ' + c).join('');   // bands and shading share one credit
 }
 
 // a mode with its own track (tracks.json "mode") switches to it; leaving it goes back to the earlier track
@@ -1309,7 +1372,11 @@ function placeEvPop() {
 function eventPlaces() {
   const now = isChina() ? st.cm : st.year, prev = app.dotPrev, mode = app.dotMode;
   // pictures of events the timeline has left behind (jumped back, or far ahead) go at once, even while paused
-  removePulses(p => p.when != null && (p.when > now || now - p.when > (isChina() ? 36 : 12)));
+  // "far ahead" is measured in playing time, not a fixed number of years: where the timeline is compressed (the
+  // ancient eras, the Internet mode's first two thousand years) twelve years go by in a fraction of a second,
+  // which made the pictures vanish at once; a picture may stay as long as its lifetime at the current speed
+  const reach = isChina() ? 36 : Math.max(12, yearsPerSec(st.year) * 11);
+  removePulses(p => p.when != null && (p.when > now || now - p.when > reach));
   app.dotPrev = now; app.dotMode = st.mode;
   if (mode !== st.mode) { clearPulses(); return; }
   if (!st.evDots || prev == null || now <= prev) return;
@@ -1347,7 +1414,8 @@ function syncLocalLabels() {
   const s = t(st.lang), c = REGIONS.includes(st.mode) ? store.regions?.[st.mode] : null;
   for (const k of ['feud', 'power', 'us']) { $('#l-lc-' + k).textContent = localLabel(k); $('#lc-' + k).closest('label').hidden = !(c?.local || []).some(x => x.kind === k); }
   $('#l-lc-works').textContent = t(st.lang).worksL; $('#lc-works').closest('label').hidden = !(c?.works || []).length;
-  $('#l-lc-network').textContent = t(st.lang).networkL; $('#lc-network').closest('label').hidden = !(c?.works || []).some(w => w.path);
+  $('#l-lc-network').textContent = t(st.lang).networkL; $('#lc-network').closest('label').hidden = !(c?.works || []).some(w => w.path && !BACKBONE.has(w.kind));
+  $('#l-lc-backbone').textContent = t(st.lang).backboneL; $('#lc-backbone').closest('label').hidden = !(c?.works || []).some(w => w.path && BACKBONE.has(w.kind));
   $('#l-lc-fgoCustom').textContent = s.fgoCustomL; $('#lc-fgoCustom').closest('label').hidden = !themeOf('fgo')?.points?.some(p => p.custom);
   $('#l-ly-party').textContent = s.partyBy?.[st.mode]?.layer || s.partyLayer;
   $('#partyBox').hidden = !c?.party;
@@ -1494,10 +1562,14 @@ for (const id of ['#info', '#pinInfo']) {
 }
 
 // a picture of the place, building, bank or currency an info panel is about (Wikipedia's lead picture, Commons only)
+// title may be one title, or a list of [title, wiki language] to try in turn (a Chinese article without a picture,
+// then the English one)
 function addPlacePic(box, title, wl, label) {
   if (!st.pics) return;
   const tag = box.dataset.pic = Math.random().toString(36).slice(2);
-  pageImage(title, wl).then(i => {
+  const tries = Array.isArray(title) ? title.filter(x => x[0]) : [[title, wl]];
+  const first = async () => { for (const [ti, l] of tries) { const i = await pageImage(ti, l).catch(() => null); if (i) return i; } return null; };
+  first().then(i => {
     if (!i || box.dataset.pic !== tag || box.hidden) return;
     box.querySelector('.placepic')?.remove();
     const d = document.createElement('div'); d.className = 'placepic'; d.innerHTML = figureHtml(i, label || t(st.lang).artPhoto, esc);
@@ -1646,6 +1718,23 @@ function showLang(id) {
   if (!L.pictures && (x.w[1] || x.w[0])) addPlacePic(box, x.w[1] || x.w[0], x.w[1] ? 'en' : 'zh');
 }
 // a cable of the Internet mode: years, length, operators and landing points (TeleGeography), or a terrestrial line
+// a route of a regional mode (flows.tsv: marches, fronts, migrations, trade routes)
+function flowOf(id) { return REGIONS.includes(st.mode) ? (reg()?.flows || []).find(f => f.id === id) : null; }
+function showFlow(id) {
+  const x = flowOf(id); if (!x) return;
+  const c = reg(), s = t(st.lang), col = st.langInfo.col;
+  const [y0, m0] = regionYearMonth(c, x.a), [y1, m1] = regionYearMonth(c, x.b);
+  const name = x.n[col] || x.n[0];
+  const box = $('#info');
+  delete box.dataset.disputed; box.dataset.sticky = '1';
+  box.innerHTML = `<button class="x" aria-label="close">×</button>
+    <h2><span class="star" style="color:${x.color}">➜</span>${esc(name)}</h2>
+    <table class="facts"><tr><th>${s.span}</th><td>${s.ym(y0, m0)}${x.b > x.a ? ' – ' + s.ym(y1, m1) : ''}</td></tr></table>
+    <p><a href="${wikiLink(null, name.split(/[（(]/)[0], st.lang)}" target="_blank" rel="noopener">${s.flowSearch}</a></p>
+    <p class="src">${s.flowSrc}</p>`;
+  box.hidden = false;
+  box.querySelector('.x').onclick = () => hideInfo();
+}
 function showCable(id) {
   const s = t(st.lang), col = st.langInfo.col, L = themeOf(st.mode); if (!L) return;
   const x = (L.flows || []).find(q => q.id === id); if (!x) return;
@@ -1686,7 +1775,7 @@ function showSeat(id, kind = 'seat') {
     <p class="src">${kind === 'seat' ? s.seatSrc : s.localSrc}</p>`;
   box.hidden = false;
   box.querySelector('.x').onclick = () => hideInfo();
-  addPlacePic(box, x.w[0] || name.split(/[（(、,]/)[0], x.w[0] ? 'zh' : wikiLang());
+  addPlacePic(box, [[x.w[0], 'zh'], [x.w[1], 'en'], [x.w[0] ? '' : name.split(/[（(、,]/)[0], wikiLang()]]);
 }
 // where a work's place and route come from (shown under its description)
 function workSource(x, s, y0) {
@@ -1719,7 +1808,7 @@ function showWork(id) {
     <p class="src">${workSource(x, s, y0)}${x.kind === 'cable' && st.mode === 'taiwan' && x.id !== 'cb_tpc5' && x.id !== 'cb_tpkm' ? '<br>' + s.cableSrcSMC : ''}</p>`;
   box.hidden = false;
   box.querySelector('.x').onclick = () => hideInfo();
-  addPlacePic(box, x.w[0] || name.split(/[（(、,]/)[0], x.w[0] ? 'zh' : wikiLang());
+  addPlacePic(box, [[x.w[0], 'zh'], [x.w[1], 'en'], [x.w[0] ? '' : name.split(/[（(、,]/)[0], wikiLang()]]);
 }
 function showProvince(prov) {
   const s = t(st.lang), col = st.langInfo.col;
@@ -1782,7 +1871,7 @@ function readHash() {
   if (BASES.includes(h.get('b'))) st.basemap = h.get('b');
   if (h.has('v')) st.pov = h.get('v');
   if (MODES.includes(h.get('m'))) st.mode = h.get('m');
-  if (h.has('t')) st.cm = +h.get('t') || 0;
+  if (h.has('t')) { st.cm = +h.get('t') || 0; app.hashT = true; }
   st.layers = { control: h.get('L') !== 'admin', admin: ['admin', 'both'].includes(h.get('L')) };
   st.layer = st.layers.control ? 'control' : 'admin';
   st.overseas = h.get('o') === '1';

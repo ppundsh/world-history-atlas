@@ -11,7 +11,7 @@ catalonia1939	1938-12	1939-02	#111827	3	0.6,41.6 1.25,41.12 2.17,41.39	加泰隆
 charlemagne778	0778-04	0778-08	#1d4ed8	2	-0.5,43.3 -1.64,42.82 -0.88,41.65 -1.32,43.01	查理曼遠征薩拉戈薩，回程於隆塞斯瓦列斯遇襲	Charlemagne's expedition to Zaragoza and the ambush at Roncevaux	カール大帝のサラゴサ遠征とロンスヴォー
 abdalrahman756	0755-08	0756-05	#15803d	2	-2.0,35.2 -4.42,36.72 -4.78,37.88	阿布杜拉赫曼一世自北非渡海入哥多華	Abd al-Rahman I crosses from Africa to Córdoba	アブド・アッラフマーン1世がコルドバへ
 almanzor997	0997-07	0997-08	#15803d	2	-4.78,37.88 -6.0,39.5 -7.0,41.2 -8.54,42.88	曼蘇爾北伐聖地牙哥	Almanzor's raid on Santiago	マンスールのサンティアゴ遠征
-camino	1000-01	1500-01	#a16207	2	-1.64,42.82 -2.67,42.43 -3.7,42.34 -5.57,42.6 -6.6,42.55 -8.54,42.88	聖地牙哥朝聖之路（法國之路）	The Way of St James (Camino francés)	サンティアゴ巡礼路（フランス人の道）
+camino	1000-01	1500-01	#8e44ad	2	-1.64,42.82 -2.67,42.43 -3.7,42.34 -5.57,42.6 -6.6,42.55 -8.54,42.88	聖地牙哥朝聖之路（法國之路）	The Way of St James (Camino francés)	サンティアゴ巡礼路（フランス人の道）
 almoravid1086	1086-07	1086-10	#15803d	2	-5.35,36.13 -5.98,37.39 -6.96,38.88	穆拉比特王朝渡海，扎拉卡大捷	The Almoravids cross over and win at Sagrajas	ムラービト朝の渡海とザッラーカの戦い
 cid1094	1092-01	1094-06	#b91c1c	2	-3.7,41.6 -1.1,41.0 -0.38,39.47	熙德進軍瓦倫西亞	El Cid marches on Valencia	エル・シッドのバレンシア進軍
 almohad1195	1195-06	1195-07	#15803d	2	-5.98,37.39 -4.78,37.88 -3.96,38.98	阿爾摩哈德北上，阿拉爾科斯大捷	The Almohads march north and win at Alarcos	ムワッヒド朝の北進とアラルコスの勝利
@@ -21,7 +21,7 @@ sicily1282	1282-08	1282-09	#b91c1c	2	2.17,41.39 8.0,39.5 12.5,38.0 13.36,38.12	�
 columbus1492	1492-08	1492-10	#ca8a04	2	-6.88,37.22 -15.42,28.1 -17.1,28.1 -40.0,26.5 -74.5,24.0	哥倫布首航：帕洛斯→加那利→巴哈馬	Columbus's first voyage: Palos, the Canaries, the Bahamas	コロンブスの第1回航海
 granada1492	1491-04	1492-01	#b91c1c	2	-4.0,37.3 -3.75,37.2 -3.6,37.18	天主教雙王圍攻格拉納達	The Catholic Monarchs besiege Granada	カトリック両王のグラナダ包囲
 moriscos1609	1609-09	1614-01	#475569	2	-0.38,39.47 -0.1,39.0 -0.62,35.7	驅逐摩里斯科人渡海至北非	Moriscos expelled across the sea to North Africa	モリスコのアフリカへの追放
-armada1588	1588-05	1588-09	#ca8a04	2	-9.14,38.72 -8.4,43.37 -4.0,48.5 1.5,50.5 2.0,57.0 -2.0,59.5 -10.0,55.0 -8.4,43.37	無敵艦隊北航英倫並繞不列顛返航	The Armada sails to the Channel and back round Britain	無敵艦隊の航路
+armada1588	1588-05	1588-09	#ca8a04	2	-9.14,38.72 -9.8,40 -9.5,42.5 -8.4,43.37 -4.0,48.5 1.5,50.5 2.0,57.0 -2.0,59.5 -10.0,55.0 -8.4,43.37	無敵艦隊北航英倫並繞不列顛返航	The Armada sails to the Channel and back round Britain	無敵艦隊の航路
 almansa1707	1707-03	1707-04	#7c3aed	2	-2.13,40.07 -1.86,39.0 -1.1,38.87	波旁軍東進阿爾曼薩	Bourbon army marches east to Almansa	ブルボン軍のアルマンサ進軍
 barcelona1714	1713-07	1714-09	#7c3aed	2	-0.88,41.65 0.62,41.62 1.6,41.5 2.17,41.39	波旁軍圍攻巴塞隆納	Bourbon troops besiege Barcelona	ブルボン軍のバルセロナ包囲
 trafalgar1805	1805-10	1805-10	#1d4ed8	2	-6.3,36.53 -6.1,36.3 -6.03,36.18	法西聯合艦隊出加地斯	The Franco-Spanish fleet sails from Cádiz	仏西艦隊がカディスを出航
@@ -30,9 +30,9 @@ riego1820	1820-01	1820-03	#16a34a	2	-6.08,36.47 -5.6,36.9 -5.98,37.39 -4.78,37.8
 angouleme1823	1823-04	1823-09	#1d4ed8	2	-1.79,43.34 -3.7,42.34 -3.7,40.42 -3.78,38.09 -6.3,36.53	法國昂古萊姆公爵率軍直至加地斯	The Duke of Angoulême's army marches to Cádiz	アングレーム公の軍がカディスへ
 zumalacarregui	1835-06	1835-07	#b45309	2	-2.25,42.95 -2.68,43.0 -2.93,43.26	卡洛斯派圍攻畢爾包	The Carlists besiege Bilbao	カルリスタのビルバオ包囲
 annual1921	1921-07	1921-08	#b91c1c	2	-3.8,35.0 -3.4,35.15 -2.94,35.29	阿瓦爾潰敗撤向梅利利亞	Rout from Annual toward Melilla	アンワールからメリリャへの潰走
-airlift1936	1936-07	1936-08	#7c2d12	2	-5.37,35.89 -5.8,36.3 -5.98,37.39	德義飛機將非洲軍空運過海峽	German and Italian planes airlift the Army of Africa	独伊空軍によるアフリカ軍の空輸
-mola1936	1936-07	1936-09	#7c2d12	2	-1.64,42.82 -3.7,41.65 -3.9,41.0 -3.7,40.42	莫拉北方軍南下瓜達拉馬山	Mola's northern army moves south to the Guadarrama	モラの北部軍がグアダラマへ
-north1937	1937-03	1937-10	#7c2d12	2	-2.6,42.85 -2.93,43.26 -3.8,43.46 -5.85,43.36	國民軍北方戰役：畢爾包→桑坦德→希洪	Nationalist northern campaign: Bilbao, Santander, Gijón	国民軍の北部作戦
+airlift1936	1936-07	1936-08	#1e3a8a	2	-5.37,35.89 -5.8,36.3 -5.98,37.39	德義飛機將非洲軍空運過海峽	German and Italian planes airlift the Army of Africa	独伊空軍によるアフリカ軍の空輸
+mola1936	1936-07	1936-09	#1e3a8a	2	-1.64,42.82 -3.7,41.65 -3.9,41.0 -3.7,40.42	莫拉北方軍南下瓜達拉馬山	Mola's northern army moves south to the Guadarrama	モラの北部軍がグアダラマへ
+north1937	1937-03	1937-10	#1e3a8a	2	-2.6,42.85 -2.93,43.26 -3.8,43.46 -5.85,43.36	國民軍北方戰役：畢爾包→桑坦德→希洪	Nationalist northern campaign: Bilbao, Santander, Gijón	国民軍の北部作戦
 brigades	1936-10	1938-11	#b91c1c	2	2.9,42.7 2.17,41.39 -0.38,39.47 -1.86,39.0 -3.7,40.42	國際縱隊經庇里牛斯山赴阿爾瓦塞特與馬德里	International Brigades through the Pyrenees to Albacete and Madrid	国際旅団がピレネーからアルバセテ、マドリードへ
 retirada1939	1939-01	1939-02	#475569	2	2.17,41.39 2.82,41.98 3.1,42.43 3.0,42.7	大撤退：共和派難民越境入法國	La Retirada: Republican refugees cross into France	ラ・レティラーダ：共和国派難民のフランス越境
 green1975	1975-11	1975-11	#15803d	2	-9.6,30.4 -11.0,28.5 -13.2,27.15	摩洛哥綠色進軍入西屬撒哈拉	Morocco's Green March into Spanish Sahara	モロッコの緑の行進

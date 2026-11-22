@@ -1,5 +1,5 @@
 # 埃及模式：行政區劃（逐月）。欄位：年月	單元	行政區。上下埃及、羅馬行省、阿拉伯時期的上下埃及、鄂圖曼行省與現代各省，以今日單元概略標示。
-# 來源：維基百科「古埃及」「羅馬埃及」「埃及行政區劃」
+# 1960 年起的省（muhafazah），依今日 27 省；路克索 2009 年由基納省分出，西奈 1967–1982 年被以色列佔領期間以統治勢力著色、1979 年分為南北西奈。
 -3100-01	alex,delta_w,delta_e,memphis,canal,fayyum,middle,thebes,aswan,redsea,oases,marmarica,sinai,nubia,sennar,canaan,cyrenaica	none
 -3100-01	alex,delta_w,delta_e,memphis,canal	t_lower
 -3100-01	fayyum,middle,thebes,aswan	t_upper
@@ -12,18 +12,35 @@
 0641-09	alex,delta_w,delta_e,memphis,canal,sinai,marmarica	a_low
 0641-09	fayyum,middle,thebes,aswan,oases,redsea	a_sa
 1517-01	alex,delta_w,delta_e,memphis,canal,sinai,marmarica,fayyum,middle,thebes,aswan,oases,redsea	o_eya
-1960-01	alex	g_alex
-1960-01	delta_w	g_delta_w
-1960-01	delta_e	g_delta_e
-1960-01	memphis	g_memphis
-1960-01	canal	g_canal
-1960-01	fayyum	g_fayyum
-1960-01	middle	g_middle
-1960-01	thebes	g_thebes
-1960-01	aswan	g_aswan
-1960-01	redsea	g_redsea
-1960-01	oases	g_oases
-1960-01	marmarica	g_marmarica
-1960-01	sinai	g_sinai
+1960-01	eg_sin	a_sin
+1960-01	eg_asn	a_asn
+1960-01	eg_ba	a_ba
+1960-01	eg_mt	a_mt
+1960-01	eg_wad	a_wad
+1960-01	eg_suz	a_suz
+1960-01	eg_js	a_sin
+1960-01	eg_pts	a_pts
+1960-01	eg_dk	a_dk
+1960-01	eg_shr	a_shr
+1960-01	eg_is	a_is
+1960-01	eg_dt	a_dt
+1960-01	eg_kfs	a_kfs
+1960-01	eg_bh	a_bh
+1960-01	eg_alx	a_alx
+1960-01	eg_c	a_c
+1960-01	eg_gz	a_gz
+1960-01	eg_mn	a_mn
+1960-01	eg_fym	a_fym
+1960-01	eg_bns	a_bns
+1960-01	eg_mnf	a_mnf
+1960-01	eg_kb	a_kb
+1960-01	eg_gh	a_gh
+1960-01	eg_shg	a_shg
+1960-01	eg_kn	a_kn
+1960-01	eg_ast	a_ast
+1960-01	eg_lx	a_kn
 1967-06	sinai	none
-1982-04	sinai	g_sinai
+1979-04	eg_js	a_js
+2009-12	eg_lx	a_lx
+1982-04	eg_sin	a_sin
+1982-04	eg_js	a_js

@@ -13,4 +13,6 @@ G = {'aceh': 'AC', 'sumatra_n': 'SU SB RI KR', 'sumatra_s': 'JA SS BE LA BB', 'b
      'bali_nt': 'BA NB NT', 'kal_w': 'KB KT', 'kal_e': 'KS KI', 'sulawesi_s': 'SN SR SG', 'sulawesi_n': 'SA GO ST', 'maluku': 'MA MU', 'papua': 'PA PB'}
 for k, v in G.items(): U.put(k, U.a1(*['ID-' + c for c in v.split()]))
 U.put('timor_leste', U.a0('TLS'))
+# the country's real first-level divisions (the old ids above are aliases in region.json "groups")
+U.admin1('IDN', 'id_')
 U.write(OUT)

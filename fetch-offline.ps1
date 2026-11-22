@@ -9,7 +9,13 @@
 #         -SheetsOnly     不連線，只把已下載的縮圖依年代合併成大圖（下載進行中也可在另一個視窗執行）
 #         -RoutesOnly     只更新鐵路與道路路線（OpenStreetMap）
 #         -NoRoutes       不更新鐵路與道路路線
+#         -Satellite      建立各地區模式的高解析衛星底圖（NASA Blue Marble，第一次下載約 300 MB，之後只補新地區）
+#         -Relief         建立各地區模式的地形陰影（灰色山影；Terrain Tiles，只補新地區或舊版）
+#         -CablesOnly     只更新海底電纜路線（TeleGeography，一次下載）
+#         -PartyOnly      只更新墨西哥、阿根廷、巴西、印尼的州／省長政黨（Wikidata，共約 4 次查詢）
 #         -Corridor       路線關係找不到的路段，改下載沿線主要道路／鐵路來求路徑（資料量大、較慢；預設不做，沿用 Natural Earth）
+# 縮圖之後也會從 TeleGeography 下載海底電纜路線，依 data-pipeline\cables\cables.tsv 重建各模式的海纜（不穿越陸地、端點為實際登陸站）。
+# 縮圖之後也會從 Wikidata 更新墨西哥、阿根廷、巴西、印尼模式的州／省長政黨（data-pipeline\party\fetch-party.mjs，結果寫入各模式的 party.tsv）。
 # 縮圖之後會接著從 OpenStreetMap 更新各地區模式的鐵路、公路路線（data-pipeline\osm\fetch-routes.mjs）：
 # 新增國家或在 infra.tsv 加了路線，再執行一次就會補上；已取得的會從快取（data-pipeline\sources\osm）直接使用。
 # 中斷（Ctrl+C、斷線、關機）後再執行一次即可從中斷處接著抓；已抓過的不會再請求。
@@ -21,7 +27,12 @@ param(
   [switch]$DryRun,
   [switch]$SheetsOnly,
   [switch]$RoutesOnly,
-  [switch]$NoRoutes
+  [switch]$NoRoutes,
+  [switch]$PartyOnly,
+  [switch]$CablesOnly,
+  [switch]$Satellite,
+  [switch]$Relief,
+  [switch]$Corridor
 )
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
@@ -49,7 +60,41 @@ function Update-Routes {
   node @routeArgs
   if ($LASTEXITCODE) { Write-Host '路線更新中途停止；再執行一次會從快取繼續。' -ForegroundColor Yellow }
 }
+# 州／省長政黨（Wikidata，CC0）：每個國家一次查詢，結果有快取（data-pipeline\sources\party）
+function Update-Party {
+  Write-Host '更新州／省長政黨（Wikidata）：每個國家一次查詢。'
+  $partyArgs = @('data-pipeline/party/fetch-party.mjs')
+  if ($Refresh) { $partyArgs += '--refresh' }
+  node @partyArgs
+  if ($LASTEXITCODE) { Write-Host '政黨資料更新失敗；稍後可執行 .\fetch-offline.ps1 -PartyOnly 重試。' -ForegroundColor Yellow }
+}
 if ($RoutesOnly) { Update-Routes; exit $LASTEXITCODE }
+# 海底電纜（TeleGeography Submarine Cable Map，CC BY-NC-SA 3.0）：一次下載，快取在 data-pipeline\sources\cables
+function Update-Cables {
+  Write-Host '更新海底電纜路線（TeleGeography）：下載一次後在本機重建，約需數分鐘。'
+  $cableArgs = @('data-pipeline/cables/fetch-cables.mjs')
+  if ($Refresh) { $cableArgs += '--refresh' }
+  node @cableArgs
+  if ($LASTEXITCODE) { Write-Host '海纜更新未完成；訊息中列出的問題處理後，可執行 .\fetch-offline.ps1 -CablesOnly 重試。' -ForegroundColor Yellow }
+}
+if ($PartyOnly) { Update-Party; exit $LASTEXITCODE }
+if ($CablesOnly) { Update-Cables; exit $LASTEXITCODE }
+# 各地區模式的高解析衛星底圖（NASA Blue Marble: Next Generation，公有領域）：原始分幅存在 data-pipeline\sources\bmng
+# 各地區模式的高解析地形（Terrain Tiles on AWS：SRTM、GMTED2010、ETOPO1 等）：下載的高程圖磚存在 data-pipeline\sources\terrain
+if ($Relief) {
+  Write-Host '建立各地區模式的高解析地形圖層：下載高程圖磚（每個地區數百張），再產生灰色地形陰影。'
+  $reliefArgs = @('data-pipeline/relief/make-relief.mjs')
+  if ($Refresh) { $reliefArgs += '--refresh' }
+  node @reliefArgs
+  exit $LASTEXITCODE
+}
+if ($Satellite) {
+  Write-Host '建立各地區模式的高解析衛星底圖：先下載 Blue Marble 8 張分幅（只下載缺少的），再切出各地區的圖磚。'
+  $satArgs = @('data-pipeline/satellite/make-regions.mjs')
+  if ($Refresh) { $satArgs += '--refresh' }
+  node @satArgs
+  exit $LASTEXITCODE
+}
 
 if ($SheetsOnly) {
   Write-Host '把已下載的縮圖依年代合併成大圖（不連線）…'
@@ -71,6 +116,7 @@ if (-not $DryRun) {
   node data-pipeline/offline/sheets.mjs
   if ($LASTEXITCODE) { Write-Host '合併大圖失敗；可再執行 .\fetch-offline.ps1 -SheetsOnly 重試。' -ForegroundColor Yellow }
 }
+if (-not $DryRun) { Update-Party; Update-Cables }
 if (-not $DryRun -and -not $NoRoutes) { Update-Routes }
 $min = [math]::Round(((Get-Date) - $t0).TotalMinutes, 1)
 Write-Host "完成（$min 分鐘）。請 commit public\offline、public\data 與 data-pipeline 資料夾。" -ForegroundColor Green

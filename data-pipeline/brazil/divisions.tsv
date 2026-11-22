@@ -9,18 +9,30 @@ c_minas	#6fb3c7	米納斯吉拉斯都督轄區	米纳斯吉拉斯都督辖区	Ca
 c_goias	#b5a7d8	戈亞斯都督轄區	戈亚斯都督辖区	Captaincy of Goiás	ゴイアス長官領
 c_mt	#d8a7b1	馬托格羅索都督轄區	马托格罗索都督辖区	Captaincy of Mato Grosso	マット・グロッソ長官領
 c_rs	#c9b79c	聖佩德羅南里奧格蘭德	圣佩德罗南里奥格兰德	Rio Grande de São Pedro	リオ・グランデ・デ・サン・ペドロ
-s_bahia	#f6b98a	巴伊亞、塞爾希培（2 州）	巴伊亚、塞尔希培（2 州）	Bahia, Sergipe (2 states)	Bahia, Sergipe（州）
-s_pernambuco	#a594cf	伯南布哥、阿拉戈斯、帕拉伊巴、北里奧格蘭德（4 州）	伯南布哥、阿拉戈斯、帕拉伊巴、北里奥格兰德（4 州）	Pernambuco, Alagoas, Paraíba, Rio Grande do Norte (4 states)	Pernambuco, Alagoas, Paraíba, Rio Grande do Norte（州）
-s_ceara	#cc94a0	塞阿拉、皮奧伊（2 州）	塞阿拉、皮奥伊（2 州）	Ceará, Piauí (2 states)	Ceará, Piauí（州）
-s_maranhao	#d6c8b0	馬拉尼昂州	马拉尼昂州	Maranhão state	Maranhão（州）
-s_para	#8cc5d6	帕拉、阿馬帕（2 州）	帕拉、阿马帕（2 州）	Pará, Amapá (2 states)	Pará, Amapá（州）
-s_amazonas	#a3c4a8	亞馬遜、羅賴馬（2 州）	亚马逊、罗赖马（2 州）	Amazonas, Roraima (2 states)	Amazonas, Roraima（州）
-s_acre	#e3c9a8	阿克里州	阿克里州	Acre state	Acre（州）
-s_rondonia	#e9c46a	朗多尼亞州	朗多尼亚州	Rondônia state	Rondônia（州）
-s_mato_grosso	#f4a261	南北馬托格羅索（2 州）	南北马托格罗索（2 州）	Mato Grosso, Mato Grosso do Sul (2 states)	Mato Grosso, Mato Grosso do Sul（州）
-s_goias	#e76f51	戈亞斯、聯邦區、托坎廷斯（3 州）	戈亚斯、联邦区、托坎廷斯（3 州）	Goiás, Federal District, Tocantins (3 states)	Goiás, Federal District, Tocantins（州）
-s_minas	#8ab17d	米納斯吉拉斯州	米纳斯吉拉斯州	Minas Gerais state	Minas Gerais（州）
-s_rio	#2a9d8f	里約熱內盧、聖埃斯皮里圖（2 州）	里约热内卢、圣埃斯皮里图（2 州）	Rio de Janeiro, Espírito Santo (2 states)	Rio de Janeiro, Espírito Santo（州）
-s_sao_paulo	#6fb3c7	聖保羅州	圣保罗州	São Paulo state	São Paulo（州）
-s_parana	#b5a7d8	巴拉那、聖卡塔琳娜（2 州）	巴拉那、圣卡塔琳娜（2 州）	Paraná, Santa Catarina (2 states)	Paraná, Santa Catarina（州）
-s_rio_grande	#d8a7b1	南里奧格蘭德州	南里奥格兰德州	Rio Grande do Sul state	Rio Grande do Sul（州）
+st_ac	#e9c46a	阿克里州	阿克里州	Acre	アクレ
+st_al	#6fb3c7	阿拉戈斯州	阿拉戈斯州	Alagoas	アラゴアス
+st_ap	#a594cf	阿馬帕州	阿马帕州	Amapá	アマパー
+st_am	#e3c9a8	亞馬遜州	亚马逊州	Amazonas	アマゾナス
+st_ba	#2a9d8f	巴伊亞州	巴伊亚州	Bahia	バイーア
+st_ce	#f6b98a	塞阿拉州	塞阿拉州	Ceará	セアラー
+st_df	#a3c4a8	聯邦區（巴西利亞）州	联邦区（巴西利亚）州	Federal District	連邦直轄区
+st_es	#8ab17d	聖埃斯皮里圖州	圣埃斯皮里图州	Espírito Santo	エスピリトサント
+st_go	#c9b79c	戈亞斯州	戈亚斯州	Goiás	ゴイアス
+st_ma	#8cc5d6	馬拉尼昂州	马拉尼昂州	Maranhão	マラニョン
+st_mt	#e76f51	馬托格羅索州	马托格罗索州	Mato Grosso	マットグロッソ
+st_ms	#d8a7b1	南馬托格羅索州	南马托格罗索州	Mato Grosso do Sul	マットグロッソ・ド・スル
+st_mg	#d6c8b0	米納斯吉拉斯州	米纳斯吉拉斯州	Minas Gerais	ミナスジェライス
+st_pa	#f4a261	帕拉州	帕拉州	Pará	パラー
+st_pb	#b5a7d8	帕拉伊巴州	帕拉伊巴州	Paraíba	パライバ
+st_pr	#cc94a0	巴拉那州	巴拉那州	Paraná	パラナ
+st_pe	#e9c46a	伯南布哥州	伯南布哥州	Pernambuco	ペルナンブーコ
+st_pi	#6fb3c7	皮奧伊州	皮奥伊州	Piauí	ピアウイ
+st_rj	#a594cf	里約熱內盧州	里约热内卢州	Rio de Janeiro	リオデジャネイロ
+st_rn	#e3c9a8	北里奧格蘭德州	北里奥格兰德州	Rio Grande do Norte	リオグランデ・ド・ノルテ
+st_rs	#2a9d8f	南里奧格蘭德州	南里奥格兰德州	Rio Grande do Sul	リオグランデ・ド・スル
+st_ro	#f6b98a	朗多尼亞州	朗多尼亚州	Rondônia	ロンドニア
+st_rr	#a3c4a8	羅賴馬州	罗赖马州	Roraima	ロライマ
+st_sc	#8ab17d	聖卡塔琳娜州	圣卡塔琳娜州	Santa Catarina	サンタカタリーナ
+st_sp	#c9b79c	聖保羅州	圣保罗州	São Paulo	サンパウロ
+st_se	#8cc5d6	塞爾希培州	塞尔希培州	Sergipe	セルジッペ
+st_to	#e76f51	托坎廷斯州	托坎廷斯州	Tocantins	トカンチンス

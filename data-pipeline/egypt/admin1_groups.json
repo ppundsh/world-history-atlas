@@ -1,0 +1,55 @@
+{
+"sinai": [
+"eg_sin",
+"eg_js"
+],
+"aswan": [
+"eg_asn"
+],
+"redsea": [
+"eg_ba"
+],
+"marmarica": [
+"eg_mt"
+],
+"oases": [
+"eg_wad"
+],
+"canal": [
+"eg_suz",
+"eg_pts",
+"eg_is"
+],
+"delta_e": [
+"eg_dk",
+"eg_shr",
+"eg_dt"
+],
+"delta_w": [
+"eg_kfs",
+"eg_mnf",
+"eg_gh"
+],
+"alex": [
+"eg_bh",
+"eg_alx"
+],
+"memphis": [
+"eg_c",
+"eg_gz",
+"eg_kb"
+],
+"middle": [
+"eg_mn",
+"eg_ast"
+],
+"fayyum": [
+"eg_fym",
+"eg_bns"
+],
+"thebes": [
+"eg_shg",
+"eg_kn",
+"eg_lx"
+]
+}

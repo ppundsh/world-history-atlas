@@ -6,3 +6,10 @@ feud	rif_rep	1921-09	1926-05	-3.94	35.25	里夫共和國	Republic of the Rif	リ
 power	barghawata	0744-01	1058-01	-7.0	33.5	巴爾加瓦塔聯盟	Barghawata confederacy	バルガワータ	大西洋沿岸的柏柏爾宗教政權。	A Berber religious state on the Atlantic coast.	大西洋岸のベルベル政権。	
 power	salé	1627-01	1668-01	-6.8	34.04	薩累海盜共和國	Republic of Salé	サレ共和国	由摩里斯科人建立的海盜共和國。	A corsair republic founded by Moriscos.	海賊共和国。	萨累共和国
 us	ceuta_melilla	1497-09	2026-12	-2.94	35.29	休達與梅利利亞（西班牙領地）	Ceuta and Melilla (Spanish)	セウタとメリリャ	北非海岸的西班牙城市。	Spanish towns on the North African coast.	スペインの飛び地。	休达
+feud	kharijite	0739-01	0743-01	-5.0	34.5	哈瓦利吉派柏柏爾起義	Kharijite Berber revolt	ハワーリジュ派の反乱	柏柏爾人反抗伍麥亞的起義。	The Berber rising against the Umayyads.	ウマイヤ朝への反乱。	柏柏尔人起义
+feud	bu_hmara	1902-11	1909-08	-2.94	35.0	布哈馬拉叛亂	Bu Hmara rebellion	ブー・ハマーラの乱	自稱王子的叛亂者控制東北部。	A pretender who held the north-east.	僭称者の反乱。	
+feud	algerian_civil	1991-12	2002-02	3.06	36.75	阿爾及利亞內戰	Algerian Civil War	アルジェリア内戦	政府與伊斯蘭武裝的內戰。	The war between the state and Islamist groups.	政府とイスラーム勢力の内戦。	阿尔及利亚内战
+feud	hirak	2016-10	2017-12	-3.93	35.25	里夫抗議運動	Hirak Rif movement	リーフ抗議運動	漁販之死引發的抗議。	Protests set off by a fishmonger's death.	魚売りの死に端を発した抗議。	
+power	corsairs	1600-01	1830-07	3.06	36.75	北非海盜	Barbary corsairs	バルバリア海賊	阿爾及爾、突尼斯等地的海盜。	Corsairs of Algiers, Tunis and Salé.	北アフリカの海賊。	巴巴里海盗
+power	zawiya	1500-01	1912-01	-5.5	32.5	蘇非教團（扎維亞）	Sufi zawiyas	ザーウィヤ	地方政治中的蘇非教團。	Sufi lodges with local political weight.	スーフィー教団。	扎维亚
+us	us_kenitra	1942-11	1991-12	-6.58	34.26	美軍克尼特拉基地	US base at Kenitra	米軍ケニトラ基地	美國海軍航空站。	A US naval air station.	米海軍航空基地。	

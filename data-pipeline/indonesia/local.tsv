@@ -5,3 +5,12 @@ feud	permesta	1957-03	1961-01	124.84	1.49	全面鬥爭運動（北蘇拉威西�
 feud	gam	1976-12	2005-08	95.32	5.0	自由亞齊運動	Free Aceh Movement	自由アチェ運動	亞齊的分離運動。	Aceh's separatist movement.	アチェ独立運動。	自由亚齐运动
 feud	opm	1965-01	2026-12	138.5	-4.0	自由巴布亞運動	Free Papua Movement	自由パプア運動	巴布亞的獨立運動。	The independence movement in Papua.	パプアの独立運動。	自由巴布亚运动
 power	bugis	1667-01	1850-01	119.8	-4.5	武吉士海上勢力	Bugis seafarers	ブギス人	望加錫陷落後散布群島的武吉士人。	The Bugis who spread across the archipelago after Makassar fell.	群島に広がったブギス人。	布吉人
+feud	trunajaya	1674-01	1680-12	112.75	-7.25	特魯納賈亞叛亂	Trunajaya rebellion	トゥルナジャヤの乱	馬都拉王子反抗馬打蘭的叛亂。	A Madurese prince's revolt against Mataram.	マタラムへの反乱。	
+feud	java_war_l	1825-07	1830-03	110.36	-7.8	爪哇戰爭	Java War	ジャワ戦争	蒂博尼哥羅王子領導的反荷戰爭。	Prince Diponegoro's war against the Dutch.	ディポヌゴロの反乱。	爪哇战争
+feud	pki1926	1926-11	1927-01	106.15	-6.03	1926 年共產黨起義	The 1926 Communist revolt	1926年共産党蜂起	爪哇與蘇門答臘的反荷起義。	A rising against the Dutch in Java and Sumatra.	共産党の反乱。	
+feud	darul_islam	1949-08	1962-06	107.6	-7.2	伊斯蘭國運動（達魯伊斯蘭）	Darul Islam rebellion	ダルル・イスラム運動	西爪哇等地的伊斯蘭國家運動。	The movement for an Islamic state in West Java and beyond.	イスラーム国家運動。	伊斯兰之家
+feud	fretilin	1975-08	1999-10	125.8	-8.8	東帝汶獨立革命陣線游擊戰	FRETILIN resistance	フレティリンの抵抗	東帝汶對印尼佔領的抵抗。	East Timor's resistance to Indonesian occupation.	インドネシア占領への抵抗。	东帝汶独立革命阵线
+feud	reformasi	1998-05	1998-05	106.8	-6.21	改革運動（1998）	Reformasi	レフォルマシ	推翻蘇哈托的民主運動。	The democracy movement that toppled Suharto.	スハルト退陣の民主化運動。	
+power	yogya_sultan	1755-02	2026-12	110.36	-7.8	日惹蘇丹國（特別區）	Yogyakarta Sultanate	ジョグジャカルタ王家	至今仍由蘇丹擔任省長的特別區。	A special region still governed by its sultan.	スルタンが知事を兼ねる特別州。	日惹苏丹国
+power	banjar	1526-01	1860-06	114.6	-3.3	馬辰蘇丹國	Banjar Sultanate	バンジャル王国	南加里曼丹的蘇丹國。	The sultanate of South Kalimantan.	南カリマンタンの王国。	马辰苏丹国
+us	japan_occ_l	1942-03	1945-09	106.83	-6.18	日本軍政	Japanese military administration	日本軍政	爪哇由陸軍、外島由海軍統治。	The army ruled Java, the navy the outer islands.	陸軍と海軍の分割統治。	

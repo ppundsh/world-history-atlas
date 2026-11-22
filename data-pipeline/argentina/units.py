@@ -14,4 +14,6 @@ G = {'buenos_aires': 'B C', 'litoral': 'S E', 'mesopotamia': 'W N', 'chaco': 'H 
 for k, v in G.items(): U.put(k, U.a1(*['AR-' + c for c in v.split()]))
 U.put('uruguay', U.a0('URY')); U.put('paraguay', U.a0('PRY'))
 if 'FLK' in U.A0: U.put('malvinas', U.a0('FLK'))
+# the country's real first-level divisions (the old ids above are aliases in region.json "groups")
+U.admin1('ARG', 'ar_')
 U.write(OUT)

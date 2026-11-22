@@ -1,5 +1,5 @@
-# 巴西模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
-# 約 1750 年的都督轄區與共和國各州。
+# 巴西模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色
+# 約 1750 年的都督轄區；1822 年起帝國各省、1889 年起共和國各州，依實際設置年代（亞馬遜 1850、巴拉那 1853、阿克里 1904、羅賴馬、阿馬帕、朗多尼亞 1943 年設聯邦領地、聯邦區 1960、南馬托格羅索 1979、托坎廷斯 1988）。
 1500-04	bahia,pernambuco,ceara,maranhao,para,amazonas,acre,rondonia,mato_grosso,goias,minas,rio,sao_paulo,parana,rio_grande,uruguay	none
 1750-01	bahia	c_bahia
 1750-01	pernambuco,ceara	c_pernambuco
@@ -10,18 +10,39 @@
 1750-01	goias	c_goias
 1750-01	mato_grosso,rondonia	c_mt
 1750-01	rio_grande	c_rs
-1889-11	bahia	s_bahia
-1889-11	pernambuco	s_pernambuco
-1889-11	ceara	s_ceara
-1889-11	maranhao	s_maranhao
-1889-11	para	s_para
-1889-11	amazonas	s_amazonas
-1889-11	rondonia	s_rondonia
-1889-11	mato_grosso	s_mato_grosso
-1889-11	goias	s_goias
-1889-11	minas	s_minas
-1889-11	rio	s_rio
-1889-11	sao_paulo	s_sao_paulo
-1889-11	parana	s_parana
-1889-11	rio_grande	s_rio_grande
-1903-11	acre	s_acre
+1822-09	br_ba	st_ba
+1822-09	br_se	st_se
+1822-09	br_pe	st_pe
+1822-09	br_al	st_al
+1822-09	br_pb	st_pb
+1822-09	br_rn	st_rn
+1822-09	br_ce	st_ce
+1822-09	br_pi	st_pi
+1822-09	br_ma	st_ma
+1822-09	br_pa	st_pa
+1822-09	br_mt	st_mt
+1822-09	br_go	st_go
+1822-09	br_mg	st_mg
+1822-09	br_rj	st_rj
+1822-09	br_es	st_es
+1822-09	br_sp	st_sp
+1822-09	br_rs	st_rs
+1822-09	br_sc	st_sc
+1822-09	br_am	st_pa
+1822-09	br_rr	st_pa
+1822-09	br_ap	st_pa
+1822-09	br_pr	st_sp
+1822-09	br_ro	st_mt
+1822-09	br_ms	st_mt
+1822-09	br_df	st_go
+1822-09	br_to	st_go
+1850-09	br_am	st_am
+1850-09	br_rr	st_am
+1853-12	br_pr	st_pr
+1904-04	br_ac	st_ac
+1943-09	br_rr	st_rr
+1943-09	br_ap	st_ap
+1943-09	br_ro	st_ro
+1960-04	br_df	st_df
+1979-01	br_ms	st_ms
+1988-10	br_to	st_to

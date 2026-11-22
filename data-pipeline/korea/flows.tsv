@@ -7,7 +7,7 @@ imjin_k	1592-05	1592-07	#111827	3	129.04,35.1 128.6,35.87 127.93,36.99 126.98,37
 ming1593	1593-01	1593-02	#b91c1c	2	124.53,40.2 125.75,39.02 126.98,37.57	明軍援朝，收復平壤	Ming relief army retakes Pyongyang	明軍の援軍、平壌奪回
 kw_north	1950-06	1950-08	#dc2626	3	126.98,38.0 126.98,37.57 127.38,36.35 128.4,35.9	韓戰：北韓軍南下至洛東江	Korean War: the North drives to the Naktong	朝鮮戦争：北朝鮮軍が洛東江まで南下
 kw_un	1950-09	1950-11	#1d4ed8	3	126.6,37.45 126.98,37.57 125.75,39.02 124.6,40.0	仁川登陸，聯軍北進	Incheon landing and the UN drive north	仁川上陸、国連軍の北進
-kw_china	1950-10	1951-01	#b91c1c	3	124.4,40.1 125.75,39.02 126.98,37.57 127.2,37.2	志願軍參戰南下	Chinese intervention and advance south	中国人民志願軍の参戦
+kw_china	1950-10	1951-01	#ea580c	3	124.4,40.1 125.75,39.02 126.98,37.57 127.2,37.2	志願軍參戰南下	Chinese intervention and advance south	中国人民志願軍の参戦
 gwanggaeto396	0396-01	0396-12	#7c2d12	3	126.18,41.13 125.75,39.02 126.6,38.0 127.1,37.52	廣開土王南征百濟，攻至漢城	Gwanggaeto marches south against Baekje to Hanseong	広開土王の百済遠征
 gwanggaeto400	0400-01	0400-12	#7c2d12	2	125.75,39.02 127.5,37.0 129.22,35.84 128.88,35.23	廣開土王出兵救新羅，追擊倭軍至任那加羅	Gwanggaeto sends troops to rescue Silla and pursues the Wa to Gaya	広開土王の新羅救援、倭を任那加羅まで追撃
 jangsu475	0475-09	0475-09	#7c2d12	3	125.75,39.02 126.6,38.0 127.1,37.52	長壽王攻陷百濟漢城	King Jangsu takes Baekje's Hanseong	長寿王が百済の漢城を攻略
@@ -37,12 +37,12 @@ japan1894	1894-06	1894-09	#111827	3	126.63,37.47 126.98,37.57 126.55,37.97 125.7
 japan1904	1904-02	1904-05	#111827	3	126.63,37.47 126.98,37.57 125.75,39.02 124.4,40.1	日俄戰爭：日軍仁川登陸，北進鴨綠江	Russo-Japanese War: from Incheon to the Yalu	日露戦争：仁川上陸から鴨緑江へ
 uibyeong1908	1907-12	1908-01	#7c2d12	2	127.95,37.34 127.6,37.5 127.2,37.6	十三道倡義軍進攻漢城	The Righteous Armies of the Thirteen Provinces march on Seoul	十三道倡義軍の漢城進攻
 kpg1919	1919-04	1940-09	#1d4ed8	2	121.47,31.23 120.16,30.27 119.45,32.2 112.98,28.2 113.26,23.13 109.4,24.3 106.66,29.03 106.55,29.56	大韓民國臨時政府輾轉遷移：上海→杭州→鎮江→長沙→廣州→柳州→綦江→重慶	The Provisional Government's wanderings: Shanghai to Chongqing	大韓民国臨時政府の移転：上海から重慶へ
-soviet1945	1945-08	1945-08	#b91c1c	3	130.4,42.3 129.77,41.8 127.53,39.92 125.75,39.02	蘇軍進入朝鮮北部：雄基→清津→咸興→平壤	Soviet troops enter northern Korea: Unggi, Chongjin, Hamhung, Pyongyang	ソ連軍の北朝鮮進駐：雄基→清津→咸興→平壌
-us1945	1945-09	1945-09	#1d4ed8	3	127.0,34.0 126.63,37.47 126.98,37.57	美軍第二十四軍仁川登陸，進駐漢城	The US XXIV Corps lands at Incheon and enters Seoul	米第 24 軍団が仁川に上陸し京城へ進駐
-kw_east	1950-06	1950-08	#b91c1c	2	128.6,38.4 129.0,37.4 129.36,36.03	韓戰：北韓軍沿東海岸南下至浦項	Korean War: the KPA drives down the east coast to Pohang	朝鮮戦争：北朝鮮軍が東海岸を南下し浦項へ
-kw_changjin	1950-11	1950-12	#b91c1c	3	126.9,41.0 127.25,40.4 127.5,39.9	長津湖戰役：志願軍南下包圍	Chosin Reservoir: Chinese forces close in	長津湖の戦い：中国軍の南下包囲
-kw_hungnam	1950-12	1950-12	#1d4ed8	3	127.62,39.83 128.6,38.0 129.04,35.1	興南撤退：聯軍與難民海運至釜山	The Hungnam evacuation of troops and refugees to Busan	興南撤収：国連軍と避難民を釜山へ海上輸送
-kw_jan4	1951-01	1951-01	#b91c1c	3	126.98,38.3 126.98,37.57 127.2,37.0	一四後退：志願軍再陷漢城	January Fourth Retreat: Chinese forces take Seoul again	1・4 後退：中国軍がソウルを再占領
+soviet1945	1945-08	1945-08	#7f1d1d	3	130.4,42.3 129.77,41.8 127.53,39.92 125.75,39.02	蘇軍進入朝鮮北部：雄基→清津→咸興→平壤	Soviet troops enter northern Korea: Unggi, Chongjin, Hamhung, Pyongyang	ソ連軍の北朝鮮進駐：雄基→清津→咸興→平壌
+us1945	1945-09	1945-09	#1d4ed8	3	127.68,26.21 125.0,33.0 125.3,35.5 126.2,37.2 126.63,37.47 126.98,37.57	美軍第二十四軍仁川登陸，進駐漢城	The US XXIV Corps lands at Incheon and enters Seoul	米第 24 軍団が仁川に上陸し京城へ進駐
+kw_east	1950-06	1950-08	#dc2626	2	128.6,38.4 129.0,37.4 129.36,36.03	韓戰：北韓軍沿東海岸南下至浦項	Korean War: the KPA drives down the east coast to Pohang	朝鮮戦争：北朝鮮軍が東海岸を南下し浦項へ
+kw_changjin	1950-11	1950-12	#ea580c	3	126.9,41.0 127.25,40.4 127.5,39.9	長津湖戰役：志願軍南下包圍	Chosin Reservoir: Chinese forces close in	長津湖の戦い：中国軍の南下包囲
+kw_hungnam	1950-12	1950-12	#1d4ed8	3	127.62,39.83 128.4,39.4 129.3,38.0 129.7,36.5 129.4,35.3 129.04,35.1	興南撤退：聯軍與難民海運至釜山	The Hungnam evacuation of troops and refugees to Busan	興南撤収：国連軍と避難民を釜山へ海上輸送
+kw_jan4	1951-01	1951-01	#ea580c	3	126.98,38.3 126.98,37.57 127.2,37.0	一四後退：志願軍再陷漢城	January Fourth Retreat: Chinese forces take Seoul again	1・4 後退：中国軍がソウルを再占領
 kw_ripper	1951-02	1951-04	#1d4ed8	3	127.2,37.0 126.98,37.57 127.0,38.1	撕裂者作戰：聯軍收復漢城，推至三八線	Operation Ripper: UN forces retake Seoul and reach the 38th parallel	リッパー作戦：国連軍がソウル奪還、38 度線へ
 bluehouse1968	1968-01	1968-01	#b91c1c	2	126.9,38.0 126.97,37.59	北韓特種部隊滲透青瓦台	North Korean commandos infiltrate toward the Blue House	北朝鮮特殊部隊の青瓦台襲撃
 gwangju1980	1980-05	1980-05	#111827	3	126.98,37.57 127.15,36.35 126.85,35.15	五一八：戒嚴軍空降旅開入光州	May 18: martial-law paratroopers are sent to Gwangju	5・18：戒厳軍空挺部隊が光州へ

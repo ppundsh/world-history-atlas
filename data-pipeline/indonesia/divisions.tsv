@@ -14,17 +14,36 @@ d_sulawesi_n	#a594cf	萬鴉老（荷屬時期）	万鸦老（荷属时期）	Man
 d_maluku	#cc94a0	摩鹿加（荷屬時期）	摩鹿加（荷属时期）	Moluccas (Dutch era)	モルッカ（蘭領期）
 d_bali_nt	#d6c8b0	巴里與龍目、小巽他（荷屬時期）	巴里与龙目、小巽他（荷属时期）	Bali, Lombok and the Lesser Sundas (Dutch era)	バリ、小スンダ（蘭領期）
 d_papua	#8cc5d6	荷屬新幾內亞（荷屬時期）	荷属新几内亚（荷属时期）	Netherlands New Guinea (Dutch era)	オランダ領ニューギニア（蘭領期）
-p_aceh	#2a9d8f	亞齊省	亚齐省	Aceh	Aceh
-p_sumatra_n	#6fb3c7	北、西蘇門答臘、廖內省	北、西苏门答腊、廖内省	North and West Sumatra, Riau	North and West Sumatra, Riau
-p_sumatra_s	#b5a7d8	南蘇門答臘等五省省	南苏门答腊等五省省	South Sumatra and four more	South Sumatra and four more
-p_banten	#d8a7b1	萬丹、雅加達省	万丹、雅加达省	Banten, Jakarta	Banten, Jakarta
-p_java_w	#c9b79c	西爪哇省	西爪哇省	West Java	West Java
-p_java_c	#f6b98a	中爪哇、日惹省	中爪哇、日惹省	Central Java, Yogyakarta	Central Java, Yogyakarta
-p_java_e	#a594cf	東爪哇省	东爪哇省	East Java	East Java
-p_bali_nt	#cc94a0	巴里、東西努沙登加拉省	巴里、东西努沙登加拉省	Bali and Nusa Tenggara	Bali and Nusa Tenggara
-p_kal_w	#d6c8b0	西、中加里曼丹省	西、中加里曼丹省	West and Central Kalimantan	West and Central Kalimantan
-p_kal_e	#8cc5d6	南、東加里曼丹省	南、东加里曼丹省	South and East Kalimantan	South and East Kalimantan
-p_sulawesi_s	#a3c4a8	南、西、東南蘇拉威西省	南、西、东南苏拉威西省	South, West and South-East Sulawesi	South, West and South-East Sulawesi
-p_sulawesi_n	#e3c9a8	北、中蘇拉威西、哥倫打洛省	北、中苏拉威西、哥伦打洛省	North and Central Sulawesi, Gorontalo	North and Central Sulawesi, Gorontalo
-p_maluku	#e9c46a	摩鹿加、北摩鹿加省	摩鹿加、北摩鹿加省	Maluku, North Maluku	Maluku, North Maluku
-p_papua	#f4a261	巴布亞各省省	巴布亚各省省	The Papuan provinces	The Papuan provinces
+a_ki	#e9c46a	東加里曼丹省	东加里曼丹省	East Kalimantan	東カリマンタン州
+a_nt	#6fb3c7	東努沙登加拉省	东努沙登加拉省	East Nusa Tenggara	東ヌサ・トゥンガラ州
+a_kb	#a594cf	西加里曼丹省	西加里曼丹省	West Kalimantan	西カリマンタン州
+a_pa	#e3c9a8	巴布亞省	巴布亚省	Papua	パプア州
+a_ji	#2a9d8f	東爪哇省	东爪哇省	East Java	東ジャワ州
+a_ma	#f6b98a	馬魯古省	马鲁古省	Maluku	マルク州
+a_nb	#a3c4a8	西努沙登加拉省	西努沙登加拉省	West Nusa Tenggara	西ヌサ・トゥンガラ州
+a_sn	#8ab17d	南蘇拉威西省	南苏拉威西省	South Sulawesi	南スラウェシ州
+a_jt	#c9b79c	中爪哇省	中爪哇省	Central Java	中部ジャワ州
+a_jb	#8cc5d6	西爪哇省	西爪哇省	West Java	西ジャワ州
+a_jk	#e76f51	雅加達	雅加达	Jakarta	ジャカルタ
+a_bt	#d8a7b1	萬丹省	万丹省	Banten	バンテン州
+a_yo	#d6c8b0	日惹特區	日惹特区	Yogyakarta	ジョグジャカルタ特別州
+a_sg	#f4a261	東南蘇拉威西省	东南苏拉威西省	Southeast Sulawesi	南東スラウェシ州
+a_pb	#b5a7d8	西巴布亞省	西巴布亚省	West Papua	西パプア州
+a_st	#cc94a0	中蘇拉威西省	中苏拉威西省	Central Sulawesi	中部スラウェシ州
+a_mu	#e9c46a	北馬魯古省	北马鲁古省	North Maluku	北マルク州
+a_kr	#6fb3c7	廖內群島省	廖内群岛省	Riau Islands	リアウ諸島州
+a_ri	#a594cf	廖內省	廖内省	Riau	リアウ州
+a_go	#e3c9a8	哥倫打洛省	哥伦打洛省	Gorontalo	ゴロンタロ州
+a_sa	#2a9d8f	北蘇拉威西省	北苏拉威西省	North Sulawesi	北スラウェシ州
+a_sr	#f6b98a	西蘇拉威西省	西苏拉威西省	West Sulawesi	西スラウェシ州
+a_ja	#a3c4a8	佔碑省	占碑省	Jambi	ジャンビ州
+a_ss	#8ab17d	南蘇門答臘省	南苏门答腊省	South Sumatra	南スマトラ州
+a_la	#c9b79c	楠榜省	楠榜省	Lampung	ランプン州
+a_be	#8cc5d6	明古魯省	明古鲁省	Bengkulu	ブンクル州
+a_sb	#e76f51	西蘇門答臘省	西苏门答腊省	West Sumatra	西スマトラ州
+a_su	#d8a7b1	北蘇門答臘省	北苏门答腊省	North Sumatra	北スマトラ州
+a_ac	#d6c8b0	亞齊	亚齐	Aceh	アチェ州
+a_kt	#f4a261	中加里曼丹省	中加里曼丹省	Central Kalimantan	中部カリマンタン州
+a_ks	#b5a7d8	南加里曼丹省	南加里曼丹省	South Kalimantan	南カリマンタン州
+a_ba	#cc94a0	巴厘島	巴厘岛	Bali	バリ州
+a_bb	#e9c46a	邦加-勿裡洞省	邦加-勿里洞省	Bangka Belitung Islands	バンカ・ブリトゥン州

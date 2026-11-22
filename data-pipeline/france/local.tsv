@@ -14,3 +14,10 @@ power	huguenots	1562-03	1629-06	-1.15	46.16	拉羅謝爾與新教據點	La Roche
 power	resistance	1943-01	1944-08	5.6	45.05	韋科爾抵抗運動基地	Vercors Resistance stronghold	ヴェルコールのレジスタンス	抵抗運動的山區基地，1944 年 7 月被德軍攻破。	A Resistance mountain base, overrun by the Germans in July 1944.	レジスタンスの拠点。	韦科尔
 us	pockets	1944-08	1945-05	-3.37	47.75	大西洋口袋（洛里昂、聖納澤爾等）	Atlantic pockets (Lorient, Saint-Nazaire …)	大西洋のポケット	德軍據守港口直到戰爭結束。	German garrisons held these ports until the end of the war.	大戦末まで残ったドイツ軍の拠点。	大西洋壁垒
 us	nato	1952-01	1967-03	2.13	48.82	北約駐法基地	NATO bases in France	在仏NATO基地	北約總部與美軍駐紮法國，1966 年戴高樂退出北約軍事組織後撤出。	NATO headquarters and US forces in France, which left after de Gaulle quit NATO's command in 1966.	ド・ゴールの軍事機構脱退まで。	北大西洋公约组织
+feud	frondeurs	1648-08	1653-07	2.35	48.86	投石黨之亂	The Fronde	フロンドの乱	貴族與巴黎高等法院反抗馬薩林的內亂。	Nobles and the Paris Parlement rose against Mazarin.	マザランへの反乱。	投石党运动
+feud	croquants	1636-05	1637-08	0.7	45.18	鄉巴佬起義（佩里戈爾）	Revolt of the Croquants	クロカンの乱	西南部農民反抗重稅的起義。	A peasant rising against taxes in the south-west.	南西部の農民反乱。	
+feud	canuts	1831-11	1834-04	4.83	45.77	里昂絲織工人起義	Canut revolts in Lyon	リヨンの絹織工の反乱	工業革命時代最早的工人起義之一。	Among the first workers' risings of the industrial age.	初期の労働者蜂起。	里昂工人起义
+feud	oas	1961-02	1962-06	3.06	36.75	秘密軍組織（OAS）	OAS	OAS（秘密軍事組織）	反對阿爾及利亞獨立的極右武裝。	A far-right armed group against Algerian independence.	アルジェリア独立反対派。	秘密军组织
+power	corsica	1755-07	1769-05	9.15	42.31	科西嘉共和國	Corsican Republic	コルシカ共和国	帕斯夸萊・保利建立的獨立共和國。	The independent republic of Pasquale Paoli.	パオリの独立国家。	科西嘉共和国
+power	avignon	1309-03	1791-09	4.81	43.95	教宗領亞維農	Papal Avignon	アヴィニョン教皇領	教宗駐亞維農，其後成為教宗飛地至大革命。	Seat of the popes, then a papal enclave until the Revolution.	教皇領の飛び地。	阿维尼翁教廷
+feud	fln_france	1954-11	1962-03	2.35	48.9	阿爾及利亞戰爭在法國本土	The Algerian War in metropolitan France	フランス本土のアルジェリア戦争	包含 1961 年巴黎屠殺。	Including the Paris massacre of 1961.	1961年パリ虐殺を含む。	

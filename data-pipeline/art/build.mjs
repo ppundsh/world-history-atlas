@@ -1,8 +1,9 @@
 // Art-history mode: movements.tsv → public/data/art.json  (zh-Hans from zh-Hant with OpenCC)
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as OpenCC from 'opencc-js';
-const here = path.dirname(new URL(import.meta.url).pathname);
+const here = path.dirname(fileURLToPath(import.meta.url));
 const toHans = OpenCC.Converter({ from: 'tw', to: 'cn' });
 const T = ['west', 'eastasia', 'southasia', 'islam', 'americas', 'africa', 'oceania', 'ancient'];
 const read = (file, cols) => fs.readFileSync(path.join(here, file), 'utf8').split('\n').filter(l => l.trim() && !l.startsWith('#')).map((l, i) => {

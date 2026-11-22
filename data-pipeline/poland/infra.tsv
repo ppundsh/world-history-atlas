@@ -21,3 +21,6 @@ highway	pl_s7	2024-12		18.65,54.35 19.4,53.7 20.38,53.15 20.9,52.4 21.0,52.2 20.
 port	pl_gdansk_port	0997-01		18.66,54.4	格但斯克港	Port of Gdańsk	グダニスク港	維斯瓦河口的漢薩貿易大港。	The Hanseatic trading port at the mouth of the Vistula.	ヴィスワ河口の港。	格但斯克港	Port of Gdańsk
 airport	pl_waw	1934-04		20.97,52.17	華沙蕭邦機場（奧肯切）	Warsaw Chopin Airport	ワルシャワ・ショパン空港	波蘭最大的機場。	Poland's largest airport.	ポーランド最大の空港。	华沙肖邦机场	Warsaw Chopin Airport
 airport	pl_krk	1964-01		19.78,50.08	克拉科夫機場	Kraków John Paul II International Airport	クラクフ空港	南部的國際機場。	The international airport of the south.	南部の国際空港。	克拉科夫约翰·保罗二世国际机场	Kraków John Paul II International Airport
+fiber	pl_pionier	2001-01		21.01,52.23 16.93,52.41 18.65,54.35 17.04,51.11 19.94,50.06 22.57,51.25 23.16,53.13 21.01,52.23;16.93,52.41 14.55,53.43;19.94,50.06 19.02,50.26	PIONIER 光纖研究網	PIONIER	PIONIER	波蘭各大學城的光纖骨幹。	Poland's fibre backbone between university cities.	ポーランドの学術光網。		PIONIER
+ixp	pl_plix	2004-01		20.98,52.2	PLIX 華沙網際網路交換中心	PLIX (Warsaw)	PLIX	波蘭最大的交換中心。	Poland's largest internet exchange.	ポーランド最大のIX。		
+cable	pl_baltica	1997-01		13.83,55.43 14.4,55.013 14.992,55.031 15.075,54.884 15.413,54.559 15.575,54.173;13.83,54.908 14.85,54.949 14.992,55.031	Baltica 海纜（波蘭—丹麥）	Baltica cable (Poland–Denmark)	Baltica海底ケーブル	波蘭第一條國際光纖海纜。	Poland's first international fibre cable.	ポーランド初の国際光海底ケーブル。		

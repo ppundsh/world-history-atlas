@@ -4,3 +4,11 @@ feud	phi_bun	1901-01	1902-12	104.85	15.23	聖人起義（東北）	Holy Man's Re
 feud	south_insurgency	2004-01	2026-12	101.25	6.5	南部邊境叛亂	South Thailand insurgency	南部国境の紛争	北大年、也拉、陶公的分離運動。	The separatist conflict in Pattani, Yala and Narathiwat.	南部3県の紛争。	泰国南部动乱
 power	chinese	1767-01	1930-01	100.51	13.74	潮州人與曼谷華人社會	The Teochew and Bangkok's Chinese	潮州人とバンコク華人	鄭信以後華人在曼谷的勢力。	Chinese influence in Bangkok after Taksin.	華人社会の勢力。	泰国华人
 us	us_bases	1964-01	1976-03	102.79	17.39	美軍空軍基地（烏隆等）	US airbases (Udon and others)	米空軍基地	越戰期間美軍駐泰基地。	US bases in Thailand during the Vietnam War.	ベトナム戦争期の米軍基地。	
+feud	shan_rebellion	1902-07	1902-12	100.14	18.14	帕府撣人起義	Shan rebellion in Phrae	プレーのシャン人の反乱	北部撣人反抗中央集權的起義。	A Shan rising in the north against centralisation.	中央集権化への反乱。	
+feud	boworadet	1933-10	1933-10	102.1	14.97	波汶拉德叛亂	Boworadet rebellion	ボーウォラデートの乱	保王派反對立憲政府的叛亂。	A royalist revolt against the constitutional government.	王党派の反乱。	波汶拉德叛乱
+feud	cpt	1965-08	1983-12	103.5	17.0	泰國共產黨武裝鬥爭	Communist insurgency in Thailand	タイ共産党の武装闘争	東北與山區的共產黨游擊戰。	Communist guerrilla war in the north-east and the hills.	共産党のゲリラ戦。	泰国共产党叛乱
+feud	red_shirts	2006-09	2014-05	100.54	13.74	紅衫軍與黃衫軍對立	Red Shirts and Yellow Shirts	赤シャツと黄シャツ	他信支持者與反對者的長期對立。	The long standoff between Thaksin's supporters and opponents.	タクシン派と反タクシン派の対立。	红衫军
+power	kmt_north	1950-01	1984-12	99.6	20.0	泰北孤軍（國民黨殘部）	KMT remnants in northern Thailand	タイ北部の国民党軍残部	滇緬撤退的國民黨部隊定居泰北。	KMT troops who retreated from Yunnan and settled in the north.	雲南から逃れた部隊。	泰北孤军
+power	golden_triangle	1960-01	2000-12	100.08	20.35	金三角毒品勢力	Golden Triangle drug lords	黄金の三角地帯	坤沙等鴉片勢力。	Opium warlords such as Khun Sa.	クン・サなどの麻薬勢力。	金三角
+us	us_utapao	1965-01	1976-06	101.0	12.68	烏塔堡美軍基地	US base at U-Tapao	ウタパオ米軍基地	越戰時 B-52 轟炸機的基地。	The B-52 base of the Vietnam War.	B-52の基地。	
+feud	makassar	1686-08	1686-09	100.58	14.33	望加錫人叛亂	Makassar revolt	マカッサル人の反乱	阿瑜陀耶的望加錫流亡者起事，被法英傭兵鎮壓。	Makassarese exiles in Ayutthaya rose and were crushed with European help.	アユタヤのマカッサル人の反乱。	

@@ -10,3 +10,9 @@ power	nubia_x	0350-01	1504-01	30.47	18.22	努比亞諸王國（諾巴底亞、�
 us	britain_canal	1882-09	1956-06	32.3	30.6	英軍駐守蘇伊士運河區	British forces in the Suez Canal Zone	スエズ運河地帯の英軍	英軍自占領起駐紮運河區，1956 年撤出。	British forces held the Canal Zone from 1882 until 1956.	1956年まで駐留。	苏伊士运河区
 us	unef	1957-03	1967-05	34.3	31.3	聯合國緊急部隊	UN Emergency Force	国連緊急軍	蘇伊士危機後駐守西奈的聯合國維和部隊。	UN peacekeepers in Sinai after the Suez Crisis.	国連平和維持部隊。	联合国紧急部队
 us	mfo	1982-04	2026-12	34.08	27.86	多國部隊與觀察員團	Multinational Force and Observers	多国籍軍・監視団	依和約監督西奈非軍事化的部隊。	The force that watches over Sinai under the peace treaty.	シナイ半島の監視。	多国部队与观察员
+feud	zanj	0869-09	0883-08	47.8	30.5	僧祇奴隸起義（影響阿拔斯世界）	Zanj Rebellion	ザンジュの乱	阿拔斯帝國的奴隸大起義，削弱哈里發對埃及的控制。	A great slave revolt that loosened Abbasid grip on Egypt.	奴隷の大反乱。	僧祇奴起义
+power	bedouin_sinai	1882-01	2026-12	33.8	29.5	西奈貝都因部族	Bedouin of Sinai	シナイのベドウィン	西奈半島的游牧部族。	The nomadic tribes of Sinai.	シナイの遊牧民。	
+feud	gamaa	1992-01	1998-03	31.2	27.18	伊斯蘭團（上埃及武裝衝突）	al-Gama'a al-Islamiyya insurgency	イスラーム集団の武装闘争	上埃及的伊斯蘭武裝叛亂。	The Islamist insurgency in Upper Egypt.	上エジプトの武装闘争。	伊斯兰团
+feud	sinai_ins	2011-02	2023-01	33.8	31.1	西奈半島叛亂	Sinai insurgency	シナイ半島の反乱	北西奈的伊斯蘭國分支叛亂。	The Islamist insurgency in north Sinai.	シナイの武装勢力。	西奈半岛暴动
+power	coptic	0451-01	2026-12	31.23	30.0	科普特正教會	Coptic Orthodox Church	コプト正教会	迦克墩會議後獨立的埃及教會。	The Egyptian church after Chalcedon.	エジプトの教会。	科普特正教会
+us	soviet_adv	1955-09	1972-07	31.24	30.04	蘇聯軍事顧問團	Soviet military advisers	ソ連軍事顧問団	1972 年被沙達特驅逐。	Expelled by Sadat in 1972.	1972年に追放。	

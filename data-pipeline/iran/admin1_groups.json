@@ -1,0 +1,54 @@
+{
+"azarbaijan": [
+"ir_02",
+"ir_01",
+"ir_03",
+"ir_11"
+],
+"gilan": [
+"ir_19"
+],
+"media": [
+"ir_16",
+"ir_17",
+"ir_05",
+"ir_24",
+"ir_20"
+],
+"khuzestan": [
+"ir_10"
+],
+"khorasan": [
+"ir_31",
+"ir_30",
+"ir_29"
+],
+"tabaristan": [
+"ir_27",
+"ir_21"
+],
+"sistan": [
+"ir_13"
+],
+"fars": [
+"ir_06",
+"ir_14"
+],
+"kerman": [
+"ir_23",
+"ir_15"
+],
+"centre": [
+"ir_12",
+"ir_28",
+"ir_22",
+"ir_26",
+"ir_07"
+],
+"isfahan": [
+"ir_04",
+"ir_08",
+"ir_18",
+"ir_25"
+]
+}

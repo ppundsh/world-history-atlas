@@ -1,0 +1,156 @@
+# 海底電纜的路線來源（data-pipeline/cables/build-cables.mjs 依此重建 infra.tsv 與 internet/flows.tsv 的電纜幾何；請改這裡，不要改那兩個檔的電纜座標）。
+# 欄位：目標（地區/作品 id，或 internet/海纜 id）	來源	登陸站（route 用）	裁切範圍（經度,緯度,經度,緯度；空白＝整條）	說明
+# 來源 tg:<id>：TeleGeography Submarine Cable Map 的路線（CC BY-NC-SA 3.0），由 fetch-cables.mjs 下載；路線兩端即其登陸站。
+# 來源 route：TeleGeography 沒有的歷史或已退役海纜，以及網際網路模式的陸上電纜，列出實際登陸站（經度,緯度），站與站之間由程式在海上找路（不穿越陸地）；
+#   「 ~ 」表示該段為陸上電報線（例如亞歷山卓經陸路到蘇伊士），「;」分隔分支。登陸站依維基百科與各電纜史料（atlantic-cable.com 等）。
+# 裁切：台灣、日本模式只顯示附近一段，地區模式的局部摘錄也只顯示該段。
+argentina/tg_firmina	tg:firmina			Firmina 海纜
+argentina/ar_atlantis2	route	-56.7,-36.49 -43.17,-22.97 -38.47,-3.72 -23.51,14.92 -17.44,14.69 -16.54,28.05 -9.1,38.44		Las Toninas – Rio de Janeiro – Fortaleza – Praia – Dakar – El Médano – Sesimbra
+argentina/ar_sam1	tg:south-america-1-sam-1			SAm-1 海纜
+brazil/tg_south_atlantic_inter_link_sa	tg:south-atlantic-inter-link-sail			SAIL 南大西洋海纜
+brazil/tg_ellalink	tg:ellalink			EllaLink 海纜（福塔雷薩—錫尼什）
+brazil/tg_brusa	tg:brusa			BRUSA 海纜
+brazil/tg_firmina	tg:firmina			Firmina 海纜
+china/cn_shanghai_nagasaki	route	121.49,31.38 129.87,32.75		Woosung (Shanghai) – Nagasaki
+egypt/tg_seamewe_4	tg:seamewe-4			SEA-ME-WE 4 海纜
+egypt/tg_seamewe_5	tg:seamewe-5			SEA-ME-WE 5 海纜
+egypt/tg_2africa	tg:2africa			2Africa 環非洲海纜
+egypt/tg_seacomtata_tgn_eurasia	tg:seacomtata-tgn-eurasia			SEACOM/TGN-Eurasia 海纜
+egypt/eg_eastern	route	29.9,31.2 14.51,35.9		Alexandria – Malta
+france/tg_seamewe_4	tg:seamewe-4			SEA-ME-WE 4 海纜
+france/tg_seamewe_5	tg:seamewe-5			SEA-ME-WE 5 海纜
+france/tg_africa_coast_to_europe_ace	tg:africa-coast-to-europe-ace			ACE 非洲西岸海纜
+france/tg_dunant	tg:dunant			Dunant 跨大西洋海纜
+france/tg_apollo	tg:apollo			Apollo 跨大西洋海纜
+france/tg_flag_atlantic_1_fa_1	tg:flag-atlantic-1-fa-1			FLAG Atlantic-1 海纜
+germany/tg_atlantic_crossing_1_ac_1	tg:atlantic-crossing-1-ac-1			Atlantic Crossing-1 海纜
+india/in_sea_me_we	route	72.83,18.94 66.99,24.86 58.59,23.61 43.14,11.59		Mumbai – Karachi – Muscat – Djibouti
+indonesia/tg_seamewe_5	tg:seamewe-5			SEA-ME-WE 5 海纜
+indonesia/tg_echo	tg:echo			Echo 海纜
+indonesia/tg_bifrost	tg:bifrost			Bifrost 跨太平洋海纜
+iran/ir_falcon	tg:falcon		55.78,23.10,59.00,27.68	FLAG Falcon 海纜（阿巴斯港登陸）
+italy/it_atlantic	route	12.59,37.65 5.37,43.3;12.59,37.65 -5.37,35.57 -9.1,38.44		Mazara del Vallo – Marseille; Mazara del Vallo – Tetouan – Sesimbra
+italy/tg_seamewe_4	tg:seamewe-4			SEA-ME-WE 4 海纜
+italy/tg_seamewe_5	tg:seamewe-5			SEA-ME-WE 5 海纜
+italy/tg_blue	tg:blue			Blue 海纜
+japan/cb_nagasaki	route	129.87,32.75 121.49,31.38		Nagasaki – Woosung (Shanghai)
+japan/cb_tpc1	route	139.26,35.3 144.67,13.43		Ninomiya – Guam
+japan/cb_unity	tg:unity		138.90,34.55,179.95,40.05	Unity 跨太平洋海纜
+korea/kr_kjcn	tg:korea-japan-cable-network-kjcn		128.54,33.10,130.90,35.62	韓日光纜（KJCN）
+korea/tg_trans_pacific_express_tpe_ca	tg:trans-pacific-express-tpe-cable-system			TPE 跨太平洋快線海纜
+korea/tg_asia_pacific_gateway_apg	tg:asia-pacific-gateway-apg			APG 亞太直達海纜
+mexico/tg_bifrost	tg:bifrost			Bifrost 跨太平洋海纜
+mexico/mx_maya1	route	-87.46,20.21 -80.12,26.01;-87.46,20.21 -87.95,15.85		Tulum – Hollywood (Florida); Tulum – Puerto Cortés
+mexico/mx_amx1	tg:america-movil-submarine-cable-system-1-amx-1		-87.35,9.90,-75.00,26.60	AMX-1 海纜（坎昆登陸）
+morocco/ma_atlas	tg:atlas-offshore		-6.54,34.97,5.87,43.80	Atlas Offshore 海纜（阿西拉—馬賽）
+morocco/tn_hannibal	tg:hannibal-system		10.60,36.35,13.09,38.15	Hannibal 海纜（凱利比亞—馬扎拉）
+morocco/dz_orval	tg:oran-valencia-orval		-1.14,35.20,0.20,39.97	ORVAL 海纜（奧蘭—瓦倫西亞）
+morocco/tg_seamewe_4	tg:seamewe-4			SEA-ME-WE 4 海纜
+poland/pl_baltica	tg:baltica		13.83,53.54,15.70,56.00	Baltica 海纜（波蘭—丹麥）
+prc/cn_cuc	route	121.85,31.0 139.93,34.91		Shanghai – Japan (route at sea; landings kept from the earlier data)
+russia/ru_kuril	tg:sakhalin-kuril-islands-cable		142.24,43.37,148.37,47.46	薩哈林—千島海纜
+spain/es_marea	tg:marea			MAREA 跨大西洋海纜
+spain/tg_grace_hopper	tg:grace-hopper			Grace Hopper 海纜
+taiwan/cb_tpc5	route	121.83,24.85 144.67,13.43		Toucheng – Guam (route at sea)
+taiwan/cb_tpkm	tg:taiwan-matsu-no-4		117.0,20.4,125.2,27.4	台馬四號海纜
+taiwan/cb_apcn2	tg:apcn-2		117.0,20.4,125.2,27.4	亞太二號海纜（APCN-2）
+taiwan/cb_eac	tg:eac-c2c		117.0,20.4,125.2,27.4	EAC-C2C 東亞海纜
+taiwan/cb_tpe	tg:trans-pacific-express-tpe-cable-system		117.0,20.4,125.2,27.4	跨太平洋快線（TPE）
+taiwan/cb_tse1	tg:taiwan-strait-express-1-tse-1		117.0,20.4,125.2,27.4	海峽光纜一號（TSE-1）
+taiwan/cb_tpkm2	tg:taiwan-penghu-kinmen-matsu-no-2-tpkm2		117.0,20.4,125.2,27.4	台澎、台金、台馬二號海纜
+taiwan/cb_tpkm3	tg:taiwan-penghu-kinmen-matsu-no-3-tpkm3		117.0,20.4,125.2,27.4	台澎、澎金、台馬三號海纜
+taiwan/cb_faster	tg:faster		117.0,20.4,125.2,27.4	FASTER 跨太平洋海纜
+taiwan/cb_apg	tg:asia-pacific-gateway-apg		117.0,20.4,125.2,27.4	亞太直達海纜（APG）
+taiwan/cb_ncp	tg:new-cross-pacific-ncp-cable-system		117.0,20.4,125.2,27.4	新跨太平洋海纜（NCP）
+taiwan/cb_plcn	tg:pacific-light-cable-network-plcn		117.0,20.4,125.2,27.4	太平洋光網（PLCN）
+taiwan/cb_apricot	tg:apricot		117.0,20.4,125.2,27.4	Apricot 海纜
+taiwan/cb_sjc2	tg:southeast-asia-japan-cable-2-sjc2		117.0,20.4,125.2,27.4	東南亞—日本二號海纜（SJC2）
+taiwan/cb_tpu	tg:tpu		117.0,20.4,125.2,27.4	TPU 海纜（臺灣—菲律賓—美國）
+thailand/tg_asia_america_gateway_aag_cab	tg:asia-america-gateway-aag-cable-system			AAG 亞美海纜
+thailand/th_smw3	route	100.07,6.62 79.86,6.84		Satun – Mount Lavinia
+turkey/tr_kafos	tg:kafos		27.42,40.52,30.00,44.32	KAFOS 黑海海纜（伊斯坦堡—瓦爾納—曼加利亞）
+uk/tg_grace_hopper	tg:grace-hopper			Grace Hopper 海纜
+uk/tg_atlantic_crossing_1_ac_1	tg:atlantic-crossing-1-ac-1			Atlantic Crossing-1 海纜
+uk/tg_apollo	tg:apollo			Apollo 跨大西洋海纜
+uk/tg_flag_atlantic_1_fa_1	tg:flag-atlantic-1-fa-1			FLAG Atlantic-1 海纜
+uk/uk_atlantic1866	route	-10.35,51.89 -53.37,47.88		Foilhommerum Bay, Valentia – Heart's Content
+uk/uk_tat8	route	-4.56,50.79 -12.0,49.0 -74.34,39.6		Widemouth Bay – Tuckerton
+usa/us_atlantic_cable	route	-53.37,47.88 -10.35,51.89		Heart's Content – Foilhommerum Bay, Valentia
+usa/us_tat1	route	-53.97,48.17 -5.52,56.39		Clarenville – Gallanach Bay (Oban)
+usa/us_tat8	route	-74.34,39.6 -12.0,49.0 -4.56,50.79;-12.0,49.0 -4.37,47.81		Tuckerton – Widemouth Bay; – Penmarc'h
+usa/us_marea	tg:marea			MAREA 海纜（維吉尼亞海灘—畢爾包）
+vietnam/vn_aag	tg:asia-america-gateway-aag-cable-system		106.58,7.50,145.20,13.95	亞美海纜（AAG）
+vietnam/vn_tvh	route	107.08,10.35 114.18,22.24;107.08,10.35 100.9,13.0		Vung Tau – Hong Kong; Vung Tau – Thailand (landings kept from the earlier data)
+internet/dover_calais	route	1.36,51.13 1.74,50.94		Dover (South Foreland) – Sangatte
+internet/atlantic1858	route	-10.29,51.93 -53.86,47.8		Valentia Island (Knightstown) – Bull Arm, Trinity Bay
+internet/atlantic1866	route	-10.35,51.89 -53.37,47.88		Foilhommerum Bay, Valentia – Heart's Content
+internet/bombay1870	route	-5.66,50.04 -9.33,38.68 -5.35,36.14 14.51,35.9 29.9,31.2 ~ 32.55,29.97 44.98,12.78 72.83,18.94		Porthcurno – Carcavelos – Gibraltar – Malta – Alexandria (overland to Suez) – Suez – Aden – Bombay
+internet/far_east1871	route	72.83,18.94 ~ 80.29,13.08 100.33,5.41 103.85,1.29 107.08,10.35 114.17,22.28;103.85,1.29 106.8,-6.12 ~ 114.37,-8.21 130.84,-12.46		Bombay (overland to Madras) – Madras – Penang – Singapore – Cap Saint-Jacques – Hong Kong; Singapore – Batavia (overland across Java) – Banyuwangi – Darwin
+internet/great_northern	route	121.49,31.38 129.87,32.75 131.89,43.12		Woosung (Shanghai) – Nagasaki – Vladivostok
+internet/brazil1874	route	-9.33,38.68 -16.91,32.65 -24.99,16.89 -34.88,-8.05		Carcavelos – Funchal (Madeira) – São Vicente (Cape Verde) – Recife
+internet/africa1879	route	44.98,12.78 39.19,-6.16 40.73,-15.03 32.57,-25.97 31.03,-29.86		Aden – Zanzibar – Mozambique Island – Lourenço Marques – Durban
+internet/pacific1902	route	-125.14,48.83 -159.36,3.86 178.44,-18.14 167.95,-29.04 153.41,-27.97;167.95,-29.04 173.5,-35.0		Bamfield – Fanning Island – Suva – Norfolk Island – Southport; Norfolk Island – Doubtless Bay
+internet/pacific1903	route	-122.51,37.76 -157.82,21.26 -177.37,28.21 144.67,13.43 120.98,14.6		San Francisco (Ocean Beach) – Honolulu – Midway – Guam – Manila
+internet/tat1	route	-53.97,48.17 -5.52,56.39		Clarenville – Gallanach Bay (Oban)
+internet/compac	route	-124.8,49.23 -158.22,21.47 178.44,-18.14 174.77,-36.79 151.27,-33.89		Port Alberni – Oahu – Suva – Auckland – Sydney
+internet/tpc1	route	139.26,35.3 144.67,13.43 166.62,19.28 -177.37,28.21 -158.22,21.47;-158.22,21.47 -123.74,38.95		Ninomiya – Guam – Wake – Midway – Oahu; Oahu – Point Arena
+internet/seacom1967	route	103.85,1.29 116.07,5.98 114.17,22.28 144.67,13.43;116.07,5.98 145.79,-5.22 145.77,-16.92		Singapore – Jesselton – Hong Kong – Guam; Jesselton – Madang – Cairns
+internet/tat8	route	-74.34,39.6 -12.0,49.0 -4.56,50.79;-12.0,49.0 -4.37,47.81		Tuckerton – (branching unit off the shelf) – Widemouth Bay; – Penmarc'h
+internet/tpc3	route	139.95,34.95 144.67,13.43 -158.22,21.47 -123.74,38.95		Chikura – Guam – Makaha (Oahu) – Point Arena
+internet/flag	route	-5.66,50.04 -5.15,36.43 13.36,38.12 29.9,31.2 ~ 32.55,29.97 39.17,21.54 56.34,25.12 72.83,18.94 100.33,5.41 100.07,6.62 ~ 100.6,7.2 113.94,22.25 121.85,31.0 128.62,34.88 139.62,35.14		Porthcurno – Estepona – Palermo – Alexandria (overland to Suez) – Jeddah – Fujairah – Mumbai – Penang – Satun (overland to Songkhla) – Lantau – Shanghai – Geoje – Miura
+internet/smw3	route	7.2,53.6 2.92,51.23 -5.18,50.05 -4.37,47.81 -9.1,38.44 -5.37,35.57 5.37,43.3 12.59,37.65 24.02,35.51 32.46,34.76 29.9,31.2 ~ 32.55,29.97 39.17,21.54 43.14,11.59 58.59,23.61 66.99,24.86 72.83,18.94 76.27,9.97 79.86,6.84 100.07,6.62 100.33,5.41 103.64,1.3 108.22,16.07 114.18,22.24 120.63,22.26 121.85,31.0 128.62,34.88;103.64,1.3 106.8,-6.12 115.74,-32.05		Norden – Ostend – Goonhilly – Penmarc'h – Sesimbra – Tetouan – Marseille – Mazara del Vallo – Chania – Yeroskipos – Alexandria (overland to Suez) – Jeddah – Djibouti – Muscat – Karachi – Mumbai – Cochin – Mount Lavinia – Satun – Penang – Tuas – Da Nang – Deep Water Bay – Fangshan – Shanghai – Geoje; Tuas – Jakarta – Perth
+internet/southerncross	tg:southern-cross-cable-network-sccn			Southern Cross (Australia–New Zealand–Hawaii–US)
+internet/tat14	route	-74.05,40.12 -4.55,50.83 0.71,49.87 4.4,52.2 7.2,53.6 8.13,55.75		Manasquan – Bude – Saint-Valery-en-Caux – Katwijk – Norden – Blaabjerg
+internet/sat3	tg:sat-3wasc			SAT-3/WASC (Portugal–West Africa–South Africa)
+internet/smw4	tg:seamewe-4			SEA-ME-WE 4 (Marseille–Egypt–India–Bangladesh–Singapore)
+internet/seacom	tg:seacomtata-tgn-eurasia			SEACOM (East Africa)
+internet/eassy	tg:eastern-africa-submarine-system-eassy			EASSy (East Africa)
+internet/ace	tg:africa-coast-to-europe-ace			ACE (France–West Africa)
+internet/sjc	tg:southeast-asia-japan-cable-sjc			South-East Asia–Japan Cable
+internet/faster	tg:faster			FASTER (Japan–Taiwan–US)
+internet/smw5	tg:seamewe-5			SEA-ME-WE 5
+internet/marea	tg:marea			MAREA (Virginia Beach–Bilbao)
+internet/hawaiki	tg:hawaiki			Hawaiki (Australia–NZ–Hawaii–US)
+internet/sail	tg:south-atlantic-inter-link-sail			SAIL (Cameroon–Brazil)
+internet/plcn	tg:pacific-light-cable-network-plcn			Pacific Light Cable Network (Hong Kong leg blocked by the US)
+internet/dunant	tg:dunant			Dunant (Google, US–France)
+internet/ellalink	tg:ellalink			EllaLink (Portugal–Brazil)
+internet/grace	tg:grace-hopper			Grace Hopper (New York–UK–Spain)
+internet/peace	tg:peace-cable			PEACE (Pakistan–East Africa–France)
+internet/equiano	tg:equiano			Equiano (Google, Portugal–Nigeria–South Africa)
+internet/twoafrica	tg:2africa			2Africa (around Africa)
+internet/alba1	tg:alba-1			ALBA-1 (Venezuela–Cuba)
+internet/tonga	tg:tonga-cable			Tonga–Fiji cable (cut by the 2022 eruption)
+internet/unity	tg:unity			Unity (Japan–US)
+internet/jupiter	tg:jupiter			JUPITER (Japan–Philippines–US)
+internet/tpe	tg:trans-pacific-express-tpe-cable-system			Trans-Pacific Express (TPE)
+internet/ncp	tg:new-cross-pacific-ncp-cable-system			New Cross Pacific (NCP)
+internet/apcn2	tg:apcn-2			APCN-2
+internet/ac1	tg:atlantic-crossing-1-ac-1			Atlantic Crossing-1 (AC-1)
+internet/apollo	tg:apollo			Apollo (UK/France–US)
+internet/jgas	tg:japan-guam-australia-south-jga-s			Japan–Guam–Australia South (JGA-S)
+internet/fa1	tg:flag-atlantic-1-fa-1			FLAG Atlantic-1 (FA-1)
+internet/eac	tg:eac-c2c			EAC-C2C
+internet/aag	tg:asia-america-gateway-aag-cable-system			Asia-America Gateway (AAG)
+internet/tse1	tg:taiwan-strait-express-1-tse-1			Taiwan Strait Express-1 (TSE-1)
+internet/apg	tg:asia-pacific-gateway-apg			Asia Pacific Gateway (APG)
+internet/brusa	tg:brusa			BRUSA (Brazil–US)
+internet/curie	tg:curie			Curie (Google, US–Chile)
+internet/havfrue	tg:havfrueaec-2			Havfrue/AEC-2 (US–Nordics)
+internet/amitie	tg:amitie			Amitié (US–UK/France)
+internet/topaz	tg:topaz			Topaz (Google, Canada–Japan)
+internet/blue	tg:blue			Blue (Mediterranean)
+internet/echo	tg:echo			Echo (US–Guam–Singapore)
+internet/bifrost	tg:bifrost			Bifrost (US–Guam–Indonesia–Singapore)
+internet/firmina	tg:firmina			Firmina (Google, US–South America)
+internet/apricot	tg:apricot			Apricot
+internet/sjc2	tg:southeast-asia-japan-cable-2-sjc2			Southeast Asia–Japan Cable 2 (SJC2)
+internet/medusa	tg:medusa-submarine-cable-system			Medusa (Mediterranean)
+internet/tpu	tg:tpu			TPU (Google, Taiwan–Guam–US)
+internet/us_transcon	route	-74.0,40.71 ~ -87.63,41.88 ~ -95.94,41.26 ~ -99.0,40.64 ~ -102.26,40.99 ~ -104.55,42.21 ~ -108.9,42.37 ~ -110.38,41.32 ~ -111.89,40.76 ~ -119.27,39.29 ~ -119.77,39.16 ~ -121.49,38.58 ~ -122.42,37.77		陸上線：紐約—芝加哥—奧馬哈—卡尼堡—朱爾斯堡—拉勒米堡—南山口—布里傑堡—鹽湖城—丘吉爾堡—卡森城—沙加緬度—舊金山（沿奧勒岡、加州小徑）
+internet/indo_european	route	-0.13,51.51 ~ 1.75,52.48 7.2,53.37 ~ 13.4,52.52 ~ 18.6,53.01 ~ 21.01,52.23 ~ 28.66,50.25 ~ 30.73,46.48 ~ 36.47,45.36 41.02,43.0 ~ 44.79,41.72 ~ 45.61,38.96 ~ 46.29,38.08 ~ 51.39,35.69 ~ 51.67,32.65 ~ 52.54,29.6 ~ 50.84,28.97 57.77,25.64 62.33,25.12 66.99,24.86		倫敦—洛斯托夫特（北海電纜）—埃姆登—柏林—托倫—華沙—日托米爾—敖德薩—刻赤（黑海沿岸電纜）—蘇呼米—提比里斯—朱勒法—大不里士—德黑蘭—伊斯法罕—設拉子—布什爾（波斯灣電纜）—賈斯克—瓜達爾—喀拉蚩
+internet/siberian	route	30.32,59.94 ~ 37.62,55.75 ~ 44.0,56.33 ~ 49.11,55.79 ~ 56.25,58.01 ~ 60.6,56.84 ~ 65.53,57.15 ~ 73.37,54.99 ~ 84.95,56.49 ~ 92.87,56.01 ~ 104.3,52.29 ~ 103.7,51.72 ~ 107.6,51.83 ~ 113.5,52.03 ~ 117.7,52.25 ~ 127.53,50.26 ~ 135.07,48.48 ~ 131.89,43.12		陸上線：聖彼得堡—莫斯科—下諾夫哥羅德—喀山—彼爾姆—葉卡捷琳堡—秋明—鄂木斯克—托木斯克—克拉斯諾亞爾斯克—伊爾庫茨克—（繞貝加爾湖南岸）烏蘭烏德—赤塔—斯列堅斯克—布拉戈維申斯克—哈巴羅夫斯克—海參崴
+internet/aus_overland	route	138.6,-34.93 ~ 137.77,-32.49 ~ 138.4,-30.8 ~ 136.55,-29.15 ~ 134.92,-25.92 ~ 133.88,-23.7 ~ 133.89,-21.53 ~ 134.19,-19.65 ~ 133.7,-17.98 ~ 133.37,-16.25 ~ 132.26,-14.47 ~ 131.83,-13.82 ~ 130.84,-12.46		陸上線：阿得雷德—奧古斯塔港—貝爾塔納—斯特蘭威斯泉—夏洛特水站—愛麗絲泉—巴羅溪—田納特溪—鮑威爾溪—戴利沃特斯—凱瑟琳—派恩溪—達爾文（各電報站）
+internet/tae	route	8.68,50.11 ~ 16.37,48.21 ~ 19.04,47.5 ~ 30.52,50.45 ~ 37.77,44.72 41.67,42.15 ~ 44.79,41.72 ~ 49.87,40.41 52.97,40.02 ~ 58.38,37.95 ~ 69.24,41.3 ~ 74.6,42.87 ~ 76.95,43.24 ~ 87.62,43.83 ~ 103.83,36.06 ~ 108.94,34.34 ~ 116.4,39.9;108.94,34.34 ~ 114.3,30.59 ~ 121.47,31.23;49.87,40.41 ~ 51.39,35.69		法蘭克福—維也納—布達佩斯—基輔—新羅西斯克（黑海電纜）—波季—提比里斯—巴庫（裏海電纜）—土庫曼巴希—阿什哈巴德—塔什干—比什凱克—阿拉木圖—烏魯木齊—蘭州—西安—北京；西安—武漢—上海；巴庫—德黑蘭
+internet/epeg	route	8.68,50.11 ~ 13.4,52.52 ~ 21.01,52.23 ~ 30.52,50.45 ~ 37.62,55.75 ~ 39.72,47.23 ~ 47.5,42.98 ~ 49.87,40.41 ~ 51.39,35.69 ~ 56.27,27.19 57.89,23.7		法蘭克福—柏林—華沙—基輔—莫斯科—羅斯托夫—馬哈奇卡拉—巴庫—德黑蘭—阿巴斯港（海纜）—阿曼巴爾卡
+internet/cpec_ofc	route	75.99,39.47 ~ 75.23,37.77 ~ 75.42,36.85 ~ 74.82,36.69 ~ 74.31,35.92 ~ 74.1,35.42 ~ 73.21,34.15 ~ 73.05,33.69		陸上線：喀什—塔什庫爾干—紅其拉甫—蘇斯特—吉爾吉特—奇拉斯—阿伯塔巴德—伊斯蘭堡（沿喀喇崑崙公路）

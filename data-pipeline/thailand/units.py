@@ -16,4 +16,6 @@ G = {'lanna': '50 51 52 54 55 56 57 58', 'sukhothai': '53 60 61 62 64 65 66 67',
 for k, v in G.items(): U.put(k, U.a1(*['TH-' + c for c in v.split()]))
 U.put('laos', U.a0('LAO')); U.put('cambodia', U.a0('KHM'))
 U.put('malay_n', U.a1('MY-02', 'MY-03', 'MY-09', 'MY-11'))
+# the country's real first-level divisions (the old ids above are aliases in region.json "groups")
+U.admin1('THA', 'th_')
 U.write(OUT)

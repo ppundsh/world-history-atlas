@@ -34,3 +34,7 @@ port	ru_vladivostok	1860-07		131.89,43.11	海參崴港	Port of Vladivostok	ウ�
 port	ru_novorossiysk	1838-01		37.78,44.72	新羅西斯克港	Port of Novorossiysk	ノヴォロシースク港	黑海最大的港口。	The largest port on the Black Sea.	黒海最大の港。	新罗西斯克	Novorossiysk
 airport	ru_svo	1959-08		37.41,55.97	莫斯科謝列梅捷沃國際機場	Sheremetyevo International Airport	シェレメーチエヴォ国際空港	蘇聯與俄羅斯的國際門戶。	The Soviet and Russian international gateway.	ソ連・ロシアの国際空港。	谢列梅捷沃国际机场	Sheremetyevo International Airport
 airport	ru_dme	1964-05		37.91,55.41	莫斯科多莫傑多沃機場	Domodedovo International Airport	ドモジェドヴォ空港	俄羅斯的大型機場。	One of Russia's largest airports.	ロシア有数の空港。	多莫杰多沃国际机场	Domodedovo International Airport
+fiber	ru_moskhab	2001-01		37.62,55.75 49.1,55.79 60.6,56.84 73.37,54.98 82.92,55.03 92.87,56.01 104.28,52.29 113.5,52.03 127.5,50.25 135.07,48.48	莫斯科—哈巴羅夫斯克光纖幹線	Moscow–Khabarovsk fibre trunk	モスクワ—ハバロフスク光幹線	俄羅斯電信沿西伯利亞鐵路鋪設的跨國光纖。	Rostelecom's fibre along the Trans-Siberian.	シベリア鉄道沿いの光幹線。		
+ixp	ru_mskix	1995-01		37.62,55.75	MSK-IX 莫斯科網際網路交換中心	MSK-IX	MSK-IX	俄羅斯最大的交換中心。	Russia's largest internet exchange.	ロシア最大のIX。		MSK-IX
+cable	ru_kuril	2019-01		143.146,46.86 143.454,46.931 145.575,46.272 147.882,45.087 147.6,45.173 147.06,45.038 146.756,44.695 146.7,44.374 146.25,44.052 145.859,44.035 146.25,43.89 146.747,43.794	薩哈林—千島海纜	Sakhalin–Kuril cable	サハリン—千島海底ケーブル	連接薩哈林與千島群島的光纖海纜。	The fibre cable from Sakhalin to the Kurils.	サハリンと千島を結ぶ。		
+datacenter	ru_sorm	1995-01		37.62,55.75	SORM 網路監控系統	SORM surveillance system	SORM	俄羅斯要求電信業者裝設的監聽系統。	The monitoring system Russian carriers must install.	ロシアの通信傍受システム。		SORM

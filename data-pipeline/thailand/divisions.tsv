@@ -9,12 +9,80 @@ m_nakhonratchasima	#6fb3c7	孟通・呵叻府	孟通・呵叻府	Monthon Nakhon 
 m_udon	#b5a7d8	孟通・烏隆府	孟通・乌隆府	Monthon Udon	ウドーン州
 m_nakhonsi	#d8a7b1	孟通・洛坤府、春蓬府、普吉府	孟通・洛坤府、春蓬府、普吉府	Monthon Nakhon Si Thammarat, Chumphon, Phuket	ナコーンシータマラート州
 m_pattani	#c9b79c	孟通・北大年府	孟通・北大年府	Monthon Pattani	パッターニー州
-r_lanna	#f6b98a	北部各府	北部各府	Northern provinces	Northern
-r_sukhothai	#a594cf	中部北段各府	中部北段各府	Upper Central provinces	Upper Central
-r_central	#cc94a0	中部各府	中部各府	Central provinces	Central
-r_west	#d6c8b0	西部各府	西部各府	Western provinces	Western
-r_east	#8cc5d6	東部各府	东部各府	Eastern provinces	Eastern
-r_isan_s	#a3c4a8	東北部南段各府	东北部南段各府	Lower Northeast provinces	Lower Northeast
-r_isan_n	#e3c9a8	東北部北段各府	东北部北段各府	Upper Northeast provinces	Upper Northeast
-r_south	#e9c46a	南部各府	南部各府	Southern provinces	Southern
-r_patani	#f4a261	南部邊境三府各府	南部边境三府各府	Deep South provinces	Deep South
+a_32	#e9c46a	素林府	素林府	Surin	スリン県
+a_33	#6fb3c7	四色菊府	四色菊府	Si Sa Ket	シーサケート県
+a_34	#a594cf	烏汶府	乌汶府	Ubon Ratchathani	ウボンラーチャターニー県
+a_27	#e3c9a8	沙繳府	沙缴府	Sa Kaeo	サケーオ県
+a_31	#2a9d8f	武裡南府	武里南府	Buri Ram	ブリーラム県
+a_23	#f6b98a	達叻府	达叻府	Trat	トラート県
+a_22	#a3c4a8	莊他武裡府	庄他武里府	Chanthaburi	チャンタブリー県
+a_91	#8ab17d	沙敦府	沙敦府	Satun	サトゥーン県
+a_90	#c9b79c	宋卡府	宋卡府	Songkhla	ソンクラー県
+a_95	#8cc5d6	也拉府	也拉府	Yala	ヤラー県
+a_96	#e76f51	那拉提瓦府	那拉提瓦府	Narathiwat	ナラーティワート県
+a_57	#d8a7b1	清萊府	清莱府	Chiang Rai	チエンラーイ県
+a_50	#d6c8b0	清邁府	清迈府	Chiang Mai	チエンマイ県
+a_58	#f4a261	夜豐頌府	夜丰颂府	Mae Hong Son	メーホンソーン県
+a_63	#b5a7d8	達府	达府	Tak	ターク県
+a_71	#cc94a0	北碧府	北碧府	Kanchanaburi	カーンチャナブリー県
+a_77	#e9c46a	巴蜀府	巴蜀府	Prachuap Khiri Khan	プラチュワップキーリーカン県
+a_76	#6fb3c7	佛丕府	佛丕府	Phetchaburi	ペッチャブリー県
+a_70	#a594cf	叻武裡府	叻武里府	Ratchaburi	ラーチャブリー県
+a_86	#e3c9a8	春蓬府	春蓬府	Chumphon	チュムポーン県
+a_85	#2a9d8f	拉廊府	拉廊府	Ranong	ラノーン県
+a_56	#f6b98a	帕堯府	帕尧府	Phayao	パヤオ県
+a_55	#a3c4a8	難府	难府	Nan	ナーン県
+a_53	#8ab17d	程逸府	程逸府	Uttaradit	ウッタラディット県
+a_65	#c9b79c	彭世洛府	彭世洛府	Phitsanulok	ピッサヌローク県
+a_42	#8cc5d6	黎府	黎府	Loei	ルーイ県
+a_38	#e76f51	汶幹府	汶干府	Bueng Kan	ブンカーン県
+a_43	#d8a7b1	廊開府	廊开府	Nong Khai	ノーンカーイ県
+a_48	#d6c8b0	那空拍儂府	那空拍侬府	Nakhon Phanom	ナコーンパノム県
+a_49	#f4a261	穆達漢府	穆达汉府	Mukdahan	ムックダーハーン県
+a_37	#b5a7d8	安納乍倫府	安纳乍伦府	Amnat Charoen	アムナートチャルーン県
+a_82	#cc94a0	攀牙府	攀牙府	Phang Nga	パンガー県
+a_81	#e9c46a	甲米府	甲米府	Krabi	クラビー県
+a_92	#6fb3c7	董里府	董里府	Trang	トラン県
+a_94	#a594cf	北大年府	北大年府	Pattani	パッターニー県
+a_93	#e3c9a8	博他侖府	博他仑府	Phatthalung	パッタルン県
+a_80	#2a9d8f	那空是貪瑪叻府	那空是贪玛叻府	Nakhon Si Thammarat	ナコーンシータンマラート県
+a_84	#f6b98a	素叻府	素叻府	Surat Thani	スラートターニー県
+a_75	#a3c4a8	沙沒頌堪府	沙没颂堪府	Samut Songkhram	サムットソンクラーム県
+a_74	#8ab17d	沙沒沙空府	沙没沙空府	Samut Sakhon	サムットサーコーン県
+a_10	#c9b79c	曼谷	曼谷	Bangkok	バンコク
+a_11	#8cc5d6	沙沒巴幹府	沙没巴干府	Samut Prakan	サムットプラーカーン県
+a_24	#e76f51	差春騷府	差春骚府	Chachoengsao	チャチューンサオ県
+a_20	#d8a7b1	春武里府	春武里府	Chon Buri	チョンブリー県
+a_21	#d6c8b0	羅勇府	罗勇府	Rayong	ラヨーン県
+a_83	#f4a261	普吉府	普吉府	Phuket	プーケット県
+a_40	#b5a7d8	孔敬府	孔敬府	Khon Kaen	コーンケン県
+a_47	#cc94a0	沙功那空府	沙功那空府	Sakon Nakhon	サコンナコーン県
+a_72	#e9c46a	素攀府	素攀府	Suphan Buri	スパンブリー県
+a_17	#6fb3c7	信武裡府	信武里府	Sing Buri	シンブリー県
+a_18	#a594cf	猜納府	猜纳府	Chai Nat	チャイナート県
+a_15	#e3c9a8	紅統府	红统府	Ang Thong	アーントーン県
+a_19	#2a9d8f	北標府	北标府	Saraburi	サラブリー県
+a_30	#f6b98a	那空叻差是瑪府	那空叻差是玛府	Nakhon Ratchasima	ナコーンラーチャシーマー県
+a_26	#a3c4a8	那空那育府	那空那育府	Nakhon Nayok	ナコーンナーヨック県
+a_13	#8ab17d	巴吞他尼府	巴吞他尼府	Pathum Thani	パトゥムターニー県
+a_61	#c9b79c	烏泰他尼府	乌泰他尼府	Uthai Thani	ウタイターニー県
+a_46	#8cc5d6	加拉信府	加拉信府	Kalasin	カーラシン県
+a_45	#e76f51	黎逸府	黎逸府	Roi Et	ローイエット県
+a_44	#d8a7b1	馬哈沙拉堪府	马哈沙拉堪府	Maha Sarakham	マハーサーラカーム県
+a_39	#d6c8b0	農磨蘭普府	农磨兰普府	Nong Bua Lam Phu	ノーンブワラムプー県
+a_16	#f4a261	華富里府	华富里府	Lopburi	ロッブリー県
+a_41	#b5a7d8	烏隆府	乌隆府	Udon Thani	ウドーンターニー県
+a_14	#cc94a0	大城府	大城府	Phra Nakhon Si Ayutthaya	アユタヤ県
+a_12	#e9c46a	暖武裡府	暖武里府	Nonthaburi	ノンタブリー県
+a_73	#6fb3c7	佛統府	佛统府	Nakhon Pathom	ナコーンパトム県
+a_62	#a594cf	甘烹碧府	甘烹碧府	Kamphaeng Phet	カムペーンペット県
+a_52	#e3c9a8	南邦府	南邦府	Lampang	ラムパーン県
+a_64	#2a9d8f	素可泰府	素可泰府	Sukhothai	スコータイ県
+a_60	#f6b98a	那空沙旺府	那空沙旺府	Nakhon Sawan	ナコーンサワン県
+a_67	#a3c4a8	碧差汶府	碧差汶府	Phetchabun	ペッチャブーン県
+a_66	#8ab17d	披集府	披集府	Phichit	ピチット県
+a_36	#c9b79c	猜也蓬府	猜也蓬府	Chaiyaphum	チャイヤプーム県
+a_54	#8cc5d6	帕府	帕府	Phrae	プレー県
+a_51	#e76f51	南奔府	南奔府	Lamphun	ラムプーン県
+a_25	#d8a7b1	巴真府	巴真府	Prachin Buri	プラーチーンブリー県
+a_35	#d6c8b0	益梭通府	益梭通府	Yasothon	ヤソートーン県

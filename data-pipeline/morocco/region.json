@@ -43,6 +43,39 @@
    "constantine",
    "sahara_dz",
    "ifriqiya"
+  ],
+  "souss": [
+   "ma_14",
+   "ma_13"
+  ],
+  "sahara_n": [
+   "ma_15",
+   "ma_16",
+   "sahara_n_rest"
+  ],
+  "tangier": [
+   "ma_01"
+  ],
+  "rif": [
+   "ma_04",
+   "ma_03"
+  ],
+  "fes": [
+   "ma_06",
+   "ma_05"
+  ],
+  "rabat": [
+   "ma_02",
+   "ma_07"
+  ],
+  "casablanca": [
+   "ma_09",
+   "ma_08",
+   "ma_10"
+  ],
+  "marrakech": [
+   "ma_11",
+   "ma_12"
   ]
  }
 }

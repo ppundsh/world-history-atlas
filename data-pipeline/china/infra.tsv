@@ -17,3 +17,4 @@ port	cn_shanghai_port	1911-09		121.5,31.25	上海港（黃浦江）	Port of Shan
 port	cn_dalian	1911-09		121.65,38.93	大連港	Port of Dalian	大連港	日本租借下的東北門戶。	Manchuria's gateway under Japanese lease.	日本租借下の港。	大连港	Port of Dalian
 airport	cn_longhua	1917-01		121.45,31.17	上海龍華機場	Longhua Airport	上海龍華空港	中國航空公司的基地。	Base of China National Aviation Corporation.	中国航空公司の拠点。	上海龙华机场	Shanghai Longhua Airport
 airport	cn_baishiyi	1938-01		106.38,29.5	重慶白市驛機場	Chongqing Baishiyi Airport	重慶白市駅飛行場	抗戰陪都的主要機場。	The main airfield of the wartime capital.	戦時首都の飛行場。	重庆白市驿机场	
+cable	cn_shanghai_nagasaki	1911-09		121.49,31.38 129.87,32.75	上海—長崎海底電報電纜（大北電報）	Shanghai–Nagasaki telegraph cable (Great Northern)	上海—長崎海底電信ケーブル	丹麥大北電報公司的中國國際電報線。	The Great Northern Telegraph Company's line out of China.	大北電信の国際電信線。	大北電報公司	Great Northern Telegraph Company

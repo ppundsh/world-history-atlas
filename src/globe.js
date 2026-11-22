@@ -1,4 +1,4 @@
-import { drawLang, pathFromProject, lineAt } from './langlayer.js';
+import { drawLang, pathFromProject, lineAt, labelsMoving } from './langlayer.js';
 import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
 import { takeSliding } from './flat.js';
 import { reliefFor } from './relief.js';
@@ -423,8 +423,8 @@ export class GlobeMap {
       m.getSource('ice').setData(ph.ice);
     }
     for (const id of ['bathy', 'regions', 'ice']) m.setLayoutProperty(id, 'visibility', phys ? 'visible' : 'none');
-    // high-resolution hillshade: opt-in, and only the current mode's region
-    const rel = phys && st.relief ? reliefFor(st.mode, this.app.reliefRegions || []) : [];
+    // a country mode's own grey hill shading always; the world modes Taiwan's and Japan's with "detailed terrain" on
+    const rel = phys ? reliefFor(st.mode, this.app.reliefRegions || [], st.relief) : [];
     for (const r of this.app.reliefRegions || []) m.setLayoutProperty('relief-' + r.id, 'visibility', rel.includes(r.id) ? 'visible' : 'none');
     this.app.updateReliefCredit?.(rel);
     const sat = st.basemap === 'satellite' && !!this.app.satTiles;
@@ -494,6 +494,7 @@ export class GlobeMap {
     if (F.lang) {
       const pr = ll => { if (geoDistance(ll, center) > 1.45) return null; const q = m.project(ll); return [q.x, q.y]; };
       this.lineHits = drawLang(ctx, F.lang, pathFromProject(ctx, pr), pr, S.label.font, Math.pow(2, m.getZoom() - 1));
+      if (labelsMoving()) m.triggerRepaint();      // names still sliding apart
     }
     const placed = [], hits = this.markerHits = [];
     const pproj = ll => { if (geoDistance(ll, center) > 1.4) return null; const q = m.project(ll); return [q.x, q.y]; };

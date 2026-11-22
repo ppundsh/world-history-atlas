@@ -6,3 +6,10 @@ feud	zapata	1911-11	1919-04	-98.98	18.8	薩帕塔的南方解放軍	Zapata's Lib
 feud	cristero	1926-08	1929-06	-102.5	20.7	基督戰爭	Cristero War	クリステロ戦争	天主教徒反抗反教權法律的起義。	A Catholic rising against anticlerical laws.	カトリック教徒の反乱。	基督战争
 feud	ezln	1994-01	2026-12	-92.64	16.74	薩帕塔民族解放軍	Zapatista Army of National Liberation	サパティスタ民族解放軍	恰帕斯原住民自治運動。	An Indigenous movement for self-rule in Chiapas.	チアパスの先住民運動。	萨帕塔民族解放军
 power	comanche	1750-01	1875-06	-101.0	33.5	科曼奇帝國	Comanchería	コマンチェリア	控制南部大平原、屢次南下劫掠墨西哥北部。	The Comanche held the southern plains and raided deep into northern Mexico.	南部大平原を支配。	科曼奇人
+feud	mixton	1540-01	1542-12	-103.35	21.2	米克斯頓戰爭	Mixtón War	ミクストン戦争	卡斯坎族反抗西班牙的起義。	A Caxcan rising against Spanish rule.	カシュカン族の反乱。	
+feud	chichimeca	1550-01	1590-12	-101.5	22.0	奇奇梅卡戰爭	Chichimeca War	チチメカ戦争	北方游牧民抵抗西班牙的長期戰爭。	The long war of the northern nomads against Spain.	北方遊牧民との戦争。	奇奇梅卡战争
+feud	yaqui	1825-01	1929-12	-110.2	27.6	雅基族戰爭	Yaqui Wars	ヤキ戦争	索諾拉雅基人的長期抗爭。	The Yaqui people's long resistance in Sonora.	ヤキ族の抵抗。	亚基战争
+feud	cartels	2006-12	2026-12	-107.39	24.8	墨西哥毒品戰爭	Mexican drug war	メキシコ麻薬戦争	政府與販毒集團的武裝衝突。	The armed conflict between the state and cartels.	麻薬組織との戦い。	墨西哥毒品战争
+power	tlaxcala_al	1519-09	1821-09	-98.24	19.32	特拉斯卡拉的特權	Privileged Tlaxcala	トラスカラの特権	協助征服而獲自治特權的特拉斯卡拉人。	The Tlaxcalans, rewarded with self-rule for helping the conquest.	征服協力の特権。	特拉斯卡拉
+power	yucatan_rep	1841-01	1848-08	-89.62	20.97	猶加敦共和國	Republic of Yucatán	ユカタン共和国	短暫脫離墨西哥的獨立共和國。	A republic that briefly broke away from Mexico.	一時独立した共和国。	尤卡坦共和国
+us	us_veracruz	1914-04	1914-11	-96.13	19.2	美軍佔領韋拉克魯斯	US occupation of Veracruz	米軍のベラクルス占領	坦皮科事件後美軍佔領七個月。	Seven months of US occupation after the Tampico Affair.	タンピコ事件後の占領。	

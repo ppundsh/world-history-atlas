@@ -11,6 +11,7 @@ from shapely.ops import unary_union
 
 class Units:
     def __init__(self, NE):
+        self.NE = NE
         self.A1 = {}
         for f in json.load(open(os.path.join(NE, 'ne_10m_admin_1_states_provinces.geojson'), encoding='utf-8'))['features']:
             k = f['properties']['iso_3166_2']; g = shape(f['geometry']).buffer(0)
@@ -29,6 +30,23 @@ class Units:
         for name, p in pieces:
             self.put(name, rest.intersection(p)); rest = rest.difference(p)
         self.put(k, rest)
+    def admin1(self, iso, prefix):
+        """replace units lying mostly inside country `iso` by its Natural Earth admin-1 regions (id prefix+code);
+        what an old unit had outside them stays as <old>_rest (see _gen/admin1.py, which also records the aliases)"""
+        A = {k.split('-')[-1]: g for k, g in self.A1.items() if k.startswith(self._iso2(iso) + '-') and '~' not in k}
+        country = unary_union(list(A.values()))
+        inside = [k for k, g in self.U.items() if g.area > 0 and g.intersection(country).area / g.area > 0.5]
+        for k in inside:
+            g = self.U.pop(k); rest = g.difference(country)
+            if not rest.is_empty and rest.area > 0.03 * g.area: self.U[k + '_rest'] = rest
+        for c, g in A.items(): self.U[prefix + c.lower()] = g
+    def _iso2(self, iso):
+        import json as _j
+        if not hasattr(self, '_isomap'):
+            self._isomap = {}
+            for f in _j.load(open(os.path.join(self.NE, 'ne_10m_admin_1_states_provinces.geojson'), encoding='utf-8'))['features']:
+                p = f['properties']; self._isomap.setdefault(p['adm0_a3'], p['iso_3166_2'].split('-')[0])
+        return self._isomap[iso]
     def write(self, out):
         feats = [{'type': 'Feature', 'properties': {'id': k}, 'geometry': mapping(g)} for k, g in self.U.items() if not g.is_empty]
         json.dump({'type': 'FeatureCollection', 'features': feats}, open(out, 'w', encoding='utf-8'), ensure_ascii=False)

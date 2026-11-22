@@ -45,11 +45,113 @@ f_laos	#cc94a0	寮國保護國	老挝保护国	Laos protectorate	ラオス保護
 f_camb	#d6c8b0	柬埔寨保護國	柬埔寨保护国	Cambodia protectorate	カンボジア保護国
 p_north	#8cc5d6	越南民主共和國各省（未分繪）	越南民主共和国各省（未分绘）	Provinces of North Vietnam (not drawn)	北ベトナムの各省（未描画）
 p_south	#a3c4a8	越南共和國各省（未分繪）	越南共和国各省（未分绘）	Provinces of South Vietnam (not drawn)	南ベトナムの各省（未描画）
-r_dongbac	#e9c46a	東北部（今日地理分區）	东北部（今日地理分区）	North East (today's region)	東北部（現在の地方区分）
-r_taybac	#f4a261	西北部（今日地理分區）	西北部（今日地理分区）	North West (today's region)	西北部（現在の地方区分）
-r_hong	#e76f51	紅河平原（今日地理分區）	红河平原（今日地理分区）	Red River Delta (today's region)	紅河デルタ（現在の地方区分）
-r_bactrung	#8ab17d	北中部（今日地理分區）	北中部（今日地理分区）	North Central Coast (today's region)	北中部（現在の地方区分）
-r_namtrung	#2a9d8f	南中部沿海（今日地理分區）	南中部沿海（今日地理分区）	South Central Coast (today's region)	南中部沿岸（現在の地方区分）
-r_taynguyen	#6fb3c7	西原（今日地理分區）	西原（今日地理分区）	Central Highlands (today's region)	中部高原（現在の地方区分）
-r_dongnam	#b5a7d8	東南部（今日地理分區）	东南部（今日地理分区）	South East (today's region)	東南部（現在の地方区分）
-r_cuulong	#d8a7b1	九龍江平原（湄公河三角洲）（今日地理分區）	九龙江平原（湄公河三角洲）（今日地理分区）	Mekong Delta (today's region)	メコンデルタ（現在の地方区分）
+v_hasonbinh	#e9c46a	河山平省	河山平省	Hà Sơn Bình	ハーソンビン省
+v_vinhphu	#6fb3c7	永富省	永富省	Vĩnh Phú	ヴィンフー省
+v_habac	#a594cf	河北省（越南）	河北省（越南）	Hà Bắc	ハバック省
+v_haihung	#e3c9a8	海興省	海兴省	Hải Hưng	ハイフン省
+v_hanamninh	#2a9d8f	河南寧省	河南宁省	Hà Nam Ninh	ハナムニン省
+v_bacthai	#f6b98a	北太省	北太省	Bắc Thái	バクタイ省
+v_hatuyen	#a3c4a8	河宣省	河宣省	Hà Tuyên	ハトゥエン省
+v_hoanglienson	#8ab17d	黃連山省	黄连山省	Hoàng Liên Sơn	ホアンリエンソン省
+v_laichau	#c9b79c	萊州省	莱州省	Lai Châu	ライチャウ省
+v_nghetinh	#8cc5d6	義靜省	义静省	Nghệ Tĩnh	ゲティン省
+v_binhtrithien	#e76f51	平治天省	平治天省	Bình Trị Thiên	ビンチティエン省
+v_qndn	#d8a7b1	廣南—峴港省	广南—岘港省	Quảng Nam–Đà Nẵng	クアンナム・ダナン省
+v_nghiabinh	#d6c8b0	義平省	义平省	Nghĩa Bình	ギアビン省
+v_phukhanh	#f4a261	富慶省	富庆省	Phú Khánh	フーカイン省
+v_thuanhai	#b5a7d8	順海省	顺海省	Thuận Hải	トゥアンハイ省
+v_gialaikontum	#cc94a0	嘉萊—崑嵩省	嘉莱—昆嵩省	Gia Lai–Kon Tum	ザライ・コントゥム省
+v_daklak	#e9c46a	多樂省	多乐省	Đắk Lắk	ダクラク省
+v_songbe	#6fb3c7	小河省	小河省	Sông Bé	ソンベー省
+v_dongnai	#a594cf	同奈省	同奈省	Đồng Nai	ドンナイ省
+v_cuulong	#e3c9a8	九龍省	九龙省	Cửu Long	クーロン省
+v_haugiang	#2a9d8f	後江省	后江省	Hậu Giang	ハウザン省
+v_minhhai	#f6b98a	明海省	明海省	Minh Hải	ミンハイ省
+a_37	#a3c4a8	西寧省	西宁省	Tây Ninh	タイニン省
+a_41	#8ab17d	隆安省	隆安省	Long An	ロンアン省
+a_45	#c9b79c	同塔省	同塔省	Đồng Tháp	ドンタップ省
+a_44	#8cc5d6	安江省	安江省	An Giang	アンザン省
+a_47	#e76f51	堅江省	坚江省	Kiên Giang	キエンザン省
+a_05	#d8a7b1	山羅省	山罗省	Sơn La	ソンラ省
+a_21	#d6c8b0	清化省	清化省	Thanh Hóa	タインホア省
+a_04	#f4a261	高平省	高平省	Cao Bằng	カオバン省
+a_09	#b5a7d8	諒山省	谅山省	Lạng Sơn	ランソン省
+a_13	#cc94a0	廣寧省	广宁省	Quảng Ninh	クアンニン省
+a_46	#e9c46a	前江省	前江省	Tiền Giang	ティエンザン省
+a_sg	#6fb3c7	胡志明市	胡志明市	Ho Chi Minh	ホーチミン市
+a_50	#a594cf	檳椥省	槟椥省	Bến Tre	ベンチェ省
+a_20	#e3c9a8	太平省	太平省	Thái Bình	タイビン省
+a_hp	#2a9d8f	海防市	海防市	Haiphong	ハイフォン
+a_hn	#f6b98a	河內市	河内市	Hanoi	ハノイ
+a_35	#a3c4a8	林同省	林同省	Lâm Đồng	ラムドン省
+a_43	#8ab17d	巴地頭頓省	巴地头顿省	Bà Rịa-Vũng Tàu	バリア＝ブンタウ省
+a_39	#c9b79c	同奈省	同奈省	Đồng Nai	ドンナイ省
+a_24	#8cc5d6	廣平省	广平省	Quảng Bình	クアンビン省
+a_25	#e76f51	廣治省	广治省	Quảng Trị	クアンチ省
+a_26	#d8a7b1	承天順化省	承天顺化省	Thừa Thiên Huế	トゥアティエン＝フエ省
+a_34	#d6c8b0	慶和省	庆和省	Khánh Hòa	カインホア省
+a_32	#f4a261	富安省	富安省	Phú Yên	フーイエン省
+a_31	#b5a7d8	平定省	平定省	Bình Định	ビンディン省
+a_29	#cc94a0	廣義省	广义省	Quảng Ngãi	クアンガイ省
+v_namha	#e9c46a	南河省	南河省	Nam Hà	ナムハー省
+v_cantho	#6fb3c7	芹苴省	芹苴省	Cần Thơ	カントー省
+a_28	#a594cf	昆嵩省	昆嵩省	Kon Tum	コントゥム省
+a_30	#e3c9a8	嘉萊省	嘉莱省	Gia Lai	ザライ省
+a_22	#2a9d8f	乂安省	乂安省	Nghệ An	ゲアン省
+a_23	#f6b98a	河靜省	河静省	Hà Tĩnh	ハティン省
+a_03	#a3c4a8	河江省	河江省	Hà Giang	ハザン省
+a_02	#8ab17d	老街省	老街省	Lào Cai	ラオカイ省
+a_52	#c9b79c	朔莊省	朔庄省	Sóc Trăng	ソクチャン省
+a_49	#8cc5d6	永隆省	永隆省	Vĩnh Long	ヴィンロン省
+a_51	#e76f51	茶榮省	茶荣省	Trà Vinh	チャーヴィン省
+a_40	#d8a7b1	平順省	平顺省	Bình Thuận	ビントゥアン省
+a_36	#d6c8b0	寧順省	宁顺省	Ninh Thuận	ニントゥアン省
+a_18	#f4a261	寧平省	宁平省	Ninh Bình	ニンビン省
+a_14	#b5a7d8	和平省	和平省	Hòa Bình	ホアビン省
+a_07	#cc94a0	宣光省	宣光省	Tuyên Quang	トゥエンクアン省
+a_06	#e9c46a	安沛省	安沛省	Yên Bái	イエンバイ省
+a_58	#6fb3c7	平福省	平福省	Bình Phước	ビンフオック省
+a_27	#a594cf	廣南省	广南省	Quảng Nam	クアンナム省
+a_59	#e3c9a8	金甌省	金瓯省	Cà Mau	カマウ省
+a_55	#2a9d8f	薄寮省	薄寮省	Bạc Liêu	バクリエウ省
+a_dn	#f6b98a	峴港市	岘港市	Da Nang	ダナン
+a_67	#a3c4a8	南定省	南定省	Nam Định	ナムディン省
+a_70	#8ab17d	永福省	永福省	Vĩnh Phúc	ヴィンフック省
+a_68	#c9b79c	富壽省	富寿省	Phú Thọ	フート省
+a_53	#8cc5d6	北𣴓省	北𣴓省	Bắc Kạn	バッカン省
+a_66	#e76f51	興安省	兴安省	Hưng Yên	フンイエン省
+a_56	#d8a7b1	北寧省	北宁省	Bắc Ninh	バクニン省
+a_54	#d6c8b0	北江省	北江省	Bắc Giang	バクザン省
+a_69	#f4a261	太原省	太原省	Thái Nguyên	タイグエン省
+a_61	#b5a7d8	海陽省	海阳省	Hải Dương	ハイズオン省
+a_63	#cc94a0	河南省	河南省	Hà Nam	ハナム省
+a_57	#e9c46a	平陽省	平阳省	Bình Dương	ビンズオン省
+a_72	#6fb3c7	得農省	得农省	Đắk Nông	ダクノン省
+a_33	#a594cf	多樂省	多乐省	Đắk Lắk	ダクラク省
+a_71	#e3c9a8	奠邊省	奠边省	Điện Biên	ディエンビエン省
+a_01	#2a9d8f	萊州省	莱州省	Lai Châu	ライチャウ省
+a_73	#f6b98a	後江省	后江省	Hậu Giang	ハウザン省
+a_ct	#a3c4a8	芹苴市	芹苴市	Cần Thơ	カントー
+vn25_tuyenquang	#8ab17d	宣光省	宣光省	Tuyên Quang	トゥエンクアン省
+vn25_laocai	#c9b79c	老街省	老街省	Lào Cai	ラオカイ省
+vn25_thainguyen	#8cc5d6	太原省	太原省	Thái Nguyên	タイグエン省
+vn25_phutho	#e76f51	富壽省	富寿省	Phú Thọ	フート省
+vn25_bacninh	#d8a7b1	北寧省	北宁省	Bắc Ninh	バクニン省
+vn25_hungyen	#d6c8b0	興安省	兴安省	Hưng Yên	フンイエン省
+vn25_haiphong	#f4a261	海防市	海防市	Hải Phòng	ハイフォン市
+vn25_ninhbinh	#b5a7d8	寧平省	宁平省	Ninh Bình	ニンビン省
+vn25_quangtri	#cc94a0	廣治省	广治省	Quảng Trị	クアンチ省
+vn25_danang	#e9c46a	峴港市	岘港市	Đà Nẵng	ダナン市
+vn25_quangngai	#6fb3c7	廣義省	广义省	Quảng Ngãi	クアンガイ省
+vn25_gialai	#a594cf	嘉萊省	嘉莱省	Gia Lai	ザライ省
+vn25_khanhhoa	#e3c9a8	慶和省	庆和省	Khánh Hòa	カインホア省
+vn25_lamdong	#2a9d8f	林同省	林同省	Lâm Đồng	ラムドン省
+vn25_daklak	#f6b98a	多樂省	多乐省	Đắk Lắk	ダクラク省
+vn25_hcm	#a3c4a8	胡志明市	胡志明市	Ho Chi Minh City	ホーチミン市
+vn25_dongnai	#8ab17d	同奈省	同奈省	Đồng Nai	ドンナイ省
+vn25_tayninh	#c9b79c	西寧省	西宁省	Tây Ninh	タイニン省
+vn25_cantho	#8cc5d6	芹苴市	芹苴市	Cần Thơ	カントー市
+vn25_vinhlong	#e76f51	永隆省	永隆省	Vĩnh Long	ヴィンロン省
+vn25_dongthap	#d8a7b1	同塔省	同塔省	Đồng Tháp	ドンタップ省
+vn25_camau	#d6c8b0	金甌省	金瓯省	Cà Mau	カマウ省
+vn25_angiang	#f4a261	安江省	安江省	An Giang	アンザン省

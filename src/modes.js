@@ -25,7 +25,7 @@ export async function loadReligions() {
 // Regional modes (China 1911–1951, Taiwan 1600–2026): hand-made unit maps with month-by-month control
 const UNIT_FILES = { china: 'china_provinces.json', taiwan: 'taiwan_units.json', japan: 'japan_units.json', russia: 'russia_units.json', korea: 'korea_units.json', vietnam: 'vietnam_units.json', germany: 'germany_units.json', poland: 'poland_units.json', italy: 'italy_units.json', spain: 'spain_units.json', india: 'india_units.json', prc: 'prc_units.json', usa: 'usa_units.json' , france: 'france_units.json', egypt: 'egypt_units.json', iran: 'iran_units.json', turkey: 'turkey_units.json', uk: 'uk_units.json', mexico: 'mexico_units.json', morocco: 'morocco_units.json', brazil: 'brazil_units.json', argentina: 'argentina_units.json', thailand: 'thailand_units.json', indonesia: 'indonesia_units.json' };
 // regional modes that have an administrative-division layer next to the control layer
-export const LAYERED = ['taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
+export const LAYERED = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
 const OVERSEAS_GOVS = new Set(['taihoku', 'keijo', 'toyohara', 'ryojun', 'koror', 'shinkyo']);
 export const REGIONS = Object.keys(UNIT_FILES);
 export async function loadRegion(name) {
@@ -233,7 +233,7 @@ export function frame(st) {
       // along the inside of their borders, with the control names as the main labels
       fillFeats: adm?.feats || null, fillUnits: adm?.units || null, ribbons: adm ? s.feats : null, ribbonLines: adm ? s.border : null,
       rocOutline: c.region === 'china' ? rocOutline(c, s.feats, s.govs) : null,
-      lang: { areas: [], flows: st.warFlows === false ? [] : regionFlows(c, st.cm, st.langInfo.col, st.mps), works: regionWorks(c, st.cm, st.langInfo.col, st.mps, st) },
+      lang: { areas: [], flows: st.warFlows === false ? [] : regionFlows(c, st.cm, st.langInfo.col, st.mps, !!st.playing), works: regionWorks(c, st.cm, st.langInfo.col, st.mps, st) },
       disputed: false,
     };
   }
@@ -385,6 +385,7 @@ function artFrame(st) {
 // major works (infra.tsv): an icon per kind; lines are drawn as they open, then stay as a faint network
 export const WORK_ICON = { dam: '🌊', hydro: '💧', power: '🏭', nuclear: '☢️', wind: '🌬️', solar: '☀️', bridge: '🌉', port: '⚓', airport: '✈️', tunnel: '⛰️', space: '🚀', industry: '🏗️', metro: '🚇', water: '🚰', stadium: '🏟️', rail: '🚂', hsr: '🚄', highway: '🛣️', road: '🚌', canal: '🛳️', pipeline: '🛢️', fiber: '🌐', cable: '🔌', datacenter: '🖥️', ixp: '🔀', grid: '⚡' };
 export const WORK_COLOR = { dam: '#0277bd', hydro: '#0288d1', power: '#6d4c41', nuclear: '#e6a100', wind: '#26a69a', solar: '#f9a825', bridge: '#546e7a', port: '#1565c0', airport: '#5e35b1', tunnel: '#795548', space: '#283593', industry: '#455a64', metro: '#00897b', water: '#039be5', stadium: '#8e24aa', rail: '#37474f', hsr: '#d32f2f', highway: '#ef6c00', road: '#8d6e63', canal: '#1976d2', pipeline: '#616161', fiber: '#7b1fa2', cable: '#00838f', datacenter: '#3949ab', ixp: '#7b1fa2', grid: '#f9a825' };
+export const BACKBONE = new Set(['fiber', 'cable']);
 export const workName = (e, col) => (e.k ? WORK_ICON[e.k] + ' ' : '') + (e.n[col] || e.n[0]);
 function regionWorks(c, m, col, mps, st) {
   mps = mps || 2;
@@ -394,18 +395,30 @@ function regionWorks(c, m, col, mps, st) {
     // timed like the war arrows: drawn over at least 2.5 s, highlighted at least 6 s, the highlight fading over its last third
     const grow = 2.5 * mps, end = w.a + grow, linger = 6 * mps, p = Math.min(1, (m - w.a + 1) / grow);
     const hi = m <= end + linger * 0.66 ? 1 : Math.max(0, 1 - (m - end - linger * 0.66) / (linger * 0.34));
-    if (st.works !== false && hi > 0) lines.push({ id: w.id, kind: w.kind, path: w.path, parts: w.parts, p, alpha: hi, color: WORK_COLOR[w.kind], label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]) });
-    if (st.network !== false && p >= 1) net.push({ id: w.id, kind: w.kind, path: w.path, parts: w.parts, label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]), color: WORK_COLOR[w.kind], alpha: 1 - hi * (st.works !== false ? 1 : 0) });
+    // internet backbones (fibre lines, submarine cables) have their own switch
+    const bb = BACKBONE.has(w.kind);
+    if (bb ? !st.backbone : false) continue;
+    if ((bb || st.works !== false) && hi > 0) lines.push({ id: w.id, kind: w.kind, path: w.path, parts: w.parts, p, alpha: hi, color: WORK_COLOR[w.kind], label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]) });
+    if ((bb || st.network !== false) && p >= 1) net.push({ id: w.id, kind: w.kind, path: w.path, parts: w.parts, label: WORK_ICON[w.kind] + ' ' + (w.n[col] || w.n[0]), color: WORK_COLOR[w.kind], alpha: 1 - hi * (bb || st.works !== false ? 1 : 0) });
   }
   return { lines, net };
 }
 
 // marches, fronts and migrations of a regional mode: each advances along its path during its months,
 // then stays a while and fades
-function regionFlows(c, m, col, mps = 6) {
+function regionFlows(c, m, col, mps = 6, playing = true) {
   // timed in seconds of playback, not months, so a route stays readable at any speed: it takes at least
   // 2.5 s to draw, stays at least 6 s, and fades over the last third of that
   const out = [];
+  // stopped on a month (paused, stepped, or jumped there): only what really happened around then, drawn whole —
+  // the stretched playback timing would otherwise leave campaigns of years before on the map
+  if (!playing) {
+    for (const f of c.flows || []) {
+      if (m < f.a || m > f.b + 3) continue;
+      out.push({ ...f, p: 1, alpha: m <= f.b ? 1 : 1 - (m - f.b) / 4, label: f.n[col] || f.n[0] });
+    }
+    return out;
+  }
   for (const f of c.flows || []) {
     const grow = Math.max(f.b - f.a + 1, 2.5 * mps), end = f.a + grow;
     const linger = Math.max((f.b - f.a) * 0.6, 6 * mps);
@@ -450,7 +463,32 @@ function themePicture(p, st) {
 // ---------------------------------------------------------------- capitals in the world modes (Wikidata, see capitals.js)
 // one ★ per polity in view; the largest polities' capitals show at every zoom, the rest once zoomed in
 // parties of Taiwan's county and city heads (party.tsv)
-export const PARTY_COLOR = { us_d: '#2f5fc4', us_r: '#d42d2d', us_dr: '#3a9b5c', us_f: '#e38b2c', us_w: '#e6c229', us_nr: '#b5893a', us_gw: '#8d6e63', us_sd: '#14306b', us_third: '#8e44ad', none: '#e0e0e0', inc: '#19aaed', bjp: '#ff9933', in_janata: '#0b8f3c', in_left: '#cc0000', aitc: '#20c646', sp: '#e11d48', bsp: '#22409a', tdp: '#f6e000', ysr: '#1569c7', brs: '#e05297', dmk: '#8b0000', admk: '#2c7a3a', tvk: '#f2b705', agp: '#00bfff', bjd: '#00843d', sad: '#0f204a', ss: '#f26f21', jknc: '#cc0033', pdp: '#00965e', jmm: '#1f7a1f', mgp: '#d4145a', sdf: '#ffd400', skm: '#e4002b', aap: '#0066a4', in_other: '#9ca3af', pres: '#5b5b5b', pl_sld: '#d7191c', pl_aws: '#1b5e20', pl_popis: '#4a6fa5', pl_lpr: '#5d4037', pl_po: '#f68b1f', pl_pis: '#263a7a', pl_psl: '#2bb24c', it_dc: '#6fa8dc', it_left: '#c62828', it_csx: '#ef6c4a', it_cdx: '#1e40af', it_other: '#2e9d3b', aut: '#a16207', psoe: '#e30613', pp: '#1d84ce', ciu: '#00a5a5', erc: '#f5a623', pnv: '#2e7d32', cc: '#f2d200', cds: '#7fb800', upn: '#6a1b9a', par: '#b45309', prc: '#c2185b', fac: '#00897b', gb: '#e65100', kr_cons: '#e61e2b', kr_lib: '#1a5fb4', kr_uld: '#2e9d5b', kr_third: '#2e9d5b', cdu: '#3a3a3a', csu: '#0080c8', spd: '#e3000f', fdp: '#f5c800', grn: '#46962b', linke: '#be3075', dp: '#b08d00', sed: '#8b0000', cvp: '#6b8e23', mixed: '#bdbdbd', ldp: '#3ca324', cdp: '#1c4e9c', dpj: '#d7263d', nfp: '#6a3d9a', komei: '#f55881', jcp: '#8b0000', sdp: '#1ca9e9', dpfp: '#f5c400', kibo: '#18a06a', reiwa: '#ed008c', chudo: '#7f4fc9', sanseito: '#d85d0f', liberal: '#ff9900', sakigake: '#8fbc3f', jishin: '#b8c600', tie: '#bdbdbd', mmd: '#e4e4e4', other: '#9e9e9e', cons: '#2b5fad', prog: '#d62728', ishin: '#b8c600', opp: '#e67e22', kmt: '#1f4ea3', dpp: '#1b9e3e', tpp: '#28c8c8', pfp: '#f28c28', np: '#f2d40b', cdsp: '#8e5aa8', ycp: '#b5651d', ind: '#7d7d7d', appt: '#cfcfcf', mil: '#a89f88' };
+// cables of one kind share a hue; each cable gets its own shade of it (hue ±35°, lighter or darker) so that
+// neighbouring cables can be told apart while the legend's colour still says what kind they are
+// colour of a cable by the chosen style: shade (each cable its own shade of its kind's colour), kind (the kind's
+// colour), era (by the year it entered service), steam (metal tubes, each cable its own metal; drawn by langlayer)
+const PIPED = new Set(['telegraph', 'coax', 'fibre', 'land']);   // kinds drawn as pipes in the pipe style
+function cableColor(mode, f, st) {
+  const base = themeColor(mode, f.f), style = st?.cableStyle || 'shade';
+  if (style === 'kind') return base;
+  if (!PIPED.has(f.f)) return base;               // fire beacons, couriers: their kind's colour, never pipes
+  if (style === 'steam') {                       // glossy tubes in the solid colours of the old 3D Pipes screensaver
+    const M = ['#f0d8d8', '#22b322', '#e8641c', '#7fd8d8', '#e8c21c', '#2f6fd8', '#d83a3a', '#a04ad0'];
+    let h = 0; for (const ch of String(f.id)) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return M[h % M.length];
+  }
+  if (style === 'era') { const t = Math.max(0, Math.min(1, (f.a - 1850) / 176)); return `hsl(${Math.round(280 - t * 250)}, 70%, ${Math.round(38 + 10 * Math.sin(t * Math.PI))}%)`; }
+  return cableShade(base, f.id);
+}
+function cableShade(hex, id) {
+  let h = 0; for (const ch of String(id)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  const r = parseInt(hex.slice(1, 3), 16) / 255, g = parseInt(hex.slice(3, 5), 16) / 255, b = parseInt(hex.slice(5, 7), 16) / 255;
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, d = mx - mn;
+  const s = d ? d / (1 - Math.abs(2 * l - 1)) : 0;
+  let H = !d ? 0 : mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; H *= 60;
+  const H2 = (H + ((h % 7) - 3) * 12 + 360) % 360, L2 = Math.min(0.55, Math.max(0.24, l + (((h >> 3) % 5) - 2) * 0.06));
+  return `hsl(${H2.toFixed(0)}, ${Math.round(Math.min(1, s) * 100)}%, ${Math.round(L2 * 100)}%)`;
+}
+export const PARTY_COLOR = { us_d: '#2f5fc4', us_r: '#d42d2d', us_dr: '#3a9b5c', us_f: '#e38b2c', us_w: '#e6c229', us_nr: '#b5893a', us_gw: '#8d6e63', us_sd: '#14306b', us_third: '#8e44ad', none: '#e0e0e0', inc: '#19aaed', bjp: '#ff9933', in_janata: '#0b8f3c', in_left: '#cc0000', aitc: '#20c646', sp: '#e11d48', bsp: '#22409a', tdp: '#f6e000', ysr: '#1569c7', brs: '#e05297', dmk: '#8b0000', admk: '#2c7a3a', tvk: '#f2b705', agp: '#00bfff', bjd: '#00843d', sad: '#0f204a', ss: '#f26f21', jknc: '#cc0033', pdp: '#00965e', jmm: '#1f7a1f', mgp: '#d4145a', sdf: '#ffd400', skm: '#e4002b', aap: '#0066a4', in_other: '#9ca3af', pres: '#5b5b5b', pl_sld: '#d7191c', pl_aws: '#1b5e20', pl_popis: '#4a6fa5', pl_lpr: '#5d4037', pl_po: '#f68b1f', pl_pis: '#263a7a', pl_psl: '#2bb24c', it_dc: '#6fa8dc', it_left: '#c62828', it_csx: '#ef6c4a', it_cdx: '#1e40af', it_other: '#2e9d3b', aut: '#a16207', psoe: '#e30613', pp: '#1d84ce', ciu: '#00a5a5', erc: '#f5a623', pnv: '#2e7d32', cc: '#f2d200', cds: '#7fb800', upn: '#6a1b9a', par: '#b45309', prc: '#c2185b', fac: '#00897b', gb: '#e65100', kr_cons: '#e61e2b', kr_lib: '#1a5fb4', kr_uld: '#2e9d5b', kr_third: '#2e9d5b', cdu: '#3a3a3a', csu: '#0080c8', spd: '#e3000f', fdp: '#f5c800', grn: '#46962b', linke: '#be3075', dp: '#b08d00', sed: '#8b0000', cvp: '#6b8e23', mixed: '#bdbdbd', ldp: '#3ca324', cdp: '#1c4e9c', dpj: '#d7263d', nfp: '#6a3d9a', komei: '#f55881', jcp: '#8b0000', sdp: '#1ca9e9', dpfp: '#f5c400', kibo: '#18a06a', reiwa: '#ed008c', chudo: '#7f4fc9', sanseito: '#d85d0f', liberal: '#ff9900', sakigake: '#8fbc3f', jishin: '#b8c600', tie: '#bdbdbd', mmd: '#e4e4e4', other: '#9e9e9e', cons: '#2b5fad', prog: '#d62728', ishin: '#b8c600', opp: '#e67e22', kmt: '#1f4ea3', dpp: '#1b9e3e', tpp: '#28c8c8', pfp: '#f28c28', np: '#f2d40b', cdsp: '#8e5aa8', ycp: '#b5651d', ind: '#7d7d7d', fr_left: '#e8547d', fr_right: '#1e4fa3', fr_green: '#2e9d3b', fr_nat: '#7a5195', uk_lab: '#e4003b', uk_con: '#0087dc', uk_snp: '#f2d500', uk_pc: '#008142', uk_uup: '#48a5ee', uk_dup: '#d46a4c', uk_sf: '#326760', uk_direct: '#9e9e9e', appt: '#cfcfcf', mil: '#a89f88', tr_akp: '#f5a623', tr_chp: '#e30a17', tr_mhp: '#8b1a1a', tr_kurd: '#7b3fa0', tr_islam: '#1f8a3a', tr_anap: '#f2d400', tr_dyp: '#4a7fc1', tr_dsp: '#2b9fd9', tr_iyi: '#2fb5e6', tr_bbp: '#6d4c41', tr_other: '#c2185b', tr_trustee: '#5b5b5b', mx_pri: '#d62828', mx_pan: '#1f4fa3', mx_prd: '#f2c200', mx_morena: '#8b1e3f', mx_pvem: '#3aa040', mx_mc: '#f28c28', mx_pes: '#7b3fa0', mx_pt: '#c2185b', mx_other: '#9e9e9e', ar_pj: '#2b8fd9', ar_ucr: '#d62828', ar_pro: '#f2c200', ar_lla: '#6a1b9a', ar_prov: '#2e9d5b', ar_other: '#9e9e9e', br_pt: '#c4122f', br_mdb: '#2e9d3b', br_psdb: '#1f5fb4', br_dem: '#3b8dd9', br_pds: '#1a3a6b', br_pdt: '#e57373', br_psb: '#f28c28', br_pp: '#6aa0d8', br_psd: '#f2c200', br_pl: '#14306b', br_rep: '#00897b', br_pcdob: '#8b0000', br_other: '#9e9e9e', id_golkar: '#f5d000', id_pdip: '#d62828', id_demokrat: '#1f4fa3', id_gerindra: '#a0522d', id_pks: '#222222', id_pan: '#2b9fd9', id_pkb: '#2e9d3b', id_nasdem: '#0b4f8a', id_ppp: '#00703c', id_other: '#9e9e9e' };
 export function partyAt(c, div, m) {
   let r = null;
   for (const [a, code] of c.party?.[div] || []) { if (a <= m) r = code; else break; }
@@ -502,8 +540,11 @@ export function themeActive(mode, year, st = null) {
     // cables (g: years to lay): drawn over g years, in service until retired, gone a few years later
     const linger = f.g != null ? 3 : Math.max(80, (f.b - f.a) * 1.5), grow = f.g ?? (f.b - f.a);
     if (year < f.a || year > f.b + linger) continue;
-    const p = grow > 0 ? Math.min(1, (year - f.a + (f.g != null ? 1 : 0)) / grow) : 1;
-    flows.push({ ...f, p, alpha: year <= f.b ? 1 : Math.max(0, 1 - (year - f.b) / linger), color: themeColor(mode, f.f), noHead: f.g != null });
+    // while the timeline plays, st.yearF is the exact (fractional) year, so a cable is laid smoothly through its
+    // first year instead of appearing whole when the year changes
+    const yf = f.g != null && st?.playing && st.yearF != null && Math.floor(st.yearF) === year ? st.yearF : year + (f.g != null ? 1 : 0);
+    const p = grow > 0 ? Math.max(0, Math.min(1, (yf - f.a) / grow)) : 1;
+    flows.push({ ...f, p, alpha: year <= f.b ? 1 : Math.max(0, 1 - (year - f.b) / linger), color: f.g != null ? cableColor(mode, f, st) : themeColor(mode, f.f), noHead: f.g != null, pipe: PIPED.has(f.f) });
   }
   return {
     // areas fade in over their first decades and out over their last ones
@@ -522,7 +563,7 @@ function themeFrame(st) {
   // small areas first, so their labels win over the large ones around them
   const areas = act.areas.slice().sort((a, b) => b.rx * b.ry - a.rx * a.ry);
   return { feats, color: () => '#ece8df', overlays: [], disputed: false, noLabels: true,
-    lang: { areas, flows: act.flows.map(f => ({ ...f, name: f.n[st.langInfo.col] || f.n[0], label: f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })) },
+    lang: { areas, flows: act.flows.map(f => ({ ...f, name: f.n[st.langInfo.col] || f.n[0], label: f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })), cableW: st.cableW ?? 1, cableStyle: st.cableStyle || 'shade' },
     markers: [
       ...areas.slice().reverse().map(a => ({ kind: 'langArea', id: a.id, lon: a.lon, lat: a.lat, text: a.n, color: a.color, sym: '●',
         // finance: a picture of the bank, exchange or coin (Wikipedia's lead picture, Commons only)

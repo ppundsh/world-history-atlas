@@ -4,3 +4,17 @@ osman	1299-01	1361-01	#c0392b	3	30.18,40.02 29.06,40.18 29.72,40.43 26.67,40.41 
 mehmed	1453-04	1453-05	#c0392b	3	26.56,41.68 28.0,41.2 28.98,41.01	穆罕默德二世進軍君士坦丁堡	Mehmed II marches on Constantinople	メフメト2世の進軍
 greek1921	1921-07	1921-09	#1f6fb2	3	27.14,38.42 30.52,39.78 31.85,39.6	希臘軍向安卡拉推進	The Greek army advances on Ankara	ギリシャ軍のアンカラ進撃
 kemal1922	1922-08	1922-09	#e53935	3	30.53,38.76 29.0,38.6 27.14,38.42	大反攻，收復伊茲密爾	The Great Offensive retakes Smyrna	大攻勢とイズミル奪還
+manzikert	1071-03	1071-08	#7f8c8d	2	28.97,41.01 32.85,39.93 37.0,39.75 41.27,39.9 42.52,39.14	羅曼努斯四世東征曼齊刻爾特	Romanos IV marches to Manzikert	ロマノス4世のマンツィケルト遠征
+crusade4	1203-06	1204-04	#c0392b	2	12.33,45.44 16.0,41.0 22.0,37.5 26.0,40.0 28.97,41.01	第四次十字軍攻陷君士坦丁堡	The Fourth Crusade sacks Constantinople	第4回十字軍のコンスタンティノープル攻略
+mongol1243	1243-05	1243-07	#5d6d7e	2	44.5,40.2 41.27,39.9 39.5,39.9 38.2,40.1	蒙古攻魯姆蘇丹國（克塞山）	The Mongols defeat Rum at Köse Dağ	キョセ・ダグの戦い
+timur1402	1402-03	1402-07	#5d6d7e	3	41.27,39.9 38.0,39.7 35.48,38.73 32.85,39.93	帖木兒進軍安卡拉	Timur marches to Ankara	ティムールのアンカラ進軍
+suleiman_vienna	1529-05	1529-10	#a52a2a	3	28.97,41.01 26.56,41.68 23.32,42.7 20.46,44.82 19.04,47.5 16.37,48.21	蘇萊曼圍攻維也納	Suleiman's siege of Vienna	スレイマンのウィーン包囲
+lepanto	1571-09	1571-10	#a52a2a	2	21.74,38.25 21.3,38.4	勒班陀海戰的鄂圖曼艦隊	The Ottoman fleet at Lepanto	レパントの海戦
+vienna1683	1683-04	1683-09	#a52a2a	3	26.56,41.68 23.32,42.7 20.46,44.82 19.04,47.5 16.37,48.21	卡拉・穆斯塔法圍攻維也納	Kara Mustafa's siege of Vienna	第二次ウィーン包囲
+russo1877	1877-06	1878-01	#1f618d	2	28.0,45.3 25.38,43.13 24.6,43.4 25.6,42.7 26.56,41.68 28.83,40.98	俄軍渡多瑙河進逼伊斯坦堡	The Russians cross the Danube and near Istanbul	露土戦争のロシア軍進撃
+armenian_deport	1915-05	1916-12	#7f8c8d	2	41.27,39.9 39.5,38.7 38.3,37.0 38.79,36.0 40.14,35.33	亞美尼亞人遭驅逐至敘利亞沙漠	Armenians deported to the Syrian desert	アルメニア人の強制移送
+gallipoli1915	1915-04	1916-01	#1f618d	2	25.9,40.0 26.2,40.04 26.3,40.2	協約國登陸加里波利	The Allied landings at Gallipoli	ガリポリ上陸
+kemal_samsun	1919-05	1919-12	#c0392b	2	36.33,41.29 36.55,40.32 41.27,39.9 37.01,39.75 32.85,39.93	凱末爾由薩姆松出發組織抗戰	Kemal leaves Samsun to organise resistance	ケマルのサムスン上陸
+exchange1923	1923-01	1924-12	#7f8c8d	2	27.14,38.42 23.72,37.98;22.94,40.64 28.97,41.01	希土人口交換	The Greek–Turkish population exchange	住民交換
+cyprus1974	1974-07	1974-08	#c0392b	2	34.64,36.8 33.3,35.34 33.36,35.17	土耳其出兵賽普勒斯	Turkey's intervention in Cyprus	キプロス侵攻
+syria_refugees	2012-01	2020-12	#7f8c8d	2	37.16,36.2 37.38,37.07 28.97,41.01	敘利亞難民湧入土耳其	Syrian refugees flee into Turkey	シリア難民の流入

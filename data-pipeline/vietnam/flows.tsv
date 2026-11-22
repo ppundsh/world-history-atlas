@@ -1,12 +1,12 @@
 # vietnam：行軍、戰線與遷徙（箭頭，在起迄年月之間沿路徑推進，之後保留一段時間再淡出）。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑（經度,緯度 以空白分隔）	繁中	English	日本語
 namtien	1069-01	1832-01	#a16207	3	105.85,21.03 106.6,17.5 107.58,16.46 108.22,16.07 109.2,13.77 108.98,11.57 106.7,10.78	南進：越人沿海岸南下	Nam tiến: the Viet move south along the coast	南進
-tayson	1786-06	1789-01	#b45309	3	109.2,13.77 107.58,16.46 105.85,21.03	西山軍北伐	The Tây Sơn march north	西山軍の北伐
+tayson	1786-06	1789-01	#15803d	3	109.2,13.77 107.58,16.46 105.85,21.03	西山軍北伐	The Tây Sơn march north	西山軍の北伐
 gialong	1801-06	1802-07	#a16207	2	106.7,10.78 107.58,16.46 105.85,21.03	阮映北伐統一	Nguyễn Ánh's march north	阮映の北伐
 france1858	1858-09	1862-06	#1d4ed8	2	108.22,16.07 106.7,10.78	法西聯軍攻峴港、西貢	Franco-Spanish attacks on Đà Nẵng and Saigon	仏西連合軍の攻撃
 dienbienphu	1953-11	1954-05	#dc2626	2	105.84,21.59 104.3,21.3 103.02,21.39	越盟包圍奠邊府	The Việt Minh besiege Điện Biên Phủ	ディエンビエンフーの包囲
 hcmtrail	1959-05	1975-04	#dc2626	2	105.7,18.7 106.2,16.6 106.6,15.0 107.0,12.5 106.6,11.6	胡志明小道	The Hồ Chí Minh trail	ホーチミン・ルート
 spring75	1975-03	1975-04	#dc2626	3	108.05,12.67 107.58,16.46 108.22,16.07 109.2,13.77 108.98,11.57 106.7,10.78	1975 年春季攻勢至西貢	1975 Spring Offensive to Saigon	1975 年春季大攻勢
-china79	1979-02	1979-03	#b91c1c	2	106.76,22.3 106.76,21.85	中越戰爭：解放軍攻諒山	Sino-Vietnamese War: China attacks Lạng Sơn	中越戦争：ランソン攻撃
+china79	1979-02	1979-03	#f59e0b	2	106.76,22.3 106.76,21.85	中越戰爭：解放軍攻諒山	Sino-Vietnamese War: China attacks Lạng Sơn	中越戦争：ランソン攻撃
 mayuan43	0042-03	0043-05	#7f1d1d	2	109.0,21.5 107.0,21.3 105.85,21.03	馬援沿海路南征二徵	Ma Yuan's march south along the coast against the Trưng sisters	馬援の南征
 bachdang938	0938-11	0938-12	#7f1d1d	2	110.0,21.0 107.5,21.0 106.75,20.95	南漢艦隊入白藤江，中吳權樁陣	The Southern Han fleet enters the Bạch Đằng and hits Ngô Quyền's stakes	南漢艦隊が白藤江の杭に阻まれる
 song981	0981-01	0981-03	#7f1d1d	2	108.3,22.8 106.76,21.85 106.2,21.3	宋軍分水陸南侵	The Song invade by land and sea	宋軍の南侵
@@ -18,22 +18,22 @@ sogetu1285	1285-01	1285-05	#7f1d1d	2	108.97,13.77 108.5,15.5 107.0,17.5 105.8,19
 mongol1288	1287-12	1288-04	#7f1d1d	2	108.3,21.6 107.3,21.1 106.75,20.95	元朝艦隊入白藤江覆滅	The Yuan fleet destroyed in the Bạch Đằng	元艦隊が白藤江で壊滅
 ming1406	1406-11	1407-06	#7f1d1d	3	106.76,21.85 105.85,21.03 105.6,20.08	明軍分兩路入安南	The Ming invade in two columns	明軍の安南侵攻
 lamson1418	1418-02	1427-12	#b91c1c	2	105.4,20.0 104.8,19.0 105.5,18.7 105.85,21.03	黎利藍山起義：清化→乂安→東都	Lê Lợi's Lam Sơn rising: Thanh Hóa, Nghệ An, Đông Đô	黎利の藍山蜂起
-chilang1427	1427-09	1427-10	#7f1d1d	2	106.76,21.85 106.6,21.6 106.4,21.5	明援軍在支棱關覆滅	The Ming relief army destroyed at Chi Lăng	明援軍が支稜で壊滅
+chilang1427	1427-09	1427-10	#6b21a8	2	106.76,21.85 106.6,21.6 106.4,21.5	明援軍在支棱關覆滅	The Ming relief army destroyed at Chi Lăng	明援軍が支稜で壊滅
 lethanhtong1471	1471-02	1471-03	#b91c1c	2	105.65,18.7 107.58,16.46 108.2,15.0 109.0,13.9	黎聖宗南征占婆	Lê Thánh Tông marches south against Champa	黎聖宗の占城遠征
 nguyen_south	1611-01	1757-01	#c2410c	2	108.22,16.07 108.97,13.77 109.2,12.25 108.4,11.2 106.7,10.78 105.1,9.18	阮主南進：富安→平順→嘉定→湄公河三角洲	The Nguyễn lords press south: Phú Yên, Bình Thuận, Gia Định, the Mekong	阮主の南進
 siam1785	1784-07	1785-01	#7f1d1d	2	100.5,13.75 103.5,10.6 105.1,10.0 106.2,10.35	暹羅軍入侵湄公河三角洲	Siam invades the Mekong delta	シャム軍のメコンデルタ侵攻
 qing1788	1788-11	1789-01	#7f1d1d	2	108.3,22.82 106.76,21.85 105.85,21.03	孫士毅清軍入昇龍	Sun Shiyi's Qing army enters Thăng Long	孫士毅の清軍が昇龍へ
-quangtrung1789	1788-12	1789-01	#b91c1c	3	107.58,16.46 105.65,18.7 105.6,20.08 105.85,21.03	光中帝自富春急行軍北上	Quang Trung's forced march north from Phú Xuân	光中帝の北上急行軍
-garnier1873	1873-10	1873-12	#1d4ed8	2	106.7,10.78 106.68,20.86 105.85,21.03 106.17,20.25	安鄴攻佔河內與紅河三角洲城鎮	Garnier takes Hanoi and the delta towns	ガルニエの紅河デルタ攻略
+quangtrung1789	1788-12	1789-01	#15803d	3	107.58,16.46 105.65,18.7 105.6,20.08 105.85,21.03	光中帝自富春急行軍北上	Quang Trung's forced march north from Phú Xuân	光中帝の北上急行軍
+garnier1873	1873-10	1873-12	#1d4ed8	2	106.7,10.78 107.3,10.2 108.5,10.6 109.3,11.8 109.4,14 108.6,16.3 107.5,18.5 107,20.3 106.68,20.86 105.85,21.03 106.17,20.25	安鄴攻佔河內與紅河三角洲城鎮	Garnier takes Hanoi and the delta towns	ガルニエの紅河デルタ攻略
 tonkin1884	1884-02	1885-03	#1d4ed8	2	105.85,21.03 106.2,21.3 106.76,21.85	法軍北進諒山（清法戰爭）	The French push north to Lạng Sơn (Sino-French War)	フランス軍のランソン進撃
 japan1940	1940-09	1940-09	#7f1d1d	2	106.76,21.85 106.2,21.3 106.68,20.86	日軍自廣西進駐北部印度支那	Japanese troops enter northern Indochina from Guangxi	日本軍の北部仏印進駐
-japan1941	1941-07	1941-08	#7f1d1d	2	106.68,20.86 108.22,16.07 106.7,10.78	日軍進駐南部印度支那	Japanese troops into southern Indochina	日本軍の南部仏印進駐
-south1954	1954-08	1955-05	#475569	2	106.68,20.86 108.22,16.07 106.7,10.78	北方居民大舉南遷	Northerners move south in large numbers	北部住民の南部移住
+japan1941	1941-07	1941-08	#7f1d1d	2	106.68,20.86 107.3,20.2 108.6,17 108.22,16.07 109.1,15 109.4,13 109.2,11.5 107.6,10.2 106.7,10.78	日軍進駐南部印度支那	Japanese troops into southern Indochina	日本軍の南部仏印進駐
+south1954	1954-08	1955-05	#475569	2	106.68,20.86 108.22,16.07 109.1,15 109.4,13 109.2,11.5 107.6,10.2 106.7,10.78	北方居民大舉南遷	Northerners move south in large numbers	北部住民の南部移住
 tet1968	1968-01	1968-02	#b91c1c	2	106.6,16.6 107.58,16.46 108.22,16.07 106.7,10.78	春節攻勢：順化、峴港、西貢	Tết Offensive: Huế, Đà Nẵng, Saigon	テト攻勢：フエ、ダナン、サイゴン
 khesanh1968	1968-01	1968-04	#b91c1c	2	106.4,17.2 106.65,16.95 106.73,16.65	溪山圍城	Siege of Khe Sanh	ケサン包囲戦
 lamson719	1971-02	1971-03	#1d4ed8	2	106.73,16.65 106.3,16.6 105.9,16.6	南越軍攻入寮國下寮	South Vietnam's thrust into southern Laos	南ベトナム軍のラオス侵攻
 easter1972	1972-03	1972-05	#b91c1c	2	106.9,17.1 107.19,16.75 107.58,16.46	復活節攻勢越過非軍事區	The Easter Offensive across the DMZ	イースター攻勢が非武装地帯を越える
 linebacker1972	1972-12	1972-12	#1d4ed8	2	100.9,15.4 103.0,18.0 105.85,21.03	美軍 B-52 自泰國與關島轟炸河內	US B-52s from Thailand and Guam bomb Hanoi	米B-52のハノイ爆撃
-boatpeople	1975-05	1992-12	#475569	2	106.7,10.78 107.5,9.0 103.0,5.0 101.0,4.0 104.0,1.3	船民逃往東南亞各地	Boat people flee to South-East Asia	ボートピープルの脱出
+boatpeople	1975-05	1992-12	#475569	2	106.7,10.78 107.5,9 104.5,6.5 103.06,5.62;107.5,9 105.5,4 104.3,1.6 104,1.3	船民逃往東南亞各地	Boat people flee to South-East Asia	ボートピープルの脱出
 cambodia1978	1978-12	1979-01	#b91c1c	3	106.7,10.78 105.6,11.3 104.92,11.56 103.85,13.36	越軍攻入柬埔寨，至金邊、暹粒	Vietnam invades Cambodia: Phnom Penh, Siem Reap	ベトナム軍のカンボジア侵攻
-caobang1979	1979-02	1979-03	#7f1d1d	2	106.5,22.85 106.25,22.67 105.6,22.6	中國軍攻高平	China attacks Cao Bằng	中国軍の高平攻撃
+caobang1979	1979-02	1979-03	#f59e0b	2	106.5,22.85 106.25,22.67 105.6,22.6	中國軍攻高平	China attacks Cao Bằng	中国軍の高平攻撃

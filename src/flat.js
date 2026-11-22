@@ -3,7 +3,7 @@ import { reliefFor } from './relief.js';
 // Flat-map renderer: d3-geo projections drawn on a Canvas, with Google-Maps-style navigation
 // (drag to pan, wheel/pinch to zoom at the cursor, double-click to zoom in, arrow keys, +/-).
 import { drawPulses, reservePulses, pulseAt, pulseCardAt } from './eventdots.js';
-import { drawLang, lineAt } from './langlayer.js';
+import { drawLang, lineAt, labelsMoving } from './langlayer.js';
 import { drawClassIcon } from './classicon.js';
 import { geoPath, geoGraticule, geoGraticule10, geoContains, geoDistance } from 'd3-geo';
 import { PROJ } from './projections.js';
@@ -288,8 +288,10 @@ export class FlatMap {
     p.rotate([0, 0]).scale(1).translate([0, 0]);
     const [[x0, y0], [x1, y1]] = geoPath(p).bounds(this.outline);
     this.baseScale = Math.min(this.W / (x1 - x0), this.H / (y1 - y0)) * 0.98;
-    // cylinders with a tall band (Mercator, central cylindrical) are sized by width, like Google Maps
-    if (this.def.lat && this.def.surface === 'cylindrical') this.baseScale = this.W / (2 * Math.PI);
+    this.minK = 1;
+    // cylinders with a tall band (Mercator, central cylindrical) are sized by width, like Google Maps; they may
+    // still be zoomed out until the whole map is in view
+    if (this.def.lat && this.def.surface === 'cylindrical') { const whole = this.baseScale; this.baseScale = this.W / (2 * Math.PI); this.minK = Math.min(1, whole / this.baseScale); }
     this.apply();
   }
 
@@ -307,7 +309,7 @@ export class FlatMap {
   }
   apply0() {
     const p = this.proj, v = this.view;
-    v.k = Math.max(1, Math.min(MAX_K, v.k));
+    v.k = Math.max(this.minK ?? 1, Math.min(MAX_K, v.k));
     v.lon = ((v.lon + 540) % 360) - 180;
     if (this.aspect) {                             // locked in an oblique aspect: scroll and slide only
       p.rotate(this.aspect).scale(this.baseScale * v.k).translate([0, 0]);
@@ -379,7 +381,7 @@ export class FlatMap {
     const p = this.proj, v = this.view;
     const before = p.invert([mx, my]);
     const k0 = v.k;
-    v.k = Math.max(1, Math.min(MAX_K, v.k * factor));
+    v.k = Math.max(this.minK ?? 1, Math.min(MAX_K, v.k * factor));
     if (v.k === k0) return;
     this.apply();
     if (before && isFinite(before[0])) {
@@ -519,7 +521,7 @@ export class FlatMap {
     const pu = pulseAt(x, y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => x >= b.x0 && x <= b.x1 && y >= b.y0 && y <= b.y1);
     if (mk) return { marker: mk.m };
-    const ln = lineAt(this.lineHits, x, y); if (ln) return { line: ln };
+    const ln = [0, ...(this.langOffs || [])].reduce((f, o) => f || lineAt(this.lineHits, x - o, y), null); if (ln) return { line: ln };
     const ll = this.proj.invert([x, y]);
     if (!ll || !isFinite(ll[0])) return null;
     if (this.azimuthal && geoDistance(ll, [this.view.lon, this.view.lat]) > this.clipRad) return null;
@@ -742,7 +744,9 @@ export class FlatMap {
           ctx.fillStyle = S.ice; ctx.fill(this.P2(store.physical.ice));
         }
       });
-      if (st.basemap === 'physical' && st.relief && this.relief) { this.relief.only = reliefFor(st.mode, this.relief.regions); this.drawRelief(); }
+      // a country mode's own grey hill shading always; the world modes Taiwan's and Japan's with "detailed terrain" on
+      const only = st.basemap === 'physical' && this.relief ? reliefFor(st.mode, this.relief.regions, st.relief) : [];
+      if (only.length) { this.relief.only = only; this.drawRelief(); }
       else if (this.reliefShown?.length) { this.reliefShown = []; this.app.updateReliefCredit?.([]); }
     }
 
@@ -889,7 +893,22 @@ export class FlatMap {
       ctx.strokeText(name, p[0], p[1]); ctx.fillStyle = '#8b0000'; ctx.fillText(name, p[0], p[1]);
     }
     ctx.textAlign = 'left';
-    this.lineHits = []; if (F.lang) { const gp = geoPath(proj, ctx); this.lineHits = drawLang(ctx, F.lang, g => gp(g), ll => (visible(ll) ? proj(ll) : null), S.label.font, this.view.k); }
+    this.lineHits = [];
+    if (F.lang) {
+      // kept inside the map's outline: in the conic and interrupted projections a route may otherwise run off it
+      ctx.save(); ctx.beginPath();
+      if (this.cyl) { const [[, y0], [, y1]] = geoPath(proj).bounds(this.outline); ctx.rect(0, y0, this.W, y1 - y0); } else geoPath(proj, ctx)(this.outline);
+      ctx.clip();
+      const gp = geoPath(proj, ctx), pt = ll => (visible(ll) ? proj(ll) : null);
+      // the cylinders show the world more than once side by side (wide screens, zoomed out): the routes go on
+      // every copy, as the land does; the hits are the middle copy's, the others found by shifting the pointer
+      const e = this.cyl ? proj([0, 0])[0] : 0;
+      this.langOffs = this.cyl ? this.transforms(1).map(([, x]) => x - e).filter(o => Math.abs(o) > 1) : [];
+      for (const o of this.langOffs) { ctx.save(); ctx.translate(o, 0); drawLang(ctx, F.lang, g => gp(g), pt, S.label.font, this.view.k); ctx.restore(); }
+      this.lineHits = drawLang(ctx, F.lang, g => gp(g), pt, S.label.font, this.view.k);
+      ctx.restore();
+      if (labelsMoving()) this.request();          // names still sliding apart
+    }
     const placed = [], hits = this.markerHits = [];
     const marks = this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers;
     // every marker's own symbol is reserved first, so no picture lands on another marker
@@ -950,8 +969,8 @@ export class FlatMap {
     if (shown.join() !== (this.reliefShown || []).join()) { this.reliefShown = shown; this.app.updateReliefCredit?.(shown); }
     if (!r) return;
     ctx.save(); ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
-    ctx.globalCompositeOperation = 'multiply'; ctx.globalAlpha = 0.75; ctx.imageSmoothingEnabled = true;
-    ctx.drawImage(r.canvas, 0, 0, W, H);
+    ctx.imageSmoothingEnabled = true;
+    if (r.shade) { ctx.globalCompositeOperation = 'multiply'; ctx.globalAlpha = 0.75; ctx.drawImage(r.shade, 0, 0, W, H); }
     ctx.restore();
   }
   // distortion hint mask (distortion.js): coarse while moving, finer once the view settles

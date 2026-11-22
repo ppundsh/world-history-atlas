@@ -11,16 +11,30 @@ r_lib	#f6b98a	下利比亞行省	下利比亚行省	Libya Inferior	下リビア
 a_low	#a594cf	下埃及（阿斯法勒）	下埃及（阿斯法勒）	Lower Egypt (Asfal al-Ard)	下エジプト
 a_sa	#cc94a0	上埃及（薩伊德）	上埃及（萨伊德）	Upper Egypt (al-Sa'id)	上エジプト（サイード）
 o_eya	#d6c8b0	埃及行省（鄂圖曼埃亞萊特）	埃及行省（鄂图曼埃亚莱特）	Egypt Eyalet (Ottoman)	エジプト州（オスマン）
-g_alex	#e9c46a	亞歷山卓與貝海拉（2 省）	亚历山卓与贝海拉（2 省）	Alexandria and Beheira (2 governorates)	Alexandria and Beheira（県）
-g_delta_w	#f4a261	西三角洲（加爾比亞、謝赫村、米努夫）（3 省）	西三角洲（加尔比亚、谢赫村、米努夫）（3 省）	Western Delta (3 governorates)	Western Delta（県）
-g_delta_e	#e76f51	東三角洲（達卡利亞、杜姆亞特、東部）（3 省）	东三角洲（达卡利亚、杜姆亚特、东部）（3 省）	Eastern Delta (3 governorates)	Eastern Delta（県）
-g_memphis	#8ab17d	開羅、吉薩、蓋勒尤卜（3 省）	开罗、吉萨、盖勒尤卜（3 省）	Cairo, Giza, Qalyubia (3 governorates)	Cairo, Giza, Qalyubia（県）
-g_canal	#2a9d8f	運河區（塞得港、伊斯梅利亞、蘇伊士）（3 省）	运河区（塞得港、伊斯梅利亚、苏伊士）（3 省）	Canal governorates (3 governorates)	Canal governorates（県）
-g_fayyum	#6fb3c7	法尤姆與貝尼蘇韋夫（2 省）	法尤姆与贝尼苏韦夫（2 省）	Faiyum and Beni Suef (2 governorates)	Faiyum and Beni Suef（県）
-g_middle	#b5a7d8	明亞與艾斯尤特（2 省）	明亚与艾斯尤特（2 省）	Minya and Asyut (2 governorates)	Minya and Asyut（県）
-g_thebes	#d8a7b1	索哈傑、基納、樂蜀（3 省）	索哈杰、基纳、乐蜀（3 省）	Sohag, Qena, Luxor (3 governorates)	Sohag, Qena, Luxor（県）
-g_aswan	#c9b79c	亞斯文省	亚斯文省	Aswan governorate	Aswan（県）
-g_redsea	#f6b98a	紅海省	红海省	Red Sea governorate	Red Sea（県）
-g_oases	#a594cf	新河谷省	新河谷省	New Valley governorate	New Valley（県）
-g_marmarica	#cc94a0	馬特魯省	马特鲁省	Matrouh governorate	Matrouh（県）
-g_sinai	#d6c8b0	北西奈與南西奈（2 省）	北西奈与南西奈（2 省）	North and South Sinai (2 governorates)	North and South Sinai（県）
+a_sin	#e9c46a	北西奈省	北西奈省	North Sinai	北シナイ県
+a_asn	#6fb3c7	阿斯旺省	阿斯旺省	Aswan	アスワン県
+a_ba	#a594cf	紅海省	红海省	Red Sea	紅海県
+a_mt	#e3c9a8	馬特魯省	马特鲁省	Matrouh	マトルーフ県
+a_wad	#2a9d8f	新河谷省	新河谷省	New Valley	ニューバレー県
+a_suz	#f6b98a	蘇伊士省	苏伊士省	Suez	スエズ県
+a_js	#a3c4a8	南西奈省	南西奈省	South Sinai	南シナイ県
+a_pts	#8ab17d	塞得港省	塞得港省	Port Said	ポートサイド県
+a_dk	#c9b79c	代蓋赫利耶省	代盖赫利耶省	Dakahlia	ダカリーヤ県
+a_shr	#8cc5d6	東部省	东部省	Al Sharqia	シャルキーヤ県
+a_is	#e76f51	伊斯梅利亞省	伊斯梅利亚省	Ismailia	イスマイリア県
+a_dt	#d8a7b1	杜姆亞特省	杜姆亚特省	Damietta	ディムヤート県
+a_kfs	#d6c8b0	謝赫村省	谢赫村省	Kafr el-Sheikh	カフル・アッシャイフ県
+a_bh	#f4a261	布海拉省	布海拉省	Beheira	ブハイラ県
+a_alx	#b5a7d8	亞歷山大省	亚历山大省	Alexandria	アレクサンドリア県
+a_c	#cc94a0	開羅省	开罗省	Cairo	カイロ県
+a_gz	#e9c46a	吉薩省	吉萨省	Giza	ギーザ県
+a_mn	#6fb3c7	明亞省	明亚省	Minya	ミニヤー県
+a_fym	#a594cf	法尤姆省	法尤姆省	Faiyum	ファイユーム県
+a_bns	#e3c9a8	貝尼蘇韋夫省	贝尼苏韦夫省	Beni Suef	ベニ・スエフ県
+a_mnf	#2a9d8f	米努夫省	米努夫省	Monufia	ミヌーフィーヤ県
+a_kb	#f6b98a	蓋盧比尤省	盖卢比尤省	Qalyubia	カリュービーヤ県
+a_gh	#a3c4a8	西部省	西部省	Gharbia	ガルビーヤ県
+a_shg	#8ab17d	索哈傑省	索哈杰省	Sohag	ソハーグ県
+a_kn	#c9b79c	基納省	基纳省	Qena	ケナ県
+a_ast	#8cc5d6	艾斯尤特省	艾斯尤特省	Asyut	アシュート県
+a_lx	#e76f51	盧克索省	卢克索省	Luxor	ルクソール県

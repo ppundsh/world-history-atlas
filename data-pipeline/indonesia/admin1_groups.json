@@ -1,0 +1,63 @@
+{
+"kal_e": [
+"id_ki",
+"id_ks"
+],
+"bali_nt": [
+"id_nt",
+"id_nb",
+"id_ba"
+],
+"kal_w": [
+"id_kb",
+"id_kt"
+],
+"papua": [
+"id_pa",
+"id_pb"
+],
+"java_e": [
+"id_ji"
+],
+"maluku": [
+"id_ma",
+"id_mu"
+],
+"sulawesi_s": [
+"id_sn",
+"id_sg",
+"id_sr"
+],
+"java_c": [
+"id_jt",
+"id_yo"
+],
+"java_w": [
+"id_jb"
+],
+"banten": [
+"id_jk",
+"id_bt"
+],
+"sulawesi_n": [
+"id_st",
+"id_go",
+"id_sa"
+],
+"sumatra_n": [
+"id_kr",
+"id_ri",
+"id_sb",
+"id_su"
+],
+"sumatra_s": [
+"id_ja",
+"id_ss",
+"id_la",
+"id_be",
+"id_bb"
+],
+"aceh": [
+"id_ac"
+]
+}

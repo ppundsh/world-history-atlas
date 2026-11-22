@@ -1,0 +1,49 @@
+# indonesia 模式「首長政黨」：各州／省首長所屬政黨（由 data-pipeline/party/fetch-party.mjs 自 Wikidata 產生，請勿手改）。欄位：行政區 id	起(年-月)	政黨代碼	（Wikidata 政黨名稱）
+# 來源：Wikidata（CC0）各州「政府首長職位」（P1313）的歷任者與其任期開始時的政黨；2005-06 起。代理或過渡首長、沒有政黨資料者沿用前一任顏色。
+a_ac	2012-06	id_other	Aceh Party
+a_ac	2020-11	id_demokrat	Democratic Party
+a_ac	2022-07	ind	Independent
+a_ac	2025-02	id_other	Aceh Party
+a_ba	2018-09	id_demokrat	Indonesian Democratic Party – Struggle
+a_bb	2017-05	id_golkar	Golkar
+a_be	2018-12	id_golkar	Golkar
+a_bt	2005-10	id_golkar	Golkar
+a_bt	2014-05	id_demokrat	Indonesian Democratic Party – Struggle
+a_go	2012-01	id_golkar	Golkar
+a_jb	2008-06	id_pks	Prosperous Justice Party
+a_jb	2025-02	id_gerindra	Great Indonesia Movement Party
+a_ji	2009-02	id_demokrat	Democratic Party
+a_ji	2019-02	id_other	Partai Kebangkitan Bangsa
+a_jk	2007-01	id_demokrat	Democratic Party
+a_jk	2014-11	id_golkar	Golkar
+a_jk	2017-05	id_demokrat	Indonesian Democratic Party – Struggle
+a_jk	2017-10	ind	independent politician
+a_jk	2025-02	id_demokrat	Indonesian Democratic Party – Struggle
+a_jt	2013-08	id_demokrat	Indonesian Democratic Party – Struggle
+a_kb	2018-09	id_other	Partai Persatuan Pembangunan
+a_ki	2018-10	id_other	Indonesian Justice and Unity Party
+a_kr	2010-08	id_demokrat	Democratic Party
+a_kr	2021-02	id_golkar	Golkar
+a_ks	2016-02	id_golkar	Golkar
+a_la	2019-06	id_golkar	Golkar
+a_la	2025-02	id_gerindra	Great Indonesia Movement Party
+a_ma	2014-03	id_golkar	Golkar
+a_mu	2014-05	id_pks	Prosperous Justice Party
+a_mu	2025-02	id_demokrat	Democratic Party
+a_nb	2018-09	id_pks	Prosperous Justice Party
+a_nt	2018-09	id_nasdem	NasDem Party
+a_pa	2006-01	id_demokrat	Indonesian Democratic Party – Struggle
+a_pb	2017-05	id_nasdem	NasDem Party
+a_ri	2014-02	id_golkar	Golkar
+a_ri	2025-02	id_other	Partai Kebangkitan Bangsa
+a_sa	2005-08	id_demokrat	Democratic Party
+a_sb	2010-08	id_pks	Prosperous Justice Party
+a_sg	2018-09	id_nasdem	NasDem Party
+a_sn	2008-04	id_nasdem	NasDem Party
+a_sn	2018-09	ind	Independent
+a_sr	2017-05	id_gerindra	Great Indonesia Movement Party
+a_ss	2008-11	id_golkar	Golkar
+a_ss	2018-10	id_nasdem	NasDem Party
+a_st	2021-06	id_golkar	Golkar
+a_su	2018-09	ind	Independent
+a_su	2025-02	id_gerindra	Great Indonesia Movement Party

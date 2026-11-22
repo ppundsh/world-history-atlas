@@ -1,0 +1,66 @@
+{
+"north_w": [
+"mx_son",
+"mx_chh",
+"mx_sin",
+"mx_dur"
+],
+"baja": [
+"mx_bcn",
+"mx_bcs"
+],
+"north_e": [
+"mx_coa",
+"mx_tam",
+"mx_nle"
+],
+"yucatan": [
+"mx_roo",
+"mx_yuc"
+],
+"tabasco": [
+"mx_cam",
+"mx_tab"
+],
+"chiapas": [
+"mx_chp"
+],
+"jalisco": [
+"mx_col",
+"mx_nay",
+"mx_jal",
+"mx_agu"
+],
+"veracruz": [
+"mx_ver"
+],
+"michoacan": [
+"mx_mic"
+],
+"guerrero": [
+"mx_gro"
+],
+"oaxaca": [
+"mx_oax"
+],
+"valle": [
+"mx_mex",
+"mx_mor",
+"mx_hid",
+"mx_dif"
+],
+"puebla": [
+"mx_pue"
+],
+"bajio": [
+"mx_que",
+"mx_gua"
+],
+"zacatecas": [
+"mx_slp",
+"mx_zac"
+],
+"tlaxcala": [
+"mx_tla"
+]
+}

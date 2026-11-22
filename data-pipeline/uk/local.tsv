@@ -6,3 +6,13 @@ feud	jacobite	1715-09	1746-04	-4.22	57.48	詹姆斯黨起事	Jacobite risings	�
 feud	troubles	1969-08	1998-04	-5.93	54.6	北愛爾蘭動亂	The Troubles	北アイルランド紛争	民族與宗派衝突，至《貝爾法斯特協議》結束。	The national and sectarian conflict ended by the Good Friday Agreement.	ベルファスト合意で終結。	北爱尔兰问题
 power	pale	1171-10	1603-03	-6.26	53.35	英格蘭的愛爾蘭佩爾區	The English Pale in Ireland	ペイル（イングランドの支配地域）	都柏林周圍英王實際控制的地區。	The area round Dublin that the English crown really held.	ダブリン周辺。	佩尔区
 us	raf_usaf	1942-06	2026-12	0.49	52.36	美軍駐英基地（萊肯希思、米爾登霍爾）	US bases in Britain (Lakenheath, Mildenhall)	在英米軍基地	二戰起美軍航空部隊駐紮東英格蘭。	US air forces in East Anglia since the Second World War.	第二次大戦以来。	
+feud	cade	1450-06	1450-07	-0.09	51.51	凱德起義	Jack Cade's Rebellion	ケイドの乱	肯特人民反抗亨利六世政府。	Kentish rebels against Henry VI's government.	ケントの民衆反乱。	
+feud	pilgrimage	1536-10	1537-02	-1.08	53.96	求恩巡禮	Pilgrimage of Grace	恩寵の巡礼	北方反對解散修道院的起義。	A northern rising against the closing of the monasteries.	修道院解散への反乱。	求恩巡礼
+feud	luddites	1811-03	1816-12	-1.15	52.95	盧德運動	Luddites	ラッダイト運動	紡織工人破壞機器的抗爭。	Textile workers who smashed machines.	機械打ち壊し運動。	卢德运动
+feud	chartists	1838-05	1848-04	-0.13	51.5	憲章運動	Chartism	チャーティスト運動	爭取普選的工人運動。	A workers' movement for the vote.	普通選挙要求運動。	宪章运动
+feud	easter	1916-04	1916-04	-6.26	53.35	復活節起義	Easter Rising	イースター蜂起	都柏林的愛爾蘭共和派起義。	The Irish republican rising in Dublin.	ダブリンの蜂起。	复活节起义
+feud	suffragettes	1903-10	1918-02	-0.13	51.5	婦女參政運動	Suffragettes	サフラジェット	爭取婦女投票權的激進運動。	The militant campaign for women's votes.	女性参政権運動。	妇女参政论者
+power	lordsisles	1336-01	1493-01	-6.2	56.0	群島領主	Lordship of the Isles	島嶼領主	西部群島的半獨立政權。	A semi-independent power in the Western Isles.	西方諸島の半独立勢力。	
+power	marcher	1067-01	1536-01	-3.0	52.0	威爾斯邊區領主	Welsh Marcher lords	ウェールズ辺境伯	威爾斯邊境的半自治領主。	Semi-independent lords on the Welsh border.	ウェールズ境界の領主。	
+power	hansa_steelyard	1320-01	1598-01	-0.09	51.51	漢薩同盟倫敦商館	Hanseatic Steelyard	ハンザ同盟ロンドン商館	漢薩商人在倫敦的特權據點。	The privileged Hanseatic base in London.	ハンザの拠点。	
+us	vikings_dublin	0841-01	1171-10	-6.26	53.35	都柏林維京王國	Norse Dublin	ダブリンのヴァイキング王国	維京人建立的都柏林王國。	The Viking kingdom of Dublin.	ヴァイキングの王国。	

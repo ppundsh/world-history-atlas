@@ -11,23 +11,84 @@ e_diyarbekir	#d8a7b1	迪亞巴克爾州	迪亚巴克尔州	Diyarbekir Eyalet	デ
 e_adana	#c9b79c	阿達納州	阿达纳州	Adana Eyalet	アダナ州
 e_aleppo	#f6b98a	阿勒坡州	阿勒坡州	Aleppo Eyalet	アレッポ州
 e_cyprus	#a594cf	賽普勒斯州	赛普勒斯州	Cyprus Eyalet	キプロス州
-p_thrace	#6fb3c7	東色雷斯（3 省）	东色雷斯（3 省）	Eastern Thrace (3 provinces)	Eastern Thrace（県）
-p_istanbul	#b5a7d8	伊斯坦堡省	伊斯坦堡省	Istanbul province	Istanbul（県）
-p_bithynia	#d8a7b1	馬爾馬拉東部（5 省）	马尔马拉东部（5 省）	Eastern Marmara (5 provinces)	Eastern Marmara（県）
-p_mysia	#c9b79c	馬爾馬拉南部（2 省）	马尔马拉南部（2 省）	Southern Marmara (2 provinces)	Southern Marmara（県）
-p_ionia	#f6b98a	伊茲密爾一帶（2 省）	伊兹密尔一带（2 省）	Izmir area (2 provinces)	Izmir area（県）
-p_caria	#a594cf	愛琴海南部（3 省）	爱琴海南部（3 省）	Southern Aegean (3 provinces)	Southern Aegean（県）
-p_phrygia	#cc94a0	內愛琴海與湖區（6 省）	内爱琴海与湖区（6 省）	Inner Aegean and Lakes (6 provinces)	Inner Aegean and Lakes（県）
-p_antalya	#d6c8b0	安塔利亞省	安塔利亚省	Antalya province	Antalya（県）
-p_cilicia	#8cc5d6	阿達納一帶（3 省）	阿达纳一带（3 省）	Adana area (3 provinces)	Adana area（県）
-p_hatay	#a3c4a8	哈塔伊省	哈塔伊省	Hatay province	Hatay（県）
-p_konya	#e3c9a8	科尼亞一帶（5 省）	科尼亚一带（5 省）	Konya area (5 provinces)	Konya area（県）
-p_ankara	#b8c4e0	安卡拉一帶（4 省）	安卡拉一带（4 省）	Ankara area (4 provinces)	Ankara area（県）
-p_cappadocia	#e0b8c4	開塞利與錫瓦斯（3 省）	开塞利与锡瓦斯（3 省）	Kayseri and Sivas (3 provinces)	Kayseri and Sivas（県）
-p_paphlagonia	#c5d6a3	黑海西部（7 省）	黑海西部（7 省）	Western Black Sea (7 provinces)	Western Black Sea（県）
-p_pontus	#d4b8e0	黑海中部（5 省）	黑海中部（5 省）	Central Black Sea (5 provinces)	Central Black Sea（県）
-p_trebizond	#e9c46a	黑海東部（6 省）	黑海东部（6 省）	Eastern Black Sea (6 provinces)	Eastern Black Sea（県）
-p_erzurum	#f4a261	東北部（6 省）	东北部（6 省）	North-east (6 provinces)	North-east（県）
-p_van	#e76f51	凡湖一帶（4 省）	凡湖一带（4 省）	Lake Van area (4 provinces)	Lake Van area（県）
-p_diyarbakir	#8ab17d	東南部（9 省）	东南部（9 省）	South-east (9 provinces)	South-east（県）
-p_urfa	#2a9d8f	烏爾法與加濟安泰普（5 省）	乌尔法与加济安泰普（5 省）	Urfa and Gaziantep (5 provinces)	Urfa and Gaziantep（県）
+a_75	#e9c46a	阿爾達漢省	阿尔达汉省	Ardahan	アルダハン県
+a_08	#6fb3c7	阿爾特溫省	阿尔特温省	Artvin	アルトヴィン県
+a_73	#a594cf	舍爾納克省	舍尔纳克省	Şırnak	シュルナク県
+a_30	#e3c9a8	哈卡里省	哈卡里省	Hakkâri	ハッキャリ県
+a_76	#2a9d8f	厄德爾省	厄德尔省	Iğdır	ウードゥル県
+a_04	#f6b98a	阿勒省	阿勒省	Ağrı	アール県
+a_65	#a3c4a8	凡城省	凡城省	Van	ヴァン県
+a_39	#8ab17d	克爾克拉雷利省	克尔克拉雷利省	Kırklareli	クルクラーレリ県
+a_22	#c9b79c	埃迪爾內省	埃迪尔内省	Edirne	エディルネ県
+a_36	#8cc5d6	卡爾斯省	卡尔斯省	Kars	カルス県
+a_47	#e76f51	馬爾丁省	马尔丁省	Mardin	マルディン県
+a_63	#d8a7b1	尚勒烏爾法省	尚勒乌尔法省	Şanlıurfa	シャンルウルファ県
+a_79	#d6c8b0	基利斯省	基利斯省	Kilis	キリス県
+a_27	#f4a261	加濟安泰普省	加济安泰普省	Gaziantep	ガズィアンテプ県
+a_31	#b5a7d8	哈塔伊省	哈塔伊省	Hatay	ハタイ県
+a_34	#cc94a0	伊斯坦堡省	伊斯坦堡省	Istanbul	イスタンブール県
+a_59	#e9c46a	泰基爾達省	泰基尔达省	Tekirdağ	テキルダー県
+a_17	#6fb3c7	恰納卡萊省	恰纳卡莱省	Çanakkale	チャナッカレ県
+a_53	#a594cf	裡澤省	里泽省	Rize	リゼ県
+a_61	#e3c9a8	特拉布宗省	特拉布宗省	Trabzon	トラブゾン県
+a_28	#2a9d8f	吉雷松省	吉雷松省	Giresun	ギレスン県
+a_52	#f6b98a	奧爾杜省	奥尔杜省	Ordu	オルドゥ県
+a_55	#a3c4a8	薩姆松省	萨姆松省	Samsun	サムスン県
+a_57	#8ab17d	錫諾普省	锡诺普省	Sinop	スィノプ県
+a_37	#c9b79c	卡斯塔莫努省	卡斯塔莫努省	Kastamonu	カスタモヌ県
+a_74	#8cc5d6	巴爾滕省	巴尔滕省	Bartın	バルトゥン県
+a_67	#e76f51	宗古爾達克省	宗古尔达克省	Zonguldak	ゾングルダク県
+a_81	#d8a7b1	迪茲傑省	迪兹杰省	Düzce	デュズジェ県
+a_54	#d6c8b0	薩卡里亞省	萨卡里亚省	Sakarya	サカリヤ県
+a_41	#f4a261	科賈埃利省	科贾埃利省	Kocaeli	コジャエリ県
+a_77	#b5a7d8	亞洛瓦省	亚洛瓦省	Yalova	ヤロヴァ県
+a_16	#cc94a0	布爾薩省	布尔萨省	Bursa	ブルサ県
+a_10	#e9c46a	巴勒克埃西爾省	巴勒克埃西尔省	Balıkesir	バルケスィル県
+a_35	#6fb3c7	伊茲密爾次分區	伊兹密尔次分区	İzmir	イズミル県
+a_09	#a594cf	艾登省	艾登省	Aydın	アイドゥン県
+a_48	#e3c9a8	穆拉省	穆拉省	Muğla	ムーラ県
+a_07	#2a9d8f	安塔利亞省	安塔利亚省	Antalya	アンタルヤ県
+a_33	#f6b98a	梅爾辛省	梅尔辛省	Mersin	メルスィン県
+a_01	#a3c4a8	阿達納省	阿达纳省	Adana	アダナ県
+a_14	#8ab17d	博盧省	博卢省	Bolu	ボル県
+a_06	#c9b79c	安卡拉次分區	安卡拉次分区	Ankara	アンカラ県
+a_11	#8cc5d6	比萊吉克省	比莱吉克省	Bilecik	ビレジク県
+a_26	#e76f51	埃斯基謝希爾省	埃斯基谢希尔省	Eskişehir	エスキシェヒル県
+a_18	#d8a7b1	昌克勒省	昌克勒省	Çankırı	チャンクル県
+a_78	#d6c8b0	卡拉比克省	卡拉比克省	Karabük	カラビュック県
+a_60	#f4a261	托卡特省	托卡特省	Tokat	トカト県
+a_58	#b5a7d8	錫瓦斯省	锡瓦斯省	Sivas	スィヴァス県
+a_19	#cc94a0	喬魯姆省	乔鲁姆省	Çorum	チョルム県
+a_05	#e9c46a	阿馬西亞省	阿马西亚省	Amasya	アマスィヤ県
+a_43	#6fb3c7	屈塔希亞省	屈塔希亚省	Kütahya	キュタヒヤ県
+a_42	#a594cf	科尼亞省	科尼亚省	Konya	コンヤ県
+a_70	#e3c9a8	卡拉曼省	卡拉曼省	Karaman	カラマン県
+a_51	#2a9d8f	尼代省	尼代省	Niğde	ニーデ県
+a_38	#f6b98a	開塞利省	开塞利省	Kayseri	カイセリ県
+a_32	#a3c4a8	厄斯帕爾塔省	厄斯帕尔塔省	Isparta	ウスパルタ県
+a_45	#8ab17d	馬尼薩省	马尼萨省	Manisa	マニサ県
+a_20	#c9b79c	代尼茲利省	代尼兹利省	Denizli	デニズリ県
+a_15	#8cc5d6	布爾杜爾省	布尔杜尔省	Burdur	ブルドゥル県
+a_68	#e76f51	阿克薩賴省	阿克萨赖省	Aksaray	アクサライ県
+a_50	#d8a7b1	內夫謝希爾省	内夫谢希尔省	Nevşehir	ネヴシェヒル県
+a_66	#d6c8b0	約茲加特省	约兹加特省	Yozgat	ヨズガト県
+a_40	#f4a261	克爾謝希爾省	克尔谢希尔省	Kırşehir	クルシェヒル県
+a_64	#b5a7d8	烏沙克省	乌沙克省	Uşak	ウシャク県
+a_24	#cc94a0	埃爾津詹省	埃尔津詹省	Erzincan	エルズィンジャン県
+a_62	#e9c46a	通傑利省	通杰利省	Tunceli	トゥンジェリ県
+a_03	#6fb3c7	阿菲永卡拉希薩爾省	阿菲永卡拉希萨尔省	Afyonkarahisar	アフィヨンカラヒサール県
+a_71	#a594cf	克勒克卡萊省	克勒克卡莱省	Kırıkkale	クルッカレ県
+a_46	#e3c9a8	卡赫拉曼馬拉什省	卡赫拉曼马拉什省	Kahramanmaraş	カフラマンマラシュ県
+a_49	#2a9d8f	穆什省	穆什省	Muş	ムシュ県
+a_25	#f6b98a	埃爾祖魯姆省	埃尔祖鲁姆省	Erzurum	エルズルム県
+a_44	#a3c4a8	馬拉蒂亞省	马拉蒂亚省	Malatya	マラティヤ県
+a_23	#8ab17d	埃拉澤省	埃拉泽省	Elazığ	エラズー県
+a_13	#c9b79c	比特利斯省	比特利斯省	Bitlis	ビトリス県
+a_12	#8cc5d6	賓格爾省	宾格尔省	Bingöl	ビンギョル県
+a_80	#e76f51	奧斯曼尼耶省	奥斯曼尼耶省	Osmaniye	オスマニエ県
+a_02	#d8a7b1	阿德亞曼省	阿德亚曼省	Adıyaman	アドゥヤマン県
+a_21	#d6c8b0	迪亞巴克爾省	迪亚巴克尔省	Diyarbakır	ディヤルバクル県
+a_72	#f4a261	巴特曼省	巴特曼省	Batman	バトマン県
+a_56	#b5a7d8	錫爾特省	锡尔特省	Siirt	スィイルト県
+a_69	#cc94a0	巴伊布爾特省	巴伊布尔特省	Bayburt	バイブルト県
+a_29	#e9c46a	居米什哈內省	居米什哈内省	Gümüşhane	ギュミュシュハーネ県

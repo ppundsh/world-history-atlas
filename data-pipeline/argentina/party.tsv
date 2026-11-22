@@ -1,0 +1,70 @@
+# argentina 模式「首長政黨」：各州／省首長所屬政黨（由 data-pipeline/party/fetch-party.mjs 自 Wikidata 產生，請勿手改）。欄位：行政區 id	起(年-月)	政黨代碼	（Wikidata 政黨名稱）
+# 來源：Wikidata（CC0）各州「政府首長職位」（P1313）的歷任者與其任期開始時的政黨；1983-12 起。代理或過渡首長、沒有政黨資料者沿用前一任顏色。
+a_a	1983-12	ar_pj	Justicialist Party
+a_a	1991-12	ar_other	Salta Renewal Party
+a_a	1995-12	ar_pj	Justicialist Party
+a_b	1983-12	ar_ucr	Radical Civic Union
+a_b	1999-12	ar_pj	Justicialist Party
+a_b	2015-12	ar_pro	Republican Proposal
+a_b	2019-12	ar_pj	Front for Victory-PJ
+a_c	1996-08	ar_ucr	Radical Civic Union
+a_c	2000-08	ar_other	Front for a Country in Solidarity
+a_c	2005-11	ar_pj	Republican Peronism
+a_c	2007-12	ar_other	Commitment to Change
+a_c	2015-12	ar_pro	Republican Proposal
+a_d	1983-12	ar_pj	Justicialist Party
+a_e	1983-12	ar_ucr	Radical Civic Union
+a_e	1987-12	ar_pj	Justicialist Party
+a_e	1999-12	ar_ucr	Radical Civic Union
+a_e	2003-12	ar_pj	Justicialist Party
+a_f	2007-03	ar_pj	Justicialist Party
+a_g	2004-04	ar_pj	Justicialist Party
+a_g	2013-12	ar_other	Civic Front for Santiago
+a_h	1987-12	ar_pj	Justicialist Party
+a_h	1995-12	ar_ucr	Radical Civic Union
+a_h	2007-12	ar_pj	Front for Victory
+a_j	1983-12	ar_pj	Justicialist Party
+a_j	1987-12	ar_ucr	Radical Civic Union
+a_j	1999-12	ar_other	Alianza para el Trabajo, la Justicia y la Educación
+a_j	2003-12	ar_pj	Front for Victory
+a_k	2003-12	ar_ucr	Radical Civic Union
+a_k	2011-12	ar_pj	Front for Victory
+a_l	1983-12	ar_pj	Justicialist Party
+a_m	1987-12	ar_pj	Justicialist Party
+a_m	2003-12	ar_ucr	Radical Civic Union
+a_m	2011-12	ar_pj	Front for Victory
+a_m	2015-12	ar_ucr	Radical Civic Union
+a_n	1991-12	ar_pj	Justicialist Party
+a_n	2007-12	ar_other	Party of Social Concord
+a_n	2019-12	ar_pj	Justicialist Party
+a_p	1995-12	ar_pj	Justicialist Party
+a_q	1983-12	ar_prov	Neuquén People's Movement
+a_q	1991-12	ar_other	Christian Democratic Party
+a_q	1995-12	ar_prov	Neuquén People's Movement
+a_q	1999-12	ar_other	Christian Democratic Party
+a_q	2007-12	ar_prov	Neuquén People's Movement
+a_r	2011-12	ar_pj	Justicialist Party
+a_r	2012-01	ar_prov	Juntos Somos Río Negro
+a_s	1983-12	ar_pj	Justicialist Party
+a_s	2007-12	ar_other	Socialist Party
+a_s	2019-12	ar_pj	Justicialist Party
+a_s	2023-12	ar_ucr	Radical Civic Union
+a_t	1991-10	ar_pj	Justicialist Party
+a_t	1995-10	ar_other	Fuerza Republicana
+a_t	1999-10	ar_pj	Justicialist Party
+a_u	2003-12	ar_pj	Federal Peronism
+a_u	2017-11	ar_other	We Are All Chubut
+a_v	1992-01	ar_other	Fueguino People's Movement
+a_v	2000-01	ar_pj	Justicialist Party
+a_v	2004-01	ar_ucr	Radical Civic Union
+a_v	2005-09	ar_pj	Justicialist Party
+a_v	2007-12	ar_other	Civic Coalition ARI
+a_v	2015-12	ar_pj	Justicialist Party
+a_v	2019-12	ar_ucr	Radical Civic Union
+a_w	2009-12	ar_ucr	Radical Civic Union
+a_x	1995-01	ar_ucr	Radical Civic Union
+a_x	2007-12	ar_pj	Justicialist Party
+a_y	1987-12	ar_pj	Justicialist Party
+a_y	2015-12	ar_ucr	Radical Civic Union
+a_z	1983-12	ar_pj	Justicialist Party
+a_z	2015-12	ar_other	Kolina

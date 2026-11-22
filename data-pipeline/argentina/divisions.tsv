@@ -4,13 +4,27 @@ i_ba	#e9c46a	布宜諾斯艾利斯管區	布宜诺斯艾利斯管区	Intendancy 
 i_cordoba	#f4a261	哥多華管區	哥多华管区	Intendancy of Córdoba	コルドバ監察区
 i_salta	#e76f51	薩爾塔管區	萨尔塔管区	Intendancy of Salta	サルタ監察区
 i_paraguay	#8ab17d	巴拉圭管區	巴拉圭管区	Intendancy of Paraguay	パラグアイ監察区
-p_buenos_aires	#6fb3c7	布宜諾斯艾利斯省、首都	布宜诺斯艾利斯省、首都	Buenos Aires Province and city	Buenos Aires Province and city
-p_litoral	#b5a7d8	聖塔菲、恩特雷里奧斯	圣塔菲、恩特雷里奥斯	Santa Fe, Entre Ríos	Santa Fe, Entre Ríos
-p_mesopotamia	#d8a7b1	科連特斯、米西奧內斯	科连特斯、米西奥内斯	Corrientes, Misiones	Corrientes, Misiones
-p_chaco	#c9b79c	查科、福爾摩沙	查科、福尔摩沙	Chaco, Formosa	Chaco, Formosa
-p_cordoba	#f6b98a	哥多華	哥多华	Córdoba	Córdoba
-p_cuyo	#a594cf	庫約（門多薩、聖胡安、聖路易斯）	库约（门多萨、圣胡安、圣路易斯）	Cuyo (Mendoza, San Juan, San Luis)	Cuyo (Mendoza, San Juan, San Luis)
-p_northwest	#cc94a0	西北六省	西北六省	The six north-western provinces	The six north-western provinces
-p_pampa	#d6c8b0	拉潘帕	拉潘帕	La Pampa	La Pampa
-p_patagonia_n	#8cc5d6	內烏肯、黑河	内乌肯、黑河	Neuquén, Río Negro	Neuquén, Río Negro
-p_patagonia_s	#a3c4a8	丘布特、聖克魯斯、火地島	丘布特、圣克鲁斯、火地岛	Chubut, Santa Cruz, Tierra del Fuego	Chubut, Santa Cruz, Tierra del Fuego
+a_e	#e9c46a	恩特雷里奧斯省	恩特雷里奥斯省	Entre Ríos	エントレ・リオス州
+a_a	#6fb3c7	薩爾塔省	萨尔塔省	Salta	サルタ州
+a_y	#a594cf	胡胡伊省	胡胡伊省	Jujuy	フフイ州
+a_p	#e3c9a8	福爾摩沙省	福尔摩沙省	Formosa	フォルモサ州
+a_n	#2a9d8f	米西奧內斯省	米西奥内斯省	Misiones	ミシオネス州
+a_h	#f6b98a	查科省	查科省	Chaco	チャコ州
+a_w	#a3c4a8	科連特斯省	科连特斯省	Corrientes	コリエンテス州
+a_k	#8ab17d	卡塔馬卡省	卡塔马卡省	Catamarca	カタマルカ州
+a_f	#c9b79c	拉里奧哈省	拉里奥哈省	La Rioja	ラ・リオハ州
+a_j	#8cc5d6	聖胡安省	圣胡安省	San Juan	サンフアン州
+a_m	#e76f51	門多薩省	门多萨省	Mendoza	メンドーサ州
+a_q	#d8a7b1	內烏肯省	内乌肯省	Neuquén	ネウケン州
+a_u	#d6c8b0	丘布特省	丘布特省	Chubut	チュブ州
+a_r	#f4a261	內格羅河省	内格罗河省	Río Negro	リオネグロ州
+a_z	#b5a7d8	聖克魯斯省	圣克鲁斯省	Santa Cruz	サンタクルス州
+a_v	#cc94a0	火地島省	火地岛省	Tierra del Fuego	ティエラ・デル・フエゴ州
+a_b	#e9c46a	布宜諾斯艾利斯省	布宜诺斯艾利斯省	Buenos Aires	ブエノスアイレス州
+a_c	#6fb3c7	布宜諾斯艾利斯	布宜诺斯艾利斯	Buenos Aires	ブエノスアイレス
+a_s	#a594cf	聖大非省	圣大非省	Santa Fe	サンタフェ州
+a_t	#e3c9a8	圖庫曼省	图库曼省	Tucumán	トゥクマン州
+a_g	#2a9d8f	聖地亞哥－德爾埃斯特羅省	圣地亚哥－德尔埃斯特罗省	Santiago del Estero	サンティアゴ・デル・エステロ州
+a_d	#f6b98a	聖路易省	圣路易省	San Luis	サンルイス州
+a_l	#a3c4a8	拉潘帕省	拉潘帕省	La Pampa	ラ・パンパ州
+a_x	#8ab17d	科爾多瓦省	科尔多瓦省	Córdoba	コルドバ州

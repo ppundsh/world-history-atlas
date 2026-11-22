@@ -32,3 +32,10 @@ U['LAO'] = A0['LAO']; U['KHM'] = A0['KHM']
 feats = [{'type': 'Feature', 'properties': {'id': k}, 'geometry': mapping(g.buffer(0))} for k, g in U.items() if not g.is_empty]
 json.dump({'type': 'FeatureCollection', 'features': feats}, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)
 print(len(feats), 'units →', OUT); print(' '.join(sorted(U)))
+# the country's real first-level divisions: the unit ids above become aliases in region.json "groups"
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from regionkit import Units
+U = Units(NE)
+for f in json.load(open(OUT, encoding='utf-8'))['features']: U.put(f['properties']['id'], shape(f['geometry']))
+U.admin1('VNM', 'vn_')
+U.write(OUT)

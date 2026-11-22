@@ -2,11 +2,12 @@
 // [, events.tsv] → public/data/<mode>.json.   node data-pipeline/build_theme.mjs <mode>
 // Names are [en, zh-Hant, zh-Hans, ja] like the other modes; zh-Hans is converted from zh-Hant with OpenCC.
 import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as OpenCC from 'opencc-js';
 const mode = process.argv[2];
 if (!mode) throw new Error('usage: node build_theme.mjs <mode>');
-const here = path.join(path.dirname(new URL(import.meta.url).pathname), mode);
+const here = path.join(path.dirname(fileURLToPath(import.meta.url)), mode);   // fileURLToPath: also right on Windows
 const toHans = OpenCC.Converter({ from: 'tw', to: 'cn' });
 const rows = (f, n, m = n) => fs.readFileSync(path.join(here, f), 'utf8').split('\n').filter(l => l.trim() && !l.startsWith('#')).map((l, i) => {
   const c = l.split('\t'); if (c.length < n || c.length > m) throw new Error(`${f} line ${i}: ${c.length} columns, expected ${n}`); return c;
@@ -36,5 +37,7 @@ const events = fs.existsSync(path.join(here, 'events.tsv')) ? rows('events.tsv',
   y: +y, lon: +lon, lat: +lat, n: [en, hant, toHans(hant), ja], d: [de, dh, toHans(dh), de], w: [wzh, wen, ''] })).sort((a, b) => a.y - b.y) : null;
 // quick views ("focus" menu): place, zoom, year and name
 const focus = fs.existsSync(path.join(here, 'focus.tsv')) ? rows('focus.tsv', 8).map(([id, lon, lat, k, y, hant, en, ja]) => ({ id, lon: +lon, lat: +lat, k: +k, y: +y, n: [en, hant, toHans(hant), ja] })) : null;
-fs.writeFileSync(path.join(here, '..', '..', 'public', 'data', mode + '.json'), JSON.stringify({ families: fam, areas, points, flows, ...(events ? { events } : {}), ...(focus ? { focus } : {}), ...(mode === 'finance' ? { areaPictures: true } : {}) }));
+// the mode's own timeline (optional): year and position (0–1) on the slider
+const seg = fs.existsSync(path.join(here, 'timeline.tsv')) ? rows('timeline.tsv', 2).map(([y, p]) => [+y, +p]) : null;
+fs.writeFileSync(path.join(here, '..', '..', 'public', 'data', mode + '.json'), JSON.stringify({ families: fam, areas, points, flows, ...(seg ? { seg } : {}), ...(events ? { events } : {}), ...(focus ? { focus } : {}), ...(mode === 'finance' ? { areaPictures: true } : {}) }));
 console.log(mode + '.json:', fam.length, 'families,', areas.length, 'areas,', points.length, 'points,', flows.length, 'flows', events ? ', ' + events.length + ' events' : '');

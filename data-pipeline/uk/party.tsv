@@ -1,0 +1,17 @@
+# 英國模式「地方政府首長」：蘇格蘭、威爾斯首席部長，北愛爾蘭首席部長，大倫敦市長所屬政黨。英格蘭其他區域沒有民選區域首長，不著色。欄位：行政區 id	起(年-月)	政黨代碼
+# 來源：英文維基百科 First Minister of Scotland / Wales / Northern Ireland、Mayor of London 列表；2026 年 5 月選舉結果依蘇格蘭議會 SPICe 簡報、威爾斯政府公告（ap Iorwerth 2026-05-12 就任）。北愛爾蘭權力分享中止期間（2002–2007、2017–2020、2022–2024）標「中止」。
+r_scotland	1999-05	uk_lab
+r_scotland	2007-05	uk_snp
+r_wales	1999-05	uk_lab
+r_wales	2026-05	uk_pc
+r_n_ireland	1998-07	uk_uup
+r_n_ireland	2002-10	uk_direct
+r_n_ireland	2007-05	uk_dup
+r_n_ireland	2017-01	uk_direct
+r_n_ireland	2020-01	uk_dup
+r_n_ireland	2022-02	uk_direct
+r_n_ireland	2024-02	uk_sf
+r_london	2000-05	ind
+r_london	2004-01	uk_lab
+r_london	2008-05	uk_con
+r_london	2016-05	uk_lab

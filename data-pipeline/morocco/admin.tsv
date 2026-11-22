@@ -1,5 +1,5 @@
 # 摩洛哥模式：行政區劃（逐月）。欄位：年月	單元	行政區。以今日單元概略標示；當時不屬此國的單元以統治勢力著色。
-# 阿拉維王朝的傳統地區、法屬阿爾及利亞三省與 2015 年起的大區。
+# 阿拉維王朝的傳統地區；1997 年起的十六大區；2015 年 9 月改為十二大區（以舊大區合併概略表示：舊大區邊界與新大區不完全一致，蘇斯—馬塞與德拉—塔菲拉勒特因舊單元合併而合為一區）。
 0788-01	tangier,rif,fes,rabat,casablanca,marrakech,souss,sahara_n,oran,algiers,constantine,sahara_dz,ifriqiya,andalus	none
 1666-01	fes	b_fes
 1666-01	rabat	b_rabat
@@ -11,11 +11,35 @@
 1912-03	tangier,rif	none
 1956-10	tangier,rif	b_rif
 1962-07	oran,algiers,constantine	none
-2015-09	tangier	r_tangier
-2015-09	rif	r_rif
-2015-09	fes	r_fes
-2015-09	rabat	r_rabat
-2015-09	casablanca	r_casablanca
-2015-09	marrakech	r_marrakech
-2015-09	souss	r_souss
-2015-09	sahara_n	r_sahara_n
+1997-04	ma_14	a_14
+1997-04	ma_15	a_15
+1997-04	ma_16	a_16
+1997-04	ma_01	a_01
+1997-04	ma_04	a_04
+1997-04	ma_06	a_06
+1997-04	ma_13	a_13
+1997-04	ma_03	a_03
+1997-04	ma_02	a_02
+1997-04	ma_07	a_07
+1997-04	ma_09	a_09
+1997-04	ma_08	a_08
+1997-04	ma_10	a_10
+1997-04	ma_11	a_11
+1997-04	ma_05	a_05
+1997-04	ma_12	a_12
+2015-09	ma_01	m15_tth
+2015-09	ma_04	m15_or
+2015-09	ma_05	m15_fm
+2015-09	ma_06	m15_fm
+2015-09	ma_03	m15_fm
+2015-09	ma_07	m15_rsk
+2015-09	ma_02	m15_rsk
+2015-09	ma_08	m15_cs
+2015-09	ma_09	m15_cs
+2015-09	ma_10	m15_cs
+2015-09	ma_12	m15_bmk
+2015-09	ma_11	m15_ms
+2015-09	ma_13	m15_ss
+2015-09	ma_14	m15_gon
+2015-09	ma_15	m15_lss
+2015-09	ma_16	m15_dod

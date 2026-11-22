@@ -1,0 +1,26 @@
+# regime 模式自己的大事記（關閉「世界大事」時仍會顯示）。欄位同 events_world.tsv：起年	迄年	重大	繁中名	簡中名	English	日本語	維基中文	English article	日本語記事	繁中說明	English	日本語	經度	緯度。中、日文條目留空時，抓圖時由英文條目的跨語言連結補上。
+1215			大憲章	大宪章	Magna Carta	マグナ・カルタ		Magna Carta		英王約翰承認貴族權利，限制王權的里程碑。	King John concedes the barons' rights, a landmark in limiting royal power.	ジョン王が貴族の権利を認め、王権制限の画期となった。	-0.56	51.44
+1688			英國光榮革命	英国光荣革命	The Glorious Revolution	名誉革命		Glorious Revolution		《權利法案》確立議會主權與君主立憲。	The Bill of Rights establishes parliamentary sovereignty and constitutional monarchy.	権利章典で議会主権と立憲君主制が確立した。	-0.13	51.5
+1776			美國獨立宣言	美国独立宣言	The US Declaration of Independence	アメリカ独立宣言		United States Declaration of Independence		第一個近代共和國的建立。	The founding of the first modern republic.	最初の近代共和国の成立。	-75.15	39.95
+1789			法國大革命	法国大革命	The French Revolution	フランス革命		French Revolution		《人權宣言》與君主專制的終結。	The Declaration of the Rights of Man and the end of absolute monarchy.	人権宣言と絶対王政の終焉。	2.35	48.86
+1848			歐洲一八四八革命	欧洲一八四八革命	The Revolutions of 1848	1848年革命		Revolutions of 1848		自由主義與民族主義浪潮席捲歐洲。	A liberal and national wave sweeps Europe.	自由主義と民族主義の波が欧州を席巻した。	13.4	52.52
+1893			紐西蘭婦女投票權	新西兰妇女投票权	New Zealand gives women the vote	ニュージーランドの女性参政権		Women's suffrage in New Zealand		第一個全國婦女普選。	The first country-wide women's suffrage.	世界初の全国規模の女性参政権。	174.78	-41.29
+1911			辛亥革命	辛亥革命	The Xinhai Revolution	辛亥革命		1911 Revolution		亞洲第一個共和國中華民國建立。	The Republic of China, Asia's first republic, is founded.	アジア初の共和国、中華民国が成立した。	114.3	30.59
+1917			俄國十月革命	俄国十月革命	The October Revolution	十月革命		October Revolution		第一個共產黨一黨專政國家。	The first communist one-party state.	最初の共産党一党独裁国家。	30.32	59.94
+1922			義大利法西斯奪權	意大利法西斯夺权	The Fascists take power in Italy	イタリアのファシスト政権		March on Rome		墨索里尼進軍羅馬，法西斯獨裁開始。	Mussolini's March on Rome; fascist dictatorship begins.	ムッソリーニのローマ進軍。ファシスト独裁の始まり。	12.48	41.89
+1933			希特勒掌權	希特勒掌权	Hitler takes power	ヒトラーの政権掌握		Adolf Hitler's rise to power		《授權法》後納粹一黨專政。	After the Enabling Act, Nazi one-party rule.	全権委任法の後、ナチ党の一党独裁となった。	13.4	52.52
+1945			第二次世界大戰結束	第二次世界大战结束	The Second World War ends	第二次世界大戦の終結		End of World War II in Europe		軸心國獨裁政權覆亡，德、日改行民主。	The Axis dictatorships fall; Germany and Japan turn democratic.	枢軸国の独裁政権が崩れ、独日は民主化した。	13.4	52.52
+1947			印度獨立	印度独立	India's independence	インドの独立		Indian Independence Act 1947		世界最大民主國家誕生。	The world's largest democracy is born.	世界最大の民主国家が誕生した。	77.21	28.61
+1949			中華人民共和國成立	中华人民共和国成立	The People's Republic of China	中華人民共和国の成立		Proclamation of the People's Republic of China		中共一黨專政。	Communist one-party rule.	中国共産党の一党支配。	116.39	39.91
+1960			非洲年	非洲年	The Year of Africa	アフリカの年		Year of Africa		17 國獨立，此後多轉為一黨或軍事政權。	17 countries win independence; many later turn to one-party or military rule.	17か国が独立。その後多くが一党制や軍政に。	15.3	4.36
+1973			智利政變	智利政变	Coup in Chile	チリ・クーデター		1973 Chilean coup d'état		皮諾契特軍政推翻阿言德。	Pinochet's junta overthrows Allende.	ピノチェトの軍事政権がアジェンデ政権を倒した。	-70.65	-33.44
+1974			康乃馨革命：第三波民主化開始	康乃馨革命：第三波民主化开始	The Carnation Revolution: the third wave begins	カーネーション革命：第三の波の始まり		Carnation Revolution		葡萄牙獨裁結束，民主化浪潮擴及南歐、拉美、亞洲。	Portugal's dictatorship ends; a wave of democratisation spreads to southern Europe, Latin America and Asia.	ポルトガルの独裁が終わり、民主化の波が南欧・中南米・アジアに広がった。	-9.14	38.72
+1986			菲律賓人民力量革命	菲律宾人民力量革命	The People Power Revolution	ピープルパワー革命		People Power Revolution		馬可仕下台。	Marcos falls.	マルコスが退陣した。	121.06	14.6
+1987			韓國六月民主運動	韩国六月民主运动	South Korea's June Struggle	韓国の6月民主抗争		June Struggle		總統直選。	Direct presidential elections are won.	大統領直接選挙が実現した。	126.98	37.57
+1989			六四天安門事件	六四天安门事件	The Tiananmen Square protests	六四天安門事件		1989 Tiananmen Square protests and massacre		民主運動遭鎮壓。	The democracy movement is crushed.	民主化運動が武力鎮圧された。	116.39	39.91
+1989			東歐劇變	东欧剧变	The Revolutions of 1989	東欧革命		Revolutions of 1989		柏林圍牆倒塌，東歐共產政權相繼垮台。	The Berlin Wall falls; communist regimes collapse across Eastern Europe.	ベルリンの壁が崩壊し、東欧の共産政権が相次いで倒れた。	13.4	52.52
+1991			蘇聯解體	苏联解体	The Soviet Union dissolves	ソ連崩壊		Dissolution of the Soviet Union		冷戰結束。	The Cold War ends.	冷戦が終わった。	37.62	55.75
+1994			南非首次不分種族選舉	南非首次不分种族选举	South Africa's first multiracial election	南アフリカ初の全人種選挙		1994 South African general election		種族隔離結束，曼德拉當選。	Apartheid ends; Mandela is elected.	アパルトヘイトが終わり、マンデラが当選した。	28.19	-25.75
+1996			臺灣首次總統直選	台湾首次总统直选	Taiwan's first direct presidential election	台湾初の総統直接選挙		1996 Taiwanese presidential election		華人社會第一次直選國家元首。	The first direct election of a head of state in a Chinese-speaking society.	中国語圏で初めて国家元首を直接選んだ。	121.52	25.04
+2011			阿拉伯之春	阿拉伯之春	The Arab Spring	アラブの春		Arab Spring		北非與中東獨裁政權動搖。	Dictatorships in North Africa and the Middle East are shaken.	北アフリカと中東の独裁政権が揺らいだ。	31.24	30.04
+2021			緬甸政變	缅甸政变	The coup in Myanmar	ミャンマー・クーデター		2021 Myanmar coup d'état		軍方推翻民選政府。	The army overthrows the elected government.	軍が民選政府を倒した。	96.13	19.75

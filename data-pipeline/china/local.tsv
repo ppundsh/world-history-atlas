@@ -1,0 +1,18 @@
+# 中國模式：起義與叛亂（⚔）、地方勢力（◉）、外國駐軍（✪），各有開關，可點選。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+feud	wuchang	1911-10	1911-12	114.3	30.55	武昌起義	Wuchang Uprising	武昌起義	引發辛亥革命的新軍起義。	The army mutiny that set off the 1911 Revolution.	辛亥革命の発端。	武昌起义
+feud	second_rev	1913-07	1913-09	115.9	28.68	二次革命	Second Revolution	第二革命	國民黨反袁世凱的軍事行動。	The KMT's armed revolt against Yuan Shikai.	袁世凱への反乱。	二次革命
+feud	national_protection	1915-12	1916-06	102.71	25.04	護國戰爭	National Protection War	護国戦争	雲南起兵反對袁世凱稱帝。	Yunnan rose against Yuan's monarchy.	袁の帝政への反対。	护国战争
+feud	may4	1919-05	1919-06	116.39	39.91	五四運動	May Fourth Movement	五四運動	反對巴黎和會山東決議的學生運動。	The student movement against the Shandong decision at Versailles.	学生運動。	五四运动
+feud	may30	1925-05	1925-08	121.47	31.23	五卅運動	May Thirtieth Movement	五・三〇運動	上海反帝罷工運動。	The anti-imperialist strikes in Shanghai.	上海の反帝運動。	五卅运动
+feud	nanchang	1927-08	1927-08	115.9	28.68	南昌起義	Nanchang Uprising	南昌起義	共產黨的第一次武裝起義。	The Communists' first armed rising.	共産党最初の武装蜂起。	南昌起义
+feud	jiangxi_soviet	1931-11	1934-10	116.0	25.9	中華蘇維埃共和國（瑞金）	Chinese Soviet Republic (Ruijin)	中華ソビエト共和国	共產黨在江西的根據地政權。	The Communist base state in Jiangxi.	江西の共産党政権。	中华苏维埃共和国
+feud	xian_incident	1936-12	1936-12	108.94	34.27	西安事變	Xi'an Incident	西安事件	張學良扣押蔣介石，促成國共合作。	Zhang Xueliang detains Chiang, forcing a united front.	国共合作の契機。	西安事变
+feud	228	1947-02	1947-05	121.51	25.04	二二八事件	February 28 Incident	二・二八事件	臺灣民眾反抗陳儀政府，遭軍隊鎮壓。	A Taiwanese uprising against Chen Yi's government, crushed by troops.	台湾の民衆蜂起と弾圧。	二二八事件
+power	green_gang	1911-10	1949-05	121.47	31.23	青幫	Green Gang	青幇	上海的幫會勢力，杜月笙、黃金榮。	The Shanghai underworld of Du Yuesheng and Huang Jinrong.	上海の秘密結社。	青帮
+power	yan_xishan	1911-10	1949-04	112.55	37.87	閻錫山的山西	Yan Xishan's Shanxi	閻錫山の山西	閻錫山長期統治的「模範省」。	The "model province" Yan Xishan ruled for decades.	閻錫山の支配。	阎锡山
+power	ma_clique	1912-01	1949-09	103.83	36.06	西北馬家軍	Ma clique	馬家軍	甘肅、青海、寧夏的回族軍閥。	The Hui warlords of Gansu, Qinghai and Ningxia.	回族軍閥。	马家军
+us	legation	1901-09	1945-08	116.4	39.9	東交民巷使館區	Legation Quarter, Beijing	北京公使館区域	辛丑條約後各國駐軍的使館區。	The guarded legation quarter after the Boxer Protocol.	義和団事件後の公使館区域。	东交民巷
+us	kwantung	1919-04	1945-08	123.43	41.8	關東軍	Kwantung Army	関東軍	日本在東北的駐軍，發動九一八事變。	Japan's army in Manchuria that staged the Mukden Incident.	満洲の日本軍。	关东军
+us	shanghai_concessions	1911-09	1943-08	121.48	31.23	上海租界與萬國商團	Shanghai concessions and Volunteer Corps	上海租界	公共租界與法租界的外國武力。	Foreign forces in the International Settlement and French Concession.	共同租界とフランス租界。	上海租界
+us	us_marines_china	1927-03	1941-12	121.47	31.23	美國海軍陸戰隊第四團	US 4th Marines in Shanghai	米海兵隊第4連隊	駐防上海的美軍。	The US Marines stationed in Shanghai.	上海駐留の米海兵隊。	

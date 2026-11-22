@@ -10,3 +10,10 @@ power	azerbaijan_peoples	1945-11	1946-12	46.29	38.08	亞塞拜然人民政府	Az
 power	mahabad	1946-01	1946-12	45.72	36.76	馬哈巴德共和國	Republic of Mahabad	マハーバード共和国	庫德人在蘇聯支持下建立的短命共和國。	A short-lived Kurdish republic backed by the Soviets.	クルド人の共和国。	马哈巴德共和国
 us	britain_south	1941-08	1946-03	48.3	30.36	英軍駐守南部油田	British forces in the southern oilfields	南部油田の英軍	英軍占領胡齊斯坦油田與南部，經「波斯走廊」援助蘇聯。	British troops held the oilfields and ran the Persian Corridor to the Soviets.	ペルシア回廊。	波斯走廊
 us	soviet_north	1941-08	1946-05	46.29	38.08	蘇軍駐守北部	Soviet forces in the north	北部のソ連軍	蘇軍占領北部，戰後拖延撤軍引發伊朗危機。	Soviet troops held the north and were slow to leave, causing the Iran crisis.	撤退遅延がイラン危機に。	1946年伊朗危机
+feud	khorramites	0816-01	0837-01	47.0	38.5	胡拉米派	Khurramites	フッラム教徒	巴拜克領導的反阿拉伯運動。	The anti-Caliphate movement led by Babak.	バーバクの運動。	胡拉米派
+feud	constitutional	1905-12	1911-12	51.39	35.69	立憲革命	Persian Constitutional Revolution	イラン立憲革命	建立議會與憲法的革命。	The revolution that won a parliament and constitution.	議会と憲法を求めた革命。	波斯立宪革命
+feud	tobacco	1891-12	1892-01	51.39	35.69	菸草抵制運動	Tobacco Protest	タバコ・ボイコット運動	反對英商菸草專賣的全國抵制。	A nationwide boycott of a British tobacco monopoly.	たばこ利権反対運動。	烟草抗议
+feud	green	2009-06	2010-02	51.39	35.69	綠色運動	Green Movement	緑の運動	2009 年總統選舉爭議後的抗議。	Protests after the disputed 2009 election.	2009年大統領選後の抗議。	伊朗绿色运动
+feud	mek	1981-06	1988-08	51.39	35.69	人民聖戰者組織武裝	People's Mojahedin insurgency	モジャーヘディーネ・ハルク	與伊斯蘭共和國的武裝衝突。	Its armed struggle with the Islamic Republic.	イスラム共和国との武装闘争。	伊朗人民圣战者组织
+power	lurs	1155-01	1424-01	49.9	32.5	盧爾阿塔貝格	Lur atabegs	ルル・アタベク	札格羅斯山區的地方王朝。	Local dynasties of the Zagros.	ザグロスの地方王朝。	
+us	us_advisors	1947-01	1979-02	51.39	35.69	美國軍事顧問團	US military mission	米国軍事顧問団	巴勒維時期的美軍顧問。	US advisers under the Pahlavis.	パフラヴィー期の米軍顧問。	

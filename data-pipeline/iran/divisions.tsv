@@ -30,14 +30,33 @@ a_mesopotamia	#e3c9a8	伊拉克（下美索不達米亞）、賈濟拉（傳統�
 a_caucasus	#e9c46a	亞美尼亞、阿蘭（傳統省份）	亚美尼亚、阿兰（传统省份）	Arminiya and Arran (traditional province)	アルミーニヤ、アッラーン（伝統的な州）
 a_transoxiana	#f4a261	河中地區（傳統省份）	河中地区（传统省份）	Transoxiana (Ma wara al-nahr) (traditional province)	マー・ワラー・アンナフル（伝統的な州）
 a_afghanistan	#e76f51	扎布利斯坦、吐火羅斯坦（傳統省份）	扎布利斯坦、吐火罗斯坦（传统省份）	Zabulistan and Tokharistan (traditional province)	ザーブリスターン、トハーリスターン（伝統的な州）
-m_azarbaijan	#c9b79c	東西亞塞拜然、阿爾達比勒、贊詹（4 省）	东西亚塞拜然、阿尔达比勒、赞詹（4 省）	East and West Azerbaijan, Ardabil, Zanjan (4 provinces)	East and West Azerbaijan, Ardabil, Zanjan（州）
-m_gilan	#f6b98a	吉蘭省	吉兰省	Gilan province	Gilan（州）
-m_tabaristan	#a594cf	馬贊德蘭、戈勒斯坦（2 省）	马赞德兰、戈勒斯坦（2 省）	Mazandaran, Golestan (2 provinces)	Mazandaran, Golestan（州）
-m_centre	#cc94a0	德黑蘭、厄爾布爾士、加茲溫、庫姆、中央、塞姆南（6 省）	德黑兰、厄尔布尔士、加兹温、库姆、中央、塞姆南（6 省）	Tehran, Alborz, Qazvin, Qom, Markazi, Semnan (6 provinces)	Tehran, Alborz, Qazvin, Qom, Markazi, Semnan（州）
-m_media	#d6c8b0	哈馬丹、克爾曼沙阿、庫德斯坦、洛雷斯坦、伊拉姆（5 省）	哈马丹、克尔曼沙阿、库德斯坦、洛雷斯坦、伊拉姆（5 省）	Hamadan, Kermanshah, Kurdistan, Lorestan, Ilam (5 provinces)	Hamadan, Kermanshah, Kurdistan, Lorestan, Ilam（州）
-m_khuzestan	#8cc5d6	胡齊斯坦省	胡齐斯坦省	Khuzestan province	Khuzestan（州）
-m_isfahan	#a3c4a8	伊斯法罕、恰哈馬哈勒—巴赫蒂亞里、科吉盧耶—博韋艾哈邁德、亞茲德（4 省）	伊斯法罕、恰哈马哈勒—巴赫蒂亚里、科吉卢耶—博韦艾哈迈德、亚兹德（4 省）	Isfahan, Chaharmahal and Bakhtiari, Kohgiluyeh, Yazd (4 provinces)	Isfahan, Chaharmahal and Bakhtiari, Kohgiluyeh, Yazd（州）
-m_fars	#e3c9a8	法爾斯、布什爾（2 省）	法尔斯、布什尔（2 省）	Fars, Bushehr (2 provinces)	Fars, Bushehr（州）
-m_kerman	#e9c46a	克爾曼、荷姆茲甘（2 省）	克尔曼、荷姆兹甘（2 省）	Kerman, Hormozgan (2 provinces)	Kerman, Hormozgan（州）
-m_sistan	#f4a261	錫斯坦—俾路支斯坦省	锡斯坦—俾路支斯坦省	Sistan and Baluchestan province	Sistan and Baluchestan（州）
-m_khorasan	#e76f51	拉扎維、北、南呼羅珊（3 省）	拉扎维、北、南呼罗珊（3 省）	Razavi, North and South Khorasan (3 provinces)	Razavi, North and South Khorasan（州）
+a_02	#e9c46a	西亞塞拜然省	西亚塞拜然省	West Azerbaijan	西アーザルバーイジャーン州
+a_01	#6fb3c7	東阿塞拜疆省	东阿塞拜疆省	East Azerbaijan	東アーザルバーイジャーン州
+a_03	#a594cf	阿爾達比勒省	阿尔达比勒省	Ardabil	アルダビール州
+a_19	#e3c9a8	吉蘭省	吉兰省	Gilan	ギーラーン州
+a_16	#2a9d8f	庫爾德斯坦省	库尔德斯坦省	Kurdistan	コルデスターン州
+a_17	#f6b98a	克爾曼沙汗省	克尔曼沙汗省	Kermanshah	ケルマーンシャー州
+a_05	#a3c4a8	伊拉姆省	伊拉姆省	Ilam	イーラーム州
+a_10	#8ab17d	胡齊斯坦省	胡齐斯坦省	Khuzestan	フーゼスターン州
+a_31	#c9b79c	北呼羅珊省	北呼罗珊省	North Khorasan	北ホラーサーン州
+a_27	#8cc5d6	戈勒斯坦省	戈勒斯坦省	Golestan	ゴレスターン州
+a_30	#e76f51	禮薩呼羅珊省	礼萨呼罗珊省	Razavi Khorasan	ラザヴィー・ホラーサーン州
+a_29	#d8a7b1	南呼羅珊省	南呼罗珊省	South Khorasan	南ホラーサーン州
+a_13	#d6c8b0	錫斯坦－俾路支斯坦省	锡斯坦－俾路支斯坦省	Sistan and Baluchestan	スィースターン・バルーチェスターン州
+a_06	#f4a261	布什爾省	布什尔省	Bushehr	ブーシェフル州
+a_23	#b5a7d8	霍爾木茲甘省	霍尔木兹甘省	Hormozgan	ホルモズガーン州
+a_21	#cc94a0	馬贊德蘭省	马赞德兰省	Mazandaran	マーザンダラーン州
+a_12	#e9c46a	塞姆南省	塞姆南省	Semnan	セムナーン州
+a_11	#6fb3c7	贊詹省	赞詹省	Zanjan	ザンジャーン州
+a_28	#a594cf	加茲溫省	加兹温省	Qazvin	ガズヴィーン州
+a_22	#e3c9a8	中央省	中央省	Markazi	マルキャズィー州
+a_04	#2a9d8f	伊斯法罕省	伊斯法罕省	Isfahan	エスファハーン州
+a_08	#f6b98a	恰哈馬哈勒－巴赫蒂亞里省	恰哈马哈勒－巴赫蒂亚里省	Chaharmahal and Bakhtiari	チャハール＝マハール・バフティヤーリー州
+a_18	#a3c4a8	科吉盧耶－博韋艾哈邁德省	科吉卢耶－博韦艾哈迈德省	Kohgiluyeh and Boyer-Ahmad	コフギールーイェ・ブーイェル＝アフマド州
+a_14	#8ab17d	法爾斯省	法尔斯省	Fars	ファールス州
+a_15	#c9b79c	克爾曼省	克尔曼省	Kerman	ケルマーン州
+a_24	#8cc5d6	哈馬丹省	哈马丹省	Hamadan	ハマダーン州
+a_20	#e76f51	洛雷斯坦省	洛雷斯坦省	Lorestan	ロレスターン州
+a_25	#d8a7b1	亞茲德省	亚兹德省	Yazd	ヤズド州
+a_26	#d6c8b0	庫姆省	库姆省	Qom	ゴム州
+a_07	#f4a261	德黑蘭省	德黑兰省	Tehran	テヘラン州

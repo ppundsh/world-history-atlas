@@ -18,4 +18,6 @@ D = {'oran': '13 31 46 22 20 29 27 48 45 32 14 38 02 44', 'algiers': '16 09 35 4
 for k, v in D.items(): U.put(k, U.a1(*['DZ-' + c for c in v.split()]))
 U.put('ifriqiya', U.a0('TUN'))
 U.put('andalus', U.a1(*['ES-' + c for c in 'AL CA CO GR H J MA SE'.split()]))
+# the country's real first-level divisions (the old ids above are aliases in region.json "groups")
+U.admin1('MAR', 'ma_')
 U.write(OUT)

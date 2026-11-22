@@ -31,8 +31,8 @@ const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germ
 const THEMES = ['language', 'finance', 'fgo', 'internet'];
 
 // events (keyed like fetch.mjs / eventinfo.js)
-const { WORLD_EVENTS } = await import(new URL('src/worldEvents.gen.js', ROOT));
-const events = WORLD_EVENTS.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]], year: e.y }));
+const { WORLD_EVENTS, MODE_EVENTS = {} } = await import(new URL('src/worldEvents.gen.js', ROOT));
+const events = [...WORLD_EVENTS, ...Object.values(MODE_EVENTS).flat()].map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]], year: e.y }));
 const pageYear = new Map();                                     // "wl:title" → year
 const page = (wl, title, y) => { title = (title || '').trim(); if (!title || y == null) return; const k = wl + ':' + title; if (!pageYear.has(k) || y < pageYear.get(k)) pageYear.set(k, y); };
 for (const r of REGIONS) {

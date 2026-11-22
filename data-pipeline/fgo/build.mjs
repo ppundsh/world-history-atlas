@@ -4,8 +4,9 @@
 // Wikidata in the browser (see artworks.js), and the notes describe the originals in this project's own words.
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as OpenCC from 'opencc-js';
-const here = path.dirname(new URL(import.meta.url).pathname);
+const here = path.dirname(fileURLToPath(import.meta.url));
 const toHans = OpenCC.Converter({ from: 'tw', to: 'cn' });
 const rows = (f, n) => fs.readFileSync(path.join(here, f), 'utf8').split('\n').filter(l => l.trim() && !l.startsWith('#')).map((l, i) => {
   const c = l.split('\t'); if (c.length !== n) throw new Error(`${f} line ${i}: ${c.length} columns`); return c;

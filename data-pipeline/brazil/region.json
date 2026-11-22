@@ -39,6 +39,63 @@
    "para",
    "maranhao",
    "ceara"
+  ],
+  "bahia": [
+   "br_ba",
+   "br_se"
+  ],
+  "pernambuco": [
+   "br_pe",
+   "br_al",
+   "br_pb",
+   "br_rn"
+  ],
+  "ceara": [
+   "br_ce",
+   "br_pi"
+  ],
+  "maranhao": [
+   "br_ma"
+  ],
+  "para": [
+   "br_pa",
+   "br_ap"
+  ],
+  "amazonas": [
+   "br_am",
+   "br_rr"
+  ],
+  "acre": [
+   "br_ac"
+  ],
+  "rondonia": [
+   "br_ro"
+  ],
+  "mato_grosso": [
+   "br_mt",
+   "br_ms"
+  ],
+  "goias": [
+   "br_go",
+   "br_df",
+   "br_to"
+  ],
+  "minas": [
+   "br_mg"
+  ],
+  "rio": [
+   "br_rj",
+   "br_es"
+  ],
+  "sao_paulo": [
+   "br_sp"
+  ],
+  "parana": [
+   "br_pr",
+   "br_sc"
+  ],
+  "rio_grande": [
+   "br_rs"
   ]
  }
 }

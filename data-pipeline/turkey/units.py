@@ -15,4 +15,6 @@ G = {'thrace': '22 39 59', 'istanbul': '34', 'bithynia': '41 54 77 16 11', 'mysi
      'erzurum': '25 24 36 75 04 76', 'van': '65 13 49 30', 'diyarbakir': '21 72 56 73 47 12 62 23 44', 'urfa': '63 27 79 02 46'}
 for k, v in G.items(): U.put(k, U.a1(*['TR-' + c for c in v.split()]))
 U.put('greece', U.a0('GRC')); U.put('bulgaria', U.a0('BGR')); U.put('syria', U.a0('SYR')); U.put('cyprus', U.a0('CYP', 'CYN') if 'CYN' in U.A0 else U.a0('CYP'))
+# the country's real first-level divisions (the old ids above are aliases in region.json "groups")
+U.admin1('TUR', 'tr_')
 U.write(OUT)

@@ -1,0 +1,42 @@
+# 中國模式：行政區劃。欄位：id	顏色	繁中	簡中	English	日本語
+none	#dedad2	（不屬中華民國或未劃分）	（不属中华民国或未划分）	(not part of the Republic / not drawn)	（中華民国外・区分なし）
+p_zhili	#6fb3c7	直隸省	直隶省	Zhili	直隷省
+p_hebei	#a594cf	河北省	河北省	Hebei	河北省
+p_shandong	#e3c9a8	山東省	山东省	Shandong	山東省
+p_shanxi	#2a9d8f	山西省	山西省	Shanxi	山西省
+p_henan	#f6b98a	河南省	河南省	Henan	河南省
+p_jiangsu	#a3c4a8	江蘇省	江苏省	Jiangsu	江蘇省
+p_anhui	#8ab17d	安徽省	安徽省	Anhui	安徽省
+p_jiangxi	#c9b79c	江西省	江西省	Jiangxi	江西省
+p_fujian	#8cc5d6	福建省	福建省	Fujian	福建省
+p_zhejiang	#e76f51	浙江省	浙江省	Zhejiang	浙江省
+p_hubei	#d8a7b1	湖北省	湖北省	Hubei	湖北省
+p_hunan	#d6c8b0	湖南省	湖南省	Hunan	湖南省
+p_shaanxi	#f4a261	陝西省	陕西省	Shaanxi	陝西省
+p_gansu	#b5a7d8	甘肅省	甘肃省	Gansu	甘粛省
+p_xinjiang	#cc94a0	新疆省	新疆省	Xinjiang	新疆省
+p_sichuan	#e9c46a	四川省	四川省	Sichuan	四川省
+p_guangdong	#6fb3c7	廣東省	广东省	Guangdong	広東省
+p_guangxi	#a594cf	廣西省	广西省	Guangxi	広西省
+p_yunnan	#e3c9a8	雲南省	云南省	Yunnan	雲南省
+p_guizhou	#2a9d8f	貴州省	贵州省	Guizhou	貴州省
+p_fengtian	#f6b98a	奉天省	奉天省	Fengtian	奉天省
+p_liaoning	#a3c4a8	遼寧省	辽宁省	Liaoning	遼寧省
+p_jilin	#8ab17d	吉林省	吉林省	Jilin	吉林省
+p_heilongjiang	#c9b79c	黑龍江省	黑龙江省	Heilongjiang	黒竜江省
+p_rehe_s	#8cc5d6	熱河特別區	热河特别区	Jehol Special Region	熱河特別区
+p_rehe	#e76f51	熱河省	热河省	Rehe (Jehol)	熱河省
+p_chahar_s	#d8a7b1	察哈爾特別區	察哈尔特别区	Chahar Special Region	チャハル特別区
+p_chahar	#d6c8b0	察哈爾省	察哈尔省	Chahar	チャハル省
+p_suiyuan_s	#f4a261	綏遠特別區	绥远特别区	Suiyuan Special Region	綏遠特別区
+p_suiyuan	#b5a7d8	綏遠省	绥远省	Suiyuan	綏遠省
+p_chuanbian	#cc94a0	川邊特別區	川边特别区	Chuanbian Special Region	川辺特別区
+p_xikang	#e9c46a	西康省	西康省	Xikang	西康省
+p_ningxia	#6fb3c7	寧夏省	宁夏省	Ningxia	寧夏省
+p_qinghai	#a594cf	青海省	青海省	Qinghai	青海省
+p_shanghai	#e3c9a8	上海特別市	上海特别市	Shanghai	上海特別市
+p_xingan	#2a9d8f	興安省	兴安省	Xing'an	興安省
+p_hainan	#f6b98a	海南特區	海南特区	Hainan Special Administrative Region	海南特別行政区
+p_taiwan	#a3c4a8	臺灣省	台湾省	Taiwan Province	台湾省
+p_tibet	#8ab17d	西藏地方	西藏地方	Tibet	チベット
+p_waimeng	#c9b79c	外蒙古	外蒙古	Outer Mongolia	外モンゴル

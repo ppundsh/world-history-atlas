@@ -13,6 +13,8 @@
 | [V-Dem Country-Year Dataset v15（Varieties of Democracy Institute；vdemdata）](https://www.v-dem.net/) | 政體模式：世界政體四分類與元首類型（衍生資料 public/data/regimes.json 依同授權釋出） | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | [NASA Earth Observatory — Blue Marble: Next Generation (Reto Stöckli)](https://earthobservatory.nasa.gov/features/BlueMarble) | 衛星影像底圖 | 公有領域（註明 NASA Earth Observatory） |
 | [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright) | 台灣主要河川（放大時）；地區模式的鐵路與道路路線（各模式的 routes_osm.json 以 ODbL 授權提供） | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/) |
+| [Terrain Tiles（Mapzen／Tilezen，AWS 開放資料）](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) | 各國模式自然地理底圖的地形陰影（本專案以高程資料計算） | [SRTM、GMTED2010、ETOPO1 等（公有領域／開放授權）](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) |
+| [TeleGeography — Submarine Cable Map](https://www.submarinecablemap.com/) | 網際網路模式與各地區模式的現役海底電纜路線、登陸站、啟用年、長度與營運者（路線已簡化） | [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) |
 | [內政部 鄉鎮市區界線（經 npm 套件 taiwan-atlas）](https://data.gov.tw/) | 台灣模式的單元（由鄉鎮市區組成） | [政府資料開放授權條款－第1版](https://data.gov.tw/license) |
 | [內政部地政司 2025 年版全臺灣 20 公尺網格數值地形模型 DTM 資料](https://data.gov.tw/dataset/176927) | 台灣地形陰影圖磚（本專案加工製作，public/relief/tw） | [政府資料開放授權條款－第1版](https://data.gov.tw/license) |
 | [国土交通省 国土数値情報（行政区域データ N03，2021 年）](https://nlftp.mlit.go.jp/ksj/) | 日本模式的單元（由市區町村組成） | [国土数値情報利用約款：「国土数値情報（行政区域データ）（国土交通省）」を加工して作成](https://nlftp.mlit.go.jp/ksj/other/agreement.html) |

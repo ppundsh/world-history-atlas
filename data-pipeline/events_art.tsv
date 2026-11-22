@@ -1,0 +1,25 @@
+# art 模式自己的大事記（關閉「世界大事」時仍會顯示）。欄位同 events_world.tsv：起年	迄年	重大	繁中名	簡中名	English	日本語	維基中文	English article	日本語記事	繁中說明	English	日本語	經度	緯度。中、日文條目留空時，抓圖時由英文條目的跨語言連結補上。
+-35000			最早的洞穴壁畫與雕像	最早的洞穴壁画与雕像	The first cave paintings and figurines	最古の洞窟壁画と彫像		Cave painting		舊石器時代的肖維洞穴、蘇拉威西壁畫。	Palaeolithic paintings at Chauvet and in Sulawesi.	旧石器時代のショーヴェ洞窟やスラウェシの壁画。	4.42	44.39
+-2560			吉薩大金字塔	吉萨大金字塔	The Great Pyramid of Giza	ギザの大ピラミッド		Great Pyramid of Giza		古埃及建築的巔峰。	The summit of Egyptian building.	古代エジプト建築の頂点。	31.13	29.98
+-438			帕德嫩神廟完工	帕德嫩神庙完工	The Parthenon is completed	パルテノン神殿の完成		Parthenon		古典希臘藝術的代表。	The emblem of classical Greek art.	古典期ギリシア美術の代表。	23.73	37.97
+-210			秦始皇兵馬俑	秦始皇兵马俑	The Terracotta Army	兵馬俑		Terracotta Army		陪葬的數千尊陶俑。	Thousands of clay soldiers buried with the First Emperor.	始皇帝陵に副葬された数千体の陶俑。	109.27	34.38
+50			犍陀羅佛教藝術	犍陀罗佛教艺术	Gandhara Buddhist art	ガンダーラ美術		Greco-Buddhist art		希臘化風格與佛像的結合。	Hellenistic style meets the Buddha image.	ヘレニズム様式と仏像の融合。	71.5	34.0
+537			聖索菲亞大教堂	圣索菲亚大教堂	Hagia Sophia	アヤソフィア		Hagia Sophia		拜占庭建築的巔峰。	The summit of Byzantine building.	ビザンツ建築の頂点。	28.98	41.01
+752			東大寺大佛開眼	东大寺大佛开眼	The Great Buddha of Tōdai-ji	東大寺大仏開眼		Tōdai-ji		奈良時代佛教藝術。	Buddhist art of the Nara period.	奈良時代の仏教美術。	135.84	34.69
+1113	1150		吳哥窟	吴哥窟	Angkor Wat	アンコール・ワット		Angkor Wat		高棉建築的代表。	The masterpiece of Khmer architecture.	クメール建築の代表作。	103.87	13.41
+1163			巴黎聖母院動工	巴黎圣母院动工	Notre-Dame de Paris begun	ノートルダム大聖堂の着工		Notre-Dame de Paris		哥德式建築。	Gothic architecture.	ゴシック建築。	2.35	48.85
+1305			喬托斯克羅威尼禮拜堂壁畫	乔托斯克罗威尼礼拜堂壁画	Giotto's Scrovegni frescoes	ジョットのスクロヴェーニ礼拝堂		Scrovegni Chapel		文藝復興的先聲。	A forerunner of the Renaissance.	ルネサンスの先駆け。	11.88	45.41
+1436			布魯內萊斯基圓頂完成	布鲁内莱斯基圆顶完成	Brunelleschi's dome is completed	ブルネレスキのドーム完成		Florence Cathedral		佛羅倫斯文藝復興建築。	Renaissance architecture in Florence.	フィレンツェのルネサンス建築。	11.26	43.77
+1503			蒙娜麗莎	蒙娜丽莎	The Mona Lisa	モナ・リザ		Mona Lisa		達文西的肖像畫。	Leonardo's portrait.	レオナルドの肖像画。	11.26	43.77
+1512			西斯汀禮拜堂天頂畫	西斯廷礼拜堂天顶画	The Sistine Chapel ceiling	システィーナ礼拝堂天井画		Sistine Chapel ceiling		米開朗基羅的盛期文藝復興傑作。	Michelangelo's High Renaissance masterpiece.	ミケランジェロの盛期ルネサンスの傑作。	12.45	41.9
+1642			林布蘭〈夜巡〉	伦勃朗《夜巡》	Rembrandt's Night Watch	レンブラント『夜警』		The Night Watch		荷蘭黃金時代繪畫。	Dutch Golden Age painting.	オランダ黄金時代の絵画。	4.9	52.37
+1653			泰姬瑪哈陵完工	泰姬玛哈陵完工	The Taj Mahal is completed	タージ・マハルの完成		Taj Mahal		蒙兀兒建築的巔峰。	The summit of Mughal architecture.	ムガル建築の頂点。	78.04	27.18
+1831			葛飾北齋〈神奈川沖浪裏〉	葛饰北斋《神奈川冲浪里》	Hokusai's Great Wave	葛飾北斎『神奈川沖浪裏』		The Great Wave off Kanagawa		浮世繪影響歐洲印象派。	Ukiyo-e that inspired European Impressionists.	欧州の印象派に影響を与えた浮世絵。	139.69	35.69
+1874			第一屆印象派畫展	第一届印象派画展	The first Impressionist exhibition	第1回印象派展		Impressionism		莫內〈印象·日出〉。	Monet's Impression, Sunrise.	モネ『印象・日の出』。	2.33	48.87
+1907			畢卡索〈亞維農的少女〉	毕加索《亚维农的少女》	Picasso's Les Demoiselles d'Avignon	ピカソ『アヴィニョンの娘たち』		Les Demoiselles d'Avignon		立體主義的開端。	The birth of Cubism.	キュビスムの始まり。	2.35	48.86
+1917			杜象〈噴泉〉	杜尚《泉》	Duchamp's Fountain	デュシャン『泉』		Fountain (Duchamp)		現成物與觀念藝術。	The readymade and conceptual art.	レディメイドとコンセプチュアル・アート。	-74.0	40.71
+1919			包浩斯創立	包豪斯创立	The Bauhaus is founded	バウハウス創立		Bauhaus		現代設計與建築。	Modern design and architecture.	近代デザインと建築。	11.33	50.98
+1937			畢卡索〈格爾尼卡〉	毕加索《格尔尼卡》	Picasso's Guernica	ピカソ『ゲルニカ』		Guernica (Picasso)		控訴西班牙內戰轟炸。	A protest against the bombing in the Spanish Civil War.	スペイン内戦の空爆への抗議。	-2.68	43.31
+1962			安迪·沃荷〈康寶濃湯罐〉	安迪·沃霍尔《坎贝尔汤罐头》	Warhol's Campbell's Soup Cans	ウォーホル『キャンベルのスープ缶』		Campbell's Soup Cans		普普藝術。	Pop Art.	ポップ・アート。	-118.37	34.08
+1973			雪梨歌劇院落成	悉尼歌剧院落成	The Sydney Opera House opens	シドニー・オペラハウス開館		Sydney Opera House		現代建築的地標。	A landmark of modern architecture.	現代建築のランドマーク。	151.21	-33.86
+1997			畢爾包古根漢美術館	毕尔包古根汉美术馆	The Guggenheim Bilbao opens	ビルバオ・グッゲンハイム美術館開館		Guggenheim Museum Bilbao		解構主義建築與「畢爾包效應」。	Deconstructivist architecture and the "Bilbao effect".	脱構築主義建築と「ビルバオ効果」。	-2.93	43.27

@@ -1,0 +1,44 @@
+# religion 模式自己的大事記（關閉「世界大事」時仍會顯示）。欄位同 events_world.tsv：起年	迄年	重大	繁中名	簡中名	English	日本語	維基中文	English article	日本語記事	繁中說明	English	日本語	經度	緯度。中、日文條目留空時，抓圖時由英文條目的跨語言連結補上。
+-1500			吠陀時代開始	吠陀时代开始	The Vedic period begins	ヴェーダ時代の始まり		Vedic period		雅利安人在印度西北編成《梨俱吠陀》，婆羅門教的源頭。	The Rigveda is composed in north-western India, the root of Brahmanism.	インド北西部でリグ・ヴェーダが編まれ、バラモン教の源となった。	75.0	30.5
+-1300			摩西出埃及（傳說）	摩西出埃及（传说）	The Exodus (tradition)	出エジプト（伝承）		The Exodus		希伯來傳統中摩西帶領以色列人離開埃及，是猶太教的核心敘事。	In Hebrew tradition Moses leads the Israelites out of Egypt, a founding story of Judaism.	ヘブライの伝承でモーセがイスラエルの民を率いてエジプトを出た。ユダヤ教の中心的な物語。	32.5	30.0
+-600			瑣羅亞斯德教傳布波斯	琐罗亚斯德教传布波斯	Zoroastrianism spreads in Persia	ゾロアスター教がペルシアに広まる		Zoroastrianism		以善惡二元與審判觀念影響後來的一神教。	Its dualism of good and evil and its judgement shaped later monotheisms.	善悪二元論と審判の観念が後の一神教に影響を与えた。	53.0	32.0
+-528			佛陀悟道	佛陀悟道	The Buddha's enlightenment	仏陀の悟り		Enlightenment in Buddhism		悉達多在菩提伽耶的菩提樹下悟道，佛教由此開始。	Siddhartha Gautama attains enlightenment under the Bodhi tree at Bodh Gaya.	シッダールタがブッダガヤの菩提樹の下で悟りを開き、仏教が始まった。	84.99	24.69
+-500			大雄與耆那教	大雄与耆那教	Mahavira and Jainism	マハーヴィーラとジャイナ教		Mahavira		大雄確立不殺生、苦行的耆那教。	Mahavira sets out Jainism of non-violence and asceticism.	マハーヴィーラが不殺生と苦行のジャイナ教を確立した。	85.5	25.6
+-500			孔子與儒家思想	孔子与儒家思想	Confucius teaches	孔子の教え		Confucius		孔子在魯國講學，奠定儒家倫理。	Confucius teaches in Lu, laying down Confucian ethics.	孔子が魯で教え、儒家の倫理を築いた。	116.99	35.6
+-260			阿育王皈依佛教	阿育王皈依佛教	Ashoka embraces Buddhism	アショーカ王の仏教帰依		Ashoka		羯陵伽戰後阿育王推行佛法，遣使向各地傳教。	After the Kalinga war Ashoka spreads the Dharma and sends missions abroad.	カリンガ戦争後、アショーカ王が仏法を広め各地に使節を送った。	85.14	25.61
+-4			耶穌誕生	耶稣诞生	Birth of Jesus	イエスの誕生		Nativity of Jesus		基督教的開端；確切年份約在前 6 至前 4 年。	The beginning of Christianity; the exact year is about 6 to 4 BC.	キリスト教の始まり。正確な年は紀元前6〜4年ごろ。	35.2	31.7
+30			耶穌受難	耶稣受难	Crucifixion of Jesus	イエスの十字架刑		Crucifixion of Jesus		耶穌在耶路撒冷被釘十字架，門徒宣講復活。	Jesus is crucified in Jerusalem; his followers proclaim the resurrection.	イエスがエルサレムで十字架にかけられ、弟子たちが復活を宣べた。	35.23	31.78
+65			佛教傳入中國（白馬寺）	佛教传入中国（白马寺）	Buddhism reaches China	仏教が中国に伝わる（白馬寺）		White Horse Temple		相傳漢明帝遣使求法，於洛陽建白馬寺。	Emperor Ming of Han is said to have sent for the Dharma and built the White Horse Temple at Luoyang.	漢の明帝が使者を送り洛陽に白馬寺を建てたと伝わる。	112.6	34.72
+70			第二聖殿被毀	第二圣殿被毁	Destruction of the Second Temple	第二神殿の破壊		Siege of Jerusalem (70 CE)		羅馬攻陷耶路撒冷，猶太人流散，拉比猶太教成形。	Rome takes Jerusalem; Jews disperse and rabbinic Judaism takes shape.	ローマがエルサレムを攻略し、ユダヤ人は離散、ラビ・ユダヤ教が形成された。	35.23	31.78
+142			張道陵創五斗米道	张道陵创五斗米道	Zhang Daoling founds the Way of the Celestial Masters	張道陵の五斗米道		Way of the Celestial Masters		道教最早的教團組織。	The first organised Daoist church.	道教最初の教団組織。	103.6	30.8
+313			米蘭敕令	米兰敕令	Edict of Milan	ミラノ勅令		Edict of Milan		君士坦丁與李錫尼承認基督教合法。	Constantine and Licinius grant Christianity legal toleration.	コンスタンティヌスとリキニウスがキリスト教を公認した。	9.19	45.46
+325			第一次尼西亞公會議	第一次尼西亚公会议	First Council of Nicaea	第1ニカイア公会議		First Council of Nicaea		確立三位一體教義，制定《尼西亞信經》。	Defines the Trinity and issues the Nicene Creed.	三位一体の教義を定め、ニカイア信条を制定した。	29.72	40.43
+380			基督教成為羅馬國教	基督教成为罗马国教	Christianity becomes Rome's state religion	キリスト教がローマ国教に		Edict of Thessalonica		狄奧多西一世頒布帖撒羅尼迦敕令。	Theodosius I issues the Edict of Thessalonica.	テオドシウス1世がテッサロニカ勅令を発した。	22.94	40.64
+538			佛教傳入日本	佛教传入日本	Buddhism reaches Japan	仏教公伝		Buddhism in Japan		百濟聖王向日本獻佛像與經論。	King Seong of Baekje sends Buddhist images and sutras to Japan.	百済の聖王が日本に仏像と経論を送った。	135.8	34.5
+610			穆罕默德開始受啟示	穆罕默德开始受启示	Muhammad's first revelation	ムハンマドの最初の啓示		Muhammad's first revelation		在麥加附近希拉山洞，伊斯蘭教開始。	In the cave of Hira near Mecca; the beginning of Islam.	メッカ近郊ヒラー山の洞窟で。イスラム教の始まり。	39.86	21.46
+622			希吉拉：遷往麥地那	希吉拉：迁往麦地那	The Hijra to Medina	ヒジュラ（メディナへの聖遷）		Hijrah		伊斯蘭曆紀元。	Year 1 of the Islamic calendar.	イスラム暦の紀元。	39.61	24.47
+641			佛教傳入吐蕃	佛教传入吐蕃	Buddhism reaches Tibet	仏教がチベットに伝わる		Songtsen Gampo		松贊干布迎娶文成公主、尺尊公主，興建大昭寺。	Songtsen Gampo marries Chinese and Nepali princesses and builds the Jokhang.	ソンツェン・ガンポが唐とネパールの王女を迎え、ジョカン寺を建てた。	91.13	29.65
+680			卡爾巴拉之戰	卡尔巴拉之战	Battle of Karbala	カルバラーの戦い		Battle of Karbala		侯賽因殉難，什葉派與遜尼派分裂加深。	Husayn is killed; the Shia–Sunni split deepens.	フサインが殉教し、シーア派とスンナ派の分裂が深まった。	44.03	32.62
+1054			東西教會大分裂	东西教会大分裂	The East–West Schism	東西教会の分裂		East–West Schism		羅馬與君士坦丁堡互相絕罰，天主教與東正教分立。	Rome and Constantinople excommunicate each other; Catholic and Orthodox churches part.	ローマとコンスタンティノープルが相互破門し、カトリックと正教会が分かれた。	28.98	41.01
+1096	1099		第一次十字軍東征	第一次十字军东征	The First Crusade	第1回十字軍		First Crusade		西歐騎士攻佔耶路撒冷。	Western knights take Jerusalem.	西欧の騎士がエルサレムを占領した。	35.23	31.78
+1206			伊斯蘭德里蘇丹國	伊斯兰德里苏丹国	The Delhi Sultanate	デリー・スルタン朝		Delhi Sultanate		伊斯蘭在北印度建立長期政權。	Islam establishes lasting rule in northern India.	北インドにイスラムの長期政権が成立した。	77.21	28.61
+1290			伊斯蘭傳入東南亞海島	伊斯兰传入东南亚海岛	Islam reaches maritime Southeast Asia	イスラムが東南アジア島嶼部へ		Islam in Indonesia		蘇門答臘北部須文達那—巴賽成為最早的伊斯蘭王國之一。	Samudera Pasai in northern Sumatra becomes one of the first Muslim kingdoms.	スマトラ北部のサムドラ・パサイが最初期のイスラム王国となった。	97.15	5.18
+1453			鄂圖曼攻陷君士坦丁堡	鄂图曼攻陷君士坦丁堡	The fall of Constantinople	コンスタンティノープルの陥落		Fall of Constantinople		聖索菲亞大教堂改為清真寺。	Hagia Sophia is turned into a mosque.	アヤソフィアがモスクに改められた。	28.98	41.01
+1492			格拉納達陷落，西班牙驅逐猶太人	格拉纳达陷落，西班牙驱逐犹太人	Granada falls; Spain expels the Jews	グラナダ陥落、スペインがユダヤ人を追放		Alhambra Decree		伊比利半島伊斯蘭政權終結。	The end of Muslim rule in Iberia.	イベリア半島のイスラム政権が終わった。	-3.6	37.18
+1501			薩法維王朝以什葉派為國教	萨法维王朝以什叶派为国教	The Safavids make Shiism Iran's religion	サファヴィー朝がシーア派を国教に		Safavid conversion of Iran to Shia Islam		伊朗成為什葉派的中心。	Iran becomes the heartland of Shia Islam.	イランがシーア派の中心となった。	46.29	38.08
+1517			馬丁．路德九十五條論綱	马丁·路德九十五条论纲	Luther's Ninety-five Theses	ルターの95か条の論題		Ninety-five Theses		宗教改革開始，新教誕生。	The Reformation begins; Protestantism is born.	宗教改革が始まり、プロテスタントが生まれた。	12.65	51.87
+1534			英國國教會脫離羅馬	英国国教会脱离罗马	The Church of England breaks with Rome	イングランド国教会のローマからの分離		English Reformation		亨利八世頒布《至尊法案》。	Henry VIII's Act of Supremacy.	ヘンリー8世が国王至上法を制定した。	-0.13	51.5
+1545	1563		特利騰大公會議	特利腾大公会议	The Council of Trent	トリエント公会議		Council of Trent		天主教反宗教改革。	The Catholic Counter-Reformation.	カトリックの対抗宗教改革。	11.12	46.07
+1549			方濟．沙勿略抵日本	方济·沙勿略抵日本	Francis Xavier reaches Japan	ザビエルの来日		Francis Xavier		耶穌會在亞洲傳教。	Jesuit missions in Asia.	イエズス会のアジア宣教。	130.56	31.6
+1604			錫克教《古魯·格蘭特·薩希卜》編成	锡克教《古鲁·格兰特·萨希卜》编成	The Sikh scripture is compiled	シク教聖典の編纂		Guru Granth Sahib		安放於阿姆利則金廟。	Installed at the Golden Temple, Amritsar.	アムリトサルの黄金寺院に安置された。	74.88	31.62
+1618	1648		三十年戰爭	三十年战争	The Thirty Years' War	三十年戦争		Thirty Years' War		新舊教戰爭，《西發里亞和約》確立教隨國定。	Catholic and Protestant states fight; the Peace of Westphalia settles the religion of each state.	新旧両派の戦争。ウェストファリア条約で各国の宗教が定まった。	13.4	50.1
+1620			五月花號：清教徒移民北美	五月花号：清教徒移民北美	The Mayflower Pilgrims	メイフラワー号の巡礼者		Mayflower		為宗教自由渡海。	They cross the Atlantic for religious freedom.	信仰の自由を求めて大西洋を渡った。	-70.66	41.96
+1744			瓦哈比派興起	瓦哈比派兴起	The Wahhabi movement	ワッハーブ派の興起		Wahhabism		瓦哈比與沙烏地家族結盟。	Muhammad ibn Abd al-Wahhab allies with the House of Saud.	ワッハーブとサウード家が同盟した。	46.57	24.74
+1844			巴哈伊教的源起	巴哈伊教的源起	The Báb begins the Bábí faith	バーブ教の始まり		Báb		巴孛宣示，後來發展為巴哈伊信仰。	The Báb's declaration, from which the Baháʼí Faith grew.	バーブの宣言。のちにバハイ教へと発展した。	52.53	29.61
+1850	1864		太平天國	太平天国	The Taiping Heavenly Kingdom	太平天国		Taiping Rebellion		洪秀全以拜上帝教起事。	Hong Xiuquan's God Worshipping Society rises in revolt.	洪秀全が拝上帝会を率いて蜂起した。	118.78	32.06
+1948			以色列建國	以色列建国	Israel is founded	イスラエル建国		Israeli Declaration of Independence		猶太人建立以色列國。	The State of Israel is proclaimed.	イスラエル国が建国された。	34.78	32.08
+1959			達賴喇嘛流亡印度	达赖喇嘛流亡印度	The Dalai Lama goes into exile	ダライ・ラマのインド亡命		1959 Tibetan uprising		藏傳佛教領袖流亡達蘭薩拉。	The Tibetan Buddhist leader settles in Dharamsala.	チベット仏教の指導者がダラムサラに亡命した。	76.32	32.22
+1962	1965		第二次梵蒂岡大公會議	第二次梵蒂冈大公会议	The Second Vatican Council	第2バチカン公会議		Second Vatican Council		天主教現代化改革。	The Catholic Church's modern reforms.	カトリック教会の現代化改革。	12.45	41.9
+1966	1976		文化大革命破四舊	文化大革命破四旧	The Cultural Revolution attacks religion	文化大革命と宗教		Cultural Revolution		寺廟、教堂大量被毀。	Temples and churches are destroyed across China.	中国各地で寺院や教会が破壊された。	116.39	39.91
+1979			伊朗伊斯蘭革命	伊朗伊斯兰革命	The Iranian Revolution	イラン革命		Iranian Revolution		建立什葉派神權共和國。	A Shia theocratic republic is founded.	シーア派の神権共和国が成立した。	51.39	35.69
+1991			蘇聯解體，宗教復興	苏联解体，宗教复兴	The Soviet Union ends; religion revives	ソ連崩壊と宗教の復興		Religion in the Soviet Union		國家無神論告終，東正教與伊斯蘭復興。	State atheism ends; Orthodoxy and Islam revive.	国家無神論が終わり、正教とイスラムが復興した。	37.62	55.75

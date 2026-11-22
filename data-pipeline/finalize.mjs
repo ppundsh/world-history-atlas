@@ -4,9 +4,10 @@
 // Taiwan-usage name is never invented by conversion. Every converted name is listed in names_review.tsv.
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as OpenCC from 'opencc-js';
 
-const here = path.dirname(new URL(import.meta.url).pathname);
+const here = path.dirname(fileURLToPath(import.meta.url));
 const B = path.join(here, 'build');
 const OUT = path.join(here, '..', 'public', 'data');
 const toHant = OpenCC.Converter({ from: 'cn', to: 'tw' });

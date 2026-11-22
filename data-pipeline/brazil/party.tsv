@@ -1,0 +1,124 @@
+# brazil 模式「首長政黨」：各州／省首長所屬政黨（由 data-pipeline/party/fetch-party.mjs 自 Wikidata 產生，請勿手改）。欄位：行政區 id	起(年-月)	政黨代碼	（Wikidata 政黨名稱）
+# 來源：Wikidata（CC0）各州「政府首長職位」（P1313）的歷任者與其任期開始時的政黨；1983-03 起。代理或過渡首長、沒有政黨資料者沿用前一任顏色。
+st_ac	1986-05	br_other	Democratic Movement Party
+st_ac	1990-04	br_psdb	Brazilian Social Democracy Party
+st_ac	1991-03	br_pds	Democratic Social Party
+st_ac	1999-01	br_pt	Workers' Party
+st_ac	2019-01	br_pp	Progressive Party
+st_al	1999-01	br_psb	Brazilian Socialist Party
+st_al	2007-01	br_psdb	Brazilian Social Democracy Party
+st_al	2015-01	br_other	Democratic Movement Party
+st_am	1983-03	br_other	Democratic Movement Party
+st_am	1987-03	br_pdt	Democratic Labour Party
+st_am	1990-04	br_pds	Democratic Social Party
+st_am	1991-03	br_other	Democratic Movement Party
+st_am	1995-01	br_pp	Progressive Party
+st_am	1999-01	br_pdt	Democratic Labour Party
+st_am	2003-01	br_other	Democratic Movement Party
+st_am	2011-01	br_psd	Social Democratic Party
+st_am	2014-04	br_other	Democratic Movement Party
+st_am	2017-05	br_psb	Brazilian Socialist Party
+st_am	2017-10	br_pdt	Democratic Labour Party
+st_am	2019-01	br_other	Social Christian Party
+st_ap	2003-01	br_pdt	Democratic Labour Party
+st_ap	2023-01	br_other	Socialism and Freedom Party
+st_ba	1983-03	br_pds	Democratic Social Party
+st_ba	1987-03	br_other	Democratic Movement Party
+st_ba	1991-03	br_dem	Liberal Front Party
+st_ba	2002-04	br_psd	Social Democratic Party
+st_ba	2003-01	br_dem	Liberal Front Party
+st_ba	2007-01	br_pt	Workers' Party
+st_ce	1987-03	br_psdb	Brazilian Social Democracy Party
+st_ce	2003-01	br_pds	Democratic Social Party
+st_ce	2007-01	br_psb	Brazilian Socialist Party
+st_ce	2015-01	br_pt	Workers' Party
+st_df	1988-10	br_other	Democratic Movement Party
+st_es	1995-01	br_pt	Workers' Party
+st_es	1999-01	br_psdb	Brazilian Social Democracy Party
+st_es	2003-01	br_psb	Brazilian Socialist Party
+st_es	2015-01	br_other	Democratic Movement Party
+st_es	2019-01	br_psb	Brazilian Socialist Party
+st_go	1999-01	br_psdb	Brazilian Social Democracy Party
+st_go	2006-03	br_pp	Progressive Party
+st_go	2011-01	br_psdb	Brazilian Social Democracy Party
+st_go	2019-01	br_dem	Democrats
+st_ma	1999-01	br_pds	Democratic Social Party
+st_ma	2002-04	br_psdb	Brazilian Social Democracy Party
+st_ma	2007-01	br_pdt	Democratic Labour Party
+st_ma	2009-04	br_pds	Democratic Social Party
+st_ma	2014-12	br_other	Democratic Movement Party
+st_ma	2015-01	br_pcdob	Communist Party of Brazil
+st_ma	2022-04	br_psb	Brazilian Socialist Party
+st_mg	1987-03	br_other	Democratic Movement Party
+st_mg	2010-03	br_psdb	Brazilian Social Democracy Party
+st_mg	2015-01	br_pt	Workers' Party
+st_mg	2019-01	br_other	NOVO
+st_ms	1986-05	br_other	Democratic Movement Party
+st_ms	1999-01	br_pt	Workers' Party
+st_ms	2007-01	br_other	Democratic Movement Party
+st_ms	2015-01	br_psdb	Brazilian Social Democracy Party
+st_mt	2002-04	br_psdb	Brazilian Social Democracy Party
+st_mt	2003-01	br_pp	Progressive Party
+st_mt	2010-03	br_other	Democratic Movement Party
+st_mt	2015-01	br_psdb	Brazilian Social Democracy Party
+st_mt	2019-01	br_dem	Democrats
+st_mt	2026-03	br_pdt	Democratic Labour Party
+st_pa	1983-03	br_other	Democratic Movement Party
+st_pa	2011-01	br_psdb	Brazilian Social Democracy Party
+st_pa	2019-01	br_other	Democratic Movement Party
+st_pb	1983-03	br_psb	Brazilian Socialist Party
+st_pb	1986-06	br_pds	Democratic Social Party
+st_pb	1991-03	br_other	Democratic Movement Party
+st_pb	1994-04	br_psdb	Brazilian Social Democracy Party
+st_pb	1995-09	br_other	Democratic Movement Party
+st_pb	2011-01	br_psb	Brazilian Socialist Party
+st_pe	2006-03	br_dem	Democrats
+st_pe	2007-01	br_psb	Brazilian Socialist Party
+st_pe	2023-01	br_psdb	Brazilian Social Democracy Party
+st_pi	2003-01	br_pt	Workers' Party
+st_pi	2010-04	br_psb	Brazilian Socialist Party
+st_pi	2015-01	br_pt	Workers' Party
+st_pr	1995-01	br_pds	National Renewal Alliance Party
+st_pr	2011-01	br_psdb	Brazilian Social Democracy Party
+st_pr	2018-04	br_pp	Progressive Party
+st_pr	2019-01	br_psd	Social Democratic Party
+st_rj	1983-03	br_pdt	Democratic Labour Party
+st_rj	2002-04	br_pt	Workers' Party
+st_rj	2003-01	br_pl	Liberal Party
+st_rj	2014-04	br_other	Democratic Movement Party
+st_rj	2016-03	br_pds	Democratic Social Party
+st_rj	2019-01	br_other	Social Christian Party
+st_rj	2023-01	br_pl	Liberal Party
+st_rn	2019-01	br_pt	Workers' Party
+st_ro	1985-05	br_other	Democratic Movement Party
+st_ro	1991-03	br_pds	Democratic Social Party
+st_ro	1995-01	br_other	Democratic Movement Party
+st_ro	1999-01	br_pds	Democratic Social Party
+st_ro	2003-01	br_psdb	Brazilian Social Democracy Party
+st_ro	2010-03	br_other	Cidadania
+st_ro	2018-04	br_psb	Brazilian Socialist Party
+st_ro	2019-01	br_pl	Social Liberal Party
+st_rr	1988-09	br_other	Democratic Movement Party
+st_rr	1991-03	br_psdb	Brazilian Social Democracy Party
+st_rr	1995-01	br_pp	Progressive Party
+st_rr	2002-04	br_pdt	Democratic Labour Party
+st_rr	2004-11	br_psdb	Brazilian Social Democracy Party
+st_rr	2014-04	br_psb	Brazilian Socialist Party
+st_rr	2015-01	br_pp	Progressive Party
+st_rr	2018-12	br_pl	Social Liberal Party
+st_rr	2023-01	br_pp	Progressive Party
+st_rs	1991-03	br_pdt	Democratic Labour Party
+st_rs	1999-01	br_pt	Workers' Party
+st_rs	2015-01	br_other	Democratic Movement Party
+st_rs	2019-01	br_psdb	Brazilian Social Democracy Party
+st_sc	2018-04	br_other	Democratic Movement Party
+st_sc	2019-01	br_pl	Social Liberal Party
+st_se	2013-12	br_other	Democratic Movement Party
+st_se	2018-04	br_psd	Social Democratic Party
+st_sp	1991-03	br_other	Brazilian Labour Party
+st_sp	2001-03	br_psdb	Brazilian Social Democracy Party
+st_sp	2018-04	br_psb	Brazilian Socialist Party
+st_sp	2019-01	br_psdb	Brazilian Social Democracy Party
+st_sp	2023-01	br_other	Republicans
+st_to	2018-04	br_other	Humanist Party of Solidarity
+st_to	2021-10	br_pp	Progressive Party
