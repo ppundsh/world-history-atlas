@@ -129,6 +129,25 @@ const app = {
   legendCollapsed: window.innerWidth < 700,          // keep the map visible on phones
 };
 const st = app.state;
+
+// ?tapdebug: a small panel at the foot of the page that names what each tap lands on (the element actually hit, and
+// whether a click followed), with any script error, so a phone that will not respond can be checked without devtools
+if (/[?&]tapdebug\b/.test(location.search)) {
+  const box = document.createElement('div');
+  box.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483647;max-height:30vh;overflow:auto;background:rgba(0,0,0,.85);color:#7CFC00;font:11px/1.35 monospace;padding:4px 6px;pointer-events:none;white-space:pre-wrap';
+  const lines = [], log = t => { lines.push(new Date().toTimeString().slice(0, 8) + ' ' + t); while (lines.length > 14) lines.shift(); box.textContent = lines.join('\n'); };
+  const name = el => !el ? '∅' : (el.tagName.toLowerCase() + (el.id ? '#' + el.id : '') + (typeof el.className === 'string' && el.className ? '.' + el.className.trim().split(/\s+/).join('.') : '')).slice(0, 60);
+  const path = el => { const out = []; for (let e = el; e && e !== document.body && out.length < 4; e = e.parentElement) out.push(name(e)); return out.join(' < '); };
+  for (const ev of ['touchstart', 'pointerdown', 'click']) document.addEventListener(ev, e => {
+    const pt = e.touches?.[0] || e;
+    const hit = document.elementFromPoint(pt.clientX, pt.clientY);
+    log(`${ev} ${Math.round(pt.clientX)},${Math.round(pt.clientY)} → ${path(hit)}${e.defaultPrevented ? ' (prevented)' : ''}`);
+  }, { capture: true, passive: true });
+  addEventListener('error', e => log('ERROR ' + (e.message || e.error) + ' @' + (e.filename || '').split('/').pop() + ':' + e.lineno));
+  addEventListener('unhandledrejection', e => log('REJECT ' + (e.reason?.message || e.reason)));
+  const add = () => { document.body.appendChild(box); log(`tapdebug ${innerWidth}×${innerHeight} ${navigator.userAgent.match(/OS [\d_]+|Version\/[\d.]+/g)?.join(' ') || ''}`); };
+  document.body ? add() : addEventListener('DOMContentLoaded', add);
+}
 if (new URLSearchParams(location.search).has('debug')) { window.__app = app; window.__store = store; }     // for automated tests
 st.langInfo = LANGS.find(l => l.id === st.lang);
 const music = new Music();

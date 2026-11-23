@@ -338,7 +338,10 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 @media (max-width: 860px) {
   #evPop { width: 112px; bottom: 6px; } #evPop img { height: 64px; } #evPop .cap small { display: none; }
   /* menu: everything fits the screen width */
-  #controls > * { min-width: 0; max-width: 100%; box-sizing: border-box; }
+  /* one column that scrolls: the desktop bar wraps (flex-wrap), which in a column of limited height started a second
+     column off the right edge of the screen as soon as a menu (標記 in the country modes) made the list long */
+  #controls { flex-wrap: nowrap; overflow-x: hidden; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  #controls > * { min-width: 0; max-width: 100%; box-sizing: border-box; flex-shrink: 0; }
   #controls select, #projBtn { max-width: 62vw; }
   .showpick { flex-direction: column; align-items: stretch; gap: 6px; }
   #showBtn { width: 100%; writing-mode: horizontal-tb; }
@@ -360,6 +363,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
   .mapctl button { width: 30px; height: 28px; font-size: 14px; }
   #recMenu { right: 44px; }
   #yearBig { font-size: 24px; }
+  #hud { right: 44px; }                       /* clear of the column of map buttons */
   #countBox { display: none; }
   #timeline { padding-top: 4px; padding-bottom: 4px; }
   .buttons.ios .play { width: 34px; height: 34px; }
