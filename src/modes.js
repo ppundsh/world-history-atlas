@@ -67,7 +67,7 @@ export const region = st => store.regions?.[st.mode];
 export function regionYearMonth(data, m) {
   const [y0, m0] = data.start;
   const t = y0 * 12 + (m0 - 1) + m;
-  return [Math.floor(t / 12), (t % 12) + 1];
+  return [Math.floor(t / 12), (((t % 12) + 12) % 12) + 1];      // (months of years before 1 counted forward too)
 }
 export const monthOf = (data, y, mo = 1) => (y - data.start[0]) * 12 + (mo - data.start[1]);
 
@@ -236,7 +236,7 @@ export function frame(st) {
       // along the inside of their borders, with the control names as the main labels
       fillFeats: adm?.feats || null, fillUnits: adm?.units || null, ribbons: adm ? s.feats : null, ribbonLines: adm ? s.border : null,
       rocOutline: c.region === 'china' ? rocOutline(c, s.feats, s.govs) : null,
-      lang: { areas: [], flows: st.warFlows === false ? [] : regionFlows(c, st.cm, st.langInfo.col, st.mps, !!st.playing), works: regionWorks(c, st.cm, st.langInfo.col, st.mps, st) },
+      lang: { areas: [], flows: st.warFlows === false ? [] : regionFlows(c, st.cm, st.langInfo.col, st.mps, !!st.playing || st.cm === st.pausedCm), works: regionWorks(c, st.cm, st.langInfo.col, st.mps, st) },
       disputed: false,
     };
   }
@@ -413,7 +413,8 @@ function regionFlows(c, m, col, mps = 6, playing = true) {
   // timed in seconds of playback, not months, so a route stays readable at any speed: it takes at least
   // 2.5 s to draw, stays at least 6 s, and fades over the last third of that
   const out = [];
-  // stopped on a month (paused, stepped, or jumped there): only what really happened around then, drawn whole —
+  // paused: the routes stay as playing left them (the caller passes playing); stepped or jumped to a month: only
+  // what really happened around then, drawn whole —
   // the stretched playback timing would otherwise leave campaigns of years before on the map
   if (!playing) {
     for (const f of c.flows || []) {

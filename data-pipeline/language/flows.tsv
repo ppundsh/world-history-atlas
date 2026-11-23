@@ -22,9 +22,9 @@ f_chaoshan	min	1000	1150	118.0	24.5	116.7	23.4	2	閩南 → 潮汕	Southern Min 
 f_hainan	min	1100	1300	116.6	23.3	110.3	20.0	2	閩南 → 雷州、海南	Southern Min → Leizhou, Hainan	閩南 → 雷州・海南
 f_hakka	hakka	1127	1250	114.5	33.5	115.9	25.0	3	北方移民南遷，客家形成	Northern migrants move south: the Hakka form	北方移民の南遷、客家の形成
 f_taiwan_q	min	1630	1720	118.6	24.9	120.25	23.2	3	泉州人渡台	Quanzhou settlers cross to Taiwan	泉州人の渡台
-f_taiwan_z	min	1650	1760	117.65	24.5	120.6	24.1	3	漳州人渡台	Zhangzhou settlers cross to Taiwan	漳州人の渡台
+f_taiwan_z	min	1650	1760	117.65	24.5	120.6	24.1	3	漳州人渡台	Zhangzhou settlers cross to Taiwan	漳州人の渡台	117.65,24.5 118.1,24.45 119.3,24.3 120.43,24.06 120.6,24.1
 f_hakka_s	hakka	1680	1720	116.1	24.3	120.55	22.75	2	客家人渡台（六堆）	Hakka cross to Taiwan (Liudui)	客家人の渡台（六堆）
-f_hakka_n	hakka	1720	1790	115.7	23.9	120.95	24.65	2	客家人渡台（桃竹苗）	Hakka cross to Taiwan (Taoyuan–Hsinchu–Miaoli)	客家人の渡台（桃竹苗）
+f_hakka_n	hakka	1720	1790	116.12	24.29	120.95	24.65	2	客家人渡台（桃竹苗）	Hakka cross to Taiwan (Taoyuan–Hsinchu–Miaoli)	客家人の渡台（桃竹苗）	116.12,24.29 116.68,23.35 117.6,23.4 119.8,24.55 120.92,24.84 120.95,24.65
 f_kavalan	min	1796	1812	121.5	25.1	121.8	24.85	1	吳沙入墾噶瑪蘭	Wu Sha leads settlers into Kavalan	呉沙が噶瑪蘭に入植
 f_pingpu	formosan	1820	1850	120.7	24.25	120.97	23.97	1	平埔族遷入埔里盆地	Plains peoples move into the Puli Basin	平埔族が埔里盆地へ
 f_manila	min	1570	1650	118.1	24.4	120.98	14.6	2	閩南人下南洋：馬尼拉	Hokkien emigrants to Manila	閩南人がマニラへ

@@ -25,7 +25,7 @@ guo1652	1652-09	1652-09	#7c2d12	2	120.25,22.95 120.2,23.0	郭懷一率漢人起�
 zheng1661s	1661-05	1661-09	#7c2d12	2	120.2,22.99 120.3,22.75 120.36,22.62	鄭軍分兵屯墾南路（萬年縣）	Zheng troops settle the south (Wannian)	鄭軍が南路（万年県）に屯田
 zheng1661n	1661-05	1661-09	#7c2d12	2	120.2,22.99 120.3,23.2 120.45,23.48	鄭軍分兵屯墾北路（天興縣）	Zheng troops settle the north (Tianxing)	鄭軍が北路（天興県）に屯田
 zheng1670n	1670-08	1670-12	#7c2d12	2	120.45,23.48 120.55,24.0 120.6,24.25	鄭軍北上征討大肚王國沙轆社	Zheng troops march north against the Middag village of Salach	鄭軍が北上し大肚王国の沙轆社を攻撃
-zheng1664	1664-03	1664-04	#7c2d12	3	118.1,24.45 119.58,23.57 120.2,23.0	鄭經棄守廈門、金門，退守臺灣	Zheng Jing abandons Xiamen and Kinmen for Taiwan	鄭経が廈門・金門を放棄し台湾へ撤退
+zheng1664	1664-03	1664-04	#7c2d12	3	117.43,23.7 119.58,23.57 120.16,23.0	鄭經棄守廈門、金門，退守臺灣	Zheng Jing abandons Xiamen and Kinmen for Taiwan	鄭経が廈門・金門を放棄し台湾へ撤退
 dutch1664	1664-08	1664-09	#ea580c	2	106.83,-6.12 113.0,12.0 119.5,21.5 122.0,24.0 121.74,25.16	荷蘭重返雞籠（至 1668 年）	The Dutch return to Keelung (until 1668)	オランダが鶏籠へ再進出（1668 年まで）
 zheng1674	1674-05	1676-10	#7c2d12	3	120.2,23.0 119.58,23.57 118.1,24.45 118.6,24.9 119.3,26.08	鄭經西征：響應三藩之亂，攻佔泉州、漳州	Zheng Jing's western campaign during the Revolt of the Three Feudatories	鄭経の西征：三藩の乱に呼応し泉州・漳州を攻略
 zheng1680	1680-02	1680-03	#7c2d12	3	118.1,24.45 119.58,23.57 120.2,23.0	鄭經兵敗，自大陸沿海撤回臺灣	Defeated, Zheng Jing pulls back to Taiwan	鄭経が敗れて台湾へ撤収
@@ -47,7 +47,7 @@ road1875n	1874-08	1875-12	#6b21a8	2	121.85,24.6 121.75,24.3 121.6,23.98	開山�
 french1884	1884-08	1884-10	#1e40af	3	119.45,26.0 120.8,25.6 121.74,25.16	清法戰爭：法國艦隊自馬尾北上砲擊基隆	Sino-French War: the French fleet from Mawei bombards Keelung	清仏戦争：フランス艦隊が馬尾から基隆を砲撃
 french1884t	1884-10	1884-10	#1e40af	2	121.74,25.16 121.6,25.3 121.43,25.17	法軍攻滬尾，於滬尾之役敗退	The French attack Tamsui and are beaten back	フランス軍が滬尾を攻撃し撃退される
 french1885	1885-03	1885-03	#1e40af	3	121.74,25.16 121.1,25.0 119.9,24.2 119.58,23.57	法軍南下攻佔澎湖	The French sail south and take Penghu	フランス軍が南下し澎湖を占領
-japan1895p	1895-03	1895-03	#111827	3	129.7,33.15 125.0,28.0 119.58,23.57	澎湖之役：日軍佔領澎湖	Pescadores campaign: Japan takes Penghu	澎湖諸島の戦い：日本軍が澎湖を占領
+japan1895p	1895-03	1895-03	#111827	3	129.7,33.15 125.0,28.0 121.0,26.0 119.9,25.0 119.58,23.57	澎湖之役：日軍佔領澎湖	Pescadores campaign: Japan takes Penghu	澎湖諸島の戦い：日本軍が澎湖を占領
 japan1895s	1895-05	1895-05	#111827	3	127.8,26.25 124.0,25.6 121.92,25.05	日軍近衛師團自中城灣航向澳底	The Imperial Guard Division sails from Nakagusuku Bay to Aodi	近衛師団が中城湾から澳底へ
 budai1895	1895-10	1895-10	#111827	2	120.17,23.38 120.2,23.2 120.2,22.99	日軍布袋嘴登陸南下	Japanese troops land at Budai and march south	日本軍が布袋嘴に上陸し南下
 liu1895	1895-10	1895-10	#dc2626	2	120.16,23.0 119.4,23.8 118.1,24.45	劉永福棄臺南，乘船逃往廈門	Liu Yongfu abandons Tainan and escapes to Xiamen	劉永福が台南を捨て廈門へ脱出

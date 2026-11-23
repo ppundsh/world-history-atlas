@@ -5,7 +5,7 @@ poland1939	1939-09	1939-09	#111827	3	14.0,52.5 17.0,52.4 21.01,52.23	德軍入�
 west1940	1940-05	1940-06	#111827	3	6.08,50.78 4.94,49.7 2.38,51.03	西線攻勢：亞耳丁→敦克爾克	The western offensive: Ardennes to Dunkirk	西方攻勢：アルデンヌ→ダンケルク
 paris1940	1940-06	1940-06	#111827	2	4.94,49.7 2.35,48.86	德軍進入巴黎	Germany enters Paris	パリ入城
 west1945	1945-03	1945-04	#1d4ed8	3	7.23,50.58 9.9,51.5 13.0,51.56	盟軍渡萊茵河至易北河	The Allies cross the Rhine to the Elbe	連合軍がライン川からエルベ川へ
-east1945	1945-01	1945-05	#dc2626	3	21.0,52.23 16.93,52.41 14.6,52.35 13.4,52.52	蘇軍攻柏林	The Soviets take Berlin	ソ連軍のベルリン攻略
+east1945	1945-01	1945-02	#dc2626	3	21.0,52.23 19.46,51.76 16.93,52.41 14.62,52.58	蘇軍維斯瓦—奧得河攻勢	The Soviet Vistula–Oder offensive	ソ連軍のヴィスワ＝オーデル攻勢
 airlift	1948-06	1949-05	#1d4ed8	2	8.68,50.11 13.4,52.47	柏林空運	The Berlin Airlift	ベルリン大空輸
 fehrbellin	1675-06	1675-06	#1e3a8a	2	13.06,52.4 12.8,52.8	費爾貝林之戰：勃蘭登堡擊退瑞典	Fehrbellin: Brandenburg drives back the Swedes	フェールベリンの戦い：ブランデンブルクがスウェーデンを撃退
 silesia1740	1740-12	1741-04	#1e3a8a	3	13.06,52.4 14.55,52.35 16.0,51.6 17.03,51.11	第一次西里西亞戰爭：普軍攻入西里西亞	First Silesian War: Prussia marches into Silesia	第一次シュレージエン戦争：プロイセン軍の侵攻
@@ -29,7 +29,7 @@ prague1939	1939-03	1939-03	#111827	3	13.4,50.8 14.42,50.08	德軍進佔布拉格
 barbarossa1941	1941-06	1941-12	#111827	3	21.0,52.2 24.0,53.0 30.5,54.8 37.0,55.6	巴巴羅薩行動：德軍進攻蘇聯，逼近莫斯科	Operation Barbarossa: Germany invades the Soviet Union and nears Moscow	バルバロッサ作戦：ソ連侵攻、モスクワへ
 dday1944	1944-06	1944-10	#1d4ed8	3	-0.6,49.3 2.35,48.85 4.35,50.85 6.08,50.77	諾曼第登陸至亞琛	From the Normandy landings to Aachen	ノルマンディー上陸からアーヘンへ
 remagen1945	1945-03	1945-03	#1d4ed8	2	6.6,50.65 7.23,50.58 7.6,50.6	雷馬根鐵橋：美軍首度渡過萊茵河	Remagen: the US Army crosses the Rhine	レマゲン鉄橋：米軍がライン川を渡る
-seelow1945	1945-04	1945-04	#b91c1c	3	14.6,52.55 14.0,52.55 13.4,52.52	澤勞高地戰役後蘇軍攻入柏林	After the Seelow Heights the Red Army storms Berlin	ゼーロウ高地からベルリン突入
+seelow1945	1945-04	1945-04	#b91c1c	3	14.62,52.58 14.38,52.53 13.4,52.52	澤勞高地戰役後蘇軍攻入柏林	After the Seelow Heights the Red Army storms Berlin	ゼーロウ高地からベルリン突入
 torgau1945	1945-04	1945-04	#1d4ed8	2	12.0,51.5 13.0,51.56	美軍抵易北河托爾高，與蘇軍會師	US troops reach the Elbe at Torgau and meet the Red Army	米軍がトルガウでソ連軍と会同
 flight1945	1945-01	1945-04	#6b7280	3	20.5,54.7 19.4,54.4 18.65,54.35 14.55,53.43 13.4,52.52	東普魯士難民西逃	Refugees flee west from East Prussia	東プロイセンからの避難民
 expulsion1946	1945-06	1947-12	#6b7280	3	17.03,51.11 15.0,51.15 13.74,51.05 11.0,50.9	戰後德意志人自西里西亞、蘇台德被驅逐	Germans expelled from Silesia and the Sudetenland	シュレージエン・ズデーテンからのドイツ人追放

@@ -773,6 +773,7 @@ function syncLock() {
 }
 function pause() {
   st.playing = false; cancelAnimationFrame(rafId);
+  st.pausedCm = st.cm;                         // routes drawn at this month stay as they were (modes.js)
   // the pictures on the map stay while paused; the event card above the timeline fades away
   setPulsesPaused(true);
   clearTimeout(app.popT); if (!$('#evPop').hidden) app.popT = setTimeout(() => $('#evPop').classList.add('fade'), 4500);
