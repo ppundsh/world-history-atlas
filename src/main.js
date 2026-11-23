@@ -163,6 +163,10 @@ const boot = (i, frac) => {
 };
 readHash();
 boot(0, 0.08);
+// what the first picture does not wait for is asked for at once, side by side with the core data, and awaited only
+// where it is used: whether satellite pictures and terrain shading exist (two dozen small files, which were read
+// one after another before the map could appear)
+const satReady = detectSatellite(), reliefReady = availableRelief();
 await loadCore();
 boot(1, 0.3);
 SEG[0][0] = WORLD_SEG[0][0] = store.meta.from;
@@ -173,20 +177,19 @@ await loadChunk(chunkFor(st.year));
 boot(2, 0.5);
 if (st.basemap === 'physical') await loadPhysical();
 if (st.modern) await loadModern();
-await detectSatellite();
+if (st.basemap === 'satellite') await satReady;
 boot(3, 0.62);
 if (st.mode === 'religion') await loadReligions();
 if (st.mode === 'regime') await loadRegimes();
 if (st.mode === 'art') { await loadArt(); loadWorks().then(() => redraw()); }
 if (THEMES.includes(st.mode)) { await loadTheme(st.mode); if (themeOf(st.mode).pictures) loadWorks(st.mode).then(() => redraw()); applySeg(); st.year = Math.max(minYear(), st.year); st.pos = yearToPos(st.year); }
-ensureCapitals();
 if (REGIONS.includes(st.mode) && !app.initialView) { const v = { ...REGION_VIEW[st.mode] }; if (st.projection === 'globe') v.k *= st.mode === 'taiwan' ? 0.5 : 0.7; app.initialView = v; }
 if (REGIONS.includes(st.mode)) { await loadRegion(st.mode); if (!app.hashT) st.cm = regionStart(); st.year = regionYearMonth(reg(), st.cm)[0]; await loadChunk(chunkFor(st.year)); st.pos = st.cm / (reg().months - 1); }
 
 boot(4, 0.8);
 app.flat = new FlatMap($('#flat'), app);
 // regional terrain shading on the physical base map (Japan: GSI tiles; Taiwan: tiles from the MOI DTM, when built)
-app.reliefRegions = await availableRelief();
+app.reliefRegions = await reliefReady;
 app.flat.setRelief(new Relief(app.reliefRegions, () => app.flat.reliefChanged()));
 app.updateReliefCredit = ids => { app.reliefIds = ids; projTags(); };
 // distortion mask strength, kept per projection (each projection's mask measures something different)
@@ -205,6 +208,7 @@ app.drawCompare = (ctx, project, invert) => {
   cmp.draw(ctx, project, cmp.info, st.lang, { ...s, font: BASEMAPS[st.basemap].label.font });
 };
 app.distortStrength = name => { const v = +safeGet('distort:' + name); return v > 0 ? v : 0.55; };
+await satReady;                                 // (long since in, as a rule) the base map list and the globe need it
 buildUI();
 applyLang();
 await setProjection(st.projection);
@@ -213,6 +217,9 @@ drawSpark();
 renderYear();
 if (isChina()) startEvents();                  // opened on a country at its start: its first events at once
 boot(4, 1);
+// once the map is up: the capitals (only for their markers and cards), and the neighbouring periods' borders, so
+// that playing or dragging the timeline into them does not wait for the download
+afterFirstPaint(() => { ensureCapitals(); prefetchChunks(); });
 document.documentElement.classList.add('ready');
 $('#loading').classList.add('done');
 setTimeout(() => $('#loading')?.remove(), 500);
@@ -232,6 +239,15 @@ async function detectSatellite() {
     }
   } catch { /* no satellite tiles */ }
   if (await ok('bluemarble.jpg')) app.satImageUrl = base + 'bluemarble.jpg';
+}
+function afterFirstPaint(fn) { requestAnimationFrame(() => setTimeout(() => (window.requestIdleCallback || setTimeout)(fn, { timeout: 1500 }), 0)); }
+// the periods' borders next to the one on screen (both ways), read while the browser is idle
+function prefetchChunks() {
+  if (isChina() || !store.meta) return;
+  const cs = store.meta.chunks, i = cs.findIndex(c => st.year >= c.from && st.year <= c.to);
+  const next = [i + 1, i - 1, i + 2].map(j => cs[j]).filter(c => c && !store.chunks.has(c.id));
+  const one = () => { const c = next.shift(); if (c) loadChunk(c).then(() => (window.requestIdleCallback || setTimeout)(one, { timeout: 2000 })).catch(() => {}); };
+  one();
 }
 function satAvailable() { return !!(app.satTiles || app.satImageUrl); }
 // regional images are only fetched once the flat map is zoomed in far enough to use them
@@ -336,7 +352,7 @@ async function setYear(y, fromSlider = false) {
   y = Math.max(minYear(), Math.min(maxYear(), Math.round(y)));
   const c = chunkFor(y), ticket = ++app.yearTicket;
   if (!fromSlider) st.pos = yearToPos(y);           // set first, so playback carries on from the new place
-  if (!store.chunks.has(c.id)) { $('#busy').hidden = false; await loadChunk(c); $('#busy').hidden = true; }
+  if (!store.chunks.has(c.id)) { $('#busy').hidden = false; await loadChunk(c); $('#busy').hidden = true; afterFirstPaint(prefetchChunks); }
   if (ticket !== app.yearTicket) return;            // a later position (fast dragging) has already been asked for
   st.year = y;
   // prefetch the next era
@@ -350,7 +366,7 @@ async function setMonth(m, fromSlider = false) {
   const [y] = regionYearMonth(reg(), m);
   const ch = chunkFor(y), ticket = ++app.yearTicket;
   if (!fromSlider) st.pos = m / (c.months - 1);
-  if (!store.chunks.has(ch.id)) { $('#busy').hidden = false; await loadChunk(ch); $('#busy').hidden = true; }
+  if (!store.chunks.has(ch.id)) { $('#busy').hidden = false; await loadChunk(ch); $('#busy').hidden = true; afterFirstPaint(prefetchChunks); }
   if (ticket !== app.yearTicket) return;
   st.cm = m; st.year = y;
   renderYear();

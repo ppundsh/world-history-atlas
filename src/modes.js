@@ -104,10 +104,14 @@ function regionState(c, m, layer, hide = null) {
 // layer) are drawn as one area, like a country, so a change of boundaries reads like a change of borders.
 // topojson.merge can return rings in the opposite winding order; d3 then reads such a polygon as
 // "the whole sphere except this area" and paints a layer over the whole world. Turn those around.
+// (d3's rule: an outer ring runs clockwise. Tested on the flat lon/lat ring, which is far quicker than the
+// spherical area and the same for any ring that does not cross the 180° meridian; those few take the slow test.)
 function fixWinding(g) {
   const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
   for (const p of polys) {
-    if (geoArea({ type: 'Polygon', coordinates: p }) > 2 * Math.PI) for (const r of p) r.reverse();
+    const r = p[0]; let x0 = Infinity, x1 = -Infinity; for (const c of r) { if (c[0] < x0) x0 = c[0]; if (c[0] > x1) x1 = c[0]; }
+    const wrong = x1 - x0 > 180 ? geoArea({ type: 'Polygon', coordinates: p }) > 2 * Math.PI : ring(r) > 0;
+    if (wrong) for (const q of p) q.reverse();
   }
   return g;
 }
@@ -152,8 +156,7 @@ function mergeUnits(c, feats, layer) {
     if (!c.mergeCache.has(ck)) {
       const geometry = fixWinding(merge(c.topo, ids.map(id => c.geomById.get(id))));
       const big = list.reduce((a, b) => (b.properties.area > a.properties.area ? b : a));
-      const f0 = { type: 'Feature', geometry, properties: {} };
-      const area = geoArea(f0);
+      const area = list.reduce((t, f) => t + (f.properties.area || 0), 0);   // the units' own areas (no new spherical sum)
       const polys = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
       let best = polys[0], ba = 0;
       for (const p of polys) { const a = Math.abs(ring(p[0])); if (a > ba) { ba = a; best = p; } }

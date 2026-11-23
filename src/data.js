@@ -75,8 +75,8 @@ export function loadChunk(c) {
   const p = json('chunks/' + c.id + '.json').then(t => {
     const fc = feature(t, t.objects[c.id]).features;
     for (const f of fc) {
-      f.properties.area = geoArea(f);
-      f.properties.lp = labelPoint(f);
+      f.properties.area = flatArea(f);
+      lazyLabelPoint(f);
     }
     // big polities first, so that enclaves and small states are drawn on top
     fc.sort((a, b) => b.properties.area - a.properties.area);
@@ -100,6 +100,27 @@ export function featuresFor(year) {
 export function countFor(year) {
   const m = store.meta;
   return m.counts[Math.max(0, Math.min(m.counts.length - 1, year - m.from))];
+}
+
+// area in steradians, from the flat lon/lat rings scaled by the cosine of their latitude: within a few per cent of
+// the spherical area (enough for drawing order and size thresholds) at a fraction of its cost, for a whole chunk
+function flatArea(f) {
+  const g = f.geometry; if (!g) return 0;
+  const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : null;
+  if (!polys) return geoArea(f);
+  const k = (Math.PI / 180) ** 2; let t = 0;
+  for (const p of polys) p.forEach((r, i) => {
+    let y = 0; for (const c of r) y += c[1];
+    const a = Math.abs(ringArea(r)) * Math.cos(y / r.length * Math.PI / 180) * k;
+    t += i ? -a : a;
+  });
+  return t;
+}
+// a chunk holds every polity of a few centuries: the label point (a costly search) is found only for those
+// actually drawn, the first time one is asked for, and kept
+function lazyLabelPoint(f) {
+  let v;
+  Object.defineProperty(f.properties, 'lp', { configurable: true, enumerable: true, get: () => (v === undefined ? (v = labelPoint(f)) : v), set: x => { v = x; } });
 }
 
 // Label anchor: pole of inaccessibility of the home ring — the one containing (or nearest to) the polity's
@@ -130,7 +151,10 @@ function labelPoint(f) {
   // rings that cross the antimeridian: fall back to the spherical centroid
   const xs = best[0].map(c => c[0]);
   if (Math.max(...xs) - Math.min(...xs) > 300) return geoCentroid(f);
-  const pt = polylabel(best, 0.05);
+  // precision relative to the ring's size: a continent-sized ring needs no 0.05° search
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  for (const c of best[0]) { if (c[0] < x0) x0 = c[0]; if (c[0] > x1) x1 = c[0]; if (c[1] < y0) y0 = c[1]; if (c[1] > y1) y1 = c[1]; }
+  const pt = polylabel(best, Math.max(0.05, Math.min(x1 - x0, y1 - y0) / 40));
   return [pt[0], pt[1]];
 }
 function inRing([x, y], r) {
