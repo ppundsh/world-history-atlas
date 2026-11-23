@@ -193,6 +193,7 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
     if (m.quiet) { hits?.push({ x0: x - 11, y0: y - 11, x1: x + 11, y1: y + 11, m }); return; }   // older works: the icon only
   } else {
     const sym = m.sym || { seat: '◆', feud: '⚔', power: '◉', us: '✪', art: '✦' }[m.kind] || '★';
+    if (m.scale) ctx.font = `${Math.round((seat ? 15 : 22) * m.scale)}px ${S.label.font}`;   // sized by the event's own scale
     ctx.strokeText(sym, x, y); ctx.fillStyle = m.roc ? '#1e40af' : m.color; ctx.fillText(sym, x, y);
     ctx.lineWidth = 1.2; ctx.strokeStyle = '#fff'; ctx.strokeText(sym, x, y);
   }

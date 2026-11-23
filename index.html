@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
   <title>世界國家演變 — 互動式歷史地圖</title>
   <meta name="description" content="從西元前 3400 年到 2026 年，全世界國家疆域的演變。可切換地圖投影、3D 地球與多國語言。" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%233a7bd5'/%3E%3Cpath d='M6 13c4-3 8 1 11-2s7 1 9 0M5 19c5 2 8-2 12 1s6 0 10-1' stroke='%23f2d16b' stroke-width='3' fill='none'/%3E%3C/svg%3E" />
@@ -42,7 +42,7 @@
     <div id="controls">
       <label class="modesel"><span id="l-mode"></span><select id="mode"></select></label><button id="toWorld" class="toworld" hidden></button><button id="cmpBtn" class="text cmpbtn" type="button" aria-pressed="false"></button><label id="cmpCrossBox" class="chk cmpcross" hidden><input type="checkbox" id="t-cmpCross" /><span id="l-cmpCross"></span></label>
       <div id="layerBox" class="layerbox" hidden><span id="l-layer"></span><label class="chk"><input type="checkbox" id="ly-control" /><span id="l-ly-control"></span></label><label class="chk"><input type="checkbox" id="ly-admin" /><span id="l-ly-admin"></span></label><label class="chk" id="partyBox" hidden><input type="checkbox" id="ly-party" /><span id="l-ly-party"></span></label><label class="chk" id="overseasBox" hidden><input type="checkbox" id="ov-japan" /><span id="l-overseas"></span></label></div>
-      <label><span id="l-lang"></span><select id="lang"></select></label>
+      <label id="langBox"><span id="l-lang"></span><select id="lang"></select></label>
       <label><span id="l-projBy"></span><select id="projBy"></select></label>
       <div class="projpick"><span id="l-proj"></span><button id="projBtn" type="button" aria-haspopup="listbox"></button>
         <div id="projMenu" hidden><div class="plist" role="listbox"></div><div class="pdetail"></div></div></div>
@@ -63,12 +63,12 @@
           <h5 id="l-markMode"></h5>
           <label class="switch" data-modes="art fgo finance"><input type="checkbox" id="t-artPics" /><i></i><span id="l-artPics"></span></label>
           <label class="switch" data-modes="fgo"><input type="checkbox" id="lc-fgoCustom" /><i></i><span id="l-lc-fgoCustom"></span></label>
-          <label class="switch" data-modes="religion regime art language finance internet fgo"><input type="checkbox" id="t-worldEv" /><i></i><span id="l-worldEv"></span></label>
-          <label class="switch" data-modes="language finance internet"><input type="checkbox" id="t-thAreas" /><i></i><span id="l-thAreas"></span></label>
-          <label class="switch" data-modes="language finance internet"><input type="checkbox" id="t-thFlows" /><i></i><span id="l-thFlows"></span></label>
+          <label class="switch" data-modes="religion regime art language finance internet disaster fgo"><input type="checkbox" id="t-worldEv" /><i></i><span id="l-worldEv"></span></label>
+          <label class="switch" data-modes="language finance internet disaster"><input type="checkbox" id="t-thAreas" /><i></i><span id="l-thAreas"></span></label>
+          <label class="switch" data-modes="language finance internet disaster"><input type="checkbox" id="t-thFlows" /><i></i><span id="l-thFlows"></span></label>
           <label class="picsize" data-modes="internet"><span id="l-cableW"></span><input id="cableW" type="range" min="0.4" max="4" step="0.1" /></label>
           <label class="picsize" data-modes="internet"><span id="l-cableStyle"></span><select id="cableStyle"><option value="shade"></option><option value="kind"></option><option value="era"></option><option value="steam"></option></select></label>
-          <label class="switch" data-modes="language finance internet"><input type="checkbox" id="t-thPoints" /><i></i><span id="l-thPoints"></span></label>
+          <label class="switch" data-modes="language finance internet disaster"><input type="checkbox" id="t-thPoints" /><i></i><span id="l-thPoints"></span></label>
           <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india france egypt iran turkey uk mexico morocco brazil argentina thailand indonesia philippines"><input type="checkbox" id="t-warFlows" /><i></i><span id="l-warFlows"></span></label>
           <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india france egypt iran turkey uk mexico morocco brazil argentina thailand indonesia philippines"><input type="checkbox" id="lc-feud" /><i></i><span id="l-lc-feud"></span></label>
           <label class="switch" data-modes="china prc usa taiwan japan russia korea vietnam germany poland italy spain india france egypt iran turkey uk mexico morocco brazil argentina thailand indonesia philippines"><input type="checkbox" id="lc-power" /><i></i><span id="l-lc-power"></span></label>
@@ -96,6 +96,7 @@
         <label class="chk"><input type="checkbox" id="t-minFont" /><span id="l-minFont"></span></label>
         <label class="chk"><input type="checkbox" id="t-animate" /><span id="l-animate"></span></label>
       </div></div>
+      <button id="moreBtn" class="text morebtn" type="button" aria-expanded="false"></button>
       <button id="aboutBtn" class="text"></button>
       <div id="musicFold" hidden><button id="musicToggle" type="button"></button><div id="musicSlot" hidden></div></div>
     </div>

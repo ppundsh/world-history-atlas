@@ -62,7 +62,7 @@ const { WORLD_EVENTS, MODE_EVENTS = {} } = await import(new URL('src/worldEvents
 const EVENTS = WORLD_EVENTS.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]] }));        // [en, zh-Hant, zh-Hans, ja]
 const MODE_EVS = Object.entries(MODE_EVENTS).flatMap(([m, l]) => l.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]], ctx: m, t: e.y })));
 const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
-const THEMES = ['language', 'finance', 'fgo', 'internet'];
+const THEMES = ['language', 'finance', 'fgo', 'internet', 'disaster'];
 const events = EVENTS.map(e => ({ ...e, ctx: 'world', t: e.y })).concat(MODE_EVS);
 const pageReq = new Map();                                     // "wl:title" → [wl, title]
 const addPage = (wl, title) => { title = (title || '').trim(); if (title) pageReq.set(wl + ':' + title, [wl, title]); };

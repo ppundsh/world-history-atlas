@@ -94,12 +94,12 @@ const CONTINENTS = [['china', 'prc', 'taiwan', 'japan', 'korea'], ['vietnam', 't
 const FLAG = { china: '🇹🇼', prc: '🇨🇳', taiwan: '🇹🇼', japan: '🇯🇵', korea: '🇰🇷', vietnam: '🇻🇳', thailand: '🇹🇭', philippines: '🇵🇭', indonesia: '🇮🇩', india: '🇮🇳', iran: '🇮🇷', turkey: '🇹🇷',
   russia: '🇷🇺', germany: '🇩🇪', poland: '🇵🇱', italy: '🇮🇹', spain: '🇪🇸', france: '🇫🇷', uk: '🇬🇧', egypt: '🇪🇬', morocco: '🇲🇦', usa: '🇺🇸', mexico: '🇲🇽', brazil: '🇧🇷', argentina: '🇦🇷' };
 const REGION_FIRST = { china: '1911-10', taiwan: '1600-01' };
-const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'thailand', 'philippines', 'indonesia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk', 'india', 'iran', 'turkey', 'egypt', 'morocco', 'usa', 'mexico', 'brazil', 'argentina'];
+const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'disaster', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'thailand', 'philippines', 'indonesia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk', 'india', 'iran', 'turkey', 'egypt', 'morocco', 'usa', 'mexico', 'brazil', 'argentina'];
 const BEARINGS = { n: 0, e: 90, s: 180, w: -90 };          // MapLibre bearing that puts that direction on top
 // the timeline's events: the mode's own list (thematic modes that have one), otherwise the world events
 // the events of the timeline, the event table and the event places: the world mode has the world's events; the
 // other global modes have their own (if any) and, with the "world events" switch on, the world's too
-const GLOBAL_MODES = ['religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo'];
+const GLOBAL_MODES = ['religion', 'regime', 'art', 'language', 'finance', 'internet', 'disaster', 'fgo'];
 function evList() {
   if (!GLOBAL_MODES.includes(st.mode)) return EVENTS;
   const T = themeOf(st.mode), world = st.worldEv !== false;
@@ -428,11 +428,11 @@ function step(d) { pause(); st.transition = 'grow'; return isChina() ? setMonth(
 let growData = null;
 function growth(s) {
   const box = $('#growBox');
-  if (st.mode !== 'world') { box.hidden = true; return; }
+  if (st.mode !== 'world') { setHidden(box, true); return; }
   if (!growData) {
     growData = {};
     fetch(import.meta.env.BASE_URL + 'data/growth.json').then(r => r.json()).then(d => { growData = d; renderYear(); }).catch(() => {});
-    box.hidden = true; return;
+    setHidden(box, true); return;
   }
   const y = Math.floor(st.year), fmt = n => n.toLocaleString(st.lang), rows = [];
   for (const k of ['plants', 'airports', 'ports', 'cables']) {
@@ -446,7 +446,7 @@ function growth(s) {
   }
   const html = rows.join('');
   if (box.innerHTML !== html) box.innerHTML = html;
-  box.hidden = !rows.length;
+  setHidden(box, !rows.length);
 }
 
 function renderYear() {
@@ -456,25 +456,25 @@ function renderYear() {
   const F = frame(st);
   if (isChina()) {
     const [y, mo] = regionYearMonth(reg(), st.cm);
-    $('#yearBig').textContent = s.ym(y, mo);
+    setText($('#yearBig'), s.ym(y, mo));
     if (st.mode === 'china') {
-      $('#countLabel').textContent = s.rocGovs;
-      $('#countNum').textContent = F.govs.filter(g => g.roc).length;
+      setText($('#countLabel'), s.rocGovs);
+      setText($('#countNum'), F.govs.filter(g => g.roc).length);
     } else {
-      $('#countLabel').textContent = s.regimes;
-      $('#countNum').textContent = new Set(F.feats.map(f => f.properties.ctl)).size;
+      setText($('#countLabel'), s.regimes);
+      setText($('#countNum'), new Set(F.feats.map(f => f.properties.ctl)).size);
     }
-    $('#ticker').textContent = F.event && st.events ? (F.event.n[st.langInfo.col] || F.event.n[0]) : '';
-    $('#ticker').hidden = !(F.event && st.events);
-    $('#growBox').hidden = true;
+    setText($('#ticker'), F.event && st.events ? (F.event.n[st.langInfo.col] || F.event.n[0]) : '');
+    setHidden($('#ticker'), !(F.event && st.events));
+    setHidden($('#growBox'), true);
   } else {
-    $('#yearBig').textContent = formatYear(st.lang, st.year);
-    $('#countLabel').textContent = s.countries;
-    $('#countNum').textContent = countFor(st.year);
+    setText($('#yearBig'), formatYear(st.lang, st.year));
+    setText($('#countLabel'), s.countries);
+    setText($('#countNum'), countFor(st.year));
     growth(s);
     const ev = st.events ? evList().filter(e => e.y <= st.year && st.year <= Math.max(e.e ?? e.y, e.y + (st.year > 1800 ? 1 : 5))).at(-1) : null;
-    $('#ticker').textContent = ev ? (ev.n[st.langInfo.col] || ev.n[0]) : '';
-    $('#ticker').hidden = !ev;
+    setText($('#ticker'), ev ? (ev.n[st.langInfo.col] || ev.n[0]) : '');
+    setHidden($('#ticker'), !ev);
   }
   eventPlaces();
   capitalPictures(F);
@@ -485,9 +485,9 @@ function renderYear() {
     if (cur && !first) popEvent(cur);                  // playing, stepping or dragging the timeline onto or just past an event
     if (st.playing) { const nx = nextEvent(); if (nx) eventInfo(nx, st.lang, st.langInfo.col).then(i => { if (i?.thumb) new Image().src = i.thumb; }); }
   }
-  $('#slider').value = Math.round(st.pos * 10000);
+  { const v = String(Math.round(st.pos * 10000)); if ($('#slider').value !== v) $('#slider').value = v; }
   placeEvPop();
-  $('#yearInput').value = st.year;
+  if (document.activeElement !== $('#yearInput') && $('#yearInput').value !== String(st.year)) $('#yearInput').value = st.year;
   renderLegend(F);
   if (st.selected != null && !F.feats.some(f => f.properties.p === st.selected)) st.selected = null;
   if (st.selected != null && app.selectedProv) showProvince(app.selectedProv);
@@ -520,19 +520,19 @@ function renderLegend(F) {
   if (app.legendHold === st.mode && !box.hidden) return;
   if (st.mode === 'religion' && store.religions) {
     const shares = religionShares(F.feats, st.year).slice(0, 14);
-    box.innerHTML = `<h3>${s.religionLegend}</h3><ul>` + shares.map(({ code, share }) => {
+    put(box, `<h3>${s.religionLegend}</h3><ul>` + shares.map(({ code, share }) => {
       const r = store.religions[store.relIndex[code]];
       return `<li ${r ? `data-rel="${code}"` : ''}><i style="background:${r ? r.color : '#e6e6e6'}"></i>${r ? (r.n[col] || r.n[0]) : s.unknownRel}<b>${(share * 100).toFixed(share < 0.01 ? 1 : 0)}%</b></li>`;
-    }).join('') + `</ul><p>${s.relNote}</p>`;
-    box.hidden = false;
+    }).join('') + `</ul><p>${s.relNote}</p>`);
+    setHidden(box, false);
     bindLegendToggle(box);
     box.querySelectorAll('li[data-rel]').forEach(li => li.onclick = () => showReligion(li.dataset.rel));
   } else if (st.mode === 'art' && store.art) {
     const act = artActive(st.year).sort((a, b) => a.t.localeCompare(b.t) || a.a - b.a);
-    box.innerHTML = `<h3>${s.artLegend}</h3><ul class="govs">` + (act.length ? act.map(x =>
+    put(box, `<h3>${s.artLegend}</h3><ul class="govs">` + (act.length ? act.map(x =>
       `<li data-art="${x.id}"><span style="color:${ART_COLORS[x.t]}">${ART_SYM[x.k] || '✦'}</span> ${esc(x.n[col] || x.n[0])}</li>`).join('') : `<li>${s.artNone}</li>`) +
-      `</ul><p class="kinds">✦ ${s.artKinds.art}　⌂ ${s.artKinds.arch}　❖ ${s.artKinds.person}</p><ul>` + Object.entries(ART_COLORS).map(([k, c]) => `<li><i style="background:${c}"></i>${s.artTrad[k]}</li>`).join('') + `</ul><p>${s.artNote}</p>`;
-    box.hidden = false;
+      `</ul><p class="kinds">✦ ${s.artKinds.art}　⌂ ${s.artKinds.arch}　❖ ${s.artKinds.person}</p><ul>` + Object.entries(ART_COLORS).map(([k, c]) => `<li><i style="background:${c}"></i>${s.artTrad[k]}</li>`).join('') + `</ul><p>${s.artNote}</p>`);
+    setHidden(box, false);
     bindLegendToggle(box);
     box.querySelectorAll('li[data-art]').forEach(li => li.onclick = () => showArt(li.dataset.art));
   } else if (THEMES.includes(st.mode) && themeOf(st.mode)) {
@@ -543,22 +543,22 @@ function renderLegend(F) {
     // the hidden mode: this year's Servants grouped directly by class, each with the works they appear in
     if (T.pointsAlways) {
       const by = order.map(f => [f, act.points.filter(p => p.f === f)]).filter(([, l]) => l.length);
-      box.innerHTML = `<h3>${L.legend}</h3>` + by.map(([f, l]) => `<h4 class="clshead">${classIconSvg(f, themeColor(st.mode, f), 16)} ${esc(T.fam[f].n[col] || T.fam[f].n[0])} <small>${l.length}</small></h4><ul class="govs">`
+      put(box, `<h3>${L.legend}</h3>` + by.map(([f, l]) => `<h4 class="clshead">${classIconSvg(f, themeColor(st.mode, f), 16)} ${esc(T.fam[f].n[col] || T.fam[f].n[0])} <small>${l.length}</small></h4><ul class="govs">`
         + l.map(p => `<li data-lang="${p.id}">${p.series ? '<span style="color:#f5b301">◎</span> ' : ''}${esc(p.n[col] || p.n[0])}${p.series ? ` <small class="works">${p.series.map(w => L.works[w]).join(' · ')}</small>` : ''}</li>`).join('') + '</ul>').join('')
-        + (by.length ? '' : `<p>${s.artNone}</p>`) + `<p>${L.note}</p>`;
-      box.hidden = false;
+        + (by.length ? '' : `<p>${s.artNone}</p>`) + `<p>${L.note}</p>`);
+      setHidden(box, false);
       bindLegendToggle(box);
       box.querySelectorAll('li[data-lang]').forEach(li => li.onclick = () => showLang(li.dataset.lang));
       return;
     }
-    box.innerHTML = `<div class="lghead"><h3>${L.legend}</h3>${fx.length ? `<div class="focuspick"><button class="langfocus" type="button">${L.focus} ▾</button><ul class="focusmenu" hidden>${fx.map((f, i) =>
+    put(box, `<div class="lghead"><h3>${L.legend}</h3>${fx.length ? `<div class="focuspick"><button class="langfocus" type="button">${L.focus} ▾</button><ul class="focusmenu" hidden>${fx.map((f, i) =>
       `<li data-f="${i}">${esc(f.n[col] || f.n[0])}</li>`).join('')}</ul></div>` : ''}</div><ul class="govs">` + rows.map(a =>
       `<li data-lang="${a.id}"><span style="color:${a.color || themeColor(st.mode, a.f)}">●</span> ${esc(a.n[col] || a.n[0])}</li>`).join('') +
       `</ul>` + (T.points.some(p => p.series) ? `<h3>${L.series}</h3><ul class="govs series">` + T.points.filter(p => p.series).map(p =>
         `<li data-lang="${p.id}"><span style="color:#f5b301">◎</span> ${esc(p.n[col] || p.n[0])} <small>${p.series.map(w => L.works[w]).join(' · ')}</small></li>`).join('') + '</ul>' : '') +
       `<h3>${L.families}</h3><ul>` + order.filter(f => fams.includes(f)).map(f => `<li><i style="background:${themeColor(st.mode, f)}"></i>${esc(T.fam[f].n[col] || T.fam[f].n[0])}</li>`).join('') +
-      `</ul><p>${L.note}</p>`;
-    box.hidden = false;
+      `</ul><p>${L.note}</p>`);
+    setHidden(box, false);
     bindLegendToggle(box);
     box.querySelectorAll('li[data-lang]').forEach(li => li.onclick = () => showLang(li.dataset.lang));
     // quick views: move the map there and go to the year that shows it best
@@ -575,10 +575,10 @@ function renderLegend(F) {
     }
   } else if (st.mode === 'regime' && store.regimes) {
     const shares = regimeShares(F.feats, st.year);
-    box.innerHTML = `<h3>${s.regimeLegend}</h3><ul>` + shares.map(({ k, share }) =>
+    put(box, `<h3>${s.regimeLegend}</h3><ul>` + shares.map(({ k, share }) =>
       `<li><i style="background:${REGIME_COLORS[k]}"></i>${s.regimeNames[k]}<b>${(share * 100).toFixed(share < 0.01 ? 1 : 0)}%</b></li>`).join('') +
-      `</ul><ul><li><i class="mstripe h2"></i>${s.monarch[2]}</li><li><i class="mstripe h1"></i>${s.monarch[1]}</li></ul><p>${s.regimeNote}</p>`;
-    box.hidden = false;
+      `</ul><ul><li><i class="mstripe h2"></i>${s.monarch[2]}</li><li><i class="mstripe h1"></i>${s.monarch[1]}</li></ul><p>${s.regimeNote}</p>`);
+    setHidden(box, false);
     bindLegendToggle(box);
   } else if (isChina() && F.party) {
     // Taiwan's party view: how many counties / cities each party governs this month
@@ -586,9 +586,9 @@ function renderLegend(F) {
     for (const f of F.feats) { const d = f.properties.p - c.divOffset; if (!n.has(d)) n.set(d, partyAt(c, d, st.cm)); }
     const cnt = new Map(); for (const code of n.values()) if (code) cnt.set(code, (cnt.get(code) || 0) + 1);
     const pb = s.partyBy?.[st.mode] || {};
-    box.innerHTML = `<h3>${pb.now || s.partyNow}</h3><ul>` + [...cnt.entries()].sort((a, b) => b[1] - a[1]).map(([code, k]) =>
-      `<li><i style="background:${PARTY_COLOR[code]}"></i>${s.parties[code]}<b>${k}</b></li>`).join('') + `</ul><p>${pb.note || s.partyNote}</p>`;
-    box.hidden = false;
+    put(box, `<h3>${pb.now || s.partyNow}</h3><ul>` + [...cnt.entries()].sort((a, b) => b[1] - a[1]).map(([code, k]) =>
+      `<li><i style="background:${PARTY_COLOR[code]}"></i>${s.parties[code]}<b>${k}</b></li>`).join('') + `</ul><p>${pb.note || s.partyNote}</p>`);
+    setHidden(box, false);
     bindLegendToggle(box);
   } else if (isChina()) {
     const area = new Map();
@@ -604,22 +604,29 @@ function renderLegend(F) {
     const rc = reg(), isFb = id => adminView && (id < rc.divOffset || id >= rc.divOffset + rc.divisions.length);
     const divs = facs.filter(([id]) => !isFb(id)), fbs = facs.filter(([id]) => isFb(id));
     const li = ([id]) => `<li><i style="background:${P.color(id)}"></i>${P.name(id, col)}</li>`;
-    box.innerHTML = `<h3>${title}</h3>` + (divs.length ? `<ul>` + divs.map(li).join('') + `</ul>` : '') +
+    put(box, `<h3>${title}</h3>` + (divs.length ? `<ul>` + divs.map(li).join('') + `</ul>` : '') +
       (fbs.length ? `<p class="fbnote">${s.adminFallback}</p><ul class="fb">` + fbs.map(li).join('') + `</ul>` : '') + `<h3>${s.govs}</h3>` + (st.mode === 'china' ? `<p class="rockey"><i></i>${s.rocKey}</p>` : '') +
-      `<ul class="govs">` + govs.map(g => `<li class="${g.roc ? 'roc' : ''}" data-gid="${g.id}">★ ${g.n[col] || g.n[0]}</li>`).join('') + `</ul>`;
-    box.hidden = false;
+      `<ul class="govs">` + govs.map(g => `<li class="${g.roc ? 'roc' : ''}" data-gid="${g.id}">★ ${g.n[col] || g.n[0]}</li>`).join('') + `</ul>`);
+    setHidden(box, false);
     bindLegendToggle(box);
     box.querySelectorAll('li[data-gid]').forEach(li => li.onclick = () => showGov(li.dataset.gid));
-  } else box.hidden = true;
+  } else setHidden(box, true);
 }
 
+// fill the legend only when its content changed, keeping its scroll position (it is redrawn every frame of playback)
+function put(box, html) {
+  if (box._html === html) return false;
+  const sc = box.scrollTop; box._html = html; box.innerHTML = html; box.scrollTop = sc;
+  return true;
+}
 function bindLegendToggle(box) {
-  box.classList.toggle('collapsed', !!app.legendCollapsed);
-  box.querySelectorAll('h3').forEach(h => { h.onclick = () => { if (app.legendDragged) return; app.legendCollapsed = !app.legendCollapsed; box.classList.toggle('collapsed', app.legendCollapsed); }; });
+  if (box.classList.contains('collapsed') !== !!app.legendCollapsed) box.classList.toggle('collapsed', !!app.legendCollapsed);
+  const fold = () => { app.legendCollapsed = !app.legendCollapsed; box.classList.toggle('collapsed', app.legendCollapsed); const b = box.querySelector('.lfold'); if (b) b.textContent = app.legendCollapsed ? '▸' : '▾'; if (!app.legendCollapsed) box.scrollTop = 0; };
+  box.querySelectorAll('h3').forEach(h => { h.onclick = () => { if (!app.legendDragged) fold(); }; });
   if (!box.querySelector('.lgrip')) {
     // its own row of handles, rebuilt with the legend: drag (⠿) and fold (▾ / ▸)
     box.insertAdjacentHTML('afterbegin', `<div class="lbar"><span class="lgrip" title="${esc(t(st.lang).legendDrag)}">⠿</span><button class="lfold" type="button" title="${esc(t(st.lang).legendFold)}">${app.legendCollapsed ? '▸' : '▾'}</button></div>`);
-    box.querySelector('.lfold').onclick = e => { e.stopPropagation(); app.legendCollapsed = !app.legendCollapsed; box.classList.toggle('collapsed', app.legendCollapsed); e.currentTarget.textContent = app.legendCollapsed ? '▸' : '▾'; };
+    box.querySelector('.lfold').onclick = e => { e.stopPropagation(); fold(); };
   }
 }
 // The legend can be moved: drag it by its handle bar or its headings (a short click on a heading still folds it).
@@ -628,7 +635,8 @@ function legendDrag() {
   const box = $('#legend'), stage = $('#stage');
   let d = null;
   box.addEventListener('pointerdown', e => {
-    if (!e.target.closest('.lbar, h3') || e.target.closest('.lfold') || e.button !== 0) return;
+    // on touch screens only the handle (⠿) drags: a heading is for tapping, and the list for scrolling
+    if (!e.target.closest(e.pointerType === 'touch' ? '.lgrip' : '.lbar, h3') || e.target.closest('.lfold') || e.button !== 0) return;
     const r = box.getBoundingClientRect(), sr = stage.getBoundingClientRect();
     d = { x: e.clientX, y: e.clientY, l: r.left - sr.left, t: r.top - sr.top, moved: false };
     app.legendDragged = false; box.setPointerCapture(e.pointerId);
@@ -854,6 +862,12 @@ function pause() {
   music.pause();                               // music follows the timeline
   redraw();                                    // stopped: routes show what happened around this month only
 }
+// something of the thematic mode grows during this year: a cable (g) or a disaster's range or route (grow)
+function growingNow() {
+  const T = themeOf(st.mode); if (!T) return false;
+  const y = st.year, here = x => Math.floor(x.a) === y || (x.grow > 1 && x.a <= y && y <= x.a + x.grow + 1);
+  return T.flows.some(f => (f.g != null && f.a === y) || (f.grow != null && here(f))) || T.areas.some(a => a.grow != null && here(a));
+}
 async function tick(now) {
   if (!st.playing) return;
   if (isChina()) st.mps = Math.max(0.5, reg().months / REGION_RUN[st.mode] * (st.speed || 1));   // months per second, for the arrows' timing
@@ -870,7 +884,7 @@ async function tick(now) {
       const y = posToYear(st.pos);
       st.yearF = posToYearF(st.pos) + 0.5;          // exact year (posToYear rounds), for cables laid during the year
       if (y !== st.year) { busy = true; await setYear(y, true); busy = false; }
-      else if (THEMES.includes(st.mode) && themeOf(st.mode)?.flows?.some(f => f.g != null && f.a === st.year)) redraw();   // a cable is being laid
+      else if (THEMES.includes(st.mode) && growingNow()) redraw();   // a cable being laid, a disaster's range spreading
     }
     // at the end the player stays playing (button and music) while the event pictures and the card fade away
     if (st.pos >= 1) {
@@ -1051,6 +1065,18 @@ function buildUI() {
   $('#recStop').onclick = recStop;
   $('#full').onclick = () => (document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.());
   $('#menuBtn').onclick = () => document.body.classList.toggle('menu-open');
+  // phones: language, About and music are used rarely; they fold under one row at the end of the menu
+  $('#moreBtn').onclick = () => { const on = document.body.classList.toggle('more-open'); $('#moreBtn').setAttribute('aria-expanded', on); };
+  // the page itself never zooms (the map has its own zoom): iOS Safari ignores maximum-scale for pinching, so stop
+  // its pinch gestures, and if the page did get zoomed (an accessibility setting, say) put it back after a moment
+  for (const ev of ['gesturestart', 'gesturechange']) document.addEventListener(ev, e => { if (!e.target.closest?.('#globe')) e.preventDefault(); }, { passive: false });
+  if (window.visualViewport) {
+    let tm = 0;
+    visualViewport.addEventListener('resize', () => {
+      clearTimeout(tm);
+      if (visualViewport.scale > 1.02) tm = setTimeout(() => { const m = document.querySelector('meta[name=viewport]'); const c = m.content; m.content = c + ' '; m.content = c; }, 1500);
+    });
+  }
   $('#aboutBtn').onclick = () => { $('#about').hidden = false; };
   // About: close with the × (always visible), the button at the end, a click outside the card, or Esc
   const closeAbout = () => { $('#about').hidden = true; };
@@ -1090,7 +1116,7 @@ function buildUI() {
     st.projection === 'globe' ? app.globe?.update() : app.flat.request();
     if (hit?.pulse) { openPulse(hit.pulse); return; }
     if (hit?.econ) { hit.econ.plant ? showPlant(hit.econ.plant) : showZone(hit.econ.zone); return; }
-    if (hit?.line) { if (hit.line.kind === 'work') showWork(hit.line.id); else if (hit.line.kind === 'cable') showCable(hit.line.id); else showFlow(hit.line.id); return; }
+    if (hit?.line) { if (hit.line.kind === 'work') showWork(hit.line.id); else if (hit.line.kind === 'cable') showCable(hit.line.id); else if (st.mode === 'disaster') showLang(hit.line.id); else showFlow(hit.line.id); return; }
     if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : hit.marker.kind === 'art' ? showArt(hit.marker.id) : hit.marker.kind === 'lang' || hit.marker.kind === 'langArea' ? showLang(hit.marker.id) : hit.marker.kind === 'cap' ? showCapital(hit.marker) : hit.marker.kind === 'work' ? showWork(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
     app.selectedProv = null;
     if (!hit) { st.selected = null; hideInfo(); redraw(); return; }
@@ -1190,7 +1216,7 @@ function applyLang() {
   syncMarkMenu();
   $('#dotSwitch').title = s.evDotsTip; $('#shotBtn').title = s.capShot; $('#recBtn').title = s.capRec;
   if (app.pin) renderPin();
-  $('#aboutBtn').textContent = s.about; $('#aboutClose').textContent = s.close; $('#aboutTitle').textContent = s.about;
+  $('#aboutBtn').textContent = s.about; $('#moreBtn').textContent = s.more; $('#aboutClose').textContent = s.close; $('#aboutTitle').textContent = s.about;
   // About: every data source, project, music and software with its licence (data-pipeline/credits.mjs)
   { const c = st.langInfo.col;
     $('#credits').innerHTML = CREDITS.map(sec => `<h3>${esc(sec.t[c])}</h3><table class="credits">` + sec.items.map(i =>
@@ -1877,15 +1903,26 @@ function customPair(x, s) {
   const col = st.langInfo.col, mine = x.custom.map(c => `<figure><img src="${url(c.url)}" alt=""><figcaption>${s.fgoCustomPic}${x.custom.length > 1 ? ' · ' + esc(c.n[col] || c.n[0]) : ''}${c.credit ? ' · ' + esc(c.credit) : ''}</figcaption></figure>`).join('');
   return `<div class="pairpics" style="grid-template-columns:repeat(${(orig ? 1 : 0) + x.custom.length},1fr)">${orig}${mine}</div><p class="src">${s.fgoCustomNote}</p>`;
 }
+// the disasters mode: date, deaths, scale and what the drawn range is based on
+function disasterRows(x, s, col) {
+  const D = s.theme.disaster, k = x.k, [y, m, d] = k.date.split('-').map(Number);
+  const date = d ? s.ymd(y, m, d) : m ? s.ym(y, m) : formatYear(st.lang, y);
+  const num = v => v.replace(/\d+/g, n => (+n).toLocaleString(st.lang));
+  const span = x.keep >= 2026 ? ` <small>${D.still}</small>` : x.keep ? ` <small>${D.until(x.keep)}</small>` : '';
+  return `<tr><th>${D.dateL}</th><td>${esc(date)}${span}</td></tr>`
+    + (k.dead ? `<tr><th>${D.deadL}</th><td>${esc(num(k.dead))}</td></tr>` : '')
+    + (k.m[col] || k.m[0] ? `<tr><th>${D.scaleL}</th><td>${esc(k.m[col] || k.m[0])}</td></tr>` : '')
+    + (k.r[col] || k.r[0] ? `<tr><th>${D.rangeL}</th><td><small>${esc(k.r[col] || k.r[0])}</small></td></tr>` : '');
+}
 function showLang(id) {
   const s = t(st.lang), col = st.langInfo.col, L = themeOf(st.mode); if (!L) return;
   const x = L.areas.find(q => q.id === id) || L.points.find(q => q.id === id); if (!x) return;
-  const fam = L.fam[x.f], links = [['zh', 'zh-Hant', 0], ['en', 'en', 1]].map(([, lang, i]) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
+  const fam = L.fam[x.f], links = [['zh', 'zh-Hant', 0], ['en', 'en', 1], ['ja', 'ja', 2]].map(([, lang, i]) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
   const box = $('#info');
   delete box.dataset.disputed; box.dataset.sticky = '1';
   box.innerHTML = `<button class="x" aria-label="close">×</button>
-    <h2><span class="star" style="color:${fam.color}">●</span>${esc(x.n[col] || x.n[0])}</h2>
-    <table class="facts"><tr><th>${s.span}</th><td>${formatYear(st.lang, x.a)} – ${x.b >= 2026 ? '' : formatYear(st.lang, x.b)}</td></tr>
+    <h2><span class="star" style="color:${fam.color}">${fam.sym || '●'}</span>${esc(x.n[col] || x.n[0])}</h2>
+    <table class="facts">${x.k ? disasterRows(x, s, col) : `<tr><th>${s.span}</th><td>${formatYear(st.lang, x.a)} – ${x.b >= 2026 ? '' : formatYear(st.lang, x.b)}</td></tr>`}
       <tr><th>${s.theme[st.mode].families}</th><td>${L.pointsAlways ? classIconSvg(x.f, fam.color, 18) : `<i class="sw" style="background:${fam.color}"></i>`} ${esc(fam.n[col] || fam.n[0])}</td></tr></table>
     <p class="desc">${esc(x.d[col] || x.d[0])}</p>
     ${x.series ? `<p class="series">◎ ${x.series.map(w => s.theme[st.mode].works[w]).join(' · ')}</p>` : ''}
@@ -2047,7 +2084,11 @@ function showProvince(prov) {
   box.hidden = false;
   box.querySelector('.x').onclick = () => { st.selected = null; app.selectedProv = null; hideInfo(); redraw(); };
 }
-function hideInfo() { const b = $('#info'); b.hidden = true; delete b.dataset.disputed; delete b.dataset.sticky; delete b.dataset.art; }
+function hideInfo() { const b = $('#info'); if (!b.hidden) b.hidden = true; for (const k of ['disputed', 'sticky', 'art']) if (k in b.dataset) delete b.dataset[k]; }
+// change the page only when a value really changes: during playback these run every frame, and on phones (iOS
+// Safari above all) a page that keeps changing under the finger swallows taps on the buttons and menus
+function setText(el, v) { v = String(v); if (el.textContent !== v) el.textContent = v; }
+function setHidden(el, v) { v = !!v; if (el.hidden !== v) el.hidden = v; }
 function esc(x) { return String(x ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 
 // ---------------------------------------------------------------- country-count sparkline

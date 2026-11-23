@@ -1,0 +1,8 @@
+# 人為災害：類別、顏色與地圖符號。欄位：id	顏色	符號	繁中	English	日本語
+nuclear	#9333ea	☢	核能與輻射事故	Nuclear and radiation accidents	原子力・放射線事故
+dam	#2563eb	▼	水壩、尾礦壩與土石堆潰決	Dam, tailings and fill failures	ダム・鉱滓ダム・盛土の決壊
+chem	#dc2626	⚠	化學洩漏與工業爆炸	Chemical releases and industrial explosions	化学物質漏洩・産業爆発
+marine	#3f3f46	◆	海洋污染與漏油	Marine pollution and oil spills	海洋汚染・油流出
+air	#64748b	☁	空氣污染事件	Air-pollution episodes	大気汚染事件
+war	#7f1d1d	✸	戰爭與核試造成的污染	Pollution from war and nuclear tests	戦争・核実験による汚染
+eco	#a16207	◎	長期的人為生態破壞	Long-term man-made ecological damage	長期的な人為的環境破壊

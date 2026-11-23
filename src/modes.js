@@ -516,13 +516,15 @@ export function worldCapitals(st, feats) {
 // ---------------------------------------------------------------- thematic world modes (languages, finance)
 // Areas (ellipses), points (shown once zoomed in) and flows (arrows that grow from source to destination during
 // their years, then stay a while and fade). Each mode may bring its own timeline of events.
-export const THEMES = ['language', 'finance', 'fgo', 'internet'];
+export const THEMES = ['language', 'finance', 'fgo', 'internet', 'disaster'];
 export async function loadTheme(mode) {
   store.theme ||= {};
   if (store.theme[mode]) return store.theme[mode];
   const T = await fetch(import.meta.env.BASE_URL + 'data/' + mode + '.json').then(r => r.json());
   T.fam = Object.fromEntries(T.families.map(f => [f.id, f]));
-  for (const a of T.areas) a.geometry = ellipse(a.lon, a.lat, a.rx, a.ry);
+  // ranges given as polygons (the disasters mode, already wound as d3 expects) are drawn as they are; the others
+  // are ellipses
+  for (const a of T.areas) a.geometry = a.poly ? { type: 'Polygon', coordinates: [a.poly] } : ellipse(a.lon, a.lat, a.rx, a.ry);
   // portraits of the points' originals (Wikidata → Commons), fetched like the art-history works
   if (T.pictures) registerWorks(mode, Object.fromEntries(T.points.filter(p => p.q).map(p => [p.id, [p.q]])), 'works.' + mode + '.v1');
   // the hidden mode's custom pictures live only on the maintainer's computer (public/fgo/custom is not committed):
@@ -537,23 +539,45 @@ export async function loadTheme(mode) {
 }
 export const themeOf = mode => store.theme?.[mode] || null;
 export const themeColor = (mode, f) => themeOf(mode)?.fam[f]?.color || '#888';
+// the exact (fractional) year while the timeline plays through `year`, otherwise the end of that year: things
+// that spread within a year (a cable being laid, an oil slick) grow smoothly instead of appearing whole
+const exactYear = (year, st) => (st?.playing && st.yearF != null && Math.floor(st.yearF) === year ? st.yearF : year + 1);
+// shrink a ring toward (lon, lat) by p (0–1): a range spreading out from where the disaster happened
+const toward = (ring, lon, lat, p) => ring.map(([x, y]) => [lon + (x - lon) * p, lat + (y - lat) * p]);
 export function themeActive(mode, year, st = null) {
   const T = themeOf(mode); if (!T) return { areas: [], points: [], flows: [] };
-  const flows = [];
+  const flows = [], FADE = T.fade ?? 60;
   for (const f of T.flows) {
-    // cables (g: years to lay): drawn over g years, in service until retired, gone a few years later
-    const linger = f.g != null ? 3 : Math.max(80, (f.b - f.a) * 1.5), grow = f.g ?? (f.b - f.a);
-    if (year < f.a || year > f.b + linger) continue;
-    // while the timeline plays, st.yearF is the exact (fractional) year, so a cable is laid smoothly through its
-    // first year instead of appearing whole when the year changes
-    const yf = f.g != null && st?.playing && st.yearF != null && Math.floor(st.yearF) === year ? st.yearF : year + (f.g != null ? 1 : 0);
+    // cables (g: years to lay): drawn over g years, in service until retired, gone a few years later;
+    // a disaster's route (grow: years to run its length) stays a few years after
+    const timed = f.g != null || f.grow != null;
+    const linger = f.g != null ? 3 : T.fade ?? Math.max(80, (f.b - f.a) * 1.5), grow = f.g ?? f.grow ?? (f.b - f.a);
+    if (year < Math.floor(f.a) || year > f.b + linger) continue;
+    const yf = timed ? exactYear(year, st) : year;
     const p = grow > 0 ? Math.max(0, Math.min(1, (yf - f.a) / grow)) : 1;
     flows.push({ ...f, p, alpha: year <= f.b ? 1 : Math.max(0, 1 - (year - f.b) / linger), color: f.g != null ? cableColor(mode, f, st) : themeColor(mode, f.f), noHead: f.g != null, pipe: PIPED.has(f.f) });
   }
-  return {
+  const areas = [];
+  for (const a of T.areas) {
+    const a0 = Math.floor(a.a);
+    if (year < a0) continue;
+    if (T.fade != null) {
+      // disasters: the range spreads from the site (grow), stays strong through its acute phase (to b), then
+      // fades over `fade` years; a range kept longer (keep: an exclusion zone) stays faint until then
+      const end = a.keep ?? a.b + FADE;
+      if (year > end) continue;
+      let geometry = a.geometry;
+      if (a.grow) { const p = Math.max(0.04, Math.min(1, (exactYear(year, st) - a.a) / a.grow)); if (p < 1) geometry = { type: 'Polygon', coordinates: [toward(a.geometry.coordinates[0], a.lon, a.lat, p)] }; }
+      const past = Math.max(0, year - a.b);
+      areas.push({ ...a, geometry, color: themeColor(mode, a.f), fresh: past ? 0 : 1, fading: past ? Math.min(1, past / FADE) : 0, faded: past >= FADE });
+      continue;
+    }
+    if (year > a.b) continue;
     // areas fade in over their first decades and out over their last ones
-    areas: T.areas.filter(a => a.a <= year && year <= a.b).map(a => ({ ...a, color: themeColor(mode, a.f),
-      fresh: Math.max(0, 1 - (year - a.a) / 60), fading: a.b < 2026 ? Math.max(0, 1 - (a.b - year) / 60) : 0 })),
+    areas.push({ ...a, color: themeColor(mode, a.f), fresh: Math.max(0, 1 - (year - a.a) / FADE), fading: a.b < 2026 ? Math.max(0, 1 - (a.b - year) / FADE) : 0 });
+  }
+  return {
+    areas,
     points: lingering(T.points, year, st),
     flows,
   };
@@ -567,12 +591,14 @@ function themeFrame(st) {
   // small areas first, so their labels win over the large ones around them
   const areas = act.areas.slice().sort((a, b) => b.rx * b.ry - a.rx * a.ry);
   return { feats, color: () => '#ece8df', overlays: [], disputed: false, noLabels: true,
-    lang: { areas, flows: act.flows.map(f => ({ ...f, name: f.n[st.langInfo.col] || f.n[0], label: f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })), cableW: st.cableW ?? 1, cableStyle: st.cableStyle || 'shade' },
+    lang: { areas, flows: act.flows.map(f => ({ ...f, name: f.n[st.langInfo.col] || f.n[0], label: f.grow != null || f.g != null && st.year - f.a > 2 ? '' : f.n[st.langInfo.col] || f.n[0] })), cableW: st.cableW ?? 1, cableStyle: st.cableStyle || 'shade' },
     markers: [
-      ...areas.slice().reverse().map(a => ({ kind: 'langArea', id: a.id, lon: a.lon, lat: a.lat, text: a.n, color: a.color, sym: '●',
+      ...areas.slice().reverse().filter(a => !a.nolabel && !a.faded).map(a => ({ kind: 'langArea', id: a.id, lon: a.lon, lat: a.lat, text: a.n, color: a.color, sym: T.fam[a.f]?.sym || '●',
+        ...(a.sz ? { scale: [0, 0.9, 1.15, 1.45][a.sz] } : {}), ...(a.fading ? { alpha: 1 - 0.6 * a.fading } : {}),
         // finance: a picture of the bank, exchange or coin (Wikipedia's lead picture, Commons only)
         ...(T.areaPictures && st.artPics !== false && st.pics !== false ? { pic: pagePicture(a.w[1]), picSize: Math.min(st.picSize || 54, 60) } : {}) })),
-      ...act.points.map(p => ({ kind: T.pointsAlways ? 'langArea' : 'lang', alpha: p.alpha, id: p.id, lon: p.lon, lat: p.lat, text: p.n, color: themeColor(st.mode, p.f), sym: '●',
+      ...act.points.map(p => ({ kind: T.pointsAlways || p.always ? 'langArea' : 'lang', alpha: p.alpha, id: p.id, lon: p.lon, lat: p.lat, text: p.n, color: themeColor(st.mode, p.f), sym: T.fam[p.f]?.sym || '●',
+        ...(p.sz ? { scale: [0, 0.9, 1.15, 1.45][p.sz] } : {}),
         ...(T.pictures && st.artPics !== false && st.pics !== false ? themePicture(p, st) : {}),
         ...(p.series ? { hi: true } : {}), ...(T.pointsAlways ? { cls: p.f } : {}) })),
     ] };

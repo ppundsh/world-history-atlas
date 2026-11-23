@@ -320,9 +320,28 @@ for (const w of works) {
 console.log(`OSM: ${stat.osm} whole, ${stat.part} partly, ${stat.none} not found (kept Natural Earth). Lines can be pinned to an OSM relation in data-pipeline/osm/manual.tsv`);
 
 // ---- write routes_osm.json and patch the built region data
+// On Windows a file another program holds open (an editor, a virus scan, a sync client, git) cannot be replaced
+// for a moment (EPERM / EBUSY): write a temporary file, then swap it in, trying again for about half a minute;
+// if it still fails, say so and go on with the other regions instead of stopping the whole run.
+async function save(f, text) {
+  const tmp = f + '.tmp';
+  for (let i = 0; i < 8; i++) {
+    try { fs.writeFileSync(tmp, text); fs.renameSync(tmp, f); return true; }
+    catch (e) {
+      if (!['EPERM', 'EBUSY', 'EACCES'].includes(e.code)) throw e;
+      if (i === 0) note(`${path.relative(ROOT, f)} 被其他程式占用（${e.code}），稍候重試…`);
+      await sleep(4000);
+    }
+  }
+  try { fs.unlinkSync(tmp); } catch { /* gone already */ }
+  note(`無法寫入 ${path.relative(ROOT, f)}：請關閉開著它的程式（編輯器、防毒、雲端同步），或檢查是否被設為唯讀，再執行一次。`);
+  console.log();
+  return false;
+}
+const failed = [];
 for (const r of REGIONS) {
   const res = result[r];
-  fs.writeFileSync(path.join(DP, r, 'routes_osm.json'), JSON.stringify(res));
+  if (!await save(path.join(DP, r, 'routes_osm.json'), JSON.stringify(res))) { failed.push(r); continue; }
   const f = path.join(ROOT, 'public', 'data', r + '.json');
   if (!fs.existsSync(f)) continue;
   const d = JSON.parse(fs.readFileSync(f, 'utf8'));
@@ -333,6 +352,8 @@ for (const r of REGIONS) {
     if (o.parts.length > 1) x.parts = o.parts; else delete x.parts;
     x.src = o.src; x.net = o.net; x.osm = o.osm; n++;
   }
-  fs.writeFileSync(f, JSON.stringify(d));
-  console.log(`${r}: ${n} routes from OpenStreetMap`);
+  if (!await save(f, JSON.stringify(d))) { failed.push(r); continue; }
+  const lines = works.filter(w => w.region === r).length;
+  console.log(`${r}: ${n} routes from OpenStreetMap` + (n < lines ? `（其餘 ${lines - n} 條在 OSM 找不到對應的路線關係，沿用 Natural Earth）` : ''));
 }
+if (failed.length) { console.log(`未能寫入：${failed.join(', ')}`); process.exitCode = 1; }

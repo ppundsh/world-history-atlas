@@ -135,6 +135,8 @@ python3 data-pipeline/usa/units.py "$NE" data-pipeline/build/usa_units.geojson
 $MS -i data-pipeline/build/usa_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/usa_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs usa
 node data-pipeline/build_theme.mjs internet
+python3 data-pipeline/disaster/make_json.py
+node data-pipeline/disaster/build_disaster.mjs
 node data-pipeline/econ/build-econ.mjs
 node data-pipeline/econ/build-compare.mjs "$NE"
 node data-pipeline/growth/build-growth.mjs

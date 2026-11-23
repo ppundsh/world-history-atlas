@@ -502,3 +502,59 @@ body[data-base="antique"] #growBox b { color: #8a3b12; }
 .cmpcross { margin-left: 6px; color: #bcd6ff; white-space: nowrap; }
 :is(#info, #pinInfo) .placepic.flag img { object-fit: contain; max-height: 140px; background: #f3f4f6; }
 :is(#info, #pinInfo) h2 > img.flagicon { height: 18px; width: auto; max-width: 32px; margin-right: 7px; vertical-align: -2px; border: 1px solid rgba(0,0,0,.18); border-radius: 2px; }
+
+/* ---------------------------------------------------------------- phones: the menu and the legend */
+#moreBtn { display: none; }
+html { touch-action: pan-x pan-y; }          /* no pinch-zooming of the page (the map zooms itself) */
+button, select, input, label, a { touch-action: manipulation; }
+@media (max-width: 860px) {
+  /* the menu: a two-column grid of full-size controls (label above, control below);
+     language, About and music fold under 「更多」 at the end */
+  #controls { display: none; grid-template-columns: 1fr 1fr; gap: 12px 10px; align-content: start; padding: 12px 12px calc(16px + env(safe-area-inset-bottom)); }
+  body.menu-open #controls { display: grid; }
+  #controls [hidden] { display: none !important; }
+  #controls > * { grid-column: span 1; margin: 0 !important; }
+  #controls > .modesel, #controls > #layerBox, #controls > #cmpCrossBox, #controls > #musicFold, #controls > #moreBtn { grid-column: 1 / -1; }
+  #toWorld[hidden] + #cmpBtn { grid-column: 1 / -1; }
+  #controls > label:not(.chk), #controls > .projpick { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 4px; font-size: 12px; color: #8a94a6; }
+  #controls select, #projBtn { width: 100%; max-width: none !important; min-height: 44px; box-sizing: border-box; }
+  #controls input[type=range] { width: 100%; height: 44px; }
+  /* iOS zooms the whole page when a field with text under 16px gets the focus */
+  #controls select, #projBtn, #yearInput, #timeline select, .evfilter, #controls input:not([type=checkbox]):not([type=range]) { font-size: 16px !important; }
+  #controls > button, #controls .showpick > button { min-height: 44px; width: 100%; font-size: 15px; border-radius: 10px; }
+  #toWorld, #cmpBtn { padding: 0 8px; }
+  #layerBox { display: flex; flex-wrap: wrap; gap: 8px; }
+  #layerBox > span { width: 100%; font-size: 12px; color: #8a94a6; }
+  #layerBox .chk { min-height: 40px; padding: 0 12px; border: 1px solid var(--line); border-radius: 10px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; }
+  #layerBox .chk input { width: 18px; height: 18px; }
+  /* 標記 and 顯示 side by side; an open one takes the whole row */
+  #controls .showpick:has(> .toggles:not([hidden])) { grid-column: 1 / -1; }
+  #controls .toggles { grid-template-columns: 1fr; gap: 2px; padding: 6px 4px; }
+  #controls .toggles :is(.switch, .chk) { min-height: 42px; font-size: 14px; align-items: center; }
+  #controls .toggles .chk input { width: 20px; height: 20px; }
+  #markMenu { min-width: 0; }
+  /* rarely used: at the end, behind 「更多」 */
+  #controls > #langBox, #controls > #aboutBtn, #controls > #musicFold { order: 20; }
+  #controls > #moreBtn { order: 19; display: block; text-align: left; padding: 0 12px; background: none; border: 1px solid var(--line); color: #c9d1dd; font-size: 14px; }
+  #moreBtn::after { content: ' ▸'; color: #8a94a6; }
+  body.more-open #moreBtn::after { content: ' ▾'; }
+  body:not(.more-open) #controls > :is(#langBox, #aboutBtn, #musicFold) { display: none !important; }
+  #musicFold { border-top: 0; padding-top: 0; }
+
+  /* the legend (本月勢力 …): folded it is a small tab; open it is a sheet above the player that scrolls by touch */
+  #legend { left: 8px; bottom: 44px; width: auto; max-width: calc(100% - 16px); max-height: 46%; font-size: 13px; z-index: 5;
+    overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 6px 12px 10px; }
+  #legend:not(.collapsed) { right: 8px; }
+  #legend.collapsed { display: flex; flex-direction: row-reverse; justify-content: flex-end; align-items: center; padding: 0 2px 0 14px; border-radius: 20px; max-width: 60%; }
+  #legend.collapsed h3 { margin: 0; padding: 9px 0; white-space: nowrap; }
+  #legend.collapsed .lbar { margin: 0; }
+  #legend.collapsed .lgrip, #legend.collapsed :is(h4, .kinds, .focuspick) { display: none; }
+  #legend h3 { touch-action: manipulation; font-size: 14px; padding: 6px 0; margin: 2px 0; }
+  #legend li { padding: 4px 0; }
+  #legend .govs li { padding: 6px 0; }
+  #legend .lbar { margin: 0 -6px 0 6px; }
+  #legend .lfold { font-size: 16px; padding: 8px 10px; }
+  #legend .lgrip { font-size: 18px; padding: 6px 6px; }
+  #legend p { font-size: 12px; }
+}
+@media (max-width: 860px) { #top { z-index: 12; } }   /* the open menu covers the legend and the map buttons */
