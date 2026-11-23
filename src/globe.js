@@ -1,4 +1,5 @@
 import { drawLang, pathFromProject, lineAt, labelsMoving } from './langlayer.js';
+import { drawEcon, econAt } from './econ.js';
 import { drawPulses, reservePulses, pulseAt } from './eventdots.js';
 import { takeSliding } from './flat.js';
 import { reliefFor } from './relief.js';
@@ -12,7 +13,8 @@ import { geoDistance, geoBounds, geoMercator, geoPath } from 'd3-geo';
 import { store, P, loadPhysical, chunkFor } from './data.js';
 import { planTransition, ease, decodeIds, pieceKey, idColor, readbackOk } from './transition.js';
 import { frame, region as reg, REGIONS } from './modes.js';
-import { drawMarker, cardUnder, dragCard } from './flat.js';
+import { drawMarker, cardUnder, dragCard, closeAt, unitKey, nextCardFrame } from './flat.js';
+import { EMPH } from './emph.js';
 import { BASEMAPS } from './styles.js';
 import { labelItems, placeLabels } from './labels.js';
 
@@ -99,6 +101,7 @@ export class GlobeMap {
         polities2: { type: 'geojson', data: EMPTY, promoteId: 'k' },
         stripes: { type: 'geojson', data: EMPTY },
         pinned: { type: 'geojson', data: EMPTY },
+        emph: { type: 'geojson', data: EMPTY },
         roc: { type: 'geojson', data: EMPTY },
         rborder: { type: 'geojson', data: EMPTY },
         aborder: { type: 'geojson', data: EMPTY },
@@ -136,8 +139,10 @@ export class GlobeMap {
         { id: 'disputed-hatch', type: 'fill', source: 'disputed', paint: { 'fill-pattern': 'hatch' } },
         { id: 'disputed-line', type: 'line', source: 'disputed', paint: { 'line-color': 'rgba(20,20,20,0.85)', 'line-width': 1, 'line-dasharray': [3, 2] } },
         ...['', '2'].map(x => ({ id: 'polity-line' + x, type: 'line', source: 'polities' + x, paint: { 'line-color': S.border, 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.5, 6, 1.6], 'line-opacity': SHOWN(1) } })),
-        ...['', '2'].map(x => ({ id: 'selected' + x, type: 'line', source: 'polities' + x, paint: { 'line-color': '#d12', 'line-width': 2.2, 'line-opacity': ['case', ['all', ['boolean', ['feature-state', 'on'], false], ['boolean', ['feature-state', 'sel'], false]], 1, 0] } })),
+        ...['', '2'].map(x => ({ id: 'selected' + x, type: 'line', source: 'polities' + x, paint: { 'line-color': '#d12', 'line-width': 3.2, 'line-opacity': ['case', ['all', ['boolean', ['feature-state', 'on'], false], ['boolean', ['feature-state', 'sel'], false]], 1, 0] } })),
         // a pinned country's borders, kept from the year it was pinned
+        { id: 'emph-case', type: 'line', source: 'emph', paint: { 'line-color': 'rgba(255,255,255,0.9)', 'line-width': 5 } },
+        { id: 'emph', type: 'line', source: 'emph', paint: { 'line-color': '#d12', 'line-width': 3 } },
         { id: 'pinned-case', type: 'line', source: 'pinned', paint: { 'line-color': 'rgba(255,255,255,0.9)', 'line-width': 4.5 } },
         { id: 'pinned', type: 'line', source: 'pinned', paint: { 'line-color': '#c2185b', 'line-width': 2.2, 'line-dasharray': [3, 1.6] } },
         { id: 'lakes', type: 'fill', source: 'lakes', paint: { 'fill-color': S.lake } },
@@ -212,9 +217,21 @@ export class GlobeMap {
     }
     // 2) per-feature state: alive, colour, ROC outline, selection
     const want = new Map();
+    // thick outline: what is under the pointer and what was clicked (a territory, or one unit)
+    const ks = [EMPH.hover, EMPH.pick ?? (st.selected != null ? 'f:' + st.selected : null)].filter(k => k && (k[0] === 'f' || k[0] === 'u') && k[1] === ':');
+    // with the division layer on the map is drawn by units: a whole territory is outlined from the merged areas
+    // (its outer border only, in the 'emph' layer), not unit by unit, which traced every internal boundary
+    const merged = regional && F.ribbons;
+    const selF = f => ks.some(k => { const [kind, p, ...u] = k.split(':'); return f.properties.p === +p && ((kind === 'f' && !merged) || (kind === 'u' && unitKey(f) === u.join(':'))); });
+    const ek = merged ? ks.filter(k => k[0] === 'f').join('|') + '#' + (F.ribbons.length) : '';
+    if (ek !== this.emphKey) {
+      this.emphKey = ek;
+      const ids = new Set(merged ? ks.filter(k => k[0] === 'f').map(k => +k.split(':')[1]) : []);
+      m.getSource('emph')?.setData({ type: 'FeatureCollection', features: merged ? F.ribbons.filter(f => ids.has(f.properties.p)).map(f => ({ type: 'Feature', geometry: f.geometry, properties: {} })) : [] });
+    }
     for (const f of regional ? (F.fillUnits || F.units) : feats) {
       const k = regional ? f.properties.prov.id : f.properties.fi;
-      want.set(k, { on: true, c: F.color(f.properties.p), sel: st.selected != null && f.properties.p === st.selected });
+      want.set(k, { on: true, c: F.color(f.properties.p), sel: ks.length > 0 && selF(f) });
     }
     for (const [k, old] of this.state) if (!want.has(k) && old.on) { m.setFeatureState({ source: this.src, id: k }, { on: false, sel: false }); this.state.set(k, { on: false }); }
     for (const [k, w] of want) {
@@ -247,7 +264,10 @@ export class GlobeMap {
     const oKey = F.overlays.map(o => o.properties.name?.[0]).join();
     if (oKey !== this.overlayKey) { this.overlayKey = oKey; m.getSource('overlay').setData({ type: 'FeatureCollection', features: F.overlays }); }
 
-    if (prev && prev !== feats && st.animate && !force) this.startTransition(prev, feats, F);
+    // with both layers on, the fill is the divisions: the transition animates those (animating the control
+    // areas painted whole territories in the rulers' colour for a moment, then hid them)
+    const fill = F.fillFeats || feats, prevFill = this.fillPrev; this.fillPrev = fill;
+    if (prevFill && prevFill !== fill && st.animate && !force) this.startTransition(prevFill, fill, F);
     const disp = F.disputed ? store.disputed.filter(d => d.properties.a <= st.year && st.year <= d.properties.b) : [];
     const dkey = st.mode + '|' + st.pov + '|' + disp.map(d => d.properties.name).join(',');
     if (force || dkey !== this.lastDKey) {
@@ -435,9 +455,11 @@ export class GlobeMap {
   }
 
   hit(point) {
+    const cl = closeAt(point.x, point.y); if (cl) return { close: cl };
     const pu = pulseAt(point.x, point.y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => point.x >= b.x0 && point.x <= b.x1 && point.y >= b.y0 && point.y <= b.y1);
     if (mk) return { marker: mk.m };
+    const ec = econAt(this.econHits, point.x, point.y); if (ec) return { econ: ec };
     const ln = lineAt(this.lineHits, point.x, point.y); if (ln) return { line: ln };
     const st = this.app.state;
     const d = this.map.queryRenderedFeatures(point, { layers: ['disputed-hatch'] })[0];
@@ -445,7 +467,7 @@ export class GlobeMap {
     if (f.length && REGIONS.includes(st.mode)) {
       const k = f[0].properties.k;
       const hitF = (this.feats || []).find(x => x.properties.prov?.id === k || x.properties.units?.includes(k));
-      return hitF ? { polity: hitF.properties.p, sec: hitF.properties.s ?? null, prov: hitF.properties.prov } : null;
+      return hitF ? { polity: hitF.properties.p, sec: hitF.properties.s ?? null, prov: hitF.properties.prov, unit: unitKey(hitF) } : null;
     }
     const pid = f.length ? f[0].properties.p : null;
     if (d) return { disputed: store.disputed.find(x => x.properties.name === d.properties.name), polity: pid };
@@ -453,6 +475,7 @@ export class GlobeMap {
   }
 
   drawOverlay() {
+    nextCardFrame();
     const { octx: ctx, W, H, dpr } = this;
     if (!ctx || !this.feats) return;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -496,8 +519,11 @@ export class GlobeMap {
       this.lineHits = drawLang(ctx, F.lang, pathFromProject(ctx, pr), pr, S.label.font, Math.pow(2, m.getZoom() - 1));
       if (labelsMoving()) m.triggerRepaint();      // names still sliding apart
     }
-    const placed = [], hits = this.markerHits = [];
     const pproj = ll => { if (geoDistance(ll, center) > 1.4) return null; const q = m.project(ll); return [q.x, q.y]; };
+    this.econHits = [];
+    const EL = this.app.econLayer?.();
+    if (EL) drawEcon(ctx, pproj, { ...EL, k: Math.pow(2, m.getZoom() - 1) * 1.6, font: S.label.font }, this.econHits);
+    const placed = [], hits = this.markerHits = [];
     reservePulses(pproj, placed, S.label.font);
     for (const g of this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers) {
       if (geoDistance([g.lon, g.lat], center) > 1.4) continue;

@@ -1,20 +1,21 @@
 # 土耳其模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
 rail	tr_baghdad	1904-10		29.02,40.99 30.52,39.78 32.49,37.87 35.32,37.0 36.6,36.95	巴格達鐵路（安納托利亞段）	Baghdad Railway (Anatolian section)	バグダード鉄道	德國協助興建，連接伊斯坦堡與巴格達。	Built with German help to link Istanbul with Baghdad.	ドイツの協力で建設。	巴格达铁路	Baghdad Railway
 rail	tr_hejaz	1908-09		36.2,36.2 36.3,33.5	漢志鐵路（起點段）	Hejaz Railway (northern start)	ヒジャーズ鉄道	通往麥地那的朝聖鐵路。	The pilgrims' railway to Medina.	メディナへの巡礼鉄道。	汉志铁路	Hejaz Railway
-bridge	tr_bosphorus	1973-10		29.04,41.05	博斯普魯斯大橋	Bosphorus Bridge	ボスポラス大橋	第一座連接歐亞的跨海峽大橋。	The first bridge between Europe and Asia over the strait.	初の欧亜連絡橋。	七·一五烈士大桥	Bosphorus Bridge
+bridge	tr_bosphorus	1973-10		29.027,41.047 29.042,41.043	博斯普魯斯大橋	Bosphorus Bridge	ボスポラス大橋	第一座連接歐亞的跨海峽大橋。	The first bridge between Europe and Asia over the strait.	初の欧亜連絡橋。	七·一五烈士大桥	Bosphorus Bridge
 dam	tr_ataturk	1992-07		38.32,37.48	阿塔圖克水壩	Atatürk Dam	アタテュルク・ダム	東南安納托利亞計畫的核心水壩。	The heart of the South-eastern Anatolia Project.	南東アナトリア計画の中核。	阿塔图尔克水坝	Atatürk Dam
-tunnel	tr_marmaray	2013-10		29.0,41.0	馬爾馬拉海底鐵路隧道	Marmaray tunnel	マルマライ	穿越博斯普魯斯海峽的海底鐵路。	The rail tunnel under the Bosphorus.	ボスポラス海峡の海底鉄道。	马尔马拉海底隧道	Marmaray
+tunnel	tr_marmaray	2013-10		28.98,41.015 29.015,41.026	馬爾馬拉海底鐵路隧道	Marmaray tunnel	マルマライ	穿越博斯普魯斯海峽的海底鐵路。	The rail tunnel under the Bosphorus.	ボスポラス海峡の海底鉄道。	马尔马拉海底隧道	Marmaray
 hsr	tr_yht	2009-03		32.85,39.93 30.52,39.78 29.92,40.77 28.98,41.01	安卡拉—伊斯坦堡高速鐵路	Ankara–Istanbul high-speed railway	アンカラ—イスタンブール高速鉄道	土耳其的第一條高速鐵路。	Turkey's first high-speed line.	トルコ初の高速鉄道。		Ankara–Istanbul high-speed railway
 airport	tr_ist	2018-10		28.73,41.26	伊斯坦堡機場	Istanbul Airport	イスタンブール空港	世界最大的機場之一。	One of the world's largest airports.	世界最大級の空港。	伊斯坦布尔机场	Istanbul Airport
-bridge	tr_canakkale	2022-03		26.62,40.35	1915 恰納卡萊大橋	1915 Çanakkale Bridge	1915年チャナッカレ橋	跨達達尼爾海峽，世界最長主跨的吊橋。	Over the Dardanelles; the longest main span of any suspension bridge.	世界最長の吊橋。	1915恰纳卡莱大桥	1915 Çanakkale Bridge
-nuclear	tr_akkuyu	2025-12		33.54,36.14	阿庫尤核電廠	Akkuyu Nuclear Power Plant	アックユ原子力発電所	土耳其第一座核電廠。	Turkey's first nuclear plant.	トルコ初の原発。		
-bridge	tr_fsm	1988-07		29.06,41.09	法提赫蘇丹穆罕默德大橋	Fatih Sultan Mehmet Bridge	ファーティフ・スルタン・メフメト橋	博斯普魯斯第二座大橋。	The second Bosphorus bridge.	第2ボスポラス橋。	法提赫苏丹穆罕默德大桥	Fatih Sultan Mehmet Bridge
-bridge	tr_osmangazi	2016-06		29.52,40.75	奧斯曼加齊大橋	Osman Gazi Bridge	オスマン・ガーズィー橋	橫越伊茲密特灣的懸索橋。	The suspension bridge across the Gulf of İzmit.	イズミット湾の吊橋。	奥斯曼加齐大桥	Osman Gazi Bridge
-bridge	tr_yavuz	2016-08		29.12,41.2	亞武茲蘇丹塞利姆大橋	Yavuz Sultan Selim Bridge	ヤウズ・スルタン・セリム橋	博斯普魯斯北口的第三座大橋。	The third Bosphorus bridge, at the Black Sea end.	第3ボスポラス橋。	亚武兹苏丹塞利姆大桥	Yavuz Sultan Selim Bridge
+bridge	tr_canakkale	2022-03		26.61,40.335 26.66,40.35	1915 恰納卡萊大橋	1915 Çanakkale Bridge	1915年チャナッカレ橋	跨達達尼爾海峽，世界最長主跨的吊橋。	Over the Dardanelles; the longest main span of any suspension bridge.	世界最長の吊橋。	1915恰纳卡莱大桥	1915 Çanakkale Bridge
+nuclear	tr_akkuyu	2018-04		33.54,36.14	阿庫尤核電廠（興建中）	Akkuyu Nuclear Power Plant (under construction)	アックユ原子力発電所（建設中）	土耳其第一座核電廠，2018 年動工；1 號機 2026 年進行試運轉，尚未併網發電（至 2026 年 10 月）。	Turkey's first nuclear plant, begun in 2018; unit 1 was being commissioned in 2026 but had not yet supplied the grid (as of October 2026).	トルコ初の原発。2018年着工、1号機は2026年に試運転中（10月時点で未送電）。		
+bridge	tr_fsm	1988-07		29.05,41.09 29.07,41.09	法提赫蘇丹穆罕默德大橋	Fatih Sultan Mehmet Bridge	ファーティフ・スルタン・メフメト橋	博斯普魯斯第二座大橋。	The second Bosphorus bridge.	第2ボスポラス橋。	法提赫苏丹穆罕默德大桥	Fatih Sultan Mehmet Bridge
+bridge	tr_osmangazi	2016-06		29.50,40.76 29.52,40.73	奧斯曼加齊大橋	Osman Gazi Bridge	オスマン・ガーズィー橋	橫越伊茲密特灣的懸索橋。	The suspension bridge across the Gulf of İzmit.	イズミット湾の吊橋。	奥斯曼加齐大桥	Osman Gazi Bridge
+bridge	tr_yavuz	2016-08		29.11,41.20 29.13,41.20	亞武茲蘇丹塞利姆大橋	Yavuz Sultan Selim Bridge	ヤウズ・スルタン・セリム橋	博斯普魯斯北口的第三座大橋。	The third Bosphorus bridge, at the Black Sea end.	第3ボスポラス橋。	亚武兹苏丹塞利姆大桥	Yavuz Sultan Selim Bridge
 port	tr_golden_horn	1071-08		28.97,41.02	金角灣港（伊斯坦堡）	Golden Horn harbour	金角湾	拜占庭與鄂圖曼首都的天然港灣。	The natural harbour of the Byzantine and Ottoman capital.	首都の天然港。	金角湾	Golden Horn
-port	tr_izmir	1453-01		27.14,38.44	伊茲密爾港（士麥那）	Port of İzmir (Smyrna)	イズミル港	愛琴海岸的貿易大港。	The great trading port of the Aegean coast.	エーゲ海岸の港。	伊兹密尔	İzmir
+port	tr_izmir	1426-01		27.14,38.44	伊茲密爾港（士麥那）	Port of İzmir (Smyrna)	イズミル港	愛琴海岸的貿易大港。	The great trading port of the Aegean coast.	エーゲ海岸の港。	伊兹密尔	İzmir
 port	tr_mersin	1886-01		34.64,36.8	梅爾辛港	Port of Mersin	メルスィン港	東地中海的大型港口。	A big port of the eastern Mediterranean.	東地中海の港。	梅尔辛	Mersin
 airport	tr_esb	1955-01		32.99,40.13	安卡拉埃森博阿機場	Ankara Esenboğa Airport	アンカラ・エセンボーア国際空港	首都的機場。	The capital's airport.	首都の空港。	安卡拉埃森博阿国际机场	Ankara Esenboğa International Airport
 fiber	tr_tae	1998-01		44.4,39.4 41.27,39.9 39.5,39.75 35.48,38.73 32.85,39.93 29,41	跨亞歐光纜（TAE）土耳其段	Trans-Asia-Europe fibre (Turkey section)	アジア欧州横断光ケーブル（トルコ区間）	中國到德國的陸上光纖經土耳其。	The overland fibre from China to Germany crosses Turkey.	陸上の欧亜光ケーブル。		
 cable	tr_kafos	1997-01		27.913,43.208 28.35,43.183 28.8,43.428 28.8,43.673 28.583,43.817;28.988,41.041 29.1,41.3 29.025,41.436 28.35,41.856 27.985,41.884 28.238,42.19 28.238,42.854 28.35,43.183	KAFOS 黑海海纜（伊斯坦堡—瓦爾納—曼加利亞）	KAFOS Black Sea cable	KAFOS黒海ケーブル	連接土耳其、保加利亞與羅馬尼亞。	Links Turkey, Bulgaria and Romania.	黒海の海底ケーブル。		
 ixp	tr_tnap	2018-01		28.98,41.04	伊斯坦堡網際網路交換中心	Istanbul internet exchange	イスタンブールのIX	土耳其的網路交換樞紐。	Turkey's internet exchange hub.	トルコのIX。		
+tunnel	tr_eurasia	2016-12		28.97,41.00 29.02,40.99	歐亞隧道	Eurasia Tunnel	ユーラシア・トンネル	穿越博斯普魯斯海峽海底的汽車隧道，連接歐亞兩岸。	A road tunnel under the Bosphorus linking Europe and Asia.	ボスポラス海峡の海底道路トンネル。	歐亞海底隧道	Eurasia Tunnel

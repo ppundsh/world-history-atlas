@@ -1,0 +1,7 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+park	mizushima	1953-01		133.74	34.5	水島臨海工業地帶	Mizushima coastal industrial zone	水島臨海工業地帯	岡山縣倉敷市在埋立地上開發的石化、鋼鐵工業地帶。	Petrochemical and steel complex on reclaimed land at Kurashiki.	倉敷市の埋立地に造られた重化学工業地帯。	水島臨海工業地帶	Mizushima	
+sci	tsukuba	1963-09		140.1	36.08	筑波研究學園都市	Tsukuba Science City	筑波研究学園都市	政府將國立研究機構集中遷移的研究都市。	A science city to which the government moved its national research institutes.	国の研究機関を集団移転した学園都市。	筑波研究學園都市	Tsukuba Science City	1
+park	kashima	1969-01		140.68	35.92	鹿島臨海工業地帶	Kashima coastal industrial zone	鹿島臨海工業地帯	茨城縣挖港建設的大型鋼鐵、石化工業地帶。	A large steel and petrochemical complex around a port dug into the Ibaraki coast.	茨城県の掘込港湾を中心とする工業地帯。	鹿島臨海工業地帶		1
+biz	shinjuku	1971-06		139.69	35.69	新宿副都心	Shinjuku subcentre	新宿副都心	東京都在淀橋淨水場舊址規劃的摩天大樓商業區，都廳 1991 年遷入。	The skyscraper district Tokyo planned on the old Yodobashi waterworks; the metropolitan government moved there in 1991.	淀橋浄水場跡地に計画された超高層ビル街。	新宿副都心	Shinjuku	1
+sci	keihanna	1987-06		135.78	34.76	關西文化學術研究都市	Kansai Science City	関西文化学術研究都市	京都、大阪、奈良交界的學術研究都市。	A science city where Kyoto, Osaka and Nara meet.	京都・大阪・奈良にまたがる学研都市。	關西文化學術研究都市	Kansai Science City	
+ftz	okinawa_ftz	1988-01		127.66	26.2	沖繩自由貿易地域	Okinawa Free Trade Zone	沖縄自由貿易地域	依《沖繩振興開發特別措置法》設於那霸的自由貿易區。	Free-trade zone at Naha under the Okinawa development law.	那覇に設けられた自由貿易地域。			

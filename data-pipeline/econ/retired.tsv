@@ -1,0 +1,20 @@
+# 已關閉的電廠（WRI 資料庫約為 2019 年的狀態，之後關閉的大型電廠在此補上停用年月；目前只涵蓋核電廠）。欄位：ISO3	電廠名稱（與 WRI 相同）	停用(年-月)	說明
+TWN	Chinshan	2019-07	核一廠 2 號機運轉執照到期（1 號機 2018-12）
+TWN	Kuosheng	2023-03	核二廠 2 號機運轉執照到期（1 號機 2021-07）
+TWN	Maanshan	2025-05	核三廠 2 號機運轉執照到期（1 號機 2024-07）
+JPN	Fukushima Daina	2011-03	福島第二核電廠：2011 年地震後停機，2019 年決定除役
+DEU	Kernkraft Gundremmingen	2021-12	貢德雷明根 C 機組停機
+DEU	BROKDORF	2021-12	
+DEU	Grohnde	2021-12	
+DEU	PHILIPPSBURG-2	2019-12	
+DEU	ISAR-2	2023-04	德國最後三座核電廠停機
+DEU	EMSLAND	2023-04	
+DEU	NECKARWESTHEIM-2	2023-04	
+FRA	FESSENHEIM	2020-06	2 號機停機（1 號機 2020-02）
+GBR	Hinkley Point B	2022-08	
+GBR	Hunterston B	2022-01	
+GBR	Dungeness B	2021-06	
+USA	Indian Point 2	2020-04	
+USA	Indian Point 3	2021-04	
+USA	Duane Arnold Energy Center	2020-08	
+USA	Palisades	2022-05	

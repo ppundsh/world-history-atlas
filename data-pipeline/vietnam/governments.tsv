@@ -13,7 +13,7 @@ mac_tl	1527-06	1592-12	105.85	21.03	1	mac	昇龍（莫朝）	升龙（莫朝）	
 le_south	1533-01	1592-12	105.6	20.08	1	le	清化（黎朝南朝）	清化（黎朝南朝）	Thanh Hóa (Lê southern court)	清化（黎朝南朝）
 caobang	1593-01	1677-08	106.25	22.67	0	mac	高平（莫朝殘餘）	高平（莫朝残余）	Cao Bằng (Mạc remnant)	高平（莫朝残存勢力）
 le_trinh	1593-01	1786-08	105.85	21.03	1	trinh	昇龍（黎朝、鄭主）	升龙（黎朝、郑主）	Thăng Long (Lê emperors, Trịnh lords)	昇竜（黎朝・鄭主）
-phuxuan_n	1600-06	1774-12	107.58	16.46	0	nguyen_l	富春（阮主）	富春（阮主）	Phú Xuân (Nguyễn lords)	富春（阮主）
+phuxuan_n	1600-06	1774-12	107.58	16.46	0	nguyen_l	順化一帶（阮主府，1687 年起在富春）	顺化一带（阮主府，1687 年起在富春）	Huế area (Nguyễn lords; at Phú Xuân from 1687)	順化一帯（阮主の府、1687年から富春）
 quynhon	1778-01	1793-12	109.03	13.89	0	tayson	歸仁（西山，阮岳）	归仁（西山，阮岳）	Quy Nhơn (Tây Sơn, Nguyễn Nhạc)	帰仁（西山・阮岳）
 phuxuan_t	1788-12	1801-06	107.58	16.46	1	tayson	富春（西山，光中帝）	富春（西山，光中帝）	Phú Xuân (Tây Sơn, Quang Trung)	富春（西山・光中帝）
 giadinh	1788-09	1801-06	106.7	10.78	0	nguyen	嘉定（阮福映）	嘉定（阮福映）	Gia Định (Nguyễn Ánh)	嘉定（阮福映）

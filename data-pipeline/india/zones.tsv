@@ -1,0 +1,8 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+epz	kandla	1965-03		70.22	23.03	坎德拉經濟特區	Kandla Special Economic Zone	カンドラ経済特区	亞洲最早的加工出口區之一，2000 年改為經濟特區。	One of Asia's first export-processing zones, a special economic zone from 2000.	アジア最初期の輸出加工区。		Kandla Special Economic Zone	1
+epz	seepz	1973-03		72.87	19.13	聖克魯斯電子出口加工區	SEEPZ (Santacruz Electronics Export Processing Zone)	SEEPZ（サンタクルス電子輸出加工区）	孟買的電子與珠寶出口加工區。	Mumbai's electronics and jewellery export zone.	ムンバイの電子・宝飾輸出加工区。		SEEPZ	
+park	noida	1976-04		77.33	28.57	諾伊達	Noida	ノイダ	緊急狀態期間依《北方邦工業區開發法》設立的工業新市鎮。	An industrial new town set up during the Emergency under the Uttar Pradesh Industrial Area Development Act.	工業新都市。	諾伊達	Noida	
+fin	bkc	1977-01		72.865	19.065	班德拉—庫爾拉綜合區	Bandra Kurla Complex	バンドラ・クルラ・コンプレックス	孟買規劃的金融商業區，國家證券交易所所在。	Mumbai's planned business district, home of the National Stock Exchange.	ムンバイの計画金融街。		Bandra Kurla Complex	1
+sci	electronic_city	1978-01		77.67	12.84	電子城	Electronic City	エレクトロニック・シティ	卡納塔克邦設立的電子工業園區，班加羅爾資訊產業的起點。	The electronics park set up by Karnataka, where Bangalore's IT industry began.	バンガロールIT産業の出発点。	電子城	Electronic City	1
+sci	hitec	1998-11		78.38	17.45	海得拉巴高科技城	HITEC City	HITECシティ	安得拉邦政府推動的資訊科技園區。	The IT park pushed by the Andhra Pradesh government.	ハイデラバードのIT団地。		HITEC City	
+fin	gift	2015-04		72.68	23.16	古吉拉特國際金融科技城	GIFT City	GIFTシティ	印度第一個國際金融服務中心（IFSC）。	India's first international financial services centre.	インド初の国際金融サービスセンター。		GIFT City	1

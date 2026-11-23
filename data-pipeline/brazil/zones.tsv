@@ -1,0 +1,4 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	manaus	1967-02		-60.02	-3.1	瑪瑙斯自由區	Manaus Free Trade Zone	マナウス・フリーゾーン	亞馬遜的免稅工業區，電子與機車產業基地。	Duty-free industrial zone in the Amazon: electronics and motorcycles.	アマゾンの免税工業地域。	瑪瑙斯自由貿易區	Manaus Free Trade Zone	1
+park	camacari	1978-06		-38.32	-12.7	卡馬薩里石化園區	Camaçari Petrochemical Complex	カマサリ石油化学コンビナート	巴伊亞州的大型石化園區。	Large petrochemical complex in Bahia.	バイーア州の石油化学団地。			1
+park	suape	1978-01		-34.96	-8.39	蘇阿佩工業港區	Suape Industrial Port Complex	スアペ工業港湾コンプレックス	伯南布哥州的港口工業區。	Port and industrial complex in Pernambuco.	ペルナンブコ州の港湾工業地区。		Port of Suape	

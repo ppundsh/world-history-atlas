@@ -1,0 +1,4 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	ftz1	1937-01		-74.07	40.62	第一號對外貿易區（紐約）	Foreign-Trade Zone No. 1 (New York)	外国貿易地域第1号（ニューヨーク）	依 1934 年《對外貿易區法》設立的第一個對外貿易區（史泰登島）。	The first zone under the Foreign-Trade Zones Act of 1934, on Staten Island.	1934年法による最初の外国貿易地域。		Foreign-trade zones of the United States	1
+sci	rtp	1959-01		-78.86	35.9	研究三角園區	Research Triangle Park	リサーチ・トライアングル・パーク	北卡羅來納州政府與三所大學推動的研究園區。	The research park pushed by North Carolina and its three universities.	ノースカロライナ州の研究団地。	研究三角園區	Research Triangle Park	1
+sci	cummings	1962-01		-86.67	34.73	卡明斯研究園區	Cummings Research Park	カミングス研究団地	亨茨維爾的航太研究園區，鄰近 NASA 馬歇爾太空飛行中心。	Aerospace research park at Huntsville, next to NASA's Marshall centre.	ハンツビルの航空宇宙研究団地。		Cummings Research Park	

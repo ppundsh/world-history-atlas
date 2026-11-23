@@ -2,11 +2,9 @@
 -550-06	居魯士二世推翻米底，建立阿契美尼德帝國	Cyrus the Great overthrows the Medes: the Achaemenid Empire	キュロス2世がメディアを倒しアケメネス朝を建国	53.17	30.19
 -539-10	居魯士攻占巴比倫	Cyrus takes Babylon	キュロスのバビロン入城	44.42	32.54
 -522-09	大流士一世即位，貝希斯敦銘文	Darius I takes the throne: the Behistun inscription	ダレイオス1世の即位、ベヒストゥン碑文	47.44	34.39
--518-01	波斯波利斯開始興建	Work begins on Persepolis	ペルセポリスの建設開始	52.89	29.94
 -331-10	高加米拉戰役，大流士三世敗於亞歷山大	Battle of Gaugamela: Darius III falls to Alexander	ガウガメラの戦い	43.4	36.57
 -330-01	亞歷山大焚毀波斯波利斯	Alexander burns Persepolis	ペルセポリスの炎上	52.89	29.94
 -247-01	安息王朝興起	The Parthian dynasty rises	アルサケス朝の興起	58.2	37.95
--53-06	卡雷戰役，安息擊敗羅馬	Battle of Carrhae: Parthia defeats Rome	カルラエの戦い	39.03	36.87
 0224-04	阿爾達希爾一世建立薩珊帝國	Ardashir I founds the Sasanian Empire	アルダシール1世のサーサーン朝建国	52.53	28.92
 0260-01	沙普爾一世俘虜羅馬皇帝瓦勒良	Shapur I captures the Roman emperor Valerian	シャープール1世がウァレリアヌスを捕虜に	36.9	37.1
 0531-09	霍斯勞一世即位，薩珊鼎盛	Khosrow I takes the throne: the Sasanian height	ホスロー1世の即位	44.58	33.09
@@ -44,14 +42,12 @@
 1951-05	摩薩台將石油國有化	Mosaddegh nationalises the oil industry	モサッデグの石油国有化	51.39	35.69
 1953-08	美英策動政變推翻摩薩台	The US and British coup removes Mosaddegh	1953年のクーデター	51.39	35.69
 1963-01	白色革命	The White Revolution	白色革命	51.39	35.69
-1979-02	伊斯蘭革命	The Islamic Revolution	イラン革命	51.39	35.69
 1979-11	美國大使館人質危機	The US embassy hostage crisis	アメリカ大使館人質事件	51.42	35.71
 1980-09	兩伊戰爭爆發	The Iran–Iraq War begins	イラン・イラク戦争の勃発	48.3	30.36
 1988-08	兩伊戰爭停火	The Iran–Iraq War ends in a ceasefire	イラン・イラク戦争の停戦	51.39	35.69
 2003-12	巴姆大地震	The Bam earthquake	バム地震	58.36	29.1
 2009-06	綠色運動	The Green Movement	緑の運動	51.39	35.69
 2015-07	伊朗核協議	The Iran nuclear deal	イラン核合意	51.39	35.69
-2022-09	「婦女、生命、自由」抗議	"Woman, Life, Freedom" protests	「女性・命・自由」運動	51.39	35.69
 2025-06	以色列與美國空襲伊朗核設施	Israel and the US strike Iran's nuclear sites	イスラエルと米国によるイラン核施設攻撃	51.72	33.72
 -490-09	馬拉松戰役	Battle of Marathon	マラトンの戦い	23.97	38.12
 -480-08	溫泉關與薩拉米斯之戰	Thermopylae and Salamis	テルモピュライとサラミスの海戦	22.54	38.8
@@ -64,36 +60,25 @@
 0363-06	羅馬皇帝尤利安陣亡	Emperor Julian dies in Persia	ユリアヌス帝の戦死	44.58	33.09
 0484-01	卑路斯敗死於嚈噠	Peroz falls fighting the Hephthalites	ペーローズの戦死	62.0	36.0
 0627-12	尼尼微戰役	Battle of Nineveh	ニネヴェの戦い	43.15	36.36
-0637-01	卡迪西亞戰役	Battle of al-Qadisiyyah	カーディシーヤの戦い	44.4	31.5
 0819-01	薩曼王朝興起	The Samanids rise	サーマーン朝の興隆	64.42	39.77
 0945-12	布伊王朝入主巴格達	The Buyids enter Baghdad	ブワイフ朝のバグダード入城	44.36	33.31
 1037-01	伊本・西那去世	Avicenna dies	イブン・スィーナー没	48.52	34.8
 1131-01	歐瑪爾・海亞姆去世	Omar Khayyam dies	ウマル・ハイヤーム没	58.8	36.21
-1220-01	蒙古西征，尼沙普爾被屠	The Mongols sack Nishapur	モンゴルのニーシャープール破壊	58.8	36.21
-1291-01	薩迪完成《薔薇園》前後	Saadi's Gulistan and Bustan	サアディー『薔薇園』	52.53	29.61
-1389-01	哈菲茲去世	Hafez dies	ハーフェズ没	52.55	29.62
+1221-04	蒙古西征，尼沙普爾被屠	The Mongols sack Nishapur	モンゴルのニーシャープール破壊	58.8	36.21
+1258-01	薩迪完成《薔薇園》	Saadi completes the Gulistan	サアディー『薔薇園』	52.53	29.61
 1405-02	帖木兒去世	Timur dies	ティムール没	69.0	42.0
-1501-07	伊斯瑪儀一世在大不里士稱王	Ismail I is crowned at Tabriz	イスマーイール1世即位	46.3	38.08
-1514-08	查爾迪蘭戰役	Battle of Chaldiran	チャルディラーンの戦い	44.4	39.08
-1598-01	阿拔斯一世遷都伊斯法罕	Abbas I moves the capital to Isfahan	イスファハーン遷都	51.67	32.65
 1622-05	奪回荷姆茲	Hormuz is retaken	ホルムズ奪回	56.46	27.06
-1722-03	阿富汗人攻陷伊斯法罕	The Afghans take Isfahan	アフガン人のイスファハーン占領	51.67	32.65
-1739-03	納迪爾沙攻佔德里	Nader Shah sacks Delhi	ナーディル・シャーのデリー略奪	77.21	28.63
-1796-03	卡扎爾王朝定都德黑蘭	The Qajars make Tehran the capital	テヘラン遷都	51.39	35.69
 1857-03	巴黎條約，放棄赫拉特	Treaty of Paris: Herat is given up	パリ条約（ヘラート放棄）	62.2	34.35
 1872-07	路透特許權	The Reuter concession	ロイター利権	51.39	35.69
 1901-05	達西石油特許	The D'Arcy oil concession	ダーシー利権	51.39	35.69
 1907-08	英俄協約瓜分勢力範圍	Anglo-Russian Convention divides Persia	英露協商	51.39	35.69
 1921-02	禮薩汗政變	Reza Khan's coup	レザー・ハーンのクーデター	51.39	35.69
 1936-01	強制揭除面紗	The forced unveiling decree	ヴェール禁止令	51.39	35.69
-1938-04	跨伊朗鐵路完工	The Trans-Iranian Railway is completed	イラン縦貫鉄道完成	51.39	35.69
-1953-08	莫沙台被推翻	Mosaddegh is overthrown	モサッデク失脚	51.39	35.69
 1971-10	波斯帝國 2500 年慶典	The 2,500th-year celebration of the Persian Empire	建国2500年祭典	52.89	29.93
 1978-09	黑色星期五	Black Friday	暗黒の金曜日	51.42	35.69
 1979-02	何梅尼返國，伊斯蘭革命	Khomeini returns: the Islamic Revolution	イスラム革命	51.39	35.69
 1989-06	何梅尼去世，哈米尼繼任	Khomeini dies; Khamenei succeeds	ホメイニー死去	51.39	35.69
 1997-05	哈塔米當選總統	Khatami elected president	ハータミー大統領	51.39	35.69
-2003-12	巴姆地震	The Bam earthquake	バム地震	58.35	29.1
 2020-01	蘇萊曼尼被殺；烏航客機被擊落	Soleimani is killed; a Ukrainian airliner is shot down	ソレイマーニー殺害と旅客機撃墜	51.15	35.42
-2022-09	瑪莎・艾米尼之死引發抗議	Mahsa Amini's death sets off protests	マフサ・アミニ事件	51.39	35.69
+2022-09	瑪莎・艾米尼之死引發「婦女、生命、自由」抗議	Mahsa Amini's death sets off the "Woman, Life, Freedom" protests	マフサ・アミニの死と「女性・命・自由」運動	51.39	35.69
 2024-05	萊希總統墜機身亡	President Raisi dies in a helicopter crash	ライースィー大統領墜落死	46.3	38.4

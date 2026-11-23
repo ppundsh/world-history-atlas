@@ -1,0 +1,5 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+biz	la_defense	1958-09		2.24	48.89	拉德芳斯	La Défense	ラ・デファンス	政府設立公共機構開發的巴黎商業區，歐洲最大之一。	Business district built by a state development agency; one of Europe's largest.	国の公社が開発したビジネス街。	拉德芳斯	La Défense	1
+park	fos	1968-01		4.88	43.44	福斯濱海工業區	Fos-sur-Mer industrial zone	フォス臨海工業地帯	馬賽港擴建的鋼鐵、石化工業區。	Steel and petrochemical zone of the extended port of Marseille.	マルセイユ港拡張の工業地帯。			
+sci	sophia	1969-01		7.05	43.62	索菲亞・安提波利斯科技園	Sophia Antipolis	ソフィア・アンティポリス	歐洲最早的大型科技園區之一。	One of Europe's first large technology parks.	欧州最初期の大規模技術団地。	索菲亞科技園	Sophia Antipolis	1
+sci	saclay	2010-06		2.17	48.71	巴黎—薩克雷	Paris-Saclay	パリ＝サクレー	國家推動集中大學與研究機構的科學聚落。	A state-backed cluster of universities and research centres.	国策の研究学園都市。		Paris-Saclay	

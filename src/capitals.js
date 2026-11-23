@@ -2,7 +2,7 @@
 // start and end qualifiers, the city's coordinates and picture). Cached for a week. Polities without a Wikidata
 // item or a capital with coordinates simply get none.
 
-import { isOffline, offlineFile } from './offline.js';
+import { isOffline, offlineFile, offlineJson } from './offline.js';
 
 const KEY = 'capitals.v1', WEEK = 7 * 864e5;
 let caps = null, loading = null;
@@ -82,4 +82,20 @@ export function cityThumb(file) {
     return { url: ii.thumburl, credit: [(m.Artist?.value || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 40), m.LicenseShortName?.value].filter(Boolean).join(' · ') };
   }).catch(() => null)));
   return thumbs.get(file);
+}
+
+// A country's flag (Wikidata P41: the statement in force, else the preferred or last one), for the country's own
+// card, so that it does not repeat the capital's picture. One small request per country, only when its card opens.
+const flags = new Map();
+export function flagOf(qid) {
+  if (!/^Q\d+$/.test(qid || '')) return Promise.resolve(null);
+  if (!flags.has(qid)) flags.set(qid, isOffline().then(async off => off ? ((await offlineJson('flags.json'))?.[qid] || null) : fetch('https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&origin=*&property=P41&entity=' + qid)
+    .then(r => r.json()).then(j => {
+      const cl = (j.claims?.P41 || []).filter(c => c.mainsnak?.datavalue?.value);
+      if (!cl.length) return null;
+      const now = cl.filter(c => !c.qualifiers?.P582), pref = cl.filter(c => c.rank === 'preferred');
+      const c = (pref.find(x => !x.qualifiers?.P582) || now[now.length - 1] || pref[0] || cl[cl.length - 1]);
+      return c.mainsnak.datavalue.value;
+    }).catch(() => null)));
+  return flags.get(qid);
 }

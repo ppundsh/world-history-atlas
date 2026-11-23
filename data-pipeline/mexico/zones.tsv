@@ -1,0 +1,6 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+epz	juarez	1965-05		-106.45	31.7	華雷斯城客裝工廠區	Ciudad Juárez maquiladoras	シウダー・フアレスのマキラドーラ	「邊境工業化計畫」的加工出口工廠集中地。	Centre of the maquiladoras of the Border Industrialization Program.	国境工業化計画のマキラドーラ集積地。	客裝工業	Maquiladora	1
+epz	tijuana	1965-05		-117.0	32.5	提華納客裝工廠區	Tijuana maquiladoras	ティフアナのマキラドーラ	邊境工業化計畫的電子與醫療器材加工區。	Electronics and medical-device maquiladoras of the Border Industrialization Program.	国境工業化計画のマキラドーラ。			1
+biz	santa_fe	1989-01		-99.26	19.36	聖菲商業區	Santa Fe, Mexico City	サンタフェ（メキシコシティ）	在垃圾場舊址開發的商業金融區。	Business district built on a former landfill.	ゴミ処分場跡地のビジネス街。		Santa Fe, Mexico City	
+sez	lazaro	2017-09	2019-04	-102.2	17.95	拉薩羅卡德納斯經濟特區	Lázaro Cárdenas Special Economic Zone	ラサロ・カルデナス経済特区	2016 年《經濟特區法》設立，2019 年新政府取消。	Set up under the 2016 special economic zones law; cancelled by the next government in 2019.	2016年法で設置、2019年廃止。			
+sez	interoceanic	2023-12		-94.43	18.15	跨洋走廊發展極（夸察誇爾科斯）	Interoceanic Corridor development poles (Coatzacoalcos)	大洋間回廊開発拠点	特萬特佩克地峽跨洋走廊的工業發展極。	Industrial development poles of the Isthmus of Tehuantepec corridor.	テワンテペク地峡回廊の開発拠点。		Interoceanic Corridor of the Isthmus of Tehuantepec	1

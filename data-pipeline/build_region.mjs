@@ -104,7 +104,8 @@ const works = exists('infra.tsv') ? rows('infra.tsv').map(([kind, id, a, b, geom
   // a line may have several parts separated by ";" (branches to landing points); the longest is its main path
   const parts = geom.split(';').map(g => g.trim()).filter(Boolean).map(g => g.split(/\s+/).map(p => p.split(',').map(Number)));
   if (!parts.length || parts.some(pts => pts.some(p => p.length !== 2 || p.some(v => !isFinite(v))))) throw new Error(`infra.tsv ${id}: bad geometry`);
-  const line = WORK_LINES.includes(kind);
+  // a bridge or tunnel given with two or more points (across a strait, a border, the Alps) is drawn as a line
+  const line = WORK_LINES.includes(kind) || (['bridge', 'tunnel'].includes(kind) && parts[0].length >= 2);
   if (line && parts.some(pts => pts.length < 2)) throw new Error(`infra.tsv ${id}: a ${kind} needs at least two points`);
   const rt = line && routes[id];
   if (rt) parts.splice(0, parts.length, ...rt.parts);
@@ -112,8 +113,29 @@ const works = exists('infra.tsv') ? rows('infra.tsv').map(([kind, id, a, b, geom
   const w = { kind, id, a: month(a), b: b ? month(b) : month(cfg.end), n: [en, hant, toHans(hant), ja], note: [de, dh, toHans(dh), dj], w: [wzh, wen, ''] };
   return line ? { ...w, path: pts, ...(parts.length > 1 ? { parts } : {}), ...(rt ? { src: rt.src, net: rt.net, ...(rt.osm?.length ? { osm: rt.osm } : {}) } : {}) } : { ...w, lon: pts[0][0], lat: pts[0][1] };
 }) : [];
+// a submarine cable's event is marked at its landing in this country (the end of a part nearest one of its units),
+// not halfway along a cable that may run round half the world; other works at their middle
+// (the point of the cable closest to the coast of one of the units: its landing, wherever it is on the line)
+const coast = [];
+for (const f of unitFeatures) {
+  const g = f.geometry; if (!g) continue;
+  for (const poly of g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []) {
+    const r = poly[0], step = Math.max(1, Math.floor(r.length / 1000));
+    for (let i = 0; i < r.length; i += step) coast.push(r[i]);
+  }
+}
+const seats = governments.length ? governments : [{ lon: 0, lat: 0 }];
+const seatLon = seats.map(g => g.lon).sort((a, b) => a - b)[seats.length >> 1], seatLat = seats.map(g => g.lat).sort((a, b) => a - b)[seats.length >> 1];
+const toSeat = p => (p[0] - seatLon) ** 2 + (p[1] - seatLat) ** 2;
+const nearHome = p => { let m = Infinity; for (const c of coast) { const d = (c[0] - p[0]) ** 2 + (c[1] - p[1]) ** 2; if (d < m) m = d; } return m; };
 for (const x of works) {
-  const mid = x.path ? x.path[Math.floor(x.path.length / 2)] : [x.lon, x.lat];
+  let mid = x.path ? x.path[Math.floor(x.path.length / 2)] : [x.lon, x.lat];
+  if (x.kind === 'cable' && x.path) {
+    // of the points at the coast (several landings), the one nearest the mode's seats of government
+    const pts = (x.parts || [x.path]).flat(), best = pts.reduce((a, b) => (nearHome(b) < nearHome(a) ? b : a));
+    const onCoast = pts.filter(p => nearHome(p) <= Math.max(0.04, nearHome(best) * 1.5));
+    mid = onCoast.reduce((a, b) => (toSeat(b) < toSeat(a) ? b : a));
+  }
   events.push({ m: x.a, n: x.n, lon: mid[0], lat: mid[1], k: x.kind, work: x.id, ...(x.w[0] || x.w[1] ? { w: x.w } : {}) });
 }
 events.sort((a, b) => a.m - b.m);

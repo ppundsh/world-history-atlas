@@ -18,7 +18,7 @@
 1398-12	帖木兒洗劫德里	Timur sacks Delhi	ティムールがデリーを略奪	77.21	28.61
 1498-05	達伽馬抵達卡利卡特	Vasco da Gama reaches Calicut	ヴァスコ・ダ・ガマがカリカットに到着	75.78	11.25
 1526-04	第一次帕尼帕特戰役，巴布爾建立蒙兀兒帝國	First Battle of Panipat: Babur founds the Mughal Empire	第一次パーニーパットの戦い、バーブルがムガル帝国を開く	76.97	29.39
-1556-11	阿克巴即位	Akbar becomes emperor	アクバルの即位	76.97	29.39
+1556-02	阿克巴即位	Akbar becomes emperor	アクバルの即位	76.97	29.39
 1565-01	塔利科塔戰役，毗奢耶那伽羅敗於德干諸蘇丹國	Battle of Talikota: the Deccan sultanates defeat Vijayanagara	ターリコータの戦い、ヴィジャヤナガル王国の敗北	76.3	16.3
 1600-12	英國東印度公司成立	The English East India Company is chartered	イギリス東インド会社の設立	72.88	19.08
 1674-06	希瓦吉加冕，馬拉塔王國建立	Shivaji is crowned: the Maratha kingdom	シヴァージーの戴冠、マラーター王国の成立	73.45	18.23
@@ -30,8 +30,7 @@
 1770-01	孟加拉大饑荒	Great Bengal famine of 1770	1770 年ベンガル大飢饉	88.4	22.6
 1799-05	第四次英邁戰爭，蒂普蘇丹戰死	Fourth Anglo-Mysore War: Tipu Sultan is killed	第四次マイソール戦争、ティプー・スルターンの戦死	76.68	12.42
 1849-03	第二次英錫戰爭，旁遮普併入	Second Anglo-Sikh War: Punjab is annexed	第二次シク戦争、パンジャーブ併合	74.32	31.58
-1857-05	印度民族起義	The Indian Rebellion of 1857	インド大反乱	77.7	28.98
-1857-05	密拉特兵變	Meerut mutiny	メーラトの反乱	77.7	28.98
+1857-05	密拉特兵變，印度民族起義爆發	The Meerut mutiny starts the Indian Rebellion of 1857	メーラトの反乱、インド大反乱の勃発	77.7	28.98
 1858-08	東印度公司統治結束，英王直轄	Company rule ends; the Crown takes over	東インド会社の統治終了、英国王の直轄へ	88.36	22.57
 1869-11	蘇伊士運河通航，印歐航程縮短	The Suez Canal shortens the sea route to India	スエズ運河開通	72.84	18.94
 1876-01	1876 年大饑荒（馬德拉斯）	Great Famine of 1876–1878	1876 年の大飢饉	80.27	13.08
@@ -52,9 +51,9 @@
 1948-01	甘地遇刺	Gandhi is assassinated	ガンディー暗殺	77.21	28.61
 1950-01	印度共和國憲法生效	The Constitution of India takes effect	インド憲法の施行	77.21	28.61
 1951-10	第一次全國大選	First general election	第 1 回総選挙	77.21	28.61
-1954-07	巴克拉大壩動工	Work begins on the Bhakra Dam	バクラダム着工	76.43	31.41
+1963-10	巴克拉大壩落成	The Bhakra Dam is dedicated	バクラダム完成	76.43	31.41
 1956-11	邦重組法，按語言劃邦	States Reorganisation Act: linguistic states	州再編法、言語州の成立	77.21	28.61
-1960-04	印度河水條約	Indus Waters Treaty	インダス水協定	73.05	33.68
+1960-09	印度河水條約	Indus Waters Treaty	インダス水協定	73.05	33.68
 1961-12	印度收復果阿	India takes Goa	インドがゴアを併合	73.83	15.5
 1962-10	中印戰爭	Sino-Indian War	中印国境紛争	92.0	27.5
 1965-09	第二次印巴戰爭	Indo-Pakistani War of 1965	第二次印パ戦争	74.0	32.5
@@ -79,7 +78,7 @@
 2023-08	月船三號登陸月球南極附近	Chandrayaan-3 lands near the Moon's south pole	チャンドラヤーン 3 号が月の南極付近に着陸	80.23	13.72
 -326-05	亞歷山大在希達斯皮斯河擊敗波魯斯	Alexander defeats Porus at the Hydaspes	アレクサンドロスがヒュダスペス河畔でポロスを破る	73.5	32.9
 -250-01	華氏城第三次佛教結集	Third Buddhist council at Pataliputra	パータリプトラで第三回仏典結集	85.14	25.6
-0078-01	貴霜迦膩色伽時代，犍陀羅佛教藝術興盛	Gandhara Buddhist art flourishes under the Kushans	クシャーナ朝下でガンダーラ美術が栄える	71.58	34.01
+0078-01	塞種紀元（印度國曆紀元）開始；犍陀羅佛教藝術興盛	The Shaka era begins; Gandhara Buddhist art flourishes	クシャーナ朝下でガンダーラ美術が栄える	71.58	34.01
 0427-01	那爛陀寺創建	Nalanda founded	ナーランダー僧院創建	85.44	25.14
 0499-01	阿耶波多著《阿耶波多曆書》	Aryabhata writes the Aryabhatiya	アーリヤバタが『アーリヤバティーヤ』を著す	85.14	25.6
 0636-01	遮婁其補羅稽舍二世擊退戒日王	Pulakeshin II of the Chalukyas repels Harsha	チャールキヤ朝プラケーシン2世がハルシャを撃退	75.68	15.92
@@ -117,7 +116,7 @@
 1948-09	海德拉巴併入印度（北極行動）	Hyderabad annexed (Operation Polo)	ハイデラバード併合（ポロ作戦）	78.47	17.38
 1966-01	英迪拉·甘地出任總理	Indira Gandhi becomes prime minister	インディラ・ガンディーが首相に	77.21	28.61
 1977-03	人民黨勝選，國大黨首次失去政權	The Janata Party wins; Congress loses power for the first time	ジャナタ党勝利、会議派が初めて政権を失う	77.21	28.61
-1980-06	第一次「曼達爾委員會」報告（保留名額）	Mandal Commission report on reservations	マンダル委員会報告（留保制度）	77.21	28.61
+1980-12	曼達爾委員會提交報告（保留名額）	Mandal Commission report on reservations	マンダル委員会報告（留保制度）	77.21	28.61
 1991-05	拉吉夫·甘地遇刺	Rajiv Gandhi assassinated	ラジーヴ・ガンディー暗殺	79.95	13.0
 1999-12	印度航空 814 號班機劫機事件	Hijacking of Indian Airlines 814	インディアン航空814便ハイジャック事件	77.1	28.56
 2000-11	新設恰蒂斯加爾、北阿坎德、賈坎德三邦	Chhattisgarh, Uttarakhand and Jharkhand created	チャッティースガル、ウッタラーカンド、ジャールカンド州新設	81.63	21.25

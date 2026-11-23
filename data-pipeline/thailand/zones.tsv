@@ -1,0 +1,4 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+park	laem_chabang	1987-01		100.9	13.08	林查班工業區	Laem Chabang Industrial Estate	レムチャバン工業団地	東部臨海開發計畫的一環，緊鄰林查班深水港。	Part of the Eastern Seaboard plan, next to the deep-water port.	東部臨海開発計画の一環。			
+park	map_ta_phut	1989-01		101.15	12.68	瑪達普工業區	Map Ta Phut Industrial Estate	マプタプット工業団地	東部臨海開發計畫的石化工業區，東南亞最大之一。	The petrochemical estate of the Eastern Seaboard plan, among the largest in Southeast Asia.	東南アジア有数の石油化学工業団地。		Map Ta Phut	1
+sez	eec	2018-05		101.0	13.0	東部經濟走廊	Eastern Economic Corridor	東部経済回廊	《東部經濟走廊法》設立，涵蓋春武里、羅勇、北柳三府。	Set up by the EEC Act over Chonburi, Rayong and Chachoengsao.	東部経済回廊法により設置。	東部經濟走廊	Eastern Economic Corridor	1

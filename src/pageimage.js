@@ -2,6 +2,7 @@
 // Only pictures hosted on Wikimedia Commons are used (free licences), with their author and licence.
 
 import { isOffline, offlineJson, offlineFile } from './offline.js';
+import { MAPLIKE, altPhoto } from './photos.js';
 
 const info = new Map(), imgs = new Map();
 let listener = null;
@@ -18,6 +19,7 @@ export function pageImage(title, wl = 'en') {
     const j = await (await fetch(`https://${wl}.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail|name&pithumbsize=320&titles=`
       + encodeURIComponent(title))).json();
     const p = Object.values(j.query?.pages || {})[0], th = p?.thumbnail?.source;
+    if (p?.pageimage && MAPLIKE.test(p.pageimage)) { const a = await altPhoto(title, wl, 320); return a && { thumb: a.thumb, page: a.page, credit: a.credit }; }   // a map: another photo
     if (!th || !/\/wikipedia\/commons\//.test(th) || !p.pageimage) return null;
     const out = { thumb: th, page: 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(p.pageimage), credit: '' };
     try {

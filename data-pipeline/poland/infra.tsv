@@ -10,17 +10,17 @@ power	pl_belchatow	1981-12		19.33,51.27	貝烏哈圖夫褐煤電廠	Bełchatów 
 dam	pl_solina	1968-07		22.45,49.4	索利納水壩	Solina Dam	ソリナ・ダム	波蘭最大水壩。	Poland's largest dam.	ポーランド最大のダム。	索利納水壩	Solina Dam
 metro	pl_metro	1995-04		21.01,52.23	華沙地鐵	Warsaw Metro	ワルシャワ地下鉄	規劃六十年後才通車。	Opened sixty years after it was planned.	計画から60年後に開業。	華沙地鐵	Warsaw Metro
 highway	pl_a2	2012-06		14.6,52.33 15.5,52.35 16.93,52.41 18.6,52.2 19.46,51.8 20.4,52.15 21.01,52.23	A2 高速公路（德國邊界—華沙）	A2 motorway (German border–Warsaw)	A2高速道路	歐洲盃前打通。	Completed before Euro 2012.	EURO2012前に開通。	A2高速公路 (波蘭)	A2 autostrada (Poland)
-highway	pl_a4	2012-06		15.0,51.15 17.03,51.11 18.68,50.3 19.94,50.06 22.0,50.04 23.0,49.95	A4 高速公路（德國邊界—克拉科夫—熱舒夫）	A4 motorway	A4高速道路	橫貫南部。	Across the south.	南部を横断。	A4高速公路 (波蘭)	A4 autostrada (Poland)
+highway	pl_a4	2012-06		15.0,51.15 17.03,51.11 18.68,50.3 19.94,50.06	A4 高速公路（德國邊界—克拉科夫）	A4 motorway	A4高速道路	橫貫南部。	Across the south.	南部を横断。	A4高速公路 (波蘭)	A4 autostrada (Poland)
 highway	pl_a1	2023-12		18.53,54.4 18.6,53.0 19.46,51.8 19.1,50.8 18.68,50.3	A1 高速公路全線（格但斯克—西里西亞）	A1 motorway completed	A1高速道路全通	南北向主幹。	The north–south trunk.	南北の幹線。	A1高速公路 (波蘭)	A1 autostrada (Poland)
 hsr	pl_cmk	1977-12		20.6,51.4 19.9,50.95 19.47,50.4	中央幹線（CMK）	Central Rail Line (CMK)	中央幹線（CMK）	波蘭第一條高速鐵路，2014 年起時速 200 公里。	Poland's first high-speed line; 200 km/h since 2014.	ポーランド初の高速線。	中央鐵路幹線	Central Rail Line (Poland)
 pipeline	pl_baltic	2022-10		10.0,55.5 12.5,55.0 14.5,54.0 15.5,53.8	波羅的海天然氣管線	Baltic Pipe	バルティック・パイプ	由挪威經丹麥輸氣，擺脫對俄依賴。	Norwegian gas via Denmark, ending dependence on Russia.	ロシア依存脱却。	波羅的海管道	Baltic Pipe
 port	pl_swinoujscie	2015-12		14.27,53.91	希維諾烏伊希切液化天然氣接收站	Świnoujście LNG terminal	シフィノウイシチェLNG基地	能源多元化。	Energy diversification.	エネルギー多様化。	希維諾烏伊希切LNG接收站	Świnoujście LNG terminal
 bridge	pl_kierbedz	1864-11		21.02,52.248	基爾貝茲橋（華沙）	Kierbedź Bridge	キェルベチ橋	華沙第一座永久性的維斯瓦河鐵橋。	Warsaw's first permanent bridge over the Vistula.	ワルシャワ初の恒久橋。		Kierbedź Bridge
 bridge	pl_poniatowski	1914-12		21.04,52.235	波尼亞托夫斯基橋	Poniatowski Bridge	ポニャトフスキ橋	華沙的維斯瓦河大橋。	A grand Vistula bridge in Warsaw.	ワルシャワの大橋。		Poniatowski Bridge
-highway	pl_s7	2024-12		18.65,54.35 19.4,53.7 20.38,53.15 20.9,52.4 21.0,52.2 20.65,51.4 20.6,50.9 19.94,50.06	S7 快速道路（格但斯克—華沙—克拉科夫）	S7 expressway (Gdańsk–Warsaw–Kraków)	S7高速道路	波蘭南北縱貫的快速道路。	Poland's north–south expressway.	ポーランド南北縦貫道路。		Expressway S7 (Poland)
+highway	pl_s7	2024-12		18.65,54.35 19.4,53.7 20.38,53.15 20.9,52.4 21.0,52.2	S7 快速道路（格但斯克—華沙段）	S7 expressway (Gdańsk–Warsaw section)	S7高速道路	波蘭南北縱貫的快速道路。	Poland's north–south expressway.	ポーランド南北縦貫道路。		Expressway S7 (Poland)
 port	pl_gdansk_port	0997-01		18.66,54.4	格但斯克港	Port of Gdańsk	グダニスク港	維斯瓦河口的漢薩貿易大港。	The Hanseatic trading port at the mouth of the Vistula.	ヴィスワ河口の港。	格但斯克港	Port of Gdańsk
 airport	pl_waw	1934-04		20.97,52.17	華沙蕭邦機場（奧肯切）	Warsaw Chopin Airport	ワルシャワ・ショパン空港	波蘭最大的機場。	Poland's largest airport.	ポーランド最大の空港。	华沙肖邦机场	Warsaw Chopin Airport
 airport	pl_krk	1964-01		19.78,50.08	克拉科夫機場	Kraków John Paul II International Airport	クラクフ空港	南部的國際機場。	The international airport of the south.	南部の国際空港。	克拉科夫约翰·保罗二世国际机场	Kraków John Paul II International Airport
 fiber	pl_pionier	2001-01		21.01,52.23 16.93,52.41 18.65,54.35 17.04,51.11 19.94,50.06 22.57,51.25 23.16,53.13 21.01,52.23;16.93,52.41 14.55,53.43;19.94,50.06 19.02,50.26	PIONIER 光纖研究網	PIONIER	PIONIER	波蘭各大學城的光纖骨幹。	Poland's fibre backbone between university cities.	ポーランドの学術光網。		PIONIER
 ixp	pl_plix	2004-01		20.98,52.2	PLIX 華沙網際網路交換中心	PLIX (Warsaw)	PLIX	波蘭最大的交換中心。	Poland's largest internet exchange.	ポーランド最大のIX。		
-cable	pl_baltica	1997-01		13.83,55.43 14.4,55.013 14.992,55.031 15.075,54.884 15.413,54.559 15.575,54.173;13.83,54.908 14.85,54.949 14.992,55.031	Baltica 海纜（波蘭—丹麥）	Baltica cable (Poland–Denmark)	Baltica海底ケーブル	波蘭第一條國際光纖海纜。	Poland's first international fibre cable.	ポーランド初の国際光海底ケーブル。		
+cable	pl_baltica	1997-01		13.83,55.43 14.4,55.013 14.992,55.031 15.075,54.884 15.413,54.559 15.575,54.173;14.079,55.248 13.83,54.908 14.85,54.949 14.992,55.031	Baltica 海纜（波蘭—丹麥）	Baltica cable (Poland–Denmark)	Baltica海底ケーブル	波蘭第一條國際光纖海纜。	Poland's first international fibre cable.	ポーランド初の国際光海底ケーブル。		

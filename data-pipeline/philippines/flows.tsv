@@ -1,0 +1,15 @@
+# 菲律賓模式：行軍、戰線與遷徙。欄位：id	起年月	迄年月	顏色	粗細(1–3)	路徑	繁中	English	日本語
+magellan	1521-03	1521-04	#c62828	2	125.75,11.05 125.08,9.93 124.6,10.2 123.90,10.29 123.98,10.31	麥哲倫船隊：霍蒙洪→利馬薩瓦→宿霧→麥克坦	Magellan's fleet: Homonhon → Limasawa → Cebu → Mactan	マゼラン艦隊の航路
+legazpi	1565-02	1571-06	#c62828	2	125.4,9.8 124.2,9.7 123.90,10.29 122.56,11.6 122.0,12.9 120.975,14.59	黎牙實比：保和→宿霧→班乃→民都洛→馬尼拉	Legazpi: Bohol → Cebu → Panay → Mindoro → Manila	レガスピの征服行
+galleon	1565-06	1815-03	#8d6e63	2	120.975,14.59 121.5,13.6 124.2,12.5 126.0,12.8 135.0,20.0	馬尼拉大帆船：經聖貝納迪諾海峽駛往阿卡普爾科	The Manila galleons leave through the San Bernardino Strait for Acapulco	マニラ・ガレオン（アカプルコへ）
+limahong	1574-11	1575-08	#455a64	2	119.0,18.5 120.975,14.59 120.3,16.05	林鳳艦隊：攻馬尼拉後退守邦阿西楠	Limahong's fleet attacks Manila, then holds out in Pangasinan	林鳳艦隊
+salcedo	1572-05	1572-09	#c62828	1	120.975,14.59 120.3,16.05 120.4,17.6 120.6,18.2 121.7,18.3	薩爾塞多北征伊羅戈與卡加延	Salcedo's expedition north to Ilocos and Cagayan	サルセドの北部遠征
+british1762	1762-09	1762-10	#1565c0	2	105.8,-6.0 115.0,5.0 120.6,14.3 120.975,14.59	英軍自馬德拉斯經麻六甲攻馬尼拉	The British expedition from Madras sails on Manila	英軍のマニラ遠征
+dewey1898	1898-04	1898-05	#3f51b5	2	114.27,22.33 117.5,18.0 120.3,14.6 120.9,14.5	杜威艦隊自香港駛入馬尼拉灣	Dewey's squadron sails from Hong Kong into Manila Bay	デューイ艦隊
+aguinaldo1899	1899-11	1901-03	#f9a825	1	120.81,14.84 120.6,15.5 120.7,16.4 121.3,17.4 122.43,17.06	阿奎納多北撤：馬洛洛斯→打拉→山區→帕拉南	Aguinaldo's retreat north from Malolos to Palanan	アギナルドの北方撤退
+japan1941	1941-12	1942-01	#ef6c00	3	120.3,16.6 120.4,16.0 120.7,15.5 120.975,14.59	日軍林加延灣登陸，南下馬尼拉	Japanese landings at Lingayen Gulf drive on Manila	日本軍リンガエン上陸
+japan1941s	1941-12	1942-01	#ef6c00	2	121.6,14.0 121.3,14.3 120.975,14.59	日軍拉蒙灣登陸，北上馬尼拉	Japanese landings at Lamon Bay drive on Manila	日本軍ラモン湾上陸
+deathmarch	1942-04	1942-04	#6d4c41	2	120.53,14.43 120.48,14.68 120.64,15.03 120.6,15.32	巴丹死亡行軍：馬里韋萊斯→聖費南多→卡帕斯	The Bataan Death March: Mariveles → San Fernando → Capas	バターン死の行進
+leyte1944	1944-10	1944-12	#283593	3	126.5,10.0 125.05,11.2 124.6,11.0	美軍登陸雷伊泰	US forces land on Leyte	米軍レイテ上陸
+luzon1945	1945-01	1945-02	#283593	3	120.3,16.1 120.6,15.5 120.85,15.0 120.975,14.59	美軍林加延灣登陸，南下解放馬尼拉	US landings at Lingayen Gulf drive on Manila	米軍リンガエン上陸とマニラ奪還
+marawi2017	2017-05	2017-10	#455a64	1	124.24,8.23 124.29,8.0	馬拉威圍城戰：政府軍自伊利甘進攻	The siege of Marawi: government forces advance from Iligan	マラウィの戦い

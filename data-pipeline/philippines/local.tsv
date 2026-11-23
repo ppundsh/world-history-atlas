@@ -1,0 +1,13 @@
+# 菲律賓模式：起義與叛亂（⚔）、地方勢力（◉）、外國駐軍（✪）。
+# 欄位：種類(feud|power|us)	id	起(年-月)	迄(年-月)	經度	緯度	繁中	English	日本語	說明（繁中）	說明（English）	說明（日本語）	維基中文條目
+feud	dagohoy	1744-01	1829-08	124.2	9.9	達戈霍伊起義（保和島）	Dagohoy rebellion (Bohol)	ダゴホイの反乱	菲律賓歷史上最久的反西班牙起義，持續 85 年。	The longest revolt against Spain, lasting 85 years.	85年続いた反乱。	达戈霍伊起义
+feud	silang	1762-12	1763-09	120.39	17.57	迪亞哥與加布里艾拉・西朗起義（伊羅戈）	Silang revolt (Ilocos)	シラン夫妻の反乱	趁英軍佔領馬尼拉時在伊羅戈起事。	A rising in Ilocos during the British occupation of Manila.	英軍占領中のイロコスの反乱。	
+feud	huk	1946-01	1954-05	120.75	15.2	虎克軍叛亂（中呂宋）	Hukbalahap rebellion (Central Luzon)	フクバラハップの反乱	抗日游擊隊轉為反政府的農民武裝。	The anti-Japanese guerrillas turned against the government.	抗日ゲリラが反政府闘争へ。	虎克军
+feud	npa	1969-03	2026-12	122.0	13.5	新人民軍（共產黨叛亂）	New People's Army insurgency	新人民軍の反乱	菲律賓共產黨的武裝，活動遍及各島山區。	The armed wing of the Communist Party, active in upland areas across the islands.	共産党の武装組織。	新人民军
+feud	mnlf	1972-10	1996-09	124.25	7.22	摩洛民族解放陣線	Moro National Liberation Front	モロ民族解放戦線	爭取摩洛人獨立的武裝，1996 年簽和平協議。	Armed movement for a Moro homeland; peace deal in 1996.	1996年に和平合意。	摩洛民族解放阵线
+feud	milf	1978-01	2014-03	124.4	7.0	摩洛伊斯蘭解放陣線	Moro Islamic Liberation Front	モロ・イスラム解放戦線	自摩洛民族解放陣線分裂，2014 年簽全面協議。	Split from the MNLF; comprehensive agreement in 2014.	2014年に包括和平合意。	摩洛伊斯兰解放阵线
+feud	abusayyaf	1991-01	2026-12	121.0	6.05	阿布沙耶夫組織	Abu Sayyaf	アブ・サヤフ	蘇祿、巴西蘭一帶的伊斯蘭武裝團體，以綁架聞名。	An Islamist armed group in Sulu and Basilan, known for kidnappings.	スールー・バシランの武装組織。	阿布沙耶夫组织
+us	clark	1903-01	1991-11	120.56	15.19	克拉克空軍基地	Clark Air Base	クラーク空軍基地	美軍在亞洲最大的空軍基地之一，皮納圖博火山爆發後撤離。	One of the largest US air bases abroad; abandoned after the Pinatubo eruption.	ピナトゥボ噴火後に撤収。	克拉克空军基地
+us	subic	1901-01	1992-11	120.27	14.82	蘇比克灣海軍基地	Subic Bay Naval Base	スービック海軍基地	美國第七艦隊的重要基地，1992 年歸還。	A key base of the US Seventh Fleet, returned in 1992.	1992年に返還。	苏比克湾海军基地
+power	barmm	2019-02	2026-12	124.25	7.22	邦薩摩洛自治區	Bangsamoro Autonomous Region	バンサモロ自治地域	依《邦薩摩洛組織法》成立，取代穆斯林棉蘭老自治區。	Set up under the Bangsamoro Organic Law, replacing the ARMM.	ARMMに代わり発足。	邦萨摩洛自治区
+power	armm	1990-11	2019-02	124.25	7.22	穆斯林棉蘭老自治區	Autonomous Region in Muslim Mindanao	ムスリム・ミンダナオ自治地域	1989 年依組織法公投設立。	Set up after the 1989 plebiscite.	1989年の住民投票で設立。	棉兰老穆斯林自治区

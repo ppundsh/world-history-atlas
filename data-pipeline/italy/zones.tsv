@@ -1,0 +1,4 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	trieste	1719-03		13.77	45.65	的里雅斯特自由港	Free Port of Trieste	トリエステ自由港	神聖羅馬皇帝查理六世設立，1947 年和約確認其自由港地位。	Founded by Emperor Charles VI; its free-port status was confirmed by the 1947 peace treaty.	カール6世が設けた自由港。	的里雅斯特自由港	Free Port of Trieste	1
+biz	eur	1937-01		12.47	41.83	EUR 區	EUR	EUR	為 1942 年世界博覽會規劃的羅馬新區，戰後成為政府與企業辦公區。	The district planned for the 1942 World Expo; offices of state and business after the war.	万博用に計画されたローマの新地区。	EUR (羅馬)	EUR, Rome	1
+sez	zes	2024-01		15.6	40.6	南部單一經濟特區	Single Special Economic Zone for the South (ZES unica)	南部統一経済特区	南部八大區合一的經濟特區（2017 年起各區設立，2024 年合併）。	The special economic zone of the eight southern regions (set up region by region from 2017, merged in 2024).	南部8州の経済特区。			

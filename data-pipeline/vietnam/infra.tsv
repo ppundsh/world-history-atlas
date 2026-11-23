@@ -7,8 +7,8 @@ road	vn_hcm_trail	1959-05	1975-04	105.6,18.6 106.0,17.0 106.6,16.0 107.0,14.5 10
 hydro	vn_hoabinh	1994-12		105.32,20.81	和平水電站	Hòa Bình dam	ホアビン水力発電所	蘇聯協助興建，長期為東南亞最大水電站。	Built with Soviet help; long South-East Asia's largest hydro plant.	ソ連の協力で建設。	和平水電站	Hòa Bình Dam
 grid	vn_500kv	1994-05		105.32,20.81 105.68,18.67 108.22,16.07 108.05,12.67 106.7,10.78	500 千伏南北輸電線	500 kV North–South power line	500kV南北送電線	把北方水電送往南方。	Took northern hydropower to the south.	北部の水力を南部へ送電。	500千伏南北輸電線	North–South 500 kV transmission line
 hydro	vn_sonla	2012-12		103.97,21.47	山羅水電站	Sơn La dam	ソンラ水力発電所	東南亞最大水電站。	South-East Asia's largest hydro plant.	東南アジア最大の水力。	山羅水電站	Sơn La Dam
-tunnel	vn_haivan	2005-06		108.12,16.2	海雲隧道	Hải Vân Tunnel	ハイヴァン・トンネル	穿越海雲嶺，順化與峴港間不再翻山。	Under the Hải Vân pass, sparing the climb between Huế and Đà Nẵng.	ハイヴァン峠を貫く。	海雲隧道	Hải Vân Tunnel
-industry	vn_formosa	2016-04		106.4,18.08	台塑河靜鋼廠	Formosa Hà Tĩnh steelworks	フォルモサ・ハティン製鉄所	投產即發生海洋污染事件。	A toxic spill followed its start-up.	稼働直後に海洋汚染事件。	台塑河靜鋼鐵	Formosa Ha Tinh Steel
+tunnel	vn_haivan	2005-06		108.13,16.22 108.12,16.17	海雲隧道	Hải Vân Tunnel	ハイヴァン・トンネル	穿越海雲嶺，順化與峴港間不再翻山。	Under the Hải Vân pass, sparing the climb between Huế and Đà Nẵng.	ハイヴァン峠を貫く。	海雲隧道	Hải Vân Tunnel
+industry	vn_formosa	2017-05		106.4,18.08	台塑河靜鋼廠	Formosa Hà Tĩnh steelworks	フォルモサ・ハティン製鉄所	投產即發生海洋污染事件。	A toxic spill followed its start-up.	稼働直後に海洋汚染事件。	台塑河靜鋼鐵	Formosa Ha Tinh Steel
 metro	vn_hanoi_metro	2021-11		105.82,21.0	河內地鐵吉靈—河東線	Hanoi Metro Cát Linh–Hà Đông line	ハノイ・メトロ2A号線	中國承建，越南第一條地鐵。	Built by a Chinese contractor; Vietnam's first metro.	ベトナム初の都市鉄道。	河內地鐵	Hanoi Metro
 metro	vn_hcmc_metro	2024-12		106.7,10.78	胡志明市地鐵 1 號線	Ho Chi Minh City Metro Line 1	ホーチミン市メトロ1号線	日本援助興建，延宕多年通車。	Built with Japanese aid; opened years late.	日本の援助で建設。	胡志明市地鐵	Ho Chi Minh City Metro
 highway	vn_expressway	2023-04		105.85,21.03 105.9,20.25 105.78,19.81 105.68,18.67 106.6,17.47	北南高速公路東線（北段）	North–South Expressway East (northern sections)	南北高速道路東線（北部）	陸續通車。	Opened section by section.	順次開通。	北南高速公路東線	North–South Expressway East

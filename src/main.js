@@ -1,5 +1,6 @@
 import './style.css';
-import { setHoverLine } from './langlayer.js';
+import { setHoverLine, setPickLine } from './langlayer.js';
+import { setHover, setPick, hitKey } from './emph.js';
 import { loadCore, loadChunk, chunkFor, countFor, store, P, loadPhysical, featuresFor, loadModern, loadDetail } from './data.js';
 import { PROJ_INFO } from './projinfo.gen.js';
 import { PROJ_METRICS } from './projmetrics.gen.js';
@@ -10,16 +11,18 @@ import { CREDITS } from './credits.gen.js';
 import { BASEMAPS } from './styles.js';
 import { WORLD_EVENTS, MODE_EVENTS } from './worldEvents.gen.js';
 import { LANGS, t, formatYear, detectLang, safeGet, safeSet } from './i18n.js';
-import { FlatMap, cardOffsets } from './flat.js';
+import { FlatMap, cardOffsets, closedCards } from './flat.js';
 import { Music } from './audio.js';
 import { PROJ, grouped } from './projections.js';
 import { geoPath, geoGraticule, geoCircle, geoDistance } from 'd3-geo';
 import { Capture } from './capture.js';
 import { eventInfo, eventKey, wikidataPlace } from './eventinfo.js';
 import { addPulse, setPulseThumb, pulsesActive, clearPulses, removePulse, holdPulse, removePulses, setPulseSize, setPulsesPaused } from './eventdots.js';
-import { loadCapitals, capitalsReady, cityThumb, capitalOf } from './capitals.js';
+import { loadCapitals, capitalsReady, cityThumb, capitalOf, flagOf } from './capitals.js';
+import { countryPhoto } from './photos.js';
 import { pageImage, pagePicture, figureHtml, setPageImageListener } from './pageimage.js';
 import { classIconSvg } from './classicon.js';
+import { loadEcon, econData, FUEL, ZONE } from './econ.js';
 import { loadWorks, worksFor, workTitle, workWiki, setPictureListener } from './artworks.js';
 import { frame, loadRegion, REGIONS, LAYERED, regionYearMonth, monthOf, loadReligions, religionOf, religionShares, loadRegimes, regimeOf, regimeShares, REGIME_COLORS, loadArt, artActive, ART_COLORS, ART_SYM, THEMES, loadTheme, themeOf, themeActive, themeColor, setOwnPictureListener, LOCAL_COLOR, WORK_ICON, WORK_COLOR, workName, PARTY_COLOR, partyAt, BACKBONE } from './modes.js';
 
@@ -79,18 +82,19 @@ const REGION_TICKS = {
   brazil: [1500, 1630, 1693, 1808, 1822, 1889, 1930, 1964, 1985],
   argentina: [1536, 1580, 1776, 1810, 1853, 1880, 1946, 1976, 1983],
   thailand: [1238, 1351, 1569, 1767, 1782, 1855, 1932, 1973],
+  philippines: [1521, 1565, 1762, 1896, 1898, 1935, 1942, 1946, 1972, 1986],
   indonesia: [671, 1293, 1527, 1619, 1800, 1942, 1949, 1965, 1998],
 };
-const REGION_RUN = { china: 300, taiwan: 420, japan: 900, russia: 900, korea: 900, vietnam: 900, germany: 600, india: 900, spain: 900, italy: 900, poland: 900, prc: 420, usa: 900, france: 900, egypt: 900, iran: 900, turkey: 900, uk: 900, mexico: 900, morocco: 900, brazil: 900, argentina: 900, thailand: 900, indonesia: 900 };        // seconds for a full run at 1×
-const REGION_VIEW = { prc: { lon: 104, lat: 35.5, k: 3.2 }, usa: { lon: -97, lat: 39, k: 3.3 }, china: { lon: 106, lat: 36, k: 3.2 }, taiwan: { lon: 120.6, lat: 23.75, k: 36 }, japan: { lon: 137.5, lat: 37.5, k: 6.5 }, russia: { lon: 80, lat: 58, k: 1.9 }, korea: { lon: 127.6, lat: 39.5, k: 9 }, vietnam: { lon: 106.5, lat: 16, k: 7 }, germany: { lon: 13, lat: 51.5, k: 8 }, india: { lon: 79, lat: 22, k: 4 }, spain: { lon: -3.8, lat: 40.2, k: 6.5 }, italy: { lon: 12.5, lat: 42.3, k: 6.5 }, poland: { lon: 23, lat: 52, k: 6 }, france: { lon: 2.8, lat: 46.8, k: 7 }, egypt: { lon: 31.5, lat: 26.5, k: 5 }, iran: { lon: 55, lat: 33.5, k: 4.2 } , turkey: { lon: 34, lat: 39.5, k: 6.5 }, uk: { lon: -4, lat: 54.5, k: 9 }, mexico: { lon: -99, lat: 21.5, k: 4.2 }, morocco: { lon: -4, lat: 32, k: 4.5 }, brazil: { lon: -53, lat: -15, k: 2.7 }, argentina: { lon: -62, lat: -37, k: 2.6 }, thailand: { lon: 101, lat: 14, k: 5 }, indonesia: { lon: 118, lat: -2.5, k: 2.5 } };
+const REGION_RUN = { china: 300, taiwan: 420, japan: 900, russia: 900, korea: 900, vietnam: 900, germany: 600, india: 900, spain: 900, italy: 900, poland: 900, prc: 420, usa: 900, france: 900, egypt: 900, iran: 900, turkey: 900, uk: 900, mexico: 900, morocco: 900, brazil: 900, argentina: 900, thailand: 900, indonesia: 900, philippines: 900 };        // seconds for a full run at 1×
+const REGION_VIEW = { prc: { lon: 104, lat: 35.5, k: 3.2 }, usa: { lon: -97, lat: 39, k: 3.3 }, china: { lon: 106, lat: 36, k: 3.2 }, taiwan: { lon: 120.6, lat: 23.75, k: 36 }, japan: { lon: 137.5, lat: 37.5, k: 6.5 }, russia: { lon: 80, lat: 58, k: 1.9 }, korea: { lon: 127.6, lat: 39.5, k: 9 }, vietnam: { lon: 106.5, lat: 16, k: 7 }, germany: { lon: 13, lat: 51.5, k: 8 }, india: { lon: 79, lat: 22, k: 4 }, spain: { lon: -3.8, lat: 40.2, k: 6.5 }, italy: { lon: 12.5, lat: 42.3, k: 6.5 }, poland: { lon: 23, lat: 52, k: 6 }, france: { lon: 2.8, lat: 46.8, k: 7 }, egypt: { lon: 31.5, lat: 26.5, k: 5 }, iran: { lon: 55, lat: 33.5, k: 4.2 } , turkey: { lon: 34, lat: 39.5, k: 6.5 }, uk: { lon: -4, lat: 54.5, k: 9 }, mexico: { lon: -99, lat: 21.5, k: 4.2 }, morocco: { lon: -4, lat: 32, k: 4.5 }, brazil: { lon: -53, lat: -15, k: 2.7 }, argentina: { lon: -62, lat: -37, k: 2.6 }, thailand: { lon: 101, lat: 14, k: 5 }, indonesia: { lon: 118, lat: -2.5, k: 2.5 }, philippines: { lon: 122, lat: 12.3, k: 10 } };
 // regional modes grouped in the mode menu: East Asia, South-East Asia, South and West Asia, Europe, Africa, the Americas
-const CONTINENTS = [['china', 'prc', 'taiwan', 'japan', 'korea'], ['vietnam', 'thailand', 'indonesia'], ['india', 'iran', 'turkey'],
+const CONTINENTS = [['china', 'prc', 'taiwan', 'japan', 'korea'], ['vietnam', 'thailand', 'indonesia', 'philippines'], ['india', 'iran', 'turkey'],
   ['russia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk'], ['egypt', 'morocco'], ['usa', 'mexico', 'brazil', 'argentina']];
 // a flag before each country (China 1911–1951: the Republic of China's flag); drawn with the Twemoji flag font
-const FLAG = { china: '🇹🇼', prc: '🇨🇳', taiwan: '🇹🇼', japan: '🇯🇵', korea: '🇰🇷', vietnam: '🇻🇳', thailand: '🇹🇭', indonesia: '🇮🇩', india: '🇮🇳', iran: '🇮🇷', turkey: '🇹🇷',
+const FLAG = { china: '🇹🇼', prc: '🇨🇳', taiwan: '🇹🇼', japan: '🇯🇵', korea: '🇰🇷', vietnam: '🇻🇳', thailand: '🇹🇭', philippines: '🇵🇭', indonesia: '🇮🇩', india: '🇮🇳', iran: '🇮🇷', turkey: '🇹🇷',
   russia: '🇷🇺', germany: '🇩🇪', poland: '🇵🇱', italy: '🇮🇹', spain: '🇪🇸', france: '🇫🇷', uk: '🇬🇧', egypt: '🇪🇬', morocco: '🇲🇦', usa: '🇺🇸', mexico: '🇲🇽', brazil: '🇧🇷', argentina: '🇦🇷' };
 const REGION_FIRST = { china: '1911-10', taiwan: '1600-01' };
-const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'thailand', 'indonesia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk', 'india', 'iran', 'turkey', 'egypt', 'morocco', 'usa', 'mexico', 'brazil', 'argentina'];
+const MODES = ['world', 'religion', 'regime', 'art', 'language', 'finance', 'internet', 'fgo', 'china', 'prc', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'thailand', 'philippines', 'indonesia', 'germany', 'poland', 'italy', 'spain', 'france', 'uk', 'india', 'iran', 'turkey', 'egypt', 'morocco', 'usa', 'mexico', 'brazil', 'argentina'];
 const BEARINGS = { n: 0, e: 90, s: 180, w: -90 };          // MapLibre bearing that puts that direction on top
 // the timeline's events: the mode's own list (thematic modes that have one), otherwise the world events
 // the events of the timeline, the event table and the event places: the world mode has the world's events; the
@@ -122,7 +126,7 @@ const app = {
     projBy: safeGet('projBy') || 'surface', density: +(safeGet('density') || 0.85),
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
-    minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', worldEv: safeGet('worldEv') !== '0', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', backbone: safeGet('backbone') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
+    cmpCross: safeGet('cmpCross') === '1', minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', worldEv: safeGet('worldEv') !== '0', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', backbone: safeGet('backbone') === '1', plants: safeGet('plants') === '1', zones: safeGet('zones') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
     labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), cableW: +(safeGet('cableW') || 1), cableStyle: safeGet('cableStyle') || 'shade', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
@@ -202,11 +206,51 @@ app.drawCompare = (ctx, project, invert) => {
   if (cmp.infoKey !== key) {
     cmp.infoKey = key;
     cmp.info = cmp.summary(ll => app.flat.featureAt(ll), project, invert);
-    if (cmp.info.kind === 'area') cmp.info.name = P.name(cmp.info.id, st.langInfo.col);
+    if (cmp.info.kind === 'area') { cmp.info.name = P.name(cmp.info.id, st.langInfo.col); cmp.info.lines = compareLines(cmp.info); }
   }
   const s = t(st.lang);
   cmp.draw(ctx, project, cmp.info, st.lang, { ...s, font: BASEMAPS[st.basemap].label.font });
 };
+// Figures beside the area ratio: area, population, GDP and power plants of the country under the floating shape
+// and of the shape itself (Taiwan, or the pinned country). Modern states only (from 1946, with data): historical
+// polities and places without figures get the area ratio alone. compare.json: build-compare.mjs.
+let cmpData = null;
+const SEP = '\u2500';                          // a line of its own: compare.js draws it as a rule
+function compareLines(info) {
+  if (REGIONS.includes(st.mode) || st.year < 1946) return [];
+  if (!cmpData) { cmpData = {}; fetch(import.meta.env.BASE_URL + 'data/compare.json').then(r => r.json()).then(d => { cmpData = d; app.compare.infoKey = null; redraw(); }).catch(() => {}); return []; }
+  const qOf = id => P.row(id)?.[10];
+  const pin = app.pin, baseQ = !pin ? (app.compare.baseQ || 'Q865') : (!REGIONS.includes(pin.mode) && +String(pin.when).split('-')[0] >= 1946 ? qOf(pin.id) : null);
+  const A = cmpData[qOf(info.id)], B = baseQ ? cmpData[baseQ] : null; if (!A) return [];
+  const s = t(st.lang), nf = new Intl.NumberFormat(st.lang, { notation: 'compact', maximumFractionDigits: 1 }), big = new Intl.NumberFormat(st.lang, { maximumFractionDigits: 0 });
+  const km = app.compare.km2, two = (a, b, f) => b != null ? `${f(a)} ／ ${f(b)}` : f(a), yr = (x, y) => y && x[1] !== y[1] ? `${x[1]}／${y[1]}` : `${x[1]}`;
+  const out = [s.cmpArea(two(info.ratio * km, km, v => big.format(Math.round(v))))];
+  if (A.pop) out.push(s.cmpPop(two(A.pop[0], B?.pop?.[0], v => nf.format(v)), yr(A.pop, B?.pop)));
+  if (A.gdp) out.push(s.cmpGdp(two(A.gdp[0] * 1e6, B?.gdp?.[0] != null ? B.gdp[0] * 1e6 : null, v => nf.format(v)), yr(A.gdp, B?.gdp)));
+  if (A.plants) out.push(s.cmpPlants(two(A.plants[0], B?.plants?.[0], v => big.format(v)), two(A.plants[1], B?.plants?.[1], v => big.format(v))));
+  // shown by default: each figure as a ratio to the floating country; the numbers above come up on hover
+  const rf = (a, b) => { if (!(a > 0 && b > 0)) return null; const r = a / b; return r >= 1 ? s.cmpTimes(r < 10 ? r.toFixed(1) : big.format(Math.round(r))) : `${r < 0.01 ? (r * 100).toFixed(1) : Math.round(r * 100)}%`; };
+  const short = [];
+  const rp = rf(A.pop?.[0], B?.pop?.[0]), rg = rf(A.gdp?.[0], B?.gdp?.[0]), rn = rf(A.plants?.[0], B?.plants?.[0]), rw = rf(A.plants?.[1], B?.plants?.[1]);
+  if (rp) short.push(`${s.cmpPopL} ${rp}`); if (rg) short.push(`GDP ${rg}`);
+  if (rn) short.push(`${s.cmpPlantsL} ${rn}${rw ? `${s.cmpSep}${s.cmpCapL} ${rw}` : ''}`);
+  // cross ratios (the switch beside the button): each country's own proportions, compared — people per km², GDP per
+  // person, GDP per MW of generating capacity
+  if (st.cmpCross) {
+    const aA = info.ratio * km, aB = km, cross = [], fullX = [];
+    const add = (label, a, b, fmt, unit) => {
+      if (!(a > 0)) return;
+      const r = rf(a, b); if (r) cross.push(`${label} ${r}`);
+      fullX.push(`${label} ${two(a, b > 0 ? b : null, fmt)}${unit}`);
+    };
+    if (A.pop) add(s.cmpDensity, A.pop[0] / aA, B?.pop ? B.pop[0] / aB : null, v => big.format(Math.round(v)), s.cmpDensityU);
+    if (A.pop && A.gdp) add(s.cmpGdpCap, A.gdp[0] * 1e6 / A.pop[0], B?.pop && B?.gdp ? B.gdp[0] * 1e6 / B.pop[0] : null, v => nf.format(v), s.cmpUsd);
+    if (A.gdp && A.plants?.[1]) add(s.cmpGdpMw, A.gdp[0] * 1e6 / A.plants[1], B?.gdp && B?.plants?.[1] ? B.gdp[0] * 1e6 / B.plants[1] : null, v => nf.format(v), s.cmpUsd);
+    if (cross.length) { short.push(SEP, ...cross); out.push(SEP, ...fullX); }       // a rule between the figures and the cross ratios
+  }
+  const k = short.indexOf(SEP), base = k < 0 ? short : short.slice(0, k), rest = k < 0 ? [] : short.slice(k);
+  return short.length ? { short: [...(base.length ? [base.slice(0, 2).join('　'), ...base.slice(2)] : []), ...rest], full: out } : { short: out, full: out };
+}
 app.distortStrength = name => { const v = +safeGet('distort:' + name); return v > 0 ? v : 0.55; };
 await satReady;                                 // (long since in, as a rule) the base map list and the globe need it
 buildUI();
@@ -219,7 +263,7 @@ if (isChina()) startEvents();                  // opened on a country at its sta
 boot(4, 1);
 // once the map is up: the capitals (only for their markers and cards), and the neighbouring periods' borders, so
 // that playing or dragging the timeline into them does not wait for the download
-afterFirstPaint(() => { ensureCapitals(); prefetchChunks(); });
+afterFirstPaint(() => { ensureCapitals(); prefetchChunks(); ensureEcon(); });
 document.documentElement.classList.add('ready');
 $('#loading').classList.add('done');
 setTimeout(() => $('#loading')?.remove(), 500);
@@ -379,6 +423,32 @@ function setPos(pos) {
 }
 function step(d) { pause(); st.transition = 'grow'; return isChina() ? setMonth(st.cm + d) : setYear(st.year + d); }
 
+// world mode: power plants, airports, ports and submarine cables counted per year (growth.json), each shown once
+// its series has started
+let growData = null;
+function growth(s) {
+  const box = $('#growBox');
+  if (st.mode !== 'world') { box.hidden = true; return; }
+  if (!growData) {
+    growData = {};
+    fetch(import.meta.env.BASE_URL + 'data/growth.json').then(r => r.json()).then(d => { growData = d; renderYear(); }).catch(() => {});
+    box.hidden = true; return;
+  }
+  const y = Math.floor(st.year), fmt = n => n.toLocaleString(st.lang), rows = [];
+  for (const k of ['plants', 'airports', 'ports', 'cables']) {
+    const d = growData[k]; if (!d || y < d.y0) continue;
+    const i = Math.min(y, d.last ?? 1e9) - d.y0, n = d.v[Math.min(i, d.v.length - 1)];
+    if (!n) continue;
+    let extra = '';
+    if (d.gw) extra += ` <small>${s.grow.gw.replace('{n}', fmt(d.gw[Math.min(i, d.gw.length - 1)]))}</small>`;
+    if (d.last && y > d.last) extra += `<small>${s.grow.asOf.replace('{y}', d.last)}</small>`;
+    rows.push(`<span title="${s.grow.tip[k].replace(/"/g, '&quot;')}">${s.grow[k]} <b>${fmt(n)}</b>${extra}</span>`);
+  }
+  const html = rows.join('');
+  if (box.innerHTML !== html) box.innerHTML = html;
+  box.hidden = !rows.length;
+}
+
 function renderYear() {
   st.yps = yearsPerSec(st.year);
   syncEvTable();
@@ -396,10 +466,12 @@ function renderYear() {
     }
     $('#ticker').textContent = F.event && st.events ? (F.event.n[st.langInfo.col] || F.event.n[0]) : '';
     $('#ticker').hidden = !(F.event && st.events);
+    $('#growBox').hidden = true;
   } else {
     $('#yearBig').textContent = formatYear(st.lang, st.year);
     $('#countLabel').textContent = s.countries;
     $('#countNum').textContent = countFor(st.year);
+    growth(s);
     const ev = st.events ? evList().filter(e => e.y <= st.year && st.year <= Math.max(e.e ?? e.y, e.y + (st.year > 1800 ? 1 : 5))).at(-1) : null;
     $('#ticker').textContent = ev ? (ev.n[st.langInfo.col] || ev.n[0]) : '';
     $('#ticker').hidden = !ev;
@@ -450,7 +522,7 @@ function renderLegend(F) {
     const shares = religionShares(F.feats, st.year).slice(0, 14);
     box.innerHTML = `<h3>${s.religionLegend}</h3><ul>` + shares.map(({ code, share }) => {
       const r = store.religions[store.relIndex[code]];
-      return `<li ${r ? `data-rel="${code}" title="${esc(s.clickInfo)}"` : ''}><i style="background:${r ? r.color : '#e6e6e6'}"></i>${r ? (r.n[col] || r.n[0]) : s.unknownRel}<b>${(share * 100).toFixed(share < 0.01 ? 1 : 0)}%</b></li>`;
+      return `<li ${r ? `data-rel="${code}"` : ''}><i style="background:${r ? r.color : '#e6e6e6'}"></i>${r ? (r.n[col] || r.n[0]) : s.unknownRel}<b>${(share * 100).toFixed(share < 0.01 ? 1 : 0)}%</b></li>`;
     }).join('') + `</ul><p>${s.relNote}</p>`;
     box.hidden = false;
     bindLegendToggle(box);
@@ -458,7 +530,7 @@ function renderLegend(F) {
   } else if (st.mode === 'art' && store.art) {
     const act = artActive(st.year).sort((a, b) => a.t.localeCompare(b.t) || a.a - b.a);
     box.innerHTML = `<h3>${s.artLegend}</h3><ul class="govs">` + (act.length ? act.map(x =>
-      `<li data-art="${x.id}" title="${esc(s.clickInfo)}"><span style="color:${ART_COLORS[x.t]}">${ART_SYM[x.k] || '✦'}</span> ${esc(x.n[col] || x.n[0])}</li>`).join('') : `<li>${s.artNone}</li>`) +
+      `<li data-art="${x.id}"><span style="color:${ART_COLORS[x.t]}">${ART_SYM[x.k] || '✦'}</span> ${esc(x.n[col] || x.n[0])}</li>`).join('') : `<li>${s.artNone}</li>`) +
       `</ul><p class="kinds">✦ ${s.artKinds.art}　⌂ ${s.artKinds.arch}　❖ ${s.artKinds.person}</p><ul>` + Object.entries(ART_COLORS).map(([k, c]) => `<li><i style="background:${c}"></i>${s.artTrad[k]}</li>`).join('') + `</ul><p>${s.artNote}</p>`;
     box.hidden = false;
     bindLegendToggle(box);
@@ -472,7 +544,7 @@ function renderLegend(F) {
     if (T.pointsAlways) {
       const by = order.map(f => [f, act.points.filter(p => p.f === f)]).filter(([, l]) => l.length);
       box.innerHTML = `<h3>${L.legend}</h3>` + by.map(([f, l]) => `<h4 class="clshead">${classIconSvg(f, themeColor(st.mode, f), 16)} ${esc(T.fam[f].n[col] || T.fam[f].n[0])} <small>${l.length}</small></h4><ul class="govs">`
-        + l.map(p => `<li data-lang="${p.id}" title="${esc(s.clickInfo)}">${p.series ? '<span style="color:#f5b301">◎</span> ' : ''}${esc(p.n[col] || p.n[0])}${p.series ? ` <small class="works">${p.series.map(w => L.works[w]).join(' · ')}</small>` : ''}</li>`).join('') + '</ul>').join('')
+        + l.map(p => `<li data-lang="${p.id}">${p.series ? '<span style="color:#f5b301">◎</span> ' : ''}${esc(p.n[col] || p.n[0])}${p.series ? ` <small class="works">${p.series.map(w => L.works[w]).join(' · ')}</small>` : ''}</li>`).join('') + '</ul>').join('')
         + (by.length ? '' : `<p>${s.artNone}</p>`) + `<p>${L.note}</p>`;
       box.hidden = false;
       bindLegendToggle(box);
@@ -481,9 +553,9 @@ function renderLegend(F) {
     }
     box.innerHTML = `<div class="lghead"><h3>${L.legend}</h3>${fx.length ? `<div class="focuspick"><button class="langfocus" type="button">${L.focus} ▾</button><ul class="focusmenu" hidden>${fx.map((f, i) =>
       `<li data-f="${i}">${esc(f.n[col] || f.n[0])}</li>`).join('')}</ul></div>` : ''}</div><ul class="govs">` + rows.map(a =>
-      `<li data-lang="${a.id}" title="${esc(s.clickInfo)}"><span style="color:${a.color || themeColor(st.mode, a.f)}">●</span> ${esc(a.n[col] || a.n[0])}</li>`).join('') +
+      `<li data-lang="${a.id}"><span style="color:${a.color || themeColor(st.mode, a.f)}">●</span> ${esc(a.n[col] || a.n[0])}</li>`).join('') +
       `</ul>` + (T.points.some(p => p.series) ? `<h3>${L.series}</h3><ul class="govs series">` + T.points.filter(p => p.series).map(p =>
-        `<li data-lang="${p.id}" title="${esc(s.clickInfo)}"><span style="color:#f5b301">◎</span> ${esc(p.n[col] || p.n[0])} <small>${p.series.map(w => L.works[w]).join(' · ')}</small></li>`).join('') + '</ul>' : '') +
+        `<li data-lang="${p.id}"><span style="color:#f5b301">◎</span> ${esc(p.n[col] || p.n[0])} <small>${p.series.map(w => L.works[w]).join(' · ')}</small></li>`).join('') + '</ul>' : '') +
       `<h3>${L.families}</h3><ul>` + order.filter(f => fams.includes(f)).map(f => `<li><i style="background:${themeColor(st.mode, f)}"></i>${esc(T.fam[f].n[col] || T.fam[f].n[0])}</li>`).join('') +
       `</ul><p>${L.note}</p>`;
     box.hidden = false;
@@ -534,7 +606,7 @@ function renderLegend(F) {
     const li = ([id]) => `<li><i style="background:${P.color(id)}"></i>${P.name(id, col)}</li>`;
     box.innerHTML = `<h3>${title}</h3>` + (divs.length ? `<ul>` + divs.map(li).join('') + `</ul>` : '') +
       (fbs.length ? `<p class="fbnote">${s.adminFallback}</p><ul class="fb">` + fbs.map(li).join('') + `</ul>` : '') + `<h3>${s.govs}</h3>` + (st.mode === 'china' ? `<p class="rockey"><i></i>${s.rocKey}</p>` : '') +
-      `<ul class="govs">` + govs.map(g => `<li class="${g.roc ? 'roc' : ''}" data-gid="${g.id}" title="${esc(s.clickInfo)}">★ ${g.n[col] || g.n[0]}</li>`).join('') + `</ul>`;
+      `<ul class="govs">` + govs.map(g => `<li class="${g.roc ? 'roc' : ''}" data-gid="${g.id}">★ ${g.n[col] || g.n[0]}</li>`).join('') + `</ul>`;
     box.hidden = false;
     bindLegendToggle(box);
     box.querySelectorAll('li[data-gid]').forEach(li => li.onclick = () => showGov(li.dataset.gid));
@@ -588,7 +660,7 @@ async function setMode(mode) {
   const prev = st.mode;
   if (isChina()) st.cmBy[prev] = st.cm;
   st.mode = mode;
-  cardOffsets.clear();                                 // cards moved by hand go back to their own places
+  cardOffsets.clear(); closedCards.clear(); setPick(null); setPickLine(null);                                 // cards moved by hand go back to their own places
   st.transition = 'jump';
   st.selected = null; app.selectedProv = null; hideInfo();
   if (app.pin && (REGIONS.includes(mode) || REGIONS.includes(prev))) unpin();   // regional maps don't share borders
@@ -612,6 +684,7 @@ async function setMode(mode) {
     buildTicks(); drawSpark();
     await setMonth(st.cm);
     startEvents();
+    ensureEcon();
   } else {
     $('#pov').closest('label').hidden = false;
     if (REGIONS.includes(prev)) {
@@ -858,6 +931,7 @@ function buildUI() {
       if (k === 'capitals' && !el.checked) removeCapitalPulses();
       if (k === 'evTable') buildEvTable();
       if (k === 'twCompare') {
+        $('#cmpBtn').classList.toggle('on', st.twCompare); $('#cmpBtn').setAttribute('aria-pressed', st.twCompare); $('#cmpCrossBox').hidden = !st.twCompare;
         await app.compare.load(); app.compare.on = st.twCompare;
         if (st.twCompare) { const v = currentView(); app.compare.center = [v.lon, Math.max(-60, Math.min(60, v.lat))]; app.compare.infoKey = null; }
       }
@@ -905,8 +979,16 @@ function buildUI() {
   $('#mode').onchange = e => setMode(e.target.value);
   // regional modes: one click back to world history at the same year
   $('#toWorld').onclick = () => { $('#mode').value = 'world'; setMode('world'); };
+  // floating-country comparison: a button in the top bar (the menu's checkbox stays as its state)
+  $('#cmpBtn').onclick = () => { const el = $('#t-twCompare'); el.checked = !el.checked; el.onchange(); };
+  $('#t-cmpCross').checked = st.cmpCross;
+  $('#t-cmpCross').onchange = e => { st.cmpCross = e.target.checked; safeSet('cmpCross', st.cmpCross ? '1' : '0'); app.compare.infoKey = null; redraw(); };
   // Japan: overseas territories on / off
   $('#ov-japan').onchange = e => { st.overseas = e.target.checked; st.transition = 'jump'; st.selected = null; hideInfo(); app.globe?.update(true); renderYear(); writeHash(); };
+  for (const [el, k] of [['#lc-plants', 'plants'], ['#lc-zones', 'zones']]) {
+    $(el).checked = !!st[k];
+    $(el).onchange = e => { st[k] = e.target.checked; safeSet(k, st[k] ? '1' : '0'); ensureEcon(); app.globe?.update(true); redraw(); };
+  }
   for (const [el, k] of [['#lc-feud', 'feuds'], ['#lc-power', 'powers'], ['#lc-us', 'usForces'], ['#lc-works', 'works'], ['#lc-network', 'network'], ['#lc-backbone', 'backbone'], ['#lc-fgoCustom', 'fgoCustom']]) {
     $(el).checked = !!st[k];
     $(el).onchange = e => { st[k] = e.target.checked; safeSet(k, st[k] ? '1' : '0'); app.globe?.update(true); redraw(); };
@@ -995,12 +1077,21 @@ function buildUI() {
     if (e.code === 'Space') { e.preventDefault(); st.playing ? pause() : play(); }
     if (e.key === ',' || e.key === '<') step(-1);
     if (e.key === '.' || e.key === '>') step(1);
-    if (e.key === 'Escape') { st.selected = null; hideInfo(); redraw(); }
+    if (e.key === 'Escape') { st.selected = null; setPick(null); setPickLine(null); hideInfo(); redraw(); }
   });
-  app.onSelect = hit => {
+  app.onSelect = (hit, e) => {
+    { // a tap on the comparison label shows or hides the actual figures (touch screens have no hover)
+      const c = app.compare, lb = c.labelBox, r = $('#stage').getBoundingClientRect(), x = e?.clientX - r.left, y = e?.clientY - r.top;
+      if (c.on && lb && x >= lb[0] && x <= lb[2] && y >= lb[1] && y <= lb[3]) { c.showFull = !c.showFull; redraw(); return; }
+    }
+    if (hit?.close) { closedCards.add(hit.close); st.projection === 'globe' ? app.globe?.map?.triggerRepaint() : app.flat.request(); return; }
+    // what was clicked keeps its thick outline until the next click (on empty map: nothing)
+    setPick(hitKey(hit)); setPickLine(hit?.line ? hit.line.kind + ':' + hit.line.id : null);
+    st.projection === 'globe' ? app.globe?.update() : app.flat.request();
     if (hit?.pulse) { openPulse(hit.pulse); return; }
+    if (hit?.econ) { hit.econ.plant ? showPlant(hit.econ.plant) : showZone(hit.econ.zone); return; }
     if (hit?.line) { if (hit.line.kind === 'work') showWork(hit.line.id); else if (hit.line.kind === 'cable') showCable(hit.line.id); else showFlow(hit.line.id); return; }
-    if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : hit.marker.kind === 'art' ? showArt(hit.marker.id) : hit.marker.kind === 'lang' || hit.marker.kind === 'langArea' ? showLang(hit.marker.id) : hit.marker.kind === 'cap' ? (st.selected = hit.marker.id, showPolity(hit.marker.id), redraw()) : hit.marker.kind === 'work' ? showWork(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
+    if (hit?.marker) { hit.marker.kind === 'gov' ? showGov(hit.marker.id) : hit.marker.kind === 'art' ? showArt(hit.marker.id) : hit.marker.kind === 'lang' || hit.marker.kind === 'langArea' ? showLang(hit.marker.id) : hit.marker.kind === 'cap' ? showCapital(hit.marker) : hit.marker.kind === 'work' ? showWork(hit.marker.id) : showSeat(hit.marker.id, hit.marker.kind); return; }
     app.selectedProv = null;
     if (!hit) { st.selected = null; hideInfo(); redraw(); return; }
     if (hit.prov) { st.selected = hit.polity; app.selectedProv = hit.prov; showProvince(hit.prov); }
@@ -1011,15 +1102,22 @@ function buildUI() {
   };
   let hoverT = 0;
   app.onHover = (hit, e) => {
+    { // the comparison label: the actual figures while the pointer is on it
+      const c = app.compare, lb = c.labelBox, r = $('#stage').getBoundingClientRect();
+      const over = !!(c.on && lb && e && e.clientX - r.left >= lb[0] && e.clientX - r.left <= lb[2] && e.clientY - r.top >= lb[1] && e.clientY - r.top <= lb[3]);
+      if (over !== !!c.showFull) { c.showFull = over; redraw(); }
+      if (over) { $('#tooltip').hidden = true; return; }        // the label itself shows the figures; no country name over it
+    }
     holdPulse(hit?.pulse || null);
     // the line under the mouse is drawn thicker
     if (setHoverLine(hit?.line ? hit.line.kind + ':' + hit.line.id : null)) st.projection === 'globe' ? app.globe?.map?.triggerRepaint() : app.flat.request();
+    if (setHover(hitKey(hit))) st.projection === 'globe' ? app.globe?.update() : app.flat.request();
     const now = performance.now(); if (now - hoverT < 60) return; hoverT = now;
     const tip = $('#tooltip');
     const info = hit?.line ? hit.line.kind !== 'flow' || !!flowOf(hit.line.id) : hit?.marker || hit?.pulse;     // theme arrows have no panel
     $('#stage').style.cursor = info ? 'pointer' : '';
     if (hit?.marker || hit?.pulse || hit?.line) {
-      tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.line ? hit.line.name || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]) + (info ? ' · ' + t(st.lang).clickInfo : '');
+      tip.textContent = (hit.pulse ? hit.pulse.name || hit.pulse.title || '' : hit.line ? hit.line.name || '' : hit.marker.text[st.langInfo.col] || hit.marker.text[0]);
       tip.hidden = false;
       const r = $('#stage').getBoundingClientRect();
       tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
@@ -1038,7 +1136,7 @@ function buildUI() {
     const r = $('#stage').getBoundingClientRect();
     tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
   };
-  $('#stage').addEventListener('pointerleave', () => { $('#tooltip').hidden = true; if (setHoverLine(null)) redraw(); });
+  $('#stage').addEventListener('pointerleave', () => { $('#tooltip').hidden = true; if (setHoverLine(null) | setHover(null)) redraw(); });
   window.addEventListener('resize', drawSpark);
 }
 
@@ -1085,6 +1183,8 @@ function applyLang() {
   $('#back').title = s.stepBack; $('#fwd').title = s.stepFwd; $('#start').title = s.toStart;
   $('#zin').title = s.zoomIn; $('#zout').title = s.zoomOut; $('#reset').title = s.reset; $('#north').title = s.north; if (st.projection !== 'globe') syncLock(); $('#full').title = s.fullscreen;
   $('#t-twCompare').closest('label').title = s.twShapeTip + '\n' + s.twInspired;
+  $('#l-cmpCross').textContent = s.cmpCrossL; $('#cmpCrossBox').title = s.cmpCrossTip;
+  $('#cmpBtn').textContent = '⇄ ' + s.cmpBtn; $('#cmpBtn').title = s.twShapeTip + '\n' + s.twInspired;
   $('#capSwitch').title = s.capitalsTip; $('#t-artPics').closest('label').title = s.artPicsTip;
   $('#markBtn').textContent = s.marks + ' ▾'; $('#l-markGeneral').textContent = s.markGeneral; $('#l-picSize').textContent = s.picSize; $('#l-cableW').textContent = s.cableW; $('#l-cableStyle').textContent = s.cableStyle; [...$('#cableStyle').options].forEach(o => { o.textContent = s.cableStyles[o.value]; }); $('#l-pics').textContent = s.picsL;
   syncMarkMenu();
@@ -1097,6 +1197,9 @@ function applyLang() {
       `<tr><td><a href="${i.url}" target="_blank" rel="noopener">${esc(i.n[c])}</a>${i.u[c] ? `<br><small>${esc(i.u[c])}</small>` : ''}</td>` +
       `<td>${i.licUrl ? `<a href="${i.licUrl}" target="_blank" rel="noopener">${esc(i.lic[c])}</a>` : esc(i.lic[c])}</td></tr>`).join('') + '</table>').join(''); }
   $('#aboutText').textContent = s.aboutText;
+  $('#aboutWhy').textContent = s.aboutWhy;
+  $('#aboutQuoteText').textContent = s.aboutQuote;
+  $('#aboutQuoteBy').textContent = s.aboutQuoteBy;
   $('#aboutHint').textContent = s.aboutHint;
   $('#countNote').textContent = s.countNote;
   $('#countBox').title = s.countNote;
@@ -1147,11 +1250,15 @@ function projThumb(id) {
     if (p.lat) proj.clipExtent([[4, 4], [W - 4, H - 4]]);
     const path = geoPath(proj).digits(1);
     const land = store.coarse?.land;
+    // the map's edge: for clipped projections the sphere as clipped (the fitting circle's own winding can turn
+    // inside out); everything inside is clipped to it, so cones cut to a band of latitudes keep their fan shape
+    const edge = path(p.clip || p.globe ? { type: 'Sphere' } : outline), cid = 'pt-' + id;
     svg = `<svg class="pthumb" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(t(st.lang).proj[id] || id)}">
-      <path d="${path(outline)}" fill="#cfe3f3" stroke="#6b8fb3" stroke-width="1"/>
-      <path d="${path(geoGraticule().step([30, 30])())}" fill="none" stroke="#9db8d1" stroke-width="0.5"/>
-      ${land ? `<path d="${path(land)}" fill="#e8dcc0" stroke="#a08b5c" stroke-width="0.4"/>` : ''}
-      <path d="${path(outline)}" fill="none" stroke="#33506e" stroke-width="1.2"/></svg>`;
+      <defs><clipPath id="${cid}"><path d="${edge}"/></clipPath></defs>
+      <path d="${edge}" fill="#cfe3f3"/>
+      <g clip-path="url(#${cid})"><path d="${path(geoGraticule().step([30, 30])())}" fill="none" stroke="#9db8d1" stroke-width="0.5"/>
+      ${land ? `<path d="${path(land)}" fill="#e8dcc0" stroke="#a08b5c" stroke-width="0.4"/>` : ''}</g>
+      <path d="${edge}" fill="none" stroke="#33506e" stroke-width="1.2"/></svg>`;
   } catch { svg = ''; }
   if (store.coarse?.land) thumbCache.set(id, svg);
   return svg;
@@ -1385,10 +1492,13 @@ function popEvent(ev) {
     const img = new Image();
     img.onload = () => {
       if (app.popKey !== key) return;
-      box.innerHTML = `<img src="${esc(info.thumb)}" alt=""><div class="cap">${esc(ev.n[col] || ev.n[0])}<small>${esc(info.author || '')}${info.lic ? ' · ' + esc(info.lic) : ''} · Wikimedia Commons</small></div>`;
+      box.innerHTML = `<button class="x" type="button" aria-label="×">×</button><img src="${esc(info.thumb)}" alt=""><div class="cap">${esc(ev.n[col] || ev.n[0])}<small>${esc(info.author || '')}${info.lic ? ' · ' + esc(info.lic) : ''} · Wikimedia Commons</small></div>`;
       box.hidden = false; placeEvPop(); box.classList.remove('fade'); void box.offsetWidth; box.classList.add('show');
       clearTimeout(app.popT); if (st.playing) app.popT = setTimeout(() => box.classList.add('fade'), 4500);
-      box.onclick = () => showEvent({ ...ev, when: $('#yearBig').textContent });
+      box.onclick = e => {
+        if (e.target.closest('.x')) { box.classList.remove('show'); box.hidden = true; return; }      // the ×: close this picture
+        showEvent({ ...ev, when: $('#yearBig').textContent });
+      };
     };
     img.src = info.thumb;
   });
@@ -1452,6 +1562,7 @@ function syncLocalLabels() {
   $('#l-lc-works').textContent = t(st.lang).worksL; $('#lc-works').closest('label').hidden = !(c?.works || []).length;
   $('#l-lc-network').textContent = t(st.lang).networkL; $('#lc-network').closest('label').hidden = !(c?.works || []).some(w => w.path && !BACKBONE.has(w.kind));
   $('#l-lc-backbone').textContent = t(st.lang).backboneL; $('#lc-backbone').closest('label').hidden = !(c?.works || []).some(w => w.path && BACKBONE.has(w.kind));
+  $('#l-lc-plants').textContent = s.plantsL; $('#l-lc-zones').textContent = s.zonesL;
   $('#l-lc-fgoCustom').textContent = s.fgoCustomL; $('#lc-fgoCustom').closest('label').hidden = !themeOf('fgo')?.points?.some(p => p.custom);
   $('#l-ly-party').textContent = s.partyBy?.[st.mode]?.layer || s.partyLayer;
   $('#partyBox').hidden = !c?.party;
@@ -1620,17 +1731,51 @@ function showPolity(id) {
   box.innerHTML = `<button class="x" aria-label="close">×</button>` + polityHtml(id);
   bindChips(box);
   box.hidden = false;
-  const cap = P.row(id)?.[10] && capitalOf(P.row(id)[10], st.year);       // the capital in this year, pictured
-  if (cap?.img && st.pics) { const tag = box.dataset.pic = id + ':' + cap.c; cityThumb(cap.img).then(tn => {
-    if (!tn || box.dataset.pic !== tag || box.hidden) return;
-    const name = cap.n[st.langInfo.col] || cap.n[0];
+  // a photograph of the country (not its capital, whose photo is on the capital's card; not a map of its
+  // territory, not its flag, which is in the heading)
+  const q = P.row(id)?.[10];
+  // the flag in the heading, in place of the colour square (the square stays where there is no flag)
+  if (q) { const ftag = box.dataset.flag = id + ':' + q; flagOf(q).then(file => file && cityThumb(file).then(tn => {
+    const sq = box.querySelector('h2 > i');
+    if (!tn || box.dataset.flag !== ftag || box.hidden || !sq) return;
+    const im = document.createElement('img'); im.className = 'flagicon'; im.src = tn.url; im.alt = t(st.lang).flagL;
+    im.title = `${t(st.lang).flagL}：${tn.credit || ''} · Wikimedia Commons`; sq.replaceWith(im);
+  })); }
+  if (q && st.pics) { const tag = box.dataset.pic = id + ':photo'; countryPhoto(q).then(ph => {
+    if (!ph || box.dataset.pic !== tag || box.hidden) return;
     box.querySelector('.placepic')?.remove();
     const d = document.createElement('div'); d.className = 'placepic';
-    d.innerHTML = figureHtml({ thumb: tn.url, page: 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(cap.img), credit: tn.credit }, `★ ${esc(name)}`, esc);
+    d.innerHTML = figureHtml(ph, esc(t(st.lang).artPhoto), esc);
     (box.querySelector('table.facts') || box.querySelector('h2')).after(d);
   }); }
   box.querySelector('.x').onclick = () => { st.selected = null; hideInfo(); redraw(); };
   addPinButton();
+}
+// a capital's own card: the city, whose capital it is and since when, its picture, and links (the country's card
+// is one click away)
+function showCapital(m) {
+  const s = t(st.lang), col = st.langInfo.col, q = P.row(m.id)?.[10];
+  const cap = (q && capitalOf(q, st.year)) || { c: m.cap, img: m.img, n: m.text, a: null, b: null };
+  const name = cap.n?.[col] || cap.n?.[0] || '', country = P.name(m.id, col);
+  const span = cap.a != null || cap.b != null ? `${cap.a != null ? formatYear(st.lang, cap.a) : ''} – ${cap.b != null ? formatYear(st.lang, cap.b) : ''}` : '';
+  const wl = wikiLang();
+  const box = $('#info'); delete box.dataset.disputed; box.dataset.sticky = '1';
+  box.innerHTML = `<button class="x" aria-label="close">×</button>
+    <h2><span class="star" style="color:${m.color || '#b45309'}">★</span>${esc(name)}</h2>
+    <p class="kind">${esc(s.capKind(country))}</p>
+    <table class="facts"><tr><th>${esc(s.capCountry)}</th><td><a href="#" class="capCountry">${esc(country)}</a></td></tr>
+    ${span ? `<tr><th>${esc(s.capSpan)}</th><td>${esc(span)}</td></tr>` : ''}</table>
+    <p class="more">${esc(s.capMore)}<a href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/${wl}wiki/${esc(cap.c)}" target="_blank" rel="noopener">${esc(s.capWiki)}</a> · <a href="https://www.wikidata.org/wiki/${esc(cap.c)}" target="_blank" rel="noopener">Wikidata ${esc(cap.c)}</a></p>
+    <p class="src">${esc(s.capSrc)}</p>`;
+  box.hidden = false;
+  box.querySelector('.capCountry').onclick = e => { e.preventDefault(); st.selected = m.id; showPolity(m.id); redraw(); };
+  box.querySelector('.x').onclick = () => hideInfo();
+  if (cap.img && st.pics) { const tag = box.dataset.pic = 'cap:' + cap.c; cityThumb(cap.img).then(tn => {
+    if (!tn || box.dataset.pic !== tag || box.hidden) return;
+    const d = document.createElement('div'); d.className = 'placepic';
+    d.innerHTML = figureHtml({ thumb: tn.url, page: 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(cap.img), credit: tn.credit }, `★ ${esc(name)}`, esc);
+    box.querySelector('table.facts').after(d);
+  }); }
 }
 function showDisputed(d, under) {
   const s = t(st.lang), q = d.properties;
@@ -1824,6 +1969,41 @@ function workSource(x, s, y0) {
     ? (x.osm || []).map((r, i) => a('https://www.openstreetmap.org/relation/' + r, s.osmRel + (x.osm.length > 1 ? ' ' + (i + 1) : ''))).join('') + a('https://www.openstreetmap.org/copyright', '© OpenStreetMap')
     : x.src && x.src !== 'sketch' ? a('https://www.naturalearthdata.com/downloads/10m-cultural-vectors/', 'naturalearthdata.com') : '';
   return s.workSrc + '<br>' + route.replace('{net}', net) + old + links;
+}
+// power plants and special zones (econ.js): loaded for the country mode the first time a switch is on
+function ensureEcon() { if (REGIONS.includes(st.mode) && (st.plants || st.zones)) loadEcon(st.mode).then(() => { app.globe?.update(true); redraw(); }); }
+app.econLayer = () => (REGIONS.includes(st.mode) && (st.plants || st.zones) && econData(st.mode)
+  ? { region: st.mode, plants: st.plants, zones: st.zones, year: isChina() ? regionYearMonth(reg(), st.cm)[0] + (regionYearMonth(reg(), st.cm)[1] - 1) / 12 : st.year, col: st.langInfo.col } : null);
+function showPlant(p) {
+  const s = t(st.lang), col = st.langInfo.col, d = econData(st.mode), fuel = FUEL[p.f];
+  const fuelName = f => FUEL[f][1 + col] || FUEL[f][1];
+  const src = d?.sources?.[p.s];
+  const box = $('#info'); delete box.dataset.disputed; box.dataset.sticky = '1';
+  box.innerHTML = `<button class="x" aria-label="close">×</button>
+    <h2><span class="star" style="color:${fuel[0]}">●</span>${esc(p.n)}</h2>
+    <p class="kind">${esc(s.plantKind)}・${esc(fuelName(p.f))}${p.of?.length ? '（' + p.of.map(fuelName).map(esc).join('、') + '）' : ''}</p>
+    <table class="facts"><tr><th>${s.plantCap}</th><td>${p.mu ? esc(s.plantCapUnknown) : p.mw.toLocaleString() + ' MW'}</td></tr>
+    <tr><th>${s.plantYear}</th><td>${p.k ? p.a : esc(s.plantYearUnknown.replace('{y}', p.a))}</td></tr>
+    ${p.b != null ? `<tr><th>${s.plantClosed}</th><td>${Math.floor(p.b)}-${String(Math.round((p.b % 1) * 12) + 1).padStart(2, '0')}</td></tr>` : ''}
+    ${p.o ? `<tr><th>${s.plantOwner}</th><td>${esc(p.o)}</td></tr>` : ''}</table>
+    <p class="src">${esc(p.s === 'OpenStreetMap' ? s.plantSrcOsm : s.plantSrc)}${p.s ? '<br>' + esc(s.plantOrig) + '：' + (p.u || src ? `<a href="${esc(p.u || src)}" target="_blank" rel="noopener">${esc(p.s)}</a>` : esc(p.s)) : ''}</p>`;
+  box.hidden = false; box.querySelector('.x').onclick = () => hideInfo();
+}
+function showZone(z) {
+  const s = t(st.lang), col = st.langInfo.col, Z = ZONE[z.kind];
+  const name = z.n[col] || z.n[0], note = z.d[col] || z.d[0];
+  const links = [['zh-Hant', z.w[0]], ['en', z.w[1]]].filter(([, w]) => w).map(([lang, w]) => `<a href="${wikiLink(null, w, lang)}" target="_blank" rel="noopener">${esc(w)}</a>`).join(' · ');
+  const yr = v => (v >= 9999 ? '' : String(Math.floor(v)));
+  const box = $('#info'); delete box.dataset.disputed; box.dataset.sticky = '1';
+  box.innerHTML = `<button class="x" aria-label="close">×</button>
+    <h2><span class="star" style="color:${Z[0]}">${Z[1]}</span>${esc(name)}</h2>
+    <p class="kind">${esc(Z[2 + col] || Z[2])}</p>
+    <table class="facts"><tr><th>${s.zoneSpan}</th><td>${yr(z.a)} – ${yr(z.b)}</td></tr></table>
+    ${note ? `<p class="desc">${esc(note)}</p>` : ''}
+    ${links ? `<p class="links">${s.links}：${links}</p>` : ''}
+    <p class="src">${esc(s.zoneSrc)}</p>`;
+  box.hidden = false; box.querySelector('.x').onclick = () => hideInfo();
+  addPlacePic(box, [[z.w[0], 'zh'], [z.w[1], 'en']]);
 }
 function showWork(id) {
   const c = reg(), s = t(st.lang), col = st.langInfo.col;

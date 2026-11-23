@@ -1,5 +1,5 @@
 # 泰國模式：重大建設（格式見 taiwan/infra.tsv）。鐵路與道路的實際路線由 snap_routes.py 依 Natural Earth 1:10m 鐵路、道路圖資求得（寫入 routes.json），這裡的座標是路線經過的城市；其他線狀建設為簡化示意；年代依各維基百科條目。
-rail	th_northern	1897-03		100.49,13.75 100.57,14.35 100.12,15.7 100.26,16.82 99.49,18.29 98.99,18.79	北線鐵路（曼谷—清邁）	Northern Line (Bangkok–Chiang Mai)	北本線	暹羅第一條國營幹線。	Siam's first state trunk line.	最初の国鉄幹線。		Northern Line (Thailand)
+rail	th_northern	1897-03		100.49,13.75 100.57,14.35 100.12,15.7 100.26,16.82 99.49,18.29 98.99,18.79	北線鐵路（曼谷—清邁）	Northern Line (Bangkok–Chiang Mai)	北本線	暹羅第一條國營幹線，1897 年曼谷—大城通車，1922 年通至清邁。	Siam's first state trunk line: Bangkok–Ayutthaya opened in 1897, Chiang Mai reached in 1922.	最初の国鉄幹線。1897年にアユタヤまで、1922年にチェンマイまで開通。		Northern Line (Thailand)
 rail	th_burma	1943-10	1947-01	99.5,14.04 98.7,14.4 98.4,15.3 97.7,16.0 97.63,16.48	泰緬鐵路（死亡鐵路）	Burma Railway (Death Railway)	泰緬鉄道	日軍以戰俘與勞工興建。	Built by the Japanese with prisoners and forced labour.	捕虜を使役した鉄道。	泰缅铁路	Burma Railway
 bridge	th_kwai	1943-02		99.5,14.04	桂河大橋	Bridge on the River Kwai	クウェー川鉄橋	泰緬鐵路上的名橋。	The famous bridge on the Burma Railway.	泰緬鉄道の橋。		
 dam	th_bhumibol	1964-05		98.97,17.24	蒲美蓬水壩	Bhumibol Dam	プミポン・ダム	泰國最大的水壩。	Thailand's largest dam.	タイ最大のダム。	普密蓬水坝	Bhumibol Dam
@@ -8,7 +8,7 @@ metro	th_bts	1999-12		100.53,13.74	曼谷空鐵	BTS Skytrain	BTSスカイトレ�
 airport	th_suvarnabhumi	2006-09		100.75,13.69	素萬那普機場	Suvarnabhumi Airport	スワンナプーム国際空港	曼谷新國際機場。	Bangkok's new international airport.	バンコク新空港。	素万那普机场	Suvarnabhumi Airport
 bridge	th_memorial	1932-04		100.497,13.739	拉瑪一世紀念橋	Memorial Bridge	メモリアル橋	曼谷第一座跨湄南河的大橋。	Bangkok's first bridge over the Chao Phraya.	バンコク初のチャオプラヤー川の橋。		Memorial Bridge (Bangkok)
 road	th_friendship	1958-07		100.91,14.53 101.4,14.7 102.1,14.97	友誼公路（沙拉武里—呵叻）	Friendship Highway	フレンドシップ・ハイウェイ	美國援建，打開東北部的公路。	US-aided road that opened up the north-east.	米国の援助で建設。		Mittraphap Road
-bridge	th_laofriend	1994-04		102.71,17.88	第一泰寮友誼大橋	First Thai–Lao Friendship Bridge	第1タイ＝ラオス友好橋	湄公河上第一座泰寮大橋。	The first Thai–Lao bridge over the Mekong.	メコン川初の橋。	泰老友谊大桥	First Thai–Lao Friendship Bridge
+bridge	th_laofriend	1994-04		102.71,17.875 102.715,17.885	第一泰寮友誼大橋	First Thai–Lao Friendship Bridge	第1タイ＝ラオス友好橋	湄公河上第一座泰寮大橋。	The first Thai–Lao bridge over the Mekong.	メコン川初の橋。	泰老友谊大桥	First Thai–Lao Friendship Bridge
 bridge	th_rama8	2002-05		100.5,13.77	拉瑪八世大橋	Rama VIII Bridge	ラーマ8世橋	曼谷的單塔斜張橋。	Bangkok's single-tower cable-stayed bridge.	バンコクの斜張橋。		Rama VIII Bridge
 port	th_klongtoey	1951-01		100.56,13.71	曼谷港（孔堤）	Bangkok Port (Khlong Toei)	バンコク港（クロントイ）	湄南河上的主要港口。	The main port on the Chao Phraya.	チャオプラヤー川の港。	曼谷港	Port of Bangkok
 airport	th_dmk	1914-03		100.6,13.91	廊曼機場	Don Mueang International Airport	ドンムアン空港	亞洲最古老的機場之一。	One of Asia's oldest airports.	アジア最古級の空港。	廊曼国际机场	Don Mueang International Airport

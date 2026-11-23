@@ -7,13 +7,14 @@
 | 名稱 | 用途 | 授權 |
 |---|---|---|
 | [Seshat Global History Databank — Cliopatria v0.21](https://github.com/Seshat-Global-History-Databank/cliopatria) | 歷代政權疆界（西元前 3400 年–2024 年），本專案再加修正 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-| [Natural Earth](https://www.naturalearthdata.com/) | 現代國界、各國觀點與爭議地區、省級行政區、海岸、湖泊、河流、海深、自然地理區、冰川、首都位置；地區模式的鐵路與道路路線（1:10m railroads、roads） | 公有領域 |
+| [Natural Earth](https://www.naturalearthdata.com/) | 現代國界、各國觀點與爭議地區、省級行政區、海岸、湖泊、河流、海深、自然地理區、冰川、首都位置；地區模式的鐵路與道路路線（1:10m railroads、roads）；漂浮國家比較的人口與 GDP（POP_EST、GDP_MD） | 公有領域 |
 | [Wikidata](https://www.wikidata.org/) | 政權的繁中、簡中、日文名稱；首都；藝術史作品的名稱、作者、年代與收藏館（事先擷取，隨網站提供） | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
-| [Wikimedia Commons](https://commons.wikimedia.org/) | 所有縮圖（作品、事件、人物、首都、地點）：事先縮小並轉為 WebP 隨網站提供，未做其他修改；每張圖的作者、授權與原始頁面列在圖旁，完整清單見 offline/CREDITS.md | 各圖不同（公有領域、CC BY、CC BY-SA 等） |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | 所有縮圖（作品、事件、人物、首都、地點、國家照片與國旗）：事先縮小並轉為 WebP 隨網站提供，未做其他修改；每張圖的作者、授權與原始頁面列在圖旁，完整清單見 offline/CREDITS.md | 各圖不同（公有領域、CC BY、CC BY-SA 等） |
 | [V-Dem Country-Year Dataset v15（Varieties of Democracy Institute；vdemdata）](https://www.v-dem.net/) | 政體模式：世界政體四分類與元首類型（衍生資料 public/data/regimes.json 依同授權釋出） | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | [NASA Earth Observatory — Blue Marble: Next Generation (Reto Stöckli)](https://earthobservatory.nasa.gov/features/BlueMarble) | 衛星影像底圖 | 公有領域（註明 NASA Earth Observatory） |
-| [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright) | 台灣主要河川（放大時）；地區模式的鐵路與道路路線（各模式的 routes_osm.json 以 ODbL 授權提供） | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/) |
+| [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright) | 台灣主要河川（放大時）；地區模式的鐵路與道路路線（各模式的 routes_osm.json 以 ODbL 授權提供）；各國模式補充的發電廠（econ/osm_plants.tsv，ODbL） | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/) |
 | [Terrain Tiles（Mapzen／Tilezen，AWS 開放資料）](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) | 各國模式自然地理底圖的地形陰影（本專案以高程資料計算） | [SRTM、GMTED2010、ETOPO1 等（公有領域／開放授權）](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) |
+| [World Resources Institute — Global Power Plant Database 1.3.0](https://datasets.wri.org/dataset/globalpowerplantdatabase) | 各國模式的發電廠：名稱、燃料、裝置容量、啟用年、經營者；漂浮國家比較的電廠數與總裝置容量 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | [TeleGeography — Submarine Cable Map](https://www.submarinecablemap.com/) | 網際網路模式與各地區模式的現役海底電纜路線、登陸站、啟用年、長度與營運者（路線已簡化） | [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) |
 | [內政部 鄉鎮市區界線（經 npm 套件 taiwan-atlas）](https://data.gov.tw/) | 台灣模式的單元（由鄉鎮市區組成） | [政府資料開放授權條款－第1版](https://data.gov.tw/license) |
 | [內政部地政司 2025 年版全臺灣 20 公尺網格數值地形模型 DTM 資料](https://data.gov.tw/dataset/176927) | 台灣地形陰影圖磚（本專案加工製作，public/relief/tw） | [政府資料開放授權條款－第1版](https://data.gov.tw/license) |

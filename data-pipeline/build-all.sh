@@ -125,6 +125,9 @@ node data-pipeline/build_region.mjs argentina
 python3 data-pipeline/thailand/units.py "$NE" data-pipeline/build/thailand_units.geojson
 $MS -i data-pipeline/build/thailand_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/thailand_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs thailand
+python3 data-pipeline/philippines/units.py "$NE" data-pipeline/build/philippines_units.geojson
+$MS -i data-pipeline/build/philippines_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 20% keep-shapes -o format=topojson quantization=100000 $OUT/philippines_units.json >/dev/null 2>&1
+node data-pipeline/build_region.mjs philippines
 python3 data-pipeline/indonesia/units.py "$NE" data-pipeline/build/indonesia_units.geojson
 $MS -i data-pipeline/build/indonesia_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 5% keep-shapes -o format=topojson quantization=100000 $OUT/indonesia_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs indonesia
@@ -132,3 +135,7 @@ python3 data-pipeline/usa/units.py "$NE" data-pipeline/build/usa_units.geojson
 $MS -i data-pipeline/build/usa_units.geojson snap snap-interval=0.001 -clean gap-fill-area=0.05km2 -simplify 6% keep-shapes -o format=topojson quantization=100000 $OUT/usa_units.json >/dev/null 2>&1
 node data-pipeline/build_region.mjs usa
 node data-pipeline/build_theme.mjs internet
+node data-pipeline/econ/build-econ.mjs
+node data-pipeline/econ/build-compare.mjs "$NE"
+node data-pipeline/growth/build-growth.mjs
+python3 data-pipeline/compare/outlines.py "$NE"

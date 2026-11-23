@@ -13,6 +13,8 @@
 #         -Relief         建立各地區模式的地形陰影（灰色山影；Terrain Tiles，只補新地區或舊版）
 #         -CablesOnly     只更新海底電纜路線（TeleGeography，一次下載）
 #         -PartyOnly      只更新墨西哥、阿根廷、巴西、印尼的州／省長政黨（Wikidata，共約 4 次查詢）
+#         -PowerOnly      只更新各國模式的發電廠（OpenStreetMap，每國一次查詢，有快取）
+#         -GrowthOnly     只更新世界模式的機場、港口、海纜數量（Wikidata 2 次查詢；TeleGeography 每條海纜一次、間隔 1 秒，第一次約 15 分鐘，之後只抓新海纜）
 #         -Corridor       路線關係找不到的路段，改下載沿線主要道路／鐵路來求路徑（資料量大、較慢；預設不做，沿用 Natural Earth）
 # 縮圖之後也會從 TeleGeography 下載海底電纜路線，依 data-pipeline\cables\cables.tsv 重建各模式的海纜（不穿越陸地、端點為實際登陸站）。
 # 縮圖之後也會從 Wikidata 更新墨西哥、阿根廷、巴西、印尼模式的州／省長政黨（data-pipeline\party\fetch-party.mjs，結果寫入各模式的 party.tsv）。
@@ -30,6 +32,8 @@ param(
   [switch]$NoRoutes,
   [switch]$PartyOnly,
   [switch]$CablesOnly,
+  [switch]$PowerOnly,
+  [switch]$GrowthOnly,
   [switch]$Satellite,
   [switch]$Relief,
   [switch]$Corridor
@@ -77,6 +81,25 @@ function Update-Cables {
   node @cableArgs
   if ($LASTEXITCODE) { Write-Host '海纜更新未完成；訊息中列出的問題處理後，可執行 .\fetch-offline.ps1 -CablesOnly 重試。' -ForegroundColor Yellow }
 }
+# 各國模式的發電廠：WRI 全球發電廠資料庫（已內附）加上 OpenStreetMap（ODbL）；每國一次 Overpass 查詢，快取在 data-pipeline\sources\osm-plants
+function Update-Power {
+  Write-Host '更新各國模式的發電廠（OpenStreetMap）：每個國家一次查詢，大國可能要數分鐘。'
+  $powerArgs = @('data-pipeline/econ/fetch-osm-plants.mjs')
+  if ($Refresh) { $powerArgs += '--refresh' }
+  node @powerArgs
+  if ($LASTEXITCODE) { Write-Host '發電廠更新未完成；可執行 .\fetch-offline.ps1 -PowerOnly 重試。' -ForegroundColor Yellow }
+  node data-pipeline/econ/build-econ.mjs
+}
+# 世界模式的成長數字：機場、港口（Wikidata，CC0）與海纜啟用年（TeleGeography，CC BY-NC-SA 3.0），快取在 data-pipeline\sources\growth
+function Update-Growth {
+  Write-Host '更新世界模式的機場、港口、海底電纜數量：Wikidata 2 次查詢，TeleGeography 每條海纜一次（間隔 1 秒，只抓缺少的）。'
+  $growArgs = @('data-pipeline/growth/fetch-growth.mjs')
+  if ($Refresh) { $growArgs += '--refresh' }
+  node @growArgs
+  if ($LASTEXITCODE) { Write-Host '成長數字更新未完成；可執行 .\fetch-offline.ps1 -GrowthOnly 重試（會從中斷處繼續）。' -ForegroundColor Yellow }
+}
+if ($PowerOnly) { Update-Power; exit $LASTEXITCODE }
+if ($GrowthOnly) { Update-Growth; exit $LASTEXITCODE }
 if ($PartyOnly) { Update-Party; exit $LASTEXITCODE }
 if ($CablesOnly) { Update-Cables; exit $LASTEXITCODE }
 # 各地區模式的高解析衛星底圖（NASA Blue Marble: Next Generation，公有領域）：原始分幅存在 data-pipeline\sources\bmng
@@ -116,7 +139,7 @@ if (-not $DryRun) {
   node data-pipeline/offline/sheets.mjs
   if ($LASTEXITCODE) { Write-Host '合併大圖失敗；可再執行 .\fetch-offline.ps1 -SheetsOnly 重試。' -ForegroundColor Yellow }
 }
-if (-not $DryRun) { Update-Party; Update-Cables }
+if (-not $DryRun) { Update-Party; Update-Cables; Update-Power; Update-Growth }
 if (-not $DryRun -and -not $NoRoutes) { Update-Routes }
 $min = [math]::Round(((Get-Date) - $t0).TotalMinutes, 1)
 Write-Host "完成（$min 分鐘）。請 commit public\offline、public\data 與 data-pipeline 資料夾。" -ForegroundColor Green

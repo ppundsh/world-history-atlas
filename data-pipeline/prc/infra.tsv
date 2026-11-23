@@ -22,7 +22,7 @@ road	cn_sichuan_tibet	1954-12		104.07,30.67 101.96,30.05 98.6,31.2 97.17,31.14 9
 road	cn_karakoram	1979-06		75.98,39.47 75.23,37.77 75.4,36.85 74.0,35.9	喀喇崑崙公路	Karakoram Highway	カラコルム・ハイウェイ	中巴公路，翻越紅其拉甫山口。	The China–Pakistan road over the Khunjerab Pass.	クンジュラブ峠を越える中パ道路。	喀喇崑崙公路	Karakoram Highway
 bridge	cn_wuhan_br	1957-10		114.28,30.55	武漢長江大橋	Wuhan Yangtze River Bridge	武漢長江大橋	長江上第一座大橋，蘇聯協助。	The first bridge over the Yangtze, built with Soviet help.	長江初の橋。	武漢長江大橋	Wuhan Yangtze River Bridge
 bridge	cn_nanjing_br	1968-12		118.74,32.11	南京長江大橋	Nanjing Yangtze River Bridge	南京長江大橋	中蘇交惡後自力建成的公鐵兩用橋。	A road-and-rail bridge built alone after the Soviet split.	中ソ対立後に自力で完成。	南京長江大橋	Nanjing Yangtze River Bridge
-bridge	cn_hzmb	2018-10		113.73,22.28	港珠澳大橋	Hong Kong–Zhuhai–Macau Bridge	港珠澳大橋	55 公里跨海橋隧，世界最長。	A 55 km bridge-and-tunnel link, the world's longest sea crossing.	55キロの世界最長海上橋。	港珠澳大橋	Hong Kong–Zhuhai–Macau Bridge
+bridge	cn_hzmb	2018-10		113.57,22.21 113.75,22.29 113.93,22.30	港珠澳大橋	Hong Kong–Zhuhai–Macau Bridge	港珠澳大橋	55 公里跨海橋隧，世界最長。	A 55 km bridge-and-tunnel link, the world's longest sea crossing.	55キロの世界最長海上橋。	港珠澳大橋	Hong Kong–Zhuhai–Macau Bridge
 dam	cn_sanmenxia	1960-09		111.35,34.83	三門峽水庫	Sanmenxia Dam	三門峡ダム	黃河第一座大壩，泥沙淤積問題嚴重。	The first dam on the Yellow River, plagued by silt.	黄河初のダム、土砂堆積に苦しむ。	三門峽水利樞紐	Sanmenxia Dam
 hydro	cn_liujiaxia	1974-12		103.33,35.93	劉家峽水電站	Liujiaxia dam	劉家峡ダム	黃河上游大型水電站。	A large hydro plant on the upper Yellow River.	黄河上流の大型水力。	劉家峽水電站	Liujiaxia Dam
 hydro	cn_gezhouba	1988-12		111.27,30.74	葛洲壩水利樞紐	Gezhouba Dam	葛洲壩	長江第一座大壩。	The first dam on the Yangtze.	長江初のダム。	葛洲壩水利樞紐	Gezhouba Dam
@@ -49,7 +49,7 @@ grid	cn_uhv	2009-01		112.75,36.2 113.62,34.75 112.15,32.03	晉東南—南陽—
 ixp	cn_ncfc	1994-04		116.32,39.99	NCFC 接上國際網際網路	NCFC connects to the Internet	NCFC がインターネット接続	中國正式接入國際網際網路。	China formally joined the Internet.	中国が正式にインターネットに接続。	中國國家計算機與網絡設施	Internet in China
 fiber	cn_chinanet	1996-01		116.39,39.91 121.47,31.23 113.26,23.13 104.07,30.67 108.95,34.27 116.39,39.91	ChinaNet 骨幹網	ChinaNet backbone	ChinaNet 基幹網	郵電部建立的全國公共網路。	The national public network of the Ministry of Posts.	郵電部の全国公衆網。	中國公用計算機互聯網	ChinaNet
 datacenter	cn_gfw	2003-01		116.39,39.91	防火長城（金盾工程）	Great Firewall (Golden Shield)	グレート・ファイアウォール（金盾）	國家級網路審查與封鎖系統。	The national system of Internet censorship and blocking.	国家規模のネット検閲。	防火長城	Great Firewall
-cable	cn_cuc	1993-12		121.85,31 130.6,31 130.65,30.95 130.7,30.9 131.05,31.05 131.45,31.35 136.05,33.5 139.35,34.65 139.93,34.91	中美海底電纜（經日本）	China–US cable (via Japan)	中米海底ケーブル	崇明登陸。	Landing at Chongming.	崇明に陸揚げ。	中美海底光纜	China-US Cable Network
+cable	cn_cuc	2000-01		121.85,31 130.6,31 130.65,30.95 130.7,30.9 131.05,31.05 131.45,31.35 136.05,33.5 139.35,34.65 139.93,34.91	中美海底電纜（經日本）	China–US cable (via Japan)	中米海底ケーブル	崇明登陸。	Landing at Chongming.	崇明に陸揚げ。	中美海底光纜	China-US Cable Network
 datacenter	cn_guizhou	2015-02		106.7,26.6	貴州大數據中心群	Guizhou data-centre cluster	貴州のデータセンター群	蘋果 iCloud 中國資料存放地。	Where Apple's Chinese iCloud data is kept.	Apple iCloud中国データの保管地。	貴州省	Guizhou
 road	cn_qinghai_tibet_rd	1954-12		94.9,36.4 93.9,35.7 92.4,34.2 92.05,32.5 91.1,29.65	青藏公路	Qinghai–Tibet Highway	青蔵公路	由格爾木到拉薩，與川藏公路同年通車。	From Golmud to Lhasa, opened the same year as the Sichuan–Tibet road.	ゴルムドからラサへ。	青藏公路	China National Highway 109
 highway	cn_jingzhu	2004-12		116.4,39.9 114.48,38.03 113.65,34.76 114.3,30.59 112.94,28.23 113.26,23.13 114.1,22.55	京珠高速公路全線	Beijing–Zhuhai Expressway	京珠高速道路	南北縱貫的主幹高速公路（今京港澳高速）。	The north–south trunk expressway (today's G4).	南北縦貫の幹線。	京港澳高速公路	G4 Beijing–Hong Kong and Macau Expressway

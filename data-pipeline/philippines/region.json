@@ -1,0 +1,15 @@
+{
+ "start": "1521-01",
+ "end": "2026-12",
+ "units": "philippines_units.geojson",
+ "merge": true,
+ "groups": {
+  "luzon_n": ["ilocos", "cordillera", "cagayan"],
+  "luzon_c": ["c_luzon", "manila", "calabarzon"],
+  "luzon": ["ilocos", "cordillera", "cagayan", "c_luzon", "manila", "calabarzon", "bicol"],
+  "visayas": ["w_visayas", "c_visayas", "e_visayas"],
+  "mindanao_n": ["zamboanga", "n_mindanao", "davao", "caraga"],
+  "moro": ["lanao", "cotabato", "sulu"],
+  "all": ["ilocos", "cordillera", "cagayan", "c_luzon", "manila", "calabarzon", "mindoro", "palawan", "bicol", "w_visayas", "c_visayas", "e_visayas", "zamboanga", "n_mindanao", "davao", "caraga", "lanao", "cotabato", "sulu"]
+ }
+}

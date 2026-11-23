@@ -5,6 +5,7 @@
 //                                  period sheets (public/offline/sheets) that the site actually uses
 //   public/offline/ev/<lang>.json  event key → [article title, article URL, introduction, Commons file, [lon, lat]]
 //   public/offline/pages.json      "wiki:title" → Commons file (people, places, buildings, currencies)
+//   public/offline/countries.json  Wikidata id → a photograph of the country;  flags.json  Wikidata id → its flag
 //   public/offline/works.json      Wikidata facts of the artworks and portraits
 //   public/offline/CREDITS.md      every picture with its author, licence and source page
 // Incremental: what is already in the bundle is not fetched again (run with --refresh to redo everything).
@@ -232,6 +233,28 @@ for (const lang in evOut) { for (const k in evOut[lang]) if (Array.isArray(evOut
 const normF = f => (f || '').replace(/_/g, ' ');
 const NOT_PHOTO = /flag|coat of arms|emblem|logo|icon|symbol|seal of|commons|wikiquote|wiktionary|portal|ambox|question|edit-|disambig|padlock|loudspeaker|speaker icon|\.svg$|\.ogv$|\.webm$|\.ogg$|\.oga$|\.mid$|\.pdf$|\.tif$|\.djvu$/i;
 const imagesOf = new Map();                                    // "wl:title" → [files]
+// a lead picture that is a map (of a battle, of the territory), a flag or an emblem says nothing on a map site:
+// another photograph from the same article takes its place (the site does the same when it is online)
+const MAPLIKE = /(^|[\s_(,-])maps?([\s_.),-]|$)|locator|location|orthographic|projection|territor|extent|borders?\b|boundar|\bcarte\b|\bkarte\b|\bmapa\b|地図|地圖|地图|版圖|版图|疆域|位置|flag|coat of arms|emblem|seal of|logo|\.svg$/i;
+const PHOTO = /\.(jpe?g|webp|tiff?)$/i;
+async function photosOf(wl, title) {
+  const key = wl + ':' + title;
+  if (!imagesOf.has(key)) {
+    const j = await api(wl, { prop: 'images', imlimit: '50', titles: title });
+    imagesOf.set(key, Object.values(j?.query?.pages || {}).flatMap(p => (p.images || []).map(x => x.title.replace(/^[^:]+:/, ''))).filter(f => !NOT_PHOTO.test(f)));
+  }
+  return imagesOf.get(key).filter(f => PHOTO.test(f) && !MAPLIKE.test(f));
+}
+{
+  let n = 0;
+  for (const lang of Object.keys(evOut)) for (const r of Object.values(evOut[lang])) {
+    if (!Array.isArray(r) || !r[3] || !MAPLIKE.test(r[3])) continue;
+    const alt = (await photosOf(LANGS[lang].wl, r[0]))[0] || null;
+    r[3] = alt; if (alt) wantFile(alt, W_EVENT);
+    progress('[1/4] 以照片替換地圖、國旗縮圖', ++n, n);
+  }
+  if (n) process.stdout.write('\n');
+}
 let dupDone = 0, dupTodo = 0;
 for (const lang of Object.keys(evOut)) {
   const L = LANGS[lang], groups = {};
@@ -282,6 +305,37 @@ for (const [wl, titles] of Object.entries(byWiki)) {
 progress('[2/4] 人物與地點圖片', pageTotal, pageTotal);
 for (const f of Object.values(pages)) if (f) wantFile(f, W_SMALL);
 for (const f of capitalFiles) wantFile(f, W_SMALL);
+for (const [k, f] of Object.entries(pages)) if (f && MAPLIKE.test(f)) {    // a map or flag as the lead picture: a photo instead
+  const i = k.indexOf(':'); const alt = (await photosOf(k.slice(0, i), k.slice(i + 1)))[0] || 0;
+  pages[k] = alt; if (alt) wantFile(alt, W_SMALL);
+}
+write('pages.json', pages);
+
+// ---------------------------------------------------------------- countries: a photograph, and the flag
+// countries.json: Wikidata id → photo (Wikidata "image", else its Wikivoyage banner, else a photo from its article;
+// never a map or flag); flags.json: Wikidata id → flag (shown in the card's heading)
+const countries = REFRESH ? {} : read('countries.json', {}), flags = REFRESH ? {} : read('flags.json', {});
+const cq = [...new Set(data('polities.json').map(r => r[10]).filter(q => /^Q\d+$/.test(q || '')))].filter(q => !(q in countries));
+for (let i = 0; i < cq.length; i += 50) {
+  progress('[2/4] 國家照片與國旗', i, cq.length);
+  const j = await get('https://www.wikidata.org/w/api.php?' + new URLSearchParams({ action: 'wbgetentities', format: 'json', maxlag: '5', props: 'claims|sitelinks', sitefilter: 'enwiki|zhwiki|jawiki', ids: cq.slice(i, i + 50).join('|') }));
+  if (!j?.entities) continue;
+  for (const [q, e] of Object.entries(j.entities)) {
+    const vals = pid => (e.claims?.[pid] || []).filter(c => c.mainsnak?.datavalue?.value && c.rank !== 'deprecated')
+      .sort((a, b) => (b.rank === 'preferred') - (a.rank === 'preferred')).map(c => c.mainsnak.datavalue.value);
+    let photo = [...vals('P18'), ...vals('P948')].find(f => !MAPLIKE.test(f)) || null;
+    for (const wl of ['en', 'zh', 'ja']) { if (photo) break; const t = e.sitelinks?.[wl + 'wiki']?.title; if (t) photo = (await photosOf(wl, t))[0] || null; }
+    countries[q] = photo || 0; if (photo) wantFile(photo, W_SMALL);
+    const now = (e.claims?.P41 || []).filter(c => c.mainsnak?.datavalue?.value && !c.qualifiers?.P582).map(c => c.mainsnak.datavalue.value);
+    const flag = now.at(-1) || vals('P41').at(-1) || null;
+    flags[q] = flag || 0; if (flag) wantFile(flag, W_SMALL);
+  }
+  if ((i / 50) % 5 === 4) { write('countries.json', countries); write('flags.json', flags); }
+}
+progress('[2/4] 國家照片與國旗', cq.length, cq.length);
+write('countries.json', countries); write('flags.json', flags);
+for (const f of Object.values(countries)) if (f) wantFile(f, W_SMALL);
+for (const f of Object.values(flags)) if (f) wantFile(f, W_SMALL);
 
 // ---------------------------------------------------------------- artworks and portraits (Wikidata)
 const works = REFRESH ? {} : read('works.json', {});

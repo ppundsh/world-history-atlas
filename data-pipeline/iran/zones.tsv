@@ -1,0 +1,5 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	kish	1989-01		53.98	26.53	基什自由區	Kish Free Zone	キーシュ自由地域	波斯灣基什島的自由貿易區，1993 年正式依法設立。	Free-trade zone on Kish Island, set up by law in 1993.	キーシュ島の自由貿易地域。		Kish Island	1
+ftz	qeshm	1990-01		55.9	26.95	格什姆自由區	Qeshm Free Zone	ゲシュム自由地域	荷姆茲海峽格什姆島的自由貿易區。	Free-trade zone on Qeshm Island in the Strait of Hormuz.	ゲシュム島の自由貿易地域。		Qeshm	
+ftz	chabahar	1992-01		60.6	25.3	恰巴哈爾自由區	Chabahar Free Zone	チャーバハール自由地域	印度洋岸的自由貿易區與港口。	Free-trade zone and port on the Indian Ocean.	インド洋岸の自由貿易地域。		Chabahar	
+sez	pars	1998-01		52.6	27.47	帕爾斯經濟能源特區	Pars Special Economic Energy Zone	パールス経済エネルギー特区	南帕爾斯氣田的天然氣與石化特區（阿薩盧耶）。	Gas and petrochemical zone for the South Pars field (Asaluyeh).	南パールスガス田の特区。		Pars Special Economic Energy Zone	1

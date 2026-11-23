@@ -1,0 +1,4 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+fin	isle_of_dogs	1982-04		-0.02	51.505	狗島企業區（金絲雀碼頭）	Isle of Dogs Enterprise Zone (Canary Wharf)	アイル・オブ・ドッグズ企業特区（カナリー・ワーフ）	碼頭區重建的企業區，發展為第二個金融區。	Enterprise zone in the old docks, grown into a second financial district.	旧ドックの企業特区。	金絲雀碼頭	Canary Wharf	1
+ftz	teesside_fp	2021-11		-1.15	54.6	蒂斯河谷自由港	Teesside Freeport	ティーズサイド・フリーポート	脫歐後設立的自由港之一。	One of the freeports set up after Brexit.	ブレグジット後の自由港。		Teesside Freeport	
+ftz	thames_fp	2021-12		0.47	51.5	泰晤士自由港	Thames Freeport	テムズ・フリーポート	倫敦門戶港等的自由港。	Freeport around London Gateway and Tilbury.	ロンドン・ゲートウェイ周辺の自由港。		Thames Freeport	

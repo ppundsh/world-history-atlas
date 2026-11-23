@@ -2,7 +2,7 @@
 rail	in_bombay_thane	1853-04		72.83,18.94 72.97,19.19	孟買—塔那鐵路	Bombay–Thane railway	ボンベイ—ターネー鉄道	亞洲第一條客運鐵路。	The first passenger railway in Asia.	アジア初の旅客鉄道。	印度鐵路	Indian Railways
 rail	in_eir	1866-08		88.36,22.57 87.3,23.5 85.14,25.6 82.98,25.32 80.35,26.45 78.0,27.18 77.23,28.66	東印度鐵路（加爾各答—德里）	East Indian Railway (Calcutta–Delhi)	東インド鉄道（カルカッタ—デリー）	恆河平原的幹線。	The trunk line of the Gangetic plain.	ガンジス平原の幹線。	東印度鐵路公司	East Indian Railway Company
 rail	in_gip	1870-03		72.83,18.94 73.79,20.0 76.0,21.0 79.08,21.15 81.9,25.43	大印度半島鐵路接通東印度鐵路（孟買—阿拉哈巴德）	GIP Railway joins the East Indian (Bombay–Allahabad)	大インド半島鉄道（ボンベイ—アラーハーバード）	孟買與加爾各答首次以鐵路相連。	Bombay and Calcutta joined by rail for the first time.	ボンベイとカルカッタが鉄道で結ばれる。	大印度半島鐵路	Great Indian Peninsula Railway
-rail	in_madras	1864-01		80.27,13.08 79.13,12.92 78.12,11.66 76.96,11.0	馬德拉斯鐵路	Madras Railway	マドラス鉄道	南印度第一條幹線。	South India's first trunk line.	南インド初の幹線。	馬德拉斯鐵路	Madras Railway
+rail	in_madras	1856-07		80.27,13.08 79.13,12.92 78.12,11.66 76.96,11.0	馬德拉斯鐵路	Madras Railway	マドラス鉄道	1856 年羅亞普蘭—阿爾果德通車，南印度第一條鐵路，1860 年代延伸至哥印拜陀。	Royapuram–Arcot opened in 1856, South India's first railway; extended to Coimbatore in the 1860s.	1856年に南インド初の鉄道として開通。	馬德拉斯鐵路	Madras Railway
 rail	in_darjeeling	1881-07		88.4,26.7 88.27,27.04	大吉嶺喜馬拉雅鐵路	Darjeeling Himalayan Railway	ダージリン・ヒマラヤ鉄道	登山窄軌鐵路，世界遺產。	A mountain narrow-gauge line, now a World Heritage Site.	山岳鉄道、世界遺産。	大吉嶺喜馬拉雅鐵路	Darjeeling Himalayan Railway
 canal	in_ganges_canal	1854-04		78.16,29.95 77.9,29.2 78.1,27.9 79.4,26.9	恆河運河	Ganges Canal	ガンジス運河	灌溉恆河—亞穆納河之間的大片土地。	Irrigated the land between the Ganges and Yamuna.	ガンジス・ヤムナー間を灌漑。	恆河運河	Ganges Canal
 industry	in_tata	1912-02		86.18,22.8	塔塔鋼鐵廠（詹謝普爾）	Tata Steel (Jamshedpur)	タタ製鉄所（ジャムシェードプル）	印度第一座大型鋼廠。	India's first large steelworks.	インド初の大型製鉄所。	塔塔鋼鐵	Tata Steel
@@ -11,7 +11,7 @@ dam	in_hirakud	1957-01		83.87,21.53	希拉庫德水壩	Hirakud Dam	ヒラクド�
 nuclear	in_tarapur	1969-10		72.66,19.83	塔拉普爾核電廠	Tarapur nuclear plant	タラープル原子力発電所	亞洲第一座商用核電廠之一。	Among the first commercial nuclear plants in Asia.	アジア初期の商業用原発。	塔拉普爾核電廠	Tarapur Atomic Power Station
 space	in_sriharikota	1979-08		80.23,13.72	斯里赫里戈達發射場首次發射	First launch from Sriharikota	シュリーハリコータ初打ち上げ	後稱薩迪什·達萬太空中心。	Later the Satish Dhawan Space Centre.	のちサティシュ・ダワン宇宙センター。	薩迪什·達萬航天中心	Satish Dhawan Space Centre
 metro	in_kolkata_metro	1984-10		88.35,22.55	加爾各答地鐵	Kolkata Metro	コルカタ地下鉄	印度第一條地鐵。	India's first metro.	インド初の地下鉄。	加爾各答地鐵	Kolkata Metro
-rail	in_konkan	1998-01		73.1,19.0 73.3,17.0 73.83,15.5 74.8,12.87	康坎鐵路	Konkan Railway	コンカン鉄道	沿西高止山脈海岸，穿越大量隧道橋梁。	Along the coast under the Western Ghats, through many tunnels and bridges.	西ガーツ沿いの難工事路線。	康坎鐵路	Konkan Railway
+rail	in_konkan	1998-01		73.12,18.44 73.52,17.53 73.37,17.0 73.71,16.27 73.82,15.9 73.96,15.27 74.14,14.82 74.42,14.43 74.56,13.99 74.75,13.34 74.86,12.92	康坎鐵路	Konkan Railway	コンカン鉄道	沿西高止山脈海岸，穿越大量隧道橋梁。	Along the coast under the Western Ghats, through many tunnels and bridges.	西ガーツ沿いの難工事路線。	康坎鐵路	Konkan Railway
 dam	in_sardar	2017-09		73.75,21.83	薩達爾·薩羅瓦水壩（納爾默達）	Sardar Sarovar Dam (Narmada)	サルダール・サロヴァル・ダム	歷經數十年移民抗爭後完工。	Completed after decades of protest over displacement.	立ち退き反対運動の末に完成。	薩達爾·薩羅瓦大壩	Sardar Sarovar Dam
 highway	in_gq	2012-01		77.21,28.61 78.0,27.18 80.95,26.85 85.14,25.6 88.36,22.57 85.82,20.27 80.27,13.08 77.59,12.97 73.86,18.52 72.88,19.07 72.58,23.03 75.79,26.92 77.21,28.61	黃金四邊形公路	Golden Quadrilateral	ゴールデン・クアドリラテラル	連接德里、加爾各答、清奈、孟買的四車道公路網。	A four-lane network joining Delhi, Kolkata, Chennai and Mumbai.	四大都市を結ぶ幹線道路網。	黃金四邊形	Golden Quadrilateral
 metro	in_delhi_metro	2002-12		77.21,28.65	德里地鐵	Delhi Metro	デリー・メトロ	後成為世界最大地鐵系統之一。	Later one of the world's largest metro systems.	世界最大級の地下鉄網。	德里地鐵	Delhi Metro
@@ -24,7 +24,7 @@ fiber	in_bharatnet	2017-12		77.21,28.61 80.95,26.85 85.14,25.6 88.36,22.57 85.82
 road	in_gtroad	1540-01		88.36,22.57 86.98,23.68 84.99,24.79 82.97,25.32 81.85,25.45 80.33,26.45 78.0,27.18 77.21,28.63 76.78,30.73 74.87,31.63 74.34,31.55 73.05,33.6 71.58,34.0	大幹道（舍爾沙）	Grand Trunk Road (Sher Shah)	グランド・トランク・ロード	舍爾沙重建的孟加拉至喀布爾大道。	Sher Shah's great road from Bengal towards Kabul.	シェール・シャーの大幹道。	大干道	Grand Trunk Road
 bridge	in_howrah	1943-02		88.347,22.585	豪拉橋	Howrah Bridge	ハウラー橋	加爾各答胡格利河上的懸臂橋。	The cantilever bridge over the Hooghly at Kolkata.	コルカタの片持ち橋。	豪拉桥	Howrah Bridge
 highway	in_yamuna	2012-08		77.53,28.47 77.6,28.0 77.67,27.49 78.0,27.18	亞穆納高速公路（大諾伊達—阿格拉）	Yamuna Expressway	ヤムナー高速道路	德里通往泰姬瑪哈陵的高速公路。	The expressway from Delhi to the Taj Mahal.	デリーとアーグラを結ぶ。		Yamuna Expressway
-bridge	in_atalsetu	2024-01		72.92,18.95	阿塔爾海橋（孟買跨港大橋）	Atal Setu (Mumbai Trans Harbour Link)	アタル・セトゥ	印度最長的跨海大橋。	India's longest sea bridge.	インド最長の海上橋。		Mumbai Trans Harbour Link
+bridge	in_atalsetu	2024-01		72.86,18.98 73.03,18.93	阿塔爾海橋（孟買跨港大橋）	Atal Setu (Mumbai Trans Harbour Link)	アタル・セトゥ	印度最長的跨海大橋。	India's longest sea bridge.	インド最長の海上橋。		Mumbai Trans Harbour Link
 port	in_mumbai_port	1873-06		72.84,18.94	孟買港	Mumbai Port	ムンバイ港	英屬印度最大的港口。	The great port of British India.	英領インド最大の港。	孟买港	Mumbai Port
 port	in_kolkata_port	1870-10		88.32,22.55	加爾各答港	Kolkata Port	コルカタ港	印度最古老的大型港口之一。	One of India's oldest major ports.	インド最古級の港。	加尔各答港	Kolkata Port
 port	in_jnpt	1989-05		72.95,18.95	賈瓦哈拉爾・尼赫魯港	Jawaharlal Nehru Port	ジャワハルラール・ネルー港	印度最大的貨櫃港。	India's busiest container port.	インド最大のコンテナ港。	贾瓦哈拉尔·尼赫鲁港	Jawaharlal Nehru Port
@@ -33,3 +33,4 @@ airport	in_bom	1942-01		72.87,19.09	孟買機場（賈特拉帕蒂・希瓦吉�
 ixp	in_nixi	2003-06		77.21,28.63	NIXI 印度國家網際網路交換中心	NIXI	NIXI	印度國家網際網路交換中心。	India's national internet exchange.	インドのIX。		National Internet Exchange of India
 datacenter	in_mumbai_dc	2010-01		72.85,19.07	孟買海纜登陸與資料中心群	Mumbai cable landings and data centres	ムンバイの海底ケーブル拠点	印度多數國際海纜在孟買登陸。	Most of India's international cables land at Mumbai.	インドの国際ケーブルの拠点。		
 fiber	in_nkn	2010-03		77.21,28.63 72.88,19.08 77.59,12.97 80.27,13.08 88.36,22.57 77.21,28.63;72.88,19.08 73.86,18.52;77.59,12.97 78.48,17.39 77.21,28.63	國家知識網（NKN）	National Knowledge Network	国家知識ネットワーク	連接印度大學與研究機構的骨幹。	The backbone of Indian universities and research.	インドの学術網。		National Knowledge Network
+bridge	in_pamban	1914-02		79.19,9.28 79.22,9.28	班本橋	Pamban Bridge	パンバン橋	連接印度本土與拉梅斯沃勒姆島的鐵路橋，2025 年新橋啟用。	Railway bridge from the mainland to Rameswaram Island; replaced by a new bridge in 2025.	本土とラーメーシュワラム島を結ぶ鉄道橋。		Pamban Bridge

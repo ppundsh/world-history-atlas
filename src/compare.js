@@ -9,16 +9,40 @@ import { geoArea, geoCentroid, geoContains, geoDistance, geoRotation } from 'd3-
 const R = 6371.0088;
 const BASE = import.meta.env.BASE_URL + 'data/';
 export const CIRCLE = 16;                 // detection circle radius, px
+// language → its main country (ISO 3166 alpha-2), used when the browser gives no region
+const LANG_COUNTRY = { ja: 'JP', ko: 'KR', fr: 'FR', de: 'DE', es: 'ES', it: 'IT', pt: 'PT', ru: 'RU', vi: 'VN', th: 'TH', id: 'ID', ms: 'MY',
+  hi: 'IN', tr: 'TR', fa: 'IR', pl: 'PL', nl: 'NL', sv: 'SE', da: 'DK', fi: 'FI', nb: 'NO', no: 'NO', uk: 'UA', he: 'IL', el: 'GR', cs: 'CZ',
+  hu: 'HU', ro: 'RO', tl: 'PH', fil: 'PH', bn: 'BD', ur: 'PK', km: 'KH', lo: 'LA', my: 'MM', mn: 'MN', ka: 'GE', hy: 'AM', kk: 'KZ' };
+export async function homeCountry() {
+  const langs = (navigator.languages?.length ? navigator.languages : [navigator.language || '']).filter(Boolean);
+  let index = null;
+  for (const tag of langs) {
+    const parts = tag.split('-'), lang = parts[0].toLowerCase();
+    const region = parts.slice(1).find(x => /^[A-Za-z]{2}$/.test(x))?.toUpperCase()
+      || (lang === 'zh' && /hant/i.test(tag) ? 'TW' : lang === 'zh' && /hans/i.test(tag) ? 'CN' : null) || LANG_COUNTRY[lang];
+    if (!region) continue;
+    index ??= await fetch(BASE + 'outlines/index.json').then(r => r.json()).catch(() => ({}));
+    if (index[region]) return index[region];
+  }
+  return null;
+}
 const PAIRS = [['基隆', '鵝鑾鼻'], ['台北', '高雄'], ['台中', '花蓮'], ['台南', '台東']];
 
 // The floating shape is Taiwan by default; while a country is pinned it is that country (its borders in the
 // pinned year), and Taiwan again once it is unpinned. Only Taiwan has the city-distance view.
 export class TaiwanCompare {
   constructor(app) { this.app = app; this.on = false; this.center = null; this.custom = null; }
+  // The default shape is the visitor's own country, from the browser's languages (a region subtag such as en-GB
+  // or zh-TW, else the language's main country); Taiwan when none is known. Only Taiwan has the city distances.
   async load() {
     if (this.tw) return;
+    const iso = await homeCountry();
+    if (iso && iso !== 'TWN') {
+      const f = await fetch(BASE + 'outlines/' + iso + '.json').then(r => r.ok ? r.json() : null).catch(() => null);
+      if (f) { this.tw = { shape: f, cities: null, home: geoCentroid(f), km2: geoArea(f) * R * R, name: null, names: f.n, q: f.q }; this.apply(); return; }
+    }
     const f = await fetch(BASE + 'taiwan_outline.json').then(r => r.json());
-    this.tw = { shape: f, cities: f.cities, home: geoCentroid(f), km2: geoArea(f) * R * R, name: null };
+    this.tw = { shape: f, cities: f.cities, home: geoCentroid(f), km2: geoArea(f) * R * R, name: null, names: null, q: 'Q865' };
     this.apply();
   }
   // feats: the pinned country's features (or null for Taiwan); name: its name
@@ -32,7 +56,7 @@ export class TaiwanCompare {
   }
   apply() {
     const s = this.custom || this.tw; if (!s) return;
-    Object.assign(this, { shape: s.shape, cities: s.cities, home: s.home, km2: s.km2, baseName: s.name });
+    Object.assign(this, { shape: s.shape, cities: s.cities, home: s.home, km2: s.km2, baseName: s.name, baseNames: s.names || null, baseQ: s.q || null });
     this.mkey = null; this.infoKey = null;
   }
   // geometry moved so that the shape's centre sits at this.center (rotation over the sphere: true size)
@@ -100,9 +124,10 @@ export class TaiwanCompare {
       ctx.beginPath(); ctx.arc(cc[0], cc[1], 2.5, 0, 2 * Math.PI); ctx.fillStyle = '#0b2a7a'; ctx.fill();
     }
     const c = project(geoCentroid(m.feature));   // label above the shape
-    const base = this.baseName || t.twBase;
+    const col = { en: 0, 'zh-Hant': 1, 'zh-Hans': 2, ja: 3 }[lang] ?? 0;
+    const base = this.baseName || (this.baseNames ? this.baseNames[col] || this.baseNames[0] : t.twBase);
     let text = t.twCompareDrag(base);
-    if (info.kind === 'area') text = t.twTimes(info.name, info.ratio, base);
+    if (info.kind === 'area') { const L = info.lines && (this.showFull ? info.lines.full : info.lines.short); text = t.twTimes(info.name, info.ratio, base) + (L?.length ? '\n' + L.join('\n') : ''); }
     const ys = pts.filter(Boolean).map(p => p[1]), tall = ys.length ? Math.max(...ys) - Math.min(...ys) : 0;
     if (info.kind === 'border' && this.cities && tall < 150) text = t.twBorderZoom;
     if (info.kind === 'border' && this.cities && tall >= 150) {
@@ -129,12 +154,18 @@ export class TaiwanCompare {
     }
     if (c) {
       ctx.font = `700 12px ${t.font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      const lines = text.split('\n'), w = Math.max(...lines.map(l => ctx.measureText(l).width)) + 14, h = lines.length * 16 + 8;
+      const lines = text.split('\n'), w = Math.max(...lines.filter(l => l !== '\u2500').map(l => ctx.measureText(l).width)) + 14, h = lines.length * 16 + 8;
       const bx = c[0] - w / 2, by = Math.max(4, Math.min(...pts.filter(Boolean).map(p => p[1])) - h - 8);
       ctx.fillStyle = 'rgba(255,255,255,0.95)'; ctx.strokeStyle = '#1e40af'; ctx.lineWidth = 1.5;
       ctx.beginPath(); ctx.roundRect(bx, by, w, h, 6); ctx.fill(); ctx.stroke();
+      this.labelBox = [bx, by, bx + w, by + h];
       ctx.fillStyle = '#0b2a7a';
-      lines.forEach((l, i) => ctx.fillText(l, c[0], by + 12 + i * 16));
+      lines.forEach((l, i) => {
+        if (l !== '\u2500') { ctx.fillText(l, c[0], by + 12 + i * 16); return; }
+        // the rule between the figures and the cross ratios
+        const y = by + 12 + i * 16; ctx.save(); ctx.strokeStyle = 'rgba(30,64,175,0.45)'; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(bx + 8, y); ctx.lineTo(bx + w - 8, y); ctx.stroke(); ctx.restore();
+      });
     }
     ctx.restore();
   }

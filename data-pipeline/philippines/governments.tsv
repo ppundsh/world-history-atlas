@@ -1,0 +1,21 @@
+# 菲律賓模式：統治中心（★）。欄位：id	起	迄	經度	緯度	是否為主要政權(1/0)	勢力id	繁中	簡中	English	日本語
+jolo	1521-01	1915-03	121.00	6.05	0	sulu	和樂（蘇祿蘇丹）	和乐（苏禄苏丹）	Jolo (Sultan of Sulu)	ホロ（スールー王）
+cotabato_s	1521-01	1888-01	124.25	7.22	0	maguindanao	哥打巴托（馬巾達瑙蘇丹）	哥打巴托（马京达瑙苏丹）	Cotabato (Sultan of Maguindanao)	コタバト（マギンダナオ王）
+cebu_sp	1565-05	1571-05	123.90	10.29	1	spain	宿霧（聖米格爾）	宿雾（圣米格尔）	Cebu (San Miguel)	セブ
+manila_sp	1571-06	1898-08	120.975	14.59	1	spain	馬尼拉（王城區）	马尼拉（王城区）	Manila (Intramuros)	マニラ（イントラムロス）
+bacolor	1762-10	1764-04	120.65	14.99	0	spain	巴科洛（安達的臨時政府）	巴科洛（安达的临时政府）	Bacolor (Anda's provisional government)	バコロール
+manila_br	1762-10	1764-04	120.975	14.59	0	britain	馬尼拉（英軍）	马尼拉（英军）	Manila (British)	マニラ（イギリス軍）
+biak	1897-11	1897-12	121.10	15.10	0	republic1	破石洞（破石洞共和國）	破石洞（破石洞共和国）	Biak-na-Bato (Republic of Biak-na-Bato)	ビアク・ナ・バト
+kawit	1898-06	1898-09	120.90	14.45	1	republic1	卡維特（甘米地）	卡维特（甲米地）	Kawit (Cavite)	カウィット
+malolos	1898-09	1899-03	120.81	14.84	1	republic1	馬洛洛斯	马洛洛斯	Malolos	マロロス
+palanan	1900-09	1901-03	122.43	17.06	0	republic1	帕拉南（阿奎納多被俘處）	帕拉南（阿奎纳多被俘处）	Palanan (where Aguinaldo was captured)	パラナン
+manila_us	1898-08	1935-11	120.98	14.59	1	usa	馬尼拉（美國總督）	马尼拉（美国总督）	Manila (US governor-general)	マニラ（米総督）
+manila_cw	1935-11	1941-12	120.99	14.594	1	commonwealth	馬尼拉（自治邦）	马尼拉（自治邦）	Manila (Commonwealth)	マニラ（コモンウェルス）
+corregidor	1941-12	1942-02	120.57	14.38	0	commonwealth	科雷希多島	科雷希多岛	Corregidor	コレヒドール島
+washington	1942-05	1944-10	-77.04	38.90	0	commonwealth	華盛頓（流亡政府）	华盛顿（流亡政府）	Washington (government in exile)	ワシントン（亡命政府）
+manila_jp	1942-01	1945-02	120.99	14.594	1	japan	馬尼拉（日軍政、第二共和國）	马尼拉（日军政、第二共和国）	Manila (Japanese military administration, Second Republic)	マニラ（軍政・第二共和国）
+baguio	1944-12	1945-04	120.59	16.41	0	japan	碧瑤（第二共和國撤退）	碧瑶（第二共和国撤退）	Baguio (Second Republic in retreat)	バギオ
+tacloban	1944-10	1945-02	125.00	11.24	0	commonwealth	獨魯萬（臨時首都）	独鲁万（临时首都）	Tacloban (temporary capital)	タクロバン
+manila_cw2	1945-02	1946-07	120.99	14.594	1	commonwealth	馬尼拉（自治邦）	马尼拉（自治邦）	Manila (Commonwealth)	マニラ（コモンウェルス）
+manila_rp	1946-07	2026-12	120.99	14.594	1	philippines	馬尼拉（馬拉坎南宮）	马尼拉（马拉坎南宫）	Manila (Malacañang Palace)	マニラ（マラカニアン宮殿）
+cotabato_b	2019-02	2026-12	124.25	7.22	0	philippines	哥打巴托（邦薩摩洛自治區）	哥打巴托（邦萨摩洛自治区）	Cotabato City (Bangsamoro)	コタバト（バンサモロ自治地域）

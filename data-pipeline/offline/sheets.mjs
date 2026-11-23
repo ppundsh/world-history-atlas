@@ -7,10 +7,15 @@
 // be published.
 // Works offline from what fetch.mjs has saved so far, so it can be run while a download is still going on
 // (fetch-offline.ps1 -SheetsOnly), and is run again automatically at the end of every fetch.
+// Sizes are read and sheets are encoded several at a time (one per CPU core by default; SHEET_WORKERS=n to change).
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlinkSync, statSync } from 'node:fs';
+import { cpus } from 'node:os';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
+const WORKERS = Math.max(1, +(process.env.SHEET_WORKERS || 0) || Math.min(16, cpus().length));
+// sharp runs on libuv's thread pool (4 threads unless raised before it is first used): give each sheet its own thread
+if (!process.env.UV_THREADPOOL_SIZE) process.env.UV_THREADPOOL_SIZE = String(Math.max(4, WORKERS + 2));
 const ROOT = new URL('../../', import.meta.url), OUT = new URL('public/offline/', ROOT);
 const PER_SHEET = +(process.env.SHEET_SIZE || 40), WIDTH = 1600, QUALITY = 72;
 const read = (p, d) => { for (let k = 0; k < 5; k++) { try { return JSON.parse(readFileSync(new URL(p, OUT), 'utf8')); } catch (e) { if (e.code === 'ENOENT') return d; } } return d; };
@@ -80,11 +85,18 @@ for (const [q, w] of Object.entries(read('works.json', {}))) if (w?.file && qYea
 
 // ---------------------------------------------------------------- packing
 const sharp = (await import('sharp')).default;
+sharp.concurrency(1);                                   // one libvips thread per sheet; the sheets run side by side
+sharp.cache(false);
+// run fn over items, n at a time
+async function pool(items, n, fn) {
+  let i = 0;
+  await Promise.all(Array.from({ length: Math.min(n, items.length) }, async () => { while (i < items.length) { const k = i++; await fn(items[k], k); } }));
+}
 const pics = [];
 for (const [f, e] of Object.entries(files)) if (e?.[0] && have.has(e[0])) pics.push({ name: e[0], yr: year.get(norm(f)) ?? null });
 const seen = new Set(), list = pics.filter(p => !seen.has(p.name) && seen.add(p.name));
 list.sort((a, b) => (a.yr ?? 1e9) - (b.yr ?? 1e9) || (a.name < b.name ? -1 : 1));
-console.log(`合併縮圖：${list.length} 張（其中 ${list.filter(p => p.yr == null).length} 張找不到年代，放在最後）`);
+console.log(`合併縮圖：${list.length} 張（其中 ${list.filter(p => p.yr == null).length} 張找不到年代，放在最後）；同時處理 ${WORKERS} 張大圖`);
 
 mkdirSync(new URL('sheets/', OUT), { recursive: true });
 const old = read('sheets.json', null), oldBy = new Map((old?.sheets || []).map(s => [s.key, s]));
@@ -93,21 +105,23 @@ const oldAt = old?.at || {};
 let oldTime = 0; try { oldTime = statSync(new URL('sheets.json', OUT)).mtimeMs; } catch { /* first run */ }
 const imgUrl = p => new URL('img/' + p.name, OUT);
 let opened = 0;
-async function size(p) {
+const toOpen = [];
+for (const p of list) {
   const o = oldAt[p.name.replace(/\.webp$/, '')];
-  if (o && statSync(imgUrl(p)).mtimeMs < oldTime) { p.w = o[3]; p.h = o[4]; return; }
-  const m = await sharp(fileURLToPath(imgUrl(p))).metadata(); p.w = m.width; p.h = m.height; opened++;
+  if (o && statSync(imgUrl(p)).mtimeMs < oldTime) { p.w = o[3]; p.h = o[4]; } else toOpen.push(p);
 }
+if (toOpen.length) process.stdout.write(`讀取 ${toOpen.length} 張新縮圖的尺寸…\n`);
+await pool(toOpen, WORKERS * 4, async p => { const m = await sharp(fileURLToPath(imgUrl(p))).metadata(); p.w = m.width; p.h = m.height; opened++; });
 // fixed period bins: a new picture only changes the sheets of its own period, the others are kept as they are
 const BINS = [[-1e9, -1000, 500], [-1000, 0, 200], [0, 1000, 100], [1000, 1500, 50], [1500, 1800, 20], [1800, 1900, 10], [1900, 1e9, 5]];
 const binOf = y => { if (y == null) return 'none'; for (const [a, b, step] of BINS) if (y < b) return String(a <= -1e9 ? Math.floor(y / step) * step : a + Math.floor((y - a) / step) * step); return 'none'; };
 const bins = new Map();
 for (const p of list) { const k = binOf(p.yr); if (!bins.has(k)) bins.set(k, []); bins.get(k).push(p); }
-const sheets = [], atOut = {};
+// lay out every sheet first (cheap), then encode only the new ones, several at a time
+const sheets = [], atOut = {}, jobs = [];
 let made = 0, kept = 0, done = 0;
 for (const [, group] of bins) for (let i = 0; i < group.length; i += PER_SHEET) {
   const part = group.slice(i, i + PER_SHEET);
-  for (const p of part) await size(p);
   // shelf packing, tallest first, rows up to WIDTH px
   const order = [...part].sort((a, b) => b.h - a.h || (a.name < b.name ? -1 : 1));
   let x = 0, y = 0, rowH = 0, W = 0;
@@ -115,19 +129,19 @@ for (const [, group] of bins) for (let i = 0; i < group.length; i += PER_SHEET) 
   const H = y + rowH, s = sheets.length;
   const key = createHash('sha1').update(order.map(p => `${p.name}@${p.x},${p.y}`).join('|')).digest('hex').slice(0, 12);
   const f = `sheets/${key}.webp`;
-  if (oldBy.has(key) && existsSync(new URL(f, OUT))) kept++;
-  else {
-    await sharp({ create: { width: W, height: H, channels: 3, background: '#ffffff' } })
-      .composite(order.map(p => ({ input: fileURLToPath(imgUrl(p)), left: p.x, top: p.y })))
-      .webp({ quality: QUALITY, effort: 5 }).toFile(fileURLToPath(new URL(f, OUT)));
-    made++;
-  }
+  if (oldBy.has(key) && existsSync(new URL(f, OUT))) { kept++; done += part.length; }
+  else jobs.push({ f, W, H, comp: order.map(p => ({ input: fileURLToPath(imgUrl(p)), left: p.x, top: p.y })), n: part.length });
   const ys = part.map(p => p.yr).filter(v => v != null);
   sheets.push({ f, key, y0: ys.length ? Math.min(...ys) : null, y1: ys.length ? Math.max(...ys) : null, n: part.length });
   for (const p of order) atOut[p.name.replace(/\.webp$/, '')] = [s, p.x, p.y, p.w, p.h];
-  done += part.length;
-  process.stdout.write(`\r合併中 ${done}/${list.length}（新做 ${made} 張大圖，沿用 ${kept} 張）   `);
 }
+const show = () => process.stdout.write(`\r合併中 ${done}/${list.length}（新做 ${made}/${jobs.length} 張大圖，沿用 ${kept} 張）   `);
+show();
+await pool(jobs, WORKERS, async j => {
+  await sharp({ create: { width: j.W, height: j.H, channels: 3, background: '#ffffff' } })
+    .composite(j.comp).webp({ quality: QUALITY, effort: 4 }).toFile(fileURLToPath(new URL(j.f, OUT)));
+  made++; done += j.n; show();
+});
 process.stdout.write('\n');
 const v = createHash('sha1').update(sheets.map(s => s.key).join()).digest('hex').slice(0, 10);
 writeFileSync(new URL('sheets.json', OUT), JSON.stringify({ v, sheets, at: atOut }));
@@ -135,5 +149,5 @@ writeFileSync(new URL('sheets.json', OUT), JSON.stringify({ v, sheets, at: atOut
 const used = new Set(sheets.map(s => s.f.slice(7)));
 let removed = 0;
 for (const f of readdirSync(new URL('sheets/', OUT))) if (!used.has(f)) { try { unlinkSync(new URL('sheets/' + f, OUT)); removed++; } catch { /* keep */ } }
-const bytes = sheets.reduce((t, s) => { try { return t + readFileSync(new URL(s.f, OUT)).length; } catch { return t; } }, 0);
+const bytes = sheets.reduce((t, s) => { try { return t + statSync(new URL(s.f, OUT)).size; } catch { return t; } }, 0);
 console.log(`完成：${sheets.length} 張大圖（共 ${(bytes / 1048576).toFixed(1)} MB），新做 ${made}、沿用 ${kept}、移除舊的 ${removed}；讀取縮圖尺寸 ${opened} 張。`);

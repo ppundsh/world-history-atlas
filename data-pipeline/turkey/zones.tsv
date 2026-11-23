@@ -1,0 +1,5 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+park	bursa_osb	1961-01		29.0	40.22	布爾薩有組織工業區	Bursa Organized Industrial Zone	ブルサ組織化工業地区	土耳其第一個有組織工業區，汽車與紡織基地。	Turkey's first organized industrial zone: cars and textiles.	トルコ初の組織化工業地区。			1
+ftz	mersin_fz	1987-01		34.64	36.8	梅爾辛自由區	Mersin Free Zone	メルスィン自由地域	土耳其第一個自由區。	Turkey's first free zone.	トルコ初の自由地域。			
+park	gebze	1985-01		29.45	40.8	蓋布澤有組織工業區	Gebze Organized Industrial Zone	ゲブゼ組織化工業地区	伊斯坦堡東側的工業與科技園區群。	Industrial and technology parks east of Istanbul.	イスタンブール東の工業地帯。			
+fin	ifc	2023-04		29.12	40.99	伊斯坦堡金融中心	Istanbul Finance Center	イスタンブール金融センター	政府建設、中央銀行與國營銀行遷入的金融中心。	A financial centre built by the state; the central bank and state banks moved in.	中央銀行などが移転した金融センター。		Istanbul Finance Center	1

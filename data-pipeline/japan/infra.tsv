@@ -8,7 +8,7 @@ industry	in_tomioka	1872-10		138.89,36.26	富岡製絲場	Tomioka Silk Mill	富�
 industry	in_yawata	1901-02		130.81,33.87	官營八幡製鐵所	Yawata Steel Works	官営八幡製鐵所	以甲午戰爭賠款興建的鋼鐵廠。	A state steelworks built with the indemnity from the war with China.	日清戦争の賠償金で建設。	八幡製鐵所	Yawata Steel Works
 metro	mt_ginza	1927-12		139.77,35.71	東京地下鐵道（今銀座線）	Tokyo's first subway (Ginza Line)	東京地下鉄道（現・銀座線）	東洋第一條地下鐵，上野—淺草。	Asia's first subway, Ueno–Asakusa.	東洋初の地下鉄。	東京地下鐵銀座線	Tokyo Metro Ginza Line
 airport	ap_haneda	1931-08		139.78,35.55	東京飛行場（羽田）	Tokyo Airport (Haneda)	東京飛行場（羽田）	羽田機場開場。	Haneda airport opened.	羽田飛行場開場。	東京國際機場	Haneda Airport
-tunnel	tn_kanmon	1942-07		130.92,33.95	關門鐵道隧道	Kanmon railway tunnel	関門トンネル	世界第一條海底鐵路隧道，連接本州與九州。	The world's first undersea railway tunnel, linking Honshu and Kyushu.	世界初の海底鉄道トンネル。	關門隧道	Kanmon Railway Tunnel
+tunnel	tn_kanmon	1942-07		130.92,33.96 130.96,33.91	關門鐵道隧道	Kanmon railway tunnel	関門トンネル	世界第一條海底鐵路隧道，連接本州與九州。	The world's first undersea railway tunnel, linking Honshu and Kyushu.	世界初の海底鉄道トンネル。	關門隧道	Kanmon Railway Tunnel
 hydro	hy_sakuma	1956-04		137.81,35.08	佐久間水壩	Sakuma Dam	佐久間ダム	戰後電源開發的代表工程。	A landmark of post-war power development.	戦後電源開発の象徴。	佐久間水壩	Sakuma Dam
 hydro	hy_kurobe	1963-06		137.66,36.57	黑部水壩（黑四）	Kurobe Dam	黒部ダム	日本最高的拱壩，171 人殉職。	Japan's highest dam; 171 workers died building it.	日本一高いアーチダム。	黑部水壩	Kurobe Dam
 hsr	hs_tokaido	1964-10		139.77,35.68 139.62,35.51 139.15,35.25 138.39,34.97 137.73,34.70 137.38,34.77 136.88,35.17 136.25,35.31 135.76,34.99 135.50,34.73	東海道新幹線開業	Tokaido Shinkansen opens	東海道新幹線開業	世界第一條高速鐵路，東京奧運前通車。	The world's first high-speed line, opened before the Tokyo Olympics.	世界初の高速鉄道。	東海道新幹線	Tōkaidō Shinkansen
@@ -26,10 +26,10 @@ highway	hw_chuo	1982-11		139.55,35.68 138.57,35.66 138.0,35.95 137.4,35.4 136.95
 nuclear	nu_kk	1985-09		138.6,37.43	柏崎刈羽核電廠	Kashiwazaki-Kariwa nuclear plant	柏崎刈羽原子力発電所	世界發電量最大的核電廠之一。	One of the world's largest nuclear plants by output.	世界最大級の原発。	柏崎刈羽核電廠	Kashiwazaki-Kariwa Nuclear Power Plant
 highway	hw_tohoku	1987-09		139.75,35.78 139.9,36.56 140.47,37.75 140.88,38.3 141.13,39.70 140.7,40.6	東北自動車道全通	Tohoku Expressway completed	東北自動車道全通	日本最長的高速公路。	Japan's longest expressway.	日本最長の高速道路。	東北自動車道	Tōhoku Expressway
 rail	jr_seikan	1988-03		140.74,40.83 140.4,41.2 140.73,41.77	青函隧道與津輕海峽線	Seikan Tunnel and the Kaikyo line	青函トンネル・津軽海峡線	53.85 公里海底隧道連接本州與北海道。	A 53.85 km undersea tunnel joining Honshu and Hokkaido.	本州と北海道を結ぶ海底トンネル。	青函隧道	Seikan Tunnel
-bridge	br_seto	1988-04		133.81,34.4	瀨戶大橋	Great Seto Bridge	瀬戸大橋	公路鐵路兩用橋，連接本州與四國。	A road-and-rail bridge linking Honshu and Shikoku.	本州と四国を結ぶ道路・鉄道併用橋。	瀨戶大橋	Great Seto Bridge
+bridge	br_seto	1988-04		133.80,34.47 133.82,34.40 133.83,34.33	瀨戶大橋	Great Seto Bridge	瀬戸大橋	公路鐵路兩用橋，連接本州與四國。	A road-and-rail bridge linking Honshu and Shikoku.	本州と四国を結ぶ道路・鉄道併用橋。	瀨戶大橋	Great Seto Bridge
 airport	ap_kansai	1994-09		135.24,34.43	關西國際機場	Kansai International Airport	関西国際空港	建於大阪灣人工島的 24 小時機場。	A 24-hour airport on an artificial island in Osaka Bay.	人工島の24時間空港。	關西國際機場	Kansai International Airport
 hsr	hs_nagano	1997-10		139.06,36.32 138.19,36.64	長野新幹線（北陸新幹線）	Nagano (Hokuriku) Shinkansen	長野新幹線	長野冬奧前通車。	Opened before the Nagano Winter Olympics.	長野五輪前に開業。	北陸新幹線	Hokuriku Shinkansen
-bridge	br_akashi	1998-04		135.02,34.62	明石海峽大橋	Akashi Kaikyo Bridge	明石海峡大橋	當時世界最長的吊橋。	Then the world's longest suspension bridge.	当時世界最長の吊橋。	明石海峽大橋	Akashi Kaikyō Bridge
+bridge	br_akashi	1998-04		135.02,34.63 135.02,34.60	明石海峽大橋	Akashi Kaikyo Bridge	明石海峡大橋	當時世界最長的吊橋。	Then the world's longest suspension bridge.	当時世界最長の吊橋。	明石海峽大橋	Akashi Kaikyō Bridge
 hsr	hs_hachinohe	2002-12		141.13,39.70 141.49,40.51	東北新幹線延伸八戶	Tohoku Shinkansen to Hachinohe	東北新幹線八戸延伸	延伸至青森縣。	Extended into Aomori prefecture.	八戸まで延伸。	東北新幹線	
 hsr	hs_kyushu1	2004-03		130.66,32.51 130.54,31.58	九州新幹線新八代—鹿兒島中央	Kyushu Shinkansen Shin-Yatsushiro–Kagoshima	九州新幹線新八代—鹿児島中央	先行開業南段。	The southern section opened first.	南側区間が先行開業。	九州新幹線	Kyushu Shinkansen
 hsr	hs_aomori	2010-12		141.49,40.51 140.69,40.83	東北新幹線全通（新青森）	Tohoku Shinkansen completed (Shin-Aomori)	東北新幹線全通（新青森）	東京至新青森全線開通。	Tokyo to Shin-Aomori completed.	東京—新青森間全通。	東北新幹線	
@@ -45,8 +45,9 @@ cable	cb_unity	2010-04		139.955,34.977 141.3,34.868 143.1,34.868 149.4,36.15 157
 road	jp_tokaido_rd	1601-01		139.77,35.68 139.64,35.45 139.15,35.25 139.03,35.19 138.38,34.97 137.73,34.71 137.39,34.77 136.9,35.08 136.6,34.88 136.27,34.86 135.96,35.02 135.77,35.0	東海道	Tōkaidō	東海道	江戶時代五街道之首，江戶到京都的五十三次。	The first of the Five Routes: the 53 stations from Edo to Kyoto.	五街道の筆頭。	東海道	Tōkaidō (road)
 road	jp_nakasendo	1602-01		139.77,35.68 139.48,36.0 139.06,36.32 138.6,36.35 138.08,36.07 137.6,35.8 137.0,35.42 136.28,35.37 135.96,35.02 135.77,35.0	中山道	Nakasendō	中山道	經過木曾山中連接江戶與京都的街道。	The inland route from Edo to Kyoto through the Kiso valley.	木曽路を通る街道。	中山道	Nakasendō
 bridge	jp_rainbow	1993-08		139.763,35.637	彩虹大橋	Rainbow Bridge	レインボーブリッジ	東京灣台場的懸索橋。	The suspension bridge to Odaiba in Tokyo Bay.	お台場へ渡る吊橋。	彩虹大桥 (东京)	Rainbow Bridge (Tokyo)
-bridge	jp_aqualine	1997-12		139.86,35.47	東京灣跨海公路	Tokyo Bay Aqua-Line	東京湾アクアライン	以海底隧道與橋梁橫越東京灣。	A tunnel and bridge across Tokyo Bay.	東京湾を横断する道路。	东京湾跨海公路	Tokyo Bay Aqua-Line
+bridge	jp_aqualine	1997-12		139.77,35.52 139.86,35.47 139.90,35.43	東京灣跨海公路	Tokyo Bay Aqua-Line	東京湾アクアライン	以海底隧道與橋梁橫越東京灣。	A tunnel and bridge across Tokyo Bay.	東京湾を横断する道路。	东京湾跨海公路	Tokyo Bay Aqua-Line
 port	jp_yokohama	1859-07		139.64,35.45	橫濱港	Port of Yokohama	横浜港	安政條約開港，日本對外貿易的門戶。	Opened under the Ansei treaties; Japan's gateway for trade.	安政の開港。	横滨港	Port of Yokohama
 port	jp_kobe	1868-01		135.2,34.68	神戶港	Port of Kobe	神戸港	關西的國際貿易港。	The international port of the Kansai.	関西の国際貿易港。	神户港	Port of Kobe
 port	jp_dejima	1641-06	1859-07	129.87,32.74	長崎出島	Dejima, Nagasaki	長崎・出島	鎖國時期唯一對荷蘭開放的貿易點。	The one Dutch trading post of the sakoku years.	鎖国期の唯一のオランダ商館。	出岛	Dejima
 airport	jp_itami	1939-01		135.44,34.79	大阪國際機場（伊丹）	Osaka International Airport (Itami)	大阪国際空港（伊丹）	關西的國內線樞紐。	The Kansai's domestic hub.	関西の国内線拠点。	大阪国际机场	Osaka International Airport
+bridge	jp_kanmonbr	1973-11		130.95,33.965 130.965,33.955	關門橋	Kanmon Bridge	関門橋	跨越關門海峽、連接本州與九州的公路吊橋。	Road suspension bridge across the Kanmon Strait between Honshu and Kyushu.	本州と九州を結ぶ吊橋。	關門橋	Kanmon Bridge

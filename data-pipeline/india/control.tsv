@@ -77,7 +77,9 @@
 1526-04	punjab,IN-UP,IN-HR,IN-DL,IN-UT,afg_e,PK-KP	mughal
 1540-05	punjab,IN-UP,IN-HR,IN-DL,IN-UT,IN-BR,IN-WB,BGD,IN-RJ,IN-MP,PK-SD	suri
 1540-05	afg_e,PK-KP	mughal
-1556-11	punjab,IN-UP,IN-HR,IN-DL,IN-UT,IN-BR	mughal
+1555-07	punjab,IN-HR,IN-DL	mughal
+1556-11	IN-UP,IN-UT	mughal
+1574-08	IN-BR	mughal
 1565-01	IN-KA,IN-AP	vijayanagara/bahmani
 1568-01	IN-RJ,IN-MP	mughal
 1572-01	IN-GJ	mughal
@@ -125,7 +127,7 @@
 1876-01	PK-BA	raj
 1886-01	MMR	raj
 1937-04	MMR	uk
-1942-03	MMR	local/uk
+1942-05	MMR	japan
 1945-05	MMR	uk
 1947-08	IN-WB,IN-BR,IN-JH,IN-UP,IN-TN,IN-KL,IN-DL,IN-HR,IN-OR,IN-MH,IN-MP,IN-GJ,IN-AS,ne_india,IN-PB,IN-KA,IN-RJ,IN-AP,IN-CT,IN-HP,IN-UT	india
 1947-08	PK-SD,PK-PB,PK-KP,PK-BA,BGD	pakistan

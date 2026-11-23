@@ -52,7 +52,9 @@ rows += [('r_yms', '1949-08', 'appt'),
  ('r_tpe_d', '1967-07', 'appt'), ('r_tpe_d', '1994-12', D), ('r_tpe_d', '1998-12', K), ('r_tpe_d', '2014-12', I), ('r_tpe_d', '2019-08', T), ('r_tpe_d', '2022-12', K),
  ('r_kaohsiung_d', '1979-07', 'appt'), ('r_kaohsiung_d', '1994-12', K), ('r_kaohsiung_d', '1998-12', D), ('r_kaohsiung_d', '2018-12', K), ('r_kaohsiung_d', '2020-08', D),
  ('r_newtaipei', '2010-12', K), ('r_taichung_d', '2010-12', K), ('r_taichung_d', '2014-12', D), ('r_taichung_d', '2018-12', K),
- ('r_tainan_d', '2010-12', D), ('r_taoyuan_d', '2014-12', D), ('r_taoyuan_d', '2022-12', K)]
+ ('r_tainan_d', '2010-12', D), ('r_taoyuan_d', '2014-12', D), ('r_taoyuan_d', '2022-12', K),
+ # 新竹市：高虹安 2024-07 一審後退出民眾黨並停職（民眾黨籍副市長邱臣遠代理），2025-12 二審改判無罪後以無黨籍復職
+ ('r_hsinchu_c', '2025-12', I)]
 rows.sort()
 with open('data-pipeline/taiwan/party.tsv', 'w') as f:
     f.write('# 台灣模式「政黨執政」：各縣市首長所屬政黨（由 party_build.py 產生）。欄位：行政區 id\t起(年-月)\t政黨代碼\n')

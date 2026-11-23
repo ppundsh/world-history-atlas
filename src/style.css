@@ -22,7 +22,7 @@ button { cursor: pointer; }
 select { background: #1d2a3b; border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; color: var(--text); max-width: 190px; }
 .showpick, .projpick { position: relative; display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; }
 .toggles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; position: absolute; top: calc(100% + 6px); right: 0; z-index: 20; background: #16212f; border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; box-shadow: 0 6px 24px rgba(0,0,0,.45); white-space: nowrap; }
-#projBtn { background: #1d2a3b; border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; }
+#projBtn { color: var(--text); font: inherit; background: #1d2a3b; border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; }
 #projBtn::after { content: ' ▾'; color: var(--muted); }
 #projMenu { position: absolute; top: calc(100% + 6px); left: 0; z-index: 20; display: flex; background: #16212f; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,.45); max-height: min(78vh, 640px); color: var(--text); }
 #projMenu .plist { overflow: auto; padding: 6px 0; min-width: 210px; }
@@ -58,6 +58,12 @@ select { background: #1d2a3b; border: 1px solid var(--line); border-radius: 6px;
 body[data-base="antique"] #yearBig { color: #4a2c10; text-shadow: 0 1px 0 rgba(255, 240, 210, 0.8); }
 body[data-base="antique"] #countBox { color: #4a2c10; text-shadow: none; }
 body[data-base="antique"] #countBox b { color: #8a3b12; }
+#growBox { margin-top: 3px; font-size: 13px; color: #fff; text-shadow: 0 1px 4px #000; pointer-events: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 1px; }
+#growBox span { cursor: help; }
+#growBox b { font-size: 15px; color: var(--accent); font-variant-numeric: tabular-nums; }
+#growBox small { opacity: .7; font-size: 11px; }
+body[data-base="antique"] #growBox { color: #4a2c10; text-shadow: none; }
+body[data-base="antique"] #growBox b { color: #8a3b12; }
 .mapctl { position: absolute; right: 14px; top: 14px; display: flex; flex-direction: column; background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); overflow: hidden; z-index: 3; }
 .mapctl button { width: 36px; height: 36px; border: none; background: #fff; color: #333; font-size: 18px; border-bottom: 1px solid #e3e3e3; }
 .mapctl button:last-child { border-bottom: none; }
@@ -116,6 +122,11 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 #about .xbtn { flex: none; width: 36px; height: 36px; margin: 0; padding: 0; border-radius: 50%; border: none; background: #f0f0f2; font-size: 22px; line-height: 36px; color: #444; cursor: pointer; }
 #about .xbtn:hover { background: #e4e4e8; }
 #about .small { font-size: 12px; color: #666; }
+#aboutWhy { font-size: 15px; line-height: 1.7; margin: 14px 0 10px; }
+#aboutQuote { margin: 0 0 14px; padding: 8px 16px; border-left: 3px solid var(--accent); background: #faf7f0; border-radius: 0 8px 8px 0; }
+#aboutQuote p { margin: 4px 0; font: 16px/1.6 var(--serif); }
+#aboutQuote p.orig { font-size: 13px; color: #777; font-style: italic; }
+#aboutQuote cite { display: block; text-align: right; font-size: 12px; color: #666; font-style: normal; }
 #about footer button { margin: 0; padding: 6px 16px; border: 1px solid #ccc; background: #f6f6f6; border-radius: 6px; color: #222; }
 
 /* loading */
@@ -177,6 +188,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
   #controls .switch { justify-content: space-between; flex-direction: row-reverse; padding: 4px 0; }
   #yearBig { font-size: 30px; }
   #countBox { font-size: 12px; margin-top: 2px; } #countBox b { font-size: 16px; }
+  #growBox { font-size: 11px; } #growBox b { font-size: 12px; }
   #projTags { bottom: 8px; left: 10px; max-width: 46vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   /* details as a bottom sheet over the player, so the place you tapped stays visible */
   :is(#info, #pinInfo) { position: fixed; left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 52dvh; background: #fff; border-radius: 16px 16px 0 0; padding: 18px 16px calc(14px + env(safe-area-inset-bottom)); z-index: 12; box-shadow: 0 -6px 24px rgba(0,0,0,.35); }
@@ -353,7 +365,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 .picsize { display: inline-flex; align-items: center; gap: 4px; }
 .picsize input { width: 80px; }
 #legend .kinds { font-size: 11px; color: #555; margin: 4px 0; }
-#projMenu .pthumb { display: block; width: 100%; max-width: 260px; height: auto; margin: 8px auto 4px; }
+#projMenu .pthumb { display: block; width: 100%; max-width: 170px; height: auto; margin: 6px auto 2px; }
 #recMenu label, #recMenu span { color: #111; }
 
 /* phones held sideways (short screens): map buttons in a row, smaller year, compact player */
@@ -364,7 +376,7 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
   #recMenu { right: 44px; }
   #yearBig { font-size: 24px; }
   #hud { right: 44px; }                       /* clear of the column of map buttons */
-  #countBox { display: none; }
+  #countBox, #growBox { display: none; }
   #timeline { padding-top: 4px; padding-bottom: 4px; }
   .buttons.ios .play { width: 34px; height: 34px; }
   .buttons.ios .icon { width: 30px; height: 30px; }
@@ -475,3 +487,18 @@ body[data-base="antique"] #countBox b { color: #8a3b12; }
 #legend .lgrip:hover, #legend .lfold:hover { background: rgba(0,0,0,.07); color: #333; }
 #legend .lfold { border: none; background: none; color: #888; font-size: 12px; line-height: 1; padding: 3px 5px; border-radius: 4px; cursor: pointer; }
 #legend h3 { touch-action: none; }
+
+/* the × that closes a picture */
+#evPop .x { position: absolute; top: -7px; right: -7px; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid #fff; background: rgba(30,30,40,.85); color: #fff; font: 700 13px/1 system-ui, sans-serif; padding: 0; cursor: pointer; display: grid; place-items: center; z-index: 1; }
+#evPop .x:hover { background: #dc2626; }
+/* clickable legend rows: a thicker frame on hover instead of a "click for details" hint */
+#legend :is(li[data-rel], li[data-art], li[data-lang], li[data-gid]) { cursor: pointer; border-radius: 4px; outline: 0 solid transparent; transition: outline-width .1s; }
+#legend :is(li[data-rel], li[data-art], li[data-lang], li[data-gid]):hover { outline: 2px solid currentColor; outline-offset: 1px; text-decoration: none; }
+#legend :is(li[data-rel], li[data-art], li[data-lang], li[data-gid]):hover > i { box-shadow: 0 0 0 2px #1d1d24; }
+
+/* the floating-country comparison, a button in the top bar (an ordinary button, like 關於) */
+.cmpbtn { margin-left: 6px; white-space: nowrap; }
+.cmpbtn.on { background: rgba(255,255,255,.16); }
+.cmpcross { margin-left: 6px; color: #bcd6ff; white-space: nowrap; }
+:is(#info, #pinInfo) .placepic.flag img { object-fit: contain; max-height: 140px; background: #f3f4f6; }
+:is(#info, #pinInfo) h2 > img.flagicon { height: 18px; width: auto; max-width: 32px; margin-right: 7px; vertical-align: -2px; border: 1px solid rgba(0,0,0,.18); border-radius: 2px; }

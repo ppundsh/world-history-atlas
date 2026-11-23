@@ -1,0 +1,5 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	batam	1973-10		104.03	1.1	巴淡島工業區	Batam industrial zone	バタム工業地区	鄰近新加坡的保稅工業區，2007 年起為自由貿易區。	Bonded industrial zone next to Singapore; a free-trade zone from 2007.	シンガポール対岸の保税工業地区。	巴淡島	Batam	1
+park	jababeka	1989-01		107.15	-6.3	賈巴貝卡工業區	Jababeka Industrial Estate	ジャババカ工業団地	雅加達以東、印尼最大的工業區之一。	One of Indonesia's largest industrial estates, east of Jakarta.	インドネシア最大級の工業団地。			
+park	morowali	2013-10		122.06	-2.83	莫羅瓦利工業園區	Indonesia Morowali Industrial Park	モロワリ工業団地	禁止鎳礦出口後建設的鎳冶煉工業園區。	A nickel-smelting park built after the ban on exporting raw nickel ore.	ニッケル精錬の工業団地。		Indonesia Morowali Industrial Park	1
+sez	mandalika	2014-06		116.3	-8.89	曼達利卡經濟特區	Mandalika Special Economic Zone	マンダリカ経済特区	龍目島的觀光經濟特區。	A tourism special economic zone on Lombok.	ロンボク島の観光経済特区。			

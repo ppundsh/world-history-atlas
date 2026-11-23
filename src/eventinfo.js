@@ -1,3 +1,4 @@
+import { MAPLIKE, altPhoto } from './photos.js';
 // A short description and a picture for a historical event, from Wikipedia in the reader's language.
 // World events name their article; regional events are looked up by name (top search hit). Only pictures
 // hosted on Wikimedia Commons are used, shown with their author and licence; the text is an excerpt of
@@ -45,7 +46,10 @@ async function load(ev, lang, col) {
   if (co) out.ll = [co.lon, co.lat];
   else if (p.pageprops?.wikibase_item) out.qid = p.pageprops.wikibase_item;
   const th = p.thumbnail?.source;
-  if (th && /\/wikipedia\/commons\//.test(th) && p.pageimage) {
+  if (p.pageimage && MAPLIKE.test(p.pageimage)) {          // a map of the battle or the territory: another photograph instead
+    const a = await altPhoto(p.title, wl, 480);
+    if (a) Object.assign(out, { thumb: a.thumb, file: a.file, page: a.page, lic: a.lic, author: a.author });
+  } else if (th && /\/wikipedia\/commons\//.test(th) && p.pageimage) {
     out.thumb = th; out.file = p.pageimage;
     try {
       const c = await (await fetch('https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&prop=imageinfo&iiprop=extmetadata|url'

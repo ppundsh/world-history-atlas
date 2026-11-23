@@ -21,7 +21,7 @@ const ZMIN = +(process.env.RELIEF_ZMIN || 5), ZCAP = +(process.env.RELIEF_ZCAP |
 // the box each regional mode uses (Japan keeps GSI's hillshade, Taiwan its 20 m DTM tiles)
 const MODES = { ar: ['argentina'], br: ['brazil'], eg: ['egypt'], fr: ['france'], de: ['germany'], in: ['india'], id: ['indonesia'], ir: ['iran'], it: ['italy'],
   kr: ['korea'], mx: ['mexico'], ma: ['morocco'], pl: ['poland'], cn: ['china', 'prc'], ru: ['russia'], es: ['spain'], th: ['thailand'], tr: ['turkey'], uk: ['uk'],
-  us: ['usa'], us_ak: ['usa'], us_hi: ['usa'], vn: ['vietnam'] };
+  us: ['usa'], us_ak: ['usa'], us_hi: ['usa'], vn: ['vietnam'], ph: ['philippines'] };
 const boxes = fs.readFileSync(path.join(DP, 'satellite', 'regions.tsv'), 'utf8').split('\n').filter(l => l.trim() && !l.startsWith('#'))
   .map(l => { const [id, a, b, c, d, note] = l.split('\t'); return { id, box: [+a, +b, +c, +d], note }; })
   .filter(r => MODES[r.id] && (!only.length || only.includes(r.id)));

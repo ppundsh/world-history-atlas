@@ -1,9 +1,11 @@
 import { DistortionMask } from './distortion.js';
+import { isEmph, ring, EMPH } from './emph.js';
 import { reliefFor } from './relief.js';
 // Flat-map renderer: d3-geo projections drawn on a Canvas, with Google-Maps-style navigation
 // (drag to pan, wheel/pinch to zoom at the cursor, double-click to zoom in, arrow keys, +/-).
 import { drawPulses, reservePulses, pulseAt, pulseCardAt } from './eventdots.js';
 import { drawLang, lineAt, labelsMoving } from './langlayer.js';
+import { drawEcon, econAt } from './econ.js';
 import { drawClassIcon } from './classicon.js';
 import { geoPath, geoGraticule, geoGraticule10, geoContains, geoDistance } from 'd3-geo';
 import { PROJ } from './projections.js';
@@ -63,7 +65,31 @@ export function reserveCard(placed, bx, by, d) {
   if (d[2]) placed.push([bx - 2, by + d[1] - d[2], bx + d[0] + 2, by + d[1] + 2, true]);
 }
 // draw a card at (bx, by): white frame, the picture (cropped square), the name underneath; returns the picture's corner
-export function drawCard(ctx, bx, by, d, s, img, color, font, lineW = 2, aspect = 1) {
+// Cards closed with their ×: key → closed until the mode changes (the marker or dot itself stays)
+export const closedCards = new Set();
+// A marker's picture closed by hand comes back when the marker itself comes back: if a drawn frame went by
+// without the marker (the timeline left its years, the layer was off), the next time it is drawn it is new.
+let cardFrame = 0;
+const cardSeen = new Map();
+export function nextCardFrame() { cardFrame++; }
+const closeBoxes = new Map();
+let lastCard = 0;
+export function closeAt(x, y) {
+  for (const [key, b] of closeBoxes) if (lastCard - b[4] < 80 && x >= b[0] && x <= b[2] && y >= b[1] && y <= b[3]) return key;
+  return null;
+}
+// the × in a card's top-right corner
+function drawClose(ctx, key, bx, by, w) {
+  const r = 7, cx = bx + w - 2, cy = by + 2;
+  ctx.save(); ctx.globalAlpha = Math.max(ctx.globalAlpha, 0.5);
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fillStyle = 'rgba(30,30,40,0.82)'; ctx.fill();
+  ctx.lineWidth = 1.5; ctx.strokeStyle = '#fff'; ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx - 3, cy - 3); ctx.lineTo(cx + 3, cy + 3); ctx.moveTo(cx + 3, cy - 3); ctx.lineTo(cx - 3, cy + 3); ctx.stroke();
+  ctx.restore();
+  lastCard = performance.now(); closeBoxes.set(key, [cx - r - 3, cy - r - 3, cx + r + 3, cy + r + 3, lastCard]);
+  if (closeBoxes.size > 500) for (const [k, b] of closeBoxes) if (lastCard - b[4] > 2000) closeBoxes.delete(k);
+}
+export function drawCard(ctx, bx, by, d, s, img, color, font, lineW = 2, aspect = 1, key = null) {
   const sw = s * aspect, ix = bx + (d[0] - sw) / 2, iy = by + 3;
   ctx.shadowColor = 'rgba(0,0,0,0.25)'; ctx.shadowBlur = 5; ctx.fillStyle = 'rgba(255,255,255,0.78)';
   const R = 6;
@@ -81,6 +107,7 @@ export function drawCard(ctx, bx, by, d, s, img, color, font, lineW = 2, aspect 
     ctx.fillStyle = '#1d1d24'; ctx.fillText(d[3], tx, ty);
   }
   ctx.lineWidth = lineW; ctx.strokeStyle = color; ctx.beginPath(); ctx.roundRect(bx, by, d[0], d[1], R); ctx.stroke();
+  if (key) drawClose(ctx, key, bx, by, d[0]);
   return [ix, iy];
 }
 // Cards moved by hand: key → offset of the card's corner from its marker, in screen pixels. A moved card stays
@@ -127,20 +154,25 @@ export function leader(ctx, x, y, x0, y0, s, color, sh = s) {
   ctx.fillStyle = color; ctx.fill();
   ctx.restore();
 }
-function drawPicture(ctx, x, y, m, placed, hits, name, font) {
+function drawPicture(ctx, x, y, m, placed, hits, name, font, em = false) {
   const img = m.pic, s = m.picSize || 54, ar = m.picAspect || 1, d = cardDims(s, name, font, ar);
   const key = 'm:' + m.kind + ':' + m.id + ':' + (m.cap || ''), mo = cardOffsets.get(key);
+  const last = cardSeen.get(key); cardSeen.set(key, cardFrame);
+  if (closedCards.has(key)) { if (last != null && last < cardFrame - 1) closedCards.delete(key); else return; }
   const [tx, ty] = mo ? [x + mo[0], y + mo[1]] : placePicture(x, y, s, placed, d[0], d[1]);
   reserveCard(placed, tx, ty, d);
   const [bx, by] = mo ? [tx, ty] : slideTo(key, x, y, tx, ty);
   ctx.save();
   leader(ctx, x, y, bx, by, d[0], m.color, d[1]);
-  const [ix, iy] = drawCard(ctx, bx, by, d, s, img, m.color, font, 2, ar);
+  const [ix, iy] = drawCard(ctx, bx, by, d, s, img, m.color, font, em ? 4 : 2, ar, key);
   if (m.cls) { const bs = Math.max(16, s * 0.34); drawClassIcon(ctx, m.cls, ix + bs / 2 + 2, iy + s - bs / 2 - 2, bs, m.color); }   // class badge inside the picture's lower-left corner, clear of the name
   ctx.restore();
   hits?.push({ x0: bx, y0: by, x1: bx + d[0], y1: by + d[1], m, card: key, ax: x, ay: y });
 }
+// an administrative unit's key (merged territories have none)
+export const unitKey = f => { const u = f.properties.prov; return u ? String(u.id ?? u.unit ?? u.en ?? u.zh ?? '') || null : null; };
 export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
+  const em = isEmph('m:' + (m.kind || 'gov') + ':' + m.id);
   const seat = m.kind !== 'gov' && m.kind != null;          // seats, feuds, local powers: smaller
   ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   ctx.font = `${seat ? 15 : 22}px ${S.label.font}`;
@@ -150,7 +182,8 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
     ctx.lineWidth = 2; ctx.strokeStyle = '#f5b301'; ctx.stroke();
   }
   const text = m.text[col] || m.text[0];
-  if (m.pic) drawPicture(ctx, x, y, m, placed, hits, text, S.label.font);
+  if (m.pic) drawPicture(ctx, x, y, m, placed, hits, text, S.label.font, em);
+  if (em) ring(ctx, x, y, m.icon ? 13 : 12, m.roc ? '#1e40af' : m.color);
   if (m.cls) drawClassIcon(ctx, m.cls, x, y, 18, m.color);          // the hidden mode: class badge as the symbol
   else if (m.icon) {                                // major works: the kind's icon on a round badge
     ctx.beginPath(); ctx.arc(x, y, 10, 0, Math.PI * 2); ctx.fillStyle = 'rgba(255,255,255,0.95)'; ctx.fill();
@@ -175,7 +208,7 @@ export function drawMarker(ctx, x, y, m, col, S, placed, hits) {
   if (ty !== y) { ctx.beginPath(); ctx.moveTo(x + 4, y); ctx.lineTo(x0, ty); ctx.strokeStyle = 'rgba(0,0,0,0.45)'; ctx.lineWidth = 1; ctx.stroke(); }
   ctx.beginPath(); ctx.roundRect(x0, ty - h / 2, w, h, 4);
   ctx.fillStyle = 'rgba(255,255,255,0.93)'; ctx.fill();
-  ctx.lineWidth = m.roc ? 2.2 : 1.6; ctx.strokeStyle = m.roc ? '#1e40af' : m.color; ctx.stroke();
+  ctx.lineWidth = em ? 3.2 : m.roc ? 2.2 : 1.6; ctx.strokeStyle = m.roc ? '#1e40af' : m.color; ctx.stroke();
   ctx.fillStyle = m.roc ? '#0b2a7a' : '#1d1d24'; ctx.textAlign = 'left';
   ctx.fillText(text, x0 + 5, ty + 0.5);
   hits?.push({ x0, y0: ty - h / 2, x1: x0 + w, y1: ty + h / 2, m });
@@ -518,9 +551,11 @@ export class FlatMap {
 
   // what is under the cursor: a disputed area first, then the top-most polity
   hit(x, y) {
+    const cl = closeAt(x, y); if (cl) return { close: cl };
     const pu = pulseAt(x, y); if (pu) return { pulse: pu };
     const mk = (this.markerHits || []).find(b => x >= b.x0 && x <= b.x1 && y >= b.y0 && y <= b.y1);
     if (mk) return { marker: mk.m };
+    const ec = econAt(this.econHits, x, y); if (ec) return { econ: ec };
     const ln = [0, ...(this.langOffs || [])].reduce((f, o) => f || lineAt(this.lineHits, x - o, y), null); if (ln) return { line: ln };
     const ll = this.proj.invert([x, y]);
     if (!ll || !isFinite(ll[0])) return null;
@@ -534,7 +569,7 @@ export class FlatMap {
       }
     }
     const f = this.featureAt(ll);
-    return f ? { polity: f.properties.p, sec: typeof f.properties.s === 'number' ? f.properties.s : null, prov: f.properties.prov } : null;
+    return f ? { polity: f.properties.p, sec: typeof f.properties.s === 'number' ? f.properties.s : null, prov: f.properties.prov, unit: unitKey(f) } : null;
   }
 
   // the picture card under (x, y): a marker's or an event's, with its key and its marker's place
@@ -857,7 +892,7 @@ export class FlatMap {
     if (st.distort && this.def.prop !== 'perspective' || st.distort && this.def.light === 'gnomonic') this.drawDistortion();
     if (st.labels && !F.noLabels) this.drawLabels(feats, S, F);   // the language mode names languages, not states
     if (this.app.pin) this.drawPinned(this.app.pin.feats);
-    if (st.selected != null) this.drawSelection(feats, st.selected);
+    this.drawEmph(feats, st.selected, F);
     this.drawMarkers(F, S);
     if (this.app.compare?.on) {
       const center = [this.view.lon, this.view.lat];
@@ -879,6 +914,7 @@ export class FlatMap {
 
   // government seats (★) and CCP base-area names in China mode
   drawMarkers(F, S) {
+    nextCardFrame();
     const { ctx, proj } = this, st = this.app.state;
     const col = st.langInfo.col, center = [this.view.lon, this.view.lat];
     const visible = ll => !(this.azimuthal && geoDistance(ll, center) > Math.min(this.clipRad, 1.5));
@@ -909,6 +945,10 @@ export class FlatMap {
       ctx.restore();
       if (labelsMoving()) this.request();          // names still sliding apart
     }
+    // power plants and special zones of a country mode (econ.js)
+    this.econHits = [];
+    const EL = this.app.econLayer?.();
+    if (EL) drawEcon(ctx, ll => (visible(ll) ? proj(ll) : null), { ...EL, k: this.view.k, font: S.label.font }, this.econHits);
     const placed = [], hits = this.markerHits = [];
     const marks = this.app.pin?.marks?.length ? [...this.app.pin.marks, ...F.markers] : F.markers;
     // every marker's own symbol is reserved first, so no picture lands on another marker
@@ -1104,6 +1144,31 @@ export class FlatMap {
         const p = this.P2(f);
         ctx.setLineDash([]); ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = 4.5 / a; ctx.stroke(p);
         ctx.setLineDash([7 / a, 4 / a]); ctx.strokeStyle = '#c2185b'; ctx.lineWidth = 2.2 / a; ctx.stroke(p);
+      }
+    });
+    ctx.restore();
+  }
+  // the outline of what is under the pointer (thick, dark) and of what was clicked (thick, red; stays until the
+  // next click): a whole territory, or one administrative unit
+  drawEmph(feats, selected, F) {
+    const want = [];
+    for (const [k, color] of [[EMPH.hover, '#1d1d24'], [EMPH.pick ?? (selected != null ? 'f:' + selected : null), '#d12']]) {
+      if (!k || (k[0] !== 'f' && k[0] !== 'u') || k[1] !== ':') continue;
+      const [kind, p, ...u] = k.split(':'), id = +p, unit = u.join(':');
+      // a whole territory: its outer border only (with the division layer on, the map is drawn by units, and
+      // outlining each unit would trace every internal boundary too; the merged areas have the border alone)
+      const src = kind === 'f' && F?.ribbons ? F.ribbons : feats;
+      const fs = src.filter(f => f.properties.p === id && (kind === 'f' || unitKey(f) === unit));
+      if (fs.length) want.push([fs, color]);
+    }
+    if (!want.length) return;
+    const { ctx } = this;
+    ctx.save(); ctx.lineJoin = 'round';
+    this.each(ctx, a => {
+      for (const [fs, color] of want) for (const f of fs) {
+        const p = this.P2(f);
+        ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = 6 / a; ctx.stroke(p);
+        ctx.strokeStyle = color; ctx.lineWidth = 3 / a; ctx.stroke(p);
       }
     });
     ctx.restore();

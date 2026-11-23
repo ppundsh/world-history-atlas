@@ -1,0 +1,8 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+sci	akademgorodok	1957-05		83.1	54.84	新西伯利亞學術城	Akademgorodok	アカデムゴロドク	蘇聯科學院西伯利亞分院的科學城。	Science town of the Siberian branch of the Soviet Academy of Sciences.	ソ連科学アカデミー・シベリア支部の学術都市。	新西伯利亞科學城	Akademgorodok	1
+sci	zelenograd	1958-01		37.2	55.99	澤列諾格勒	Zelenograd	ゼレノグラード	蘇聯微電子工業中心。	Centre of the Soviet microelectronics industry.	ソ連のマイクロエレクトロニクス中心。	澤列諾格勒	Zelenograd	
+sez	kaliningrad	1996-01		20.5	54.71	加里寧格勒經濟特區	Kaliningrad Special Economic Zone	カリーニングラード経済特区	前身為 1991 年的「琥珀」自由經濟區。	Successor of the Yantar free economic zone of 1991.	1991年の自由経済地域の後身。			
+fin	moscow_city	1992-01		37.54	55.75	莫斯科國際商業中心	Moscow International Business Centre	モスクワ国際ビジネスセンター	莫斯科市政府規劃的摩天大樓金融商業區。	The skyscraper business district planned by the city of Moscow.	モスクワ市が計画した超高層ビジネス街。	莫斯科國際商務中心	Moscow International Business Center	1
+sez	alabuga	2005-12		52.0	55.8	阿拉布加經濟特區	Alabuga Special Economic Zone	アラブガ経済特区	韃靼斯坦的工業型經濟特區。	Industrial special economic zone in Tatarstan.	タタールスタンの経済特区。		Alabuga	
+sci	skolkovo	2010-09		37.36	55.69	斯科爾科沃創新中心	Skolkovo Innovation Center	スコルコボ・イノベーションセンター	政府推動的高科技創新城。	The state-backed high-tech innovation town.	国策のハイテク都市。	斯科爾科沃創新中心	Skolkovo Innovation Center	1
+ftz	vladivostok_fp	2015-07		131.9	43.12	海參崴自由港	Free Port of Vladivostok	ウラジオストク自由港	遠東港口的優惠稅制區。	Preferential regime for the Far Eastern ports.	極東港湾の優遇制度。		Free Port of Vladivostok	

@@ -1,0 +1,7 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+epz	tan_thuan	1991-09		106.73	10.76	新順加工出口區	Tan Thuan Export Processing Zone	タントゥアン輸出加工区	越南第一個加工出口區，臺灣企業合資開發。	Vietnam's first export-processing zone, built with Taiwanese capital.	ベトナム初の輸出加工区。			1
+biz	phu_my_hung	1993-05		106.72	10.73	富美興新市區	Phu My Hung	フーミーフン	胡志明市第七郡的新市鎮，臺商合資開發。	A new town in District 7 of Ho Chi Minh City, built with Taiwanese capital.	ホーチミン市7区の新市街。			
+sez	dung_quat	1996-03		108.78	15.4	榕橘經濟區	Dung Quat Economic Zone	ズンクアット経済区	越南第一座煉油廠所在的經濟區。	Economic zone home to Vietnam's first oil refinery.	ベトナム初の製油所がある経済区。			1
+sci	hoa_lac	1998-10		105.52	21.0	和樂高科技園區	Hoa Lac Hi-Tech Park	ホアラック・ハイテクパーク	河內近郊的國家級高科技園區。	National hi-tech park near Hanoi.	ハノイ近郊のハイテクパーク。			
+sci	shtp	2002-10		106.8	10.85	西貢高科技園區	Saigon Hi-Tech Park	サイゴン・ハイテクパーク	胡志明市的高科技園區，英特爾、三星設廠。	Hi-tech park in Ho Chi Minh City with Intel and Samsung plants.	インテル・サムスンの工場がある。		Saigon Hi-Tech Park	1
+sez	chu_lai	2003-06		108.65	15.43	朱萊開放經濟區	Chu Lai Open Economic Zone	チューライ開放経済区	廣南省的開放經濟區，汽車產業基地。	Open economic zone in Quang Nam, a centre of car-making.	クアンナム省の開放経済区。			

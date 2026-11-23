@@ -46,8 +46,10 @@ function screenLine(project, coords) {
 
 // the line under the mouse ('kind:id'), drawn thicker so it is clear which one the tooltip and a click mean
 let HOVER = null;
+let PICK = null;
 export function setHoverLine(key) { const ch = key !== HOVER; HOVER = key; return ch; }
-const hot = (kind, id) => HOVER != null && HOVER === kind + ':' + id;
+export function setPickLine(key) { PICK = key ?? null; }      // a clicked line stays thick until another click
+const hot = (kind, id) => (HOVER != null && HOVER === kind + ':' + id) || (PICK != null && PICK === kind + ':' + id);
 
 // path(geometry) adds the geometry to the context's current path; project([lon, lat]) → [x, y] or null.
 // Returns the drawn cables and works as screen polylines, for hit-testing.
@@ -225,7 +227,7 @@ export function pathFromProject(ctx, project) {
 
 // major works (railways, motorways, canals …): the network built so far, faint, and each new section drawn
 // along its route as it opens, highlighted for a while with its name
-const WORK_STYLE = { rail: { w: 2.2, dash: [5, 4] }, hsr: { w: 2.6, dash: [7, 4] }, highway: { w: 2.6 }, road: { w: 1.8 }, canal: { w: 2.2, dash: [2, 3] }, pipeline: { w: 1.6, dash: [6, 3] }, fiber: { w: 1.8, dash: [2, 2] }, cable: { w: 1.8, dash: [8, 3] }, grid: { w: 1.6, dash: [10, 2, 2, 2] } };
+const WORK_STYLE = { rail: { w: 2.2, dash: [5, 4] }, hsr: { w: 2.6, dash: [7, 4] }, highway: { w: 2.6 }, road: { w: 1.8 }, canal: { w: 2.2, dash: [2, 3] }, pipeline: { w: 1.6, dash: [6, 3] }, fiber: { w: 1.8, dash: [2, 2] }, cable: { w: 1.8, dash: [8, 3] }, grid: { w: 1.6, dash: [10, 2, 2, 2] }, bridge: { w: 2.8 }, tunnel: { w: 2.8, dash: [3, 3] } };
 function drawWorks(ctx, W, path, project, font, hits, labels = []) {
   ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   for (const n of W.net) {

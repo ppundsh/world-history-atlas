@@ -41,7 +41,7 @@ korea/tg_trans_pacific_express_tpe_ca	tg:trans-pacific-express-tpe-cable-system	
 korea/tg_asia_pacific_gateway_apg	tg:asia-pacific-gateway-apg			APG 亞太直達海纜
 mexico/tg_bifrost	tg:bifrost			Bifrost 跨太平洋海纜
 mexico/mx_maya1	route	-87.46,20.21 -80.12,26.01;-87.46,20.21 -87.95,15.85		Tulum – Hollywood (Florida); Tulum – Puerto Cortés
-mexico/mx_amx1	tg:america-movil-submarine-cable-system-1-amx-1		-87.35,9.90,-75.00,26.60	AMX-1 海纜（坎昆登陸）
+mexico/mx_amx1	route	-86.85,21.16 -83.03,10.0 -75.51,10.39;-86.85,21.16 -80.13,25.77	-87.35,9.90,-75.00,26.60	AMX-1 海纜（坎昆登陸；TeleGeography 現行圖資無坎昆分支，依登陸站：坎昆—利蒙港—卡塔赫納、坎昆—邁阿密）
 morocco/ma_atlas	tg:atlas-offshore		-6.54,34.97,5.87,43.80	Atlas Offshore 海纜（阿西拉—馬賽）
 morocco/tn_hannibal	tg:hannibal-system		10.60,36.35,13.09,38.15	Hannibal 海纜（凱利比亞—馬扎拉）
 morocco/dz_orval	tg:oran-valencia-orval		-1.14,35.20,0.20,39.97	ORVAL 海纜（奧蘭—瓦倫西亞）
@@ -53,9 +53,9 @@ spain/es_marea	tg:marea			MAREA 跨大西洋海纜
 spain/tg_grace_hopper	tg:grace-hopper			Grace Hopper 海纜
 taiwan/cb_tpc5	route	121.83,24.85 144.67,13.43		Toucheng – Guam (route at sea)
 taiwan/cb_tpkm	tg:taiwan-matsu-no-4		117.0,20.4,125.2,27.4	台馬四號海纜
-taiwan/cb_apcn2	tg:apcn-2		117.0,20.4,125.2,27.4	亞太二號海纜（APCN-2）
+taiwan/cb_apcn2	route	121.44,25.18 123.6,25.6	117.0,20.4,125.2,27.4	亞太二號海纜（APCN-2）：淡水登陸站接往主幹（TeleGeography 現行圖資無臺灣分支，依登陸站重畫）
 taiwan/cb_eac	tg:eac-c2c		117.0,20.4,125.2,27.4	EAC-C2C 東亞海纜
-taiwan/cb_tpe	tg:trans-pacific-express-tpe-cable-system		117.0,20.4,125.2,27.4	跨太平洋快線（TPE）
+taiwan/cb_tpe	route	121.44,25.18 124.2,31.86	117.0,20.4,125.2,27.4	跨太平洋快線（TPE）：淡水登陸站接往東海主幹（TeleGeography 現行圖資已無臺灣分支，依登陸站重畫）
 taiwan/cb_tse1	tg:taiwan-strait-express-1-tse-1		117.0,20.4,125.2,27.4	海峽光纜一號（TSE-1）
 taiwan/cb_tpkm2	tg:taiwan-penghu-kinmen-matsu-no-2-tpkm2		117.0,20.4,125.2,27.4	台澎、台金、台馬二號海纜
 taiwan/cb_tpkm3	tg:taiwan-penghu-kinmen-matsu-no-3-tpkm3		117.0,20.4,125.2,27.4	台澎、澎金、台馬三號海纜
@@ -154,3 +154,9 @@ internet/aus_overland	route	138.6,-34.93 ~ 137.77,-32.49 ~ 138.4,-30.8 ~ 136.55,
 internet/tae	route	8.68,50.11 ~ 16.37,48.21 ~ 19.04,47.5 ~ 30.52,50.45 ~ 37.77,44.72 41.67,42.15 ~ 44.79,41.72 ~ 49.87,40.41 52.97,40.02 ~ 58.38,37.95 ~ 69.24,41.3 ~ 74.6,42.87 ~ 76.95,43.24 ~ 87.62,43.83 ~ 103.83,36.06 ~ 108.94,34.34 ~ 116.4,39.9;108.94,34.34 ~ 114.3,30.59 ~ 121.47,31.23;49.87,40.41 ~ 51.39,35.69		法蘭克福—維也納—布達佩斯—基輔—新羅西斯克（黑海電纜）—波季—提比里斯—巴庫（裏海電纜）—土庫曼巴希—阿什哈巴德—塔什干—比什凱克—阿拉木圖—烏魯木齊—蘭州—西安—北京；西安—武漢—上海；巴庫—德黑蘭
 internet/epeg	route	8.68,50.11 ~ 13.4,52.52 ~ 21.01,52.23 ~ 30.52,50.45 ~ 37.62,55.75 ~ 39.72,47.23 ~ 47.5,42.98 ~ 49.87,40.41 ~ 51.39,35.69 ~ 56.27,27.19 57.89,23.7		法蘭克福—柏林—華沙—基輔—莫斯科—羅斯托夫—馬哈奇卡拉—巴庫—德黑蘭—阿巴斯港（海纜）—阿曼巴爾卡
 internet/cpec_ofc	route	75.99,39.47 ~ 75.23,37.77 ~ 75.42,36.85 ~ 74.82,36.69 ~ 74.31,35.92 ~ 74.1,35.42 ~ 73.21,34.15 ~ 73.05,33.69		陸上線：喀什—塔什庫爾干—紅其拉甫—蘇斯特—吉爾吉特—奇拉斯—阿伯塔巴德—伊斯蘭堡（沿喀喇崑崙公路）
+philippines/ph_hk1880	route	120.0,16.4 114.17,22.28		香港—玻里瑙電報電纜（1880）
+philippines/ph_pacific1903	route	120.96,14.58 144.75,13.47	114,2,150,24	太平洋商業電纜（馬尼拉—關島段，1903）
+philippines/tg_sjc	tg:southeast-asia-japan-cable-sjc		114,2,130,24	SJC 海纜
+philippines/tg_eac_c2c	tg:eac-c2c		114,2,130,24	EAC-C2C 海纜
+philippines/tg_tgn_ia	tg:tata-tgn-intra-asia-tgn-ia		114,2,130,24	TGN-IA 海纜
+philippines/tg_sea_us	tg:sea-us		114,2,150,24	SEA-US 海纜

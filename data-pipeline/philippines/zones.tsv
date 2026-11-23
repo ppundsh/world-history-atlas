@@ -1,0 +1,7 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+epz	bataan_epz	1972-01		120.50	14.43	巴丹出口加工區（馬里韋萊斯）	Bataan Export Processing Zone (Mariveles)	バターン輸出加工区	菲律賓第一個出口加工區，今自由港區。	The first export-processing zone in the Philippines, now the Freeport Area of Bataan.	フィリピン初の輸出加工区。		Freeport Area of Bataan	1
+epz	mactan_epz	1979-01		123.97	10.31	麥克坦出口加工區	Mactan Economic Zone	マクタン経済特区	宿霧麥克坦島的出口加工區，電子與服飾業聚集。	Export zone on Mactan, Cebu: electronics and garments.	セブ・マクタン島の輸出加工区。		Mactan Export Processing Zone	1
+epz	cavite_epz	1980-01		120.89	14.31	甲米地出口加工區（羅薩里奧）	Cavite Export Processing Zone (Rosario)	カビテ輸出加工区	馬尼拉南方的大型出口加工區。	A large export zone south of Manila.	マニラ南方の輸出加工区。			
+ftz	subic_fz	1992-11		120.27	14.82	蘇比克灣自由港區	Subic Bay Freeport Zone	スービック湾フリーポート	美軍撤離後依共和國第 7227 號法設立。	Set up under Republic Act 7227 after the US Navy left.	米軍撤退後に設置。	苏比克湾自由港	Subic Bay Freeport Zone	1
+sez	clark_fz	1993-04		120.55	15.18	克拉克自由港區	Clark Freeport Zone	クラーク・フリーポート	原克拉克空軍基地轉型的經濟特區與國際機場。	The former Clark Air Base turned economic zone and airport.	旧クラーク空軍基地の経済特区。		Clark Freeport and Special Economic Zone	1
+biz	bgc	1995-02		121.05	14.55	博尼法西奧環球城	Bonifacio Global City	ボニファシオ・グローバル・シティ	國營基地轉換開發局將舊軍營改建的新都心。	The new business district built on an old army camp by the state Bases Conversion and Development Authority.	旧軍基地を転換した新都心。		Bonifacio Global City	1

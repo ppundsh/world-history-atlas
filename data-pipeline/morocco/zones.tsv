@@ -1,0 +1,6 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	tanger_fz	1999-01		-5.85	35.73	丹吉爾自由區	Tangier Free Zone	タンジェ自由地域	丹吉爾機場旁的出口加工自由區。	Export free zone by Tangier airport.	タンジェ空港近くの輸出自由地域。		Tangier Free Zone	1
+sci	technopolis	2008-01		-6.75	34.0	拉巴特科技城	Technopolis Rabat	テクノポリス・ラバト	政府推動的資訊與航太科技園區。	State-backed technology park (IT, aerospace).	技術団地。			
+fin	cfc	2010-01		-7.66	33.56	卡薩布蘭卡金融城	Casablanca Finance City	カサブランカ・ファイナンス・シティ	面向非洲的區域金融中心。	A regional financial centre aimed at Africa.	アフリカ向け金融センター。		Casablanca Finance City	1
+ftz	kenitra_afz	2012-01		-6.55	34.25	凱尼特拉大西洋自由區	Kenitra Atlantic Free Zone	ケニトラ大西洋自由地域	標緻雪鐵龍工廠所在的汽車業自由區。	Car-industry free zone, home of the Stellantis (PSA) plant.	自動車産業の自由地域。			
+park	tac	2012-01		-5.62	35.5	丹吉爾汽車城	Tanger Automotive City	タンジェ自動車都市	雷諾工廠周邊的汽車產業園區。	Automotive park around the Renault plant.	ルノー工場周辺の自動車団地。			1

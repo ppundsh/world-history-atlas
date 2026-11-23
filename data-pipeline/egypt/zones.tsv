@@ -1,0 +1,6 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	port_said	1976-01		32.3	31.26	塞得港自由區	Port Said free zone	ポートサイド自由地域	沙達特開放政策下全市設為自由區（2002 年取消）。	The whole city became a free zone under Sadat's open-door policy (ended 2002).	サダト開放政策で市全体が自由地域に。			
+park	tenth_ramadan	1977-01		31.75	30.3	齋月十日城	10th of Ramadan City	ラマダン10日市	開羅東北的工業新城。	Industrial new city north-east of Cairo.	カイロ北東の工業新都市。		10th of Ramadan City	1
+sci	smart_village	2003-01		31.0	30.07	智慧村	Smart Village	スマート・ビレッジ	吉薩的資訊科技園區。	IT business park at Giza.	ギザのITパーク。		Smart Village Egypt	
+sez	sczone	2015-08		32.3	30.6	蘇伊士運河經濟區	Suez Canal Economic Zone	スエズ運河経済区	沿運河的經濟特區，涵蓋蘇赫納、東塞得港等港區。	Special economic zone along the canal, with the Sokhna and East Port Said port areas.	運河沿いの経済特区。		Suez Canal Economic Zone	1
+biz	nac	2015-03		31.75	30.02	新行政首都	New Administrative Capital	新行政首都	開羅以東新建的行政首都，2023 年起政府遷入。	The new capital east of Cairo; ministries began moving in from 2023.	カイロ東の新首都。	新行政首都	New Administrative Capital	1

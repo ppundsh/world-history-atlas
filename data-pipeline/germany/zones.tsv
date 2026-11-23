@@ -1,0 +1,3 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+ftz	hamburg_fp	1888-10	2013-01	9.97	53.53	漢堡自由港	Free Port of Hamburg	ハンブルク自由港	德意志關稅同盟成立時保留的自由港，2013 年取消。	Free port kept when Hamburg joined the customs union; abolished in 2013.	関税同盟加盟時に設けた自由港。	漢堡自由港	Free Port of Hamburg	1
+sci	adlershof	1991-01		13.53	52.43	阿德勒斯霍夫科學城	Adlershof science city	アドラースホーフ	柏林市政府在前東德科學院舊址建設的科技園區。	Technology park built by Berlin on the site of the East German Academy of Sciences.	旧東独科学アカデミー跡の技術団地。		Adlershof	1

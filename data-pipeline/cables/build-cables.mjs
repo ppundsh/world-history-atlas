@@ -74,9 +74,31 @@ function clipTo(parts, box) {
   }
   return out;
 }
+// TeleGeography gives many cables as a set of short pieces that meet end to end; drawn one by one (each growing
+// from its own start) they looked broken. Pieces are joined where exactly two of them meet; where three or more
+// meet (a branching unit) they stay apart, so each branch grows out from the trunk.
+function mergeParts(parts) {
+  const key = p => p[0].toFixed(3) + ',' + p[1].toFixed(3);
+  let lines = parts.filter(l => l.length > 1).map(l => l.slice());
+  for (let changed = true; changed;) {
+    changed = false;
+    const deg = new Map();
+    for (const l of lines) for (const p of [l[0], l[l.length - 1]]) deg.set(key(p), (deg.get(key(p)) || 0) + 1);
+    outer: for (let i = 0; i < lines.length; i++) for (let j = i + 1; j < lines.length; j++) {
+      const A = lines[i], B = lines[j], a0 = key(A[0]), a1 = key(A[A.length - 1]), b0 = key(B[0]), b1 = key(B[B.length - 1]);
+      let m = null;
+      if (a1 === b0 && deg.get(a1) === 2) m = A.concat(B.slice(1));
+      else if (a1 === b1 && deg.get(a1) === 2) m = A.concat(B.slice(0, -1).reverse());
+      else if (a0 === b1 && deg.get(a0) === 2) m = B.concat(A.slice(1));
+      else if (a0 === b0 && deg.get(a0) === 2) m = B.slice().reverse().concat(A.slice(1));
+      if (m) { lines.splice(j, 1); lines[i] = m; changed = true; break outer; }
+    }
+  }
+  return lines;
+}
 function fromTG(id, clip) {
   const raw = TG.get(id); if (!raw) return null;
-  let parts = clipTo(raw.map(l => l.map(p => [p[0], p[1]])), clip);
+  let parts = mergeParts(clipTo(raw.map(l => l.map(p => [p[0], p[1]])), clip));
   const ends = parts.flatMap(l => [l[0], l[l.length - 1]]);
   const gap = p => { try { return Math.min(0.4, Math.max(SHORE, shoreGap(p))); } catch { return SHORE; } };
   // TeleGeography's points on land are its landing stations (a trunk often runs in to a station and back out) or
@@ -108,7 +130,30 @@ function fromTG(id, clip) {
     line.forEach((p, i) => { if (onLand(p[0], p[1]) || ends.some(e => e !== p && Math.abs(e[0] - p[0]) < 1e-6 && Math.abs(e[1] - p[1]) < 1e-6)) keep.add(i); });
     return simplify(line, TOL, skip, keep);
   });
-  return parts.filter(l => l.length > 1);
+  return attachBranches(parts.filter(l => l.length > 1));
+}
+// A branch leaves the trunk at a branching unit somewhere along it; once the trunk has been rerouted at sea and
+// simplified, the branch's sea end no longer sits on it and the branch floated loose. Each end at sea is joined
+// to the nearest point of another part of the same cable (within 1°).
+function attachBranches(parts) {
+  if (parts.length < 2) return parts;
+  const near = (p, skipI) => {
+    let best = null, bd = 1;
+    parts.forEach((l, i) => { if (i === skipI) return; for (let k = 1; k < l.length; k++) {
+      const a = l[k - 1], b = l[k], dx = b[0] - a[0], dy = b[1] - a[1], L = dx * dx + dy * dy;
+      const t = L ? Math.max(0, Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / L)) : 0;
+      const q = [a[0] + t * dx, a[1] + t * dy], d = Math.hypot(q[0] - p[0], q[1] - p[1]);
+      if (d < bd) { bd = d; best = q; }
+    } });
+    return bd > 1e-4 ? best : null;
+  };
+  return parts.map((l, i) => {
+    const out = l.slice();
+    if (!onLand(l[0][0], l[0][1])) { const q = near(l[0], i); if (q) out.unshift(q); }
+    const e = l[l.length - 1];
+    if (!onLand(e[0], e[1])) { const q = near(e, i); if (q) out.push(q); }
+    return out;
+  });
 }
 
 // ---- write back ----
@@ -120,7 +165,7 @@ const t0 = Date.now();
 for (const s of spec) {
   const [region, id] = s.target.split('/');
   let parts;
-  if (s.source === 'route') parts = CHECK ? null : fromStops(s.stops);
+  if (s.source === 'route') parts = CHECK ? null : (s.clip ? clipTo(fromStops(s.stops), s.clip) : fromStops(s.stops));
   else if (s.source.startsWith('tg:')) {
     if (!CHECK) { parts = fromTG(s.source.slice(3), s.clip); if (!parts) { waiting++; if (TG.size) issues.push(`${s.target}: TeleGeography 沒有 ${s.source}`); } }
   } else { issues.push(`${s.target}: 不明的來源 ${s.source}`); continue; }
@@ -152,7 +197,7 @@ for (const s of spec) {
   }
   // a rebuilt TeleGeography route only keeps a segment over land where TeleGeography's own line runs over land
   // (terrestrial links such as across Egypt or Panama): simplification never adds one
-  if (bad && parts && s.source.startsWith('tg:')) terrestrial.push(`${s.target}（${bad}）`);
+  if (bad && (parts || CHECK) && s.source.startsWith('tg:') && TG.size) terrestrial.push(`${s.target}（${bad}）`);
   else if (bad) issues.push(`${s.target}: ${bad} 段穿越陸地${parts ? '' : '（尚未重建）'}`);
 }
 for (const [f, F] of files) if (F.dirty) fs.writeFileSync(f, F.lines.join('\n'));

@@ -1,0 +1,5 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+sez	tdf	1972-05		-67.7	-53.79	火地島特別稅制區	Tierra del Fuego special regime	ティエラ・デル・フエゴ特別制度	依 19.640 號法實施的免稅工業區，電子組裝為主。	Tax-free industrial regime under Law 19,640, mostly electronics assembly.	法律19640号による免税工業地域。			1
+park	bahia_blanca	1981-01		-62.25	-38.78	巴伊亞布蘭卡石化園區	Bahía Blanca Petrochemical Complex	バイア・ブランカ石油化学コンビナート	南大西洋岸的石化工業區。	Petrochemical complex on the South Atlantic.	石油化学コンビナート。			
+biz	puerto_madero	1989-11		-58.36	-34.61	馬德羅港	Puerto Madero	プエルト・マデロ	舊港區由國營公司再開發的商業住宅區。	The old docks redeveloped by a state corporation.	旧港湾の再開発地区。	馬德羅港	Puerto Madero	1
+ftz	zf_laplata	1997-01		-57.9	-34.87	拉普拉塔自由區	La Plata Free Zone	ラプラタ自由地域	布宜諾斯艾利斯省的自由區。	Free zone in Buenos Aires province.	自由地域。			

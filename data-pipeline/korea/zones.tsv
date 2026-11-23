@@ -1,0 +1,10 @@
+# 經濟特區、加工出口區、自由貿易區、工業區、科學園區、金融與商業特區（政府設立且有成效者）。欄位：種類(epz|sez|ftz|park|sci|fin|biz)	id	設立(年-月)	廢止(年-月，可空)	經度	緯度	繁中	English	日本語	說明繁中	說明English	說明日本語	維基中文條目	維基英文條目	重點（1＝該國最具代表性，畫得較大、名稱一律顯示）
+park	ulsan	1962-01		129.36	35.5	蔚山工業中心	Ulsan Industrial Complex	蔚山工業センター	第一個五年計畫指定的特定工業地區，現代汽車、造船與石化的基地。	Designated in the first five-year plan; home of Hyundai's cars and ships and of petrochemicals.	第1次5か年計画で指定された工業地区。	蔚山廣域市	Ulsan	1
+epz	masan	1970-01		128.58	35.21	馬山自由出口區	Masan Free Export Zone	馬山輸出自由地域	仿高雄加工出口區設立，吸引日資電子廠。	Modelled on Kaohsiung's zone; drew Japanese electronics plants.	高雄に倣った輸出自由地域。	馬山自由貿易地域		1
+park	gumi	1969-03		128.4	36.11	龜尾國家產業團地	Gumi National Industrial Complex	亀尾国家産業団地	電子產業基地（三星、LG）。	Centre of the electronics industry (Samsung, LG).	電子産業の拠点。			
+sci	daedeok	1973-12		127.36	36.38	大德研究團地	Daedeok Innopolis	大徳研究団地	政府研究機構集中的科學城。	A science town of government research institutes.	政府研究機関の集積地。	大德研究開發特區	Daedeok Innopolis	1
+park	changwon	1974-04		128.68	35.21	昌原國家產業團地	Changwon National Industrial Complex	昌原国家産業団地	重化學工業化政策下的機械工業基地。	A machinery centre of the heavy and chemical industry drive.	重化学工業化政策の機械工業基地。			
+fin	yeouido	1979-01		126.925	37.525	汝矣島	Yeouido	汝矣島	國會、韓國交易所與各大金融機構所在。	Seat of the National Assembly, the Korea Exchange and the big financial firms.	国会・韓国取引所・金融機関の集積地。	汝矣島	Yeouido	1
+sez	rason	1991-12		130.3	42.3	羅先經濟特區	Rason Special Economic Zone	羅先経済特区	北韓第一個經濟特區（羅津—先鋒）。	North Korea's first special economic zone (Rajin–Sonbong).	北朝鮮初の経済特区。	羅先特別市	Rason	
+sez	incheon_fez	2003-08		126.65	37.39	仁川經濟自由區域	Incheon Free Economic Zone	仁川経済自由区域	松島、永宗、青羅，韓國第一個經濟自由區域。	Songdo, Yeongjong and Cheongna: Korea's first free economic zone.	韓国初の経済自由区域。	仁川經濟自由區域	Incheon Free Economic Zone	1
+park	kaesong	2004-12	2016-02	126.57	37.98	開城工業園區	Kaesong Industrial Region	開城工業地区	南北韓合作，南韓企業在北韓雇用勞工；2016 年關閉。	Inter-Korean venture where Southern firms employed Northern workers; closed in 2016.	南北協力の工業団地。2016年閉鎖。	開城工業園區	Kaesong Industrial Region	
