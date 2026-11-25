@@ -1,0 +1,15 @@
+{
+  "name": "世界國家演變 — 互動式歷史地圖",
+  "short_name": "世界國家演變",
+  "description": "互動式世界歷史地圖：從西元前 3400 年到 2026 年的國家疆域、政權與首都演變。How the World's Countries Changed — an interactive historical atlas.",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1724",
+  "theme_color": "#0f1724",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

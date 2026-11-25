@@ -4,11 +4,59 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
   <title>世界國家演變 — 互動式歷史地圖</title>
-  <meta name="description" content="從西元前 3400 年到 2026 年，全世界國家疆域的演變。可切換地圖投影、3D 地球與多國語言。" />
+  <meta name="description" content="互動式世界歷史地圖：從西元前 3400 年到 2026 年，逐年看全世界國家疆域、政權與首都的演變；另有台灣、中國、日本、韓國、美國等 25 個國家與時期的逐月地圖，以及宗教、政體、語言、藝術、金融、網際網路與人為災害等主題。" />
+  <!-- search engines and link previews (the app updates the title, description and canonical address for each mode and language) -->
+  <link rel="canonical" href="https://ppundsh.github.io/world-history-atlas/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ppundsh.github.io/world-history-atlas/?lang=zh-Hant" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://ppundsh.github.io/world-history-atlas/?lang=zh-Hans" />
+  <link rel="alternate" hreflang="en" href="https://ppundsh.github.io/world-history-atlas/?lang=en" />
+  <link rel="alternate" hreflang="ja" href="https://ppundsh.github.io/world-history-atlas/?lang=ja" />
+  <link rel="alternate" hreflang="x-default" href="https://ppundsh.github.io/world-history-atlas/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="google-site-verification" content="KoUtfkPM92_pO2Q42heYL6rswPDbdQo1Q0HKel728Vk" />
+  <meta name="theme-color" content="#0f1724" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="世界國家演變 World History Atlas" />
+  <meta property="og:title" content="世界國家演變 — 互動式歷史地圖" />
+  <meta property="og:description" content="互動式世界歷史地圖：從西元前 3400 年到 2026 年，逐年看全世界國家疆域、政權與首都的演變；另有台灣、中國、日本、韓國、美國等 25 個國家與時期的逐月地圖，以及宗教、政體、語言、藝術、金融、網際網路與人為災害等主題。" />
+  <meta property="og:url" content="https://ppundsh.github.io/world-history-atlas/" />
+  <meta property="og:image" content="https://ppundsh.github.io/world-history-atlas/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="世界國家演變：1914 年的世界政治地圖" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="世界國家演變 — 互動式歷史地圖" />
+  <meta name="twitter:description" content="互動式世界歷史地圖：從西元前 3400 年到 2026 年，逐年看全世界國家疆域、政權與首都的演變；另有台灣、中國、日本、韓國、美國等 25 個國家與時期的逐月地圖，以及宗教、政體、語言、藝術、金融、網際網路與人為災害等主題。" />
+  <meta name="twitter:image" content="https://ppundsh.github.io/world-history-atlas/og.jpg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "世界國家演變",
+    "alternateName": ["World History Atlas", "How the World's Countries Changed", "世界国家演变", "世界の国々の変遷"],
+    "url": "https://ppundsh.github.io/world-history-atlas/",
+    "description": "互動式世界歷史地圖：從西元前 3400 年到 2026 年，逐年看全世界國家疆域、政權與首都的演變；另有台灣、中國、日本、韓國、美國等 25 個國家與時期的逐月地圖，以及宗教、政體、語言、藝術、金融、網際網路與人為災害等主題。",
+    "inLanguage": ["zh-Hant", "zh-Hans", "en", "ja"],
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any (web browser)",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "image": "https://ppundsh.github.io/world-history-atlas/og.jpg",
+    "about": ["World history", "Historical atlas", "Political borders", "Historical geography"],
+    "sameAs": ["https://github.com/ppundsh/world-history-atlas"],
+    "license": "https://github.com/ppundsh/world-history-atlas/blob/main/LICENSE"
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%233a7bd5'/%3E%3Cpath d='M6 13c4-3 8 1 11-2s7 1 9 0M5 19c5 2 8-2 12 1s6 0 10-1' stroke='%23f2d16b' stroke-width='3' fill='none'/%3E%3C/svg%3E" />
   <!-- shown before the scripts and the main stylesheet arrive, so the page never flashes unstyled -->
   <style>
-    html:not(.ready) body > :not(#loading) { visibility: hidden; }
+    html:not(.ready) body > :not(#loading):not(noscript) { visibility: hidden; }
     html, body { background: #0f1724; }
     #loading { position: fixed; inset: 0; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
       background: radial-gradient(ellipse at 50% 40%, #1d3354 0%, #0f1724 70%); color: #e8eef7; font: 15px system-ui, -apple-system, "Noto Sans TC", "Microsoft JhengHei", sans-serif; transition: opacity .45s; }
@@ -25,8 +73,23 @@
     #loading .bar i { display: block; height: 100%; width: 4%; background: linear-gradient(90deg, #f2d16b, #ffb74d); border-radius: 2px; transition: width .35s ease-out; }
     #loading .msg { font-size: 12.5px; color: #9fb0c8; min-height: 1.4em; }
   </style>
+  <noscript><style>#loading { display: none; } body { overflow: auto; } .seo { max-width: 760px; margin: 0 auto; padding: 24px 18px; color: #e8eef7; font: 15px/1.7 system-ui, sans-serif; } .seo a { color: #f2d16b; } .seo ul { columns: 2; }</style></noscript>
 </head>
 <body data-base="plain">
+  <!-- seo:start — written by data-pipeline/seo/build-seo.mjs: what the page is and a link to every mode, for search
+       engines and for browsers without JavaScript -->
+  <noscript>
+    <div class="seo">
+      <h1>世界國家演變 — 互動式歷史地圖</h1>
+      <p>互動式世界歷史地圖：從西元前 3400 年到 2026 年，逐年看全世界國家疆域、政權與首都的演變；另有台灣、中國、日本、韓國、美國等 25 個國家與時期的逐月地圖，以及宗教、政體、語言、藝術、金融、網際網路與人為災害等主題。可切換地圖投影與 3D 地球，支援繁中、簡中、英文、日文。</p>
+      <p>這個網站需要開啟 JavaScript 才能顯示互動地圖。</p>
+      <ul lang="zh-Hant"><li><a href="https://ppundsh.github.io/world-history-atlas/">世界國家</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=religion">世界宗教</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=regime">政體</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=art">藝術史</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=language">語言的發展</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=finance">金融史</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=internet">網際網路與海纜</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=disaster">人為災害</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=china">中國（1911–1951）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=prc">中華人民共和國（1949–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=taiwan">台灣（1600–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=japan">日本（701–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=russia">俄羅斯（862–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=korea">韓國（1–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=vietnam">越南（1–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=thailand">泰國（1238–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=philippines">菲律賓（1521–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=indonesia">印度尼西亞（671–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=germany">德國（1648–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=poland">波蘭（966–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=italy">義大利（1454–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=spain">西班牙（711–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=france">法國（843–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=uk">英國（871–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=india">印度（前 321–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=iran">伊朗（前 550–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=turkey">土耳其（1071–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=egypt">埃及（前 3100–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=morocco">摩洛哥與馬格里布（788–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=usa">美國（1607–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=mexico">墨西哥（1428–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=brazil">巴西（1500–2026）</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=argentina">阿根廷（1536–2026）</a></li></ul>
+      <h2 lang="en">How the World's Countries Changed — An interactive historical atlas</h2>
+      <p lang="en">An interactive historical atlas of the world from 3400 BC to 2026: watch every country's borders, governments and capitals change year by year, with month-by-month maps of 25 countries and periods including Taiwan, China, Japan, Korea and the United States, and themes on religion, regimes, languages, art, finance, the Internet and man-made disasters. Many map projections and a 3D globe; in English, Chinese and Japanese.</p>
+      <ul lang="en"><li><a href="https://ppundsh.github.io/world-history-atlas/?lang=en">World countries</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=religion&amp;lang=en">World religions</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=regime&amp;lang=en">Regime types</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=art&amp;lang=en">Art history</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=language&amp;lang=en">Development of languages</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=finance&amp;lang=en">History of finance</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=internet&amp;lang=en">The Internet and undersea cables</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=disaster&amp;lang=en">Man-made disasters</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=china&amp;lang=en">China (1911–1951)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=prc&amp;lang=en">People's Republic of China (1949–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=taiwan&amp;lang=en">Taiwan (1600–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=japan&amp;lang=en">Japan (701–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=russia&amp;lang=en">Russia (862–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=korea&amp;lang=en">Korea (1–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=vietnam&amp;lang=en">Vietnam (1–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=thailand&amp;lang=en">Thailand (1238–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=philippines&amp;lang=en">Philippines (1521–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=indonesia&amp;lang=en">Indonesia (671–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=germany&amp;lang=en">Germany (1648–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=poland&amp;lang=en">Poland (966–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=italy&amp;lang=en">Italy (1454–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=spain&amp;lang=en">Spain (711–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=france&amp;lang=en">France (843–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=uk&amp;lang=en">United Kingdom (871–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=india&amp;lang=en">India (321 BCE–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=iran&amp;lang=en">Iran (550 BCE–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=turkey&amp;lang=en">Turkey (1071–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=egypt&amp;lang=en">Egypt (3100 BCE–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=morocco&amp;lang=en">Morocco and the Maghreb (788–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=usa&amp;lang=en">United States (1607–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=mexico&amp;lang=en">Mexico (1428–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=brazil&amp;lang=en">Brazil (1500–2026)</a></li><li><a href="https://ppundsh.github.io/world-history-atlas/?m=argentina&amp;lang=en">Argentina (1536–2026)</a></li></ul>
+    </div>
+  </noscript>
+  <!-- seo:end -->
   <div id="loading"><div class="globe"></div><div class="lt">世界國家演變</div><div class="bar"><i id="loadBar"></i></div><div class="msg" id="loadMsg">載入中… Loading…</div></div>
   <script>
     // if loading fails, say so instead of spinning forever

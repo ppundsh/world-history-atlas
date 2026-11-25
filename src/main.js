@@ -668,6 +668,7 @@ async function setMode(mode) {
   const prev = st.mode;
   if (isChina()) st.cmBy[prev] = st.cm;
   st.mode = mode;
+  updateSeo();
   cardOffsets.clear(); closedCards.clear(); setPick(null); setPickLine(null);                                 // cards moved by hand go back to their own places
   st.transition = 'jump';
   st.selected = null; app.selectedProv = null; hideInfo();
@@ -1166,10 +1167,32 @@ function buildUI() {
   window.addEventListener('resize', drawSpark);
 }
 
+// the page's title, description and canonical address for the current mode and language (search engines read
+// the page as the app draws it; link previews read the static tags in index.html)
+function setHead(sel, attr, v) { const el = document.head.querySelector(sel); if (el && el.getAttribute(attr) !== v) el.setAttribute(attr, v); }
+function updateSeo() {
+  const SITE = 'https://ppundsh.github.io/world-history-atlas/';     // the published site (runs before module constants are set)
+  const s = t(st.lang), world = st.mode === 'world', name = s.modes[st.mode] || '';
+  const title = world ? `${s.title} — ${s.subtitle}` : `${name}${s.seoMap} — ${s.title}`;
+  const desc = world ? s.seoDesc : REGIONS.includes(st.mode) ? s.seoMode(name) : s.seoTheme(name);
+  if (document.title !== title) document.title = title;
+  setHead('meta[name="description"]', 'content', desc);
+  setHead('meta[property="og:title"]', 'content', title); setHead('meta[property="og:description"]', 'content', desc);
+  setHead('meta[name="twitter:title"]', 'content', title); setHead('meta[name="twitter:description"]', 'content', desc);
+  const q = new URLSearchParams(); if (!world && st.mode !== 'fgo') q.set('m', st.mode); if (app.queryLang) q.set('lang', st.lang);
+  const href = SITE + (q.toString() ? '?' + q : '');
+  setHead('link[rel="canonical"]', 'href', href); setHead('meta[property="og:url"]', 'content', href);
+  // the language versions of this mode
+  for (const l of ['zh-Hant', 'zh-Hans', 'en', 'ja']) {
+    const a = new URLSearchParams(); if (!world && st.mode !== 'fgo') a.set('m', st.mode); a.set('lang', l);
+    setHead(`link[rel="alternate"][hreflang="${l}"]`, 'href', SITE + '?' + a);
+  }
+  setHead('link[rel="alternate"][hreflang="x-default"]', 'href', SITE + (!world && st.mode !== 'fgo' ? '?m=' + st.mode : ''));
+}
 function applyLang() {
   const s = t(st.lang);
   document.documentElement.lang = st.lang;
-  document.title = s.title + ' — ' + s.subtitle;
+  updateSeo();
   $('#title').textContent = s.title;
   $('#subtitle').textContent = s.subtitle;
   for (const [id, key] of [['#l-lang', 'language'], ['#l-proj', 'projection'], ['#l-base', 'basemap'], ['#l-pov', 'pov'], ['#l-labels', 'labels'], ['#l-borders', 'borders'], ['#l-rivers', 'rivers'], ['#l-graticule', 'graticule'], ['#l-speed', 'speed'],
@@ -2122,6 +2145,10 @@ function drawSparkCursor() {
 
 // ---------------------------------------------------------------- shareable URL (#y=1400&p=robinson…)
 function readHash() {
+  // ?m=taiwan&lang=en: the addresses search engines know (sitemap.xml); the #… state of a shared link wins over them
+  const q = new URLSearchParams(location.search);
+  if (MODES.includes(q.get('m')) && q.get('m') !== 'fgo') st.mode = q.get('m');
+  if (LANGS.some(l => l.id === q.get('lang'))) { st.lang = q.get('lang'); st.langInfo = LANGS.find(l => l.id === st.lang); app.queryLang = true; }
   const h = new URLSearchParams(location.hash.slice(1));
   if (h.has('y')) st.year = +h.get('y');
   if (PROJECTIONS.includes(h.get('p'))) st.projection = h.get('p');

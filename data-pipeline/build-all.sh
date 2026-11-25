@@ -141,3 +141,4 @@ node data-pipeline/econ/build-econ.mjs
 node data-pipeline/econ/build-compare.mjs "$NE"
 node data-pipeline/growth/build-growth.mjs
 python3 data-pipeline/compare/outlines.py "$NE"
+node data-pipeline/seo/build-seo.mjs

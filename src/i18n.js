@@ -10,6 +10,9 @@ export const LANGS = [
 const S = {
   'zh-Hant': {
     title: '世界國家演變', subtitle: '互動式歷史地圖',
+    seoDesc: '互動式世界歷史地圖：從西元前 3400 年到 2026 年，逐年看全世界國家疆域、政權與首都的演變；另有台灣、中國、日本、韓國、美國等 25 個國家與時期的逐月地圖，以及宗教、政體、語言、藝術、金融、網際網路與人為災害等主題。可切換地圖投影與 3D 地球，支援繁中、簡中、英文、日文。',
+    seoTheme: n => `「${n}」主題的互動式世界歷史地圖：隨時間軸呈現全世界的分布與變化，附維基百科說明與資料來源。`,
+    noJs: '這個網站需要開啟 JavaScript 才能顯示互動地圖。', seoMap: '歷史地圖', seoMode: n => `${n}的互動式歷史地圖：隨時間軸呈現疆域、政權、行政區劃、重大建設與事件的變化，附維基百科說明與資料來源。`,
     play: '播放', pause: '暫停', speed: '速度', year: '年份', countries: '國家數',
     projection: '投影', basemap: '底圖', pov: '爭議區觀點', language: '語言', music: '音樂', volume: '音量',
     labels: '國名', borders: '國界', rivers: '河流', graticule: '經緯線',
@@ -74,6 +77,9 @@ const S = {
   },
   'zh-Hans': {
     title: '世界国家演变', subtitle: '交互式历史地图',
+    seoDesc: '交互式世界历史地图：从公元前 3400 年到 2026 年，逐年看全世界国家疆域、政权与首都的演变；另有台湾、中国、日本、韩国、美国等 25 个国家与时期的逐月地图，以及宗教、政体、语言、艺术、金融、互联网与人为灾害等主题。可切换地图投影与 3D 地球，支持繁中、简中、英文、日文。',
+    seoTheme: n => `「${n}」主题的交互式世界历史地图：随时间轴呈现全世界的分布与变化，附维基百科说明与数据来源。`,
+    noJs: '这个网站需要开启 JavaScript 才能显示交互地图。', seoMap: '历史地图', seoMode: n => `${n}的交互式历史地图：随时间轴呈现疆域、政权、行政区划、重大建设与事件的变化，附维基百科说明与数据来源。`,
     play: '播放', pause: '暂停', speed: '速度', year: '年份', countries: '国家数',
     projection: '投影', basemap: '底图', pov: '争议区视角', language: '语言', music: '音乐', volume: '音量',
     labels: '国名', borders: '国界', rivers: '河流', graticule: '经纬线',
@@ -138,6 +144,9 @@ const S = {
   },
   en: {
     title: "How the World's Countries Changed", subtitle: 'An interactive historical atlas',
+    seoDesc: "An interactive historical atlas of the world from 3400 BC to 2026: watch every country's borders, governments and capitals change year by year, with month-by-month maps of 25 countries and periods including Taiwan, China, Japan, Korea and the United States, and themes on religion, regimes, languages, art, finance, the Internet and man-made disasters. Many map projections and a 3D globe; in English, Chinese and Japanese.",
+    seoTheme: n => `An interactive world history map on the theme "${n}": how it spread and changed across the world along the timeline, with Wikipedia summaries and sources.`,
+    noJs: 'This site needs JavaScript to show the interactive map.', seoMap: ': historical map', seoMode: n => `An interactive historical map of ${n}: borders, governments, administrative divisions, major works and events changing along the timeline, with Wikipedia summaries and sources.`,
     play: 'Play', pause: 'Pause', speed: 'Speed', year: 'Year', countries: 'Countries',
     projection: 'Projection', basemap: 'Base map', pov: 'Disputed areas as seen by', language: 'Language', music: 'Music', volume: 'Volume',
     labels: 'Names', borders: 'Borders', rivers: 'Rivers', graticule: 'Graticule',
@@ -202,6 +211,9 @@ const S = {
   },
   ja: {
     title: '世界の国々の変遷', subtitle: 'インタラクティブ歴史地図',
+    seoDesc: 'インタラクティブな世界歴史地図：紀元前 3400 年から 2026 年まで、世界の国々の領域・政権・首都の移り変わりを年ごとに表示。台湾・中国・日本・韓国・アメリカなど 25 の国と時代の月ごとの地図や、宗教・政体・言語・美術・金融・インターネット・人為的災害のテーマも。地図投影の切り替えと 3D 地球、日本語・英語・中国語に対応。',
+    seoTheme: n => `「${n}」をテーマにしたインタラクティブ世界歴史地図：時間軸に沿って世界の分布と変化を表示し、ウィキペディアの解説と出典を添えています。`,
+    noJs: 'インタラクティブ地図の表示には JavaScript が必要です。', seoMap: 'の歴史地図', seoMode: n => `${n}のインタラクティブ歴史地図：時間軸に沿って領域・政権・行政区画・主要な建設と出来事の変化を表示し、ウィキペディアの解説と出典を添えています。`,
     play: '再生', pause: '一時停止', speed: '速度', year: '年', countries: '国の数',
     projection: '図法', basemap: 'ベースマップ', pov: '係争地の見解', language: '言語', music: '音楽', volume: '音量',
     labels: '国名', borders: '国境', rivers: '河川', graticule: '経緯線',

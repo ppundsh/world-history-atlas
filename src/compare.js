@@ -30,6 +30,23 @@ const PAIRS = [['基隆', '鵝鑾鼻'], ['台北', '高雄'], ['台中', '花蓮
 
 // The floating shape is Taiwan by default; while a country is pinned it is that country (its borders in the
 // pinned year), and Taiwan again once it is unpinned. Only Taiwan has the city-distance view.
+// the centre of a country's largest piece of land: the centroid of all its pieces would be pulled out to sea by
+// far-off islands (Okinawa, Hawaii, Kerguelen…), and the comparison circle and the dragged shape centre there
+function polysOf(g) {
+  if (!g) return [];
+  if (g.type === 'FeatureCollection') return g.features.flatMap(polysOf);
+  if (g.type === 'Feature') return polysOf(g.geometry);
+  if (g.type === 'GeometryCollection') return g.geometries.flatMap(polysOf);
+  return g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
+}
+function mainCentroid(g) {
+  let best = null, bestA = -1;
+  for (const c of polysOf(g)) {
+    const p = { type: 'Polygon', coordinates: c }, a0 = geoArea(p), a = Math.min(a0, 4 * Math.PI - a0);
+    if (a > bestA) { bestA = a; best = p; }
+  }
+  return best ? geoCentroid(best) : geoCentroid(g);
+}
 export class TaiwanCompare {
   constructor(app) { this.app = app; this.on = false; this.center = null; this.custom = null; }
   // The default shape is the visitor's own country, from the browser's languages (a region subtag such as en-GB
@@ -39,10 +56,10 @@ export class TaiwanCompare {
     const iso = await homeCountry();
     if (iso && iso !== 'TWN') {
       const f = await fetch(BASE + 'outlines/' + iso + '.json').then(r => r.ok ? r.json() : null).catch(() => null);
-      if (f) { this.tw = { shape: f, cities: null, home: geoCentroid(f), km2: geoArea(f) * R * R, name: null, names: f.n, q: f.q }; this.apply(); return; }
+      if (f) { this.tw = { shape: f, cities: null, home: mainCentroid(f), km2: geoArea(f) * R * R, name: null, names: f.n, q: f.q }; this.apply(); return; }
     }
     const f = await fetch(BASE + 'taiwan_outline.json').then(r => r.json());
-    this.tw = { shape: f, cities: f.cities, home: geoCentroid(f), km2: geoArea(f) * R * R, name: null, names: null, q: 'Q865' };
+    this.tw = { shape: f, cities: f.cities, home: mainCentroid(f), km2: geoArea(f) * R * R, name: null, names: null, q: 'Q865' };
     this.apply();
   }
   // feats: the pinned country's features (or null for Taiwan); name: its name
@@ -50,7 +67,7 @@ export class TaiwanCompare {
     const polys = (feats || []).flatMap(f => f.geometry?.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry?.type === 'MultiPolygon' ? f.geometry.coordinates : []);
     this.custom = polys.length ? (() => {
       const shape = { type: 'Feature', properties: {}, geometry: { type: 'MultiPolygon', coordinates: polys } };
-      return { shape, cities: null, home: geoCentroid(shape), km2: geoArea(shape) * R * R, name };
+      return { shape, cities: null, home: mainCentroid(shape), km2: geoArea(shape) * R * R, name };
     })() : null;
     this.apply();
   }
@@ -123,7 +140,7 @@ export class TaiwanCompare {
       ctx.setLineDash([4, 3]); ctx.lineWidth = 2; ctx.strokeStyle = '#0b2a7a'; ctx.stroke(); ctx.setLineDash([]);
       ctx.beginPath(); ctx.arc(cc[0], cc[1], 2.5, 0, 2 * Math.PI); ctx.fillStyle = '#0b2a7a'; ctx.fill();
     }
-    const c = project(geoCentroid(m.feature));   // label above the shape
+    const c = project(mainCentroid(m.feature));   // label above the shape (its main piece)
     const col = { en: 0, 'zh-Hant': 1, 'zh-Hans': 2, ja: 3 }[lang] ?? 0;
     const base = this.baseName || (this.baseNames ? this.baseNames[col] || this.baseNames[0] : t.twBase);
     let text = t.twCompareDrag(base);

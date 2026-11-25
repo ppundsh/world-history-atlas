@@ -21,7 +21,7 @@ hsr	kr_honam_hsr	2015-04		127.32,36.62 127.12,35.97 126.79,35.14	湖南高鐵	Ho
 bridge	kr_incheonbr	2009-10		126.48,37.44 126.62,37.38	仁川大橋	Incheon Bridge	仁川大橋	連接松島與機場的 21 公里跨海大橋。	A 21 km sea bridge from Songdo to the airport.	松島と空港を結ぶ海上橋。	仁川大橋	Incheon Bridge
 water	kr_saemangeum	2010-04		126.52,35.8	新萬金防潮堤	Saemangeum Seawall	セマングム防潮堤	世界最長防潮堤，圍海造地爭議不斷。	The world's longest seawall; the reclamation remains contested.	世界最長の防潮堤。	新萬金防潮堤	Saemangeum Seawall
 space	kr_naro	2013-01		127.53,34.43	羅老號火箭發射成功	Naro rocket launch succeeds	羅老号打ち上げ成功	羅老宇宙中心。	From the Naro Space Center.	羅老宇宙センター。	羅老宇宙中心	Naro Space Center
-cable	kr_kjcn	2002-03		130.9,33.957 130.5,34.312 128.999,35.17 130.05,34.312 130.402,33.59	韓日光纜（KJCN）	Korea–Japan Cable Network	韓日光ケーブル（KJCN）	釜山—福岡。	Busan to Fukuoka.	釜山—福岡。		
+cable	kr_kjcn	2002-03		131.032,33.84 130.5,34.312 128.999,35.17 130.05,34.312 130.402,33.59	韓日光纜（KJCN）	Korea–Japan Cable Network	韓日光ケーブル（KJCN）	釜山—福岡。	Busan to Fukuoka.	釜山—福岡。		
 fiber	kr_kornet	1999-06		126.97,37.55 127.43,36.35 128.6,35.88 129.04,35.12 126.85,35.15 127.43,36.35	超高速網際網路（ADSL）普及	Broadband rollout (ADSL)	超高速インターネット普及	韓國成為寬頻普及率最高的國家之一。	Korea became one of the most connected countries.	ブロードバンド普及率世界トップ級に。	韓國網際網路	Internet in South Korea
 bridge	kr_hangang_br	1917-10		126.96,37.517	漢江人道橋	Hangang Bridge	漢江人道橋	漢城第一座跨漢江的道路橋。	Seoul's first road bridge over the Han.	ソウル最初の漢江道路橋。	漢江大橋	Hangang Bridge
 highway	kp_pyongkae	1992-01		125.75,39.03 126.0,38.6 126.55,37.97	平壤—開城高速公路	Pyongyang–Kaesong Motorway	平壌—開城高速道路	北韓南北向的主要高速公路。	North Korea's main north–south motorway.	北朝鮮の幹線道路。	平壤-开城高速公路	Pyongyang–Kaesong Motorway
