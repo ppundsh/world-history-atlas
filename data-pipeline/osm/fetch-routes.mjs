@@ -16,6 +16,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { line } from '../lib/progress.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const DP = path.join(ROOT, 'data-pipeline');
 const CACHE = path.join(DP, 'sources', 'osm');
@@ -193,7 +194,7 @@ async function fetchAll(refs) {
   const need = [...new Set(refs)].filter(r => REFRESH || !fs.existsSync(cacheFile(r)));
   for (let i = 0; i < need.length; i += BATCH) {
     const batch = need.slice(i, i + BATCH);
-    process.stdout.write(`\rOverpass 路線關係 ${Math.min(i + BATCH, need.length)}/${need.length}（${batch.join(' ')}）…      `);
+    line(`Overpass 路線關係 ${Math.min(i + BATCH, need.length)}/${need.length}（${batch.join(' ')}）…`);
     let res = await overpass(batch);
     if (!res) { note('合併查詢沒有結果，改逐條查詢'); res = {}; for (const r of batch) Object.assign(res, await overpass([r]) || {}); }   // one by one
     // an item the server cannot answer is remembered as failed (its line then uses the corridor network); --refresh retries it
@@ -257,7 +258,7 @@ async function fetchCorridors(list) {
   const B = 1;                                      // one line per request: corridor answers are large
   for (let i = 0; i < need.length; i += B) {
     const batch = need.slice(i, i + B);
-    process.stdout.write(`\rOverpass 沿線路網 ${Math.min(i + B, need.length)}/${need.length}（${batch.map(w => w.id).join(' ')}）…      `);
+    line(`Overpass 沿線路網 ${Math.min(i + B, need.length)}/${need.length}（${batch.map(w => w.id).join(' ')}）…`);
     const run = async ws => {
       const q = `[out:json][timeout:${TIMEOUT - 20}][maxsize:536870912];` + ws.map(corQuery).join('');
       for (const ep of OVERPASS) {

@@ -15,3 +15,7 @@ public/offline/img/
 # FGO custom pictures stay on this computer only (see data-pipeline/fgo/CUSTOM_IMAGES.md)
 public/fgo/custom/*
 !public/fgo/custom/.gitkeep
+
+# fetch-offline.ps1 -Watch 的待命請求與輸出紀錄
+data-pipeline/.run-request
+data-pipeline/logs/

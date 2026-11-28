@@ -4,34 +4,34 @@
 #        ind 無黨籍（黨外）, appt 官派, mil 戰地政務
 K, D, I, C, Y, T, P, N = 'kmt', 'dpp', 'ind', 'cdsp', 'ycp', 'tpp', 'pfp', 'np'
 START = ['1951-01', '1954-06', '1957-06', '1960-06', '1964-06', '1968-06', '1973-02', '1977-12', '1981-12', '1985-12',
-         '1989-12', '1993-12', '1997-12', '2001-12', '2005-12', '2009-12', '2014-12', '2018-12', '2022-12']
-# terms 1–19 per county (None = no such office); a pair = the party changed during the term (see MID)
+         '1989-12', '1993-12', '1997-12', '2001-12', '2005-12', '2009-12', '2014-12', '2018-12', '2022-12', '2026-12']
+# terms 1–20 per county (term 20 = 2026 election; 雲林縣 provisional: 劉建國 led by 187 votes with 637/638 stations in, a recount is likely) (None = no such office); a pair = the party changed during the term (see MID)
 T1 = {
  'r_taipei_co':    [K,K,K,K,K,K,K,K,K,K, D,D,D,D,K, None,None,None,None],
  'r_tpe_c':        [I,I,K,K,I, None,None,None,None,None, None,None,None,None,None,None,None,None,None],
- 'r_keelung_c':    [K,K,K,C,(C,K),K,K,K,K,K, K,K,D,K,K,K,D,D,K],
- 'r_yilan':        [K,K,K,K,K,K,K,K,I,I, D,D,D,D,K,D,D,K,K],
+ 'r_keelung_c':    [K,K,K,C,(C,K),K,K,K,K,K, K,K,D,K,K,K,D,D,K, K],
+ 'r_yilan':        [K,K,K,K,K,K,K,K,I,I, D,D,D,D,K,D,D,K,K, D],
  'r_taoyuan_co':   [K,K,K,K,K,K,K,I,K,K, K,(K,D),D,K,K,K,None,None,None],
- 'r_hsinchu_co':   [K,K,K,K,K,I,K,K,K,K, D,D,D,K,K,K,K,K,K],
- 'r_hsinchu_c':    [None]*8 + [I,K, K,K,D,K,K,K,D,D,T],
- 'r_miaoli':       [K,K,K,K,K,K,K,K,K,K, K,I,I,I,K,K,K,K,I],
+ 'r_hsinchu_co':   [K,K,K,K,K,I,K,K,K,K, D,D,D,K,K,K,K,K,K, D],
+ 'r_hsinchu_c':    [None]*8 + [I,K, K,K,D,K,K,K,D,D,T, I],
+ 'r_miaoli':       [K,K,K,K,K,K,K,K,K,K, K,I,I,I,K,K,K,K,I, K],
  'r_taichung_co':  [K,K,K,K,K,K,K,K,K,K, K,K,D,K,K, None,None,None,None],
  'r_taichung_c':   [I,K,K,K,K,I,K,I,K,K, K,K,D,K,K, None,None,None,None],
- 'r_changhua':     [K,K,K,K,K,K,K,K,I,I, D,K,K,D,K,K,D,K,K],
- 'r_nantou':       [K,K,K,K,K,K,K,K,K,K, K,K,I,D,K,K,K,K,K],
- 'r_yunlin':       [K,K,K,K,K,K,K,K,K,K, K,K,(K,I),K,D,D,D,K,K],
- 'r_chiayi_co':    [K,I,K,K,K,K,K,K,K,K, K,K,K,D,D,D,D,D,D],
- 'r_chiayi_c':     [None]*8 + [I,I, I,I,I,I,K,K,D,K,K],
+ 'r_changhua':     [K,K,K,K,K,K,K,K,I,I, D,K,K,D,K,K,D,K,K, D],
+ 'r_nantou':       [K,K,K,K,K,K,K,K,K,K, K,K,I,D,K,K,K,K,K, K],
+ 'r_yunlin':       [K,K,K,K,K,K,K,K,K,K, K,K,(K,I),K,D,D,D,K,K, D],
+ 'r_chiayi_co':    [K,I,K,K,K,K,K,K,K,K, K,K,K,D,D,D,D,D,D, D],
+ 'r_chiayi_c':     [None]*8 + [I,I, I,I,I,I,K,K,D,K,K, D],
  'r_tainan_co':    [K,K,K,K,K,K,K,K,K,K, K,D,D,D,D, None,None,None,None],
  'r_tainan_c':     [I,K,I,K,I,K,K,I,I,K, K,K,D,D,D, None,None,None,None],
  'r_kaohsiung_co': [K,K,K,I,K,K,K,I,K,I, D,D,D,D,D, None,None,None,None],
  'r_kaohsiung_c':  [K,K,K,K,K,C,K,K, None,None, None,None,None,None,None,None,None,None,None],
- 'r_pingtung':     [K,K,K,K,K,K,K,K,I,K, D,K,D,D,D,D,D,D,D],
- 'r_hualien':      [C,K,K,K,K,K,K,K,K,K, K,K,K,K,K,I,I,K,K],
- 'r_taitung':      [K,K,Y,K,K,K,K,K,K,K, K,K,K,P,(I,K),K,K,K,K],
- 'r_penghu':       [K,K,K,K,K,K,K,K,K,K, (K,D),D,K,K,K,K,D,K,D],
- 'r_kinmen':       [None]*11 + [K,K,N,N,K,I,K,(I,T)],
- 'r_lianjiang':    [None]*11 + [K,K,P,P,K,K,K,K],
+ 'r_pingtung':     [K,K,K,K,K,K,K,K,I,K, D,K,D,D,D,D,D,D,D, D],
+ 'r_hualien':      [C,K,K,K,K,K,K,K,K,K, K,K,K,K,K,I,I,K,K, K],
+ 'r_taitung':      [K,K,Y,K,K,K,K,K,K,K, K,K,K,P,(I,K),K,K,K,K, K],
+ 'r_penghu':       [K,K,K,K,K,K,K,K,K,K, (K,D),D,K,K,K,K,D,K,D, K],
+ 'r_kinmen':       [None]*11 + [K,K,N,N,K,I,K,(I,T), K],
+ 'r_lianjiang':    [None]*11 + [K,K,P,P,K,K,K,K, K],
 }
 # dated mid-term changes (Wikipedia lists of county heads)
 MID = {('r_keelung_c', 5): '1965-10', ('r_taoyuan_co', 12): '1997-03', ('r_yunlin', 13): '1999-11',
@@ -54,10 +54,13 @@ rows += [('r_yms', '1949-08', 'appt'),
  ('r_newtaipei', '2010-12', K), ('r_taichung_d', '2010-12', K), ('r_taichung_d', '2014-12', D), ('r_taichung_d', '2018-12', K),
  ('r_tainan_d', '2010-12', D), ('r_taoyuan_d', '2014-12', D), ('r_taoyuan_d', '2022-12', K),
  # 新竹市：高虹安 2024-07 一審後退出民眾黨並停職（民眾黨籍副市長邱臣遠代理），2025-12 二審改判無罪後以無黨籍復職
- ('r_hsinchu_c', '2025-12', I)]
+ ('r_hsinchu_c', '2025-12', I),
+ # 2026 年 11 月 28 日選舉，12 月 25 日就職（各媒體開票結果；中選會公告後再核對）
+ ('r_tpe_d', '2026-12', K), ('r_newtaipei', '2026-12', K), ('r_taoyuan_d', '2026-12', K), ('r_taichung_d', '2026-12', D),
+ ('r_tainan_d', '2026-12', D), ('r_kaohsiung_d', '2026-12', D)]
 rows.sort()
 with open('data-pipeline/taiwan/party.tsv', 'w') as f:
     f.write('# 台灣模式「政黨執政」：各縣市首長所屬政黨（由 party_build.py 產生）。欄位：行政區 id\t起(年-月)\t政黨代碼\n')
-    f.write('# 來源：維基百科「中華民國歷屆縣市長選舉政黨版圖」及各縣市首長列表（2026-11-21 擷取）。屆期起始以就職月份計，任內改變依各縣市首長列表。\n')
+    f.write('# 來源：維基百科「中華民國歷屆縣市長選舉政黨版圖」及各縣市首長列表（2026-11-21 擷取）；2026 年選舉結果依 2026-11-28 各媒體開票報導（雲林縣為中選會 637/638 所開票時的暫定結果）；中選會 12 月 4 日公告後再核對。屆期起始以就職月份計，任內改變依各縣市首長列表。\n')
     for r in rows: f.write('\t'.join(r) + '\n')
 print(len(rows))

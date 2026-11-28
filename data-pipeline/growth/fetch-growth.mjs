@@ -13,6 +13,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
+import { line } from '../lib/progress.mjs';
 const DP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(DP, 'growth'), CACHE = path.join(DP, 'sources', 'growth'), CCACHE = path.join(CACHE, 'cables');
 const args = process.argv.slice(2), REFRESH = args.includes('--refresh');
@@ -77,7 +78,7 @@ if (!args.includes('--no-cables')) {
         else if (r.ok) { const j = await r.json(); fs.writeFileSync(path.join(CCACHE, id + '.json'), JSON.stringify({ id, rfs: j.rfs ?? null, rfs_year: j.rfs_year ?? null, is_planned: j.is_planned ?? null, length: j.length ?? null })); }
         else fail++;
       } catch { fail++; }
-      if (++n % 25 === 0) process.stdout.write(`  ${n}/${todo.length}\r`);
+      if (++n % 25 === 0) line(`  ${n}/${todo.length}`);
       if (fail > 20) { console.log('\n  失敗太多次，先停止；稍後再執行會從中斷處繼續。'); break; }
       await sleep(DELAY);
     }

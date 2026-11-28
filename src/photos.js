@@ -39,6 +39,24 @@ export function altPhoto(title, wl = 'en', width = 480) {
 
 // a photograph of a country (by Wikidata id); sitelink: [title, wiki language] of its article, if known
 const countries = new Map();
+// a country's Wikidata item (claims and the zh/en/ja sitelinks), fetched once for its photo and its native name
+const entities = new Map();
+function entityOf(qid) {
+  if (!entities.has(qid)) entities.set(qid, fetch('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&origin=*&props=claims|sitelinks&sitefilter=zhwiki|enwiki|jawiki&ids=' + qid)
+    .then(r => r.json()).then(j => j.entities?.[qid] || null).catch(() => null));
+  return entities.get(qid);
+}
+// a country's name in its own language: native label (P1705), else official name (P1448); [text, language]
+export async function nativeName(qid) {
+  if (!/^Q\d+$/.test(qid || '') || await isOffline()) return null;
+  const e = await entityOf(qid); if (!e) return null;
+  for (const pid of ['P1705', 'P1448']) {
+    const c = (e.claims?.[pid] || []).filter(c => c.mainsnak?.datavalue?.value?.text && c.rank !== 'deprecated' && !c.qualifiers?.P582)
+      .sort((a, b) => (b.rank === 'preferred') - (a.rank === 'preferred'))[0];
+    if (c) { const v = c.mainsnak.datavalue.value; return [v.text, v.language]; }
+  }
+  return null;
+}
 export function countryPhoto(qid, width = 480) {
   if (!/^Q\d+$/.test(qid || '')) return Promise.resolve(null);
   if (!countries.has(qid)) countries.set(qid, (async () => {
@@ -46,8 +64,7 @@ export function countryPhoto(qid, width = 480) {
       const f = await offlineFile((await offlineJson('countries.json'))?.[qid]);
       return f && { thumb: f.thumb, page: f.page, credit: f.credit };
     }
-    const j = await (await fetch('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&origin=*&props=claims|sitelinks&sitefilter=zhwiki|enwiki|jawiki&ids=' + qid)).json();
-    const e = j.entities?.[qid]; if (!e) return null;
+    const e = await entityOf(qid); if (!e) return null;
     const vals = pid => (e.claims?.[pid] || []).filter(c => c.mainsnak?.datavalue?.value && c.rank !== 'deprecated')
       .sort((a, b) => (b.rank === 'preferred') - (a.rank === 'preferred')).map(c => c.mainsnak.datavalue.value);
     for (const f of [...vals('P18'), ...vals('P948')]) if (!MAPLIKE.test(f)) { const i = await commonsInfo(f, width); if (i) return i; }

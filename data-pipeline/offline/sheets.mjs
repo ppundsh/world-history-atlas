@@ -13,6 +13,7 @@ import { cpus } from 'node:os';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
+import { line } from '../lib/progress.mjs';
 const WORKERS = Math.max(1, +(process.env.SHEET_WORKERS || 0) || Math.min(16, cpus().length));
 // sharp runs on libuv's thread pool (4 threads unless raised before it is first used): give each sheet its own thread
 if (!process.env.UV_THREADPOOL_SIZE) process.env.UV_THREADPOOL_SIZE = String(Math.max(4, WORKERS + 2));
@@ -135,7 +136,7 @@ for (const [, group] of bins) for (let i = 0; i < group.length; i += PER_SHEET) 
   sheets.push({ f, key, y0: ys.length ? Math.min(...ys) : null, y1: ys.length ? Math.max(...ys) : null, n: part.length });
   for (const p of order) atOut[p.name.replace(/\.webp$/, '')] = [s, p.x, p.y, p.w, p.h];
 }
-const show = () => process.stdout.write(`\r合併中 ${done}/${list.length}（新做 ${made}/${jobs.length} 張大圖，沿用 ${kept} 張）   `);
+const show = () => line(`合併中 ${done}/${list.length}（新做 ${made}/${jobs.length} 張大圖，沿用 ${kept} 張）`);
 show();
 await pool(jobs, WORKERS, async j => {
   await sharp({ create: { width: j.W, height: j.H, channels: 3, background: '#ffffff' } })

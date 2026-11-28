@@ -13,6 +13,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
+import { line } from '../lib/progress.mjs';
 const DP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'), ROOT = path.resolve(DP, '..');
 const OUT_R = path.join(ROOT, 'public', 'relief'), OLD_T = path.join(ROOT, 'public', 'terrain'), CACHE = path.join(DP, 'sources', 'terrain');
 const SRC = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
@@ -117,7 +118,7 @@ for (const { id, box, note } of boxes) {
     for (let y = r.y0; y <= r.y1; y++) for (let x = r.x0; x <= r.x1; x++) {
       const px = await render(z, x, y, box);
       if (px) { await webp(px, path.join(OUT_R, id, String(z), String(x), y + '.webp')); written++; }
-      process.stdout.write(`\r${id}（${note}）層級 ${ZMIN}–${zmax}：${++done}/${total}，已下載 ${requests} 張高程圖磚      `);
+      line(`${id}（${note}）層級 ${ZMIN}–${zmax}：${++done}/${total}，已下載 ${requests} 張高程圖磚`);
     }
   }
   fs.writeFileSync(path.join(OUT_R, id, 'meta.json'), JSON.stringify({ v: V, bounds: box, minzoom: ZMIN, maxzoom: zmax, ext: 'webp' }));

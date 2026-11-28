@@ -19,7 +19,7 @@ import { Capture } from './capture.js';
 import { eventInfo, eventKey, wikidataPlace } from './eventinfo.js';
 import { addPulse, setPulseThumb, pulsesActive, clearPulses, removePulse, holdPulse, removePulses, setPulseSize, setPulsesPaused } from './eventdots.js';
 import { loadCapitals, capitalsReady, cityThumb, capitalOf, flagOf } from './capitals.js';
-import { countryPhoto } from './photos.js';
+import { countryPhoto, nativeName } from './photos.js';
 import { pageImage, pagePicture, figureHtml, setPageImageListener } from './pageimage.js';
 import { classIconSvg } from './classicon.js';
 import { loadEcon, econData, FUEL, ZONE } from './econ.js';
@@ -100,11 +100,17 @@ const BEARINGS = { n: 0, e: 90, s: 180, w: -90 };          // MapLibre bearing t
 // the events of the timeline, the event table and the event places: the world mode has the world's events; the
 // other global modes have their own (if any) and, with the "world events" switch on, the world's too
 const GLOBAL_MODES = ['religion', 'regime', 'art', 'language', 'finance', 'internet', 'disaster', 'fgo'];
+function ownEvents() {
+  const T = themeOf(st.mode);
+  return T?.events ? T.events.map(e => T.pointsAlways ? { ...e, servant: true } : e)     // fgo: each Servant's original
+    : MODE_EV[st.mode] || [];                            // religion, regime, art: their own events (events_<mode>.tsv)
+}
+// the world events in a global thematic mode: off unless switched on, except in a mode without events of its own
+// (whose timeline would otherwise be empty)
+function worldEvOn() { return st.worldEv ?? !(themeOf(st.mode)?.events?.length || MODE_EV[st.mode]?.length); }
 function evList() {
   if (!GLOBAL_MODES.includes(st.mode)) return EVENTS;
-  const T = themeOf(st.mode), world = st.worldEv !== false;
-  const own = T?.events ? T.events.map(e => T.pointsAlways ? { ...e, servant: true } : e)     // fgo: each Servant's original
-    : MODE_EV[st.mode] || [];                            // religion, regime, art: their own events (events_<mode>.tsv)
+  const world = worldEvOn(), own = ownEvents();
   if (!world) return own;
   const from = themeSeg()?.[0][0] ?? -Infinity;       // a mode with its own timeline: none from before it starts
   if (!own.length) return from > -Infinity ? EVENTS.filter(e => e.y >= from) : EVENTS;
@@ -126,7 +132,7 @@ const app = {
     projBy: safeGet('projBy') || 'surface', density: +(safeGet('density') || 0.85),
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
-    cmpCross: safeGet('cmpCross') === '1', minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', worldEv: safeGet('worldEv') !== '0', evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', backbone: safeGet('backbone') === '1', plants: safeGet('plants') === '1', zones: safeGet('zones') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
+    cmpCross: safeGet('cmpCross') === '1', minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', worldEv: safeGet('worldEv') == null ? null : safeGet('worldEv') === '1' /* null: not chosen yet, see worldEvOn */, evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', backbone: safeGet('backbone') === '1', plants: safeGet('plants') === '1', zones: safeGet('zones') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
     labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), cableW: +(safeGet('cableW') || 1), cableStyle: safeGet('cableStyle') || 'shade', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
@@ -838,6 +844,7 @@ function capitalPictures(F) {
 function syncMarkMenu() {
   const s = t(st.lang); let any = false;
   for (const el of $('#modeMarks').querySelectorAll('[data-modes]')) { const on = el.dataset.modes.split(' ').includes(st.mode); el.hidden = !on; any ||= on; }
+  $('#t-worldEv').checked = worldEvOn();
   $('#modeMarks').hidden = !any;
   $('#l-markMode').textContent = s.markMode(s.modes[st.mode] || '');
   const th = s.theme[st.mode];
@@ -933,7 +940,7 @@ function buildUI() {
   };
   $('#pov').onchange = e => { st.pov = e.target.value; redraw(); writeHash(); };
   for (const k of ['labels', 'labelsIn', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'borders', 'rivers', 'graticule', 'modern', 'distort', 'relief', 'twCompare', 'evTable', 'minFont', 'animate', 'events', 'worldEv']) {
-    const el = $('#t-' + k); el.checked = st[k];
+    const el = $('#t-' + k); el.checked = k === 'worldEv' ? worldEvOn() : !!st[k];
     el.onchange = async () => {
       st[k] = el.checked;
       if (['modern', 'minFont', 'animate', 'events', 'relief', 'labelsIn', 'distort', 'evTable', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'worldEv'].includes(k)) safeSet(k, el.checked ? '1' : '0');
@@ -1078,7 +1085,7 @@ function buildUI() {
       if (visualViewport.scale > 1.02) tm = setTimeout(() => { const m = document.querySelector('meta[name=viewport]'); const c = m.content; m.content = c + ' '; m.content = c; }, 1500);
     });
   }
-  $('#aboutBtn').onclick = () => { $('#about').hidden = false; };
+  $('#aboutBtn').onclick = () => { $('#about').hidden = false; renderWikiStats(); };
   // About: close with the × (always visible), the button at the end, a click outside the card, or Esc
   const closeAbout = () => { $('#about').hidden = true; };
   $('#aboutClose').onclick = closeAbout; $('#aboutX').onclick = closeAbout;
@@ -1251,6 +1258,7 @@ function applyLang() {
   $('#aboutQuoteBy').textContent = s.aboutQuoteBy;
   $('#aboutHint').textContent = s.aboutHint;
   $('#countNote').textContent = s.countNote;
+  if (!$('#about').hidden) renderWikiStats();
   $('#countBox').title = s.countNote;
   $('#trackInfo').textContent = music.current() ? `♪ ${music.current().title}` : '';
   refreshMusic();
@@ -1362,6 +1370,57 @@ function spanText(id) {
 }
 // Wikipedia in the reader's language: through Wikidata when the polity has an item, else a title search
 // (which opens the article directly when the title matches)
+// the name in the original language under a card's title: the local-language article's title (w[3]), when it
+// differs from the title shown
+function origName(w, shown) {
+  const n = w?.[3], i = n ? n.indexOf(':') : -1; if (i < 1) return '';
+  const l = n.slice(0, i); if (l === wikiLang()) return '';      // the reader reads that language already
+  const title = n.slice(i + 1).replace(/ \([^)]*\)$/, '');   // without a disambiguating "(…)"
+  return title && title !== shown ? `<p class="origname" lang="${l}">${esc(title)}</p>` : '';
+}
+// the article in the local language (w[3], "pl:Tytuł", added by data-pipeline/wiki) as a link
+// an entry without a Wikipedia article: its news or official source (data-pipeline/wiki/manual.tsv)
+function srcLink(x) {
+  if (!x?.src) return '';
+  let host = x.src; try { host = new URL(x.src).hostname.replace(/^www\./, ''); } catch { /* as is */ }
+  return `${t(st.lang).srcL}：<a href="${esc(x.src)}" target="_blank" rel="noopener">${esc(host)}</a>`;
+}
+// About: how the data uses Wikipedia, for the current mode and the whole site (public/data/wikistats.json,
+// made by data-pipeline/wiki/wiki-stats.mjs): entries with articles, links per language, local-language articles
+let wikiStats = null;
+function renderWikiStats() {
+  const box = $('#wikiStats'); if (!box) return;
+  if (!wikiStats) {
+    wikiStats = fetch(import.meta.env.BASE_URL + 'data/wikistats.json').then(r => r.json()).catch(() => ({}));
+    wikiStats.then(d => { wikiStats = d; renderWikiStats(); }); return;
+  }
+  if (wikiStats instanceof Promise || !wikiStats.all) return;
+  const s = t(st.lang), loc = st.lang === 'zh-Hant' ? 'zh-Hant-TW' : st.lang;
+  let names; try { names = new Intl.DisplayNames([loc], { type: 'language' }); } catch { names = null; }
+  const langName = c => { try { return names?.of(c) || c; } catch { return c; } };
+  const nf = n => n.toLocaleString(loc);
+  const bars = m => {
+    const list = Object.entries(m.langs).sort((a, b) => b[1] - a[1]), top = list.slice(0, 8), rest = list.slice(8);
+    if (rest.length) top.push([s.wsOther(rest.length), rest.reduce((a, [, n]) => a + n, 0), true]);
+    const max = top[0]?.[1] || 1;
+    return `<div class="wsbars" title="${esc(s.wsShare)}">` + top.map(([c, n, other]) => `<div class="wsrow"><span class="wsl">${esc(other ? c : langName(c))}</span>` +
+      `<span class="wsb"><i style="width:${(100 * n / max).toFixed(1)}%"></i></span><span class="wsn">${nf(n)}<small>${Math.round(100 * n / m.entries)}%</small></span></div>`).join('') + '</div>';
+  };
+  const block = m => m && m.entries ? `<p>${esc(s.wsLine(nf(m.entries), nf(m.links), Object.keys(m.langs).length, nf(m.local)))}${m.src ? (st.lang === 'en' ? ' ' : '') + esc(s.wsSrc(nf(m.src))) : ''}</p>` + bars(m) : `<p>${esc(s.wsNone)}</p>`;
+  const modeName = k => s.modes[k] || k;
+  const rows = MODES.filter(k => wikiStats.modes[k]).map(k => { const m = wikiStats.modes[k];
+    return `<tr${k === st.mode ? ' class="cur"' : ''}><td>${esc(modeName(k))}</td><td>${nf(m.entries)}</td><td>${nf(m.links)}</td><td>${Object.keys(m.langs).length}</td><td>${nf(m.local)}</td></tr>`; }).join('');
+  box.innerHTML = `<h3>${esc(s.wsTitle)}</h3><p class="small">${esc(s.wsIntro)}</p>` +
+    `<h4>${esc(s.wsMode(modeName(st.mode)))}</h4>${block(wikiStats.modes[st.mode])}` +
+    `<h4>${esc(s.wsAll)}</h4>${block(wikiStats.all)}` +
+    `<div class="wstable"><table><thead><tr>${s.wsCols.map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function nativeLink(w) {
+  const n = w?.[3], i = n ? n.indexOf(':') : -1; if (i < 1) return '';
+  const l = n.slice(0, i), title = n.slice(i + 1);
+  if (['zh', 'en', 'ja'].includes(l)) return '';                // already among the article links
+  return `<a href="https://${l}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}" target="_blank" rel="noopener" lang="${l}">${esc(title)}</a> <small>(${l})</small>`;
+}
 function wikiLink(qid, title, lang = st.lang) {
   const [site, host, variant] = WIKI[lang];
   return qid ? `https://www.wikidata.org/wiki/Special:GoToLinkedPage/${site}/${qid}`
@@ -1413,7 +1472,7 @@ function religionHtml(code) {
   const title = r.info ? (r.info.w[li] || r.info.w[1]) : (r.n[col] || r.n[0]);
   return `<h2><i style="background:${r.color}"></i>${esc(r.n[col] || r.n[0])}</h2>
     ${r.info ? `<p class="desc">${esc(r.info.d[col] || r.info.d[0])}</p>` : ''}
-    <p class="links">${s.links}：<a href="${wikiLink(null, title)}" target="_blank" rel="noopener">${s.wiki}「${esc(title)}」</a></p>
+    <p class="links">${ev.src && !ev.w?.slice(0, 3).some(Boolean) ? srcLink(ev) : `${s.links}：<a href="${wikiLink(null, title)}" target="_blank" rel="noopener">${s.wiki}「${esc(title)}」</a>${nativeLink(ev.w) ? ' · ' + nativeLink(ev.w) : ''}`}</p>
     <p class="src">${s.relSrc}</p>`;
 }
 function showReligion(code) {
@@ -1511,11 +1570,11 @@ function showEvent(ev) {
   const s = t(st.lang), col = st.langInfo.col, box = $('#info');
   const li = { 'zh-Hant': 0, 'zh-Hans': 0, en: 1, ja: 2 }[st.lang];
   const name = ev.n[col] || ev.n[0];
-  const title = ev.w ? (ev.w[li] || ev.w[1]) : name.split(/[（(；]/)[0];
+  const title = ev.w?.slice(0, 3).some(Boolean) ? (ev.w[li] || ev.w[1] || ev.w[0] || ev.w[2]) : name.split(/[（(；]/)[0];
   delete box.dataset.disputed; delete box.dataset.sticky;
   box.dataset.sticky = '1';               // stays open while the timeline jumps to the event
   box.innerHTML = `<button class="x" aria-label="close">×</button>
-    <h2>${ev.k ? `<span class="star" style="color:${WORK_COLOR[ev.k]}">${WORK_ICON[ev.k]}</span>` : ''}${esc(name)}</h2><p class="when">${esc(ev.when)}</p>
+    <h2>${ev.k ? `<span class="star" style="color:${WORK_COLOR[ev.k]}">${WORK_ICON[ev.k]}</span>` : ''}${esc(name)}</h2>${origName(ev.w, name)}<p class="when">${esc(ev.when)}</p>
     ${ev.d ? `<p class="desc">${esc(ev.d[col] || ev.d[0])}</p>` : ''}
     <p class="links">${s.links}：<a href="${wikiLink(null, title)}" target="_blank" rel="noopener">${s.wiki}「${esc(title)}」</a></p>
     <div class="evinfo"></div>
@@ -1790,6 +1849,12 @@ function showPolity(id) {
     const im = document.createElement('img'); im.className = 'flagicon'; im.src = tn.url; im.alt = t(st.lang).flagL;
     im.title = `${t(st.lang).flagL}：${tn.credit || ''} · Wikimedia Commons`; sq.replaceWith(im);
   })); }
+  // the name in its own language under the title (online: Wikidata's native label or official name)
+  if (q) { const ntag = box.dataset.nat = id + ':' + q; nativeName(q).then(nn => {
+    const h = box.querySelector('h2'); if (!nn || box.dataset.nat !== ntag || box.hidden || !h || box.querySelector('.origname')) return;
+    if (nn[0] === h.textContent.trim()) return;
+    const p = document.createElement('p'); p.className = 'origname'; p.lang = nn[1]; p.textContent = nn[0]; h.after(p);
+  }); }
   if (q && st.pics) { const tag = box.dataset.pic = id + ':photo'; countryPhoto(q).then(ph => {
     if (!ph || box.dataset.pic !== tag || box.hidden) return;
     box.querySelector('.placepic')?.remove();
@@ -1883,11 +1948,11 @@ function showGov(id) {
 function showArt(id) {
   const s = t(st.lang), col = st.langInfo.col, x = (store.art || []).find(q => q.id === id); if (!x) return;
   const L = [['zh', 'zh-Hant'], ['en', 'en'], ['ja', 'ja']];
-  const links = L.map(([, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
+  const links = L.map(([, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').concat(nativeLink(x.w), srcLink(x)).filter(Boolean).join(' · ');
   const box = $('#info');
   delete box.dataset.disputed; box.dataset.sticky = '1';
   box.innerHTML = `<button class="x" aria-label="close">×</button>
-    <h2><span class="star" style="color:${ART_COLORS[x.t]}">${ART_SYM[x.k] || '✦'}</span>${esc(x.n[col] || x.n[0])}</h2>
+    <h2><span class="star" style="color:${ART_COLORS[x.t]}">${ART_SYM[x.k] || '✦'}</span>${esc(x.n[col] || x.n[0])}</h2>${origName(x.w, x.n[col] || x.n[0])}
     <table class="facts"><tr><th>${s.span}</th><td>${formatYear(st.lang, x.a)} – ${x.b >= 2026 ? '' : formatYear(st.lang, x.b)}</td></tr>
       <tr><th>${s.artTradRow}</th><td><i class="sw" style="background:${ART_COLORS[x.t]}"></i> ${s.artTrad[x.t]}</td></tr></table>
     <p class="desc">${esc(x.d[col] || x.d[0])}</p>
@@ -1940,11 +2005,11 @@ function disasterRows(x, s, col) {
 function showLang(id) {
   const s = t(st.lang), col = st.langInfo.col, L = themeOf(st.mode); if (!L) return;
   const x = L.areas.find(q => q.id === id) || L.points.find(q => q.id === id); if (!x) return;
-  const fam = L.fam[x.f], links = [['zh', 'zh-Hant', 0], ['en', 'en', 1], ['ja', 'ja', 2]].map(([, lang, i]) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
+  const fam = L.fam[x.f], links = [['zh', 'zh-Hant', 0], ['en', 'en', 1], ['ja', 'ja', 2]].map(([, lang, i]) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').concat(nativeLink(x.w), srcLink(x)).filter(Boolean).join(' · ');
   const box = $('#info');
   delete box.dataset.disputed; box.dataset.sticky = '1';
   box.innerHTML = `<button class="x" aria-label="close">×</button>
-    <h2><span class="star" style="color:${fam.color}">${fam.sym || '●'}</span>${esc(x.n[col] || x.n[0])}</h2>
+    <h2><span class="star" style="color:${fam.color}">${fam.sym || '●'}</span>${esc(x.n[col] || x.n[0])}</h2>${origName(x.w, x.n[col] || x.n[0])}
     <table class="facts">${x.k ? disasterRows(x, s, col) : `<tr><th>${s.span}</th><td>${formatYear(st.lang, x.a)} – ${x.b >= 2026 ? '' : formatYear(st.lang, x.b)}</td></tr>`}
       <tr><th>${s.theme[st.mode].families}</th><td>${L.pointsAlways ? classIconSvg(x.f, fam.color, 18) : `<i class="sw" style="background:${fam.color}"></i>`} ${esc(fam.n[col] || fam.n[0])}</td></tr></table>
     <p class="desc">${esc(x.d[col] || x.d[0])}</p>
@@ -2003,11 +2068,11 @@ function showSeat(id, kind = 'seat') {
   const name = x.n[col] || x.n[0], note = x.note[col] || x.note[0];
   const div = x.d >= 0 ? c.divisions[x.d] : null;
   const L = [['zh', 'zh-Hant'], ['en', 'en'], ['ja', 'ja']];
-  const links = L.map(([k, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
+  const links = L.map(([k, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').concat(nativeLink(x.w), srcLink(x)).filter(Boolean).join(' · ');
   const box = $('#info');
   delete box.dataset.disputed; box.dataset.sticky = '1';
   box.innerHTML = `<button class="x" aria-label="close">×</button>
-    <h2><span class="star" style="color:${LOCAL_COLOR[kind] || (div ? div.color : '#555')}">${{ seat: '◆', feud: '⚔', power: '◉', us: '✪' }[kind]}</span>${esc(name)}</h2>
+    <h2><span class="star" style="color:${LOCAL_COLOR[kind] || (div ? div.color : '#555')}">${{ seat: '◆', feud: '⚔', power: '◉', us: '✪' }[kind]}</span>${esc(name)}</h2>${origName(x.w, name)}
     ${kind !== 'seat' ? `<p class="kind">${localLabel(kind)}</p>` : ''}
     <table class="facts"><tr><th>${s.span}</th><td>${s.ym(y0, m0)} – ${end}</td></tr>
       ${div ? `<tr><th>${s.seatOf}</th><td><i class="sw" style="background:${div.color}"></i> ${esc(div.n?.[col] || div.name?.[col] || div.n?.[0] || '')}</td></tr>` : ''}</table>
@@ -2072,11 +2137,11 @@ function showWork(id) {
   const end = x.b >= c.months - 1 ? '' : s.ym(y1, m1);
   const name = x.n[col] || x.n[0], note = x.note[col] || x.note[0];
   const L = [['zh', 'zh-Hant'], ['en', 'en'], ['ja', 'ja']];
-  const links = L.map(([k, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').filter(Boolean).join(' · ');
+  const links = L.map(([k, lang], i) => x.w[i] ? `<a href="${wikiLink(null, x.w[i], lang)}" target="_blank" rel="noopener">${esc(x.w[i])}</a>` : '').concat(nativeLink(x.w), srcLink(x)).filter(Boolean).join(' · ');
   const box = $('#info');
   delete box.dataset.disputed; box.dataset.sticky = '1';
   box.innerHTML = `<button class="x" aria-label="close">×</button>
-    <h2><span class="star" style="color:${WORK_COLOR[x.kind]}">${WORK_ICON[x.kind]}</span>${esc(name)}</h2>
+    <h2><span class="star" style="color:${WORK_COLOR[x.kind]}">${WORK_ICON[x.kind]}</span>${esc(name)}</h2>${origName(x.w, name)}
     <p class="kind">${s.workKinds[x.kind] || ''}</p>
     <table class="facts"><tr><th>${s.workSpan}</th><td>${s.ym(y0, m0)} – ${end}</td></tr></table>
     ${note ? `<p class="desc">${esc(note)}</p>` : ''}

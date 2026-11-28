@@ -1,4 +1,4 @@
-# 台灣模式：大事記。欄位：年月	繁中	English	日本語	[經度	緯度]（選填：事件地點，播放經過時在地圖上標出）
+# 台灣模式：大事記。欄位：年月	繁中	English	日本語	[經度	緯度]（選填：事件地點，播放經過時在地圖上標出）	[minor]（選填：小事件，只在開啟「小事件」開關時顯示）
 1604-08	韋麻郎（荷蘭東印度公司）首度佔領澎湖，遭明將沈有容勸退	Van Waerwijck of the Dutch East India Company first occupies Penghu; Ming general Shen Yourong persuades him to leave	ファン・ワールウェイク（オランダ東インド会社）が初めて澎湖を占拠、明の沈有容が退去させる	119.58	23.57
 1622-07	荷蘭東印度公司佔領澎湖	The Dutch East India Company occupies Penghu	オランダ東インド会社が澎湖を占領	119.58	23.57
 1624-02	明軍渡海圍攻澎湖荷蘭城堡	Ming forces cross the strait and besiege the Dutch fort on Penghu	明軍が澎湖のオランダ城塞を包囲	119.56	23.55
@@ -113,12 +113,8 @@
 1992-05	修正刑法第一百條，廢除言論內亂罪	Article 100 of the Criminal Code amended, ending prosecution for speech	刑法第 100 条を改正、言論による内乱罪を廃止	121.51	25.04
 1992-11	金門、馬祖解除戰地政務	Military administration lifted in Kinmen and Matsu	金門・馬祖の戦地政務を解除	118.32	24.44
 1992-12	花蓮作票案：黃信介立委選舉遭作票，經驗票改判當選	Hualien ballot-rigging case: a recount reverses Huang Hsin-chieh's defeat	花蓮の開票不正事件：再集計で黄信介が当選	121.6	23.98
-1994-03	縣市議會正副議長選舉賄選，法務部強力查賄：全臺 883 位縣市議員中 341 位遭起訴	Vote-buying in the county council speaker elections; the justice ministry's crackdown indicts 341 of 883 county councillors	県市議会正副議長選挙で買収、法務部の摘発で議員 883 人中 341 人が起訴	121.51	25.04
+1994-03	縣市議會正副議長選舉賄選，法務部大規模查賄	Vote-buying in the county council speaker elections brings a nationwide crackdown	県市議会正副議長選挙の買収、法務部が大規模摘発	121.51	25.04
 1994-03	議長賄選案：屏東縣議會正副議長鄭太吉、蔡侑展與議員遭起訴	Speaker vote-buying: Pingtung council speaker Cheng Tai-chi, his deputy and councillors indicted	議長買収事件：屏東県議会の鄭太吉正副議長らが起訴	120.49	22.67
-1994-03	議長賄選案：桃園縣議會正副議長吳振寰、許振澐遭起訴	Speaker vote-buying: Taoyuan council speaker and deputy indicted	議長買収事件：桃園県議会の正副議長が起訴	121.3	24.99
-1994-03	議長賄選案：高雄縣議會副議長黃振塊判刑	Speaker vote-buying: Kaohsiung County deputy speaker convicted	議長買収事件：高雄県議会副議長が有罪	120.36	22.63
-1994-03	議長賄選案：苗栗縣議會議長胡振春判刑	Speaker vote-buying: Miaoli council speaker convicted	議長買収事件：苗栗県議会議長が有罪	120.82	24.56
-1994-12	臺灣省議會正副議長賄選案	Vote-buying in the Taiwan Provincial Assembly speaker election	台湾省議会正副議長の買収事件	120.69	24.04
 1996-03	首次總統直選	First direct presidential election	初の総統直接選挙	121.51	25.04
 1998-12	精省，臺灣省政府功能虛級化	Taiwan Provincial Government streamlined	台湾省政府の凍結（精省）	120.68	23.96
 1999-09	九二一大地震	921 earthquake (Chi-Chi earthquake)	台湾大地震（921 地震）	120.82	23.85
@@ -137,3 +133,84 @@
 2019-05	同性婚姻合法化	Same-sex marriage legalized	同性婚の合法化	121.51	25.04
 2024-04	花蓮大地震	The Hualien earthquake	花蓮地震	121.6	23.98
 2025-05	最後一座核電機組（核三廠）停機，臺灣進入非核	The last nuclear reactor (Maanshan) shuts down	最後の原子炉（馬鞍山）が停止、非核へ	120.75	21.96
+1628-05	濱田彌兵衛事件	The Hamada Yahei incident at Tayouan	浜田弥兵衛事件	120.16	23.0
+1860-10	北京條約：臺灣開港（滬尾、雞籠、安平、打狗）	The Convention of Peking opens Taiwan's ports	北京条約で台湾が開港（滬尾・雞籠・安平・打狗）	121.44	25.17
+1867-03	羅妹號事件	The Rover incident on the Hengchun peninsula	ローバー号事件	120.75	21.95
+1896-03	六三法公布，臺灣總督握有律令權	Law No. 63 gives the Governor-General power to issue laws	六三法の公布、台湾総督に律令制定権	121.51	25.04
+1896-06	雲林大屠殺	The Yunlin massacre	雲林虐殺事件	120.53	23.70
+1921-01	臺灣議會設置請願運動開始	The petition movement for a Taiwanese parliament begins	台湾議会設置請願運動が始まる	121.51	25.05
+1952-04	中日和約（中華民國與日本國間和平條約）簽訂	The Treaty of Taipei is signed with Japan	日華平和条約の締結	121.52	25.04
+1955-01	一江山島戰役	The Battle of Yijiangshan Islands	一江山島戦役	121.95	28.38
+1959-08	八七水災	The August 7 flood	八七水害	120.60	24.00
+1987-03	三七事件（東崗慘案）：金門駐軍殺害越南難民	Lieyu massacre of Vietnamese refugees on Kinmen	東崗事件（金門でベトナム難民殺害）	118.25	24.43
+1993-04	辜汪會談（新加坡）	The Koo–Wang talks in Singapore	辜汪会談（シンガポール）
+1995-02	臺中衛爾康西餐廳大火	The Welcome Restaurant fire in Taichung	台中ウェルカム・レストラン火災	120.66	24.15
+1996-03	臺灣海峽飛彈危機（第三次臺海危機）	Third Taiwan Strait Crisis: missile tests off Taiwan	台湾海峡ミサイル危機（第三次台湾海峡危機）	120.30	24.80
+1996-07	賀伯颱風	Typhoon Herb	台風ハーブ	121.00	23.50
+1997-04	白曉燕命案	The murder of Pai Hsiao-yen	白暁燕事件	121.52	25.04
+2001-09	納莉颱風重創臺北	Typhoon Nari floods Taipei	台風ナーリー、台北が浸水	121.52	25.05
+2008-11	第二次江陳會談，兩岸大三通	Second Chiang–Chen talks: direct cross-strait links	第2回江陳会談、中台の直行便・郵便・通商開始	121.52	25.04
+2011-05	塑化劑事件	The plasticizer food scandal	可塑剤混入事件
+2013-05	廣大興28號事件：漁民遭菲律賓公務船槍殺	Guang Da Xing No. 28: a fisherman shot by a Philippine patrol boat	広大興28号事件（漁船員がフィリピン公船に射殺される）	121.95	20.12
+2013-08	洪仲丘事件，白衫軍運動	Death of Hung Chung-chiu and the White Shirt protests	洪仲丘事件と白シャツ運動	121.51	25.04
+2014-07	復興航空 222 號班機澎湖空難	TransAsia Airways Flight 222 crashes in Penghu	トランスアジア航空222便墜落事故（澎湖）	119.62	23.58
+2015-07	反課綱運動	Protests against the high-school curriculum changes	高校学習指導要領改訂反対運動	121.52	25.04
+2018-10	普悠瑪列車出軌事故	The Puyuma Express derailment	プユマ号脱線事故	121.83	24.66
+2021-04	太魯閣號列車出軌事故	The Taroko Express derailment	タロコ号脱線事故	121.66	24.12
+2024-01	2024年總統選舉：民進黨首度連續三任執政	2024 election: the DPP wins a third straight term	2024年総統選挙：民進党が3期連続の政権	121.51	25.04
+1629-07	麻豆社事件：麻豆社人伏殺渡溪的荷蘭士兵	The Mattau incident: Mattau villagers ambush Dutch soldiers crossing a river	麻豆社事件：麻豆社の住民が渡河中のオランダ兵を襲撃	120.25	23.18
+1694-05	康熙臺北大地震，臺北盆地陷落積水成湖	The Kangxi Taipei earthquake: part of the Taipei Basin sinks into a lake	康熙台北地震、台北盆地の一部が沈下して湖となる	121.5	25.07
+1878-08	加禮宛事件：清軍鎮壓花蓮加禮宛與撒奇萊雅族	The Kaliyawan incident: Qing troops crush the Kavalan and Sakizaya in Hualien	加礼宛事件：清軍が花蓮のカバランとサキザヤを鎮圧	121.58	24.02
+1888-10	施九緞事件：彰化民眾反清丈抗官	The Shi Jiuduan uprising: Changhua farmers rise against the land survey	施九緞事件：彰化の農民が土地丈量に反発して蜂起	120.54	24.08
+1913-12	苗栗事件：羅福星等抗日計畫事洩被捕	The Miaoli incident: Luo Fuxing's anti-Japanese plot is uncovered and he is arrested	苗栗事件：羅福星らの抗日計画が発覚し逮捕	120.82	24.56
+1935-11	首次地方選舉：市會與街庄協議會議員半數民選	First local elections: half the city and town councillors are elected	初の地方選挙：市会・街庄協議会員の半数を民選	121.51	25.04
+1960-09	楊傳廣獲羅馬奧運十項全能銀牌，臺灣首面奧運獎牌	C.K. Yang wins decathlon silver in Rome, Taiwan's first Olympic medal	楊伝広がローマ五輪十種競技で銀、台湾初の五輪メダル		
+1968-03	大力水手事件：柏楊因漫畫譯文被捕	The Popeye incident: Bo Yang is arrested over a comic-strip translation	ポパイ事件：柏楊が漫画の翻訳で逮捕される	121.51	25.04
+1984-02	以「中華台北」名義重返奧運	Taiwan returns to the Olympics as "Chinese Taipei"	「チャイニーズタイペイ」の名で五輪に復帰		
+1985-02	十信案爆發，臺北第十信用合作社擠兌	The Tenth Credit Cooperative scandal breaks; a run on the bank	第十信用合作社事件、取り付け騒ぎ	121.51	25.04
+1992-12	第二屆立委選舉，國會全面改選	The second Legislative Yuan election: parliament fully re-elected for the first time	第2回立法委員選挙、国会の全面改選	121.52	25.04
+1994-03	千島湖事件：24名臺灣遊客在浙江遇害	The Qiandao Lake incident: 24 Taiwanese tourists killed in Zhejiang	千島湖事件：浙江で台湾人観光客24人が殺害される		
+2000-07	八掌溪事件：四名工人受困溪中遭洪水沖走	The Bazhang River incident: four workers swept away while awaiting rescue	八掌渓事件：救助を待つ作業員4人が濁流に流される	120.4	23.43
+2003-11	立法院通過《公民投票法》	The Referendum Act is passed	国民投票法が成立	121.52	25.04
+2004-08	陳詩欣奪雅典奧運跆拳道金牌，臺灣首面奧運金牌	Chen Shih-hsin wins taekwondo gold in Athens, Taiwan's first Olympic gold	陳詩欣がアテネ五輪テコンドーで金、台湾初の五輪金メダル		
+2005-06	任務型國大複決修憲：立委減半、單一選區兩票制、公投入憲	The ad hoc National Assembly amends the constitution: a halved legislature, single-member districts, referendums	任務型国民大会が憲法改正を批准：立法委員半減・小選挙区比例代表並立制	121.52	25.04
+2006-11	國務機要費案：第一夫人吳淑珍被起訴	The state affairs fund case: First Lady Wu Shu-chen is indicted	国務機要費事件：呉淑珍総統夫人が起訴	121.51	25.04
+1616-05	村山等安奉命出兵臺灣，遇風災無功而返	Murayama Tōan sends a fleet against Taiwan; storms scatter it	村山等安が台湾に出兵、暴風で失敗			minor
+1670-01	劉國軒鎮壓沙轆社（劉國軒屠村事件）	Liu Guoxuan crushes the Salach village	劉国軒が沙轆社を鎮圧	120.57	24.27	minor
+1822-01	朱蔚事件（噶瑪蘭）	The Zhu Wei uprising in Kavalan	朱蔚事件（噶瑪蘭）	121.75	24.75	minor
+1868-01	大南澳事件：英、德商人在南澳私墾	The Dananao affair: British and German traders settle at Nan'ao	大南澳事件：英独の商人が南澳を開墾	121.8	24.46	minor
+1875-02	獅頭社事件：清軍「開山撫番」征討排灣族	The Lion's Head incident: Qing troops attack Paiwan villages	獅頭社事件：清軍がパイワン族を討伐	120.68	22.33	minor
+1877-08	大港口事件：清軍與阿美族衝突	The Takubuwan incident: Qing troops clash with the Amis	大港口事件：清軍とアミ族の衝突	121.5	23.45	minor
+1888-06	大庄事件：花東縱谷民眾抗清	The Dazhuang uprising in the East Rift Valley	大庄事件：花東縦谷の住民が清に抵抗	121.25	23.18	minor
+1895-03	甲午戰爭：日軍攻佔澎湖	First Sino-Japanese War: Japan takes Penghu	日清戦争：日本軍が澎湖を占領	119.58	23.57	minor
+1895-12	觀音山事件：北部抗日軍攻擊日軍	The Guanyinshan incident: resistance fighters attack Japanese posts	観音山事件：北部の抗日軍が日本軍を攻撃	121.42	25.13	minor
+1897-10	高野孟矩事件：總督府罷免高等法院長	The Takano Takenori affair: the chief judge is dismissed	高野孟矩事件：総督府が高等法院長を罷免	121.51	25.04	minor
+1907-05	大豹社事件：枕頭山之役	The Topa incident: the battle of Zhentoushan	大豹社事件：枕頭山の戦い	121.38	24.88	minor
+1912-03	林杞埔事件：竹農不滿竹林收歸日商而起事	The Linqipu incident: bamboo farmers rise over seized groves	林杞埔事件：竹林を奪われた農民の蜂起	120.68	23.76	minor
+1915-05	大分事件：布農族抗日	The Dafen incident: Bunun resistance	大分事件：ブヌン族の抗日	121.15	23.33	minor
+1920-09	薩拉矛事件：泰雅族抗日	The Saramao incident: Atayal resistance	サラマオ事件：タイヤル族の抗日	121.25	24.25	minor
+1937-07	中日戰爭爆發，臺灣進入戰時體制	The Sino-Japanese War begins; Taiwan is put on a war footing	日中戦争勃発、台湾も戦時体制へ	121.51	25.04	minor
+1946-02	員林事件：警民衝突	The Yuanlin incident: police and citizens clash	員林事件：警察と住民の衝突	120.58	23.96	minor
+1952-02	聯合國通過控蘇案，《中蘇友好同盟條約》廢止	The UN passes the complaint against the USSR; the Sino-Soviet treaty is renounced	国連でソ連非難決議、中ソ友好同盟条約を廃棄			minor
+1983-08	豐原高中禮堂倒塌，27名學生罹難	The Fengyuan High School hall collapses, killing 27 students	豊原高校講堂崩落、生徒27人死亡	120.72	24.25	minor
+1986-08	韋恩颱風侵臺	Typhoon Wayne strikes Taiwan	台風ウェイン襲来	120.3	23.5	minor
+1990-04	井口真理子命案	The murder of Iguchi Mariko	井口真理子殺害事件	121.51	25.04	minor
+1991-03	汐止吳銘漢夫婦命案（蘇建和案）	The Xizhi double murder (the Su Chien-ho case)	汐止夫婦殺害事件（蘇建和事件）	121.65	25.07	minor
+1993-01	臺北論情西餐廳大火，33人罹難	The Lun Qing restaurant fire in Taipei kills 33	台北の論情レストラン火災、33人死亡	121.52	25.05	minor
+1996-11	劉邦友血案：桃園縣長官邸遭槍殺	The Liu Pang-yu murders at the Taoyuan magistrate's residence	劉邦友事件：桃園県長公邸で銃撃	121.3	24.99	minor
+1997-07	國軍精實案，總兵力開始裁減	The armed forces streamlining plan begins cutting troop numbers	国軍「精実案」で兵力削減開始	121.52	25.04	minor
+1997-08	溫妮颱風，汐止林肯大郡倒塌	Typhoon Winnie; the Lincoln Mansion collapses in Xizhi	台風ウィニー、汐止の林肯大郡が倒壊	121.65	25.06	minor
+1998-10	國航905號班機遭劫持飛抵臺灣	Air China Flight 905 is hijacked to Taiwan	中国国際航空905便がハイジャックされ台湾へ	121.23	25.08	minor
+2003-12	廣電三法修正，黨政軍退出媒體	The broadcasting laws require parties, government and military to leave the media	放送三法改正、党・政・軍のメディア撤退	121.52	25.04	minor
+2004-12	第六屆立委選舉	The sixth Legislative Yuan election	第6回立法委員選挙	121.52	25.04	minor
+2005-08	高雄捷運泰勞抗暴，牽出外勞弊案	Thai workers riot on the Kaohsiung MRT site, exposing a labour scandal	高雄MRTタイ人労働者暴動、外国人労働者汚職発覚	120.3	22.63	minor
+2005-12	縣市長選舉：國民黨大勝	County and city elections: a sweeping Kuomintang win	県市長選挙：国民党が大勝	121.52	25.04	minor
+2006-05	台開案：總統女婿趙建銘被捕	The Taiwan Land Development case: the president's son-in-law is arrested	台開事件：総統の娘婿趙建銘が逮捕	121.52	25.04	minor
+2006-12	直轄市長選舉：郝龍斌、陳菊當選	Municipal elections: Hau Lung-bin and Chen Chu win	直轄市長選挙：郝龍斌・陳菊が当選	121.52	25.04	minor
+2007-09	北京奧運聖火來臺路線談判破裂	Talks on the Beijing Olympic torch route through Taiwan collapse	北京五輪聖火の台湾通過ルート交渉が決裂			minor
+2008-06	聯合號海釣船遭日本巡邏船撞沉	The Lien Ho fishing boat is sunk by a Japanese patrol ship	聯合号が日本の巡視船と衝突し沈没	123.47	25.74	minor
+2009-09	陳水扁家庭密帳案一審判決	First verdict in Chen Shui-bian's family secret accounts case	陳水扁一家の秘密口座事件で一審判決	121.51	25.04	minor
+2012-01	總統選舉：馬英九連任	Presidential election: Ma Ying-jeou is re-elected	総統選挙：馬英九が再選	121.51	25.04	minor
+2014-05	臺北捷運隨機殺人事件	The Taipei Metro stabbing	台北MRT無差別殺傷事件	121.47	25.03	minor
+2017-08	臺北世界大學運動會	Taipei hosts the Summer Universiade	台北でユニバーシアード開催	121.52	25.05	minor
+2020-01	總統與立委選舉：蔡英文連任，民進黨續過半	Elections: Tsai Ing-wen re-elected; the DPP keeps its majority	総統・立法委員選挙：蔡英文が再選、民進党が過半数維持	121.51	25.04	minor

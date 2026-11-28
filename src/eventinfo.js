@@ -5,6 +5,7 @@ import { MAPLIKE, altPhoto } from './photos.js';
 // the article's introduction (CC BY-SA 4.0) with a link to it.
 
 import { isOffline, offlineJson, offlineFile } from './offline.js';
+import { pageImage } from './pageimage.js';
 
 const cache = new Map();
 const WIKI = { 'zh-Hant': ['zh', 'zh-tw'], 'zh-Hans': ['zh', 'zh-cn'], en: ['en', ''], ja: ['ja', ''] };
@@ -27,9 +28,13 @@ async function load(ev, lang, col) {
     if (f) Object.assign(out, { thumb: f.thumb, page: f.page, lic: f.lic, author: f.author, file: f.file });
     return out;
   }
-  const [wl, variant] = WIKI[lang] || WIKI.en;
-  const wi = { zh: 0, en: 1, ja: 2 }[wl];
-  const title = ev.w?.[wi];
+  let [wl, variant] = WIKI[lang] || WIKI.en;
+  let title = ev.w?.[{ zh: 0, en: 1, ja: 2 }[wl]];
+  // no article in the reader's language: the English, Chinese or Japanese one (never a search, which may find
+  // another event of a similar name)
+  if (!title && ev.w?.slice(0, 3).some(Boolean)) {
+    const i = [1, 0, 2].find(k => ev.w[k]); title = ev.w[i]; wl = ['zh', 'en', 'ja'][i]; variant = wl === 'zh' ? (lang === 'zh-Hans' ? 'zh-cn' : 'zh-tw') : '';
+  }
   let q = `https://${wl}.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=extracts|pageimages|info|coordinates|pageprops`
     + '&exintro=1&explaintext=1&exsentences=3&piprop=thumbnail|name&pithumbsize=480&inprop=url&coprimary=primary&ppprop=wikibase_item' + (variant ? '&variant=' + variant : '');
   if (title) q += '&titles=' + encodeURIComponent(title);
@@ -45,6 +50,13 @@ async function load(ev, lang, col) {
   const co = p.coordinates?.[0];
   if (co) out.ll = [co.lon, co.lat];
   else if (p.pageprops?.wikibase_item) out.qid = p.pageprops.wikibase_item;
+  // the picture: from the article in the local language when there is one (w[3], "pl:Tytuł"), which usually has
+  // the most material and pictures; otherwise from this article
+  const nat = ev.w?.[3], ni = nat ? nat.indexOf(':') : -1;
+  if (ni > 0) {
+    const im = await pageImage(nat.slice(ni + 1), nat.slice(0, ni));
+    if (im) { Object.assign(out, { thumb: im.thumb, page: im.page, author: im.credit, lic: '' }); return out; }
+  }
   const th = p.thumbnail?.source;
   if (p.pageimage && MAPLIKE.test(p.pageimage)) {          // a map of the battle or the territory: another photograph instead
     const a = await altPhoto(p.title, wl, 480);

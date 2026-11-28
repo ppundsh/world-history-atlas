@@ -1,0 +1,61 @@
+# 同一筆資料的各語言標題指向不同的 Wikidata 項目（採用英文的項目）：請確認
+# file	name	titles zh / en / ja	items zh / en / ja
+public\data\art.json	米諾斯藝術	米諾斯藝術 / Minoan art / ミノア文明	Q502740 / Q502740 / Q134178
+public\data\art.json	阿瑪納藝術	阿马纳风格 / Amarna art / アマルナ美術	Q2740302 / Q2740302 / Q455151
+public\data\art.json	亞述浮雕	亞述雕塑 / Assyrian sculpture / アッシリア	Q28035292 / Q28035292 / Q41137
+public\data\art.json	伊特拉斯坎藝術	伊特拉斯坎文明 / Etruscan art / エトルリア	Q17161 / Q830331 / Q206730
+public\data\art.json	孔雀王朝藝術	孔雀王朝 / Mauryan art / マウリヤ朝	Q62943 / Q6793993 / Q62943
+public\data\art.json	希臘化藝術	希腊化时期艺术 / Hellenistic art / ヘレニズム	Q221375 / Q221375 / Q428995
+public\data\art.json	古典期馬雅藝術	古瑪雅藝術 / Ancient Maya art / マヤ文明	Q1626940 / Q1626940 / Q28567
+public\data\art.json	笈多藝術	笈多王朝 / Gupta art / グプタ朝	Q11774 / Q283562 / Q11774
+public\data\art.json	唐代藝術	唐朝 / Tang dynasty art / 唐	Q9683 / Q7682682 / Q9683
+public\data\art.json	吳哥藝術	吳哥 / Khmer sculpture / アンコール	Q163607 / Q6401903 / Q1363276
+public\data\art.json	朱羅銅像	朱羅王朝 / Chola art and architecture / チョーラ朝	Q151148 / Q5260101 / Q151148
+public\data\art.json	阿茲特克藝術	阿茲特克 / Aztecs / アステカ	Q12542 / Q12542 / Q2608489
+public\data\art.json	鄂圖曼藝術	鄂圖曼建築 / Turkish art / オスマン建築	Q527449 / Q4046973 / Q527449
+public\data\art.json	薩法維藝術	薩法維王朝 / Safavid art / サファヴィー朝	Q18234383 / Q2366921 / Q161205
+public\data\art.json	印度教寺廟建築	 / Hindu temple architecture / ヒンドゥー教寺院	 / Q80706 / Q842402
+public\data\art.json	日本寺社與城郭建築	日本建築 / Japanese architecture / 日本建築	Q1422874 / Q1422874 / Q130404173
+public\data\brazil.json		荷屬巴西 / Dutch Brazil / オランダ領ブラジル	Q221357 / Q221357 / Q130654
+public\data\china.json		東突厥斯坦共和國 / Second East Turkestan Republic / 東トルキスタン共和国	Q10988528 / Q10988528 / Q141832926
+public\data\china.json		甘丹颇章 / Ganden Phodrang / ガンデンポタン	Q17500081 / Q17500081 / Q326343
+public\data\egypt.json		托勒密王國 / Ptolemaic Kingdom / プトレマイオス朝	Q2320005 / Q2320005 / Q131976
+public\data\finance.json	威尼斯、熱那亞的銀行與公債	威尼斯共和國 / List of banks in Italy / 	Q4948 / Q6607151 / 
+public\data\finance.json	安特衛普交易所	安特衛普 / Stock Exchange, Antwerp / アントワープ証券取引所	Q12892 / Q2127864 / Q2127864
+public\data\france.json		 / Burgundian State / ブルゴーニュ公国	 / Q7882199 / Q4712
+public\data\germany.json		采邑主教 / Prince-bishop / 司教領	Q22881 / Q22881 / Q463742
+public\data\germany.json	克虜伯鋼廠（埃森）	克虜伯 / Krupp / フリードリヒ・クルップAG	Q159656 / Q679201 / Q679201
+public\data\germany.json	費馬恩海峽大橋	費馬恩海峽大橋 / Fehmarn Sound Bridge / 	Q18541 / Q503740 / 
+public\data\germany.json	科隆選侯國（波昂）	科隆選侯國 / Electorate of Cologne / ケルン選帝侯領	Q7904317 / Q7904317 / Q2692553
+public\data\india.json		緬甸日佔時期 / Japanese occupation of Burma / 日本占領時期のビルマ	Q221519 / Q1521499 / Q1521499
+public\data\india.json	孟買港	孟买港 / Mumbai Port / 	Q3634490 / Q15260223 / 
+public\data\internet.json	英國 NPL 網路與 JANET	JANET / JANET / 	Q6153402 / Q6107679 / 
+public\data\internet.json	庫克與惠斯通電報機	電報 / Electrical telegraph / 電信	Q721587 / Q6501061 / Q6501061
+public\data\iran.json		薩非王朝 / Safavid dynasty / サファヴィー朝	Q18234383 / Q161205 / Q161205
+public\data\iran.json		卡扎尔王朝 / Qajar dynasty / ガージャール家	Q189326 / Q189326 / Q63158027
+public\data\italy.json	焦亞陶羅港	焦亚陶罗港 / Port of Gioia Tauro / 	Q54614 / Q3909236 / 
+public\data\korea.json	昭陽江水壩	 / Soyang Dam / 昭陽江ダム	 / Q624034 / Q16176586
+public\data\language.json	現代希伯來語（復興）	現代希伯來語 / Modern Hebrew / 現代ヘブライ語	Q8141 / Q8141 / Q9288
+public\data\philippines.json		巴朗蓋 / Precolonial barangay / バランガイ	Q4858354 / Q4858354 / Q61878
+public\data\prc.json		甘丹颇章 / Ganden Phodrang / ガンデンポタン	Q17500081 / Q17500081 / Q326343
+public\data\religions.json		天主教會 / Catholic Church / カトリック教会	Q1841 / Q9592 / Q9592
+public\data\religions.json		東方教會 / Church of the East / 東方教会	Q989799 / Q989799 / Q245177
+public\data\religions.json		古代美索不達米亞宗教 / Ancient Mesopotamian religion / メソポタミア神話	Q21028568 / Q21028568 / Q3859459
+public\data\religions.json		印加宗教 / Religion in the Inca Empire / インカ神話	Q3238302 / Q3238302 / Q629040
+public\data\spain.json		卡斯蒂利亞聯合王國 / Crown of Castile / カスティーリャ王国	Q217196 / Q217196 / Q179293
+public\data\taiwan.json		臺灣戰後時期 / History of Taiwan (1945–present) / 戦後の台湾	Q712602 / Q712602 / Q22502
+public\data\taiwan.json	石門水庫	石門水壩 / Shihmen Dam / 	Q101230894 / Q7496474 / 
+public\data\taiwan.json	曾文水庫	曾文水壩 / Zengwen Dam / 曽文ダム	Q101096742 / Q11091530 / Q11091530
+public\data\taiwan.json	德基水庫	德基坝 / Techi Dam / 	Q7692199 / Q32836329 / 
+public\data\taiwan.json	翡翠水庫	翡翠水壩 / Feicui Dam / 	Q34885375 / Q5441591 / 
+public\data\taiwan.json	TPC-5 海底電纜（經關島往美國）	海底電纜 / TPC-5CN / 第5太平洋横断ケーブルネットワーク	Q506572 / Q7671104 / Q7671104
+public\data\taiwan.json	臺北市政府	臺北市政府 / Taipei City Government / 台北市政府	Q9105560 / Q9105560 / Q1867
+public\data\taiwan.json	新北市政府	新北市政府 / New Taipei City Government / 新北市政府	Q11081380 / Q11081380 / Q244898
+public\data\usa.json		俄属北美 / Russian colonization of North America / ロシアによるアメリカ大陸の植民地化	Q910495 / Q2345070 / Q2345070
+src/worldEvents.gen.js#MODE_EVENTS	太平天國	太平天國之亂 / Taiping Rebellion / 太平天国の乱	Q3486676 / Q192408 / Q192408
+src/worldEvents.gen.js#WORLD_EVENTS	亞歷山大東征	亚历山大大帝东征 / Wars of Alexander the Great / アレクサンドロス3世	Q551888 / Q551888 / Q8409
+src/worldEvents.gen.js#WORLD_EVENTS	西羅馬帝國滅亡	罗马帝国的衰落 / Fall of the Western Roman Empire / 西ローマ帝国	Q608613 / Q608613 / Q42834
+src/worldEvents.gen.js#WORLD_EVENTS	阿拉伯擴張	穆斯林的征服 / Early Muslim conquests / 正統カリフ	Q275918 / Q275918 / Q180465
+src/worldEvents.gen.js#WORLD_EVENTS	哥倫布抵達美洲	克里斯托弗·哥倫布 / Voyages of Christopher Columbus / クリストファー・コロンブス	Q7322 / Q18578423 / Q7322
+src/worldEvents.gen.js#WORLD_EVENTS	阿茲特克帝國滅亡	阿茲特克帝國 / Fall of Tenochtitlan / アステカ	Q2608489 / Q593267 / Q2608489
+src/worldEvents.gen.js#WORLD_EVENTS	印加帝國滅亡	西班牙征服印加帝国 / Spanish conquest of the Inca Empire / インカ帝国	Q636771 / Q636771 / Q28573

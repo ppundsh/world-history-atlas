@@ -9,6 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { line } from '../lib/progress.mjs';
 const here = path.dirname(fileURLToPath(import.meta.url)), DP = path.resolve(here, '..');
 const CACHE = path.join(DP, 'sources', 'osm-plants');
 const args = process.argv.slice(2), REFRESH = args.includes('--refresh');
@@ -66,7 +67,7 @@ if (import.meta.url === 'file://' + process.argv[1] || process.argv[1]?.endsWith
   const keep = fs.existsSync(file) ? fs.readFileSync(file, 'utf8').split('\n').filter(l => l && !l.startsWith('#') && !want.includes(l.split('\t')[0])) : [];
   const lines = [...keep];
   for (const iso of want) {
-    process.stdout.write(`\r發電廠（OpenStreetMap）：${iso}      `);
+    line(`發電廠（OpenStreetMap）：${iso}`);
     const j = await query(iso); if (!j) { process.stdout.write(`\n  ${iso} 取得失敗，下次再試`); continue; }
     lines.push(...reduce(iso, j));
     await sleep(3000);

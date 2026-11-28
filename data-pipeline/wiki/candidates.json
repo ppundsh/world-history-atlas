@@ -1,0 +1,6384 @@
+[
+ {
+  "file": "public\\data\\argentina.json",
+  "name": "聖馬丁將軍橋（阿根廷—烏拉圭）",
+  "titles": [
+   "",
+   "General San Martín Bridge",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "解放者聖馬丁將軍大橋",
+     "q": "Q1132178",
+     "d": ""
+    },
+    {
+     "t": "陳元光",
+     "q": "Q3846554",
+     "d": "唐朝將領，曾任漳州刺史兼任漳浦縣令"
+    },
+    {
+     "t": "尚公主",
+     "q": "Q142126908",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Libertador General San Martín Bridge",
+     "q": "Q1132178",
+     "d": "Bridge in Río Negro, Uruguay"
+    },
+    {
+     "t": "General Artigas Bridge",
+     "q": "Q1853634",
+     "d": "Bridge in Paysandú, Uruguay"
+    },
+    {
+     "t": "Fray Bentos",
+     "q": "Q849835",
+     "d": "Capital city in Río Negro Department, Uruguay"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\argentina.json",
+  "name": "CABASE 網際網路交換中心",
+  "titles": [
+   "",
+   "CABASE",
+   ""
+  ],
+  "hits": {
+   "zh": [],
+   "en": [
+    {
+     "t": "Maria Amapola Cabase",
+     "q": "Q8197051",
+     "d": "Filipina singer, actress, musician, television and radio host"
+    },
+    {
+     "t": "Paco Cabasés",
+     "q": "Q23705222",
+     "d": "Argentine footballer (1916–2019)"
+    },
+    {
+     "t": "Manuel Kabajar Cabase",
+     "q": "Q6752660",
+     "d": "Musical artist"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\argentina.json",
+  "name": "蒙托內羅斯游擊隊",
+  "titles": [
+   "蒙托内罗斯",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "蒙特內哥羅",
+     "q": "Q236",
+     "d": "東南歐國家"
+    },
+    {
+     "t": "蒙東内罗斯",
+     "q": "Q1053419",
+     "d": "阿根廷裴隆主義左翼、馬列主義城市游擊隊"
+    },
+    {
+     "t": "蒙特內哥羅人",
+     "q": "Q19109",
+     "d": "民族"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\art.json",
+  "name": "八五美術新潮",
+  "titles": [
+   "八五美術運動",
+   "’85 New Wave",
+   "八五美術運動"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "光州民主化運動",
+     "q": "Q174990",
+     "d": "1980年韓國的民主運動"
+    },
+    {
+     "t": "五四运动",
+     "q": "Q279790",
+     "d": "1919年中國学生组织的社會运动"
+    },
+    {
+     "t": "西方美术史",
+     "q": "Q406905",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Xiamen Dada—Exhibition of Modern Art",
+     "q": "Q85816453",
+     "d": "Major exhibition that emerged from the Chinese 85 New Wave art movement"
+    },
+    {
+     "t": "Wang Jianwei (artist)",
+     "q": "Q16269579",
+     "d": "Chinese visual artist"
+    },
+    {
+     "t": "New Enlightenment (China)",
+     "q": "Q116770900",
+     "d": "Chinese social and cultural movement (1978–1989)"
+    }
+   ],
+   "ja": [
+    {
+     "t": "日本美術",
+     "q": "Q603399",
+     "d": "日本の視覚芸術"
+    },
+    {
+     "t": "仏教美術",
+     "q": "Q1001041",
+     "d": "仏教信仰に基づいた礼拝対象、あるいはそれら活動のための美術"
+    },
+    {
+     "t": "東京芸術大学大学美術館",
+     "q": "Q11525123",
+     "d": "茨城県取手市小文間および東京都台東区上野公園にある美術館"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "BRUSA 海纜",
+  "titles": [
+   "",
+   "BRUSA",
+   ""
+  ],
+  "hits": {
+   "zh": [],
+   "en": [
+    {
+     "t": "Brusa",
+     "q": "Q994235",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Francisco Brusa",
+     "q": "Q25819216",
+     "d": "Soft redirect to Wikispecies"
+    },
+    {
+     "t": "Elisabetta Brusa",
+     "q": "Q3051113",
+     "d": "Italian composer"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "SAIL 南大西洋海纜",
+  "titles": [
+   "",
+   "South Atlantic Inter Link (SAIL)",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "泰坦尼克号",
+     "q": "Q25173",
+     "d": "於1912年4月15日在首航時撞上冰山而沉沒的英國郵輪"
+    },
+    {
+     "t": "潛艇",
+     "q": "Q2811",
+     "d": "能夠在水下航行的艦艇，用魚雷或者導彈殺傷敵艦或敵方有生力量"
+    },
+    {
+     "t": "奥林匹克号",
+     "q": "Q321007",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "SAIL (cable system)",
+     "q": "Q23581641",
+     "d": "Submarine communications cable system"
+    },
+    {
+     "t": "Sail (disambiguation)",
+     "q": "Q404006",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Intertropical Convergence Zone",
+     "q": "Q753858",
+     "d": "Meteorological phenomenon"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "卡努杜斯戰爭",
+  "titles": [
+   "卡努杜斯战争",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "卡努杜斯农民起义",
+     "q": "Q2350166",
+     "d": ""
+    },
+    {
+     "t": "1341-1347年拜占庭内战",
+     "q": "Q2658255",
+     "d": ""
+    },
+    {
+     "t": "法韦拉",
+     "q": "Q693827",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "耶穌會瓜拉尼傳教區",
+  "titles": [
+   "耶稣会传教区",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "耶稣会",
+     "q": "Q36380",
+     "d": "天主教男子修会，由依纳爵·罗耀拉及其同伴创立，1540年获教宗保禄三世批准，成员包括司铎和修士，在世界各地从事教育和传教工作"
+    },
+    {
+     "t": "玻利維亞的耶穌會傳教區",
+     "q": "Q107485321",
+     "d": ""
+    },
+    {
+     "t": "奇基托斯耶穌會傳教區",
+     "q": "Q33934",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "米納斯密謀",
+  "titles": [
+   "米纳斯密谋",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "蒂拉登特斯",
+     "q": "Q527112",
+     "d": ""
+    },
+    {
+     "t": "爱德华·瓦格纳",
+     "q": "Q72299",
+     "d": ""
+    },
+    {
+     "t": "菲利普·邦纳罗蒂",
+     "q": "Q471346",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "破爛人戰爭",
+  "titles": [
+   "破衣战争",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "破面",
+     "q": "Q1316337",
+     "d": ""
+    },
+    {
+     "t": "中国抗日战争",
+     "q": "Q170314",
+     "d": "20世紀中期中國抵抗日本侵略的全面戰爭"
+    },
+    {
+     "t": "朝鲜战争",
+     "q": "Q8663",
+     "d": "1950-1953年朝鮮半島內戰"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "東北土匪（蘭皮昂）",
+  "titles": [
+   "坎加索",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "安德烈·弗朗坎",
+     "q": "Q281411",
+     "d": ""
+    },
+    {
+     "t": "坎加斯-德莫拉索",
+     "q": "Q1628188",
+     "d": ""
+    },
+    {
+     "t": "保罗·加索尔",
+     "q": "Q193052",
+     "d": "西班牙篮球运动员"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\brazil.json",
+  "name": "無地農民運動",
+  "titles": [
+   "无地农民运动",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "农民运动讲习所",
+     "q": "Q142228763",
+     "d": ""
+    },
+    {
+     "t": "土地改革运动",
+     "q": "Q10927676",
+     "d": "中華人民共和國建立初期共產黨領導下的政治運動"
+    },
+    {
+     "t": "湖南农民运动考察报告",
+     "q": "Q15914453",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\china.json",
+  "name": "",
+  "titles": [
+   "第二十九軍",
+   "29th Army (China)",
+   "第29軍 (国民革命軍)"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "国民革命军第二十九军",
+     "q": "Q30950262",
+     "d": "大刀進行曲部隊"
+    },
+    {
+     "t": "七七事变",
+     "q": "Q219230",
+     "d": "中日全面戰爭的開端，日軍全面侵華的標誌，全中華民族抗戰開始"
+    },
+    {
+     "t": "中国人民解放军陆军第二十九军",
+     "q": "",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "29th Division",
+     "q": "Q221204",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "XXIX Corps",
+     "q": "Q4030542",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Marco Polo Bridge incident",
+     "q": "Q219230",
+     "d": "1937 battle of the Second Sino-Japanese War"
+    }
+   ],
+   "ja": [
+    {
+     "t": "国民革命軍",
+     "q": "Q714843",
+     "d": "かつて存在した国民政府の軍隊"
+    },
+    {
+     "t": "アメリカ軍",
+     "q": "Q11211",
+     "d": "アメリカ合衆国の軍隊"
+    },
+    {
+     "t": "日本軍",
+     "q": "Q6139796",
+     "d": "大日本帝国憲法により組織されていた軍事組織"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\china.json",
+  "name": "川黔公路（重慶—貴陽）",
+  "titles": [
+   "川黔公路",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "210国道",
+     "q": "Q1608641",
+     "d": "中国内蒙古自治区包头市达茂旗满都拉镇满都拉口岸至广西壮族自治区防城港市港口区企沙镇天堂滩的公路"
+    },
+    {
+     "t": "張家界—南充高速公路",
+     "q": "Q56272061",
+     "d": "中国国家高速公路网二连浩特—广州高速公路（国家高速G55）的联络线之一"
+    },
+    {
+     "t": "蘭州—海口高速公路",
+     "q": "Q785330",
+     "d": "交通线路"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "蓬特斯水壩潰決",
+  "titles": [
+   "",
+   "Puentes Dam",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "海難列表",
+     "q": "Q1519988",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "一带一路",
+     "q": "Q19692715",
+     "d": "中华人民共和国提出的经济发展战略与框架，为“丝绸之路经济带”和“21世纪海上丝绸之路”合作倡议的简称"
+    },
+    {
+     "t": "切萨皮克和俄亥俄运河",
+     "q": "Q1070564",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Dam failure",
+     "q": "Q1033074",
+     "d": "Catastrophic failure of dam barrier by uncontrolled release of water"
+    },
+    {
+     "t": "Ituango Dam",
+     "q": "Q1675339",
+     "d": "Dam in Colombia"
+    },
+    {
+     "t": "List of bridges in Mexico",
+     "q": "Q3244853",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "埃里卡號漏油",
+  "titles": [
+   "",
+   "Erika (ship)",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "若潮号触礁漏油事故",
+     "q": "Q98138630",
+     "d": ""
+    },
+    {
+     "t": "越洋航空236號班機事故",
+     "q": "Q406609",
+     "d": ""
+    },
+    {
+     "t": "曼努埃尔·里瓦斯",
+     "q": "Q2320966",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Erika",
+     "q": "Q15077555",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Erika Ayers Badan",
+     "q": "Q109686285",
+     "d": "American businessperson"
+    },
+    {
+     "t": "MV Erika",
+     "q": "Q1354330",
+     "d": "Tanker built in 1975"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "德爾納水壩潰決",
+  "titles": [
+   "2023年德爾納水壩潰壩",
+   "2023 Derna dam collapses",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "水壩潰決",
+     "q": "Q1033074",
+     "d": "在自然或人为因素的影响下，发生突发性破坏造成大坝崩溃或决口的事件"
+    },
+    {
+     "t": "聖法蘭西斯水壩",
+     "q": "Q381648",
+     "d": ""
+    },
+    {
+     "t": "水坝",
+     "q": "Q12323",
+     "d": "淹沒水或地下溪流的屏障"
+    }
+   ],
+   "en": [
+    {
+     "t": "Derna dam collapses",
+     "q": "Q122615796",
+     "d": "Failure of two dams in Libya"
+    },
+    {
+     "t": "Derna, Libya",
+     "q": "Q211866",
+     "d": "Port city in Derna District, Libya"
+    },
+    {
+     "t": "Storm Daniel",
+     "q": "Q122311648",
+     "d": "2023 storm in the Mediterranean Sea"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "米糠油多氯聯苯中毒（油症）",
+  "titles": [
+   "油症事件",
+   "",
+   "台湾油症事件"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "米糠油中毒事件",
+     "q": "Q359288",
+     "d": ""
+    },
+    {
+     "t": "台灣油症受害者支持協會",
+     "q": "Q67931670",
+     "d": ""
+    },
+    {
+     "t": "水变油事件",
+     "q": "Q5895768",
+     "d": "科学骗局"
+    }
+   ],
+   "ja": [
+    {
+     "t": "カネミ油症事件",
+     "q": "Q359288",
+     "d": "1960年代に日本で発生した油症事件"
+    },
+    {
+     "t": "カネカ",
+     "q": "Q11294493",
+     "d": "日本の大阪府大阪市、東京都港区にある化学メーカー"
+    },
+    {
+     "t": "ダイオキシン類",
+     "q": "Q2522",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "阿瑪斯號漏油",
+  "titles": [
+   "阿瑪斯號貨輪漏油事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿瑪斯號貨輪油污事件",
+     "q": "Q11284912",
+     "d": ""
+    },
+    {
+     "t": "油外洩",
+     "q": "Q220187",
+     "d": ""
+    },
+    {
+     "t": "苏伊士运河",
+     "q": "Q899",
+     "d": "位於亞洲及非洲交界處的運河"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "中石化安順廠戴奧辛與汞污染",
+  "titles": [
+   "中石化安順廠",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "中石化安順廠污染案",
+     "q": "Q15904395",
+     "d": ""
+    },
+    {
+     "t": "臺北大巨蛋",
+     "q": "Q858333",
+     "d": "位於臺灣臺北市信義區的大型多功能體育館"
+    },
+    {
+     "t": "臺鹼公司安順廠",
+     "q": "Q15923508",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "六輕大火",
+  "titles": [
+   "麥寮六輕工業區",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "台塑石化",
+     "q": "Q1437742",
+     "d": ""
+    },
+    {
+     "t": "第六套輕油裂解廠",
+     "q": "Q7215612",
+     "d": ""
+    },
+    {
+     "t": "麥寮鄉",
+     "q": "Q709989",
+     "d": "臺灣雲林縣的鄉"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "德翔台北輪擱淺漏油",
+  "titles": [
+   "德翔台北輪擱淺事故",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿瑪斯號貨輪油污事件",
+     "q": "Q11284912",
+     "d": ""
+    },
+    {
+     "t": "香港航空",
+     "q": "Q1035195",
+     "d": "以香港國際機場為基地的中資航空公司"
+    },
+    {
+     "t": "2024年颱風凱米對臺灣的影響",
+     "q": "Q127868985",
+     "d": "2024年凱米颱風對臺灣造成的影響"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "屏東明揚大火",
+  "titles": [
+   "明揚國際科技工廠火災",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "明揚國際屏東廠火災",
+     "q": "Q122766391",
+     "d": "2023年09月22日於臺灣屏東縣屏東市的工廠火災"
+    },
+    {
+     "t": "2023年9月臺灣",
+     "q": "Q122506353",
+     "d": ""
+    },
+    {
+     "t": "夏普",
+     "q": "Q53227",
+     "d": "日本的跨國電子產品公司"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\disaster.json",
+  "name": "水島重油外洩",
+  "titles": [
+   "",
+   "",
+   "三菱石油水島製油所重油流出事故"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "蔚山級巡防艦",
+     "q": "Q491303",
+     "d": ""
+    },
+    {
+     "t": "大鳳號航空母艦",
+     "q": "Q1891409",
+     "d": ""
+    },
+    {
+     "t": "加贺号航空母舰",
+     "q": "Q726146",
+     "d": "日本航母"
+    }
+   ],
+   "ja": [
+    {
+     "t": "ENEOS水島製油所",
+     "q": "Q11226754",
+     "d": "ENEOSの事業所"
+    },
+    {
+     "t": "水島港",
+     "q": "Q11548500",
+     "d": "岡山県倉敷市の港"
+    },
+    {
+     "t": "水島地域",
+     "q": "Q11548457",
+     "d": "岡山県倉敷市の市役所水島支所管轄エリア"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\brazil.json",
+  "name": "瑪瑙斯自由區",
+  "titles": [
+   "瑪瑙斯自由貿易區",
+   "Manaus Free Trade Zone",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "自由港",
+     "q": "Q496341",
+     "d": ""
+    },
+    {
+     "t": "马瑙斯",
+     "q": "Q40236",
+     "d": "巴西亚马逊州的首府"
+    },
+    {
+     "t": "中華民國—巴西關係",
+     "q": "Q18109624",
+     "d": "双边关系"
+    }
+   ],
+   "en": [
+    {
+     "t": "Free Economic Zone of Manaus",
+     "q": "Q2059699",
+     "d": "Brazilian industrial zone"
+    },
+    {
+     "t": "Greater Manaus",
+     "q": "Q976447",
+     "d": "Place in Amazonas, Brazil"
+    },
+    {
+     "t": "Manaus",
+     "q": "Q40236",
+     "d": "Capital and largest city of Amazonas, Brazil"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\brazil.json",
+  "name": "蘇阿佩工業港區",
+  "titles": [
+   "",
+   "Port of Suape",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿尔伯特·施佩尔",
+     "q": "Q60045",
+     "d": "德国建筑师、纳粹德国军备部部长"
+    },
+    {
+     "t": "圣奥古斯丁角",
+     "q": "Q1637538",
+     "d": ""
+    },
+    {
+     "t": "蘇瓦",
+     "q": "Q38807",
+     "d": "斐濟首都"
+    }
+   ],
+   "en": [
+    {
+     "t": "Suape Port",
+     "q": "Q917499",
+     "d": "Port in Brazil"
+    },
+    {
+     "t": "Cabo de Santo Agostinho",
+     "q": "Q1637538",
+     "d": "Municipality of Pernambuco, Brazil"
+    },
+    {
+     "t": "Ultracargo",
+     "q": "Q10387241",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\germany.json",
+  "name": "漢堡自由港",
+  "titles": [
+   "漢堡自由港",
+   "Free Port of Hamburg",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "自由港",
+     "q": "Q496341",
+     "d": ""
+    },
+    {
+     "t": "汉堡",
+     "q": "Q1055",
+     "d": "德国城市"
+    },
+    {
+     "t": "摩斯漢堡",
+     "q": "Q1204169",
+     "d": "日本跨國連鎖快餐店"
+    }
+   ],
+   "en": [
+    {
+     "t": "Port of Hamburg",
+     "q": "Q3964",
+     "d": "Port in Germany"
+    },
+    {
+     "t": "Hamburg",
+     "q": "Q1055",
+     "d": "City and state in Germany"
+    },
+    {
+     "t": "Moldauhafen",
+     "q": "Q280224",
+     "d": "Lot in the port of Hamburg, Germany"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\india.json",
+  "name": "坎德拉經濟特區",
+  "titles": [
+   "",
+   "Kandla Special Economic Zone",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "堪培拉",
+     "q": "Q3114",
+     "d": "澳大利亞首都"
+    },
+    {
+     "t": "大行善者",
+     "q": "Q763144",
+     "d": ""
+    },
+    {
+     "t": "富兰克林·德拉诺·罗斯福",
+     "q": "Q8007",
+     "d": "第32任美國總統（1933-1945）"
+    }
+   ],
+   "en": [
+    {
+     "t": "Kandla",
+     "q": "Q581480",
+     "d": "Census Town in Gujarat, India"
+    },
+    {
+     "t": "List of special economic zones in India",
+     "q": "Q6598002",
+     "d": ""
+    },
+    {
+     "t": "Free-trade zone",
+     "q": "Q3929782",
+     "d": "Geographic area where economic activity between and within countries is less regulated"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\iran.json",
+  "name": "帕爾斯經濟能源特區",
+  "titles": [
+   "",
+   "Pars Special Economic Energy Zone",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "经济特区",
+     "q": "Q494978",
+     "d": "实行特殊的经济政策的一种地区"
+    },
+    {
+     "t": "伊朗戰爭 (2026年)",
+     "q": "Q138503695",
+     "d": "2026年武裝衝突"
+    },
+    {
+     "t": "國際貨幣基金組織",
+     "q": "Q7804",
+     "d": "國際金融機構"
+    }
+   ],
+   "en": [
+    {
+     "t": "Morvarid Petrochemical Company",
+     "q": "Q120271335",
+     "d": "Iranian petrochemical company"
+    },
+    {
+     "t": "F.C. Pars Jonoubi Jam",
+     "q": "Q5431409",
+     "d": "Iranian football club"
+    },
+    {
+     "t": "PADJAM Polymer Development Company",
+     "q": "Q131610944",
+     "d": "Iranian polymer development company"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\italy.json",
+  "name": "的里雅斯特自由港",
+  "titles": [
+   "的里雅斯特自由港",
+   "Free Port of Trieste",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "的里雅斯特自由區",
+     "q": "Q391980",
+     "d": ""
+    },
+    {
+     "t": "的里雅斯特",
+     "q": "Q546",
+     "d": "意大利东北部港口城市"
+    },
+    {
+     "t": "的里雅斯特帝国自由市",
+     "q": "Q6006584",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Port of Trieste",
+     "q": "Q1567848",
+     "d": "Commercial port in Italy"
+    },
+    {
+     "t": "Free Territory of Trieste",
+     "q": "Q391980",
+     "d": "Former country in Europe between Italy and Yugoslavia"
+    },
+    {
+     "t": "Free-trade zone",
+     "q": "Q3929782",
+     "d": "Geographic area where economic activity between and within countries is less regulated"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\japan.json",
+  "name": "鹿島臨海工業地帶",
+  "titles": [
+   "鹿島臨海工業地帶",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "神之池站",
+     "q": "Q30926234",
+     "d": ""
+    },
+    {
+     "t": "工業整備特別地域",
+     "q": "Q11479500",
+     "d": ""
+    },
+    {
+     "t": "鹿島臨港線",
+     "q": "Q6374311",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\korea.json",
+  "name": "馬山自由出口區",
+  "titles": [
+   "馬山自由貿易地域",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "大韩民国",
+     "q": "Q884",
+     "d": "东北亚国家"
+    },
+    {
+     "t": "大韓民國歷史",
+     "q": "Q494973",
+     "d": ""
+    },
+    {
+     "t": "韓國高速鐵路",
+     "q": "Q42308724",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\philippines.json",
+  "name": "麥克坦出口加工區",
+  "titles": [
+   "",
+   "Mactan Export Processing Zone",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿尔及利亚",
+     "q": "Q262",
+     "d": "北非國家"
+    },
+    {
+     "t": "塞内加尔",
+     "q": "Q1041",
+     "d": "西非國家"
+    },
+    {
+     "t": "東芝機械違反禁運令事件",
+     "q": "Q11528256",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Philippine Economic Zone Authority",
+     "q": "Q18208322",
+     "d": "Philippine government agency"
+    },
+    {
+     "t": "Mactan Economic Zone",
+     "q": "Q137538206",
+     "d": ""
+    },
+    {
+     "t": "Mactan",
+     "q": "Q685318",
+     "d": "Island in Cebu province, Philippines"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\russia.json",
+  "name": "阿拉布加經濟特區",
+  "titles": [
+   "",
+   "Alabuga",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿拉布加经济特区",
+     "q": "Q4060394",
+     "d": "俄罗斯鞑靼斯坦共和国经济特区"
+    },
+    {
+     "t": "叶拉布加",
+     "q": "Q135650",
+     "d": ""
+    },
+    {
+     "t": "经济特区",
+     "q": "Q494978",
+     "d": "实行特殊的经济政策的一种地区"
+    }
+   ],
+   "en": [
+    {
+     "t": "Alabuga Special Economic Zone",
+     "q": "Q4060394",
+     "d": "Special economic zone in Yelabuzhsky District, Tatarstan, Russia"
+    },
+    {
+     "t": "Yelabuga drone factory",
+     "q": "Q119872924",
+     "d": "Russian combat drone manufactory"
+    },
+    {
+     "t": "Geran-5",
+     "q": "Q137766602",
+     "d": "One-way attack drone"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\russia.json",
+  "name": "海參崴自由港",
+  "titles": [
+   "",
+   "Free Port of Vladivostok",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "海參崴",
+     "q": "Q959",
+     "d": "俄羅斯城市，濱海邊疆區首府"
+    },
+    {
+     "t": "自由港",
+     "q": "Q496341",
+     "d": ""
+    },
+    {
+     "t": "百万街",
+     "q": "Q4293565",
+     "d": "海参崴曾经的华人街区"
+    }
+   ],
+   "en": [
+    {
+     "t": "Free port of Vladivostok",
+     "q": "Q21042733",
+     "d": "Status of Vladivostok Port"
+    },
+    {
+     "t": "List of free economic zones",
+     "q": "Q6484792",
+     "d": ""
+    },
+    {
+     "t": "Vladivostok",
+     "q": "Q959",
+     "d": "Largest city and administrative center of Primorsky Krai, Russia"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\spain.json",
+  "name": "巴塞隆納自由區",
+  "titles": [
+   "",
+   "Zona Franca de Barcelona",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "巴塞罗那",
+     "q": "Q1492",
+     "d": "西班牙加泰隆尼亞自治區首府"
+    },
+    {
+     "t": "巴塞罗那足球俱乐部",
+     "q": "Q7156",
+     "d": "西班牙巴塞羅那的足球俱樂部"
+    },
+    {
+     "t": "巴塞隆納大都會區",
+     "q": "Q249489",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Zona Franca (Barcelona)",
+     "q": "Q219828",
+     "d": "Industrial area located in Barcelona, Spain"
+    },
+    {
+     "t": "Consorci de la Zona Franca",
+     "q": "Q5163332",
+     "d": "Skyscraper in Spain"
+    },
+    {
+     "t": "Line 10 (Barcelona Metro)",
+     "q": "Q1785338",
+     "d": "Rapid transit line in Barcelona, Spain"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\spain.json",
+  "name": "加那利群島特別區",
+  "titles": [
+   "",
+   "Canary Islands Special Zone",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "加那利群岛",
+     "q": "Q5813",
+     "d": "西班牙王国的一个自治区"
+    },
+    {
+     "t": "大加那利岛",
+     "q": "Q178925",
+     "d": "西班牙加那利群岛中的岛屿"
+    },
+    {
+     "t": "特內里費空難",
+     "q": "Q223288",
+     "d": "最致命的航空事故"
+    }
+   ],
+   "en": [
+    {
+     "t": "Canary Islands",
+     "q": "Q5813",
+     "d": "Spanish archipelago off the coast of Northwest Africa"
+    },
+    {
+     "t": "List of special economic zones",
+     "q": "Q25108774",
+     "d": ""
+    },
+    {
+     "t": "Canary Islands oystercatcher",
+     "q": "Q619728",
+     "d": "Species of bird"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\turkey.json",
+  "name": "伊斯坦堡金融中心",
+  "titles": [
+   "",
+   "Istanbul Finance Center",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "伊斯坦堡",
+     "q": "Q406",
+     "d": "土耳其第一大城市"
+    },
+    {
+     "t": "国际金融中心",
+     "q": "Q1066984",
+     "d": "城市称号"
+    },
+    {
+     "t": "世界證券交易所列表",
+     "q": "Q75024",
+     "d": "维基媒体列表条目"
+    }
+   ],
+   "en": [
+    {
+     "t": "Istanbul Financial Center",
+     "q": "Q6101566",
+     "d": "Building in Istanbul, Turkey"
+    },
+    {
+     "t": "Ataşehir",
+     "q": "Q753882",
+     "d": "District and municipality in Istanbul, Turkey"
+    },
+    {
+     "t": "List of tallest buildings in Istanbul",
+     "q": "Q840028",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\econ\\uk.json",
+  "name": "泰晤士自由港",
+  "titles": [
+   "",
+   "Thames Freeport",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "泰晤士連線",
+     "q": "Q1194990",
+     "d": ""
+    },
+    {
+     "t": "泰晤士小镇",
+     "q": "Q30191",
+     "d": ""
+    },
+    {
+     "t": "城市泰晤士連線站",
+     "q": "Q800630",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Freeports in the United Kingdom",
+     "q": "Q106103947",
+     "d": ""
+    },
+    {
+     "t": "List of free economic zones",
+     "q": "Q6484792",
+     "d": ""
+    },
+    {
+     "t": "London Gateway",
+     "q": "Q6670435",
+     "d": "Port in England"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\egypt.json",
+  "name": "奧拉比起義",
+  "titles": [
+   "奥拉比起义",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿拉伯起义",
+     "q": "Q239060",
+     "d": "一戰期間阿拉伯人在奧斯曼帝國的起義"
+    },
+    {
+     "t": "1832年巴黎共和党人起义",
+     "q": "Q768755",
+     "d": "失败的革命"
+    },
+    {
+     "t": "馬加比家族",
+     "q": "Q400019",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\egypt.json",
+  "name": "英軍駐守蘇伊士運河區",
+  "titles": [
+   "苏伊士运河区",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "苏伊士运河",
+     "q": "Q899",
+     "d": "位於亞洲及非洲交界處的運河"
+    },
+    {
+     "t": "第二次中东战争",
+     "q": "Q49101",
+     "d": "1956年军事冲突"
+    },
+    {
+     "t": "埃及",
+     "q": "Q79",
+     "d": "非洲北部與亞洲國家"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\egypt.json",
+  "name": "聯合國緊急部隊",
+  "titles": [
+   "联合国紧急部队",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "联合国维持和平部队",
+     "q": "Q219575",
+     "d": "多國部隊"
+    },
+    {
+     "t": "联合国第二期紧急部队",
+     "q": "Q12008196",
+     "d": "聯合國維持和平部隊"
+    },
+    {
+     "t": "聯合國大會第一緊急特別屆會",
+     "q": "Q1361903",
+     "d": "聯合國大會緊急特別會議"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\egypt.json",
+  "name": "多國部隊與觀察員團",
+  "titles": [
+   "多国部队与观察员",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "維持和平",
+     "q": "Q3354958",
+     "d": ""
+    },
+    {
+     "t": "中国人民解放军海军",
+     "q": "Q755179",
+     "d": "中华人民共和国的海上武装力量"
+    },
+    {
+     "t": "乌克兰武装部队",
+     "q": "Q936105",
+     "d": "乌克兰军队"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\egypt.json",
+  "name": "西奈半島叛亂",
+  "titles": [
+   "西奈半岛暴动",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "第二次中东战争",
+     "q": "Q49101",
+     "d": "1956年军事冲突"
+    },
+    {
+     "t": "埃以消耗战争",
+     "q": "Q322607",
+     "d": "埃及－以色列战争（1967－1970）"
+    },
+    {
+     "t": "第三次中东战争",
+     "q": "Q49077",
+     "d": "1967年的武装冲突"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\finance.json",
+  "name": "台股崩盤",
+  "titles": [
+   "1990年臺灣股市崩盤",
+   "1990 Taiwanese stock market crash",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "股災",
+     "q": "Q1020018",
+     "d": "股票价格在股票市场的一个重要横截面上突然急剧下跌"
+    },
+    {
+     "t": "中国内地股票市场",
+     "q": "Q10872179",
+     "d": "概述"
+    },
+    {
+     "t": "雷伯龍",
+     "q": "Q15916855",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Stock market bubble",
+     "q": "Q13405082",
+     "d": "Economic bubble in a stock market"
+    },
+    {
+     "t": "2025 stock market crash",
+     "q": "Q133818671",
+     "d": "Global stock market crash"
+    },
+    {
+     "t": "2015–2016 Chinese stock market turbulence",
+     "q": "Q20651241",
+     "d": "Financial events"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\france.json",
+  "name": "",
+  "titles": [
+   "德國佔領下的法國",
+   "German military administration in occupied France",
+   "ドイツ占領下のフランス"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "軸心國佔領希臘時期",
+     "q": "Q703550",
+     "d": ""
+    },
+    {
+     "t": "同盟國軍事佔領德國",
+     "q": "Q2415901",
+     "d": "占领军政权"
+    },
+    {
+     "t": "納粹德國佔領下的歐洲",
+     "q": "Q1320053",
+     "d": "被纳粹德国军事力量占领的欧洲国家"
+    }
+   ],
+   "en": [
+    {
+     "t": "German military administration in occupied France during World War II",
+     "q": "Q2748708",
+     "d": "German-occupied France from 1940 to 1944"
+    },
+    {
+     "t": "Military occupation of France",
+     "q": "Q16877007",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Military Administration (Nazi Germany)",
+     "q": "Q2889084",
+     "d": "Military unit"
+    }
+   ],
+   "ja": [
+    {
+     "t": "連合国軍占領下の日本",
+     "q": "Q696251",
+     "d": "第二次世界大戦後の日本の占領 (1945-1952)"
+    },
+    {
+     "t": "連合軍軍政期 (ドイツ)",
+     "q": "Q2415901",
+     "d": "連合国軍による占領統治が行われた時代のドイツ"
+    },
+    {
+     "t": "ナチス・ドイツ",
+     "q": "Q7318",
+     "d": "ヒトラー独裁下のドイツ国の呼称"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\france.json",
+  "name": "太陽高速公路（A6／A7，巴黎—馬賽）",
+  "titles": [
+   "太阳高速公路",
+   "Autoroute du Soleil",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "北京—昆明高速公路",
+     "q": "Q785374",
+     "d": "中国北京到昆明的高速公路"
+    },
+    {
+     "t": "银川—昆明高速公路",
+     "q": "Q785211",
+     "d": ""
+    },
+    {
+     "t": "太陽高速公路",
+     "q": "Q10941855",
+     "d": "维基媒体消歧义页"
+    }
+   ],
+   "en": [
+    {
+     "t": "Autoroute du Soleil",
+     "q": "Q789000",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "A6 autoroute",
+     "q": "Q1595",
+     "d": "Controlled-access motorway from Paris to Lyon, France"
+    },
+    {
+     "t": "A7 autoroute",
+     "q": "Q788948",
+     "d": "Controlled-access motorway from Lyon to Marseille, France"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\france.json",
+  "name": "Transpac 分封交換網（Minitel 的基礎）",
+  "titles": [
+   "",
+   "Transpac",
+   ""
+  ],
+  "hits": {
+   "zh": [],
+   "en": [
+    {
+     "t": "Transpac",
+     "q": "Q7834755",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Transpac (cable system)",
+     "q": "Q7834756",
+     "d": "Series of undersea telecom lines"
+    },
+    {
+     "t": "Transpac (data network)",
+     "q": "Q3537750",
+     "d": "French public data network (1978-2012)"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\france.json",
+  "name": "FLAG Atlantic-1 海纜",
+  "titles": [
+   "",
+   "FLAG Atlantic-1",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "环球海底光缆",
+     "q": "Q641659",
+     "d": ""
+    },
+    {
+     "t": "纽约",
+     "q": "Q60",
+     "d": "美國最大都市、國際大都市之一"
+    },
+    {
+     "t": "香港日佔時期",
+     "q": "Q701967",
+     "d": "香港歷史時期（1941年12月25日至1945年8月15日）"
+    }
+   ],
+   "en": [
+    {
+     "t": "Flag of NATO",
+     "q": "Q459788",
+     "d": ""
+    },
+    {
+     "t": "List of national flags of sovereign states",
+     "q": "Q2429697",
+     "d": ""
+    },
+    {
+     "t": "Gadsden flag",
+     "q": "Q917652",
+     "d": "Historical American flag"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\france.json",
+  "name": "拉羅謝爾與新教據點",
+  "titles": [
+   "拉罗谢尔之围",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "拉罗谢尔",
+     "q": "Q82185",
+     "d": "法国滨海夏朗德省市镇与省会"
+    },
+    {
+     "t": "拉罗谢尔围城战",
+     "q": "Q815170",
+     "d": ""
+    },
+    {
+     "t": "博克多汗的政府",
+     "q": "Q31796741",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\france.json",
+  "name": "秘密軍組織（OAS）",
+  "titles": [
+   "秘密军组织",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "秘密結社",
+     "q": "Q276548",
+     "d": "组织类型"
+    },
+    {
+     "t": "秘密军事组织",
+     "q": "Q918356",
+     "d": ""
+    },
+    {
+     "t": "盖世太保",
+     "q": "Q43250",
+     "d": "納粹德國的秘密警察"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "Atlantic Crossing-1 海纜",
+  "titles": [
+   "",
+   "Atlantic Crossing-1 (AC-1)",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "盧西塔尼亞號沉沒事件",
+     "q": "Q5551560",
+     "d": ""
+    },
+    {
+     "t": "桑葚港",
+     "q": "Q426875",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Atlantic Crossing 1",
+     "q": "Q756383",
+     "d": ""
+    },
+    {
+     "t": "AC1",
+     "q": "Q4650476",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Critical Foreign Dependencies Initiative",
+     "q": "Q5186617",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "柏林三月革命巷戰",
+  "titles": [
+   "1848年德意志革命",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "1848年—1849年德意志革命",
+     "q": "Q3699",
+     "d": ""
+    },
+    {
+     "t": "1848年革命",
+     "q": "Q3588",
+     "d": "歐洲一系列反帝制革命"
+    },
+    {
+     "t": "1848年奥地利帝国革命",
+     "q": "Q690959",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "德勒斯登五月起義",
+  "titles": [
+   "德勒斯登五月起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "五月风暴",
+     "q": "Q6743",
+     "d": "法國歷史上的學生運動"
+    },
+    {
+     "t": "五月起义",
+     "q": "Q16950966",
+     "d": ""
+    },
+    {
+     "t": "德累斯顿",
+     "q": "Q1731",
+     "d": "德国萨克森自由州首府"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "西德學生運動",
+  "titles": [
+   "德國學生運動",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "太陽花學運",
+     "q": "Q15972916",
+     "d": "2014年臺灣社會運動"
+    },
+    {
+     "t": "五四运动",
+     "q": "Q279790",
+     "d": "1919年中國学生组织的社會运动"
+    },
+    {
+     "t": "学生同盟",
+     "q": "Q174921",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "萊比錫週一示威",
+  "titles": [
+   "萊比錫週一示威",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "週一示威",
+     "q": "Q263047",
+     "d": ""
+    },
+    {
+     "t": "公民不服從",
+     "q": "Q47217",
+     "d": "拒绝遵守政府或权力机构的某些法律，要求和命令"
+    },
+    {
+     "t": "東德",
+     "q": "Q16957",
+     "d": "1949年成立於德國蘇佔區的的社會主義國家"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "羅斯托克—利希滕哈根排外暴亂",
+  "titles": [
+   "罗斯托克-利希滕哈根骚乱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "1992年至1993年德国足球甲级联赛",
+     "q": "Q600681",
+     "d": ""
+    },
+    {
+     "t": "越南裔德國人",
+     "q": "Q143231",
+     "d": ""
+    },
+    {
+     "t": "国会山骚乱",
+     "q": "Q104705419",
+     "d": "2021年1月6日美国国会大厦发生的骚乱"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "維爾茨堡主教侯國",
+  "titles": [
+   "維爾茨堡主教區",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "维尔茨堡大公国",
+     "q": "Q698089",
+     "d": ""
+    },
+    {
+     "t": "萨尔茨堡主教座堂",
+     "q": "Q258908",
+     "d": ""
+    },
+    {
+     "t": "选帝侯",
+     "q": "Q22722",
+     "d": "神圣罗马帝国选举委员会成员，选举国王和当时的罗马皇帝"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "明斯特主教侯國",
+  "titles": [
+   "明斯特主教區",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "采邑主教",
+     "q": "Q22881",
+     "d": ""
+    },
+    {
+     "t": "明斯特",
+     "q": "Q2742",
+     "d": "德國北萊茵-西法倫州城市"
+    },
+    {
+     "t": "明斯特采邑主教區",
+     "q": "Q697254",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "法國佔領萊茵左岸（美因茨）",
+  "titles": [
+   "萊茵左岸",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "萊茵河左岸",
+     "q": "Q1759388",
+     "d": ""
+    },
+    {
+     "t": "萊茵危機",
+     "q": "Q2147869",
+     "d": "法国与德意志邦联间的外交危机"
+    },
+    {
+     "t": "普法尔茨",
+     "q": "Q22880",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "英軍佔領科隆",
+  "titles": [
+   "萊茵蘭佔領",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "莱茵兰",
+     "q": "Q152243",
+     "d": "德国地区"
+    },
+    {
+     "t": "萊茵蘭再軍事化",
+     "q": "Q697659",
+     "d": "历史事件"
+    },
+    {
+     "t": "萊茵蘭雜種",
+     "q": "Q547721",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "美軍佔領科布倫茨",
+  "titles": [
+   "萊茵蘭佔領",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "莱茵兰",
+     "q": "Q152243",
+     "d": "德国地区"
+    },
+    {
+     "t": "萊茵蘭再軍事化",
+     "q": "Q697659",
+     "d": "历史事件"
+    },
+    {
+     "t": "萊茵蘭雜種",
+     "q": "Q547721",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "法軍佔領美因茨",
+  "titles": [
+   "萊茵蘭佔領",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "莱茵兰",
+     "q": "Q152243",
+     "d": "德国地区"
+    },
+    {
+     "t": "萊茵蘭再軍事化",
+     "q": "Q697659",
+     "d": "历史事件"
+    },
+    {
+     "t": "萊茵蘭雜種",
+     "q": "Q547721",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "法比佔領魯爾（埃森）",
+  "titles": [
+   "魯爾佔領",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "占领鲁尔",
+     "q": "Q40625",
+     "d": ""
+    },
+    {
+     "t": "鲁尔问题",
+     "q": "Q21043506",
+     "d": ""
+    },
+    {
+     "t": "特魯爾戰役",
+     "q": "Q1467456",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "西柏林盟軍駐軍",
+  "titles": [
+   "柏林駐軍",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "柏林危机",
+     "q": "Q1178208",
+     "d": "維基媒體消歧義頁"
+    },
+    {
+     "t": "柏林圍牆",
+     "q": "Q5086",
+     "d": "冷戰時蘇聯在西柏林外圍建立的邊界"
+    },
+    {
+     "t": "柏林",
+     "q": "Q64",
+     "d": "德國首都"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "美國駐歐陸軍（海德堡→威斯巴登）",
+  "titles": [
+   "美國陸軍歐洲司令部",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "美国欧洲司令部",
+     "q": "Q510610",
+     "d": "军事指挥机构"
+    },
+    {
+     "t": "美国陆军部队司令部",
+     "q": "Q785982",
+     "d": "美军司令部"
+    },
+    {
+     "t": "美国陆军",
+     "q": "Q9212",
+     "d": "美軍下屬軍種"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\germany.json",
+  "name": "英國萊茵軍團（門興格拉德巴赫）",
+  "titles": [
+   "英國萊茵軍團",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "莊俊彥",
+     "q": "Q5524160",
+     "d": ""
+    },
+    {
+     "t": "駐德英軍",
+     "q": "Q780918",
+     "d": "海外英軍部隊"
+    },
+    {
+     "t": "M44自走砲",
+     "q": "Q750653",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\india.json",
+  "name": "藍靛起義",
+  "titles": [
+   "藍靛起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "北京市海淀区文物保护单位",
+     "q": "Q18165268",
+     "d": ""
+    },
+    {
+     "t": "西汉",
+     "q": "Q1072949",
+     "d": "中國古代王朝，漢朝的前半段時期"
+    },
+    {
+     "t": "海淀区",
+     "q": "Q393454",
+     "d": "中国北京市的市辖区"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\india.json",
+  "name": "曼尼普爾族群衝突",
+  "titles": [
+   "2023年曼尼普爾邦暴力事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "2023年印度曼尼普尔邦骚乱",
+     "q": "Q118146729",
+     "d": ""
+    },
+    {
+     "t": "曼尼普尔土邦",
+     "q": "Q889030",
+     "d": ""
+    },
+    {
+     "t": "印度種族之間的關係",
+     "q": "Q5404305",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\india.json",
+  "name": "查謨和喀什米爾土邦",
+  "titles": [
+   "查謨和喀什米爾土邦",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "查谟和克什米尔 (中央直辖区)",
+     "q": "Q66278313",
+     "d": "印度中央直辖区"
+    },
+    {
+     "t": "查谟和克什米尔土邦",
+     "q": "Q2571484",
+     "d": ""
+    },
+    {
+     "t": "查谟和克什米尔邦",
+     "q": "Q1180",
+     "d": "印度历史省份"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\india.json",
+  "name": "特拉凡哥爾土邦",
+  "titles": [
+   "特拉凡哥爾王國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "特拉凡哥尔",
+     "q": "Q150058",
+     "d": ""
+    },
+    {
+     "t": "特拉凡哥爾–科欽邦",
+     "q": "Q1538311",
+     "d": "印度历史邦（1949—1956）"
+    },
+    {
+     "t": "黑色五葉草",
+     "q": "Q20638503",
+     "d": "日本漫畫"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\india.json",
+  "name": "梅瓦爾（烏代浦）",
+  "titles": [
+   "梅瓦爾王國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "啟示錄四騎士角色列表",
+     "q": "",
+     "d": ""
+    },
+    {
+     "t": "法兰克国王列表",
+     "q": "Q283321",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "騎士&魔法",
+     "q": "Q26978736",
+     "d": "日本輕小說系列"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\india.json",
+  "name": "奧德（阿瓦德）",
+  "titles": [
+   "奧德",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "奥德赛",
+     "q": "Q35160",
+     "d": "古希腊史诗"
+    },
+    {
+     "t": "奥德",
+     "q": "Q398835",
+     "d": "维基媒体消歧义页"
+    },
+    {
+     "t": "奧德賽 (電影)",
+     "q": "Q131547207",
+     "d": "2026年英美合拍电影"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\indonesia.json",
+  "name": "帕拉帕環（Palapa Ring）國家光纖",
+  "titles": [
+   "帕拉帕环",
+   "Palapa Ring",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "帕邁拉環礁",
+     "q": "Q123076",
+     "d": ""
+    },
+    {
+     "t": "AH-64阿帕契直升機",
+     "q": "Q171468",
+     "d": "美国武装直升机"
+    },
+    {
+     "t": "2020年夏季帕拉林匹克運動會",
+     "q": "Q14856650",
+     "d": "第16屆夏季帕拉林匹克運動會，於日本東京舉辦"
+    }
+   ],
+   "en": [
+    {
+     "t": "Palapa oath",
+     "q": "Q12517675",
+     "d": "Historic oath of Gajah Mada"
+    },
+    {
+     "t": "Riau Islands",
+     "q": "Q2223",
+     "d": "Province in Sumatra, Indonesia"
+    },
+    {
+     "t": "Western New Guinea",
+     "q": "Q3845",
+     "d": "Region of Indonesia"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\indonesia.json",
+  "name": "巴德利戰爭",
+  "titles": [
+   "巴德利战争",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "普法戰爭",
+     "q": "Q46083",
+     "d": "普魯士王國與法蘭西第二帝國於1870-1871年爆發的戰爭，也是德意志帝國統一前的最後一場戰爭"
+    },
+    {
+     "t": "伯罗奔尼撒战争",
+     "q": "Q33745",
+     "d": "古希臘戰爭"
+    },
+    {
+     "t": "第二次布尔战争",
+     "q": "Q215112",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\indonesia.json",
+  "name": "伊斯蘭國運動（達魯伊斯蘭）",
+  "titles": [
+   "伊斯兰之家",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "伊斯蘭祈禱團",
+     "q": "Q506245",
+     "d": "東南亞的伊斯蘭武裝組織"
+    },
+    {
+     "t": "伊斯兰国",
+     "q": "Q2429253",
+     "d": "中東伊斯蘭聖戰組織"
+    },
+    {
+     "t": "伊斯兰哲学",
+     "q": "Q193104",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\indonesia.json",
+  "name": "馬辰蘇丹國",
+  "titles": [
+   "马辰苏丹国",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "已不存在国家列表",
+     "q": "Q62630",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "蘇丹哈山努丁國際機場",
+     "q": "Q1432006",
+     "d": "印度尼西亚南苏拉威西省望加锡的机场"
+    },
+    {
+     "t": "苏丹巴布拉机场",
+     "q": "Q2581136",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\internet.json",
+  "name": "JPIX 東京",
+  "titles": [
+   "",
+   "Japan Internet Exchange",
+   ""
+  ],
+  "hits": {
+   "zh": [],
+   "en": [
+    {
+     "t": "GMO Internet",
+     "q": "Q11201240",
+     "d": "Japanese internet conglomerate"
+    },
+    {
+     "t": "Internet exchange point",
+     "q": "Q1433061",
+     "d": "Internet infrastructure through which ISPs exchange traffic"
+    },
+    {
+     "t": "List of internet exchange points",
+     "q": "Q6574343",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\internet.json",
+  "name": "馬祖海纜遭切斷",
+  "titles": [
+   "台馬海纜",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "海底電纜",
+     "q": "Q506572",
+     "d": "一种用于传输电子讯号的缆线"
+    },
+    {
+     "t": "郭台強",
+     "q": "Q16926366",
+     "d": "台湾企业家"
+    },
+    {
+     "t": "馬祖列島",
+     "q": "Q609255",
+     "d": "中華民國福建省連江縣管轄的島嶼"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "FLAG Falcon 海纜（阿巴斯港登陸）",
+  "titles": [
+   "",
+   "FLAG Falcon",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "环球海底光缆",
+     "q": "Q641659",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Flag of Falcón",
+     "q": "Q2161355",
+     "d": "Venezuelan state flag"
+    },
+    {
+     "t": "Falcons Flight",
+     "q": "Q131686270",
+     "d": "Roller coaster at Six Flags Qiddiya City, Saudi Arabia"
+    },
+    {
+     "t": "Flag of Iran",
+     "q": "Q126622",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "烏爾米耶湖大橋",
+  "titles": [
+   "",
+   "Lake Urmia Bridge",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "爾米亞湖",
+     "q": "Q199551",
+     "d": "伊朗湖泊"
+    },
+    {
+     "t": "埃布里耶潟湖",
+     "q": "Q273288",
+     "d": "科特迪瓦／象牙海岸的潟湖"
+    },
+    {
+     "t": "克里米亞大橋",
+     "q": "Q2652980",
+     "d": "連接克里米亞和俄羅斯的大橋"
+    }
+   ],
+   "en": [
+    {
+     "t": "Urmia Lake Bridge",
+     "q": "Q7900738",
+     "d": "Bridge in East Azerbaijan and West Azerbaijan, Iran"
+    },
+    {
+     "t": "Lake Urmia",
+     "q": "Q199551",
+     "d": "Salt lake in Iran"
+    },
+    {
+     "t": "Urmia",
+     "q": "Q179665",
+     "d": "City in West Azerbaijan province, Iran"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "巴貝克起義",
+  "titles": [
+   "巴贝克",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "巴勒贝克",
+     "q": "Q178835",
+     "d": "黎巴嫩巴勒贝克-希尔米勒省省会"
+    },
+    {
+     "t": "巴托克·贝拉",
+     "q": "Q83326",
+     "d": "匈牙利现代主义时期作曲家（1881—1945）"
+    },
+    {
+     "t": "洛巴贝克",
+     "q": "Q633668",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "薩爾巴達爾政權",
+  "titles": [
+   "萨尔巴达尔",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "薩爾達傳說 時之笛",
+     "q": "Q213911",
+     "d": "1998年日本電子遊戲"
+    },
+    {
+     "t": "薩爾達傳說 禦天之劍",
+     "q": "Q861205",
+     "d": "2011年电子游戏"
+    },
+    {
+     "t": "巴沙尔·阿萨德",
+     "q": "Q44329",
+     "d": "前任敘利亞總統"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "叢林運動（吉蘭）",
+  "titles": [
+   "丛林运动",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "叢林奇譚",
+     "q": "Q189509",
+     "d": ""
+    },
+    {
+     "t": "丛林卡宾枪",
+     "q": "Q3228829",
+     "d": ""
+    },
+    {
+     "t": "Jungle (音樂)",
+     "q": "Q1102161",
+     "d": "电子音乐流派"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "英軍駐守南部油田",
+  "titles": [
+   "波斯走廊",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "瓦罕走廊",
+     "q": "Q8285348",
+     "d": "帕米尔高原南端和兴都库什山脉北东段之间连接或分隔中国、阿富汗、巴基斯坦和塔吉克斯坦四国之间的东西向高原山谷，主要位于阿富汗东北部"
+    },
+    {
+     "t": "人道走廊",
+     "q": "Q5939489",
+     "d": ""
+    },
+    {
+     "t": "西九龍走廊",
+     "q": "Q7985659",
+     "d": "香港5號幹線道路"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\iran.json",
+  "name": "綠色運動",
+  "titles": [
+   "伊朗绿色运动",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "伊朗綠色革命",
+     "q": "Q854206",
+     "d": "2009年伊朗群众运动"
+    },
+    {
+     "t": "伊朗政党列表",
+     "q": "Q1138411",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "伊朗",
+     "q": "Q794",
+     "d": "亞洲國家"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "MIX 米蘭網際網路交換中心",
+  "titles": [
+   "",
+   "MIX (Milan Internet eXchange)",
+   ""
+  ],
+  "hits": {
+   "zh": [],
+   "en": [
+    {
+     "t": "Milan Internet eXchange",
+     "q": "Q3857706",
+     "d": "Internet exchange point in Italy"
+    },
+    {
+     "t": "List of internet exchange points by size",
+     "q": "Q17089387",
+     "d": ""
+    },
+    {
+     "t": "Mix",
+     "q": "Q250391",
+     "d": "Topics referred to by the same term"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "馬薩尼耶洛起義",
+  "titles": [
+   "馬薩尼耶洛",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "塞萨洛尼基",
+     "q": "Q17151",
+     "d": "希腊中马其顿大区塞萨洛尼基专区的城市"
+    },
+    {
+     "t": "尼古洛·馬基雅維利",
+     "q": "Q1399",
+     "d": "意大利文艺复兴时期政治思想家、历史学家"
+    },
+    {
+     "t": "费奥多尔·陀思妥耶夫斯基",
+     "q": "Q991",
+     "d": "俄羅斯作家（1821－1881）"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "聖信軍（反革命農民軍）",
+  "titles": [
+   "聖信軍",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "圣信运动",
+     "q": "Q2131069",
+     "d": ""
+    },
+    {
+     "t": "信州 (遼朝)",
+     "q": "Q11386067",
+     "d": ""
+    },
+    {
+     "t": "王者天下",
+     "q": "Q1058984",
+     "d": "日本系列漫畫"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "巴勒莫起義",
+  "titles": [
+   "西西里革命 (1848年)",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "兩西西里王國",
+     "q": "Q180393",
+     "d": "1816年至1861年存在于意大利南部的王国"
+    },
+    {
+     "t": "1848年革命",
+     "q": "Q3588",
+     "d": "歐洲一系列反帝制革命"
+    },
+    {
+     "t": "乔万尼·维尔加",
+     "q": "Q271814",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "南方「盜匪」戰爭",
+  "titles": [
+   "南義大利盜匪",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "三合會",
+     "q": "Q329978",
+     "d": "源自清朝的香港黑幫組織"
+    },
+    {
+     "t": "左良玉",
+     "q": "Q11057300",
+     "d": "明朝将军"
+    },
+    {
+     "t": "盜跖",
+     "q": "Q1012585",
+     "d": "春秋时期大盗"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "鉛色年代",
+  "titles": [
+   "鉛色年代",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "铅色年代 (意大利)",
+     "q": "Q4850939",
+     "d": "意大利的社會和政治動盪時期"
+    },
+    {
+     "t": "铅色年代",
+     "q": "Q1183908",
+     "d": "維基媒體消歧義頁"
+    },
+    {
+     "t": "公義與和解委員會",
+     "q": "Q830889",
+     "d": "摩洛哥的真相與和解委員會"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\italy.json",
+  "name": "盧卡共和國",
+  "titles": [
+   "盧卡共和國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "最尊贵共和国",
+     "q": "Q3456492",
+     "d": "维基媒体消歧义页"
+    },
+    {
+     "t": "卢甘斯克人民共和国",
+     "q": "Q16746854",
+     "d": "有限承認的俄羅斯聯邦主體"
+    },
+    {
+     "t": "亚历山大·卢卡申科",
+     "q": "Q2866",
+     "d": "白俄罗斯总统"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "新橋—橫濱鐵道開業",
+  "titles": [
+   "日本鐵道史",
+   "Shimbashi Station (1872–1914)",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "鐵道省 (日本)",
+     "q": "Q249654",
+     "d": "已解散的日本政府部門"
+    },
+    {
+     "t": "鐵道敷設法",
+     "q": "Q116896031",
+     "d": ""
+    },
+    {
+     "t": "國鐵分割民營化",
+     "q": "Q10927352",
+     "d": "1987年日本国有铁道一分为七的改革"
+    }
+   ],
+   "en": [
+    {
+     "t": "Shimbashi Station",
+     "q": "Q801436",
+     "d": "Railway and metro station in Tokyo, Japan"
+    },
+    {
+     "t": "Tokyo Station",
+     "q": "Q283196",
+     "d": "Major railway and metro station in Japan"
+    },
+    {
+     "t": "Shiodome Freight Terminal",
+     "q": "Q7497865",
+     "d": "Former railway station in Minato, Tokyo"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "正長土一揆",
+  "titles": [
+   "正長土一揆",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "土一揆",
+     "q": "Q11422932",
+     "d": ""
+    },
+    {
+     "t": "寬正土一揆",
+     "q": "Q11457496",
+     "d": ""
+    },
+    {
+     "t": "加賀一向一揆",
+     "q": "Q20982977",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "郡上一揆",
+  "titles": [
+   "郡上一揆",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "郡上藩",
+     "q": "Q10863356",
+     "d": ""
+    },
+    {
+     "t": "揆一",
+     "q": "Q704384",
+     "d": "台灣荷蘭統治時期的第十二任暨最後一任福爾摩沙長官"
+    },
+    {
+     "t": "岐阜县",
+     "q": "Q131277",
+     "d": "日本第一級行政區劃"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "武州世直一揆",
+  "titles": [
+   "武州世直一揆",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "司馬炎",
+     "q": "Q7356",
+     "d": "中國晉朝開國皇帝"
+    },
+    {
+     "t": "僕散揆",
+     "q": "Q16076699",
+     "d": ""
+    },
+    {
+     "t": "李勣",
+     "q": "Q717965",
+     "d": "隋末唐初将领"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "川俣事件（足尾礦毒）",
+  "titles": [
+   "足尾礦毒事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "從足尾來的女人",
+     "q": "Q17191269",
+     "d": ""
+    },
+    {
+     "t": "內村鑑三",
+     "q": "Q485247",
+     "d": ""
+    },
+    {
+     "t": "明治",
+     "q": "Q3125096",
+     "d": "日本明治天皇在位期間使用的年號"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "米騷動",
+  "titles": [
+   "米騷動",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "1918年米骚动",
+     "q": "Q696111",
+     "d": ""
+    },
+    {
+     "t": "抢米风潮",
+     "q": "Q11604427",
+     "d": ""
+    },
+    {
+     "t": "令和米骚动",
+     "q": "Q124481875",
+     "d": "2024-25年間日本米價上漲"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "三池爭議",
+  "titles": [
+   "三池鬥爭",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "三池淵大紀念碑",
+     "q": "Q10866320",
+     "d": ""
+    },
+    {
+     "t": "三井三池争议",
+     "q": "Q11242304",
+     "d": ""
+    },
+    {
+     "t": "三生三世枕上书",
+     "q": "Q55707409",
+     "d": "2020中国古装电视剧"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "英法橫濱駐屯軍",
+  "titles": [
+   "英法駐軍橫濱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "横滨正金银行大楼 (天津)",
+     "q": "Q10940243",
+     "d": ""
+    },
+    {
+     "t": "天津英国驻屯军兵营",
+     "q": "Q10911223",
+     "d": ""
+    },
+    {
+     "t": "孫中山",
+     "q": "Q8573",
+     "d": "近代中國政治人物、革命家，中國國民黨總理，中華民國國父（1866—1925）"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\japan.json",
+  "name": "蘇聯／俄羅斯駐軍（北方四島）",
+  "titles": [
+   "南千島群島主權爭議",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "南千岛群岛",
+     "q": "Q11401819",
+     "d": "北太平洋的群島"
+    },
+    {
+     "t": "南千島群島爭議",
+     "q": "Q389717",
+     "d": "日本与俄罗斯之间的领土争端"
+    },
+    {
+     "t": "独岛主权争议",
+     "q": "Q488457",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "妙清之亂",
+  "titles": [
+   "妙清之亂",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "妙清",
+     "q": "Q718408",
+     "d": ""
+    },
+    {
+     "t": "文殊菩萨",
+     "q": "Q471696",
+     "d": "漢傳佛教四大菩薩之一、八大菩薩之一，華嚴三聖之一"
+    },
+    {
+     "t": "大為國",
+     "q": "Q6831903",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "亡伊・亡所伊之亂",
+  "titles": [
+   "亡伊、亡所伊之亂",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "亡伊",
+     "q": "Q12594893",
+     "d": ""
+    },
+    {
+     "t": "武人時代 (電視劇)",
+     "q": "Q626326",
+     "d": ""
+    },
+    {
+     "t": "新鐵金剛之不日殺機",
+     "q": "Q30931",
+     "d": "2002年电影（Die Another Day）"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "萬積之亂（未遂）",
+  "titles": [
+   "萬積之亂",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "黃巾之亂",
+     "q": "Q751743",
+     "d": "東漢末期農民起義，與太平道教運動有關，於公元184年爆發; 公元185被大部分壓制，到公元205年被完全壓制"
+    },
+    {
+     "t": "武人時代 (電視劇)",
+     "q": "Q626326",
+     "d": ""
+    },
+    {
+     "t": "高姓",
+     "q": "Q713706",
+     "d": "漢姓 (高)"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "三別抄抗爭",
+  "titles": [
+   "三別抄抗蒙",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "蒙哥",
+     "q": "Q7521",
+     "d": "第4任蒙古大汗"
+    },
+    {
+     "t": "蒙古入侵高丽",
+     "q": "Q702266",
+     "d": "蒙古帝国历史事件"
+    },
+    {
+     "t": "蒙古帝国",
+     "q": "Q12557",
+     "d": "古代由蒙古人所建立橫跨歐亞兩洲的帝國"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "洪景來之亂",
+  "titles": [
+   "洪景來之亂",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "平安道农民战争",
+     "q": "Q4920015",
+     "d": ""
+    },
+    {
+     "t": "洪景來",
+     "q": "Q5894081",
+     "d": ""
+    },
+    {
+     "t": "常民 (朝鮮王朝)",
+     "q": "Q7418052",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "晉州民亂（壬戌民亂）",
+  "titles": [
+   "壬戌民亂",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "朝鮮哲宗",
+     "q": "Q482850",
+     "d": "朝鮮王朝第25代國王"
+    },
+    {
+     "t": "段昌祚",
+     "q": "Q65894643",
+     "d": ""
+    },
+    {
+     "t": "萬曆朝鮮之役",
+     "q": "Q576338",
+     "d": "1592年至1598年間大明 、朝鮮國與日本之間爆發的兩次戰爭"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "丁未義兵",
+  "titles": [
+   "朝鮮義兵運動",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "义兵运动",
+     "q": "Q17688334",
+     "d": ""
+    },
+    {
+     "t": "義兵 (朝鮮)",
+     "q": "Q122761491",
+     "d": ""
+    },
+    {
+     "t": "韓國獨立運動",
+     "q": "Q707483",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "大邱十月事件",
+  "titles": [
+   "大邱十月事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "大邱10月事件",
+     "q": "Q484437",
+     "d": ""
+    },
+    {
+     "t": "邱永鎬",
+     "q": "Q109411954",
+     "d": ""
+    },
+    {
+     "t": "十月围城 (电影)",
+     "q": "Q2131160",
+     "d": "2009年香港华语历史人物题材电影"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "麗水順天事件",
+  "titles": [
+   "麗水順天事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "麗水—順天事件",
+     "q": "Q624853",
+     "d": ""
+    },
+    {
+     "t": "麗水市 (韓國)",
+     "q": "Q42125",
+     "d": "韩国全罗南道的城市"
+    },
+    {
+     "t": "国家保安法",
+     "q": "Q482706",
+     "d": "韩国法律"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "日本朝鮮駐箚軍・朝鮮軍（龍山）",
+  "titles": [
+   "朝鮮軍 (日本)",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "萬曆朝鮮之役",
+     "q": "Q576338",
+     "d": "1592年至1598年間大明 、朝鮮國與日本之間爆發的兩次戰爭"
+    },
+    {
+     "t": "朝鮮軍 (日本陸軍)",
+     "q": "Q711570",
+     "d": ""
+    },
+    {
+     "t": "朝鲜人民军",
+     "q": "Q240670",
+     "d": "朝鲜民主主义人民共和国的武装部队"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "蘇聯第二十五軍（平壤）",
+  "titles": [
+   "蘇聯民政局",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "苏联驻大连领事馆旧址",
+     "q": "Q17030040",
+     "d": ""
+    },
+    {
+     "t": "俞秀松",
+     "q": "Q8290067",
+     "d": ""
+    },
+    {
+     "t": "習近平派系",
+     "q": "Q132457348",
+     "d": "以習近平總書記為首的中國共產黨政治集團"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\korea.json",
+  "name": "聯合國軍司令部（板門店共同警備區）",
+  "titles": [
+   "聯合國軍司令部",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "联合国军",
+     "q": "Q482864",
+     "d": "支援韓國的多國聯合部隊"
+    },
+    {
+     "t": "三八线",
+     "q": "Q588599",
+     "d": "朝鲜和韩国的陆地边界"
+    },
+    {
+     "t": "韓美聯合軍司令部",
+     "q": "Q5150856",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\language.json",
+  "name": "霹靂客家話（怡保、錫礦區）",
+  "titles": [
+   "馬來西亞客家話",
+   "Malaysian Hakka",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "客家话",
+     "q": "Q33375",
+     "d": "汉语一级方言"
+    },
+    {
+     "t": "臺灣客家話",
+     "q": "Q2391532",
+     "d": "臺灣語言之一"
+    },
+    {
+     "t": "客家话方言",
+     "q": "Q10949723",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Hakka people",
+     "q": "Q660947",
+     "d": "Ethnic group native to southeastern China and Taiwan"
+    },
+    {
+     "t": "Malaysian Chinese",
+     "q": "Q1200528",
+     "d": "Malaysian citizens of Chinese ethnicity"
+    },
+    {
+     "t": "Hakka Chinese",
+     "q": "Q33375",
+     "d": "Sinitic language originating in southern China"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\language.json",
+  "name": "日語（國語，1895–1945）",
+  "titles": [
+   "日治時期臺灣的語言政策",
+   "Taiwanese language policy under Japanese rule",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "台灣日治時期",
+     "q": "Q137816",
+     "d": "日本統治臺灣的歷史時期"
+    },
+    {
+     "t": "臺灣語言列表",
+     "q": "Q2390617",
+     "d": "曾經存在與現今使用於臺灣的語言"
+    },
+    {
+     "t": "臺灣荷蘭統治時期",
+     "q": "Q699446",
+     "d": "荷蘭統治臺灣的歷史時期"
+    }
+   ],
+   "en": [
+    {
+     "t": "Taiwan under Japanese rule",
+     "q": "Q137816",
+     "d": "1895–1945 colony of the Empire of Japan"
+    },
+    {
+     "t": "Languages of Taiwan",
+     "q": "Q2390617",
+     "d": "Austronesian and Sino-Tibetan languages"
+    },
+    {
+     "t": "Taiwan under Qing rule",
+     "q": "Q391189",
+     "d": "Territory of the Qing dynasty from 1683 to 1895"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\mexico.json",
+  "name": "猶加敦種姓戰爭",
+  "titles": [
+   "卡斯特战争",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "菲德尔·卡斯特罗",
+     "q": "Q11256",
+     "d": "前古巴共產黨中央委員會第一書記"
+    },
+    {
+     "t": "特洛伊战争",
+     "q": "Q42937",
+     "d": ""
+    },
+    {
+     "t": "阿伽门农",
+     "q": "Q128176",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\mexico.json",
+  "name": "奇奇梅卡戰爭",
+  "titles": [
+   "奇奇梅卡战争",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "奥里亚娜·法拉奇",
+     "q": "Q153700",
+     "d": "意大利记者、作家（1929—2006）"
+    },
+    {
+     "t": "美第奇家族",
+     "q": "Q170022",
+     "d": "近代佛羅倫萨貴族"
+    },
+    {
+     "t": "盧卡·唐西奇",
+     "q": "Q19844712",
+     "d": "斯洛文尼亞籃球運動員"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\mexico.json",
+  "name": "雅基族戰爭",
+  "titles": [
+   "亚基战争",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "俄格戰爭",
+     "q": "Q620735",
+     "d": "2008年俄罗斯与格鲁吉亚之间的军事冲突"
+    },
+    {
+     "t": "阿喀琉斯",
+     "q": "Q41746",
+     "d": "古希腊神话人物"
+    },
+    {
+     "t": "达契亚战争",
+     "q": "Q723608",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\mexico.json",
+  "name": "特拉斯卡拉的特權",
+  "titles": [
+   "特拉斯卡拉",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "特拉斯卡拉",
+     "q": "Q258533",
+     "d": "维基媒体消歧义页"
+    },
+    {
+     "t": "特拉斯卡拉邦聯",
+     "q": "Q614072",
+     "d": ""
+    },
+    {
+     "t": "特拉斯卡拉州",
+     "q": "Q82681",
+     "d": "墨西哥州份"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\morocco.json",
+  "name": "",
+  "titles": [
+   "鄂圖曼北非攝政",
+   "Ottoman North Africa",
+   "オスマン帝国の北アフリカ"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿爾及爾攝政領",
+     "q": "Q3045696",
+     "d": "奥斯曼帝国的省"
+    },
+    {
+     "t": "穆罕默德·阿里帕夏",
+     "q": "Q182781",
+     "d": ""
+    },
+    {
+     "t": "巴巴里海盗",
+     "q": "Q899359",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Ottoman wars in Africa",
+     "q": "Q16931603",
+     "d": "Series of military conflicts between the Ottoman Empire and various African states"
+    },
+    {
+     "t": "Ottoman Tripolitania",
+     "q": "Q1529261",
+     "d": "Semi-autonomous state affiliated with the Ottoman Empire (1551–1912)"
+    },
+    {
+     "t": "Ottoman Tunisia",
+     "q": "Q20018403",
+     "d": "Semi-autonomous state affiliated with the Ottoman Empire"
+    }
+   ],
+   "ja": [
+    {
+     "t": "オスマン帝国",
+     "q": "Q12560",
+     "d": "オスマン家出身の君主を戴く多民族帝国 (1299-1922)"
+    },
+    {
+     "t": "太守",
+     "q": "Q8194306",
+     "d": ""
+    },
+    {
+     "t": "オスマン帝国の料理",
+     "q": "Q2459950",
+     "d": "かつてのオスマン帝国に起源を持つ郷土料理"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\morocco.json",
+  "name": "柏柏爾大起義",
+  "titles": [
+   "柏柏尔人起义",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "柏塘镇",
+     "q": "Q3972164",
+     "d": ""
+    },
+    {
+     "t": "阿卜杜拉·马赫迪",
+     "q": "Q307629",
+     "d": ""
+    },
+    {
+     "t": "穆斯林征服西班牙",
+     "q": "Q1455917",
+     "d": "公元711年起，倭马亚哈里发国对位于伊比利亚半岛的西班牙行省的扩张攻占"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\morocco.json",
+  "name": "薩累海盜共和國",
+  "titles": [
+   "萨累共和国",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "卡累利阿共和国",
+     "q": "Q1914",
+     "d": "俄罗斯联邦的一个联邦主体"
+    },
+    {
+     "t": "东卡累利阿共和国",
+     "q": "Q4412594",
+     "d": ""
+    },
+    {
+     "t": "卡累利阿人",
+     "q": "Q213470",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\morocco.json",
+  "name": "哈瓦利吉派柏柏爾起義",
+  "titles": [
+   "柏柏尔人起义",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "柏塘镇",
+     "q": "Q3972164",
+     "d": ""
+    },
+    {
+     "t": "阿卜杜拉·马赫迪",
+     "q": "Q307629",
+     "d": ""
+    },
+    {
+     "t": "穆斯林征服西班牙",
+     "q": "Q1455917",
+     "d": "公元711年起，倭马亚哈里发国对位于伊比利亚半岛的西班牙行省的扩张攻占"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\morocco.json",
+  "name": "蘇非教團（扎維亞）",
+  "titles": [
+   "扎维亚",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "扎维耶运动场",
+     "q": "Q4120648",
+     "d": ""
+    },
+    {
+     "t": "普莱扎克",
+     "q": "Q1622895",
+     "d": "法国夏朗德省旧市镇"
+    },
+    {
+     "t": "葉夫根尼·扎米亞京",
+     "q": "Q204868",
+     "d": "俄羅斯作家（1884—1937）"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\people.json",
+  "name": "余清芳",
+  "titles": [
+   "",
+   "Yu Qingfang",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "余清芳",
+     "q": "Q10886624",
+     "d": "西來庵事件領導者"
+    },
+    {
+     "t": "西來庵事件",
+     "q": "Q707864",
+     "d": "1915年台湾抗日事件"
+    },
+    {
+     "t": "余清芳 (消歧義)",
+     "q": "Q117436222",
+     "d": "维基媒体消歧义页"
+    }
+   ],
+   "en": [
+    {
+     "t": "Tapani incident",
+     "q": "Q707864",
+     "d": "1915 uprising in Japanese Taiwan"
+    },
+    {
+     "t": "Tainan",
+     "q": "Q140631",
+     "d": "Special municipality and oldest city in Taiwan"
+    },
+    {
+     "t": "Religion in Taiwan",
+     "q": "Q709629",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\philippines.json",
+  "name": "",
+  "titles": [
+   "拉瑙蘇丹國",
+   "Confederate sultanates in Lanao",
+   "ラナオ連合スルタン国"
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "棉兰老岛",
+     "q": "Q124873",
+     "d": "菲律宾的岛屿"
+    },
+    {
+     "t": "馬京達瑙蘇丹國",
+     "q": "Q248572",
+     "d": ""
+    },
+    {
+     "t": "蘇祿蘇丹國",
+     "q": "Q422065",
+     "d": "东南亚历史国家"
+    }
+   ],
+   "en": [
+    {
+     "t": "Confederate States of Lanao",
+     "q": "Q5159852",
+     "d": "Confederation in Mindanao, Philippines (1616–1935)"
+    },
+    {
+     "t": "Sultanate of Maguindanao",
+     "q": "Q248572",
+     "d": "1515-1926 state in Southeast Asia"
+    },
+    {
+     "t": "Mindanao",
+     "q": "Q124873",
+     "d": "Island in the Philippines"
+    }
+   ],
+   "ja": [
+    {
+     "t": "在ダバオ日本国総領事館",
+     "q": "Q105523511",
+     "d": "フィリピンにある日本の総領事館"
+    },
+    {
+     "t": "消滅した政権一覧",
+     "q": "Q62630",
+     "d": "ウィキメディアの一覧記事"
+    },
+    {
+     "t": "フィリピンのイスラム教",
+     "q": "Q1674071",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\philippines.json",
+  "name": "馬尼拉—達古潘鐵路",
+  "titles": [
+   "马尼拉-达古潘铁路",
+   "Manila–Dagupan Railway",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "蘇加諾-哈達國際機場",
+     "q": "Q749497",
+     "d": "位於印尼雅加達的機場"
+    },
+    {
+     "t": "中国抗日战争",
+     "q": "Q170314",
+     "d": "20世紀中期中國抵抗日本侵略的全面戰爭"
+    },
+    {
+     "t": "迪布鲁格尔",
+     "q": "Q1266637",
+     "d": "印度阿萨姆邦城镇"
+    }
+   ],
+   "en": [
+    {
+     "t": "Dagupan",
+     "q": "Q875070",
+     "d": "Independent component city in Ilocos Region, Philippines"
+    },
+    {
+     "t": "Philippine National Railways",
+     "q": "Q1637464",
+     "d": "Railway company in the Philippines"
+    },
+    {
+     "t": "Manila Railway Dagupan class",
+     "q": "Q104817455",
+     "d": "Railway Class"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\philippines.json",
+  "name": "聖羅克水壩",
+  "titles": [
+   "",
+   "San Roque Dam",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "胡佛水壩",
+     "q": "Q172822",
+     "d": "美国水坝"
+    },
+    {
+     "t": "世界最大水壩列表",
+     "q": "Q8216428",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "水壩潰決",
+     "q": "Q1033074",
+     "d": "在自然或人为因素的影响下，发生突发性破坏造成大坝崩溃或决口的事件"
+    }
+   ],
+   "en": [
+    {
+     "t": "San Roque Dam",
+     "q": "Q7415259",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "San Roque Dam (Philippines)",
+     "q": "Q1765023",
+     "d": "Dam in Pangasinan, Philippines"
+    },
+    {
+     "t": "List of largest dams",
+     "q": "Q8216428",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\philippines.json",
+  "name": "東南亞—日本海纜（SJC）",
+  "titles": [
+   "",
+   "Southeast Asia–Japan Cable",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "台灣網際網路",
+     "q": "Q166124",
+     "d": ""
+    },
+    {
+     "t": "颱風莫蘭蒂",
+     "q": "Q26877340",
+     "d": "2016年的14號颱風"
+    },
+    {
+     "t": "2016年",
+     "q": "Q25245",
+     "d": "年"
+    }
+   ],
+   "en": [
+    {
+     "t": "SJC (cable system)",
+     "q": "Q7390539",
+     "d": ""
+    },
+    {
+     "t": "Southeast Asia",
+     "q": "Q11708",
+     "d": "Subregion of Asia"
+    },
+    {
+     "t": "Cartoon Network (Asia)",
+     "q": "Q108770855",
+     "d": "Pan-Asian pay television channel"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\philippines.json",
+  "name": "SEA-US 海纜（達沃—關島—美國）",
+  "titles": [
+   "",
+   "SEA-US",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "SEA-ME-WE 4",
+     "q": "Q954903",
+     "d": ""
+    },
+    {
+     "t": "SEA-ME-WE 3",
+     "q": "Q530880",
+     "d": "海地光缆"
+    },
+    {
+     "t": "台灣網際網路",
+     "q": "Q166124",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "The Sea Around Us",
+     "q": "Q7762748",
+     "d": "1951 book by Rachel Carson"
+    },
+    {
+     "t": "Sea & Us",
+     "q": "Q55632742",
+     "d": ""
+    },
+    {
+     "t": "Sea Around Us",
+     "q": "Q25283945",
+     "d": "Topics referred to by the same term"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\poland.json",
+  "name": "中央工業區（COP）",
+  "titles": [
+   "中央工業區",
+   "Central Industrial Region",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "波蘭中央工業區",
+     "q": "Q1133730",
+     "d": ""
+    },
+    {
+     "t": "新北市",
+     "q": "Q244898",
+     "d": "中華民國直轄市及最大都市"
+    },
+    {
+     "t": "圖拉省",
+     "q": "Q1010812",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Central Industrial Region",
+     "q": "Q95041161",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Central Industrial Region (Poland)",
+     "q": "Q1133730",
+     "d": "Polish economic project"
+    },
+    {
+     "t": "Kaesong Industrial Region",
+     "q": "Q495424",
+     "d": "Special administrative industrial region of North Korea"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\poland.json",
+  "name": "沿海工人抗爭",
+  "titles": [
+   "1970年波蘭抗議",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "1970年波兰抗议事件",
+     "q": "Q760020",
+     "d": "波蘭的示威抗議事件"
+    },
+    {
+     "t": "波兰人民共和国",
+     "q": "Q211274",
+     "d": "波兰历史政权"
+    },
+    {
+     "t": "波茲南事件",
+     "q": "Q52967",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\prc.json",
+  "name": "內人黨案",
+  "titles": [
+   "內人黨案",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "大罷免",
+     "q": "Q132444148",
+     "d": "2025年中华民国（台湾）政治运动"
+    },
+    {
+     "t": "秀茂坪童黨燒屍案",
+     "q": "Q10448888",
+     "d": "1997年香港命案"
+    },
+    {
+     "t": "藍田童黨虐殺少女案",
+     "q": "Q106252734",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\prc.json",
+  "name": "烏魯木齊七五事件",
+  "titles": [
+   "七五事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "乌鲁木齐七五事件",
+     "q": "Q844505",
+     "d": "2009年新疆乌鲁木齐的大规模暴力骚乱事件"
+    },
+    {
+     "t": "七五事件",
+     "q": "Q15889888",
+     "d": "维基媒体消歧义页"
+    },
+    {
+     "t": "北平七五事件",
+     "q": "Q15902687",
+     "d": "流血事件"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "博洛特尼科夫起義",
+  "titles": [
+   "博洛特尼科夫起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "波洛特尼科夫起義",
+     "q": "Q4126353",
+     "d": ""
+    },
+    {
+     "t": "曼達洛人與古古",
+     "q": "Q124246549",
+     "d": ""
+    },
+    {
+     "t": "弗拉迪米爾·納博可夫",
+     "q": "Q36591",
+     "d": "美籍俄裔小说家、评论家、鳞翅目昆虫学家（1899－1977）"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "莫斯科鹽稅暴動",
+  "titles": [
+   "鹽暴動",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "鉛錘黨暴動",
+     "q": "Q3458291",
+     "d": ""
+    },
+    {
+     "t": "ONE PIECE角色列表",
+     "q": "Q83490",
+     "d": "維基媒體列表條目"
+    },
+    {
+     "t": "中國",
+     "q": "Q29520",
+     "d": "具有歷史、文化意義。現今政治上通常指稱中華人民共和國，少數情形會指涉中華民國"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "銅幣暴動",
+  "titles": [
+   "銅幣暴動",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "中国抗日战争",
+     "q": "Q170314",
+     "d": "20世紀中期中國抵抗日本侵略的全面戰爭"
+    },
+    {
+     "t": "朝鲜战争",
+     "q": "Q8663",
+     "d": "1950-1953年朝鮮半島內戰"
+    },
+    {
+     "t": "日本历史年表",
+     "q": "Q2967218",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "射擊軍叛亂",
+  "titles": [
+   "射擊軍",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "索菲婭·阿列克謝耶芙娜",
+     "q": "Q233987",
+     "d": "俄罗斯公主"
+    },
+    {
+     "t": "射手 (軍事單位)",
+     "q": "Q860413",
+     "d": ""
+    },
+    {
+     "t": "伪德米特里一世",
+     "q": "Q209535",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "博洛特納亞廣場抗議",
+  "titles": [
+   "2011年－2013年俄羅斯抗議活動",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "2011年—2013年俄罗斯示威",
+     "q": "Q629636",
+     "d": ""
+    },
+    {
+     "t": "叙利亚内战",
+     "q": "Q178810",
+     "d": "2011-2024年于叙利亚的内战"
+    },
+    {
+     "t": "第一次利比亞內戰",
+     "q": "Q81545",
+     "d": "武裝衝突"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "特維爾大公國",
+  "titles": [
+   "特維爾公國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "大摩拉维亚公国",
+     "q": "Q193152",
+     "d": ""
+    },
+    {
+     "t": "羅斯諸公國",
+     "q": "Q393871",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "特维尔大公国",
+     "q": "Q163268",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "梁贊大公國",
+  "titles": [
+   "梁贊公國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "梁赞大公",
+     "q": "Q4434320",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "羅斯諸公國",
+     "q": "Q393871",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "1161年",
+     "q": "Q19664",
+     "d": "年份"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "亞伊克（烏拉爾）哥薩克",
+  "titles": [
+   "烏拉爾哥薩克",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "哥薩克",
+     "q": "Q47805",
+     "d": "起源黑海和里海北部腹地的一個半游牧半軍事化社羣"
+    },
+    {
+     "t": "奧倫堡哥薩克",
+     "q": "Q2476304",
+     "d": ""
+    },
+    {
+     "t": "普加乔夫起义",
+     "q": "Q154100",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "波蘭軍駐守克里姆林",
+  "titles": [
+   "波俄戰爭 (1605年－1618年)",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "波俄戰爭",
+     "q": "Q591608",
+     "d": "維基媒體消歧義頁"
+    },
+    {
+     "t": "波苏战争",
+     "q": "Q186284",
+     "d": ""
+    },
+    {
+     "t": "俄乌战争",
+     "q": "Q15860072",
+     "d": "俄羅斯與烏克蘭自2014年至今的軍事衝突"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "法軍佔領莫斯科",
+  "titles": [
+   "拿破崙入侵俄國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "俄法战争",
+     "q": "Q179250",
+     "d": "1812年欧洲大规模武装冲突"
+    },
+    {
+     "t": "戰爭與和平",
+     "q": "Q161531",
+     "d": ""
+    },
+    {
+     "t": "米哈伊尔·巴克莱-德托利",
+     "q": "Q157632",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "德軍佔領區",
+  "titles": [
+   "德國佔領蘇聯",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "纳粹德国和苏联对波兰的占领",
+     "q": "Q700120",
+     "d": "第二次世界大战期间的历史事件"
+    },
+    {
+     "t": "德國佔領捷克斯洛伐克",
+     "q": "Q275618",
+     "d": ""
+    },
+    {
+     "t": "同盟國軍事佔領德國",
+     "q": "Q2415901",
+     "d": "占领军政权"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\russia.json",
+  "name": "俄國黑海艦隊租駐塞瓦斯托波爾",
+  "titles": [
+   "俄羅斯黑海艦隊",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "黑海艦隊",
+     "q": "Q934022",
+     "d": "俄罗斯海军舰队"
+    },
+    {
+     "t": "維克托·索科洛夫",
+     "q": "Q28148315",
+     "d": "俄罗斯海军中将"
+    },
+    {
+     "t": "俄羅斯入侵烏克蘭的海戰",
+     "q": "Q122902719",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "巴塞隆納—馬塔羅鐵路",
+  "titles": [
+   "巴塞隆納—馬塔羅鐵路",
+   "Barcelona–Mataró railway",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "巴塞罗那",
+     "q": "Q1492",
+     "d": "西班牙加泰隆尼亞自治區首府"
+    },
+    {
+     "t": "加泰隆尼亞近郊鐵路",
+     "q": "Q3322422",
+     "d": "西班牙加泰罗尼亚地区的通勤铁路系统"
+    },
+    {
+     "t": "歐羅巴-會展中心站",
+     "q": "Q2430675",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "R1–RG1 (Rodalies de Catalunya)",
+     "q": "Q2395239",
+     "d": "Part of Barcelona's commuter rail service"
+    },
+    {
+     "t": "Mataró",
+     "q": "Q11492",
+     "d": "Municipality in Catalonia, Spain"
+    },
+    {
+     "t": "Maçanet-Massanes railway station",
+     "q": "Q2328657",
+     "d": "Railway station in Maçanet de la Selva, Spain"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "馬德里—阿蘭胡埃斯鐵路",
+  "titles": [
+   "馬德里—阿蘭胡埃斯鐵路",
+   "Madrid–Aranjuez railway",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "马德里",
+     "q": "Q2807",
+     "d": "西班牙首都"
+    },
+    {
+     "t": "马德里近郊铁路",
+     "q": "Q1054785",
+     "d": "西班牙马德里的通勤铁路系统"
+    },
+    {
+     "t": "马德里自治区",
+     "q": "Q5756",
+     "d": "西班牙第一级行政区划"
+    }
+   ],
+   "en": [
+    {
+     "t": "Aranjuez",
+     "q": "Q486792",
+     "d": "Municipality in Community of Madrid, Spain"
+    },
+    {
+     "t": "Strawberry train",
+     "q": "Q7622527",
+     "d": "Tourist train in Spain"
+    },
+    {
+     "t": "Royal Palace of Aranjuez",
+     "q": "Q530129",
+     "d": "Royal palace of Spain"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "阿爾坎塔拉水壩（塔霍河）",
+  "titles": [
+   "阿爾坎塔拉水壩",
+   "José María de Oriol Dam",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "北阿坎德邦",
+     "q": "Q1499",
+     "d": "印度北部的一个邦"
+    },
+    {
+     "t": "水壩潰決",
+     "q": "Q1033074",
+     "d": "在自然或人为因素的影响下，发生突发性破坏造成大坝崩溃或决口的事件"
+    },
+    {
+     "t": "無冕王者",
+     "q": "Q131278912",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Alcántara Dam",
+     "q": "Q94989675",
+     "d": "Dam in Extremadura, Spain"
+    },
+    {
+     "t": "José María Oriol Urquijo",
+     "q": "Q40387",
+     "d": "Spanish politician and businessman (1905–1985)"
+    },
+    {
+     "t": "Alcántara Bridge",
+     "q": "Q996197",
+     "d": "Bridge in Extremadura, Spain"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "ESPANIX 馬德里網際網路交換中心",
+  "titles": [
+   "",
+   "ESPANIX",
+   ""
+  ],
+  "hits": {
+   "zh": [],
+   "en": [
+    {
+     "t": "RETN Networks",
+     "q": "Q4047837",
+     "d": "British Internet Service providing company"
+    },
+    {
+     "t": "List of internet exchange points",
+     "q": "Q6574343",
+     "d": ""
+    },
+    {
+     "t": "Andreu Veà Baró",
+     "q": "Q15277820",
+     "d": "Spanish engineer"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "卡斯提亞公社起義",
+  "titles": [
+   "卡斯提亞公社起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "欧洲战争列表",
+     "q": "Q4177716",
+     "d": "维基媒体列表条目"
+    },
+    {
+     "t": "亚述",
+     "q": "Q41137",
+     "d": "古代两河流域国家"
+    },
+    {
+     "t": "美索不达米亚历史",
+     "q": "Q2481441",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "阿爾普哈拉斯起義",
+  "titles": [
+   "阿爾普哈拉斯起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "奧瑪亞王朝",
+     "q": "Q45646",
+     "d": "古萊什部落的氏族"
+    },
+    {
+     "t": "星際大戰角色列表",
+     "q": "Q51805",
+     "d": "維基媒體列表條目"
+    },
+    {
+     "t": "哈德良",
+     "q": "Q1427",
+     "d": "罗马帝国皇帝、五贤帝之一"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "阿斯圖里亞斯礦工起義",
+  "titles": [
+   "阿斯圖里亞斯礦工起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "阿斯图里亚斯自治区",
+     "q": "Q3934",
+     "d": "西班牙自治区"
+    },
+    {
+     "t": "1934年阿斯图里亚斯矿工罢工",
+     "q": "Q1587277",
+     "d": ""
+    },
+    {
+     "t": "星际争霸角色列表",
+     "q": "Q853610",
+     "d": "維基媒體列表條目"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "塞維亞泰法王國",
+  "titles": [
+   "塞維亞泰法王國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "德尼亞泰法",
+     "q": "Q252323",
+     "d": "西班牙中世纪摩尔人王国"
+    },
+    {
+     "t": "澜沧王国",
+     "q": "Q853477",
+     "d": ""
+    },
+    {
+     "t": "西哥特王国",
+     "q": "Q126936",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\spain.json",
+  "name": "托雷多泰法王國",
+  "titles": [
+   "托雷多泰法王國",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "倫巴第-威尼托王國",
+     "q": "Q209857",
+     "d": ""
+    },
+    {
+     "t": "希臘王國",
+     "q": "Q209065",
+     "d": ""
+    },
+    {
+     "t": "法國—德國關係",
+     "q": "Q567497",
+     "d": "雙邊關係"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "基隆—臺北鐵路（劉銘傳）",
+  "titles": [
+   "臺灣鐵路 (清治時期)",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "臺灣鐵路",
+     "q": "Q30941702",
+     "d": "臺灣主要的公共鐵路系統"
+    },
+    {
+     "t": "臺灣鐵路公司",
+     "q": "Q112151129",
+     "d": "臺灣鐵路的營運機構、中華民國交通部公營事業"
+    },
+    {
+     "t": "臺灣鐵路管理局",
+     "q": "Q697926",
+     "d": "臺灣鐵路的前營運機構，今臺灣鐵路公司前身"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "臺北—新竹鐵路",
+  "titles": [
+   "臺灣鐵路 (清治時期)",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "臺灣鐵路",
+     "q": "Q30941702",
+     "d": "臺灣主要的公共鐵路系統"
+    },
+    {
+     "t": "臺灣鐵路公司",
+     "q": "Q112151129",
+     "d": "臺灣鐵路的營運機構、中華民國交通部公營事業"
+    },
+    {
+     "t": "臺灣鐵路管理局",
+     "q": "Q697926",
+     "d": "臺灣鐵路的前營運機構，今臺灣鐵路公司前身"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "金山核能發電廠（核一廠）",
+  "titles": [
+   "金山核能發電廠",
+   "Chinshan Nuclear Power Plant",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "第一核能發電廠",
+     "q": "Q712574",
+     "d": "位於臺灣新北市石門區的核能發電廠"
+    },
+    {
+     "t": "龍門核能發電廠",
+     "q": "Q707536",
+     "d": "位於臺灣新北市貢寮區的核能發電廠"
+    },
+    {
+     "t": "第三核能發電廠",
+     "q": "Q712797",
+     "d": "臺灣核能發電廠"
+    }
+   ],
+   "en": [
+    {
+     "t": "Nuclear power in Taiwan",
+     "q": "Q3725258",
+     "d": ""
+    },
+    {
+     "t": "Jinshan Nuclear Power Plant",
+     "q": "Q712574",
+     "d": "Nuclear power plant in Shimen, New Taipei, Taiwan"
+    },
+    {
+     "t": "List of power stations in Taiwan",
+     "q": "Q6634701",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "六輕（麥寮石化園區）",
+  "titles": [
+   "麥寮六輕",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "第六套輕油裂解廠",
+     "q": "Q7215612",
+     "d": ""
+    },
+    {
+     "t": "麥寮鄉",
+     "q": "Q709989",
+     "d": "臺灣雲林縣的鄉"
+    },
+    {
+     "t": "台塑石化",
+     "q": "Q1437742",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "亞太二號海纜（APCN-2）",
+  "titles": [
+   "亞太二號海底電纜",
+   "APCN-2",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "2006年恆春地震",
+     "q": "Q698921",
+     "d": ""
+    },
+    {
+     "t": "汕头国际海缆登陆站",
+     "q": "Q11133481",
+     "d": ""
+    },
+    {
+     "t": "台灣網際網路",
+     "q": "Q166124",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "APCN 2",
+     "q": "Q865508",
+     "d": "Submarine communications cable"
+    },
+    {
+     "t": "APCN",
+     "q": "Q4653250",
+     "d": "Submarine telecommunications cable system linking nine Asian countries"
+    },
+    {
+     "t": "Shantou",
+     "q": "Q59100",
+     "d": "Prefecture-level city in Guangdong, China"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "蘇花公路改善工程（蘇花改）通車",
+  "titles": [
+   "蘇花公路改善工程",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "蘇花公路改善計畫",
+     "q": "Q7635267",
+     "d": ""
+    },
+    {
+     "t": "蘇花公路安全提升計畫",
+     "q": "Q86728626",
+     "d": ""
+    },
+    {
+     "t": "蘇花公路",
+     "q": "Q7635268",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "台馬四號海纜",
+  "titles": [
+   "台馬海纜",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "海底電纜",
+     "q": "Q506572",
+     "d": "一种用于传输电子讯号的缆线"
+    },
+    {
+     "t": "郭台強",
+     "q": "Q16926366",
+     "d": "台湾企业家"
+    },
+    {
+     "t": "馬祖列島",
+     "q": "Q609255",
+     "d": "中華民國福建省連江縣管轄的島嶼"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "彰化淡水閩粵械鬥",
+  "titles": [
+   "臺灣械鬥",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "台灣分類械鬥",
+     "q": "Q9443905",
+     "d": ""
+    },
+    {
+     "t": "漳泉械鬥",
+     "q": "Q11143255",
+     "d": ""
+    },
+    {
+     "t": "閩粵械鬥",
+     "q": "Q10564537",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "美軍協防臺灣司令部（USTDC）",
+  "titles": [
+   "美國協防臺灣司令部",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "美軍協防台灣司令部",
+     "q": "Q7892234",
+     "d": "歷史上負責指揮駐臺美軍各單位的司令部"
+    },
+    {
+     "t": "林德 (美國海軍將領)",
+     "q": "Q50059092",
+     "d": "美国军人"
+    },
+    {
+     "t": "协防台湾",
+     "q": "Q109415842",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\taiwan.json",
+  "name": "林口美軍通訊站",
+  "titles": [
+   "林口",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "林口區",
+     "q": "Q570112",
+     "d": "臺灣新北市的市轄區"
+    },
+    {
+     "t": "林口",
+     "q": "Q835896",
+     "d": "維基媒體消歧義頁"
+    },
+    {
+     "t": "林口長庚紀念醫院",
+     "q": "Q30297120",
+     "d": "臺灣桃園市龜山區的醫院"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\thailand.json",
+  "name": "曼谷港（孔堤）",
+  "titles": [
+   "曼谷港",
+   "Port of Bangkok",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "唐人街探案 (網絡劇)",
+     "q": "Q85877687",
+     "d": "2020年中国电视剧"
+    },
+    {
+     "t": "廊曼國際機場",
+     "q": "Q1046755",
+     "d": "泰国曼谷的机场"
+    },
+    {
+     "t": "林查班港",
+     "q": "Q48880885",
+     "d": "泰国港口"
+    }
+   ],
+   "en": [
+    {
+     "t": "Bangkok Port",
+     "q": "Q6578896",
+     "d": "International port in Thailand"
+    },
+    {
+     "t": "Port F.C.",
+     "q": "Q580378",
+     "d": "Thai football club, based in Bangkok"
+    },
+    {
+     "t": "Bay of Bangkok",
+     "q": "Q1359524",
+     "d": "Bay in the Gulf of Thailand"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\thailand.json",
+  "name": "聖人起義（東北）",
+  "titles": [
+   "圣人起义",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "元朝民變",
+     "q": "Q10889542",
+     "d": ""
+    },
+    {
+     "t": "孫中山",
+     "q": "Q8573",
+     "d": "近代中國政治人物、革命家，中國國民黨總理，中華民國國父（1866—1925）"
+    },
+    {
+     "t": "僧计起义",
+     "q": "Q65012963",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\thailand.json",
+  "name": "波汶拉德叛亂",
+  "titles": [
+   "波汶拉德叛乱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "砂拉越共产主义叛乱",
+     "q": "Q17017491",
+     "d": ""
+    },
+    {
+     "t": "安汶",
+     "q": "Q18970",
+     "d": "印尼城市"
+    },
+    {
+     "t": "玛哈·素拉辛哈那",
+     "q": "Q550410",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\thailand.json",
+  "name": "泰國共產黨武裝鬥爭",
+  "titles": [
+   "泰国共产党叛乱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "泰国共产主义叛乱",
+     "q": "Q19891802",
+     "d": ""
+    },
+    {
+     "t": "马来亚共产党叛乱 (1968年—1989年)",
+     "q": "Q3446062",
+     "d": ""
+    },
+    {
+     "t": "泰國共產黨",
+     "q": "Q1359816",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\thailand.json",
+  "name": "紅衫軍與黃衫軍對立",
+  "titles": [
+   "红衫军",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "紅衫軍",
+     "q": "Q299243",
+     "d": "维基媒体消歧义页"
+    },
+    {
+     "t": "百萬人民倒扁運動",
+     "q": "Q1306506",
+     "d": "2006年臺灣社會運動"
+    },
+    {
+     "t": "红衫军 (意大利)",
+     "q": "Q2627502",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\turkey.json",
+  "name": "安卡拉埃森博阿機場",
+  "titles": [
+   "安卡拉埃森博阿国际机场",
+   "Ankara Esenboğa International Airport",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "埃森博阿国际机场",
+     "q": "Q430490",
+     "d": "土耳其安卡拉机场"
+    },
+    {
+     "t": "埃森博阿國際機場攻擊",
+     "q": "Q2042386",
+     "d": "1982年发生于土耳其安卡拉的袭击"
+    },
+    {
+     "t": "安卡拉",
+     "q": "Q3640",
+     "d": "土耳其首都"
+    }
+   ],
+   "en": [
+    {
+     "t": "Ankara Esenboğa Airport",
+     "q": "Q430490",
+     "d": "Airport in Ankara, Turkey"
+    },
+    {
+     "t": "Ankara Esenboğa Airport attack",
+     "q": "Q2042386",
+     "d": "1982 attack in Ankara, Turkey"
+    },
+    {
+     "t": "List of international airports by country",
+     "q": "Q16002152",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\turkey.json",
+  "name": "傑拉里叛亂",
+  "titles": [
+   "杰拉利叛乱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "傑拉里叛亂",
+     "q": "Q1052771",
+     "d": ""
+    },
+    {
+     "t": "通杰利省",
+     "q": "Q620742",
+     "d": ""
+    },
+    {
+     "t": "1971年人民解放阵线叛乱",
+     "q": "Q4574531",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\turkey.json",
+  "name": "謝赫賽義德叛亂",
+  "titles": [
+   "谢赫·赛义德叛乱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "穆罕默德·本·拉希德·阿勒马克图姆",
+     "q": "Q57655",
+     "d": "阿拉伯联合酋长国副总统兼总理 迪拜酋长"
+    },
+    {
+     "t": "卡齐姆·卡拉贝基尔",
+     "q": "Q269182",
+     "d": ""
+    },
+    {
+     "t": "阿曼",
+     "q": "Q842",
+     "d": "西亞國家"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\turkey.json",
+  "name": "德西姆叛亂",
+  "titles": [
+   "德西姆叛乱",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "1837年—1838年叛乱",
+     "q": "Q1560445",
+     "d": ""
+    },
+    {
+     "t": "降央伯姆",
+     "q": "Q15916584",
+     "d": ""
+    },
+    {
+     "t": "庫爾德斯坦",
+     "q": "Q41470",
+     "d": "库尔德人聚居地"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\turkey.json",
+  "name": "蓋齊公園抗議",
+  "titles": [
+   "2013年土耳其反政府示威",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "叙利亚内战",
+     "q": "Q178810",
+     "d": "2011-2024年于叙利亚的内战"
+    },
+    {
+     "t": "阿拉伯之春",
+     "q": "Q33761",
+     "d": "2010年代初期在中東發生的一系列革命運動"
+    },
+    {
+     "t": "第一次利比亞內戰",
+     "q": "Q81545",
+     "d": "武裝衝突"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\uk.json",
+  "name": "Atlantic Crossing-1 海纜",
+  "titles": [
+   "",
+   "Atlantic Crossing-1 (AC-1)",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "盧西塔尼亞號沉沒事件",
+     "q": "Q5551560",
+     "d": ""
+    },
+    {
+     "t": "桑葚港",
+     "q": "Q426875",
+     "d": ""
+    }
+   ],
+   "en": [
+    {
+     "t": "Atlantic Crossing 1",
+     "q": "Q756383",
+     "d": ""
+    },
+    {
+     "t": "AC1",
+     "q": "Q4650476",
+     "d": "Topics referred to by the same term"
+    },
+    {
+     "t": "Critical Foreign Dependencies Initiative",
+     "q": "Q5186617",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\uk.json",
+  "name": "FLAG Atlantic-1 海纜",
+  "titles": [
+   "",
+   "FLAG Atlantic-1",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "环球海底光缆",
+     "q": "Q641659",
+     "d": ""
+    },
+    {
+     "t": "纽约",
+     "q": "Q60",
+     "d": "美國最大都市、國際大都市之一"
+    },
+    {
+     "t": "香港日佔時期",
+     "q": "Q701967",
+     "d": "香港歷史時期（1941年12月25日至1945年8月15日）"
+    }
+   ],
+   "en": [
+    {
+     "t": "Flag of NATO",
+     "q": "Q459788",
+     "d": ""
+    },
+    {
+     "t": "List of national flags of sovereign states",
+     "q": "Q2429697",
+     "d": ""
+    },
+    {
+     "t": "Gadsden flag",
+     "q": "Q917652",
+     "d": "Historical American flag"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\uk.json",
+  "name": "英格蘭的愛爾蘭佩爾區",
+  "titles": [
+   "佩尔区",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "罗斯波尔当",
+     "q": "Q328771",
+     "d": "法国菲尼斯泰尔省市镇"
+    },
+    {
+     "t": "阿尔伯特·施佩尔",
+     "q": "Q60045",
+     "d": "德国建筑师、纳粹德国军备部部长"
+    },
+    {
+     "t": "伊珀尔区",
+     "q": "Q91450",
+     "d": "比利时西佛兰德省的区"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "B&O 鐵路通至俄亥俄河（惠靈）",
+  "titles": [
+   "巴爾的摩—俄亥俄鐵路",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "巴爾的摩與俄亥俄鐵路",
+     "q": "Q805757",
+     "d": ""
+    },
+    {
+     "t": "馬里蘭區域通勤鐵路",
+     "q": "Q6714458",
+     "d": ""
+    },
+    {
+     "t": "巴爾的摩環線",
+     "q": "Q4852780",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "納特·透納起義",
+  "titles": [
+   "納特·特納起義",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "儒勒·凡尔纳",
+     "q": "Q33977",
+     "d": "法國作家（Jules Verne，1828—1905）"
+    },
+    {
+     "t": "帕特罗纳·哈利尔",
+     "q": "Q2305326",
+     "d": ""
+    },
+    {
+     "t": "特纳起义",
+     "q": "Q6967898",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "血腥堪薩斯",
+  "titles": [
+   "血腥堪薩斯",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "堪薩斯州",
+     "q": "Q1558",
+     "d": "美國州份"
+    },
+    {
+     "t": "堪薩斯流血事件",
+     "q": "Q331377",
+     "d": "军事冲突"
+    },
+    {
+     "t": "美國歷史 (1849年—1865年)",
+     "q": "Q2519710",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "土爾沙種族屠殺",
+  "titles": [
+   "1921年塔尔萨种族屠杀",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "土爾沙種族屠殺",
+     "q": "Q1824714",
+     "d": "1921年5月至6月在美國俄克拉荷馬州塔爾薩發生的種族歧視大規模襲擊"
+    },
+    {
+     "t": "亚美尼亚种族灭绝",
+     "q": "Q80034",
+     "d": "土耳其針對亞美尼亞人的屠殺"
+    },
+    {
+     "t": "穆斯塔法·凯末尔·阿塔图尔克",
+     "q": "Q5152",
+     "d": "土耳其国父（1881年—1938年）"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "布萊爾山之戰",
+  "titles": [
+   "布萊爾山之戰",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "復仇者聯盟：終局之戰",
+     "q": "Q23781155",
+     "d": "由漫威影業製作的2019年超級英雄電影"
+    },
+    {
+     "t": "拿破仑一世",
+     "q": "Q517",
+     "d": "法國軍事家與政治家"
+    },
+    {
+     "t": "馬倫戈之戰",
+     "q": "Q273011",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "瓦茨騷亂",
+  "titles": [
+   "瓦茨騷亂",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "2008年西藏骚乱",
+     "q": "Q545068",
+     "d": ""
+    },
+    {
+     "t": "非裔美國人民權運動",
+     "q": "Q48537",
+     "d": "20世紀事件"
+    },
+    {
+     "t": "国会山骚乱",
+     "q": "Q104705419",
+     "d": "2021年1月6日美国国会大厦发生的骚乱"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "傷膝河事件（1973）",
+  "titles": [
+   "傷膝河事件",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "伤膝河大屠杀",
+     "q": "Q108413",
+     "d": "历史事件"
+    },
+    {
+     "t": "鬼舞",
+     "q": "Q1295854",
+     "d": "1890年流行的印第安宗教仪式"
+    },
+    {
+     "t": "斑鹿",
+     "q": "Q682632",
+     "d": ""
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "納瓦荷族自治區",
+  "titles": [
+   "納瓦荷族自治區",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "纳瓦霍国",
+     "q": "Q1783171",
+     "d": ""
+    },
+    {
+     "t": "印第安保留地",
+     "q": "Q5398059",
+     "d": "美國行政區劃類型"
+    },
+    {
+     "t": "内蒙古自治区",
+     "q": "Q41079",
+     "d": "中华人民共和国北部的自治区"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "法國羅尚博遠征軍",
+  "titles": [
+   "羅尚博",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "罗尚博伯爵",
+     "q": "Q508363",
+     "d": ""
+    },
+    {
+     "t": "卡宴費利克斯·埃布埃國際機場",
+     "q": "Q794542",
+     "d": ""
+    },
+    {
+     "t": "博罗县",
+     "q": "Q728269",
+     "d": "中国广东省惠州市下辖县"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\usa.json",
+  "name": "俄國羅斯堡",
+  "titles": [
+   "羅斯堡",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "尼科·罗斯伯格",
+     "q": "Q75820",
+     "d": "德国-芬兰一级方程式赛车手"
+    },
+    {
+     "t": "梅赛德斯AMG车队",
+     "q": "Q65954812",
+     "d": ""
+    },
+    {
+     "t": "哈布斯堡王朝",
+     "q": "Q65968",
+     "d": "歐洲貴族"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\vietnam.json",
+  "name": "西貢—美萩鐵路",
+  "titles": [
+   "西貢—美萩鐵路",
+   "Saigon–Mỹ Tho railway",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "西貢站",
+     "q": "Q2673539",
+     "d": "越南胡志明市的一个火车站"
+    },
+    {
+     "t": "美湫市",
+     "q": "Q33425",
+     "d": "越南前江省城市"
+    },
+    {
+     "t": "阮朝",
+     "q": "Q6500483",
+     "d": "1802年至1945年的越南历史时期"
+    }
+   ],
+   "en": [
+    {
+     "t": "Saigon station",
+     "q": "Q2673539",
+     "d": "Railway station in Ho Chi Minh City, Vietnam"
+    },
+    {
+     "t": "Mỹ Tho (city)",
+     "q": "Q33425",
+     "d": "Former provincial city and capital of the former Tiền Giang province, Vietnam"
+    },
+    {
+     "t": "Ho Chi Minh City",
+     "q": "Q1854",
+     "d": "Largest city in Vietnam"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\vietnam.json",
+  "name": "500 千伏南北輸電線",
+  "titles": [
+   "500千伏南北輸電線",
+   "North–South 500 kV transmission line",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "台灣電力公司",
+     "q": "Q711691",
+     "d": "中華民國經濟部所屬的國營企業，亦是臺灣最大的電力公司"
+    },
+    {
+     "t": "膠濟鐵路",
+     "q": "Q836245",
+     "d": "交通线路"
+    }
+   ],
+   "en": [
+    {
+     "t": "Path 61",
+     "q": "Q7144629",
+     "d": "Set of power lines in southern California"
+    },
+    {
+     "t": "History of electric power transmission",
+     "q": "Q17030101",
+     "d": ""
+    },
+    {
+     "t": "North American power transmission grid",
+     "q": "Q28455444",
+     "d": "Series of electrical grids that power the US and Canada"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\vietnam.json",
+  "name": "乂靜蘇維埃",
+  "titles": [
+   "乂靜蘇維埃",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "乂静苏维埃运动",
+     "q": "Q7022318",
+     "d": ""
+    },
+    {
+     "t": "阮叔巆",
+     "q": "Q55696740",
+     "d": ""
+    },
+    {
+     "t": "越南共产党",
+     "q": "Q427325",
+     "d": "越南的執政黨"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\vietnam.json",
+  "name": "佛教危機",
+  "titles": [
+   "1963年南越佛教危機",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "吳廷琰",
+     "q": "Q192502",
+     "d": "越南共和國的首任總統"
+    },
+    {
+     "t": "1963年南越政变",
+     "q": "Q1078181",
+     "d": ""
+    },
+    {
+     "t": "越南共和国",
+     "q": "Q180573",
+     "d": "1955-1975年统治越南南部的政权"
+    }
+   ]
+  }
+ },
+ {
+  "file": "public\\data\\vietnam.json",
+  "name": "日軍進駐印度支那",
+  "titles": [
+   "日本進駐法屬印度支那",
+   "",
+   ""
+  ],
+  "hits": {
+   "zh": [
+    {
+     "t": "日軍入侵法屬印度支那",
+     "q": "Q140025",
+     "d": ""
+    },
+    {
+     "t": "赫爾備忘錄",
+     "q": "Q133907",
+     "d": ""
+    },
+    {
+     "t": "三九政变",
+     "q": "Q2633177",
+     "d": ""
+    }
+   ]
+  }
+ }
+]

@@ -16,6 +16,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlink
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
+import { line } from '../lib/progress.mjs';
 const ROOT = new URL('../../', import.meta.url), OUT = new URL('public/offline/', ROOT);
 const UA = 'WorldHistoryAtlas/1.0 (https://github.com/ppundsh/world-history-atlas; offline bundle build)';
 const REFRESH = process.argv.includes('--refresh'), DRY = process.argv.includes('--dry');
@@ -38,8 +39,8 @@ function progress(name, done, total) {
   stage.done = done; stage.total = total;
   const pct = total ? Math.floor(done / total * 100) : 100, rate = (done - stage.d0) / Math.max(1, Date.now() - stage.t);
   const left = rate > 0 && total > done ? '，本階段約剩 ' + mmss((total - done) / rate) : '';
-  const bar = '█'.repeat(Math.round(pct / 5)).padEnd(20, '░');
-  process.stdout.write(`\r${name} ${bar} ${pct}%  ${done}/${total}  請求 ${requests} 次  已用 ${mmss(Date.now() - T0)}${left}      `);
+  const bar = '#'.repeat(Math.round(pct / 10)).padEnd(10, '-');
+  line(`${name} ${bar} ${pct}%  ${done}/${total}  請求 ${requests} 次  已用 ${mmss(Date.now() - T0)}${left}`);
 }
 const DELAY = +(process.env.OFFLINE_DELAY ?? 250);            // ms between requests (one at a time, never in parallel)
 async function get(url, init = {}, tries = 5) {
@@ -106,7 +107,7 @@ const failed = new Set();
 async function byTitles(wl, variant, titles) {               // title → row (batches of 20, the extracts limit)
   const out = new Map();
   for (let i = 0; i < titles.length; i += 20) {
-    process.stdout.write(`\r先批次查詢條目 ${Math.min(i + 20, titles.length)}/${titles.length}…      `);
+    line(`先批次查詢條目 ${Math.min(i + 20, titles.length)}/${titles.length}…`);
     const part = titles.slice(i, i + 20);
     const j = await api(wl, { ...PROPS, titles: part.join('|'), ...(variant ? { variant } : {}) });
     if (!j?.query) { part.forEach(t => failed.add(t)); continue; }   // not reached: try again next run
@@ -159,7 +160,7 @@ function fits(e, p) {
       links.set(back.get(p.title) || p.title, L); links.set(p.title, L);
     }
   }
-  for (const e of partial) { const L = links.get(e.w[1]); if (L) e.w = [e.w[0] || L.zh || '', e.w[1], e.w[2] || L.ja || '']; }
+  for (const e of partial) { const L = links.get(e.w[1]); if (L) e.w = [e.w[0] || L.zh || '', e.w[1], e.w[2] || L.ja || '', ...e.w.slice(3)]; }
 }
 const resolvedOld = read('ev/resolved.json', { v: 0, map: {} });
 const resolved = resolvedOld.v === RESOLVE_V ? resolvedOld.map : {};
@@ -244,6 +245,29 @@ async function photosOf(wl, title) {
     imagesOf.set(key, Object.values(j?.query?.pages || {}).flatMap(p => (p.images || []).map(x => x.title.replace(/^[^:]+:/, ''))).filter(f => !NOT_PHOTO.test(f)));
   }
   return imagesOf.get(key).filter(f => PHOTO.test(f) && !MAPLIKE.test(f));
+}
+// the picture from the article in the local language (w[3], "pl:Tytuł", from data-pipeline/wiki): it usually has
+// the most material and pictures, so its lead picture replaces the one of the reader's language
+{
+  const want = new Map();
+  for (const e of events) { const n = e.w?.[3], i = n ? n.indexOf(':') : -1; if (i > 0) { const l = n.slice(0, i); if (!want.has(l)) want.set(l, new Set()); want.get(l).add(n.slice(i + 1)); } }
+  const nat = new Map(); let n = 0, all = [...want.values()].reduce((a, s) => a + s.size, 0);
+  for (const [wl, set] of want) {
+    const t = [...set];
+    for (let i = 0; i < t.length; i += 50) {
+      const part = t.slice(i, i + 50);
+      const j = await api(wl, { prop: 'pageimages', piprop: 'name', titles: part.join('|') });
+      const back = new Map(part.map(x => [x, x]));
+      for (const k of ['normalized', 'redirects']) for (const x of j?.query?.[k] || []) back.set(x.to, back.get(x.from) || x.from);
+      for (const p of Object.values(j?.query?.pages || {})) if (p.pageimage) nat.set(wl + ':' + (back.get(p.title) || p.title), p.pageimage.replace(/_/g, ' '));
+      n += part.length; progress('[0/4] 當地語言條目的照片', n, all);
+    }
+  }
+  if (all) process.stdout.write('\n');
+  for (const lang of Object.keys(evOut)) for (const e of events) {
+    const f = e.w?.[3] && nat.get(e.w[3]), r = f && evOut[lang][eventKey(e, lang)];
+    if (Array.isArray(r) && r[3] !== f) { r[3] = f; wantFile(f, W_EVENT); }
+  }
 }
 {
   let n = 0;

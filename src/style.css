@@ -558,3 +558,24 @@ button, select, input, label, a { touch-action: manipulation; }
   #legend p { font-size: 12px; }
 }
 @media (max-width: 860px) { #top { z-index: 12; } }   /* the open menu covers the legend and the map buttons */
+
+/* the name in the original language, under a card's title */
+.origname { margin: -4px 0 6px; font-size: 13px; color: #8a94a6; font-style: italic; }
+.origname[lang|="zh"], .origname[lang="ja"], .origname[lang="ko"] { font-style: normal; }
+
+/* About: Wikipedia use */
+#wikiStats h3 { margin: 18px 0 4px; font: 700 16px var(--serif); }
+#wikiStats h4 { margin: 14px 0 4px; font-size: 14px; }
+#wikiStats p { margin: 4px 0 8px; line-height: 1.6; }
+#wikiStats .wsbars { display: grid; gap: 4px; margin: 6px 0 10px; }
+#wikiStats .wsrow { display: grid; grid-template-columns: minmax(5em, 9em) 1fr auto; gap: 8px; align-items: center; font-size: 13px; }
+#wikiStats .wsl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#wikiStats .wsb { height: 10px; background: #f0f0f2; border-radius: 5px; overflow: hidden; }
+#wikiStats .wsb i { display: block; height: 100%; background: #4a7bd0; border-radius: 5px; }
+#wikiStats .wsn { font-variant-numeric: tabular-nums; text-align: right; min-width: 6.5em; }
+#wikiStats .wsn small { color: #888; margin-left: 6px; display: inline-block; min-width: 2.6em; }
+#wikiStats .wstable { overflow-x: auto; margin: 6px 0 10px; }
+#wikiStats table { border-collapse: collapse; width: 100%; font-size: 12px; }
+#wikiStats th, #wikiStats td { padding: 4px 6px; border-bottom: 1px solid #eee; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+#wikiStats th:first-child, #wikiStats td:first-child { text-align: left; white-space: normal; }
+#wikiStats tr.cur td { background: #eef3fc; font-weight: 600; }

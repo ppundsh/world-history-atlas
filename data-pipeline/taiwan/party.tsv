@@ -1,5 +1,5 @@
 # 台灣模式「政黨執政」：各縣市首長所屬政黨（由 party_build.py 產生）。欄位：行政區 id	起(年-月)	政黨代碼
-# 來源：維基百科「中華民國歷屆縣市長選舉政黨版圖」及各縣市首長列表（2026-11-21 擷取）。屆期起始以就職月份計，任內改變依各縣市首長列表。
+# 來源：維基百科「中華民國歷屆縣市長選舉政黨版圖」及各縣市首長列表（2026-11-21 擷取）；2026 年選舉結果依 2026-11-28 各媒體開票報導（雲林縣為中選會 637/638 所開票時的暫定結果）；中選會 12 月 4 日公告後再核對。屆期起始以就職月份計，任內改變依各縣市首長列表。
 r_changhua	1945-10	appt
 r_changhua	1951-01	kmt
 r_changhua	1954-06	kmt
@@ -20,6 +20,7 @@ r_changhua	2009-12	kmt
 r_changhua	2014-12	dpp
 r_changhua	2018-12	kmt
 r_changhua	2022-12	kmt
+r_changhua	2026-12	dpp
 r_chiayi_c	1945-10	appt
 r_chiayi_c	1981-12	ind
 r_chiayi_c	1985-12	ind
@@ -32,6 +33,7 @@ r_chiayi_c	2009-12	kmt
 r_chiayi_c	2014-12	dpp
 r_chiayi_c	2018-12	kmt
 r_chiayi_c	2022-12	kmt
+r_chiayi_c	2026-12	dpp
 r_chiayi_co	1945-10	appt
 r_chiayi_co	1951-01	kmt
 r_chiayi_co	1954-06	ind
@@ -52,6 +54,7 @@ r_chiayi_co	2009-12	dpp
 r_chiayi_co	2014-12	dpp
 r_chiayi_co	2018-12	dpp
 r_chiayi_co	2022-12	dpp
+r_chiayi_co	2026-12	dpp
 r_hsinchu_c	1945-10	appt
 r_hsinchu_c	1981-12	ind
 r_hsinchu_c	1985-12	kmt
@@ -65,6 +68,7 @@ r_hsinchu_c	2014-12	dpp
 r_hsinchu_c	2018-12	dpp
 r_hsinchu_c	2022-12	tpp
 r_hsinchu_c	2025-12	ind
+r_hsinchu_c	2026-12	ind
 r_hsinchu_co	1945-10	appt
 r_hsinchu_co	1951-01	kmt
 r_hsinchu_co	1954-06	kmt
@@ -85,6 +89,7 @@ r_hsinchu_co	2009-12	kmt
 r_hsinchu_co	2014-12	kmt
 r_hsinchu_co	2018-12	kmt
 r_hsinchu_co	2022-12	kmt
+r_hsinchu_co	2026-12	dpp
 r_hualien	1945-10	appt
 r_hualien	1951-01	cdsp
 r_hualien	1954-06	kmt
@@ -105,6 +110,7 @@ r_hualien	2009-12	ind
 r_hualien	2014-12	ind
 r_hualien	2018-12	kmt
 r_hualien	2022-12	kmt
+r_hualien	2026-12	kmt
 r_kaohsiung_c	1945-10	appt
 r_kaohsiung_c	1951-01	kmt
 r_kaohsiung_c	1954-06	kmt
@@ -135,6 +141,7 @@ r_kaohsiung_d	1994-12	kmt
 r_kaohsiung_d	1998-12	dpp
 r_kaohsiung_d	2018-12	kmt
 r_kaohsiung_d	2020-08	dpp
+r_kaohsiung_d	2026-12	dpp
 r_keelung_c	1945-10	appt
 r_keelung_c	1951-01	kmt
 r_keelung_c	1954-06	kmt
@@ -156,6 +163,7 @@ r_keelung_c	2009-12	kmt
 r_keelung_c	2014-12	dpp
 r_keelung_c	2018-12	dpp
 r_keelung_c	2022-12	kmt
+r_keelung_c	2026-12	kmt
 r_kinmen	1945-10	mil
 r_kinmen	1993-12	kmt
 r_kinmen	1997-12	kmt
@@ -166,6 +174,7 @@ r_kinmen	2014-12	ind
 r_kinmen	2018-12	kmt
 r_kinmen	2022-12	ind
 r_kinmen	2023-04	tpp
+r_kinmen	2026-12	kmt
 r_lianjiang	1945-10	mil
 r_lianjiang	1993-12	kmt
 r_lianjiang	1997-12	kmt
@@ -175,6 +184,7 @@ r_lianjiang	2009-12	kmt
 r_lianjiang	2014-12	kmt
 r_lianjiang	2018-12	kmt
 r_lianjiang	2022-12	kmt
+r_lianjiang	2026-12	kmt
 r_miaoli	1945-10	appt
 r_miaoli	1951-01	kmt
 r_miaoli	1954-06	kmt
@@ -195,6 +205,7 @@ r_miaoli	2009-12	kmt
 r_miaoli	2014-12	kmt
 r_miaoli	2018-12	kmt
 r_miaoli	2022-12	ind
+r_miaoli	2026-12	kmt
 r_nantou	1945-10	appt
 r_nantou	1951-01	kmt
 r_nantou	1954-06	kmt
@@ -215,7 +226,9 @@ r_nantou	2009-12	kmt
 r_nantou	2014-12	kmt
 r_nantou	2018-12	kmt
 r_nantou	2022-12	kmt
+r_nantou	2026-12	kmt
 r_newtaipei	2010-12	kmt
+r_newtaipei	2026-12	kmt
 r_penghu	1945-10	appt
 r_penghu	1951-01	kmt
 r_penghu	1954-06	kmt
@@ -237,6 +250,7 @@ r_penghu	2009-12	kmt
 r_penghu	2014-12	dpp
 r_penghu	2018-12	kmt
 r_penghu	2022-12	dpp
+r_penghu	2026-12	kmt
 r_pingtung	1945-10	appt
 r_pingtung	1951-01	kmt
 r_pingtung	1954-06	kmt
@@ -257,6 +271,7 @@ r_pingtung	2009-12	dpp
 r_pingtung	2014-12	dpp
 r_pingtung	2018-12	dpp
 r_pingtung	2022-12	dpp
+r_pingtung	2026-12	dpp
 r_taichung_c	1945-10	appt
 r_taichung_c	1951-01	ind
 r_taichung_c	1954-06	kmt
@@ -292,6 +307,7 @@ r_taichung_co	2005-12	kmt
 r_taichung_d	2010-12	kmt
 r_taichung_d	2014-12	dpp
 r_taichung_d	2018-12	kmt
+r_taichung_d	2026-12	dpp
 r_tainan_c	1945-10	appt
 r_tainan_c	1951-01	ind
 r_tainan_c	1954-06	kmt
@@ -325,6 +341,7 @@ r_tainan_co	1997-12	dpp
 r_tainan_co	2001-12	dpp
 r_tainan_co	2005-12	dpp
 r_tainan_d	2010-12	dpp
+r_tainan_d	2026-12	dpp
 r_taipei_co	1945-10	appt
 r_taipei_co	1951-01	kmt
 r_taipei_co	1954-06	kmt
@@ -362,6 +379,7 @@ r_taitung	2009-12	kmt
 r_taitung	2014-12	kmt
 r_taitung	2018-12	kmt
 r_taitung	2022-12	kmt
+r_taitung	2026-12	kmt
 r_taoyuan_co	1945-10	appt
 r_taoyuan_co	1951-01	kmt
 r_taoyuan_co	1954-06	kmt
@@ -382,6 +400,7 @@ r_taoyuan_co	2005-12	kmt
 r_taoyuan_co	2009-12	kmt
 r_taoyuan_d	2014-12	dpp
 r_taoyuan_d	2022-12	kmt
+r_taoyuan_d	2026-12	kmt
 r_tpe_c	1945-10	appt
 r_tpe_c	1951-01	ind
 r_tpe_c	1954-06	ind
@@ -394,6 +413,7 @@ r_tpe_d	1998-12	kmt
 r_tpe_d	2014-12	ind
 r_tpe_d	2019-08	tpp
 r_tpe_d	2022-12	kmt
+r_tpe_d	2026-12	kmt
 r_yilan	1945-10	appt
 r_yilan	1951-01	kmt
 r_yilan	1954-06	kmt
@@ -414,6 +434,7 @@ r_yilan	2009-12	dpp
 r_yilan	2014-12	dpp
 r_yilan	2018-12	kmt
 r_yilan	2022-12	kmt
+r_yilan	2026-12	dpp
 r_yms	1949-08	appt
 r_yunlin	1945-10	appt
 r_yunlin	1951-01	kmt
@@ -436,3 +457,4 @@ r_yunlin	2009-12	dpp
 r_yunlin	2014-12	dpp
 r_yunlin	2018-12	kmt
 r_yunlin	2022-12	kmt
+r_yunlin	2026-12	dpp
