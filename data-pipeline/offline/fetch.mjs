@@ -62,7 +62,7 @@ const api = (wl, params) => get(`https://${wl}.wikipedia.org/w/api.php?` + new U
 const { WORLD_EVENTS, MODE_EVENTS = {} } = await import(new URL('src/worldEvents.gen.js', ROOT));
 const EVENTS = WORLD_EVENTS.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]] }));        // [en, zh-Hant, zh-Hans, ja]
 const MODE_EVS = Object.entries(MODE_EVENTS).flatMap(([m, l]) => l.map(e => ({ ...e, n: [e.n[2], e.n[0], e.n[1], e.n[3]], ctx: m, t: e.y })));
-const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia'];
+const REGIONS = ['china', 'taiwan', 'japan', 'russia', 'korea', 'vietnam', 'germany', 'poland', 'italy', 'spain', 'india', 'prc', 'usa', 'france', 'egypt', 'iran', 'turkey', 'uk', 'mexico', 'morocco', 'brazil', 'argentina', 'thailand', 'indonesia', 'philippines'];
 const THEMES = ['language', 'finance', 'fgo', 'internet', 'disaster'];
 const events = EVENTS.map(e => ({ ...e, ctx: 'world', t: e.y })).concat(MODE_EVS);
 const pageReq = new Map();                                     // "wl:title" → [wl, title]
@@ -118,36 +118,6 @@ async function byTitles(wl, variant, titles) {               // title → row (b
   }
   return out;
 }
-async function bySearch(wl, variant, q) {
-  const j = await api(wl, { ...PROPS, generator: 'search', gsrlimit: '1', gsrsearch: q, ...(variant ? { variant } : {}) });
-  if (!j) return undefined;                                    // not reached (as opposed to: nothing found)
-  const p = Object.values(j?.query?.pages || {}).find(x => !x.missing);
-  return p ? pageRow(p) : null;
-}
-// ---------------------------------------------------------------- which article an event is about
-// Events without a given article used to take each language's first search hit, which too often was another
-// event of a similar name (the Battle of Guadalete → Guadalcanal, Córdoba → a fort in Taiwan). Now each is looked
-// up once in English Wikipedia — the mode's country added to the search, five candidates — and the first one
-// that fits is taken: near the event's place (when both have one), no other year in its title, and sharing a
-// distinctive word with the event's name. The Chinese and Japanese articles are the same article's interlanguage
-// links; without one, the English article is shown. When nothing fits, the event gets no article rather than a
-// wrong one. Bump RESOLVE_V to look everything up again.
-const RESOLVE_V = 2;
-const COUNTRY = { china: 'China', prc: 'China', taiwan: 'Taiwan', japan: 'Japan', russia: 'Russia', korea: 'Korea', vietnam: 'Vietnam', thailand: 'Thailand', indonesia: 'Indonesia', germany: 'Germany', poland: 'Poland', italy: 'Italy', spain: 'Spain', france: 'France', uk: 'Britain', india: 'India', iran: 'Iran', turkey: 'Turkey', egypt: 'Egypt', morocco: 'Morocco', usa: 'United States', mexico: 'Mexico', brazil: 'Brazil', argentina: 'Argentina' };
-const STOP = new Set('the a an of and in on at to for by with from its first new great begins began begin founded found founding is are was were becomes become into under over after before against end ends war battle treaty king queen empire kingdom republic city opens opened open'.split(' '));
-const words = s => (s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').match(/[a-z0-9]{4,}/g) || [];
-const km = (a, b) => { const r = Math.PI / 180, x = Math.sin((b[1] - a[1]) * r / 2) ** 2 + Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin((b[0] - a[0]) * r / 2) ** 2; return 12742 * Math.asin(Math.sqrt(x)); };
-function fits(e, p) {
-  const c = p.coordinates?.[0];
-  if (c && e.lon != null && km([e.lon, e.lat], [c.lon, c.lat]) > 2500) return false;
-  const y = Math.floor(e.t ?? e.y);
-  if (isFinite(y) && y > 0 && [...p.title.matchAll(/\b(1\d{3}|20\d{2}|[1-9]\d{2})\b/g)].some(m => Math.abs(+m[1] - y) > 3)) return false;
-  const want = words(e.n[0]).filter(w => !STOP.has(w));
-  if (!want.length) return !!c;                       // a name of only common words: only a placed article will do
-  const hay = new Set(words(p.title + ' ' + (p.extract || '').slice(0, 400)));
-  const hit = want.filter(w => hay.has(w) || [...hay].some(h => h.length > 5 && (h.startsWith(w.slice(0, 5)) || w.startsWith(h.slice(0, 5)))));
-  return hit.length >= (c ? 1 : Math.min(2, want.length));
-}
 // events given only an English article: their Chinese and Japanese articles are its interlanguage links
 {
   const partial = events.filter(e => e.w?.[1] && (!e.w[0] || !e.w[2]));
@@ -162,52 +132,40 @@ function fits(e, p) {
   }
   for (const e of partial) { const L = links.get(e.w[1]); if (L) e.w = [e.w[0] || L.zh || '', e.w[1], e.w[2] || L.ja || '', ...e.w.slice(3)]; }
 }
-const resolvedOld = read('ev/resolved.json', { v: 0, map: {} });
-const resolved = resolvedOld.v === RESOLVE_V ? resolvedOld.map : {};
-const rkey = e => (e.n[0] || '') + '|' + (e.y ?? e.m ?? '');
-const searched = events.filter(e => !e.w?.[0] && !e.w?.[1] && !e.w?.[2]);
-const toResolve = searched.filter(e => !(rkey(e) in resolved));
-let rn = 0;
-for (const e of toResolve) {
-  progress('[1/4] 確認事件對應的條目', ++rn, toResolve.length);
-  const q = (e.n[0] || '').split(/[:;(（]/)[0].trim() + (COUNTRY[e.ctx] && !e.n[0].includes(COUNTRY[e.ctx]) ? ' ' + COUNTRY[e.ctx] : '');
-  const j = await api('en', { generator: 'search', gsrlimit: '5', gsrsearch: q, prop: 'coordinates|extracts|langlinks', exintro: '1', explaintext: '1', exsentences: '2', exlimit: '5', coprimary: 'primary', lllimit: '500' });
-  if (!j) continue;                                   // not reached: try again next run
-  const pages = Object.values(j.query?.pages || {}).sort((a, b) => a.index - b.index);
-  const p = pages.find(x => fits(e, x));
-  // a page's langlinks may be cut short across five pages; the chosen one is asked again below if needed
-  resolved[rkey(e)] = p ? { en: p.title, zh: p.langlinks?.find(l => l.lang === 'zh')?.['*'] || null, ja: p.langlinks?.find(l => l.lang === 'ja')?.['*'] || null } : 0;
-  if (rn % 100 === 0) write('ev/resolved.json', { v: RESOLVE_V, map: resolved });
-}
-write('ev/resolved.json', { v: RESOLVE_V, map: resolved });
-const titleFor = (e, wl) => { const r = resolved[rkey(e)]; return r ? (r[wl] || null) : r === 0 ? 0 : undefined; };
-
+// Which article each language shows: the event's own article in the reader's language; without one, the same
+// event's article in English, Chinese or Japanese, else in the local language (w[3], "it:Titolo"); the site names
+// the language beside the excerpt. Never a search by name, which too often found another event of a similar name
+// (the Battle of Guadalete → Guadalcanal). An event with no article at all gets no Wikipedia text, only the
+// site's own line. Rows made by the old search fallback are fetched again once (EV_V).
+const EV_V = 3, meta = read('ev/meta.json', {});
+const sourceFor = (e, lang) => {
+  const L = LANGS[lang], w = e.w || [];
+  const zv = lang === 'zh-Hans' ? 'zh-cn' : 'zh-tw';
+  if (w[WI[L.wl]]) return [L.wl, L.variant, w[WI[L.wl]]];
+  for (const wl of ['en', 'zh', 'ja']) if (w[WI[wl]]) return [wl, wl === 'zh' ? zv : '', w[WI[wl]]];
+  const m = /^([a-z-]+):(.+)$/.exec(w[3] || '');
+  return m ? [m[1], '', m[2]] : null;
+};
 const saveEvents = lang => { const o = {}; for (const [k, v] of Object.entries(evOut[lang])) o[k] = Array.isArray(v) ? v.slice(0, 5) : v; write(`ev/${lang}.json`, o); };
 const needPlace = new Map();                                   // qid → event rows waiting for a place
 for (const lang of ['zh-Hant', 'zh-Hans', 'en', 'ja']) {
   const L = LANGS[lang], old = REFRESH ? {} : read(`ev/${lang}.json`, {}), out = evOut[lang] = {};
-  // searched events whose article was worked out by an older method are looked up again
-  if (resolvedOld.v !== RESOLVE_V) for (const e of searched) delete old[eventKey(e, lang)];
-  const todo = events.filter(e => !(eventKey(e, lang) in old));
+  // rows of events without an article in this language came from a search before: looked up again
+  if ((meta.v || 0) < EV_V) for (const e of events) if (!e.w?.[WI[L.wl]]) delete old[eventKey(e, lang)];
   for (const e of events) if (eventKey(e, lang) in old) out[eventKey(e, lang)] = old[eventKey(e, lang)];
-  // simplified Chinese: the same zh articles as traditional, read in the zh-cn variant
-  const given = e => e.w?.[WI[L.wl]] || (searched.includes(e) ? titleFor(e, L.wl) : undefined);
-  const titled = todo.map(e => [e, lang === 'zh-Hans' ? evOut['zh-Hant'][eventKey(e, 'zh-Hant')]?.[0] || given(e) : given(e)]);
-  const rows = await byTitles(L.wl, L.variant, [...new Set(titled.map(([, t]) => t).filter(Boolean))]);
-  // events whose article has no Chinese or Japanese version: the English article
-  const enOnly = todo.filter(e => searched.includes(e) && L.wl !== 'en' && resolved[rkey(e)] && !titleFor(e, L.wl));
-  const enRows = enOnly.length ? await byTitles('en', '', [...new Set(enOnly.map(e => resolved[rkey(e)].en))]) : new Map();
+  const todo = events.filter(e => !(eventKey(e, lang) in old));
+  const src = new Map(todo.map(e => [e, sourceFor(e, lang)]));
+  const rowsOf = new Map();                                    // "wl|variant" → title → row
+  for (const [wl, variant, t] of [...src.values()].filter(Boolean)) {
+    const k = wl + '|' + variant; (rowsOf.get(k) || rowsOf.set(k, new Set()).get(k)).add(t);
+  }
+  for (const [k, set] of [...rowsOf]) { const [wl, variant] = k.split('|'); rowsOf.set(k, await byTitles(wl, variant, [...set])); }
   let n = 0;
-  for (const [e, t] of titled) {
-    if (t && failed.has(t)) continue;
-    let row = t ? rows.get(t) : null;
-    if (!row && searched.includes(e)) {
-      const r = resolved[rkey(e)];
-      if (r === undefined) continue;                               // not looked up yet (not reached): next run
-      row = r ? (enRows.get(r.en) || null) : 0;
-    } else if (!row && !t) row = await bySearch(L.wl, L.variant, (e.n[L.col] || e.n[0]).split(/[，,；;：:（(]/)[0].trim());
-    if (row === undefined) continue;
-    out[eventKey(e, lang)] = row || 0;                         // 0: looked up, nothing found (trimmed to 5 fields when written)
+  for (const e of todo) {
+    const sv = src.get(e);
+    if (sv && failed.has(sv[2])) continue;                      // not reached: next run
+    const row = sv ? rowsOf.get(sv[0] + '|' + sv[1])?.get(sv[2]) || 0 : 0;
+    out[eventKey(e, lang)] = row;                              // 0: no article (trimmed to 5 fields when written)
     if (row) { wantFile(row[3], W_EVENT); if (!row[4] && row[5] && e.lon == null) (needPlace.get(row[5]) || needPlace.set(row[5], []).get(row[5])).push(row); }
     progress(`[1/4] 事件說明（${lang}）`, ++n, todo.length);
     if (n % 100 === 0) saveEvents(lang);
@@ -215,6 +173,7 @@ for (const lang of ['zh-Hant', 'zh-Hans', 'en', 'ja']) {
   for (const r of Object.values(out)) if (r) wantFile(r[3], W_EVENT);
   saveEvents(lang); progress(`[1/4] 事件說明（${lang}）`, todo.length, todo.length);
 }
+write('ev/meta.json', { v: EV_V });
 // places of events whose article has no coordinates: Wikidata P625, else the location's or the area's
 const qids = [...needPlace.keys()];
 for (let i = 0; i < qids.length; i += 100) {

@@ -11,7 +11,7 @@
 //   factions.tsv       id, colour, zh-Hant, zh-Hans, en, ja
 //   control.tsv        YYYY-MM, units, faction[/secondary]
 //   governments.tsv    id, from, to, lon, lat, highlight(1/0), faction, zh-Hant, zh-Hans, en, ja
-//   events.tsv         YYYY-MM, zh-Hant, en, ja[, lon, lat]
+//   events.tsv         YYYY-MM, zh-Hant, en, ja[, lon, lat[, "minor"]]
 //   ccp_areas.tsv      (optional) id, from, to, lon, lat, rx, ry, zh-Hant, zh-Hans, en, ja
 //   seats.tsv          (optional) administrative seats shown with the division layer:
 //                      id, from, to, lon, lat, division id ('' = any), zh-Hant, en, ja, Wikipedia [zh, en, ja] titles, note zh-Hant, note en, note ja
@@ -77,8 +77,8 @@ const governments = rows('governments.tsv').map(([id, a, b, lon, lat, roc, f, ha
   ({ id, a: month(a), b: month(b), lon: +lon, lat: +lat, roc: roc === '1', f: control.fid(f, 'governments ' + id), n: [en, hant, hans, ja] }));
 const areas = exists('ccp_areas.tsv') ? rows('ccp_areas.tsv').map(([id, a, b, lon, lat, rx, ry, hant, hans, en, ja]) =>
   ({ id, a: month(a), b: month(b), lon: +lon, lat: +lat, rx: +rx, ry: +ry, n: [en, hant, hans, ja] })) : [];
-let events = rows('events.tsv').map(([m, hant, en, ja, lon, lat]) => Object.assign({ m: month(m), n: [en, hant, toHans(hant), ja] },
-  lon && lat ? { lon: +lon, lat: +lat } : {})).sort((a, b) => a.m - b.m);      // optional place: marked on the map when the timeline passes it
+let events = rows('events.tsv').map(([m, hant, en, ja, lon, lat, minor]) => Object.assign({ m: month(m), n: [en, hant, toHans(hant), ja] },
+  lon && lat ? { lon: +lon, lat: +lat } : {}, minor === 'minor' ? { mi: 1 } : {})).sort((a, b) => a.m - b.m);      // optional place: marked on the map when the timeline passes it; "minor": shown only with the minor-events switch on
 
 // flows.tsv (optional): marches, fronts and migrations, drawn as arrows that advance along their path
 // A path may have several branches separated by ";" (e.g. several ports of origin): each branch becomes its own

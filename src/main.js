@@ -24,7 +24,7 @@ import { pageImage, pagePicture, figureHtml, setPageImageListener } from './page
 import { classIconSvg } from './classicon.js';
 import { loadEcon, econData, FUEL, ZONE } from './econ.js';
 import { loadWorks, worksFor, workTitle, workWiki, setPictureListener } from './artworks.js';
-import { frame, loadRegion, REGIONS, LAYERED, regionYearMonth, monthOf, loadReligions, religionOf, religionShares, loadRegimes, regimeOf, regimeShares, REGIME_COLORS, loadArt, artActive, ART_COLORS, ART_SYM, THEMES, loadTheme, themeOf, themeActive, themeColor, setOwnPictureListener, LOCAL_COLOR, WORK_ICON, WORK_COLOR, workName, PARTY_COLOR, partyAt, BACKBONE } from './modes.js';
+import { frame, loadRegion, REGIONS, LAYERED, regionYearMonth, monthOf, loadReligions, religionOf, religionShares, loadRegimes, regimeOf, regimeShares, REGIME_COLORS, loadArt, artActive, ART_COLORS, ART_SYM, THEMES, loadTheme, themeOf, themeActive, themeColor, setOwnPictureListener, LOCAL_COLOR, WORK_ICON, WORK_COLOR, workName, PARTY_COLOR, partyAt, BACKBONE, minorEvents, applyMinorEvents, loadedRegions } from './modes.js';
 
 const $ = s => document.querySelector(s);
 const PROJECTIONS = Object.keys(PROJ);
@@ -133,12 +133,13 @@ const app = {
     mode: 'world', cm: 1, layer: 'control', layers: { control: true, admin: false }, overseas: false, cmBy: {},
     animate: safeGet('animate') !== '0', transition: 'grow', relLabels: safeGet('relLabels') || 'religion',
     cmpCross: safeGet('cmpCross') === '1', minFont: safeGet('minFont') === '1', relief: safeGet('relief') === '1', worldEv: safeGet('worldEv') == null ? null : safeGet('worldEv') === '1' /* null: not chosen yet, see worldEvOn */, evTable: safeGet('evTable') === '1', feuds: safeGet('feuds') === '1', party: false, usForces: safeGet('usForces') === '1', works: safeGet('works') === '1', network: safeGet('network') === '1', backbone: safeGet('backbone') === '1', plants: safeGet('plants') === '1', zones: safeGet('zones') === '1', evDots: safeGet('evDots') === '1', powers: safeGet('powers') === '1', distort: false /* mask disabled for now */,
-    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), cableW: +(safeGet('cableW') || 1), cableStyle: safeGet('cableStyle') || 'shade', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', bearing: 'n',
+    labelsIn: safeGet('labelsIn') !== '0', capitals: safeGet('capitals') === '1', thAreas: safeGet('thAreas') !== '0', warFlows: safeGet('warFlows') === '1', thFlows: safeGet('thFlows') !== '0', thPoints: safeGet('thPoints') !== '0', artPics: safeGet('artPics') !== '0', fgoCustom: safeGet('fgoCustom') !== '0', pics: safeGet('pics') !== '0', picSize: +(safeGet('picSize') || 54), cableW: +(safeGet('cableW') || 1), cableStyle: safeGet('cableStyle') || 'shade', modern: safeGet('modern') === '1', events: safeGet('events') !== '0', minorEv: safeGet('minorEv') === '1', bearing: 'n',
   },
   flat: null, globe: null, satTiles: null, satImage: null,
   legendCollapsed: window.innerWidth < 700,          // keep the map visible on phones
 };
 const st = app.state;
+minorEvents.on = st.minorEv;                       // minor events of the country modes: off unless switched on
 
 // ?tapdebug: a small panel at the foot of the page that names what each tap lands on (the element actually hit, and
 // whether a click followed), with any script error, so a phone that will not respond can be checked without devtools
@@ -741,6 +742,9 @@ function buildEventMarks() {
     marks = evList().map(e => ({ ...e, a: yearToPos(e.y), b: yearToPos(e.e ?? e.y),
       when: formatYear(st.lang, e.y) + (e.e ? ' – ' + formatYear(st.lang, e.e) : '') }));
   }
+  // an event dated before the timeline starts (or after it ends) sits at its edge, not outside the track over the
+  // play buttons; its card still gives its own date
+  for (const m of marks) { m.a = Math.min(1, Math.max(0, m.a)); m.b = Math.min(1, Math.max(m.a, m.b)); }
   app.eventMarks = marks;
   box.innerHTML = marks.map((m, i) => `<i class="${m.big ? 'big' : ''}${m.k ? ' work' : ''}" style="left:${m.a * 100}%;width:calc(${(m.b - m.a) * 100}% + 3px)${m.k ? ';background:' + WORK_COLOR[m.k] : ''}" data-ev="${i}"></i>`).join('');
   // hovering the timeline previews the nearest event (within a few pixels) with its picture
@@ -939,11 +943,11 @@ function buildUI() {
     projTags(); redraw(); writeHash();
   };
   $('#pov').onchange = e => { st.pov = e.target.value; redraw(); writeHash(); };
-  for (const k of ['labels', 'labelsIn', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'borders', 'rivers', 'graticule', 'modern', 'distort', 'relief', 'twCompare', 'evTable', 'minFont', 'animate', 'events', 'worldEv']) {
+  for (const k of ['labels', 'labelsIn', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'borders', 'rivers', 'graticule', 'modern', 'distort', 'relief', 'twCompare', 'evTable', 'minFont', 'animate', 'events', 'worldEv', 'minorEv']) {
     const el = $('#t-' + k); el.checked = k === 'worldEv' ? worldEvOn() : !!st[k];
     el.onchange = async () => {
       st[k] = el.checked;
-      if (['modern', 'minFont', 'animate', 'events', 'relief', 'labelsIn', 'distort', 'evTable', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'worldEv'].includes(k)) safeSet(k, el.checked ? '1' : '0');
+      if (['modern', 'minFont', 'animate', 'events', 'relief', 'labelsIn', 'distort', 'evTable', 'capitals', 'artPics', 'evDots', 'warFlows', 'thAreas', 'thFlows', 'thPoints', 'worldEv', 'minorEv'].includes(k)) safeSet(k, el.checked ? '1' : '0');
       // the world's events in a global mode: timeline marks, event table, caption and places all follow
       if (k === 'worldEv') { clearPulses(); holdPulse(null); $('#evPop').hidden = true; app.popKey = null; buildTicks(); buildEvTable(); renderYear(); }
       if (k === 'distort') syncDistort();
@@ -961,6 +965,8 @@ function buildUI() {
       if (k === 'modern' && st.modern) await loadModern();
       if (k === 'rivers' && st.rivers && currentView().k >= 4) await loadDetail();
       if (k === 'events') { buildEventMarks(); renderYear(); }
+      // minor events: the country's event list, timeline marks, table, caption and places all follow
+      if (k === 'minorEv') { minorEvents.on = el.checked; loadedRegions().forEach(applyMinorEvents); clearPulses(); holdPulse(null); $('#evPop').hidden = true; app.popKey = null; buildEventMarks(); buildEvTable(); renderYear(); }
       app.globe?.update(true); app.globe?.map?.triggerRepaint();
       redraw();
     };
@@ -1203,7 +1209,7 @@ function applyLang() {
   $('#title').textContent = s.title;
   $('#subtitle').textContent = s.subtitle;
   for (const [id, key] of [['#l-lang', 'language'], ['#l-proj', 'projection'], ['#l-base', 'basemap'], ['#l-pov', 'pov'], ['#l-labels', 'labels'], ['#l-borders', 'borders'], ['#l-rivers', 'rivers'], ['#l-graticule', 'graticule'], ['#l-speed', 'speed'],
-    ['#l-modern', 'modern'], ['#l-relief', 'reliefOpt'], ['#l-distort', 'distort'], ['#l-twCompare', 'twCompare'], ['#l-evTable', 'evTable'], ['#l-distortStr', 'distortStr'], ['#l-labelsIn', 'labelsIn'], ['#l-capitals', 'capitals'], ['#l-artPics', 'artPics'], ['#l-evDots', 'evDots'], ['#l-worldEv', 'worldEv'], ['#l-warFlows', 'warFlows'], ['#recStop', 'capStop'], ['#l-recMusic', 'capMusic'], ['#recGo', 'capGo'], ['#l-minFont', 'minFont'], ['#l-animate', 'animate'], ['#l-events', 'events'], ['#l-bearing', 'bearing'], ['#l-relLabels', 'relLabels'], ['#showBtn', 'show']]) $(id).textContent = s[key];
+    ['#l-modern', 'modern'], ['#l-relief', 'reliefOpt'], ['#l-distort', 'distort'], ['#l-twCompare', 'twCompare'], ['#l-evTable', 'evTable'], ['#l-distortStr', 'distortStr'], ['#l-labelsIn', 'labelsIn'], ['#l-capitals', 'capitals'], ['#l-artPics', 'artPics'], ['#l-evDots', 'evDots'], ['#l-worldEv', 'worldEv'], ['#l-minorEv', 'minorEv'], ['#l-warFlows', 'warFlows'], ['#recStop', 'capStop'], ['#l-recMusic', 'capMusic'], ['#recGo', 'capGo'], ['#l-minFont', 'minFont'], ['#l-animate', 'animate'], ['#l-events', 'events'], ['#l-bearing', 'bearing'], ['#l-relLabels', 'relLabels'], ['#showBtn', 'show']]) $(id).textContent = s[key];
   $('#showBtn').textContent = s.show + ' ▾';
   $('#relLabels').innerHTML = ['religion', 'both', 'country'].map(k => `<option value="${k}">${s.relLabelOpts[k]}</option>`).join('');
   $('#relLabels').value = st.relLabels;
@@ -1587,8 +1593,15 @@ function showEvent(ev) {
     const a = (href, text) => `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>`;
     slot.innerHTML = (info.thumb && st.pics ? `<figure class="evpic"><a href="${esc(info.page)}" target="_blank" rel="noopener"><img src="${esc(info.thumb)}" alt=""></a>
         <figcaption>${s.artPhoto}：${esc(info.author || '—')} · ${esc(info.lic || '')} · ${a(info.page, 'Wikimedia Commons')}</figcaption></figure>` : '')
-      + (!ev.d && info.extract ? `<p class="desc">${esc(info.extract)}</p><p class="src">${s.wikiExcerpt(a(info.url, info.title))}</p>` : '');
+      + (!ev.d && info.extract ? `<p class="desc">${esc(info.extract)}</p><p class="src">${s.wikiExcerpt(a(info.url, info.title), wikiLangName(info.url))}</p>` : '');
   });
+}
+// the language of an excerpt's Wikipedia when it is not the reader's own (an event with no article in the
+// reader's language shows the English, Chinese, Japanese or local-language one): "English", "Italian"…
+function wikiLangName(url) {
+  const code = /^https?:\/\/([a-z-]+)\.(?:m\.)?wikipedia\.org/.exec(url || '')?.[1];
+  if (!code || code === ({ 'zh-Hant': 'zh', 'zh-Hans': 'zh' }[st.lang] || st.lang)) return '';
+  try { return new Intl.DisplayNames([st.lang], { type: 'language' }).of(code) || ''; } catch { return ''; }
 }
 // when the timeline reaches an event (playing, stepping or dragging) that has a picture, show it for a while, then fade it out;
 // the next event's picture replaces it at once

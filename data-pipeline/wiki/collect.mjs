@@ -20,7 +20,9 @@ export function walkW(x, fn) {
 export function walkUnlinked(x, names, fn) {
   if (Array.isArray(x)) { for (const v of x) walkUnlinked(v, names, fn); return; }
   if (!x || typeof x !== 'object') return;
-  if (Array.isArray(x.n) && !('w' in x) && names.has(nameOf(x))) fn(x);
+  // no articles at all, an empty ["", "", ""], or only a local-language article (4th item) that manual.tsv gave
+  const empty = !('w' in x) || (Array.isArray(x.w) && !x.w.slice(0, 3).some(Boolean));
+  if (Array.isArray(x.n) && empty && names.has(nameOf(x))) fn(x);
   for (const v of Object.values(x)) if (v && typeof v === 'object') walkUnlinked(v, names, fn);
 }
 // the data files and the country mode each belongs to (public/data/<region>.json, econ/<region>.json, …)

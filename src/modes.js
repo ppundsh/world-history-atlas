@@ -49,10 +49,20 @@ export async function loadRegion(name) {
   if (data.divisions) data.divOffset = add(data.divisions);
   data.units = units;
   data.cache = new Map();
+  applyMinorEvents(data);
   for (const a of data.areas) a.feature = { type: 'Feature', properties: { name: a.n, kind: 'ccp' }, geometry: ellipse(a.lon, a.lat, a.rx, a.ry) };
   store.regions[name] = data;
   return data;
 }
+// minor events (events.tsv rows marked "minor"): kept aside and shown only while the minor-events switch is on
+export const minorEvents = { on: false };
+export function applyMinorEvents(data) {
+  data.allEvents ||= data.events;
+  data.events = minorEvents.on ? data.allEvents : data.allEvents.filter(e => !e.mi);
+  data.cache?.clear();
+}
+export const hasMinorEvents = name => !!store.regions?.[name]?.allEvents?.some(e => e.mi);
+export const loadedRegions = () => Object.values(store.regions || {});
 export const loadChina = () => loadRegion('china');
 
 function ring(r) { let s = 0; for (let i = 0, j = r.length - 1; i < r.length; j = i++) s += (r[j][0] - r[i][0]) * (r[j][1] + r[i][1]); return s / 2; }

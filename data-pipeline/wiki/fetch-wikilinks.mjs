@@ -41,7 +41,8 @@ async function call(url, init = {}) {
       const r = await fetch(url, { ...init, signal: AbortSignal.timeout(90000), headers: { 'User-Agent': UA, 'Api-User-Agent': UA, ...(init.headers || {}) } });
       if (r.status === 429 || r.status >= 500) { await sleep(15000 * (i + 1)); continue; }
       const j = await r.json();
-      if (j.error?.code === 'maxlag') { await sleep(10000); continue; }
+      // Wikidata lagging behind (maxlag): wait as long as it asks (at least 30 s, longer each time) before trying again
+      if (j.error?.code === 'maxlag') { await sleep(Math.max(+(r.headers.get('retry-after') || 0) * 1000, 30000 * (i + 1))); continue; }
       if (j.error) throw new Error(j.error.info || j.error.code);
       return j;
     } catch (e) { if (i === 5) throw e; await sleep(10000); }
@@ -88,7 +89,7 @@ if (fs.existsSync(MF)) for (const l of fs.readFileSync(MF, 'utf8').split('\n')) 
   else if (v.startsWith('src:')) srcOf[key.trim()] = v.slice(4);
   else { const m = /^([a-z][a-z-]*):(.+)$/.exec(v); if (m) { manual.set(key.trim(), v); (manTitles[m[1]] ??= new Set()).add(m[2]); } }
 }
-const manQ = cached('manual_titles.json', {});
+const manQ = cached('manual_titles.json', {}), manWhy = {};
 for (const [l, set] of Object.entries(manTitles)) {
   manQ[l] ??= {};
   const todo = [...set].filter(t => !manQ[l][t])  // not found last time: ask again;
@@ -103,6 +104,7 @@ for (const [l, set] of Object.entries(manTitles)) {
       const p = pages.get(cur);
       // '=' : the article exists but has no Wikidata item yet; it is linked as it is (wikilinks.json "direct")
       manQ[l][t] = !p || p.missing || p.invalid || (p.pageprops && 'disambiguation' in p.pageprops) ? '' : p.pageprops?.wikibase_item || `=${cur}`;
+      if (!manQ[l][t]) manWhy[l + ':' + t] = p && !p.missing && !p.invalid ? '消歧義頁' : '不存在';
     }
     save('manual_titles.json', manQ); await sleep(DELAY);
   }
@@ -120,8 +122,19 @@ for (const [k, v] of manual) if (!/^Q\d+$/.test(v)) {
   if (q?.startsWith('=')) { manual.delete(k); directOf[k] = v.slice(0, i + 1) + q.slice(1); }
   else if (q) manual.set(k, q); else { manual.delete(k); manualBad.push([k, v]); }
 }
-fs.writeFileSync(path.join(OUT, 'manual_missing.tsv'), '# manual.tsv 裡在維基百科找不到的條目名稱：請改正或改附來源\n' + manualBad.map(r => r.join('\t')).join('\n') + (manualBad.length ? '\n' : ''));
-if (manualBad.length) console.log(`manual.tsv 裡 ${manualBad.length} 個條目名稱不存在：` + manualBad.map(r => r.join(' → ')).join('；'));
+// for each title not found: search that Wikipedia and list the top three hits, so the right title can be picked
+// without another round (cached in manual_search.json; one request at a time)
+const manS = cached('manual_search.json', {});
+for (const r of manualBad) {
+  const v = r[1], i = v.indexOf(':'), l = v.slice(0, i), t = v.slice(i + 1);
+  if (!(v in manS)) {
+    const j = await post(`${l}.wikipedia.org`, { action: 'query', list: 'search', srsearch: t, srlimit: '3', srprop: 'snippet' });
+    manS[v] = (j.query?.search || []).map(h => `${l}:${h.title}`); save('manual_search.json', manS); await sleep(DELAY);
+  }
+  r.push(manWhy[v] || '不存在', ...manS[v]);
+}
+fs.writeFileSync(path.join(OUT, 'manual_missing.tsv'), '# manual.tsv 裡在維基百科找不到的條目名稱：請改正或改附來源。欄位：資料\t寫的條目\t原因\t搜尋結果前三筆\n' + manualBad.map(r => r.join('\t')).join('\n') + (manualBad.length ? '\n' : ''));
+if (manualBad.length) console.log(`manual.tsv 裡 ${manualBad.length} 個條目名稱不存在：` + manualBad.map(r => r.slice(0, 2).join(' → ')).join('；'));
 const manualOf = e => manual.get(e.name) || e.w.map((t, i) => t && manual.get(`${L3[i]}:${t}`)).find(Boolean);
 // ---- each entry's item: English first, then Chinese, then Japanese; disagreements are reported
 const conflicts = [], unresolved = [];

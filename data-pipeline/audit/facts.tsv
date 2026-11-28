@@ -2,12 +2,15 @@
 # 可能性	種類	模式	資料	我們的	Wikidata	差距（年／公里）	Wikidata 項目	當地語言條目	檔案
 低	年代	argentina	布蘭卡港	1885	1828	57	https://www.wikidata.org/wiki/Q54108	https://es.wikipedia.org/wiki/Bah%C3%ADa_Blanca	public/data/argentina.json
 低	年代	argentina	布蘭卡港	1885–2026	1828	57	https://www.wikidata.org/wiki/Q54108	https://es.wikipedia.org/wiki/Bah%C3%ADa_Blanca	public/data/argentina.json
+低	年代	argentina	十月十七日，裴隆崛起	1945	1921	24	https://www.wikidata.org/wiki/Q6694479	https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Lealtad_(Estados_Unidos)	public/data/argentina.json
 低	年代	argentina	亞西雷塔水壩	1994	1983	11	https://www.wikidata.org/wiki/Q1432818	https://es.wikipedia.org/wiki/Represa_de_Yacyret%C3%A1	public/data/argentina.json
 低	年代	argentina	亞西雷塔水壩	1994–2026	1983	11	https://www.wikidata.org/wiki/Q1432818	https://es.wikipedia.org/wiki/Represa_de_Yacyret%C3%A1	public/data/argentina.json
 低	年代	argentina	聯邦光纖網路（REFEFO）	2014	2006	8	https://www.wikidata.org/wiki/Q17709270	https://es.wikipedia.org/wiki/ARSAT	public/data/argentina.json
 低	年代	argentina	聯邦光纖網路（REFEFO）	2014–2026	2006	8	https://www.wikidata.org/wiki/Q17709270	https://es.wikipedia.org/wiki/ARSAT	public/data/argentina.json
 低	年代	argentina	中央阿根廷鐵路（羅薩里奧—哥多華）	1870	1863	7	https://www.wikidata.org/wiki/Q4887999	https://es.wikipedia.org/wiki/Ferrocarril_Central_Argentino	public/data/argentina.json
 低	年代	argentina	中央阿根廷鐵路（羅薩里奧—哥多華）	1870–2026	1863	7	https://www.wikidata.org/wiki/Q4887999	https://es.wikipedia.org/wiki/Ferrocarril_Central_Argentino	public/data/argentina.json
+低	位置	argentina	黃熱病疫情	-58.38, -34.60	-60.00, -37.00	304	https://www.wikidata.org/wiki/Q8051877	https://es.wikipedia.org/wiki/Fiebre_amarilla_en_Buenos_Aires	public/data/argentina.json
+低	位置	argentina	阿根廷主辦世界盃	-58.45, -34.55	-60.65, -32.95	270	https://www.wikidata.org/wiki/Q46943	https://es.wikipedia.org/wiki/Copa_Mundial_de_F%C3%BAtbol_de_1978	public/data/argentina.json
 低	年代	art	印加藝術	1438–1533	-34999	36437	https://www.wikidata.org/wiki/Q1842924		public/data/art.json
 低	年代	art	奧爾梅克藝術	-1200–-400	-1398	198	https://www.wikidata.org/wiki/Q135364		public/data/art.json
 低	年代	art	印象派	1867–1886	1860	7	https://www.wikidata.org/wiki/Q40415		public/data/art.json
@@ -20,6 +23,7 @@
 低	年代	brazil	RNP Ipê 學術研究網路	2005–2026	1989	16	https://www.wikidata.org/wiki/Q7305683	https://pt.wikipedia.org/wiki/Rede_Nacional_de_Ensino_e_Pesquisa	public/data/brazil.json
 低	年代	brazil	美麗山水壩	2016	2011	5	https://www.wikidata.org/wiki/Q816119	https://pt.wikipedia.org/wiki/Usina_Hidrel%C3%A9trica_de_Belo_Monte	public/data/brazil.json
 低	年代	brazil	美麗山水壩	2016–2026	2011	5	https://www.wikidata.org/wiki/Q816119	https://pt.wikipedia.org/wiki/Usina_Hidrel%C3%A9trica_de_Belo_Monte	public/data/brazil.json
+低	位置	brazil	巴拉圭戰爭結束	-57.60, -25.30	-56.03, -22.65	335	https://www.wikidata.org/wiki/Q3504617	https://pt.wikipedia.org/wiki/Batalha_de_Cerro_Cor%C3%A1	public/data/brazil.json
 低	年代	china	青幫	1911–1949	1726	185	https://www.wikidata.org/wiki/Q17588	https://zh.wikipedia.org/wiki/%E9%9D%92%E5%B9%AB	public/data/china.json
 低	年代	china	上海港（黃浦江）	1911	1842	69	https://www.wikidata.org/wiki/Q1186077	https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E6%B8%AF	public/data/china.json
 低	年代	china	上海港（黃浦江）	1911–1951	1842	69	https://www.wikidata.org/wiki/Q1186077	https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E6%B8%AF	public/data/china.json
@@ -27,6 +31,11 @@
 低	年代	china	上海—長崎海底電報電纜（大北電報）	1911–1951	1869	42	https://www.wikidata.org/wiki/Q1544339	https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%8C%97%E5%85%AC%E5%8F%B8	public/data/china.json
 低	年代	china	隴海鐵路（連雲港—寶雞）	1936	1910	26	https://www.wikidata.org/wiki/Q634214	https://zh.wikipedia.org/wiki/%E9%99%87%E6%B5%B7%E9%93%81%E8%B7%AF	public/data/china.json
 低	年代	china	隴海鐵路（連雲港—寶雞）	1936–1951	1910	26	https://www.wikidata.org/wiki/Q634214	https://zh.wikipedia.org/wiki/%E9%99%87%E6%B5%B7%E9%93%81%E8%B7%AF	public/data/china.json
+低	位置	china	日本投降；蘇聯出兵東北	123.43, 41.80	125.00, 49.00	810	https://www.wikidata.org/wiki/Q6165880	https://zh.wikipedia.org/wiki/%E5%85%AB%E6%9C%88%E9%A2%A8%E6%9A%B4%E8%A1%8C%E5%8B%95	public/data/china.json
+低	位置	china	黃埔軍校成立	113.42, 23.09	120.37, 22.62	714	https://www.wikidata.org/wiki/Q16242140	https://zh.wikipedia.org/wiki/%E9%99%B8%E8%BB%8D%E8%BB%8D%E5%AE%98%E5%AD%B8%E6%A0%A1	public/data/china.json
+低	位置	china	北伐軍進入北京；張作霖於皇姑屯遇炸身亡	116.40, 39.90	123.40, 41.81	626	https://www.wikidata.org/wiki/Q699461	https://zh.wikipedia.org/wiki/%E7%9A%87%E5%A7%91%E5%B1%AF%E4%BA%8B%E4%BB%B6	public/data/china.json
+低	位置	china	百團大戰	113.00, 37.50	116.30, 37.45	291	https://www.wikidata.org/wiki/Q709261	https://zh.wikipedia.org/wiki/%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98	public/data/china.json
+低	位置	china	冀東防共自治政府成立	118.67, 39.90	116.80, 39.80	160	https://www.wikidata.org/wiki/Q707917	https://zh.wikipedia.org/wiki/%E5%86%80%E6%9D%B1%E9%98%B2%E5%85%B1%E8%87%AA%E6%B2%BB%E6%94%BF%E5%BA%9C	public/data/china.json
 低	位置	china	二二八事件	121.51, 25.04	121.00, 23.77	150	https://www.wikidata.org/wiki/Q244939	https://zh.wikipedia.org/wiki/%E4%BA%8C%E4%BA%8C%E5%85%AB%E4%BA%8B%E4%BB%B6	public/data/china.json
 低	年代	disaster	庫巴唐輸油管大火	1984–1984	1832	152	https://www.wikidata.org/wiki/Q817954	https://pt.wikipedia.org/wiki/Cubat%C3%A3o	public/data/disaster.json
 低	年代	disaster	庫巴唐輸油管大火	1984	1832	152	https://www.wikidata.org/wiki/Q817954	https://pt.wikipedia.org/wiki/Cubat%C3%A3o	public/data/disaster.json
@@ -38,40 +47,70 @@
 低	年代	disaster	核三廠全黑事故	2001–2004	1984	17	https://www.wikidata.org/wiki/Q712797	https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E6%A0%B8%E8%83%BD%E7%99%BC%E9%9B%BB%E5%BB%A0	public/data/disaster.json
 低	年代	disaster	太平洋垃圾帶	1997	1980	17	https://www.wikidata.org/wiki/Q638904		public/data/disaster.json
 低	年代	disaster	核三廠全黑事故	2001	1984	17	https://www.wikidata.org/wiki/Q712797	https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E6%A0%B8%E8%83%BD%E7%99%BC%E9%9B%BB%E5%BB%A0	public/data/disaster.json
+低	年代	disaster	六輕大火	2010–2010	2000	10	https://www.wikidata.org/wiki/Q7215612	https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%85%AD%E5%A5%97%E8%BC%95%E6%B2%B9%E8%A3%82%E8%A7%A3%E5%BB%A0	public/data/disaster.json
+低	年代	disaster	六輕大火	2010–2013	2000	10	https://www.wikidata.org/wiki/Q7215612	https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%85%AD%E5%A5%97%E8%BC%95%E6%B2%B9%E8%A3%82%E8%A7%A3%E5%BB%A0	public/data/disaster.json
+低	年代	disaster	六輕大火	2010	2000	10	https://www.wikidata.org/wiki/Q7215612	https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%85%AD%E5%A5%97%E8%BC%95%E6%B2%B9%E8%A3%82%E8%A7%A3%E5%BB%A0	public/data/disaster.json
 低	位置	disaster	太平洋垃圾帶	-140.00, 32.00	-145.00, 38.00	807	https://www.wikidata.org/wiki/Q638904		public/data/disaster.json
 低	位置	disaster	大西洋女皇號撞船漏油	-60.33, 11.98	-55.47, 13.08	542	https://www.wikidata.org/wiki/Q251541		public/data/disaster.json
 低	位置	disaster	1997 年東南亞霾害	105.00, 1.50	105.00, -3.00	500	https://www.wikidata.org/wiki/Q4592792		public/data/disaster.json
 低	位置	disaster	威望號漏油	-12.00, 42.20	-9.88, 42.88	189	https://www.wikidata.org/wiki/Q1164870	https://es.wikipedia.org/wiki/Desastre_del_Prestige	public/data/disaster.json
 低	年代	egypt	科普特正教會	451–2026	42	409	https://www.wikidata.org/wiki/Q198998	https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%83%D9%86%D9%8A%D8%B3%D8%A9_%D8%A7%D9%84%D9%82%D8%A8%D8%B7%D9%8A%D8%A9_%D8%A7%D9%84%D8%A3%D8%B1%D8%AB%D9%88%D8%B0%D9%83%D8%B3%D9%8A%D8%A9	public/data/egypt.json
+低	年代	egypt	英軍駐守蘇伊士運河區	1882–1956	1869	13	https://www.wikidata.org/wiki/Q899	https://ar.wikipedia.org/wiki/%D9%82%D9%86%D8%A7%D8%A9_%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3	public/data/egypt.json
 低	年代	egypt	塞得港	1869	1859	10	https://www.wikidata.org/wiki/Q134509	https://ar.wikipedia.org/wiki/%D8%A8%D9%88%D8%B1%D8%B3%D8%B9%D9%8A%D8%AF	public/data/egypt.json
 低	年代	egypt	亞斯文高壩	1970	1960	10	https://www.wikidata.org/wiki/Q38891	https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B3%D8%AF_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A	public/data/egypt.json
 低	年代	egypt	亞斯文高壩	1970–2026	1960	10	https://www.wikidata.org/wiki/Q38891	https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B3%D8%AF_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A	public/data/egypt.json
 低	年代	egypt	塞得港	1869–2026	1859	10	https://www.wikidata.org/wiki/Q134509	https://ar.wikipedia.org/wiki/%D8%A8%D9%88%D8%B1%D8%B3%D8%B9%D9%8A%D8%AF	public/data/egypt.json
+低	年代	egypt	阿布辛貝神殿	-1264	-1272	8	https://www.wikidata.org/wiki/Q134140	https://ar.wikipedia.org/wiki/%D8%A3%D8%A8%D9%88_%D8%B3%D9%85%D8%A8%D9%84	public/data/egypt.json
+低	年代	egypt	政府開始遷入新行政首都	2023	2015	8	https://www.wikidata.org/wiki/Q19588497	https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9_%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9	public/data/egypt.json
 低	年代	egypt	亞歷山卓—開羅鐵路	1856	1853	3	https://www.wikidata.org/wiki/Q253927	https://ar.wikipedia.org/wiki/%D8%B3%D9%83%D9%83_%D8%AD%D8%AF%D9%8A%D8%AF_%D9%85%D8%B5%D8%B1	public/data/egypt.json
 低	年代	egypt	亞歷山卓—開羅鐵路	1856–2026	1853	3	https://www.wikidata.org/wiki/Q253927	https://ar.wikipedia.org/wiki/%D8%B3%D9%83%D9%83_%D8%AD%D8%AF%D9%8A%D8%AF_%D9%85%D8%B5%D8%B1	public/data/egypt.json
+低	位置	egypt	克麗奧佩脫拉七世自盡，埃及併入羅馬	29.92, 31.20	32.10, 28.00	414	https://www.wikidata.org/wiki/Q202311	https://ar.wikipedia.org/wiki/%D9%85%D8%B5%D8%B1_(%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9_%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9)	public/data/egypt.json
+低	位置	egypt	西奈半島叛亂	33.80, 31.10	33.83, 29.50	178	https://www.wikidata.org/wiki/Q7521684	https://ar.wikipedia.org/wiki/%D9%87%D8%AC%D9%85%D8%A7%D8%AA_%D8%B3%D9%8A%D9%86%D8%A7%D8%A1	public/data/egypt.json
+低	位置	egypt	軍方推翻穆爾西	31.24, 30.04	32.31, 31.26	170	https://www.wikidata.org/wiki/Q13605743	https://ar.wikipedia.org/wiki/%D8%A7%D9%86%D9%82%D9%84%D8%A7%D8%A8_2013_%D9%81%D9%8A_%D9%85%D8%B5%D8%B1	public/data/egypt.json
 低	年代	finance	雅典德拉克馬（勞里昂銀礦）	-480–-86	-599、-508	28	https://www.wikidata.org/wiki/Q1083662		public/data/finance.json
 低	年代	finance	中央銀行（中華民國）	1928–2026	1923、1924	4	https://www.wikidata.org/wiki/Q198642	https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E4%B8%AD%E5%A4%AE%E9%8A%80%E8%A1%8C	public/data/finance.json
 低	位置	finance	呂底亞：最早的鑄幣	28.04, 38.48	30.00, 40.00	239	https://www.wikidata.org/wiki/Q620765	https://tr.wikipedia.org/wiki/Lidya	public/data/finance.json
 低	位置	finance	呂底亞鑄造最早的錢幣	28.04, 38.48	30.00, 40.00	239	https://www.wikidata.org/wiki/Q620765	https://tr.wikipedia.org/wiki/Lidya	public/data/finance.json
+低	年代	france	卡佩直系斷絕，瓦盧瓦王朝開始	1328	1270	58	https://www.wikidata.org/wiki/Q182135	https://fr.wikipedia.org/wiki/Maison_de_Valois	public/data/france.json
+低	年代	france	大區合併為 13 個	2016	1960	56	https://www.wikidata.org/wiki/Q36784	https://fr.wikipedia.org/wiki/R%C3%A9gion_fran%C3%A7aise	public/data/france.json
+低	年代	france	地方分權法，設立 22 個大區	1982	1960	22	https://www.wikidata.org/wiki/Q36784	https://fr.wikipedia.org/wiki/R%C3%A9gion_fran%C3%A7aise	public/data/france.json
+低	年代	france	路易十四遷居凡爾賽宮	1682	1661	21	https://www.wikidata.org/wiki/Q2946	https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Versailles	public/data/france.json
 低	年代	france	巴黎環城大道	1973	1956	17	https://www.wikidata.org/wiki/Q849777	https://fr.wikipedia.org/wiki/Boulevard_p%C3%A9riph%C3%A9rique_de_Paris	public/data/france.json
 低	年代	france	巴黎環城大道	1973–2026	1956	17	https://www.wikidata.org/wiki/Q849777	https://fr.wikipedia.org/wiki/Boulevard_p%C3%A9riph%C3%A9rique_de_Paris	public/data/france.json
+低	年代	france	太陽高速公路（A6／A7，巴黎—馬賽）	1970	1960	10	https://www.wikidata.org/wiki/Q1595	https://fr.wikipedia.org/wiki/Autoroute_A6_(France)	public/data/france.json
+低	年代	france	太陽高速公路（A6／A7，巴黎—馬賽）	1970–2026	1960	10	https://www.wikidata.org/wiki/Q1595	https://fr.wikipedia.org/wiki/Autoroute_A6_(France)	public/data/france.json
 低	年代	france	巴黎—里昂—地中海鐵路（PLM）	1856	1847	9	https://www.wikidata.org/wiki/Q802978	https://fr.wikipedia.org/wiki/Ligne_de_Paris-Lyon_%C3%A0_Marseille-Saint-Charles	public/data/france.json
 低	年代	france	巴黎—里昂—地中海鐵路（PLM）	1856–2026	1847	9	https://www.wikidata.org/wiki/Q802978	https://fr.wikipedia.org/wiki/Ligne_de_Paris-Lyon_%C3%A0_Marseille-Saint-Charles	public/data/france.json
 低	年代	france	北約駐法基地	1952–1967	1949	3	https://www.wikidata.org/wiki/Q7184	https://fr.wikipedia.org/wiki/Organisation_du_trait%C3%A9_de_l'Atlantique_nord	public/data/france.json
+低	位置	france	查理八世入侵義大利，義大利戰爭開始	6.00, 45.00	12.50, 42.50	591	https://www.wikidata.org/wiki/Q1355145		public/data/france.json
+低	位置	france	西發里亞和約，法國取得亞爾薩斯	7.75, 48.58	7.63, 51.96	376	https://www.wikidata.org/wiki/Q150995	https://fr.wikipedia.org/wiki/Trait%C3%A9s_de_Westphalie	public/data/france.json
+低	位置	france	諾曼第公爵威廉征服英格蘭	-0.37, 49.18	-1.32, 52.07	328	https://www.wikidata.org/wiki/Q200485	https://fr.wikipedia.org/wiki/Conqu%C3%AAte_normande_de_l'Angleterre	public/data/france.json
 低	年代	germany	帝國自由城市奧格斯堡	1648–1806	-13	1661	https://www.wikidata.org/wiki/Q2749	https://de.wikipedia.org/wiki/Augsburg	public/data/germany.json
 低	年代	germany	帝國自由城市法蘭克福	1648–1806	100	1548	https://www.wikidata.org/wiki/Q1794	https://de.wikipedia.org/wiki/Frankfurt_am_Main	public/data/germany.json
 低	年代	germany	漢堡港	1648	1189、1896	248	https://www.wikidata.org/wiki/Q3964	https://de.wikipedia.org/wiki/Hamburger_Hafen	public/data/germany.json
+低	年代	germany	聯邦議院遷回柏林國會大廈	1999	1894	105	https://www.wikidata.org/wiki/Q151897	https://de.wikipedia.org/wiki/Reichstagsgeb%C3%A4ude	public/data/germany.json
 低	年代	germany	伊薩爾核電廠 2 號機	1988	1972	16	https://www.wikidata.org/wiki/Q569510	https://de.wikipedia.org/wiki/Kernkraftwerk_Isar	public/data/germany.json
 低	年代	germany	伊薩爾核電廠 2 號機	1988–2023	1972	16	https://www.wikidata.org/wiki/Q569510	https://de.wikipedia.org/wiki/Kernkraftwerk_Isar	public/data/germany.json
+低	年代	germany	美國駐歐陸軍（海德堡→威斯巴登）	1952–2026	1942	10	https://www.wikidata.org/wiki/Q181197	https://de.wikipedia.org/wiki/United_States_Army_Europe_and_Africa	public/data/germany.json
 低	年代	germany	DFN 德國研究網（今 X-WiN）	1990	1984	6	https://www.wikidata.org/wiki/Q2514863	https://de.wikipedia.org/wiki/Verein_zur_F%C3%B6rderung_eines_Deutschen_Forschungsnetzes	public/data/germany.json
 低	年代	germany	DFN 德國研究網（今 X-WiN）	1990–2026	1984	6	https://www.wikidata.org/wiki/Q2514863	https://de.wikipedia.org/wiki/Verein_zur_F%C3%B6rderung_eines_Deutschen_Forschungsnetzes	public/data/germany.json
+低	年代	germany	反部署潘興飛彈示威	1983	1979	4	https://www.wikidata.org/wiki/Q1638236	https://de.wikipedia.org/wiki/NATO-Doppelbeschluss	public/data/germany.json
 低	年代	germany	不來梅港	1830	1827	3	https://www.wikidata.org/wiki/Q2706	https://de.wikipedia.org/wiki/Bremerhaven	public/data/germany.json
 低	年代	germany	不來梅港	1830–2026	1827	3	https://www.wikidata.org/wiki/Q2706	https://de.wikipedia.org/wiki/Bremerhaven	public/data/germany.json
+低	位置	germany	維也納會議，德意志邦聯成立	16.37, 48.21	8.68, 50.12	598	https://www.wikidata.org/wiki/Q151624	https://de.wikipedia.org/wiki/Deutscher_Bund	public/data/germany.json
+低	位置	germany	七二〇刺殺希特勒事件	13.37, 52.51	21.50, 54.08	567	https://www.wikidata.org/wiki/Q105570	https://de.wikipedia.org/wiki/Attentat_vom_20._Juli_1944	public/data/germany.json
 低	位置	germany	法國佔領區總部（巴登—巴登）	8.24, 48.76	13.38, 52.52	553	https://www.wikidata.org/wiki/Q2415901	https://de.wikipedia.org/wiki/Deutschland_1945_bis_1949	public/data/germany.json
+低	位置	germany	普魯士王國成立	20.51, 54.71	14.00, 53.00	467	https://www.wikidata.org/wiki/Q27306	https://de.wikipedia.org/wiki/K%C3%B6nigreich_Preu%C3%9Fen	public/data/germany.json
 低	位置	germany	美國佔領區總部（法蘭克福）	8.65, 50.12	13.38, 52.52	423	https://www.wikidata.org/wiki/Q2415901	https://de.wikipedia.org/wiki/Deutschland_1945_bis_1949	public/data/germany.json
 低	位置	germany	英國佔領區總部（巴特恩豪森）	8.80, 52.20	13.38, 52.52	313	https://www.wikidata.org/wiki/Q2415901	https://de.wikipedia.org/wiki/Deutschland_1945_bis_1949	public/data/germany.json
+低	位置	germany	匈牙利開放邊境；布拉格使館東德難民	14.40, 50.09	16.62, 47.76	306	https://www.wikidata.org/wiki/Q160056	https://de.wikipedia.org/wiki/Paneurop%C3%A4isches_Picknick	public/data/germany.json
+低	位置	germany	德奧合併	16.37, 48.21	13.59, 48.12	206	https://www.wikidata.org/wiki/Q154681	https://de.wikipedia.org/wiki/Anschluss_%C3%96sterreichs	public/data/germany.json
+低	位置	germany	英國萊茵軍團（門興格拉德巴赫）	6.38, 51.17	8.68, 52.13	191	https://www.wikidata.org/wiki/Q780918	https://de.wikipedia.org/wiki/Britische_Streitkr%C3%A4fte_in_Deutschland	public/data/germany.json
+低	位置	germany	難民危機，德國開放邊境	11.58, 48.14	9.14, 48.69	190	https://www.wikidata.org/wiki/Q20857240	https://de.wikipedia.org/wiki/Fl%C3%BCchtlingskrise_in_Europa_2015%2F2016	public/data/germany.json
 低	年代	india	東印度鐵路（加爾各答—德里）	1866	1845	21	https://www.wikidata.org/wiki/Q3633141	https://en.wikipedia.org/wiki/East_Indian_Railway_Company	public/data/india.json
 低	年代	india	東印度鐵路（加爾各答—德里）	1866–2026	1845	21	https://www.wikidata.org/wiki/Q3633141	https://en.wikipedia.org/wiki/East_Indian_Railway_Company	public/data/india.json
+低	年代	india	新德里落成啟用	1931	1911	20	https://www.wikidata.org/wiki/Q987	https://en.wikipedia.org/wiki/New_Delhi	public/data/india.json
+低	年代	india	巴克拉大壩落成	1963	1948	15	https://www.wikidata.org/wiki/Q83436	https://en.wikipedia.org/wiki/Bhakra_Dam	public/data/india.json
 低	年代	india	巴克拉—南加爾水壩	1963	1948	15	https://www.wikidata.org/wiki/Q83436	https://en.wikipedia.org/wiki/Bhakra_Dam	public/data/india.json
 低	年代	india	巴克拉—南加爾水壩	1963–2026	1948	15	https://www.wikidata.org/wiki/Q83436	https://en.wikipedia.org/wiki/Bhakra_Dam	public/data/india.json
 低	年代	india	孟買—塔那鐵路	1853	1845	8	https://www.wikidata.org/wiki/Q819425	https://en.wikipedia.org/wiki/Indian_Railways	public/data/india.json
@@ -80,10 +119,22 @@
 低	年代	india	孟買—塔那鐵路	1853–2026	1845	8	https://www.wikidata.org/wiki/Q819425	https://en.wikipedia.org/wiki/Indian_Railways	public/data/india.json
 低	年代	india	希拉庫德水壩	1957–2026	1949	8	https://www.wikidata.org/wiki/Q1940209	https://en.wikipedia.org/wiki/Hirakud_Dam	public/data/india.json
 低	年代	india	斯里赫里戈達發射場首次發射	1979–2026	1971	8	https://www.wikidata.org/wiki/Q640273	https://en.wikipedia.org/wiki/Satish_Dhawan_Space_Centre	public/data/india.json
+低	年代	india	綠色革命推行	1966	1960	6	https://www.wikidata.org/wiki/Q3100540	https://en.wikipedia.org/wiki/Green_Revolution_in_India	public/data/india.json
 低	年代	india	塔塔鋼鐵廠（詹謝普爾）	1912	1907	5	https://www.wikidata.org/wiki/Q963101	https://en.wikipedia.org/wiki/Tata_Steel	public/data/india.json
 低	年代	india	塔塔鋼鐵廠（詹謝普爾）	1912–2026	1907	5	https://www.wikidata.org/wiki/Q963101	https://en.wikipedia.org/wiki/Tata_Steel	public/data/india.json
+低	位置	india	新冠第二波疫情	77.21, 28.61	77.00, 22.00	735	https://www.wikidata.org/wiki/Q84055514	https://en.wikipedia.org/wiki/COVID-19_pandemic_in_India	public/data/india.json
+低	位置	india	1770年孟加拉大饑荒	88.40, 22.60	88.73, 23.99	158	https://www.wikidata.org/wiki/Q2477522	https://en.wikipedia.org/wiki/Great_Bengal_famine_of_1770	public/data/india.json
+低	位置	india	1943年孟加拉大饑荒	88.40, 22.60	88.73, 23.99	158	https://www.wikidata.org/wiki/Q522837	https://en.wikipedia.org/wiki/Bengal_famine_of_1943	public/data/india.json
 低	年代	indonesia	Echo 海纜	2025	1991	34	https://www.wikidata.org/wiki/Q182767	https://id.wikipedia.org/wiki/Gema	public/data/indonesia.json
 低	年代	indonesia	Echo 海纜	2025–2026	1991	34	https://www.wikidata.org/wiki/Q182767	https://id.wikipedia.org/wiki/Gema	public/data/indonesia.json
+低	年代	indonesia	婆羅浮屠完工	825	800	25	https://www.wikidata.org/wiki/Q42798	https://id.wikipedia.org/wiki/Borobudur	public/data/indonesia.json
+低	年代	indonesia	帕拉帕環（Palapa Ring）國家光纖	2019	2007	12	https://www.wikidata.org/wiki/Q12502233	https://id.wikipedia.org/wiki/Palapa_Ring	public/data/indonesia.json
+低	年代	indonesia	帕拉帕環（Palapa Ring）國家光纖	2019–2026	2007	12	https://www.wikidata.org/wiki/Q12502233	https://id.wikipedia.org/wiki/Palapa_Ring	public/data/indonesia.json
+低	年代	indonesia	普蘭巴南神廟	856	850	6	https://www.wikidata.org/wiki/Q47721	https://id.wikipedia.org/wiki/Candi_Prambanan	public/data/indonesia.json
+低	位置	indonesia	《爪哇史頌》完成	112.38, -7.56	106.82, -6.17	633	https://www.wikidata.org/wiki/Q49335	https://id.wikipedia.org/wiki/Kakawin_Nagarakretagama	public/data/indonesia.json
+低	位置	indonesia	蘇丹阿貢圍攻巴達維亞	106.81, -6.13	110.00, -7.49	384	https://www.wikidata.org/wiki/Q7509865	https://id.wikipedia.org/wiki/Penyerbuan_ke_Batavia	public/data/indonesia.json
+低	位置	indonesia	南亞海嘯重創亞齊	95.32, 5.55	95.98, 3.29	261	https://www.wikidata.org/wiki/Q130754	https://id.wikipedia.org/wiki/Gempa_bumi_dan_tsunami_Samudra_Hindia_2004	public/data/indonesia.json
+低	位置	indonesia	亞齊戰爭爆發	95.32, 5.55	97.41, 4.59	255	https://www.wikidata.org/wiki/Q277450	https://id.wikipedia.org/wiki/Perang_Aceh	public/data/indonesia.json
 低	年代	internet	馬賽海纜樞紐	2010–2026	-598	2608	https://www.wikidata.org/wiki/Q23482	https://fr.wikipedia.org/wiki/Marseille	public/data/internet.json
 低	年代	internet	漢代河西烽燧	-121	-699	578	https://www.wikidata.org/wiki/Q12501	https://zh.wikipedia.org/wiki/%E9%95%BF%E5%9F%8E	public/data/internet.json
 低	年代	internet	福塔雷薩海纜樞紐	2010–2026	1726	284	https://www.wikidata.org/wiki/Q43463	https://pt.wikipedia.org/wiki/Fortaleza	public/data/internet.json
@@ -98,10 +149,20 @@
 低	年代	internet	NORDUnet（北歐）	1988–2026	1985	3	https://www.wikidata.org/wiki/Q3480188	https://da.wikipedia.org/wiki/NORDUnet	public/data/internet.json
 低	年代	internet	巴西 RNP	1992–2026	1989	3	https://www.wikidata.org/wiki/Q7305683	https://pt.wikipedia.org/wiki/Rede_Nacional_de_Ensino_e_Pesquisa	public/data/internet.json
 低	位置	internet	驛馬快信	-94.85, 39.77	-104.52, 42.21	855	https://www.wikidata.org/wiki/Q859130	https://en.wikipedia.org/wiki/Pony_Express	public/data/internet.json
+低	年代	iran	大流士一世即位，貝希斯敦銘文	-522	-599	77	https://www.wikidata.org/wiki/Q180012	https://fa.wikipedia.org/wiki/%D8%B3%D9%86%DA%AF%E2%80%8C%D9%86%D9%88%D8%B4%D8%AA%D9%87_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86	public/data/iran.json
 低	年代	iran	布什爾核電廠	2011	1975	36	https://www.wikidata.org/wiki/Q204637	https://fa.wikipedia.org/wiki/%D9%86%DB%8C%D8%B1%D9%88%DA%AF%D8%A7%D9%87_%D9%87%D8%B3%D8%AA%D9%87%E2%80%8C%D8%A7%DB%8C_%D8%A8%D9%88%D8%B4%D9%87%D8%B1	public/data/iran.json
 低	年代	iran	布什爾核電廠	2011–2026	1975	36	https://www.wikidata.org/wiki/Q204637	https://fa.wikipedia.org/wiki/%D9%86%DB%8C%D8%B1%D9%88%DA%AF%D8%A7%D9%87_%D9%87%D8%B3%D8%AA%D9%87%E2%80%8C%D8%A7%DB%8C_%D8%A8%D9%88%D8%B4%D9%87%D8%B1	public/data/iran.json
 低	年代	iran	人民聖戰者組織武裝	1981–1988	1965	16	https://www.wikidata.org/wiki/Q636947	https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86_%D9%85%D8%AC%D8%A7%D9%87%D8%AF%DB%8C%D9%86_%D8%AE%D9%84%D9%82_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86	public/data/iran.json
 低	年代	iran	巴布教徒起義	1848–1850	1844	4	https://www.wikidata.org/wiki/Q204128	https://fa.wikipedia.org/wiki/%D8%A8%D8%A7%D8%A8%DB%8C%D9%87	public/data/iran.json
+低	位置	iran	居魯士二世推翻米底，建立阿契美尼德帝國	53.17, 30.19	44.42, 32.54	870	https://www.wikidata.org/wiki/Q389688	https://fa.wikipedia.org/wiki/%D8%B4%D8%A7%D9%87%D9%86%D8%B4%D8%A7%D9%87%DB%8C_%D9%87%D8%AE%D8%A7%D9%85%D9%86%D8%B4%DB%8C	public/data/iran.json
+低	位置	iran	蘇萊曼尼被殺；烏航客機被擊落	51.15, 35.42	44.26, 33.26	677	https://www.wikidata.org/wiki/Q80754846	https://fa.wikipedia.org/wiki/%D8%AA%D8%B1%D9%88%D8%B1_%D9%82%D8%A7%D8%B3%D9%85_%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86%DB%8C	public/data/iran.json
+低	位置	iran	薩曼王朝興起	64.42, 39.77	66.00, 34.00	657	https://www.wikidata.org/wiki/Q12150341	https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D9%85%D8%A7%D9%86%DB%8C%D8%A7%D9%86	public/data/iran.json
+低	位置	iran	阿爾達希爾一世建立薩珊帝國	52.53, 28.92	48.85, 32.05	495	https://www.wikidata.org/wiki/Q2887977	https://fa.wikipedia.org/wiki/%D9%86%D8%A8%D8%B1%D8%AF_%D9%87%D8%B1%D9%85%D8%B2%D8%AF%DA%AF%D8%A7%D9%86	public/data/iran.json
+低	位置	iran	尼哈萬德戰役	48.37, 34.19	44.50, 31.58	463	https://www.wikidata.org/wiki/Q603549	https://fa.wikipedia.org/wiki/%D9%86%D8%A8%D8%B1%D8%AF_%D9%86%D9%87%D8%A7%D9%88%D9%86%D8%AF	public/data/iran.json
+低	位置	iran	禮薩汗建立巴勒維王朝	51.39, 35.69	53.00, 32.00	436	https://www.wikidata.org/wiki/Q207991	https://fa.wikipedia.org/wiki/%D8%AF%D9%88%D8%AF%D9%85%D8%A7%D9%86_%D9%BE%D9%87%D9%84%D9%88%DB%8C	public/data/iran.json
+低	位置	iran	英蘇入侵伊朗	51.39, 35.69	53.00, 32.00	436	https://www.wikidata.org/wiki/Q541369	https://fa.wikipedia.org/wiki/%D8%A7%D8%B4%D8%BA%D8%A7%D9%84_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D8%AF%D8%B1_%D8%AC%D9%86%DA%AF_%D8%AC%D9%87%D8%A7%D9%86%DB%8C_%D8%AF%D9%88%D9%85	public/data/iran.json
+低	位置	iran	沙普爾一世俘虜羅馬皇帝瓦勒良	36.90, 37.10	38.80, 37.15	169	https://www.wikidata.org/wiki/Q1165502	https://fa.wikipedia.org/wiki/%D9%86%D8%A8%D8%B1%D8%AF_%D8%A7%D8%AF%D8%B3%D8%A7	public/data/iran.json
+低	年代	italy	首都遷至羅馬	1871	-751	2622	https://www.wikidata.org/wiki/Q220	https://it.wikipedia.org/wiki/Roma	public/data/italy.json
 低	年代	italy	亞壁古道（羅馬—布林迪西）	1454	-310	1764	https://www.wikidata.org/wiki/Q189417	https://it.wikipedia.org/wiki/Via_Appia	public/data/italy.json
 低	年代	italy	亞壁古道（羅馬—布林迪西）	1454–2026	-310	1764	https://www.wikidata.org/wiki/Q189417	https://it.wikipedia.org/wiki/Via_Appia	public/data/italy.json
 低	年代	italy	聖馬利諾	1454–2026	301	1153	https://www.wikidata.org/wiki/Q238	https://it.wikipedia.org/wiki/San_Marino	public/data/italy.json
@@ -114,6 +175,13 @@
 低	年代	italy	米蘭馬爾彭薩機場	1948	1909	39	https://www.wikidata.org/wiki/Q60910	https://it.wikipedia.org/wiki/Aeroporto_di_Milano-Malpensa	public/data/italy.json
 低	年代	italy	米蘭馬爾彭薩機場	1948–2026	1909	39	https://www.wikidata.org/wiki/Q60910	https://it.wikipedia.org/wiki/Aeroporto_di_Milano-Malpensa	public/data/italy.json
 低	年代	italy	塔蘭托鋼鐵廠（Italsider/Ilva）	1964	1905、1995	31	https://www.wikidata.org/wiki/Q3148829	https://it.wikipedia.org/wiki/Acciaierie_d'Italia	public/data/italy.json
+低	位置	italy	亞琛和約，帕爾馬歸波旁	10.33, 44.80	6.08, 50.78	736	https://www.wikidata.org/wiki/Q156086	https://it.wikipedia.org/wiki/Trattato_di_Aquisgrana_(1748)	public/data/italy.json
+低	位置	italy	維也納會議，奧地利取得倫巴底—威尼西亞	16.37, 48.21	9.19, 45.47	625	https://www.wikidata.org/wiki/Q209857	https://it.wikipedia.org/wiki/Regno_Lombardo-Veneto	public/data/italy.json
+低	位置	italy	義大利王國成立	7.68, 45.07	12.50, 41.90	525	https://www.wikidata.org/wiki/Q172579	https://it.wikipedia.org/wiki/Regno_d'Italia_(1861-1946)	public/data/italy.json
+低	位置	italy	新冠疫情，全國封鎖	9.67, 45.70	12.50, 42.50	421	https://www.wikidata.org/wiki/Q84104992	https://it.wikipedia.org/wiki/Pandemia_di_COVID-19_in_Italia	public/data/italy.json
+低	位置	italy	波旁王朝取得那不勒斯與西西里	14.25, 40.85	16.68, 41.12	206	https://www.wikidata.org/wiki/Q574881	https://it.wikipedia.org/wiki/Battaglia_di_Bitonto	public/data/italy.json
+低	位置	italy	法王查理八世入侵，義大利戰爭開始	11.26, 43.77	12.50, 42.50	173	https://www.wikidata.org/wiki/Q1355145	https://it.wikipedia.org/wiki/Discesa_di_Carlo_VIII_in_Italia	public/data/italy.json
+低	年代	japan	菅原道真建議停止遣唐使	894	630	264	https://www.wikidata.org/wiki/Q262529	https://ja.wikipedia.org/wiki/%E9%81%A3%E5%94%90%E4%BD%BF	public/data/japan.json
 低	年代	japan	美國海軍橫須賀基地	1945–2026	1870	75	https://www.wikidata.org/wiki/Q2886663	https://ja.wikipedia.org/wiki/%E6%A8%AA%E9%A0%88%E8%B3%80%E6%B5%B7%E8%BB%8D%E6%96%BD%E8%A8%AD	public/data/japan.json
 低	年代	japan	會津藩（松平氏）	1643–1868	1601	42	https://www.wikidata.org/wiki/Q4389944	https://ja.wikipedia.org/wiki/%E4%BC%9A%E6%B4%A5%E8%97%A9	public/data/japan.json
 低	年代	japan	東北新幹線全通（新青森）	2010	1982	28	https://www.wikidata.org/wiki/Q900665	https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A	public/data/japan.json
@@ -150,6 +218,10 @@
 低	年代	japan	岩國航空站	1945–2026	1940	5	https://www.wikidata.org/wiki/Q1030389	https://ja.wikipedia.org/wiki/%E5%B2%A9%E5%9B%BD%E9%A3%9B%E8%A1%8C%E5%A0%B4	public/data/japan.json
 低	年代	japan	山陽新幹線延伸博多	1975	1972	3	https://www.wikidata.org/wiki/Q615964	https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A	public/data/japan.json
 低	年代	japan	山陽新幹線延伸博多	1975–2026	1972	3	https://www.wikidata.org/wiki/Q615964	https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A	public/data/japan.json
+低	位置	japan	赤穗事件（1703 年赤穗浪士討入）	134.38, 34.75	139.74, 35.64	497	https://www.wikidata.org/wiki/Q822472	https://ja.wikipedia.org/wiki/%E8%B5%A4%E7%A9%82%E4%BA%8B%E4%BB%B6	public/data/japan.json
+低	位置	japan	鎌倉幕府滅亡，建武新政	139.55, 35.32	135.77, 35.00	346	https://www.wikidata.org/wiki/Q826021	https://ja.wikipedia.org/wiki/%E5%BB%BA%E6%AD%A6%E3%81%AE%E6%96%B0%E6%94%BF	public/data/japan.json
+低	位置	japan	貞觀地震與三陸海嘯	142.00, 38.50	143.80, 38.50	157	https://www.wikidata.org/wiki/Q1400684	https://ja.wikipedia.org/wiki/%E8%B2%9E%E8%A6%B3%E5%9C%B0%E9%9C%87	public/data/japan.json
+低	年代	korea	大同法推行全國	1708	1681	27	https://www.wikidata.org/wiki/Q6375097	https://ko.wikipedia.org/wiki/%EB%8C%80%EB%8F%99%EB%B2%95	public/data/korea.json
 低	年代	korea	西海岸高速公路	2001	1994	7	https://www.wikidata.org/wiki/Q496927	https://ko.wikipedia.org/wiki/%EC%84%9C%ED%95%B4%EC%95%88%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C	public/data/korea.json
 低	年代	korea	西海岸高速公路	2001–2026	1994	7	https://www.wikidata.org/wiki/Q496927	https://ko.wikipedia.org/wiki/%EC%84%9C%ED%95%B4%EC%95%88%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C	public/data/korea.json
 低	年代	korea	昭陽江水壩	1973	1967	6	https://www.wikidata.org/wiki/Q624034	https://ko.wikipedia.org/wiki/%EC%86%8C%EC%96%91%EA%B0%95%EB%8C%90	public/data/korea.json
@@ -166,9 +238,13 @@
 低	年代	korea	嶺東高速公路	1975–2026	1971	4	https://www.wikidata.org/wiki/Q482953	https://ko.wikipedia.org/wiki/%EC%98%81%EB%8F%99%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C	public/data/korea.json
 低	年代	korea	首爾奧運主場館	1988–2026	1984	4	https://www.wikidata.org/wiki/Q392086	https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EC%98%AC%EB%A6%BC%ED%94%BD%EC%A3%BC%EA%B2%BD%EA%B8%B0%EC%9E%A5	public/data/korea.json
 低	年代	korea	羅老號火箭發射成功	2013–2026	2009	4	https://www.wikidata.org/wiki/Q495281	https://ko.wikipedia.org/wiki/%EB%82%98%EB%A1%9C%EC%9A%B0%EC%A3%BC%EC%84%BC%ED%84%B0	public/data/korea.json
+低	年代	korea	頒布《訓民正音》	1446	1443	3	https://www.wikidata.org/wiki/Q18990	https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C	public/data/korea.json
 低	年代	korea	湖南線（大田—木浦）	1914	1911、2004	3	https://www.wikidata.org/wiki/Q53119	https://ko.wikipedia.org/wiki/%ED%98%B8%EB%82%A8%EC%84%A0	public/data/korea.json
 低	年代	korea	京元線（京城—元山）	1914	1911	3	https://www.wikidata.org/wiki/Q483052	https://ko.wikipedia.org/wiki/%EA%B2%BD%EC%9B%90%EC%84%A0	public/data/korea.json
 低	年代	korea	京元線（京城—元山）	1914–2026	1911	3	https://www.wikidata.org/wiki/Q483052	https://ko.wikipedia.org/wiki/%EA%B2%BD%EC%9B%90%EC%84%A0	public/data/korea.json
+低	位置	korea	大韓民國臨時政府成立	121.47, 31.22	126.98, 37.53	865	https://www.wikidata.org/wiki/Q28278	https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9E%84%EC%8B%9C%EC%A0%95%EB%B6%80	public/data/korea.json
+低	位置	korea	《八萬大藏經》完成	126.48, 37.75	128.10, 35.80	260	https://www.wikidata.org/wiki/Q138733	https://ko.wikipedia.org/wiki/%ED%95%A9%EC%B2%9C_%ED%95%B4%EC%9D%B8%EC%82%AC_%EB%8C%80%EC%9E%A5%EA%B2%BD%ED%8C%90	public/data/korea.json
+低	位置	korea	朝鮮民主主義人民共和國成立	125.75, 39.02	127.00, 40.00	153	https://www.wikidata.org/wiki/Q423	https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0%EB%AF%BC%EC%A3%BC%EC%A3%BC%EC%9D%98%EC%9D%B8%EB%AF%BC%EA%B3%B5%ED%99%94%EA%B5%AD	public/data/korea.json
 低	年代	language	烏拉語（芬蘭—烏戈爾、薩莫耶德）	-2500–2026	-4999	2499	https://www.wikidata.org/wiki/Q34113		public/data/language.json
 低	年代	language	克丘亞語（印加）	1400–2026	1	1399	https://www.wikidata.org/wiki/Q5218	https://es.wikipedia.org/wiki/Lenguas_quechuas	public/data/language.json
 低	年代	language	納瓦特爾語（阿茲特克）	1300–2026	400	900	https://www.wikidata.org/wiki/Q13300	https://es.wikipedia.org/wiki/N%C3%A1huatl	public/data/language.json
@@ -180,21 +256,31 @@
 低	位置	language	毛利語復興	174.78, -41.29	173.00, -42.00	168	https://www.wikidata.org/wiki/Q36451	https://en.wikipedia.org/wiki/M%C4%81ori_language	public/data/language.json
 低	年代	mexico	曼薩尼約港	1889	1527	362	https://www.wikidata.org/wiki/Q739908	https://es.wikipedia.org/wiki/Manzanillo	public/data/mexico.json
 低	年代	mexico	曼薩尼約港	1889–2026	1527	362	https://www.wikidata.org/wiki/Q739908	https://es.wikipedia.org/wiki/Manzanillo	public/data/mexico.json
+低	年代	mexico	大神廟重建落成	1487	1325	162	https://www.wikidata.org/wiki/Q774021	https://es.wikipedia.org/wiki/Templo_Mayor	public/data/mexico.json
 低	年代	mexico	皇家內陸大道（白銀之路）	1598	1500	98	https://www.wikidata.org/wiki/Q911953	https://es.wikipedia.org/wiki/Camino_Real_de_Tierra_Adentro	public/data/mexico.json
 低	年代	mexico	皇家內陸大道（白銀之路）	1598–2026	1500	98	https://www.wikidata.org/wiki/Q911953	https://es.wikipedia.org/wiki/Camino_Real_de_Tierra_Adentro	public/data/mexico.json
 低	年代	mexico	薩帕塔民族解放軍	1994–2026	1983	11	https://www.wikidata.org/wiki/Q188590	https://es.wikipedia.org/wiki/Ej%C3%A9rcito_Zapatista_de_Liberaci%C3%B3n_Nacional	public/data/mexico.json
 低	年代	mexico	墨西哥中央鐵路（墨西哥城—北方帕索）	1884	1880	4	https://www.wikidata.org/wiki/Q12061750	https://es.wikipedia.org/wiki/Ferrocarril_Central_Mexicano	public/data/mexico.json
 低	年代	mexico	墨西哥中央鐵路（墨西哥城—北方帕索）	1884–2026	1880	4	https://www.wikidata.org/wiki/Q12061750	https://es.wikipedia.org/wiki/Ferrocarril_Central_Mexicano	public/data/mexico.json
 低	年代	mexico	墨西哥城國際機場	1931	1928、1952、1963	3	https://www.wikidata.org/wiki/Q860559	https://es.wikipedia.org/wiki/Aeropuerto_Internacional_de_la_Ciudad_de_M%C3%A9xico	public/data/mexico.json
+低	位置	mexico	墨西哥城大地震	-99.13, 19.43	-102.53, 18.19	384	https://www.wikidata.org/wiki/Q1798567	https://es.wikipedia.org/wiki/Terremoto_de_M%C3%A9xico_de_1985	public/data/mexico.json
 低	年代	morocco	阿爾及爾港	1529	944	585	https://www.wikidata.org/wiki/Q3561	https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1_(%D9%85%D8%AF%D9%8A%D9%86%D8%A9)	public/data/morocco.json
 低	年代	morocco	阿爾及爾港	1529–2026	944	585	https://www.wikidata.org/wiki/Q3561	https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1_(%D9%85%D8%AF%D9%8A%D9%86%D8%A9)	public/data/morocco.json
+低	年代	morocco	雅庫布・曼蘇爾即位，興建庫圖比亞清真寺	1184	1147	37	https://www.wikidata.org/wiki/Q1137533	https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Koutoubia	public/data/morocco.json
+低	年代	morocco	非斯建城	808	789	19	https://www.wikidata.org/wiki/Q80985	https://ar.wikipedia.org/wiki/%D9%81%D8%A7%D8%B3	public/data/morocco.json
 低	年代	morocco	阿爾及利亞東西高速公路	2016	2007	9	https://www.wikidata.org/wiki/Q2872947	https://fr.wikipedia.org/wiki/Autoroute_Est-Ouest	public/data/morocco.json
 低	年代	morocco	阿爾及利亞東西高速公路	2016–2026	2007	9	https://www.wikidata.org/wiki/Q2872947	https://fr.wikipedia.org/wiki/Autoroute_Est-Ouest	public/data/morocco.json
+低	年代	morocco	穆拉比特建馬拉喀什	1070	1065	5	https://www.wikidata.org/wiki/Q101625	https://ar.wikipedia.org/wiki/%D9%85%D8%B1%D8%A7%D9%83%D8%B4	public/data/morocco.json
+低	位置	morocco	火炬行動，盟軍登陸北非	-7.59, 33.57	-2.03, 35.09	538	https://www.wikidata.org/wiki/Q194132	https://fr.wikipedia.org/wiki/Op%C3%A9ration_Torch	public/data/morocco.json
+低	位置	morocco	阿加迪爾危機	-9.60, 30.42	-6.00, 32.00	385	https://www.wikidata.org/wiki/Q164771	https://ar.wikipedia.org/wiki/%D8%A3%D8%B2%D9%85%D8%A9_%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D8%B1_1911	public/data/morocco.json
 低	位置	morocco	休達與梅利利亞（西班牙領地）	-2.94, 35.29	-5.30, 35.89	223	https://www.wikidata.org/wiki/Q5823	https://fr.wikipedia.org/wiki/Ceuta	public/data/morocco.json
 低	年代	philippines	安加特水壩	1967	1961	6	https://www.wikidata.org/wiki/Q164717	https://en.wikipedia.org/wiki/Angat_Dam	public/data/philippines.json
 低	年代	philippines	安加特水壩	1967–2026	1961	6	https://www.wikidata.org/wiki/Q164717	https://en.wikipedia.org/wiki/Angat_Dam	public/data/philippines.json
+低	年代	philippines	聖羅克水壩	2003	1998	5	https://www.wikidata.org/wiki/Q1765023	https://en.wikipedia.org/wiki/San_Roque_Dam_(Philippines)	public/data/philippines.json
+低	年代	philippines	聖羅克水壩	2003–2026	1998	5	https://www.wikidata.org/wiki/Q1765023	https://en.wikipedia.org/wiki/San_Roque_Dam_(Philippines)	public/data/philippines.json
 低	年代	philippines	北呂宋高速公路	1968	1965	3	https://www.wikidata.org/wiki/Q7056013	https://en.wikipedia.org/wiki/North_Luzon_Expressway	public/data/philippines.json
 低	年代	philippines	北呂宋高速公路	1968–2026	1965	3	https://www.wikidata.org/wiki/Q7056013	https://en.wikipedia.org/wiki/North_Luzon_Expressway	public/data/philippines.json
+低	位置	philippines	日本扶植的第二共和國成立（勞威爾）	120.99, 14.59	123.00, 12.00	361	https://www.wikidata.org/wiki/Q2027229	https://en.wikipedia.org/wiki/Second_Philippine_Republic	public/data/philippines.json
 低	年代	poland	但澤（格但斯克）特權城市	1457–1793	997	460	https://www.wikidata.org/wiki/Q1792	https://pl.wikipedia.org/wiki/Gda%C5%84sk	public/data/poland.json
 低	年代	poland	A1 高速公路全線（格但斯克—西里西亞）	2023	1985	38	https://www.wikidata.org/wiki/Q429163	https://pl.wikipedia.org/wiki/Autostrada_A1_(Polska)	public/data/poland.json
 低	年代	poland	A1 高速公路全線（格但斯克—西里西亞）	2023–2026	1985	38	https://www.wikidata.org/wiki/Q429163	https://pl.wikipedia.org/wiki/Autostrada_A1_(Polska)	public/data/poland.json
@@ -210,6 +296,9 @@
 低	年代	poland	貝烏哈圖夫褐煤電廠	1981–2026	1975	6	https://www.wikidata.org/wiki/Q1546242	https://pl.wikipedia.org/wiki/Elektrownia_Be%C5%82chat%C3%B3w	public/data/poland.json
 低	年代	poland	中央幹線（CMK）	1977	1974	3	https://www.wikidata.org/wiki/Q2006205	https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_4	public/data/poland.json
 低	年代	poland	中央幹線（CMK）	1977–2026	1974	3	https://www.wikidata.org/wiki/Q2006205	https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_4	public/data/poland.json
+低	位置	poland	卡爾洛維茨和約收回波多里亞	26.58, 48.68	19.93, 45.20	636	https://www.wikidata.org/wiki/Q192303	https://pl.wikipedia.org/wiki/Traktat_w_Kar%C5%82owicach	public/data/poland.json
+低	位置	poland	維也納會議，會議王國成立	16.37, 48.21	21.02, 52.23	556	https://www.wikidata.org/wiki/Q221457	https://pl.wikipedia.org/wiki/Kr%C3%B3lestwo_Polskie_(kongresowe)	public/data/poland.json
+低	位置	poland	波茨坦會議，國界西移至奧得—尼斯河	13.06, 52.39	14.22, 53.93	188	https://www.wikidata.org/wiki/Q160928	https://pl.wikipedia.org/wiki/Granica_na_Odrze_i_Nysie_%C5%81u%C5%BCyckiej	public/data/poland.json
 低	年代	prc	青藏鐵路通至拉薩	2006	1984	22	https://www.wikidata.org/wiki/Q233754	https://zh.wikipedia.org/wiki/%E9%9D%92%E8%97%8F%E9%93%81%E8%B7%AF	public/data/prc.json
 低	年代	prc	青藏鐵路通至拉薩	2006–2026	1984	22	https://www.wikidata.org/wiki/Q233754	https://zh.wikipedia.org/wiki/%E9%9D%92%E8%97%8F%E9%93%81%E8%B7%AF	public/data/prc.json
 低	年代	prc	葛洲壩水利樞紐	1988	1970	18	https://www.wikidata.org/wiki/Q1521211	https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B4%B2%E5%9D%9D%E6%B0%B4%E5%88%A9%E6%9E%A2%E7%BA%BD	public/data/prc.json
@@ -225,22 +314,38 @@
 低	年代	prc	寶山鋼鐵廠一期投產	1985–2026	1978	7	https://www.wikidata.org/wiki/Q249692	https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%AE%9D%E6%AD%A6%E9%92%A2%E9%93%81%E9%9B%86%E5%9B%A2	public/data/prc.json
 低	年代	prc	防火長城（金盾工程）	2003–2026	1996	7	https://www.wikidata.org/wiki/Q5370363	https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E	public/data/prc.json
 低	年代	prc	美國第七艦隊協防臺灣	1950–1979	1943	7	https://www.wikidata.org/wiki/Q484950	https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%83%E8%89%A6%E9%9A%8A_(%E7%BE%8E%E5%9C%8B%E6%B5%B7%E8%BB%8D)	public/data/prc.json
+低	年代	prc	新疆再教育營大規模擴建	2017	2014	3	https://www.wikidata.org/wiki/Q55506436	https://zh.wikipedia.org/wiki/%E6%96%B0%E7%96%86%E5%86%8D%E6%95%99%E8%82%B2%E7%87%9F	public/data/prc.json
+低	位置	prc	西藏自治區成立	91.12, 29.65	86.94, 31.71	460	https://www.wikidata.org/wiki/Q17269	https://zh.wikipedia.org/wiki/%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA	public/data/prc.json
+低	位置	prc	西藏三一四事件	91.12, 29.65	86.94, 31.71	460	https://www.wikidata.org/wiki/Q545068	https://zh.wikipedia.org/wiki/2008%E5%B9%B4%E8%A5%BF%E8%97%8F%E9%AA%9A%E4%B9%B1	public/data/prc.json
+低	位置	prc	環臺大規模軍演	121.00, 23.50	120.49, 25.26	202	https://www.wikidata.org/wiki/Q113435201	https://zh.wikipedia.org/wiki/2022%E5%B9%B4%E7%92%B0%E5%8F%B0%E8%BB%8D%E4%BA%8B%E6%BC%94%E7%B7%B4	public/data/prc.json
+低	年代	russia	俄國黑海艦隊租駐塞瓦斯托波爾	1997–2014	1783	214	https://www.wikidata.org/wiki/Q934022	https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9_%D1%84%D0%BB%D0%BE%D1%82_%D0%92%D0%9C%D0%A4_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8	public/data/russia.json
 低	年代	russia	薩彥—舒申斯克水電站	1978	1963	15	https://www.wikidata.org/wiki/Q474551	https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%8F%D0%BD%D0%BE-%D0%A8%D1%83%D1%88%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%93%D0%AD%D0%A1	public/data/russia.json
 低	年代	russia	薩彥—舒申斯克水電站	1978–2026	1963	15	https://www.wikidata.org/wiki/Q474551	https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%8F%D0%BD%D0%BE-%D0%A8%D1%83%D1%88%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%93%D0%AD%D0%A1	public/data/russia.json
 低	年代	russia	阿穆爾鐵路完成，西伯利亞鐵路全線在俄國境內	1916	1903	13	https://www.wikidata.org/wiki/Q58767	https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D1%8C	public/data/russia.json
 低	年代	russia	阿穆爾鐵路完成，西伯利亞鐵路全線在俄國境內	1916–2026	1903	13	https://www.wikidata.org/wiki/Q58767	https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D1%8C	public/data/russia.json
+低	年代	russia	貝阿鐵路（貝加爾—阿穆爾幹線）動工	1974	1938、1984	10	https://www.wikidata.org/wiki/Q377967	https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%D0%BE-%D0%90%D0%BC%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D1%8C	public/data/russia.json
 低	年代	russia	布拉茨克水電站	1961	1954	7	https://www.wikidata.org/wiki/Q1965517	https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%93%D0%AD%D0%A1	public/data/russia.json
 低	年代	russia	布拉茨克水電站	1961–2026	1954	7	https://www.wikidata.org/wiki/Q1965517	https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%93%D0%AD%D0%A1	public/data/russia.json
 低	年代	russia	東方航天發射場	2016	2011	5	https://www.wikidata.org/wiki/Q1166191	https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_(%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%B4%D1%80%D0%BE%D0%BC)	public/data/russia.json
 低	年代	russia	東方航天發射場	2016–2026	2011	5	https://www.wikidata.org/wiki/Q1166191	https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_(%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%B4%D1%80%D0%BE%D0%BC)	public/data/russia.json
+低	位置	russia	聖彼得堡科學院創立	30.30, 59.94	37.58, 55.71	637	https://www.wikidata.org/wiki/Q83172	https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%BD%D0%B0%D1%83%D0%BA	public/data/russia.json
+低	位置	russia	烏克蘭大饑荒	36.23, 49.99	32.00, 49.00	325	https://www.wikidata.org/wiki/Q165058	https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B4%D0%BE%D0%BC%D0%BE%D1%80	public/data/russia.json
+低	位置	russia	建立阿納德爾堡	177.50, 64.73	170.81, 64.72	317	https://www.wikidata.org/wiki/Q1994778	https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%B4%D1%8B%D1%80%D1%81%D0%BA%D0%B8%D0%B9_%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B3	public/data/russia.json
 低	年代	spain	加的斯港	1717	-1099	2816	https://www.wikidata.org/wiki/Q15682	https://es.wikipedia.org/wiki/C%C3%A1diz	public/data/spain.json
 低	年代	spain	加的斯港	1717–2026	-1099	2816	https://www.wikidata.org/wiki/Q15682	https://es.wikipedia.org/wiki/C%C3%A1diz	public/data/spain.json
+低	年代	spain	聖地牙哥朝聖路興起	899	813	86	https://www.wikidata.org/wiki/Q41150	https://es.wikipedia.org/wiki/Camino_de_Santiago	public/data/spain.json
 低	年代	spain	AVE 馬德里—加利西亞高速鐵路	2021	2011	10	https://www.wikidata.org/wiki/Q3393128	https://es.wikipedia.org/wiki/L%C3%ADnea_de_alta_velocidad_Olmedo-Zamora-Orense-Santiago_de_Compostela	public/data/spain.json
 低	年代	spain	AVE 馬德里—加利西亞高速鐵路	2021–2026	2011	10	https://www.wikidata.org/wiki/Q3393128	https://es.wikipedia.org/wiki/L%C3%ADnea_de_alta_velocidad_Olmedo-Zamora-Orense-Santiago_de_Compostela	public/data/spain.json
+低	年代	spain	阿爾坎塔拉水壩（塔霍河）	1969	1960	9	https://www.wikidata.org/wiki/Q94989675	https://es.wikipedia.org/wiki/Embalse_de_Alc%C3%A1ntara	public/data/spain.json
+低	年代	spain	阿爾坎塔拉水壩（塔霍河）	1969–2026	1960	9	https://www.wikidata.org/wiki/Q94989675	https://es.wikipedia.org/wiki/Embalse_de_Alc%C3%A1ntara	public/data/spain.json
 低	年代	spain	阿爾馬拉斯核電廠	1981	1973	8	https://www.wikidata.org/wiki/Q1431041	https://es.wikipedia.org/wiki/Central_nuclear_de_Almaraz	public/data/spain.json
 低	年代	spain	阿爾馬拉斯核電廠	1981–2026	1973	8	https://www.wikidata.org/wiki/Q1431041	https://es.wikipedia.org/wiki/Central_nuclear_de_Almaraz	public/data/spain.json
 低	年代	spain	伊莎貝拉二世運河（馬德里供水）	1858	1851	7	https://www.wikidata.org/wiki/Q2407104	https://es.wikipedia.org/wiki/Canal_de_Isabel_II	public/data/spain.json
 低	年代	spain	伊莎貝拉二世運河（馬德里供水）	1858–2026	1851	7	https://www.wikidata.org/wiki/Q2407104	https://es.wikipedia.org/wiki/Canal_de_Isabel_II	public/data/spain.json
+低	位置	spain	無敵艦隊出征英格蘭	-8.40, 43.37	-4.26, 50.17	819	https://www.wikidata.org/wiki/Q179684	https://es.wikipedia.org/wiki/Armada_Invencible	public/data/spain.json
+低	位置	spain	卡斯提亞與萊昂最終合併	-5.57, 42.60	-3.71, 40.42	288	https://www.wikidata.org/wiki/Q217196	https://es.wikipedia.org/wiki/Corona_de_Castilla	public/data/spain.json
+低	位置	spain	亞拉岡與巴塞隆納合併為亞拉岡王冠	2.17, 41.39	-0.64, 41.79	238	https://www.wikidata.org/wiki/Q204920	https://es.wikipedia.org/wiki/Corona_de_Arag%C3%B3n	public/data/spain.json
+低	位置	spain	葡萄牙王國成立	-8.40, 40.20	-9.18, 38.70	180	https://www.wikidata.org/wiki/Q45670	https://es.wikipedia.org/wiki/Reino_de_Portugal	public/data/spain.json
 低	年代	taiwan	高鐵延伸南港	2016	1899	117	https://www.wikidata.org/wiki/Q698337	https://zh.wikipedia.org/wiki/%E5%8D%97%E6%B8%AF%E8%BB%8A%E7%AB%99	public/data/taiwan.json
 低	年代	taiwan	高鐵延伸南港	2016–2026	1899	117	https://www.wikidata.org/wiki/Q698337	https://zh.wikipedia.org/wiki/%E5%8D%97%E6%B8%AF%E8%BB%8A%E7%AB%99	public/data/taiwan.json
 低	年代	taiwan	臺中市政府	2010–2026	1920	90	https://www.wikidata.org/wiki/Q15898718	https://zh.wikipedia.org/wiki/%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C	public/data/taiwan.json
@@ -248,6 +353,7 @@
 低	年代	taiwan	高雄市政府	1979–2026	1924	55	https://www.wikidata.org/wiki/Q6366077	https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C	public/data/taiwan.json
 低	年代	taiwan	打狗（高雄）築港	1908	1858	50	https://www.wikidata.org/wiki/Q713449	https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E6%B8%AF	public/data/taiwan.json
 低	年代	taiwan	打狗（高雄）築港	1908–2026	1858	50	https://www.wikidata.org/wiki/Q713449	https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E6%B8%AF	public/data/taiwan.json
+低	年代	taiwan	最後一座核電機組（核三廠）停機，臺灣進入非核	2025	1984	41	https://www.wikidata.org/wiki/Q712797	https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E6%A0%B8%E8%83%BD%E7%99%BC%E9%9B%BB%E5%BB%A0	public/data/taiwan.json
 低	年代	taiwan	高雄國際機場	1965	1938	27	https://www.wikidata.org/wiki/Q16810	https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4	public/data/taiwan.json
 低	年代	taiwan	高雄國際機場	1965–2026	1938	27	https://www.wikidata.org/wiki/Q16810	https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4	public/data/taiwan.json
 低	年代	taiwan	臺北市政府	1967–2026	1945	22	https://www.wikidata.org/wiki/Q9105560	https://zh.wikipedia.org/wiki/%E8%87%BA%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C	public/data/taiwan.json
@@ -257,24 +363,43 @@
 低	年代	taiwan	美軍電台（AFNT）	1957–1979	1942	15	https://www.wikidata.org/wiki/Q464570	https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD%E5%86%9B%E4%B8%AD%E5%B9%BF%E6%92%AD	public/data/taiwan.json
 低	年代	taiwan	福爾摩沙高速公路（國道 3 號）全線通車	2004	1993	11	https://www.wikidata.org/wiki/Q572238	https://zh.wikipedia.org/wiki/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF	public/data/taiwan.json
 低	年代	taiwan	福爾摩沙高速公路（國道 3 號）全線通車	2004–2026	1993	11	https://www.wikidata.org/wiki/Q572238	https://zh.wikipedia.org/wiki/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF	public/data/taiwan.json
+低	年代	taiwan	蘇花公路改善工程（蘇花改）通車	2020	2011	9	https://www.wikidata.org/wiki/Q7635267	https://zh.wikipedia.org/wiki/%E8%98%87%E8%8A%B1%E5%85%AC%E8%B7%AF%E6%94%B9%E5%96%84%E8%A8%88%E7%95%AB	public/data/taiwan.json
+低	年代	taiwan	蘇花公路改善工程（蘇花改）通車	2020–2026	2011	9	https://www.wikidata.org/wiki/Q7635267	https://zh.wikipedia.org/wiki/%E8%98%87%E8%8A%B1%E5%85%AC%E8%B7%AF%E6%94%B9%E5%96%84%E8%A8%88%E7%95%AB	public/data/taiwan.json
 低	年代	taiwan	清泉崗空軍基地美軍駐防	1966–1979	1957	9	https://www.wikidata.org/wiki/Q2963771	https://zh.wikipedia.org/wiki/%E7%A9%BA%E8%BB%8D%E6%B8%85%E6%B3%89%E5%B4%97%E5%9F%BA%E5%9C%B0	public/data/taiwan.json
 低	年代	taiwan	臺北州廳	1920–1945	1912	8	https://www.wikidata.org/wiki/Q15935432	https://zh.wikipedia.org/wiki/%E7%9B%A3%E5%AF%9F%E9%99%A2%E5%BB%B3%E8%88%8D	public/data/taiwan.json
+低	年代	taiwan	韓戰爆發，美國第七艦隊協防臺灣海峽	1950	1943	7	https://www.wikidata.org/wiki/Q484950	https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%83%E8%89%A6%E9%9A%8A_(%E7%BE%8E%E5%9C%8B%E6%B5%B7%E8%BB%8D)	public/data/taiwan.json
 低	年代	taiwan	美國第七艦隊巡防臺灣海峽	1950–1979	1943	7	https://www.wikidata.org/wiki/Q484950	https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%83%E8%89%A6%E9%9A%8A_(%E7%BE%8E%E5%9C%8B%E6%B5%B7%E8%BB%8D)	public/data/taiwan.json
 低	年代	taiwan	臺中州廳	1920–1945	1913	7	https://www.wikidata.org/wiki/Q15912536	https://zh.wikipedia.org/wiki/%E8%87%BA%E4%B8%AD%E5%B7%9E%E5%BB%B3	public/data/taiwan.json
 低	年代	taiwan	縱貫線全線通車（新竹—打狗）	1908	1887、1902	6	https://www.wikidata.org/wiki/Q11608157	https://zh.wikipedia.org/wiki/%E7%B8%B1%E8%B2%AB%E7%B7%9A_(%E8%87%BA%E9%90%B5)	public/data/taiwan.json
 低	年代	taiwan	中國鋼鐵公司（小港）	1977	1971	6	https://www.wikidata.org/wiki/Q712863	https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B%E9%8B%BC%E9%90%B5	public/data/taiwan.json
 低	年代	taiwan	縱貫線全線通車（新竹—打狗）	1908–2026	1887、1902	6	https://www.wikidata.org/wiki/Q11608157	https://zh.wikipedia.org/wiki/%E7%B8%B1%E8%B2%AB%E7%B7%9A_(%E8%87%BA%E9%90%B5)	public/data/taiwan.json
 低	年代	taiwan	中國鋼鐵公司（小港）	1977–2026	1971	6	https://www.wikidata.org/wiki/Q712863	https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B%E9%8B%BC%E9%90%B5	public/data/taiwan.json
+低	位置	taiwan	大陳島撤退	121.74, 25.14	121.90, 28.46	370	https://www.wikidata.org/wiki/Q710193	https://zh.wikipedia.org/wiki/%E5%A4%A7%E9%99%B3%E5%B3%B6%E6%92%A4%E9%80%80	public/data/taiwan.json
+低	位置	taiwan	國軍整編第二十一師登陸基隆、高雄，南北鎮壓	121.74, 25.14	121.00, 23.77	170	https://www.wikidata.org/wiki/Q244939	https://zh.wikipedia.org/wiki/%E4%BA%8C%E4%BA%8C%E5%85%AB%E4%BA%8B%E4%BB%B6	public/data/taiwan.json
+低	位置	taiwan	二二八事件	121.51, 25.05	121.00, 23.77	151	https://www.wikidata.org/wiki/Q244939	https://zh.wikipedia.org/wiki/%E4%BA%8C%E4%BA%8C%E5%85%AB%E4%BA%8B%E4%BB%B6	public/data/taiwan.json
+低	年代	thailand	國際法院將柏威夏寺判給柬埔寨	1962	893	1069	https://www.wikidata.org/wiki/Q45949	https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3	public/data/thailand.json
+低	年代	thailand	英法協議保證暹羅中立	1896	1600	296	https://www.wikidata.org/wiki/Q5479703	https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A8%E0%B8%AA	public/data/thailand.json
+低	年代	thailand	國號改為泰國	1939	1238、1768	171	https://www.wikidata.org/wiki/Q869	https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2	public/data/thailand.json
+低	年代	thailand	孟萊王建清邁	1296	1201	95	https://www.wikidata.org/wiki/Q52028	https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88	public/data/thailand.json
+低	位置	thailand	南亞海嘯	98.25, 8.60	95.98, 3.29	641	https://www.wikidata.org/wiki/Q130754	https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9C%E0%B9%88%E0%B8%99%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%84%E0%B8%AB%E0%B8%A7%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B6%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B9%83%E0%B8%99%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2_%E0%B8%9E.%E0%B8%A8._2547	public/data/thailand.json
 低	位置	thailand	南部邊境叛亂	101.25, 6.50	99.98, 8.06	223	https://www.wikidata.org/wiki/Q1094356	https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%87%E0%B8%9A%E0%B9%83%E0%B8%99%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2	public/data/thailand.json
 低	年代	turkey	伊茲密爾港（士麥那）	1426	-2999	4425	https://www.wikidata.org/wiki/Q35997	https://tr.wikipedia.org/wiki/%C4%B0zmir	public/data/turkey.json
 低	年代	turkey	伊茲密爾港（士麥那）	1426–2026	-2999	4425	https://www.wikidata.org/wiki/Q35997	https://tr.wikipedia.org/wiki/%C4%B0zmir	public/data/turkey.json
+低	年代	turkey	鄂圖曼遷都埃迪爾內	1363	125	1238	https://www.wikidata.org/wiki/Q43387	https://tr.wikipedia.org/wiki/Edirne	public/data/turkey.json
+低	年代	turkey	蘇萊曼尼耶清真寺落成	1557	1550	7	https://www.wikidata.org/wiki/Q178643	https://tr.wikipedia.org/wiki/S%C3%BCleymaniye_Camii	public/data/turkey.json
 低	年代	turkey	因吉爾利克空軍基地	1955–2026	1951、1952	3	https://www.wikidata.org/wiki/Q1083424	https://tr.wikipedia.org/wiki/%C4%B0ncirlik_Hava_%C3%9Css%C3%BC	public/data/turkey.json
+低	位置	turkey	庫楚克開納吉條約	28.98, 41.01	27.51, 43.99	353	https://www.wikidata.org/wiki/Q123227	https://tr.wikipedia.org/wiki/K%C3%BC%C3%A7%C3%BCk_Kaynarca_Antla%C5%9Fmas%C4%B1	public/data/turkey.json
 低	年代	uk	費利克斯托港	1967	1875	92	https://www.wikidata.org/wiki/Q3398484	https://en.wikipedia.org/wiki/Port_of_Felixstowe	public/data/uk.json
 低	年代	uk	費利克斯托港	1967–2026	1875	92	https://www.wikidata.org/wiki/Q3398484	https://en.wikipedia.org/wiki/Port_of_Felixstowe	public/data/uk.json
+低	年代	uk	漢諾威王朝開始	1714	1700	14	https://www.wikidata.org/wiki/Q157217	https://en.wikipedia.org/wiki/House_of_Hanover	public/data/uk.json
 低	年代	uk	M25 倫敦環城高速公路	1986	1975	11	https://www.wikidata.org/wiki/Q19872	https://en.wikipedia.org/wiki/M25_motorway	public/data/uk.json
 低	年代	uk	M25 倫敦環城高速公路	1986–2026	1975	11	https://www.wikidata.org/wiki/Q19872	https://en.wikipedia.org/wiki/M25_motorway	public/data/uk.json
 低	年代	uk	大西洋電報電纜（瓦倫西亞—紐芬蘭）	1866	1858	8	https://www.wikidata.org/wiki/Q2395922	https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable	public/data/uk.json
 低	年代	uk	大西洋電報電纜（瓦倫西亞—紐芬蘭）	1866–2026	1858	8	https://www.wikidata.org/wiki/Q2395922	https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable	public/data/uk.json
+低	位置	uk	不列顛空戰	-0.13, 51.50	-2.00, 54.00	305	https://www.wikidata.org/wiki/Q154720	https://en.wikipedia.org/wiki/Battle_of_Britain	public/data/uk.json
+低	位置	uk	阿佛烈收復倫敦，與丹麥人劃分丹麥區	-0.10, 51.51	-1.00, 54.00	283	https://www.wikidata.org/wiki/Q339271	https://en.wikipedia.org/wiki/Danelaw	public/data/uk.json
+低	位置	uk	無政府時期開始	-1.31, 51.06	0.00, 49.00	247	https://www.wikidata.org/wiki/Q743768	https://en.wikipedia.org/wiki/The_Anarchy	public/data/uk.json
+低	位置	uk	火藥陰謀	-0.13, 51.50	-2.17, 52.51	179	https://www.wikidata.org/wiki/Q45810	https://en.wikipedia.org/wiki/Gunpowder_Plot	public/data/uk.json
 低	年代	usa	沃格特勒核電廠 3 號機	2023	1987	36	https://www.wikidata.org/wiki/Q947549	https://en.wikipedia.org/wiki/Vogtle_Electric_Generating_Plant	public/data/usa.json
 低	年代	usa	沃格特勒核電廠 3 號機	2023–2026	1987	36	https://www.wikidata.org/wiki/Q947549	https://en.wikipedia.org/wiki/Vogtle_Electric_Generating_Plant	public/data/usa.json
 低	年代	usa	10 號州際公路全線	1990	1957	33	https://www.wikidata.org/wiki/Q79914	https://en.wikipedia.org/wiki/Interstate_10	public/data/usa.json
@@ -299,15 +424,20 @@
 低	年代	usa	三哩島核電廠	1974–2019	1970	4	https://www.wikidata.org/wiki/Q862589	https://en.wikipedia.org/wiki/Three_Mile_Island_Nuclear_Generating_Station	public/data/usa.json
 低	年代	usa	諾里斯水壩（田納西河谷管理局）	1936	1933	3	https://www.wikidata.org/wiki/Q1632797	https://en.wikipedia.org/wiki/Norris_Dam	public/data/usa.json
 低	年代	usa	諾里斯水壩（田納西河谷管理局）	1936–2026	1933	3	https://www.wikidata.org/wiki/Q1632797	https://en.wikipedia.org/wiki/Norris_Dam	public/data/usa.json
+低	位置	usa	古巴飛彈危機	-80.00, 25.00	-82.39, 23.12	320	https://www.wikidata.org/wiki/Q128160	https://en.wikipedia.org/wiki/Cuban_Missile_Crisis	public/data/usa.json
 低	位置	usa	日軍佔領阿圖島、基斯卡島	177.50, 52.00	-174.00, 52.00 ／ 173.07, 52.83	314	https://www.wikidata.org/wiki/Q249708	https://en.wikipedia.org/wiki/Aleutian_Islands_campaign	public/data/usa.json
+低	位置	usa	血腥堪薩斯	-95.24, 38.97	-98.00, 38.50	245	https://www.wikidata.org/wiki/Q331377	https://en.wikipedia.org/wiki/Bleeding_Kansas	public/data/usa.json
 低	年代	vietnam	和平水電站	1994	1979	15	https://www.wikidata.org/wiki/Q1504264	https://vi.wikipedia.org/wiki/Nh%C3%A0_m%C3%A1y_Th%E1%BB%A7y_%C4%91i%E1%BB%87n_H%C3%B2a_B%C3%ACnh	public/data/vietnam.json
 低	年代	vietnam	和平水電站	1994–2026	1979	15	https://www.wikidata.org/wiki/Q1504264	https://vi.wikipedia.org/wiki/Nh%C3%A0_m%C3%A1y_Th%E1%BB%A7y_%C4%91i%E1%BB%87n_H%C3%B2a_B%C3%ACnh	public/data/vietnam.json
 低	年代	vietnam	內排國際機場	1978	1965	13	https://www.wikidata.org/wiki/Q844098	https://vi.wikipedia.org/wiki/S%C3%A2n_bay_qu%E1%BB%91c_t%E1%BA%BF_N%E1%BB%99i_B%C3%A0i	public/data/vietnam.json
 低	年代	vietnam	內排國際機場	1978–2026	1965	13	https://www.wikidata.org/wiki/Q844098	https://vi.wikipedia.org/wiki/S%C3%A2n_bay_qu%E1%BB%91c_t%E1%BA%BF_N%E1%BB%99i_B%C3%A0i	public/data/vietnam.json
+低	年代	vietnam	越南加入世界貿易組織	2007	1995	12	https://www.wikidata.org/wiki/Q7825	https://vi.wikipedia.org/wiki/T%E1%BB%95_ch%E1%BB%A9c_Th%C6%B0%C6%A1ng_m%E1%BA%A1i_Th%E1%BA%BF_gi%E1%BB%9Bi	public/data/vietnam.json
 低	年代	vietnam	台塑河靜鋼廠	2017	2008	9	https://www.wikidata.org/wiki/Q24027740	https://vi.wikipedia.org/wiki/Formosa_V%C5%A9ng_%C3%81ng	public/data/vietnam.json
 低	年代	vietnam	台塑河靜鋼廠	2017–2026	2008	9	https://www.wikidata.org/wiki/Q24027740	https://vi.wikipedia.org/wiki/Formosa_V%C5%A9ng_%C3%81ng	public/data/vietnam.json
 低	年代	vietnam	山羅水電站	2012	2005	7	https://www.wikidata.org/wiki/Q992482	https://vi.wikipedia.org/wiki/Nh%C3%A0_m%C3%A1y_th%E1%BB%A7y_%C4%91i%E1%BB%87n_S%C6%A1n_La	public/data/vietnam.json
 低	年代	vietnam	山羅水電站	2012–2026	2005	7	https://www.wikidata.org/wiki/Q992482	https://vi.wikipedia.org/wiki/Nh%C3%A0_m%C3%A1y_th%E1%BB%A7y_%C4%91i%E1%BB%87n_S%C6%A1n_La	public/data/vietnam.json
+低	位置	vietnam	胡志明市新冠封城	106.70, 10.78	108.00, 16.00	597	https://www.wikidata.org/wiki/Q83873057	https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_d%E1%BB%8Bch_COVID-19_t%E1%BA%A1i_Vi%E1%BB%87t_Nam	public/data/vietnam.json
+低	位置	vietnam	莫登庸篡位，莫朝建立	105.85, 21.03	107.60, 16.47	540	https://www.wikidata.org/wiki/Q1317991	https://vi.wikipedia.org/wiki/Nh%C3%A0_M%E1%BA%A1c	public/data/vietnam.json
 低	位置	vietnam	鄭主（北方）	105.85, 21.03	107.60, 16.47	540	https://www.wikidata.org/wiki/Q2267508	https://vi.wikipedia.org/wiki/Ch%C3%BAa_Tr%E1%BB%8Bnh	public/data/vietnam.json
 低	位置	worldEvents	居魯士建立阿契美尼德帝國	53.00, 30.20	44.42, 32.54	855	https://www.wikidata.org/wiki/Q389688		worldEvents
 低	位置	worldEvents	歐洲聯盟成立	5.69, 50.85	9.25, 50.12	265	https://www.wikidata.org/wiki/Q458		worldEvents

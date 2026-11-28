@@ -1,6 +1,6 @@
 import { MAPLIKE, altPhoto } from './photos.js';
 // A short description and a picture for a historical event, from Wikipedia in the reader's language.
-// World events name their article; regional events are looked up by name (top search hit). Only pictures
+// Each event names its article (checked in data-pipeline/wiki); none is looked up by name. Only pictures
 // hosted on Wikimedia Commons are used, shown with their author and licence; the text is an excerpt of
 // the article's introduction (CC BY-SA 4.0) with a link to it.
 
@@ -35,13 +35,13 @@ async function load(ev, lang, col) {
   if (!title && ev.w?.slice(0, 3).some(Boolean)) {
     const i = [1, 0, 2].find(k => ev.w[k]); title = ev.w[i]; wl = ['zh', 'en', 'ja'][i]; variant = wl === 'zh' ? (lang === 'zh-Hans' ? 'zh-cn' : 'zh-tw') : '';
   }
+  // only an article in the local language (w[3], "it:Titolo"): that one
+  if (!title && /^[a-z-]+:./.test(ev.w?.[3] || '')) { const i = ev.w[3].indexOf(':'); wl = ev.w[3].slice(0, i); title = ev.w[3].slice(i + 1); variant = ''; }
+  // no article at all: no Wikipedia text (a search by name too often finds another event of a similar name)
+  if (!title) return null;
   let q = `https://${wl}.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=extracts|pageimages|info|coordinates|pageprops`
     + '&exintro=1&explaintext=1&exsentences=3&piprop=thumbnail|name&pithumbsize=480&inprop=url&coprimary=primary&ppprop=wikibase_item' + (variant ? '&variant=' + variant : '');
-  if (title) q += '&titles=' + encodeURIComponent(title);
-  else {
-    const name = (ev.n[col] || ev.n[0]).split(/[，,；;：:（(]/)[0].trim();
-    q += '&generator=search&gsrlimit=1&gsrsearch=' + encodeURIComponent(name);
-  }
+  q += '&titles=' + encodeURIComponent(title);
   const j = await (await fetch(q)).json();
   const p = Object.values(j.query?.pages || {}).find(x => !x.missing);
   if (!p) return null;
